@@ -11,6 +11,18 @@
 # To use multiple GPUs in the future (e.g., 2 GPUs):
 #     CUDA_VISIBLE_DEVICES=0,1 torchrun --nproc_per_node=2 ...
 
+
+# OOM FIX: --microbatch controls how many samples are processed on GPU at one time.
+# With batch_size=425 and --microbatch=425, NO gradient accumulation happened — the full
+# 425-sample batch hit the GPU at once, causing OOM on the RTX 3060 Ti (8GB).
+#
+# How --microbatching works in train_util.py:
+#   for i in range(0, batch_size, microbatch):   ← loop over chunks
+#       micro = batch[i:i+microbatch].to(GPU)    ← only microbatch samples on GPU
+#       loss.backward()                           ← accumulate gradients
+#   optimizer.step()                              ← one update per full batch
+#
+
 CUDA_VISIBLE_DEVICES=0 torchrun --nproc_per_node=1 --master_port=12231 run_train.py \
 --diff_steps 2000 \
 --lr 0.0001 \
@@ -20,9 +32,9 @@ CUDA_VISIBLE_DEVICES=0 torchrun --nproc_per_node=1 --master_port=12231 run_train
 --noise_schedule sqrt \
 --hidden_dim 128 \
 --bsz 425 \
---microbatch 425 \
---dataset commonsense \
---data_dir ./datasets/CommonsenseConversation \
+--microbatch 16 \
+--dataset qqp \
+--data_dir ./datasets/qqp \
 --learned_mean_embed True \
 --denoise True \
 --vocab bert \
