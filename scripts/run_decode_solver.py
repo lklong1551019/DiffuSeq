@@ -39,7 +39,7 @@ if __name__ == '__main__':
             os.mkdir(out_dir)
 
         for checkpoint_one in checkpoints:
-            COMMAND = f'python -m torch.distributed.launch --nproc_per_node=1 --master_port=12{random.randint(0,9)}{random.randint(0,9)}{random.randint(0,9)} --use_env sample_seq2seq_dpmSolver.py ' \
+            COMMAND = f'torchrun --nproc_per_node=1 --master_port=12{random.randint(0,9)}{random.randint(0,9)}{random.randint(0,9)} sample_seq2seq_dpmSolver.py ' \
             f'--model_path {checkpoint_one} --step {args.step} ' \
             f'--batch_size {args.bsz} --start_n {args.start_n} --seed2 {args.seed} --split {args.split} ' \
             f'--out_dir {out_dir} --top_p {args.top_p} ' \

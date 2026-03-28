@@ -1,4 +1,17 @@
-CUDA_VISIBLE_DEVICES=1,2 python -m torch.distributed.launch --nproc_per_node=2 --master_port=12231 --use_env run_train.py \
+#!/bin/bash
+# train.sh — Launch DiffuSeq training.
+#
+# FIX: Changed from the deprecated `python -m torch.distributed.launch` to `torchrun`.
+# FIX: Changed --nproc_per_node=2 → 1 because this machine has only 1 GPU (RTX 3060 Ti).
+#      --nproc_per_node must equal the number of GPUs available under CUDA_VISIBLE_DEVICES.
+#      Setting it higher than the actual GPU count causes:
+#          RuntimeError: CUDA error: invalid device ordinal
+#      because the extra rank tries to access a non-existent cuda:N device.
+#
+# To use multiple GPUs in the future (e.g., 2 GPUs):
+#     CUDA_VISIBLE_DEVICES=0,1 torchrun --nproc_per_node=2 ...
+
+CUDA_VISIBLE_DEVICES=0 torchrun --nproc_per_node=1 --master_port=12231 run_train.py \
 --diff_steps 2000 \
 --lr 0.0001 \
 --learning_steps 50000 \
@@ -8,8 +21,8 @@ CUDA_VISIBLE_DEVICES=1,2 python -m torch.distributed.launch --nproc_per_node=2 -
 --hidden_dim 128 \
 --bsz 425 \
 --microbatch 425 \
---dataset qqp \
---data_dir {path-to-datasets} \
+--dataset commonsense \
+--data_dir ./datasets/CommonsenseConversation \
 --learned_mean_embed True \
 --denoise True \
 --vocab bert \
