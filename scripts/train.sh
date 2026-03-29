@@ -21,7 +21,10 @@
 #       micro = batch[i:i+microbatch].to(GPU)    ← only microbatch samples on GPU
 #       loss.backward()                           ← accumulate gradients
 #   optimizer.step()                              ← one update per full batch
-#
+
+
+
+# Add this to resume: --resume_checkpoint ./diffusion_models/diffuseq_qqp_h128_lr0.0001_t2000_sqrt_lossaware_seed102_learned_mask_fp16_denoise_0.5_reproduce20260328-16:15:35/ema_0.9999_005000.pt \
 
 CUDA_VISIBLE_DEVICES=0 torchrun --nproc_per_node=1 --master_port=12231 run_train.py \
 --diff_steps 2000 \

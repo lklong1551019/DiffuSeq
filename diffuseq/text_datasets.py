@@ -137,7 +137,7 @@ def helper_tokenize(sentence_lst, vocab_dict, seq_len):
 
     Produces a HuggingFace DatasetDict with 'train' split containing:
         input_ids  [seq_len]: [src_tokens | SEP | trg_tokens | PAD … PAD]
-        input_mask [seq_len]: [0 … 0 | 1 … 1 | 1 … 1]
+        input_mask [seq_len]: [0 … 0 | 0 … 0 | 1 … 1]
                                 source positions = 0, target positions = 1
 
     The mask distinguishes tokens the model should condition on (source, mask=0)
