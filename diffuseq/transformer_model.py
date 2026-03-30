@@ -101,6 +101,10 @@ class TransformerNetModel(nn.Module):
         # word_embedding: maps token IDs → continuous vectors ∈ R^{input_dims}
         self.word_embedding = nn.Embedding(vocab_size, self.input_dims)
         # lm_head: projects latent vectors back to vocabulary logits ∈ R^{vocab_size}
+        # This will produce matrix of shape [vocab_size, input_dims]
+        # Example: [30522, 128]
+        # After the model produce output of continuous vectors, this will be used to project that vector back to english tokens. 
+        # It takes the, for example, 128 dimension ouput and projects it to 30522 dimension,  producing a logit score for every word in the dictionary.
         self.lm_head = nn.Linear(self.input_dims, vocab_size)
         # Weight tying: lm_head uses the SAME weight matrix as word_embedding.
         # This constrains the embedding and un-embedding to be consistent (saves parameters
@@ -112,10 +116,16 @@ class TransformerNetModel(nn.Module):
         # Timestep Embedding MLP
         # -----------------------------------------------------------------------
         # Converts scalar timestep t into a rich conditioning vector e_t:
+        # First, it converts the scalar timestep t into a sinusoidal embedding of dimension hidden_t_dim, for ex, 128.
         #   t → sinusoidal(t, hidden_t_dim)    [dimension: hidden_t_dim]
+        # The time_embed NN block takes this sinusoidal embedding and projects 128 features up to 512 features. 
+        # Expanding the dimension allows the model to capture more complex patterns in the timestep.
+        # SiLU: applies sigmoid linear unit activation function as diffusion models tends to perform better with it, as it is a smooth curve that doesn't kill negatvie gradients.
         #     → Linear(hidden_t_dim, 4*hidden_t_dim) + SiLU
+        # Then, projects 512 features into 768 features (BERT's hidden size).
         #     → Linear(4*hidden_t_dim, hidden_size)
         # The output e_t ∈ R^{hidden_size} is broadcast over position to fuse with token embeddings.
+        # Model simply adds this time_embed vector to the token embedding before passing them to the Transformer layers.
         time_embed_dim = hidden_t_dim * 4
         self.time_embed = nn.Sequential(
             linear(hidden_t_dim, time_embed_dim),

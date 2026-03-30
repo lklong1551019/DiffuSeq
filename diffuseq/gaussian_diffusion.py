@@ -29,6 +29,10 @@ def get_named_beta_schedule(schedule_name, num_diffusion_timesteps, warmup_steps
     they are committed to maintain backwards compatibility.
     """
     if schedule_name == 'sqrt':
+        # t parameter: fractional progress through the diffusion process, eg, at step 500 out of 1000, t = 0.5
+        # Instead of defining noise steps (beta_t) directly, we define the desired curve for the cummulative signal (alpha_t) first, then
+        #   reverse engineer the beta_t require to achieve that curve.
+        # This means that at begining steps, noise will be added fast, and later steps noise will be added slowly.
         return betas_for_alpha_bar(
             num_diffusion_timesteps,
             lambda t: 1-np.sqrt(t + 0.0001),
@@ -76,8 +80,13 @@ def betas_for_alpha_bar(num_diffusion_timesteps, alpha_bar, max_beta=0.999):
     """
     betas = []
     for i in range(num_diffusion_timesteps):
+        # continous time at current step
         t1 = i / num_diffusion_timesteps
+        # continous time at next step
         t2 = (i + 1) / num_diffusion_timesteps
+        # alpha_bar_next_step =  alpha_bar_current_step * alpha_next_step
+        # alpha_bar_next_step =  alpha_bar_current_step * (1 - beta_next_step)
+        # --> beta_next_step = 1 - alpha_bar_next_step / alpha_bar_current_step
         betas.append(min(1 - alpha_bar(t2) / alpha_bar(t1), max_beta))
     return np.array(betas)
 
