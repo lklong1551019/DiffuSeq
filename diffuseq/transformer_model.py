@@ -100,11 +100,11 @@ class TransformerNetModel(nn.Module):
         # -----------------------------------------------------------------------
         # word_embedding: maps token IDs → continuous vectors ∈ R^{input_dims}
         self.word_embedding = nn.Embedding(vocab_size, self.input_dims)
+
         # lm_head: projects latent vectors back to vocabulary logits ∈ R^{vocab_size}
-        # This will produce matrix of shape [vocab_size, input_dims]
-        # Example: [30522, 128]
+        # This will produce matrix of shape [input_dims, vocab_size], ex: [128, 30522]
         # After the model produce output of continuous vectors, this will be used to project that vector back to english tokens. 
-        # It takes the, for example, 128 dimension ouput and projects it to 30522 dimension,  producing a logit score for every word in the dictionary.
+        # It takes the, for example, 128 dimension ouput and projects it to 30522 dimension,  producing a logit score for every word in the dictionary.        
         self.lm_head = nn.Linear(self.input_dims, vocab_size)
         # Weight tying: lm_head uses the SAME weight matrix as word_embedding.
         # This constrains the embedding and un-embedding to be consistent (saves parameters

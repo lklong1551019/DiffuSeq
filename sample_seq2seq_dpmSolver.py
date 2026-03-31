@@ -290,7 +290,7 @@ def main():
         x_t = th.tensor(arr).cuda()
 
         reshaped_x_t = x_t
-        # Project denoised embeddings to vocabulary: [B, seq_len, vocab_size]
+        # Project denoised embeddings to vocabulary: logits [B, seq_len, vocab_size]
         logits = model.get_logits(reshaped_x_t)
 
         # Greedy decoding: take the highest-probability token at each position
