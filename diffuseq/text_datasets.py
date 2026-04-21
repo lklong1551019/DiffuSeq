@@ -37,6 +37,7 @@ import json
 import psutil         # for RAM usage monitoring
 import datasets
 from datasets import Dataset as Dataset2  # HuggingFace datasets Arrow-backed Dataset
+import re
 
 
 def load_data_text(
@@ -131,7 +132,7 @@ def infinite_loader(data_loader):
         yield from data_loader
 
 
-def helper_tokenize(sentence_lst, vocab_dict, seq_len):
+def helper_tokenize(sentence_lst, vocab_dict, seq_len, denoise=False, mask_docamr_rel=False):
     """
     Tokenize, merge, mask, and pad a seq2seq dataset for fine-tuning.
 
@@ -167,7 +168,28 @@ def helper_tokenize(sentence_lst, vocab_dict, seq_len):
         """Encode source and target texts into token ID lists."""
         input_id_x = vocab_dict.encode_token(examples['src'])
         input_id_y = vocab_dict.encode_token(examples['trg'])
-        result_dict = {'input_id_x': input_id_x, 'input_id_y': input_id_y}
+        
+        rel_mask_y = []
+        if denoise or mask_docamr_rel:
+            for text in examples['trg']:
+                # Identify tokens belonging to AMR relations (excluding :snt)
+                tokens = vocab_dict.tokenizer.tokenize(text)
+                # Align with AutoTokenizer(add_special_tokens=True) [CLS ... SEP]
+                mask = [0] * (len(tokens) + 2)
+                in_rel = False
+                for i, tok in enumerate(tokens):
+                    if tok.startswith(':') and not tok.startswith(':snt'):
+                        in_rel = True
+                    elif not tok.startswith('##'):
+                        in_rel = False
+                    
+                    if in_rel:
+                        mask[i+1] = 1 # skip [CLS]
+                rel_mask_y.append(mask)
+        else:
+            rel_mask_y = [[0] * len(y) for y in input_id_y]
+            
+        result_dict = {'input_id_x': input_id_x, 'input_id_y': input_id_y, 'rel_mask_y': rel_mask_y}
         return result_dict
 
     # Batch tokenization with 4 parallel workers
@@ -195,10 +217,12 @@ def helper_tokenize(sentence_lst, vocab_dict, seq_len):
         """
         lst = []    # list of merged token ID sequences
         mask = []   # list of corresponding source masks
+        rel_mask_list = [] # list of DocAMR relation masks
         for i in range(len(group_lst['input_id_x'])):
             end_token = group_lst['input_id_x'][i][-1]   # [SEP] / [END] token
             src = group_lst['input_id_x'][i][:-1]         # remove trailing end token
             trg = group_lst['input_id_y'][i][:-1]
+            rel_trg = group_lst['rel_mask_y'][i][:-1]
 
             # Trim until concatenated length fits in seq_len - 3 (space for end tokens + SEP)
             while len(src) + len(trg) > seq_len - 3:
@@ -206,9 +230,11 @@ def helper_tokenize(sentence_lst, vocab_dict, seq_len):
                     src.pop()
                 elif len(src) < len(trg):
                     trg.pop()
+                    rel_trg.pop()
                 else:
                     src.pop()
                     trg.pop()
+                    rel_trg.pop()
 
             # Re-append end tokens and join with SEP
             src.append(end_token)
@@ -219,9 +245,13 @@ def helper_tokenize(sentence_lst, vocab_dict, seq_len):
             # Mask: source positions = 0 (conditioned on), target positions not included here
             # (will be padded with 1 in pad_function)
             mask.append([0] * (len(src) + 1))  # +1 for the SEP token
+            
+            # rel_mask: src tokens = 0, SEP = 0, trg relations = 1, trg other = 0, END = 0
+            rel_mask_list.append([0] * (len(src) + 1) + rel_trg + [0])
 
         group_lst['input_ids'] = lst
         group_lst['input_mask'] = mask
+        group_lst['rel_mask'] = rel_mask_list
         return group_lst
 
     tokenized_datasets = tokenized_datasets.map(
@@ -242,6 +272,9 @@ def helper_tokenize(sentence_lst, vocab_dict, seq_len):
         )
         group_lst['input_mask'] = _collate_batch_helper(
             group_lst['input_mask'], 1, max_length  # pad mask with 1 (= target / noised)
+        )
+        group_lst['rel_mask'] = _collate_batch_helper(
+            group_lst['rel_mask'], 0, max_length
         )
         return group_lst
 
@@ -393,7 +426,7 @@ def get_corpus(data_args, seq_len, split='train', loaded_vocab=None):
     print('### Data samples...\n', sentence_lst['src'][:2], sentence_lst['trg'][:2])
 
     vocab_dict = loaded_vocab
-    train_dataset = helper_tokenize(sentence_lst, vocab_dict, seq_len)
+    train_dataset = helper_tokenize(sentence_lst, vocab_dict, seq_len, denoise=data_args.denoise, mask_docamr_rel=data_args.mask_docamr_rel)
     return train_dataset
 
 
@@ -493,6 +526,8 @@ class TextDataset(Dataset):
             out_kwargs = {}
             out_kwargs['input_ids'] = np.array(self.text_datasets['train'][idx]['input_ids'])
             out_kwargs['input_mask'] = np.array(self.text_datasets['train'][idx]['input_mask'])
+            if 'rel_mask' in self.text_datasets['train'][idx]:
+                out_kwargs['rel_mask'] = np.array(self.text_datasets['train'][idx]['rel_mask'])
 
             return arr, out_kwargs
 

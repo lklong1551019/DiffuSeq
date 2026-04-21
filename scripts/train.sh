@@ -33,16 +33,19 @@ CUDA_VISIBLE_DEVICES=0 torchrun --nproc_per_node=1 --master_port=12231 run_train
 --save_interval 5000 \
 --seed 102 \
 --noise_schedule sqrt \
---hidden_dim 128 \
---bsz 425 \
---microbatch 16 \
---dataset qqp \
---data_dir ./datasets/qqp \
+--hidden_dim 256 \
+--bsz 128 \
+--microbatch 4 \
+--dataset docAMR/src_doc_vi_trg_docamr_en_chunk_5 \
+--data_dir ./datasets/docAMR/src_doc_vi_trg_docamr_en_chunk_5 \
 --learned_mean_embed True \
 --denoise True \
 --vocab bert \
---seq_len 128 \
+--seq_len 256 \
 --use_fp16 \
+--config_name bert-base-multilingual-cased \
 --denoise_rate 0.5 \
+--mask_docamr_rel True \
 --schedule_sampler lossaware \
 --notes learned_mask_fp16_denoise_0.5_reproduce
+

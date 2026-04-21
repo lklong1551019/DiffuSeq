@@ -31,6 +31,7 @@ if __name__ == '__main__':
     parser.add_argument('--denoise', default=False, type=str2bool, help='denoise combined with learned_mean_embed [MASK]')
     parser.add_argument('--reg_rate', default=0.0, type=float, help='regularization rate of learned mean embed for gaussian; default is zero')
     parser.add_argument('--denoise_rate', default=0.2, type=float, help='max denoise rate of [MASK]')
+    parser.add_argument('--mask_docamr_rel', default=False, type=str2bool, help='mask only docAMR relation labels')
 
     parser.add_argument('--seq_len', type=int, default=128, help='max len of input sequence')
     parser.add_argument('--hidden_t_dim', type=int, default=128, help='hidden size of time embedding')
@@ -44,7 +45,7 @@ if __name__ == '__main__':
     parser.add_argument('--microbatch', type=int, default=64, help='microbatch size')
     parser.add_argument('--seed', type=int, default=101, help='random seed')
 
-    parser.add_argument('--config_name', type=str, default='bert-base-uncased', help='config of pre-trained models')
+    parser.add_argument('--config_name', type=str, default='bert-base-multilingual-cased', help='config of pre-trained models')
     parser.add_argument('--vocab', type=str, default='bert', help='use bert vocab or load external vocab dict if given as path')
     parser.add_argument('--use_plm_init', type=str, default='no', choices=['no', 'bert'], help='load init parameter from the pre-trained lm')
 
@@ -63,7 +64,7 @@ if __name__ == '__main__':
 
     if int(os.environ['LOCAL_RANK']) == 0:
         if not os.path.isdir(folder_name):
-            os.mkdir(folder_name)
+            os.makedirs(folder_name, exist_ok=True)
 
     Model_FILE = f"diffuseq_{args.dataset}_h{args.hidden_dim}_lr{args.lr}" \
                 f"_t{args.diff_steps}_{args.noise_schedule}_{args.schedule_sampler}" \
@@ -75,7 +76,7 @@ if __name__ == '__main__':
 
     if int(os.environ['LOCAL_RANK']) == 0:
         if not os.path.isdir(Model_FILE):
-            os.mkdir(Model_FILE)
+            os.makedirs(Model_FILE, exist_ok=True)
 
     COMMANDLINE = f" OPENAI_LOGDIR={Model_FILE}  " \
                   f"TOKENIZERS_PARALLELISM=false " \
@@ -93,6 +94,7 @@ if __name__ == '__main__':
                   f"--config_name {args.config_name} --notes {args.notes} " \
                   f"--learned_mean_embed {args.learned_mean_embed} " \
                   f"--denoise {args.denoise} --denoise_rate {args.denoise_rate} " \
+                  f"--mask_docamr_rel {args.mask_docamr_rel} " \
                   f"--reg_rate {args.reg_rate} "
 
     COMMANDLINE += " " + args.app

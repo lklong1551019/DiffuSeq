@@ -222,7 +222,7 @@ def main():
             if i == rank:  # Write files sequentially
                 fout = open(out_path, 'a')
                 for (recov, ref, src) in zip(word_lst_recover, word_lst_ref, word_lst_source):
-                    print(json.dumps({"recover": recov, "reference": ref, "source": src}), file=fout)
+                    print(json.dumps({"recover": recov, "reference": ref, "source": src}, ensure_ascii=False), file=fout)
                 fout.close()
             dist.barrier(device_ids=[int(os.environ["LOCAL_RANK"])])
 

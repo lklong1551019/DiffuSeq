@@ -316,7 +316,7 @@ def main():
         # Append to the output file in JSON-lines format (one dict per line)
         fout = open(out_path, 'a')
         for (recov, ref, src) in zip(word_lst_recover, word_lst_ref, word_lst_source):
-            print(json.dumps({"recover": recov, "reference": ref, "source": src}), file=fout)
+            print(json.dumps({"recover": recov, "reference": ref, "source": src}, ensure_ascii=False), file=fout)
         fout.close()
 
     print('### Total takes {:.2f}s .....'.format(time.time() - start_t))

@@ -121,6 +121,7 @@ class GaussianDiffusion:
         rejection_rate=0.,
         denoise=False,
         denoise_rate = 0.2,
+        mask_docamr_rel=False,
         device="",
         max_T = 2000,
     ):
@@ -134,6 +135,7 @@ class GaussianDiffusion:
         self.rejection_rate = rejection_rate
         self.denoise = denoise
         self.denoise_rate = denoise_rate
+        self.mask_docamr_rel = mask_docamr_rel
         self.max_T = max_T
 
         # Use float64 for accuracy.
@@ -233,7 +235,7 @@ class GaussianDiffusion:
         )
         return mean, variance, log_variance
 
-    def q_sample(self, x_start, t, noise=None, mask=None, mean_embed=None):
+    def q_sample(self, x_start, t, noise=None, mask=None, mean_embed=None, rel_mask=None):
         """
         Diffuse the data for a given number of diffusion steps.
 
@@ -268,11 +270,17 @@ class GaussianDiffusion:
 
         if self.denoise:
             mask_rate = _extract_into_tensor(self.sqrt_one_minus_alphas_cumprod, t, x_start.shape[:2]) * self.denoise_rate
-            # print('mask_rate', mask_rate.shape)
             random_mask = mask_rate.bernoulli()[..., None]
-            random_mask = random_mask.expand(x_start.shape)
+            
+            if self.mask_docamr_rel and rel_mask is not None:
+                # Mask ONLY relations, but only a subset based on the denoise_rate
+                mask_for_denoise = (rel_mask[..., None] * random_mask).expand(x_start.shape)
+            else:
+                # Standard random denoising logic (original way)
+                mask_for_denoise = random_mask.expand(x_start.shape)
+            
             mean_embed_expand = mean_embed[None, None].expand(x_start.shape)
-            x_t = th.where(random_mask==0, x_t, mean_embed_expand)
+            x_t = th.where(mask_for_denoise==0, x_t, mean_embed_expand)
 
         if mask == None:
             return x_t
@@ -652,7 +660,8 @@ class GaussianDiffusion:
         if noise is None:
             noise = th.randn_like(x_start)
 
-        x_t = self.q_sample(x_start, t, noise=noise, mask=input_ids_mask, mean_embed=model.mean_embed) # reparametrization trick.
+        rel_mask = model_kwargs.pop('rel_mask').to(t.device) if 'rel_mask' in model_kwargs else None
+        x_t = self.q_sample(x_start, t, noise=noise, mask=input_ids_mask, mean_embed=model.mean_embed, rel_mask=rel_mask) # reparametrization trick.
 
         get_logits = model.model.module.get_logits
 
