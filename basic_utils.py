@@ -25,7 +25,7 @@ from diffuseq.gaussian_diffusion import SpacedDiffusion, space_timesteps
 # TransformerNetModel: the BERT-based denoising model (backbone of DiffuSeq)
 from diffuseq.transformer_model import TransformerNetModel
 from transformers import AutoTokenizer, PreTrainedTokenizerFast
-
+import re
 
 class myTokenizer():
     """
@@ -55,12 +55,26 @@ class myTokenizer():
     def __init__(self, args):
         if args.vocab == 'bert':
             # Load the BERT tokenizer from HuggingFace Hub (or cached locally).
-            # config_name is typically 'bert-base-uncased'.
+            # config_name is typically 'bert-base-uncased' or 'bert-base-multilingual-cased'.
+                    
             tokenizer = AutoTokenizer.from_pretrained(args.config_name)
+            
+            # --- Load Custom AMR & DocAMR Special Tokens ---
+            # Using the pre-generated comprehensive list of relations
+            rel_file = "datasets/docAMR/custom_amr_relations.json"
+            if os.path.exists(rel_file):
+                with open(rel_file, 'r', encoding='utf-8') as f:
+                    all_to_add = json.load(f)
+                print(f"### Loaded {len(all_to_add)} custom relations from {rel_file}")
+                tokenizer.add_tokens(all_to_add)
+            else:
+                print(f"### Warning: {rel_file} not found. No custom tokens added.")
+            # ------------------------------------------
+
             self.tokenizer = tokenizer
-            self.sep_token_id = tokenizer.sep_token_id  # [SEP] → 102
-            self.pad_token_id = tokenizer.pad_token_id  # [PAD] → 0
-            # Persist the tokenizer to the checkpoint dir so inference can reload it
+            self.sep_token_id = tokenizer.sep_token_id  # [SEP]
+            self.pad_token_id = tokenizer.pad_token_id  # [PAD]
+            # Persist the tokenizer (including added tokens) to the checkpoint dir
             tokenizer.save_pretrained(args.checkpoint_path)
         else:
             # Custom vocab path: each line is "<token> [optional_count]"; we use only the token.
@@ -299,6 +313,7 @@ def create_model_and_diffusion(
         rejection_rate=rejection_rate,
         denoise=denoise,
         denoise_rate=denoise_rate,
+        mask_docamr_rel=kwargs.get('mask_docamr_rel', False),
         device=device,
         max_T=diffusion_steps,
     )
