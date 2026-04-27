@@ -4,6 +4,16 @@ import random
 sys.path.append('.')
 sys.path.append('..')
 
+def str2bool(v):
+    if isinstance(v, bool):
+        return v
+    if v.lower() in ("yes", "true", "t", "y", "1"):
+        return True
+    elif v.lower() in ("no", "false", "f", "n", "0"):
+        return False
+    else:
+        raise argparse.ArgumentTypeError("boolean value expected")
+
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='decoding args.')
@@ -12,6 +22,7 @@ if __name__ == '__main__':
     parser.add_argument('--step', type=int, default=2000, help='if less than diffusion training steps, like 1000, use ddim sampling')
     parser.add_argument('--clamp_step', type=int, default=0, help='clamp start step')
     parser.add_argument('--rejection_rate', type=float, default=0.0, help='reject tokens once it does not change')
+    parser.add_argument('--use_simple_amr', type=str2bool, default=False, help='use simple amr relations')
     parser.add_argument('--note', type=str, default='none', help='note')
 
     parser.add_argument('--bsz', type=int, default=50, help='batch size')
@@ -43,7 +54,8 @@ if __name__ == '__main__':
             f'--model_path {checkpoint_one} --step {args.step} ' \
             f'--batch_size {args.bsz} --start_n {args.start_n} --seed2 {args.seed} --split {args.split} ' \
             f'--out_dir {out_dir} --top_p {args.top_p} ' \
-            f'--rejection_rate {args.rejection_rate} --clamp_step {args.clamp_step} '\
+            f'--rejection_rate {args.rejection_rate} --clamp_step {args.clamp_step} ' \
+            f'--use_simple_amr {args.use_simple_amr} ' \
             f'--note {args.note}'
             print(COMMAND)
             

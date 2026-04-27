@@ -32,6 +32,7 @@ if __name__ == '__main__':
     parser.add_argument('--reg_rate', default=0.0, type=float, help='regularization rate of learned mean embed for gaussian; default is zero')
     parser.add_argument('--denoise_rate', default=0.2, type=float, help='max denoise rate of [MASK]')
     parser.add_argument('--mask_docamr_rel', default=False, type=str2bool, help='mask only docAMR relation labels')
+    parser.add_argument('--use_simple_amr', default=False, type=str2bool, help='use simple docamr relation labels')
 
     parser.add_argument('--seq_len', type=int, default=128, help='max len of input sequence')
     parser.add_argument('--hidden_t_dim', type=int, default=128, help='hidden size of time embedding')
@@ -95,6 +96,7 @@ if __name__ == '__main__':
                   f"--learned_mean_embed {args.learned_mean_embed} " \
                   f"--denoise {args.denoise} --denoise_rate {args.denoise_rate} " \
                   f"--mask_docamr_rel {args.mask_docamr_rel} " \
+                  f"--use_simple_amr {args.use_simple_amr} " \
                   f"--reg_rate {args.reg_rate} "
 
     COMMANDLINE += " " + args.app

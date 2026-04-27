@@ -81,7 +81,50 @@ def read_en_file(path: str) -> str:
     """
     with open(path, "r", encoding="utf-8") as f:
         lines = f.readlines()
-    return ""
+        
+    start_idx = 0
+    for i, line in enumerate(lines):
+        if line.startswith("# ::tok"):
+            start_idx = i + 1
+            break
+            
+    content = " ".join(lines[start_idx:])
+    return re.sub(r'\s+', ' ', content).strip()
+
+
+def simplify_docamr(amr_str: str) -> str:
+    """
+    Simplify the docAMR string according to the 'simple' rules:
+    - remove (d / document
+    - collapse instances like (s1.s / say-01 -> say
+    - strip numbers from relations (:ARG1-of -> :ARG-of)
+    - remove variable references (e.g., s3.h2, s1.p)
+    - remove (, ), /
+    """
+    # 1. remove (d / document
+    amr_str = re.sub(r'\(d\s*/\s*document\b', '', amr_str)
+    
+    # 2. collapse instances: (var / concept-XX -> concept
+    def concept_replacer(m):
+        concept = m.group(1)
+        concept = re.sub(r'-\d+$', '', concept)
+        return concept
+    
+    amr_str = re.sub(r'\([a-zA-Z0-9_.]+\s*/\s*([a-zA-Z0-9_.-]+)', concept_replacer, amr_str)
+    
+    # 3. simplify relations: remove digits
+    amr_str = re.sub(r':([a-zA-Z]+)\d+(-of)?\b', r':\1\2', amr_str)
+    
+    # 4. remove variable references like s3.h2
+    amr_str = re.sub(r'\b[a-zA-Z]+\d*\.[a-zA-Z0-9]+\b', '', amr_str)
+    
+    # 5. remove any (, ), /
+    amr_str = re.sub(r'[()/]', '', amr_str)
+    
+    # 6. cleanup extra spaces
+    amr_str = re.sub(r'\s+', ' ', amr_str).strip()
+    return amr_str
+
 
 
 def split_docamr_graph(graph_content: str) -> list[str]:
@@ -117,7 +160,7 @@ def find_out_file(en_dir: str, doc_id: str) -> str | None:
     return candidate if os.path.isfile(candidate) else None
 
 
-def build_pairs(en_dir: str, vi_dir: str, chunk_size: int | None = None) -> list[dict]:
+def build_pairs(en_dir: str, vi_dir: str, chunk_size: int | None = None, simple: bool = True) -> list[dict]:
     """
     Walk the .vi directory, match each doc-N.txt with the corresponding
     doc-N_docamr_docAMR.out in the .en directory.
@@ -169,6 +212,8 @@ def build_pairs(en_dir: str, vi_dir: str, chunk_size: int | None = None) -> list
                 
                 # Join EN subgraphs and wrap in (d / document ...)
                 src_en = "(d / document " + " ".join(en_chunk) + ")"
+                if simple:
+                    src_en = simplify_docamr(src_en)
                 pairs.append({"src_vi": src_vi, "src_en": src_en})
         else:
             vi_text = read_vi_content(vi_path)
@@ -178,6 +223,8 @@ def build_pairs(en_dir: str, vi_dir: str, chunk_size: int | None = None) -> list
                 logger.warning("Empty content for %s – skipping.", doc_id)
                 continue
                 
+            if simple:
+                en_text = simplify_docamr(en_text)
             pairs.append({"src_vi": vi_text, "src_en": en_text})
 
     logger.info(
@@ -200,7 +247,7 @@ def write_jsonl(pairs: list[dict], out_path: str, src_key: str, trg_key: str) ->
 # Main
 # ---------------------------------------------------------------------------
 
-def main(input_dir: str, output_dir: str, chunk_size: int | None = None) -> None:
+def main(input_dir: str, output_dir: str, chunk_size: int | None = None, simple: bool = True) -> None:
     # ------------------------------------------------------------------
     # Locate the six sub-folders
     # ------------------------------------------------------------------
@@ -224,6 +271,8 @@ def main(input_dir: str, output_dir: str, chunk_size: int | None = None) -> None
     # Dataset 1: src = VI text,  trg = EN DocAMR
     # ------------------------------------------------------------------
     suffix = f"_chunk_{chunk_size}" if chunk_size and chunk_size > 0 else ""
+    if simple:
+        suffix += "_simple"
     dataset1_dir = os.path.join(output_dir, f"src_doc_vi_trg_docamr_en{suffix}")
     logger.info("=" * 60)
     logger.info("Building dataset 1: src_doc_vi_trg_docamr_en")
@@ -233,7 +282,7 @@ def main(input_dir: str, output_dir: str, chunk_size: int | None = None) -> None
         logger.info("Processing split: %s", split_name)
         en_dir = os.path.join(input_dir, en_folder)
         vi_dir = os.path.join(input_dir, vi_folder)
-        pairs = build_pairs(en_dir, vi_dir, chunk_size=chunk_size)
+        pairs = build_pairs(en_dir, vi_dir, chunk_size=chunk_size, simple=simple)
         out_path = os.path.join(dataset1_dir, f"{split_name}.jsonl")
         write_jsonl(pairs, out_path, src_key="src_vi", trg_key="src_en")
 
@@ -249,7 +298,7 @@ def main(input_dir: str, output_dir: str, chunk_size: int | None = None) -> None
         logger.info("Processing split: %s", split_name)
         en_dir = os.path.join(input_dir, en_folder)
         vi_dir = os.path.join(input_dir, vi_folder)
-        pairs = build_pairs(en_dir, vi_dir, chunk_size=chunk_size)
+        pairs = build_pairs(en_dir, vi_dir, chunk_size=chunk_size, simple=simple)
         out_path = os.path.join(dataset2_dir, f"{split_name}.jsonl")
         write_jsonl(pairs, out_path, src_key="src_en", trg_key="src_vi")
 
@@ -281,6 +330,12 @@ if __name__ == "__main__":
         default=0,
         help="If specified (>0), split documents into chunks of N sentences."
     )
+    parser.add_argument(
+        "--simple",
+        type=lambda x: (str(x).lower() in ['true', '1', 'yes']),
+        default=True,
+        help="Whether to simplify DocAMR graphs. Default is True."
+    )
     args = parser.parse_args()
 
-    main(args.input_dir, args.output_dir, chunk_size=args.chunk_size)
+    main(args.input_dir, args.output_dir, chunk_size=args.chunk_size, simple=args.simple)

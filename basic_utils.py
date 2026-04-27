@@ -61,7 +61,10 @@ class myTokenizer():
             
             # --- Load Custom AMR & DocAMR Special Tokens ---
             # Using the pre-generated comprehensive list of relations
-            rel_file = "datasets/docAMR/custom_amr_relations.json"
+            if getattr(args, 'use_simple_amr', False):
+                rel_file = "datasets/docAMR/custom_relation_docamrs_simple.json"
+            else:
+                rel_file = "datasets/docAMR/custom_relation_docamrs.json"
             if os.path.exists(rel_file):
                 with open(rel_file, 'r', encoding='utf-8') as f:
                     all_to_add = json.load(f)
