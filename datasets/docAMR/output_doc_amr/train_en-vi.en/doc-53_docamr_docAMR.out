@@ -1,0 +1,401 @@
+# ::id doc-53
+# ::doc_file doc-53
+# ::tok http : / / www . ted . com / talks / cameron_sinclair_the_refugees_of_boom_and_bust< / url> <next_sent> A few years ago , my eyes were opened to the dark side of the construction industry . <next_sent> In 2006 , young Qatari students took me to go and see the migrant worker camps . <next_sent> And since then I 've followed the unfolding issue of worker rights . <next_sent> In the last six months , more than 300 skyscrapers in the UAE have been put on hold or canceled . <next_sent> Behind the headlines that lay behind these buildings is the fate of the often - indentured construction worker . <next_sent> 1.1 million of them . <next_sent> Mainly Indian , Pakistani , Sri Lankan and Nepalese , these laborers risk everything to make money for their families back home . <next_sent> They pay a middle - man thousands of dollars to be there . <next_sent> And when they arrive , they find themselves in labor camps with no water , no air conditioning , and their passports taken away . <next_sent> While it 's easy to point the finger at local officials and higher authorities , 99 percent of these people are hired by the private sector , and so therefore we 're equally , if not more , accountable . <next_sent> Groups like Buildsafe UAE have emerged , but the numbers are simply overwhelming . <next_sent> In August 2008 , UAE public officials noted that 40 percent of the country 's 1,098 labor camps had violated minimum health and fire safety regulations . <next_sent> And last summer , more than 10,000 workers protested for the non - payment of wages , for the poor quality of food , and inadequate housing . <next_sent> And then the financial collapse happened . <next_sent> When the contractors have gone bust , as they 've been overleveraged like everyone else , the difference is everything goes missing , documentation , passports , and tickets home for these workers . <next_sent> Currently , right now , thousands of workers are abandoned . <next_sent> There is no way back home . <next_sent> And there is no way , and no proof of arrival . <next_sent> These are the boom - and - bust refugees . <next_sent> The question is , as a building professional , as an architect , an engineer , as a developer , if you know this is going on , as we go to the sights every single week , are you complacent or complicit in the human rights violations ? <next_sent> So let 's forget your environmental footprint . <next_sent> Let 's think about your ethical footprint . <next_sent> What good is it to build a zero - carbon , energy efficient complex , when the labor producing this architectural gem is unethical at best ? <next_sent> Now , recently I 've been told I 've been taking the high road . <next_sent> But , quite frankly , on this issue , there is no other road . <next_sent> So let 's not forget who is really paying the price of this financial collapse . <next_sent> And that as we worry about our next job in the office , the next design that we can get , to keep our workers . <next_sent> Let 's not forget these men , who are truly dying to work . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01))
+   :snt2 (s2.o / open-01
+               :ARG1 (s2.e / eye
+                           :part-of (s2.i / i))
+               :direction (s2.s / side
+                                :ARG1-of (s2.d / dark-02)
+                                :part-of (s2.i2 / industry
+                                                :topic (s2.c / construct-01)))
+               :time (s2.b / before
+                           :quant (s2.f / few
+                                        :op1 (s2.t / temporal-quantity
+                                                   :unit (s2.y / year)
+                                                   :quant "1"))
+                           :op1 (s2.n / now)))
+   :snt3 (s3.t / take-01
+               :ARG0 (s3.p / person
+                           :ARG0-of (s3.s2 / study-01)
+                           :mod (s3.c2 / country
+                                       :name (s3.n / name
+                                                   :op1 "Qatar"))
+                           :mod (s3.y / young))
+               :ARG1 (s3.i / i
+                           :same-as s2.i)
+               :ARG3 (s3.a / and
+                           :op1 (s3.g / go-02
+                                      :ARG0 s3.i)
+                           :op2 (s3.s / see-01
+                                      :ARG0 s3.i
+                                      :ARG1 (s3.c / camp
+                                                  :poss (s3.p2 / person
+                                                               :ARG0-of (s3.m / migrate-01)
+                                                               :ARG0-of (s3.w / work-01)))))
+               :time (s3.d / date-entity
+                           :year "2006"))
+   :snt4 (s4.a / and
+               :op2 (s4.f / follow-02
+                          :ARG0 (s4.i / i
+                                      :same-as s2.i)
+                          :ARG1 (s4.i2 / issue-02
+                                       :ARG0 (s4.r / right-05
+                                                   :ARG1 (s4.p / person
+                                                               :ARG0-of (s4.w / work-01)))
+                                       :ARG1-of (s4.u / unfold-01))
+                          :time (s4.s / since
+                                      :op1 (s4.t / then))))
+   :snt5 (s5.o / or
+               :op1 (s5.h / hold-on-05
+                          :ARG1 (s5.s / skyscraper
+                                      :quant (s5.m2 / more-than
+                                                    :op1 "300")
+                                      :location (s5.c2 / country
+                                                       :name (s5.n / name
+                                                                   :op1 "UAE"))))
+               :op2 (s5.c / cancel-01
+                          :ARG1 s5.s)
+               :time (s5.b / before
+                           :duration (s5.t / temporal-quantity
+                                           :unit (s5.m / month)
+                                           :quant "6")
+                           :op1 (s5.n2 / now)))
+   :snt6 (s6.f / fate-01
+               :ARG1 (s6.h / headline
+                           :ARG1-of (s6.l / lay-01
+                                          :ARG2 (s6.b / behind
+                                                      :op1 (s6.b3 / building
+                                                                  :mod (s6.t / this)
+                                                                  :same-as s5.s)))
+                           :mod (s6.b2 / behind))
+               :ARG1 (s6.p / person
+                           :ARG0-of (s6.w / work-01
+                                          :ARG1 (s6.c / construct-01))
+                           :ARG1-of (s6.e / enslave-01
+                                          :frequency (s6.o / often))))
+   :snt7 (s7.t / they
+               :quant "1000000"
+               :same-as s6.p)
+   :snt8 (s8.r / risk-01
+               :purpose (s8.m2 / make-05
+                               :ARG0 (s8.a / and
+                                           :op1 (s8.p / person
+                                                      :mod (s8.c / country
+                                                                 :name (s8.n / name
+                                                                             :op1 "India"))
+                                                      :mod (s8.c2 / country
+                                                                  :name (s8.n2 / name
+                                                                               :op1 "Pakistan")))
+                                           :op2 (s8.p2 / person
+                                                       :ARG0-of (s8.l / labor-01)
+                                                       :mod (s8.t / this)
+                                                       :mod s8.c
+                                                       :same-as s6.p)
+                                           :op3 (s8.p3 / person
+                                                       :ARG0-of (s8.l2 / labor-01)
+                                                       :mod (s8.c4 / country
+                                                                   :name (s8.n4 / name
+                                                                                :op1 "Nepal")))
+                                           :op4 (s8.p4 / person
+                                                       :ARG0-of (s8.l3 / labor-01)
+                                                       :mod s8.c4))
+                               :ARG1 (s8.m4 / money)
+                               :ARG3 (s8.f / family
+                                           :ARG1-of (s8.h / have-rel-role-91
+                                                          :ARG0 s8.a
+                                                          :ARG2 (s8.m3 / member))
+                                           :location (s8.h2 / home
+                                                            :direction (s8.b / back))))
+               :ARG0 s8.a
+               :ARG2 (s8.e / everything)
+               :mod (s8.m / main)
+               :rel (s8.c3 / country
+                           :name (s8.n3 / name
+                                        :op1 "Sri"
+                                        :op2 "Lanka")))
+   :snt9 (s9.p / pay-01
+               :ARG0 (s9.t2 / they
+                            :same-as s6.p)
+               :ARG1 (s9.m3 / multiple
+                            :op1 (s9.m2 / monetary-quantity
+                                        :unit (s9.d / dollar)
+                                        :quant "1000"))
+               :ARG2 (s9.m / middleman)
+               :ARG3 (s9.b / be-located-at-91
+                           :ARG1 s9.m
+                           :ARG2 (s9.t / there)))
+   :snt10 (s10.a2 / and
+                  :op2 (s10.f / find-01
+                              :ARG0 (s10.t2 / they
+                                            :same-as s6.p)
+                              :ARG1 (s10.b / be-located-at-91
+                                           :ARG1 s10.t2
+                                           :ARG2 (s10.c / camp
+                                                        :ARG0-of (s10.h / have-03
+                                                                        :ARG1 (s10.a3 / and
+                                                                                      :op1 (s10.w / water)
+                                                                                      :op2 (s10.a / air-conditioning
+                                                                                                  :polarity "-")
+                                                                                      :op3 (s10.t / take-away-05
+                                                                                                  :ARG1 (s10.p / passport
+                                                                                                               :poss s10.t2)))
+                                                                        :polarity "-")
+                                                        :mod (s10.l / labor)))
+                              :time (s10.a4 / arrive-01
+                                            :ARG1 s10.t2)))
+   :snt11 (s11.h / have-concession-91
+                 :ARG1 (s11.h5 / hire-01
+                               :ARG0 (s11.s / sector
+                                            :ARG1-of (s11.p5 / private-03))
+                               :ARG0-of (s11.c / cause-01
+                                               :ARG1 (s11.a / accountable-02
+                                                            :ARG0 (s11.w / we)
+                                                            :mod (s11.o2 / or
+                                                                         :op1 (s11.e2 / equal-01
+                                                                                      :ARG1 s11.w)
+                                                                         :op2 (s11.h3 / have-degree-91
+                                                                                      :ARG1 s11.w
+                                                                                      :ARG3 (s11.m2 / more)))))
+                               :ARG1 (s11.p2 / person
+                                             :ARG1-of (s11.i / include-91
+                                                             :ARG2 (s11.p3 / person
+                                                                           :mod (s11.t / this)
+                                                                           :same-as s6.p)
+                                                             :ARG3 (s11.p / percentage-entity
+                                                                          :value "99"))))
+                 :ARG2 (s11.e / easy-05
+                              :ARG1 (s11.p4 / point-finger-06
+                                            :ARG1 (s11.a2 / and
+                                                          :op1 (s11.o / official
+                                                                      :ARG1-of (s11.l / local-02))
+                                                          :op2 (s11.a3 / authority
+                                                                       :ARG1-of (s11.h2 / have-degree-91
+                                                                                        :ARG2 (s11.h4 / high-02
+                                                                                                      :ARG1 s11.a3)
+                                                                                        :ARG3 (s11.m / more)))))))
+   :snt12 (s12.c / contrast-01
+                 :ARG1 (s12.e / emerge-02
+                              :ARG0 (s12.g / group
+                                           :example (s12.o / organization
+                                                           :name (s12.n / name
+                                                                        :op1 "Buildsafe"
+                                                                        :op2 "UAE"))))
+                 :ARG2 (s12.o2 / overwhelm-01
+                               :ARG0 (s12.n2 / number)
+                               :mod (s12.s / simple)))
+   :snt13 (s13.n2 / note-01
+                  :ARG0 (s13.p2 / person
+                                :ARG0-of (s13.h / have-org-role-91
+                                                :ARG1 (s13.c3 / country
+                                                              :name (s13.n / name
+                                                                           :op1 "UAE")
+                                                              :same-as s5.c2)
+                                                :ARG2 (s13.o / official
+                                                             :mod (s13.p3 / public))))
+                  :ARG1 (s13.v / violate-01
+                               :ARG0 (s13.c / camp
+                                            :ARG1-of (s13.i / include-91
+                                                            :ARG2 (s13.c2 / camp
+                                                                          :mod (s13.l / labor-01)
+                                                                          :mod s13.c3
+                                                                          :poss s13.c3
+                                                                          :quant "9")
+                                                            :ARG3 (s13.p / percentage-entity
+                                                                         :value "40")))
+                               :ARG1 (s13.r / regulate-01
+                                            :ARG1 (s13.a / and
+                                                         :op1 (s13.h2 / healthy)
+                                                         :op2 (s13.s / safe-01
+                                                                     :ARG1 (s13.f / fire)))
+                                            :mod (s13.m / minimum)))
+                  :time (s13.d / date-entity
+                               :month "8"
+                               :year "2008"))
+   :snt14 (s14.a2 / and
+                  :op2 (s14.p4 / protest-01
+                               :ARG0 (s14.p2 / person
+                                             :quant (s14.m / more-than
+                                                           :op1 "10000")
+                                             :ARG0-of (s14.w2 / work-01))
+                               :ARG1 (s14.a3 / and
+                                             :op1 (s14.p / pay-01
+                                                         :ARG3 (s14.w / wage)
+                                                         :polarity "-")
+                                             :op2 (s14.q / quality
+                                                         :mod (s14.p3 / poor)
+                                                         :poss (s14.f / food))
+                                             :op3 (s14.h / house-01
+                                                         :mod (s14.a / adequate)))
+                               :time (s14.d / date-entity
+                                            :mod (s14.y / year
+                                                        :mod (s14.l / last))
+                                            :season (s14.s / summer))))
+   :snt15 (s15.a / and
+                 :op2 (s15.c / collapse-01
+                             :ARG1 (s15.f / finance)
+                             :time (s15.t / then)))
+   :snt16 (s16.d / differ-02
+                 :ARG2 (s16.m / miss-01
+                              :ARG1 (s16.e4 / everything
+                                            :example (s16.a / and
+                                                            :beneficiary (s16.p3 / person
+                                                                                 :ARG0-of (s16.w / work-01)
+                                                                                 :mod (s16.t / this))
+                                                            :op1 s16.e4
+                                                            :op2 (s16.d2 / document-01)
+                                                            :op3 (s16.p / passport)
+                                                            :op4 (s16.t2 / ticket
+                                                                         :destination (s16.h / home)))))
+                 :rel (s16.e3 / everyone
+                              :mod (s16.e / else))
+                 :time (s16.b / bust-06
+                              :ARG0 (s16.p2 / person
+                                            :ARG0-of (s16.c2 / contract-02))
+                              :ARG1-of (s16.c / cause-01
+                                              :ARG0 (s16.e2 / engineer-01
+                                                            :ARG1 s16.p2
+                                                            :ARG1-of (s16.o / over-03)
+                                                            :ARG1-of (s16.r / resemble-01)))))
+   :snt17 (s17.a / abandon-01
+                 :ARG0 (s17.p / person
+                              :quant (s17.m / multiple
+                                            :op1 "1000")
+                              :ARG0-of (s17.w / work-01))
+                 :time (s17.n / now
+                              :mod (s17.r / right))
+                 :time (s17.c / current))
+   :snt18 (s18.w / way
+                 :destination (s18.h / home)
+                 :direction (s18.b / back)
+                 :polarity "-")
+   :snt19 (s19.a / and
+                 :op2 (s19.a2 / and
+                              :op1 (s19.w / way
+                                          :polarity "-")
+                              :op2 (s19.t / thing
+                                          :ARG0-of (s19.p / prove-01
+                                                          :ARG1 (s19.a3 / arrive-01))
+                                          :polarity "-")))
+   :snt20 (s20.r / refugee
+                 :ARG0-of (s20.b / boom-02)
+                 :ARG1-of (s20.b2 / bust-01)
+                 :domain (s20.t / this))
+   :snt21 (s21.q / question-01
+                 :ARG1 (s21.a / amr-choice
+                              :condition (s21.k / know-01
+                                                :ARG0 (s21.y / you)
+                                                :ARG1 (s21.g2 / go-on-15
+                                                              :ARG1 (s21.t / this)
+                                                              :time (s21.g / go-02
+                                                                           :ARG0 (s21.w / we)
+                                                                           :ARG4 (s21.s / sight-01)
+                                                                           :frequency (s21.w2 / week
+                                                                                              :ARG1-of (s21.s2 / single-02
+                                                                                                               :mod (s21.e2 / every))))))
+                              :op1 (s21.c / complacent
+                                          :domain s21.y)
+                              :op2 (s21.c2 / complicit
+                                           :domain s21.y
+                                           :topic (s21.v / violate-01
+                                                         :ARG1 (s21.r / right-05
+                                                                      :ARG1 (s21.h / human)))))
+                 :rel (s21.o / or
+                             :op1 (s21.p2 / professional
+                                          :mod (s21.b / build-01))
+                             :op2 (s21.a2 / architect)
+                             :op3 (s21.e / engineer-01)
+                             :op4 (s21.p / person
+                                         :ARG0-of (s21.d / develop-02))))
+   :snt22 (s22.c / cause-01
+                 :ARG1 (s22.l / let-01
+                              :ARG1 (s22.f2 / forget-01
+                                            :ARG0 (s22.w / we)
+                                            :ARG1 (s22.f / footprint
+                                                         :mod (s22.e / environment)
+                                                         :poss (s22.y / you)))))
+   :snt23 (s23.l / let-01
+                 :ARG1 (s23.t / think-01
+                              :ARG0 (s23.w / we)
+                              :ARG1 (s23.f / footprint
+                                           :mod (s23.e / ethics)
+                                           :poss (s23.y / you))))
+   :snt24 (s24.g2 / good-02
+                  :ARG1 (s24.b / build-01
+                               :ARG1 (s24.c2 / complex
+                                             :ARG0-of (s24.h / have-03
+                                                             :ARG1 (s24.c / carbon))
+                                             :ARG2-of (s24.e / efficient-01
+                                                             :ARG1 (s24.e2 / energy))))
+                  :condition (s24.e3 / ethical
+                                     :domain (s24.l / labor-01
+                                                    :ARG0-of (s24.p / produce-01
+                                                                    :ARG1 (s24.g / gem
+                                                                                 :mod (s24.b2 / building)
+                                                                                 :mod (s24.t / this)
+                                                                                 :same-as s24.c2)))
+                                     :mod (s24.a2 / at-best)
+                                     :polarity "-")
+                  :polarity (s24.a / amr-unknown))
+   :snt25 (s25.t2 / tell-01
+                  :ARG1 (s25.t / take-01
+                               :ARG0 (s25.i / i
+                                            :same-as s2.i)
+                               :ARG1 (s25.r2 / road
+                                             :ARG1-of (s25.h / high-02)))
+                  :ARG2 s25.i
+                  :time (s25.r / recent)
+                  :time (s25.n / now))
+   :snt26 (s26.c / contrast-01
+                 :ARG2 (s26.r / road
+                              :mod (s26.o / other)
+                              :mod (s26.f / frank
+                                          :degree (s26.q / quite))
+                              :topic (s26.i / issue-02
+                                            :mod (s26.t / this))
+                              :polarity "-"))
+   :snt27 (s27.c / cause-01
+                 :ARG1 (s27.f2 / forget-01
+                               :ARG0 (s27.w / we)
+                               :ARG1 (s27.p2 / person
+                                             :ARG0-of (s27.p / pay-01
+                                                             :ARG1 (s27.p3 / price-01
+                                                                           :ARG1 (s27.c2 / collapse-01
+                                                                                         :ARG1 (s27.f / finance)
+                                                                                         :mod (s27.t / this)
+                                                                                         :same-as s15.f))
+                                                             :ARG1-of (s27.r / real-04)))
+                               :mode "imperative"))
+   :snt28 (s28.a / and
+                 :op2 (s28.t / that
+                             :time (s28.w3 / worry-02
+                                           :ARG0 (s28.w / we)
+                                           :ARG1 (s28.j / job
+                                                        :ARG1-of (s28.m / mean-01
+                                                                        :ARG2 (s28.d / design
+                                                                                     :purpose (s28.k / keep-01
+                                                                                                     :ARG0 s28.w
+                                                                                                     :ARG1 (s28.p / person
+                                                                                                                  :ARG0-of (s28.w2 / work-01
+                                                                                                                                   :ARG2 s28.w)))
+                                                                                     :ARG1-of (s28.g / get-01
+                                                                                                     :ARG0 s28.w
+                                                                                                     :ARG1-of (s28.p2 / possible-01))
+                                                                                     :mod (s28.n2 / next)))
+                                                        :location (s28.o / office)
+                                                        :mod (s28.n / next)
+                                                        :poss s28.w))))
+   :snt29 (s29.f / forget-01
+                 :ARG0 (s29.w / we)
+                 :ARG1 (s29.m / man
+                              :ARG0-of (s29.d / die-01
+                                              :ARG1 (s29.w2 / work-01
+                                                            :ARG0 s29.m)
+                                              :degree (s29.t2 / truly))
+                              :mod (s29.t / this))
+                 :mode "imperative")
+   :snt30 (s30.t / thank-01
+                 :ARG1 (s30.y / you)))
+

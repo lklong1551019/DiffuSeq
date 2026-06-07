@@ -1,0 +1,489 @@
+# ::id doc-1014
+# ::doc_file doc-1014
+# ::tok http : / / www . ted . com / talks / dean_ornish_says_your_genes_are_not_your_fate< / url> <next_sent> One way to change our genes is to make new ones , as Craig Venter has so elegantly shown . <next_sent> Another is to change our lifestyles . <next_sent> And what we 're learning is how powerful and dynamic these changes can be , that you do n't have to wait very long to see the benefits . <next_sent> When you eat healthier , manage stress , exercise and love more , your brain actually gets more blood flow and more oxygen . <next_sent> But more than that , your brain gets measurably bigger . <next_sent> Things that were thought impossible just a few years ago can actually be measured now . <next_sent> This was figured out by Robin Williams a few years before the rest of us . <next_sent> Now , there 's some things that you can do to make your brain grow new brain cells . <next_sent> Some of my favorite things , like chocolate and tea , blueberries , alcohol in moderation , stress management and cannabinoids found in marijuana . <next_sent> I 'm just the messenger . <next_sent> What were we just talking about ? <next_sent> And other things that can make it worse , that can cause you to lose brain cells . <next_sent> The usual suspects , like saturated fat and sugar , nicotine , opiates , cocaine , too much alcohol and chronic stress . <next_sent> Your heart gets more blood flow . <next_sent> We 've shown that you can actually reverse heart disease . <next_sent> That these clogged arteries that you see on the upper left , after only a year become measurably less clogged . <next_sent> And the cardiac PET scan shown on the lower left , the blue means no blood flow . <next_sent> A year later -- orange and white is maximum blood flow . <next_sent> We 've shown you may be able to stop and reverse the progression of early prostate cancer and , by extension , breast cancer , simply by making these changes . <next_sent> We 've found that tumor growth in vitro was inhibited 70 percent in the group that made these changes , whereas only nine percent in the comparison group . <next_sent> These differences were highly significant . <next_sent> Even your sexual organs get more blood flow , so you increase sexual potency . <next_sent> One of the most effective anti - smoking ads was done by the Department of Health Services , showing that nicotine , which constricts your arteries , can cause a heart attack or a stroke , but it also causes impotence . <next_sent> Half of guys who smoke are impotent . <next_sent> How sexy is that ? <next_sent> Now we 're also about to publish a study -- the first study showing you can change gene expression in men with prostate cancer . <next_sent> This is what 's called a heat map -- and the different colors -- and along the side , on the right , are different genes . <next_sent> And we found that over 500 genes were favorably changed -- in effect , turning on the good genes , the disease - preventing genes , turning off the disease - promoting genes . <next_sent> And so these findings I think are really very powerful , giving many people new hope and new choices . <next_sent> And companies like Navigenics and DNA Direct and 23andMe , that are giving you your genetic profiles , are giving some people a sense of , " Gosh , well , what can I do about it ? " <next_sent> Well , our genes are not our fate , and if we make these changes -- they 're a predisposition -- but if we make bigger changes than we might have made otherwise , we can actually change how our genes are expressed . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :polarity "-")
+   :snt2 (s2.m2 / manner
+                :ARG1-of (s2.i / include-91
+                               :ARG2 (s2.m3 / manner
+                                            :manner-of (s2.c / change-01
+                                                             :ARG1 (s2.g / gene
+                                                                         :part-of (s2.w / we)))))
+                :ARG1-of (s2.s / show-01
+                               :ARG0 (s2.p / person
+                                           :name (s2.n / name
+                                                       :op1 "Craig"
+                                                       :op2 "Venter"))
+                               :manner (s2.i2 / interesting
+                                              :degree (s2.s2 / so)))
+                :domain (s2.m / make-01
+                              :ARG1 (s2.g2 / gene
+                                           :ARG1-of (s2.n2 / new-01))))
+   :snt3 (s3.c / change-01
+               :ARG1 (s3.l / lifestyle
+                           :poss (s3.w / we))
+               :mod (s3.a / another))
+   :snt4 (s4.a / and
+               :op2 (s4.l / learn-01
+                          :ARG0 (s4.w2 / we))
+               :rel (s4.a2 / and
+                           :ARG1-of (s4.p / possible-01)
+                           :ARG1-of (s4.m / mean-01
+                                          :ARG2 (s4.o / obligate-01
+                                                      :ARG0 (s4.y / you)
+                                                      :ARG1 (s4.w / wait-01
+                                                                  :ARG1 s4.y
+                                                                  :ARG1-of (s4.l2 / long-03
+                                                                                  :degree (s4.v / very))
+                                                                  :ARG2 (s4.s / see-01
+                                                                              :ARG0 s4.y
+                                                                              :ARG1 (s4.b / benefit-01
+                                                                                          :ARG0 (s4.c / change-01
+                                                                                                      :mod (s4.t / this)
+                                                                                                      :same-as s3.c))))
+                                                      :polarity "-"))
+                           :degree (s4.s2 / so)
+                           :op1 (s4.p2 / powerful-02
+                                       :ARG1 s4.c)
+                           :op2 (s4.d / dynamic
+                                      :domain s4.c)))
+   :snt5 (s5.g / get-01
+               :ARG0 (s5.b2 / brain
+                            :part-of (s5.y / you))
+               :ARG1 (s5.a3 / and
+                            :op1 (s5.f / flow-01
+                                       :ARG1 (s5.b / blood)
+                                       :ARG1-of (s5.h2 / have-quant-91
+                                                       :ARG3 (s5.m4 / more)))
+                            :op2 (s5.o / oxygen
+                                       :ARG1-of (s5.h3 / have-quant-91
+                                                       :ARG3 (s5.m5 / more))))
+               :ARG1-of (s5.a / actual-02)
+               :time (s5.a2 / and
+                            :op1 (s5.e / eat-01
+                                       :ARG1-of (s5.h / have-degree-91
+                                                      :ARG2 (s5.h4 / healthy)
+                                                      :ARG3 (s5.m2 / more)))
+                            :op2 (s5.m / manage-01
+                                       :ARG0 s5.y
+                                       :ARG1 (s5.s / stress-02))
+                            :op3 (s5.e2 / exercise-02
+                                        :ARG0 s5.y)
+                            :op4 (s5.l / love-01
+                                       :quant (s5.m3 / more)
+                                       :ARG0 s5.y)))
+   :snt6 (s6.c / contrast-01
+               :ARG2 (s6.g / get-03
+                           :ARG1 (s6.b2 / brain
+                                        :part-of (s6.y / you))
+                           :ARG2 (s6.h / have-degree-91
+                                       :ARG1 s6.b2
+                                       :ARG2 (s6.b / big)
+                                       :ARG3 (s6.m2 / more
+                                                    :mod (s6.m / miserable)))
+                           :mod (s6.m3 / more-than
+                                       :op1 (s6.t / that))))
+   :snt7 (s7.p2 / possible-01
+                :ARG1 (s7.m / measure-01
+                            :ARG1 (s7.t2 / thing
+                                         :ARG1-of (s7.p / possible-01
+                                                        :ARG1-of (s7.t3 / think-01
+                                                                        :time (s7.b / before
+                                                                                    :quant (s7.f / few
+                                                                                                 :mod (s7.j / just)
+                                                                                                 :op1 (s7.t / temporal-quantity
+                                                                                                            :unit (s7.y / year)
+                                                                                                            :quant "1"))
+                                                                                    :op1 (s7.n / now)))
+                                                        :polarity "-"))
+                            :time (s7.n2 / now))
+                :ARG1-of (s7.a / actual-02))
+   :snt8 (s8.f2 / figure-out-05
+                :ARG1 (s8.t2 / this
+                             :same-as s7.m)
+                :time (s8.b / before
+                            :quant (s8.f / few
+                                         :op1 (s8.t / temporal-quantity
+                                                    :unit (s8.y / year)
+                                                    :quant "1"))
+                            :op1 (s8.f3 / figure-out-05
+                                        :ARG0 (s8.p / person
+                                                    :name (s8.n / name
+                                                                :op1 "Robin"
+                                                                :op2 "Williams"))
+                                        :ARG0 (s8.w / we
+                                                    :mod (s8.r / rest)))))
+   :snt9 (s9.p / possible-01
+               :ARG1 (s9.d / do-02
+                           :ARG0 (s9.y / you
+                                       :part (s9.b / brain
+                                                   :part (s9.c / cell
+                                                               :ARG1-of (s9.n / new-01))))
+                           :ARG1 (s9.t / thing
+                                       :quant (s9.s / some))
+                           :ARG2 (s9.m / make-02
+                                       :ARG0 s9.y
+                                       :ARG1 (s9.g / grow-01
+                                                   :ARG0 s9.b
+                                                   :ARG1 s9.c)))
+               :time (s9.n2 / now))
+   :snt10 (s10.i2 / include-91
+                  :ARG2 (s10.t2 / thing
+                                :ARG1-of (s10.f / favor-01
+                                                :ARG0 (s10.i / i
+                                                             :same-as s2.p))
+                                :example (s10.a2 / and
+                                                 :op1 (s10.c2 / chocolate)
+                                                 :op2 (s10.t / tea)
+                                                 :op3 (s10.l / Blue)
+                                                 :op4 (s10.a / alcohol
+                                                             :ARG1-of (s10.m3 / moderate-01))
+                                                 :op5 (s10.m / manage-01
+                                                             :ARG1 (s10.s2 / stress-02))
+                                                 :op6 (s10.c / cannabis
+                                                             :ARG1-of (s10.f2 / find-01
+                                                                              :location (s10.m2 / marijuana)))))
+                  :ARG3 (s10.s / some))
+   :snt11 (s11.m / messenger
+                 :domain (s11.i / i
+                                :same-as s2.p)
+                 :mod (s11.j / just))
+   :snt12 (s12.t / talk-01
+                 :ARG0 (s12.w / we)
+                 :ARG1 (s12.a / amr-unknown)
+                 :mod (s12.j / just))
+   :snt13 (s13.a / and
+                 :op2 (s13.t / thing
+                             :ARG0-of (s13.w / worsen-01
+                                             :ARG1 (s13.i / it)
+                                             :ARG1-of (s13.p / possible-01
+                                                             :ARG0-of (s13.c / cause-01
+                                                                             :ARG1 (s13.l / lose-02
+                                                                                          :ARG0 (s13.y / you)
+                                                                                          :ARG1 (s13.c2 / cell
+                                                                                                        :mod (s13.b / brain))))))
+                             :mod (s13.o / other)))
+   :snt14 (s14.s4 / suspect-01
+                  :ARG1 (s14.a2 / and
+                                :op1 (s14.a3 / and
+                                             :ARG1-of (s14.s / saturate-01)
+                                             :op1 (s14.f / fat-03)
+                                             :op2 (s14.s3 / sugar))
+                                :op3 (s14.n / nicotine)
+                                :op4 (s14.o / opiate)
+                                :op5 (s14.c2 / cocaine)
+                                :op6 (s14.a / alcohol
+                                            :ARG1-of (s14.h / have-quant-91
+                                                            :ARG2 (s14.m / much)
+                                                            :ARG3 (s14.t / too)))
+                                :op7 (s14.s2 / stress-02
+                                             :mod (s14.c / chronic)))
+                  :mod (s14.u / usual))
+   :snt15 (s15.g / get-01
+                 :ARG0 (s15.h / heart
+                              :part-of (s15.y / you))
+                 :ARG1 (s15.f / flow-01
+                              :ARG1 (s15.b / blood)
+                              :mod (s15.m / more)))
+   :snt16 (s16.s / show-01
+                 :ARG0 (s16.w / we)
+                 :ARG1 (s16.p / possible-01
+                              :ARG1 (s16.r / reverse-01
+                                           :ARG0 (s16.y / you)
+                                           :ARG1 (s16.d / disease
+                                                        :mod (s16.h / heart))
+                                           :ARG1-of (s16.a / actual-02))))
+   :snt17 (s17.b / become-01
+                 :ARG1 (s17.v / vessel
+                              :name (s17.n / name
+                                           :op1 "arteries")
+                              :ARG1-of (s17.c / clog-02)
+                              :ARG1-of (s17.s / see-01
+                                              :ARG0 (s17.y2 / you)
+                                              :location (s17.l / left-20
+                                                               :mod (s17.u / upper)))
+                              :mod (s17.t2 / this))
+                 :ARG2 (s17.c2 / clog-02
+                               :ARG1 s17.v
+                               :ARG2-of (s17.h / have-degree-91
+                                               :ARG1 s17.v
+                                               :ARG3 (s17.l2 / less
+                                                             :mod (s17.v2 / virtual))))
+                 :time (s17.a / after
+                              :quant (s17.t / temporal-quantity
+                                            :mod (s17.o / only)
+                                            :unit (s17.y / year)
+                                            :quant "1")))
+   :snt18 (s18.a2 / and
+                  :op2 (s18.m / mean-01
+                              :ARG1 (s18.b2 / blue)
+                              :ARG2 (s18.f / flow-01
+                                           :ARG1 (s18.b / blood)
+                                           :polarity "-"))
+                  :rel (s18.a3 / and
+                               :op1 (s18.s / scan-01
+                                           :ARG1-of (s18.s2 / show-01
+                                                            :location (s18.l / left-20
+                                                                             :ARG1-of (s18.h / have-degree-91
+                                                                                             :ARG2 (s18.l2 / low-04)
+                                                                                             :ARG3 (s18.m2 / more))))
+                                           :mod s18.a3
+                                           :mod (s18.c / card)))
+                  :rel (s18.a / PET))
+   :snt19 (s19.f / flow-01
+                 :ARG1 (s19.b / blood)
+                 :domain (s19.a2 / and
+                                 :op1 (s19.o / orange)
+                                 :op2 (s19.w / white-03))
+                 :mod (s19.m / maximum)
+                 :time (s19.a / after
+                              :quant (s19.t / temporal-quantity
+                                            :unit (s19.y / year)
+                                            :quant "1")))
+   :snt20 (s20.s / show-01
+                 :ARG0 (s20.w / we
+                              :same-as s16.w)
+                 :ARG1 (s20.p / possible-01
+                              :ARG1 (s20.c / capable-01
+                                           :ARG1 (s20.y / you)
+                                           :ARG2 (s20.a / and
+                                                        :manner (s20.c2 / change-01
+                                                                        :ARG0 s20.y
+                                                                        :ARG1-of (s20.s2 / simple-02)
+                                                                        :mod (s20.t / this))
+                                                        :op1 (s20.s3 / stop-01
+                                                                     :ARG0 s20.y
+                                                                     :ARG1 (s20.p2 / progress-01
+                                                                                   :ARG1 (s20.a2 / and
+                                                                                                 :op1 (s20.d / disease
+                                                                                                             :name (s20.n / name
+                                                                                                                          :op1 "prostate"
+                                                                                                                          :op2 "cancer")
+                                                                                                             :mod (s20.e / early))
+                                                                                                 :op2 (s20.d2 / disease
+                                                                                                              :name (s20.n2 / name
+                                                                                                                            :op1 "breast"
+                                                                                                                            :op2 "cancer")
+                                                                                                              :mod (s20.e2 / extension)))))
+                                                        :op2 (s20.r / reverse-01
+                                                                    :ARG0 s20.y
+                                                                    :ARG1 s20.p2)))))
+   :snt21 (s21.f / find-01
+                 :ARG0 (s21.w / we
+                              :same-as s16.w)
+                 :ARG1 (s21.c3 / contrast-01
+                               :ARG1 (s21.i / inhibit-01
+                                            :ARG0 (s21.g / group
+                                                         :ARG0-of (s21.m / make-01
+                                                                         :ARG1 (s21.c / change-01
+                                                                                      :mod (s21.t / this)
+                                                                                      :same-as s20.t)))
+                                            :ARG1 (s21.g3 / grow-01
+                                                          :ARG1 (s21.t2 / tumor)
+                                                          :manner (s21.v / vitro))
+                                            :ARG2 (s21.p / percentage-entity
+                                                         :value "70"))
+                               :ARG2 (s21.i2 / inhibit-01
+                                             :ARG0 (s21.g2 / group
+                                                           :mod (s21.c2 / compare-01))
+                                             :ARG1 (s21.p2 / percentage-entity
+                                                           :mod (s21.o / only)
+                                                           :value "9"))))
+   :snt22 (s22.s / significant-02
+                 :ARG1 (s22.t / thing
+                              :ARG1-of (s22.d / differ-02)
+                              :mod (s22.t2 / this))
+                 :degree (s22.h / high-02))
+   :snt23 (s23.g / get-01
+                 :ARG0 (s23.o / organ
+                              :mod (s23.s / sex)
+                              :mod (s23.e / even)
+                              :part-of (s23.y / you))
+                 :ARG0-of (s23.c / cause-01
+                                 :ARG1 (s23.i / increase-01
+                                              :ARG0 s23.y
+                                              :ARG1 (s23.p / potency
+                                                           :mod s23.s)))
+                 :ARG1 (s23.f / flow-01
+                              :quant (s23.m / more)
+                              :ARG1 (s23.b / blood)))
+   :snt24 (s24.c3 / contrast-01
+                  :ARG1 (s24.p / possible-01
+                               :ARG1 (s24.c / cause-01
+                                            :ARG0 (s24.n2 / nicotine
+                                                          :ARG0-of (s24.o2 / obstruct-01
+                                                                           :ARG1 (s24.o / Coronary
+                                                                                        :part-of (s24.y / you))))
+                                            :ARG1 (s24.o4 / or
+                                                          :op1 (s24.h2 / heart-attack)
+                                                          :op2 (s24.s3 / stroke-02))))
+                  :ARG2 (s24.c2 / cause-01
+                                :ARG0 s24.n2
+                                :ARG1 (s24.i / impotence)
+                                :mod (s24.a3 / also))
+                  :rel (s24.a / advertise-01
+                              :ARG0-of (s24.s / show-01)
+                              :ARG1-of (s24.i2 / include-91
+                                               :ARG2 (s24.a2 / advertise-01
+                                                             :ARG0-of (s24.o3 / oppose-01
+                                                                              :ARG1 (s24.s2 / smoke-02))
+                                                             :ARG1-of (s24.h / have-degree-91
+                                                                             :ARG2 (s24.e / effective-04
+                                                                                          :ARG0 s24.a2)
+                                                                             :ARG3 (s24.m / most))))
+                              :ARG1-of (s24.d / do-02
+                                              :ARG0 (s24.g / government-organization
+                                                           :name (s24.n / name
+                                                                        :op1 "Department"
+                                                                        :op2 "of"
+                                                                        :op3 "Health"
+                                                                        :op4 "Services")))))
+   :snt25 (s25.i / impotent
+                 :domain (s25.g / guy
+                                :quant (s25.h / half)
+                                :ARG0-of (s25.s / smoke-02))
+                 :polarity "-")
+   :snt26 (s26.s / sex-01
+                 :ARG0 (s26.t / that)
+                 :degree (s26.a / amr-unknown))
+   :snt27 (s27.p2 / publish-01
+                  :ARG0 (s27.w / we
+                               :same-as s16.w)
+                  :ARG1 (s27.s2 / study-01
+                                :ARG0-of (s27.s / show-01
+                                                :ARG1 (s27.p / possible-01
+                                                             :ARG1 (s27.c / change-01
+                                                                          :ARG0 (s27.y / you)
+                                                                          :ARG1 (s27.e / express-03
+                                                                                       :ARG1 (s27.g / gene)
+                                                                                       :ARG2 (s27.m / man
+                                                                                                    :ARG0-of (s27.h / have-03
+                                                                                                                    :ARG1 (s27.d / disease
+                                                                                                                                 :name (s27.n / name
+                                                                                                                                              :op1 "prostate"
+                                                                                                                                              :op2 "cancer")
+                                                                                                                                 :same-as s20.n)))))))
+                                :ord (s27.o / ordinal-entity
+                                            :value "1"))
+                  :mod (s27.a2 / also)
+                  :time (s27.a / about-to)
+                  :time (s27.n2 / now))
+   :snt28 (s28.g / gene
+                 :ARG1-of (s28.d2 / differ-02)
+                 :domain (s28.a2 / and
+                                 :op1 (s28.c / call-01
+                                             :ARG1 (s28.t / this)
+                                             :ARG2 (s28.m / map
+                                                          :mod (s28.h / heat)))
+                                 :op2 (s28.c2 / color
+                                              :ARG1-of (s28.d / differ-02)))
+                 :location (s28.r / right-04)
+                 :rel (s28.a / along
+                             :op1 (s28.s / side)))
+   :snt29 (s29.a / and
+                 :op2 (s29.f2 / find-01
+                              :ARG0 (s29.w / we
+                                           :same-as s16.w)
+                              :ARG1 (s29.c / change-01
+                                           :ARG1 (s29.g / gene
+                                                        :quant (s29.o / over
+                                                                      :op1 "500"))
+                                           :ARG1-of (s29.f / favor-01)
+                                           :ARG1-of (s29.e / effect-03
+                                                           :ARG2 (s29.a2 / and
+                                                                         :op1 (s29.g2 / gene
+                                                                                      :ARG1-of (s29.g5 / good-02))
+                                                                         :op2 (s29.g3 / gene
+                                                                                      :ARG0-of (s29.p / prevent-01
+                                                                                                      :ARG1 (s29.d / disease)))
+                                                                         :op3 (s29.t / turn-off-07
+                                                                                     :ARG1 (s29.g4 / gene
+                                                                                                   :ARG0-of (s29.p2 / promote-02
+                                                                                                                    :ARG1 (s29.d2 / disease))))))))
+                 :rel (s29.t2 / turn-on-13))
+   :snt30 (s30.a / and
+                 :op2 (s30.t2 / think-01
+                              :ARG0 (s30.i / i
+                                           :same-as s2.p)
+                              :ARG1 (s30.p2 / powerful-02
+                                            :ARG0-of (s30.g / give-01
+                                                            :ARG1 (s30.a2 / and
+                                                                          :op1 (s30.h / hope-01
+                                                                                      :ARG0 (s30.p / person
+                                                                                                   :quant (s30.m / many))
+                                                                                      :ARG1-of (s30.n / new-01
+                                                                                                      :ARG1 (s30.c / choose-01
+                                                                                                                   :ARG0 s30.p
+                                                                                                                   :op2-of s30.a2))))
+                                                            :ARG2 s30.p)
+                                            :ARG1 (s30.t / thing
+                                                         :ARG1-of (s30.f / find-01)
+                                                         :mod (s30.t3 / this))
+                                            :ARG1-of (s30.r / real-04)
+                                            :degree (s30.v / very))))
+   :snt31 (s31.a2 / and
+                  :op2 (s31.g3 / give-01
+                               :ARG0 (s31.c / company
+                                            :ARG0-of (s31.g2 / give-01
+                                                             :ARG1 (s31.p3 / profile-01
+                                                                           :ARG1 (s31.y / you)
+                                                                           :mod (s31.g / gene))
+                                                             :ARG2 s31.y)
+                                            :example (s31.a3 / and
+                                                             :op1 (s31.c2 / company
+                                                                          :name (s31.n / name
+                                                                                       :op1 "Navigenics"))
+                                                             :op2 (s31.c3 / company
+                                                                          :name (s31.n2 / name
+                                                                                        :op1 "DNA"
+                                                                                        :op2 "Direct"))
+                                                             :op3 (s31.c4 / company
+                                                                          :name (s31.n3 / name
+                                                                                        :op1 "23andMe"))))
+                               :ARG1 (s31.s / sense-01
+                                            :ARG0 (s31.p / person
+                                                         :mod (s31.s2 / some))
+                                            :ARG1 (s31.p2 / possible-01
+                                                          :ARG1 (s31.d / do-02
+                                                                       :ARG0 s31.p
+                                                                       :ARG1 (s31.a / amr-unknown)
+                                                                       :ARG2 (s31.i / it))
+                                                          :mod (s31.g4 / gosh
+                                                                       :mode "expressive")))
+                               :ARG2 s31.p))
+   :snt32 (s32.c5 / contrast-01
+                  :ARG1 (s32.a2 / and
+                                :op1 (s32.f / fate
+                                            :domain (s32.g / gene
+                                                           :poss (s32.w / we))
+                                            :poss s32.w
+                                            :polarity "-")
+                                :op2 (s32.p3 / predispose-01
+                                             :ARG0 s32.g
+                                             :condition (s32.c2 / change-01
+                                                                :ARG0 s32.w
+                                                                :mod (s32.t / this)
+                                                                :same-as s20.t)))
+                  :ARG2 (s32.p2 / possible-01
+                                :ARG1 (s32.c4 / change-01
+                                              :ARG0 s32.w
+                                              :ARG1 (s32.e / express-03
+                                                           :ARG1 s32.g))
+                                :ARG1-of (s32.a / actual-02)
+                                :condition (s32.c3 / change-01
+                                                   :ARG1-of (s32.h / have-degree-91
+                                                                   :ARG2 (s32.b / big)
+                                                                   :ARG3 (s32.m2 / more))
+                                                   :ARG4 (s32.p / possible-01
+                                                                :ARG1 (s32.m / make-02
+                                                                             :ARG0 s32.w
+                                                                             :ARG1 s32.c3
+                                                                             :condition (s32.h2 / have-polarity-91
+                                                                                                :ARG2 "-")))))
+                  :mod (s32.w2 / well)
+                  :rel (s32.c / change-01
+                              :ARG0 s32.w))
+   :snt33 (s33.t / thank-01
+                 :ARG1 (s33.y / you)))
+

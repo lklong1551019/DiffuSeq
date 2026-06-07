@@ -1,0 +1,333 @@
+# ::id doc-168
+# ::doc_file doc-168
+# ::tok http : / / www . ted . com / talks / lalitesh_katragadda_making_maps_to_fight_disaster_build_economies< / url> <next_sent> In 2008 , Cyclone Nargis devastated Myanmar . <next_sent> Millions of people were in severe need of help . <next_sent> The U.N. wanted to rush people and supplies to the area . <next_sent> But there were no maps , no maps of roads , no maps showing hospitals , no way for help to reach the cyclone victims . <next_sent> When we look at a map of Los Angeles or London , it is hard to believe that as of 2005 , only 15 percent of the world was mapped to a geo - codable level of detail . <next_sent> The U.N. ran headfirst into a problem that the majority of the world 's populous faces : not having detailed maps . <next_sent> But help was coming . <next_sent> At Google , 40 volunteers used a new software to map 120,000 kilometers of roads , 3,000 hospitals , logistics and relief points . <next_sent> And it took them four days . <next_sent> The new software they used ? Google Mapmaker . <next_sent> Google Mapmaker is a technology that empowers each of us to map what we know locally . <next_sent> People have used this software to map everything from roads to rivers , from schools to local businesses , and video stores to the corner store . <next_sent> Maps matter . <next_sent> Nobel Prize nominee Hernando De Soto recognized that the key to economic liftoff for most developing countries is to tap the vast amounts of uncapitalized land . <next_sent> For example , a trillion dollars of real estate remains uncapitalized in India alone . <next_sent> In the last year alone , thousands of users in 170 countries have mapped millions of pieces of information , and created a map of a level of detail never thought viable . <next_sent> And this was made possible by the power of passionate users everywhere . <next_sent> Let 's look at some of the maps being created by users right now . <next_sent> So , as we speak , people are mapping the world in these 170 countries . <next_sent> You can see Bridget in Africa who just mapped a road in Senegal . <next_sent> And , closer to home , Chalua , an N.G. road in Bangalore . <next_sent> This is the result of computational geometry , gesture recognition , and machine learning . <next_sent> This is a victory of thousands of users , in hundreds of cities , one user , one edit at a time . <next_sent> This is an invitation to the 70 percent of our unmapped planet . <next_sent> Welcome to the new world .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01))
+   :snt2 (s2.d2 / devastate-01
+                :ARG0 (s2.c2 / cyclone
+                             :name (s2.n / name
+                                         :op1 "Cyclone"
+                                         :op2 "Nargis"))
+                :ARG1 (s2.c / country
+                            :name (s2.n2 / name
+                                         :op1 "Myanmar"))
+                :time (s2.d / date-entity
+                            :year "2008"))
+   :snt3 (s3.n / need-01
+               :ARG0 (s3.p / person
+                           :quant (s3.m / multiple
+                                        :op1 "1000000"))
+               :ARG1 (s3.h / help-01
+                           :ARG1 s3.p)
+               :degree (s3.s / severe))
+   :snt4 (s4.w / want-01
+               :ARG0 (s4.o / organization
+                           :name (s4.n / name
+                                       :op1 "U.N."))
+               :ARG1 (s4.r / rush-01
+                           :ARG0 s4.o
+                           :ARG1 (s4.a / and
+                                       :op1 (s4.p / person)
+                                       :op2 (s4.t / thing
+                                                  :ARG1-of (s4.s / supply-01)))
+                           :ARG2 (s4.a2 / area
+                                        :same-as s2.c)))
+   :snt5 (s5.c / contrast-01
+               :ARG2 (s5.a / and
+                           :op1 (s5.m / map
+                                      :polarity "-")
+                           :op2 (s5.m3 / map-01
+                                       :ARG1 (s5.r2 / road))
+                           :op3 (s5.m2 / map
+                                       :ARG0-of (s5.s / show-01
+                                                      :ARG1 (s5.h2 / hospital)))
+                           :op4 (s5.w / way
+                                      :manner-of (s5.h / help-01
+                                                       :ARG1 (s5.r / reach-01
+                                                                   :ARG1 (s5.v / victim
+                                                                               :mod (s5.c2 / cyclone))))
+                                      :polarity "-")))
+   :snt6 (s6.h / hard-02
+               :ARG1 (s6.b / believe-01
+                           :ARG1 (s6.m2 / map-01
+                                        :ARG1 (s6.w2 / world
+                                                     :quant (s6.p / percentage-entity
+                                                                  :mod (s6.o / only)
+                                                                  :value "15"))
+                                        :prep-to (s6.l / level
+                                                       :ARG1-of (s6.d3 / document-01
+                                                                       :ARG1-of (s6.p2 / possible-01))
+                                                       :mod (s6.g / geography)
+                                                       :mod (s6.d2 / detail))
+                                        :time (s6.a / as-of
+                                                    :op1 (s6.d / date-entity
+                                                               :year "2005"))))
+               :time (s6.l2 / look-01
+                            :ARG0 (s6.w / we)
+                            :ARG1 (s6.m / map
+                                        :topic (s6.o2 / or
+                                                      :op1 (s6.c / city
+                                                                 :name (s6.n / name
+                                                                             :op1 "Los"
+                                                                             :op2 "Angeles"))
+                                                      :op2 (s6.c2 / city
+                                                                  :name (s6.n2 / name
+                                                                               :op1 "London"))))))
+   :snt7 (s7.r / run-07
+               :ARG0 (s7.o / organization
+                           :name (s7.n / name
+                                       :op1 "U.N.")
+                           :same-as s4.o)
+               :ARG1 (s7.p3 / problem
+                            :ARG1-of (s7.f / face-01
+                                           :ARG0 (s7.p / populous
+                                                       :ARG1-of (s7.i / include-91
+                                                                      :ARG2 (s7.p2 / populous
+                                                                                   :poss (s7.w / world
+                                                                                               :same-as s6.w2))
+                                                                      :ARG3 (s7.m / majority))))
+                            :domain (s7.h / have-03
+                                          :ARG0 s7.o
+                                          :ARG1 (s7.m2 / map
+                                                       :ARG1-of (s7.d / detail-01))
+                                          :polarity "-"))
+               :mod (s7.h2 / headfirst))
+   :snt8 (s8.h / have-concession-91
+               :ARG1 (s8.c / come-01
+                           :ARG1 (s8.h2 / help-01)))
+   :snt9 (s9.u / use-01
+               :ARG0 (s9.p / person
+                           :ARG0-of (s9.v / volunteer-01)
+                           :quant "40")
+               :ARG1 (s9.s / software
+                           :ARG1-of (s9.n2 / new-01))
+               :ARG2 (s9.m / map-01
+                           :ARG0 s9.p
+                           :ARG1 (s9.a / and
+                                       :op1 (s9.r2 / road
+                                                   :mod (s9.d / distance-quantity
+                                                              :unit (s9.k / kilometer)
+                                                              :quant "120000"))
+                                       :op2 (s9.h / hospital
+                                                  :quant "3000")
+                                       :op3 (s9.l / logistics)
+                                       :op4 (s9.p2 / point
+                                                   :purpose (s9.r / relieve-01))))
+               :location (s9.c / company
+                               :name (s9.n / name
+                                           :op1 "Google")))
+   :snt10 (s10.a / and
+                 :op2 (s10.t / take-10
+                             :ARG0 (s10.i / it
+                                          :same-as s9.m)
+                             :ARG1 (s10.t2 / temporal-quantity
+                                           :unit (s10.d / day)
+                                           :quant "4")
+                             :ARG2 (s10.t3 / they
+                                           :same-as s9.p)))
+   :snt11 (s11.s / software
+                 :name (s11.n / name
+                              :op1 "Google"
+                              :op2 "Mapmaker")
+                 :ARG1-of (s11.n2 / new-01)
+                 :ARG1-of (s11.u / use-01
+                                 :ARG0 (s11.t / they
+                                              :same-as s9.p)
+                                 :same-as s9.s))
+   :snt12 (s12.t / technology
+                 :ARG0-of (s12.m / make-01
+                                 :ARG1 (s12.p / product
+                                              :mod (s12.c / company
+                                                          :name (s12.n / name
+                                                                       :op1 "Google"
+                                                                       :op2 "Mapmaker")))
+                                 :same-as s9.s)
+                 :ARG0-of (s12.e2 / empower-01
+                                  :ARG1 (s12.w / we
+                                               :mod (s12.e / each))
+                                  :ARG2 (s12.m2 / map-01
+                                                :ARG0 s12.w
+                                                :ARG1 (s12.t2 / thing
+                                                              :ARG1-of (s12.k / know-01
+                                                                              :ARG0 s12.w
+                                                                              :ARG1-of (s12.l / local-02))))))
+   :snt13 (s13.u / use-01
+                 :ARG0 (s13.p / person)
+                 :ARG1 (s13.s2 / software
+                               :mod (s13.t / this)
+                               :same-as s9.s)
+                 :ARG2 (s13.m / map-01
+                              :ARG0 s13.p
+                              :ARG1 (s13.e / everything
+                                           :source (s13.a / and
+                                                          :op1 (s13.r2 / road)
+                                                          :op2 (s13.r / river)
+                                                          :op3 (s13.s / school
+                                                                      :destination (s13.b / business
+                                                                                          :ARG1-of (s13.l / local-02)))
+                                                          :op4 (s13.s3 / store
+                                                                       :location (s13.s4 / store
+                                                                                         :mod (s13.c / corner))
+                                                                       :mod (s13.v / video))))))
+   :snt14 (s14.m2 / matter-01
+                  :ARG1 (s14.m / map-01))
+   :snt15 (s15.r / recognize-02
+                 :ARG0 (s15.p / person
+                              :name (s15.n2 / name
+                                            :op1 "Hernando"
+                                            :op2 "De"
+                                            :op3 "Soto")
+                              :ARG2-of (s15.n3 / nominate-01
+                                               :ARG1 (s15.a3 / award
+                                                             :name (s15.n / name
+                                                                          :op1 "Nobel"
+                                                                          :op2 "Prize"))))
+                 :ARG1 (s15.k / key-02
+                              :ARG1 (s15.t / tap-02
+                                           :ARG1 (s15.a2 / amount
+                                                         :mod (s15.v / vast)
+                                                         :quant-of (s15.l / land
+                                                                          :ARG1-of (s15.a / afford-01
+                                                                                          :polarity "-"))))
+                              :ARG2 (s15.l2 / liftoff
+                                            :beneficiary (s15.c / country
+                                                                :quant (s15.m / most)
+                                                                :ARG1-of (s15.d / develop-02))
+                                            :mod (s15.e / economy))))
+   :snt16 (s16.r2 / remain-01
+                  :ARG0-of (s16.e / exemplify-01)
+                  :ARG1 (s16.r / real-estate
+                               :quant (s16.m / monetary-quantity
+                                             :unit (s16.d / dollar)
+                                             :quant "1000000000000"))
+                  :ARG3 (s16.f / finance-01
+                               :ARG1 s16.r
+                               :polarity "-")
+                  :location (s16.c / country
+                                   :name (s16.n / name
+                                                :op1 "India")
+                                   :mod (s16.a / alone)))
+   :snt17 (s17.a2 / and
+                  :op1 (s17.m / map-01
+                              :ARG0 (s17.p / person
+                                           :quant (s17.m3 / multiple
+                                                          :op1 "1000")
+                                           :ARG0-of (s17.u / use-01)
+                                           :location (s17.c / country
+                                                            :quant "170"))
+                              :ARG1 (s17.p2 / piece
+                                            :quant (s17.m4 / multiple
+                                                           :op1 "1000000")
+                                            :quant-of (s17.i / information)))
+                  :op2 (s17.c2 / create-01
+                               :ARG0 s17.p
+                               :ARG1 (s17.m2 / map-01
+                                             :ARG1 (s17.l2 / level
+                                                           :mod (s17.d / detail)
+                                                           :mod (s17.v / viable
+                                                                       :ARG1-of (s17.t / think-01
+                                                                                       :time (s17.e / ever)
+                                                                                       :polarity "-")))))
+                  :time (s17.y / year
+                               :mod (s17.l / last)
+                               :mod (s17.a / alone)))
+   :snt18 (s18.a / and
+                 :op2 (s18.m / make-02
+                             :ARG0 (s18.p4 / power-01
+                                           :ARG0 (s18.p2 / person
+                                                         :ARG0-of (s18.u / use-01)
+                                                         :location (s18.e / everywhere)
+                                                         :mod (s18.p / passionate)))
+                             :ARG1 (s18.p3 / possible-01
+                                           :ARG1 (s18.t / this
+                                                        :same-as s17.c2))))
+   :snt19 (s19.l / look-01
+                 :ARG0 (s19.w / we)
+                 :ARG1 (s19.m / map
+                              :quant (s19.s / some)
+                              :ARG1-of (s19.i / include-91
+                                              :ARG2 (s19.m2 / map
+                                                            :ARG1-of (s19.c / create-01
+                                                                            :ARG0 (s19.p / person
+                                                                                         :ARG0-of (s19.u / use-01))
+                                                                            :time (s19.n / now
+                                                                                         :mod (s19.r / right)))))))
+   :snt20 (s20.c / cause-01
+                 :ARG1 (s20.m / map-01
+                              :ARG0 (s20.p / person)
+                              :ARG1 (s20.w2 / world
+                                            :location (s20.c2 / country
+                                                              :mod (s20.t / this)
+                                                              :quant "170"
+                                                              :same-as s17.c)
+                                            :same-as s6.w2))
+                 :time (s20.s / speak-01
+                              :ARG0 (s20.w / we)))
+   :snt21 (s21.p2 / possible-01
+                  :ARG1 (s21.s / see-01
+                               :ARG0 (s21.y / you)
+                               :ARG1 (s21.p / person
+                                            :name (s21.n / name
+                                                         :op1 "Bridget")
+                                            :ARG0-of (s21.m / map-01
+                                                            :ARG1 (s21.r / road
+                                                                         :location (s21.c2 / country
+                                                                                           :name (s21.n3 / name
+                                                                                                         :op1 "Senegal")))
+                                                            :time (s21.j / just))
+                                            :location (s21.c / continent
+                                                             :name (s21.n2 / name
+                                                                           :op1 "Africa")))))
+   :snt22 (s22.a / and
+                 :rel (s22.c2 / close-10
+                              :ARG1 (s22.r / road
+                                           :name (s22.n / name
+                                                        :op1 "Chalua")
+                                           :ARG1-of (s22.h / have-degree-91
+                                                           :ARG2 s22.c2
+                                                           :ARG3 (s22.m / more))
+                                           :ARG2 (s22.r3 / road
+                                                         :location (s22.c / city
+                                                                          :name (s22.n2 / name
+                                                                                        :op1 "Bangalore"))
+                                                         :mod (s22.r2 / road)))
+                              :ARG2 (s22.h2 / home)))
+   :snt23 (s23.r2 / result-01
+                  :ARG1 (s23.a / and
+                               :op1 (s23.g / geometry
+                                           :mod (s23.c / computer))
+                               :op2 (s23.r / recognize-02
+                                           :ARG1 (s23.g2 / gesture-01))
+                               :op3 (s23.l / learn-01
+                                           :mod (s23.m / machine)))
+                  :ARG2 (s23.t / this))
+   :snt24 (s24.w / win-01
+                 :ARG0 (s24.p / person
+                              :quant (s24.m / multiple
+                                            :op1 "1000")
+                              :ARG0-of (s24.u / use-01
+                                              :ARG0 (s24.p2 / person
+                                                            :quant "1"))
+                              :location (s24.c / city
+                                               :quant (s24.m2 / multiple
+                                                              :op1 "100")))
+                 :ARG1 (s24.t / this
+                              :same-as s23.t)
+                 :mod (s24.e / edit-01
+                             :ARG0 s24.p2
+                             :mod (s24.a / at-a-time)))
+   :snt25 (s25.i2 / invite-01
+                  :ARG1 (s25.p2 / planet
+                                :ARG1-of (s25.i / include-91
+                                                :ARG2 (s25.p3 / planet
+                                                              :ARG1-of (s25.m / map-01
+                                                                              :polarity "-")
+                                                              :poss (s25.w / we))
+                                                :ARG3 (s25.p / percentage-entity
+                                                             :value "70")))
+                  :ARG2 (s25.t / this))
+   :snt26 (s26.w / welcome-01
+                 :ARG2 (s26.w2 / world
+                               :ARG1-of (s26.n / new-01))))
+

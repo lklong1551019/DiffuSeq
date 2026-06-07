@@ -1,0 +1,226 @@
+# ::id doc-770
+# ::doc_file doc-770
+# ::tok http : / / www . ted . com / talks / stewart_brand_on_squatter_cities< / url> <next_sent> Basically , there 's a major demographic event going on . <next_sent> And it may be that passing the 50 percent urban point is an economic tipping point . <next_sent> So the world now is a map of connectivity . <next_sent> It used to be that Paris and London and New York were the largest cities . <next_sent> The aggregate numbers are overwhelming . <next_sent> So what 's really going on ? <next_sent> Well , villages of the world are emptying out . <next_sent> The question is , why ? <next_sent> And here 's the unromantic truth -- <next_sent> and the city air makes you free , they said in Renaissance Germany . <next_sent> So some people go to places like Shanghai but most go to the squatter cities where aesthetics rule . <next_sent> And these are not really a people oppressed by poverty . <next_sent> They 're people getting out of poverty as fast as they can . <next_sent> They 're the dominant builders and to a large extent , the dominant designers . <next_sent> They have home - brewed infrastructure and vibrant urban life . <next_sent> One - sixth of the GDP in India is coming out of Mumbai . <next_sent> They are constantly upgrading , and in a few cases , the government helps . <next_sent> Education is the main event that can happen in cities . <next_sent> What 's going on in the street in Mumbai ? <next_sent> Al Gore knows . <next_sent> It 's basically everything . <next_sent> There 's no unemployment in squatter cities . <next_sent> Everyone works . <next_sent> One - sixth of humanity is there . <next_sent> It 's soon going to be more than that . <next_sent> So here 's the first punch line : cities have defused the population bomb . <next_sent> And here 's the second punch line . <next_sent> Stars have shined down on earth 's life for billions of years . <next_sent> Now we 're shining right back up . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :value (s1.c / city
+                            :ARG0-of (s1.t / talk-01)))
+   :snt2 (s2.g / go-on-15
+               :ARG1 (s2.e / event
+                           :ARG1-of (s2.m / major-02)
+                           :mod (s2.d / demography))
+               :mod (s2.b / basic))
+   :snt3 (s3.a / and
+               :op2 (s3.p5 / possible-01)
+               :rel (s3.p / pass-02
+                          :ARG1 (s3.p2 / percentage-entity
+                                       :value "50")
+                          :ARG1 (s3.p4 / point
+                                       :ARG2-of (s3.t / tip-01
+                                                      :ARG1 (s3.e / economy))
+                                       :domain (s3.p3 / point
+                                                      :mod (s3.c / city)))))
+   :snt4 (s4.i / infer-01
+               :ARG1 (s4.m / map
+                           :domain (s4.w / world
+                                         :time (s4.n / now))
+                           :mod (s4.c / connect-01)))
+   :snt5 (s5.h / have-degree-91
+               :ARG1 (s5.a / and
+                           :op1 (s5.c / city
+                                      :name (s5.n / name
+                                                  :op1 "Paris"))
+                           :op2 (s5.c2 / city
+                                       :name (s5.n2 / name
+                                                    :op1 "London"))
+                           :op3 (s5.c3 / city
+                                       :name (s5.n3 / name
+                                                    :op1 "New"
+                                                    :op2 "York")))
+               :ARG2 (s5.l / large)
+               :ARG3 (s5.m / most)
+               :ARG5 (s5.c4 / city)
+               :time (s5.u / use-03))
+   :snt6 (s6.o / overwhelm-01
+               :ARG0 (s6.n / number
+                           :ARG1-of (s6.a / aggregate-01)))
+   :snt7 (s7.a / amr-unknown
+               :mod (s7.e / event
+                          :ARG1-of (s7.r / real-04)))
+   :snt8 (s8.e / empty-01
+               :ARG1 (s8.v / village
+                           :poss (s8.w2 / world
+                                        :same-as s4.w))
+               :mod (s8.w / well))
+   :snt9 (s9.q / question-01
+               :ARG1 (s9.c / cause-01
+                           :ARG0 (s9.a / amr-unknown)))
+   :snt10 (s10.a / and
+                 :op2 (s10.t / truth
+                             :location (s10.h / here)
+                             :mod (s10.u / unromantic
+                                         :polarity "-")))
+   :snt11 (s11.s / say-01
+                 :ARG0 (s11.t / they)
+                 :ARG1 (s11.a2 / and
+                               :op2 (s11.m / make-02
+                                           :ARG0 (s11.a / air
+                                                        :mod (s11.c / city))
+                                           :ARG1 (s11.f / free-04
+                                                        :ARG1 (s11.y / you))))
+                 :location (s11.e / event
+                                  :name (s11.n / name
+                                               :op1 "Renaissance"
+                                               :op2 "Germany")))
+   :snt12 (s12.c / cause-01
+                 :ARG1 (s12.c4 / contrast-01
+                               :ARG1 (s12.g / go-02
+                                            :ARG0 (s12.p / person
+                                                         :quant (s12.s / some))
+                                            :ARG4 (s12.p3 / place
+                                                          :ARG1-of (s12.r / resemble-01
+                                                                          :ARG2 (s12.c2 / city
+                                                                                        :name (s12.n / name
+                                                                                                     :op1 "Shanghai")))))
+                               :ARG2 (s12.g2 / go-02
+                                             :ARG0 (s12.p2 / person
+                                                           :quant (s12.m / most))
+                                             :ARG4 (s12.c3 / city
+                                                           :location-of (s12.r2 / rule-03
+                                                                                :ARG0 (s12.a / aesthetics))
+                                                           :mod (s12.s2 / squatter)))))
+   :snt13 (s13.a / and
+                 :op2 (s13.p / person
+                             :ARG1-of (s13.r / real-04)
+                             :ARG1-of (s13.o / oppress-01
+                                             :ARG0 (s13.p2 / poor))
+                             :domain (s13.t / this)
+                             :polarity "-"))
+   :snt14 (s14.p / person
+                 :ARG0-of (s14.g / get-05
+                                 :ARG1-of (s14.f / fast-02
+                                                 :ARG2-of (s14.h / have-degree-91
+                                                                 :ARG1 s14.g
+                                                                 :ARG3 (s14.e / equal)
+                                                                 :ARG4 (s14.p3 / possible-01
+                                                                               :ARG1 s14.g)))
+                                 :ARG2 (s14.o / out-06
+                                              :ARG2 (s14.p2 / poor)
+                                              :ARG1 s14.p)))
+   :snt15 (s15.a / and
+                 :op1 (s15.p / person
+                             :ARG0-of (s15.d2 / dominate-01)
+                             :ARG0-of (s15.b / build-01)
+                             :domain (s15.t / they
+                                            :same-as s13.t))
+                 :op2 (s15.p2 / person
+                              :ARG0-of (s15.d3 / dominate-01
+                                               :extent (s15.e / extent
+                                                              :degree (s15.l / large)))
+                              :ARG0-of (s15.d / design-01)
+                              :domain s15.t))
+   :snt16 (s16.h / have-03
+                 :ARG0 (s16.t / they
+                              :same-as s13.t)
+                 :ARG1 (s16.a / and
+                              :op1 (s16.i / infrastructure
+                                          :ARG1-of (s16.b / brew-01
+                                                          :location (s16.h2 / home)))
+                              :op2 (s16.l / life
+                                          :mod (s16.c / city)
+                                          :mod (s16.v / vibrant))))
+   :snt17 (s17.c2 / come-01
+                  :ARG1 (s17.p / product
+                               :ARG1-of (s17.i / include-91
+                                               :ARG2 (s17.p2 / product
+                                                             :ARG1-of (s17.g / gross-03)
+                                                             :location (s17.c3 / country
+                                                                               :name (s17.n / name
+                                                                                            :op1 "India"))
+                                                             :mod (s17.d / domestic))
+                                               :ARG3 "1/3"))
+                  :ARG3 (s17.c / city
+                               :name (s17.n2 / name
+                                             :op1 "Mumbai")))
+   :snt18 (s18.a / and
+                 :op1 (s18.u / upgrade-02
+                             :ARG0 (s18.t / they)
+                             :manner (s18.c2 / constant))
+                 :op2 (s18.h / help-01
+                             :ARG0 (s18.g2 / government-organization
+                                           :ARG0-of (s18.g / govern-01))
+                             :frequency (s18.c / case-04
+                                               :quant (s18.f / few))))
+   :snt19 (s19.e2 / event
+                  :ARG1-of (s19.p / possible-01)
+                  :domain (s19.e / educate-01)
+                  :location (s19.c / city)
+                  :mod (s19.m / main))
+   :snt20 (s20.g / go-on-15
+                 :ARG1 (s20.a / amr-unknown)
+                 :location (s20.s / street
+                                  :location (s20.c / city
+                                                   :name (s20.n / name
+                                                                :op1 "Mumbai")
+                                                   :same-as s17.c)))
+   :snt21 (s21.k / know-01
+                 :ARG0 (s21.p / person
+                              :name (s21.n / name
+                                           :op1 "Al"
+                                           :op2 "Gore")))
+   :snt22 (s22.e / everything
+                 :domain (s22.i / it)
+                 :mod (s22.b / basic))
+   :snt23 (s23.e / employ-01
+                 :location (s23.c / city
+                                  :mod (s23.s / squatter))
+                 :polarity "-"
+                 :rel "-")
+   :snt24 (s24.w / work-01
+                 :ARG0 (s24.e / everyone))
+   :snt25 (s25.h / humanity
+                 :ARG1-of (s25.i / include-91
+                                 :ARG2 (s25.h2 / humanity)
+                                 :ARG3 "1/3")
+                 :location (s25.t / there))
+   :snt26 (s26.m / more-than
+                 :domain (s26.i / it)
+                 :op1 (s26.t / that
+                             :same-as s25.i)
+                 :time (s26.s / soon))
+   :snt27 (s27.l / line
+                 :location (s27.h / here)
+                 :mod (s27.p2 / punch)
+                 :mod (s27.d / defuse-01
+                             :ARG0 (s27.c / city)
+                             :ARG1 (s27.b / bomb
+                                          :mod (s27.p / population)))
+                 :ord (s27.o / ordinal-entity
+                             :value "1"))
+   :snt28 (s28.a / and
+                 :op2 (s28.h / here
+                             :location-of (s28.l / line
+                                                 :mod (s28.p / punch)
+                                                 :ord (s28.o / ordinal-entity
+                                                             :value "2"))))
+   :snt29 (s29.s / shine-01
+                 :ARG0 (s29.s2 / star)
+                 :ARG2 (s29.l / life
+                              :poss (s29.p / planet
+                                           :name (s29.n / name
+                                                        :op1 "Earth")))
+                 :direction (s29.d / down)
+                 :duration (s29.m / multiple
+                                  :op1 (s29.t / temporal-quantity
+                                              :unit (s29.y / year)
+                                              :quant "1000000000")))
+   :snt30 (s30.s / shine-01
+                 :ARG0 (s30.w / we
+                              :same-as s29.p)
+                 :ARG1-of (s30.b / back-02
+                                 :direction (s30.u / up)
+                                 :mod (s30.r / right))
+                 :time (s30.n / now))
+   :snt31 (s31.t / thank-01
+                 :ARG1 (s31.y / you)))
+

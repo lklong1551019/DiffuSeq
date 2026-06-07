@@ -1,0 +1,429 @@
+# ::id doc-312
+# ::doc_file doc-312
+# ::tok http : / / www . ted . com / talks / derek_sivers_how_to_start_a_movement< / url> <next_sent> So , ladies and gentlemen , at TED we talk a lot about leadership and how to make a movement . <next_sent> So let 's watch a movement happen , start to finish , in under three minutes and dissect some lessons from it . <next_sent> First , of course you know , a leader needs the guts to stand out and be ridiculed . <next_sent> But what he 's doing is so easy to follow . <next_sent> So here 's his first follower with a crucial role ; he 's going to show everyone else how to follow . <next_sent> Now , notice that the leader embraces him as an equal . <next_sent> So , now it 's not about the leader anymore ; it 's about them , plural . <next_sent> Now , there he is calling to his friends . <next_sent> Now , if you notice that the first follower is actually an underestimated form of leadership in itself . <next_sent> It takes guts to stand out like that . <next_sent> The first follower is what transforms a lone nut into a leader . <next_sent> And here comes a second follower . <next_sent> Now it 's not a lone nut , it 's not two nuts -- three is a crowd , and a crowd is news . <next_sent> So a movement must be public . <next_sent> It 's important to show not just to show the leader , but the followers , because you find that new followers emulate the followers , not the leader . <next_sent> Now , here come two more people , and immediately after , three more people . <next_sent> Now we 've got momentum . <next_sent> This is the tipping point . <next_sent> Now we 've got a movement . <next_sent> So , notice that , as more people join in , it 's less risky . <next_sent> So those that were sitting on the fence before , now have no reason not to . <next_sent> They wo n't stand out , they wo n't be ridiculed , but they will be part of the in - crowd if they hurry . <next_sent> So , over the next minute , you 'll see all of those that prefer to stick with the crowd because eventually they would be ridiculed for not joining in . <next_sent> And that 's how you make a movement . <next_sent> But let 's recap some lessons from this . <next_sent> So first , if you are the type , like the shirtless dancing guy that is standing alone , remember the importance of nurturing your first few followers as equals so it 's clearly about the movement , not you . <next_sent> Okay , but we might have missed the real lesson here . <next_sent> The biggest lesson , if you noticed -- <next_sent> did you catch it ? -- <next_sent> is that leadership is over - glorified . <next_sent> That , yes , it was the shirtless guy who was first , and he 'll get all the credit , but it was really the first follower that transformed the lone nut into a leader . <next_sent> So , as we 're told that we should all be leaders , that would be really ineffective . <next_sent> If you really care about starting a movement , have the courage to follow and show others how to follow . <next_sent> And when you find a lone nut doing something great , have the guts to be the first one to stand up and join in . <next_sent> And what a perfect place to do that , at TED . <next_sent> Thanks .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01))
+   :snt2 (s2.t / talk-01
+               :ARG0 (s2.w / we)
+               :ARG1 (s2.a2 / and
+                            :quant (s2.l3 / lot)
+                            :op1 (s2.l2 / lead-02)
+                            :op2 (s2.t2 / thing
+                                        :manner-of (s2.m / make-01
+                                                         :ARG1 (s2.m2 / movement-07))))
+               :location (s2.c / conference
+                               :name (s2.n / name
+                                           :op1 "TED"))
+               :rel (s2.a / and
+                          :op1 (s2.l / lady)
+                          :op2 (s2.g / gentleman)))
+   :snt3 (s3.a2 / and
+                :op1 (s3.w / watch-01
+                           :ARG0 (s3.w2 / we)
+                           :ARG1 (s3.m2 / move-01)
+                           :time (s3.a / after
+                                       :quant (s3.u / under
+                                                    :op1 (s3.t / temporal-quantity
+                                                               :unit (s3.m / minute)
+                                                               :quant "3"))
+                                       :op1 (s3.n / now))
+                           :mode "imperative")
+                :op2 (s3.d / dissect-01
+                           :ARG0 s3.w2
+                           :ARG1 (s3.l / lesson
+                                       :quant (s3.s / some)
+                                       :source s3.m2)
+                           :mode "imperative")
+                :rel (s3.s2 / start-01
+                            :ARG0 s3.m2
+                            :ARG1 (s3.f / finish-01
+                                        :ARG1 s3.m2)))
+   :snt4 (s4.k / know-01
+               :ARG0 (s4.y / you)
+               :ARG1 (s4.n / need-01
+                           :purpose (s4.a / and
+                                          :op1 (s4.s / stand-out-06
+                                                     :ARG1 (s4.p / person
+                                                                 :ARG0-of (s4.l / lead-02)))
+                                          :op2 (s4.r / ridicule-01
+                                                     :ARG1 s4.p))
+                           :ARG0 s4.p
+                           :ARG1 (s4.g / gut))
+               :mod (s4.o / of-course)
+               :li "1")
+   :snt5 (s5.c / contrast-01
+               :ARG2 (s5.e / easy-05
+                           :ARG1 (s5.f / follow-02
+                                       :ARG1 (s5.t / thing
+                                                   :ARG1-of (s5.d / do-02
+                                                                  :ARG0 (s5.h / he
+                                                                              :same-as s4.p))))
+                           :degree (s5.s / so)))
+   :snt6 (s6.c / cause-01
+               :ARG0 (s6.p / person
+                           :ARG0-of (s6.f / follow-02
+                                          :ARG1 (s6.h2 / he
+                                                       :same-as s4.p))
+                           :ARG0-of (s6.h / have-03
+                                          :ARG1 (s6.r / role
+                                                      :mod (s6.c2 / crucial)))
+                           :ARG0-of (s6.s / show-01
+                                          :ARG1 (s6.t / thing
+                                                      :manner-of (s6.f2 / follow-02
+                                                                        :ARG0 (s6.e2 / everyone
+                                                                                     :mod (s6.e / else)
+                                                                                     :ARG2-of s6.s))))
+                           :location (s6.h3 / here)
+                           :ord (s6.o / ordinal-entity
+                                      :value "1")))
+   :snt7 (s7.n / notice-01
+               :ARG0 (s7.y / you)
+               :ARG1 (s7.e / embrace-01
+                           :ARG0 (s7.p / person
+                                       :ARG0-of (s7.l / lead-02)
+                                       :same-as s4.p)
+                           :ARG1 (s7.h / he
+                                       :same-as s6.f)
+                           :manner (s7.e2 / equal-01
+                                          :ARG1 s7.h))
+               :time (s7.n2 / now)
+               :mode "imperative")
+   :snt8 (s8.c / cause-01
+               :ARG1 (s8.c4 / contrast-01
+                            :ARG1 (s8.c2 / concern-02
+                                         :ARG0 (s8.i / it)
+                                         :ARG1 (s8.p / person
+                                                     :ARG0-of (s8.l / lead-02)
+                                                     :same-as s4.p)
+                                         :time (s8.n / now)
+                                         :time (s8.a / anymore)
+                                         :polarity "-")
+                            :ARG2 (s8.c3 / concern-02
+                                         :ARG0 s8.i
+                                         :ARG1 s8.p
+                                         :mod (s8.p2 / plural))))
+   :snt9 (s9.c / call-02
+               :ARG0 (s9.h2 / he
+                            :same-as s6.f)
+               :ARG1 (s9.p / person
+                           :ARG0-of (s9.h / have-rel-role-91
+                                          :ARG1 s9.h2
+                                          :ARG2 (s9.f / friend)))
+               :location (s9.t / there)
+               :time (s9.n / now))
+   :snt10 (s10.h / have-condition-91
+                 :ARG2 (s10.n / notice-01
+                              :ARG0 (s10.y / you)
+                              :ARG1 (s10.f2 / form
+                                            :ARG0-of (s10.l / lead-02)
+                                            :ARG1-of (s10.u / underestimate-01)
+                                            :ARG1-of (s10.a / actual-02)
+                                            :domain (s10.p / person
+                                                           :ARG0-of (s10.f / follow-02)
+                                                           :ord (s10.o / ordinal-entity
+                                                                       :value "1")
+                                                           :same-as s6.f)))
+                 :time (s10.n2 / now))
+   :snt11 (s11.t / take-10
+                 :ARG0 (s11.s / stand-out-06
+                              :ARG1-of (s11.r / resemble-01
+                                              :ARG2 (s11.t2 / that)))
+                 :ARG1 (s11.g / gut))
+   :snt12 (s12.t / transform-01
+                 :ARG0 (s12.p / person
+                              :ARG0-of (s12.f / follow-02)
+                              :ord (s12.o / ordinal-entity
+                                          :value "1")
+                              :same-as s6.f)
+                 :ARG1 (s12.n / nut
+                              :mod (s12.l2 / lone))
+                 :ARG2 (s12.p2 / person
+                               :ARG0-of (s12.l / lead-02)))
+   :snt13 (s13.a / and
+                 :op2 (s13.c / come-01
+                             :ARG1 (s13.p / person
+                                          :ARG0-of (s13.f / follow-02)
+                                          :ord (s13.o / ordinal-entity
+                                                      :value "2"))
+                             :ARG4 (s13.h / here)))
+   :snt14 (s14.c / contrast-01
+                 :ARG1 (s14.a / and
+                              :op1 (s14.n3 / nut
+                                           :domain (s14.i / it)
+                                           :mod (s14.l / lone)
+                                           :polarity "-")
+                              :op2 (s14.n4 / nuts
+                                           :domain s14.i
+                                           :polarity "-"
+                                           :quant "2")
+                              :time (s14.n2 / now))
+                 :ARG2 (s14.a2 / and
+                               :op1 (s14.c2 / crowd
+                                            :domain "3")
+                               :op2 (s14.n / news
+                                           :domain s14.c2)))
+   :snt15 (s15.c / cause-01
+                 :ARG1 (s15.o / obligate-01
+                              :ARG2 (s15.p / public-02
+                                           :ARG1 (s15.m / movement-07))))
+   :snt16 (s16.i / important-01
+                 :ARG1 (s16.c2 / contrast-01
+                               :ARG1 (s16.s / show-01
+                                            :purpose (s16.s3 / show-01
+                                                             :ARG0 (s16.y / you)
+                                                             :ARG1 (s16.p / person
+                                                                          :ARG0-of (s16.l / lead-02)
+                                                                          :same-as s4.p))
+                                            :ARG0 s16.y
+                                            :mod (s16.j / just
+                                                        :polarity "-"))
+                               :ARG2 (s16.s2 / show-01
+                                             :ARG1 (s16.p2 / person
+                                                           :ARG0-of (s16.f2 / follow-02))))
+                 :ARG1-of (s16.c / cause-01
+                                 :ARG0 (s16.f / find-02
+                                              :ARG0 s16.y
+                                              :ARG1 (s16.a / and
+                                                           :op1 (s16.e / emulate-01
+                                                                       :ARG0 (s16.p3 / person
+                                                                                     :ARG0-of (s16.f3 / follow-02)
+                                                                                     :ARG1-of (s16.n / new-01))
+                                                                       :ARG1 s16.p2)
+                                                           :op2 (s16.e2 / emulate-01
+                                                                        :ARG0 s16.p3
+                                                                        :polarity "-")))))
+   :snt17 (s17.a2 / and
+                  :op1 (s17.c / come-01
+                              :ARG1 (s17.p / person
+                                           :mod (s17.m / more)
+                                           :quant "2")
+                              :ARG4 (s17.h / here)
+                              :time (s17.n / now))
+                  :op2 (s17.p2 / person
+                               :mod (s17.m2 / more
+                                            :quant "3")
+                               :time (s17.a / after
+                                            :mod (s17.i / immediate))))
+   :snt18 (s18.g / get-02
+                 :ARG0 (s18.w / we)
+                 :ARG1 (s18.m / momentum)
+                 :time (s18.n / now))
+   :snt19 (s19.p / point
+                 :ARG1-of (s19.t2 / tip-01)
+                 :domain (s19.t / this))
+   :snt20 (s20.g / get-02
+                 :ARG0 (s20.w / we)
+                 :ARG1 (s20.m / movement-07)
+                 :time (s20.n / now))
+   :snt21 (s21.c / cause-01
+                 :ARG1 (s21.n / notice-01
+                              :ARG0 (s21.y / you)
+                              :ARG1 (s21.h / have-degree-91
+                                           :ARG1 (s21.i / it)
+                                           :ARG2 (s21.r / risky-02
+                                                        :ARG1 s21.i)
+                                           :ARG3 (s21.l / less)
+                                           :time (s21.j / join-in-05
+                                                        :ARG0 (s21.p / person
+                                                                     :quant (s21.m / more))))
+                              :mode "imperative"))
+   :snt22 (s22.c / cause-01
+                 :ARG1 (s22.h / have-03
+                              :ARG0 (s22.p / person
+                                           :ARG1-of (s22.s / sit-01
+                                                           :ARG2 (s22.f / fence)
+                                                           :time (s22.b / before))
+                                           :mod (s22.t / that))
+                              :ARG1 (s22.r / reason
+                                           :ARG0-of (s22.c2 / cause-01
+                                                            :ARG1 s22.s)
+                                           :polarity "-")
+                              :time (s22.n / now)))
+   :snt23 (s23.c / contrast-01
+                 :ARG1 (s23.a / and
+                              :op1 (s23.s / stand-out-06
+                                          :ARG1 (s23.t / they
+                                                       :same-as s22.p)
+                                          :polarity "-")
+                              :op2 (s23.r / ridicule-01
+                                          :ARG1 s23.t))
+                 :ARG2 (s23.i / include-91
+                              :ARG1 s23.t
+                              :ARG2 (s23.c2 / crowd)
+                              :condition (s23.h / hurry-01
+                                                :ARG1 s23.t)))
+   :snt24 (s24.s / see-01
+                 :ARG0 (s24.y / you)
+                 :ARG1 (s24.p / person
+                              :ARG0-of (s24.p2 / prefer-01
+                                               :ARG1 (s24.s2 / stick-01
+                                                             :ARG1 s24.p
+                                                             :ARG2 (s24.c2 / crowd)))
+                              :mod (s24.a / all))
+                 :ARG1-of (s24.c / cause-01
+                                 :ARG0 (s24.r / ridicule-01
+                                              :ARG1 s24.p
+                                              :ARG2 (s24.j / join-in-05
+                                                           :ARG0 s24.p
+                                                           :polarity "-")
+                                              :time (s24.e / eventual)))
+                 :time (s24.o / over
+                              :op1 (s24.t / temporal-quantity
+                                          :mod (s24.n / next)
+                                          :unit (s24.m / minute)
+                                          :quant "1")))
+   :snt25 (s25.a / and
+                 :op2 (s25.h / have-manner-91
+                             :ARG1 (s25.m / make-01
+                                          :ARG0 (s25.y / you)
+                                          :ARG1 (s25.m2 / movement-07))
+                             :ARG2 (s25.t / that)))
+   :snt26 (s26.c / contrast-01
+                 :ARG2 (s26.l2 / let-01
+                               :ARG1 (s26.s2 / summarize-01
+                                             :ARG0 (s26.w / we)
+                                             :ARG1 (s26.l / lesson
+                                                          :quant (s26.s / some)
+                                                          :source (s26.t / this)))))
+   :snt27 (s27.r / remember-01
+                 :ARG0 (s27.y / you)
+                 :ARG1 (s27.i / important-01
+                              :ARG1 (s27.n / nurture-01
+                                           :ARG0-of (s27.c / cause-01
+                                                           :ARG1 (s27.c3 / concern-02
+                                                                         :ARG0 (s27.i2 / it)
+                                                                         :ARG1 (s27.m / movement-07)
+                                                                         :ARG1-of (s27.c2 / clear-06)
+                                                                         :ARG1-of (s27.c5 / contrast-01
+                                                                                          :ARG2 (s27.c4 / concern-02
+                                                                                                        :ARG0 s27.i2
+                                                                                                        :polarity "-"))))
+                                           :ARG1 (s27.p / person
+                                                        :quant (s27.f / few)
+                                                        :ARG0-of (s27.f3 / follow-02
+                                                                         :ARG1 s27.y)
+                                                        :ARG1-of (s27.e / equal-01)
+                                                        :ord (s27.o / ordinal-entity
+                                                                    :value "1"))))
+                 :condition (s27.t / type
+                                   :ARG1-of (s27.r2 / resemble-01
+                                                    :ARG2 (s27.g / guy
+                                                                 :ARG0-of (s27.d / dance-01)
+                                                                 :ARG0-of (s27.s2 / stand-01
+                                                                                  :manner (s27.a / alone))
+                                                                 :mod (s27.s / shirt
+                                                                             :polarity "-")))
+                                   :domain s27.y)
+                 :time (s27.f2 / first)
+                 :mode "imperative")
+   :snt28 (s28.h / have-concession-91
+                 :ARG1 (s28.p / possible-01
+                              :ARG1 (s28.m / miss-02
+                                           :ARG0 (s28.w / we)
+                                           :ARG1 (s28.l / lesson
+                                                        :ARG1-of (s28.r / real-04))
+                                           :location (s28.h2 / here)))
+                 :ARG2 (s28.o / okay-04))
+   :snt29 (s29.h / have-condition-91
+                 :ARG1 (s29.l / lesson
+                              :ARG1-of (s29.h2 / have-degree-91
+                                               :ARG2 (s29.b / big)
+                                               :ARG3 (s29.m / most)))
+                 :ARG2 (s29.n / notice-01
+                              :ARG0 (s29.y / you)))
+   :snt30 (s30.c / catch-02
+                 :ARG0 (s30.y / you)
+                 :ARG1 (s30.i / it
+                              :same-as s28.h2)
+                 :polarity (s30.a / amr-unknown))
+   :snt31 (s31.g / glorify-01
+                 :ARG1 (s31.l / lead-02)
+                 :ARG1-of (s31.o / over-03))
+   :snt32 (s32.c / contrast-01
+                 :ARG1 (s32.a2 / and
+                               :op1 (s32.g2 / guy
+                                            :ord (s32.o / ordinal-entity
+                                                        :value "1")
+                                            :part (s32.s / shirt
+                                                         :polarity "-"
+                                                         :same-as s27.g))
+                               :op2 (s32.g / get-01
+                                           :ARG0 s32.g2
+                                           :ARG1 (s32.c2 / credit-01
+                                                         :ARG1 s32.g2
+                                                         :mod (s32.a / all))))
+                 :ARG2 (s32.t / transform-01
+                              :ARG0 (s32.p / person
+                                           :ARG0-of (s32.f / follow-02)
+                                           :ARG1-of (s32.r / real-04)
+                                           :ord s32.o)
+                              :ARG1 (s32.n / nut
+                                           :mod (s32.l2 / lone))
+                              :ARG2 (s32.p2 / person
+                                            :ARG0-of (s32.l / lead-02)))
+                 :rel "1")
+   :snt33 (s33.i / infer-01
+                 :ARG1 (s33.e / effective-04
+                              :ARG0 (s33.r2 / recommend-01
+                                            :ARG1 (s33.p / person
+                                                         :ARG0-of (s33.l / lead-02)
+                                                         :domain (s33.w / we
+                                                                        :mod (s33.a / all))))
+                              :degree (s33.r / really)
+                              :polarity "-")
+                 :rel (s33.t / tell-01
+                             :ARG1 s33.r2
+                             :ARG2 s33.w))
+   :snt34 (s34.h2 / have-condition-91
+                  :ARG1 (s34.a / and
+                               :op1 (s34.h / have-03
+                                           :ARG0 (s34.y / you)
+                                           :ARG1 (s34.c2 / courage
+                                                         :purpose (s34.f / follow-02
+                                                                         :ARG0 s34.y))
+                                           :mode "imperative")
+                               :op2 (s34.s / show-01
+                                           :ARG0 s34.y
+                                           :ARG1 (s34.t / thing
+                                                        :manner-of (s34.f2 / follow-02
+                                                                           :ARG0 (s34.p / person
+                                                                                        :mod (s34.o / other)
+                                                                                        :ARG2-of s34.s)))
+                                           :mode "imperative"))
+                  :ARG2 (s34.c / care-01
+                               :ARG0 s34.y
+                               :ARG1 (s34.s2 / start-01
+                                             :ARG0 s34.y
+                                             :ARG1 (s34.m / movement-07))
+                               :ARG1-of (s34.r / real-04)))
+   :snt35 (s35.a / and
+                 :op2 (s35.h / have-03
+                             :purpose (s35.p / person
+                                             :ARG0-of (s35.j / join-in-05
+                                                             :ARG1 (s35.s / something
+                                                                          :mod (s35.g / great)))
+                                             :ARG1-of (s35.s2 / stand-up-07)
+                                             :domain (s35.y / you)
+                                             :ord (s35.o / ordinal-entity
+                                                         :value "1"))
+                             :ARG0 s35.y
+                             :ARG1 (s35.g2 / gut)
+                             :time (s35.f / find-01
+                                          :ARG0 s35.y
+                                          :ARG1 (s35.n / nut
+                                                       :ARG0-of (s35.d / do-02
+                                                                       :ARG1 s35.s)
+                                                       :mod (s35.l / lone)))
+                             :mode "imperative"))
+   :snt36 (s36.a / and
+                 :op2 (s36.p2 / place
+                              :name (s36.n / name
+                                           :op1 "TED"
+                                           :same-as s2.c)
+                              :ARG1-of (s36.p / perfect-02
+                                              :purpose (s36.d / do-02
+                                                              :ARG1 (s36.t / that))
+                                              :degree (s36.s / so))))
+   :snt37 (s37.t / thank-01))
+

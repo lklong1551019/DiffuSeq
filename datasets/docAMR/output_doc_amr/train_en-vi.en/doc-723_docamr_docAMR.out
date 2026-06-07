@@ -1,0 +1,296 @@
+# ::id doc-723
+# ::doc_file doc-723
+# ::tok http : / / www . ted . com / talks / maya_beiser_s_and_her_cello_s< / url> <next_sent> Thank you . <next_sent> Imagining a solo cello concert , one would most likely think of Johann Sebastian Bach unaccompanied cello suites . <next_sent> As a child studying these eternal masterpieces , Bach 's music would intermingle with the singing voices of Muslim prayers from the neighboring Arab village of the northern Kibbutz in Israel where I grew up . <next_sent> Late at night , after hours of practicing , I would listen to Janis Joplin and Billie Holiday as the sounds of tango music would be creeping from my parents ' stereo . <next_sent> It all became music to me . <next_sent> I did n't hear the boundaries . <next_sent> I still start every day practicing playing Bach . <next_sent> His music never ceases to sound fresh and surprising to me . <next_sent> But as I was moving away from the traditional classical repertoire and trying to find new ways of musical expression , I realized that with today 's technological resources , there 's no reason to limit what can be produced at one time from a single string instrument . <next_sent> The power and coherency that comes from one person hearing , perceiving and playing all the voices makes a very different experience . <next_sent> The excitement of a great orchestra performance comes from the attempt to have a collective of musicians producing one unified whole concept . <next_sent> The excitement from using multi - tracking , the way I did in the piece you will hear next , comes from the attempt to build and create a whole universe with many diverse layers , all generated from a single source . <next_sent> My cello and my voice are layered to create this large sonic canvas . <next_sent> When composers write music for me , I ask them to forget what they know about the cello . <next_sent> I hope to arrive at new territories to discover sounds I have never heard before . <next_sent> I want to create endless possibilities with this cello . <next_sent> I become the medium through which the music is being channeled , and in the process , when all is right , the music is transformed and so am I.
+(d / document
+   :snt1 (s1.u / url-entity
+               :value "ossobuco")
+   :snt2 (s2.t / thank-01
+               :ARG1 (s2.y / you))
+   :snt3 (s3.l / likely-01
+               :ARG1 (s3.t / think-01
+                           :ARG0 (s3.o / one)
+                           :ARG1 (s3.s2 / symphony
+                                        :ARG1-of (s3.a / accompany-01
+                                                       :ARG0 (s3.p / person
+                                                                   :name (s3.n / name
+                                                                               :op1 "Johann"
+                                                                               :op2 "Sebastian"
+                                                                               :op3 "Bach"))
+                                                       :polarity "-")
+                                        :mod (s3.c / cello
+                                                   :mod (s3.s / solo)))
+                           :condition (s3.i / imagine-01
+                                            :ARG0 s3.o
+                                            :ARG1 (s3.c2 / concert
+                                                         :mod s3.c)))
+               :ARG2-of (s3.h / have-degree-91
+                              :ARG1 s3.t
+                              :ARG3 (s3.m / most)))
+   :snt4 (s4.i2 / intermarry-01
+                :ARG1 (s4.m3 / music
+                             :poss (s4.p / person
+                                         :name (s4.n / name
+                                                     :op1 "Bach")))
+                :ARG2 (s4.v2 / voice
+                             :ARG0-of (s4.s / sing-01)
+                             :ARG0-of (s4.m2 / master-01
+                                             :ARG0 s4.p)
+                             :poss (s4.p3 / pray-01
+                                          :ARG0 (s4.r / religious-group
+                                                      :name (s4.n2 / name
+                                                                   :op1 "Islam")))
+                             :source (s4.v / village
+                                           :ARG1-of (s4.n6 / neighbor-01)
+                                           :location (s4.c3 / country-region
+                                                            :name (s4.n4 / name
+                                                                         :op1 "Kibbutz")
+                                                            :location (s4.n7 / north)
+                                                            :location (s4.c2 / country
+                                                                             :name (s4.n5 / name
+                                                                                          :op1 "Israel"))
+                                                            :location-of (s4.g / grow-up-04
+                                                                               :ARG1 (s4.i / i)))
+                                           :mod (s4.e2 / ethnic-group
+                                                       :name (s4.n3 / name
+                                                                    :op1 "Arab"))))
+                :rel (s4.p2 / person
+                            :same-as s3.p)
+                :time (s4.c / child
+                            :domain s4.i
+                            :time-of (s4.s2 / study-01
+                                            :ARG0 s4.i
+                                            :ARG1 (s4.t / thing
+                                                        :ARG1-of (s4.m / master-01)
+                                                        :mod (s4.e / eternal)
+                                                        :mod (s4.t2 / this)
+                                                        :same-as s3.a))))
+   :snt5 (s5.l2 / listen-01
+                :ARG0 (s5.i / i
+                            :same-as s4.i)
+                :ARG1 (s5.a2 / and
+                             :op1 (s5.p2 / person
+                                         :name (s5.n / name
+                                                     :op1 "Janis"
+                                                     :op2 "Joplin"))
+                             :op2 (s5.p3 / person
+                                         :name (s5.n2 / name
+                                                      :op1 "Billie"
+                                                      :op2 "Holiday")))
+                :ARG1-of (s5.c / cause-01
+                               :ARG0 (s5.c2 / creep-01
+                                            :ARG0 (s5.s / sound-02
+                                                        :ARG1 (s5.m2 / music
+                                                                     :topic (s5.t / tango-01)))
+                                            :source (s5.s2 / stereo
+                                                           :poss (s5.p4 / person
+                                                                        :ARG0-of (s5.h / have-rel-role-91
+                                                                                       :ARG1 s5.i
+                                                                                       :ARG2 (s5.p / parent))))))
+                :time (s5.a / after
+                            :op1 (s5.p5 / practice-01
+                                        :ARG0 s5.i
+                                        :duration (s5.m / multiple
+                                                        :op1 (s5.h2 / hour))))
+                :time (s5.l / late
+                            :op1 (s5.d / date-entity
+                                       :dayperiod (s5.n3 / night))))
+   :snt6 (s6.b / become-01
+               :ARG1 (s6.i2 / it
+                            :mod (s6.a / all))
+               :ARG2 (s6.m / music
+                           :beneficiary (s6.i / i
+                                              :same-as s4.i)))
+   :snt7 (s7.h / hear-01
+               :ARG0 (s7.i / i
+                           :same-as s4.i)
+               :ARG1 (s7.b / boundary)
+               :polarity "-")
+   :snt8 (s8.s / start-01
+               :ARG0 (s8.i / i
+                           :same-as s4.i)
+               :ARG1 (s8.p2 / practice-01
+                            :ARG0 s8.i
+                            :ARG1 (s8.p / play-11
+                                        :ARG0 s8.i
+                                        :ARG1 (s8.m / music
+                                                    :name (s8.n / name
+                                                                :op1 "Bach")
+                                                    :same-as s3.p)))
+               :frequency (s8.r / rate-entity-91
+                                :ARG3 (s8.t / temporal-quantity
+                                            :unit (s8.d / day)
+                                            :quant "1"))
+               :mod (s8.s2 / still))
+   :snt9 (s9.c / cease-01
+               :ARG0 (s9.m / music
+                           :poss (s9.h / he
+                                       :same-as s3.p))
+               :ARG1 (s9.s / sound-01
+                           :ARG1 s9.m
+                           :ARG2 (s9.a / and
+                                       :op1 (s9.f / fresh-04)
+                                       :op2 (s9.s2 / surprise-01
+                                                   :ARG1 (s9.i / i
+                                                               :same-as s4.i))))
+               :time (s9.e / ever)
+               :polarity "-")
+   :snt10 (s10.c4 / contrast-01
+                  :ARG2 (s10.r / realize-01
+                               :ARG0 (s10.i / i
+                                            :same-as s4.i)
+                               :ARG1 (s10.r2 / reason
+                                             :ARG0-of (s10.c2 / cause-01
+                                                              :ARG1 (s10.l / limit-01
+                                                                           :ARG1 (s10.t2 / thing
+                                                                                         :ARG1-of (s10.p2 / produce-01
+                                                                                                          :ARG1-of (s10.p / possible-01)
+                                                                                                          :ARG2 (s10.i2 / instrument
+                                                                                                                        :mod (s10.s / string
+                                                                                                                                    :quant "1"))
+                                                                                                          :time (s10.o / one)))))
+                                             :ARG1-of (s10.c / cause-01
+                                                             :ARG0 (s10.r4 / resource
+                                                                           :mod (s10.t / technology)
+                                                                           :time (s10.t3 / today)))
+                                             :polarity "-")
+                               :time (s10.a / and
+                                            :op1 (s10.m / move-01
+                                                        :ARG0 s10.i
+                                                        :ARG2 (s10.a2 / away
+                                                                      :op1 (s10.r3 / repertoire
+                                                                                   :mod (s10.c3 / classical)
+                                                                                   :mod (s10.t4 / tradition))))
+                                            :op2 (s10.t5 / try-01
+                                                         :ARG0 s10.i
+                                                         :ARG1 (s10.f / find-01
+                                                                      :ARG0 s10.i
+                                                                      :ARG1 (s10.w / way
+                                                                                   :ARG1-of (s10.n / new-01)
+                                                                                   :manner-of (s10.e / express-01
+                                                                                                     :ARG1 (s10.m2 / music))))))))
+   :snt11 (s11.m / make-01
+                 :ARG0 (s11.a2 / and
+                               :ARG1-of (s11.c2 / come-03
+                                                :ARG2 (s11.p2 / person
+                                                              :quant "1")
+                                                :ARG2 (s11.a3 / and
+                                                              :op1 (s11.h / hear-01
+                                                                          :ARG0 s11.p2
+                                                                          :ARG1 (s11.v2 / voice
+                                                                                        :mod (s11.a / all)))
+                                                              :op2 (s11.p / perceive-01
+                                                                          :ARG0 s11.p2
+                                                                          :ARG1 s11.v2)
+                                                              :op3 (s11.p3 / play-11
+                                                                           :ARG0 s11.p2
+                                                                           :ARG1 s11.v2)))
+                               :op1 (s11.p4 / power)
+                               :op2 (s11.c / cohere-01))
+                 :ARG1 (s11.e / experience-01
+                              :ARG1-of (s11.d / differ-02
+                                              :degree (s11.v / very))))
+   :snt12 (s12.e / excite-01
+                 :ARG0 (s12.p / perform-01
+                              :ARG0 (s12.o / orchestra)
+                              :mod (s12.g / great))
+                 :ARG0 (s12.a / attempt-01
+                              :ARG1 (s12.h / have-03
+                                           :ARG1 (s12.c / collective
+                                                        :ARG0-of (s12.p2 / produce-01
+                                                                         :ARG1 (s12.c2 / concept
+                                                                                       :ARG1-of (s12.u / unify-01)
+                                                                                       :mod (s12.w / whole)))
+                                                        :consist-of (s12.m / musician)))))
+   :snt13 (s13.c / come-03
+                 :ARG1 (s13.e / excite-01
+                              :ARG0 (s13.u2 / use-01
+                                            :ARG0 (s13.i / i
+                                                         :same-as s4.i)
+                                            :ARG1 (s13.t / track-01
+                                                         :quant (s13.m2 / multiple))
+                                            :location (s13.p / piece
+                                                             :ARG1-of (s13.h / hear-01
+                                                                             :ARG0 (s13.y / you)
+                                                                             :time (s13.n / next)))
+                                            :manner (s13.w / way)))
+                 :ARG2 (s13.a3 / attempt-01
+                               :ARG1 (s13.a2 / and
+                                             :op1 (s13.b / build-01
+                                                         :ARG1 (s13.u / universe
+                                                                      :mod (s13.w2 / whole)
+                                                                      :part (s13.l / layer
+                                                                                   :quant (s13.m / many)
+                                                                                   :ARG1-of (s13.g / generate-01
+                                                                                                   :ARG2 (s13.s / source
+                                                                                                                :quant "1")
+                                                                                                   :mod (s13.a / all))
+                                                                                   :mod (s13.d / diverse))))
+                                             :op2 (s13.c2 / create-01
+                                                          :ARG1 s13.u))))
+   :snt14 (s14.c3 / create-01
+                  :ARG0 (s14.a / and
+                               :op1 (s14.c2 / cello
+                                            :poss (s14.i / i
+                                                         :same-as s4.i))
+                               :op2 (s14.v / voice
+                                           :poss s14.i)
+                               :consist s14.l2)
+                  :ARG1 (s14.c / canvas
+                               :mod (s14.s / sonic)
+                               :mod (s14.l / large)
+                               :mod (s14.t / this))
+                  :ARG3 (s14.l2 / layer))
+   :snt15 (s15.a / ask-02
+                 :ARG0 (s15.i / i
+                              :same-as s4.i)
+                 :ARG1 (s15.f / forget-01
+                              :ARG0 (s15.p / person
+                                           :ARG0-of (s15.c2 / compose-02))
+                              :ARG1 (s15.t / thing
+                                           :ARG1-of (s15.k / know-01
+                                                           :ARG0 s15.p
+                                                           :topic (s15.c / cello))))
+                 :ARG2 s15.p
+                 :time (s15.w / write-01
+                              :ARG0 s15.p
+                              :ARG1 (s15.m / music)
+                              :ARG2 s15.i))
+   :snt16 (s16.h2 / hope-01
+                  :ARG0 (s16.i / i
+                               :same-as s4.i)
+                  :ARG1 (s16.a / arrive-01
+                               :purpose (s16.d / discover-01
+                                               :ARG0 s16.i
+                                               :ARG1 (s16.s / sound-02
+                                                            :ARG1-of (s16.h / hear-01
+                                                                            :ARG0 s16.i
+                                                                            :time (s16.e / ever)
+                                                                            :time (s16.b / before)
+                                                                            :polarity "-")))
+                               :ARG1 s16.i
+                               :ARG4 (s16.t / territory
+                                            :ARG1-of (s16.n / new-02))))
+   :snt17 (s17.w / want-01
+                 :ARG0 (s17.i / i
+                              :same-as s4.i)
+                 :ARG1 (s17.c2 / create-01
+                               :ARG0 s17.i
+                               :ARG1 (s17.t / thing
+                                            :ARG1-of (s17.e / end-01)
+                                            :ARG1-of (s17.p / possible-01))
+                               :instrument (s17.c / cello
+                                                  :mod (s17.t2 / this)
+                                                  :same-as s14.c2)))
+   :snt18 (s18.a2 / and
+                  :op1 (s18.b / become-01
+                              :ARG1 (s18.i / i
+                                           :same-as s4.i)
+                              :ARG2 (s18.m / medium
+                                           :instrument-of (s18.c / channel-01
+                                                                 :ARG1 (s18.m2 / music))))
+                  :op2 (s18.t / transform-01
+                              :ARG1 s18.m2
+                              :time (s18.p / process-02))
+                  :rel (s18.r / right-06
+                              :ARG1 (s18.a / all))))
+

@@ -1,0 +1,324 @@
+# ::id doc-607
+# ::doc_file doc-607
+# ::tok http : / / www . ted . com / talks / yves_behar_s_supercharged_motorcycle_design< / url> <next_sent> Forrest North : The beginning of any collaboration starts with a conversation . <next_sent> And I would like to share with you some of the bits of the conversation that we started with . <next_sent> I grew up in a log cabin in Washington state with too much time on my hands . <next_sent> Yves Behar : And in scenic Switzerland for me . <next_sent> FN : I always had a passion for alternative vehicles . <next_sent> This is a land yacht racing across the desert in Nevada . <next_sent> YB : Combination of windsurfing and skiing into this invention there . <next_sent> FN : And I also had an interest in dangerous inventions . <next_sent> This is a 100,000 - volt Tesla coil that I built in my bedroom , much to the dismay of my mother . <next_sent> YB : To the dismay of my mother , this is dangerous teenage fashion right there . <next_sent> FN : And I brought this all together , this passion with alternative energy and raced a solar car across Australia -- also the U.S. and Japan . <next_sent> YB : So , wind power , solar power -- we had a lot to talk about . <next_sent> We had a lot that got us excited . <next_sent> So we decided to do a special project together . <next_sent> To combine engineering and design and ... <next_sent> FN : Really make a fully integrated product , something beautiful . <next_sent> YB : And we made a baby . <next_sent> FN : Can you bring out our baby ? <next_sent> This baby is fully electric . <next_sent> It goes 150 miles an hour . <next_sent> It 's twice the range of any electric motorcycle . <next_sent> Really the exciting thing about a motorcycle is just the beautiful integration of engineering and design . <next_sent> It 's got an amazing user experience . <next_sent> It was wonderful working with Yves Behar . <next_sent> He came up with our name and logo . <next_sent> We 're Mission Motors . <next_sent> And we 've only got three minutes , but we could talk about it for hours . <next_sent> YB : Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :value "talk-01")
+   :snt2 (s2.s / say-01
+               :ARG1 (s2.s2 / start-01
+                            :ARG1 (s2.c / collaborate-01
+                                        :mod (s2.a / any))
+                            :ARG2 (s2.c2 / converse-01))
+               :ARG2 (s2.p / person
+                           :name (s2.n / name
+                                       :op1 "Forrest"
+                                       :op2 "North")))
+   :snt3 (s3.a / and
+               :op2 (s3.l / like-02
+                          :ARG0 (s3.i / i
+                                      :same-as s2.p)
+                          :ARG1 (s3.s / share-01
+                                      :ARG0 s3.i
+                                      :ARG1 (s3.b / bit
+                                                  :quant (s3.s2 / some)
+                                                  :ARG1-of (s3.i2 / include-91
+                                                                  :ARG2 (s3.b2 / bit
+                                                                               :ARG2-of (s3.s3 / start-01
+                                                                                               :ARG0 (s3.w / we))
+                                                                               :part-of (s3.c / converse-01))))
+                                      :ARG2 (s3.y / you))))
+   :snt4 (s4.g / grow-up-04
+               :ARG1 (s4.i / i
+                           :same-as s2.p)
+               :location (s4.c / cabin
+                               :consist-of (s4.l / log)
+                               :location (s4.s / state
+                                               :name (s4.n / name
+                                                           :op1 "Washington")))
+               :manner (s4.i2 / in-ones-hands-04
+                              :ARG0 s4.i
+                              :ARG1 (s4.t / time
+                                          :ARG1-of (s4.h / have-quant-91
+                                                         :ARG2 (s4.m / much)
+                                                         :ARG3 (s4.t2 / too)))))
+   :snt5 (s5.s / say-01
+               :ARG0 (s5.p / person
+                           :name (s5.n / name
+                                       :op1 "Yves"
+                                       :op2 "Behar"))
+               :ARG1 (s5.a / and
+                           :op2 (s5.b / be-located-at-91
+                                      :ARG2 (s5.c / country
+                                                  :name (s5.n2 / name
+                                                               :op1 "Switzerland")
+                                                  :mod (s5.s2 / scenic))
+                                      :beneficiary (s5.i / i
+                                                         :same-as s5.p))))
+   :snt6 (s6.s / say-01
+               :ARG0 (s6.p2 / person
+                            :name (s6.n / name
+                                        :op1 "FN"))
+               :ARG1 (s6.h / have-03
+                           :ARG0 (s6.i / i
+                                       :same-as s5.p)
+                           :ARG1 (s6.p / passion
+                                       :topic (s6.v / vehicle
+                                                    :mod (s6.a / alternative)))
+                           :time (s6.a2 / always)))
+   :snt7 (s7.r / race-02
+               :ARG0 (s7.y / yacht
+                           :mod (s7.l / land))
+               :mod (s7.t / this)
+               :path (s7.a / across
+                           :op1 (s7.d / desert
+                                      :location (s7.s / state
+                                                      :name (s7.n / name
+                                                                  :op1 "Nevada")))))
+   :snt8 (s8.c / combine-01
+               :ARG0 (s8.p / person
+                           :name (s8.n / name
+                                       :op1 "YB"))
+               :ARG1 (s8.s2 / surf-01
+                            :source (s8.w / wind))
+               :ARG2 (s8.s / ski-01)
+               :ARG3 (s8.i / invent-01
+                           :mod (s8.t2 / this))
+               :location (s8.t / there))
+   :snt9 (s9.s / say-01
+               :ARG0 (s9.p / publication
+                           :name (s9.n / name
+                                       :op1 "FN")
+                           :same-as s6.p2)
+               :ARG1 (s9.a2 / and
+                            :op2 (s9.i2 / interest-01
+                                        :ARG1 (s9.i / i
+                                                    :same-as s5.p)
+                                        :ARG2 (s9.t / thing
+                                                    :ARG0-of (s9.e / endanger-01)
+                                                    :ARG1-of (s9.i3 / invent-01))
+                                        :mod (s9.a / also))))
+   :snt10 (s10.c2 / coil
+                  :ARG1-of (s10.b2 / build-01
+                                   :ARG0 (s10.i / i
+                                                :same-as s5.p)
+                                   :ARG0-of (s10.c / cause-01
+                                                   :ARG1 (s10.d / dismay
+                                                                :mod (s10.m2 / much)
+                                                                :poss (s10.p / person
+                                                                             :ARG0-of (s10.h / have-rel-role-91
+                                                                                             :ARG1 s10.i
+                                                                                             :ARG2 (s10.m / mother)))))
+                                   :location (s10.b / bedroom
+                                                    :poss s10.i))
+                  :domain (s10.t / this)
+                  :mod (s10.p3 / product
+                               :name (s10.n / name
+                                            :op1 "Tesla"))
+                  :mod (s10.p2 / potential-quantity
+                               :unit (s10.v / volt)
+                               :quant "100000"))
+   :snt11 (s11.s / say-01
+                 :ARG0 (s11.p / person
+                              :name (s11.n / name
+                                           :op1 "YB"))
+                 :ARG1 (s11.f / fashion
+                              :ARG0-of (s11.e / endanger-01)
+                              :ARG2-of (s11.d / dismay-01
+                                              :ARG1 (s11.p2 / person
+                                                            :ARG0-of (s11.h / have-rel-role-91
+                                                                            :ARG1 s11.p
+                                                                            :ARG2 (s11.m / mother))
+                                                            :same-as s10.p))
+                              :domain (s11.t3 / this)
+                              :location (s11.t2 / there
+                                                :mod (s11.r / right))
+                              :mod (s11.t / teenage)))
+   :snt12 (s12.s / say-01
+                 :ARG0 (s12.p2 / person
+                               :name (s12.n / name
+                                            :op1 "FN")
+                               :same-as s6.p2)
+                 :ARG1 (s12.a5 / and
+                               :op2 (s12.a6 / and
+                                            :op1 (s12.b / bring-01
+                                                        :ARG0 (s12.i / i
+                                                                     :same-as s5.p)
+                                                        :ARG1 (s12.t / this
+                                                                     :mod (s12.a2 / all)
+                                                                     :mod (s12.p / passion
+                                                                                 :topic (s12.e / energy
+                                                                                               :mod (s12.a4 / alternative))))
+                                                        :ARG2 (s12.t2 / together))
+                                            :op2 (s12.r / race-02
+                                                        :ARG0 s12.i
+                                                        :ARG1 (s12.c / car
+                                                                     :mod (s12.s2 / sun))
+                                                        :location (s12.a / across
+                                                                         :op1 (s12.c2 / country
+                                                                                      :name (s12.n2 / name
+                                                                                                    :op1 "Australia")
+                                                                                      :example (s12.a7 / and
+                                                                                                       :mod (s12.a3 / also)
+                                                                                                       :op1 (s12.c3 / country
+                                                                                                                    :name (s12.n3 / name
+                                                                                                                                  :op1 "U.S."))
+                                                                                                       :op2 (s12.c4 / country
+                                                                                                                    :name (s12.n4 / name
+                                                                                                                                  :op1 "Japan")))))))))
+   :snt13 (s13.s / say-01
+                 :ARG0 (s13.p / person
+                              :name (s13.n / name
+                                           :op1 "YB"))
+                 :ARG1 (s13.t / talk-01
+                              :ARG0 (s13.w / we)
+                              :ARG1 (s13.l / lot)
+                              :topic (s13.a / and
+                                            :op1 (s13.p2 / power-01
+                                                         :mod (s13.w2 / wind))
+                                            :op2 (s13.p3 / power-01
+                                                         :mod (s13.s2 / sun)))))
+   :snt14 (s14.h / have-03
+                 :ARG0 (s14.w / we
+                              :same-as s13.w)
+                 :ARG1 (s14.l / lot
+                              :ARG0-of (s14.g / get-04
+                                              :ARG1 (s14.e / excite-01
+                                                           :ARG0 s14.l
+                                                           :ARG1 s14.w))))
+   :snt15 (s15.c / cause-01
+                 :ARG1 (s15.d / decide-01
+                              :ARG0 (s15.w / we
+                                           :same-as s13.w)
+                              :ARG1 (s15.d2 / do-02
+                                            :ARG0 s15.w
+                                            :ARG1 (s15.p / project
+                                                         :ARG1-of (s15.s / special-02))
+                                            :manner (s15.t / together))))
+   :snt16 (s16.c / combine-01
+                 :ARG1 (s16.a / and
+                              :op1 (s16.e / engineer-01)
+                              :op2 (s16.d / design-01)))
+   :snt17 (s17.s / say-01
+                 :ARG1 (s17.m / make-01
+                              :ARG0 (s17.y / you)
+                              :ARG1 (s17.p2 / product
+                                            :ARG1-of (s17.i / integrate-01
+                                                            :degree (s17.f / full))
+                                            :ARG1-of (s17.b / beautiful-02))
+                              :ARG1-of (s17.r / real-04)
+                              :mode "imperative")
+                 :ARG2 (s17.p / person
+                              :name (s17.n / name
+                                           :op1 "FN")
+                              :same-as s6.p2))
+   :snt18 (s18.s / say-01
+                 :ARG0 (s18.p / person
+                              :name (s18.n / name
+                                           :op1 "YB"))
+                 :ARG1 (s18.a / and
+                              :op2 (s18.m / make-01
+                                          :ARG0 (s18.w / we
+                                                       :same-as s13.w)
+                                          :ARG1 (s18.b / baby))))
+   :snt19 (s19.s / say-01
+                 :ARG0 (s19.p / person
+                              :mod (s19.p3 / publication
+                                           :name (s19.n / name
+                                                        :op1 "FN")))
+                 :ARG1 (s19.p2 / possible-01
+                               :ARG1 (s19.b2 / bring-01
+                                             :ARG0 (s19.y / you
+                                                          :same-as s5.p)
+                                             :ARG1 (s19.b / baby
+                                                          :poss (s19.w / we
+                                                                       :same-as s13.w)
+                                                          :same-as s18.b)
+                                             :ARG2 (s19.o / out))
+                               :polarity (s19.a / amr-unknown)))
+   :snt20 (s20.e / electric
+                 :degree (s20.f / full)
+                 :domain (s20.b / baby
+                                :mod (s20.t / this)
+                                :same-as s18.b))
+   :snt21 (s21.g / go-01
+                 :ARG1 (s21.i / it
+                              :same-as s18.b)
+                 :path (s21.r / rate-entity-91
+                              :ARG1 (s21.d / distance-quantity
+                                           :unit (s21.m / mile)
+                                           :quant "150")
+                              :ARG2 (s21.t / temporal-quantity
+                                           :unit (s21.h / hour)
+                                           :quant "1")))
+   :snt22 (s22.r / range-01
+                 :ARG1 (s22.i / it
+                              :same-as s18.b)
+                 :ARG2 (s22.p / product-of
+                              :op1 "2")
+                 :rel (s22.r2 / range-01
+                              :ARG1 (s22.m / motorcycle
+                                           :mod (s22.e / electric)
+                                           :mod (s22.a / any))))
+   :snt23 (s23.e2 / excite-01
+                  :ARG0 (s23.i / integrate-01
+                               :ARG1 (s23.a / and
+                                            :op1 (s23.e / engineer-01)
+                                            :op2 (s23.d / design-01))
+                               :ARG1-of (s23.b / beautiful-02)
+                               :mod (s23.j / just))
+                  :ARG1-of (s23.r / real-04)
+                  :topic (s23.m / motorcycle))
+   :snt24 (s24.g / get-02
+                 :ARG0 (s24.i / it
+                              :same-as s23.m)
+                 :ARG1 (s24.e / experience-01
+                              :ARG0 s24.i
+                              :ARG0-of (s24.a / amaze-01)
+                              :ARG1 (s24.p / person
+                                           :ARG0-of (s24.u / use-01))))
+   :snt25 (s25.w / wonderful-03
+                 :ARG1 (s25.w2 / work-01
+                               :ARG3 (s25.p / person
+                                            :name (s25.n / name
+                                                         :op1 "Yves"
+                                                         :op2 "Behar")
+                                            :same-as s5.p)))
+   :snt26 (s26.c / come-up-11
+                 :ARG0 (s26.h / he
+                              :same-as s5.p)
+                 :ARG1 (s26.a / and
+                              :op1 (s26.n / name
+                                          :poss (s26.w / we
+                                                       :same-as s13.w))
+                              :op2 (s26.l / logo
+                                          :poss s26.w)))
+   :snt27 (s27.c / company
+                 :name (s27.n / name
+                              :op1 "Mission"
+                              :op2 "Motors")
+                 :domain (s27.w / we
+                                :same-as s13.w))
+   :snt28 (s28.a / and
+                 :op2 (s28.c / contrast-01
+                             :ARG1 (s28.g / get-02
+                                          :ARG0 (s28.w / we
+                                                       :same-as s13.w)
+                                          :ARG1 (s28.t2 / temporal-quantity
+                                                        :mod (s28.o / only)
+                                                        :unit (s28.m / minute)
+                                                        :quant "3"))
+                             :ARG2 (s28.p / possible-01
+                                          :ARG1 (s28.t / talk-01
+                                                       :ARG0 s28.w
+                                                       :ARG1 (s28.i / it)
+                                                       :duration (s28.m2 / multiple
+                                                                         :op1 (s28.t3 / temporal-quantity
+                                                                                      :unit (s28.h / hour)
+                                                                                      :quant "1"))))))
+   :snt29 (s29.s / say-01
+                 :ARG0 (s29.p / person
+                              :name (s29.n / name
+                                           :op1 "YB"))
+                 :ARG1 (s29.t / thank-01
+                              :ARG1 s29.p)))
+

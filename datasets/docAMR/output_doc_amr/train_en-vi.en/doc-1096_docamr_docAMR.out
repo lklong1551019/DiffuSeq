@@ -1,0 +1,389 @@
+# ::id doc-1096
+# ::doc_file doc-1096
+# ::tok http : / / www . ted . com / talks / uldus_bakhtiozina_wry_photos_that_turn_stereotypes_upside_down< / url> <next_sent> Good afternoon . <next_sent> My name is Uldus . <next_sent> I am a photo - based artist from Russia . <next_sent> I focus on balancing meaningful message , aesthetic , beauty , composition , some irony , and artifacts . <next_sent> Today , I 'm going to tell you about my project , which is named Desperate Romantics . <next_sent> They 're my artifacts , or paintings from pre - Raphaelites Brotherhood England mid - 19th century . <next_sent> I took the painting and gifted new , contemporary meaning talking about issues which are surrounding me in Russia , capturing people who are non - models but have an interesting story . <next_sent> This boy is a professional dancer , only 12 years old , but at secondary school , he hides his dancing classes and is wearing the mask of brutality , trying to be united with the rest of his classmates like a storm trooper has no personality . <next_sent> But this boy has goals and dreams but hides it to be socially accepted , because being different is n't easy , especially in Russia . <next_sent> Next portrait interpretation is metaphoric . <next_sent> And this is Nikita , a security guard from one of the bars in St. Petersburg . <next_sent> He likes to say , " You would n't like me when I 'm angry , " quoting Hulk from the movie , but I 've never seen him angry . <next_sent> He hides his sensitivities and romantic side , because in Russia , among guys , that 's not cool to be romantic , but it 's cool to be surrounded with women and look like an aggressive hulk . <next_sent> Sometimes , in my project , I would take the painting and give it new meaning and new temptation about it . <next_sent> Sometimes , I would compare facial features and playing with words : irony , Iron Man , ironing man . <next_sent> Through the artifacts , I bring social issues which surround me in Russia into the conversation . <next_sent> Interesting fact about marriage in Russia , that most of the 18 , 19 - year - old girls are already ready , and dream to get married . <next_sent> We 're taught from childhood , successful marriage means successful life , so most of the girls kind of fight to get a good husband . <next_sent> And what about me ? <next_sent> I 'm 27 years old . <next_sent> For Russian society , I 'm an old maid and hopeless to ever get married . <next_sent> That 's why you see me in a Mexican fighter mask , in the wedding dress , all desperate in my garden . <next_sent> But remember , irony is the key , and this is actually to motivate girls to fight for goals , for dreams , and change stereotypes . <next_sent> Be funny and create some magic .
+(d / document
+   :snt1 (s1.u / url-entity
+               :ARG3 (s1.u2 / url-entity)
+               :rel (s1.b / border))
+   :snt2 (s2.a / afternoon
+               :ARG1-of (s2.g / good-02))
+   :snt3 (s3.n2 / name-01
+                :ARG1 (s3.i / i)
+                :ARG2 (s3.p / person
+                            :name (s3.n / name
+                                        :op1 "Uldus")))
+   :snt4 (s4.a / artist
+               :ARG1-of (s4.b / base-02
+                              :ARG2 (s4.p / photo))
+               :domain (s4.i / i
+                             :same-as s3.i)
+               :source (s4.c / country
+                             :name (s4.n / name
+                                         :op1 "Russia")))
+   :snt5 (s5.f / focus-01
+               :ARG0 (s5.i / i
+                           :same-as s3.i)
+               :ARG1 (s5.b / balance-01
+                           :ARG0 s5.i
+                           :ARG1 (s5.a2 / and
+                                        :op1 (s5.m2 / message-01
+                                                    :ARG0-of (s5.m / meaningful-05))
+                                        :op2 (s5.a / aesthetic)
+                                        :op3 (s5.b2 / beautiful-02)
+                                        :op4 (s5.c / compose-01)
+                                        :op5 (s5.i2 / irony
+                                                    :mod (s5.s / some))
+                                        :op6 (s5.o / offend-01))))
+   :snt6 (s6.t / tell-01
+               :ARG0 (s6.i / i
+                           :same-as s3.i)
+               :ARG1 (s6.p / project
+                           :name (s6.n / name
+                                       :op1 "Desperate"
+                                       :op2 "Romantics")
+                           :poss s6.i)
+               :ARG2 (s6.y / you)
+               :time (s6.t2 / today))
+   :snt7 (s7.o / or
+               :op1 (s7.i2 / item
+                           :domain (s7.t / they)
+                           :poss (s7.i / i
+                                       :same-as s3.i))
+               :op2 (s7.p3 / picture
+                           :ARG1-of (s7.p / paint-02
+                                          :source (s7.o2 / organization
+                                                         :name (s7.n2 / name
+                                                                      :op1 "Brotherhood")
+                                                         :time (s7.b / before
+                                                                     :op1 (s7.p2 / person
+                                                                                 :name (s7.n / name
+                                                                                             :op1 "Raphaelites")))))
+                           :location (s7.c / country
+                                           :name (s7.n3 / name
+                                                        :op1 "England"))
+                           :time (s7.m / middle
+                                       :op1 (s7.d / date-entity
+                                                  :century "19"))))
+   :snt8 (s8.a / and
+               :op1 (s8.t / take-01
+                          :ARG0 (s8.i / i
+                                      :same-as s3.i)
+                          :ARG1 (s8.p / paint-02))
+               :op2 (s8.g / gift-01
+                          :ARG0 s8.i
+                          :ARG1 (s8.m / mean-01
+                                      :ARG1-of (s8.n2 / new-01)
+                                      :mod (s8.c2 / contemporary)))
+               :op3 (s8.t2 / talk-01
+                           :ARG0 s8.i
+                           :ARG1 (s8.i3 / issue-02
+                                        :ARG1-of (s8.s2 / surround-01
+                                                        :ARG2 s8.i
+                                                        :location (s8.c3 / country
+                                                                         :name (s8.n / name
+                                                                                     :op1 "Russia")
+                                                                         :same-as s4.c))))
+               :op4 (s8.c / capture-01
+                          :ARG0 s8.i
+                          :ARG1 (s8.p2 / person
+                                       :ARG0-of (s8.h / have-03
+                                                      :ARG1 (s8.s / story
+                                                                  :ARG2-of (s8.i2 / interest-01)))
+                                       :ARG1-of (s8.m2 / model-01
+                                                       :polarity "-"))))
+   :snt9 (s9.c3 / contrast-01
+                :ARG1 (s9.d / dance-01
+                            :ARG0 (s9.b / boy
+                                        :ARG1-of (s9.a / age-01
+                                                       :ARG2 (s9.t / temporal-quantity
+                                                                   :mod (s9.o / only)
+                                                                   :unit (s9.y / year)
+                                                                   :quant "12"))
+                                        :mod (s9.t2 / this))
+                            :manner (s9.p2 / professional))
+                :ARG2 (s9.a2 / and
+                             :purpose (s9.t4 / try-01
+                                             :ARG0 s9.b
+                                             :ARG1 (s9.u / unite-01
+                                                         :ARG1 (s9.r2 / rest
+                                                                      :part-of (s9.c2 / classmate
+                                                                                      :poss s9.b))
+                                                         :ARG1-of (s9.r / resemble-01
+                                                                        :ARG2 (s9.h / have-03
+                                                                                    :ARG0 (s9.t3 / trooper
+                                                                                                 :mod (s9.s3 / storm))
+                                                                                    :ARG1 (s9.p / personality)
+                                                                                    :polarity "-"))))
+                             :location (s9.s / school
+                                             :mod (s9.s2 / secondary))
+                             :op1 (s9.h2 / hide-01
+                                         :ARG0 s9.b
+                                         :ARG1 (s9.c / class
+                                                     :poss s9.b
+                                                     :topic (s9.d2 / dance-01
+                                                                   :ARG0 s9.b)))
+                             :op2 (s9.w / wear-01
+                                        :ARG0 s9.b
+                                        :ARG1 (s9.m / mask
+                                                    :mod (s9.b2 / brutalize-01)))))
+   :snt10 (s10.c2 / contrast-01
+                  :ARG2 (s10.c3 / contrast-01
+                                :ARG1 (s10.h / have-03
+                                             :ARG0 (s10.b / boy
+                                                          :mod (s10.t / this)
+                                                          :same-as s9.t2)
+                                             :ARG1 (s10.a2 / and
+                                                           :op1 (s10.g / goal)
+                                                           :op2 (s10.d2 / dream-01
+                                                                        :ARG0 s10.b)))
+                                :ARG2 (s10.h2 / hide-01
+                                              :purpose (s10.a / accept-01
+                                                              :ARG1 s10.b
+                                                              :manner (s10.s / social))
+                                              :ARG0 s10.b
+                                              :ARG1 s10.a2
+                                              :ARG1-of (s10.c / cause-01
+                                                              :ARG0 (s10.e / easy-05
+                                                                           :ARG1 (s10.d / differ-02)
+                                                                           :location (s10.c4 / country
+                                                                                             :name (s10.n / name
+                                                                                                          :op1 "Russia"
+                                                                                                          :same-as s4.c)
+                                                                                             :mod (s10.e2 / especially))
+                                                                           :polarity "-")))))
+   :snt11 (s11.m / metaphoric
+                 :domain (s11.i / interpret-01
+                                :ARG1 (s11.p / portrait)
+                                :mod (s11.n / next)))
+   :snt12 (s12.a / and
+                 :op2 (s12.p / person
+                             :name (s12.n / name
+                                          :op1 "Nikita")
+                             :ARG0-of (s12.g / guard-01
+                                             :ARG1 (s12.s / security))
+                             :domain (s12.t / this)
+                             :source (s12.b / bar
+                                            :ARG1-of (s12.i / include-91
+                                                            :ARG2 (s12.b2 / bar
+                                                                          :location (s12.c / city
+                                                                                           :name (s12.n2 / name
+                                                                                                         :op1 "St."
+                                                                                                         :op2 "Petersburg"))))
+                                            :quant "1")))
+   :snt13 (s13.c / contrast-01
+                 :ARG1 (s13.l / like-01
+                              :ARG0 (s13.h / he
+                                           :same-as s12.b)
+                              :ARG1 (s13.s / say-01
+                                           :ARG0 s13.h
+                                           :ARG1 (s13.d / dislike-01
+                                                        :ARG0 (s13.y / you)
+                                                        :ARG1 s13.h
+                                                        :ARG1-of (s13.q / quote-01
+                                                                        :ARG0 s13.h
+                                                                        :ARG2 (s13.p / person
+                                                                                     :name (s13.n / name
+                                                                                                  :op1 "Hulk"))
+                                                                        :source (s13.m / movie))
+                                                        :time (s13.a / anger-01
+                                                                     :ARG1 s13.h))))
+                 :ARG2 (s13.s2 / see-01
+                               :ARG0 (s13.i / i
+                                            :same-as s3.i)
+                               :ARG1 s13.a
+                               :time (s13.e / ever)
+                               :polarity "-"))
+   :snt14 (s14.c / cause-01
+                 :ARG0 (s14.c2 / contrast-01
+                               :ARG1 (s14.r3 / romantic-03
+                                             :polarity "-")
+                               :ARG2 (s14.c3 / cool-04
+                                             :ARG1 (s14.a3 / and
+                                                           :op1 (s14.s3 / surround-01
+                                                                        :ARG1 (s14.w / woman))
+                                                           :op2 (s14.l / look-02
+                                                                       :ARG1 (s14.r / resemble-01
+                                                                                    :ARG1 (s14.h / he
+                                                                                                 :same-as s12.b)
+                                                                                    :ARG2 (s14.h3 / hulk
+                                                                                                  :mod (s14.a / aggressive))))))
+                               :location (s14.g / guy))
+                 :ARG1 (s14.h2 / hide-01
+                               :ARG0 s14.h
+                               :ARG1 (s14.a2 / and
+                                             :op1 (s14.s / sensitive-03
+                                                         :ARG0 s14.h)
+                                             :op2 (s14.s2 / side
+                                                          :mod (s14.r2 / romantic-03)
+                                                          :poss s14.h)))
+                 :rel (s14.c4 / country
+                              :name (s14.n / name
+                                           :op1 "Russia")
+                              :same-as s4.c))
+   :snt15 (s15.a / and
+                 :frequency (s15.s / sometimes)
+                 :op1 (s15.t / take-01
+                             :ARG0 (s15.i / i
+                                          :same-as s3.i)
+                             :ARG1 (s15.p / paint-02))
+                 :op2 (s15.g / give-01
+                             :ARG0 s15.i
+                             :ARG1 (s15.a2 / and
+                                           :op1 (s15.m / mean-01
+                                                       :ARG1 s15.p
+                                                       :ARG1-of (s15.n / new-01
+                                                                       :ARG1 (s15.t2 / tempt-01
+                                                                                     :ARG0 s15.p
+                                                                                     :op2-of s15.a2)))))
+                 :topic (s15.p2 / project
+                                :poss s15.i
+                                :same-as s6.p))
+   :snt16 (s16.c / compare-01
+                 :ARG0 (s16.i / i
+                              :same-as s3.i)
+                 :ARG1 (s16.a / and
+                              :op1 (s16.f2 / feature
+                                           :mod (s16.f / face))
+                              :op2 (s16.p2 / play-01
+                                           :ARG0 s16.i
+                                           :ARG2 (s16.w / word
+                                                        :example (s16.a2 / and
+                                                                         :op1 (s16.i3 / irony)
+                                                                         :op2 (s16.p / person
+                                                                                     :name (s16.n / name
+                                                                                                  :op1 "Iron"
+                                                                                                  :op2 "Man"))
+                                                                         :op3 (s16.m / man
+                                                                                     :ARG0-of (s16.i2 / iron-02))))))
+                 :frequency (s16.s / sometimes))
+   :snt17 (s17.b / bring-01
+                 :ARG0 (s17.i / i
+                              :same-as s3.i)
+                 :ARG1 (s17.i2 / issue-02
+                               :ARG0 (s17.s2 / surround-01
+                                             :ARG1 s17.i
+                                             :location (s17.c2 / country
+                                                               :name (s17.n / name
+                                                                            :op1 "Russia")
+                                                               :same-as s4.c))
+                               :mod (s17.s / society))
+                 :ARG2 (s17.c / converse-01)
+                 :instrument (s17.a / antiquity
+                                    :same-as s7.t))
+   :snt18 (s18.f / fact
+                 :ARG2-of (s18.i2 / interest-01)
+                 :domain (s18.a2 / and
+                                 :op1 (s18.r / ready-02
+                                             :ARG1 (s18.g / girl
+                                                          :ARG1-of (s18.i / include-91
+                                                                          :ARG2 (s18.g2 / girl
+                                                                                        :age (s18.t / temporal-quantity
+                                                                                                    :unit (s18.y / year)
+                                                                                                    :quant "19")
+                                                                                        :quant "18")
+                                                                          :ARG3 (s18.m3 / most)))
+                                             :time (s18.a / already))
+                                 :op2 (s18.d / dream-01
+                                             :ARG0 s18.g
+                                             :ARG1 (s18.m2 / marry-01
+                                                           :ARG1 s18.g)))
+                 :topic (s18.m / marry-01
+                               :location (s18.c / country
+                                                :name (s18.n / name
+                                                             :op1 "Russia")
+                                                :same-as s4.c)))
+   :snt19 (s19.t / teach-01
+                 :ARG0-of (s19.c / cause-01
+                                 :ARG1 (s19.f / fight-01
+                                              :ARG0 (s19.g2 / girl
+                                                            :quant (s19.m3 / most))
+                                              :ARG2 (s19.g / get-01
+                                                           :ARG0 s19.g2
+                                                           :ARG1 (s19.p / person
+                                                                        :ARG0-of (s19.h / have-rel-role-91
+                                                                                        :ARG1 s19.g2
+                                                                                        :ARG2 (s19.h2 / husband))
+                                                                        :ARG1-of (s19.g3 / good-02)))
+                                              :degree (s19.k / kind-of)))
+                 :ARG1 (s19.m2 / mean-01
+                               :ARG1 (s19.m / marry-01
+                                            :ARG0-of (s19.s / succeed-01
+                                                            :ARG1 (s19.l / live-01)))
+                               :ARG2 s19.l)
+                 :ARG2 (s19.w / we)
+                 :time (s19.f2 / from
+                               :op1 (s19.c2 / childhood)))
+   :snt20 (s20.a2 / and
+                  :op2 (s20.a / amr-unknown
+                              :topic (s20.i / i
+                                            :same-as s3.i)))
+   :snt21 (s21.a / age-01
+                 :ARG1 (s21.i / i
+                              :same-as s3.i)
+                 :ARG2 (s21.t / temporal-quantity
+                              :unit (s21.y / year)
+                              :quant "27"))
+   :snt22 (s22.a / and
+                 :beneficiary (s22.s / society
+                                     :mod (s22.c / country
+                                                 :name (s22.n / name
+                                                              :op1 "Russia")))
+                 :op1 (s22.m / maid
+                             :domain (s22.i / i
+                                            :same-as s3.i)
+                             :mod (s22.o / old))
+                 :op2 (s22.h / hopeful-03
+                             :ARG0 s22.i
+                             :ARG1 (s22.m2 / marry-01
+                                           :ARG1 s22.i
+                                           :time (s22.e / ever))
+                             :polarity "-"))
+   :snt23 (s23.c / cause-01
+                 :ARG0 (s23.t / that)
+                 :ARG1 (s23.s / see-01
+                              :ARG0 (s23.y / you)
+                              :ARG1 (s23.i / i
+                                           :ARG0-of (s23.w / wear-01
+                                                           :ARG1 (s23.m / mask
+                                                                        :instrument-of (s23.f / fight-01)
+                                                                        :mod (s23.c2 / country
+                                                                                     :name (s23.n / name
+                                                                                                  :op1 "Mexico"))))
+                                           :ARG0-of (s23.d / despair-01
+                                                           :location (s23.g / garden
+                                                                            :poss s23.i)
+                                                           :mod (s23.a / all))
+                                           :mod (s23.d2 / dress
+                                                        :mod (s23.w2 / wed-01))
+                                           :same-as s3.i)))
+   :snt24 (s24.c2 / contrast-01
+                  :ARG2 (s24.r / remember-01
+                               :ARG0 (s24.y / you)
+                               :ARG1 (s24.k / key-02
+                                            :ARG1 (s24.i / irony)))
+                  :ARG2 (s24.h / have-purpose-91
+                               :ARG1 (s24.t / this)
+                               :ARG1-of (s24.a / actual-02)
+                               :ARG2 (s24.m / motivate-01
+                                            :ARG0 s24.t
+                                            :ARG1 (s24.g / girl)
+                                            :ARG2 (s24.a3 / and
+                                                          :op1 (s24.f / fight-01
+                                                                      :ARG0 s24.g
+                                                                      :ARG2 (s24.a2 / and
+                                                                                    :op1 (s24.g2 / goal)
+                                                                                    :op2 (s24.d / dream-01
+                                                                                                :ARG0 s24.g)))
+                                                          :op2 (s24.c / change-01
+                                                                      :ARG0 s24.g
+                                                                      :ARG1 (s24.s / stereotype-01))))))
+   :snt25 (s25.a / and
+                 :op1 (s25.f / funny-02
+                             :ARG1 (s25.y / you)
+                             :mode "imperative")
+                 :op2 (s25.c / create-01
+                             :ARG0 s25.y
+                             :ARG1 (s25.m / magic
+                                          :quant (s25.s / some))
+                             :mode "imperative")))
+

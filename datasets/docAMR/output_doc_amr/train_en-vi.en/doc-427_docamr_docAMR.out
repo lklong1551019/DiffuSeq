@@ -1,0 +1,548 @@
+# ::id doc-427
+# ::doc_file doc-427
+# ::tok http : / / www . ted . com / talks / richard_st_john_s_8_secrets_of_success< / url> <next_sent> This is really a two - hour presentation I give to high school students , cut down to three minutes . <next_sent> And it all started one day on a plane , on my way to TED , seven years ago . <next_sent> And in the seat next to me was a high school student , a teenager , and she came from a really poor family . <next_sent> And she wanted to make something of her life , and she asked me a simple little question . <next_sent> She said , " What leads to success ? " <next_sent> And I felt really badly , because I could n't give her a good answer . <next_sent> So I get off the plane , and I come to TED . <next_sent> And I think , jeez , I 'm in the middle of a room of successful people ! <next_sent> So why do n't I ask them what helped them succeed , and pass it on to kids ? <next_sent> So here we are , seven years , 500 interviews later , and I 'm gonna tell you what really leads to success and makes TEDsters tick . <next_sent> And the first thing is passion . <next_sent> Freeman Thomas says , " I 'm driven by my passion . " <next_sent> TEDsters do it for love ; they do n't do it for money . <next_sent> Carol Coletta says , " I would pay someone to do what I do . " <next_sent> And the interesting thing is : if you do it for love , the money comes anyway . <next_sent> Work ! <next_sent> Rupert Murdoch said to me , " It 's all hard work . <next_sent> Nothing comes easily . <next_sent> But I have a lot of fun . " <next_sent> Did he say fun ? <next_sent> Rupert ? <next_sent> Yes ! <next_sent> TEDsters do have fun working . <next_sent> And they work hard . <next_sent> I figured , they 're not workaholics . <next_sent> They 're workafrolics . <next_sent> Good ! <next_sent> Alex Garden says , " To be successful put your nose down in something and get damn good at it . " <next_sent> There 's no magic ; it 's practice , practice , practice . <next_sent> And it 's focus . <next_sent> Norman Jewison said to me , " I think it all has to do with focusing yourself on one thing . " <next_sent> And push ! <next_sent> David Gallo says , " Push yourself . <next_sent> Physically , mentally , you 've gotta push , push , push . " <next_sent> You gotta push through shyness and self - doubt . <next_sent> Goldie Hawn says , " I always had self - doubts . <next_sent> I did n't think I 'd make it . " <next_sent> Now it 's not always easy to push yourself , and that 's why they invented mothers . <next_sent> Frank Gehry -- Frank Gehry said to me , " My mother pushed me . " <next_sent> Serve ! <next_sent> Sherwin Nuland says , " It was a privilege to serve as a doctor . " <next_sent> Now a lot of kids tell me they want to be millionaires . <next_sent> And the first thing I say to them is : " OK , well you ca n't serve yourself ; you gotta serve others something of value . <next_sent> Because that 's the way people really get rich . " <next_sent> I 'd say it was a pretty good idea . <next_sent> And there 's no magic to creativity in coming up with ideas -- it 's just doing some very simple things . <next_sent> And I give lots of evidence . <next_sent> Persist ! <next_sent> Joe Kraus says , " Persistence is the number one reason for our success . " <next_sent> You gotta persist through failure . <next_sent> You gotta persist through crap ! <next_sent> Which of course means " Criticism , Rejection , Assholes and Pressure . " <next_sent> So , the big -- the answer to this question is simple : Pay 4,000 bucks and come to TED . <next_sent> Or failing that , do the eight things -- and trust me , these are the big eight things that lead to success . <next_sent> Thank you TEDsters for all your interviews !
+(d / document
+   :snt1 (s1.u / url-entity
+               :value (s1.n / number
+                            :op1 (s1.i / Middle))
+               :polarity "-")
+   :snt2 (s2.p2 / presentation
+                :ARG0-of (s2.c / cut-down-11
+                               :ARG4 (s2.t2 / temporal-quantity
+                                            :unit (s2.m / minute)
+                                            :quant "3"))
+                :ARG1-of (s2.r / real-04)
+                :ARG1-of (s2.g / give-01
+                               :ARG0 (s2.i / i)
+                               :ARG2 (s2.p / person
+                                           :ARG0-of (s2.s / study-01
+                                                          :location (s2.h / high-school))))
+                :domain (s2.t3 / this)
+                :duration (s2.t / temporal-quantity
+                                :unit (s2.h2 / hour)
+                                :quant "2"))
+   :snt3 (s3.a2 / and
+                :op2 (s3.s / start-01
+                           :ARG1 (s3.i2 / it)
+                           :location (s3.p / plane
+                                           :location (s3.w / way
+                                                           :direction (s3.c / conference
+                                                                            :name (s3.n / name
+                                                                                        :op1 "TED"))
+                                                           :poss (s3.i / i
+                                                                       :same-as s2.i)))
+                           :mod (s3.a / all)
+                           :time (s3.d / day
+                                       :mod (s3.o / one))
+                           :time (s3.b / before
+                                       :quant (s3.t / temporal-quantity
+                                                    :unit (s3.y / year)
+                                                    :quant "7")
+                                       :op1 (s3.n2 / now))))
+   :snt4 (s4.a / and
+               :op2 (s4.a2 / and
+                           :op1 (s4.p / person
+                                      :ARG0-of (s4.s2 / study-01)
+                                      :location (s4.h / high-school)
+                                      :mod (s4.t / teenager))
+                           :op2 (s4.c / come-03
+                                      :ARG1 s4.p
+                                      :ARG2 (s4.f / family
+                                                  :mod (s4.p2 / poor
+                                                              :degree (s4.r / really)))))
+               :rel (s4.s / seat
+                          :location (s4.n / next-to
+                                          :op1 (s4.i / i
+                                                     :same-as s2.i))))
+   :snt5 (s5.a / and
+               :op2 (s5.w / want-01
+                          :ARG0 (s5.s / she
+                                      :same-as s4.p)
+                          :ARG1 (s5.m / make-01
+                                      :ARG0 s5.s
+                                      :ARG1 (s5.s3 / something)
+                                      :ARG2 (s5.l / life
+                                                  :poss s5.s)))
+               :op3 (s5.a2 / ask-01
+                           :ARG0 s5.s
+                           :ARG1 (s5.t / thing
+                                       :ARG1-of (s5.s2 / simple-02)
+                                       :ARG1-of (s5.q / question-01
+                                                      :ARG0 (s5.i / i
+                                                                  :same-as s2.i))
+                                       :mod (s5.l2 / little))
+                           :ARG2 s5.i))
+   :snt6 (s6.s / say-01
+               :ARG0 (s6.s2 / she
+                            :same-as s4.p)
+               :ARG1 (s6.l / lead-03
+                           :ARG0 (s6.a / amr-unknown)
+                           :ARG2 (s6.s3 / succeed-01)))
+   :snt7 (s7.a / and
+               :op2 (s7.f / feel-01
+                          :ARG0 (s7.i / i
+                                      :same-as s2.i)
+                          :ARG1 (s7.b / bad-07
+                                      :degree (s7.r / really))
+                          :ARG1-of (s7.c / cause-01
+                                         :ARG0 (s7.p / possible-01
+                                                     :ARG1 (s7.g / give-01
+                                                                 :ARG0 s7.i
+                                                                 :ARG1 (s7.t / thing
+                                                                             :ARG1-of (s7.g2 / good-02)
+                                                                             :ARG2-of (s7.a2 / answer-01
+                                                                                             :ARG0 (s7.s / she
+                                                                                                         :same-as s4.p)))
+                                                                 :ARG2 s7.s)
+                                                     :polarity "-"))))
+   :snt8 (s8.a / and
+               :op1 (s8.g / get-05
+                          :ARG1 (s8.i / i
+                                      :same-as s2.i)
+                          :ARG2 (s8.p / plane
+                                      :same-as s3.p))
+               :op2 (s8.c / come-01
+                          :ARG1 s8.i
+                          :ARG4 (s8.p2 / publication
+                                       :name (s8.n / name
+                                                   :op1 "TED")
+                                       :same-as s3.c)))
+   :snt9 (s9.a / and
+               :op2 (s9.t / think-01
+                          :ARG0 (s9.i / i
+                                      :same-as s2.i)
+                          :ARG1 (s9.b / be-located-at-91
+                                      :ARG1 s9.i
+                                      :ARG2 (s9.m / middle
+                                                  :part-of (s9.r / room
+                                                                 :consist-of (s9.p / person
+                                                                                   :ARG0-of (s9.s / succeed-01)))))
+                          :mod (s9.j / jeez)))
+   :snt10 (s10.c / cause-01
+                 :ARG0 (s10.a / amr-unknown)
+                 :ARG1 (s10.a2 / and
+                               :op1 (s10.a3 / ask-01
+                                            :ARG0 (s10.i / i
+                                                         :same-as s2.i)
+                                            :ARG1 (s10.t2 / thing
+                                                          :ARG0-of (s10.h / help-01
+                                                                          :ARG1 (s10.s / succeed-01
+                                                                                       :ARG0 (s10.t / they
+                                                                                                    :same-as s9.p))
+                                                                          :ARG2 s10.t))
+                                            :polarity "-")
+                               :op2 (s10.p / pass-on-09
+                                           :ARG0 s10.i
+                                           :ARG1 s10.t2
+                                           :ARG2 (s10.k / kid))))
+   :snt11 (s11.a2 / and
+                  :op1 (s11.i2 / interview-01
+                               :ARG0 (s11.w / we
+                                            :location (s11.h / here)
+                                            :time (s11.a / after
+                                                         :quant s11.i2))
+                               :quant "500")
+                  :op2 (s11.t / tell-01
+                              :ARG0 (s11.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s11.t3 / thing
+                                            :ARG0-of (s11.l / lead-03
+                                                            :ARG1-of (s11.r / real-04)
+                                                            :ARG2 (s11.s / succeed-01))
+                                            :ARG0-of (s11.m / make-02
+                                                            :ARG1 (s11.t4 / tick-01
+                                                                          :ARG0 (s11.p / person
+                                                                                       :name (s11.n / name
+                                                                                                    :op1 "TEDsters")))))
+                              :ARG2 (s11.y2 / you))
+                  :rel (s11.t2 / temporal-quantity
+                               :unit (s11.y / year)
+                               :quant "7"))
+   :snt12 (s12.a / and
+                 :op2 (s12.p / passion
+                             :domain (s12.t / thing
+                                            :ord (s12.o / ordinal-entity
+                                                        :value "1"))))
+   :snt13 (s13.s / say-01
+                 :ARG0 (s13.p2 / person
+                               :name (s13.n / name
+                                            :op1 "Freeman"
+                                            :op2 "Thomas")
+                               :ARG0-of (s13.h / have-org-role-91))
+                 :ARG1 (s13.d / drive-02
+                              :ARG0 (s13.p / passion
+                                           :poss s13.p2)
+                              :ARG1 s13.p2))
+   :snt14 (s14.c / contrast-01
+                 :ARG1 (s14.h / have-purpose-91
+                              :ARG1 (s14.p / person
+                                           :ARG1-of (s14.t / true-01
+                                                           :ARG1 (s14.i / it
+                                                                        :same-as s11.s)))
+                              :ARG2 (s14.l / love-01))
+                 :ARG2 (s14.d / do-02
+                              :ARG0 s14.p
+                              :ARG1 s14.i
+                              :polarity "-")
+                 :ARG2 (s14.h2 / have-purpose-91
+                               :ARG1 s14.d
+                               :ARG2 (s14.m / money)))
+   :snt15 (s15.s / say-01
+                 :ARG0 (s15.p2 / person
+                               :name (s15.n / name
+                                            :op1 "Carol"
+                                            :op2 "Coletta"))
+                 :ARG1 (s15.p / pay-01
+                              :ARG0 s15.p2
+                              :ARG2 (s15.s2 / someone)
+                              :ARG3 (s15.d / do-02
+                                           :ARG0 s15.s2
+                                           :ARG1 (s15.t / thing
+                                                        :ARG1-of (s15.d2 / do-02
+                                                                         :ARG0 s15.p2)))))
+   :snt16 (s16.a / and
+                 :op2 (s16.t / thing
+                             :ARG2-of (s16.i / interest-01)
+                             :domain (s16.c / come-01
+                                            :ARG1 (s16.m / money)
+                                            :condition (s16.d / do-02
+                                                              :ARG0 (s16.y / you)
+                                                              :ARG1 (s16.i2 / it)
+                                                              :ARG2 (s16.l / love-01))
+                                            :mod (s16.a2 / anyway))))
+   :snt17 (s17.w / work-01
+                 :ARG0 (s17.y / you)
+                 :mode "imperative")
+   :snt18 (s18.s / say-01
+                 :ARG0 (s18.p / person
+                              :name (s18.n / name
+                                           :op1 "Rupert"
+                                           :op2 "Murdoch"))
+                 :ARG1 (s18.h / hard-02
+                              :ARG1 (s18.w / work-01
+                                           :mod (s18.a / all)))
+                 :ARG2 (s18.i / i
+                              :same-as s2.i))
+   :snt19 (s19.c / come-01
+                 :ARG1 (s19.n / nothing)
+                 :ARG1-of (s19.e / easy-05))
+   :snt20 (s20.c / contrast-01
+                 :ARG2 (s20.f / fun-01
+                              :quant (s20.l / lot)
+                              :ARG0 (s20.i / i
+                                           :same-as s18.p)))
+   :snt21 (s21.s / say-01
+                 :ARG0 (s21.h / he
+                              :same-as s18.p)
+                 :ARG1 (s21.f / fun-01)
+                 :polarity (s21.a / amr-unknown))
+   :snt22 (s22.p / person
+                 :name (s22.n / name
+                              :op1 "Rupert")
+                 :polarity (s22.a / amr-unknown)
+                 :same-as s18.p)
+   :snt23 (s23.y / yes
+                 :mode "expressive")
+   :snt24 (s24.f / fun-01
+                 :ARG0 (s24.p / person
+                              :ARG0-of (s24.e / engineer-01
+                                              :ARG1 (s24.r / research-institute
+                                                           :name (s24.n / name
+                                                                        :op1 "Tea"
+                                                                        :op2 "Party"))
+                                              :ARG2 (s24.m / member)))
+                 :ARG1 (s24.w / work-01
+                              :ARG0 s24.p))
+   :snt25 (s25.a / and
+                 :op2 (s25.w / work-01
+                             :ARG0 (s25.t / they
+                                          :same-as s24.p)
+                             :ARG1-of (s25.h / hard-02)))
+   :snt26 (s26.f / figure-01
+                 :ARG0 (s26.i / i
+                              :same-as s2.i)
+                 :ARG1 (s26.w / work-01
+                              :ARG0 (s26.t / they
+                                           :same-as s24.p)
+                              :ARG0-of (s26.w2 / work-01)
+                              :polarity "-"))
+   :snt27 (s27.w / work-01
+                 :ARG0 (s27.t / they
+                              :same-as s24.p))
+   :snt28 (s28.g / good-02
+                 :mode "expressive")
+   :snt29 (s29.s / say-01
+                 :ARG0 (s29.p / person
+                              :name (s29.n / name
+                                           :op1 "Alex"
+                                           :op2 "Garden"))
+                 :ARG1 (s29.a / and
+                              :purpose (s29.s3 / succeed-01
+                                               :ARG0 (s29.y / you
+                                                            :part (s29.n2 / nose)))
+                              :op1 (s29.p2 / put-01
+                                           :ARG0 s29.y
+                                           :ARG1 s29.n2
+                                           :ARG2 (s29.s2 / something)
+                                           :direction (s29.d2 / down))
+                              :op2 (s29.g / get-03
+                                          :ARG1 s29.y
+                                          :ARG2 (s29.g2 / good-03
+                                                        :ARG1 s29.y
+                                                        :ARG2 s29.s2
+                                                        :mod (s29.d / damn)))))
+   :snt30 (s30.c / contrast-01
+                 :ARG1 (s30.m / magic
+                              :polarity "-")
+                 :ARG2 (s30.p / practice-01))
+   :snt31 (s31.a / and
+                 :op2 (s31.f / focus-01
+                             :ARG0 (s31.i / it)))
+   :snt32 (s32.s / say-01
+                 :ARG0 (s32.p / person
+                              :name (s32.n / name
+                                           :op1 "Norman"
+                                           :op2 "Jewison"))
+                 :ARG1 (s32.t2 / think-01
+                               :ARG0 s32.p
+                               :ARG1 (s32.h / have-to-do-with-04
+                                            :ARG0 (s32.i2 / it
+                                                          :mod (s32.a / all))
+                                            :ARG1 (s32.f / focus-01
+                                                         :ARG0 (s32.y / you)
+                                                         :ARG1 s32.y
+                                                         :ARG2 (s32.t / thing
+                                                                      :quant (s32.o / one)))))
+                 :ARG2 (s32.i / i
+                              :same-as s2.i))
+   :snt33 (s33.a / and
+                 :op2 (s33.p / push-01
+                             :ARG0 (s33.y / you)
+                             :mode "imperative"))
+   :snt34 (s34.s / say-01
+                 :ARG0 (s34.p / person
+                              :name (s34.n / name
+                                           :op1 "David"
+                                           :op2 "Gallo"))
+                 :ARG1 (s34.p2 / push-01
+                               :ARG0 (s34.y / you)
+                               :ARG1 s34.y))
+   :snt35 (s35.o / obligate-01
+                 :ARG1 (s35.y / you)
+                 :ARG2 (s35.a / and
+                              :op1 (s35.p2 / push-01
+                                           :ARG0 s35.y)
+                              :op2 (s35.p3 / push-01
+                                           :ARG0 s35.y))
+                 :manner (s35.m / mental)
+                 :manner (s35.p / physical))
+   :snt36 (s36.o / obligate-01
+                 :ARG1 (s36.y / you)
+                 :ARG2 (s36.p / push-02
+                              :ARG0 s36.y
+                              :ARG2 (s36.a / and
+                                           :op1 (s36.c / coward)
+                                           :op2 (s36.d / doubt-01
+                                                       :ARG0 s36.y))))
+   :snt37 (s37.s / say-01
+                 :ARG0 (s37.p / person
+                              :name (s37.n / name
+                                           :op1 "Goldie"
+                                           :op2 "Hawn"))
+                 :ARG1 (s37.d / doubt-01
+                              :ARG0 s37.p
+                              :ARG1 s37.p
+                              :time (s37.a / always)))
+   :snt38 (s38.t / think-01
+                 :ARG0 (s38.i / i
+                              :same-as s32.p)
+                 :ARG1 (s38.m / make-it-14
+                              :ARG0 s38.i
+                              :polarity "-"))
+   :snt39 (s39.a2 / and
+                  :op1 (s39.e / easy-05
+                              :ARG1 (s39.p / push-01
+                                           :ARG0 (s39.y / you)
+                                           :ARG1 s39.y)
+                              :time (s39.a / always)
+                              :time (s39.n / now)
+                              :polarity "-")
+                  :op2 (s39.c / cause-01
+                              :ARG0 s39.e
+                              :ARG1 (s39.i / invent-01
+                                           :ARG0 (s39.t / they)
+                                           :ARG1 (s39.m / mother))))
+   :snt40 (s40.s / say-01
+                 :ARG0 (s40.p / person
+                              :name (s40.n / name
+                                           :op1 "Frank"
+                                           :op2 "Gehry"
+                                           :op3 "Gehry"))
+                 :ARG1 (s40.p3 / push-01
+                               :ARG0 (s40.p2 / person
+                                             :ARG0-of (s40.h / have-rel-role-91
+                                                             :ARG1 s40.p
+                                                             :ARG2 (s40.m / mother)))
+                               :ARG1 s40.p)
+                 :ARG2 (s40.i / i
+                              :same-as s2.i))
+   :snt41 (s41.s / serve-01
+                 :ARG0 (s41.y / you)
+                 :mode "imperative")
+   :snt42 (s42.s / say-01
+                 :ARG0 (s42.p / person
+                              :name (s42.n / name
+                                           :op1 "Sherwin"
+                                           :op2 "Nuland"))
+                 :ARG1 (s42.p2 / privilege-01
+                               :ARG1 (s42.s2 / serve-01
+                                             :ARG0 s42.p
+                                             :ARG1 (s42.d / doctor))))
+   :snt43 (s43.t / tell-01
+                 :ARG0 (s43.k / kid
+                              :quant (s43.l / lot))
+                 :ARG1 (s43.w / want-01
+                              :ARG0 s43.k
+                              :ARG1 (s43.m / millionaire
+                                           :domain s43.k))
+                 :ARG2 (s43.i / i
+                              :same-as s2.i)
+                 :time (s43.n / now))
+   :snt44 (s44.a / and
+                 :op2 (s44.s / say-01
+                             :ARG0 (s44.i / i
+                                          :same-as s2.i)
+                             :ARG1 (s44.a2 / and
+                                           :op1 (s44.p2 / possible-01
+                                                        :ARG1 (s44.s2 / serve-01
+                                                                      :ARG0 (s44.t / they
+                                                                                   :same-as s43.k)
+                                                                      :ARG2 s44.t)
+                                                        :polarity "-")
+                                           :op2 (s44.o / obligate-01
+                                                       :ARG1 s44.t
+                                                       :ARG2 (s44.s3 / serve-01
+                                                                     :ARG0 s44.t
+                                                                     :ARG1 (s44.s4 / something
+                                                                                   :ARG1-of (s44.v / value-02))
+                                                                     :ARG2 (s44.p / person
+                                                                                  :mod (s44.o2 / other)))))
+                             :ARG2 s44.t
+                             :mod (s44.f / first)))
+   :snt45 (s45.c / cause-01
+                 :ARG1 (s45.w / way
+                              :domain (s45.t / that
+                                             :same-as s44.s3)
+                              :manner-of (s45.g / get-01
+                                                :ARG0 (s45.p / person)
+                                                :ARG1 (s45.r2 / rich)
+                                                :ARG1-of (s45.r / real-04))))
+   :snt46 (s46.s / say-01
+                 :ARG0 (s46.i / i
+                              :same-as s2.i)
+                 :ARG1 (s46.i2 / idea
+                               :ARG1-of (s46.g / good-02
+                                               :degree (s46.p / pretty))
+                               :domain (s46.i3 / it)))
+   :snt47 (s47.a / and
+                 :concession (s47.d / do-02
+                                    :ARG0 (s47.c3 / creativity)
+                                    :ARG1 (s47.t / thing
+                                                 :quant (s47.s2 / some)
+                                                 :ARG1-of (s47.s / simple-02
+                                                                 :degree (s47.v / very)))
+                                    :mod (s47.j / just))
+                 :op2 (s47.m / magic
+                             :ARG1-of (s47.c / cause-01
+                                             :ARG0 (s47.c2 / come-up-11
+                                                           :ARG1 (s47.i / idea)))
+                             :domain s47.c3
+                             :polarity "-"))
+   :snt48 (s48.a / and
+                 :op2 (s48.g / give-01
+                             :ARG0 (s48.i / i
+                                          :same-as s2.i)
+                             :ARG1 (s48.t / thing
+                                          :quant (s48.l / lot)
+                                          :ARG0-of (s48.e / evidence-01))))
+   :snt49 (s49.p / persist-01
+                 :ARG0 (s49.y / you)
+                 :mode "imperative")
+   :snt50 (s50.s / say-01
+                 :ARG0 (s50.p2 / person
+                               :name (s50.n / name
+                                            :op1 "Joe"
+                                            :op2 "Kraus"))
+                 :ARG1 (s50.c / cause-01
+                              :ARG0 (s50.p / persist-01)
+                              :ARG1 (s50.s2 / succeed-01
+                                            :ARG0 (s50.w / we))
+                              :ord (s50.o / ordinal-entity
+                                          :value "1")))
+   :snt51 (s51.o / obligate-01
+                 :ARG1 (s51.y / you)
+                 :ARG2 (s51.p / persist-01
+                              :ARG1 s51.y
+                              :duration (s51.f / fail-01)))
+   :snt52 (s52.o / obligate-01
+                 :ARG1 (s52.y / you)
+                 :ARG2 (s52.p / persist-01
+                              :ARG1 s52.y
+                              :path (s52.t / thing
+                                           :ARG1-of (s52.c / crap-01))))
+   :snt53 (s53.m / mean-01
+                 :ARG1 (s53.t / thing)
+                 :ARG2 (s53.a / and
+                              :op1 (s53.c / criticize-01)
+                              :op2 (s53.r / reject-01)
+                              :op3 (s53.a2 / asshole)
+                              :op4 (s53.p / pressure-01))
+                 :mod (s53.o / of-course))
+   :snt54 (s54.s / simple-02
+                 :ARG1 (s54.a2 / answer-01
+                               :ARG1 (s54.q / question-01
+                                            :mod (s54.t / this))
+                               :ARG2 (s54.a / and
+                                            :op1 (s54.p / pay-01
+                                                        :ARG0 (s54.y / you)
+                                                        :ARG1 (s54.m / monetary-quantity
+                                                                     :unit (s54.d / dollar)
+                                                                     :quant "4000"))
+                                            :op2 (s54.c / come-01
+                                                        :ARG1 s54.y
+                                                        :ARG4 (s54.c2 / conference
+                                                                      :name (s54.n / name
+                                                                                   :op1 "TED")
+                                                                      :same-as s3.c))))
+                 :mod (s54.b / big))
+   :snt55 (s55.o / or
+                 :op2 (s55.a / and
+                             :condition (s55.f / fail-01
+                                               :ARG1 (s55.t / that
+                                                            :same-as s54.c)
+                                               :ARG2 (s55.y / you))
+                             :op1 (s55.d / do-02
+                                         :ARG0 s55.y
+                                         :ARG1 (s55.t2 / thing
+                                                       :quant "8")
+                                         :mode "imperative")
+                             :op2 (s55.t5 / trust-01
+                                          :ARG0 s55.y
+                                          :ARG1 (s55.t3 / thing
+                                                        :ARG0-of (s55.l / lead-03
+                                                                        :ARG2 (s55.s / succeed-01))
+                                                        :domain (s55.t4 / this
+                                                                        :same-as s55.t2)
+                                                        :mod (s55.b / big)
+                                                        :quant "8")
+                                          :ARG2 (s55.i / i
+                                                       :same-as s2.i))))
+   :snt56 (s56.t / thank-01
+                 :ARG0 (s56.i / i)
+                 :ARG1 (s56.p / person
+                              :name (s56.n / name
+                                           :op1 "TEDsters"))
+                 :ARG2 (s56.i2 / interview-01
+                               :ARG1 s56.p
+                               :mod (s56.a / all))))
+

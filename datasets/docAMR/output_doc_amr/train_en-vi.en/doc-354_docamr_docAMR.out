@@ -1,0 +1,24 @@
+# ::id doc-354
+# ::doc_file doc-354
+# ::tok http : / / www . ted . com / talks / james_burchfield_plays_invisible_turntables< / url> <next_sent> Let 's just get started here . <next_sent> Okay , just a moment . <next_sent> All right . <next_sent> Oh , sorry . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :value "ossobuco")
+   :snt2 (s2.g / get-04
+               :ARG1 (s2.s / start-01
+                           :ARG0 (s2.w / we)
+                           :location (s2.h / here))
+               :mod (s2.j / just)
+               :mode "imperative")
+   :snt3 (s3.m / moment
+               :ARG1-of (s3.o / okay-04)
+               :mod (s3.j / just))
+   :snt4 (s4.r / right-06
+               :mod (s4.a / all))
+   :snt5 (s5.s / sorry-01
+               :ARG1 (s5.i / i)
+               :mod (s5.o / oh
+                          :mode "expressive"))
+   :snt6 (s6.t / thank-01
+               :ARG1 (s6.y / you)))
+

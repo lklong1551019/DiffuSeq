@@ -1,0 +1,480 @@
+# ::id doc-388
+# ::doc_file doc-388
+# ::tok http : / / www . ted . com / talks / jessa_gamble_how_to_sleep< / url> <next_sent> Let 's start with day and night . <next_sent> Life evolved under conditions of light and darkness , light and then darkness . <next_sent> And so plants and animals developed their own internal clocks so that they would be ready for these changes in light . <next_sent> These are chemical clocks , and they 're found in every known being that has two or more cells and in some that only have one cell . <next_sent> I 'll give you an example -- if you take a horseshoe crab off the beach , and you fly it all the way across the continent , and you drop it into a sloped cage , it will scramble up the floor of the cage as the tide is rising on its home shores , and it 'll skitter down again right as the water is receding thousands of miles away . <next_sent> It 'll do this for weeks , until it kind of gradually loses the plot . <next_sent> And it 's incredible to watch , but there 's nothing psychic or paranormal going on ; it 's simply that these crabs have internal cycles that correspond , usually , with what 's going on around it . <next_sent> So , we have this ability as well . <next_sent> And in humans , we call it the " body clock . " <next_sent> You can see this most clearly when you take away someone 's watch and you shut them into a bunker , deep underground , for a couple of months . <next_sent> People actually volunteer for this , and they usually come out kind of raving about their productive time in the hole . <next_sent> So , no matter how atypical these subjects would have to be , they all show the same thing . <next_sent> They get up just a little bit later every day -- say 15 minutes or so -- and they kind of drift all the way around the clock like this over the course of the weeks . <next_sent> And so , in this way we know that they are working on their own internal clocks , rather than somehow sensing the day outside . <next_sent> So fine , we have a body clock , and it turns out that it 's incredibly important in our lives . <next_sent> It 's a huge driver for culture and I think that it 's the most underrated force on our behavior . <next_sent> We evolved as a species near the equator , and so we 're very well - equipped to deal with 12 hours of daylight and 12 hours of darkness . <next_sent> But of course , we 've spread to every corner of the globe and in Arctic Canada , where I live , we have perpetual daylight in summer and 24 hours of darkness in winter . <next_sent> So the culture , the northern aboriginal culture , traditionally has been highly seasonal . <next_sent> In winter , there 's a lot of sleeping going on ; you enjoy your family life inside . <next_sent> And in summer , it 's almost manic hunting and working activity very long hours , very active . <next_sent> So , what would our natural rhythm look like ? <next_sent> They go to bed around 8:00 p . m. <next_sent> until midnight and then again , they sleep from about 2:00 a.m. until sunrise . <next_sent> And in - between , they have a couple of hours of sort of meditative quiet in bed . <next_sent> And during this time , there 's a surge of prolactin , the likes of which a modern day never sees . <next_sent> The people in these studies report feeling so awake during the daytime , that they realize they 're experiencing true wakefulness for the first time in their lives . <next_sent> So , cut to the modern day . <next_sent> We 're living in a culture of jet lag , global travel , 24 - hour business , shift work . <next_sent> And you know , our modern ways of doing things have their advantages , but I believe we should understand the costs . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :ARG3 (s1.u2 / url-entity
+                            :value "Japan")
+               :rel (s1.t / talk-01))
+   :snt2 (s2.s / start-01
+               :ARG0 (s2.w / we)
+               :ARG2 (s2.a / and
+                           :op1 (s2.d / day)
+                           :op2 (s2.n / night)))
+   :snt3 (s3.e / evolve-01
+               :ARG1 (s3.l / life)
+               :condition (s3.a / and
+                                :op1 (s3.a2 / and
+                                            :op1 (s3.l2 / light-06)
+                                            :op2 (s3.d / darkness))
+                                :op2 (s3.l3 / light-06)
+                                :op3 (s3.d2 / darkness
+                                            :time (s3.t / then))))
+   :snt4 (s4.a / and
+               :op2 (s4.c / cause-01
+                          :ARG1 (s4.d / develop-02
+                                      :purpose (s4.r / ready-02
+                                                     :ARG1 (s4.a2 / and
+                                                                  :op1 (s4.p / plant)
+                                                                  :op2 (s4.a3 / animal))
+                                                     :ARG2 (s4.c2 / change-01
+                                                                  :ARG1 (s4.l / light)
+                                                                  :mod (s4.t / this)))
+                                      :ARG0 s4.a2
+                                      :ARG1 (s4.w / watch
+                                                  :ARG1-of (s4.i / internal-02)
+                                                  :poss s4.a2))))
+   :snt5 (s5.a / and
+               :op1 (s5.w / watch
+                          :domain (s5.t / this
+                                        :same-as s4.w)
+                          :mod (s5.c3 / chemical))
+               :op2 (s5.f / find-01
+                          :ARG1 s5.w
+                          :location (s5.b / being
+                                          :ARG0-of (s5.h / have-03
+                                                         :ARG1 (s5.c / cell
+                                                                     :quant (s5.a2 / at-least
+                                                                                   :op1 "2")))
+                                          :ARG1-of (s5.k / know-01)
+                                          :mod (s5.e / every)))
+               :rel (s5.b2 / being
+                           :quant (s5.s / some)
+                           :ARG0-of (s5.h2 / have-03
+                                           :ARG1 (s5.c2 / cell
+                                                        :mod (s5.o / only)
+                                                        :quant "1"))))
+   :snt6 (s6.g / give-01
+               :ARG0 (s6.i / i)
+               :ARG1 (s6.e / example
+                           :consist-of (s6.a5 / and
+                                              :condition (s6.a4 / and
+                                                                :op1 (s6.t / take-01
+                                                                           :ARG0 (s6.y / you)
+                                                                           :ARG1 (s6.c3 / crab
+                                                                                        :mod (s6.h2 / horseshoe))
+                                                                           :ARG2 (s6.b / beach))
+                                                                :op2 (s6.f2 / fly-01
+                                                                            :ARG0 s6.y
+                                                                            :ARG1 s6.c3
+                                                                            :extent (s6.a3 / all-the-way)
+                                                                            :path (s6.a / across
+                                                                                        :op1 (s6.c2 / continent)))
+                                                                :op3 (s6.d3 / drop-01
+                                                                            :ARG0 s6.y
+                                                                            :ARG1 s6.c3
+                                                                            :ARG4 (s6.c / cage
+                                                                                        :ARG1-of (s6.s4 / slant-01)
+                                                                                        :part (s6.f / floor))))
+                                              :op1 (s6.s / scramble-01
+                                                         :ARG0 s6.c3
+                                                         :direction (s6.u / up)
+                                                         :path s6.f
+                                                         :time (s6.r3 / rise-01
+                                                                      :ARG1 (s6.t2 / tide)
+                                                                      :location (s6.s2 / shore
+                                                                                       :mod (s6.h / home)
+                                                                                       :poss s6.c3)))
+                                              :op2 (s6.s3 / skid-01
+                                                          :ARG0 s6.c3
+                                                          :direction (s6.d2 / down)
+                                                          :mod (s6.a2 / again)
+                                                          :time (s6.r / recede-01
+                                                                      :ARG0 (s6.w / water)
+                                                                      :location (s6.a6 / away
+                                                                                       :quant (s6.m2 / multiple
+                                                                                                     :op1 (s6.d / distance-quantity
+                                                                                                                :unit (s6.m / mile)
+                                                                                                                :quant "1000")))
+                                                                      :mod (s6.r2 / right)))))
+               :ARG2 s6.y)
+   :snt7 (s7.d / do-02
+               :ARG0 (s7.i / it
+                           :same-as s6.c3)
+               :ARG1 (s7.t2 / this)
+               :duration (s7.m / multiple
+                               :op1 (s7.t / temporal-quantity
+                                          :unit (s7.w / week)
+                                          :quant "1"))
+               :time (s7.u / until
+                           :op1 (s7.l / lose-02
+                                      :ARG0 s7.i
+                                      :ARG1 (s7.p / plot)
+                                      :manner (s7.g / gradual
+                                                    :degree (s7.k / kind-of)))))
+   :snt8 (s8.a / and
+               :op2 (s8.c / contrast-01
+                          :ARG1 (s8.w / watch-01
+                                      :mod (s8.i / incredible))
+                          :ARG2 (s8.g / go-on-15
+                                      :ARG1 (s8.o / or
+                                                  :op1 (s8.n / nothing
+                                                             :mod (s8.p2 / psychic)
+                                                             :mod (s8.p / paranormal))
+                                                  :op2 s8.p))
+                          :op3 (s8.c4 / cycle-02
+                                      :ARG1 (s8.c3 / crab
+                                                   :mod (s8.t2 / this)
+                                                   :same-as s6.c3)
+                                      :ARG1-of (s8.i2 / internal-02)
+                                      :ARG1-of (s8.s / simple-02)
+                                      :ARG1-of (s8.c2 / correspond-02
+                                                      :ARG2 (s8.t / thing
+                                                                  :ARG1-of (s8.g2 / go-on-15
+                                                                                  :location (s8.a2 / around
+                                                                                                   :op1 s8.c3)))
+                                                      :mod (s8.u / usual)))))
+   :snt9 (s9.c2 / cause-01
+                :ARG1 (s9.c / capable-01
+                            :ARG1 (s9.w / we)
+                            :ARG2 (s9.t / this)
+                            :mod (s9.a / as-well)))
+   :snt10 (s10.a / and
+                 :op2 (s10.c / call-01
+                             :ARG0 (s10.w / we)
+                             :ARG1 (s10.i / it
+                                          :same-as s9.t)
+                             :ARG2 (s10.c2 / clock
+                                           :mod (s10.b / body))
+                             :location (s10.h / human)))
+   :snt11 (s11.p / possible-01
+                 :ARG1 (s11.s / see-01
+                              :ARG0 (s11.y / you)
+                              :ARG1 (s11.t3 / this)
+                              :ARG1-of (s11.c / clear-08
+                                              :ARG2-of (s11.h / have-degree-91
+                                                              :ARG1 s11.s
+                                                              :ARG3 (s11.m2 / most)))
+                              :time (s11.a / and
+                                           :op1 (s11.t / take-away-05
+                                                       :ARG0 s11.y
+                                                       :ARG1 (s11.w / watch-01
+                                                                    :ARG0 (s11.s3 / someone)))
+                                           :op2 (s11.s2 / shut-01
+                                                        :ARG0 s11.y
+                                                        :ARG1 s11.s3
+                                                        :ARG2 (s11.b / bunker
+                                                                     :location (s11.u / underground
+                                                                                      :ARG2-of (s11.d / deep-02)))
+                                                        :duration (s11.c2 / couple
+                                                                          :op1 (s11.t2 / temporal-quantity
+                                                                                       :unit (s11.m / month)
+                                                                                       :quant "1"))))))
+   :snt12 (s12.a2 / and
+                  :op1 (s12.v / volunteer-01
+                              :ARG0 (s12.p / person)
+                              :ARG1 (s12.t / this)
+                              :ARG1-of (s12.a / actual-02))
+                  :op2 (s12.c / come-out-09
+                              :ARG1 s12.p
+                              :manner (s12.r / rave-01
+                                             :ARG0 s12.p
+                                             :ARG1 (s12.t2 / time
+                                                           :ARG0-of (s12.p2 / productive-03)
+                                                           :location (s12.h / hole)
+                                                           :poss s12.p)
+                                             :degree (s12.k / kind-of))
+                              :mod (s12.u / usual)))
+   :snt13 (s13.c / cause-01
+                 :ARG1 (s13.s2 / show-01
+                               :ARG0 (s13.s4 / subject
+                                             :mod (s13.t2 / this)
+                                             :mod (s13.a / all
+                                                         :same-as s13.t2))
+                               :ARG1 (s13.t / thing
+                                            :ARG1-of (s13.s / same-01))
+                               :ARG1-of (s13.r / regardless-91
+                                               :ARG2 (s13.a2 / atypical
+                                                             :ARG2-of (s13.o / obligate-01)
+                                                             :degree (s13.s3 / so)
+                                                             :domain s13.s4)))
+                 :rel "-")
+   :snt14 (s14.a3 / and
+                  :op1 (s14.g / get-up-26
+                              :ARG1 (s14.t4 / they
+                                            :same-as s13.t2)
+                              :ARG1-of (s14.m / mean-01
+                                              :ARG2 (s14.o / or
+                                                           :ARG1-of (s14.s / say-01)
+                                                           :op1 (s14.t2 / temporal-quantity
+                                                                        :unit (s14.m2 / minute)
+                                                                        :quant "15")
+                                                           :op2 (s14.s2 / so)))
+                              :frequency (s14.r / rate-entity-91
+                                                :ARG2 (s14.t / temporal-quantity
+                                                             :unit (s14.d / day)
+                                                             :quant "1"))
+                              :time (s14.a / after
+                                           :quant (s14.b / bit
+                                                         :mod (s14.l / little))
+                                           :mod (s14.j / just)))
+                  :op2 (s14.d2 / drift-01
+                               :ARG1 s14.t4
+                               :ARG1-of (s14.r2 / resemble-01
+                                                :ARG2 (s14.t5 / this))
+                               :degree (s14.k / kind-of)
+                               :duration (s14.m3 / multiple
+                                                 :op1 (s14.t3 / temporal-quantity
+                                                              :unit (s14.w / week)
+                                                              :quant "1"))
+                               :extent (s14.a2 / all-the-way)
+                               :path (s14.a4 / around
+                                             :op1 (s14.c / clock))))
+   :snt15 (s15.a / and
+                 :op2 (s15.c / cause-01
+                             :ARG1 (s15.k / know-01
+                                          :ARG0 (s15.w3 / we)
+                                          :ARG1 (s15.w4 / work-01
+                                                        :ARG0 (s15.t / they
+                                                                     :same-as s13.t2)
+                                                        :ARG1-of (s15.i / instead-of-91
+                                                                        :ARG2 (s15.s / sense-01
+                                                                                     :ARG0 s15.t
+                                                                                     :ARG1 (s15.d / day
+                                                                                                  :location (s15.o / outside))
+                                                                                     :manner (s15.s2 / somehow)))
+                                                        :instrument (s15.w / watch
+                                                                           :ARG1-of (s15.i2 / internal-02
+                                                                                            :ARG2 s15.t)))
+                                          :manner (s15.w2 / way
+                                                          :mod (s15.t2 / this)))))
+   :snt16 (s16.a / and
+                 :ARG1-of (s16.f / fine-04)
+                 :op1 (s16.h / have-03
+                             :ARG0 (s16.w / we)
+                             :ARG1 (s16.c / clock
+                                          :mod (s16.b / body)))
+                 :op2 (s16.t / turn-out-11
+                             :ARG1 (s16.i / important-01
+                                          :ARG1 (s16.i3 / it
+                                                        :same-as s16.c)
+                                          :ARG2 (s16.l / life
+                                                       :poss s16.w)
+                                          :degree (s16.i2 / incredible))))
+   :snt17 (s17.a / and
+                 :op1 (s17.d / drive-02
+                             :ARG0 (s17.i2 / it
+                                           :same-as s16.c)
+                             :ARG1 (s17.c / culture)
+                             :mod (s17.h2 / huge))
+                 :op2 (s17.t / think-01
+                             :ARG0 (s17.i / i
+                                          :same-as s6.i)
+                             :ARG1 (s17.f / force-04
+                                          :ARG0 s17.i2
+                                          :ARG1 (s17.b / behave-01
+                                                       :ARG0 (s17.w / we
+                                                                    :same-as s16.w))
+                                          :ARG2-of (s17.r / rate-01
+                                                          :ARG2-of (s17.h / have-degree-91
+                                                                          :ARG1 s17.i2
+                                                                          :ARG1 s17.f
+                                                                          :ARG3 (s17.m / most))))))
+   :snt18 (s18.e3 / evolve-01
+                  :ARG0-of (s18.c / cause-01
+                                  :ARG1 (s18.e2 / equip-01
+                                                :purpose (s18.d3 / deal-01
+                                                                 :ARG0 (s18.w / we)
+                                                                 :ARG2 (s18.a / and
+                                                                              :op1 (s18.t / temporal-quantity
+                                                                                          :duration-of (s18.d2 / daylight)
+                                                                                          :unit (s18.h / hour)
+                                                                                          :quant "12")
+                                                                              :op2 (s18.d / darkness
+                                                                                          :duration (s18.t2 / temporal-quantity
+                                                                                                            :unit (s18.h2 / hour)
+                                                                                                            :quant "12"))))
+                                                :ARG1 s18.w
+                                                :ARG1-of (s18.w2 / well-09
+                                                                 :degree (s18.v / very))))
+                  :ARG1 s18.w
+                  :ARG2 (s18.s / species
+                               :ARG1-of (s18.n / near-02
+                                               :ARG2 (s18.e / equator))))
+   :snt19 (s19.c / contrast-01
+                 :ARG2 (s19.s / spread-02
+                              :ARG1 (s19.w / we
+                                           :same-as s18.w)
+                              :destination (s19.a / and
+                                                  :op1 (s19.c2 / corner
+                                                               :mod (s19.e / every)
+                                                               :part-of (s19.g / globe))
+                                                  :op2 (s19.h / have-03
+                                                              :ARG0 s19.w
+                                                              :ARG1 (s19.a2 / and
+                                                                            :op1 (s19.d4 / daylight
+                                                                                         :mod (s19.p / perpetual)
+                                                                                         :time (s19.d2 / date-entity
+                                                                                                       :season (s19.s2 / summer)))
+                                                                            :op2 (s19.d / darkness
+                                                                                        :duration (s19.t / temporal-quantity
+                                                                                                         :time (s19.d3 / date-entity
+                                                                                                                       :season (s19.w2 / winter))
+                                                                                                         :unit (s19.h2 / hour)
+                                                                                                         :quant "24")))
+                                                              :location (s19.w3 / world-region
+                                                                                :name (s19.n / name
+                                                                                             :op1 "Arctic"
+                                                                                             :op2 "Canada")
+                                                                                :location-of (s19.l / live-01
+                                                                                                    :ARG0 (s19.i / i
+                                                                                                                 :same-as s6.i))))))
+                 :mod (s19.o / of-course))
+   :snt20 (s20.c / cause-01
+                 :ARG1 (s20.s / season
+                              :degree (s20.h / high-02)
+                              :domain (s20.c2 / culture
+                                              :location (s20.n / north)
+                                              :mod (s20.a / aboriginal))
+                              :mod (s20.t / tradition)))
+   :snt21 (s21.a / and
+                 :op1 (s21.g / go-on-15
+                             :ARG1 (s21.s / sleep-01
+                                          :quant (s21.l2 / lot))
+                             :time (s21.d / date-entity
+                                          :season (s21.w / winter)))
+                 :op2 (s21.e / enjoy-01
+                             :ARG0 (s21.y / you)
+                             :ARG1 (s21.l / life
+                                          :location (s21.i / inside)
+                                          :mod (s21.f / family
+                                                      :ARG1-of (s21.h / have-org-role-91
+                                                                      :ARG0 s21.y
+                                                                      :ARG2 (s21.m / member))))))
+   :snt22 (s22.a5 / and
+                  :op2 (s22.a6 / and
+                               :ARG0-of (s22.a3 / activity-06
+                                                :degree (s22.v2 / very))
+                               :duration (s22.h / hour
+                                                :ARG1-of (s22.l / long-03
+                                                                :degree (s22.v / very)))
+                               :mod (s22.m / man)
+                               :op1 (s22.a / activity-06
+                                           :ARG1 (s22.h2 / hunt-01))
+                               :op2 (s22.a2 / activity-06
+                                            :ARG1 (s22.w / work-01))
+                               :time (s22.d / date-entity
+                                            :season (s22.s / summer)))
+                  :rel (s22.a4 / almost)
+                  :rel (s22.m2 / manic))
+   :snt23 (s23.l / look-02
+                 :ARG0 (s23.r / rhythm
+                              :ARG1-of (s23.n / natural-03)
+                              :poss (s23.w / we))
+                 :ARG1 (s23.a / amr-unknown))
+   :snt24 (s24.b / bed-02
+                 :ARG0 (s24.t / they
+                              :same-as s23.w)
+                 :ARG1 s24.t
+                 :time (s24.a / around
+                              :op1 (s24.d / date-entity
+                                          :time "19:00")))
+   :snt25 (s25.a3 / and
+                  :op1 (s25.u / until
+                              :op1 (s25.m / midnight))
+                  :op2 (s25.s / sleep-01
+                              :ARG0 (s25.t / they
+                                           :same-as s23.w)
+                              :mod (s25.a2 / again)
+                              :time (s25.a / about
+                                           :op1 (s25.d / date-entity
+                                                       :time "2:00")
+                                           :op2 (s25.s2 / sunrise))))
+   :snt26 (s26.a / and
+                 :op2 (s26.h / have-03
+                             :ARG0 (s26.t2 / they
+                                           :same-as s23.w)
+                             :ARG1 (s26.q / quiet-04
+                                          :ARG1 s26.t2
+                                          :degree (s26.s / sort-of)
+                                          :duration (s26.c / couple
+                                                           :op1 (s26.t / temporal-quantity
+                                                                       :unit (s26.h2 / hour)
+                                                                       :quant "1"))
+                                          :location (s26.b / bed)
+                                          :manner (s26.m / meditate-01))
+                             :time (s26.i / in-between)))
+   :snt27 (s27.a / and
+                 :op2 (s27.s2 / surge-01
+                              :ARG1 (s27.p / prolactin
+                                           :ARG1-of (s27.r / resemble-01
+                                                           :ARG2 (s27.s / see-01
+                                                                        :ARG0 (s27.m / modern-day)
+                                                                        :time (s27.e / ever)
+                                                                        :polarity "-")))
+                              :time (s27.t2 / time
+                                            :mod (s27.t / this)
+                                            :same-as s26.q)))
+   :snt28 (s28.r2 / report-01
+                  :ARG0 (s28.p / person
+                               :ARG1-of (s28.s2 / study-01
+                                                :mod (s28.t / this)))
+                  :ARG1 (s28.f / feel-01
+                               :ARG0 s28.p
+                               :ARG1 (s28.a / awake-03
+                                            :ARG1 s28.p
+                                            :ARG2-of (s28.h / have-degree-91
+                                                            :ARG1 s28.p
+                                                            :ARG3 (s28.s / so)
+                                                            :ARG6 (s28.r / realize-01
+                                                                         :ARG0 s28.p
+                                                                         :ARG1 (s28.e / experience-01
+                                                                                      :ARG0 s28.p
+                                                                                      :ARG1 (s28.a2 / awake-03
+                                                                                                    :ARG1 s28.p
+                                                                                                    :ARG1-of (s28.t2 / true-01)
+                                                                                                    :ord (s28.o / ordinal-entity
+                                                                                                                :range (s28.l / life
+                                                                                                                              :poss s28.p)
+                                                                                                                :value "1")))))
+                                            :time (s28.d / date-entity
+                                                         :dayperiod (s28.d2 / daytime)))))
+   :snt29 (s29.c / cause-01
+                 :ARG1 (s29.c2 / cut-02
+                               :ARG4 (s29.m / modern-day)))
+   :snt30 (s30.l2 / live-01
+                  :ARG0 (s30.w / we)
+                  :ARG1 (s30.c / culture
+                               :mod (s30.a / and
+                                           :op1 (s30.l / lag-01
+                                                       :ARG0 (s30.j / jet))
+                                           :op2 (s30.t2 / travel-01
+                                                        :mod (s30.g / globe))
+                                           :op3 (s30.b / business
+                                                       :duration (s30.t / temporal-quantity
+                                                                        :unit (s30.h / hour)
+                                                                        :quant "24"))
+                                           :op4 (s30.w2 / work-01
+                                                        :manner (s30.s / shift-01)))))
+   :snt31 (s31.a2 / and
+                  :ARG1-of (s31.k / know-01
+                                  :ARG0 (s31.y / you))
+                  :op2 (s31.c / contrast-01
+                              :ARG1 (s31.a / advantage-01
+                                           :ARG1 (s31.w / way
+                                                        :ARG1-of (s31.m / modern-02)
+                                                        :manner-of (s31.d / do-02
+                                                                          :ARG1 (s31.t / thing))
+                                                        :poss (s31.w2 / we))
+                                           :ARG2 s31.w2)
+                              :ARG2 (s31.b / believe-01
+                                           :ARG0 (s31.i / i
+                                                        :same-as s6.i)
+                                           :ARG1 (s31.r / recommend-01
+                                                        :ARG1 (s31.u / understand-01
+                                                                     :ARG0 s31.w2
+                                                                     :ARG1 (s31.c2 / cost-01))))))
+   :snt32 (s32.t / thank-01
+                 :ARG1 (s32.y / you
+                              :same-as s6.i)))
+

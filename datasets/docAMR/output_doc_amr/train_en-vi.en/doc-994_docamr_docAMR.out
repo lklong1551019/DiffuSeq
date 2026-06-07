@@ -1,0 +1,428 @@
+# ::id doc-994
+# ::doc_file doc-994
+# ::tok http : / / www . ted . com / talks / billy_collins_two_poems_about_what_dogs_think_probably< / url> <next_sent> I do n't know if you 've noticed , but there 's been a spate of books that have come out lately contemplating or speculating on the cognition and emotional life of dogs . <next_sent> Do they think , do they feel and , if so , how ? <next_sent> So this afternoon , in my limited time , I wanted to take the guesswork out of a lot of that by introducing you to two dogs , both of whom have taken the command " speak " quite literally . <next_sent> The first dog is the first to go , and he is contemplating an aspect of his relationship to his owner , and the title is " A Dog on His Master . " <next_sent> " As young as I look , I am growing older faster than he . <next_sent> Seven to one is the ratio , they tend to say . <next_sent> Whatever the number , I will pass him one day and take the lead , the way I do on our walks in the woods , and if this ever manages to cross his mind , it would be the sweetest shadow I have ever cast on snow or grass . " <next_sent> Thank you . <next_sent> And our next dog speaks in something called the revenant , which means a spirit that comes back to visit you . <next_sent> " I am the dog you put to sleep , as you like to call the needle of oblivion , come back to tell you this simple thing : I never liked you . " <next_sent> " When I licked your face , I thought of biting off your nose . <next_sent> When I watched you toweling yourself dry , I wanted to leap and unman you with a snap . <next_sent> I resented the way you moved , your lack of animal grace , the way you would sit in a chair to eat , a napkin on your lap , a knife in your hand . <next_sent> I would have run away but I was too weak , a trick you taught me while I was learning to sit and heel and , greatest of insults , shake hands without a hand . <next_sent> I admit the sight of the leash would excite me , but only because it meant I was about to smell things you had never touched . <next_sent> You do not want to believe this , but I have no reason to lie : I hated the car , hated the rubber toys , disliked your friends , and worse , your relatives . <next_sent> The jingling of my tags drove me mad . <next_sent> You always scratched me in the wrong place . " <next_sent> " All I ever wanted from you was food and water in my bowls . <next_sent> While you slept , I watched you breathe as the moon rose in the sky . <next_sent> It took all of my strength not to raise my head and howl . <next_sent> Now , I am free of the collar , free of the yellow raincoat , monogrammed sweater , the absurdity of your lawn , and that is all you need to know about this place , except what you already supposed and are glad it did not happen sooner , that everyone here can read and write , the dogs in poetry , the cats and all the others in prose . " <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :value "ossobuco")
+   :snt2 (s2.c4 / contrast-01
+                :ARG1 (s2.k / know-01
+                            :ARG0 (s2.i / i)
+                            :ARG1 (s2.n / notice-01
+                                        :ARG0 (s2.y / you))
+                            :polarity "-")
+                :ARG2 (s2.b / book
+                            :quant (s2.s / spate)
+                            :ARG0-of (s2.c3 / contemplate-01
+                                            :ARG1 (s2.a / and
+                                                        :op1 (s2.c / cognition
+                                                                   :poss (s2.d / dog))
+                                                        :op2 (s2.l2 / life
+                                                                    :mod (s2.e / emotion)
+                                                                    :poss s2.d)))
+                            :ARG0-of (s2.s2 / speculate-01
+                                            :ARG1 s2.a)
+                            :ARG1-of (s2.c2 / come-out-09
+                                            :time (s2.l / lately))))
+   :snt3 (s3.a3 / and
+                :manner (s3.a2 / amr-unknown)
+                :op1 (s3.t2 / think-01
+                            :ARG0 (s3.t / they
+                                        :same-as s2.d))
+                :op2 (s3.f / feel-01
+                           :ARG0 s3.t)
+                :op3 (s3.a / amr-unknown))
+   :snt4 (s4.c / cause-01
+               :ARG1 (s4.w / want-01
+                           :ARG0 (s4.i / i
+                                       :same-as s2.i)
+                           :ARG1 (s4.t2 / take-out-11
+                                        :ARG0 s4.i
+                                        :ARG1 (s4.g / guess-01
+                                                    :ARG1 (s4.t3 / that
+                                                                 :quant (s4.l3 / lot)))
+                                        :manner (s4.i2 / introduce-01
+                                                       :ARG0 s4.i
+                                                       :ARG1 (s4.y / you
+                                                                   :same-as s2.y)
+                                                       :ARG2 (s4.d2 / dog
+                                                                    :ARG0-of (s4.t / take-04
+                                                                                   :ARG1 (s4.s / speak-01
+                                                                                               :ARG1 (s4.c2 / command-02))
+                                                                                   :ARG2 (s4.l2 / literal
+                                                                                                :degree (s4.q / quite)))
+                                                                    :mod (s4.b / both)
+                                                                    :quant "2")))
+                           :time (s4.t4 / time
+                                        :ARG1-of (s4.l / limit-01)
+                                        :poss s4.i)
+                           :time (s4.d / date-entity
+                                       :dayperiod (s4.a / afternoon)
+                                       :mod (s4.t5 / today))))
+   :snt5 (s5.a / and
+               :op1 (s5.g / go-02
+                          :ARG0 (s5.p / person
+                                      :ord (s5.o / ordinal-entity
+                                                 :value "1")))
+               :op2 (s5.c / contemplate-01
+                          :ARG0 (s5.d / dog)
+                          :ARG1 (s5.a2 / aspect
+                                       :topic (s5.r / relation-03
+                                                    :ARG0 s5.d
+                                                    :ARG2 (s5.p2 / person
+                                                                 :ARG0-of (s5.o2 / own-01
+                                                                                 :ARG1 s5.d)))))
+               :op3 (s5.t / title-01
+                          :ARG1 s5.d
+                          :ARG2 (s5.d2 / dog
+                                       :mod (s5.m / master
+                                                  :same-as s5.p2))))
+   :snt6 (s6.g / grow-01
+               :ARG1 (s6.i / i
+                           :same-as s2.i)
+               :ARG1-of (s6.h / have-degree-91
+                              :ARG2 (s6.o / old)
+                              :ARG3 (s6.m / more))
+               :ARG1-of (s6.f / fast-02
+                              :ARG2-of (s6.h2 / have-degree-91
+                                              :ARG3 (s6.m2 / more)
+                                              :ARG4 (s6.h3 / he
+                                                           :same-as s5.d)
+                                              :ARG1 s6.g))
+               :concession (s6.y / young
+                                 :ARG1-of (s6.l / look-02
+                                                :ARG0 s6.i)
+                                 :domain s6.i))
+   :snt7 (s7.t / tend-02
+               :ARG1 (s7.t2 / they)
+               :ARG2 (s7.s / say-01
+                           :ARG0 s7.t2
+                           :ARG1 (s7.r / ratio
+                                       :domain (s7.d / difference-of
+                                                     :op1 "7"
+                                                     :op2 "1"))))
+   :snt8 (s8.a2 / and
+                :op1 (s8.a / and
+                           :ARG1-of (s8.r / regardless-91
+                                          :ARG2 (s8.n / number))
+                           :op1 (s8.p / pass-03
+                                      :ARG0 (s8.i / i
+                                                  :same-as s2.i)
+                                      :ARG1 (s8.h2 / he
+                                                   :same-as s5.d)
+                                      :time (s8.d / day
+                                                  :mod (s8.o / one)))
+                           :op2 (s8.l / lead-02
+                                      :ARG0 s8.h2
+                                      :manner (s8.w2 / way
+                                                     :manner-of (s8.l2 / lead-02
+                                                                       :ARG0 s8.i
+                                                                       :time (s8.w / walk-01
+                                                                                   :ARG0 (s8.w3 / we)
+                                                                                   :ARG2 (s8.w4 / woods))))))
+                :op2 (s8.s / shadow
+                           :ARG1-of (s8.h / have-degree-91
+                                          :ARG2 (s8.s3 / soft-02
+                                                       :ARG1 s8.s)
+                                          :ARG3 (s8.m3 / most))
+                           :ARG1-of (s8.c / cast-01
+                                          :ARG0 s8.i
+                                          :ARG2 (s8.o2 / or
+                                                       :op1 (s8.s2 / snow)
+                                                       :op2 (s8.g / grass))
+                                          :time (s8.e2 / ever))
+                           :condition (s8.m / manage-02
+                                            :ARG1 (s8.m2 / mind-05
+                                                         :ARG0 s8.h2)
+                                            :time (s8.e / ever))
+                           :domain s8.i))
+   :snt9 (s9.t / thank-01
+               :ARG1 (s9.y / you))
+   :snt10 (s10.a / and
+                 :op2 (s10.s2 / speak-01
+                              :ARG0 (s10.d / dog
+                                           :mod (s10.n / next)
+                                           :poss (s10.w / we))
+                              :ARG3 (s10.s / something
+                                           :ARG1-of (s10.c / call-01
+                                                           :ARG2 (s10.r / revenant
+                                                                        :ARG1-of (s10.m / mean-01
+                                                                                        :ARG2 (s10.s3 / spirit
+                                                                                                      :ARG1-of (s10.c2 / come-01
+                                                                                                                       :purpose (s10.v / visit-01
+                                                                                                                                       :ARG0 s10.s3
+                                                                                                                                       :ARG1 (s10.y / you))
+                                                                                                                       :direction (s10.b / back)))))))))
+   :snt11 (s11.d2 / dog
+                  :ARG1-of (s11.p / put-03
+                                  :ARG0 (s11.y / you
+                                               :ARG1-of (s11.c2 / come-01
+                                                                :purpose (s11.t / tell-01
+                                                                                :ARG0 s11.y
+                                                                                :ARG1 (s11.t2 / thing
+                                                                                              :ARG1-of (s11.s / simple-02)
+                                                                                              :domain (s11.d / dislike-01
+                                                                                                             :ARG0 (s11.i2 / i
+                                                                                                                           :same-as s10.d)
+                                                                                                             :ARG1 s11.y
+                                                                                                             :time (s11.e / ever)
+                                                                                                             :polarity "-")
+                                                                                              :mod (s11.t3 / this))
+                                                                                :ARG2 s11.y)
+                                                                :direction (s11.b / back)))
+                                  :ARG1-of (s11.c / call-01
+                                                  :ARG0 s11.y
+                                                  :ARG1-of (s11.l / like-01
+                                                                  :ARG0 s11.y)
+                                                  :ARG2 (s11.n / needle
+                                                               :mod (s11.o / oblivion)))
+                                  :ARG2 (s11.s2 / sleep-01
+                                                :ARG0 s11.y))
+                  :domain (s11.i / i
+                                 :same-as s10.d))
+   :snt12 (s12.t / think-01
+                 :ARG0 (s12.i / i
+                              :same-as s10.d)
+                 :ARG1 (s12.b / bite-01
+                              :ARG0 s12.i
+                              :ARG1 (s12.n / nose
+                                           :part-of (s12.y / you
+                                                           :part (s12.f / face))))
+                 :time (s12.l / lick-01
+                              :ARG0 s12.i
+                              :ARG1 s12.f))
+   :snt13 (s13.w / want-01
+                 :ARG0 (s13.i / i
+                              :same-as s10.d)
+                 :ARG1 (s13.a / and
+                              :manner (s13.s / snap-01)
+                              :op1 (s13.l / leap-03
+                                          :ARG0 s13.i)
+                              :op2 (s13.m / manage-01
+                                          :ARG0 s13.i
+                                          :ARG1 (s13.y / you
+                                                       :same-as s12.y)
+                                          :polarity "-"))
+                 :time (s13.w2 / watch-01
+                               :ARG0 s13.i
+                               :ARG1 (s13.t / tow-01
+                                            :ARG0 s13.y
+                                            :ARG1 s13.y
+                                            :ARG2 (s13.d / dry-02))))
+   :snt14 (s14.r / resent-01
+                 :ARG0 (s14.i / i
+                              :same-as s10.d)
+                 :ARG1 (s14.a / and
+                              :op1 (s14.w / way
+                                          :manner-of (s14.m / move-01
+                                                            :ARG0 (s14.y / you
+                                                                         :part (s14.l2 / lap)
+                                                                         :part (s14.h / hand)
+                                                                         :same-as s12.y)))
+                              :op2 (s14.l / lack-01
+                                          :ARG0 s14.y
+                                          :ARG1 (s14.g / grace
+                                                       :mod (s14.a2 / animal)))
+                              :op3 (s14.w2 / way
+                                           :manner-of (s14.s / sit-01
+                                                             :purpose (s14.e / eat-01
+                                                                             :ARG0 s14.y)
+                                                             :ARG1 s14.y
+                                                             :ARG2 (s14.c / chair)))
+                              :op4 (s14.k / knife
+                                          :location s14.h))
+                 :rel (s14.n / napkin
+                             :location s14.l2))
+   :snt15 (s15.h3 / have-concession-91
+                  :ARG1 (s15.r / run-02
+                               :ARG0 (s15.i / i
+                                            :part (s15.h6 / heel)
+                                            :same-as s10.d)
+                               :example (s15.t3 / trick-01
+                                                :ARG1-of (s15.t / teach-01
+                                                                :ARG0 (s15.y / you
+                                                                             :same-as s12.y)
+                                                                :ARG2 s15.i
+                                                                :time (s15.l / learn-01
+                                                                             :ARG0 s15.i
+                                                                             :ARG1 (s15.a / and
+                                                                                          :op1 (s15.s2 / sit-01
+                                                                                                       :ARG1 s15.i)
+                                                                                          :op2 s15.h6
+                                                                                          :op3 (s15.s / shake-01
+                                                                                                      :ARG0 s15.i
+                                                                                                      :ARG1 (s15.h / hand)
+                                                                                                      :manner (s15.i2 / insult-01
+                                                                                                                      :ARG1-of (s15.h5 / have-degree-91
+                                                                                                                                       :ARG2 (s15.g / great)
+                                                                                                                                       :ARG3 (s15.m / most)))
+                                                                                                      :manner (s15.h2 / hand
+                                                                                                                      :polarity "-"))))))
+                               :location (s15.a2 / away))
+                  :ARG2 (s15.h4 / have-degree-91
+                                :ARG1 s15.i
+                                :ARG2 (s15.w / weak-02
+                                             :ARG1 s15.i)
+                                :ARG3 (s15.t2 / too)))
+   :snt16 (s16.h / have-concession-91
+                 :ARG1 (s16.c / cause-01
+                              :ARG0 (s16.m / mean-01
+                                           :ARG1 (s16.s / see-01
+                                                        :ARG1 (s16.l / leash))
+                                           :ARG2 (s16.s2 / smell-01
+                                                         :ARG0 (s16.i / i
+                                                                      :same-as s10.d)
+                                                         :ARG1 (s16.t / thing
+                                                                      :ARG1-of (s16.t2 / touch-01
+                                                                                       :ARG0 (s16.y / you
+                                                                                                    :same-as s12.y)
+                                                                                       :time (s16.e / ever)
+                                                                                       :polarity "-"))
+                                                         :time (s16.a / about-to)))
+                              :ARG1 (s16.e2 / excite-01
+                                            :ARG0 s16.s
+                                            :ARG1 s16.i)
+                              :mod (s16.o / only))
+                 :ARG2 (s16.a2 / admit-01
+                               :ARG0 s16.i
+                               :ARG1 s16.e2))
+   :snt17 (s17.c3 / contrast-01
+                  :ARG1 (s17.w / want-01
+                               :ARG0 (s17.y / you
+                                            :same-as s12.y)
+                               :ARG1 (s17.b2 / believe-01
+                                             :ARG0 s17.y
+                                             :ARG1 (s17.t / this)))
+                  :ARG2 (s17.h2 / have-03
+                                :ARG0 (s17.i / i
+                                             :same-as s10.d)
+                                :ARG1 (s17.r / reason
+                                             :ARG0-of (s17.c2 / cause-01
+                                                              :ARG0 (s17.a / and
+                                                                           :op1 (s17.h / hate-01
+                                                                                       :ARG0 s17.i
+                                                                                       :ARG1 (s17.c / car))
+                                                                           :op2 (s17.t2 / toy
+                                                                                        :consist-of (s17.r3 / rubber))
+                                                                           :op3 (s17.d / dislike-01
+                                                                                       :ARG0 s17.i
+                                                                                       :ARG1 (s17.p / person
+                                                                                                    :ARG0-of (s17.h4 / have-rel-role-91
+                                                                                                                     :ARG1 s17.y
+                                                                                                                     :ARG2 (s17.f / friend))))
+                                                                           :op4 (s17.p2 / person
+                                                                                        :ARG0-of (s17.h5 / have-rel-role-91
+                                                                                                         :ARG1 s17.y
+                                                                                                         :ARG2 (s17.r2 / relative))
+                                                                                        :ARG1-of (s17.h3 / have-degree-91
+                                                                                                         :ARG2 (s17.b / bad-04
+                                                                                                                      :ARG1 s17.p2)
+                                                                                                         :ARG3 (s17.m / most))))
+                                                              :ARG1 (s17.l / lie-08
+                                                                           :ARG0 s17.i)))
+                                :polarity "-")
+                  :rel "-")
+   :snt18 (s18.d / drive-02
+                 :ARG0 (s18.r / ring-01
+                              :ARG1 (s18.t / tag-01
+                                           :ARG1 (s18.i / i
+                                                        :same-as s10.d)))
+                 :ARG1 s18.i
+                 :ARG2 (s18.m / mad-02
+                              :ARG1 s18.i))
+   :snt19 (s19.s / scratch-02
+                 :ARG0 (s19.y / you
+                              :same-as s12.y)
+                 :ARG1 (s19.i / i
+                              :same-as s10.d)
+                 :location (s19.p / place
+                                  :ARG1-of (s19.w / wrong-04))
+                 :time (s19.a / always))
+   :snt20 (s20.w / want-01
+                 :ARG0 (s20.i / i
+                              :same-as s10.d)
+                 :ARG1 (s20.a2 / and
+                               :location (s20.b / bowl-01
+                                                :ARG0 s20.i)
+                               :op1 (s20.f / food)
+                               :op2 (s20.w2 / water))
+                 :ARG2 (s20.y / you
+                              :same-as s12.y)
+                 :mod (s20.a / all)
+                 :time (s20.e / ever))
+   :snt21 (s21.w / watch-01
+                 :ARG0 (s21.i / i
+                              :same-as s10.d)
+                 :ARG1 (s21.b / breathe-01
+                              :ARG0 (s21.y / you
+                                           :same-as s12.y))
+                 :time (s21.s2 / sleep-01
+                               :ARG0 s21.y)
+                 :time (s21.r / rise-01
+                              :ARG1 (s21.m / moon)
+                              :location (s21.s / sky)))
+   :snt22 (s22.t / take-10
+                 :ARG0 (s22.a2 / and
+                               :op1 (s22.r / raise-01
+                                           :ARG0 (s22.i / i
+                                                        :part (s22.h / head)
+                                                        :same-as s10.d)
+                                           :ARG1 s22.h)
+                               :op2 (s22.h2 / howl-01
+                                            :ARG0 s22.i)
+                               :polarity "-")
+                 :ARG1 (s22.s / strong-02
+                              :ARG1 s22.i
+                              :mod (s22.a / all)))
+   :snt23 (s23.a6 / and
+                  :op1 (s23.f / free-04
+                              :ARG1 (s23.i / i
+                                           :same-as s10.d)
+                              :ARG2 (s23.a5 / and
+                                            :op1 (s23.c2 / collar)
+                                            :op2 (s23.r / raincoat
+                                                        :ARG1-of (s23.y / yellow-02))
+                                            :op3 (s23.s3 / sweater
+                                                         :mod (s23.p / pattern))
+                                            :op4 (s23.a / absurdity
+                                                        :domain (s23.l / lawn
+                                                                       :poss (s23.y2 / you
+                                                                                     :same-as s12.y))))
+                              :time (s23.n2 / now))
+                  :op2 (s23.a2 / all
+                               :ARG1-of (s23.k / know-01
+                                               :ARG0 s23.y2
+                                               :ARG1-of (s23.n / need-01
+                                                               :ARG0 s23.y2)
+                                               :topic (s23.p2 / place
+                                                              :mod (s23.t / this)))
+                               :ARG2-of (s23.e2 / except-01
+                                                :ARG1 (s23.a7 / and
+                                                              :op1 (s23.s2 / suppose-01
+                                                                           :ARG0 s23.y2
+                                                                           :time (s23.a4 / already))
+                                                              :op2 (s23.p4 / possible-01
+                                                                           :ARG1 (s23.a8 / and
+                                                                                         :op1 (s23.r2 / read-01
+                                                                                                      :ARG0 (s23.e / everyone
+                                                                                                                   :location s23.p2))
+                                                                                         :op2 (s23.w / write-01
+                                                                                                     :ARG0 s23.e)))
+                                                              :op3 (s23.d / dog
+                                                                          :medium (s23.p3 / poetry))
+                                                              :op4 (s23.c / cat)
+                                                              :op5 (s23.o / other
+                                                                          :medium (s23.p5 / prose)
+                                                                          :mod (s23.a3 / all)))))
+                  :rel (s23.g / glad-02
+                              :ARG0 (s23.b / be-temporally-at-91
+                                           :ARG1 (s23.i2 / it)
+                                           :ARG2 (s23.s / soon
+                                                        :ARG2-of (s23.h / have-degree-91
+                                                                        :ARG1 s23.i2
+                                                                        :ARG3 (s23.m / more)))
+                                           :polarity "-")
+                              :ARG1 s23.y2))
+   :snt24 (s24.t / thank-01
+                 :ARG1 (s24.y / you
+                              :same-as s2.i)))
+

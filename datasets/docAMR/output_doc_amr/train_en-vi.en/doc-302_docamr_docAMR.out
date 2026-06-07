@@ -1,0 +1,578 @@
+# ::id doc-302
+# ::doc_file doc-302
+# ::tok http : / / www . ted . com / talks / nick_sears_demos_the_orb< / url> <next_sent> In 1962 , Buckminster Fuller presented the particularly audacious proposal for the Geoscope . <next_sent> It was a 200 - foot diameter geodesic sphere to be suspended over the East River in New York City , in full view of the United Nations . <next_sent> It was a big idea , for sure , and it was one that he felt could truly inform and deeply affect the decision making of this body through animations of global data , trends and other information regarding the globe , on this sphere . <next_sent> And today , 45 years later , we clearly have no less need for this kind of clarity and perspective , but what we do have is improved technology . <next_sent> Today we do n't need one million light bulbs to create a spherical display . <next_sent> We can use LEDs . <next_sent> LEDs are smaller , they 're cheaper , they 're longer lasting , they 're more efficient . <next_sent> Most importantly for this , they 're faster . <next_sent> And this speed , combined with today 's high - performance micro - controllers , allows us to actually simulate , in this piece , over 17,000 LEDs -- using just 64 . <next_sent> And the way this happens is through the phenomenon of persistence of vision . <next_sent> But as this ring rotates at about 1,700 rpm -- that 's 28 times per second . <next_sent> The equator 's speed is actually about 60 miles per hour . <next_sent> There are four on - board micro - controllers that , each time this ring rotates it , as it passes the rear of the display , it picks up a position signal . <next_sent> And from that , the on - board micro - controllers can extrapolate the position of the ring at all points around the revolution and display arbitrary bitmap images and animations . <next_sent> But this is really just the beginning . <next_sent> In addition to higher resolution versions of this display , my father and I are working on a new patent - pending design for a fully volumetric display using the same phenomenon . <next_sent> It achieves this by rotating LEDs about two axes . <next_sent> So as you can see here , this is a , eleven - inch diameter circuit board . <next_sent> These blocks represent LEDs . <next_sent> And so you could see that as this disc rotates about this axis , it will create a disc of light that we can control . <next_sent> That 's nothing new : that 's a propeller clock ; that 's the rims that you can buy for your car . <next_sent> But what is new is that , when we rotate this disc about this axis , this disc of light actually becomes a sphere of light . <next_sent> And so we can control that with micro - controllers and create a fully volumetric , three - dimensional display with just 256 LEDs . <next_sent> Now this piece is currently in process -- due out in May -- but what we 've done is we 've put together a small demo , just to show the geometric translation of points into a sphere . <next_sent> I 've got a little video to show you , but keep in mind that this is with no electronic control , and this is also with only four LEDs . <next_sent> This is actually only about 1.5 percent of what the final display will be in May . <next_sent> So , take a look . <next_sent> And here you can see it 's rotating about the vertical axis only , creating circles . <next_sent> And then , as the other axis kicks in , those actually blur into a volume . <next_sent> And the shutter speed of the camera actually makes it slightly less effective in this case . <next_sent> But this piece is due out in May . <next_sent> It 'll be on display at the Interactive Telecommunications Spring Show in Greenwich Village in New York City -- that 's open to the public , definitely invite you all to come and attend -- it 's a fantastic show . <next_sent> There are hundreds of student innovators with fantastic projects . <next_sent> This piece , actually , will be on display down in the Sierra Simulcast Lounge in the breaks between now and the end of the show . <next_sent> So I 'd love to talk to you all , and invite you to come down and take a closer look .
+(d / document
+   :snt1 (s1.u / url-entity
+               :value "narcotic")
+   :snt2 (s2.p3 / present-01
+                :ARG0 (s2.p2 / person
+                             :name (s2.n / name
+                                         :op1 "Buckminster"
+                                         :op2 "Fuller"))
+                :ARG1 (s2.t / thing
+                            :ARG1-of (s2.p4 / propose-01
+                                            :ARG0 s2.p2
+                                            :ARG3 (s2.g / geography))
+                            :mod (s2.a / audacious
+                                       :mod (s2.p / particular)))
+                :time (s2.d / date-entity
+                            :year "1962"))
+   :snt3 (s3.s / sphere
+               :ARG1-of (s3.s2 / suspend-01
+                               :ARG1-of (s3.v / view-01
+                                              :ARG0 (s3.o / organization
+                                                          :name (s3.n3 / name
+                                                                       :op1 "United"
+                                                                       :op2 "Nations"))
+                                              :ARG1-of (s3.f2 / full-09))
+                               :path (s3.o2 / over
+                                            :op1 (s3.r / river
+                                                       :name (s3.n / name
+                                                                   :op1 "East"
+                                                                   :op2 "River")
+                                                       :location (s3.c / city
+                                                                       :name (s3.n2 / name
+                                                                                    :op1 "New"
+                                                                                    :op2 "York"
+                                                                                    :op3 "City")))))
+               :domain (s3.i / it
+                             :same-as s2.t)
+               :mod (s3.g / geodesic)
+               :mod (s3.d / diameter
+                          :quant (s3.d2 / distance-quantity
+                                        :unit (s3.f / foot)
+                                        :quant "200")))
+   :snt4 (s4.a2 / and
+                :op1 (s4.i / idea
+                           :ARG1-of (s4.s2 / sure-02)
+                           :domain (s4.i4 / it
+                                          :same-as s2.t)
+                           :mod (s4.b / big))
+                :op2 (s4.f / feel-02
+                           :ARG0 (s4.h / he
+                                       :same-as s2.p2)
+                           :ARG1 (s4.p / possible-01
+                                       :ARG1 (s4.a3 / and
+                                                    :op1 (s4.i2 / inform-01
+                                                                :ARG0 s4.i4
+                                                                :ARG1-of (s4.t4 / true-01))
+                                                    :op2 (s4.a / affect-01
+                                                               :ARG0 s4.i4
+                                                               :ARG1 (s4.d2 / decide-01
+                                                                            :ARG0 (s4.b2 / body
+                                                                                         :mod (s4.t / this)))
+                                                               :ARG1-of (s4.d3 / deep-02)
+                                                               :manner (s4.c / cartoon
+                                                                             :topic (s4.a4 / and
+                                                                                           :op1 (s4.d / data
+                                                                                                      :mod (s4.g / globe))
+                                                                                           :op2 (s4.t3 / trend)
+                                                                                           :op3 (s4.i3 / information
+                                                                                                       :ARG0-of (s4.r / regard-01
+                                                                                                                      :ARG1 (s4.g2 / globe))
+                                                                                                       :location (s4.s / sphere
+                                                                                                                       :mod (s4.t2 / this)
+                                                                                                                       :same-as s4.g2)
+                                                                                                       :mod (s4.o / other)))))))))
+   :snt5 (s5.a2 / and
+                :op2 (s5.c3 / contrast-01
+                            :ARG1 (s5.n / need-01
+                                        :ARG0 (s5.w / we)
+                                        :ARG1 (s5.a3 / and
+                                                     :op1 (s5.c / clarity
+                                                                :mod (s5.k / kind
+                                                                           :mod (s5.t3 / this)))
+                                                     :op2 (s5.p / perspective
+                                                                :mod s5.k))
+                                        :ARG1-of (s5.h2 / have-quant-91
+                                                        :ARG3 (s5.l / less)
+                                                        :polarity "-")
+                                        :ARG1-of (s5.c2 / clear-06)
+                                        :mod (s5.t4 / today)
+                                        :time (s5.a / after
+                                                    :quant (s5.t2 / temporal-quantity
+                                                                  :unit (s5.y / year)
+                                                                  :quant "45")))
+                            :ARG2 (s5.h / have-03
+                                        :ARG0 s5.w
+                                        :ARG1 (s5.t / technology
+                                                    :ARG1-of (s5.i / improve-01)))))
+   :snt6 (s6.n / need-01
+               :purpose (s6.c / create-01
+                              :ARG0 (s6.w / we)
+                              :ARG1 (s6.d / display
+                                          :mod (s6.s / spherical)))
+               :ARG0 s6.w
+               :ARG1 (s6.b / bulb
+                           :ARG0-of (s6.l / light-04)
+                           :quant "1000000")
+               :time (s6.t / today)
+               :polarity "-")
+   :snt7 (s7.p / possible-01
+               :ARG1 (s7.u / use-01
+                           :ARG0 (s7.w / we)
+                           :ARG1 (s7.b / bulb
+                                       :ARG0-of (s7.l / light-04
+                                                      :mod (s7.f / fluorescent)
+                                                      :mod (s7.c / compact)))))
+   :snt8 (s8.a / and
+               :op1 (s8.h / have-degree-91
+                          :ARG1 (s8.b / bulb
+                                      :ARG0-of (s8.l / light-04
+                                                     :mod (s8.f / fluorescent)
+                                                     :mod (s8.c2 / compact)))
+                          :ARG2 (s8.s / small)
+                          :ARG3 (s8.m / more))
+               :op2 (s8.h2 / have-degree-91
+                           :ARG1 s8.b
+                           :ARG2 (s8.c / cheap-02
+                                       :ARG1 s8.b)
+                           :ARG3 (s8.m2 / more))
+               :op3 (s8.h3 / have-degree-91
+                           :ARG2 (s8.l2 / long-03
+                                        :ARG1 s8.b))
+               :op4 (s8.h4 / have-degree-91
+                           :ARG1 s8.b
+                           :ARG2 (s8.e / efficient-01
+                                       :ARG1 s8.b)
+                           :ARG3 (s8.m3 / more)))
+   :snt9 (s9.h2 / have-degree-91
+                :ARG1 (s9.t / they
+                            :same-as s8.b)
+                :ARG1-of (s9.i / important-01
+                               :purpose (s9.t2 / this)
+                               :ARG2-of (s9.h / have-degree-91
+                                              :ARG3 (s9.m2 / most)))
+                :ARG2 (s9.f / fast-02
+                            :ARG1 s9.t)
+                :ARG3 (s9.m / more)
+                :ARG1-of s9.h)
+   :snt10 (s10.a3 / and
+                  :op2 (s10.a2 / allow-01
+                               :ARG0 (s10.s2 / speed
+                                             :ARG1-of (s10.c / combine-01
+                                                             :ARG2 (s10.t / thing
+                                                                          :ARG0-of (s10.p / perform-02
+                                                                                          :ARG1-of (s10.h / high-02))
+                                                                          :ARG0-of (s10.c2 / control-01
+                                                                                           :mod (s10.m / micro))
+                                                                          :mod s10.m))
+                                             :mod (s10.t3 / this))
+                               :ARG1 (s10.s / simulate-01
+                                            :ARG0 (s10.w / we)
+                                            :ARG1 (s10.b / bulb
+                                                         :quant (s10.o / over
+                                                                       :op1 "17000")
+                                                         :ARG0-of (s10.l / light-04
+                                                                         :mod (s10.f / fluorescent)))
+                                            :ARG1-of (s10.a / actual-02)
+                                            :ARG2-of (s10.u / use-01
+                                                            :ARG1 (s10.t2 / thing
+                                                                          :mod (s10.j / just)
+                                                                          :quant "64"))
+                                            :location (s10.p2 / piece
+                                                              :mod (s10.t4 / this))))
+                  :rel (s10.t5 / today
+                               :same-as s6.t))
+   :snt11 (s11.a / and
+                 :op2 (s11.h / have-manner-91
+                             :ARG1 (s11.e / event
+                                          :mod (s11.t / this
+                                                      :same-as s10.s))
+                             :ARG2 (s11.p2 / phenomenon
+                                           :mod (s11.p / persist-01
+                                                       :ARG1 (s11.s / see-01)))))
+   :snt12 (s12.c / contrast-01
+                 :ARG2 (s12.r / rate-entity-91
+                              :ARG2 (s12.r3 / rotate-01
+                                            :ARG1 (s12.r2 / ring
+                                                          :mod (s12.t2 / this)))
+                              :ARG2 (s12.t / temporal-quantity
+                                           :unit (s12.s2 / second)
+                                           :quant "1")
+                              :ARG1 "28")
+                 :rel (s12.a / about
+                             :op1 (s12.s3 / speed-quantity
+                                          :unit (s12.s / second)
+                                          :quant "1500")))
+   :snt13 (s13.s / speed
+                 :quant (s13.a / about
+                               :ARG1-of (s13.r / rate-entity-91
+                                               :ARG2 (s13.t / temporal-quantity
+                                                            :unit (s13.h / hour)
+                                                            :quant "1"))
+                               :op1 (s13.d / distance-quantity
+                                           :unit (s13.m / mile)
+                                           :quant "60"))
+                 :ARG1-of (s13.a2 / actual-02)
+                 :poss (s13.e / equator))
+   :snt14 (s14.p2 / pick-up-11
+                  :ARG0 (s14.r3 / ring
+                                :mod (s14.t / this)
+                                :same-as s12.r2)
+                  :ARG1 (s14.s / signal
+                               :mod (s14.p3 / position-01))
+                  :frequency (s14.r / rate-entity-91
+                                    :ARG4 (s14.r4 / rotate-01
+                                                  :ARG1 s14.r3)
+                                    :mod (s14.e / each))
+                  :rel (s14.c / control-01
+                              :ARG1-of (s14.b / board-01)
+                              :mod (s14.m / micro)
+                              :quant "4")
+                  :time (s14.p / pass-02
+                               :ARG0 s14.r3
+                               :ARG1 (s14.r2 / rear
+                                             :part-of (s14.d / display))))
+   :snt15 (s15.a2 / and
+                  :op2 (s15.p4 / possible-01
+                               :ARG1 (s15.a3 / and
+                                             :op1 (s15.e / extrapolate-01
+                                                         :ARG0 (s15.p / person
+                                                                      :ARG0-of (s15.c / control-01
+                                                                                      :mod (s15.m / micro))
+                                                                      :ARG1-of (s15.b2 / board-01)
+                                                                      :same-as s12.r2)
+                                                         :ARG1 (s15.t2 / thing
+                                                                       :ARG2-of (s15.p3 / position-01
+                                                                                        :ARG1 (s15.r2 / ring
+                                                                                                      :same-as s12.r2)))
+                                                         :location (s15.p2 / point
+                                                                           :location (s15.a6 / around
+                                                                                             :op1 (s15.r / revolution-03))
+                                                                           :mod (s15.a / all)))
+                                             :op2 (s15.d / display-01
+                                                         :ARG0 s15.p
+                                                         :ARG1 (s15.a4 / and
+                                                                       :ARG1-of (s15.a5 / arbitrary-02)
+                                                                       :op1 (s15.i / image
+                                                                                   :mod (s15.b / bitmap))
+                                                                       :op2 (s15.i2 / image))))
+                               :source (s15.t / that
+                                              :same-as s14.s)))
+   :snt16 (s16.c / contrast-01
+                 :ARG2 (s16.b / begin-01
+                              :ARG1-of (s16.r / real-04)
+                              :ARG2 (s16.t / this)
+                              :mod (s16.j / just)))
+   :snt17 (s17.w / work-01
+                 :ARG0 (s17.a2 / and
+                               :op1 (s17.p3 / person
+                                            :ARG0-of (s17.h2 / have-rel-role-91
+                                                             :ARG1 (s17.i / i)
+                                                             :ARG2 (s17.f / father)))
+                               :op2 s17.i)
+                 :ARG1 (s17.d / design-01
+                              :ARG1 (s17.d3 / display
+                                            :ARG0-of (s17.u / use-01
+                                                            :ARG1 (s17.p4 / phenomenon
+                                                                          :ARG1-of (s17.s / same-01)
+                                                                          :same-as s11.p2))
+                                            :mod (s17.v2 / volume
+                                                         :mod (s17.f2 / full)))
+                              :ARG1-of (s17.p2 / pend-01
+                                               :ARG2 (s17.p / patent-01))
+                              :ARG1-of (s17.n / new-01))
+                 :ARG1-of (s17.a / add-02
+                                 :ARG2 (s17.v / version
+                                              :mod (s17.r / resolution
+                                                          :ARG1-of (s17.h / have-degree-91
+                                                                          :ARG2 (s17.h3 / high-02
+                                                                                        :ARG1 s17.r)
+                                                                          :ARG3 (s17.m / more)))
+                                              :mod (s17.d2 / display
+                                                           :mod (s17.t / this)
+                                                           :same-as s14.d))))
+   :snt18 (s18.a2 / achieve-01
+                  :ARG0 (s18.i / it
+                               :same-as s17.d)
+                  :ARG1 (s18.t / this)
+                  :manner (s18.r / rotate-01
+                                 :ARG0 s18.i
+                                 :ARG1 (s18.b / bulb
+                                              :ARG0-of (s18.l / light-04
+                                                              :mod (s18.f / fluorescent)
+                                                              :mod (s18.c / compact)))
+                                 :direction (s18.a / about
+                                                   :op1 (s18.d / direction
+                                                               :quant "2"))))
+   :snt19 (s19.b / board
+                 :ARG1-of (s19.s / see-01
+                                 :ARG0 (s19.y / you)
+                                 :ARG1-of (s19.p / possible-01)
+                                 :location (s19.h / here))
+                 :domain (s19.t / this)
+                 :mod (s19.c / circuit)
+                 :mod (s19.d / diameter
+                             :mod (s19.d2 / distance-quantity
+                                          :unit (s19.i / inch)
+                                          :quant "11")))
+   :snt20 (s20.r / represent-01
+                 :ARG0 (s20.b / block
+                              :mod (s20.t / this))
+                 :ARG1 (s20.b2 / bulb
+                               :ARG0-of (s20.l / light-04
+                                               :mod (s20.f / fluorescent)
+                                               :mod (s20.c / compact))))
+   :snt21 (s21.a2 / and
+                  :op2 (s21.p / possible-01
+                              :ARG1 (s21.s / see-01
+                                           :ARG0 (s21.y / you)
+                                           :ARG1 (s21.c2 / create-01
+                                                         :ARG1 (s21.d / disc
+                                                                      :ARG1-of (s21.c / control-01
+                                                                                      :ARG0 (s21.w / we)
+                                                                                      :ARG1-of (s21.p2 / possible-01))
+                                                                      :consist-of (s21.l / light))
+                                                         :time (s21.r / rotate-01
+                                                                      :ARG1 s21.d
+                                                                      :direction (s21.a / about
+                                                                                        :op1 (s21.a3 / axis
+                                                                                                     :mod (s21.t / this))))))))
+   :snt22 (s22.n / new-01
+                 :ARG1 (s22.n2 / nothing)
+                 :example (s22.a / and
+                                 :op1 (s22.c2 / clock
+                                              :mod (s22.p2 / propeller))
+                                 :op2 (s22.u / Russia
+                                             :ARG1-of (s22.b / buy-01
+                                                             :ARG0 (s22.y / you)
+                                                             :ARG1-of (s22.p / possible-01)
+                                                             :ARG2 (s22.c / car
+                                                                          :poss s22.y)))))
+   :snt23 (s23.c / contrast-01
+                 :ARG2 (s23.n / new-01
+                              :ARG1 (s23.b / become-01
+                                           :ARG1 (s23.d / disc
+                                                        :mod (s23.t2 / this)
+                                                        :mod (s23.l / light))
+                                           :ARG1-of (s23.a2 / actual-02)
+                                           :ARG2 (s23.s / sphere
+                                                        :consist-of (s23.l2 / light))
+                                           :time (s23.r / rotate-01
+                                                        :ARG0 (s23.w / we)
+                                                        :ARG1 s23.d
+                                                        :direction (s23.a / about
+                                                                          :op1 (s23.a3 / axis
+                                                                                       :mod (s23.t / this)
+                                                                                       :same-as s21.a3))))))
+   :snt24 (s24.a / and
+                 :op2 (s24.p / possible-01
+                             :ARG1 (s24.a2 / and
+                                           :op1 (s24.c / control-01
+                                                       :ARG0 (s24.w / we
+                                                                    :same-as s23.w)
+                                                       :ARG1 (s24.t / that
+                                                                    :same-as s23.r)
+                                                       :instrument (s24.c2 / control-01
+                                                                           :mod (s24.m / micro)))
+                                           :op2 (s24.c3 / create-01
+                                                        :ARG0 s24.w
+                                                        :ARG1 (s24.d2 / display
+                                                                      :mod (s24.d / dimension
+                                                                                  :quant "3")
+                                                                      :mod (s24.v / volume
+                                                                                  :degree (s24.f / full))
+                                                                      :prep-with (s24.b / bulb
+                                                                                        :ARG0-of (s24.l / light-04)
+                                                                                        :mod (s24.j / just)
+                                                                                        :quant "256"))))))
+   :snt25 (s25.c / contrast-01
+                 :ARG1 (s25.p3 / process-01
+                               :ARG1 (s25.p / piece
+                                            :ARG1-of (s25.d3 / due-03
+                                                             :ARG2 (s25.o / out)
+                                                             :time (s25.d / date-entity
+                                                                          :month "5"))
+                                            :mod (s25.t / this
+                                                        :same-as s10.p2))
+                               :time (s25.c2 / current)
+                               :time (s25.n / now))
+                 :ARG2 (s25.p4 / put-03
+                               :ARG0 (s25.w / we
+                                            :same-as s23.w)
+                               :ARG1 (s25.d2 / demonstrate-01
+                                             :purpose (s25.s / show-01
+                                                             :ARG0 s25.w
+                                                             :ARG1 (s25.t3 / translate-01
+                                                                           :ARG1 (s25.p2 / point)
+                                                                           :ARG2 (s25.s3 / sphere)
+                                                                           :manner (s25.g / geometry))
+                                                             :mod (s25.j / just))
+                                             :ARG0 s25.w
+                                             :mod (s25.s2 / small))
+                               :ARG2 (s25.t2 / together)))
+   :snt26 (s26.c / contrast-01
+                 :ARG1 (s26.h / have-03
+                              :ARG0 (s26.i / i
+                                           :same-as s17.i)
+                              :ARG1 (s26.v / video
+                                           :ARG1-of (s26.s / show-01
+                                                           :ARG0 s26.i
+                                                           :ARG2 (s26.y / you))
+                                           :mod (s26.l2 / little)))
+                 :ARG2 (s26.k / keep-in-mind-08
+                              :ARG1 s26.y
+                              :ARG2 (s26.a2 / and
+                                            :op1 (s26.c2 / control-01
+                                                         :ARG0 (s26.e / electronics)
+                                                         :ARG1 (s26.t / this
+                                                                      :same-as s25.d2)
+                                                         :polarity "-")
+                                            :op2 (s26.h2 / have-03
+                                                         :ARG0 s26.t
+                                                         :ARG1 (s26.b / bulb
+                                                                      :ARG0-of (s26.l / light-04
+                                                                                      :mod (s26.f / fluorescent))
+                                                                      :mod (s26.o / only)
+                                                                      :quant "4"
+                                                                      :same-as s24.b)
+                                                         :mod (s26.a / also)))
+                              :mode "imperative"))
+   :snt27 (s27.p / percentage-entity
+                 :ARG1-of (s27.a2 / actual-02)
+                 :domain (s27.t2 / this
+                                 :same-as s24.b)
+                 :mod (s27.o / only)
+                 :part-of (s27.t / thing
+                                 :ARG1-of (s27.d2 / display-01
+                                                  :mod (s27.f / final)
+                                                  :time (s27.d / date-entity
+                                                               :month "5"
+                                                               :same-as s25.d)))
+                 :rel (s27.a / about)
+                 :op1-of s27.a
+                 :value "1.5")
+   :snt28 (s28.t / take-01
+                 :ARG0 (s28.y / you)
+                 :ARG1 (s28.l / look-01
+                              :ARG0 s28.y)
+                 :mode "imperative")
+   :snt29 (s29.a2 / and
+                  :op2 (s29.p / possible-01
+                              :ARG1 (s29.s / see-01
+                                           :ARG0 (s29.y / you)
+                                           :ARG1 (s29.r / rotate-01
+                                                        :ARG0-of (s29.c2 / create-01
+                                                                         :ARG1 (s29.c / circle))
+                                                        :ARG1 (s29.i / it
+                                                                     :same-as s10.p2)
+                                                        :mod (s29.o / only)
+                                                        :path (s29.a / about
+                                                                     :op1 (s29.a3 / axis
+                                                                                  :mod (s29.v / vertical)))))
+                              :location (s29.h / here)))
+   :snt30 (s30.a2 / and
+                  :op2 (s30.b / blur-01
+                              :ARG1 (s30.t / that
+                                           :same-as s29.c)
+                              :ARG1-of (s30.a / actual-02)
+                              :ARG2 (s30.v / volume)
+                              :time (s30.k / kick-in-02
+                                           :ARG1 (s30.a3 / axis
+                                                         :mod (s30.o / other)))
+                              :time (s30.t2 / then)))
+   :snt31 (s31.a2 / and
+                  :op2 (s31.m / make-02
+                              :ARG0 (s31.s3 / speed
+                                            :mod (s31.s / shutter)
+                                            :poss (s31.c / camera))
+                              :ARG1 (s31.e / effective-04
+                                           :ARG0 s31.c
+                                           :ARG2-of (s31.h / have-degree-91
+                                                           :ARG1 s31.c
+                                                           :ARG3 (s31.l / less
+                                                                        :quant (s31.s2 / slight)))
+                                           :mod (s31.c2 / case-04
+                                                        :ARG1 (s31.t / this)))
+                              :ARG1-of (s31.a / actual-02)))
+   :snt32 (s32.c / contrast-01
+                 :ARG2 (s32.d2 / due-03
+                               :ARG1 (s32.p / piece
+                                            :mod (s32.t / this)
+                                            :same-as s10.p2)
+                               :time (s32.d / date-entity
+                                            :month "5"
+                                            :same-as s25.d)))
+   :snt33 (s33.d2 / display-01
+                  :ARG0-of (s33.c / cause-01
+                                  :ARG0 (s33.s / show-04
+                                               :ARG1-of (s33.f / fantastic-02))
+                                  :ARG1 (s33.i / invite-01
+                                               :ARG1 (s33.y / you
+                                                            :mod (s33.a / all))
+                                               :ARG2 (s33.a2 / and
+                                                             :op1 (s33.c4 / come-01
+                                                                          :ARG1 s33.y)
+                                                             :op2 (s33.a3 / attend-01
+                                                                          :ARG0 s33.y
+                                                                          :ARG1 (s33.e / event
+                                                                                       :name (s33.n / name
+                                                                                                    :op1 "Interactive"
+                                                                                                    :op2 "Telecommunications"
+                                                                                                    :op3 "Spring"
+                                                                                                    :op4 "Show")
+                                                                                       :ARG1-of (s33.o / open-01
+                                                                                                       :ARG3 (s33.p / public))
+                                                                                       :location (s33.c3 / city-district
+                                                                                                         :name (s33.n2 / name
+                                                                                                                       :op1 "Greenwich"
+                                                                                                                       :op2 "Village")
+                                                                                                         :location (s33.c2 / city
+                                                                                                                           :name (s33.n3 / name
+                                                                                                                                         :op1 "New"
+                                                                                                                                         :op2 "York"
+                                                                                                                                         :op3 "City")
+                                                                                                                           :same-as s3.c)))))
+                                               :mod (s33.d / definite)))
+                  :ARG1 (s33.i2 / it
+                                :same-as s10.p2)
+                  :ARG2 s33.e)
+   :snt34 (s34.p2 / person
+                  :quant (s34.m / multiple
+                                :op1 "100")
+                  :ARG0-of (s34.i / innovate-01)
+                  :ARG0-of (s34.h / have-03
+                                  :ARG1 (s34.p3 / project
+                                                :ARG1-of (s34.f / fantastic-02)))
+                  :rel (s34.p / person
+                              :ARG0-of (s34.s / study-01)))
+   :snt35 (s35.d / display-01
+                 :ARG1 (s35.p / piece
+                              :mod (s35.t / this)
+                              :same-as s10.p2)
+                 :ARG1-of (s35.a / actual-02)
+                 :location (s35.f / facility
+                                  :name (s35.n / name
+                                               :op1 "Sierra"
+                                               :op2 "Simulcast"
+                                               :op3 "Lounge")
+                                  :direction (s35.d2 / down))
+                 :time (s35.b2 / break-19
+                               :mod (s35.b / between
+                                           :op1 (s35.n2 / now)
+                                           :op2 (s35.e / end-01
+                                                       :ARG1 (s35.s / show-04)))))
+   :snt36 (s36.c / cause-01
+                 :ARG1 (s36.l2 / love-02
+                               :ARG0 (s36.i / i
+                                            :same-as s17.i)
+                               :ARG1 (s36.a2 / and
+                                             :op1 (s36.t / talk-01
+                                                         :ARG0 s36.i
+                                                         :ARG2 (s36.y / you
+                                                                      :mod (s36.a / all)))
+                                             :op2 (s36.i2 / invite-01
+                                                          :ARG0 s36.i
+                                                          :ARG1 s36.y
+                                                          :ARG2 (s36.a3 / and
+                                                                        :op1 (s36.c3 / come-01
+                                                                                     :ARG1 s36.y
+                                                                                     :ARG4 (s36.d / down))
+                                                                        :op2 (s36.l / look-01
+                                                                                    :ARG0 s36.y
+                                                                                    :manner (s36.c2 / close-10
+                                                                                                    :ARG2-of (s36.h / have-degree-91
+                                                                                                                    :ARG1 s36.l
+                                                                                                                    :ARG3 (s36.m / more))))))))))
+

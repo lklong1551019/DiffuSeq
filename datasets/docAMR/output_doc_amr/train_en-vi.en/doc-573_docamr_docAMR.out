@@ -1,0 +1,510 @@
+# ::id doc-573
+# ::doc_file doc-573
+# ::tok http : / / www . ted . com / talks / alisa_miller_shares_the_news_about_the_news< / url> <next_sent> How does the news shape the way we see the world ? <next_sent> Here 's the world based on the way it looks -- based on landmass . <next_sent> And here 's how news shapes what Americans see . <next_sent> This map -- -- this map shows the number of seconds that American network and cable news organizations dedicated to news stories , by country , in February of 2007 -- just one year ago . <next_sent> Now , this was a month when North Korea agreed to dismantle its nuclear facilities . <next_sent> There was massive flooding in Indonesia . <next_sent> And in Paris , the IPCC released its study confirming man 's impact on global warming . <next_sent> The U.S. accounted for 79 percent of total news coverage . <next_sent> And when we take out the U.S. and look at the remaining 21 percent , we see a lot of Iraq -- that 's that big green thing there -- and little else . <next_sent> The combined coverage of Russia , China and India , for example , reached just one percent . <next_sent> When we analyzed all the news stories and removed just one story , here 's how the world looked . <next_sent> What was that story ? <next_sent> The death of Anna Nicole Smith . <next_sent> This story eclipsed every country except Iraq , and received 10 times the coverage of the IPCC report . <next_sent> And the cycle continues ; as we all know , Britney has loomed pretty large lately . <next_sent> So , why do n't we hear more about the world ? <next_sent> One reason is that news networks have reduced the number of their foreign bureaus by half . <next_sent> Aside from one - person ABC mini - bureaus in Nairobi , New Delhi and Mumbai , there are no network news bureaus in all of Africa , India or South America -- places that are home to more than two billion people . <next_sent> The reality is that covering Britney is cheaper . <next_sent> And this lack of global coverage is all the more disturbing when we see where people go for news . <next_sent> Local TV news looms large , and unfortunately only dedicates 12 percent of its coverage to international news . <next_sent> And what about the web ? <next_sent> The most popular news sites do n't do much better . <next_sent> Last year , Pew and the Colombia J - School analyzed the 14,000 stories that appeared on Google News ' front page . <next_sent> And they , in fact , covered the same 24 news events . <next_sent> Similarly , a study in e - content showed that much of global news from U.S. news creators is recycled stories from the AP wire services and Reuters , and do n't put things into a context that people can understand their connection to it . <next_sent> So , if you put it all together , this could help explain why today 's college graduates , as well as less educated Americans , know less about the world than their counterparts did 20 years ago . <next_sent> And if you think it 's simply because we are not interested , you would be wrong . <next_sent> In recent years , Americans who say they closely follow global news most of the time grew to over 50 percent . <next_sent> The real question : is this distorted worldview what we want for Americans in our increasingly interconnected world ? <next_sent> I know we can do better . <next_sent> And can we afford not to ? <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01))
+   :snt2 (s2.s2 / shape-01
+                :ARG0 (s2.n / news)
+                :ARG1 (s2.w / way
+                            :manner-of (s2.s / see-01
+                                             :ARG0 (s2.w2 / we)
+                                             :ARG1 (s2.w3 / world)))
+                :manner (s2.a / amr-unknown))
+   :snt3 (s3.b / base-02
+               :ARG1 (s3.w2 / world
+                            :location (s3.h / here)
+                            :same-as s2.w3)
+               :ARG1-of (s3.b2 / base-02
+                               :ARG2 (s3.l / landmass))
+               :ARG2 (s3.w / way
+                           :manner-of (s3.l2 / look-02
+                                             :ARG1 s3.w2)))
+   :snt4 (s4.a / and
+               :op2 (s4.t / thing
+                          :location (s4.h / here)
+                          :manner-of (s4.s2 / shape-01
+                                            :ARG0 (s4.n2 / news)
+                                            :ARG1 (s4.t2 / thing
+                                                         :ARG1-of (s4.s / see-01
+                                                                        :ARG0 (s4.p / person
+                                                                                    :mod (s4.c / country
+                                                                                               :name (s4.n / name
+                                                                                                           :op1 "America"))))))))
+   :snt5 (s5.s2 / show-01
+                :ARG0 (s5.m / map
+                            :mod (s5.t3 / this))
+                :ARG1 (s5.n6 / number
+                             :quant-of (s5.t / temporal-quantity
+                                             :ARG1-of (s5.d2 / dedicate-01
+                                                             :ARG0 (s5.a / and
+                                                                         :op1 (s5.n2 / network
+                                                                                     :mod (s5.c2 / country
+                                                                                                 :name (s5.n / name
+                                                                                                             :op1 "America")))
+                                                                         :op2 (s5.o / organization
+                                                                                    :mod (s5.n3 / news)
+                                                                                    :mod (s5.c / cable)
+                                                                                    :mod s5.c2))
+                                                             :ARG2 (s5.s3 / story
+                                                                          :mod (s5.n4 / news))
+                                                             :time (s5.d / date-entity
+                                                                         :time (s5.b / before
+                                                                                     :quant (s5.t2 / temporal-quantity
+                                                                                                   :mod (s5.j / just)
+                                                                                                   :unit (s5.y / year)
+                                                                                                   :quant "1")
+                                                                                     :op1 (s5.n5 / now))
+                                                                         :month "2"
+                                                                         :year "2007"))
+                                             :unit (s5.s / second))))
+   :snt6 (s6.m / month
+               :domain (s6.t / this
+                             :same-as s5.d)
+               :mod (s6.n2 / now)
+               :time-of (s6.a / agree-01
+                              :ARG0 (s6.c / country
+                                          :name (s6.n / name
+                                                      :op1 "North"
+                                                      :op2 "Korea"))
+                              :ARG1 (s6.d / dismantle-01
+                                          :ARG0 s6.c
+                                          :ARG1 (s6.f / facility
+                                                      :mod (s6.n3 / nucleus)
+                                                      :poss s6.c))))
+   :snt7 (s7.f / flood-01
+               :ARG1 (s7.c / country
+                           :name (s7.n / name
+                                       :op1 "Indonesia"))
+               :mod (s7.m / massive))
+   :snt8 (s8.a / and
+               :op2 (s8.r / release-01
+                          :ARG0 (s8.o / organization
+                                      :name (s8.n2 / name
+                                                   :op1 "IPCC"))
+                          :ARG1 (s8.s / study-01
+                                      :ARG0 s8.o
+                                      :ARG0-of (s8.c2 / confirm-01
+                                                      :ARG1 (s8.i / impact-01
+                                                                  :ARG0 (s8.m / man)
+                                                                  :ARG1 (s8.w / warm-01
+                                                                              :ARG1 (s8.g / globe)))))
+                          :location (s8.c / city
+                                          :name (s8.n / name
+                                                      :op1 "Paris"))))
+   :snt9 (s9.a / account-01
+               :ARG0 (s9.c / country
+                           :name (s9.n / name
+                                       :op1 "U.S."))
+               :ARG1 (s9.p / percentage-entity
+                           :ARG3-of (s9.i / include-91
+                                          :ARG2 (s9.c2 / cover-03
+                                                       :ARG1 (s9.n2 / news)
+                                                       :mod (s9.t / total)))
+                           :value "79"))
+   :snt10 (s10.a / and
+                 :op2 (s10.s / see-01
+                             :ARG0 (s10.w / we)
+                             :ARG1 (s10.a3 / and
+                                           :op1 (s10.t4 / thing
+                                                        :ARG1-of (s10.g / green-03)
+                                                        :domain (s10.c2 / country
+                                                                        :name (s10.n2 / name
+                                                                                      :op1 "Iraq")
+                                                                        :quant (s10.l3 / lot))
+                                                        :location (s10.t3 / there)
+                                                        :mod (s10.b / big)
+                                                        :mod (s10.t2 / that))
+                                           :op2 (s10.e / else
+                                                       :quant (s10.l / little)))
+                             :time (s10.a2 / and
+                                           :op1 (s10.t / take-out-11
+                                                       :ARG0 s10.w
+                                                       :ARG1 (s10.c / country
+                                                                    :name (s10.n / name
+                                                                                 :op1 "U.S.")
+                                                                    :same-as s9.c))
+                                           :op2 (s10.l2 / look-01
+                                                        :ARG0 s10.w
+                                                        :ARG1 (s10.p / percentage-entity
+                                                                     :ARG1-of (s10.r / remain-01)
+                                                                     :value "21")))))
+   :snt11 (s11.r / reach-01
+                 :ARG0 (s11.c5 / cover-01
+                               :ARG1-of (s11.c / combine-01
+                                               :ARG0-of (s11.e / exemplify-01)
+                                               :ARG1 (s11.a / and
+                                                            :op1 (s11.c2 / country
+                                                                         :name (s11.n / name
+                                                                                      :op1 "Russia"))
+                                                            :op2 (s11.c3 / country
+                                                                         :name (s11.n2 / name
+                                                                                       :op1 "China"))
+                                                            :op3 (s11.c4 / country
+                                                                         :name (s11.n3 / name
+                                                                                       :op1 "India")))))
+                 :ARG1 (s11.p / percentage-entity
+                              :mod (s11.j / just)
+                              :value "1"))
+   :snt12 (s12.t / thing
+                 :ARG1-of (s12.l / look-02
+                                 :ARG0 (s12.w2 / world
+                                               :same-as s2.w3))
+                 :location (s12.h / here)
+                 :time (s12.a3 / and
+                               :op1 (s12.a2 / analyze-01
+                                            :ARG0 (s12.w / we)
+                                            :ARG1 (s12.s / story
+                                                         :mod (s12.n / news)
+                                                         :mod (s12.a / all)))
+                               :op2 (s12.r / remove-01
+                                           :ARG0 s12.w
+                                           :ARG1 (s12.s2 / story
+                                                         :mod (s12.j / just)
+                                                         :quant "1"))))
+   :snt13 (s13.s / story
+                 :domain (s13.a / amr-unknown)
+                 :mod (s13.t / that
+                             :same-as s12.s2))
+   :snt14 (s14.d / die-01
+                 :ARG1 (s14.p / person
+                              :name (s14.n / name
+                                           :op1 "Anna"
+                                           :op2 "Nicole"
+                                           :op3 "Smith"))
+                 :same-as s12.s2)
+   :snt15 (s15.a / and
+                 :op1 (s15.e / eclipse-01
+                             :ARG0 (s15.s / story
+                                          :mod (s15.t / this)
+                                          :same-as s12.s2)
+                             :ARG1 (s15.c / country
+                                          :ARG2-of (s15.e3 / except-01
+                                                           :ARG1 (s15.c2 / country
+                                                                         :name (s15.n / name
+                                                                                      :op1 "Iraq")
+                                                                         :same-as s10.t3))
+                                          :mod (s15.e2 / every)))
+                 :op2 (s15.r / receive-01
+                             :ARG0 s15.s
+                             :ARG1 (s15.c3 / cover-03
+                                           :ARG0 (s15.r2 / report-01
+                                                         :ARG0 (s15.o / organization
+                                                                      :name (s15.n2 / name
+                                                                                    :op1 "IPCC")
+                                                                      :same-as s8.o)
+                                                         :same-as s8.s)
+                                           :ARG1 s15.s
+                                           :ARG1-of (s15.h / have-quant-91
+                                                           :ARG3 (s15.t2 / times
+                                                                         :quant "10")))))
+   :snt16 (s16.a2 / and
+                  :op1 (s16.a3 / and
+                               :op2 (s16.c / continue-01
+                                           :ARG1 (s16.c3 / cycle-02)))
+                  :op2 (s16.l3 / loom-01
+                               :ARG1 (s16.c2 / country
+                                             :name (s16.n / name
+                                                          :op1 "Britney"))
+                               :ARG1-of (s16.k / know-01
+                                               :ARG0 (s16.w / we
+                                                            :mod (s16.a / all)))
+                               :mod (s16.l / large
+                                           :degree (s16.p / pretty))
+                               :time (s16.l2 / lately)))
+   :snt17 (s17.c / cause-01
+                 :ARG0 (s17.a / amr-unknown)
+                 :ARG1 (s17.h2 / hear-01
+                               :ARG0 (s17.w / we)
+                               :ARG1 (s17.t / thing
+                                            :ARG1-of (s17.h / have-quant-91
+                                                            :ARG3 (s17.m / more))
+                                            :topic (s17.w2 / world
+                                                           :same-as s2.w3))
+                               :polarity "-"))
+   :snt18 (s18.r / reduce-01
+                 :ARG0 (s18.n / network
+                              :mod (s18.n2 / news))
+                 :ARG0-of (s18.c / cause-01
+                                 :quant "1")
+                 :ARG1 (s18.n3 / number
+                               :quant-of (s18.b / bureau
+                                                :mod (s18.f / foreign)
+                                                :poss s18.n))
+                 :ARG2 (s18.h / half))
+   :snt19 (s19.b2 / bureau
+                  :ARG2-of (s19.e / except-01
+                                  :ARG1 (s19.b / bureau
+                                               :location (s19.a2 / and
+                                                                 :op1 (s19.c / city
+                                                                             :name (s19.n2 / name
+                                                                                           :op1 "Nairobi"))
+                                                                 :op2 (s19.c2 / city
+                                                                              :name (s19.n3 / name
+                                                                                            :op1 "New"
+                                                                                            :op2 "Delhi"))
+                                                                 :op3 (s19.c3 / city
+                                                                              :name (s19.n4 / name
+                                                                                            :op1 "Mumbai")))
+                                               :mod (s19.m / mini)
+                                               :mod (s19.p / person
+                                                           :quant "1")
+                                               :poss (s19.p4 / publication
+                                                             :name (s19.n / name
+                                                                          :op1 "ABC"))))
+                  :location (s19.o / or
+                                   :domain (s19.p3 / place
+                                                   :ARG2-of (s19.h / house-01
+                                                                   :ARG1 (s19.p2 / person
+                                                                                 :quant (s19.m2 / more-than
+                                                                                                :op1 "2000000000"))))
+                                   :mod (s19.a / all)
+                                   :op1 (s19.c4 / continent
+                                                :name (s19.n5 / name
+                                                              :op1 "Africa"))
+                                   :op2 (s19.c6 / country
+                                                :name (s19.n6 / name
+                                                              :op1 "India")
+                                                :same-as s11.c4)
+                                   :op3 (s19.c5 / continent
+                                                :name (s19.n7 / name
+                                                              :op1 "South"
+                                                              :op2 "America")))
+                  :mod (s19.n8 / network)
+                  :topic (s19.n9 / news)
+                  :polarity "-")
+   :snt20 (s20.h / have-degree-91
+                 :ARG1 (s20.c2 / cover-01
+                               :ARG1 (s20.p / person
+                                            :name (s20.n / name
+                                                         :op1 "Britney")
+                                            :same-as s16.c2))
+                 :ARG1-of (s20.r / real-04)
+                 :ARG2 (s20.c / cheap-02
+                              :ARG1 s20.c2)
+                 :ARG3 (s20.m / more))
+   :snt21 (s21.a2 / and
+                  :op2 (s21.d / disturb-01
+                              :ARG0 (s21.l / lack-01
+                                           :ARG1 (s21.c / cover-03
+                                                        :ARG1 (s21.g / globe))
+                                           :mod (s21.t / this))
+                              :ARG2-of (s21.h / have-degree-91
+                                              :ARG1 s21.l
+                                              :ARG3 (s21.m / more
+                                                           :mod (s21.a / all)))
+                              :time (s21.s / see-01
+                                           :ARG0 (s21.w / we)
+                                           :ARG1 (s21.l2 / location
+                                                         :ARG4-of (s21.g2 / go-02
+                                                                          :purpose (s21.n / news)
+                                                                          :ARG0 (s21.p / person))))))
+   :snt22 (s22.a / and
+                 :op1 (s22.l3 / loom-01
+                              :ARG1 (s22.n / news
+                                           :mod (s22.t / television
+                                                       :ARG1-of (s22.l2 / local-02)))
+                              :mod (s22.l / large))
+                 :op2 (s22.d / dedicate-01
+                             :ARG0 s22.n
+                             :ARG1 (s22.c / cover-03
+                                          :ARG1-of (s22.i / include-91
+                                                          :ARG2 (s22.c2 / cover-03
+                                                                        :ARG0 s22.n)
+                                                          :ARG3 (s22.p / percentage-entity
+                                                                       :mod (s22.o / only)
+                                                                       :value "12")))
+                             :ARG2 (s22.n2 / news
+                                           :mod (s22.i2 / international))
+                             :ARG2-of (s22.f / fortunate-01
+                                             :polarity "-")))
+   :snt23 (s23.a2 / and
+                  :op2 (s23.a / amr-unknown
+                              :topic (s23.w / web)))
+   :snt24 (s24.d / do-02
+                 :ARG0 (s24.s / site
+                              :ARG1-of (s24.h / have-degree-91
+                                              :ARG2 (s24.p / popular-02
+                                                           :ARG1 s24.s)
+                                              :ARG3 (s24.m2 / most))
+                              :mod (s24.n / news))
+                 :ARG1 (s24.g / good-02
+                              :ARG2-of (s24.h2 / have-degree-91
+                                               :ARG1 s24.d
+                                               :ARG3 (s24.m / more
+                                                            :quant (s24.m3 / much))))
+                 :polarity "-")
+   :snt25 (s25.a / analyze-01
+                 :ARG0 (s25.a2 / and
+                               :op1 (s25.r / research-institute
+                                           :name (s25.n / name
+                                                        :op1 "Pew"))
+                               :op2 (s25.s / school
+                                           :location (s25.c2 / country
+                                                             :name (s25.n2 / name
+                                                                           :op1 "Colombia"))))
+                 :ARG1 (s25.s2 / story
+                               :ARG1-of (s25.a3 / appear-01
+                                                :location (s25.p / page
+                                                                 :mod (s25.f / front)
+                                                                 :poss (s25.c / company
+                                                                              :name (s25.n3 / name
+                                                                                            :op1 "Google"
+                                                                                            :op2 "News"))))
+                               :quant "14000")
+                 :time (s25.y / year
+                              :mod (s25.l / last)))
+   :snt26 (s26.a / and
+                 :op2 (s26.c / cover-03
+                             :ARG0 (s26.t / they
+                                          :same-as s25.a2)
+                             :ARG1 (s26.e / event
+                                          :ARG1-of (s26.s / same-01)
+                                          :mod (s26.n / news)
+                                          :quant "24")
+                             :mod (s26.i / in-fact)))
+   :snt27 (s27.s2 / show-01
+                  :ARG0 (s27.s4 / study-01
+                                :ARG1 (s27.c2 / content
+                                              :mod (s27.e / electronics)))
+                  :ARG1 (s27.a2 / and
+                                :op1 (s27.s3 / story
+                                             :ARG1-of (s27.r / recycle-01)
+                                             :domain (s27.n4 / news
+                                                             :quant (s27.m / much)
+                                                             :mod (s27.g / globe)
+                                                             :source (s27.p / person
+                                                                            :ARG0-of (s27.c5 / create-01
+                                                                                             :ARG1 (s27.n5 / news))
+                                                                            :mod (s27.c4 / country
+                                                                                         :name (s27.n / name
+                                                                                                      :op1 "U.S."))))
+                                             :source (s27.a / and
+                                                            :op1 (s27.s / service
+                                                                        :mod (s27.w / wire)
+                                                                        :mod (s27.p4 / publication
+                                                                                     :name (s27.n2 / name
+                                                                                                   :op1 "AP")))
+                                                            :op2 (s27.p5 / publication
+                                                                         :name (s27.n3 / name
+                                                                                       :op1 "Reuters"))))
+                                :op2 (s27.p6 / put-01
+                                             :ARG0 s27.s3
+                                             :ARG1 (s27.t / thing)
+                                             :ARG2 (s27.c3 / context
+                                                           :ARG1-of (s27.u / understand-01
+                                                                           :ARG0 (s27.p2 / person)
+                                                                           :ARG1-of (s27.p3 / possible-01)
+                                                                           :ARG2 (s27.c / connect-01
+                                                                                        :ARG1 s27.p2
+                                                                                        :ARG2 (s27.i / it
+                                                                                                     :same-as s27.t))))
+                                             :polarity "-"))
+                  :ARG1-of (s27.r2 / resemble-01))
+   :snt28 (s28.p3 / possible-01
+                  :ARG1 (s28.h3 / help-01
+                                :ARG0 (s28.t3 / this)
+                                :ARG1 (s28.e2 / explain-01
+                                              :ARG0 s28.t3
+                                              :ARG1 (s28.t2 / thing
+                                                            :ARG0-of (s28.c / cause-01
+                                                                            :ARG1 (s28.k / know-01
+                                                                                         :ARG0 (s28.a2 / and
+                                                                                                       :op1 (s28.p / person
+                                                                                                                   :ARG1-of (s28.g / graduate-01
+                                                                                                                                   :ARG2 (s28.c2 / college)
+                                                                                                                                   :time (s28.t4 / today)))
+                                                                                                       :op2 (s28.p2 / person
+                                                                                                                    :ARG1-of (s28.h / have-degree-91
+                                                                                                                                    :ARG2 (s28.e / educate-01
+                                                                                                                                                 :ARG1 s28.p2)
+                                                                                                                                    :ARG3 (s28.l / less))
+                                                                                                                    :mod (s28.c4 / country
+                                                                                                                                 :name (s28.n / name
+                                                                                                                                              :op1 "America"))))
+                                                                                         :ARG1 (s28.w / world
+                                                                                                      :same-as s2.w3)
+                                                                                         :ARG1-of (s28.h2 / have-quant-91
+                                                                                                          :ARG3 (s28.l2 / less)
+                                                                                                          :ARG4 (s28.k2 / know-01
+                                                                                                                        :ARG0 (s28.c3 / counterpart
+                                                                                                                                      :poss s28.a2)
+                                                                                                                        :ARG1 s28.w
+                                                                                                                        :time (s28.b / before
+                                                                                                                                     :quant (s28.t / temporal-quantity
+                                                                                                                                                   :unit (s28.y / year)
+                                                                                                                                                   :quant "20")
+                                                                                                                                     :op1 (s28.n2 / now)))))))))
+                  :condition (s28.p4 / put-01
+                                     :ARG0 (s28.y2 / you)
+                                     :ARG1 (s28.i / it
+                                                  :mod (s28.a / all))
+                                     :ARG2 (s28.t5 / together)))
+   :snt29 (s29.a / and
+                 :op2 (s29.w2 / wrong-04
+                              :ARG1 (s29.y / you)
+                              :condition (s29.t / think-01
+                                                :ARG0 s29.y
+                                                :ARG1 (s29.c / cause-01
+                                                             :ARG0 (s29.i / interest-01
+                                                                          :ARG1 (s29.w / we)
+                                                                          :polarity "-")
+                                                             :ARG1 (s29.i2 / it)
+                                                             :ARG1-of (s29.s / simple-02)))))
+   :snt30 (s30.g2 / grow-01
+                  :ARG1 (s30.p2 / person
+                                :ARG0-of (s30.s / say-01
+                                                :ARG1 (s30.f / follow-02
+                                                             :ARG0 s30.p2
+                                                             :ARG1 (s30.n2 / news
+                                                                           :mod (s30.g / globe))
+                                                             :ARG1-of (s30.c / close-10)
+                                                             :frequency (s30.t / time
+                                                                               :quant (s30.m / most))))
+                                :mod (s30.c2 / country
+                                             :name (s30.n / name
+                                                          :op1 "America")))
+                  :ARG4 (s30.o / over
+                               :op1 (s30.p / percentage-entity
+                                           :value "50"))
+                  :time (s30.y / year
+                               :mod (s30.r / recent)))
+   :snt31 (s31.q / question-01
+                 :ARG1 (s31.t / thing
+                              :ARG1-of (s31.w / want-01
+                                              :ARG0 (s31.w2 / we)
+                                              :beneficiary (s31.p / person
+                                                                  :location (s31.w3 / world
+                                                                                    :ARG1-of (s31.i2 / interconnect-01
+                                                                                                     :ARG1-of (s31.i / increase-01))
+                                                                                    :poss s31.w2)
+                                                                  :mod (s31.c / country
+                                                                              :name (s31.n / name
+                                                                                           :op1 "America"))))
+                              :domain (s31.w4 / worldview
+                                              :ARG1-of (s31.d / distort-01)
+                                              :mod (s31.t2 / this))
+                              :polarity (s31.a / amr-unknown))
+                 :ARG1-of (s31.r / real-04))
+   :snt32 (s32.k / know-01
+                 :ARG0 (s32.i / i)
+                 :ARG1 (s32.p / possible-01
+                              :ARG1 (s32.d / do-02
+                                           :ARG0 (s32.w / we)
+                                           :ARG1 (s32.t / thing
+                                                        :ARG1-of (s32.g / good-02
+                                                                        :ARG2-of (s32.h / have-degree-91
+                                                                                        :ARG1 s32.t
+                                                                                        :ARG3 (s32.m / more)))))))
+   :snt33 (s33.a2 / and
+                  :op2 (s33.p / possible-01
+                              :ARG1 (s33.a / afford-01
+                                           :ARG0 (s33.w / we
+                                                        :same-as s32.w)
+                                           :ARG1 (s33.e / event
+                                                        :polarity "-"))
+                              :ARG1-of (s33.r / request-confirmation-91)))
+   :snt34 (s34.t / thank-01
+                 :ARG1 (s34.y / you
+                              :same-as s32.i)))
+

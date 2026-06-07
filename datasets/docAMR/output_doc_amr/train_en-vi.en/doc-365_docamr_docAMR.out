@@ -1,0 +1,374 @@
+# ::id doc-365
+# ::doc_file doc-365
+# ::tok http : / / www . ted . com / talks / leah_buechley_how_to_sketch_with_electronics< / url> <next_sent> Today , I 'm going to talk to you about sketching electronics . <next_sent> I 'm , among several other things , an electrical engineer , and that means that I spend a good amount of time designing and building new pieces of technology , and more specifically designing and building electronics . <next_sent> And what I 've found is that the process of designing and building electronics is problematic in all sorts of ways . <next_sent> So it 's a really slow process , it 's really expensive , and the outcome of that process , namely electronic circuit boards , are limited in all sorts of kind of interesting ways . <next_sent> So they 're really small , generally , they 're square and flat and hard , and frankly , most of them just are n't very attractive , and so my team and I have been thinking of ways to really change and mix up the process and the outcome of designing electronics . <next_sent> And so what if you could design and build electronics like this ? <next_sent> So what if you could do it extremely quickly , extremely inexpensively , and maybe more interestingly , really fluidly and expressively and even improvisationally ? <next_sent> Would n't that be so cool , and that would n't that open up all sorts of new possibilities ? <next_sent> I 'm going to share with you two projects that are investigations along these lines , and we 'll start with this one . <next_sent> Magnetic electronic pieces and ferrous paper . <next_sent> A conductive pen from the Lewis lab at UIUC . <next_sent> Sticker templates . <next_sent> Speed x 4 . <next_sent> Making a switch . <next_sent> Music : DJ Shadow . <next_sent> Adding some intelligence with a microcontroller . <next_sent> Sketching an interface . <next_sent> Pretty cool , huh ? <next_sent> We think so . <next_sent> So now that we developed these tools and found these materials that let us do these things , we started to realize that , essentially , anything that we can do with paper , anything that we can do with a piece of paper and a pen we can now do with electronics . <next_sent> So the next project that I want to show you is kind of a deeper exploration of that possibility . <next_sent> And I 'll kind of let it speak for itself . <next_sent> So the next step for us in this process is now to find a way to let all of you build things like this , and so the way that we 're approaching that is by teaching workshops to people where we explain how they can use these kinds of tools , and then also working to get the tools and the materials and techniques out into the real world in a variety of ways . <next_sent> And so sometime soon , you 'll be able to play and build and sketch with electronics in this fundamentally new way . <next_sent> So thank you very much .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01))
+   :snt2 (s2.t / talk-01
+               :ARG0 (s2.i / i)
+               :ARG1 (s2.p / paint-02
+                           :ARG1 (s2.e / electronic))
+               :ARG2 (s2.y / you)
+               :time (s2.t2 / today))
+   :snt3 (s3.a2 / and
+                :op1 (s3.i2 / include-91
+                            :ARG1 (s3.i / i
+                                        :same-as s2.i)
+                            :ARG2 (s3.t2 / thing
+                                         :quant (s3.s / several)
+                                         :mod (s3.o / other))
+                            :ARG3 (s3.e3 / engineer-01
+                                         :ARG0 s3.i
+                                         :ARG1 (s3.e / electricity)))
+                :op2 (s3.m / mean-01
+                           :ARG1 s3.e3
+                           :ARG2 (s3.s3 / spend-02
+                                        :ARG0 s3.i
+                                        :ARG1 (s3.a / amount
+                                                    :ARG1-of (s3.g / good-02)
+                                                    :quant-of (s3.t3 / time))
+                                        :ARG2 (s3.a3 / and
+                                                     :op1 (s3.d / design-01
+                                                                :ARG0 s3.i
+                                                                :ARG1 (s3.p / piece
+                                                                            :ARG1-of (s3.n / new-01)
+                                                                            :mod (s3.t / technology)))
+                                                     :op2 (s3.b / build-01
+                                                                :ARG0 s3.i
+                                                                :ARG1 s3.p)
+                                                     :op3 (s3.a4 / and
+                                                                 :ARG1-of (s3.s2 / specific-02
+                                                                                 :ARG2-of (s3.h / have-degree-91
+                                                                                                :ARG1 s3.a4
+                                                                                                :ARG3 (s3.m2 / more)))
+                                                                 :op1 (s3.d2 / design-01
+                                                                             :ARG1 (s3.e2 / electronic))
+                                                                 :op2 (s3.b2 / build-01
+                                                                             :ARG1 s3.e2))))))
+   :snt4 (s4.a2 / and
+                :op2 (s4.f / find-01
+                           :ARG0 (s4.i / i
+                                       :same-as s2.i)
+                           :ARG1 (s4.p / problem
+                                       :domain (s4.p2 / process-02
+                                                      :ARG1 (s4.a3 / and
+                                                                   :op1 (s4.d / design-01
+                                                                              :ARG1 (s4.e / electronic))
+                                                                   :op2 (s4.b / build-01
+                                                                              :ARG1 s4.e)))
+                                       :manner (s4.w / way
+                                                     :mod (s4.s / sort
+                                                                :mod (s4.a / all))))))
+   :snt5 (s5.a2 / and
+                :op1 (s5.p / process-02
+                           :ARG1 (s5.i2 / it
+                                        :same-as s4.p2)
+                           :ARG1-of (s5.s / slow-01
+                                          :degree (s5.r / really)))
+                :op2 (s5.e2 / expensive
+                            :degree (s5.r2 / really)
+                            :domain s5.i2)
+                :op3 (s5.l / limit-01
+                           :ARG1 (s5.o / outcome
+                                       :ARG1-of (s5.m / mean-01
+                                                      :ARG2 (s5.b / board
+                                                                  :mod (s5.c / circuit
+                                                                             :mod (s5.e / electronic))))
+                                       :poss s5.p)
+                           :manner (s5.w / way
+                                         :ARG2-of (s5.i / interest-01)
+                                         :mod (s5.k / kind)
+                                         :mod (s5.s2 / sort
+                                                     :mod (s5.a / all)))))
+   :snt6 (s6.c / cause-01
+               :ARG1 (s6.a5 / attract-01
+                            :ARG0 (s6.m2 / most
+                                         :ARG1-of (s6.i2 / include-91
+                                                         :ARG2 (s6.t2 / they
+                                                                      :same-as s5.b)))
+                            :ARG0-of (s6.c2 / cause-01
+                                            :ARG1 (s6.t3 / think-01
+                                                         :ARG0 (s6.a2 / and
+                                                                      :op1 (s6.t / team
+                                                                                 :poss (s6.i / i
+                                                                                             :same-as s2.i))
+                                                                      :op2 s6.i)
+                                                         :ARG1 (s6.w / way
+                                                                     :manner-of (s6.a3 / and
+                                                                                       :op1 (s6.c3 / change-01
+                                                                                                   :ARG0 s6.a2
+                                                                                                   :ARG1 (s6.a4 / and
+                                                                                                                :op1 (s6.p / process-02
+                                                                                                                           :ARG1 (s6.d / design-01
+                                                                                                                                       :ARG1 (s6.e / electronic)))
+                                                                                                                :op2 (s6.o / outcome
+                                                                                                                           :poss s6.d))
+                                                                                                   :ARG1-of (s6.r / real-04))
+                                                                                       :op2 (s6.m / mix-up-02
+                                                                                                  :ARG0 s6.r
+                                                                                                  :ARG1 s6.a4)))))
+                            :degree (s6.v / very)
+                            :mod (s6.j / just)
+                            :mod (s6.f2 / frank)
+                            :polarity "-")
+               :rel (s6.s2 / square
+                           :domain s6.t2)
+               :rel (s6.a / and
+                          :ARG1-of (s6.g / general-02)
+                          :op1 (s6.s / small
+                                     :degree (s6.r2 / really)
+                                     :domain s6.t2)
+                          :op2 (s6.f / flat-06
+                                     :ARG1 s6.t2)
+                          :op3 (s6.h / hard-02
+                                     :ARG1 s6.t2)))
+   :snt7 (s7.a2 / and
+                :op2 (s7.c / cause-01
+                           :ARG0 (s7.a / amr-unknown)
+                           :ARG1 (s7.p / possible-01
+                                       :ARG1 (s7.a3 / and
+                                                    :op1 (s7.d / design-01
+                                                               :ARG0 (s7.y / you)
+                                                               :ARG1 (s7.e / electronic
+                                                                           :ARG1-of (s7.r / resemble-01
+                                                                                          :ARG2 (s7.t / this))))
+                                                    :op2 (s7.b / build-01
+                                                               :ARG0 s7.y
+                                                               :ARG1 s7.e)))))
+   :snt8 (s8.i2 / infer-01
+                :ARG1 (s8.a / amr-unknown
+                            :condition (s8.p / possible-01
+                                             :ARG1 (s8.d / do-02
+                                                         :ARG0 (s8.y / you)
+                                                         :ARG1 (s8.i4 / it
+                                                                      :same-as s7.d)
+                                                         :ARG1-of (s8.q / quick-02
+                                                                        :degree (s8.e4 / extreme))
+                                                         :ARG1-of (s8.h / have-degree-91
+                                                                        :ARG1-of (s8.p2 / possible-01)
+                                                                        :ARG2 (s8.i3 / interest-01)
+                                                                        :ARG3 (s8.m / more))
+                                                         :manner (s8.a2 / and
+                                                                        :op1 s8.q
+                                                                        :op2 (s8.f / fluid
+                                                                                   :degree (s8.r / really))
+                                                                        :op3 (s8.e3 / express-01
+                                                                                    :degree s8.r)
+                                                                        :op4 (s8.i / improvise-01
+                                                                                   :ARG0 s8.d
+                                                                                   :mod (s8.e / even)
+                                                                                   :polarity "-"))
+                                                         :mod (s8.e2 / expensive
+                                                                     :degree (s8.e5 / extreme))))))
+   :snt9 (s9.a3 / and
+                :op1 (s9.c / cool-04
+                           :ARG1 (s9.t / that
+                                       :same-as s7.d)
+                           :degree (s9.s / so))
+                :op2 (s9.o / open-up-03
+                           :ARG0 s9.t
+                           :ARG1 (s9.t2 / thing
+                                        :ARG1-of (s9.n / new-01)
+                                        :ARG1-of (s9.p / possible-01)
+                                        :mod (s9.s2 / sort
+                                                    :mod (s9.a / all)))
+                           :ARG1-of (s9.r / request-confirmation-91)
+                           :polarity (s9.a2 / amr-unknown)))
+   :snt10 (s10.a / and
+                 :op1 (s10.s / share-01
+                             :ARG0 (s10.i / i
+                                          :same-as s2.i)
+                             :ARG1 (s10.p / project
+                                          :ARG0-of (s10.i2 / investigate-01
+                                                           :manner (s10.l / line
+                                                                          :mod (s10.t / this)))
+                                          :quant "2")
+                             :ARG2 (s10.y / you
+                                          :same-as s2.y))
+                 :op2 (s10.s2 / start-01
+                              :ARG0 (s10.w / we)
+                              :ARG1 (s10.o / one
+                                           :mod (s10.t2 / this))))
+   :snt11 (s11.a / and
+                 :op1 (s11.p2 / piece
+                              :mod (s11.e / electronic)
+                              :mod (s11.c / cyber))
+                 :op2 (s11.p / paper
+                             :mod (s11.f / ferrous)))
+   :snt12 (s12.p / pen
+                 :ARG0-of (s12.c / conduct-03)
+                 :rel (s12.h / have-org-role-91
+                             :ARG1 (s12.l / laboratory
+                                          :mod (s12.p2 / person
+                                                       :name (s12.n / name
+                                                                    :op1 "Lewis")
+                                                       :ARG0-of s12.h))
+                             :ARG1 (s12.u / university
+                                          :name (s12.n2 / name
+                                                        :op1 "UIUC"))))
+   :snt13 (s13.b / border
+                 :ARG1-of (s13.s / stick-01))
+   :snt14 (s14.p / product-of
+                 :op1 (s14.s / speed-01)
+                 :op2 "4")
+   :snt15 (s15.m / make-01
+                 :ARG1 (s15.s / switch-01))
+   :snt16 (s16.m / music
+                 :name (s16.n / name
+                              :op1 "DJ"
+                              :op2 "Shadow"))
+   :snt17 (s17.a / add-02
+                 :ARG1 (s17.i / intelligence
+                              :quant (s17.s / some))
+                 :instrument (s17.m / microcontroller))
+   :snt18 (s18.s / sketch-01
+                 :ARG1 (s18.i / interface))
+   :snt19 (s19.c / cool-04
+                 :ARG1-of (s19.r / request-confirmation-91)
+                 :degree (s19.p / pretty))
+   :snt20 (s20.t / think-01
+                 :ARG0 (s20.w / we
+                              :same-as s6.i)
+                 :ARG1 (s20.s / so))
+   :snt21 (s21.s / start-01
+                 :ARG0 (s21.w / we
+                              :same-as s6.i)
+                 :ARG1 (s21.r / realize-01
+                              :ARG0 s21.w
+                              :ARG1 (s21.a2 / and
+                                            :mod (s21.e2 / essential)
+                                            :op1 (s21.a4 / anything
+                                                         :ARG1-of (s21.d3 / do-02
+                                                                          :ARG0 s21.w
+                                                                          :ARG1-of (s21.p4 / possible-01)
+                                                                          :ARG3 (s21.p / paper
+                                                                                       :part (s21.p3 / piece))))
+                                            :op2 (s21.a5 / anything
+                                                         :ARG1-of (s21.d4 / do-02
+                                                                          :ARG0 s21.w
+                                                                          :ARG1-of (s21.p5 / possible-01
+                                                                                           :ARG1-of (s21.d5 / do-02
+                                                                                                            :ARG0 s21.w
+                                                                                                            :ARG3 (s21.e / electronics)
+                                                                                                            :time (s21.n2 / now)))
+                                                                          :instrument (s21.a3 / and
+                                                                                              :op1 s21.p3
+                                                                                              :op2 (s21.p2 / pen))))))
+                 :rel (s21.n / now)
+                 :time (s21.a / and
+                              :op1 (s21.d / develop-02
+                                          :ARG0 s21.w
+                                          :ARG1 (s21.t4 / tool
+                                                        :mod (s21.t2 / this)))
+                              :op2 (s21.f / find-01
+                                          :ARG0 s21.w
+                                          :ARG1 (s21.m / material
+                                                       :ARG0-of (s21.l / let-01
+                                                                       :ARG1 (s21.d2 / do-02
+                                                                                     :ARG0 s21.w
+                                                                                     :ARG1 (s21.t / thing
+                                                                                                  :mod (s21.t3 / this))))
+                                                       :mod s21.t2))))
+   :snt22 (s22.w / want-01
+                 :ARG0 (s22.i / i
+                              :same-as s2.i)
+                 :ARG1 (s22.s / show-01
+                              :ARG0 s22.i
+                              :ARG1 (s22.p2 / project
+                                            :domain (s22.e / explore-01
+                                                           :ARG1 (s22.p / possible-01
+                                                                        :ARG1 (s22.t / that))
+                                                           :ARG1-of (s22.h / have-degree-91
+                                                                           :ARG2 (s22.d / deep-03
+                                                                                        :ARG1 s22.e)
+                                                                           :ARG3 (s22.m / more
+                                                                                        :quant (s22.k / kind-of))))
+                                            :mod (s22.n / next))
+                              :ARG2 (s22.y / you
+                                           :same-as s2.y)))
+   :snt23 (s23.a / and
+                 :op2 (s23.l / let-01
+                             :ARG0 (s23.i / i
+                                          :same-as s2.i)
+                             :ARG1 (s23.s / speak-01
+                                          :ARG0 (s23.i2 / it
+                                                        :same-as s22.p)
+                                          :mod (s23.b / by-oneself
+                                                      :same-as s22.p))
+                             :degree (s23.k / kind-of)))
+   :snt24 (s24.a3 / and
+                  :op1 (s24.s / step-01
+                              :ARG1 (s24.w2 / we
+                                            :same-as s6.i)
+                              :ARG2 (s24.f / find-01
+                                           :ARG0 s24.w2
+                                           :ARG1 (s24.w / way
+                                                        :manner-of (s24.l / let-01
+                                                                          :ARG1 (s24.b / build-01
+                                                                                       :ARG0 (s24.y / you
+                                                                                                    :mod (s24.a / all))
+                                                                                       :ARG1 (s24.t4 / thing
+                                                                                                     :ARG1-of (s24.r2 / resemble-01
+                                                                                                                      :ARG2 (s24.t7 / this
+                                                                                                                                    :same-as s7.t)))))))
+                              :mod (s24.n / next)
+                              :prep-in (s24.p3 / process-02
+                                               :mod (s24.t6 / this))
+                              :time (s24.n2 / now))
+                  :op2 (s24.a6 / approach-02
+                               :ARG0 s24.w2
+                               :ARG1 s24.l
+                               :manner (s24.a4 / and
+                                               :op1 (s24.t / teach-01
+                                                           :ARG0 s24.w2
+                                                           :ARG1 (s24.w4 / workshop)
+                                                           :ARG2 (s24.p / person
+                                                                        :time-of (s24.e / explain-01
+                                                                                        :ARG0 s24.w2
+                                                                                        :ARG1 (s24.t5 / thing
+                                                                                                      :manner-of (s24.p2 / possible-01
+                                                                                                                         :ARG1 (s24.u / use-01
+                                                                                                                                      :ARG0 s24.p
+                                                                                                                                      :ARG1 (s24.t9 / tool
+                                                                                                                                                    :mod (s24.k / kind
+                                                                                                                                                                :mod (s24.t8 / this)))))))))
+                                               :op2 (s24.w3 / work-01
+                                                            :ARG0 s24.w2
+                                                            :ARG1 (s24.g / get-05
+                                                                         :ARG0 s24.w2
+                                                                         :ARG1 (s24.a5 / and
+                                                                                       :op1 (s24.t10 / tool)
+                                                                                       :op2 (s24.m / material)
+                                                                                       :op3 (s24.t2 / technique))
+                                                                         :ARG2 (s24.o / out-06
+                                                                                      :ARG1 s24.a5
+                                                                                      :ARG2 (s24.w5 / world
+                                                                                                    :ARG1-of (s24.r / real-04)))
+                                                                         :manner (s24.v / variety))
+                                                            :mod (s24.a2 / also)
+                                                            :time (s24.t3 / then)))))
+   :snt25 (s25.a / and
+                 :op1 (s25.p2 / possible-01
+                              :ARG1 (s25.a2 / and
+                                            :manner (s25.w / way
+                                                           :ARG1-of (s25.n / new-01
+                                                                           :manner (s25.f / fundamental))
+                                                           :mod (s25.t / this))
+                                            :op1 (s25.p / play-01
+                                                        :ARG0 (s25.y / you)
+                                                        :ARG2 (s25.e / electronic))
+                                            :op2 (s25.b / build-01
+                                                        :ARG0 s25.y
+                                                        :ARG1 s25.e)
+                                            :op3 (s25.s / sketch-out-02
+                                                        :ARG0 s25.y
+                                                        :ARG3 s25.e))
+                              :time (s25.s3 / soon
+                                            :mod (s25.s2 / sometime))))
+   :snt26 (s26.t / thank-01
+                 :ARG0 (s26.i / i)
+                 :ARG1 (s26.y / you
+                              :same-as s2.i)
+                 :mod (s26.m / much
+                             :degree (s26.v / very))))
+

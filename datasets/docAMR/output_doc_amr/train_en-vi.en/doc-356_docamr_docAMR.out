@@ -1,0 +1,345 @@
+# ::id doc-356
+# ::doc_file doc-356
+# ::tok http : / / www . ted . com / talks / camille_seaman_photos_from_a_storm_chaser< / url> <next_sent> Everything is interconnected . <next_sent> As a Shinnecock Indian , I was raised to know this . <next_sent> We are a small fishing tribe situated on the southeastern tip of Long Island near the town of Southampton in New York . <next_sent> When I was a little girl , my grandfather took me to sit outside in the sun on a hot summer day . <next_sent> There were no clouds in the sky . <next_sent> And after a while I began to perspire . <next_sent> And he pointed up to the sky , and he said , " Look , do you see that ? <next_sent> That 's part of you up there . <next_sent> That 's your water that helps to make the cloud that becomes the rain that feeds the plants that feeds the animals . " <next_sent> In my continued exploration of subjects in nature that have the ability to illustrate the interconnection of all life , I started storm chasing in 2008 after my daughter said , " Mom , you should do that . " <next_sent> And so three days later , driving very fast , I found myself stalking a single type of giant cloud called the super cell , capable of producing grapefruit - size hail and spectacular tornadoes , although only two percent actually do . <next_sent> These clouds can grow so big , up to 50 miles wide and reach up to 65,000 feet into the atmosphere . <next_sent> They can grow so big , blocking all daylight , making it very dark and ominous standing under them . <next_sent> Storm chasing is a very tactile experience . <next_sent> There 's a warm , moist wind blowing at your back and the smell of the earth , the wheat , the grass , the charged particles . <next_sent> And then there are the colors in the clouds of hail forming , the greens and the turquoise blues . <next_sent> I 've learned to respect the lightning . <next_sent> My hair used to be straight . <next_sent> I 'm just kidding . <next_sent> What really excites me about these storms is their movement , the way they swirl and spin and undulate , with their lava lamp - like mammatus clouds . <next_sent> They become lovely monsters . <next_sent> When I 'm photographing them , I cannot help but remember my grandfather 's lesson . <next_sent> As I stand under them , I see not just a cloud , but understand that what I have the privilege to witness is the same forces , the same process in a small - scale version that helped to create our galaxy , our solar system , our sun and even this very planet . <next_sent> All my relations . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01
+                            :ARG0 (s1.p / person
+                                        :name (s1.n / name
+                                                    :op1 "rule"))
+                            :ARG0 (s1.i / i)))
+   :snt2 (s2.i / interconnect-01
+               :ARG1 (s2.e / everything))
+   :snt3 (s3.r / raise-03
+               :purpose (s3.k / know-01
+                              :ARG0 (s3.i / i
+                                          :mod (s3.p / person
+                                                     :mod (s3.c / country
+                                                                :name (s3.n / name
+                                                                            :op1 "Shinnecock"
+                                                                            :op2 "India"))))
+                              :ARG1 (s3.t / this))
+               :ARG1 s3.i)
+   :snt4 (s4.s / situate-01
+               :ARG1 (s4.t3 / tribe
+                            :domain (s4.w / we
+                                          :same-as s3.p)
+                            :mod (s4.f / fish-01)
+                            :mod (s4.s2 / small))
+               :ARG2 (s4.t / tip
+                           :ARG1-of (s4.n4 / near-02
+                                           :ARG2 (s4.t2 / town
+                                                        :name (s4.n2 / name
+                                                                     :op1 "Southampton")
+                                                        :location (s4.s4 / state
+                                                                         :name (s4.n3 / name
+                                                                                      :op1 "New"
+                                                                                      :op2 "York"))))
+                           :direction (s4.s3 / southeast)
+                           :part-of (s4.i / island
+                                          :name (s4.n / name
+                                                      :op1 "Long"
+                                                      :op2 "Island"))))
+   :snt5 (s5.t / take-01
+               :purpose (s5.s / sit-01
+                              :ARG1 (s5.i / i
+                                          :same-as s3.i)
+                              :ARG2 (s5.o / outside)
+                              :location (s5.s3 / sun)
+                              :time (s5.d2 / day
+                                           :ARG1-of (s5.h2 / hot-05)
+                                           :mod (s5.d / date-entity
+                                                      :season (s5.s2 / summer))))
+               :ARG0 (s5.p / person
+                           :ARG0-of (s5.h / have-rel-role-91
+                                          :ARG1 s5.i
+                                          :ARG2 (s5.g2 / grandfather)))
+               :ARG1 s5.i
+               :time (s5.g / girl
+                           :domain s5.i
+                           :mod (s5.l / little)))
+   :snt6 (s6.c / cloud
+               :location (s6.s / sky)
+               :polarity "-")
+   :snt7 (s7.a2 / and
+                :op2 (s7.b / begin-01
+                           :ARG1 (s7.c / conspire-01
+                                       :ARG0 (s7.i / i
+                                                   :same-as s3.i))
+                           :time (s7.a / after
+                                       :op1 (s7.w / while))))
+   :snt8 (s8.a2 / and
+                :op2 (s8.p / point-01
+                           :ARG0 (s8.h / he
+                                       :same-as s5.p)
+                           :ARG2 (s8.s2 / sky
+                                        :same-as s6.s)
+                           :direction (s8.u / up))
+                :op3 (s8.s / say-01
+                           :ARG0 s8.h
+                           :ARG1 (s8.l / look-01
+                                       :ARG0 (s8.y / you)
+                                       :ARG1 s8.s2
+                                       :polarity (s8.a / amr-unknown))))
+   :snt9 (s9.p / part
+               :domain (s9.t / that)
+               :location (s9.u / up
+                               :op1 (s9.t2 / there))
+               :part-of (s9.y / you
+                              :same-as s3.i))
+   :snt10 (s10.h / help-01
+                 :ARG0 (s10.w / water
+                              :poss (s10.y / you))
+                 :ARG1 (s10.m / make-01
+                              :ARG0 s10.w
+                              :ARG1 (s10.c / cloud
+                                           :ARG1-of (s10.b / become-01
+                                                           :ARG2 (s10.r / rain-01
+                                                                        :ARG0-of (s10.f / feed-01
+                                                                                        :ARG2 (s10.p / plant)
+                                                                                        :ARG2 (s10.a / animal)))))))
+   :snt11 (s11.s2 / start-01
+                  :ARG0 (s11.i / i
+                               :same-as s3.i)
+                  :ARG1 (s11.c2 / chase-01
+                                :ARG0 s11.i
+                                :ARG1 (s11.s3 / storm))
+                  :time (s11.e / explore-01
+                               :ARG0 s11.i
+                               :ARG1 (s11.s4 / subject
+                                             :ARG1-of (s11.c / capable-01
+                                                             :ARG2 (s11.i2 / illustrate-01
+                                                                           :ARG0 s11.s4
+                                                                           :ARG1 (s11.c3 / connect-01
+                                                                                         :ARG1 (s11.l / life
+                                                                                                      :mod (s11.a2 / all)))))
+                                             :mod (s11.n / nature))
+                               :ARG1-of (s11.c4 / continue-01))
+                  :time (s11.d / date-entity
+                               :year "2008")
+                  :time (s11.a / after
+                               :op1 (s11.s / say-01
+                                           :ARG0 (s11.p / person
+                                                        :ARG0-of (s11.h / have-rel-role-91
+                                                                        :ARG1 s11.i
+                                                                        :ARG2 (s11.d2 / daughter)))
+                                           :ARG1 (s11.r / recommend-01
+                                                        :ARG0 s11.i
+                                                        :ARG1 (s11.d3 / do-02
+                                                                      :ARG0 s11.i
+                                                                      :ARG1 s11.c2)
+                                                        :ARG2 (s11.p2 / person
+                                                                      :ARG0-of (s11.h2 / have-rel-role-91
+                                                                                       :ARG1 s11.i
+                                                                                       :ARG2 (s11.m / mom))
+                                                                      :same-as s3.i)))))
+   :snt12 (s12.a3 / and
+                  :op2 (s12.f2 / find-01
+                               :ARG0 (s12.i / i
+                                            :same-as s3.i)
+                               :ARG1 (s12.s4 / stalk-02
+                                             :ARG0 s12.i
+                                             :ARG1 (s12.c4 / cloud
+                                                           :ARG1-of (s12.c / call-01
+                                                                           :ARG2 (s12.c3 / cell
+                                                                                         :mod (s12.s5 / super)))
+                                                           :ARG1-of (s12.c2 / capable-01
+                                                                            :ARG2 (s12.p2 / produce-01
+                                                                                          :ARG0 s12.c4
+                                                                                          :ARG1 (s12.a4 / and
+                                                                                                        :op1 (s12.h / hail
+                                                                                                                    :ARG1-of (s12.s2 / size-01
+                                                                                                                                     :ARG2 (s12.g2 / grapefruit)))
+                                                                                                        :op2 (s12.t2 / tornado
+                                                                                                                     :mod (s12.s3 / spectacular)))
+                                                                                          :concession (s12.d2 / do-02
+                                                                                                              :ARG0 (s12.p / percentage-entity
+                                                                                                                           :mod (s12.o / only)
+                                                                                                                           :value "2")
+                                                                                                              :ARG1 s12.p2
+                                                                                                              :ARG1-of (s12.a / actual-02))))
+                                                           :mod (s12.g / giant)
+                                                           :mod (s12.t3 / type
+                                                                        :ARG1-of (s12.s / single-02))))
+                               :time (s12.d3 / drive-01
+                                             :ARG0 s12.i
+                                             :ARG1-of (s12.f / fast-02
+                                                             :degree (s12.v / very)))
+                               :time (s12.a2 / after
+                                             :quant (s12.t / temporal-quantity
+                                                           :unit (s12.d / day)
+                                                           :quant "3"))))
+   :snt13 (s13.p / possible-01
+                 :ARG1 (s13.a / and
+                              :op1 (s13.g / grow-01
+                                          :ARG1 (s13.c / cloud
+                                                       :ARG1-of (s13.w / wide-02
+                                                                       :quant (s13.u / up-to
+                                                                                     :op1 (s13.d / distance-quantity
+                                                                                                 :unit (s13.m / mile)
+                                                                                                 :quant "50")))
+                                                       :mod (s13.t / this
+                                                                   :same-as s12.c4))
+                                          :mod (s13.b / big
+                                                      :degree (s13.s / so)))
+                              :op2 (s13.r / reach-01
+                                          :ARG0 s13.c
+                                          :ARG1 (s13.u2 / up-to
+                                                        :op1 (s13.d2 / distance-quantity
+                                                                     :unit (s13.f / foot)
+                                                                     :quant "75000"))
+                                          :destination (s13.a2 / atmosphere))))
+   :snt14 (s14.p / possible-01
+                 :ARG1 (s14.g / grow-01
+                              :ARG0-of (s14.m / make-02
+                                              :ARG1 (s14.a3 / and
+                                                            :condition (s14.s2 / stand-01
+                                                                               :ARG2 (s14.u / under
+                                                                                            :op1 (s14.t / they
+                                                                                                        :same-as s12.c4)))
+                                                            :op1 (s14.d / dark-02
+                                                                        :degree (s14.v / very))
+                                                            :op2 (s14.a / Oakland)))
+                              :ARG1 s14.t
+                              :ARG2 (s14.b / big
+                                           :ARG0-of (s14.b2 / block-01
+                                                            :ARG1 (s14.d2 / daylight
+                                                                          :mod (s14.a2 / all)))
+                                           :degree (s14.s / so))))
+   :snt15 (s15.e / experience-01
+                 :ARG1 (s15.c / chase-01
+                              :ARG1 (s15.s / storm))
+                 :mod (s15.t / tactile
+                             :degree (s15.v / very)))
+   :snt16 (s16.a / and
+                 :op1 (s16.b2 / blow-01
+                              :ARG0 (s16.w3 / wind
+                                            :ARG1-of (s16.m / moist-02)
+                                            :ARG1-of (s16.w / warm-07))
+                              :direction (s16.b / back
+                                                :part-of (s16.y / you)))
+                 :op2 (s16.s / smell-01
+                             :ARG1 (s16.a2 / and
+                                           :op1 (s16.e / earth)
+                                           :op2 (s16.w2 / wheat)
+                                           :op3 (s16.g / grass)
+                                           :op4 (s16.p / particle
+                                                       :ARG1-of (s16.c / charge-03)))))
+   :snt17 (s17.a / and
+                 :op1 (s17.c2 / color
+                              :location (s17.c / cloud
+                                               :ARG1-of (s17.f / form-01)
+                                               :consist-of (s17.h / hail)))
+                 :op2 (s17.t2 / there)
+                 :op3 (s17.g2 / green-02
+                              :mod (s17.t3 / turquoise))
+                 :rel (s17.g / green-02)
+                 :time (s17.t / then))
+   :snt18 (s18.l / learn-01
+                 :ARG0 (s18.i / i
+                              :same-as s3.i)
+                 :ARG1 (s18.r / respect-01
+                              :ARG0 s18.i
+                              :ARG1 (s18.l2 / lightning-01)))
+   :snt19 (s19.s / straight-04
+                 :ARG1 (s19.h / hair
+                              :part-of (s19.i / i
+                                              :same-as s3.i))
+                 :time (s19.u / use-03))
+   :snt20 (s20.k / kid-01
+                 :ARG0 (s20.i / i
+                              :same-as s3.i)
+                 :mod (s20.j / just))
+   :snt21 (s21.e2 / excite-01
+                  :ARG0 (s21.a / and
+                               :op1 (s21.m2 / move-01
+                                            :ARG1 (s21.s2 / storm-01
+                                                          :mod (s21.t / this)))
+                               :op2 (s21.w / way
+                                           :manner-of (s21.a2 / and
+                                                              :op1 (s21.s3 / swirl-01
+                                                                           :ARG1 s21.s2)
+                                                              :op2 (s21.s / spin-01
+                                                                          :ARG1 s21.s2)
+                                                              :op3 (s21.e / et-cetera)
+                                                              :op4 (s21.c / cloud
+                                                                          :ARG1-of (s21.r2 / resemble-01
+                                                                                           :ARG2 (s21.l / lamp
+                                                                                                        :mod (s21.l2 / lava)))
+                                                                          :mod (s21.m / mammatus)
+                                                                          :poss s21.s2))))
+                  :ARG1 (s21.i / i
+                               :same-as s3.i)
+                  :ARG1-of (s21.r / real-04)
+                  :topic s21.s2)
+   :snt22 (s22.b / become-01
+                 :ARG1 (s22.t / they
+                              :same-as s21.s2)
+                 :ARG2 (s22.m / monster
+                              :mod (s22.l / lovely)))
+   :snt23 (s23.p3 / possible-01
+                  :ARG1 (s23.h2 / help-02
+                                :ARG0 (s23.i / i
+                                             :same-as s3.i)
+                                :ARG1 (s23.r / remember-01
+                                             :ARG0 s23.i
+                                             :ARG1 (s23.l / lesson
+                                                          :poss (s23.p / person
+                                                                       :ARG0-of (s23.h / have-rel-role-91
+                                                                                       :ARG1 s23.i
+                                                                                       :ARG2 (s23.g / grandfather))
+                                                                       :same-as s5.p))))
+                  :time (s23.p2 / photograph-01
+                                :ARG0 s23.i
+                                :ARG1 (s23.t / they
+                                             :same-as s21.s2))
+                  :polarity "-")
+   :snt24 (s24.c2 / contrast-01
+                  :ARG1 (s24.s3 / see-01
+                                :ARG0 (s24.i / i
+                                             :same-as s3.i)
+                                :ARG1 (s24.c / cloud
+                                             :mod (s24.j / just
+                                                         :polarity "-")))
+                  :ARG2 (s24.u2 / understand-01
+                                :ARG0 s24.i
+                                :ARG1 (s24.w2 / witness-01
+                                              :ARG0 s24.i
+                                              :ARG1 (s24.f / force
+                                                           :ARG1-of (s24.s / same-01))
+                                              :ARG2-of (s24.p2 / privilege-01
+                                                               :ARG1 s24.i)))
+                  :ARG2 (s24.p3 / process-02
+                                :ARG0-of (s24.h / help-01
+                                                :ARG1 (s24.c3 / create-01
+                                                              :ARG0 s24.f
+                                                              :ARG1 (s24.a / and
+                                                                           :op1 (s24.g / galaxy
+                                                                                       :poss (s24.w / we))
+                                                                           :op2 (s24.s7 / system
+                                                                                        :mod (s24.s5 / sun)
+                                                                                        :poss s24.w)
+                                                                           :op3 (s24.s6 / sun
+                                                                                        :poss s24.w
+                                                                                        :same-as s5.s3)
+                                                                           :op4 (s24.p / planet
+                                                                                       :mod (s24.v2 / very)
+                                                                                       :mod (s24.t2 / this)
+                                                                                       :mod (s24.e / even)))))
+                                :ARG1-of (s24.s2 / same-01)
+                                :manner (s24.v / version
+                                               :mod (s24.l / large-scale)))
+                  :time (s24.s4 / stand-01
+                                :ARG1 s24.i
+                                :ARG2 (s24.u / under
+                                             :op1 (s24.t / they
+                                                         :same-as s21.s2))))
+   :snt25 (s25.p / person
+                 :ARG1-of (s25.r / relate-01
+                                 :ARG2 (s25.i / i
+                                              :same-as s3.i))
+                 :mod (s25.a / all))
+   :snt26 (s26.t / thank-01
+                 :ARG1 (s26.y / you
+                              :same-as s3.i)))
+

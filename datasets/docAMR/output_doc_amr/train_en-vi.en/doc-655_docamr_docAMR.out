@@ -1,0 +1,637 @@
+# ::id doc-655
+# ::doc_file doc-655
+# ::tok http : / / www . ted . com / talks / david_lang_my_underwater_robot< / url> <next_sent> So this video was taken at Aquarius undersea laboratory four miles off the coast of Key Largo , about 60 feet below the surface . <next_sent> NASA uses this extreme environment to train astronauts and aquanauts , and last year , they invited us along for the ride . <next_sent> All the footage was taken from our open ROV , which is a robot that we built in our garage . <next_sent> So ROV stands for Remote Operated Vehicle , which in our case means our little robot sends live video across that ultra - thin tether back to the computer topside . <next_sent> It 's open source , meaning we publish and share all of our design files and all of our code online , allowing anyone to modify or improve or change the design . <next_sent> It 's built with mostly off - the - shelf parts and costs about 1,000 times cheaper than the ROVs James Cameron used to explore the Titanic . <next_sent> So ROVs are n't new . <next_sent> They 've been around for decades . <next_sent> Scientists use ROVs to explore the oceans . <next_sent> Oil and gas companies use them for exploration and construction . <next_sent> What we 've built is n't unique . <next_sent> It 's how we 've built it that 's really unique . <next_sent> So I want to give you a quick story of how it got started . <next_sent> So a few years ago , my friend Eric and I decided we wanted to explore this underwater cave in the foothills of the Sierras . <next_sent> We had heard this story about lost gold from a Gold Rush - era robbery , and we wanted to go up there . <next_sent> Unfortunately , we did n't have any money and we did n't have any tools to do it . <next_sent> So Eric had an initial design idea for a robot , but we did n't have all the parts figured out , so we did what anybody would do in our situation : we asked the Internet for help . <next_sent> We kept working on it . <next_sent> We learned a lot . <next_sent> We kept prototyping , and eventually , we decided we wanted to go to the cave . <next_sent> We were ready . <next_sent> So about that time , our little expedition became quite a story , and it got picked up in The New York Times . <next_sent> And we were pretty much just overwhelmed with interest from people who wanted a kit that they could build this open ROV themselves . <next_sent> So we decided to put the project on Kickstarter , and when we did , we raised our funding goal in about two hours , and all of a sudden , had this money to make these kits . <next_sent> But then we had to learn how to make them . <next_sent> I mean , we had to learn small batch manufacturing . <next_sent> So we quickly learned that our garage was not big enough to hold our growing operation . <next_sent> But we were able to do it , we got all the kits made , thanks a lot to TechShop , which was a big help to us , and we shipped these kits all over the world just before Christmas of last year , so it was just a few months ago . <next_sent> But we 're already starting to get video and photos back from all over the world , including this shot from under the ice in Antarctica . <next_sent> We 've also learned the penguins love robots . <next_sent> So we 're still publishing all the designs online , encouraging anyone to build these themselves . <next_sent> That 's the only way that we could have done this . <next_sent> By being open source , we 've created this distributed R&amp ; D network , and we 're moving faster than any venture - backed counterpart . <next_sent> But the actual robot is really only half the story . <next_sent> What can we discover when there 's thousands of these devices roaming the seas ? <next_sent> So you 're probably all wondering : the cave . <next_sent> Did you find the gold ? <next_sent> Well , we did n't find any gold , but we decided that what we found was much more valuable . <next_sent> It was the glimpse into a potential future for ocean exploration . <next_sent> It 's something that 's not limited to the James Camerons of the world , but something that we 're all participating in . <next_sent> It 's an underwater world we 're all exploring together . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :polarity "-"
+               :value "David")
+   :snt2 (s2.t / take-01
+               :ARG1 (s2.v / video
+                           :mod (s2.t2 / this))
+               :location (s2.l / laboratory
+                               :name (s2.n / name
+                                           :op1 "Aquarius")
+                               :location (s2.u / undersea)
+                               :location (s2.o / off
+                                               :quant (s2.d / distance-quantity
+                                                            :unit (s2.m / mile)
+                                                            :quant "4")
+                                               :op1 (s2.c / coast
+                                                          :mod (s2.i / island
+                                                                     :name (s2.n2 / name
+                                                                                  :op1 "Key"
+                                                                                  :op2 "Largo"))))
+                               :location (s2.b / below
+                                               :quant (s2.a / about
+                                                            :op1 (s2.d2 / distance-quantity
+                                                                        :unit (s2.f / foot)
+                                                                        :quant "60"))
+                                               :op1 (s2.s / surface))))
+   :snt3 (s3.a2 / and
+                :op1 (s3.u / use-01
+                           :ARG0 (s3.r / research-institute
+                                       :name (s3.n / name
+                                                   :op1 "NASA"))
+                           :ARG1 (s3.e / environment
+                                       :mod (s3.e2 / extreme)
+                                       :mod (s3.t / this))
+                           :ARG2 (s3.t2 / train-01
+                                        :ARG0 s3.r
+                                        :ARG2 (s3.a / and
+                                                    :op1 (s3.a3 / astronaut)
+                                                    :op2 (s3.a4 / astronaut))))
+                :op2 (s3.i / invite-01
+                           :ARG0 s3.r
+                           :ARG1 (s3.w / we)
+                           :ARG2 (s3.r2 / ride-01)
+                           :time (s3.y / year
+                                       :mod (s3.l / last))))
+   :snt4 (s4.t / take-01
+               :ARG1 (s4.f / footage
+                           :mod (s4.a / all)
+                           :same-as s2.v)
+               :ARG2 (s4.v / vehicle
+                           :name (s4.n / name
+                                       :op1 "ROV")
+                           :ARG1-of (s4.o / open-01)
+                           :mod (s4.r / robot
+                                      :ARG1-of (s4.b / build-01
+                                                     :ARG0 (s4.w / we
+                                                                 :same-as s3.w)
+                                                     :location (s4.g / garage
+                                                                     :poss s4.w)))
+                           :poss s4.w))
+   :snt5 (s5.i / infer-01
+               :ARG1 (s5.s2 / stand-08
+                            :ARG0 (s5.s3 / string-entity
+                                         :value "Democratic People's Republic of Korea")
+                            :ARG1 (s5.v / vehicle
+                                        :name s5.s3)
+                            :ARG1-of (s5.m / mean-01
+                                           :ARG2 (s5.s / send-01
+                                                       :ARG0 (s5.r / robot
+                                                                   :mod (s5.l / little)
+                                                                   :poss (s5.w / we
+                                                                               :same-as s3.w)
+                                                                   :same-as s4.v)
+                                                       :ARG1 (s5.v2 / video
+                                                                    :mod (s5.l2 / live))
+                                                       :ARG2 (s5.t3 / topside
+                                                                    :part-of (s5.c2 / computer))
+                                                       :direction (s5.b / back)
+                                                       :path (s5.a / across
+                                                                   :op1 (s5.t / tether
+                                                                              :ARG1-of (s5.t2 / thin-03
+                                                                                              :degree (s5.u / ultra)))))
+                                           :prep-in (s5.c / case-04
+                                                          :ARG1 s5.w))))
+   :snt6 (s6.s2 / source
+                :ARG1-of (s6.o2 / open-04
+                                :ARG1-of (s6.m / mean-01
+                                               :ARG2 (s6.a3 / and
+                                                            :ARG0-of (s6.a2 / allow-01
+                                                                            :ARG1 (s6.o3 / or
+                                                                                         :op1 (s6.m2 / modify-01
+                                                                                                     :ARG0 (s6.a5 / anyone)
+                                                                                                     :ARG1 (s6.d / design))
+                                                                                         :op2 (s6.i / improve-01
+                                                                                                    :ARG0 s6.a5
+                                                                                                    :ARG1 s6.d)
+                                                                                         :op3 (s6.c / change-01
+                                                                                                    :ARG0 s6.a5
+                                                                                                    :ARG1 s6.d)))
+                                                            :op1 (s6.p / publish-01
+                                                                       :ARG0 (s6.w / we
+                                                                                   :same-as s3.w)
+                                                                       :ARG1 (s6.a4 / and
+                                                                                    :op1 (s6.f / file
+                                                                                               :mod s6.d
+                                                                                               :mod (s6.a / all)
+                                                                                               :poss s6.w)
+                                                                                    :op2 (s6.c2 / code
+                                                                                                :poss s6.w)))
+                                                            :op2 (s6.s / share-01
+                                                                       :ARG0 s6.w
+                                                                       :ARG1 s6.a4
+                                                                       :location (s6.o / online)))))
+                :domain (s6.i2 / it
+                               :same-as s4.v))
+   :snt7 (s7.a2 / and
+                :op1 (s7.b / build-01
+                           :ARG1 (s7.i / it
+                                       :same-as s4.v)
+                           :instrument (s7.p / part
+                                             :mod (s7.t / the)
+                                             :mod (s7.m2 / most)))
+                :op2 (s7.c2 / cost-01
+                            :ARG1 s7.i
+                            :ARG1-of (s7.h / have-degree-91
+                                           :ARG2 (s7.c / cheap-02
+                                                       :ARG1 s7.c2)
+                                           :ARG3 (s7.m / more
+                                                       :quant (s7.a / about
+                                                                    :op1 (s7.t2 / times
+                                                                                :quant "1000")))
+                                           :ARG4 (s7.s / ship
+                                                       :name (s7.n / name
+                                                                   :op1 "ROVs")
+                                                       :ARG1-of (s7.u / use-01
+                                                                      :ARG0 (s7.p2 / person
+                                                                                   :name (s7.n2 / name
+                                                                                                :op1 "James"
+                                                                                                :op2 "Cameron"))
+                                                                      :ARG2 (s7.e / explore-01
+                                                                                  :ARG0 s7.p2
+                                                                                  :ARG1 (s7.s2 / ship
+                                                                                               :name (s7.n3 / name
+                                                                                                            :op1 "Titanic"))))))))
+   :snt8 (s8.i / infer-01
+               :ARG1 (s8.n2 / new-01
+                            :ARG1 (s8.v / vehicle
+                                        :name (s8.n / name
+                                                    :op1 "ROVs"))
+                            :polarity "-"))
+   :snt9 (s9.e / exist-01
+               :ARG1 (s9.t2 / they
+                            :same-as s8.v)
+               :duration (s9.m / multiple
+                               :op1 (s9.t / temporal-quantity
+                                          :unit (s9.d / decade)
+                                          :quant "1")))
+   :snt10 (s10.u / use-01
+                 :ARG0 (s10.s / scientist)
+                 :ARG1 (s10.s2 / ship
+                               :ARG0-of (s10.m / man-01
+                                               :ARG1 (s10.s3 / submarine)))
+                 :ARG2 (s10.e / explore-01
+                              :ARG0 s10.s
+                              :ARG1 (s10.o / ocean)))
+   :snt11 (s11.u / use-01
+                 :ARG0 (s11.c / company
+                              :mod (s11.a / and
+                                          :op1 (s11.o / oil)
+                                          :op2 (s11.g / gas)))
+                 :ARG1 (s11.t / they
+                              :same-as s10.s2)
+                 :ARG2 (s11.a2 / and
+                               :op1 (s11.e / explore-01)
+                               :op2 (s11.c2 / construct-01)))
+   :snt12 (s12.u / unique-01
+                 :ARG1 (s12.t / thing
+                              :ARG1-of (s12.b / build-01
+                                              :ARG0 (s12.w / we
+                                                           :same-as s3.w)))
+                 :polarity "-")
+   :snt13 (s13.u / unique-01
+                 :ARG1 (s13.t / thing
+                              :manner-of (s13.b / build-01
+                                                :ARG0 (s13.w / we
+                                                             :same-as s3.w)
+                                                :ARG1 (s13.i / it
+                                                             :same-as s4.v)))
+                 :degree (s13.r / really))
+   :snt14 (s14.c / cause-01
+                 :ARG1 (s14.w / want-01
+                              :ARG0 (s14.i / i)
+                              :ARG1 (s14.g / give-01
+                                           :ARG0 s14.i
+                                           :ARG1 (s14.s2 / story
+                                                         :ARG1-of (s14.q / quick-02)
+                                                         :topic (s14.t / thing
+                                                                       :manner-of (s14.s / start-01
+                                                                                         :ARG1 (s14.i2 / it))))
+                                           :ARG2 (s14.y / you))))
+   :snt15 (s15.d / decide-01
+                 :ARG0 (s15.a / and
+                              :op1 (s15.p / person
+                                          :name (s15.n / name
+                                                       :op1 "Eric")
+                                          :ARG0-of (s15.h / have-rel-role-91
+                                                          :ARG1 (s15.i / i
+                                                                       :same-as s14.i)
+                                                          :ARG2 (s15.f2 / friend)))
+                              :op2 s15.i)
+                 :ARG1 (s15.w / want-01
+                              :ARG0 s15.a
+                              :ARG1 (s15.e / explore-01
+                                           :ARG0 s15.a
+                                           :ARG1 (s15.c / cave
+                                                        :location (s15.u / underwater)
+                                                        :location (s15.m / mountain
+                                                                         :name (s15.n2 / name
+                                                                                       :op1 "Sierras"))
+                                                        :mod (s15.t2 / this))))
+                 :time (s15.b / before
+                              :quant (s15.f / few
+                                            :op1 (s15.t / temporal-quantity
+                                                        :unit (s15.y / year)
+                                                        :quant "1"))
+                              :op1 (s15.n3 / now)))
+   :snt16 (s16.a / and
+                 :op1 (s16.h / hear-01
+                             :ARG0 (s16.w2 / we
+                                           :same-as s15.a)
+                             :ARG1 (s16.s / story
+                                          :mod (s16.t2 / this)
+                                          :topic (s16.g2 / gold
+                                                         :ARG1-of (s16.l / lose-02)
+                                                         :ARG3 (s16.r / rob-01
+                                                                      :time (s16.e / era
+                                                                                   :mod (s16.e2 / event
+                                                                                                :name (s16.n / name
+                                                                                                             :op1 "Gold"
+                                                                                                             :op2 "Rush")))))))
+                 :op2 (s16.w / want-01
+                             :ARG0 s16.w2
+                             :ARG1 (s16.g / go-02
+                                          :ARG0 s16.w2
+                                          :ARG4 (s16.t / there)
+                                          :direction (s16.u / up))))
+   :snt17 (s17.a / and
+                 :ARG2-of (s17.f / fortunate-01
+                                 :polarity "-")
+                 :op1 (s17.h / have-03
+                             :ARG0 (s17.w / we
+                                          :same-as s15.a)
+                             :ARG1 (s17.m / money
+                                          :mod (s17.a2 / any))
+                             :polarity "-")
+                 :op2 (s17.h2 / have-03
+                              :purpose (s17.d / do-02
+                                              :ARG0 s17.w
+                                              :ARG1 (s17.i / it
+                                                           :same-as s16.g))
+                              :ARG0 s17.w
+                              :ARG1 (s17.t / tool)
+                              :polarity "-"))
+   :snt18 (s18.c / cause-01
+                 :ARG0 (s18.h2 / have-concession-91
+                               :ARG1 (s18.f / figure-out-05
+                                            :ARG0 (s18.w / we
+                                                         :same-as s15.a)
+                                            :ARG1 (s18.p / part
+                                                         :mod (s18.a / all))
+                                            :polarity "-")
+                               :ARG2 (s18.h / have-03
+                                            :ARG0 (s18.p2 / person
+                                                          :name (s18.n / name
+                                                                       :op1 "Eric")
+                                                          :same-as s15.i)
+                                            :ARG1 (s18.i / idea
+                                                         :ARG1 (s18.r / robot)
+                                                         :mod (s18.i2 / initial)
+                                                         :topic (s18.d / design-01))))
+                 :ARG1 (s18.d2 / do-02
+                               :ARG0 s18.w
+                               :ARG1 (s18.m / mean-01
+                                            :ARG1 (s18.d3 / do-02
+                                                          :ARG0 (s18.a2 / anybody)
+                                                          :condition (s18.s / situation
+                                                                            :poss s18.w))
+                                            :ARG2 (s18.a3 / ask-02
+                                                          :ARG0 s18.w
+                                                          :ARG1 (s18.h3 / help-01
+                                                                        :ARG0 (s18.i3 / internet)
+                                                                        :ARG1 s18.w)
+                                                          :ARG2 s18.i3))))
+   :snt19 (s19.k / keep-02
+                 :ARG0 (s19.w / we
+                              :same-as s15.a)
+                 :ARG1 (s19.w2 / work-01
+                               :ARG0 s19.w
+                               :ARG1 (s19.i / it
+                                            :same-as s18.i)))
+   :snt20 (s20.l / learn-01
+                 :ARG0 (s20.w / we
+                              :same-as s15.a)
+                 :ARG1 (s20.l2 / lot))
+   :snt21 (s21.a / and
+                 :op1 (s21.k / keep-02
+                             :ARG0 (s21.w2 / we
+                                           :same-as s15.a)
+                             :ARG1 (s21.e / envision-01
+                                          :ARG0 s21.w2))
+                 :op2 (s21.d / decide-01
+                             :ARG0 s21.w2
+                             :ARG1 (s21.w / want-01
+                                          :ARG0 s21.w2
+                                          :ARG1 (s21.g / go-02
+                                                       :ARG0 s21.w2
+                                                       :ARG4 (s21.c / cave
+                                                                    :same-as s15.c)))
+                             :time (s21.e2 / eventual)))
+   :snt22 (s22.r / ready-02
+                 :ARG1 (s22.w / we
+                              :same-as s15.a))
+   :snt23 (s23.a2 / and
+                  :op1 (s23.b / become-01
+                              :ARG1 (s23.e / expedition
+                                           :mod (s23.l / little)
+                                           :poss (s23.w / we
+                                                        :same-as s15.a))
+                              :ARG2 (s23.s / story
+                                           :degree (s23.q / quite)))
+                  :op2 (s23.p / pick-up-11
+                              :ARG1 s23.e
+                              :medium (s23.n2 / newspaper
+                                              :name (s23.n / name
+                                                           :op1 "The"
+                                                           :op2 "New"
+                                                           :op3 "York"
+                                                           :op4 "Times")))
+                  :time (s23.a / about
+                               :op1 (s23.t2 / time
+                                            :mod (s23.t / that))))
+   :snt24 (s24.a / and
+                 :op2 (s24.o2 / overwhelm-01
+                              :ARG0 (s24.i / interest-01
+                                           :ARG0 (s24.p / person
+                                                        :ARG0-of (s24.w / want-01
+                                                                        :ARG1 (s24.k / kit
+                                                                                     :purpose (s24.b / build-01
+                                                                                                     :ARG0 s24.p
+                                                                                                     :ARG1 (s24.t / thing
+                                                                                                                  :name (s24.n / name
+                                                                                                                               :op1 "ROV")
+                                                                                                                  :ARG1-of (s24.o / open-01)
+                                                                                                                  :mod (s24.t2 / this)
+                                                                                                                  :same-as s4.v)
+                                                                                                     :ARG1-of (s24.p2 / possible-01))))))
+                              :ARG1 (s24.w2 / we
+                                            :same-as s15.a)
+                              :degree (s24.p3 / pretty-much)
+                              :mod (s24.j / just)))
+   :snt25 (s25.c / cause-01
+                 :ARG1 (s25.a4 / and
+                               :op1 (s25.d / decide-01
+                                           :ARG0 (s25.w / we
+                                                        :same-as s15.a)
+                                           :ARG1 (s25.p3 / put-01
+                                                         :ARG0 s25.w
+                                                         :ARG1 (s25.p / project
+                                                                      :same-as s14.i2)
+                                                         :ARG2 (s25.p2 / publication
+                                                                       :name (s25.n / name
+                                                                                    :op1 "Kickstarter"))))
+                               :op2 (s25.r / raise-02
+                                           :ARG0 s25.w
+                                           :ARG1 (s25.g / goal
+                                                        :mod (s25.f / fund-01
+                                                                    :ARG1 s25.p))
+                                           :time s25.p3
+                                           :time (s25.a2 / after
+                                                         :quant (s25.a / about
+                                                                       :op1 (s25.t / temporal-quantity
+                                                                                   :unit (s25.h2 / hour)
+                                                                                   :quant "2"))))
+                               :op3 (s25.h / have-03
+                                           :ARG0 s25.w
+                                           :ARG1 (s25.m2 / money
+                                                         :purpose (s25.m / make-01
+                                                                         :ARG0 s25.w
+                                                                         :ARG1 (s25.k / kit
+                                                                                      :mod (s25.t2 / this))))
+                                           :manner (s25.s / sudden
+                                                          :mod (s25.a3 / all)))))
+   :snt26 (s26.c / contrast-01
+                 :ARG2 (s26.o / obligate-01
+                              :ARG1 (s26.w / we
+                                           :same-as s15.a)
+                              :ARG2 (s26.l / learn-01
+                                           :ARG0 s26.w
+                                           :ARG1 (s26.t3 / thing
+                                                         :manner-of (s26.m / make-01
+                                                                           :ARG0 s26.w
+                                                                           :ARG1 (s26.t2 / they
+                                                                                         :same-as s25.k))))
+                              :time (s26.t / then)))
+   :snt27 (s27.m2 / mean-01
+                  :ARG0 (s27.i / i
+                               :same-as s14.i)
+                  :ARG2 (s27.o / obligate-01
+                               :ARG1 (s27.w / we
+                                            :same-as s15.a)
+                               :ARG2 (s27.l / learn-01
+                                            :ARG0 s27.w
+                                            :ARG1 (s27.m / manufacture-01
+                                                         :ARG1 (s27.b / batch
+                                                                      :mod (s27.s / small))))))
+   :snt28 (s28.c / cause-01
+                 :ARG1 (s28.l / learn-01
+                              :ARG0 (s28.w / we
+                                           :same-as s15.a)
+                              :ARG1 (s28.h / have-degree-91
+                                           :ARG1 (s28.g / garage
+                                                        :poss s28.w
+                                                        :same-as s4.g)
+                                           :ARG2 (s28.b / big)
+                                           :ARG3 (s28.e / enough)
+                                           :ARG6 (s28.h2 / hold-01
+                                                         :ARG0 s28.g
+                                                         :ARG1 (s28.o / operate-01
+                                                                      :ARG0 s28.w
+                                                                      :ARG1 (s28.g2 / grow-01)))
+                                           :polarity "-")
+                              :ARG1-of (s28.q / quick-02)))
+   :snt29 (s29.c2 / contrast-01
+                  :ARG2 (s29.a3 / and
+                                :op1 (s29.p / possible-01
+                                            :ARG1 (s29.d / do-02
+                                                         :ARG0 (s29.w / we
+                                                                      :same-as s15.a)
+                                                         :ARG1 (s29.i2 / it)))
+                                :op2 (s29.g / get-04
+                                            :ARG0 s29.w
+                                            :ARG1 (s29.m / make-01
+                                                         :ARG0 s29.w
+                                                         :ARG1 (s29.k / kit
+                                                                      :mod (s29.a / all)
+                                                                      :same-as s25.k)))
+                                :op3 (s29.t2 / thank-01
+                                             :ARG0 s29.w
+                                             :ARG1 (s29.c / company
+                                                          :name (s29.n / name
+                                                                       :op1 "TechShop")
+                                                          :ARG0-of (s29.h / help-01
+                                                                          :ARG2 s29.w
+                                                                          :mod (s29.b4 / big)))
+                                             :mod (s29.l2 / lot))
+                                :op4 (s29.s / ship-01
+                                            :ARG0 s29.w
+                                            :ARG1 (s29.k2 / kit
+                                                          :mod (s29.t3 / this)
+                                                          :same-as s25.k)
+                                            :ARG2 (s29.a2 / all-over
+                                                          :op1 (s29.w2 / world))
+                                            :ARG2-of (s29.i / infer-01
+                                                            :ARG1 (s29.b / be-temporally-at-91
+                                                                         :ARG1 s29.m
+                                                                         :ARG2 (s29.b3 / before
+                                                                                       :quant (s29.f2 / few
+                                                                                                      :mod (s29.j / just)
+                                                                                                      :op1 (s29.t / temporal-quantity
+                                                                                                                  :unit (s29.m2 / month)
+                                                                                                                  :quant "1"))
+                                                                                       :op1 (s29.n3 / now))))
+                                            :time (s29.b2 / before
+                                                          :op1 (s29.f / festival
+                                                                      :name (s29.n2 / name
+                                                                                    :op1 "Christmas")
+                                                                      :mod (s29.y / year
+                                                                                  :mod (s29.l / last)))))))
+   :snt30 (s30.c2 / contrast-01
+                  :ARG2 (s30.s2 / start-01
+                                :ARG0 (s30.w / we
+                                             :same-as s15.a)
+                                :ARG1 (s30.g / get-01
+                                             :ARG0 s30.w
+                                             :ARG1 (s30.a3 / and
+                                                           :ARG2-of (s30.i2 / include-01
+                                                                            :ARG1 (s30.s / shoot-03
+                                                                                         :ARG2 (s30.u / under
+                                                                                                      :op1 (s30.i / ice
+                                                                                                                  :location (s30.c / continent
+                                                                                                                                   :name (s30.n / name
+                                                                                                                                                :op1 "Antarctica"))))
+                                                                                         :mod (s30.t / this)))
+                                                           :op1 (s30.v / video)
+                                                           :op2 (s30.p / photo)
+                                                           :source (s30.a / all-over
+                                                                          :part-of (s30.w2 / world
+                                                                                           :same-as s29.w2)))
+                                             :direction (s30.b / back))
+                                :time (s30.a2 / already)))
+   :snt31 (s31.l / learn-01
+                 :ARG0 (s31.w / we
+                              :same-as s15.a)
+                 :ARG1 (s31.l2 / love-01
+                               :ARG0 (s31.p / penguin)
+                               :ARG1 (s31.r / robot))
+                 :mod (s31.a / also))
+   :snt32 (s32.c / cause-01
+                 :ARG1 (s32.p / publish-01
+                              :ARG0 (s32.w / we
+                                           :same-as s15.a)
+                              :ARG0-of (s32.e / encourage-01
+                                              :ARG1 (s32.a2 / anyone)
+                                              :ARG2 (s32.b / build-01
+                                                           :ARG0 s32.a2
+                                                           :ARG1 (s32.t / this
+                                                                        :same-as s32.d)))
+                              :ARG1 (s32.d / design-01
+                                           :mod (s32.a / all))
+                              :medium (s32.o / online)
+                              :mod (s32.s / still)))
+   :snt33 (s33.w / way
+                 :domain (s33.t / that
+                                :same-as s32.b)
+                 :manner-of (s33.p / possible-01
+                                   :ARG1 (s33.d / do-02
+                                                :ARG0 (s33.w2 / we
+                                                              :same-as s15.a)
+                                                :ARG1 (s33.t2 / this)))
+                 :mod (s33.o / only))
+   :snt34 (s34.a2 / and
+                  :op1 (s34.c2 / create-01
+                               :ARG0 (s34.w / we
+                                            :same-as s15.a)
+                               :ARG1 (s34.n / network
+                                            :purpose (s34.a / and
+                                                            :op1 (s34.r / research-01)
+                                                            :op2 (s34.d / develop-02))
+                                            :ARG1-of (s34.d2 / distribute-01)
+                                            :mod (s34.t / this))
+                               :manner (s34.s / source
+                                              :ARG1-of (s34.o / open-04)
+                                              :domain s34.w))
+                  :op2 (s34.m2 / move-01
+                               :ARG0 s34.w
+                               :ARG1-of (s34.h / have-degree-91
+                                               :ARG2 (s34.f / fast-02
+                                                            :ARG1 s34.m2)
+                                               :ARG3 (s34.m / more)
+                                               :ARG4 (s34.c / counterpart
+                                                            :ARG1-of (s34.b / back-01
+                                                                            :ARG0 (s34.v / venture))
+                                                            :mod (s34.a3 / any)))))
+   :snt35 (s35.c / contrast-01
+                 :ARG2 (s35.h / half
+                              :ARG1-of (s35.r / real-04)
+                              :domain (s35.r2 / robot
+                                              :ARG1-of (s35.a / actual-02))
+                              :mod (s35.o / only)
+                              :part-of (s35.s / story)))
+   :snt36 (s36.p / possible-01
+                 :ARG1 (s36.d2 / discover-01
+                               :ARG0 (s36.w / we)
+                               :ARG1 (s36.a / amr-unknown)
+                               :time (s36.r / roam-01
+                                            :ARG0 (s36.d / device
+                                                         :quant (s36.m / multiple
+                                                                       :op1 "1000")
+                                                         :mod (s36.t / this))
+                                            :ARG1 (s36.s / sea))))
+   :snt37 (s37.c / cause-01
+                 :ARG1 (s37.w / wonder-01
+                              :ARG0 (s37.y / you
+                                           :mod (s37.a / all))
+                              :ARG1 (s37.c2 / cave
+                                            :same-as s15.c)
+                              :mod (s37.p / probable)))
+   :snt38 (s38.f / find-01
+                 :ARG0 (s38.y / you
+                              :same-as s15.a)
+                 :ARG1 (s38.g / gold)
+                 :polarity (s38.a / amr-unknown))
+   :snt39 (s39.c / contrast-01
+                 :ARG1 (s39.f / find-01
+                              :ARG0 (s39.w / we
+                                           :same-as s15.a)
+                              :ARG1 (s39.g / gold
+                                           :quant (s39.a / any))
+                              :polarity "-")
+                 :ARG2 (s39.d / decide-01
+                              :ARG0 s39.w
+                              :ARG1 (s39.h / have-degree-91
+                                           :ARG1 (s39.t / thing
+                                                        :ARG1-of (s39.f2 / find-01
+                                                                         :ARG0 s39.w))
+                                           :ARG2 (s39.v / value-01
+                                                        :ARG1 s39.t)
+                                           :ARG3 (s39.m / more
+                                                        :quant (s39.m2 / much))))
+                 :mod (s39.w2 / well
+                              :mode "expressive"))
+   :snt40 (s40.g / glimpse-01
+                 :ARG0 (s40.i / it)
+                 :ARG1 (s40.f / future
+                              :purpose (s40.e / explore-01
+                                              :ARG1 (s40.o / ocean))
+                              :mod (s40.p / potential)))
+   :snt41 (s41.c2 / contrast-01
+                  :ARG1 (s41.s / something
+                               :ARG1-of (s41.l / limit-01
+                                               :ARG2 (s41.c / camera
+                                                            :name (s41.n / name
+                                                                         :op1 "James")
+                                                            :location (s41.w2 / world
+                                                                              :same-as s29.w2))
+                                               :polarity "-")
+                               :domain (s41.i / it
+                                              :same-as s40.e))
+                  :ARG2 (s41.p / participate-01
+                               :ARG0 (s41.w / we
+                                            :mod (s41.a / all)
+                                            :same-as s3.w)
+                               :ARG1 s41.s))
+   :snt42 (s42.w2 / world
+                  :ARG1-of (s42.e / explore-01
+                                  :ARG0 (s42.w / we
+                                               :mod (s42.a / all)
+                                               :same-as s3.w)
+                                  :mod (s42.t / together))
+                  :location (s42.u / underwater))
+   :snt43 (s43.t / thank-01
+                 :ARG1 (s43.y / you
+                              :same-as s14.i)))
+

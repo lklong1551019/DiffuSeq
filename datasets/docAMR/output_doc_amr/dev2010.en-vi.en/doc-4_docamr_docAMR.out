@@ -1,0 +1,528 @@
+# ::id doc-4
+# ::doc_file doc-4
+# ::tok Last year at TED I gave an introduction to the LHC . <next_sent> And I promised to come back and give you an update on how that machine worked . <next_sent> So this is it . <next_sent> And for those of you that were n't there , the LHC is the largest scientific experiment ever attempted -- <next_sent> 27 kilometers in circumference . <next_sent> Its job is to recreate the conditions that were present less than a billionth of a second after the universe began , up to 600 million times a second . <next_sent> It 's nothing if not ambitious . <next_sent> This is the machine below Geneva . <next_sent> We take the pictures of those mini - Big Bangs inside detectors . <next_sent> This is the one I work on . <next_sent> It 's called the ATLAS detector -- <next_sent> 44 meters wide , 22 meters in diameter . <next_sent> Spectacular picture here of ATLAS under construction so you can see the scale . <next_sent> On the 10th of September last year we turned the machine on for the first time . <next_sent> And this picture was taken by ATLAS . <next_sent> It caused immense celebration in the control room . <next_sent> It 's a picture of the first beam particle going all the way around the LHC , colliding with a piece of the LHC deliberately , and showering particles into the detector . <next_sent> In other words , when we saw that picture on September 10th we knew the machine worked , which is a great triumph . <next_sent> I do n't know whether this got the biggest cheer , or this , when someone went onto Google and saw the front page was like that . <next_sent> It means we made cultural impact as well as scientific impact . <next_sent> About a week later we had a problem with the machine , related actually to these bits of wire here -- these gold wires . <next_sent> Those wires carry 13 thousand amps when the machine is working in full power . <next_sent> Now the engineers amongst you will look at them and say , " No they do n't . They 're small wires . " <next_sent> They can do that because when they are very cold they are what 's called superconducting wire . <next_sent> So at minus 271 degrees , colder than the space between the stars , those wires can take that current . <next_sent> In one of the joints between over 9,000 magnets in LHC , there was a manufacturing defect . <next_sent> So the wire heated up slightly , and its 13,000 amps suddenly encountered electrical resistance . <next_sent> This was the result . <next_sent> Now that 's more impressive when you consider those magnets weigh over 20 tons , and they moved about a foot . <next_sent> So we damaged about 50 of the magnets . <next_sent> We had to take them out , which we did . <next_sent> We reconditioned them all , fixed them . <next_sent> They 're all on their way back underground now . <next_sent> By the end of March the LHC will be intact again . <next_sent> We will switch it on , and we expect to take data in June or July , and continue with our quest to find out what the building blocks of the universe are . <next_sent> Now of course , in a way those accidents reignite the debate about the value of science and engineering at the edge . <next_sent> It 's easy to refute . <next_sent> I think that the fact that it 's so difficult , the fact that we 're overreaching , is the value of things like the LHC . <next_sent> I will leave the final word to an English scientist , Humphrey Davy , who , I suspect , when defending his protege 's useless experiments -- his protege was Michael Faraday -- said this , " Nothing is so dangerous to the progress of the human mind than to assume that our views of science are ultimate , that there are no mysteries in nature , that our triumphs are complete , and that there are no new worlds to conquer . " <next_sent> Thank you .
+(d / document
+   :snt1 (s1.i2 / introduce-01
+                :ARG0 (s1.i / i)
+                :ARG1 (s1.o / organization
+                            :name (s1.n2 / name
+                                         :op1 "LHC"))
+                :location (s1.c / conference
+                                :name (s1.n / name
+                                            :op1 "TED"))
+                :time (s1.y / year
+                            :mod (s1.l / last)))
+   :snt2 (s2.a / and
+               :op1 (s2.p / promise-01
+                          :ARG0 (s2.i / i
+                                      :same-as s1.i)
+                          :ARG2 (s2.a2 / and
+                                       :op1 (s2.c / come-01
+                                                  :ARG1 s2.i
+                                                  :direction (s2.b / back))
+                                       :op2 (s2.u / update-02
+                                                  :ARG0 s2.i
+                                                  :ARG1 (s2.y / you)
+                                                  :ARG2 (s2.t2 / thing
+                                                               :manner-of (s2.w / work-09
+                                                                                :ARG1 (s2.m / machine
+                                                                                            :mod (s2.t / that)
+                                                                                            :same-as s1.o)))))))
+   :snt3 (s3.b / be-it-07
+               :ARG1 (s3.t / this)
+               :ARG1-of (s3.c / cause-01))
+   :snt4 (s4.a / and
+               :beneficiary (s4.p / person
+                                  :ARG1-of (s4.i / include-91
+                                                 :ARG2 (s4.y / you))
+                                  :ARG1-of (s4.b / be-located-at-91
+                                                 :ARG2 (s4.t / there)
+                                                 :polarity "-"))
+               :op1 (s4.e2 / experiment-01
+                           :ARG1-of (s4.h / have-degree-91
+                                          :ARG2 (s4.l / large)
+                                          :ARG3 (s4.m / most))
+                           :ARG1-of (s4.a2 / attempt-01
+                                           :time (s4.e / ever))
+                           :domain (s4.f / facility
+                                         :name (s4.n / name
+                                                     :op1 "LHC")
+                                         :same-as s1.o)
+                           :mod (s4.s / science)))
+   :snt5 (s5.c / circumference
+               :quant (s5.d / distance-quantity
+                            :unit (s5.k / kilometer)
+                            :quant "27"))
+   :snt6 (s6.j / job
+               :domain (s6.r2 / replicate-01
+                              :ARG0 (s6.i / it
+                                          :same-as s1.o)
+                              :ARG1 (s6.c / condition
+                                          :ARG1-of (s6.p / present-02
+                                                         :frequency (s6.r / rate-entity-91
+                                                                          :ARG1 (s6.u2 / up-to)
+                                                                          :ARG2 (s6.t2 / temporal-quantity
+                                                                                       :unit (s6.s2 / second)
+                                                                                       :quant "600000000"))
+                                                         :time (s6.a / after
+                                                                     :duration (s6.l / less-than
+                                                                                     :op1 (s6.t / temporal-quantity
+                                                                                                :unit (s6.s / second)
+                                                                                                :quant "1000000000"))
+                                                                     :op1 (s6.b / begin-01
+                                                                                :ARG1 (s6.u / universe))))))
+               :poss s6.i)
+   :snt7 (s7.a2 / and
+                :domain (s7.i / it
+                              :same-as s1.o)
+                :op1 (s7.n / nothing)
+                :op2 (s7.a / ambitious))
+   :snt8 (s8.m / machine
+               :domain (s8.t / this
+                             :same-as s1.o)
+               :location (s8.b / below
+                               :op1 (s8.c / city
+                                          :name (s8.n / name
+                                                      :op1 "Geneva"))))
+   :snt9 (s9.p / picture-01
+               :ARG0 (s9.w / we)
+               :ARG1 (s9.t2 / thing
+                            :name (s9.n / name
+                                        :op1 "Big"
+                                        :op2 "Bangs")
+                            :mod (s9.m / mini)
+                            :mod (s9.t / that))
+               :location (s9.i / inside
+                               :op1 (s9.t3 / thing
+                                           :ARG0-of (s9.d / detect-01))))
+   :snt10 (s10.w / work-01
+                 :ARG0 (s10.i / i
+                              :same-as s1.i)
+                 :ARG1 (s10.o / one
+                              :domain (s10.t / this)))
+   :snt11 (s11.c / call-01
+                 :ARG1 (s11.i / it
+                              :same-as s10.t)
+                 :ARG2 (s11.t / thing
+                              :name (s11.n / name
+                                           :op1 "ATLAS")
+                              :ARG0-of (s11.d / detect-01)))
+   :snt12 (s12.a / and
+                 :op1 (s12.w / wide-02
+                             :ARG1 (s12.d2 / distance-quantity
+                                           :unit (s12.m / meter)
+                                           :quant "44"))
+                 :op2 (s12.d / diameter
+                             :quant (s12.d3 / distance-quantity
+                                            :unit (s12.m2 / meter)
+                                            :quant "22")))
+   :snt13 (s13.p / picture
+                 :ARG0-of (s13.c / cause-01
+                                 :ARG1 (s13.p2 / possible-01
+                                               :ARG1 (s13.s2 / see-01
+                                                             :ARG0 (s13.y / you)
+                                                             :ARG1 (s13.s / scale))))
+                 :ARG1-of (s13.f / fantastic-02)
+                 :location (s13.h / here)
+                 :topic (s13.c2 / construct-01
+                                :ARG1 (s13.b / building
+                                             :name (s13.n / name
+                                                          :op1 "ATLAS"))))
+   :snt14 (s14.t / turn-on-13
+                 :ARG0 (s14.w / we)
+                 :ARG1 (s14.m / machine
+                              :same-as s1.o)
+                 :ord (s14.o / ordinal-entity
+                             :value "1")
+                 :time (s14.d / date-entity
+                              :mod (s14.y / year
+                                          :mod (s14.l / last))
+                              :day "10"
+                              :month "9"))
+   :snt15 (s15.a / and
+                 :op2 (s15.t / take-01
+                             :ARG0 (s15.c / city
+                                          :name (s15.n / name
+                                                       :op1 "Texas")
+                                          :same-as s10.t)
+                             :ARG1 (s15.p / picture
+                                          :mod (s15.t2 / this)
+                                          :same-as s13.p)))
+   :snt16 (s16.c / cause-01
+                 :ARG0 (s16.i2 / it
+                               :same-as s13.p)
+                 :ARG1 (s16.c2 / celebrate-02
+                               :location (s16.r / room
+                                                :location-of (s16.c3 / control-01))
+                               :mod (s16.i / immense)))
+   :snt17 (s17.p3 / picture
+                  :domain (s17.i / it
+                                 :same-as s13.p)
+                  :topic (s17.p / particle
+                                :ARG0-of (s17.c / collide-01
+                                                :ARG1 (s17.p4 / piece)
+                                                :manner (s17.d / deliberate))
+                                :ARG0-of (s17.s / shower-01
+                                                :ARG1 (s17.p2 / particle)
+                                                :destination (s17.t / thing
+                                                                    :ARG0-of (s17.d2 / detect-01)
+                                                                    :same-as s10.t))
+                                :ARG1-of (s17.g / go-01
+                                                :extent (s17.a / all-the-way)
+                                                :path (s17.a2 / around
+                                                              :op1 (s17.f / facility
+                                                                          :name (s17.n / name
+                                                                                       :op1 "LHC")
+                                                                          :part s17.p4
+                                                                          :same-as s1.o)))
+                                :mod (s17.b / beam)
+                                :ord (s17.o / ordinal-entity
+                                            :value "1")))
+   :snt18 (s18.k / know-01
+                 :ARG0 (s18.w / we
+                              :same-as s14.w)
+                 :ARG0-of (s18.t2 / triumph-01
+                                  :mod (s18.g / great))
+                 :ARG1 (s18.w3 / work-09
+                               :ARG1 (s18.m / machine
+                                            :same-as s1.o))
+                 :ARG1-of (s18.w2 / word-01
+                                  :mod (s18.o / other))
+                 :time (s18.s / see-01
+                              :ARG0 s18.w
+                              :ARG1 (s18.p / picture
+                                           :mod (s18.t / that)
+                                           :same-as s13.p)
+                              :time (s18.d / date-entity
+                                           :day "10"
+                                           :month "9"
+                                           :same-as s14.d)))
+   :snt19 (s19.k / know-01
+                 :ARG0 (s19.i / i
+                              :same-as s1.i)
+                 :ARG1 (s19.o / or
+                              :op1 (s19.g / get-01
+                                          :ARG0 (s19.t2 / this)
+                                          :ARG1 (s19.c / cheer-02
+                                                       :ARG1 s19.t2
+                                                       :ARG1-of (s19.h / have-degree-91
+                                                                       :ARG2 (s19.b / big)
+                                                                       :ARG3 (s19.m / most))))
+                              :op2 (s19.t3 / this
+                                           :time (s19.a / and
+                                                        :op1 (s19.g2 / go-02
+                                                                     :ARG0 (s19.s2 / someone)
+                                                                     :ARG1 (s19.c2 / company
+                                                                                   :name (s19.n / name
+                                                                                                :op1 "Google")))
+                                                        :op2 (s19.s / see-01
+                                                                    :ARG0 s19.s2
+                                                                    :ARG1 (s19.r / resemble-01
+                                                                                 :ARG1 (s19.p / page
+                                                                                              :mod (s19.f / front))
+                                                                                 :ARG2 (s19.t / that
+                                                                                              :same-as s13.p))))))
+                 :polarity "-")
+   :snt20 (s20.m / mean-01
+                 :ARG1 (s20.i3 / it)
+                 :ARG2 (s20.a / and
+                              :op1 (s20.i / impact-01
+                                          :ARG0 (s20.w / we
+                                                       :same-as s14.w)
+                                          :ARG1 (s20.c / culture))
+                              :op2 (s20.i2 / impact-01
+                                           :ARG0 s20.w
+                                           :ARG1 (s20.s / science))))
+   :snt21 (s21.h / have-03
+                 :ARG0 (s21.w / we
+                              :same-as s14.w)
+                 :ARG1 (s21.p / problem
+                              :ARG1-of (s21.r / relate-01
+                                              :ARG1-of (s21.a2 / actual-02)
+                                              :ARG2 (s21.b / bit
+                                                           :location (s21.h2 / here)
+                                                           :mod (s21.t2 / this)
+                                                           :part-of (s21.w3 / wire
+                                                                            :consist-of (s21.g / gold))))
+                              :topic (s21.m / machine
+                                            :same-as s1.o))
+                 :time (s21.a3 / after
+                               :quant (s21.a / about
+                                             :op1 (s21.t / temporal-quantity
+                                                         :unit (s21.w2 / week)
+                                                         :quant "1"))))
+   :snt22 (s22.c / carry-01
+                 :ARG0 (s22.w / wire
+                              :mod (s22.t / that)
+                              :same-as s21.b)
+                 :ARG1 (s22.p / potential-quantity
+                              :unit (s22.a / amp)
+                              :quant "1000"
+                              :quant "13")
+                 :time (s22.w2 / work-09
+                               :ARG1 (s22.m / machine
+                                            :same-as s1.o)
+                               :manner (s22.p2 / power
+                                               :ARG1-of (s22.f / full-09))))
+   :snt23 (s23.a / and
+                 :op1 (s23.l / look-01
+                             :ARG0 (s23.p / person
+                                          :ARG0-of (s23.e / engineer-01)
+                                          :ARG1-of (s23.i / include-91
+                                                          :ARG2 (s23.y / you
+                                                                       :same-as s2.y)))
+                             :ARG1 (s23.t / they
+                                          :same-as s21.b))
+                 :op2 (s23.s / say-01
+                             :ARG0 s23.p
+                             :ARG1-of (s23.c / cause-01
+                                             :ARG0 (s23.w / wire
+                                                          :domain s23.t
+                                                          :mod (s23.s2 / small)
+                                                          :polarity "-")))
+                 :time (s23.n / now))
+   :snt24 (s24.c2 / cause-01
+                  :ARG0 (s24.t3 / thing
+                                :ARG1-of (s24.c / call-01
+                                                :ARG2 (s24.w / wire
+                                                             :ARG1-of (s24.c4 / conduct-03)))
+                                :domain (s24.t2 / they
+                                                :same-as s21.b)
+                                :time (s24.c3 / cold-01
+                                              :ARG1 s24.t2
+                                              :degree (s24.v / very)))
+                  :ARG1 (s24.p / possible-01
+                               :ARG1 (s24.d / do-02
+                                            :ARG0 s24.t2
+                                            :ARG1 (s24.t / that
+                                                         :same-as s22.c))))
+   :snt25 (s25.i / infer-01
+                 :ARG1 (s25.p / possible-01
+                              :ARG1 (s25.t / take-01
+                                           :ARG0 (s25.w / wire
+                                                        :mod (s25.t3 / that)
+                                                        :same-as s21.b)
+                                           :ARG1 (s25.c3 / current
+                                                         :mod (s25.t4 / that)))
+                              :condition (s25.t2 / temperature-quantity
+                                                 :ARG1-of (s25.h / have-degree-91
+                                                                 :ARG2 (s25.c2 / cold-01)
+                                                                 :ARG3 (s25.m / more)
+                                                                 :ARG4 (s25.s / space
+                                                                              :location (s25.b / between
+                                                                                               :op1 (s25.s2 / star))))
+                                                 :scale (s25.c / celsius)
+                                                 :quant "271")))
+   :snt26 (s26.d / defect
+                 :location (s26.j / joint
+                                  :ARG1-of (s26.i / include-91
+                                                  :ARG2 (s26.j2 / joint
+                                                                :location (s26.b / between
+                                                                                 :op1 (s26.m / magnet
+                                                                                             :quant (s26.o / over
+                                                                                                           :op1 "9000")))
+                                                                :part-of (s26.p / product
+                                                                                :name (s26.n / name
+                                                                                             :op1 "LHC")
+                                                                                :same-as s1.o))))
+                 :mod (s26.m2 / manufacture-01))
+   :snt27 (s27.c / cause-01
+                 :ARG1 (s27.a2 / and
+                               :op1 (s27.h / heat-up-02
+                                           :ARG1 (s27.w / wire)
+                                           :degree (s27.s / slight))
+                               :op2 (s27.e2 / encounter-01
+                                            :ARG0 (s27.a / amp
+                                                         :poss s27.w
+                                                         :quant "13000"
+                                                         :same-as s22.p)
+                                            :ARG1 (s27.r / resistance
+                                                         :mod (s27.e / electricity))
+                                            :manner (s27.s2 / sudden))))
+   :snt28 (s28.t / this
+                 :ARG2-of (s28.r / result-01)
+                 :same-as s27.e2)
+   :snt29 (s29.h / have-degree-91
+                 :ARG1 (s29.t / that)
+                 :ARG2 (s29.i / impress-01
+                              :ARG0 s29.t
+                              :condition (s29.c / consider-02
+                                                :ARG0 (s29.y / you)
+                                                :ARG1 (s29.a2 / and
+                                                              :op1 (s29.w / weigh-01
+                                                                          :ARG1 (s29.t3 / thing
+                                                                                        :mod (s29.t2 / that)
+                                                                                        :mod (s29.m / magnet)
+                                                                                        :same-as s26.p)
+                                                                          :ARG3 (s29.o / over
+                                                                                       :op1 (s29.m2 / mass-quantity
+                                                                                                    :unit (s29.t4 / ton)
+                                                                                                    :quant "20")))
+                                                              :op2 (s29.m4 / move-01
+                                                                           :ARG0 s29.t3
+                                                                           :ARG2 (s29.a / about
+                                                                                        :op1 (s29.d / distance-quantity
+                                                                                                    :unit (s29.f / foot)
+                                                                                                    :quant "1"))))))
+                 :ARG3 (s29.m3 / more))
+   :snt30 (s30.i2 / infer-01
+                  :ARG1 (s30.d / damage-01
+                               :ARG0 (s30.w / we
+                                            :same-as s14.w)
+                               :ARG1 (s30.t / thing
+                                            :quant (s30.a / about
+                                                          :op1 "50")
+                                            :ARG1-of (s30.i / include-91
+                                                            :ARG2 (s30.m / magnet
+                                                                         :same-as s26.p)))))
+   :snt31 (s31.o / obligate-01
+                 :ARG1 (s31.w / we
+                              :same-as s14.w)
+                 :ARG2 (s31.t / take-out-11
+                              :ARG0 s31.w
+                              :ARG1 (s31.t2 / they
+                                            :same-as s30.t)
+                              :ARG1-of (s31.d / do-02
+                                              :ARG0 s31.w)))
+   :snt32 (s32.a2 / and
+                  :op1 (s32.c / color
+                              :domain (s32.t / they
+                                             :mod (s32.a / all)
+                                             :same-as s30.t))
+                  :op2 (s32.f / fix-02
+                              :ARG0 (s32.w / we
+                                           :same-as s14.w)
+                              :ARG1 s32.t))
+   :snt33 (s33.w / way
+                 :direction (s33.b / back)
+                 :domain (s33.t / they
+                                :mod (s33.a / all)
+                                :same-as s30.t)
+                 :location (s33.u / underground)
+                 :time (s33.n / now))
+   :snt34 (s34.i / intact
+                 :domain (s34.s / spaceship
+                                :name (s34.n / name
+                                             :op1 "LHC")
+                                :same-as s1.o)
+                 :mod (s34.a / again)
+                 :time (s34.b / by
+                              :op1 (s34.e / end-01
+                                          :ARG1 (s34.d / date-entity
+                                                       :month "3"))))
+   :snt35 (s35.a / and
+                 :op1 (s35.s / switch-01
+                             :ARG0 (s35.w / we
+                                          :same-as s14.w)
+                             :ARG1 (s35.i / it
+                                          :same-as s1.o)
+                             :manner (s35.o / on))
+                 :op2 (s35.e / expect-01
+                             :ARG0 s35.w
+                             :ARG1 (s35.t / take-01
+                                          :ARG0 s35.w
+                                          :ARG1 (s35.d / data)
+                                          :time (s35.o2 / or
+                                                        :op1 (s35.d2 / date-entity
+                                                                     :month "6")
+                                                        :op2 (s35.d3 / date-entity
+                                                                     :month "7"))))
+                 :op3 (s35.c / continue-01
+                             :ARG0 s35.w
+                             :ARG1 (s35.q / quest-01
+                                          :ARG0 s35.w
+                                          :ARG1 (s35.f / find-out-03
+                                                       :ARG0 s35.w
+                                                       :ARG1 (s35.t2 / thing
+                                                                     :domain (s35.b / block
+                                                                                    :ARG0-of (s35.b2 / build-01
+                                                                                                     :ARG1 (s35.u / universe))))))))
+   :snt36 (s36.r / reign-01
+                 :ARG0 (s36.a / accident
+                              :mod (s36.t / that))
+                 :ARG1 (s36.d / debate-01
+                              :ARG1 (s36.v / value-01
+                                           :ARG1 (s36.a2 / and
+                                                         :location (s36.e / edge)
+                                                         :op1 (s36.s / science)
+                                                         :op2 (s36.e2 / engineer-01))))
+                 :manner (s36.w / way)
+                 :mod (s36.o / of-course)
+                 :time (s36.n / now))
+   :snt37 (s37.e / easy-05
+                 :ARG1 (s37.r / refute-01
+                              :ARG1 (s37.i / it)))
+   :snt38 (s38.t3 / think-01
+                  :ARG0 (s38.i / i
+                               :same-as s1.i)
+                  :ARG1 (s38.v / value-01
+                               :ARG1 (s38.t / thing
+                                            :example (s38.t2 / thing
+                                                             :name (s38.n / name
+                                                                          :op1 "LHC")
+                                                             :same-as s1.o))
+                               :ARG2 (s38.a / and
+                                            :op1 (s38.f / fact
+                                                        :mod (s38.d / difficult
+                                                                    :degree (s38.s / so)
+                                                                    :domain (s38.i2 / it)))
+                                            :op2 (s38.o / overreach-01
+                                                        :ARG0 (s38.w / we)))))
+   :snt39 (s39.l / leave-02
+                 :ARG0 (s39.i / i
+                              :same-as s1.i)
+                 :ARG1 (s39.w2 / word
+                               :mod (s39.f / final))
+                 :ARG2 (s39.s3 / scientist
+                               :name (s39.n2 / name
+                                             :op1 "Humphrey"
+                                             :op2 "Davy")
+                               :ARG0-of (s39.s / say-01
+                                               :ARG1 (s39.h / have-degree-91
+                                                            :ARG1 (s39.n6 / nothing)
+                                                            :ARG2 (s39.e / endanger-01
+                                                                         :ARG0 s39.n6
+                                                                         :ARG1 (s39.p4 / progress-01
+                                                                                       :ARG1 (s39.m / mind
+                                                                                                    :poss (s39.h3 / human))))
+                                                            :ARG3 (s39.s4 / so)
+                                                            :ARG4 (s39.a2 / assume-02
+                                                                          :ARG0 s39.s3
+                                                                          :ARG1 (s39.a / and
+                                                                                       :op1 (s39.u / ultimate
+                                                                                                   :domain (s39.v / view-02
+                                                                                                                  :ARG0 (s39.w / we)
+                                                                                                                  :ARG1 (s39.s2 / science)))
+                                                                                       :op2 (s39.m2 / mystery
+                                                                                                    :location (s39.n4 / nature)
+                                                                                                    :polarity "-")
+                                                                                       :op3 (s39.c / complete-01
+                                                                                                   :ARG1 (s39.t / triumph-01
+                                                                                                                :ARG0 s39.w))
+                                                                                       :op4 (s39.w3 / world
+                                                                                                    :ARG1-of (s39.n5 / new-01)
+                                                                                                    :ARG1-of (s39.c2 / conquer-01
+                                                                                                                     :ARG0 s39.w)
+                                                                                                    :polarity "-"))))
+                                               :ARG1-of (s39.s5 / suspect-01
+                                                                :ARG0 s39.i)
+                                               :time (s39.d / defend-01
+                                                            :ARG0 s39.s3
+                                                            :ARG1 (s39.e2 / experiment-01
+                                                                          :ARG0 (s39.p / person
+                                                                                       :ARG0-of (s39.h2 / have-rel-role-91
+                                                                                                        :ARG1 s39.s3
+                                                                                                        :ARG2 (s39.p5 / protege)))
+                                                                          :ARG1-of (s39.u2 / use-01
+                                                                                           :ARG1-of (s39.p3 / possible-01
+                                                                                                            :polarity "-")))))
+                               :mod (s39.c3 / country
+                                            :name (s39.n / name
+                                                         :op1 "England")))
+                 :rel (s39.p2 / person
+                              :name (s39.n3 / name
+                                            :op1 "Michael"
+                                            :op2 "Faraday")))
+   :snt40 (s40.t / thank-01
+                 :ARG1 (s40.y / you)))
+

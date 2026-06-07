@@ -1,0 +1,431 @@
+# ::id doc-888
+# ::doc_file doc-888
+# ::tok http : / / www . ted . com / talks / carolyn_porco_could_a_saturn_moon_harbor_life< / url> <next_sent> Two years ago here at TED I reported that we had discovered at Saturn , with the Cassini Spacecraft , an anomalously warm and geologically active region at the southern tip of the small Saturnine moon Enceladus , seen here . <next_sent> This region seen here for the first time in the Cassini image taken in 2005 . <next_sent> This is the south polar region , with the famous tiger - stripe fractures crossing the south pole . <next_sent> And seen just recently in late 2008 , here is that region again , now half in darkness because the southern hemisphere is experiencing the onset of August and eventually winter . <next_sent> And I also reported that we 'd made this mind - blowing discovery -- this once - in - a - lifetime discovery of towering jets erupting from those fractures at the south pole , consisting of tiny water ice crystals accompanied by water vapor and simple organic compounds like carbon dioxide and methane . <next_sent> And at that time two years ago I mentioned that we were speculating that these jets might in fact be geysers , and erupting from pockets or chambers of liquid water underneath the surface , but we were n't really sure . <next_sent> However , the implications of those results -- of a possible environment within this moon that could support prebiotic chemistry , and perhaps life itself -- were so exciting that , in the intervening two years , we have focused more on Enceladus . <next_sent> We 've flown the Cassini Spacecraft by this moon now several times , flying closer and deeper into these jets , into the denser regions of these jets , so that now we have come away with some very precise compositional measurements . <next_sent> And we have found that the organic compounds coming from this moon are in fact more complex than we previously reported . <next_sent> While they 're not amino acids , we 're now finding things like propane and benzene , hydrogen cyanide , and formaldehyde . <next_sent> And the tiny water crystals here now look for all the world like they are frozen droplets of salty water , which is a discovery that suggests that not only do the jets come from pockets of liquid water , but that that liquid water is in contact with rock . <next_sent> And that is a circumstance that could supply the chemical energy and the chemical compounds needed to sustain life . <next_sent> So we are very encouraged by these results . <next_sent> And we are much more confident now than we were two years ago that we might indeed have on this moon , under the south pole , an environment or a zone that is hospitable to living organisms . <next_sent> Whether or not there are living organisms there , of course , is an entirely different matter . <next_sent> And that will have to await the arrival , back at Enceladus , of the spacecrafts , hopefully some time in the near future , specifically equipped to address that particular question . <next_sent> But in the meantime I invite you to imagine the day when we might journey to the Saturnine system , and visit the Enceladus interplanetary geyser park , just because we can . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :value (s1.p / person
+                            :ARG0-of (s1.t / talk-01)
+                            :mod (s1.c / city
+                                       :name (s1.n / name
+                                                   :op1 "ossobuco"))))
+   :snt2 (s2.r2 / report-01
+                :ARG0 (s2.i / i)
+                :ARG1 (s2.d / discover-01
+                            :ARG0 (s2.w2 / we)
+                            :ARG1 (s2.s4 / spaceship
+                                         :name (s2.n3 / name
+                                                      :op1 "Cassini"
+                                                      :op2 "Spacecraft")
+                                         :mod (s2.r / region
+                                                    :ARG0-of (s2.a / activity-06
+                                                                   :mod (s2.g / geology))
+                                                    :ARG1-of (s2.w / warm-07
+                                                                   :mod (s2.a2 / anomalously))
+                                                    :ARG1-of (s2.s / see-01)
+                                                    :location (s2.t2 / tip
+                                                                     :mod (s2.s3 / south)
+                                                                     :part-of (s2.m / moon
+                                                                                    :name (s2.n4 / name
+                                                                                                 :op1 "Enceladus")
+                                                                                    :location (s2.p / planet
+                                                                                                    :name (s2.n2 / name
+                                                                                                                 :op1 "Saturn"))
+                                                                                    :mod (s2.s2 / small)))))
+                            :location s2.p)
+                :location (s2.h / here
+                                :location (s2.p2 / publication
+                                                 :name (s2.n / name
+                                                             :op1 "TED")))
+                :time (s2.b / before
+                            :quant (s2.t / temporal-quantity
+                                         :unit (s2.y / year)
+                                         :quant "2")
+                            :op1 (s2.n5 / now)))
+   :snt3 (s3.s / see-01
+               :ARG1 (s3.r / region
+                           :mod (s3.t2 / this))
+               :location (s3.h / here)
+               :ord (s3.o / ordinal-entity
+                          :value "1")
+               :source (s3.i / image
+                             :ARG1-of (s3.t / take-01
+                                            :time (s3.d / date-entity
+                                                        :year "2005"))
+                             :source (s3.s2 / spaceship
+                                            :name (s3.n / name
+                                                        :op1 "Cassini")
+                                            :same-as s2.n3))
+               :same-as s2.r)
+   :snt4 (s4.r / region
+               :domain (s4.t / this
+                             :same-as s2.r)
+               :location (s4.s / south
+                               :name (s4.n / name
+                                           :op1 "domestic"
+                                           :op2 "Pole"
+                                           :op2 "pole"))
+               :location-of (s4.c / cross-02
+                                  :ARG0 (s4.f2 / fracture-01
+                                               :ARG1 (s4.s2 / stripe
+                                                            :mod (s4.t2 / tiger))
+                                               :ARG1-of (s4.f / fame-01))
+                                  :ARG1 (s4.w / world-region
+                                              :name s4.n))
+               :mod "pole")
+   :snt5 (s5.a2 / and
+                :ARG1-of (s5.s / see-01
+                               :consist-of (s5.r2 / region
+                                                  :mod (s5.t / that)
+                                                  :mod (s5.a / again)
+                                                  :mod (s5.d / darkness
+                                                             :ARG1-of (s5.c / cause-01
+                                                                            :ARG0 (s5.e2 / experience-01
+                                                                                         :ARG0 (s5.h2 / hemisphere
+                                                                                                      :mod (s5.s2 / south))
+                                                                                         :ARG1 (s5.o / onset
+                                                                                                     :poss (s5.a3 / and
+                                                                                                                  :op1 (s5.d3 / date-entity
+                                                                                                                              :month "8")
+                                                                                                                  :op2 (s5.d4 / date-entity
+                                                                                                                              :mod (s5.e / eventual)
+                                                                                                                              :season (s5.w / winter))))))
+                                                             :degree (s5.h / half)
+                                                             :time (s5.n / now)))
+                               :time (s5.r / recent
+                                           :mod (s5.j / just))
+                               :time (s5.l / late
+                                           :op1 (s5.d2 / date-entity
+                                                       :year "2008")))
+                :location (s5.h3 / here))
+   :snt6 (s6.a3 / and
+                :op2 (s6.r / report-01
+                           :ARG0 (s6.i / i
+                                       :same-as s2.i)
+                           :ARG1 (s6.d / discover-01
+                                       :ARG0 (s6.w3 / we
+                                                    :same-as s2.w2)
+                                       :ARG0-of (s6.b / blow-08
+                                                      :ARG1 (s6.m2 / mind))
+                                       :ARG1 (s6.j / jet
+                                                   :ARG0-of (s6.t4 / tower-01)
+                                                   :ARG1-of (s6.e / erupt-01
+                                                                  :source (s6.f / fracture-01
+                                                                                :location (s6.w4 / world-region
+                                                                                                 :name (s6.n / name
+                                                                                                             :op1 "South"
+                                                                                                             :op2 "Pole")
+                                                                                                 :same-as s4.w)
+                                                                                :mod (s6.t / that)
+                                                                                :same-as s4.c))
+                                                   :ARG1-of (s6.c2 / consist-01
+                                                                   :ARG2 (s6.s3 / stone
+                                                                                :ARG1-of (s6.a / accompany-01
+                                                                                               :ARG0 (s6.a4 / and
+                                                                                                            :op1 (s6.v / vapor
+                                                                                                                       :consist-of (s6.w2 / water))
+                                                                                                            :op2 (s6.c / compound
+                                                                                                                       :ARG1-of (s6.s / simple-02)
+                                                                                                                       :example (s6.a5 / and
+                                                                                                                                       :op1 (s6.s2 / small-molecule
+                                                                                                                                                   :name (s6.n2 / name
+                                                                                                                                                                :op1 "carbon"
+                                                                                                                                                                :op2 "dioxide"))
+                                                                                                                                       :op2 (s6.m / methane))
+                                                                                                                       :mod (s6.o / organic))))
+                                                                                :consist-of (s6.i2 / ice)
+                                                                                :consist-of (s6.w / water)
+                                                                                :mod (s6.t3 / tiny))))
+                                       :frequency (s6.l / lifetime
+                                                        :quant "1")
+                                       :mod (s6.t2 / this))
+                           :mod (s6.a2 / also)))
+   :snt7 (s7.a / and
+               :op2 (s7.m / mention-01
+                          :ARG0 (s7.i / i
+                                      :same-as s2.i)
+                          :ARG1 (s7.s / speculate-01
+                                      :ARG0 (s7.w2 / we
+                                                   :same-as s2.w2)
+                                      :ARG1 (s7.p2 / possible-01
+                                                   :ARG1 (s7.a2 / and
+                                                                :mod (s7.i2 / in-fact)
+                                                                :op1 (s7.e / George
+                                                                           :domain (s7.j / jet
+                                                                                         :mod (s7.t3 / this)
+                                                                                         :same-as s6.j))
+                                                                :op2 (s7.e2 / erupt-01
+                                                                            :source (s7.o / or
+                                                                                          :location (s7.u / underneath
+                                                                                                          :op1 (s7.s3 / surface))
+                                                                                          :op1 (s7.p / pocket)
+                                                                                          :op2 (s7.c / chamber
+                                                                                                     :consist-of (s7.w / water
+                                                                                                                       :mod (s7.l / liquid)))))))
+                                      :ARG1-of (s7.c2 / contrast-01
+                                                      :ARG2 (s7.s2 / sure-02
+                                                                   :ARG0 s7.w2
+                                                                   :ARG1-of (s7.r / real-04)
+                                                                   :polarity "-")))
+                          :time (s7.b / before
+                                      :quant (s7.t / temporal-quantity
+                                                   :unit (s7.y / year)
+                                                   :quant "2"
+                                                   :same-as s2.t)
+                                      :op1 (s7.n / now))
+                          :time (s7.t4 / time
+                                       :mod (s7.t2 / that))))
+   :snt8 (s8.c2 / contrast-01
+                :ARG2 (s8.h / have-degree-91
+                            :ARG1 (s8.i / implicate-01
+                                        :ARG1 (s8.r / result-01
+                                                    :mod (s8.t2 / that))
+                                        :ARG2 (s8.e / environment
+                                                    :ARG0-of (s8.s2 / support-01
+                                                                    :ARG1 (s8.a / and
+                                                                                :op1 (s8.c / chemistry
+                                                                                           :mod (s8.p4 / prebiotic))
+                                                                                :op2 (s8.l / life
+                                                                                           :ARG1-of (s8.p3 / possible-01))))
+                                                    :ARG1-of (s8.p2 / possible-01)
+                                                    :location (s8.m / moon
+                                                                    :mod (s8.t3 / this)
+                                                                    :same-as s2.m)))
+                            :ARG2 (s8.e2 / excite-01
+                                         :ARG0 s8.i)
+                            :ARG3 (s8.s / so)
+                            :ARG6 (s8.f / focus-01
+                                        :ARG0 (s8.w / we
+                                                    :same-as s2.w2)
+                                        :ARG2 (s8.p / planet
+                                                    :name (s8.n / name
+                                                                :op1 "Enceladus")
+                                                    :same-as s2.m)
+                                        :duration (s8.t / temporal-quantity
+                                                        :unit (s8.y / year)
+                                                        :quant "2")
+                                        :mod (s8.m2 / more)))
+                :rel (s8.i2 / intervene-01))
+   :snt9 (s9.f / fly-01
+               :ARG0 (s9.w / we
+                           :same-as s2.w2)
+               :ARG0-of (s9.c / cause-01
+                              :ARG1 (s9.c3 / come-02
+                                           :ARG0 s9.w
+                                           :ARG1 (s9.m / measure-01
+                                                       :quant (s9.s2 / some)
+                                                       :ARG0 s9.w
+                                                       :ARG1 (s9.g / geometry)
+                                                       :manner (s9.p / precise
+                                                                     :degree (s9.v / very)))
+                                           :time (s9.n2 / now)))
+               :ARG2 (s9.s3 / spaceship
+                            :name (s9.n / name
+                                        :op1 "Cassini")
+                            :same-as s2.n3)
+               :frequency (s9.s / several)
+               :manner (s9.f2 / fly-01
+                              :ARG1-of (s9.h / have-degree-91
+                                             :ARG2 (s9.c2 / close-10
+                                                          :ARG2 (s9.j / jet
+                                                                      :mod (s9.t2 / this)
+                                                                      :part (s9.r / region
+                                                                                  :ARG1-of (s9.h2 / have-degree-91
+                                                                                                  :ARG2 (s9.d2 / dense)
+                                                                                                  :ARG3 (s9.m4 / more)))
+                                                                      :same-as s6.j)
+                                                          :ARG1 s9.f)
+                                             :ARG3 (s9.m3 / more))
+                              :ARG2 (s9.d / deep-02)
+                              :ARG1-of s9.d
+                              :destination s9.r
+                              :ARG2 s9.f)
+               :path (s9.b / by
+                           :op1 (s9.m2 / moon
+                                       :mod (s9.t / this)
+                                       :same-as s2.m)))
+   :snt10 (s10.a / and
+                 :op2 (s10.f / find-01
+                             :ARG0 (s10.w / we
+                                          :same-as s2.w2)
+                             :ARG1 (s10.h / have-degree-91
+                                          :ARG1 (s10.c3 / compound
+                                                        :ARG1-of (s10.c / come-01
+                                                                        :ARG3 (s10.m / moon
+                                                                                     :mod (s10.t / this)
+                                                                                     :same-as s2.m))
+                                                        :mod (s10.o / organic))
+                                          :ARG2 (s10.c2 / complex
+                                                        :mod (s10.i / in-fact))
+                                          :ARG3 (s10.m2 / more)
+                                          :ARG4 (s10.r / report-01
+                                                       :ARG0 s10.w
+                                                       :time (s10.p / previous)))))
+   :snt11 (s11.f / find-01
+                 :ARG0 (s11.w / we
+                              :same-as s2.w2)
+                 :ARG1 (s11.t / thing
+                              :example (s11.a / and
+                                              :op1 (s11.s2 / small-molecule
+                                                           :name (s11.n2 / name
+                                                                         :op1 "propane"))
+                                              :op2 (s11.s3 / small-molecule
+                                                           :name (s11.n3 / name
+                                                                         :op1 "benzene"))
+                                              :op3 (s11.s4 / small-molecule
+                                                           :name (s11.n4 / name
+                                                                         :op1 "formaldehyde"
+                                                                         :op1 "hydrogen"
+                                                                         :op2 "cyanide"))))
+                 :concession (s11.s / small-molecule
+                                    :name (s11.n / name
+                                                 :op1 "amino"
+                                                 :op2 "nucleic-acid")
+                                    :polarity "-")
+                 :time (s11.n5 / now))
+   :snt12 (s12.a2 / and
+                  :op2 (s12.l2 / look-01
+                               :ARG0 (s12.s2 / stone
+                                             :location (s12.h / here)
+                                             :mod (s12.w / water)
+                                             :mod (s12.t / tiny))
+                               :ARG1 (s12.d2 / droplet
+                                             :ARG1-of (s12.f / freeze-01)
+                                             :consist-of (s12.w2 / water
+                                                                 :mod (s12.s / salty))
+                                             :domain s12.s2)
+                               :ARG1-of (s12.d / discover-01
+                                               :ARG0-of (s12.s3 / suggest-01
+                                                                :ARG1 (s12.a3 / and
+                                                                              :op1 (s12.c / come-01
+                                                                                          :ARG1 (s12.j / jet
+                                                                                                       :same-as s6.j)
+                                                                                          :ARG2 (s12.p / pocket
+                                                                                                       :consist-of (s12.w3 / water
+                                                                                                                           :mod (s12.l / liquid))))
+                                                                              :op2 (s12.c2 / contact-01
+                                                                                           :ARG0 s12.w3
+                                                                                           :ARG1 (s12.r / rock)))))
+                               :beneficiary (s12.w4 / world
+                                                    :mod (s12.a / all))
+                               :time (s12.n / now)))
+   :snt13 (s13.a / and
+                 :op2 (s13.c3 / circumstance
+                              :ARG0-of (s13.s / supply-01
+                                              :ARG1 (s13.a2 / and
+                                                            :op1 (s13.e / energy
+                                                                        :mod (s13.c / chemical))
+                                                            :op2 (s13.c4 / compound
+                                                                         :ARG1-of (s13.n / need-01
+                                                                                         :purpose (s13.s2 / sustain-01
+                                                                                                          :ARG0 s13.c4
+                                                                                                          :ARG1 (s13.l / life)))
+                                                                         :mod (s13.c2 / chemical)))
+                                              :ARG1-of (s13.p / possible-01))
+                              :domain (s13.t / that)))
+   :snt14 (s14.c / cause-01
+                 :ARG1 (s14.e / encourage-01
+                              :ARG0 (s14.t / thing
+                                           :ARG2-of (s14.r / result-01)
+                                           :mod (s14.t2 / this))
+                              :ARG1 (s14.w / we
+                                           :same-as s2.w2)
+                              :degree (s14.v / very)))
+   :snt15 (s15.a / and
+                 :op2 (s15.h2 / have-degree-91
+                              :ARG1 (s15.w / we
+                                           :same-as s2.w2)
+                              :ARG2 (s15.c / confident-01
+                                           :ARG1 s15.w
+                                           :ARG2 (s15.p / possible-01
+                                                        :ARG1 (s15.h / have-03
+                                                                     :ARG0 s15.w
+                                                                     :location (s15.m / moon
+                                                                                      :example (s15.o / or
+                                                                                                      :mod (s15.h3 / hospitable
+                                                                                                                   :beneficiary (s15.o2 / organism
+                                                                                                                                        :ARG0-of (s15.l / live-01)))
+                                                                                                      :op1 (s15.e / environment)
+                                                                                                      :op2 (s15.z / zone))
+                                                                                      :location (s15.u / under
+                                                                                                       :op1 (s15.w2 / world-region
+                                                                                                                    :name (s15.n / name
+                                                                                                                                 :op1 "South"
+                                                                                                                                 :op2 "Pole")
+                                                                                                                    :same-as s4.w)
+                                                                                                       :same-as s2.m)
+                                                                                      :mod (s15.t2 / this))
+                                                                     :mod (s15.i / indeed)))
+                                           :time (s15.n2 / now))
+                              :ARG3 (s15.m2 / more
+                                            :quant (s15.m3 / much))
+                              :ARG4 (s15.b / before
+                                           :quant (s15.t / temporal-quantity
+                                                         :unit (s15.y / year)
+                                                         :quant "2")
+                                           :op1 (s15.n3 / now))))
+   :snt16 (s16.m / matter
+                 :ARG1-of (s16.d / differ-02
+                                 :degree (s16.e / entire))
+                 :domain (s16.t2 / truth-value
+                                 :polarity-of (s16.b / be-located-at-91
+                                                     :ARG1 (s16.o2 / organism
+                                                                   :ARG0-of (s16.l / live-01))
+                                                     :ARG2 (s16.t / there)))
+                 :mod (s16.o / of-course))
+   :snt17 (s17.a2 / and
+                  :op2 (s17.o / obligate-01
+                              :ARG2 (s17.a4 / await-01
+                                            :ARG1 (s17.t / that)
+                                            :ARG2 (s17.a3 / arrive-01
+                                                          :ARG1 (s17.s2 / spacecraft
+                                                                        :ARG1-of (s17.e / equip-01
+                                                                                        :purpose (s17.a / address-02
+                                                                                                        :ARG0 s17.s2
+                                                                                                        :ARG1 (s17.q / question-01
+                                                                                                                     :ARG1 (s17.t2 / that)
+                                                                                                                     :mod (s17.p / particular)))
+                                                                                        :manner (s17.s3 / specific-02)))
+                                                          :ARG4 (s17.p2 / planet
+                                                                        :name (s17.n / name
+                                                                                     :op1 "Enceladus"
+                                                                                     :same-as s2.m)
+                                                                        :direction (s17.b / back))
+                                                          :time (s17.t3 / time
+                                                                        :ARG1-of (s17.h / hope-01)
+                                                                        :mod (s17.s / some)
+                                                                        :op1 (s17.f / future
+                                                                                    :ARG1-of (s17.n2 / near-02)))))))
+   :snt18 (s18.c2 / contrast-01
+                  :ARG2 (s18.i3 / invite-01
+                                :ARG0 (s18.i / i
+                                             :same-as s2.i)
+                                :ARG1 (s18.y / you)
+                                :ARG2 (s18.i2 / imagine-01
+                                              :ARG0 s18.y
+                                              :ARG1 (s18.d / day
+                                                           :time-of (s18.p3 / possible-01
+                                                                            :ARG1 (s18.a / and
+                                                                                         :op1 (s18.j / journey-01
+                                                                                                     :ARG0 (s18.w / we)
+                                                                                                     :destination (s18.s / system
+                                                                                                                         :name (s18.n / name
+                                                                                                                                      :op1 "Saturnine")))
+                                                                                         :op2 (s18.v / visit-01
+                                                                                                     :ARG0 s18.w
+                                                                                                     :ARG1 (s18.p / park
+                                                                                                                  :name (s18.n2 / name
+                                                                                                                                :op1 "Enceladus"
+                                                                                                                                :same-as s2.m)
+                                                                                                                  :mod (s18.g / geyser)
+                                                                                                                  :mod (s18.p2 / planet
+                                                                                                                               :name (s18.n3 / name
+                                                                                                                                             :op1 "Mars")))
+                                                                                                     :ARG1-of (s18.c / cause-01
+                                                                                                                     :ARG0 (s18.p4 / possible-01
+                                                                                                                                   :ARG1 s18.v)
+                                                                                                                     :mod (s18.j2 / just)))))))
+                                :time (s18.m / meantime)))
+   :snt19 (s19.t / thank-01
+                 :ARG1 (s19.y / you
+                              :same-as s2.i)))
+

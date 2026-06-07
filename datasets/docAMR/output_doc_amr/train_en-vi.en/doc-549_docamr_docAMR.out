@@ -1,0 +1,791 @@
+# ::id doc-549
+# ::doc_file doc-549
+# ::tok http : / / www . ted . com / talks / lies_damned_lies_and_statistics_about_tedtalks< / url> <next_sent> If you go on the TED website , you can currently find there over a full week of TEDTalk videos , over 1.3 million words of transcripts and millions of user ratings . <next_sent> And that 's a huge amount of data . <next_sent> And it got me wondering : If you took all this data and put it through statistical analysis , could you reverse engineer a TEDTalk ? <next_sent> Could you create the ultimate TEDTalk ? <next_sent> And also , could you create the worst possible TEDTalk that they would still let you get away with ? <next_sent> To find this out , I looked at three things : I looked at the topic that you should choose , I looked at how you should deliver it and the visuals onstage . <next_sent> Now , with the topic : There 's a whole range of topics you can choose , but you should choose wisely , because your topic strongly correlates with how users will react to your talk . <next_sent> Now , to make this more concrete , let 's look at the list of top 10 words that statistically stick out in the most favorite TEDTalks and in the least favorite TEDTalks . <next_sent> So if you came here to talk about how French coffee will spread happiness in our brains , that 's a go . <next_sent> Whereas , if you wanted to talk about your project involving oxygen , girls , aircraft -- actually , I would like to hear that talk , but statistics say it 's not so good . <next_sent> Oh , well . <next_sent> If you generalize this , the most favorite TEDTalks are those that feature topics we can connect with , both easily and deeply , such as happiness , our own body , food , emotions . <next_sent> And the more technical topics , such as architecture , materials and , strangely enough , men , those are not good topics to talk about . <next_sent> How should you deliver your talk ? <next_sent> TED is famous for keeping a very sharp eye on the clock , so they 're going to hate me for revealing this , because , actually , you should talk as long as they will let you . <next_sent> Because the most favorite TEDTalks are , on average , over 50 percent longer than the least favorite ones . <next_sent> And this holds true for all ranking lists on TED . com except if you want to have a talk that 's beautiful , inspiring or funny . <next_sent> Then , you should be brief . <next_sent> But other than that , talk until they drag you off the stage . <next_sent> Now , while ... <next_sent> While you 're pushing the clock , there 's a few rules to obey . <next_sent> I found these rules out by comparing the statistics of four - word phrases that appear more often in the most favorite TEDTalks as opposed to the least favorite TEDTalks . <next_sent> I 'll give you three examples . <next_sent> First of all , I must , as a speaker , provide a service to the audience and talk about what I will give you , instead of saying what I ca n't have . <next_sent> Secondly , it 's imperative that you do not cite The New York Times . <next_sent> And finally , it 's okay for the speaker -- that 's the good news -- to fake intellectual capacity . <next_sent> If I do n't understand something , I can just say , " etc. , etc. " <next_sent> You 'll all stay with me . <next_sent> It 's perfectly fine . <next_sent> Now , let 's go to the visuals . <next_sent> The most obvious visual thing on stage is the speaker . <next_sent> And analysis shows if you want to be among the most favorite TED speakers , you should let your hair grow a little bit longer than average , make sure you wear your glasses and be slightly more dressed - up than the average TED speaker . <next_sent> Slides are okay , though you might consider going for props . <next_sent> And now the most important thing , that is the mood onstage . <next_sent> Color plays a very important role . <next_sent> Color closely correlates with the ratings that talks get on the website . <next_sent> For example , fascinating talks contain a statistically high amount of exactly this blue color , much more than the average TEDTalk . <next_sent> Ingenious TEDTalks , much more this green color , etc. , et . <next_sent> Now , personally , I think I 'm not the first one who has done this analysis , but I 'll leave this to your good judgment . <next_sent> So , now it 's time to put it all together and design the ultimate TEDTalk . <next_sent> Now , since this is TEDActive , and I learned from my analysis that I should actually give you something , I will not impose the ultimate or worst TEDTalk on you , but rather give you a tool to create your own . <next_sent> And I call this tool the TEDPad . <next_sent> And the TEDPad is a matrix of 100 specifically selected , highly curated sentences that you can easily piece together to get your own TEDTalk . <next_sent> You only have to make one decision , and that is : Are you going to use the white version for very good TEDTalks , about creativity , human genius ? <next_sent> Or are you going to go with a black version , which will allow you to create really bad TEDTalks , mostly about blogs , politics and stuff ? <next_sent> So , download it and have fun with it . <next_sent> Now I hope you enjoy the session . <next_sent> I hope you enjoy designing your own ultimate and worst possible TEDTalks . <next_sent> And I hope some of you will be inspired for next year to create this , which I really want to see .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.p / person
+                            :name (s1.n / name
+                                        :op1 "ossobuco")))
+   :snt2 (s2.p2 / possible-01
+                :ARG1 (s2.f / find-01
+                            :ARG0 (s2.y / you)
+                            :ARG1 (s2.a / and
+                                        :op1 (s2.v / video
+                                                   :duration (s2.o / over
+                                                                   :op1 (s2.t / temporal-quantity
+                                                                              :mod (s2.f2 / full)
+                                                                              :unit (s2.w2 / week)
+                                                                              :quant "1"))
+                                                   :mod (s2.p3 / publication
+                                                               :name (s2.n / name
+                                                                           :op1 "TEDTalk")))
+                                        :op2 (s2.a2 / and
+                                                    :op1 (s2.t2 / transcribe-01
+                                                                :quant (s2.o2 / over
+                                                                              :op1 (s2.w3 / word
+                                                                                          :quant "13000000")))
+                                                    :op2 (s2.r / rate-01
+                                                               :quant (s2.m / multiple
+                                                                            :op1 "1000000")
+                                                               :ARG0 (s2.p / person
+                                                                           :ARG0-of (s2.u / use-01)))))
+                            :location (s2.w / website
+                                            :mod s2.p3)
+                            :time (s2.c / current))
+                :condition (s2.g / go-02
+                                 :ARG0 s2.y
+                                 :ARG4 s2.w))
+   :snt3 (s3.a2 / and
+                :op2 (s3.a / amount
+                           :domain (s3.t / that
+                                         :same-as s2.a)
+                           :mod (s3.h / huge)
+                           :quant-of (s3.d / data)))
+   :snt4 (s4.a4 / and
+                :op2 (s4.g / get-04
+                           :ARG0 (s4.i2 / it
+                                        :same-as s2.a)
+                           :ARG1 (s4.w / wonder-01
+                                       :ARG0 (s4.i / i)
+                                       :ARG1 (s4.p / possible-01
+                                                   :ARG1 (s4.e / engineer-01
+                                                               :ARG0 (s4.y / you)
+                                                               :ARG1 (s4.b / broadcast-program
+                                                                           :name (s4.n / name
+                                                                                       :op1 "TEDTalk"))
+                                                               :ARG1-of (s4.r / reverse-01))
+                                                   :condition (s4.a5 / and
+                                                                     :op1 (s4.t / take-01
+                                                                                :ARG0 s4.y
+                                                                                :ARG1 (s4.d / data
+                                                                                            :mod (s4.t2 / this)
+                                                                                            :mod (s4.a / all)
+                                                                                            :same-as s2.a))
+                                                                     :op2 (s4.p2 / put-01
+                                                                                 :ARG0 s4.y
+                                                                                 :ARG1 s4.d
+                                                                                 :ARG2 (s4.t3 / through
+                                                                                              :op1 (s4.a3 / analyze-01
+                                                                                                          :ARG1 (s4.s / statistic)))))
+                                                   :polarity (s4.a2 / amr-unknown)))))
+   :snt5 (s5.p / possible-01
+               :ARG1 (s5.c / create-01
+                           :ARG0 (s5.y / you)
+                           :ARG1 (s5.b / broadcast-program
+                                       :name (s5.n / name
+                                                   :op1 "TEDTalk")
+                                       :mod (s5.u / ultimate)))
+               :polarity (s5.a / amr-unknown))
+   :snt6 (s6.a3 / and
+                :op2 (s6.p / possible-01
+                           :ARG1 (s6.c / create-01
+                                       :ARG0 (s6.y / you)
+                                       :ARG1 (s6.b2 / broadcast-program
+                                                    :name (s6.n / name
+                                                                :op1 "TEDTalk")
+                                                    :ARG1-of (s6.h / have-degree-91
+                                                                   :ARG1-of (s6.p2 / possible-01)
+                                                                   :ARG2 (s6.b / bad-02
+                                                                               :ARG1 s6.b2)
+                                                                   :ARG3 (s6.m / most))
+                                                    :ARG1-of (s6.g / get-away-08
+                                                                   :ARG0 s6.y
+                                                                   :ARG1-of (s6.l / let-01
+                                                                                  :ARG0 (s6.t / they)
+                                                                                  :mod (s6.s / still)))))
+                           :mod (s6.a / also)
+                           :polarity (s6.a2 / amr-unknown)))
+   :snt7 (s7.l / look-01
+               :purpose (s7.f / find-out-03
+                              :ARG0 (s7.i / i
+                                          :same-as s4.i)
+                              :ARG1 (s7.t3 / this))
+               :ARG0 s7.i
+               :ARG1 (s7.t / thing
+                           :ARG1-of (s7.m / mean-01
+                                          :ARG2 (s7.a / and
+                                                      :op1 (s7.t4 / topic
+                                                                  :ARG1-of (s7.c / choose-01
+                                                                                 :ARG0 (s7.y / you)
+                                                                                 :ARG1-of (s7.r / recommend-01)))
+                                                      :op2 (s7.t2 / thing
+                                                                  :manner-of (s7.d / deliver-01
+                                                                                   :ARG0 s7.y
+                                                                                   :ARG1 (s7.i2 / it)
+                                                                                   :ARG1-of (s7.r2 / recommend-01)
+                                                                                   :location (s7.o / onstage)))
+                                                      :op3 (s7.v / video)))
+                           :quant "3"))
+   :snt8 (s8.c4 / contrast-01
+                :ARG1 (s8.r / range-01
+                            :ARG1 (s8.t3 / topic
+                                         :ARG1-of (s8.c2 / choose-01
+                                                         :ARG0 (s8.y / you)
+                                                         :ARG1-of (s8.p2 / possible-01)))
+                            :mod (s8.w / whole))
+                :ARG2 (s8.r3 / recommend-01
+                             :ARG1 (s8.c3 / choose-01
+                                          :ARG0 s8.y
+                                          :manner (s8.w2 / wise))
+                             :ARG1-of (s8.c / cause-01
+                                            :ARG0 (s8.c5 / correlate-01
+                                                         :ARG1 (s8.t4 / topic
+                                                                      :poss s8.y)
+                                                         :ARG1-of (s8.s / strong-02)
+                                                         :ARG2 (s8.t2 / thing
+                                                                      :manner-of (s8.r2 / react-01
+                                                                                        :ARG0 (s8.p / person
+                                                                                                    :ARG0-of (s8.u / use-01))
+                                                                                        :ARG1 (s8.t / talk-01
+                                                                                                    :ARG0 s8.y)))))
+                             :ARG2 s8.y)
+                :time (s8.n / now))
+   :snt9 (s9.l3 / look-01
+                :purpose (s9.m / make-02
+                               :ARG0 (s9.w / we)
+                               :ARG1 (s9.c / concrete-02
+                                           :ARG1 (s9.t / this)
+                                           :ARG2-of (s9.h / have-degree-91
+                                                          :ARG1 s9.t
+                                                          :ARG3 (s9.m2 / more))))
+                :ARG0 s9.w
+                :ARG1 (s9.l2 / list
+                             :consist-of (s9.w2 / word
+                                                :mod (s9.t2 / top)
+                                                :quant "10"))
+                :rel (s9.s2 / statistics
+                            :ARG1-of (s9.s / stand-out-06
+                                           :location (s9.a / and
+                                                           :op1 (s9.b / broadcast-program
+                                                                      :name (s9.n / name
+                                                                                  :op1 "YouTube"))
+                                                           :op2 (s9.p / publication
+                                                                      :name (s9.n2 / name
+                                                                                   :op1 "TEDTalks")
+                                                                      :ARG1-of (s9.h3 / have-degree-91
+                                                                                      :ARG2 (s9.f2 / favor-01
+                                                                                                   :ARG1 s9.p)
+                                                                                      :ARG3 (s9.l / least))))
+                                           :op1-of s9.a))
+                :rel (s9.h2 / have-degree-91
+                            :ARG2 (s9.f / favor-01
+                                        :ARG1 s9.b)
+                            :ARG3 (s9.m3 / most))
+                :time (s9.n3 / now))
+   :snt10 (s10.i / infer-01
+                 :ARG1 (s10.h2 / have-condition-91
+                               :ARG1 (s10.g / go-24
+                                            :ARG1 (s10.t2 / that
+                                                          :same-as s10.t))
+                               :ARG2 (s10.c2 / come-01
+                                             :purpose (s10.t / talk-01
+                                                             :ARG0 (s10.y / you)
+                                                             :ARG1 (s10.t3 / thing
+                                                                           :manner-of (s10.s / spread-03
+                                                                                             :ARG0 (s10.c / coffee
+                                                                                                          :mod (s10.c3 / country
+                                                                                                                       :name (s10.n / name
+                                                                                                                                    :op1 "France")))
+                                                                                             :ARG1 (s10.h / happy-01)
+                                                                                             :location (s10.b / brain
+                                                                                                              :part-of (s10.w / we)))))
+                                             :ARG1 s10.y
+                                             :ARG4 (s10.h3 / here))))
+   :snt11 (s11.c / contrast-01
+                 :ARG2 (s11.l / like-02
+                              :ARG0 (s11.i / i
+                                           :same-as s4.i)
+                              :ARG1 (s11.h / hear-01
+                                           :ARG0 s11.i
+                                           :ARG1 (s11.t2 / talk-01
+                                                         :ARG1 (s11.t / talk-01
+                                                                      :ARG0 (s11.y / you)
+                                                                      :ARG1 (s11.p / project
+                                                                                   :ARG2-of (s11.i2 / involve-01
+                                                                                                    :ARG1 (s11.a3 / and
+                                                                                                                  :op1 (s11.o / oxygen)
+                                                                                                                  :op2 (s11.g / girl)
+                                                                                                                  :op3 (s11.a2 / aircraft)))
+                                                                                   :poss s11.y))
+                                                         :mod (s11.t3 / that)))
+                              :ARG1-of (s11.a / actual-02)
+                              :ARG1-of (s11.c2 / contrast-01
+                                               :ARG2 (s11.s / say-01
+                                                            :ARG0 (s11.s3 / statistic)
+                                                            :ARG1 (s11.g2 / good-02
+                                                                          :ARG1 s11.p
+                                                                          :degree (s11.s2 / so)
+                                                                          :polarity "-")))
+                              :condition (s11.w / want-01
+                                                :ARG0 s11.y
+                                                :ARG1 s11.t)))
+   :snt12 (s12.w / well
+                 :mode "expressive")
+   :snt13 (s13.h2 / have-degree-91
+                  :ARG1 (s13.s / show
+                               :name (s13.n / name
+                                            :op1 "TEDTalks")
+                               :ARG0-of (s13.f2 / feature-01
+                                                :ARG1 (s13.t2 / topic
+                                                              :ARG2-of (s13.c / connect-01
+                                                                              :ARG0 (s13.w / we
+                                                                                           :op2 (s13.b / body)
+                                                                                           :poss-of s13.b)
+                                                                              :ARG1-of (s13.p / possible-01)
+                                                                              :ARG1-of (s13.e / easy-05)
+                                                                              :ARG1-of (s13.d / deep-02))
+                                                              :example (s13.a / and
+                                                                              :op1 (s13.h / happy-01)
+                                                                              :op3 (s13.f3 / food)
+                                                                              :op4 (s13.e2 / emotion)))))
+                  :ARG2 (s13.f / favor-01
+                               :ARG1 s13.s)
+                  :ARG3 (s13.m / most)
+                  :condition (s13.g / generalize-01
+                                    :ARG0 (s13.y / you)
+                                    :ARG1 (s13.t / this)))
+   :snt14 (s14.a / and
+                 :op2 (s14.t4 / topic
+                              :ARG1-of (s14.g / good-02
+                                              :polarity "-")
+                              :ARG1-of (s14.t / talk-01)
+                              :domain (s14.t3 / topic
+                                              :ARG1-of (s14.h / have-degree-91
+                                                              :ARG2 (s14.t2 / technical)
+                                                              :ARG3 (s14.m3 / more))
+                                              :example (s14.a2 / and
+                                                               :op1 (s14.a3 / architecture)
+                                                               :op2 (s14.m2 / material)
+                                                               :op3 (s14.m / man
+                                                                           :ARG1-of (s14.h2 / have-degree-91
+                                                                                            :ARG2 (s14.s / strange)
+                                                                                            :ARG3 (s14.e / enough)))))))
+   :snt15 (s15.r / recommend-01
+                 :ARG1 (s15.d / deliver-01
+                              :ARG0 (s15.y / you)
+                              :ARG1 (s15.t / talk-01
+                                           :ARG0 s15.y)
+                              :manner (s15.a / amr-unknown)))
+   :snt16 (s16.c / cause-01
+                 :ARG0 (s16.f / fame-01
+                              :ARG1 (s16.p / person
+                                           :name (s16.n / name
+                                                        :op1 "TED")
+                                           :same-as s2.n)
+                              :ARG2 (s16.k / keep-02
+                                           :ARG0 s16.p
+                                           :ARG1 (s16.e / eye
+                                                        :ARG1-of (s16.s / sharp-02
+                                                                        :degree (s16.v / very))
+                                                        :time (s16.c3 / clock))))
+                 :ARG1 (s16.h / hate-01
+                              :ARG0 (s16.t2 / they
+                                            :same-as s2.n)
+                              :ARG1 s16.p
+                              :ARG1-of (s16.c2 / cause-01
+                                               :ARG0 (s16.r / recommend-01
+                                                            :ARG1 (s16.t / talk-01
+                                                                         :ARG0 (s16.y / you
+                                                                                      :ARG1 s16.r))
+                                                            :condition (s16.a2 / as-long-as
+                                                                               :op1 (s16.l / let-01
+                                                                                           :ARG0 s16.t2
+                                                                                           :ARG1 s16.t))))
+                              :ARG2 (s16.r2 / reveal-01
+                                            :ARG0 s16.p
+                                            :ARG1 (s16.t3 / this)))
+                 :rel (s16.a / actual-02))
+   :snt17 (s17.c / cause-01
+                 :rel (s17.l2 / long-03
+                              :ARG1 (s17.a / average-04
+                                           :ARG1 s17.m)
+                              :ARG2-of (s17.h2 / have-degree-91
+                                               :ARG1 (s17.t / talk-01
+                                                            :ARG1 (s17.s / show
+                                                                         :name (s17.n / name
+                                                                                      :op1 "TEDTalks")
+                                                                         :ARG1-of (s17.f2 / favor-01
+                                                                                          :ARG0 (s17.p2 / person
+                                                                                                        :ARG1-of (s17.h / have-degree-91
+                                                                                                                        :ARG2 (s17.f / favor-01
+                                                                                                                                     :ARG0 s17.p2)
+                                                                                                                        :ARG3 (s17.m2 / most)))
+                                                                                          :ARG2-of (s17.h3 / have-degree-91
+                                                                                                           :ARG1 s17.s
+                                                                                                           :ARG3 (s17.l / least))))
+                                                            :ARG0 s17.p2)
+                                               :ARG3 (s17.m / more
+                                                            :quant (s17.o / over
+                                                                          :op1 (s17.p / percentage-entity
+                                                                                      :value "50"))))))
+   :snt18 (s18.a2 / and
+                  :op2 (s18.h2 / hold-01
+                               :ARG0 (s18.t2 / this)
+                               :ARG1 (s18.t3 / true-01
+                                             :ARG1 s18.t2
+                                             :ARG2 (s18.l / list-01
+                                                          :ARG1-of (s18.r / rank-01)
+                                                          :medium (s18.p / publication
+                                                                         :name (s18.n / name
+                                                                                      :op1 "minister"
+                                                                                      :op3 "Education"))
+                                                          :mod (s18.a / all)))
+                               :ARG2-of (s18.e / except-01
+                                               :ARG1 (s18.w / want-01
+                                                            :ARG0 (s18.y / you)
+                                                            :ARG1 (s18.h / have-03
+                                                                         :ARG0 s18.y
+                                                                         :ARG1 (s18.t / talk-01
+                                                                                      :ARG0-of (s18.i / inspire-01)
+                                                                                      :ARG1-of (s18.b / beautiful-02)
+                                                                                      :ARG1-of (s18.f / funny-02)))))))
+   :snt19 (s19.r / recommend-01
+                 :ARG1 (s19.b / brief-01
+                              :ARG0 (s19.y / you))
+                 :mod (s19.t / then))
+   :snt20 (s20.c / contrast-01
+                 :ARG2 (s20.t / talk-01
+                              :ARG0 (s20.y / you)
+                              :duration (s20.u / until
+                                               :op1 (s20.d / drag-01
+                                                           :ARG0 (s20.t3 / they
+                                                                         :same-as s2.n)
+                                                           :ARG1 s20.y
+                                                           :destination (s20.o / off)
+                                                           :location (s20.s / stage)))
+                              :mode "imperative")
+                 :ARG2-of (s20.e / except-01
+                                 :ARG1 (s20.t2 / that)))
+   :snt21 (s21.a / and
+                 :op1 (s21.n / now)
+                 :op2 (s21.w / while))
+   :snt22 (s22.r / rule
+                 :quant (s22.f / few)
+                 :ARG1-of (s22.o / obey-01
+                                 :ARG0 (s22.y / you))
+                 :time (s22.p / push-01
+                              :ARG0 s22.y
+                              :ARG1 (s22.c / clock)))
+   :snt23 (s23.f3 / find-out-03
+                  :ARG0 (s23.i / i
+                               :same-as s4.i)
+                  :ARG1 (s23.r / rule
+                               :mod (s23.t / this)
+                               :same-as s22.o)
+                  :manner (s23.c / compare-01
+                                 :ARG0 s23.i
+                                 :ARG1 (s23.s / statistic
+                                              :topic (s23.p / phrase
+                                                            :ARG1-of (s23.a / appear-01
+                                                                            :ARG1-of (s23.i2 / instead-of-91
+                                                                                             :ARG2 (s23.h2 / have-degree-91
+                                                                                                           :ARG2 (s23.f / favor-01
+                                                                                                                        :ARG1 (s23.b / broadcast-program
+                                                                                                                                     :name (s23.n / name
+                                                                                                                                                  :op1 "TEDTalks")
+                                                                                                                                     :ARG1-of (s23.h3 / have-degree-91
+                                                                                                                                                      :ARG2 (s23.f2 / favorite)
+                                                                                                                                                      :ARG3 (s23.m2 / most))))
+                                                                                                           :ARG3 (s23.l / least)))
+                                                                            :frequency (s23.o / often
+                                                                                              :ARG2-of (s23.h / have-degree-91
+                                                                                                              :ARG3 (s23.m / more)))
+                                                                            :location s23.b)
+                                                            :mod (s23.w / word
+                                                                        :quant "4")))))
+   :snt24 (s24.g / give-01
+                 :ARG0 (s24.i / i
+                              :same-as s4.i)
+                 :ARG1 (s24.e / example
+                              :quant "3")
+                 :ARG2 (s24.y / you))
+   :snt25 (s25.o / obligate-01
+                 :ARG1 (s25.i / i
+                              :same-as s4.i)
+                 :ARG2 (s25.a / and
+                              :ARG1-of (s25.i2 / instead-of-91
+                                               :ARG2 (s25.s / say-01
+                                                            :ARG0 s25.i
+                                                            :ARG1 (s25.t3 / thing
+                                                                          :ARG1-of (s25.h / have-03
+                                                                                          :ARG0 s25.i
+                                                                                          :ARG1-of (s25.p2 / possible-01
+                                                                                                           :polarity "-")))))
+                              :manner (s25.p / person
+                                             :ARG0-of (s25.s3 / speak-01))
+                              :op1 (s25.p3 / provide-01
+                                           :ARG0 s25.i
+                                           :ARG1 (s25.s2 / serve-01
+                                                         :ARG0 s25.i
+                                                         :ARG2 (s25.a2 / audience)))
+                              :op2 (s25.t / talk-01
+                                          :ARG0 s25.i
+                                          :ARG1 (s25.t2 / thing
+                                                        :ARG1-of (s25.g / give-01
+                                                                        :ARG0 s25.i
+                                                                        :ARG2 (s25.y / you
+                                                                                     :same-as s24.y)))))
+                 :mod (s25.f / first-of-all))
+   :snt26 (s26.i / imperative
+                 :domain (s26.c / cite-01
+                                :ARG0 (s26.y / you)
+                                :ARG1 (s26.n2 / newspaper
+                                              :name (s26.n / name
+                                                           :op1 "The"
+                                                           :op2 "New"
+                                                           :op3 "York"
+                                                           :op4 "Times"))
+                                :polarity "-")
+                 :li "2")
+   :snt27 (s27.a / and
+                 :op2 (s27.o / okay-04
+                             :ARG1 (s27.f / fake-02
+                                          :ARG0 (s27.p / person
+                                                       :ARG0-of (s27.s / speak-01))
+                                          :ARG1 (s27.c / capacity
+                                                       :mod (s27.i / intellectual)))
+                             :domain (s27.n / news
+                                            :ARG1-of (s27.g / good-02)))
+                 :time (s27.f2 / final))
+   :snt28 (s28.p / possible-01
+                 :ARG1 (s28.s / say-01
+                              :ARG0 (s28.i / i
+                                           :same-as s4.i)
+                              :ARG1 (s28.a / and
+                                           :op1 (s28.e / et-cetera)
+                                           :op2 s28.e
+                                           :op3 (s28.e2 / et-cetera))
+                              :mod (s28.j / just))
+                 :condition (s28.u / understand-01
+                                   :ARG0 s28.i
+                                   :ARG1 (s28.s2 / something)
+                                   :polarity "-"))
+   :snt29 (s29.s / stay-01
+                 :ARG1 (s29.y / you
+                              :mod (s29.a / all)
+                              :same-as s24.y)
+                 :ARG2 (s29.i / i
+                              :same-as s4.i))
+   :snt30 (s30.f / fine-04
+                 :ARG1 (s30.i / it)
+                 :ARG1-of (s30.p / perfect-02))
+   :snt31 (s31.l / let-01
+                 :ARG1 (s31.g / go-02
+                              :ARG0 (s31.w / we)
+                              :ARG1 (s31.v / video))
+                 :time (s31.n / now))
+   :snt32 (s32.h / have-degree-91
+                 :ARG1 (s32.t / thing
+                              :domain (s32.p / person
+                                             :ARG0-of (s32.s / speak-01))
+                              :location (s32.s2 / stage)
+                              :mod (s32.v / visual))
+                 :ARG2 (s32.o / obvious-01
+                              :ARG1 s32.t)
+                 :ARG3 (s32.m / most))
+   :snt33 (s33.a2 / and
+                  :op2 (s33.s / show-01
+                              :ARG0 (s33.a / analyze-01)
+                              :ARG1 (s33.r / recommend-01
+                                           :ARG1 (s33.a3 / and
+                                                         :op1 (s33.l / let-01
+                                                                     :ARG0 (s33.y / you
+                                                                                  :part (s33.h / hair))
+                                                                     :ARG1 (s33.g2 / grow-01
+                                                                                   :ARG1 s33.h
+                                                                                   :ARG1-of (s33.h3 / have-degree-91
+                                                                                                    :ARG2 (s33.l3 / long-03
+                                                                                                                  :ARG1 s33.g2)
+                                                                                                    :ARG3 (s33.m / more
+                                                                                                                 :quant (s33.b / bit
+                                                                                                                               :mod (s33.l2 / little)))
+                                                                                                    :ARG4 (s33.a4 / average-04))))
+                                                         :op2 (s33.e / ensure-01
+                                                                     :ARG0 s33.y
+                                                                     :ARG1 (s33.w2 / wear-01
+                                                                                   :ARG0 s33.y
+                                                                                   :ARG1 (s33.g / glasses
+                                                                                                :poss s33.y)))
+                                                         :op3 (s33.d / dress-01
+                                                                     :ARG1 s33.y
+                                                                     :ARG2-of (s33.h4 / have-degree-91
+                                                                                      :ARG1 s33.y
+                                                                                      :ARG3 (s33.m2 / more
+                                                                                                    :quant (s33.s2 / slight)))))
+                                           :ARG2 s33.y
+                                           :condition (s33.w / want-01
+                                                             :ARG0 s33.y
+                                                             :ARG1 (s33.i / include-91
+                                                                          :ARG1 s33.y
+                                                                          :ARG2 (s33.p / person
+                                                                                       :ARG0-of (s33.s3 / speak-01
+                                                                                                        :ARG0 (s33.p2 / person
+                                                                                                                      :name (s33.n / name
+                                                                                                                                   :op1 "TED"
+                                                                                                                                   :same-as s2.n)))
+                                                                                       :ARG1-of (s33.h2 / have-degree-91
+                                                                                                        :ARG2 (s33.f / favor-01
+                                                                                                                     :ARG1 s33.p)
+                                                                                                        :ARG3 (s33.m3 / most))))))))
+   :snt34 (s34.o / okay-04
+                 :ARG1 (s34.s / slide-01)
+                 :concession-of (s34.p / possible-01
+                                       :ARG1 (s34.c / consider-02
+                                                    :ARG0 (s34.y / you)
+                                                    :ARG1 (s34.g / go-03
+                                                                 :ARG0 s34.y
+                                                                 :ARG1 (s34.p2 / prop)))))
+   :snt35 (s35.a / and
+                 :op2 (s35.t / thing
+                             :ARG1-of (s35.h / have-degree-91
+                                             :ARG2 (s35.i / important-01
+                                                          :ARG1 s35.t
+                                                          :time (s35.n / now))
+                                             :ARG3 (s35.m2 / most))
+                             :domain (s35.m / mood
+                                            :location (s35.o / onstage))))
+   :snt36 (s36.p / play-02
+                 :ARG0 (s36.c / color)
+                 :ARG1 (s36.r / role
+                              :ARG1-of (s36.i / important-01
+                                              :degree (s36.v / very))))
+   :snt37 (s37.c3 / correlate-01
+                  :ARG1 (s37.c2 / color)
+                  :ARG1-of (s37.c / close-10)
+                  :ARG2 (s37.r / rate-01
+                               :ARG1-of (s37.g / get-01
+                                               :ARG0 (s37.t / talk-01)
+                                               :medium (s37.w / website
+                                                              :same-as s2.w))))
+   :snt38 (s38.e2 / exemplify-01
+                  :ARG0 (s38.c2 / contain-01
+                                :ARG0 (s38.t / talk-01
+                                             :ARG0-of (s38.f / fascinate-01))
+                                :ARG1 (s38.a / amount
+                                             :ARG1-of (s38.h2 / high-02
+                                                              :ARG2 (s38.s / statistics))
+                                             :ARG3-of (s38.h / have-quant-91
+                                                             :ARG1 (s38.c / color-01
+                                                                          :ARG2 (s38.b / blue)
+                                                                          :mod (s38.t2 / this)
+                                                                          :mod (s38.e / exact))
+                                                             :ARG3 (s38.m / more
+                                                                          :quant (s38.m2 / much))
+                                                             :ARG4 (s38.b2 / broadcast-program
+                                                                           :name (s38.n / name
+                                                                                        :op1 "TEDTalk")
+                                                                           :ARG1-of (s38.a2 / average-04))))))
+   :snt39 (s39.a / and
+                 :op1 (s39.r / research-institute
+                             :name (s39.n2 / name
+                                           :op1 "TEDTalks")
+                             :mod (s39.n / Ingenious))
+                 :op2 (s39.c / color
+                             :ARG1-of (s39.g / green-02)
+                             :ARG1-of (s39.h / have-quant-91
+                                             :ARG3 (s39.m / more
+                                                          :quant (s39.m2 / much)))
+                             :mod (s39.t / this))
+                 :op3 (s39.e / et-cetera)
+                 :op4 (s39.e2 / et-cetera))
+   :snt40 (s40.t / think-01
+                 :ARG0 (s40.i / i
+                              :same-as s4.i)
+                 :ARG1 (s40.p / person
+                              :ARG0-of (s40.a / analyze-01
+                                              :mod (s40.t2 / this))
+                              :domain s40.i
+                              :ord (s40.o / ordinal-entity
+                                          :value "1")
+                              :polarity "-")
+                 :ARG1-of (s40.p2 / personal-02)
+                 :concession-of (s40.l / leave-10
+                                       :ARG0 s40.i
+                                       :ARG1 (s40.t3 / this)
+                                       :ARG2 (s40.j / judge-01
+                                                    :ARG0 (s40.y / you
+                                                                 :same-as s24.y)
+                                                    :ARG1-of (s40.g / good-02)))
+                 :time (s40.n / now))
+   :snt41 (s41.t / time
+                 :domain (s41.n2 / now)
+                 :time-of (s41.a2 / and
+                                  :op1 (s41.p / put-03
+                                              :ARG1 (s41.i / it
+                                                           :mod (s41.a / all))
+                                              :ARG2 (s41.t2 / together))
+                                  :op2 (s41.d / design-01
+                                              :ARG1 (s41.b / broadcast-program
+                                                           :name (s41.n / name
+                                                                        :op1 "TEDTalk")
+                                                           :mod (s41.u / ultimate)))))
+   :snt42 (s42.c2 / contrast-01
+                  :ARG1 (s42.i2 / impose-01
+                                :ARG0 (s42.i / i
+                                             :same-as s4.i)
+                                :ARG1 (s42.o2 / or
+                                              :op1 (s42.p / person
+                                                          :ARG1-of (s42.h / have-degree-91
+                                                                          :ARG2 (s42.b / bad-02
+                                                                                       :ARG1 s42.p)
+                                                                          :ARG3 (s42.m / most)))
+                                              :topic (s42.o / YouTube
+                                                            :mod (s42.u / ultimate)))
+                                :ARG2 (s42.n2 / now)
+                                :ARG2 (s42.y / you
+                                             :same-as s24.y)
+                                :polarity "-")
+                  :ARG1-of (s42.c / cause-01
+                                  :ARG0 (s42.a3 / and
+                                                :op1 (s42.o3 / organization
+                                                             :name (s42.n / name
+                                                                          :op1 "TEDActive")
+                                                             :domain (s42.t / this))
+                                                :op2 (s42.l / learn-01
+                                                            :ARG0 s42.i
+                                                            :ARG1 (s42.r / recommend-01
+                                                                         :ARG1 (s42.g / give-01
+                                                                                      :ARG0 s42.i
+                                                                                      :ARG1 (s42.s / something)
+                                                                                      :ARG1-of (s42.a / actual-02)
+                                                                                      :ARG2 s42.y))
+                                                            :ARG2 (s42.a2 / analyze-01
+                                                                          :same-as s40.a))))
+                  :ARG2 (s42.g2 / give-01
+                                :ARG0 s42.i
+                                :ARG1 (s42.t2 / tool
+                                              :purpose (s42.c3 / create-01
+                                                               :ARG0 s42.y
+                                                               :ARG1 s42.o))
+                                :ARG2 s42.y)
+                  :time s42.n2)
+   :snt43 (s43.a / and
+                 :op2 (s43.c / call-01
+                             :ARG0 (s43.i / i
+                                          :same-as s4.i)
+                             :ARG1 (s43.t3 / tool
+                                           :mod (s43.t2 / this)
+                                           :same-as s42.t2)
+                             :ARG2 (s43.t / thing
+                                          :name (s43.n / name
+                                                       :op1 "TEDPad")
+                                          :same-as s42.t2
+                                          :same-as-of s44.n)))
+   :snt44 (s44.a / and
+                 :op2 (s44.m / matrix
+                             :consist-of (s44.s3 / sentence
+                                                 :ARG1-of (s44.s2 / select-01
+                                                                  :ARG1-of (s44.h / high-02))
+                                                 :ARG1-of (s44.s / select-01
+                                                                 :ARG1-of (s44.s4 / specific-02))
+                                                 :ARG1-of (s44.p / piece
+                                                                 :purpose (s44.g / get-01
+                                                                                 :ARG0 (s44.y / you)
+                                                                                 :ARG1 (s44.t / talk-01
+                                                                                              :ARG0 s44.y))
+                                                                 :ARG0 s44.y
+                                                                 :ARG1-of (s44.e / easy-05)
+                                                                 :ARG1-of (s44.p2 / possible-01)
+                                                                 :mod (s44.t3 / together))
+                                                 :quant "100")
+                             :domain (s44.t2 / thing
+                                             :name (s44.n / name
+                                                          :op1 "TEDPad")
+                                             :topic s44.t)))
+   :snt45 (s45.o / obligate-01
+                 :ARG1 (s45.d / decide-01
+                              :ARG0 (s45.y / you)
+                              :ARG1 (s45.u / use-01
+                                           :ARG0 s45.y
+                                           :ARG1 (s45.v / version
+                                                        :ARG1-of (s45.w / white-02))
+                                           :ARG2 (s45.b / broadcast-program
+                                                        :name (s45.n / name
+                                                                     :op1 "TEDTalks")
+                                                        :ARG1-of (s45.g2 / good-02
+                                                                         :degree (s45.v2 / very))
+                                                        :topic (s45.a2 / and
+                                                                       :op1 (s45.c / creativity)
+                                                                       :op2 (s45.g / genius
+                                                                                   :mod (s45.h / human))))
+                                           :polarity (s45.a / amr-unknown))
+                              :quant "1")
+                 :mod (s45.o2 / only))
+   :snt46 (s46.o / or
+                 :op2 (s46.g / go-06
+                             :ARG0 (s46.y / you
+                                          :same-as s24.y)
+                             :ARG1 (s46.v / version
+                                          :ARG0-of (s46.a / allow-01
+                                                          :ARG1 (s46.c / create-01
+                                                                       :ARG0 s46.y
+                                                                       :ARG1 (s46.b4 / broadcast-program
+                                                                                     :name (s46.n / name
+                                                                                                  :op1 "TEDTalks")
+                                                                                     :ARG1-of (s46.b / bad-02
+                                                                                                     :degree (s46.r / really))
+                                                                                     :topic (s46.a3 / and
+                                                                                                    :mod (s46.m / most)
+                                                                                                    :op1 (s46.b3 / blog-01)
+                                                                                                    :op2 (s46.p / politics)
+                                                                                                    :op3 (s46.s / stuff)))))
+                                          :ARG1-of (s46.b2 / black-04))
+                             :polarity (s46.a2 / amr-unknown)))
+   :snt47 (s47.a / and
+                 :op1 (s47.d / download-01
+                             :ARG0 (s47.y / you)
+                             :ARG1 (s47.i / it
+                                          :same-as s46.v)
+                             :mode "imperative")
+                 :op2 (s47.h / have-06
+                             :ARG0 s47.y
+                             :ARG1 (s47.f / fun-01
+                                          :ARG0 s47.y
+                                          :ARG1 s47.i)
+                             :ARG2 s47.i
+                             :mode "imperative"))
+   :snt48 (s48.h / hope-01
+                 :ARG0 (s48.i / i
+                              :same-as s4.i)
+                 :ARG1 (s48.e / enjoy-01
+                              :ARG0 (s48.y / you
+                                           :same-as s24.y)
+                              :ARG1 (s48.s / session))
+                 :time (s48.n / now))
+   :snt49 (s49.h2 / hope-01
+                  :ARG0 (s49.i / i
+                               :same-as s4.i)
+                  :ARG1 (s49.e / enjoy-01
+                               :ARG0 (s49.y / you
+                                            :same-as s24.y)
+                               :ARG1 (s49.d / design-01
+                                            :ARG0 s49.y
+                                            :ARG1 (s49.b2 / broadcast-program
+                                                          :name (s49.n / name
+                                                                       :op1 "TEDTalks")
+                                                          :ARG1-of (s49.h / have-degree-91
+                                                                          :ARG1-of (s49.p / possible-01)
+                                                                          :ARG2 (s49.b / bad-02
+                                                                                       :ARG1 s49.b2)
+                                                                          :ARG3 (s49.m / most))
+                                                          :mod (s49.u / ultimate)))))
+   :snt50 (s50.a / and
+                 :op2 (s50.h / hope-01
+                             :ARG0 (s50.i / i
+                                          :same-as s4.i)
+                             :ARG1 (s50.i3 / inspire-01
+                                           :ARG1 (s50.s2 / some
+                                                         :ARG1-of (s50.i2 / include-91
+                                                                          :ARG2 (s50.y2 / you
+                                                                                        :same-as s24.y)))
+                                           :ARG2 (s50.c / create-01
+                                                        :ARG0 s50.s2
+                                                        :ARG1 (s50.t / this
+                                                                     :ARG1-of (s50.s / see-01
+                                                                                     :ARG0 s50.i
+                                                                                     :ARG1-of (s50.w / want-01
+                                                                                                     :ARG0 s50.i
+                                                                                                     :degree (s50.r / really)))))
+                                           :time (s50.y / year
+                                                        :mod (s50.n / next))))))
+

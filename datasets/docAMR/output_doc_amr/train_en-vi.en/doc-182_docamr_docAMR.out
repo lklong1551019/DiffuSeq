@@ -1,0 +1,625 @@
+# ::id doc-182
+# ::doc_file doc-182
+# ::tok http : / / www . ted . com / talks / annmarie_thomas_squishy_circuits< / url> <next_sent> I 'm a huge believer in hands - on education . <next_sent> But you have to have the right tools . <next_sent> If I 'm going to teach my daughter about electronics , I 'm not going to give her a soldering iron . <next_sent> And similarly , she finds prototyping boards really frustrating for her little hands . <next_sent> So my wonderful student Sam and I decided to look at the most tangible thing we could think of : Play - Doh . <next_sent> And so we spent a summer looking at different Play - Doh recipes . <next_sent> And these recipes probably look really familiar to any of you who have made homemade play - dough -- pretty standard ingredients you probably have in your kitchen . <next_sent> We have two favorite recipes -- one that has these ingredients and a second that had sugar instead of salt . <next_sent> And they 're great . <next_sent> We can make great little sculptures with these . <next_sent> But the really cool thing about them is when we put them together . <next_sent> You see that really salty Play - Doh ? <next_sent> Well , it conducts electricity . <next_sent> And this is nothing new . <next_sent> It turns out that regular Play - Doh that you buy at the store conducts electricity , and high school physics teachers have used that for years . <next_sent> But our homemade play - dough actually has half the resistance of commercial Play - Doh . <next_sent> And that sugar dough ? <next_sent> Well it 's 150 times more resistant to electric current than that salt dough . <next_sent> So what does that mean ? <next_sent> Well it means if you them together you suddenly have circuits -- circuits that the most creative , tiny , little hands can build on their own . <next_sent> And so I want to do a little demo for you . <next_sent> But if any of you have studied electrical engineering , we can also create a short circuit . <next_sent> If I push these together , the light turns off . <next_sent> Right , the current wants to run through the play - dough , not through that LED . <next_sent> If I separate them again , I have some light . <next_sent> Well now if I take that sugar dough , the sugar dough does n't want to conduct electricity . <next_sent> It 's like a wall to the electricity . <next_sent> If I place that between , now all the dough is touching , but if I stick that light back in , I have light . <next_sent> In fact , I could even add some movement to my sculptures . <next_sent> If I want a spinning tail , let 's grab a motor , put some play - dough on it , stick it on and we have spinning . <next_sent> And once you have the basics , we can make a slightly more complicated circuit . <next_sent> We call this our sushi circuit . <next_sent> It 's very popular with kids . <next_sent> I plug in again the power to it . <next_sent> And now I can start talking about parallel and series circuits . <next_sent> I can start plugging in lots of lights . <next_sent> And we can start talking about things like electrical load . <next_sent> What happens if I put in lots of lights and then add a motor ? <next_sent> It 'll dim . <next_sent> We can even add microprocessors and have this as an input and create squishy sound music that we 've done . <next_sent> You could do parallel and series circuits for kids using this . <next_sent> So this is all in your home kitchen . <next_sent> We 've actually tried to turn it into an electrical engineering lab . <next_sent> We have a website , it 's all there . <next_sent> These are the home recipes . <next_sent> We 've got some videos . <next_sent> You can make them yourselves . <next_sent> And it 's been really fun since we put them up to see where these have gone . <next_sent> We 've had a mom in Utah who used them with her kids , to a science researcher in the U.K. , and curriculum developers in Hawaii . <next_sent> So I would encourage you all to grab some Play - Doh , grab some salt , grab some sugar and start playing . <next_sent> We do n't usually think of our kitchen as an electrical engineering lab or little kids as circuit designers , but maybe we should . <next_sent> Have fun . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.r / rule
+                            :mod (s1.i / Middle)))
+   :snt2 (s2.b / believe-01
+               :ARG0 (s2.i / i)
+               :ARG1 (s2.e / educate-01
+                           :ARG1-of (s2.i2 / in-ones-hands-04))
+               :mod (s2.h / huge))
+   :snt3 (s3.c / contrast-01
+               :ARG2 (s3.o / obligate-01
+                           :ARG2 (s3.h / have-03
+                                       :ARG0 (s3.y / you)
+                                       :ARG1 (s3.t / tool
+                                                   :ARG1-of (s3.r / right-03)))))
+   :snt4 (s4.g / give-01
+               :ARG0 (s4.i / i
+                           :same-as s2.i)
+               :ARG1 (s4.i2 / iron
+                            :instrument-of (s4.s / sell-01))
+               :ARG2 (s4.p / person
+                           :ARG0-of (s4.h / have-rel-role-91
+                                          :ARG1 s4.i
+                                          :ARG2 (s4.d / daughter))
+                           :same-as s4.h)
+               :condition (s4.t / teach-01
+                                :ARG0 s4.i
+                                :ARG1 (s4.e / electronics)
+                                :ARG2 s4.p)
+               :polarity "-")
+   :snt5 (s5.a / and
+               :op2 (s5.f / find-02
+                          :ARG0 (s5.s / she
+                                      :part (s5.h / hand
+                                                  :mod (s5.l / little))
+                                      :same-as s4.h)
+                          :ARG1 (s5.f2 / frustrate-01
+                                       :ARG0 (s5.a2 / assemble-01
+                                                    :ARG0 s5.s
+                                                    :ARG1 (s5.b / board))
+                                       :ARG1 s5.h
+                                       :degree (s5.r / really))
+                          :ARG1-of (s5.r2 / resemble-01)))
+   :snt6 (s6.c / cause-01
+               :ARG1 (s6.d / decide-01
+                           :ARG0 (s6.a / and
+                                       :op1 (s6.p / person
+                                                  :name (s6.n / name
+                                                              :op1 "Sam")
+                                                  :ARG0-of (s6.s / study-01
+                                                                 :ARG2 (s6.i / i
+                                                                             :same-as s2.i))
+                                                  :ARG1-of (s6.w / wonderful-03))
+                                       :op2 s6.i)
+                           :ARG1 (s6.l / look-01
+                                       :ARG0 s6.a
+                                       :ARG1 (s6.t2 / thing
+                                                    :ARG1-of (s6.h / have-degree-91
+                                                                   :ARG2 (s6.t / tangible)
+                                                                   :ARG3 (s6.m / most))
+                                                    :ARG1-of (s6.t3 / think-01
+                                                                    :ARG0 s6.a
+                                                                    :ARG1-of (s6.p3 / possible-01))
+                                                    :mod (s6.p2 / play-01
+                                                                :ARG0 (s6.y / you)
+                                                                :ARG2 (s6.c2 / child))))))
+   :snt7 (s7.a / and
+               :op2 (s7.s2 / spend-02
+                           :ARG0 (s7.w / we
+                                       :same-as s6.a)
+                           :ARG1 (s7.t / temporal-quantity
+                                       :unit (s7.s3 / summer)
+                                       :quant "1")
+                           :ARG2 (s7.l / look-01
+                                       :ARG0 s7.w
+                                       :ARG1 (s7.r / recipe
+                                                   :ARG1-of (s7.d / differ-02)
+                                                   :mod (s7.p2 / product
+                                                               :name (s7.n / name
+                                                                           :op1 "Doh")
+                                                               :ARG1-of (s7.p / play-01))))
+                           :mod (s7.s / so)))
+   :snt8 (s8.a / and
+               :op2 (s8.p3 / probable
+                           :domain (s8.l / look-02
+                                         :ARG0 (s8.r2 / recipe
+                                                      :mod (s8.t / this)
+                                                      :same-as s7.r)
+                                         :ARG1 (s8.f / familiar
+                                                     :degree (s8.r / really))
+                                         :ARG2 (s8.a2 / any
+                                                      :ARG1-of (s8.i / include-91
+                                                                     :ARG2 (s8.y / you
+                                                                                 :ARG0-of (s8.m / make-01
+                                                                                                :ARG1 (s8.d / dough
+                                                                                                            :purpose (s8.p / play-01)
+                                                                                                            :mod (s8.h2 / homemade))))))))
+               :op3 (s8.i2 / ingredient
+                           :ARG1-of (s8.s / standard-02
+                                          :degree (s8.p2 / pretty))
+                           :ARG1-of (s8.h / have-03
+                                          :ARG0 s8.y
+                                          :location (s8.k / kitchen
+                                                          :poss s8.y)
+                                          :mod (s8.p4 / probable))))
+   :snt9 (s9.h / have-03
+               :ARG0 (s9.w / we
+                           :same-as s6.a)
+               :ARG1 (s9.r / recipe
+                           :domain (s9.a / and
+                                         :op1 (s9.r2 / recipe
+                                                     :ARG0-of (s9.h2 / have-03
+                                                                     :ARG1 (s9.i / ingredient
+                                                                                 :mod (s9.t / this)))
+                                                     :quant "1")
+                                         :op2 (s9.s2 / second
+                                                     :ARG0-of (s9.h3 / have-03
+                                                                     :ARG1 (s9.s3 / sugar
+                                                                                  :ARG1-of (s9.i2 / instead-of-91
+                                                                                                  :ARG2 (s9.s / salt))))))
+                           :mod (s9.f / favorite)
+                           :quant "2"))
+   :snt10 (s10.a / and
+                 :op2 (s10.g / great
+                             :domain (s10.t / they
+                                            :same-as s9.r)))
+   :snt11 (s11.p / possible-01
+                 :ARG1 (s11.m / make-01
+                              :ARG0 (s11.w / we
+                                           :same-as s6.a)
+                              :ARG1 (s11.s / statue
+                                           :mod (s11.l / little)
+                                           :mod (s11.g / great))
+                              :instrument (s11.t / this
+                                                 :same-as s9.r)))
+   :snt12 (s12.c / contrast-01
+                 :ARG2 (s12.t2 / thing
+                               :ARG1-of (s12.c2 / cool-04
+                                                :degree (s12.r / really))
+                               :time (s12.p / put-01
+                                            :ARG0 (s12.w / we
+                                                         :same-as s6.a)
+                                            :ARG1 (s12.t / they
+                                                         :same-as s9.r)
+                                            :ARG2 (s12.t3 / together))
+                               :topic s12.t))
+   :snt13 (s13.s2 / see-01
+                  :ARG0 (s13.y / you)
+                  :ARG1 (s13.p / play-01
+                               :mod (s13.s / salty
+                                           :degree (s13.r / really)))
+                  :polarity (s13.a / amr-unknown)
+                  :polarity "-")
+   :snt14 (s14.c / conduct-03
+                 :ARG1 (s14.i / it)
+                 :ARG2 (s14.e / electricity)
+                 :mod (s14.w / well))
+   :snt15 (s15.a / and
+                 :op2 (s15.n / new-01
+                             :ARG1 (s15.t / this
+                                          :same-as s14.c)
+                             :polarity "-"))
+   :snt16 (s16.a / and
+                 :op1 (s16.t3 / turn-out-11
+                              :ARG1 (s16.c / conduct-01
+                                           :ARG0 (s16.p4 / product
+                                                         :name (s16.n / name
+                                                                      :op1 "Ditto-Dopers")
+                                                         :ARG0-of (s16.p3 / play-01)
+                                                         :ARG1-of (s16.r / regular-03)
+                                                         :ARG1-of (s16.b / buy-01
+                                                                         :ARG0 (s16.y2 / you)
+                                                                         :ARG2 (s16.s / store)))
+                                           :ARG1 (s16.e / electricity)))
+                 :op2 (s16.u / use-01
+                             :ARG0 (s16.p / person
+                                          :ARG0-of (s16.t / teach-01
+                                                          :ARG1 (s16.p2 / physics)
+                                                          :ARG2 (s16.h / high-school)))
+                             :ARG1 s16.p4
+                             :duration (s16.m / multiple
+                                              :op1 (s16.t2 / temporal-quantity
+                                                           :unit (s16.y / year)
+                                                           :quant "1"))))
+   :snt17 (s17.c2 / contrast-01
+                  :ARG2 (s17.r / resist-01
+                               :ARG0 (s17.d2 / dough
+                                             :purpose (s17.p / play-01)
+                                             :ARG1-of (s17.m / make-01
+                                                             :ARG0 (s17.w / we
+                                                                          :same-as s6.a)))
+                               :ARG1-of (s17.h2 / have-quant-91
+                                                :ARG3 (s17.h / half)
+                                                :ARG4 (s17.r2 / resist-01
+                                                              :ARG0 (s17.t / thing
+                                                                           :ARG0-of (s17.p2 / play-01
+                                                                                            :mod (s17.d / ditto))
+                                                                           :mod (s17.c / commerce))))
+                               :ARG1-of (s17.a / actual-02))
+                  :rel (s17.h3 / home))
+   :snt18 (s18.a2 / and
+                  :op2 (s18.d / dough
+                              :consist-of (s18.s / sugar)
+                              :mod (s18.t / that)
+                              :polarity (s18.a / amr-unknown)))
+   :snt19 (s19.h / have-degree-91
+                 :ARG1 (s19.t2 / times
+                               :quant "150")
+                 :ARG2 (s19.r / resist-01
+                              :quant s19.t2
+                              :ARG0 (s19.i / it
+                                           :same-as s18.t)
+                              :ARG1 (s19.c / current
+                                           :mod (s19.e / electricity)))
+                 :ARG4 (s19.d / dough
+                              :consist-of (s19.s / salt)
+                              :mod (s19.t / that)))
+   :snt20 (s20.m / mean-01
+                 :ARG1 (s20.t / that)
+                 :ARG2 (s20.a / amr-unknown))
+   :snt21 (s21.m / mean-01
+                 :ARG1 (s21.i / it
+                              :same-as s20.t)
+                 :ARG2 (s21.h2 / have-03
+                               :ARG0 (s21.y / you)
+                               :ARG1 (s21.c / circuit
+                                            :ARG1-of (s21.b / build-01
+                                                            :ARG0 (s21.h / hand
+                                                                         :ARG1-of (s21.h3 / have-degree-91
+                                                                                          :ARG2 (s21.c2 / creative)
+                                                                                          :ARG3 (s21.m2 / most))
+                                                                         :mod (s21.l / little)
+                                                                         :mod (s21.t / tiny))
+                                                            :ARG1-of (s21.p / possible-01)
+                                                            :mod (s21.b2 / by-oneself)))
+                               :condition (s21.t2 / together
+                                                  :domain s21.y)
+                               :manner (s21.s / sudden))
+                 :mod (s21.w / well))
+   :snt22 (s22.a / and
+                 :op2 (s22.c / cause-01
+                             :ARG1 (s22.w / want-01
+                                          :ARG0 (s22.i / i
+                                                       :same-as s2.i)
+                                          :ARG1 (s22.d / demonstrate-01
+                                                       :ARG0 s22.i
+                                                       :beneficiary (s22.y / you
+                                                                           :same-as s8.i2)
+                                                       :mod (s22.l / little)))))
+   :snt23 (s23.c2 / contrast-01
+                  :ARG2 (s23.p / possible-01
+                               :ARG1 (s23.c3 / create-01
+                                             :ARG0 (s23.w / we)
+                                             :ARG1 (s23.c / circuit
+                                                          :ARG1-of (s23.s / short-07))
+                                             :mod (s23.a / also))
+                               :condition (s23.s2 / study-01
+                                                  :ARG0 (s23.a2 / any
+                                                                :ARG1-of (s23.i / include-91
+                                                                                :ARG2 (s23.y / you
+                                                                                             :same-as s8.i2)))
+                                                  :ARG1 (s23.e2 / engineer-01
+                                                                :ARG1 (s23.e / electricity)))))
+   :snt24 (s24.t3 / turn-off-07
+                  :ARG1 (s24.l / light)
+                  :condition (s24.p / push-01
+                                    :ARG0 (s24.i / i
+                                                 :same-as s2.i)
+                                    :ARG1 (s24.t / this)
+                                    :ARG2 (s24.t2 / together)))
+   :snt25 (s25.r / right-06
+                 :ARG2 (s25.c / contrast-01
+                              :ARG1 (s25.w / want-01
+                                           :ARG0 (s25.c2 / current)
+                                           :ARG1 (s25.r2 / run-01
+                                                         :ARG1 s25.c2
+                                                         :path (s25.t3 / through
+                                                                       :op1 (s25.d / dough
+                                                                                   :ARG2-of (s25.p / play-01)
+                                                                                   :same-as s17.d2))))
+                              :ARG2 (s25.w2 / want-01
+                                            :ARG0 s25.c2
+                                            :ARG1 (s25.r3 / run-01
+                                                          :ARG1 s25.c2
+                                                          :path (s25.t4 / through
+                                                                        :op1 (s25.t2 / thing
+                                                                                     :ARG0-of (s25.l / light-04)
+                                                                                     :mod (s25.t / that)
+                                                                                     :mod (s25.f / fluorescent))))
+                                            :polarity "-")))
+   :snt26 (s26.h / have-03
+                 :ARG0 (s26.i / i
+                              :same-as s2.i)
+                 :ARG1 (s26.l / light
+                              :mod (s26.s2 / some))
+                 :condition (s26.s / separate-01
+                                   :ARG0 s26.i
+                                   :ARG1 (s26.t / they
+                                                :same-as s24.t)
+                                   :mod (s26.a / again)))
+   :snt27 (s27.w / want-01
+                 :ARG0 (s27.d / dough
+                              :consist-of (s27.s / sugar
+                                                 :same-as s18.t)
+                              :mod (s27.t2 / that
+                                           :same-as s18.t))
+                 :ARG1 (s27.c / conduct-01
+                              :ARG0 s27.d
+                              :ARG1 (s27.e / electricity))
+                 :condition (s27.t / take-01
+                                   :ARG0 (s27.i / i
+                                                :same-as s2.i)
+                                   :ARG1 s27.d)
+                 :mod (s27.w2 / well)
+                 :time (s27.n / now)
+                 :polarity "-")
+   :snt28 (s28.r / resemble-01
+                 :ARG1 (s28.i / it
+                              :same-as s18.t)
+                 :ARG2 (s28.w / wall
+                              :destination (s28.e / electricity)))
+   :snt29 (s29.c / contrast-01
+                 :ARG1 (s29.t3 / touch-01
+                               :ARG0 (s29.d / dough
+                                            :mod (s29.a / all)
+                                            :same-as s18.t)
+                               :time (s29.n / now))
+                 :ARG2 (s29.h / have-03
+                              :ARG0 (s29.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s29.l / light)
+                              :condition (s29.s / stick-01
+                                                :ARG0 s29.i
+                                                :ARG1 (s29.t2 / thing
+                                                              :ARG0-of (s29.l2 / light-04)
+                                                              :mod (s29.t / that)
+                                                              :same-as s26.l)
+                                                :direction (s29.b / back)))
+                 :rel (s29.p / place-01
+                             :ARG0 s29.i
+                             :ARG2 (s29.b2 / between)))
+   :snt30 (s30.p / possible-01
+                 :ARG1 (s30.a / add-02
+                              :ARG0 (s30.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s30.m / move-01
+                                           :quant (s30.s / some))
+                              :ARG2 (s30.s2 / statue
+                                            :poss s30.i)
+                              :mod (s30.e / even))
+                 :mod (s30.i2 / in-fact))
+   :snt31 (s31.a / and
+                 :condition (s31.w / want-01
+                                   :ARG0 (s31.i / i
+                                                :same-as s2.i)
+                                   :ARG1 (s31.t / tail
+                                                :ARG1-of (s31.s2 / spin-01)))
+                 :op1 (s31.g / grab-01
+                             :ARG0 (s31.w2 / we)
+                             :ARG1 (s31.m / motor)
+                             :mode "imperative")
+                 :op2 (s31.p2 / put-01
+                              :ARG0 s31.w2
+                              :ARG1 (s31.d / dough
+                                           :purpose (s31.p / play-01)
+                                           :quant (s31.s / some))
+                              :ARG2 s31.m)
+                 :op3 (s31.s4 / stick-01
+                              :ARG0 s31.w2
+                              :ARG1 s31.m
+                              :ARG2 s31.d)
+                 :op4 (s31.s3 / spin-01
+                              :ARG0 s31.w2))
+   :snt32 (s32.a / and
+                 :op2 (s32.p / possible-01
+                             :ARG1 (s32.m / make-01
+                                          :ARG0 (s32.w / we)
+                                          :ARG1 (s32.c / circuit
+                                                       :ARG1-of (s32.h2 / have-degree-91
+                                                                        :ARG2 (s32.c2 / complicate-01
+                                                                                      :ARG1 s32.c)
+                                                                        :ARG3 (s32.m2 / more
+                                                                                      :quant (s32.s / slight)))))
+                             :condition (s32.h / have-03
+                                               :ARG0 (s32.y / you)
+                                               :ARG1 (s32.b / basic))))
+   :snt33 (s33.c / call-01
+                 :ARG0 (s33.w / we
+                              :same-as s32.w)
+                 :ARG1 (s33.t / this
+                              :same-as s32.c)
+                 :ARG2 (s33.c2 / circuit
+                               :mod (s33.s / sushi)
+                               :poss s33.w))
+   :snt34 (s34.p / popular-02
+                 :ARG1 (s34.i / it
+                              :same-as s32.c)
+                 :ARG2 (s34.k / kid)
+                 :degree (s34.v / very))
+   :snt35 (s35.p / plug-in-03
+                 :ARG0 (s35.i / i
+                              :same-as s2.i)
+                 :ARG1 (s35.p2 / power-01
+                               :ARG1 (s35.i2 / it
+                                             :same-as s32.c))
+                 :mod (s35.a / again))
+   :snt36 (s36.a / and
+                 :op2 (s36.p2 / possible-01
+                              :ARG1 (s36.s2 / start-01
+                                            :ARG0 (s36.i / i
+                                                         :same-as s2.i)
+                                            :ARG1 (s36.t / talk-01
+                                                         :ARG0 s36.i
+                                                         :ARG1 (s36.a2 / and
+                                                                       :op1 (s36.c / circuit
+                                                                                   :mod (s36.p / parallel))
+                                                                       :op2 (s36.c2 / circuit
+                                                                                    :mod (s36.s / series)))))
+                              :time (s36.n / now)))
+   :snt37 (s37.p2 / possible-01
+                  :ARG1 (s37.s / start-01
+                               :ARG0 (s37.i / i
+                                            :same-as s2.i)
+                               :ARG1 (s37.p / plug-in-03
+                                            :ARG0 s37.i
+                                            :ARG1 (s37.l / light
+                                                         :quant (s37.l2 / lot)))))
+   :snt38 (s38.a / and
+                 :op2 (s38.p / possible-01
+                             :ARG1 (s38.s / start-01
+                                          :ARG0 (s38.w / we
+                                                       :same-as s32.w)
+                                          :ARG1 (s38.t / talk-01
+                                                       :ARG0 s38.w
+                                                       :ARG1 (s38.t2 / thing
+                                                                     :example (s38.l / load
+                                                                                     :mod (s38.e / electricity)))))))
+   :snt39 (s39.e / event
+                 :condition (s39.a3 / and
+                                    :op1 (s39.p / put-01
+                                                :ARG0 (s39.i / i
+                                                             :same-as s2.i)
+                                                :ARG1 (s39.l / light
+                                                             :quant (s39.l2 / lot)))
+                                    :op2 (s39.a / add-02
+                                                :ARG0 s39.i
+                                                :ARG1 (s39.m / motor)
+                                                :time (s39.t / then)))
+                 :mod (s39.a2 / amr-unknown))
+   :snt40 (s40.d / dim-01
+                 :ARG1 (s40.i / it))
+   :snt41 (s41.p / possible-01
+                 :ARG1 (s41.a2 / and
+                               :op1 (s41.a / add-02
+                                           :ARG0 (s41.w / we
+                                                        :same-as s32.w)
+                                           :ARG1 (s41.m / microchip)
+                                           :mod (s41.e / even))
+                               :op2 (s41.h / have-03
+                                           :purpose (s41.i / input)
+                                           :ARG0 s41.w
+                                           :ARG1 (s41.t / this))
+                               :op3 (s41.c / create-01
+                                           :ARG0 s41.w
+                                           :ARG1 (s41.m3 / music
+                                                         :ARG1-of (s41.s / sound-02)
+                                                         :ARG1-of (s41.d / do-02
+                                                                         :ARG0 s41.w)
+                                                         :mode "expressive")))
+                 :rel (s41.m2 / music))
+   :snt42 (s42.p2 / possible-01
+                  :ARG1 (s42.d / do-02
+                               :ARG0 (s42.y / you)
+                               :ARG1 (s42.a / and
+                                            :op1 (s42.c / circuit
+                                                        :mod (s42.p / parallel))
+                                            :op2 (s42.c2 / circuit
+                                                         :mod (s42.s / series)))
+                               :beneficiary (s42.k / kid
+                                                   :ARG0-of (s42.u / use-01
+                                                                   :ARG1 (s42.t / this
+                                                                                :same-as s41.t)))))
+   :snt43 (s43.i / infer-01
+                 :ARG1 (s43.b / be-located-at-91
+                              :ARG1 (s43.t / this
+                                           :mod (s43.a / all))
+                              :ARG2 (s43.k / kitchen
+                                           :mod (s43.h / home
+                                                       :poss (s43.y / you
+                                                                    :same-as s8.i2)))))
+   :snt44 (s44.t / try-01
+                 :ARG0 (s44.w / we
+                              :same-as s32.w)
+                 :ARG1 (s44.t2 / turn-02
+                               :ARG0 s44.w
+                               :ARG1 (s44.i / it
+                                            :same-as s43.k)
+                               :ARG2 (s44.l / lab
+                                            :purpose (s44.e2 / engineer-01
+                                                             :ARG1 (s44.e / electricity))))
+                 :ARG1-of (s44.a / actual-02))
+   :snt45 (s45.a2 / and
+                  :op1 (s45.h / have-03
+                              :ARG0 (s45.w / we
+                                           :same-as s32.w)
+                              :ARG1 (s45.w2 / website))
+                  :op2 (s45.i / it
+                              :location s45.w2
+                              :mod (s45.a / all)
+                              :same-as s45.w2))
+   :snt46 (s46.r / recipe
+                 :domain (s46.t / this)
+                 :mod (s46.h / home))
+   :snt47 (s47.g / get-02
+                 :ARG0 (s47.w / we
+                              :same-as s32.w)
+                 :ARG1 (s47.v / video
+                              :quant (s47.s / some)))
+   :snt48 (s48.p / possible-01
+                 :ARG1 (s48.m / make-01
+                              :ARG0 (s48.y / you
+                                           :same-as s8.i2)
+                              :ARG1 (s48.t / they
+                                           :same-as s47.v)))
+   :snt49 (s49.a / and
+                 :op2 (s49.f / fun-01
+                             :degree (s49.r / really)
+                             :time (s49.s2 / since
+                                           :op1 (s49.p / put-up-11
+                                                       :purpose (s49.s / see-01
+                                                                       :ARG0 (s49.w / we
+                                                                                    :same-as s32.w)
+                                                                       :ARG1 (s49.l / location
+                                                                                    :ARG4-of (s49.g / go-02
+                                                                                                    :ARG0 (s49.t / this))))
+                                                       :ARG0 s49.w))))
+   :snt50 (s50.h / have-03
+                 :ARG0 (s50.w / we
+                              :same-as s32.w)
+                 :ARG1 (s50.a / and
+                              :op1 (s50.p / person
+                                          :ARG0-of (s50.h2 / have-rel-role-91
+                                                           :ARG1 s50.w
+                                                           :ARG2 (s50.m / mom))
+                                          :ARG0-of (s50.u / use-01
+                                                          :ARG1 (s50.t / they
+                                                                       :same-as s49.t)
+                                                          :accompanier (s50.p2 / person
+                                                                               :ARG0-of (s50.h3 / have-rel-role-91
+                                                                                                :ARG1 s50.p
+                                                                                                :ARG2 (s50.k / kid))))
+                                          :location (s50.s2 / state
+                                                            :name (s50.n / name
+                                                                         :op1 "Utah")))
+                              :op2 (s50.p3 / person
+                                           :ARG0-of (s50.r / research-01
+                                                           :ARG1 (s50.s / science))
+                                           :location (s50.c / country
+                                                            :name (s50.n2 / name
+                                                                          :op1 "U.K.")))
+                              :op3 (s50.p4 / person
+                                           :ARG0-of (s50.d / develop-02
+                                                           :ARG1 (s50.c2 / curriculum))
+                                           :location (s50.s3 / state
+                                                             :name (s50.n3 / name
+                                                                           :op1 "Hawaii")))))
+   :snt51 (s51.c / cause-01
+                 :ARG1 (s51.e / encourage-01
+                              :ARG0 (s51.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s51.y / you
+                                           :mod (s51.a / all)
+                                           :same-as s8.i2)
+                              :ARG2 (s51.a2 / and
+                                            :op1 (s51.g / grab-01
+                                                        :ARG0 s51.y
+                                                        :ARG1 (s51.c2 / child
+                                                                      :name (s51.n / name)
+                                                                      :quant (s51.s2 / some)
+                                                                      :ARG1-of (s51.p / play-01
+                                                                                      :ARG0 (s51.y2 / you))))
+                                            :op2 (s51.g2 / grab-01
+                                                         :ARG0 s51.y2
+                                                         :ARG1 (s51.s / salt
+                                                                      :quant (s51.s3 / some)))
+                                            :op3 (s51.g3 / grab-01
+                                                         :ARG0 s51.y2
+                                                         :ARG1 (s51.s6 / sugar
+                                                                       :quant (s51.s4 / some)))
+                                            :op4 (s51.s5 / start-01
+                                                         :ARG0 s51.y
+                                                         :ARG1 (s51.p2 / play-01
+                                                                       :ARG0 s51.y2)))))
+   :snt52 (s52.c2 / contrast-01
+                  :ARG1 (s52.t / think-01
+                               :ARG0 (s52.w / we
+                                            :same-as s32.w)
+                               :ARG1 (s52.k2 / kitchen
+                                             :poss s52.w
+                                             :same-as s43.k)
+                               :ARG2 (s52.o / or
+                                            :op1 (s52.l / lab
+                                                        :ARG0-of (s52.e2 / engineer-01
+                                                                         :ARG1 (s52.e / electricity)))
+                                            :op2 (s52.k / kid
+                                                        :mod (s52.l2 / little)))
+                               :mod (s52.u / usual)
+                               :polarity "-")
+                  :ARG2 (s52.p2 / possible-01
+                                :ARG1 (s52.r / recommend-01
+                                             :ARG1 (s52.t2 / think-01
+                                                           :ARG0 s52.w
+                                                           :ARG1 (s52.p / person
+                                                                        :ARG0-of (s52.d / design-01
+                                                                                        :ARG1 (s52.c / circuit)))))))
+   :snt53 (s53.h / have-06
+                 :ARG0 (s53.y / you)
+                 :ARG1 (s53.f / fun-01))
+   :snt54 (s54.t / thank-01
+                 :ARG1 (s54.y / you
+                              :same-as s2.i)))
+

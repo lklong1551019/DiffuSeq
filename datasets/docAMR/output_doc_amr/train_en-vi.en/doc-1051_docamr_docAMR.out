@@ -1,0 +1,979 @@
+# ::id doc-1051
+# ::doc_file doc-1051
+# ::tok http : / / www . ted . com / talks / kenneth_shinozuka_my_simple_invention_designed_to_keep_my_grandfather_safe< / url> <next_sent> What 's the fastest growing threat to Americans ' health ? <next_sent> Cancer ? Heart attacks ? Diabetes ? <next_sent> The answer is actually none of these ; <next_sent> it 's Alzheimer 's disease . <next_sent> Every 67 seconds , someone in the United States is diagnosed with Alzheimer 's . <next_sent> As the number of Alzheimer 's patients triples by the year 2050 , caring for them , as well as the rest of the aging population , will become an overwhelming societal challenge . <next_sent> My family has experienced firsthand the struggles of caring for an Alzheimer 's patient . <next_sent> Growing up in a family with three generations , I 've always been very close to my grandfather . <next_sent> When I was four years old , my grandfather and I were walking in a park in Japan when he suddenly got lost . <next_sent> It was one of the scariest moments I 've ever experienced in my life , and it was also the first instance that informed us that my grandfather had Alzheimer 's disease . <next_sent> Over the past 12 years , his condition got worse and worse , and his wandering in particular caused my family a lot of stress . <next_sent> My aunt , his primary caregiver , really struggled to stay awake at night to keep an eye on him , and even then often failed to catch him leaving the bed . <next_sent> I became really concerned about my aunt 's well - being as well as my grandfather 's safety . <next_sent> I searched extensively for a solution that could help my family 's problems , but could n't find one . <next_sent> Then , one night about two years ago , I was looking after my grandfather and I saw him stepping out of the bed . <next_sent> The moment his foot landed on the floor , I thought , why do n't I put a pressure sensor on the heel of his foot ? <next_sent> Once he stepped onto the floor and out of the bed , the pressure sensor would detect an increase in pressure caused by body weight and then wirelessly send an audible alert to the caregiver 's smartphone . <next_sent> That way , my aunt could sleep much better at night without having to worry about my grandfather 's wandering . <next_sent> So now I 'd like to perform a demonstration of this sock . <next_sent> Could I please have my sock model on the stage ? <next_sent> Great . <next_sent> So once the patient steps onto the floor -- -- an alert is sent to the caregiver 's smartphone . <next_sent> Thank you . <next_sent> Thank you , sock model . <next_sent> So this is a drawing of my preliminary design . <next_sent> My desire to create a sensor - based technology perhaps stemmed from my lifelong love for sensors and technology . <next_sent> When I was six years old , an elderly family friend fell down in the bathroom and suffered severe injuries . <next_sent> I became concerned about my own grandparents and decided to invent a smart bathroom system . <next_sent> Motion sensors would be installed inside the tiles of bathroom floors to detect the falls of elderly patients whenever they fell down in the bathroom . <next_sent> Since I was only six years old at the time and I had n't graduated from kindergarten yet , I did n't have the necessary resources and tools to translate my idea into reality , but nonetheless , my research experience really implanted in me a firm desire to use sensors to help the elderly people . <next_sent> I really believe that sensors can improve the quality of life of the elderly . <next_sent> When I laid out my plan , I realized that I faced three main challenges : first , creating a sensor ; second , designing a circuit ; and third , coding a smartphone app . <next_sent> This made me realize that my project was actually much harder to realize than I initially had thought it to be . <next_sent> First , I had to create a wearable sensor that was thin and flexible enough to be worn comfortably on the bottom of the patient 's foot . <next_sent> After extensive research and testing of different materials like rubber , which I realized was too thick to be worn snugly on the bottom of the foot , I decided to print a film sensor with electrically conductive pressure - sensitive ink particles . <next_sent> Once pressure is applied , the connectivity between the particles increases . <next_sent> Therefore , I could design a circuit that would measure pressure by measuring electrical resistance . <next_sent> Next , I had to design a wearable wireless circuit , but wireless signal transmission consumes lots of power and requires heavy , bulky batteries . <next_sent> Thankfully , I was able to find out about the Bluetooth low energy technology , which consumes very little power and can be driven by a coin - sized battery . <next_sent> This prevented the system from dying in the middle of the night . <next_sent> Lastly , I had to code a smartphone app that would essentially transform the care - giver 's smartphone into a remote monitor . <next_sent> For this , I had to expand upon my knowledge of coding with Java and XCode and I also had to learn about how to code for Bluetooth low energy devices by watching YouTube tutorials and reading various textbooks . <next_sent> Integrating these components , I was able to successfully create two prototypes , one in which the sensor is embedded inside a sock , and another that 's a re - attachable sensor assembly that can be adhered anywhere that makes contact with the bottom of the patient 's foot . <next_sent> I 've tested the device on my grandfather for about a year now , and it 's had a 100 percent success rate in detecting the over 900 known cases of his wandering . <next_sent> Last summer , I was able to beta test my device at several residential care facilities in California , and I 'm currently incorporating the feedback to further improve the device into a marketable product . <next_sent> Testing the device on a number of patients made me realize that I needed to invent solutions for people who did n't want to wear socks to sleep at night . <next_sent> So sensor data , collected on a vast number of patients , can be useful for improving patient care and also leading to a cure for the disease , possibly . <next_sent> For example , I 'm currently examining correlations between the frequency of a patient 's nightly wandering and his or her daily activities and diet . <next_sent> One thing I 'll never forget is when my device first caught my grandfather 's wandering out of bed at night . <next_sent> At that moment , I was really struck by the power of technology to change lives for the better . <next_sent> People living happily and healthfully -- that 's the world that I imagine . <next_sent> Thank you very much .
+(d / document
+   :snt1 (s1.u / url-entity
+               :polarity "-"
+               :value "i")
+   :snt2 (s2.t / threaten-01
+               :ARG0 (s2.a / amr-unknown)
+               :ARG1-of (s2.g / grow-01
+                              :manner (s2.f / fast-02
+                                            :ARG2-of (s2.h / have-degree-91
+                                                           :ARG1 s2.g
+                                                           :ARG3 (s2.m / more))))
+               :ARG2 (s2.h2 / health
+                            :poss (s2.p / person
+                                        :mod (s2.c / country
+                                                   :name (s2.n / name
+                                                               :op1 "America")))))
+   :snt3 (s3.a2 / and
+                :op1 (s3.d / disease
+                           :name (s3.n / name
+                                       :op1 "Cancer"))
+                :op2 (s3.h / heart-attack)
+                :op3 (s3.d2 / disease
+                            :name (s3.n2 / name
+                                         :op1 "Diabetes"))
+                :polarity (s3.a / amr-unknown))
+   :snt4 (s4.a2 / answer-01
+                :ARG1-of (s4.a / actual-02)
+                :ARG2 (s4.n / none
+                            :ARG1-of (s4.i / include-91
+                                           :ARG2 (s4.t / this))))
+   :snt5 (s5.d / disease
+               :name (s5.n / name
+                           :op1 "Alzheimer's"))
+   :snt6 (s6.d / diagnose-01
+               :ARG1 (s6.s2 / someone
+                            :frequency (s6.r / rate-entity-91
+                                             :ARG2 (s6.t / temporal-quantity
+                                                         :unit (s6.s / second)
+                                                         :quant "67")
+                                             :ARG1 "1")
+                            :location (s6.c / country
+                                            :name (s6.n / name
+                                                        :op1 "United"
+                                                        :op2 "States")))
+               :ARG2 (s6.d2 / disease
+                            :name (s6.n2 / name
+                                         :op1 "Alzheimer's")
+                            :same-as s5.d))
+   :snt7 (s7.b / become-01
+               :ARG1 (s7.a2 / and
+                            :op1 (s7.c / care-03
+                                       :ARG1 (s7.p / patient
+                                                   :mod (s7.d2 / disease
+                                                               :name (s7.n / name
+                                                                           :op1 "Alzheimer's")
+                                                               :same-as s5.d)
+                                                   :quant s7.n2))
+                            :op2 (s7.r / rest
+                                       :part-of (s7.p2 / population
+                                                       :ARG1-of (s7.a / age-01))))
+               :ARG2 (s7.c2 / challenge-01
+                            :ARG0 s7.c
+                            :ARG0-of (s7.o / overwhelm-01)
+                            :ARG1 (s7.s / society))
+               :condition (s7.t / triple-01
+                                :ARG1 (s7.n2 / number)
+                                :time (s7.b2 / by
+                                             :op1 (s7.d / date-entity
+                                                        :year "2050"))))
+   :snt8 (s8.e / experience-01
+               :ARG0 (s8.f / family
+                           :ARG1-of (s8.h / have-org-role-91
+                                          :ARG0 (s8.i / i)
+                                          :ARG2 (s8.m / member)))
+               :ARG1 (s8.s / struggle-02
+                           :ARG1 (s8.c / care-03
+                                       :ARG0 s8.f
+                                       :ARG1 (s8.p2 / person
+                                                    :ARG0-of (s8.h2 / have-rel-role-91
+                                                                    :ARG1 (s8.d / disease
+                                                                                :name (s8.n / name
+                                                                                            :op1 "Alzheimer's")
+                                                                                :same-as s5.d)
+                                                                    :ARG2 (s8.p / patient
+                                                                                :mod s8.d)))))
+               :mod (s8.f2 / first-hand))
+   :snt9 (s9.c / close-13
+               :ARG1 (s9.i / i
+                           :same-as s8.i)
+               :ARG2 (s9.p / person
+                           :ARG0-of (s9.h / have-rel-role-91
+                                          :ARG1 s9.i
+                                          :ARG2 (s9.g2 / grandfather)))
+               :degree (s9.v / very)
+               :time (s9.a / always)
+               :time (s9.g3 / grow-up-04
+                            :ARG1 s9.i
+                            :location (s9.f / family
+                                            :prep-with (s9.g / generation
+                                                             :quant "3")
+                                            :same-as s8.f)))
+   :snt10 (s10.w / walk-01
+                 :ARG0 (s10.a2 / and
+                               :op1 (s10.p2 / person
+                                            :ARG0-of (s10.h / have-rel-role-91
+                                                            :ARG1 (s10.i / i
+                                                                         :same-as s8.i
+                                                                         :same-as s9.p)
+                                                            :ARG2 (s10.g2 / grandfather)))
+                               :op2 s10.i)
+                 :ARG2 (s10.p / park
+                              :location (s10.c / country
+                                               :name (s10.n / name
+                                                            :op1 "Japan")))
+                 :time (s10.a / age-01
+                              :ARG1 s10.i
+                              :ARG2 (s10.t / temporal-quantity
+                                           :unit (s10.y / year)
+                                           :quant "4"))
+                 :time (s10.g / get-03
+                              :ARG1 s10.p2
+                              :ARG2 (s10.l / lost)
+                              :manner (s10.s / sudden)))
+   :snt11 (s11.a2 / and
+                  :op1 (s11.m / moment
+                              :ARG1-of (s11.i2 / include-91)
+                              :domain (s11.i5 / it
+                                              :same-as s10.g))
+                  :op2 (s11.i4 / instance
+                               :ARG0-of (s11.i3 / inform-01
+                                                :ARG1 (s11.w / we
+                                                             :same-as s8.f)
+                                                :ARG2 (s11.h / have-03
+                                                             :ARG0 (s11.p / person
+                                                                          :ARG0-of (s11.h3 / have-rel-role-91
+                                                                                           :ARG1 (s11.i / i
+                                                                                                        :same-as s8.i)
+                                                                                           :ARG2 (s11.g / grandfather))
+                                                                          :same-as s9.p)
+                                                             :ARG1 (s11.d / disease
+                                                                          :name (s11.n / name
+                                                                                       :op1 "Alzheimer's")
+                                                                          :same-as s5.d)))
+                               :domain s11.i5
+                               :mod (s11.a / also)
+                               :ord (s11.o / ordinal-entity
+                                           :value "1"))
+                  :rel (s11.h2 / have-degree-91
+                               :ARG2 (s11.s / scary-03
+                                            :ARG5 (s11.m2 / moment
+                                                          :ARG1-of (s11.e2 / experience-01
+                                                                           :ARG0 s11.i
+                                                                           :time (s11.e / ever)
+                                                                           :time (s11.l / life
+                                                                                        :poss s11.i))))
+                               :ARG3 (s11.m3 / most)))
+   :snt12 (s12.a / and
+                 :op1 (s12.w2 / worsen-01
+                              :ARG1 (s12.c2 / condition
+                                            :poss (s12.h / he
+                                                         :same-as s9.p)
+                                            :same-as s5.d))
+                 :op2 (s12.c / cause-01
+                             :ARG0 (s12.w / wander-01
+                                          :ARG0 s12.h
+                                          :mod (s12.p / particular))
+                             :ARG1 (s12.s / stress-02
+                                          :quant (s12.l / lot)
+                                          :ARG0 s12.w
+                                          :ARG1 (s12.f / family
+                                                       :poss (s12.i / i
+                                                                    :same-as s8.i)
+                                                       :same-as s8.f)))
+                 :time (s12.b / before
+                              :duration (s12.t / temporal-quantity
+                                               :unit (s12.y / year)
+                                               :quant "12")
+                              :op1 (s12.n / now)))
+   :snt13 (s13.a / and
+                 :op1 (s13.s2 / struggle-02
+                              :ARG0 (s13.p / person
+                                           :ARG0-of (s13.h2 / have-rel-role-91
+                                                            :ARG1 (s13.i / i
+                                                                         :same-as s8.i)
+                                                            :ARG2 (s13.a2 / aunt))
+                                           :domain (s13.p2 / person
+                                                           :ARG0-of (s13.c / care-03
+                                                                           :ARG1 s13.i
+                                                                           :mod (s13.p3 / primary))))
+                              :ARG1 (s13.s / stay-01
+                                           :purpose (s13.k / keep-02
+                                                           :ARG0 s13.p
+                                                           :ARG1 (s13.h / have-eye-on-05
+                                                                        :ARG0 s13.p
+                                                                        :ARG1 (s13.h3 / he
+                                                                                      :same-as s9.p)))
+                                           :ARG1 s13.p
+                                           :ARG3 (s13.a3 / awake)
+                                           :time (s13.d / date-entity
+                                                        :dayperiod (s13.n / night)))
+                              :degree (s13.r / really))
+                 :op2 (s13.f / fail-01
+                             :ARG1 s13.p
+                             :ARG2 (s13.c2 / catch-02
+                                           :ARG0 s13.h3
+                                           :ARG1 (s13.l / leave-11
+                                                        :ARG0 s13.h3
+                                                        :ARG1 (s13.b / bed)))
+                             :frequency (s13.o / often)
+                             :mod (s13.e / even)
+                             :time (s13.t / then)))
+   :snt14 (s14.b / become-01
+                 :ARG1 (s14.i / i
+                              :same-as s8.i)
+                 :ARG2 (s14.c / concern-01
+                              :ARG0 (s14.a / and
+                                           :op1 (s14.w / well-09
+                                                       :ARG1 (s14.p / person
+                                                                    :ARG0-of (s14.h / have-rel-role-91
+                                                                                    :ARG1 s14.i
+                                                                                    :ARG2 (s14.a2 / aunt))
+                                                                    :same-as s13.p))
+                                           :op2 (s14.s / safe-01
+                                                       :ARG1 (s14.p2 / person
+                                                                     :ARG0-of (s14.h2 / have-rel-role-91
+                                                                                      :ARG1 s14.i
+                                                                                      :ARG2 (s14.g / grandfather))
+                                                                     :same-as s9.p)))
+                              :ARG1 s14.i
+                              :degree (s14.r / really)))
+   :snt15 (s15.c / contrast-01
+                 :ARG1 (s15.s / search-01
+                              :ARG0 (s15.i / i
+                                           :same-as s8.i)
+                              :ARG1 (s15.s2 / solution
+                                            :ARG0-of (s15.h / help-01
+                                                            :ARG1 (s15.p3 / problem
+                                                                          :poss (s15.f / family
+                                                                                       :poss s15.i
+                                                                                       :same-as s8.f))
+                                                            :ARG1-of (s15.p / possible-01)))
+                              :ARG1-of (s15.e / extensive-03))
+                 :ARG2 (s15.p2 / possible-01
+                               :ARG1 (s15.f2 / find-01
+                                             :ARG0 s15.i
+                                             :ARG1 s15.s2)
+                               :polarity "-"))
+   :snt16 (s16.a2 / and
+                  :op1 (s16.l / look-after-07
+                              :ARG0 (s16.i / i
+                                           :same-as s8.i)
+                              :ARG1 (s16.p / person
+                                           :ARG0-of (s16.h / have-rel-role-91
+                                                           :ARG1 s16.i
+                                                           :ARG2 (s16.g / grandfather))
+                                           :same-as s9.p))
+                  :op2 (s16.s / see-01
+                              :ARG0 s16.i
+                              :ARG1 (s16.s2 / step-01
+                                            :ARG1 s16.p
+                                            :ARG2 (s16.o2 / out-06
+                                                          :ARG1 s16.p
+                                                          :ARG2 (s16.b / bed))))
+                  :rel (s16.n / night
+                              :mod (s16.o / one))
+                  :time (s16.b2 / before
+                                :quant (s16.a / about
+                                              :op1 (s16.t / temporal-quantity
+                                                          :unit (s16.y / year)
+                                                          :quant "2"))
+                                :op1 (s16.n2 / now))
+                  :time (s16.t2 / then))
+   :snt17 (s17.t2 / think-01
+                  :ARG0 (s17.i / i
+                               :same-as s8.i)
+                  :ARG1 (s17.c / cause-01
+                               :ARG0 (s17.a / amr-unknown)
+                               :ARG1 (s17.p2 / put-01
+                                             :ARG0 s17.i
+                                             :ARG1 (s17.t / thing
+                                                          :ARG0-of (s17.m / measure-01
+                                                                          :ARG1 (s17.p / pressure-01)))
+                                             :location (s17.h2 / heel
+                                                               :part-of (s17.f3 / foot
+                                                                                :part-of (s17.h / he
+                                                                                                :part (s17.f2 / foot)
+                                                                                                :same-as s9.p)
+                                                                                :same-as s17.f2))
+                                             :polarity "-"))
+                  :time (s17.l / land-01
+                               :ARG1 s17.f2
+                               :ARG4 (s17.f / floor)))
+   :snt18 (s18.a3 / and
+                  :op1 (s18.d2 / detect-01
+                               :ARG0 (s18.t2 / thing
+                                             :ARG0-of (s18.d / detect-01
+                                                             :ARG1 (s18.p4 / pressure-01))
+                                             :same-as s17.t)
+                               :ARG1 (s18.i / increase-01
+                                            :ARG1 (s18.p3 / pressure)
+                                            :ARG1-of (s18.c2 / cause-01
+                                                             :ARG0 (s18.w / weight
+                                                                          :poss (s18.b2 / body)))))
+                  :op2 (s18.s / send-03
+                              :ARG0 s18.t2
+                              :ARG1 (s18.a / alert-01
+                                           :ARG1-of (s18.h2 / hear-01
+                                                            :ARG1-of (s18.p2 / possible-01))
+                                           :ARG2 (s18.s2 / smartphone
+                                                         :poss (s18.p / person
+                                                                      :ARG0-of (s18.c / care-03))))
+                              :manner (s18.w2 / wire)
+                              :time (s18.t / then))
+                  :time (s18.s3 / step-01
+                                :ARG0 (s18.h / he
+                                             :same-as s9.p)
+                                :ARG2 (s18.a2 / and
+                                              :op1 (s18.o / onto
+                                                          :op1 (s18.f / floor
+                                                                      :same-as s17.f))
+                                              :op2 (s18.o2 / out-06
+                                                           :ARG1 s18.h
+                                                           :ARG2 (s18.b / bed
+                                                                        :same-as s16.b)))))
+   :snt19 (s19.p3 / possible-01
+                  :ARG1 (s19.s / sleep-01
+                               :ARG0 (s19.p / person
+                                            :ARG0-of (s19.h2 / have-rel-role-91
+                                                             :ARG1 (s19.i / i
+                                                                          :same-as s8.i)
+                                                             :ARG2 (s19.a / aunt))
+                                            :same-as s13.p)
+                               :ARG1-of (s19.h / have-degree-91
+                                               :ARG2 (s19.g / good-02
+                                                            :ARG1 s19.s)
+                                               :ARG3 (s19.m / more
+                                                            :quant (s19.m2 / much)))
+                               :manner (s19.o / obligate-01
+                                              :ARG1 s19.p
+                                              :ARG2 (s19.w3 / worry-02
+                                                            :ARG0 s19.p
+                                                            :ARG1 (s19.w / wander-01
+                                                                         :ARG0 (s19.p2 / person
+                                                                                       :ARG0-of (s19.h3 / have-rel-role-91
+                                                                                                        :ARG1 s19.i
+                                                                                                        :ARG2 (s19.g2 / grandfather))
+                                                                                       :same-as s9.p)))
+                                              :polarity "-")
+                               :time (s19.d / date-entity
+                                            :dayperiod (s19.n / night)))
+                  :manner (s19.w2 / way
+                                  :mod (s19.t / that)))
+   :snt20 (s20.c / cause-01
+                 :ARG1 (s20.l / like-02
+                              :ARG0 (s20.i / i
+                                           :same-as s8.i)
+                              :ARG1 (s20.p / perform-01
+                                           :ARG0 s20.i
+                                           :ARG1 (s20.d / demonstrate-01
+                                                        :ARG0 s20.i
+                                                        :ARG1 (s20.s / sock
+                                                                     :mod (s20.t / this))))
+                              :time (s20.n / now)))
+   :snt21 (s21.p / possible-01
+                 :ARG1 (s21.h / have-04
+                              :ARG0 (s21.i / i
+                                           :same-as s8.i)
+                              :ARG1 (s21.b / be-located-at-91
+                                           :ARG1 (s21.m / model-01
+                                                        :ARG0 s21.i
+                                                        :ARG1 (s21.s / sock))
+                                           :ARG2 (s21.s2 / stage)))
+                 :polarity (s21.a / amr-unknown)
+                 :polite "+")
+   :snt22 (s22.g / great)
+   :snt23 (s23.i / infer-01
+                 :ARG1 (s23.s / send-01
+                              :ARG1 (s23.a / alert-01)
+                              :ARG2 (s23.s2 / smartphone
+                                            :poss (s23.p2 / person
+                                                          :ARG0-of (s23.c / care-03
+                                                                          :ARG1 (s23.p / patient))
+                                                          :same-as s18.p))
+                              :time (s23.o / once
+                                           :op1 (s23.s3 / step-01
+                                                        :ARG1 s23.p
+                                                        :ARG2 (s23.o2 / onto
+                                                                      :op1 (s23.f / floor
+                                                                                  :same-as s17.f))))))
+   :snt24 (s24.t / thank-01
+                 :ARG1 (s24.y / you
+                              :same-as s8.i))
+   :snt25 (s25.t / thank-01
+                 :ARG1 (s25.p / person
+                              :ARG0-of (s25.m / model-01
+                                              :ARG1 (s25.s / sock)
+                                              :same-as s8.i)))
+   :snt26 (s26.c / cause-01
+                 :ARG1 (s26.d2 / draw-01
+                               :ARG1 (s26.d / design-01
+                                            :ARG0 (s26.i / i
+                                                         :same-as s8.i)
+                                            :mod (s26.p / preliminary))
+                               :domain (s26.t / this)))
+   :snt27 (s27.s2 / stem-01
+                  :ARG1 (s27.d / desire-01
+                               :ARG0 (s27.i / i
+                                            :same-as s8.i)
+                               :ARG1 (s27.c / create-01
+                                            :ARG0 s27.i
+                                            :ARG1 (s27.t / technology
+                                                         :ARG1-of (s27.b / base-02
+                                                                         :ARG2 (s27.s / sensor)))))
+                  :ARG1-of (s27.p / possible-01)
+                  :ARG2 (s27.l2 / love-01
+                                :ARG0 s27.i
+                                :ARG1 (s27.a / and
+                                             :op1 s27.s
+                                             :op2 (s27.t2 / technology))
+                                :duration (s27.l / live-01
+                                                 :ARG0 s27.i)))
+   :snt28 (s28.a2 / and
+                  :op1 (s28.f / fall-01
+                              :ARG1 (s28.p / person
+                                           :ARG0-of (s28.h / have-rel-role-91
+                                                           :ARG1 (s28.f2 / family)
+                                                           :ARG2 (s28.f3 / friend))
+                                           :mod (s28.e / elderly))
+                              :direction (s28.d / down)
+                              :location (s28.b / bathroom))
+                  :op2 (s28.i2 / injure-01
+                               :ARG1 s28.p
+                               :degree (s28.s / severe))
+                  :time (s28.a / age-01
+                               :ARG1 (s28.i / i
+                                            :same-as s8.i)
+                               :ARG2 (s28.t / temporal-quantity
+                                            :unit (s28.y / year)
+                                            :quant "6")))
+   :snt29 (s29.a / and
+                 :op1 (s29.b2 / become-01
+                              :ARG1 (s29.i / i
+                                           :same-as s8.i)
+                              :ARG2 (s29.c / concern-01
+                                           :ARG0 (s29.p / person
+                                                        :ARG0-of (s29.h / have-rel-role-91
+                                                                        :ARG1 s29.i
+                                                                        :ARG2 (s29.g / grandparent)))
+                                           :ARG1 s29.i))
+                 :op2 (s29.d / decide-01
+                             :ARG0 s29.i
+                             :ARG1 (s29.i2 / invent-01
+                                           :ARG0 s29.i
+                                           :ARG1 (s29.s2 / system
+                                                         :mod (s29.b / bathroom
+                                                                     :ARG1-of (s29.s / smart-06))))))
+   :snt30 (s30.i2 / install-01
+                  :purpose (s30.d2 / detect-01
+                                   :ARG0 (s30.t / thing
+                                                :ARG0-of (s30.d / detect-01
+                                                                :ARG1 (s30.m / move-01)))
+                                   :ARG1 (s30.f / fall-01
+                                                :ARG1 (s30.p / patient
+                                                             :mod (s30.e / elderly)))
+                                   :time (s30.f2 / fall-01
+                                                 :ARG1 s30.p
+                                                 :direction (s30.d3 / down)
+                                                 :location (s30.b / bathroom
+                                                                  :part s30.f3)
+                                                 :mod (s30.a / any)))
+                  :ARG1 s30.t
+                  :ARG2 (s30.i / inside
+                               :op1 (s30.t2 / tile
+                                            :part-of (s30.f3 / floor))))
+   :snt31 (s31.h2 / have-concession-91
+                  :ARG1 (s31.i3 / implant-01
+                                :ARG0 (s31.e2 / experience-01
+                                              :ARG0 (s31.i / i
+                                                           :same-as s8.i)
+                                              :ARG1 (s31.r3 / research-01
+                                                            :ARG0 s31.i))
+                                :ARG1 (s31.d / desire-01
+                                             :ARG0 s31.i
+                                             :ARG1 (s31.u / use-01
+                                                          :ARG0 s31.i
+                                                          :ARG1 (s31.r5 / robot)
+                                                          :ARG2 (s31.h3 / help-01
+                                                                        :ARG0 s31.i
+                                                                        :ARG1 (s31.p / person
+                                                                                     :mod (s31.e / elderly))))
+                                             :ARG1-of (s31.f / firm-03))
+                                :ARG1-of (s31.r2 / real-04)
+                                :ARG2 s31.i)
+                  :ARG2 (s31.h / have-03
+                               :ARG0 s31.i
+                               :ARG1 (s31.a3 / and
+                                             :ARG1-of (s31.n / need-01
+                                                             :purpose (s31.t4 / translate-01
+                                                                              :ARG0 s31.i
+                                                                              :ARG1 (s31.i2 / idea
+                                                                                            :poss s31.i)
+                                                                              :ARG2 (s31.r / real-04)))
+                                             :op1 (s31.r4 / resource)
+                                             :op2 (s31.t3 / tool))
+                               :ARG1-of (s31.c / cause-01
+                                               :ARG0 (s31.a2 / and
+                                                             :op1 (s31.a / age-01
+                                                                         :ARG1 s31.i
+                                                                         :ARG2 (s31.t / temporal-quantity
+                                                                                      :unit (s31.y / year)
+                                                                                      :quant "6")
+                                                                         :mod (s31.o / only)
+                                                                         :time (s31.t2 / time)
+                                                                         :ARG2 "6")
+                                                             :op2 (s31.g / graduate-01
+                                                                         :ARG1 s31.i
+                                                                         :ARG2 (s31.k / kindergarten)
+                                                                         :time (s31.y2 / yet)
+                                                                         :polarity "-")))
+                               :polarity "-"))
+   :snt32 (s32.b / believe-01
+                 :ARG0 (s32.i / i
+                              :same-as s8.i)
+                 :ARG1 (s32.p2 / possible-01
+                               :ARG1 (s32.i2 / improve-01
+                                             :ARG0 (s32.r2 / robot)
+                                             :ARG1 (s32.q / quality
+                                                          :poss (s32.l / live-01
+                                                                       :ARG0 (s32.p / person
+                                                                                    :mod (s32.e / elderly))))))
+                 :ARG1-of (s32.r / real-04))
+   :snt33 (s33.r / realize-01
+                 :ARG0 (s33.i / i
+                              :same-as s8.i)
+                 :ARG1 (s33.f / face-01
+                              :ARG0 s33.i
+                              :ARG1 (s33.c / challenge-01
+                                           :ARG1 s33.i
+                                           :ARG2 (s33.a / and
+                                                        :op1 (s33.c3 / create-01
+                                                                     :ARG0 s33.i
+                                                                     :ARG1 (s33.s / sensor)
+                                                                     :li "1")
+                                                        :op2 (s33.d / design-01
+                                                                    :ARG0 s33.i
+                                                                    :ARG1 (s33.c2 / circuit)
+                                                                    :li "2")
+                                                        :op3 (s33.d2 / develop-02
+                                                                     :ARG0 s33.i
+                                                                     :ARG1 (s33.a2 / app
+                                                                                   :mod (s33.s2 / smartphone))
+                                                                     :li "3"))
+                                           :mod (s33.m / main)
+                                           :quant "3"))
+                 :time (s33.l / lay-01
+                              :ARG0 s33.i
+                              :ARG1 (s33.p / plan
+                                           :poss s33.i)))
+   :snt34 (s34.h2 / have-degree-91
+                  :ARG1 (s34.r2 / realize-01
+                                :ARG0 (s34.i / i
+                                             :same-as s8.i)
+                                :ARG1 (s34.p / project
+                                             :poss s34.i
+                                             :same-as s33.p))
+                  :ARG1-of (s34.r / realize-01
+                                  :ARG0 s34.i)
+                  :ARG2 (s34.h / hard-02
+                               :ARG1 s34.r2
+                               :ARG1-of (s34.a / actual-02))
+                  :ARG3 (s34.m / more
+                               :quant (s34.m2 / much))
+                  :ARG4 (s34.t / think-01
+                               :ARG0 s34.i
+                               :ARG1 s34.p
+                               :time (s34.i2 / initial))
+                  :rel (s34.t2 / this
+                               :same-as s33.f))
+   :snt35 (s35.o / obligate-01
+                 :ARG1 (s35.i / i
+                              :same-as s8.i)
+                 :ARG2 (s35.c2 / create-01
+                               :ARG0 s35.i
+                               :ARG1 (s35.s / sensor
+                                            :ARG1-of (s35.w / wear-01
+                                                            :ARG1-of (s35.p3 / possible-01))
+                                            :ARG1-of (s35.h / have-degree-91
+                                                            :ARG2 (s35.a / and
+                                                                         :op1 (s35.t / thin-03
+                                                                                     :ARG1 s35.s)
+                                                                         :op2 (s35.f / flexible-03
+                                                                                     :ARG1 s35.s))
+                                                            :ARG3 (s35.e / enough)
+                                                            :ARG6 (s35.w2 / wear-01
+                                                                          :ARG0-of (s35.c / comfortable-02)
+                                                                          :ARG1 s35.s
+                                                                          :location (s35.b / bottom
+                                                                                           :part-of (s35.f2 / foot
+                                                                                                            :part-of (s35.p2 / person
+                                                                                                                             :ARG0-of (s35.h2 / have-rel-role-91
+                                                                                                                                              :ARG2 (s35.p / patient)))))))))
+                 :li "1")
+   :snt36 (s36.d / decide-01
+                 :ARG0 (s36.i / i
+                              :part (s36.b / bottom
+                                           :part-of (s36.f2 / foot))
+                              :same-as s8.i)
+                 :ARG1 (s36.p4 / print-01
+                               :ARG0 s36.i
+                               :ARG1 (s36.t3 / thing
+                                             :ARG0-of (s36.d2 / detect-01
+                                                              :ARG1 (s36.f / film))
+                                             :consist-of (s36.p / particle
+                                                                :ARG0-of (s36.s / sensitive-03
+                                                                                :ARG1 (s36.p3 / pressure))
+                                                                :ARG1-of (s36.c / conduct-03
+                                                                                :mod (s36.e / electronic))
+                                                                :consist-of (s36.i2 / ink))))
+                 :time (s36.a / after
+                              :op1 (s36.a2 / and
+                                           :ARG1-of (s36.e2 / extensive-03)
+                                           :op1 (s36.r2 / research-01
+                                                        :ARG0 s36.i
+                                                        :ARG1 (s36.m / material
+                                                                     :ARG1-of (s36.d3 / differ-02)
+                                                                     :example (s36.r3 / rubber
+                                                                                      :ARG1-of (s36.h / have-degree-91
+                                                                                                      :ARG1-of (s36.r / realize-01)
+                                                                                                      :ARG2 (s36.t2 / thick-03
+                                                                                                                    :ARG1 s36.r3)
+                                                                                                      :ARG3 (s36.t4 / too)
+                                                                                                      :ARG6 (s36.p2 / possible-01
+                                                                                                                    :ARG1 (s36.w / wear-01
+                                                                                                                                 :ARG0 s36.i
+                                                                                                                                 :ARG1 s36.r3
+                                                                                                                                 :location s36.b
+                                                                                                                                 :manner (s36.s2 / snugly)))))))
+                                           :op2 (s36.t / test-01
+                                                       :ARG1 s36.m))))
+   :snt37 (s37.i / increase-01
+                 :ARG1 (s37.c / connect-01
+                              :ARG1 (s37.p / particle
+                                           :same-as s36.p))
+                 :time (s37.a / apply-02
+                              :ARG1 (s37.p2 / pressure)))
+   :snt38 (s38.c / cause-01
+                 :ARG1 (s38.p / possible-01
+                              :ARG1 (s38.d / design-01
+                                           :ARG0 (s38.i / i
+                                                        :same-as s8.i)
+                                           :ARG1 (s38.c2 / circuit
+                                                         :ARG0-of (s38.m / measure-01
+                                                                         :ARG1 (s38.p2 / pressure)
+                                                                         :manner (s38.m2 / measure-01
+                                                                                         :ARG1 (s38.r / resist-01
+                                                                                                      :mod (s38.e / electricity))))))))
+   :snt39 (s39.c3 / contrast-01
+                  :ARG1 (s39.o / obligate-01
+                               :ARG1 (s39.i / i
+                                            :same-as s8.i)
+                               :ARG2 (s39.d / design-01
+                                            :ARG0 s39.i
+                                            :ARG1 (s39.c / circuit
+                                                         :ARG0-of (s39.w / wear-01
+                                                                         :ARG1-of (s39.p / possible-01))
+                                                         :mod (s39.w2 / wire)))
+                               :time (s39.n / next))
+                  :ARG2 (s39.a / and
+                               :op1 (s39.c2 / consume-01
+                                            :ARG0 (s39.t / transmit-01
+                                                         :ARG1 (s39.s / signal
+                                                                      :mod s39.w2))
+                                            :ARG1 (s39.p2 / power
+                                                          :quant (s39.l / lot)))
+                               :op2 (s39.r / require-01
+                                           :ARG0 s39.t
+                                           :ARG1 (s39.b / battery
+                                                        :mod (s39.b2 / bulky)
+                                                        :mod (s39.h / heavy)))))
+   :snt40 (s40.p / possible-01
+                 :ARG1 (s40.f / find-out-03
+                              :ARG0 (s40.i / i
+                                           :same-as s8.i)
+                              :ARG1 (s40.t / technology
+                                           :ARG0-of (s40.c2 / consume-01
+                                                            :ARG1 (s40.p3 / power
+                                                                          :quant (s40.l / little
+                                                                                        :degree (s40.v / very))))
+                                           :ARG1-of (s40.d / drive-02
+                                                           :ARG0 (s40.b / battery
+                                                                        :ARG1-of (s40.s / size-01
+                                                                                        :ARG2 (s40.c / coin)))
+                                                           :ARG1-of (s40.p2 / possible-01))
+                                           :mod (s40.e / energy
+                                                       :ARG1-of (s40.l2 / low-04))
+                                           :mod (s40.s2 / string-entity
+                                                        :value "Bluetooth")))
+                 :ARG2-of (s40.t2 / thankful-02))
+   :snt41 (s41.p / prevent-01
+                 :ARG1 (s41.d / die-01
+                              :ARG1 (s41.s / system)
+                              :time (s41.m / middle
+                                           :part-of (s41.n / night)))
+                 :ARG3 (s41.t / this))
+   :snt42 (s42.o / obligate-01
+                 :ARG2 (s42.c2 / code-01
+                               :ARG0 (s42.i / i
+                                            :same-as s8.i)
+                               :ARG1 (s42.a / app
+                                            :ARG0-of (s42.t / transform-01
+                                                            :ARG1 (s42.s2 / smartphone
+                                                                          :poss (s42.p / person
+                                                                                       :ARG0-of (s42.g / give-01
+                                                                                                       :ARG1 (s42.c / care-03))
+                                                                                       :same-as s18.p))
+                                                            :ARG2 (s42.m / monitor-01
+                                                                         :mod (s42.r / remote))
+                                                            :mod (s42.e / essential))
+                                            :mod (s42.s / smartphone)))
+                 :li "-1")
+   :snt43 (s43.o / obligate-01
+                 :purpose (s43.t3 / this
+                                  :same-as s42.c2)
+                 :ARG1 s43.t3
+                 :ARG2 (s43.a4 / and
+                               :op1 (s43.e2 / expand-01
+                                            :ARG0 (s43.i / i
+                                                         :same-as s8.i)
+                                            :ARG1 (s43.k / know-01
+                                                         :ARG0 s43.i
+                                                         :ARG1 (s43.c / code-01
+                                                                      :instrument (s43.a3 / and
+                                                                                          :op1 (s43.l / language
+                                                                                                      :name (s43.n / name
+                                                                                                                   :op1 "Java"))
+                                                                                          :op2 (s43.p / product
+                                                                                                      :name (s43.n2 / name
+                                                                                                                    :op1 "XCode")))))
+                                            :mod (s43.u / upon))
+                               :op2 (s43.l2 / learn-01
+                                            :ARG0 s43.i
+                                            :ARG1 (s43.t2 / thing
+                                                          :manner-of (s43.c2 / code-01
+                                                                             :ARG0 s43.i
+                                                                             :ARG1 (s43.d / device
+                                                                                          :name (s43.n3 / name
+                                                                                                        :op1 "Bluetooth")
+                                                                                          :mod (s43.e / energy
+                                                                                                      :ARG1-of (s43.l4 / low-04)))
+                                                                             :manner (s43.a2 / amr-unknown)))
+                                            :manner (s43.a5 / and
+                                                            :op1 (s43.w / watch-01
+                                                                        :ARG0 s43.i
+                                                                        :ARG1 (s43.l3 / lesson
+                                                                                      :medium (s43.p2 / publication
+                                                                                                      :name (s43.n4 / name
+                                                                                                                    :op1 "YouTube"))))
+                                                            :op2 (s43.r / read-01
+                                                                        :ARG0 s43.i
+                                                                        :ARG1 (s43.t / textbook
+                                                                                     :mod (s43.v / various))))
+                                            :mod (s43.a / also))))
+   :snt44 (s44.p3 / possible-01
+                  :ARG1 (s44.c4 / create-01
+                                :ARG0 (s44.i / i
+                                             :same-as s8.i)
+                                :ARG1 (s44.c / candidate
+                                             :example (s44.a2 / and
+                                                              :op1 (s44.o / one
+                                                                          :location-of (s44.e / embed-01
+                                                                                              :ARG1 (s44.s / sensor)
+                                                                                              :ARG2 (s44.i2 / inside
+                                                                                                            :op1 (s44.s3 / sock))))
+                                                              :op2 (s44.a3 / another
+                                                                           :mod (s44.t / thing
+                                                                                       :ARG0-of (s44.c3 / contact-01
+                                                                                                        :ARG1 (s44.b / bottom
+                                                                                                                     :part-of (s44.f / foot
+                                                                                                                                     :part-of (s44.p2 / person
+                                                                                                                                                      :ARG0-of (s44.h / have-rel-role-91
+                                                                                                                                                                      :ARG2 (s44.p / patient))))))
+                                                                                       :ARG1-of (s44.a6 / attach-01)
+                                                                                       :ARG1-of (s44.a / adhere-02
+                                                                                                       :ARG1-of (s44.p4 / possible-01)
+                                                                                                       :location (s44.a4 / anywhere))
+                                                                                       :ARG2-of (s44.a5 / assemble-02
+                                                                                                        :ARG1 (s44.s2 / sensor)))))
+                                             :quant "2")
+                                :ARG1-of (s44.s4 / succeed-01
+                                                 :ARG0 s44.i))
+                  :manner (s44.i3 / integrate-01
+                                  :ARG0 s44.i
+                                  :ARG1 (s44.c2 / component
+                                                :mod (s44.t2 / this))))
+   :snt45 (s45.a2 / and
+                  :op1 (s45.t2 / test-01
+                               :ARG0 (s45.i / i
+                                            :same-as s8.i)
+                               :ARG1 (s45.d2 / device
+                                             :same-as s20.s)
+                               :duration (s45.a / about
+                                                :op1 (s45.t / temporal-quantity
+                                                            :unit (s45.y / year)
+                                                            :quant "1"))
+                               :prep-on (s45.p2 / person
+                                                :ARG0-of (s45.h / have-rel-role-91
+                                                                :ARG1 s45.i
+                                                                :ARG2 (s45.g / grandfather))
+                                                :same-as s9.p))
+                  :op2 (s45.r / rate
+                              :mod (s45.s / succeed-01
+                                          :ARG1 (s45.d / detect-01
+                                                       :ARG0 s45.d2
+                                                       :ARG1 (s45.c / case-04
+                                                                    :quant (s45.o / over
+                                                                                  :op1 "900")
+                                                                    :ARG1 (s45.w / wander-01
+                                                                                 :ARG0 s45.p2
+                                                                                 :same-as s19.w)
+                                                                    :ARG1-of (s45.k / know-01))))
+                              :mod (s45.p / percentage-entity
+                                          :value "100")))
+   :snt46 (s46.a / and
+                 :op1 (s46.p / possible-01
+                             :ARG1 (s46.t / test-01
+                                          :ARG0 (s46.i / i
+                                                       :same-as s8.i)
+                                          :ARG1 (s46.d2 / device
+                                                        :poss s46.i
+                                                        :same-as s20.s)
+                                          :location (s46.f / facility
+                                                           :quant (s46.s / several)
+                                                           :location (s46.s2 / state
+                                                                             :name (s46.n / name
+                                                                                          :op1 "California"))
+                                                           :mod (s46.c / care-03)
+                                                           :mod (s46.r / residential)))
+                             :time (s46.d / date-entity
+                                          :mod (s46.l / last)
+                                          :season (s46.s3 / summer)))
+                 :op2 (s46.i3 / incorporate-02
+                              :purpose (s46.i2 / improve-01
+                                               :ARG0 s46.i
+                                               :ARG1 s46.d2
+                                               :ARG4 (s46.p3 / product
+                                                             :ARG1-of (s46.m / market-01
+                                                                             :ARG1-of (s46.p2 / possible-01)))
+                                               :degree (s46.f3 / further))
+                              :ARG0 s46.i
+                              :ARG1 (s46.f2 / feedback)
+                              :time (s46.c2 / current)))
+   :snt47 (s47.m / make-02
+                 :ARG0 (s47.t / test-01
+                              :ARG0 (s47.i / i
+                                           :same-as s8.i)
+                              :ARG1 (s47.d2 / device
+                                            :same-as s20.s)
+                              :beneficiary (s47.p / patient
+                                                  :quant (s47.n3 / number)))
+                 :ARG1 (s47.r / realize-01
+                              :ARG0 s47.i
+                              :ARG1 (s47.n / need-01
+                                           :ARG0 s47.i
+                                           :ARG1 (s47.i2 / invent-01
+                                                         :ARG0 s47.i
+                                                         :ARG1 (s47.t2 / thing
+                                                                       :ARG2-of (s47.s3 / solve-01
+                                                                                        :ARG1 (s47.p2 / person
+                                                                                                      :ARG0-of (s47.w / want-01
+                                                                                                                      :ARG1 (s47.w2 / wear-01
+                                                                                                                                    :ARG0 s47.p2
+                                                                                                                                    :ARG1 (s47.s2 / sock)
+                                                                                                                                    :time (s47.s / sleep-01
+                                                                                                                                                 :ARG0 s47.p2
+                                                                                                                                                 :time (s47.d / date-entity
+                                                                                                                                                              :dayperiod (s47.n2 / night))))
+                                                                                                                      :polarity "-"))))))))
+   :snt48 (s48.i2 / infer-01
+                  :ARG1 (s48.p2 / possible-01
+                                :ARG1 (s48.u / useful-05
+                                             :ARG1 (s48.d / data
+                                                          :ARG1-of (s48.c2 / collect-01
+                                                                           :topic (s48.p / patient
+                                                                                         :quant (s48.n / number
+                                                                                                       :mod (s48.v / vast))))
+                                                          :source (s48.s / sensor))
+                                             :ARG2 (s48.a2 / and
+                                                           :op1 (s48.i / improve-01
+                                                                       :ARG1 (s48.c / care-03
+                                                                                    :ARG1 s48.p))
+                                                           :op2 (s48.l / lead-03
+                                                                       :ARG0 s48.d
+                                                                       :ARG2 (s48.c3 / cure-01
+                                                                                     :ARG1-of (s48.p3 / possible-01)
+                                                                                     :ARG2 (s48.d2 / disease
+                                                                                                   :same-as s5.d))
+                                                                       :mod (s48.a / also))))))
+   :snt49 (s49.e2 / exemplify-01
+                  :ARG0 (s49.e / examine-01
+                               :ARG0 (s49.i / i
+                                            :same-as s8.i)
+                               :ARG1 (s49.c / correlate-01
+                                            :ARG1 (s49.f / frequency
+                                                         :frequency-of (s49.w / wander-01
+                                                                              :ARG0 (s49.p2 / person
+                                                                                            :ARG0-of (s49.h / have-rel-role-91
+                                                                                                            :ARG2 (s49.p / patient)))
+                                                                              :frequency (s49.r / rate-entity-91
+                                                                                                :ARG3 (s49.t / temporal-quantity
+                                                                                                             :unit (s49.d / day)
+                                                                                                             :quant "1"))))
+                                            :ARG2 (s49.a2 / and
+                                                          :op1 (s49.a / activity-06
+                                                                      :ARG0 s49.p2
+                                                                      :frequency s49.r)
+                                                          :op2 (s49.d3 / diet
+                                                                       :frequency (s49.r2 / rate-entity-91
+                                                                                          :ARG2 (s49.t2 / temporal-quantity
+                                                                                                        :unit (s49.d2 / day)
+                                                                                                        :quant "1"))
+                                                                       :poss s49.p2)))
+                               :time (s49.c2 / current)))
+   :snt50 (s50.f / forget-01
+                 :ARG0 (s50.i / i
+                              :same-as s8.i)
+                 :ARG1 (s50.t / thing
+                              :quant (s50.o / one)
+                              :domain (s50.c / catch-02
+                                             :ARG0 (s50.d2 / device
+                                                           :poss s50.i
+                                                           :same-as s20.s)
+                                             :ARG1 (s50.w / wander-01
+                                                          :ARG0 (s50.p / person
+                                                                       :ARG0-of (s50.h / have-rel-role-91
+                                                                                       :ARG1 s50.i
+                                                                                       :ARG2 (s50.g / grandfather))
+                                                                       :same-as s9.p)
+                                                          :ARG1 (s50.o3 / out-06
+                                                                        :ARG1 s50.p
+                                                                        :ARG2 (s50.b / bed))
+                                                          :time (s50.d / date-entity
+                                                                       :dayperiod (s50.n / night)))
+                                             :ord (s50.o2 / ordinal-entity
+                                                          :value "1")))
+                 :time (s50.e / ever)
+                 :polarity "-")
+   :snt51 (s51.s / strike-01
+                 :ARG1 (s51.i / i
+                              :same-as s8.i)
+                 :ARG2 (s51.p / power-01
+                              :purpose (s51.c / change-01
+                                              :ARG0 (s51.t / technology)
+                                              :ARG1 (s51.l / life)
+                                              :manner (s51.g / good-02
+                                                             :ARG1 s51.l
+                                                             :ARG2-of (s51.h / have-degree-91
+                                                                             :ARG1 s51.l
+                                                                             :ARG3 (s51.m2 / more))))
+                              :ARG0 s51.t)
+                 :degree (s51.r / really)
+                 :time (s51.m / moment
+                              :mod (s51.t2 / that)))
+   :snt52 (s52.i2 / imagine-01
+                  :ARG0 (s52.i / i
+                               :same-as s8.i)
+                  :ARG1 (s52.w / world
+                               :domain (s52.l / live-01
+                                              :ARG0 (s52.p / person)
+                                              :ARG1-of (s52.h / happy-01)
+                                              :mod (s52.h2 / healthy))))
+   :snt53 (s53.t / thank-01
+                 :ARG0 (s53.i / i)
+                 :ARG1 (s53.y / you)
+                 :mod (s53.m / much
+                             :degree (s53.v / very))))
+

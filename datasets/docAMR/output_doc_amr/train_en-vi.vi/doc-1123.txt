@@ -1,0 +1,147 @@
+http://www.ted.com/talks/lorrie_faith_cranor_what_s_wrong_with_your_pa_w0rd</url>
+Tôi là một giáo sư kỹ thuật và khoa học máy tính tại Carnegie Mello, và nghiên cứu của tôi tập trung vào bảo mật và quyền riêng tư hữu dụng, do đó các bạn của tôi thích đưa tôi các ví dụ về sự bức bối với hệ thống máy tính, đặc biệt là các mối ái ngại liên quan đến quyền riêng tư và bảo mật không hữu dụng.
+Do đó mật khẩu là thứ mà tôi nghe nhiều nhất.
+Rất nhiều người đau đầu với các mật khẩu, và nó tệ đến mức khi bạn có một mật khẩu thật sự tốt mà bạn có thể nhớ nhưng không ai có thể đoán được.
+Nhưng bạn sẽ làm gì khi bạn có nhiều tài khoản trên hàng trăm các hệ thống khác nhau và bạn phải có một mật khẩu riêng cho mỗi hệ thống?
+Chuyện đó chẳng dễ dàng gì.
+Tại Carnegie Mellon, họ đã làm việc đó, thực ra nó khá dễ để ta nhớ được các mật khẩu ấy.
+Yêu cầu của mật khẩu cho đến năm 2009 chỉ là bạn cần phải có 1 mật khẩu với ít nhất một ký tự.
+Khá dễ dàng ha.
+Nhưng sau đó họ thay đổi mọi thứ, Và đến cuối năm 2009, họ thông báo rằng chúng ta sẽ có một chính sách mới, và chính sách mới này yêu cầu mật khẩu phải có độ dài ít nhất 8 ký tự , với một ký tự hoa, một ký tự thường, một con số, một biểu tượng, bạn không thể sử dụng một ký tự quá 3 lần, và nó không được có mặt trong từ điển.
+Khi họ thực thi chính sách mới này, rất nhiều người, đồng nghiệp và bạn bè tôi, đến với tôi và nói: "Chà, giờ thì đúng thật là bất tiện.
+Mắc gì họ lại làm vậy với chúng ta, và sao bạn không ngăn họ lại?"
+Và tôi đáp, "Ờ thì, các bạn biết gì không?
+Họ đã không hỏi tôi."
+Nhưng tôi đã tò mò, và quyết định đến hỏi người phụ trách hệ thống máy tính của chúng tôi và tìm xem điều gì dẫn đến việc giới thiệu chính sách mới này, và họ nói rằng trường tôi đã tham gia vào một liên minh các trường đại học, và một điều cần thiết đối với thành viên là chúng tôi phải có những mật khẩu mạnh hơn để thoả mãn với một vài ràng buộc mới, đó là các mật khẩu của chúng tôi phải có nhiều biến ngẫu nhiên - entropy.
+Entropy là một khái niệm phức tạp, nhưng về cơ bản, nó đo độ mạnh mật khẩu.
+Nhưng vấn đề là, thực sự không có một thước đo entropy chuẩn nào cả.
+Viện Công Nghệ và Tiêu Chuẩn Quốc Gia có một bộ đường lối chỉ đạo gồm một số qui luật chung để đo độ entropy, nhưng họ lại không có gì cặn kẽ hơn, và nguyên nhân họ chỉ có qui tắc chung hoá ra là họ chẳng có bất cứ dữ liệu tốt nào về mật khẩu cả.
+Thật ra, báo cáo của họ viết rằng, "Thật không may, chúng tôi không có nhiều dữ liệu về mật khẩu mà người dùng chọn theo những luật lệ nhất định.
+NIST mong nhận được thêm nhiều dữ liệu về sự lựa đó hơn trong thực tế, nhưng điều dễ hiểu là các nhà quản trị hệ thống lại miễn cưỡng tiết lộ dữ liệu mật khẩu cho người khác."
+Đây là một bài toán, nhưng nhóm nghiên cứu của tôi đã xem nó như một cơ hội.
+Chúng tôi nhủ, "Được thôi, dữ liệu mật khẩu an toàn đúng là cần thiết đấy."
+Có thể chúng tôi thu thập một vài bộ dữ liệu mật khẩu tốt và thậm chí tối tân hoá cái tiên tiến nữa.
+Nên điều đầu tiên chúng tôi làm, là lấy một túi kẹo cây rồi đi vòng quanh trường để nói chuyện với sinh viên, cán bộ giảng dạy và nhân viên, hỏi họ thông tin về mật khẩu của họ.
+Chúng tôi đã không yêu cầu, "Đưa mật khẩu của anh/chị đây."
+Nó dài bao nhiêu?
+Có chữ số không?
+Có ký tự đặc biệt không?
+Và bạn có thấy phiền khi tạo mới mật khẩu tuần trước không?
+Chúng tôi đã thu thập kết quả từ 470 sinh viên, cán bộ khoa và nhân viên, và y như rằng, chúng tôi thấy chính sách mới đúng là rất lằng nhằng. Nhưng chúng tôi cũng để ý rằng mọi người nói họ cảm thấy an toàn hơn với loại mật khẩu mới này.
+Chúng tôi phát hiện đa số biết họ không nên viết ra mật khẩu của họ, và chỉ 13% trong số đó làm như vậy, nhưng tiếc thay, 80% tổng cộng thừa nhận đã đang sử dụng lại mật khẩu.
+Điều này thật sự còn nguy hiểm hơn việc viết ra mật khẩu của mình, bởi vì nó làm bạn dễ bị tấn công hơn.
+Vì thế nếu bạn bị bắt buộc, hãy viết mật khẩu của bạn ra, nhưng đừng tái sử dụng chúng.
+Chúng tôi cũng khám phá vài điều thú vị về kí tự đặc biệt mọi người sử dụng trong mật khẩu.
+Do CMU cho phép cả thảy 32 kí tự, nhưng như bạn thấy đó, chỉ có số lượng nhỏ là mọi người đang sử dụng, vì thế chúng ta thực sự không tận dụng được độ mạnh từ kí tự đặc biệt trong mật khẩu của chúng ta.
+Vì vậy đây quả là một nghiên cứu thú vị, và chúng tôi có dữ liệu từ 470 người, nhưng theo kiểu này, là không có nhiều dữ liệu password. Thế nên chúng tôi đã tìm quanh ở đâu có thể tìm thêm dữ liệu mật khẩu?
+Và hoá ra là có rất nhiều người suốt ngày tranh thủ trộm mật khẩu, rồi họ thường đăng những mật khẩu này lên mạng.
+Vì thế chúng tôi đã có thể truy cập được đến vài bộ mật khẩu bị đánh cắp nói trên.
+Đây vẫn chưa là mô hình lý tưởng cho nghiên cứu, bởi nó không hoàn toàn rõ ràng về nguồn của tất cả mật khẩu này, hoặc là chính sách gì được áp dụng lên nó khi người ta tạo ra chúng.
+Nên chúng tôi muốn tìm thêm một vài nguồn trữ tốt hơn.
+Và chúng tôi quyết định một điều có thể làm được là làm một nghiên cứu và nhờ mọi người tạo mật khẩu dành riêng cho mục đích này.
+Chúng tôi sử dụng 1 dịch vụ có tên Amazon Mechanical Turk, và đây là một dịch vụ mà bạn có thể đăng tải một công tác nhỏ mất ít thời gian, vài phút, một tiếng, và trả tiền cho mọi người, 1 xu, 10 đồng , vài đô la, để làm việc cho bạn, sau đó bạn trả họ thông qua Amazon.com.
+Chúng tôi trả cho mọi người tầm 50 đồng để tạo một mật khẩu theo đúng qui định kèm theo việc trả lời bản khảo sát, rồi lại trả họ thêm lần nữa để quay lại 2 ngày sau và đăng nhập sử dụng chính mật khẩu đó và trả lời bản khảo sát khác.
+Chúng tôi đã triển khai hình thức này, và thu thập được 5.000 mật khẩu, và chúng tôi đã đưa họ 1 đống yêu cầu khác nhau để áp dụng tạo mật khẩu.
+Một số có chính sách khá dễ chơi, mà tụi tôi gọi là Basic8, qui ước duy nhất là mật khẩu của bạn phải có ít nhất 8 kí tự.
+Đến số khác có yêu cầu khó hơn, giống với yêu cầu của bên CMU, là nó phải có 8 kí tự bao gồm kí tự hoa, kí tự thường, số, biểu tượng, và phải vượt qua khâu kiểm tra từ điển.
+Rồi một loại chính sách khác chúng tôi thử, và thêm hàng tá nữa, nhưng có một loại chúng tôi gọi Basic16, và điều kiện duy nhất ở đây là mật khẩu phải ít nhất 16 kí tự.
+Được rồi, lúc đó chúng tôi có 5.000 password, nên chúng tôi đã khá khẩm hơn nhiều thông tin chi tiết.
+Một lần nữa, chúng tôi thấy rằng chỉ có một số nhỏ kí tự đặc biệt là mọi người thật sự dùng trong mật khẩu mà thôi.
+Chúng tôi cũng muốn một ý tưởng về độ mạnh mật khẩu mà mọi người tạo ra. Nhưng như các bạn nhớ đó, không có thước đo chuẩn nào cho độ mạnh của password.
+Điều mà chúng tôi quyết định làm là xem mất bao lâu để bẻ khoá các mật khẩu này sử dụng các công cụ bẻ khoá hiện đại mà những kẻ xấu đang sử dụng, hoặc là chúng tôi có thể tìm thấy thông tin về nó trong các tài liệu nghiên cứu.
+Để các bạn hình dung được cách kẻ xấu bẻ khoá ra sao, họ sẽ đánh cắp một tập tin mật khẩu, mà chứa tất cả dữ liệu dưới một dạng xáo trộn, được gọi là hash, và điều họ sẽ làm là đoán xem mật khẩu là gì, rồi cho chạy với một chương trình hashing, và chờ liệu có khớp với các mật khẩu họ đã chuẩn bị sẵn trên danh sách trộm được.
+Một kẻ gà mờ thì sẽ cố thử mọi mật khẩu theo trình tự,
+Họ sẽ bắt đầu với AAAAA và rồi AAAAB, và điều này thật sự cần lượng lớn thời gian trước khi họ lấy được bất cứ mật khẩu nào mà ai ai cũng có thể làm được.
+Một kẻ thông minh, mặt khác, lại khéo léo hơn nhiều.
+Họ nhìn vào các mật khẩu mà được xem là phổ biến từ những bộ bị đánh cắp này, và họ đoán chúng trước.
+Họ sẽ bắt đầu đoán là "password," và tiếp theo là "I love you," và "monkey," và "12345678," bởi vì đây là các mật khẩu mà dường như mọi người hay có.
+Thật ra, vài người ở đây có lẽ có những loại này đó.
+Điều chúng tôi tìm thấy khi chạy 5.000 mật khẩu mà đã tổng hợp được này qua các đợt kiểm tra để xem chúng mạnh như thế nào, chúng tôi thấy rằng khi mật khẩu dài thì thật sự khá mạnh, và các loại phức tạp cũng vậy.
+Tuy nhiên, khi chúng tôi xem qua dữ liệu khảo sát, chúng tôi thấy rằng mọi người thật sự khó chịu bởi sự phức tạp ấy, và mật khẩu dài thì lại hữu dụng hơn hẳn, và trong vài trường hợp, chúng còn thậm chí mạnh hơn cả loại phức tạp.
+Điều này gợi ra rằng, thay vì khuyên mọi người hãy đặt kí tự đặc biệt và số và những thứ điên rồ vào mật khẩu, chúng ta tốt hơn chỉ khuyên họ là nên có mật khẩu dài.
+Dù gì thì, đây mới là vấn đề: Một số người có mật khẩu dài mà lại không thật sự mạnh.
+Bạn có thể tạo độ dài mà vẫn bao hàm những điều một kẻ tấn công có thể dễ dàng đoán được.
+Vì thế chúng ta cần làm nhiều hơn thay vì chỉ tuyên bố khơi khơi như vậy.
+Phải có vài điều kiện thêm vào, và vài nghiên cứu dang dở của chúng tôi đang xem xét các điều kiện cần để làm cho mật khẩu mạnh hơn mà cũng chẳng phiền toái gì để được ghi nhớ và gõ ra.
+Một cách khác để khuyến khích mọi người tạo mật khẩu mạnh hơn là sử dụng một thước đo mật khẩu..
+Sau đây là một vài ví dụ.
+Các bạn có thể đã thấy những thứ này trên internet trong khi các bạn tạo mật khẩu.
+Chúng tôi đã quyết định làm một nghiên cứu để tìm ra cách hoạt động của các thước đo này.
+Liệu chúng có thật sự giúp mọi người cài mật khẩu mạnh hơn, và nếu vậy, cái nào thì tốt hơn?
+Vì thế chúng tôi đã thử nghiệm đủ loại có kích thước, hình dáng, màu sắc khác nhau, tùm lum chữ xoay quanh, và chúng tôi thậm chí đã thử một loại là một chú thỏ nhảy nhót.
+Khi bạn đánh một mật khẩu tốt hơn, chú thỏ sẽ nhảy càng nhanh hơn.
+Nhìn nó khá thú vị ấy chứ.
+Rồi kết quả cuối cùng là các thước đo này đúng có hiệu quả.
+Đa số thực tế là như vậy, kể cả con thỏ nhảy nhót nữa, nhưng thước đo hay nhất là cái khiến bạn làm việc nhiều hơn trước khi nó đưa ra sự tán thành và nói rằng bạn đã đang làm rất tốt, và hiện thực, chúng tôi thấy rằng phần lớn thước đo mật khẩu trên Internet ngày nay quá yếu.
+Chúng khen bạn quá sớm, và nếu chúng chỉ cần đợi thêm một tí trước khi đưa bạn phản hồi tích cực đó, thì bạn đã có thể có mật khẩu tốt hơn.
+Một phương thức khác nữa, có lẽ thế, là dùng cụm từ mật khẩu thay vì từng từ mật khẩu.
+Đây là bộ phim hoạt hình xkcd cách đây vài năm, và nhà hoạ sĩ phía sau đề nghị tất cả chúng ta nên sử dụng cụm mật khẩu và nếu bạn nhìn vào hàng thứ 2 của phim hoạt hình này, bạn có thể thấy nó đang gợi ý rằng cụm từ mật khẩu "correct horse battery staple" sẽ rất mạnh và cũng rất dễ nhớ.
+Thật ra, anh ta nói không chừng bạn đã nhớ nó rồi.
+Do đó chúng tôi đã quyết định làm một nghiên cứu để phân xem điều đó đúng hay sai.
+Những người tôi từng tiếp xúc, người mà tôi nói rằng tôi đang làm nghiên cứu, họ đều chỉ đến bộ phim này.
+"Ếy, bà đã xem nó chưa?
+Phim xkcd đó.
+Correct horse battery staple."
+Chúng tôi đã làm một nghiên cứu để xem điều gì thực sự sẽ xảy ra.
+Trong nghiên cứu, chúng tôi lại sử dụng Mechanical Turk, rồi chúng tôi để máy tính chọn ngẫu nhiên các từ vào trong cụm mật khẩu.
+Lý do cho việc đó là vì con người không giỏi việc chọn ra từ ngẫu nhiên.
+Nếu chúng tôi nhờ ai làm điều đó, họ sẽ chọn những từ không tự nhiên lắm.
+Vì thế chúng tôi đã thử trong điều kiện khác nhau.
+Trong một trường hợp, máy tính lọc từ một từ điển chứa nhiều từ Tiếng Anh thông dụng, và vì vậy bạn sẽ có thể nhận được các cụm như "try there three come."
+Chúng tôi nhìn vào nó, và nói, "Chậc, cũng chả dễ nhớ hơn là bao."
+Sau đó chúng tôi thử những từ các đoạn cụ thể trong bài văn nào đó, hợp cấu trúc Danh từ-động từ- tính từ-danh từ.
+Điều đó đúc kết ra những cụm giống như câu văn vậy.
+Nên bạn có thể nhận được cụm đại loại như "plan builds sure power" hoặc "end determines red drug."
+Và những cái này dường như khá hơn đôi chút, và có thể mọi người sẽ thích những từ đó hơn.
+Chúng tôi muốn so sánh chúng với mật khẩu, nên chúng tôi để máy tính chọn mật khẩu ngẫu nhiên, chúng hấp dẫn và ngắn, nhưng như bạn thấy đó, chúng trông không dễ nhớ cho lắm.
+Sau đó chúng tôi thử mật khẩu phát âm được.
+Máy tính chọn ngẫu nhiên âm tiết rồi kết hợp chúng lại với nhau cho ra vài thứ có thể phát âm được, như "tufrivi"
+và "vadasabi."
+Chúng làm cong lưỡi của bạn.
+Đây là những mật khẩu ngẫu nhiên được tạo ra từ máy tính.
+Ngạc nhiên thay, cái chúng tôi tìm được trong nghiên cứu này, là cụm từ mật khẩu thì không mạnh cỡ vậy.
+Mọi người thật sự không cảm thấy tốt hơn khi ghi nhớ các 'cụm mật khẩu' hơn là các 'từ mật khẩu' ngẫu nhiên này, và bởi vì các 'cụm mật khẩu' dài hơn, chúng làm mất thời gian lâu hơn khi gõ và mọi người mắc lỗi nhiều hơn khi gõ chúng.
+Vì thế nó là nhược điểm của 'cụm mật khẩu'.
+Xin lỗi, các fan của xkcd.
+Mặt khác, chúng tôi đã tìm thấy rằng các mật khẩu phát âm được có hiệu quả đáng ngạc nhiên, và do đó chúng tôi nghiên cứu thêm cách làm tăng hiệu quả của phương cách này.
+Và một trong số các vấn đề với các nghiên cứu của chúng tôi là bởi các mật khẩu đều được tạo ra từ Mechanical Turk. Đó không phải mật khẩu thực của con người.
+Đó là các mật khẩu trang web này tạo ra hoặc là do máy tính tạo ra cho các nghiên cứu của chúng tôi.
+Và chúng tôi muốn biết liệu mọi người có làm như vậy với các mật khẩu thực của họ.
+Vì thế chúng tôi đã hỏi văn phòng bảo mật thông tin tại Carnegie Mellon liệu chúng tôi có thể có password thực của mọi người.
+Không ngạc nhiên, họ hơi miễn cưỡng để chia sẻ chúng với chúng tôi, nhưng chúng tôi đã tiếp cận được một hệ thống mật khẩu nơi mà họ chứa tất cả các password thực cho 25.000 sinh viên CMU, các cán bộ giảng dạy và nhân viên, vào một máy tính được khoá trong phòng bảo mật, không kết nối internet, và họ chạy mã lệnh mà chúng tôi viết để phân tích các password này.
+Họ kiểm tra code của chúng tôi.
+Họ đã chạy code đó.
+Và chúng tôi thật sự không thấy được các mật khẩu của bất kỳ ai.
+Chúng tôi thu được vài kết quả thú vị, và những học sinh trường Tepper ở phía cuối sẽ rất thích thú về điều này.
+Chúng tôi đã tìm thấy rằng các password được tạo bởi những người trong trường tin học thì thực sự mạnh hơn gấp 1.8 lần so với những người học tại trường kinh tế.
+Chúng tôi cũng có nhiều thông tin nhân khẩu học thú vị khác nữa
+Điều thú vị khác mà chúng tôi tìm thấy là khi so sánh các mật khẩu của Carnegie Mellon với các mật khẩu được tạo bởi Mechnical Turk, thưc sự có rất nhiều sự giống nhau, và điều này xác nhận phương pháp nghiên cứu của chúng tôi và cho thấy rằng, việc tổng hợp password theo kết quả của Mechanical Turk này là một cách hợp lý để nghiên cứu password.
+Đó là một tin tốt lành.
+Okay, tôi muốn kết thúc bằng việc nói về vài hiểu biết mà tôi đã đúc kết được khi đi nghiên cứu tại trường nghệ thuật Carnegie Mellon.
+Tôi đã làm một việc là tạo ra một số mền long, và tôi đã làm cái mền này đây.
+Nó được gọi là "Tấm mền Bảo Mật."
+Và cái mền này có tới 1.000 password bị đánh cắp nhiều nhất từ website RockYou.
+Và kích cỡ của password thì tương ứng với mức độ xuất hiện của chúng trên bộ dữ liệu đánh cắp.
+Và cái mà tôi làm là tạo ra đám mây từ này, và tôi duyệt qua tất cả 1.000 từ và tôi phân loại chúng vào các loại chuyên đề mơ hồ.
+Và trong vài trường hợp, nó khó để nhận ra chúng thuộc thể loại nào, và sau đó tôi đánh màu cho chúng.
+Và đây là vài ví dụ của sự khó khăn.
+So "justin."
+đó có phải là tên của một người dùng, bạn trai của họ, con trai của họ?
+Có lẽ chúng là 1 fan của Justin Bieber.
+Hoặc "princess."
+Đó là môt nickname?
+Họ là fan của công chúa Disney?
+Hoặc có lẽ đó là tên của con mèo của họ.
+"Iloveyou" xuất hiện nhiều lần trong nhiều ngôn ngữ khác nhau.
+Có nhiều chữ love trong các password này
+Nếu bạn nhìn kĩ, bạn sẽ nhìn thấy vài lời tục tĩu, những nó cũng thú vị khi có nhiều YÊU hơn là GHÉT trong các password này.
+Và có những con vật, rất nhiều động vật, và "monkey" là con vật thông dụng nhất và đứng thứ 14 trong tất cả các password thông dụng nhất.
+Và điều này gây cho tôi tò mò, tôi tự hỏi, "Tại sao khỉ lại thông dụng nhất ?"
+Và trong nghiên cứu cuối cùng của chúng tôi, mỗi khi chúng tôi tìm thấy ai đó tạo 1 mật khẩu với từ "monkey", chúng tôi hỏi tại sao lại có con khỉ trong mật khẩu của họ.
+Và chúng tôi tìm ra -- chúng tôi tìm được 17 người mà có từ "monkey" -- 1/3 trong số họ nói rằng họ có một thú nuôi tên là "monkey" hoặc là một người bạn của họ có nickname là "monkey", và 1/3 họ nói rằng họ thích khỉ và khỉ rất dễ thương.
+Và nó thật sự dễ thương.
+Và dường như cuối ngày, khi chúng tôi tạo password, chúng tôi cũng tạo ra vài thứ thật sự dễ nhớ để đánh máy, một mẫu phổ biến, hoặc những thứ gợi chúng tôi tới từ 'password' hoặc là tài khoản mà chúng tôi đã tạo mật khẩu cho, hoặc là bất cứ thứ gì.
+Hoặc chúng tôi nghĩ về điều làm chúng tôi hạnh phúc, và chúng tôi tạo mật khẩu dựa trên các điều mà làm chúng tôi hạnh phúc.
+Và khi điều này làm cho việc đánh máy và ghi nhớ mật khẩu thú vị hơn, nó cũng trở nên dễ dàng hơn để đoán mật khẩu của bạn.
+Và tôi biết rất nhiều bài TED gây cảm hứng và làm cho bạn nghĩ về những thứ tốt đẹp, hạnh phúc, nhưng khi bạn tạo password, hãy cố nghĩ đến những thứ khác.
+Xin cám ơn.

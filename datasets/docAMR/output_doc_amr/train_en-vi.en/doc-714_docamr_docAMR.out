@@ -1,0 +1,439 @@
+# ::id doc-714
+# ::doc_file doc-714
+# ::tok http : / / www . ted . com / talks / monika_bulaj_the_hidden_light_of_afghanistan< / url> <next_sent> My travels to Afghanistan began many , many years ago on the eastern border of my country , my homeland , Poland . <next_sent> I was walking through the forests of my grandmother 's tales . <next_sent> A land where every field hides a grave , where millions of people have been deported or killed in the 20th century . <next_sent> Behind the destruction , I found a soul of places . <next_sent> I met humble people . <next_sent> I heard their prayer and ate their bread . <next_sent> Then I have been walking East for 20 years -- from Eastern Europe to Central Asia -- through the Caucasus Mountains , Middle East , North Africa , Russia . <next_sent> And I ever met more humble people . <next_sent> And I shared their bread and their prayer . <next_sent> This is why I went to Afghanistan . <next_sent> One day , I crossed the bridge over the Oxus River . <next_sent> I was alone on foot . <next_sent> And the Afghan soldier was so surprised to see me that he forgot to stamp my passport . <next_sent> But he gave me a cup of tea . <next_sent> And I understood that his surprise was my protection . <next_sent> So I have been walking and traveling , by horses , by yak , by truck , by hitchhiking , from Iran 's border to the bottom , to the edge of the Wakhan Corridor . <next_sent> And in this way I could find noor , the hidden light of Afghanistan . <next_sent> My only weapon was my notebook and my Leica . <next_sent> I heard prayers of the Sufi -- humble Muslims , hated by the Taliban . <next_sent> Hidden river , interconnected with the mysticism from Gibraltar to India . <next_sent> The mosque where the respectful foreigner is showered with blessings and with tears , and welcomed as a gift . <next_sent> What do we know about the country and the people that we pretend to protect , about the villages where the only one medicine to kill the pain and to stop the hunger is opium ? <next_sent> These are opium - addicted people on the roofs of Kabul 10 years after the beginning of our war . <next_sent> These are the nomad girls who became prostitutes for Afghan businessmen . <next_sent> What do we know about the women 10 years after the war ? <next_sent> Clothed in this nylon bag , made in China , with the name of burqa . <next_sent> I saw one day , the largest school in Afghanistan , a girls ' school . <next_sent> 13,000 girls studying here in the rooms underground , full of scorpions . <next_sent> And their love [ for studying ] was so big that I cried . <next_sent> What do we know about the death threats by the Taliban nailed on the doors of the people who dare to send their daughters to school as in Balkh ? <next_sent> The region is not secure , but full of the Taliban , and they did it . <next_sent> My aim is to give a voice to the silent people , to show the hidden lights behind the curtain of the great game , the small worlds ignored by the media and the prophets of a global conflict . <next_sent> Thanks .
+(d / document
+   :snt1 (s1.u / url-entity
+               :rel (s1.t / talk-01)
+               :value (s1.u2 / url-entity
+                             :value "narcotic"))
+   :snt2 (s2.b2 / begin-01
+                :ARG1 (s2.t2 / travel-01
+                             :ARG0 (s2.i / i)
+                             :ARG4 (s2.c / country
+                                         :name (s2.n / name
+                                                     :op1 "Afghanistan")))
+                :location (s2.b3 / border-01
+                                 :ARG1 (s2.c2 / country
+                                              :name (s2.n2 / name
+                                                           :op1 "Poland")
+                                              :ARG1-of (s2.m2 / mean-01
+                                                              :ARG2 (s2.h / homeland
+                                                                          :poss s2.i))
+                                              :poss s2.i)
+                                 :direction (s2.e / east))
+                :time (s2.b / before
+                            :quant (s2.m / many
+                                         :op1 (s2.t / temporal-quantity
+                                                    :unit (s2.y / year)
+                                                    :quant "1"))
+                            :op1 (s2.n3 / now)))
+   :snt3 (s3.w / walk-01
+               :ARG0 (s3.i / i
+                           :same-as s2.i)
+               :ARG2 (s3.f / forest
+                           :poss (s3.t / tale
+                                       :source (s3.p / person
+                                                     :ARG0-of (s3.h / have-rel-role-91
+                                                                    :ARG1 s3.i
+                                                                    :ARG2 (s3.g / grandmother))))))
+   :snt4 (s4.l / land
+               :location-of (s4.h / hide-01
+                                  :ARG0 (s4.f / field
+                                              :mod (s4.e / every))
+                                  :ARG1 (s4.g / grave))
+               :location-of (s4.o / or
+                                  :op1 (s4.d2 / deport-01
+                                              :ARG1 (s4.p / person
+                                                          :quant (s4.m / multiple
+                                                                       :op1 "1000000")))
+                                  :op2 (s4.k / kill-01
+                                             :ARG1 s4.p)
+                                  :time (s4.d / date-entity
+                                              :century "20")))
+   :snt5 (s5.f / find-01
+               :ARG0 (s5.i / i
+                           :same-as s2.i)
+               :ARG1 (s5.s / soul
+                           :consist-of (s5.p / place))
+               :location (s5.b / behind
+                               :op1 (s5.d / destroy-01)))
+   :snt6 (s6.m / meet-02
+               :ARG0 (s6.i / i
+                           :same-as s2.i)
+               :ARG1 (s6.p / person
+                           :ARG1-of (s6.h / humble-01)))
+   :snt7 (s7.a / and
+               :op1 (s7.h / hear-01
+                          :ARG0 (s7.i / i
+                                      :same-as s2.i)
+                          :ARG1 (s7.p / pray-01
+                                      :ARG0 (s7.t / they
+                                                  :same-as s6.p)))
+               :op2 (s7.e / eat-01
+                          :ARG0 s7.i
+                          :ARG1 (s7.b / bread
+                                      :poss s7.t)))
+   :snt8 (s8.w / walk-01
+               :ARG0 (s8.i / i
+                           :same-as s2.i)
+               :ARG2 (s8.e / east)
+               :duration (s8.t / temporal-quantity
+                               :unit (s8.y / year)
+                               :quant "20")
+               :path (s8.a / and
+                           :op1 (s8.m / mountain
+                                      :name (s8.n3 / name
+                                                   :op1 "Caucasus"
+                                                   :op2 "Mountains"))
+                           :op2 (s8.w4 / world-region
+                                       :name (s8.n4 / name
+                                                    :op1 "Middle"
+                                                    :op2 "East"))
+                           :op3 (s8.w5 / world-region
+                                       :name (s8.n5 / name
+                                                    :op1 "North"
+                                                    :op2 "Africa"))
+                           :op4 (s8.c / country
+                                      :name (s8.n6 / name
+                                                   :op1 "Russia")))
+               :source (s8.w2 / world-region
+                              :name (s8.n / name))
+               :source (s8.w3 / world-region
+                              :name (s8.n2 / name
+                                           :op1 "Central"
+                                           :op1 "Eastern"
+                                           :op2 "Asia"
+                                           :op2 "Europe"))
+               :time (s8.t2 / then))
+   :snt9 (s9.a / and
+               :op2 (s9.m / meet-02
+                          :ARG0 (s9.i / i
+                                      :same-as s2.i)
+                          :ARG1 (s9.p / person
+                                      :ARG1-of (s9.h / have-degree-91
+                                                     :ARG2 (s9.h2 / humble)
+                                                     :ARG3 (s9.m2 / more)))
+                          :time (s9.e / ever)))
+   :snt10 (s10.a / and
+                 :op2 (s10.s / share-01
+                             :ARG0 (s10.i / i
+                                          :same-as s2.i)
+                             :ARG1 (s10.a2 / and
+                                           :op1 (s10.b / bread
+                                                       :poss (s10.t / they
+                                                                    :same-as s9.p))
+                                           :op2 (s10.p / pray-01
+                                                       :ARG0 s10.t))))
+   :snt11 (s11.c / cause-01
+                 :ARG0 (s11.t / this)
+                 :ARG1 (s11.g / go-02
+                              :ARG0 (s11.i / i
+                                           :same-as s2.i)
+                              :ARG4 (s11.c2 / country
+                                            :name (s11.n / name
+                                                         :op1 "Afghanistan")
+                                            :same-as s2.c)))
+   :snt12 (s12.c / cross-02
+                 :ARG0 (s12.i / i
+                              :same-as s2.i)
+                 :ARG1 (s12.b / bridge
+                              :location (s12.o2 / over
+                                                :op1 (s12.r / river
+                                                            :name (s12.n / name
+                                                                         :op1 "Oxus"
+                                                                         :op2 "River"))))
+                 :time (s12.d / day
+                              :mod (s12.o / one)))
+   :snt13 (s13.a / alone
+                 :domain (s13.i / i
+                                :same-as s2.i)
+                 :manner (s13.f / foot))
+   :snt14 (s14.a / and
+                 :op2 (s14.s5 / surprise-01
+                              :ARG0 (s14.s / see-01
+                                           :ARG0 (s14.s3 / soldier
+                                                         :mod (s14.c / country
+                                                                     :name (s14.n / name
+                                                                                  :op1 "Afghanistan")))
+                                           :ARG1 (s14.i / i
+                                                        :same-as s2.i))
+                              :ARG1 s14.s3
+                              :ARG2-of (s14.h / have-degree-91
+                                              :ARG1 s14.s3
+                                              :ARG3 (s14.s2 / so)
+                                              :ARG6 (s14.f / forget-01
+                                                           :ARG0 s14.s3
+                                                           :ARG1 (s14.s4 / stamp-out-05
+                                                                         :ARG0 s14.s3
+                                                                         :ARG1 (s14.p / passport
+                                                                                      :poss s14.i))))))
+   :snt15 (s15.c / contrast-01
+                 :ARG2 (s15.g / give-01
+                              :ARG0 (s15.h / he
+                                           :same-as s14.s3)
+                              :ARG1 (s15.v / volume-quantity
+                                           :consist-of (s15.t / tea)
+                                           :unit (s15.c2 / cup)
+                                           :quant "1")
+                              :ARG2 (s15.i / i
+                                           :same-as s2.i)))
+   :snt16 (s16.a / and
+                 :op2 (s16.u / understand-01
+                             :ARG0 (s16.i / i
+                                          :same-as s2.i)
+                             :ARG1 (s16.p / protect-01
+                                          :ARG0 (s16.s / surprise-01
+                                                       :ARG0 (s16.h / he
+                                                                    :same-as s14.s3))
+                                          :ARG1 s16.i)))
+   :snt17 (s17.c / cause-01
+                 :ARG1 (s17.a / and
+                              :destination (s17.e / edge
+                                                  :part-of (s17.c3 / country-region
+                                                                   :name (s17.n2 / name
+                                                                                 :op1 "Wakhan"
+                                                                                 :op2 "Corridor")))
+                              :manner (s17.a2 / and
+                                              :op1 (s17.h2 / horse)
+                                              :op2 (s17.y / yak)
+                                              :op3 (s17.t2 / truck)
+                                              :op4 (s17.h / hitch-ride-00
+                                                          :ARG0 (s17.i / i
+                                                                       :same-as s2.i)
+                                                          :source (s17.b / border
+                                                                         :poss (s17.c2 / country
+                                                                                       :name (s17.n / name
+                                                                                                    :op1 "Iran")))))
+                              :op1 (s17.w / walk-01
+                                          :ARG0 s17.i)
+                              :op2 (s17.t / travel-01
+                                          :ARG0 s17.i
+                                          :destination (s17.b2 / bottom))))
+   :snt18 (s18.a / and
+                 :op2 (s18.p / possible-01
+                             :ARG1 (s18.f / find-01
+                                          :ARG0 (s18.i / i
+                                                       :same-as s2.i)
+                                          :ARG1 (s18.l / light
+                                                       :name (s18.n / name
+                                                                    :op1 "no")
+                                                       :ARG1-of (s18.h / hide-01)
+                                                       :poss (s18.c / country
+                                                                    :name (s18.n2 / name
+                                                                                  :op1 "Afghanistan")
+                                                                    :same-as s2.c)))
+                             :manner (s18.w / way
+                                            :mod (s18.t / this))))
+   :snt19 (s19.w / weapon
+                 :domain (s19.a / and
+                                :op1 (s19.n2 / notebook
+                                             :poss (s19.i / i
+                                                          :same-as s2.i))
+                                :op2 (s19.p / product
+                                            :name (s19.n / name
+                                                         :op1 "Leica")
+                                            :poss s19.i))
+                 :mod (s19.o / only)
+                 :poss s19.i)
+   :snt20 (s20.h2 / hear-01
+                  :ARG0 (s20.i / i
+                               :same-as s2.i)
+                  :ARG1 (s20.p2 / pray-01
+                                :ARG0 (s20.r / religious-group
+                                             :name (s20.n / name
+                                                          :op1 "Sufi")
+                                             :mod (s20.p / person
+                                                         :ARG1-of (s20.h3 / humble-01)
+                                                         :ARG1-of (s20.h / hate-01
+                                                                         :ARG0 (s20.c / criminal-organization
+                                                                                      :name (s20.n3 / name
+                                                                                                    :op1 "Taliban")))
+                                                         :mod (s20.r2 / religious-group
+                                                                      :name (s20.n2 / name
+                                                                                    :op1 "Islam"))))))
+   :snt21 (s21.r / river
+                 :ARG1-of (s21.h / hide-01)
+                 :ARG1-of (s21.i / interconnect-01
+                                 :ARG2 (s21.m / mysticism
+                                              :destination (s21.c / country
+                                                                  :name (s21.n2 / name
+                                                                                :op1 "India"))
+                                              :source (s21.t / territory
+                                                             :name (s21.n / name
+                                                                          :op1 "Gibraltar")))))
+   :snt22 (s22.m / mosque
+                 :location-of (s22.a2 / and
+                                      :op1 (s22.s / shower-01
+                                                  :ARG2 (s22.p / person
+                                                               :ARG0-of (s22.r / respect-01)
+                                                               :mod (s22.f / foreign))
+                                                  :manner (s22.a / and
+                                                                 :op1 (s22.b / bless-01)
+                                                                 :op2 (s22.t / tear)))
+                                      :op2 (s22.w / welcome-01
+                                                  :ARG1 s22.p
+                                                  :ARG3 (s22.g / gift-01
+                                                               :ARG1 s22.s))))
+   :snt23 (s23.k2 / know-02
+                  :ARG0 (s23.w / we)
+                  :ARG1 (s23.a / amr-unknown
+                               :topic (s23.a2 / and
+                                              :location-of (s23.m / medicine
+                                                                  :ARG0-of (s23.k / kill-01
+                                                                                  :ARG1 (s23.p / pain-01))
+                                                                  :ARG0-of (s23.s / stop-01
+                                                                                  :ARG1 (s23.h / hunger-01))
+                                                                  :domain (s23.o2 / opium)
+                                                                  :mod (s23.o / only)
+                                                                  :quant "1")
+                                              :op1 (s23.c / country
+                                                          :same-as s2.c)
+                                              :op2 (s23.p2 / person
+                                                           :ARG1-of (s23.p4 / protect-01
+                                                                            :ARG0 s23.w
+                                                                            :ARG1-of (s23.p3 / pretend-01
+                                                                                             :ARG0 s23.w)))
+                                              :op3 (s23.v / village))))
+   :snt24 (s24.p / person
+                 :ARG1-of (s24.a / addict-01
+                                 :ARG2 (s24.o / opium))
+                 :domain (s24.t2 / this)
+                 :location (s24.r / roof
+                                  :part-of (s24.c / city
+                                                  :name (s24.n / name
+                                                               :op1 "Kabul")))
+                 :time (s24.a2 / after
+                               :quant (s24.t / temporal-quantity
+                                             :unit (s24.y / year)
+                                             :quant "10")
+                               :op1 (s24.b / begin-01
+                                           :ARG1 (s24.w / war
+                                                        :poss (s24.w2 / we)))))
+   :snt25 (s25.g / girl
+                 :ARG1-of (s25.b / become-01
+                                 :ARG2 (s25.p / prostitute-01
+                                              :beneficiary (s25.b2 / businessman
+                                                                   :mod (s25.c / country
+                                                                               :name (s25.n / name
+                                                                                            :op1 "Afghanistan")))))
+                 :domain (s25.t / this)
+                 :mod (s25.n2 / nomad)
+                 :ARG0-of s25.p)
+   :snt26 (s26.k / know-02
+                 :ARG0 (s26.w2 / we)
+                 :ARG1 (s26.a2 / amr-unknown)
+                 :time (s26.a / after
+                              :quant (s26.t / temporal-quantity
+                                            :unit (s26.y / year)
+                                            :quant "10")
+                              :op1 (s26.w / war
+                                          :same-as s24.w))
+                 :topic (s26.w3 / woman))
+   :snt27 (s27.c / clothe-01
+                 :ARG2 (s27.b / bag
+                              :ARG1-of (s27.m / make-01
+                                              :location (s27.c2 / country
+                                                                :name (s27.n / name
+                                                                             :op1 "China")))
+                              :ARG1-of (s27.n2 / name-01
+                                               :ARG2 (s27.b2 / burqa))
+                              :consist-of (s27.n3 / nylon)
+                              :mod (s27.t / this)))
+   :snt28 (s28.s2 / see-01
+                  :ARG0 (s28.i / i
+                               :same-as s2.i)
+                  :ARG1 (s28.s / school
+                               :ARG1-of (s28.h / have-degree-91
+                                               :ARG2 (s28.l / large)
+                                               :ARG3 (s28.m / most)
+                                               :ARG5 (s28.c / country
+                                                            :name (s28.n / name
+                                                                         :op1 "Afghanistan")
+                                                            :same-as s2.c))
+                               :mod (s28.g / girl))
+                  :time (s28.d / day
+                               :mod (s28.o / one)))
+   :snt29 (s29.s / study-01
+                 :ARG0 (s29.g / girl
+                              :quant "13000")
+                 :location (s29.h / here
+                                  :location (s29.r / room
+                                                   :ARG1-of (s29.f / full-09
+                                                                   :ARG2 (s29.a / ant))
+                                                   :location (s29.u / underground))))
+   :snt30 (s30.a / and
+                 :op2 (s30.h / have-degree-91
+                             :ARG1 (s30.l / love-01
+                                          :ARG0 (s30.t / they
+                                                       :same-as s29.g)
+                                          :ARG1 (s30.s2 / study-01
+                                                        :ARG0 s30.t))
+                             :ARG2 (s30.b / big)
+                             :ARG3 (s30.s / so)
+                             :ARG6 (s30.c / cry-02
+                                          :ARG0 (s30.i / i
+                                                       :same-as s2.i))))
+   :snt31 (s31.k / know-02
+                 :ARG0 (s31.w / we)
+                 :ARG1 (s31.a / amr-unknown
+                              :topic (s31.t / threaten-01
+                                            :ARG0 (s31.c / criminal-organization
+                                                         :name (s31.n2 / name
+                                                                       :op1 "Taliban")
+                                                         :same-as s20.c)
+                                            :ARG1 (s31.d3 / die-01)
+                                            :ARG2-of (s31.n / nail-01
+                                                            :ARG1 (s31.d4 / door
+                                                                          :poss (s31.p / person
+                                                                                       :ARG0-of (s31.d / dare-01
+                                                                                                       :ARG2 (s31.s2 / send-01
+                                                                                                                     :ARG0 s31.p
+                                                                                                                     :ARG1 (s31.p2 / person
+                                                                                                                                   :ARG0-of (s31.h / have-rel-role-91
+                                                                                                                                                   :ARG1 s31.p
+                                                                                                                                                   :ARG2 (s31.d2 / daughter)))
+                                                                                                                     :ARG1-of (s31.r / resemble-01
+                                                                                                                                     :ARG2 (s31.w2 / world-region
+                                                                                                                                                   :name (s31.n3 / name
+                                                                                                                                                                 :op1 "Balkh")))
+                                                                                                                     :ARG2 (s31.s / school)))))))))
+   :snt32 (s32.a / and
+                 :op1 (s32.c / contrast-01
+                             :ARG1 (s32.s / secure-02
+                                          :ARG1 (s32.r / region)
+                                          :polarity "-")
+                             :ARG2 (s32.f / full-09
+                                          :ARG1 s32.r
+                                          :ARG2 (s32.c2 / criminal-organization
+                                                        :name (s32.n / name
+                                                                     :op1 "Taliban")
+                                                        :same-as s20.c)))
+                 :op2 (s32.d / do-02
+                             :ARG0 s32.c2
+                             :ARG1 (s32.i / it)))
+   :snt33 (s33.a / aim-01
+                 :ARG0 (s33.i / i
+                              :same-as s2.i)
+                 :ARG1 (s33.a2 / and
+                               :op1 (s33.g2 / give-01
+                                            :ARG1 (s33.v / voice-01)
+                                            :ARG2 (s33.p / person
+                                                         :mod (s33.s2 / silent)))
+                               :op2 (s33.s / show-01
+                                           :ARG1 (s33.l / light
+                                                        :ARG1-of (s33.h / hide-01)
+                                                        :location (s33.b / behind
+                                                                         :op1 (s33.c2 / curtain
+                                                                                      :poss (s33.g / game
+                                                                                                   :mod (s33.g4 / great))))))
+                               :op3 (s33.w / world
+                                           :ARG1-of (s33.i2 / ignore-01
+                                                            :ARG0 (s33.a3 / and
+                                                                          :op1 (s33.m / media)
+                                                                          :op2 (s33.p2 / person
+                                                                                       :ARG0-of (s33.p3 / predict-01
+                                                                                                        :ARG1 (s33.c / conflict-01
+                                                                                                                     :mod (s33.g3 / globe))))))
+                                           :mod (s33.s3 / small))))
+   :snt34 (s34.t / thank-01))
+

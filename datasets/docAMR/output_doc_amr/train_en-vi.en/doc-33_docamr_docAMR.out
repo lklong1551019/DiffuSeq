@@ -1,0 +1,546 @@
+# ::id doc-33
+# ::doc_file doc-33
+# ::tok http : / / www . ted . com / talks / lakshmi_pratury_on_letter_writing< / url> <next_sent> So I thought , " I will talk about death . " <next_sent> Seemed to be the passion today . <next_sent> Actually , it 's not about death . <next_sent> It 's inevitable , terrible , but really what I want to talk about is , I 'm just fascinated by the legacy people leave when they die . <next_sent> That 's what I want to talk about . <next_sent> So Art Buchwald left his legacy of humor with a video that appeared soon after he died , saying , " Hi ! I 'm Art Buchwald , and I just died . " <next_sent> And Mike , who I met at Galapagos , a trip which I won at TED , is leaving notes on cyberspace where he is chronicling his journey through cancer . <next_sent> And my father left me a legacy of his handwriting through letters and a notebook . <next_sent> In the last two years of his life , when he was sick , he filled a notebook with his thoughts about me . <next_sent> He wrote about my strengths , weaknesses , and gentle suggestions for improvement , quoting specific incidents , and held a mirror to my life . <next_sent> After he died , I realized that no one writes to me anymore . <next_sent> Handwriting is a disappearing art . <next_sent> I 'm all for email and thinking while typing , but why give up old habits for new ? <next_sent> Why ca n't we have letter writing and email exchange in our lives ? <next_sent> There are times when I want to trade all those years that I was too busy to sit with my dad and chat with him , and trade all those years for one hug . <next_sent> But too late . <next_sent> But that 's when I take out his letters and I read them , and the paper that touched his hand is in mine , and I feel connected to him . <next_sent> So maybe we all need to leave our children with a value legacy , and not a financial one . <next_sent> A value for things with a personal touch -- an autograph book , a soul - searching letter . <next_sent> So what do I plan to leave for my son ? <next_sent> I collect autograph books , and those of you authors in the audience know I hound you for them -- and CDs too , Tracy . <next_sent> I plan to publish my own notebook . <next_sent> As I witnessed my father 's body being swallowed by fire , I sat by his funeral pyre and wrote . <next_sent> I have no idea how I 'm going to do it , but I am committed to compiling his thoughts and mine into a book , and leave that published book for my son . <next_sent> I 'd like to end with a few verses of what I wrote at my father 's cremation . <next_sent> And those linguists , please pardon the grammar , because I 've not looked at it in the last 10 years . <next_sent> I took it out for the first time to come here . <next_sent> " Picture in a frame , ashes in a bottle , boundless energy confined in the bottle , forcing me to deal with reality , forcing me to deal with being grown up . <next_sent> I hear you and I know that you would want me to be strong , but right now , I am being sucked down , surrounded and suffocated by these raging emotional waters , craving to cleanse my soul , trying to emerge on a firm footing one more time , to keep on fighting and flourishing just as you taught me . <next_sent> Your encouraging whispers in my whirlpool of despair , holding me and heaving me to shores of sanity , to live again and to love again . " <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01))
+   :snt2 (s2.c / cause-01
+               :ARG1 (s2.t2 / think-01
+                            :ARG0 (s2.i / i
+                                        :same-as s1.t)
+                            :ARG1 (s2.t / talk-01
+                                        :ARG0 s2.i
+                                        :ARG1 (s2.d / die-01))))
+   :snt3 (s3.s / seem-01
+               :ARG1 (s3.p / passion)
+               :time (s3.t / today))
+   :snt4 (s4.c / concern-02
+               :ARG0 (s4.i / it)
+               :ARG1 (s4.d / die-01)
+               :ARG1-of (s4.a / actual-02)
+               :polarity "-")
+   :snt5 (s5.c / contrast-01
+               :ARG1 (s5.a / and
+                           :op1 (s5.p2 / possible-01
+                                       :ARG1 (s5.a2 / avoid-01
+                                                    :ARG1 (s5.i2 / it
+                                                                 :same-as s4.d))
+                                       :polarity "-")
+                           :op2 (s5.t2 / terrible-01
+                                       :ARG1 s5.i2))
+               :ARG2 (s5.w / want-01
+                           :ARG0 (s5.i / i
+                                       :same-as s1.t)
+                           :ARG1 (s5.t / talk-01
+                                       :ARG0 s5.i
+                                       :ARG1 (s5.f / fascinate-01
+                                                   :ARG0 (s5.l2 / legacy
+                                                                :ARG1-of (s5.l / leave-02
+                                                                               :ARG0 (s5.p / person)
+                                                                               :time (s5.d / die-01
+                                                                                           :ARG1 s5.p)))
+                                                   :ARG1 s5.i
+                                                   :mod (s5.j / just)))
+                           :ARG1-of (s5.r / real-04)))
+   :snt6 (s6.w / want-01
+               :ARG0 (s6.i / i
+                           :same-as s1.t)
+               :ARG1 (s6.t / talk-01
+                           :ARG0 s6.i
+                           :ARG1 (s6.t2 / that
+                                        :same-as s5.l2)))
+   :snt7 (s7.c / cause-01
+               :ARG1 (s7.l / leave-02
+                           :ARG0 (s7.p / person
+                                       :name (s7.n / name
+                                                   :op1 "Art"
+                                                   :op2 "Buchwald"))
+                           :ARG1 (s7.l2 / legacy
+                                        :mod (s7.h2 / humor)
+                                        :poss s7.p)
+                           :ARG2 (s7.v / video
+                                       :ARG0-of (s7.s / say-01
+                                                      :ARG1 (s7.a2 / and
+                                                                   :op1 (s7.p2 / person
+                                                                               :domain s7.p)
+                                                                   :op2 (s7.d2 / die-01
+                                                                               :ARG1 s7.p
+                                                                               :mod (s7.j / just))))
+                                       :ARG1-of (s7.a3 / appear-01
+                                                       :time (s7.s2 / soon
+                                                                    :op1 (s7.a / after
+                                                                               :op1 (s7.d / die-01
+                                                                                          :ARG1 s7.p))))))
+               :rel (s7.h / hi))
+   :snt8 (s8.a / and
+               :op2 (s8.l / leave-02
+                          :ARG0 (s8.p / person
+                                      :name (s8.n / name
+                                                  :op1 "Mike")
+                                      :ARG1-of (s8.m / meet-03
+                                                     :ARG0 (s8.i / i
+                                                                 :same-as s1.t)
+                                                     :location (s8.i2 / island
+                                                                      :name (s8.n2 / name
+                                                                                   :op1 "Galapagos")
+                                                                      :manner-of (s8.t / trip-03
+                                                                                       :ARG1-of (s8.w / win-01
+                                                                                                      :ARG0 s8.i
+                                                                                                      :location (s8.c / conference
+                                                                                                                      :name (s8.n3 / name
+                                                                                                                                   :op1 "TED")))))))
+                          :ARG1 (s8.n5 / note-01
+                                       :ARG0 s8.p
+                                       :medium (s8.c2 / cyberspace
+                                                      :location-of (s8.d2 / document-01
+                                                                          :ARG0 s8.p
+                                                                          :ARG1 (s8.j / journey-01
+                                                                                      :ARG0 s8.p
+                                                                                      :path (s8.d / disease
+                                                                                                  :name (s8.n4 / name
+                                                                                                               :op1 "cancer"))))))))
+   :snt9 (s9.a / and
+               :op2 (s9.l / leave-02
+                          :ARG0 (s9.p / person
+                                      :ARG0-of (s9.h / have-rel-role-91
+                                                     :ARG1 (s9.i / i
+                                                                 :same-as s1.t)
+                                                     :ARG2 (s9.f / father)))
+                          :ARG1 (s9.l2 / legacy
+                                       :source (s9.w / write-01
+                                                     :ARG0 s9.p))
+                          :ARG2 s9.i
+                          :medium (s9.a2 / and
+                                         :op1 (s9.l3 / letter)
+                                         :op2 (s9.n / notebook))))
+   :snt10 (s10.f / fill-01
+                 :ARG0 (s10.h / he
+                              :same-as s9.p)
+                 :ARG1 (s10.n / notebook
+                              :same-as s9.n)
+                 :ARG2 (s10.t2 / thing
+                               :ARG1-of (s10.t3 / think-01
+                                                :ARG0 s10.h
+                                                :ARG2 (s10.i / i
+                                                             :same-as s1.t)))
+                 :duration (s10.t / temporal-quantity
+                                  :duration-of (s10.l2 / live-01
+                                                       :ARG0 s10.h)
+                                  :mod (s10.l / last)
+                                  :unit (s10.y / year)
+                                  :quant "2")
+                 :time (s10.s / sick-05
+                              :ARG1 s10.h))
+   :snt11 (s11.a2 / and
+                  :op1 (s11.w2 / write-01
+                               :ARG0 (s11.h / he
+                                            :same-as s9.p)
+                               :ARG1 (s11.a / and
+                                            :op1 (s11.s2 / strong-02
+                                                         :ARG1 (s11.i / i
+                                                                      :same-as s1.t))
+                                            :op2 (s11.w / weak-02
+                                                        :ARG1 s11.i)
+                                            :op3 (s11.s3 / suggest-01
+                                                         :ARG0 s11.h
+                                                         :ARG1 (s11.i2 / improve-01
+                                                                       :ARG1 s11.i)
+                                                         :ARG2 s11.i
+                                                         :manner (s11.g / gentle)))
+                               :manner (s11.q / quote-01
+                                              :ARG0 s11.h
+                                              :ARG2 (s11.i3 / incident
+                                                            :ARG1-of (s11.s / specific-02))))
+                  :op2 (s11.h2 / hold-01
+                               :ARG0 s11.h
+                               :ARG1 (s11.m / mirror)
+                               :ARG2 (s11.l / life
+                                            :poss s11.i)))
+   :snt12 (s12.r / realize-01
+                 :ARG0 (s12.i / i
+                              :same-as s1.t)
+                 :ARG1 (s12.w / write-01
+                              :ARG0 (s12.n / no-one)
+                              :ARG2 s12.i
+                              :mod (s12.a2 / anymore))
+                 :time (s12.a / after
+                              :op1 (s12.d / die-01
+                                          :ARG1 (s12.h / he
+                                                       :same-as s9.p))))
+   :snt13 (s13.a / art
+                 :ARG1-of (s13.d / disappear-01)
+                 :domain (s13.w / write-01))
+   :snt14 (s14.c2 / contrast-01
+                  :ARG1 (s14.a / agree-01
+                               :ARG0 (s14.i / i
+                                            :same-as s1.t)
+                               :ARG1 (s14.a3 / and
+                                             :op1 (s14.e / email-01)
+                                             :op2 (s14.t / think-01
+                                                         :time (s14.t2 / type-01
+                                                                       :ARG0 s14.i))))
+                  :ARG2 (s14.g / give-up-07
+                               :purpose (s14.n / new-01)
+                               :ARG0 s14.i
+                               :ARG1 (s14.h / habit
+                                            :mod (s14.o / old))
+                               :ARG1-of (s14.c / cause-01
+                                               :ARG0 (s14.a2 / amr-unknown))))
+   :snt15 (s15.c / cause-01
+                 :ARG0 (s15.a / amr-unknown)
+                 :ARG1 (s15.p / possible-01
+                              :ARG1 (s15.h / have-03
+                                           :ARG0 (s15.w / we)
+                                           :ARG1 (s15.a2 / and
+                                                         :op1 (s15.w2 / write-01
+                                                                      :ARG0 s15.w
+                                                                      :ARG1 (s15.l / letter))
+                                                         :op2 (s15.e2 / exchange-01
+                                                                      :ARG0 s15.w
+                                                                      :ARG1 (s15.e / email)))
+                                           :time (s15.l2 / life
+                                                         :poss s15.w))
+                              :polarity "-"))
+   :snt16 (s16.t2 / time
+                  :time-of (s16.w / want-01
+                                  :ARG0 (s16.i / i
+                                               :same-as s1.t)
+                                  :ARG1 (s16.t4 / trade-01
+                                                :ARG0 s16.i
+                                                :ARG1 (s16.y / year
+                                                             :mod (s16.t / that)
+                                                             :mod (s16.a / all)
+                                                             :time-of (s16.b / busy-01
+                                                                             :ARG1 s16.i
+                                                                             :ARG2-of (s16.h / have-degree-91
+                                                                                             :ARG1 s16.y
+                                                                                             :ARG3 (s16.t3 / too)
+                                                                                             :ARG6 (s16.a2 / and
+                                                                                                           :op1 (s16.s / sit-01
+                                                                                                                       :ARG1 s16.i
+                                                                                                                       :ARG2 (s16.p / person
+                                                                                                                                    :ARG0-of (s16.h2 / have-rel-role-91
+                                                                                                                                                     :ARG1 s16.i
+                                                                                                                                                     :ARG2 (s16.d / dad))
+                                                                                                                                    :same-as s9.p))
+                                                                                                           :op2 (s16.c / chat-01
+                                                                                                                       :ARG0 s16.i
+                                                                                                                       :ARG2 s16.p)
+                                                                                                           :op3 (s16.t5 / trade-01
+                                                                                                                        :ARG0 s16.i
+                                                                                                                        :ARG1 s16.y
+                                                                                                                        :ARG3 (s16.h3 / hug-01
+                                                                                                                                      :quant "1")))))))))
+   :snt17 (s17.c / contrast-01
+                 :ARG2 (s17.h / have-degree-91
+                              :ARG2 (s17.l / late)
+                              :ARG3 (s17.t / too)))
+   :snt18 (s18.c2 / contrast-01
+                  :ARG2 (s18.b / be-temporally-at-91
+                               :ARG1 (s18.a / and
+                                            :op1 (s18.t / take-out-11
+                                                        :ARG0 (s18.i / i
+                                                                     :part (s18.h2 / hand)
+                                                                     :same-as s1.t)
+                                                        :ARG1 (s18.l / letter
+                                                                     :poss (s18.h3 / he
+                                                                                   :part (s18.h / hand)
+                                                                                   :same-as s9.p)))
+                                            :op2 (s18.r / read-01
+                                                        :ARG0 s18.i
+                                                        :ARG1 s18.l)
+                                            :op3 (s18.f / feel-01
+                                                        :ARG0 s18.i
+                                                        :ARG1 (s18.c / connect-01
+                                                                     :ARG1 s18.i
+                                                                     :ARG2 s18.h3)))
+                               :ARG2 (s18.t2 / that))
+                  :rel (s18.p / paper
+                              :ARG0-of (s18.t3 / touch-01
+                                               :ARG1 s18.h
+                                               :location s18.h2)))
+   :snt19 (s19.c / cause-01
+                 :ARG1 (s19.p2 / possible-01
+                               :ARG1 (s19.n / need-01
+                                            :ARG0 (s19.w / we
+                                                         :mod (s19.a / all))
+                                            :ARG1 (s19.l / leave-02
+                                                         :ARG0 s19.w
+                                                         :ARG1 (s19.l3 / legacy
+                                                                       :mod (s19.v / value))
+                                                         :ARG1-of (s19.c3 / contrast-01
+                                                                          :ARG2 (s19.l2 / leave-02
+                                                                                        :ARG0 s19.w
+                                                                                        :ARG1 (s19.l4 / legacy
+                                                                                                      :mod (s19.f / finance))
+                                                                                        :ARG2 (s19.p / person
+                                                                                                     :ARG0-of (s19.h / have-rel-role-91
+                                                                                                                     :ARG1 s19.w
+                                                                                                                     :ARG2 (s19.c2 / child)))
+                                                                                        :polarity "-"))))))
+   :snt20 (s20.v / value
+                 :beneficiary (s20.t / thing
+                                     :ARG1-of (s20.t2 / touch-01
+                                                      :ARG1-of (s20.p / personal-02))
+                                     :example (s20.a / and
+                                                     :op1 (s20.b / book
+                                                                 :ARG1-of (s20.a2 / autograph-01))
+                                                     :op2 (s20.l / letter
+                                                                 :ARG0-of (s20.s / search-01
+                                                                                 :ARG1 (s20.s2 / soul))))))
+   :snt21 (s21.i2 / infer-01
+                  :ARG1 (s21.p2 / plan-01
+                                :ARG0 (s21.i / i
+                                             :same-as s1.t)
+                                :ARG1 (s21.l / leave-15
+                                             :ARG0 s21.i
+                                             :ARG1 (s21.a / amr-unknown)
+                                             :ARG2 (s21.p / person
+                                                          :ARG0-of (s21.h / have-rel-role-91
+                                                                          :ARG1 s21.i
+                                                                          :ARG2 (s21.s / son))))))
+   :snt22 (s22.s / say-01
+                 :ARG0 (s22.i / i
+                              :same-as s1.t)
+                 :ARG1 (s22.a / and
+                              :op1 (s22.c2 / collect-01
+                                           :ARG0 s22.i
+                                           :ARG1 (s22.b / book
+                                                        :ARG1-of (s22.a5 / autograph-01)))
+                              :op2 (s22.k / know-01
+                                          :ARG0 (s22.p / person
+                                                       :ARG1-of (s22.i2 / include-91
+                                                                        :ARG2 (s22.p2 / person
+                                                                                      :ARG0-of (s22.a4 / author-01)
+                                                                                      :location (s22.a3 / audience))
+                                                                        :ARG2 (s22.p3 / person
+                                                                                      :name (s22.n / name
+                                                                                                   :op1 "Tracy")))
+                                                       :mod (s22.t / that))
+                                          :ARG1 (s22.h / hound-01
+                                                       :ARG0 s22.i
+                                                       :ARG1 s22.p
+                                                       :ARG1-of (s22.c / cause-01
+                                                                       :ARG0 s22.b)))
+                              :op3 (s22.a2 / and
+                                           :op1 s22.b
+                                           :op2 (s22.d / disc
+                                                       :ARG1-of (s22.c3 / compact-01)
+                                                       :mod (s22.t2 / too))))
+                 :ARG2 s22.p3)
+   :snt23 (s23.p / plan-01
+                 :ARG0 (s23.i / i
+                              :same-as s1.t)
+                 :ARG1 (s23.p2 / publish-01
+                               :ARG0 s23.i
+                               :ARG1 (s23.n / notebook
+                                            :poss s23.i)))
+   :snt24 (s24.a / and
+                 :op1 (s24.s / sit-01
+                             :ARG1 (s24.i / i
+                                          :same-as s1.t)
+                             :ARG2 (s24.b2 / by
+                                           :op1 (s24.p2 / pyre
+                                                        :purpose (s24.f3 / funeral
+                                                                         :poss (s24.p / person
+                                                                                      :ARG0-of (s24.h / have-rel-role-91
+                                                                                                      :ARG1 s24.i
+                                                                                                      :ARG2 (s24.f / father))
+                                                                                      :same-as s9.p)))))
+                 :op2 (s24.w2 / write-01
+                              :ARG0 s24.i)
+                 :time (s24.w / witness-01
+                              :ARG0 s24.i
+                              :ARG1 (s24.s2 / swallow-01
+                                            :ARG0 (s24.f2 / fire)
+                                            :ARG1 (s24.b / body
+                                                         :poss s24.p))))
+   :snt25 (s25.c3 / contrast-01
+                  :ARG1 (s25.h / have-03
+                               :ARG0 (s25.i / i
+                                            :same-as s1.t)
+                               :ARG1 (s25.i2 / idea
+                                             :topic (s25.t / thing
+                                                           :manner-of (s25.d / do-02
+                                                                             :ARG0 s25.i
+                                                                             :ARG1 (s25.i3 / it))))
+                               :polarity "-")
+                  :ARG2 (s25.c / commit-01
+                               :ARG1 s25.i
+                               :ARG2 (s25.a2 / and
+                                             :op1 (s25.c2 / compile-01
+                                                          :ARG0 s25.i
+                                                          :ARG1 (s25.a / and
+                                                                       :op1 (s25.t2 / thing
+                                                                                    :ARG1-of (s25.t4 / think-01
+                                                                                                     :ARG0 (s25.h3 / he
+                                                                                                                   :same-as s9.p))
+                                                                                    :same-as s10.t2)
+                                                                       :op2 (s25.t3 / thing
+                                                                                    :ARG1-of (s25.t5 / think-01
+                                                                                                     :ARG0 s25.i)))
+                                                          :ARG4 (s25.b / book
+                                                                       :ARG1-of (s25.p2 / publish-01
+                                                                                        :same-as s25.b)))
+                                             :op2 (s25.l / leave-15
+                                                         :ARG0 s25.i
+                                                         :ARG1 s25.b
+                                                         :ARG2 (s25.p / person
+                                                                      :ARG0-of (s25.h2 / have-rel-role-91
+                                                                                       :ARG1 s25.i
+                                                                                       :ARG2 (s25.s / son))
+                                                                      :same-as s21.p)))))
+   :snt26 (s26.l / like-02
+                 :ARG0 (s26.i / i
+                              :same-as s1.t)
+                 :ARG1 (s26.e / end-01
+                              :ARG0 s26.i
+                              :ARG2 (s26.v / verse
+                                           :quant (s26.f2 / few)
+                                           :part-of (s26.t / thing
+                                                           :ARG1-of (s26.w / write-01
+                                                                           :ARG0 s26.i
+                                                                           :location (s26.f3 / funeral
+                                                                                             :poss (s26.p / person
+                                                                                                          :ARG0-of (s26.h / have-rel-role-91
+                                                                                                                          :ARG1 s26.i
+                                                                                                                          :ARG2 (s26.f / father))
+                                                                                                          :same-as s9.p)))))))
+   :snt27 (s27.a / and
+                 :op2 (s27.p / pardon-01
+                             :ARG0 (s27.y2 / you)
+                             :ARG1 (s27.g / grammar)
+                             :ARG1-of (s27.c / cause-01
+                                             :ARG0 (s27.l2 / look-01
+                                                           :ARG0 (s27.i / i
+                                                                        :same-as s1.t)
+                                                           :ARG1 s27.g
+                                                           :time (s27.b / before
+                                                                        :duration (s27.t / temporal-quantity
+                                                                                         :unit (s27.y / year)
+                                                                                         :quant "10")
+                                                                        :op1 (s27.n / now))
+                                                           :polarity "-"))
+                             :mode "imperative"
+                             :polite "+")
+                 :rel (s27.l / linguist
+                             :mod (s27.t2 / that)))
+   :snt28 (s28.t / take-out-11
+                 :purpose (s28.c / come-01
+                                 :ARG1 (s28.i / i
+                                              :same-as s1.t)
+                                 :ARG4 (s28.h / here))
+                 :ARG0 s28.i
+                 :ARG1 (s28.i2 / it
+                               :same-as s27.g)
+                 :ord (s28.o / ordinal-entity
+                             :value "1"))
+   :snt29 (s29.p / picture-01
+                 :ARG0 (s29.y / you)
+                 :ARG1 (s29.a / and
+                              :op1 (s29.b / be-located-at-91
+                                          :ARG1 (s29.a2 / ash)
+                                          :ARG2 (s29.b2 / bottle))
+                              :op2 (s29.c / confine-01
+                                          :ARG1 (s29.e / energy
+                                                       :ARG1-of (s29.b3 / bound-09
+                                                                        :polarity "-"))
+                                          :ARG2 s29.b2)
+                              :op3 (s29.f / force-01
+                                          :ARG1 (s29.i / i
+                                                       :same-as s1.t)
+                                          :ARG2 (s29.d / deal-01
+                                                       :ARG0 s29.i
+                                                       :ARG2 (s29.r / reality))
+                                          :ARG2 (s29.d2 / deal-01
+                                                        :ARG0 s29.i
+                                                        :ARG2 (s29.g / grow-up-04
+                                                                     :ARG1 s29.i))))
+                 :location (s29.f2 / frame)
+                 :mode "imperative")
+   :snt30 (s30.c2 / contrast-01
+                  :ARG1 (s30.a / and
+                               :op1 (s30.h / hear-01
+                                           :ARG0 (s30.i / i
+                                                        :part (s30.s / soul)
+                                                        :same-as s1.t)
+                                           :ARG1 (s30.y / you
+                                                        :same-as s1.t))
+                               :op2 (s30.k2 / know-01
+                                            :ARG0 s30.i
+                                            :ARG1 (s30.w / want-01
+                                                         :ARG0 s30.y
+                                                         :ARG1 (s30.s2 / strong-02
+                                                                       :ARG1 s30.i))))
+                  :ARG2 (s30.a2 / and
+                                :op1 (s30.s3 / suck-01
+                                             :ARG1 s30.i
+                                             :direction (s30.d2 / down))
+                                :op2 (s30.s5 / surround-01
+                                             :ARG2 s30.i
+                                             :ARG2 (s30.w2 / water
+                                                           :ARG0-of (s30.r / rage-02)
+                                                           :mod (s30.e2 / emotion)
+                                                           :mod (s30.t2 / this)))
+                                :op3 (s30.s4 / suffocate-01
+                                             :ARG0 s30.w2
+                                             :ARG1 s30.i)
+                                :time (s30.n / now
+                                             :mod (s30.r3 / right))
+                                :time-of (s30.a3 / and
+                                                 :op1 s30.s3
+                                                 :op2 s30.s5
+                                                 :op3 (s30.k / keep-on-08
+                                                             :ARG0 s30.i
+                                                             :ARG1 (s30.a4 / and
+                                                                           :ARG1-of (s30.r2 / resemble-01
+                                                                                            :ARG2 (s30.t / teach-01
+                                                                                                         :ARG0 s30.y
+                                                                                                         :ARG2 s30.i)
+                                                                                            :mod (s30.j / just))
+                                                                           :op1 (s30.f / fight-01
+                                                                                       :ARG0 s30.i)
+                                                                           :op2 (s30.f3 / flourish-01
+                                                                                        :ARG1 s30.i)))))
+                  :rel (s30.d / desperate-02
+                              :ARG0 s30.i
+                              :ARG1 (s30.c / cleanse-01
+                                           :ARG0 s30.i
+                                           :ARG1 s30.s))
+                  :rel (s30.t4 / try-01
+                               :ARG0 s30.i
+                               :ARG1 (s30.e / emerge-01
+                                            :ARG0 s30.i
+                                            :frequency (s30.t3 / time
+                                                               :mod (s30.m / more)
+                                                               :mod (s30.o / one))
+                                            :location (s30.f4 / footing
+                                                              :ARG1-of (s30.f2 / firm-03)))))
+   :snt31 (s31.w2 / whisper-01
+                  :ARG0 (s31.y / you
+                               :same-as s1.t)
+                  :ARG0-of (s31.e / encourage-01)
+                  :ARG1 (s31.a2 / and
+                                :op1 (s31.h2 / hold-01
+                                             :ARG0 s31.y
+                                             :ARG1 (s31.i / i
+                                                          :same-as s1.t))
+                                :op2 (s31.h / heap-01
+                                            :ARG0 s31.y
+                                            :ARG1 s31.i
+                                            :ARG2 (s31.s2 / shore
+                                                          :mod (s31.s / sanity)))
+                                :op3 (s31.l / live-01
+                                            :ARG0 s31.i
+                                            :mod (s31.a / again))
+                                :op4 (s31.l2 / love-01
+                                             :ARG0 s31.i
+                                             :mod s31.a))
+                  :location (s31.w / whirlpool
+                                   :mod (s31.d / despair-01
+                                               :ARG0 s31.i)
+                                   :poss s31.i))
+   :snt32 (s32.t / thank-01
+                 :ARG1 (s32.y / you
+                              :same-as s1.t)))
+

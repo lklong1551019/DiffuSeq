@@ -1,0 +1,838 @@
+# ::id doc-384
+# ::doc_file doc-384
+# ::tok http : / / www . ted . com / talks / arthur_benjamin_the_magic_of_fibonacci_numbers< / url> <next_sent> So why do we learn mathematics ? <next_sent> Essentially , for three reasons : calculation , application , and last , and unfortunately least in terms of the time we give it , inspiration . <next_sent> Mathematics is the science of patterns , and we study it to learn how to think logically , critically and creatively , but too much of the mathematics that we learn in school is not effectively motivated , and when our students ask , " Why are we learning this ? " <next_sent> then they often hear that they 'll need it in an upcoming math class or on a future test . <next_sent> But would n't it be great if every once in a while we did mathematics simply because it was fun or beautiful or because it excited the mind ? <next_sent> Now , I know many people have not had the opportunity to see how this can happen , so let me give you a quick example with my favorite collection of numbers , the Fibonacci numbers . <next_sent> Yeah ! <next_sent> I already have Fibonacci fans here . <next_sent> That 's great . <next_sent> Now these numbers can be appreciated in many different ways . <next_sent> From the standpoint of calculation , they 're as easy to understand as one plus one , which is two . <next_sent> Then one plus two is three , two plus three is five , three plus five is eight , and so on . <next_sent> Indeed , the person we call Fibonacci was actually named Leonardo of Pisa , and these numbers appear in his book " Liber Abaci , " which taught the Western world the methods of arithmetic that we use today . <next_sent> In terms of applications , Fibonacci numbers appear in nature surprisingly often . <next_sent> The number of petals on a flower is typically a Fibonacci number , or the number of spirals on a sunflower or a pineapple tends to be a Fibonacci number as well . <next_sent> In fact , there are many more applications of Fibonacci numbers , but what I find most inspirational about them are the beautiful number patterns they display . <next_sent> Let me show you one of my favorites . <next_sent> Suppose you like to square numbers , and frankly , who does n't ? <next_sent> Let 's look at the squares of the first few Fibonacci numbers . <next_sent> So one squared is one , two squared is four , three squared is nine , five squared is 25 , and so on . <next_sent> That 's how they 're created . <next_sent> But you would n't expect anything special to happen when you add the squares together . <next_sent> But check this out . <next_sent> One plus one gives us two , and one plus four gives us five . <next_sent> And four plus nine is 13 , nine plus 25 is 34 , and yes , the pattern continues . <next_sent> In fact , here 's another one . <next_sent> Suppose you wanted to look at adding the squares of the first few Fibonacci numbers . <next_sent> Let 's see what we get there . <next_sent> So one plus one plus four is six . <next_sent> Add nine to that , we get 15 . <next_sent> Add 25 , we get 40 . <next_sent> Add 64 , we get 104 . <next_sent> Now look at those numbers . <next_sent> Those are not Fibonacci numbers , but if you look at them closely , you 'll see the Fibonacci numbers buried inside of them . <next_sent> Do you see it ? <next_sent> I 'll show it to you . <next_sent> Six is two times three , 15 is three times five , 40 is five times eight , two , three , five , eight , who do we appreciate ? <next_sent> Fibonacci ! <next_sent> Of course . <next_sent> Now , as much fun as it is to discover these patterns , it 's even more satisfying to understand why they are true . <next_sent> Let 's look at that last equation . <next_sent> Why should the squares of one , one , two , three , five and eight add up to eight times 13 ? <next_sent> I 'll show you by drawing a simple picture . <next_sent> We 'll start with a one - by - one square and next to that put another one - by - one square . <next_sent> Together , they form a one - by - two rectangle . <next_sent> Beneath that , I 'll put a two - by - two square , and next to that , a three - by - three square , beneath that , a five - by - five square , and then an eight - by - eight square , creating one giant rectangle , right ? <next_sent> Now let me ask you a simple question : what is the area of the rectangle ? <next_sent> Well , on the one hand , it 's the sum of the areas of the squares inside it , right ? <next_sent> Just as we created it . <next_sent> It 's one squared plus one squared plus two squared plus three squared plus five squared plus eight squared . Right ? <next_sent> That 's the area . <next_sent> On the other hand , because it 's a rectangle , the area is equal to its height times its base , and the height is clearly eight , and the base is five plus eight , which is the next Fibonacci number , 13 . <next_sent> Right ? <next_sent> So the area is also eight times 13 . <next_sent> Since we 've correctly calculated the area two different ways , they have to be the same number , and that 's why the squares of one , one , two , three , five and eight add up to eight times 13 . <next_sent> Now , if we continue this process , we 'll generate rectangles of the form 13 by 21 , 21 by 34 , and so on . <next_sent> Now check this out . <next_sent> If you divide 13 by eight , you get 1.625 . <next_sent> And if you divide the larger number by the smaller number , then these ratios get closer and closer to about 1.618 , known to many people as the Golden Ratio , a number which has fascinated mathematicians , scientists and artists for centuries . <next_sent> Now , I show all this to you because , like so much of mathematics , there 's a beautiful side to it that I fear does not get enough attention in our schools . <next_sent> We spend lots of time learning about calculation , but let 's not forget about application , including , perhaps , the most important application of all , learning how to think . <next_sent> If I could summarize this in one sentence , it would be this : Mathematics is not just solving for x , it 's also figuring out why . <next_sent> Thank you very much .
+(d / document
+   :snt1 (s1.u / url-entity
+               :value (s1.n / number
+                            :value "narcotic"))
+   :snt2 (s2.l / learn-01
+               :purpose (s2.a / amr-unknown)
+               :ARG0 (s2.w / we)
+               :ARG1 (s2.m / mathematics))
+   :snt3 (s3.c2 / cause-01
+                :ARG0 (s3.r / reason
+                            :domain (s3.a / and
+                                          :op1 (s3.c / calculate-01)
+                                          :op2 (s3.a2 / apply-02)
+                                          :op3 (s3.t / thing
+                                                     :ARG1-of (s3.h / have-degree-91
+                                                                    :ARG2 (s3.c3 / concern-02
+                                                                                 :ARG1 (s3.t2 / time
+                                                                                              :mod (s3.l / last)
+                                                                                              :time-of (s3.g / give-01
+                                                                                                             :ARG0 (s3.w / we)
+                                                                                                             :ARG1 s3.c))
+                                                                                 :ARG2-of (s3.f / fortunate-01
+                                                                                                :polarity "-"))
+                                                                    :ARG3 (s3.l2 / least)))
+                                          :op4 (s3.i / inspire-01))
+                            :quant "3")
+                :mod (s3.b / basic))
+   :snt4 (s4.c2 / contrast-01
+                :ARG1 (s4.a2 / and
+                             :op1 (s4.s2 / science
+                                         :domain (s4.m / mathematics)
+                                         :topic (s4.p / pattern-01))
+                             :op2 (s4.s4 / study-01
+                                         :purpose (s4.l / learn-01
+                                                        :ARG0 (s4.w / we)
+                                                        :ARG1 (s4.t / thing
+                                                                    :manner-of (s4.t2 / think-01
+                                                                                      :ARG0 s4.w
+                                                                                      :manner (s4.a3 / and
+                                                                                                     :op1 (s4.l4 / logic)
+                                                                                                     :op2 (s4.c3 / criticism-04)
+                                                                                                     :op3 (s4.s3 / social)))))
+                                         :ARG0 s4.w
+                                         :ARG1 s4.m))
+                :ARG2 (s4.a4 / and
+                             :op1 (s4.m3 / motivate-01
+                                         :ARG1 (s4.m2 / mathematics
+                                                      :ARG1-of (s4.h / have-quant-91
+                                                                     :ARG2 (s4.m4 / much)
+                                                                     :ARG3 (s4.t3 / too))
+                                                      :ARG1-of (s4.l2 / learn-01
+                                                                      :ARG0 s4.w
+                                                                      :location (s4.s / school))
+                                                      :mod s4.m)
+                                         :ARG1-of (s4.e / effective-04)
+                                         :polarity "-")
+                             :op2 (s4.a5 / ask-01
+                                         :ARG0 (s4.p2 / person
+                                                      :ARG0-of (s4.s5 / study-01
+                                                                      :ARG2 s4.w))
+                                         :ARG1 (s4.c / cause-01
+                                                     :ARG0 (s4.a / amr-unknown)
+                                                     :ARG1 (s4.l3 / learn-01
+                                                                  :ARG0 s4.w
+                                                                  :ARG1 s4.m2)))))
+   :snt5 (s5.h / hear-01
+               :ARG0 (s5.t3 / they
+                            :same-as s4.p2)
+               :ARG1 (s5.n / need-01
+                           :ARG0 s5.t3
+                           :ARG1 (s5.i / it
+                                       :same-as s4.m)
+                           :time (s5.o2 / or
+                                        :op1 (s5.c / class
+                                                   :time (s5.u / upcoming)
+                                                   :topic (s5.m / mathematics))
+                                        :op2 (s5.t / test-01
+                                                   :time (s5.f / future))))
+               :frequency (s5.o / often)
+               :time (s5.t2 / then))
+   :snt6 (s6.c2 / contrast-01
+                :ARG2 (s6.g / great
+                            :ARG1-of (s6.r2 / request-confirmation-91)
+                            :domain (s6.d / do-02
+                                          :ARG0 (s6.w / we)
+                                          :ARG1 (s6.m / mathematics)
+                                          :ARG1-of (s6.c / cause-01
+                                                         :ARG0 (s6.o / or
+                                                                     :op1 (s6.f / fun-01
+                                                                                :ARG1 s6.m)
+                                                                     :op2 (s6.b / beautiful-02
+                                                                                :ARG1 s6.m)
+                                                                     :op3 (s6.e / excite-01
+                                                                                :ARG0 s6.m
+                                                                                :ARG1 (s6.m2 / mind)))
+                                                         :ARG1-of (s6.s / simple-02))
+                                          :frequency (s6.r / rate-entity-91
+                                                           :ARG2 (s6.w2 / while)))))
+   :snt7 (s7.c / cause-01
+               :ARG0 (s7.k / know-01
+                           :ARG0 (s7.i / i)
+                           :ARG1 (s7.h / have-03
+                                       :ARG0 (s7.p / person
+                                                   :quant (s7.m / many))
+                                       :ARG1 (s7.o / opportunity
+                                                   :purpose (s7.s / see-01
+                                                                  :ARG0 s7.p
+                                                                  :ARG1 (s7.h2 / have-manner-91
+                                                                               :ARG1 (s7.t / this)
+                                                                               :ARG1-of (s7.p2 / possible-01))))
+                                       :polarity "-")
+                           :time (s7.n2 / now))
+               :ARG1 (s7.l / let-01
+                           :ARG0 (s7.y / you)
+                           :ARG1 (s7.g / give-01
+                                       :ARG0 s7.i
+                                       :ARG1 (s7.e / example
+                                                   :ARG1-of (s7.q / quick-02)
+                                                   :topic (s7.c2 / collect-01
+                                                                 :ARG0 s7.i
+                                                                 :ARG1 (s7.n3 / number
+                                                                              :mod (s7.n4 / number
+                                                                                          :name (s7.n / name
+                                                                                                      :op1 "Fibonacci")))
+                                                                 :ARG1-of (s7.f / favor-01
+                                                                                :ARG0 s7.i)))
+                                       :ARG2 s7.y)))
+   :snt8 (s8.y / yeah
+               :mode "expressive")
+   :snt9 (s9.h / have-03
+               :ARG0 (s9.i / i
+                           :same-as s7.i)
+               :ARG1 (s9.f / fan
+                           :poss (s9.p / person
+                                       :name (s9.n / name
+                                                   :op1 "Fibonacci")))
+               :location (s9.h2 / here)
+               :time (s9.a / already))
+   :snt10 (s10.g / great
+                 :domain (s10.t / that
+                                :same-as s9.h))
+   :snt11 (s11.p / possible-01
+                 :ARG1 (s11.a / appreciate-02
+                              :ARG1 (s11.n2 / number
+                                            :mod (s11.t / this)
+                                            :same-as s7.c2)
+                              :manner (s11.w / way
+                                             :quant (s11.m / many)
+                                             :ARG1-of (s11.d / differ-02)))
+                 :time (s11.n / now))
+   :snt12 (s12.h / have-degree-91
+                 :ARG1 (s12.t / they
+                              :same-as s7.c2)
+                 :ARG2 (s12.e / easy-05
+                              :ARG1 (s12.u / understand-01
+                                           :ARG1 s12.t))
+                 :ARG3 (s12.e2 / equal)
+                 :ARG4 (s12.s2 / sum-of
+                               :op1 (s12.o / one)
+                               :op2 (s12.o2 / one
+                                            :ARG1-of (s12.e3 / equal-01
+                                                             :ARG2 "2")))
+                 :source (s12.s / standpoint
+                                :mod (s12.c / calculate-01)))
+   :snt13 (s13.a / and
+                 :op1 (s13.e / equal-01
+                             :ARG2 (s13.e2 / equal-01
+                                           :ARG2 "2")
+                             :ARG1 "1")
+                 :op2 (s13.e3 / equal-01
+                              :ARG1 "2"
+                              :ARG2 "3"
+                              :ARG4 "5")
+                 :op3 (s13.e4 / equal-01
+                              :ARG1 "3"
+                              :ARG2 "5"
+                              :ARG2 "8")
+                 :op4 (s13.e5 / et-cetera))
+   :snt14 (s14.a2 / and
+                  :op1 (s14.n5 / name-01
+                               :ARG1 (s14.p / person
+                                            :ARG1-of (s14.c / call-01
+                                                            :name (s14.n / name
+                                                                         :op1 "Fibonacci")
+                                                            :ARG0 (s14.w / we)))
+                               :ARG1-of (s14.a / actual-02)
+                               :ARG2 (s14.p2 / person
+                                             :name (s14.n2 / name
+                                                           :op1 "Leonardo"
+                                                           :op2 "of"
+                                                           :op3 "Pisa"))
+                               :mod (s14.i / indeed))
+                  :op2 (s14.a3 / appear-01
+                               :ARG1 (s14.n6 / number
+                                             :mod (s14.t2 / this)
+                                             :same-as s7.c2)
+                               :location (s14.b / book
+                                                :name (s14.n3 / name
+                                                              :op1 "Liber"
+                                                              :op2 "Abaci")
+                                                :ARG0-of (s14.t / teach-01
+                                                                :ARG1 (s14.m / method
+                                                                             :ARG1-of (s14.u / use-01
+                                                                                             :ARG0 s14.w
+                                                                                             :time (s14.t3 / today))
+                                                                             :mod (s14.a4 / arithmetic))
+                                                                :ARG2 (s14.w2 / world
+                                                                              :mod (s14.w3 / world-region
+                                                                                           :name (s14.n4 / name
+                                                                                                         :op1 "West"))))
+                                                :poss s14.p)))
+   :snt15 (s15.a / appear-01
+                 :ARG1 (s15.n2 / number
+                               :mod (s15.r / rational))
+                 :location (s15.n / nature)
+                 :mod (s15.o / often
+                             :ARG0-of (s15.s / surprise-01))
+                 :topic (s15.a2 / application))
+   :snt16 (s16.o / or
+                 :op1 (s16.n3 / number
+                              :name (s16.n / name
+                                           :op1 "Fibonacci")
+                              :domain (s16.n2 / number
+                                              :ARG1-of (s16.t2 / typical-02)
+                                              :quant-of (s16.p / petal
+                                                               :part-of (s16.f / flower))))
+                 :op2 (s16.t / tend-02
+                             :ARG1 (s16.n4 / number
+                                           :quant-of (s16.s / spiral-01
+                                                            :ARG1 (s16.o2 / or
+                                                                          :op1 (s16.s2 / sunflower)
+                                                                          :op2 (s16.p2 / pineapple))))
+                             :ARG2 (s16.n5 / number
+                                           :mod s16.n3
+                                           :mod (s16.a / as-well))))
+   :snt17 (s17.c / contrast-01
+                 :ARG1 (s17.a / apply-02
+                              :ARG1 (s17.n2 / number
+                                            :name (s17.n / name
+                                                         :op1 "Fibonacci"))
+                              :ARG1-of (s17.h2 / have-quant-91
+                                               :ARG2 (s17.m / many)
+                                               :ARG3 (s17.m2 / more)))
+                 :ARG2 (s17.f / find-02
+                              :ARG0 (s17.i / i
+                                           :same-as s7.i)
+                              :ARG1 (s17.h / have-degree-91
+                                           :ARG1 s17.n2
+                                           :ARG2 (s17.i3 / inspire-01
+                                                         :ARG0 s17.n2
+                                                         :ARG2 (s17.p / pattern
+                                                                      :ARG1-of (s17.b / beautiful-02)
+                                                                      :ARG1-of (s17.d / display-01
+                                                                                      :ARG0 s17.n2)
+                                                                      :mod (s17.n3 / number))
+                                                         :topic s17.n2)
+                                           :ARG3 (s17.m3 / most)))
+                 :mod (s17.i2 / in-fact))
+   :snt18 (s18.l / let-01
+                 :ARG0 (s18.y / you)
+                 :ARG1 (s18.s / show-01
+                              :ARG0 (s18.i / i
+                                           :same-as s7.i)
+                              :ARG1 (s18.o / one
+                                           :ARG1-of (s18.i2 / include-91
+                                                            :ARG2 (s18.t / thing
+                                                                         :ARG1-of (s18.f / favor-01
+                                                                                         :ARG0 s18.i))))
+                              :ARG2 s18.y))
+   :snt19 (s19.a2 / and
+                  :op1 (s19.l2 / like-01
+                               :ARG0 (s19.a / amr-unknown)
+                               :ARG1 (s19.s / square-01
+                                            :ARG0 (s19.y / you)
+                                            :ARG1 (s19.n / number))
+                               :manner (s19.f / frank)
+                               :polarity "-")
+                  :rel (s19.s2 / suppose-01
+                               :ARG1 (s19.l / like-01
+                                            :ARG0 s19.y
+                                            :ARG1 s19.s)))
+   :snt20 (s20.l / look-01
+                 :ARG0 (s20.w / we)
+                 :ARG1 (s20.s / square
+                              :ARG1-of (s20.i / include-91
+                                              :ARG2 (s20.n2 / number
+                                                            :name (s20.n / name
+                                                                         :op1 "Fibonacci")
+                                                            :quant (s20.f / few)
+                                                            :ord (s20.o / ordinal-entity
+                                                                        :value "1")))))
+   :snt21 (s21.a / and
+                 :ARG1-of (s21.e2 / equal-01
+                                  :ARG2 "25")
+                 :op1 (s21.o / one
+                             :domain (s21.t / thing
+                                            :ARG1-of (s21.s / square-01)
+                                            :quant "1"))
+                 :op2 (s21.t2 / thing
+                              :ARG1-of (s21.s2 / square-01)
+                              :ARG1-of (s21.e / equal-01
+                                              :ARG2 "25")
+                              :quant "2")
+                 :op3 (s21.s3 / squared
+                              :quant "4")
+                 :op4 (s21.s4 / squared
+                              :quant "9")
+                 :op5 (s21.e3 / et-cetera)
+                 :rel "3"
+                 :rel "5")
+   :snt22 (s22.h / have-manner-91
+                 :ARG1 (s22.c / create-01
+                              :ARG1 (s22.t2 / they
+                                            :same-as s17.n2))
+                 :ARG2 (s22.t / that))
+   :snt23 (s23.c / contrast-01
+                 :ARG2 (s23.e2 / expect-01
+                               :ARG0 (s23.y / you)
+                               :ARG1 (s23.e / event
+                                            :mod (s23.a2 / anything
+                                                         :ARG1-of (s23.s / special-02)))
+                               :condition (s23.a / add-02
+                                                 :ARG0 s23.y
+                                                 :ARG1 (s23.s2 / square)
+                                                 :ARG2 (s23.t / together))
+                               :polarity "-"))
+   :snt24 (s24.c2 / contrast-01
+                  :ARG2 (s24.c / check-out-05
+                               :ARG0 (s24.y / you)
+                               :ARG1 (s24.t / this)
+                               :mode "imperative"))
+   :snt25 (s25.a / and
+                 :op1 (s25.g / give-01
+                             :ARG0 (s25.s / sum-of
+                                          :op1 (s25.o / one)
+                                          :op2 (s25.o2 / one))
+                             :ARG1 (s25.t / thing
+                                          :quant "2")
+                             :ARG2 (s25.w / we))
+                 :op2 (s25.g2 / give-01
+                              :ARG0 (s25.s2 / sum-of
+                                            :op1 s25.o2
+                                            :op2 "4")
+                              :ARG1 (s25.t2 / thing
+                                            :quant "5")
+                              :ARG2 s25.w))
+   :snt26 (s26.a / and
+                 :op2 (s26.a2 / and
+                              :op1 (s26.e / equal-01
+                                          :ARG1 "4"
+                                          :ARG2 "9"
+                                          :ARG3 "13")
+                              :op2 (s26.e2 / equal-01
+                                           :ARG1 "9"
+                                           :ARG2 "25"
+                                           :ARG2 "34")
+                              :op3 (s26.c / continue-01
+                                          :ARG1 (s26.p / pattern)
+                                          :mod (s26.y / yes))))
+   :snt27 (s27.o / one
+                 :location (s27.h / here)
+                 :mod (s27.a / another)
+                 :mod (s27.i / in-fact))
+   :snt28 (s28.s2 / suppose-01
+                  :ARG1 (s28.w / want-01
+                               :ARG0 (s28.y / you
+                                            :same-as s19.y)
+                               :ARG1 (s28.l / look-01
+                                            :ARG0 s28.y
+                                            :ARG1 (s28.a / add-02
+                                                         :ARG1 (s28.s / square
+                                                                      :part-of (s28.n2 / number
+                                                                                       :name (s28.n / name
+                                                                                                    :op1 "Fibonacci")
+                                                                                       :quant (s28.f / few)
+                                                                                       :ord (s28.o / ordinal-entity
+                                                                                                   :value "1")))))))
+   :snt29 (s29.s / see-01
+                 :ARG0 (s29.w / we)
+                 :ARG1 (s29.t2 / thing
+                               :ARG2-of (s29.g / get-05
+                                               :ARG1 s29.w
+                                               :ARG2 (s29.t / there)))
+                 :mode "imperative")
+   :snt30 (s30.i / infer-01
+                 :ARG1 (s30.e / equal-01
+                              :ARG2 (s30.e2 / equal-01
+                                            :ARG1 "1"
+                                            :ARG2 "4")
+                              :ARG2 "6")
+                 :rel "1")
+   :snt31 (s31.h / have-condition-91
+                 :ARG1 (s31.g / get-01
+                              :ARG0 (s31.w / we)
+                              :ARG1 (s31.t3 / thing
+                                            :quant "15"))
+                 :ARG2 (s31.a / add-02
+                              :ARG1 (s31.t2 / thing
+                                            :quant "9")
+                              :ARG2 s31.t3
+                              :ARG2 (s31.t / that)))
+   :snt32 (s32.h / have-condition-91
+                 :ARG1 (s32.g / get-01
+                              :ARG0 (s32.w / we
+                                           :same-as s31.w)
+                              :ARG1 "40")
+                 :ARG2 (s32.a / add-02
+                              :ARG1 "25"))
+   :snt33 (s33.h / have-condition-91
+                 :ARG1 (s33.g / get-01
+                              :ARG0 (s33.w / we
+                                           :same-as s31.w)
+                              :ARG1 "104")
+                 :ARG2 (s33.a / add-02
+                              :ARG1 "64"))
+   :snt34 (s34.l / look-01
+                 :ARG0 (s34.y / you)
+                 :ARG1 (s34.n2 / number
+                               :mod (s34.t / that)
+                               :same-as s28.n2)
+                 :time (s34.n / now)
+                 :mode "imperative")
+   :snt35 (s35.c2 / contrast-01
+                  :ARG1 (s35.n2 / number
+                                :domain (s35.t / that
+                                               :same-as s28.n2)
+                                :polarity "-")
+                  :ARG2 (s35.s / see-01
+                               :ARG0 (s35.y / you)
+                               :ARG1 (s35.b / bury-01
+                                            :ARG1 (s35.n3 / number
+                                                          :name (s35.n / name
+                                                                       :op1 "Fibonacci"))
+                                            :ARG2 (s35.i / inside
+                                                         :op1 s35.n2))
+                               :condition (s35.l / look-01
+                                                 :ARG0 s35.y
+                                                 :ARG1 s35.t
+                                                 :manner (s35.c / close-10))))
+   :snt36 (s36.s / see-01
+                 :ARG0 (s36.y / you
+                              :same-as s7.i)
+                 :ARG1 (s36.i / it)
+                 :polarity (s36.a / amr-unknown))
+   :snt37 (s37.s / show-01
+                 :ARG0 (s37.i / i
+                              :same-as s7.i)
+                 :ARG1 (s37.i2 / it
+                               :same-as s36.i)
+                 :ARG2 (s37.y / you
+                              :same-as s19.y))
+   :snt38 (s38.a2 / and
+                  :op1 (s38.e / equal-01
+                              :ARG1 (s38.p / product-of
+                                           :op1 "2"
+                                           :op2 "2")
+                              :ARG2 (s38.p2 / product-of
+                                            :op1 "15"
+                                            :op1 "5"
+                                            :op2 "3")
+                              :op2-of s38.a2)
+                  :op3 (s38.e2 / equal-01
+                               :ARG2 (s38.t / times
+                                            :op1 "5"
+                                            :op2 "8")
+                               :op4 (s38.p3 / product-of
+                                            :op1 "2"
+                                            :op2 "3"
+                                            :op5 "5")
+                               :ARG1 "40")
+                  :op5 (s38.a3 / appreciate-02
+                               :ARG0 (s38.w / we)
+                               :ARG1 (s38.a / amr-unknown))
+                  :op6 "8"
+                  :rel "6")
+   :snt39 (s39.p / person
+                 :name (s39.n / name
+                              :op1 "Fibonacci"))
+   :snt40 (s40.o / of-course)
+   :snt41 (s41.h / have-degree-91
+                 :ARG1 (s41.u / understand-01
+                              :ARG1 (s41.t / thing
+                                           :ARG0-of (s41.c / cause-01
+                                                           :ARG1 (s41.t3 / true-01
+                                                                         :ARG1 (s41.p / pattern-01
+                                                                                      :mod (s41.t2 / this))))))
+                 :ARG2 (s41.s / satisfy-01
+                              :ARG0 s41.u)
+                 :ARG3 (s41.m / more
+                              :mod (s41.e / even))
+                 :concession (s41.f / fun-01
+                                    :ARG1 (s41.d / discover-01
+                                                 :ARG1 s41.p)
+                                    :mod (s41.m2 / much))
+                 :rel (s41.n / now))
+   :snt42 (s42.l2 / look-01
+                  :ARG0 (s42.w / we)
+                  :ARG1 (s42.e / equation
+                               :mod (s42.l / last)
+                               :mod (s42.t / that)))
+   :snt43 (s43.c / cause-01
+                 :ARG0 (s43.a2 / amr-unknown)
+                 :ARG1 (s43.r / recommend-01
+                              :ARG1 (s43.a / add-up-04
+                                           :ARG1 (s43.a3 / and
+                                                         :op1 (s43.s / square
+                                                                     :mod (s43.o / one))
+                                                         :op2 (s43.s2 / square
+                                                                      :mod (s43.o2 / one)
+                                                                      :op3-of s43.a3
+                                                                      :mod "2"
+                                                                      :mod "3")
+                                                         :op4 (s43.s3 / square
+                                                                      :quant "5"
+                                                                      :quant "8")
+                                                         :op5 s43.s3)
+                                           :ARG2 (s43.p / product-of
+                                                        :op1 "8"
+                                                        :op2 "13"))))
+   :snt44 (s44.s / show-01
+                 :ARG0 (s44.i / i
+                              :same-as s7.i)
+                 :ARG2 (s44.y / you
+                              :same-as s19.y)
+                 :manner (s44.d / draw-01
+                                :ARG0 s44.i
+                                :ARG1 (s44.p / picture
+                                             :ARG1-of (s44.s2 / simple-02))))
+   :snt45 (s45.a / and
+                 :op1 (s45.s3 / start-01
+                              :ARG0 (s45.w / we)
+                              :ARG2 (s45.s / square
+                                           :manner (s45.o / one-by-one)))
+                 :op2 (s45.p / put-01
+                             :ARG0 s45.w
+                             :ARG1 (s45.s2 / square
+                                           :mod (s45.a2 / another))
+                             :location (s45.n / next-to
+                                              :op1 s45.s)))
+   :snt46 (s46.f / form-01
+                 :ARG0 (s46.t / they)
+                 :ARG1 (s46.r / rectangle
+                              :quant "2")
+                 :manner (s46.t2 / together))
+   :snt47 (s47.c / create-01
+                 :ARG0 (s47.p / put-01
+                              :ARG0 (s47.i / i
+                                           :same-as s7.i)
+                              :ARG1 (s47.a / and
+                                           :op1 (s47.s / square
+                                                       :quant "2")
+                                           :op2 (s47.n / next-to
+                                                       :op1 s47.s)
+                                           :op2 (s47.s2 / square
+                                                        :quant "3"))
+                              :ARG2 (s47.w / week
+                                           :op1 (s47.t / that
+                                                       :same-as s46.r))
+                              :ARG2 (s47.a2 / and
+                                            :location (s47.b2 / beneath
+                                                              :domain (s47.s4 / square
+                                                                              :quant "5")
+                                                              :domain (s47.s5 / square
+                                                                              :quant "5")
+                                                              :op1 s47.a
+                                                              :time (s47.t2 / then))
+                                            :op1 (s47.b / beneath
+                                                        :op1 (s47.s3 / square
+                                                                     :path (s47.r / ratio-of
+                                                                                  :op1 "8"
+                                                                                  :op2 "8")
+                                                                     :op2-of s47.a2))))
+                 :ARG1 (s47.r2 / rectangle
+                               :mod (s47.g / giant))
+                 :ARG1-of (s47.r3 / request-confirmation-91)
+                 :rel "3")
+   :snt48 (s48.l / let-01
+                 :ARG0 (s48.y / you)
+                 :ARG1 (s48.a3 / ask-01
+                               :ARG0 (s48.i / i
+                                            :same-as s7.i)
+                               :ARG1 (s48.q / question-01
+                                            :ARG1 (s48.a / amr-unknown
+                                                         :domain (s48.a2 / area
+                                                                         :part-of (s48.r / rectangle
+                                                                                         :same-as s47.r2)))
+                                            :ARG1-of (s48.s / simple-02))
+                               :ARG2 s48.y)
+                 :time (s48.n / now)
+                 :mode "imperative")
+   :snt49 (s49.c / contrast-01
+                 :ARG1 (s49.s2 / sum
+                               :domain (s49.i2 / it
+                                               :same-as s48.a2)
+                               :quant-of (s49.a / area
+                                                :mod (s49.s / square
+                                                            :location (s49.i / inside
+                                                                             :op1 s49.i2))))
+                 :ARG1-of (s49.r / request-confirmation-91)
+                 :mod (s49.w / well))
+   :snt50 (s50.r / resemble-01
+                 :ARG2 (s50.c / create-01
+                              :ARG0 (s50.w / we)
+                              :ARG1 (s50.i / it
+                                           :same-as s47.r2))
+                 :mod (s50.j / just))
+   :snt51 (s51.a / and
+                 :ARG1-of (s51.r / request-confirmation-91)
+                 :op1 (s51.s / squared)
+                 :op3 (s51.s2 / squared
+                              :quant "2")
+                 :op4 (s51.s3 / squared
+                              :quant "3")
+                 :op2 "1"
+                 :rel "1"
+                 :rel "5"
+                 :rel "8")
+   :snt52 (s52.a / area
+                 :domain (s52.t / that))
+   :snt53 (s53.c3 / contrast-01
+                  :ARG2 (s53.a / and
+                               :ARG1-of (s53.c / cause-01
+                                               :ARG0 (s53.r / rectangle
+                                                            :domain (s53.i / it
+                                                                           :same-as s47.r2)))
+                               :op1 (s53.e / equal-01
+                                           :ARG1 (s53.a3 / area
+                                                         :same-as s48.a2)
+                                           :ARG2 (s53.b / base
+                                                        :poss s53.i))
+                               :op2 (s53.a2 / and
+                                            :op1 (s53.h2 / high-02
+                                                         :ARG1-of (s53.c2 / clear-06)
+                                                         :ARG2 "8"
+                                                         :same-as s53.h)
+                                            :op2 (s53.s / sum-of
+                                                        :domain (s53.b2 / base
+                                                                        :same-as s53.b)
+                                                        :op2 (s53.t / thing
+                                                                    :name (s53.n / name
+                                                                                 :op1 "Fibonacci"
+                                                                                 :op2 "Number")
+                                                                    :mod (s53.n2 / next)
+                                                                    :value "13")
+                                                        :op1 "5"
+                                                        :op2 "8")))
+                  :rel (s53.h / high-02
+                              :ARG1 s53.a3))
+   :snt54 (s54.r / request-confirmation-91)
+   :snt55 (s55.i / infer-01
+                 :ARG1 (s55.r / rate-entity-91
+                              :ARG2 (s55.a2 / area
+                                            :same-as s48.a2)
+                              :mod (s55.a / also)
+                              :ARG1 "8"
+                              :ARG4 "13"))
+   :snt56 (s56.o / obligate-01
+                 :ARG0-of (s56.c3 / cause-01
+                                  :ARG1 (s56.a / add-up-04
+                                               :ARG1 (s56.a2 / and
+                                                             :op1 (s56.s2 / square
+                                                                          :quant "1")
+                                                             :op2 (s56.s3 / square
+                                                                          :quant "1"
+                                                                          :quant "2")
+                                                             :op3 (s56.s4 / square
+                                                                          :quant "3"
+                                                                          :quant "5"
+                                                                          :quant "8")
+                                                             :op4 s56.s4
+                                                             :op5 s56.s4)
+                                               :ARG2 (s56.p / product-of
+                                                            :op1 "8"
+                                                            :op2 "13")))
+                 :ARG1 (s56.t / they
+                              :same-as s48.a2)
+                 :ARG1-of (s56.c2 / cause-01
+                                  :ARG0 (s56.c / calculate-01
+                                               :ARG0 (s56.w2 / we)
+                                               :ARG1 (s56.a3 / area
+                                                             :same-as s48.a2)
+                                               :ARG1-of (s56.c4 / correct-02)
+                                               :manner (s56.w / way
+                                                              :ARG1-of (s56.d / differ-02)
+                                                              :quant "2")))
+                 :ARG2 (s56.n / number
+                              :ARG1-of (s56.s / same-01)
+                              :domain s56.t))
+   :snt57 (s57.g / generate-01
+                 :ARG0 (s57.w / we)
+                 :ARG1 (s57.a / and
+                              :op1 (s57.r / rectify-01)
+                              :op2 (s57.r2 / rectify-01
+                                           :ARG2 (s57.a2 / and
+                                                         :op1 "21"
+                                                         :op2 "34"))
+                              :op3 (s57.r3 / rectify-01)
+                              :op4 (s57.e / et-cetera))
+                 :condition (s57.c / continue-01
+                                   :ARG0 s57.w
+                                   :ARG1 (s57.p / process-02
+                                                :ARG0 s57.w
+                                                :mod (s57.t / this)))
+                 :time (s57.n / now)
+                 :rel ","
+                 :rel "13"
+                 :rel "21")
+   :snt58 (s58.c / check-out-05
+                 :ARG0 (s58.y / you)
+                 :ARG1 (s58.t / this)
+                 :time (s58.n / now)
+                 :mode "imperative")
+   :snt59 (s59.g / get-01
+                 :ARG0 (s59.y / you)
+                 :condition (s59.d / divide-01
+                                   :ARG0 s59.y
+                                   :ARG1 "13"
+                                   :ARG2 "8")
+                 :ARG1 "1.625")
+   :snt60 (s60.a2 / and
+                  :op2 (s60.c2 / close-06
+                               :ARG1 (s60.r / ratio
+                                            :ARG1-of (s60.k / know-02
+                                                            :ARG0 (s60.p / person
+                                                                         :quant (s60.m / many))
+                                                            :ARG2 (s60.t2 / thing
+                                                                          :name (s60.n / name
+                                                                                       :op1 "Golden"
+                                                                                       :op2 "Ratio")
+                                                                          :ARG0-of (s60.f / fascinate-01
+                                                                                          :ARG1 (s60.a3 / and
+                                                                                                        :op1 (s60.m2 / mathematics)
+                                                                                                        :op2 (s60.s / scientist)
+                                                                                                        :op3 (s60.a4 / artist))
+                                                                                          :duration (s60.m6 / multiple
+                                                                                                            :op1 (s60.t / temporal-quantity
+                                                                                                                        :unit (s60.c / century)
+                                                                                                                        :quant "1")))))
+                                            :mod (s60.t3 / this))
+                               :ARG1-of (s60.h3 / have-degree-91
+                                                :ARG2 (s60.c3 / close-06
+                                                              :ARG1 s60.r
+                                                              :ARG2 (s60.a / about
+                                                                           :op1 "1.618"))
+                                                :ARG3 (s60.m5 / more))
+                               :condition (s60.d / divide-02
+                                                 :ARG0 (s60.y / you)
+                                                 :ARG1 (s60.n2 / number
+                                                               :ARG1-of (s60.h / have-degree-91
+                                                                               :ARG2 (s60.l / large)
+                                                                               :ARG3 (s60.m3 / more)))
+                                                 :ARG2 (s60.n3 / number
+                                                               :ARG1-of (s60.h2 / have-degree-91
+                                                                                :ARG2 (s60.s2 / small)
+                                                                                :ARG3 (s60.m4 / more))))))
+   :snt61 (s61.s2 / show-01
+                  :ARG0 (s61.i / i
+                               :same-as s7.i)
+                  :ARG1 (s61.t / this
+                               :mod (s61.a / all))
+                  :ARG1-of (s61.c / cause-01
+                                  :ARG0 (s61.s3 / side
+                                                :ARG0-of (s61.g / get-01
+                                                                :ARG1 (s61.a2 / attend-02
+                                                                              :ARG0 (s61.s / school
+                                                                                           :poss (s61.w / we))
+                                                                              :ARG1 s61.s3
+                                                                              :ARG1-of (s61.h / have-quant-91
+                                                                                              :ARG3 (s61.e / enough)))
+                                                                :ARG1-of (s61.f / fear-01
+                                                                                :ARG0 s61.i)
+                                                                :polarity "-")
+                                                :ARG1-of (s61.b / beautiful-02)
+                                                :ARG1-of (s61.r / resemble-01
+                                                                :ARG2 (s61.m / mathematics
+                                                                             :quant (s61.m2 / much
+                                                                                            :degree (s61.s4 / so))))
+                                                :part-of (s61.i2 / it
+                                                                 :same-as s61.m)))
+                  :ARG2 (s61.y / you
+                               :same-as s19.y)
+                  :time (s61.n / now))
+   :snt62 (s62.c2 / contrast-01
+                  :ARG1 (s62.s / spend-02
+                               :ARG0 (s62.w / we)
+                               :ARG1 (s62.t3 / time
+                                             :quant (s62.l3 / lot))
+                               :ARG2 (s62.l / learn-01
+                                            :ARG0 s62.w
+                                            :ARG1 (s62.c / calculate-01)))
+                  :ARG2 (s62.f / forget-01
+                               :ARG0 s62.w
+                               :ARG1 (s62.a2 / apply-02
+                                             :ARG2-of (s62.i2 / include-01
+                                                              :ARG1 (s62.a3 / apply-02
+                                                                            :ARG1-of (s62.h / have-degree-91
+                                                                                            :ARG2 (s62.i / important-01
+                                                                                                         :ARG1 s62.a3)
+                                                                                            :ARG3 (s62.m / most)
+                                                                                            :ARG5 (s62.a / all))
+                                                                            :ARG1-of (s62.p / possible-01)
+                                                                            :ARG2 (s62.l2 / learn-01
+                                                                                          :ARG0 s62.w
+                                                                                          :ARG1 (s62.t / thing
+                                                                                                       :manner-of (s62.t2 / think-01))))))
+                               :mode "imperative"
+                               :polarity "-"))
+   :snt63 (s63.a2 / and
+                  :condition (s63.p / possible-01
+                                    :ARG1 (s63.s3 / summarize-01
+                                                  :ARG0 (s63.i / i
+                                                               :same-as s7.i)
+                                                  :ARG1 (s63.t3 / this)
+                                                  :medium (s63.s / sentence
+                                                                 :quant "1")))
+                  :domain s63.t3
+                  :op1 (s63.s2 / solve-01
+                               :ARG0 (s63.m / mathematics)
+                               :ARG1 (s63.t / thing
+                                            :name (s63.n / name
+                                                         :op1 "x"))
+                               :mod (s63.j / just
+                                           :polarity "-"))
+                  :op2 (s63.f / figure-out-05
+                              :ARG0 s63.m
+                              :ARG1 (s63.t2 / thing
+                                            :ARG0-of (s63.c / cause-01))
+                              :mod (s63.a / also)))
+   :snt64 (s64.t / thank-01
+                 :ARG0 (s64.i / i)
+                 :ARG1 (s64.y / you
+                              :same-as s7.i)
+                 :mod (s64.m / much
+                             :degree (s64.v / very))))
+

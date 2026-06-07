@@ -1,0 +1,720 @@
+# ::id doc-552
+# ::doc_file doc-552
+# ::tok http : / / www . ted . com / talks / jane_chen_a_warm_embrace_that_saves_lives< / url> <next_sent> Please close your eyes , and open your hands . <next_sent> Now imagine what you could place in your hands : an apple , maybe your wallet . <next_sent> Now open your eyes . <next_sent> What about a life ? <next_sent> What you see here is a premature baby . <next_sent> He looks like he 's resting peacefully , but in fact he 's struggling to stay alive because he ca n't regulate his own body temperature . <next_sent> This baby is so tiny he does n't have enough fat on his body to stay warm . <next_sent> Sadly , 20 million babies like this are born every year around the world . <next_sent> Four million of these babies die annually . <next_sent> But the bigger problem is that the ones who do survive grow up with severe , long - term health problems . <next_sent> The reason is because in the first month of a baby 's life , its only job is to grow . <next_sent> If it 's battling hypothermia , its organs ca n't develop normally , resulting in a range of health problems from diabetes , to heart disease , to low I.Q. <next_sent> Imagine : Many of these problems could be prevented if these babies were just kept warm . <next_sent> That is the primary function of an incubator . <next_sent> But traditional incubators require electricity and cost up to 20 thousand dollars . <next_sent> So , you 're not going to find them in rural areas of developing countries . <next_sent> As a result , parents resort to local solutions like tying hot water bottles around their babies ' bodies , or placing them under light bulbs like the ones you see here -- methods that are both ineffective and unsafe . <next_sent> I 've seen this firsthand over and over again . <next_sent> On one of my first trips to India , I met this young woman , Sevitha , who had just given birth to a tiny premature baby , Rani . <next_sent> She took her baby to the nearest village clinic , and the doctor advised her to take Rani to a city hospital so she could be placed in an incubator . <next_sent> But that hospital was over four hours away , and Sevitha did n't have the means to get there , so her baby died . <next_sent> Inspired by this story , and dozens of other similar stories like this , my team and I realized what was needed was a local solution , something that could work without electricity , that was simple enough for a mother or a midwife to use , given that the majority of births still take place in the home . <next_sent> We needed something that was portable , something that could be sterilized and reused across multiple babies and something ultra - low - cost , compared to the 20,000 dollars that an incubator in the U.S. costs . <next_sent> So , this is what we came up with . <next_sent> What you see here looks nothing like an incubator . <next_sent> It looks like a small sleeping bag for a baby . <next_sent> You can open it up completely . <next_sent> It 's waterproof . <next_sent> There 's no seams inside so you can sterilize it very easily . <next_sent> But the magic is in this pouch of wax . <next_sent> This is a phase - change material . <next_sent> It 's a wax - like substance with a melting point of human body temperature , 37 degrees Celsius . <next_sent> You can melt this simply using hot water and then when it melts it 's able to maintain one constant temperature for four to six hours at a time , after which you simply reheat the pouch . <next_sent> So , you then place it into this little pocket back here , and it creates a warm micro - environment for the baby . <next_sent> Looks simple , but we 've reiterated this dozens of times by going into the field to talk to doctors , moms and clinicians to ensure that this really meets the needs of the local communities . <next_sent> We plan to launch this product in India in 2010 , and the target price point will be 25 dollars , less than 0.1 percent of the cost of a traditional incubator . <next_sent> Over the next five years we hope to save the lives of almost a million babies . <next_sent> But the longer - term social impact is a reduction in population growth . <next_sent> This seems counterintuitive , but turns out that as infant mortality is reduced , population sizes also decrease , because parents do n't need to anticipate that their babies are going to die . <next_sent> We hope that the Embrace infant warmer and other simple innovations like this represent a new trend for the future of technology : simple , localized , affordable solutions that have the potential to make huge social impact . <next_sent> In designing this we followed a few basic principles . <next_sent> We really tried to understand the end user , in this case , people like Sevitha . <next_sent> We tried to understand the root of the problem rather than being biased by what already exists . <next_sent> And then we thought of the most simple solution we could to address this problem . <next_sent> In doing this , I believe we can truly bring technology to the masses . <next_sent> And we can save millions of lives through the simple warmth of an Embrace .
+(d / document
+   :snt1 (s1.u / url-entity
+               :value "ossobuco")
+   :snt2 (s2.a / and
+               :op1 (s2.c / close-01
+                          :ARG0 (s2.y / you
+                                      :part (s2.e / eye)
+                                      :part (s2.h / hand))
+                          :ARG1 s2.e
+                          :mode "imperative"
+                          :polite "+")
+               :op2 (s2.o / open-01
+                          :ARG0 s2.y
+                          :ARG1 s2.h
+                          :mode "imperative"
+                          :polite "+")
+               :rel (s2.i / imperative))
+   :snt3 (s3.i / imagine-01
+               :ARG0 (s3.y / you)
+               :ARG1 (s3.t / thing
+                           :ARG1-of (s3.p / place-01
+                                          :ARG0 s3.y
+                                          :ARG1-of (s3.p2 / possible-01)
+                                          :ARG2 (s3.i2 / in-ones-hands-04
+                                                       :ARG0 s3.y
+                                                       :ARG1 s3.t))
+                           :example (s3.o / or
+                                          :op1 (s3.a / apple)
+                                          :op2 (s3.w / wallet
+                                                     :ARG1-of (s3.p3 / possible-01)
+                                                     :poss s3.y)))
+               :time (s3.n / now)
+               :mode "imperative")
+   :snt4 (s4.o / open-01
+               :ARG0 (s4.y / you
+                           :part (s4.e / eye))
+               :ARG1 s4.e
+               :time (s4.n / now)
+               :mode "imperative")
+   :snt5 (s5.a / amr-unknown
+               :topic (s5.l / life))
+   :snt6 (s6.s / see-01
+               :ARG0 (s6.y / you)
+               :ARG1 (s6.b / baby
+                           :mod (s6.p / premature))
+               :location (s6.h / here))
+   :snt7 (s7.c2 / contrast-01
+                :ARG1 (s7.l2 / look-02
+                             :ARG0 (s7.h / he
+                                         :same-as s6.b)
+                             :ARG1 (s7.r2 / rest-01
+                                          :ARG1 s7.h
+                                          :manner (s7.p / peaceful)))
+                :ARG2 (s7.s2 / struggle-02
+                             :ARG0 s7.h
+                             :ARG1 (s7.s / stay-01
+                                         :ARG1 s7.h
+                                         :ARG3 (s7.l / live-01
+                                                     :ARG0 s7.h))
+                             :ARG1-of (s7.c / cause-01
+                                            :ARG0 (s7.p2 / possible-01
+                                                         :ARG1 (s7.r / regulate-01
+                                                                     :ARG0 s7.h
+                                                                     :ARG1 (s7.t / temperature
+                                                                                 :mod (s7.b / body
+                                                                                            :poss s7.h)))
+                                                         :polarity "-"))
+                             :mod (s7.i / in-fact)))
+   :snt8 (s8.h2 / have-degree-91
+                :ARG1 (s8.b / baby
+                            :mod (s8.t / this)
+                            :same-as s6.b)
+                :ARG2 (s8.t2 / tiny)
+                :ARG3 (s8.s / so)
+                :ARG6 (s8.h / have-03
+                            :ARG0 s8.b
+                            :ARG1 (s8.f / fat
+                                        :ARG1-of (s8.h3 / have-quant-91
+                                                        :ARG3 (s8.e / enough)
+                                                        :ARG6 (s8.s2 / stay-01
+                                                                     :ARG1 s8.b
+                                                                     :ARG3 (s8.w / warm-01
+                                                                                 :ARG1 s8.b)))
+                                        :location (s8.b2 / body
+                                                         :poss s8.b))
+                            :polarity "-"))
+   :snt9 (s9.b2 / bear-02
+                :ARG0-of (s9.s / sad-02)
+                :ARG1 (s9.b / baby
+                            :ARG1-of (s9.r2 / resemble-01
+                                            :ARG2 (s9.t2 / this
+                                                         :same-as s6.b)))
+                :frequency (s9.r / rate-entity-91
+                                 :ARG1 s9.b
+                                 :ARG2 (s9.t / temporal-quantity
+                                             :unit (s9.y / year)
+                                             :quant "1"))
+                :location (s9.w / world)
+                :rel "20000000")
+   :snt10 (s10.d / die-01
+                 :ARG1 (s10.b / baby
+                              :ARG1-of (s10.i / include-91
+                                              :ARG2 (s10.b2 / baby
+                                                            :mod (s10.t2 / this)))
+                              :quant "4000000")
+                 :frequency (s10.r / rate-entity-91
+                                   :ARG2 (s10.t / temporal-quantity
+                                                :unit (s10.y / year)
+                                                :quant "1")))
+   :snt11 (s11.c / contrast-01
+                 :ARG2 (s11.p / problem
+                              :ARG1-of (s11.h / have-degree-91
+                                              :ARG2 (s11.b / big)
+                                              :ARG3 (s11.m / more))
+                              :domain (s11.g / grow-up-04
+                                             :ARG1 (s11.o / one
+                                                          :ARG0-of (s11.s2 / survive-01))
+                                             :accompanier (s11.p2 / problem
+                                                                  :ARG1-of (s11.l / long-03)
+                                                                  :mod (s11.h2 / health)
+                                                                  :mod (s11.s / severe)))))
+   :snt12 (s12.c / cause-01
+                 :ARG0 (s12.j / job
+                              :domain (s12.g / grow-01
+                                             :ARG1 (s12.b / baby))
+                              :mod (s12.o / only)
+                              :poss s12.b
+                              :time (s12.m / month
+                                           :ord (s12.o2 / ordinal-entity
+                                                        :value "1")
+                                           :part-of (s12.l / live-01
+                                                           :ARG0 s12.b))))
+   :snt13 (s13.p / possible-01
+                 :ARG1 (s13.d / develop-02
+                              :ARG1 (s13.o / organ
+                                           :part-of (s13.i / it
+                                                           :same-as s12.b))
+                              :manner (s13.n2 / normal-02))
+                 :ARG1-of (s13.r2 / result-01
+                                  :ARG2 (s13.r / range-01
+                                               :ARG1 (s13.p2 / problem
+                                                             :example (s13.a / and
+                                                                             :op1 (s13.d2 / disease
+                                                                                          :name (s13.n / name
+                                                                                                       :op1 "diabetes"))
+                                                                             :op2 (s13.d3 / disease
+                                                                                          :mod (s13.h2 / heart))
+                                                                             :op3 (s13.t / test-01
+                                                                                         :ARG2 (s13.l / low-04)))
+                                                             :mod (s13.h / health))))
+                 :condition (s13.b / battle-01
+                                   :ARG0 s13.i
+                                   :ARG1 (s13.h3 / hypothermia))
+                 :polarity "-")
+   :snt14 (s14.i / imagine-01
+                 :ARG0 (s14.y / you)
+                 :ARG1 (s14.p / possible-01
+                              :ARG1 (s14.p2 / prevent-01
+                                            :ARG1 (s14.p3 / problem
+                                                          :quant (s14.m / many)
+                                                          :ARG1-of (s14.i2 / include-91
+                                                                           :ARG2 (s14.p4 / problem
+                                                                                         :mod (s14.t / this))))
+                                            :condition (s14.k / keep-02
+                                                              :ARG1 (s14.b / baby
+                                                                           :mod (s14.t2 / this))
+                                                              :manner (s14.w / warm-01
+                                                                             :ARG1 s14.b)
+                                                              :mod (s14.j / just))))
+                 :mode "imperative")
+   :snt15 (s15.f / function-01
+                 :ARG0 (s15.i / incubator)
+                 :ARG1 (s15.t / that
+                              :same-as s14.k)
+                 :mod (s15.p / primary))
+   :snt16 (s16.c / contrast-01
+                 :ARG2 (s16.a / and
+                              :op1 (s16.r / require-01
+                                          :ARG0 (s16.i / incubator
+                                                       :mod (s16.t / tradition))
+                                          :ARG1 (s16.e / electricity))
+                              :op2 (s16.c2 / cost-01
+                                           :ARG1 s16.i
+                                           :ARG2 (s16.u / up-to
+                                                        :op1 (s16.m / monetary-quantity
+                                                                    :unit (s16.d / dollar)
+                                                                    :quant "1000")))))
+   :snt17 (s17.c / cause-01
+                 :ARG1 (s17.f / find-01
+                              :ARG0 (s17.y / you)
+                              :ARG1 (s17.t / they
+                                           :same-as s16.i)
+                              :location (s17.a / area
+                                               :location (s17.c2 / country
+                                                                 :ARG1-of (s17.d / develop-02))
+                                               :mod (s17.r / rural))
+                              :polarity "-"))
+   :snt18 (s18.r2 / resort-01
+                  :ARG0 (s18.p2 / person
+                                :ARG0-of (s18.h / have-rel-role-91
+                                                :ARG2 (s18.p / parent)))
+                  :ARG1 (s18.t / thing
+                               :ARG1-of (s18.l2 / local-02)
+                               :ARG2-of (s18.s3 / solve-01)
+                               :example (s18.o / or
+                                               :op1 (s18.t2 / tie-01
+                                                            :ARG0 s18.p2
+                                                            :ARG1 (s18.b3 / bottle
+                                                                          :ARG1-of (s18.h4 / hot-05)
+                                                                          :mod (s18.w / water))
+                                                            :ARG2 (s18.a / around
+                                                                         :op1 (s18.b2 / body
+                                                                                      :poss (s18.p3 / person
+                                                                                                    :ARG0-of (s18.h2 / have-rel-role-91
+                                                                                                                     :ARG1 s18.p2
+                                                                                                                     :ARG2 (s18.b / baby))))))
+                                               :op2 (s18.p4 / place-01
+                                                            :ARG0 s18.p2
+                                                            :ARG1 s18.b3
+                                                            :ARG2 (s18.u / under
+                                                                         :op1 (s18.b4 / bulb
+                                                                                      :ARG0-of (s18.l / light-04)
+                                                                                      :ARG1-of (s18.r / resemble-01
+                                                                                                      :ARG2 (s18.b5 / bulb
+                                                                                                                    :ARG1-of (s18.s2 / see-01
+                                                                                                                                     :ARG0 (s18.y / you)
+                                                                                                                                     :location (s18.h3 / here))))))))
+                               :mod (s18.m / method
+                                           :ARG0-of (s18.e / effective-04
+                                                           :polarity "-")
+                                           :ARG0-of (s18.s / safe-01
+                                                           :polarity "-")))
+                  :ARG2-of (s18.r3 / result-01))
+   :snt19 (s19.s / see-01
+                 :ARG0 (s19.i / i)
+                 :ARG1 (s19.t / this)
+                 :frequency (s19.o / over-and-over)
+                 :mod (s19.f / first-hand))
+   :snt20 (s20.m / meet-02
+                 :ARG0 (s20.i / i
+                              :same-as s19.i)
+                 :ARG1 (s20.w / woman
+                              :name (s20.n2 / name
+                                            :op1 "Sevitha")
+                              :ARG0-of (s20.b2 / bear-02
+                                               :ARG1 (s20.b / baby
+                                                            :name (s20.n3 / name
+                                                                          :op1 "Rani")
+                                                            :mod (s20.p / premature)
+                                                            :mod (s20.t2 / tiny))
+                                               :time (s20.j / just))
+                              :mod (s20.y / young)
+                              :mod (s20.t / this))
+                 :time (s20.t3 / trip-03
+                               :ARG0 s20.i
+                               :ARG1-of (s20.i2 / include-91
+                                                :ARG2 (s20.t4 / trip-03
+                                                              :ARG0 s20.i
+                                                              :ARG1 (s20.c / country
+                                                                           :name (s20.n / name
+                                                                                        :op1 "India"))
+                                                              :ord (s20.o / ordinal-entity
+                                                                          :value "1")))))
+   :snt21 (s21.a2 / and
+                  :op1 (s21.t / take-01
+                              :ARG0 (s21.s / she
+                                           :same-as s20.w)
+                              :ARG1 (s21.b / baby
+                                           :ARG0-of (s21.h2 / have-rel-role-91
+                                                            :ARG1 s21.s
+                                                            :ARG2 (s21.c / child))
+                                           :same-as s20.b)
+                              :ARG3 (s21.c3 / clinic
+                                            :ARG1-of (s21.n2 / near-02
+                                                             :ARG2-of (s21.h / have-degree-91
+                                                                             :ARG1 s21.c3
+                                                                             :ARG3 (s21.m / most)))
+                                            :location (s21.v / village)))
+                  :op2 (s21.a / advise-01
+                              :ARG0 (s21.d / doctor)
+                              :ARG1 s21.s
+                              :ARG2 (s21.t2 / take-01
+                                            :purpose (s21.p3 / possible-01
+                                                             :ARG1 (s21.p2 / place-01
+                                                                           :ARG1 (s21.p / person
+                                                                                        :name (s21.n / name
+                                                                                                     :op1 "Rani")
+                                                                                        :same-as s20.b)
+                                                                           :ARG2 (s21.i / incubator)))
+                                            :ARG0 s21.s
+                                            :ARG1 s21.p
+                                            :ARG3 (s21.h3 / hospital
+                                                          :mod (s21.c2 / city)))))
+   :snt22 (s22.c3 / contrast-01
+                  :ARG2 (s22.a / and
+                               :op1 (s22.a2 / away
+                                            :duration (s22.o / over
+                                                             :op1 (s22.t / temporal-quantity
+                                                                         :unit (s22.h4 / hour)
+                                                                         :quant "4"))
+                                            :op1 (s22.h3 / hospital
+                                                         :mod (s22.t2 / that)
+                                                         :same-as s21.h3))
+                               :op2 (s22.h / have-03
+                                           :ARG0 (s22.p / person
+                                                        :name (s22.n / name
+                                                                     :op1 "Sevitha")
+                                                        :same-as s20.w)
+                                           :ARG0-of (s22.c / cause-01
+                                                           :ARG1 (s22.d / die-01
+                                                                        :ARG1 (s22.b / baby
+                                                                                     :ARG0-of (s22.h2 / have-rel-role-91
+                                                                                                      :ARG1 s22.p
+                                                                                                      :ARG2 (s22.c2 / child))
+                                                                                     :same-as s20.b)))
+                                           :ARG1 (s22.m / means
+                                                        :instrument-of (s22.g / get-05
+                                                                              :ARG1 s22.p
+                                                                              :ARG2 s22.h3))
+                                           :polarity "-")))
+   :snt23 (s23.r / realize-01
+                 :ARG0 (s23.a2 / and
+                               :op1 (s23.t / team
+                                           :poss (s23.i / i
+                                                        :same-as s19.i)))
+                 :ARG1 (s23.n / need-01
+                              :ARG1 (s23.t2 / thing
+                                            :ARG1-of (s23.l / local-02)
+                                            :ARG1-of (s23.w / work-09
+                                                            :ARG1-of (s23.p2 / possible-01)
+                                                            :manner (s23.e / electricity
+                                                                           :polarity "-"))
+                                            :ARG1-of (s23.s / simple-02
+                                                            :ARG1-of (s23.c / cause-01
+                                                                            :ARG0 (s23.b / bear-02
+                                                                                         :quant (s23.m / majority)
+                                                                                         :location (s23.h3 / home)
+                                                                                         :time (s23.s3 / still)))
+                                                            :ARG2-of (s23.h / have-degree-91
+                                                                            :ARG1 s23.t2
+                                                                            :ARG3 (s23.e2 / enough)
+                                                                            :ARG6 (s23.u / use-01
+                                                                                         :ARG0 (s23.o / or
+                                                                                                      :op1 (s23.p / person
+                                                                                                                  :ARG0-of (s23.h2 / have-rel-role-91
+                                                                                                                                   :ARG2 (s23.m3 / mother)))
+                                                                                                      :op2 (s23.m2 / midwife)))))
+                                            :ARG2-of (s23.s2 / solve-01)))
+                 :ARG2-of (s23.i2 / inspire-01
+                                  :ARG0 (s23.a / and
+                                               :op1 (s23.s4 / story
+                                                            :mod (s23.t3 / this))
+                                               :op2 (s23.s5 / story
+                                                            :quant (s23.m4 / multiple
+                                                                           :op1 "12")
+                                                            :ARG1-of (s23.r2 / resemble-01)
+                                                            :example (s23.t4 / this
+                                                                             :same-as s23.s4)
+                                                            :mod (s23.o2 / other)))
+                                  :ARG1 s23.a2))
+   :snt24 (s24.n2 / need-01
+                  :ARG0 (s24.w / we
+                               :same-as s23.a2)
+                  :ARG1 (s24.a2 / and
+                                :op1 (s24.s / something
+                                            :ARG1-of (s24.s2 / sterilize-01
+                                                             :ARG1-of (s24.p2 / possible-01
+                                                                              :ARG1 (s24.r / reuse-01
+                                                                                           :ARG1 s24.s
+                                                                                           :extent (s24.a / across
+                                                                                                          :op1 (s24.b / baby
+                                                                                                                      :quant (s24.m2 / multiple))))))
+                                            :mod (s24.p / portable))
+                                :op2 (s24.c2 / cost-01
+                                             :ARG1 s24.s
+                                             :ARG1-of (s24.c / compare-01
+                                                             :ARG2 (s24.m / monetary-quantity
+                                                                          :ARG2-of (s24.c3 / cost-01
+                                                                                           :ARG1 (s24.i / incubator)
+                                                                                           :location (s24.c4 / country
+                                                                                                             :name (s24.n / name
+                                                                                                                          :op1 "U.S.")))
+                                                                          :unit (s24.d / dollar)
+                                                                          :quant "20000"))
+                                             :ARG2 (s24.l / low-04
+                                                          :degree (s24.u / ultra)))))
+   :snt25 (s25.c / come-up-11
+                 :ARG0 (s25.w / we
+                              :same-as s23.a2)
+                 :ARG1 (s25.t / this))
+   :snt26 (s26.l / look-02
+                 :ARG0 (s26.t / thing
+                              :ARG1-of (s26.s / see-01
+                                              :ARG0 (s26.y / you)
+                                              :location (s26.h / here)))
+                 :ARG1 (s26.i / incubator)
+                 :polarity "-")
+   :snt27 (s27.l / look-02
+                 :ARG0 (s27.i / it
+                              :same-as s25.t)
+                 :ARG1 (s27.b2 / bag
+                               :purpose (s27.s / sleep-01
+                                               :beneficiary (s27.b / baby))
+                               :mod (s27.s2 / small)))
+   :snt28 (s28.p / possible-01
+                 :ARG1 (s28.o / open-up-03
+                              :ARG0 (s28.y / you)
+                              :ARG1 (s28.i / it
+                                           :same-as s25.t)
+                              :ARG1-of (s28.c / complete-02)))
+   :snt29 (s29.r / rain-01
+                 :ARG1 (s29.i / it
+                              :same-as s25.t))
+   :snt30 (s30.c / cause-01
+                 :ARG0 (s30.s / seam
+                              :location (s30.i / inside)
+                              :polarity "-")
+                 :ARG1 (s30.p / possible-01
+                              :ARG1 (s30.s2 / sterilize-01
+                                            :ARG0 (s30.y / you)
+                                            :ARG1 (s30.i2 / it
+                                                          :same-as s25.t)
+                                            :ARG1-of (s30.e / easy-05
+                                                            :degree (s30.v / very)))))
+   :snt31 (s31.c / contrast-01
+                 :ARG2 (s31.m / magic
+                              :location (s31.p / pouch
+                                               :consist-of (s31.w / wax)
+                                               :mod (s31.t / this))))
+   :snt32 (s32.m / material
+                 :ARG0-of (s32.c / change-01
+                                 :ARG1 (s32.p / phase))
+                 :domain (s32.t / this
+                                :same-as s31.p))
+   :snt33 (s33.s / substance
+                 :ARG0-of (s33.h / have-03
+                                 :ARG1 (s33.p / point
+                                              :quant (s33.t2 / temperature-quantity
+                                                             :scale (s33.c / celsius)
+                                                             :quant "37")
+                                              :mod (s33.m / melt-01)
+                                              :mod (s33.t / temperature
+                                                          :mod (s33.b / body
+                                                                      :mod (s33.h2 / human)))))
+                 :ARG1-of (s33.r / resemble-01
+                                 :ARG2 (s33.w / wax))
+                 :domain (s33.i / it
+                                :same-as s31.p))
+   :snt34 (s34.a2 / and
+                  :op1 (s34.p / possible-01
+                              :ARG1 (s34.m2 / melt-01
+                                            :ARG0 (s34.y / you)
+                                            :ARG1 (s34.t5 / this
+                                                          :same-as s31.p)
+                                            :manner (s34.u / use-01
+                                                           :ARG0 s34.y
+                                                           :ARG1 (s34.w / water
+                                                                        :ARG1-of (s34.h / hot-05))
+                                                           :ARG1-of (s34.s2 / simple-02))))
+                  :op2 (s34.p2 / possible-01
+                               :ARG1 (s34.m / maintain-01
+                                            :ARG0 s34.t5
+                                            :ARG1 (s34.t / temperature
+                                                         :mod (s34.c / constant)
+                                                         :quant "1")
+                                            :duration (s34.b / between
+                                                             :op1 (s34.t2 / temporal-quantity
+                                                                          :unit (s34.h2 / hour)
+                                                                          :quant "4")
+                                                             :op2 (s34.t3 / temporal-quantity
+                                                                          :unit (s34.h3 / hour)
+                                                                          :quant "6"))
+                                            :time (s34.a / after
+                                                         :op1 (s34.r / reheat-01
+                                                                     :ARG0 s34.y
+                                                                     :ARG1 (s34.p3 / pouch
+                                                                                   :same-as s31.p)
+                                                                     :manner (s34.s / simple))))
+                               :time (s34.m3 / melt-01
+                                             :ARG0 s34.p3
+                                             :ARG1 s34.t5
+                                             :ARG1 s34.p3)
+                               :time (s34.t4 / then)))
+   :snt35 (s35.c / cause-01
+                 :ARG1 (s35.a / and
+                              :op1 (s35.p / place-01
+                                          :ARG0 (s35.y / you)
+                                          :ARG1 (s35.i / it
+                                                       :same-as s31.p)
+                                          :ARG2 (s35.p2 / pocket
+                                                        :location (s35.h / here
+                                                                         :mod (s35.b2 / back))
+                                                        :mod (s35.l / little)
+                                                        :mod (s35.t2 / this))
+                                          :time (s35.t / then))
+                              :op2 (s35.c2 / create-01
+                                           :ARG0 s35.i
+                                           :ARG1 (s35.e / environment
+                                                        :ARG1-of (s35.w / warm-07)
+                                                        :mod (s35.m / micro))
+                                           :beneficiary (s35.b / baby))))
+   :snt36 (s36.c3 / contrast-01
+                  :ARG1 (s36.l2 / look-02
+                                :ARG1 (s36.s / simple-02))
+                  :ARG2 (s36.r2 / reiterate-01
+                                :purpose (s36.e / ensure-01
+                                                :ARG0 (s36.w / we
+                                                             :same-as s23.a2)
+                                                :ARG1 (s36.m / meet-01
+                                                             :ARG0 (s36.t4 / this
+                                                                           :same-as s31.p)
+                                                             :ARG1 (s36.t2 / thing
+                                                                           :ARG1-of (s36.n / need-01
+                                                                                           :ARG0 (s36.c2 / community
+                                                                                                         :ARG1-of (s36.l / local-02))))
+                                                             :ARG1-of (s36.r / real-04)))
+                                :ARG0 s36.w
+                                :ARG1 (s36.t3 / this)
+                                :frequency (s36.m3 / multiple
+                                                   :op1 "12")
+                                :manner (s36.g / go-02
+                                               :purpose (s36.t / talk-01
+                                                               :ARG0 s36.w
+                                                               :ARG2 (s36.a / and
+                                                                            :op1 (s36.d / doctor)
+                                                                            :op2 (s36.m2 / mom)
+                                                                            :op3 (s36.c / clinic)))
+                                               :ARG0 s36.w
+                                               :ARG4 (s36.f / field))))
+   :snt37 (s37.a / and
+                 :op1 (s37.p2 / plan-01
+                              :ARG0 (s37.w / we
+                                           :same-as s23.a2)
+                              :ARG1 (s37.l / launch-01
+                                           :ARG0 s37.w
+                                           :ARG1 (s37.p5 / product
+                                                         :mod (s37.t2 / this)
+                                                         :same-as s31.p)
+                                           :location (s37.c2 / country
+                                                             :name (s37.n / name
+                                                                          :op1 "India")
+                                                             :same-as s20.c)
+                                           :time (s37.d / date-entity
+                                                        :year "2010")))
+                 :op2 (s37.p3 / point
+                              :ARG1-of (s37.t / target-01)
+                              :mod (s37.p4 / price-01
+                                           :ARG1 s37.p5
+                                           :ARG2 (s37.m / monetary-quantity
+                                                        :ARG2-of (s37.c / cost-01
+                                                                        :ARG1 (s37.i / incubator
+                                                                                     :mod (s37.t3 / tradition))
+                                                                        :ARG3 (s37.l2 / less-than
+                                                                                      :op1 (s37.p / percentage-entity
+                                                                                                  :value "0.1")))
+                                                        :unit (s37.d2 / dollar)
+                                                        :quant "25"))))
+   :snt38 (s38.h / hope-01
+                 :ARG0 (s38.w / we
+                              :same-as s23.a2)
+                 :ARG1 (s38.s / save-02
+                              :ARG0 s38.w
+                              :ARG1 (s38.l / life
+                                           :poss (s38.b / baby
+                                                        :quant (s38.a / almost
+                                                                      :op1 "1000000"))))
+                 :time (s38.o / over
+                              :op1 (s38.t / temporal-quantity
+                                          :mod (s38.n / next)
+                                          :unit (s38.y / year)
+                                          :quant "5")))
+   :snt39 (s39.c / contrast-01
+                 :rel (s39.l / long-03
+                             :ARG1 (s39.i / impact-01
+                                          :ARG0 (s39.r / reduce-01
+                                                       :ARG1 (s39.g / grow-01
+                                                                    :ARG1 (s39.p / population)))
+                                          :ARG1 (s39.s / society)
+                                          :ARG1-of (s39.h / have-degree-91
+                                                          :ARG2 s39.l
+                                                          :ARG3 (s39.m / more)))))
+   :snt40 (s40.c2 / contrast-01
+                  :ARG1 (s40.s / seem-01
+                               :ARG1 (s40.c3 / counterintuitive
+                                             :domain (s40.t / this)))
+                  :ARG2 (s40.t2 / turn-out-11
+                                :ARG1 (s40.d / decrease-01
+                                             :ARG1 (s40.s2 / size-01
+                                                           :ARG1 (s40.p3 / population))
+                                             :ARG1-of (s40.c / cause-01
+                                                             :ARG0 (s40.n / need-01
+                                                                          :ARG0 (s40.p2 / person
+                                                                                        :ARG0-of (s40.h / have-rel-role-91
+                                                                                                        :ARG2 (s40.p / parent)))
+                                                                          :ARG1 (s40.a2 / anticipate-01
+                                                                                        :ARG0 s40.p2
+                                                                                        :ARG1 (s40.d3 / die-01
+                                                                                                      :ARG1 (s40.b / baby
+                                                                                                                   :poss s40.p2)))
+                                                                          :polarity "-"))
+                                             :mod (s40.a / also)
+                                             :mod s40.t
+                                             :time (s40.r / reduce-01
+                                                          :ARG1 (s40.d2 / die-01
+                                                                        :ARG1 (s40.i / infant))))))
+   :snt41 (s41.h / hope-01
+                 :ARG0 (s41.w2 / we
+                               :same-as s23.a2)
+                 :ARG1 (s41.r / represent-01
+                              :ARG0 (s41.a2 / and
+                                            :op1 (s41.t2 / thing
+                                                         :name (s41.n / name
+                                                                      :op1 "Embrace")
+                                                         :ARG0-of (s41.w / warm-01
+                                                                         :ARG1 (s41.i2 / infant))
+                                                         :same-as s31.p)
+                                            :op2 (s41.i3 / innovate-01
+                                                         :ARG1-of (s41.s / simple-02)
+                                                         :ARG1-of (s41.r2 / resemble-01
+                                                                          :ARG2 (s41.t3 / this
+                                                                                        :same-as s31.p))
+                                                         :mod (s41.o / other)))
+                              :ARG1 (s41.t4 / trend-01
+                                            :ARG1 (s41.s4 / solve-01
+                                                          :ARG0-of (s41.m / make-01
+                                                                          :ARG1 (s41.i / impact-01
+                                                                                       :ARG0 s41.s4
+                                                                                       :ARG1 (s41.s3 / society)
+                                                                                       :mod (s41.h2 / huge))
+                                                                          :mod (s41.p2 / potential))
+                                                          :ARG1-of (s41.a / afford-01
+                                                                          :ARG1-of (s41.p / possible-01))
+                                                          :ARG1-of (s41.l / localize-01)
+                                                          :ARG1-of (s41.s2 / simple-02))
+                                            :ARG1-of (s41.n2 / new-01)
+                                            :ARG3 (s41.f / future
+                                                         :poss (s41.t / technology)))))
+   :snt42 (s42.f2 / follow-02
+                  :purpose (s42.d / design-01
+                                  :ARG0 (s42.w / we
+                                               :same-as s23.a2)
+                                  :ARG1 (s42.t / this
+                                               :same-as s31.p))
+                  :ARG0 s42.w
+                  :ARG1 (s42.p / principle
+                               :quant (s42.f / few)
+                               :mod (s42.b / basic)))
+   :snt43 (s43.t2 / try-01
+                  :ARG0 (s43.w / we
+                               :same-as s23.a2)
+                  :ARG1 (s43.u / understand-01
+                               :ARG0 s43.w
+                               :ARG1 (s43.p / person
+                                            :ARG0-of (s43.u2 / use-01
+                                                             :mod (s43.e / end))
+                                            :ARG1-of (s43.r2 / resemble-01
+                                                             :ARG2 (s43.p2 / person
+                                                                           :name (s43.n / name
+                                                                                        :op1 "Sevitha")
+                                                                           :same-as s20.w))
+                                            :mod (s43.c / case-04
+                                                        :ARG1 (s43.t / this))))
+                  :ARG1-of (s43.r / real-04))
+   :snt44 (s44.t2 / try-01
+                  :ARG0 (s44.w / we
+                               :same-as s23.a2)
+                  :ARG1 (s44.u / understand-01
+                               :ARG0 s44.w
+                               :ARG1 (s44.r / root-02
+                                            :ARG1 (s44.p / problem)))
+                  :ARG1-of (s44.i / instead-of-91
+                                  :ARG2 (s44.b / bias-01
+                                               :ARG0 (s44.t / thing
+                                                            :ARG1-of (s44.e / exist-01
+                                                                            :time (s44.a / already)))
+                                               :ARG1 s44.w)))
+   :snt45 (s45.a2 / and
+                  :op2 (s45.t3 / think-01
+                               :ARG0 (s45.w / we
+                                            :same-as s23.a2)
+                               :ARG1 (s45.t2 / thing
+                                             :purpose (s45.a / address-02
+                                                             :ARG0 s45.w
+                                                             :ARG1 (s45.p2 / problem
+                                                                           :mod (s45.t4 / this)
+                                                                           :same-as s44.p))
+                                             :ARG1-of (s45.s / simple-02
+                                                             :ARG2-of (s45.h / have-degree-91
+                                                                             :ARG1 s45.t2
+                                                                             :ARG3 (s45.m / most)))
+                                             :ARG2-of (s45.s2 / solve-01
+                                                              :ARG0 s45.w
+                                                              :ARG1-of (s45.p / possible-01)))
+                               :time (s45.t / then)))
+   :snt46 (s46.b / believe-01
+                 :ARG0 (s46.i / i
+                              :same-as s19.i)
+                 :ARG1 (s46.p / possible-01
+                              :ARG1 (s46.b2 / bring-01
+                                            :ARG0 (s46.w / we)
+                                            :ARG1 (s46.t / technology)
+                                            :ARG1-of (s46.t3 / true-01)
+                                            :ARG2 (s46.m / mass))
+                              :condition (s46.d / do-02
+                                                :ARG0 s46.w
+                                                :ARG1 (s46.t2 / this))))
+   :snt47 (s47.a / and
+                 :op2 (s47.p / possible-01
+                             :ARG1 (s47.s / save-02
+                                          :ARG0 (s47.w2 / we)
+                                          :ARG1 (s47.l / life
+                                                       :quant (s47.m / multiple
+                                                                     :op1 "1000000"))
+                                          :manner (s47.w / warm-06
+                                                         :ARG0 (s47.e / embrace-01)
+                                                         :ARG1-of (s47.s2 / simple-02))))))
+

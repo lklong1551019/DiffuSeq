@@ -1,0 +1,389 @@
+# ::id doc-352
+# ::doc_file doc-352
+# ::tok http : / / www . ted . com / talks / terry_moore_how_to_tie_your_shoes< / url> <next_sent> I 'm used to thinking of the TED audience as a wonderful collection of some of the most effective , intelligent , intellectual , savvy , worldly and innovative people in the world . <next_sent> And I think that 's true . <next_sent> However , I also have reason to believe that many , if not most , of you are actually tying your shoes incorrectly . <next_sent> Now I know that seems ludicrous . <next_sent> I know that seems ludicrous . <next_sent> And believe me , I lived the same sad life until about three years ago . <next_sent> And what happened to me was I bought , what was for me , a very expensive pair of shoes . <next_sent> But those shoes came with round nylon laces , and I could n't keep them tied . <next_sent> So I went back to the store and said to the owner , " I love the shoes , but I hate the laces . " <next_sent> He took a look and said , " Oh , you 're tying them wrong . " <next_sent> Now up until that moment , I would have thought that , by age 50 , one of the life skills that I had really nailed was tying my shoes . <next_sent> But not so -- let me demonstrate . <next_sent> This is the way that most of us were taught to tie our shoes . <next_sent> Now as it turns out -- thank you . <next_sent> Wait , there 's more . <next_sent> As it turns out , there 's a strong form and a weak form of this knot , and we were taught to tie the weak form . <next_sent> And here 's how to tell . <next_sent> If you pull the strands at the base of the knot , you will see that the bow will orient itself down the long axis of the shoe . <next_sent> That 's the weak form of the knot . <next_sent> But not to worry . <next_sent> If we start over and simply go the other direction around the bow , we get this , the strong form of the knot . <next_sent> And if you pull the cords under the knot , you will see that the bow orients itself along the transverse axis of the shoe . <next_sent> This is a stronger knot . <next_sent> It will come untied less often . <next_sent> It will let you down less , and not only that , it looks better . <next_sent> We 're going to do this one more time . <next_sent> Start as usual , go the other way around the loop . <next_sent> This is a little hard for children , but I think you can handle it . <next_sent> Pull the knot . <next_sent> There it is : the strong form of the shoe knot . <next_sent> Now , in keeping with today 's theme , I 'd like to point out -- and something you already know -- that sometimes a small advantage someplace in life can yield tremendous results someplace else . <next_sent> Live long and prosper .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01
+                            :ARG0 (s1.p / person
+                                        :name (s1.n / name
+                                                    :op1 "ossobuco"))))
+   :snt2 (s2.u / use-02
+               :ARG0 (s2.i / i)
+               :ARG1 (s2.t / think-01
+                           :ARG0 s2.i
+                           :ARG1 (s2.a2 / audience
+                                        :mod (s2.c2 / conference
+                                                    :name (s2.n / name
+                                                                :op1 "TED")))
+                           :ARG2 (s2.c / collect-01
+                                       :ARG1 (s2.p / person
+                                                   :quant (s2.s2 / some)
+                                                   :ARG1-of (s2.i2 / include-91))
+                                       :ARG1-of (s2.w / wonderful-03)))
+               :rel (s2.h / have-degree-91
+                          :ARG2 (s2.a / and
+                                      :op1 (s2.e / effective-04)
+                                      :op2 (s2.i5 / intelligent-01)
+                                      :op3 (s2.i4 / intellectual)
+                                      :op4 (s2.s / savvy-01)
+                                      :op5 (s2.w2 / world)
+                                      :op6 (s2.i3 / innovate-01))
+                          :ARG3 (s2.m / most)
+                          :ARG5 (s2.p2 / person
+                                       :location (s2.w3 / world))))
+   :snt3 (s3.a / and
+               :op2 (s3.t2 / think-01
+                           :ARG0 (s3.i / i
+                                       :same-as s2.i)
+                           :ARG1 (s3.t3 / true-01
+                                        :ARG1 (s3.t / that))))
+   :snt4 (s4.c2 / contrast-01
+                :ARG2 (s4.h / have-03
+                            :ARG0 (s4.i / i
+                                        :same-as s2.i)
+                            :ARG1 (s4.r / reason
+                                        :ARG0-of (s4.c / cause-01
+                                                       :ARG1 (s4.b / believe-01
+                                                                   :ARG0 s4.i
+                                                                   :ARG1 (s4.t / tie-01
+                                                                               :ARG0 (s4.p / person
+                                                                                           :quant (s4.m / many))
+                                                                               :ARG1 (s4.s / shoe
+                                                                                           :poss (s4.y / you))
+                                                                               :ARG1-of (s4.a / actual-02)
+                                                                               :ARG1-of (s4.c3 / correct-02
+                                                                                               :polarity "-")))))
+                            :mod (s4.a2 / also))
+                :rel (s4.o / or
+                           :ARG1-of (s4.i2 / include-91
+                                           :ARG2 s4.y)
+                           :op1 s4.p
+                           :op2 (s4.p2 / person
+                                       :quant (s4.m2 / most
+                                                     :polarity "-"))))
+   :snt5 (s5.k / know-01
+               :ARG0 (s5.i / i
+                           :same-as s2.i)
+               :ARG1 (s5.s / seem-01
+                           :ARG1 (s5.l / ludicrous
+                                       :domain (s5.t / that
+                                                     :same-as s4.t)))
+               :time (s5.n / now))
+   :snt6 (s6.k / know-01
+               :ARG0 (s6.i / i
+                           :same-as s2.i)
+               :ARG1 (s6.s / seem-01
+                           :ARG1 (s6.l / ludicrous
+                                       :domain (s6.t / that
+                                                     :same-as s4.t))))
+   :snt7 (s7.a2 / and
+                :op2 (s7.b2 / believe-01
+                            :ARG0 (s7.y2 / you)
+                            :ARG1 (s7.i / i
+                                        :same-as s2.i)
+                            :ARG1 (s7.l2 / live-01
+                                         :ARG0 s7.i
+                                         :ARG1 (s7.l / life
+                                                     :ARG1-of (s7.s / sad-02)
+                                                     :ARG1-of (s7.s2 / same-01))
+                                         :time (s7.u / until
+                                                     :op1 (s7.b / before
+                                                                :quant (s7.a / about
+                                                                             :op1 (s7.t / temporal-quantity
+                                                                                        :unit (s7.y / year)
+                                                                                        :quant "3"))
+                                                                :op1 (s7.n / now))))))
+   :snt8 (s8.a / and
+               :op2 (s8.b / buy-01
+                          :ARG0 (s8.i / i
+                                      :same-as s2.i)
+                          :ARG1 (s8.t / thing)
+                          :ARG3 (s8.s / shoe
+                                      :quant (s8.p / pair
+                                                   :mod (s8.e / expensive
+                                                              :degree (s8.v / very))))))
+   :snt9 (s9.c2 / contrast-01
+                :ARG2 (s9.a / and
+                            :op1 (s9.c / come-01
+                                       :ARG1 (s9.s / shoe
+                                                   :mod (s9.t / that)
+                                                   :same-as s8.s)
+                                       :accompanier (s9.s2 / sole
+                                                           :ARG1-of (s9.r / round-06)
+                                                           :consist-of (s9.n / nylon)))
+                            :op2 (s9.p / possible-01
+                                       :ARG1 (s9.k / keep-01
+                                                   :ARG0 (s9.i / i
+                                                               :same-as s2.i)
+                                                   :ARG1 (s9.t2 / tie-01
+                                                                :ARG1 s9.s))
+                                       :polarity "-")))
+   :snt10 (s10.c / cause-01
+                 :ARG1 (s10.a / and
+                              :op1 (s10.g / go-02
+                                          :ARG0 (s10.i / i
+                                                       :same-as s2.i)
+                                          :ARG4 (s10.s3 / store)
+                                          :direction (s10.b / back))
+                              :op2 (s10.s / say-01
+                                          :ARG0 s10.i
+                                          :ARG1 (s10.c2 / contrast-01
+                                                        :ARG1 (s10.l / love-01
+                                                                     :ARG0 s10.i
+                                                                     :ARG1 (s10.s2 / shoe
+                                                                                   :same-as s8.s))
+                                                        :ARG2 (s10.h / hate-01
+                                                                     :ARG0 s10.i
+                                                                     :ARG1 (s10.o / London
+                                                                                  :same-as s9.s2)))
+                                          :ARG2 s10.s3
+                                          :ARG2 (s10.p / person
+                                                       :ARG0-of (s10.o2 / own-01
+                                                                        :ARG1 s10.s3)))))
+   :snt11 (s11.a / and
+                 :op1 (s11.l / look-01
+                             :ARG0 (s11.h / he
+                                          :same-as s10.p))
+                 :op2 (s11.s / say-01
+                             :ARG0 s11.h
+                             :ARG1 (s11.t2 / tie-01
+                                           :ARG0 (s11.y / you
+                                                        :same-as s2.i)
+                                           :ARG1 (s11.t / they
+                                                        :same-as s8.s)
+                                           :ARG1-of (s11.w / wrong-02)
+                                           :mod (s11.o / oh))))
+   :snt12 (s12.t3 / think-01
+                  :ARG0 (s12.i / i
+                               :same-as s2.i)
+                  :ARG1 (s12.s2 / skill
+                                :ARG1-of (s12.i2 / include-91
+                                                 :ARG2 (s12.s3 / skill
+                                                               :ARG1-of (s12.n / nail-01
+                                                                               :ARG0 s12.i
+                                                                               :ARG1-of (s12.r / real-04))
+                                                               :mod (s12.l / life)))
+                                :domain (s12.t4 / tie-01
+                                                :ARG0 s12.i
+                                                :ARG1 (s12.s / shoe
+                                                             :poss s12.i))
+                                :time (s12.a / age-01
+                                             :ARG1 s12.i
+                                             :ARG2 (s12.t / temporal-quantity
+                                                          :unit (s12.y / year)
+                                                          :quant "50")))
+                  :mod (s12.n2 / now)
+                  :time (s12.u / until
+                               :op1 (s12.m / moment
+                                           :mod (s12.t2 / that))))
+   :snt13 (s13.a / and
+                 :op1 (s13.c / contrast-01
+                             :ARG2 (s13.s / so
+                                          :polarity "-"))
+                 :op2 (s13.l / let-01
+                             :ARG0 (s13.y / you)
+                             :ARG1 (s13.d / demonstrate-01
+                                          :ARG0 (s13.i / i
+                                                       :same-as s2.i))
+                             :mode "imperative"))
+   :snt14 (s14.w / way
+                 :domain (s14.t2 / this)
+                 :manner-of (s14.t / teach-01
+                                   :ARG1 (s14.t3 / tie-01
+                                                 :ARG0 (s14.p / person
+                                                              :ARG1-of (s14.i / include-91
+                                                                              :ARG2 (s14.w2 / we)
+                                                                              :ARG3 (s14.m / most)))
+                                                 :ARG1 (s14.s / shoe
+                                                              :poss s14.w2))
+                                   :ARG2 s14.p))
+   :snt15 (s15.t / thank-01
+                 :ARG0 (s15.i / i)
+                 :ARG1 (s15.y / you)
+                 :ARG1-of (s15.t2 / turn-out-11
+                                  :time (s15.n / now)))
+   :snt16 (s16.w / wait-01
+                 :ARG1 (s16.y / you)
+                 :ARG1-of (s16.c / cause-01
+                                 :ARG0 (s16.m / more))
+                 :mode "imperative")
+   :snt17 (s17.a2 / and
+                  :op1 (s17.t4 / turn-out-11
+                               :ARG1 (s17.a / and
+                                            :op1 (s17.f / form
+                                                        :ARG1-of (s17.s / strong-02))
+                                            :op2 (s17.f2 / form
+                                                         :ARG1-of (s17.w2 / weak-02))
+                                            :poss (s17.k / knot
+                                                         :mod (s17.t2 / this))))
+                  :op2 (s17.t / teach-01
+                              :ARG1 (s17.t3 / tie-01
+                                            :ARG0 (s17.w / we)
+                                            :ARG1 s17.f2)
+                              :ARG2 s17.w))
+   :snt18 (s18.a / and
+                 :op2 (s18.t2 / thing
+                              :location (s18.h / here)
+                              :manner-of (s18.t / tell-02)))
+   :snt19 (s19.s / see-01
+                 :ARG0 (s19.y / you)
+                 :ARG1 (s19.o / orient-01
+                              :ARG0 (s19.b2 / bow)
+                              :ARG1 s19.b2
+                              :direction (s19.d / down
+                                                :op1 (s19.a / axis
+                                                            :ARG1-of (s19.l / long-03)
+                                                            :poss (s19.s2 / shoe))))
+                 :condition (s19.p / pull-01
+                                   :ARG0 s19.y
+                                   :ARG1 (s19.s3 / strand)
+                                   :location (s19.b / base
+                                                    :part-of (s19.k / knot))))
+   :snt20 (s20.f / form
+                 :ARG1-of (s20.w / weak-02)
+                 :domain (s20.t / that)
+                 :mod (s20.k / knot
+                             :same-as s17.k))
+   :snt21 (s21.c / contrast-01
+                 :ARG2 (s21.w / worry-01
+                              :polarity "-"))
+   :snt22 (s22.g / get-01
+                 :ARG0 (s22.w / we)
+                 :ARG1 (s22.f / form
+                              :ARG1-of (s22.s3 / strong-02)
+                              :mod (s22.t / this)
+                              :mod (s22.k / knot
+                                          :same-as s17.k))
+                 :condition (s22.a / and
+                                   :op1 (s22.s2 / start-over-08
+                                                :ARG0 s22.w)
+                                   :op2 (s22.g2 / go-02
+                                                :ARG0 s22.w
+                                                :ARG1 (s22.d / direction
+                                                             :mod (s22.o / other))
+                                                :ARG1-of (s22.s / simple-02)
+                                                :path (s22.a2 / around
+                                                              :op1 (s22.b / bow
+                                                                          :same-as s19.b2)))))
+   :snt23 (s23.a2 / and
+                  :op2 (s23.s / see-01
+                              :ARG0 (s23.y / you)
+                              :ARG1 (s23.o / orient-01
+                                           :ARG0 (s23.b / bow
+                                                        :same-as s19.b2)
+                                           :ARG1 s23.b
+                                           :ARG2 (s23.a / along
+                                                        :op1 (s23.a3 / axis
+                                                                     :mod (s23.t / transverse)
+                                                                     :poss (s23.s2 / shoe))))
+                              :condition (s23.p / pull-01
+                                                :ARG0 s23.y
+                                                :ARG1 (s23.w / wire)
+                                                :ARG2 (s23.u / under
+                                                             :op1 (s23.k / knot
+                                                                         :same-as s19.k)))))
+   :snt24 (s24.k / knot
+                 :ARG1-of (s24.h / have-degree-91
+                                 :ARG2 (s24.s / strong-02)
+                                 :ARG3 (s24.m / more))
+                 :domain (s24.t / this)
+                 :ARG1-of s24.s)
+   :snt25 (s25.c / come-01
+                 :ARG1 (s25.i / it
+                              :same-as s24.t)
+                 :ARG4 (s25.t / tie-01
+                              :ARG1 s25.i
+                              :polarity "-")
+                 :frequency (s25.o / often
+                                   :mod (s25.l / less)))
+   :snt26 (s26.a / and
+                 :op1 (s26.l2 / let-down-04
+                              :quant (s26.l / less)
+                              :ARG0 (s26.i / it
+                                           :same-as s24.t)
+                              :ARG1 (s26.y / you))
+                 :op2 (s26.l3 / look-02
+                              :ARG0 s26.i
+                              :ARG1 (s26.g / good-02
+                                           :ARG2-of (s26.h / have-degree-91
+                                                           :ARG1 s26.l3
+                                                           :ARG3 (s26.m / more)))
+                              :mod (s26.o / only)))
+   :snt27 (s27.d / do-02
+                 :ARG0 (s27.w / we)
+                 :ARG1 (s27.t / this)
+                 :frequency (s27.t2 / time
+                                    :mod (s27.m / more)
+                                    :mod (s27.o / one)))
+   :snt28 (s28.a / and
+                 :op1 (s28.s / start-01
+                             :ARG0 (s28.y / you)
+                             :mod (s28.a3 / as-usual)
+                             :mode "imperative")
+                 :op2 (s28.g / go-02
+                             :ARG0 s28.y
+                             :ARG1 (s28.a2 / around
+                                           :op1 (s28.l / loop))
+                             :direction (s28.w / way
+                                               :mod (s28.o / other))
+                             :mode "imperative"))
+   :snt29 (s29.c2 / contrast-01
+                  :ARG1 (s29.h2 / hard-02
+                                :ARG1 (s29.t2 / this)
+                                :ARG2 (s29.c / child)
+                                :degree (s29.l / little))
+                  :ARG2 (s29.t / think-01
+                               :ARG0 (s29.i / i
+                                            :same-as s2.i)
+                               :ARG1 (s29.p / possible-01
+                                            :ARG1 (s29.h / handle-01
+                                                         :ARG0 (s29.y / you)
+                                                         :ARG1 s29.t2))))
+   :snt30 (s30.p / pull-01
+                 :ARG0 (s30.y / you)
+                 :ARG1 (s30.k / knot
+                              :same-as s19.k)
+                 :mode "imperative")
+   :snt31 (s31.i / it
+                 :ARG1-of (s31.m / mean-01
+                                 :ARG2 (s31.f / form
+                                              :ARG1-of (s31.s2 / strong-02)
+                                              :mod (s31.k / knot
+                                                          :mod (s31.s / shoe))))
+                 :location (s31.t / there)
+                 :same-as s19.k)
+   :snt32 (s32.l2 / like-02
+                  :ARG0 (s32.i / i
+                               :same-as s2.i)
+                  :ARG1 (s32.p / point-out-02
+                               :ARG0 s32.i
+                               :ARG1 (s32.a3 / and
+                                             :op1 (s32.p2 / possible-01
+                                                          :ARG1 (s32.y / yield-01
+                                                                       :ARG0 (s32.a / advantage-01
+                                                                                    :location (s32.s2 / someplace
+                                                                                                      :mod (s32.l / life))
+                                                                                    :mod (s32.s / small))
+                                                                       :ARG1 (s32.t2 / thing
+                                                                                     :ARG2-of (s32.r / result-01)
+                                                                                     :mod (s32.t4 / tremendous))
+                                                                       :location (s32.s3 / someplace
+                                                                                         :mod (s32.e / else)))
+                                                          :frequency (s32.s5 / sometimes))
+                                             :op2 (s32.s4 / something
+                                                          :ARG1-of (s32.k2 / know-01
+                                                                           :ARG0 (s32.y2 / you)
+                                                                           :time (s32.a2 / already)))))
+                  :ARG1-of (s32.k / keep-06
+                                  :ARG2 (s32.t / theme
+                                               :time (s32.t3 / today)))
+                  :time (s32.n / now))
+   :snt33 (s33.a / and
+                 :op1 (s33.l / live-01
+                             :ARG0 (s33.y / you)
+                             :ARG1-of (s33.l2 / long-03)
+                             :mode "imperative")
+                 :op2 (s33.p / prosper-01
+                             :ARG0 s33.y
+                             :mode "imperative")))
+

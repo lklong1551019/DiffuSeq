@@ -1,0 +1,223 @@
+# ::id doc-84
+# ::doc_file doc-84
+# ::tok http : / / www . ted . com / talks / marco_tempest_the_augmented_reality_of_techno_magic< / url> <next_sent> So magic is a very introverted field . <next_sent> While scientists regularly publish their latest research , we magicians do not like to share our methods and secrets . <next_sent> That 's true even amongst peers . <next_sent> But if you look at creative practice as a form of research , or art as a form of R&amp ; D for humanity , then how could a cyber illusionist like myself share his research ? <next_sent> Now my own speciality is combining digital technology and magic . <next_sent> And about three years ago , I started an exercise in openness and inclusiveness by reaching out into the open - source software community to create new digital tools for magic -- tools that could eventually be shared with other artists to start them off further on in the process and to get them to the poetry faster . <next_sent> Today , I 'd like to show you something which came out of these collaborations . <next_sent> It 's an augmented reality projection tracking and mapping system , or a digital storytelling tool . <next_sent> Could we bring down the lights please ? <next_sent> Thank you . <next_sent> So let 's give this a try . <next_sent> And I 'm going to use it to give you my take on the stuff of life . <next_sent> Wake up . <next_sent> Hey . <next_sent> Come on . <next_sent> Please . <next_sent> Come on . <next_sent> Ah , sorry about that . <next_sent> Forgot this . <next_sent> Give it another try . <next_sent> Okay . <next_sent> He figured out the system . <next_sent> Uh oh . <next_sent> All right . <next_sent> Let 's try this . <next_sent> Come on . <next_sent> Hey . <next_sent> You heard her , go ahead . <next_sent> Bye - bye .
+(d / document
+   :snt1 (s1.u / url-entity
+               :value "Magic")
+   :snt2 (s2.i / infer-01
+               :ARG1 (s2.f / field
+                           :domain (s2.m / magic)
+                           :mod (s2.i2 / introverted
+                                       :degree (s2.v / very))))
+   :snt3 (s3.c / contrast-01
+               :ARG1 (s3.p / publish-01
+                           :ARG0 (s3.s / scientist)
+                           :ARG1 (s3.r2 / research-01
+                                        :ARG0 s3.s
+                                        :mod (s3.l / last))
+                           :ARG1-of (s3.r / regular-02))
+               :ARG2 (s3.d / dislike-01
+                           :ARG0 (s3.w / we
+                                       :mod (s3.m / magic))
+                           :ARG1 (s3.s3 / share-01
+                                        :ARG0 s3.w
+                                        :ARG1 (s3.a / and
+                                                    :op1 (s3.m2 / method
+                                                                :poss s3.w)
+                                                    :op2 (s3.s2 / secret
+                                                                :poss s3.w)))))
+   :snt4 (s4.t2 / true-01
+                :ARG1 (s4.t / that
+                            :same-as s3.d)
+                :location (s4.a / amongst
+                                :mod (s4.e / even)
+                                :op1 (s4.p2 / person
+                                            :ARG0-of (s4.h / have-rel-role-91
+                                                           :ARG1 s4.t
+                                                           :ARG2 (s4.p / peer)))))
+   :snt5 (s5.c / contrast-01
+               :ARG2 (s5.o / or
+                           :op1 (s5.l / look-01
+                                      :ARG0 (s5.y / you)
+                                      :ARG1 (s5.p2 / practice-01
+                                                   :ARG1 (s5.c2 / create-01))
+                                      :ARG2 (s5.f / form
+                                                  :mod (s5.r / research-01)))
+                           :op2 (s5.l2 / look-01
+                                       :ARG0 s5.y
+                                       :ARG1 (s5.a2 / art)
+                                       :ARG2 (s5.f2 / form
+                                                    :mod (s5.r2 / research-01
+                                                                :ARG1 (s5.h / humanity)))))
+               :ARG2 (s5.p / possible-01
+                           :ARG1 (s5.s / share-01
+                                       :ARG0 (s5.i2 / illusionist
+                                                    :ARG1-of (s5.r4 / resemble-01
+                                                                    :ARG2 (s5.i / i))
+                                                    :mod (s5.c3 / cyber))
+                                       :ARG1 (s5.r3 / research-01
+                                                    :ARG0 s5.i2))
+                           :condition s5.o)
+               :rel (s5.a / amr-unknown))
+   :snt6 (s6.c / combine-01
+               :ARG0 (s6.i / i
+                           :same-as s5.i)
+               :ARG1 (s6.t / technology
+                           :mod (s6.d / digit))
+               :ARG2 (s6.m / magic)
+               :mod (s6.s / specialty
+                          :poss s6.i)
+               :time (s6.n / now))
+   :snt7 (s7.a2 / and
+                :op1 (s7.s4 / start-01
+                            :ARG0 (s7.i / i
+                                        :same-as s5.i)
+                            :ARG1 (s7.e2 / exercise-02
+                                         :ARG0 s7.i
+                                         :ARG1 (s7.a3 / and
+                                                      :op1 (s7.o / open-01)
+                                                      :op2 (s7.i2 / inclusiveness))
+                                         :manner (s7.r / reach-03
+                                                       :purpose (s7.c2 / create-01
+                                                                       :ARG0 s7.i
+                                                                       :ARG1 (s7.t2 / tool
+                                                                                    :purpose (s7.m / magic)
+                                                                                    :ARG1-of (s7.n / new-01)
+                                                                                    :ARG1-of (s7.s / share-01
+                                                                                                   :purpose (s7.a4 / and
+                                                                                                                   :op1 (s7.s5 / start-off-02
+                                                                                                                               :ARG0 s7.i
+                                                                                                                               :ARG1 s7.t2
+                                                                                                                               :time (s7.p3 / process-02
+                                                                                                                                            :ARG1 s7.c2
+                                                                                                                                            :degree (s7.f / far)))
+                                                                                                                   :op2 (s7.g / get-05
+                                                                                                                              :ARG1 s7.t2
+                                                                                                                              :ARG1-of (s7.h / have-degree-91
+                                                                                                                                             :ARG2 (s7.f2 / fast-02
+                                                                                                                                                          :ARG1 s7.g)
+                                                                                                                                             :ARG3 (s7.m2 / more))
+                                                                                                                              :ARG2 (s7.p / poetry)))
+                                                                                                   :ARG1-of (s7.p2 / possible-01)
+                                                                                                   :ARG2 (s7.a5 / artist
+                                                                                                                :mod (s7.o3 / other))
+                                                                                                   :time (s7.e / eventual))
+                                                                                    :mod (s7.d / digit)))
+                                                       :ARG0 s7.i
+                                                       :ARG2 (s7.c / community
+                                                                   :mod (s7.s2 / software
+                                                                               :mod (s7.s3 / source
+                                                                                           :ARG1-of (s7.o2 / open-01))))))
+                            :time (s7.b / before
+                                        :quant (s7.a / about
+                                                     :op1 (s7.t / temporal-quantity
+                                                                :unit (s7.y / year)
+                                                                :quant "3"))
+                                        :op1 (s7.n2 / now))))
+   :snt8 (s8.l / like-02
+               :ARG0 (s8.i / i
+                           :same-as s5.i)
+               :ARG1 (s8.s / show-01
+                           :ARG0 s8.i
+                           :ARG1 (s8.s2 / something
+                                        :ARG1-of (s8.c2 / come-out-09
+                                                        :ARG2 (s8.c / collaborate-01
+                                                                    :mod (s8.t / this))))
+                           :ARG2 (s8.y / you))
+               :time (s8.t2 / today))
+   :snt9 (s9.o / or
+               :domain (s9.i / it
+                             :same-as s8.s2)
+               :op1 (s9.s2 / system
+                           :purpose (s9.a / and
+                                          :op1 (s9.t3 / track-01
+                                                      :ARG1 (s9.p / project-01
+                                                                  :ARG1 (s9.r / reality
+                                                                              :ARG1-of (s9.a2 / augment-01))))
+                                          :op2 (s9.m / map-01
+                                                     :ARG1 s9.p)))
+               :op2 (s9.t2 / tool
+                           :purpose (s9.t / tell-01
+                                          :ARG1 (s9.s / story))
+                           :mod (s9.d / digit)))
+   :snt10 (s10.p / possible-01
+                 :ARG1 (s10.b / bring-down-03
+                              :ARG0 (s10.w / we)
+                              :ARG1 (s10.l / light)
+                              :mode "imperative")
+                 :polarity (s10.a / amr-unknown)
+                 :polite "+")
+   :snt11 (s11.t / thank-01
+                 :ARG1 (s11.y / you))
+   :snt12 (s12.l / let-01
+                 :ARG1 (s12.t2 / try-01
+                               :ARG0 (s12.w / we)
+                               :ARG1 (s12.t / this
+                                            :same-as s8.s2)))
+   :snt13 (s13.a / and
+                 :op2 (s13.u / use-01
+                             :ARG0 (s13.i / i
+                                          :same-as s5.i)
+                             :ARG1 (s13.i2 / it
+                                           :same-as s8.s2)
+                             :ARG2 (s13.g / give-01
+                                          :ARG0 s13.i
+                                          :ARG1 (s13.t / take-34
+                                                       :ARG0 s13.i
+                                                       :ARG1 (s13.s / stuff
+                                                                    :mod (s13.l / life)))
+                                          :ARG2 (s13.y / you))))
+   :snt14 (s14.w / wake-up-02
+                 :ARG0 (s14.y / you)
+                 :ARG1 s14.y
+                 :mode "imperative")
+   :snt15 (s15.h / hey)
+   :snt16 (s16.c / come-on-25
+                 :ARG1 (s16.y / you)
+                 :mode "imperative")
+   :snt17 (s17.p / please)
+   :snt18 (s18.c / come-on-25
+                 :ARG1 (s18.y / you)
+                 :mode "imperative")
+   :snt19 (s19.s / sorry-01
+                 :ARG1 (s19.i / i)
+                 :ARG2 (s19.t / that)
+                 :mod (s19.a / ah
+                             :mode "expressive"))
+   :snt20 (s20.f / forget-01
+                 :ARG1 (s20.t / this))
+   :snt21 (s21.t / try-01
+                 :ARG0 (s21.y / you)
+                 :ARG1 (s21.i / it
+                              :same-as s8.s2)
+                 :mod (s21.a / another)
+                 :mode "imperative")
+   :snt22 (s22.o / okay-01)
+   :snt23 (s23.f / figure-out-05
+                 :ARG0 (s23.h / he
+                              :same-as s5.i)
+                 :ARG1 (s23.s / system))
+   :snt24 (s24.u / uh-oh
+                 :mode "expressive")
+   :snt25 (s25.r / right-06
+                 :mod (s25.a / all))
+   :snt26 (s26.t2 / try-01
+                  :ARG0 (s26.w / we)
+                  :ARG1 (s26.t / this
+                               :same-as s8.s2)
+                  :mode "imperative")
+   :snt27 (s27.c / come-on-25
+                 :ARG1 (s27.y / you)
+                 :mode "imperative")
+   :snt28 (s28.h / hey)
+   :snt29 (s29.a2 / and
+                  :op1 (s29.h / hear-01
+                              :ARG0 (s29.y / you
+                                           :same-as s5.i)
+                              :ARG1 (s29.s / she))
+                  :op2 (s29.g / go-02
+                              :ARG0 s29.y
+                              :ARG2 (s29.a / ahead)
+                              :mode "imperative"))
+   :snt30 (s30.g / goodbye))
+

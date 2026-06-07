@@ -1,0 +1,525 @@
+# ::id doc-1106
+# ::doc_file doc-1106
+# ::tok http : / / www . ted . com / talks / ziyah_gafic_everyday_objects_tragic_histories< / url> <next_sent> These are simple objects : clocks , keys , combs , glasses . <next_sent> They are the things the victims of genocide in Bosnia carried with them on their final journey . <next_sent> We are all familiar with these mundane , everyday objects . <next_sent> The fact that some of the victims carried personal items such as toothpaste and a toothbrush is a clear sign they had no idea what was about to happen to them . <next_sent> Usually , they were told that they were going to be exchanged for prisoners of war . <next_sent> These items have been recovered from numerous mass graves across my homeland , and as we speak , forensics are exhuming bodies from newly discovered mass graves , 20 years after the war . <next_sent> And it is quite possibly the largest ever discovered . <next_sent> During the four years of conflict that devastated the Bosnian nation in the early ' 90s , approximately 30,000 citizens , mainly civilians , went missing , presumed killed , and another 100,000 were killed during combat operations . <next_sent> Most of them were killed either in the early days of the war or towards the end of the hostilities , when U.N. safe zones like Srebrenica fell into the hands of the Serb army . <next_sent> The international criminal tribunal delivered a number of sentences for crimes against humanity and genocide . <next_sent> Genocide is a systematic and deliberate destruction of a racial , political , religious or ethnic group . <next_sent> As much as genocide is about killing . <next_sent> It is also about destroying their property , their cultural heritage , and ultimately the very notion that they ever existed . <next_sent> Genocide is not only about the killing ; it is about the denied identity . <next_sent> There are always traces — no such thing as a perfect crime . <next_sent> There are always remnants of the perished ones that are more durable than their fragile bodies and our selective and fading memory of them . <next_sent> These items are recovered from numerous mass graves , and the main goal of this collection of the items is a unique process of identifying those who disappeared in the killings , the first act of genocide on European soil since the Holocaust . <next_sent> Not a single body should remain undiscovered or unidentified . <next_sent> Once recovered , these items that the victims carried with them on their way to execution are carefully cleaned , analyzed , catalogued and stored . <next_sent> Thousands of artifacts are packed in white plastic bags just like the ones you see on CSI . <next_sent> These objects are used as a forensic tool in visual identification of the victims , but they are also used as very valuable forensic evidence in the ongoing war crimes trials . <next_sent> Survivors are occasionally called to try to identify these items physically , but physical browsing is extremely difficult , an ineffective and painful process . <next_sent> Once the forensics and doctors and lawyers are done with these objects , they become orphans of the narrative . <next_sent> Many of them get destroyed , believe it or not , or they get simply shelved , out of sight and out of mind . <next_sent> I decided a few years ago to photograph every single exhumed item in order to create a visual archive that survivors could easily browse . <next_sent> As a storyteller , I like to give back to the community . <next_sent> I like to move beyond raising awareness . <next_sent> And in this case , someone may recognize these items or at least their photographs will remain as a permanent , unbiased and accurate reminder of what happened . <next_sent> Photography is about empathy , and the familiarity of these items guarantee empathy . <next_sent> In this case , I am merely a tool , a forensic , if you like , and the result is a photography that is as close as possible of being a document . <next_sent> Once all the missing persons are identified , only decaying bodies in their graves and these everyday items will remain . <next_sent> In all their simplicity , these items are the last testament to the identity of the victims , the last permanent reminder that these people ever existed . <next_sent> Thank you very much .
+(d / document
+   :snt1 (s1.u / url-entity
+               :value (s1.t / talk-01
+                            :ARG0 (s1.p / person
+                                        :name (s1.n / name
+                                                    :op1 "narcotic"))))
+   :snt2 (s2.o / object
+               :ARG1-of (s2.s / simple-02)
+               :domain (s2.t / this)
+               :example (s2.a / and
+                              :op1 (s2.w / watch)
+                              :op2 (s2.k / key)
+                              :op3 (s2.c / computer)
+                              :op4 (s2.g / glasses)))
+   :snt3 (s3.t2 / thing
+                :ARG1-of (s3.c / carry-01
+                               :ARG0 (s3.p / person
+                                           :ARG1-of (s3.v / victimize-01
+                                                          :ARG0 (s3.g / genocide-01
+                                                                      :location (s3.c2 / country
+                                                                                       :name (s3.n / name
+                                                                                                   :op1 "Bosnia")))))
+                               :time (s3.j / journey-01
+                                           :ARG0 s3.p
+                                           :mod (s3.f / final)))
+                :domain (s3.t / they
+                              :same-as s2.t))
+   :snt4 (s4.f / familiarize-01
+               :ARG1 (s4.w / we
+                           :mod (s4.a / all))
+               :ARG2 (s4.o / object
+                           :mod (s4.e / everyday)
+                           :mod (s4.m / mundane)
+                           :mod (s4.t / this)
+                           :same-as s2.t))
+   :snt5 (s5.s / signal-07
+               :ARG0 (s5.c / carry-01
+                           :ARG0 (s5.p / person
+                                       :quant (s5.s2 / some)
+                                       :ARG1-of (s5.i2 / include-91
+                                                       :ARG2 (s5.v / victim
+                                                                   :same-as s3.p
+                                                                   :same-as-of s6.t2)))
+                           :ARG1 (s5.i3 / item
+                                        :ARG1-of (s5.p2 / personal-02
+                                                        :ARG2 s5.p)
+                                        :example (s5.a2 / and
+                                                        :op1 (s5.t3 / toothpaste)
+                                                        :op2 (s5.t2 / toothbrush))))
+               :ARG1 (s5.h / have-03
+                           :ARG0 s5.v
+                           :ARG1 (s5.i / idea
+                                       :topic (s5.t / thing
+                                                    :mod s5.v
+                                                    :time (s5.a / about-to)))
+                           :polarity "-")
+               :ARG1-of (s5.c2 / clear-06))
+   :snt6 (s6.t / tell-01
+               :ARG1 (s6.e / exchange-01
+                           :ARG1 (s6.t2 / they)
+                           :ARG3 (s6.p / person
+                                       :ARG1-of (s6.i / imprison-01
+                                                      :ARG2 (s6.w / war-01))))
+               :ARG2 s6.t2
+               :mod (s6.u / usual))
+   :snt7 (s7.a3 / and
+                :op1 (s7.r / recover-02
+                           :ARG1 (s7.i2 / item
+                                        :mod (s7.t2 / this)
+                                        :same-as s2.t)
+                           :ARG2 (s7.g / grave
+                                       :quant (s7.n2 / numerous)
+                                       :location (s7.a / across
+                                                       :op1 (s7.h / homeland
+                                                                  :poss (s7.i / i)
+                                                                  :same-as s3.c2))
+                                       :mod (s7.m / mass)))
+                :op2 (s7.a4 / autopsy-01
+                            :ARG0 (s7.f / forensics)
+                            :ARG1 (s7.b / body)
+                            :ARG2 (s7.g2 / grave
+                                         :ARG1-of (s7.d / discover-01
+                                                        :ARG1-of (s7.n / new-01))
+                                         :mod (s7.m2 / mass))
+                            :time (s7.s / speak-01
+                                        :ARG0 (s7.w2 / we))
+                            :time (s7.a2 / after
+                                         :quant (s7.t / temporal-quantity
+                                                      :unit (s7.y / year)
+                                                      :quant "20")
+                                         :op1 (s7.w / war))))
+   :snt8 (s8.a / and
+               :op2 (s8.p / possible-01
+                          :ARG1 (s8.h / have-degree-91
+                                      :ARG1 (s8.i / it
+                                                  :same-as s7.g2)
+                                      :ARG2 (s8.l / large
+                                                  :ARG1-of (s8.d / discover-01
+                                                                 :time (s8.e / ever)))
+                                      :ARG3 (s8.m / most))
+                          :degree (s8.q / quite)))
+   :snt9 (s9.a / and
+               :op1 (s9.m2 / miss-01
+                           :ARG1 (s9.c / citizen
+                                       :quant (s9.a3 / approximately
+                                                     :op1 "30000")
+                                       :ARG2-of (s9.i / include-91)
+                                       :ARG1-of s9.i
+                                       :mod (s9.c3 / civilian
+                                                   :mod (s9.m / main))))
+               :op2 (s9.k / kill-01
+                          :ARG1 s9.c
+                          :ARG1-of (s9.p / presume-01))
+               :op3 (s9.k2 / kill-01
+                           :ARG1 (s9.c2 / citizen
+                                        :mod (s9.a2 / another)
+                                        :quant "100000")
+                           :time (s9.o / operation
+                                       :mod (s9.c4 / combat-01)))
+               :time (s9.c5 / conflict-01
+                            :ARG0-of (s9.d2 / devastate-01
+                                            :ARG1 (s9.n2 / nation
+                                                         :part-of (s9.c6 / country
+                                                                         :name (s9.n / name
+                                                                                     :op1 "Balkans"))
+                                                         :same-as s3.c2)
+                                            :time (s9.e / early
+                                                        :op1 (s9.d / date-entity
+                                                                   :decade "90")))
+                            :duration (s9.t / temporal-quantity
+                                            :unit (s9.y / year)
+                                            :quant "4")))
+   :snt10 (s10.k / kill-01
+                 :ARG1 (s10.p / person
+                              :ARG1-of (s10.i2 / include-91
+                                               :ARG2 (s10.t / they
+                                                            :same-as s9.c)
+                                               :ARG3 (s10.m / most)))
+                 :time (s10.o / or
+                              :op1 (s10.d / day
+                                          :mod (s10.e / early)
+                                          :part-of (s10.w / war
+                                                          :same-as s7.w))
+                              :op2 (s10.t2 / towards
+                                           :op1 (s10.e2 / end-01
+                                                        :ARG1 (s10.h / hostility)))
+                              :time-of (s10.f / fall-01
+                                              :ARG1 (s10.z / zone
+                                                           :ARG0-of (s10.s / safe-01)
+                                                           :example (s10.c / city
+                                                                           :name (s10.n2 / name
+                                                                                         :op1 "Srebrenica"))
+                                                           :mod (s10.o2 / organization
+                                                                        :name (s10.n / name
+                                                                                     :op1 "U.N.")))
+                                              :ARG2 (s10.i / in-ones-hands-04
+                                                           :ARG0 (s10.a / army
+                                                                        :mod (s10.c2 / country
+                                                                                     :name (s10.n3 / name
+                                                                                                   :op1 "Serbia")))
+                                                           :ARG1 s10.z))))
+   :snt11 (s11.d / deliver-01
+                 :ARG0 (s11.t / tribunal
+                              :ARG2-of (s11.c2 / criminal-03)
+                              :mod (s11.i / international))
+                 :ARG1 (s11.s / sentence-01
+                              :quant (s11.n / number)
+                              :ARG3 (s11.a / and
+                                           :op1 (s11.c / crime-02
+                                                       :ARG2 (s11.h / humanity))
+                                           :op2 (s11.g / genocide-01))))
+   :snt12 (s12.g / genocide-01
+                 :domain (s12.d2 / destroy-01
+                                 :ARG1 (s12.o / or
+                                              :op1 (s12.r / race)
+                                              :op2 (s12.p / politics)
+                                              :op3 (s12.r2 / religion)
+                                              :op4 (s12.e / ethnic-group))
+                                 :ARG1-of (s12.d / deliberate-01)
+                                 :mod (s12.s / systematic)))
+   :snt13 (s13.c / concern-02
+                 :ARG0 (s13.g / genocide-01)
+                 :ARG1 (s13.k / kill-01)
+                 :mod (s13.m / much))
+   :snt14 (s14.c / concern-02
+                 :ARG0 (s14.i / it
+                              :same-as s13.g)
+                 :ARG1 (s14.d / destroy-01
+                              :ARG1 (s14.a2 / and
+                                            :op1 (s14.p / property
+                                                        :poss (s14.t / they
+                                                                     :same-as s12.o))
+                                            :op2 (s14.h / heritage
+                                                        :mod (s14.c2 / culture)
+                                                        :poss s14.t)
+                                            :op3 (s14.n / notion
+                                                        :mod (s14.v / very)
+                                                        :mod (s14.u / ultimate)
+                                                        :topic (s14.e2 / exist-01
+                                                                       :ARG1 s14.t
+                                                                       :time (s14.e / ever)))))
+                 :mod (s14.a / also))
+   :snt15 (s15.c3 / contrast-01
+                  :ARG1 (s15.c / concern-02
+                               :ARG0 (s15.g / genocide-01)
+                               :ARG1 (s15.k / kill-01)
+                               :mod (s15.o / only
+                                           :polarity "-"))
+                  :ARG2 (s15.c2 / concern-02
+                                :ARG0 s15.g
+                                :ARG1 (s15.i / identity
+                                             :ARG1-of (s15.d / deny-01))))
+   :snt16 (s16.t / trace
+                 :ARG0-of (s16.m / mean-01
+                                 :ARG1 (s16.c / crime-02
+                                              :ARG1-of (s16.p / perfect-02)
+                                              :polarity "-"))
+                 :time (s16.a / always))
+   :snt17 (s17.r / remnant
+                 :ARG1-of (s17.h / have-degree-91
+                                 :ARG2 (s17.d / durable)
+                                 :ARG3 (s17.m2 / more)
+                                 :ARG4 (s17.a2 / and
+                                               :op1 (s17.b / body
+                                                           :mod (s17.f2 / fragile)
+                                                           :poss (s17.o / one
+                                                                        :ARG1-of (s17.p / perish-01)))
+                                               :op2 (s17.m / memory
+                                                           :ARG1-of (s17.f / fade-01)
+                                                           :ARG1-of (s17.s / select-01)
+                                                           :poss (s17.w / we)
+                                                           :topic s17.o)))
+                 :time (s17.a / always)
+                 :topic s17.o)
+   :snt18 (s18.a2 / and
+                  :op1 (s18.r / recover-02
+                              :ARG1 (s18.i2 / item
+                                            :mod (s18.t / this)
+                                            :same-as s2.t)
+                              :ARG2 (s18.g2 / grave
+                                            :quant (s18.n3 / numerous)
+                                            :mod (s18.m2 / mass)))
+                  :op2 (s18.p2 / process-02
+                               :purpose (s18.c / collect-01
+                                               :ARG1 s18.a2
+                                               :mod (s18.t2 / this)
+                                               :same-as s2.t)
+                               :ARG1 (s18.i / identify-01
+                                            :ARG1 (s18.p / person
+                                                         :ARG1-of (s18.d / disappear-01
+                                                                         :subevent-of (s18.k / kill-01
+                                                                                             :mod (s18.a / act-02
+                                                                                                         :location (s18.s2 / soil
+                                                                                                                           :mod (s18.c2 / continent
+                                                                                                                                        :name (s18.n / name
+                                                                                                                                                     :op1 "Europe")))
+                                                                                                         :mod (s18.g / genocide-01)
+                                                                                                         :ord (s18.o / ordinal-entity
+                                                                                                                     :value "1")
+                                                                                                         :time (s18.s / since
+                                                                                                                      :op1 (s18.e / event
+                                                                                                                                  :name (s18.n2 / name
+                                                                                                                                                :op1 "Holocaust"))))))))
+                               :ARG1-of (s18.u / unique-01)
+                               :mod (s18.m / main)))
+   :snt19 (s19.r / recommend-01
+                 :ARG1 (s19.r2 / remain-01
+                               :ARG1 (s19.b / body
+                                            :ARG1-of (s19.s / single-02))
+                               :ARG3 (s19.o / or
+                                            :op1 (s19.d / discover-01
+                                                        :ARG1 s19.b
+                                                        :polarity "-")
+                                            :op2 (s19.i / identify-01
+                                                        :ARG1 s19.b
+                                                        :polarity "-"))
+                               :polarity "-"))
+   :snt20 (s20.a2 / and
+                  :op1 (s20.c4 / clean-01
+                               :ARG1 (s20.i / item
+                                            :ARG1-of (s20.c2 / carry-01
+                                                             :ARG0 (s20.v / victim)
+                                                             :destination (s20.e / execute-01
+                                                                                 :ARG1 s20.v))
+                                            :mod (s20.t / this)
+                                            :same-as s2.t)
+                               :manner (s20.c / careful))
+                  :op2 (s20.a / analyze-01
+                              :ARG1 s20.i)
+                  :op3 (s20.c3 / catalogue-01
+                               :ARG1 s20.i)
+                  :op4 (s20.s / store-01
+                              :ARG1 s20.i)
+                  :time (s20.r / recover-02
+                               :ARG1 s20.i))
+   :snt21 (s21.p / pack-01
+                 :ARG1 (s21.a / art
+                              :quant (s21.m / multiple
+                                            :op1 "1000"))
+                 :ARG2 (s21.b / bag
+                              :ARG1-of (s21.w / white-03)
+                              :ARG1-of (s21.r / resemble-01
+                                              :ARG2 (s21.b2 / bag
+                                                            :ARG1-of (s21.s / see-01
+                                                                            :ARG0 (s21.y / you)
+                                                                            :location (s21.o / organization
+                                                                                             :name (s21.n / name
+                                                                                                          :op1 "CSI"))))
+                                              :mod (s21.j / just))
+                              :consist-of (s21.p2 / plastic)))
+   :snt22 (s22.c / contrast-01
+                 :ARG1 (s22.u / use-01
+                              :ARG1 (s22.o / object
+                                           :mod (s22.t2 / this)
+                                           :same-as s2.t)
+                              :ARG2 (s22.t3 / tool
+                                            :purpose (s22.i / identify-01
+                                                            :ARG1 (s22.v3 / victim
+                                                                          :same-as s20.v)
+                                                            :manner (s22.v4 / visual))
+                                            :mod (s22.f / forensic)))
+                 :ARG2 (s22.u2 / use-01
+                               :ARG1 s22.o
+                               :ARG2 (s22.t / thing
+                                            :ARG0-of (s22.e / evidence-01
+                                                            :mod s22.f
+                                                            :time (s22.t4 / try-02
+                                                                          :ARG1-of (s22.g / go-on-15)
+                                                                          :ARG3 (s22.c2 / crime-02
+                                                                                        :mod (s22.w / war))))
+                                            :ARG1-of (s22.v / value-01
+                                                            :degree (s22.v2 / very)))
+                               :mod (s22.a / also)))
+   :snt23 (s23.c2 / contrast-01
+                  :ARG1 (s23.c / call-02
+                               :ARG1 (s23.p2 / person
+                                             :ARG0-of (s23.s / survive-01))
+                               :ARG2 (s23.t2 / try-01
+                                             :ARG0 s23.p2
+                                             :ARG1 (s23.i / identify-01
+                                                          :ARG0 s23.p2
+                                                          :ARG1 (s23.i2 / item
+                                                                        :mod (s23.t / this)
+                                                                        :same-as s2.t)
+                                                          :manner (s23.p3 / physical)))
+                               :frequency (s23.o / occasional))
+                  :ARG2 (s23.d / difficult
+                               :degree (s23.e2 / extreme)
+                               :domain (s23.b / browse-01
+                                              :ARG1-of (s23.p4 / process-02
+                                                               :ARG0-of (s23.p / pain-01)
+                                                               :ARG0-of (s23.e / effective-04
+                                                                               :polarity "-"))
+                                              :manner s23.p3)))
+   :snt24 (s24.b2 / become-01
+                  :ARG1 (s24.a / and
+                               :op1 (s24.f / forensics)
+                               :op2 (s24.d / doctor)
+                               :op3 (s24.l / lawyer))
+                  :ARG2 (s24.o3 / orphan
+                                :topic-of (s24.n / narrate-01))
+                  :time (s24.o2 / once
+                                :op1 (s24.b / be-done-08
+                                            :ARG0 s24.a
+                                            :ARG1 (s24.o / object
+                                                         :mod (s24.t / this)
+                                                         :same-as s2.t))))
+   :snt25 (s25.o2 / or
+                  :op1 (s25.d / destroy-01
+                              :ARG1 (s25.t / they
+                                           :quant (s25.m / many)
+                                           :part (s25.m2 / mind)
+                                           :same-as s2.t)
+                              :concession (s25.o / or
+                                                 :op1 (s25.b / believe-01
+                                                             :ARG0 (s25.y / you))
+                                                 :op2 (s25.b2 / believe-01
+                                                              :ARG0 s25.y
+                                                              :polarity "-")))
+                  :op2 (s25.s / shelve-01
+                              :ARG1 s25.t
+                              :ARG1-of (s25.s3 / simple-02)
+                              :ARG2 (s25.a / and
+                                           :op1 (s25.s2 / sight-01
+                                                        :ARG1 s25.t
+                                                        :op2-of s25.a
+                                                        :polarity "-")
+                                           :op3 s25.m2)))
+   :snt26 (s26.d / decide-01
+                 :ARG0 (s26.i / i
+                              :same-as s7.i)
+                 :ARG1 (s26.p2 / photograph-01
+                               :purpose (s26.c / create-01
+                                               :ARG0 s26.i
+                                               :ARG1 (s26.a / archive
+                                                            :ARG1-of (s26.b2 / browse-01
+                                                                             :ARG0 (s26.p / person
+                                                                                          :ARG0-of (s26.s2 / survive-01))
+                                                                             :ARG1-of (s26.e / easy-05)
+                                                                             :ARG1-of (s26.p3 / possible-01))
+                                                            :mod (s26.v / visual)))
+                               :ARG0 s26.i
+                               :ARG1 (s26.i2 / item
+                                             :ARG1-of (s26.s / single-02)
+                                             :mod (s26.e2 / every)
+                                             :time (s26.e3 / ex)))
+                 :time (s26.b / before
+                              :quant (s26.f / few
+                                            :op1 (s26.t / temporal-quantity
+                                                        :unit (s26.y / year)
+                                                        :quant "1"))
+                              :op1 (s26.n / now)))
+   :snt27 (s27.l / like-01
+                 :ARG0 (s27.i / i
+                              :same-as s7.i)
+                 :ARG1 (s27.g / give-back-03
+                              :ARG0 s27.i
+                              :ARG1 (s27.c / community)
+                              :manner (s27.p / person
+                                             :ARG0-of (s27.t / tell-01
+                                                             :ARG1 (s27.s / story))
+                                             :domain s27.i)))
+   :snt28 (s28.l / like-01
+                 :ARG0 (s28.i / i
+                              :same-as s7.i)
+                 :ARG1 (s28.m / move-01
+                              :ARG0 s28.i
+                              :ARG2 (s28.b / beyond
+                                           :op1 (s28.r / raise-01
+                                                       :ARG0 s28.i
+                                                       :ARG1 (s28.a / awareness)))))
+   :snt29 (s29.a2 / and
+                  :op2 (s29.o / or
+                              :op1 (s29.p3 / possible-01
+                                           :ARG1 (s29.r / recognize-02
+                                                        :ARG0 (s29.s / someone)
+                                                        :ARG1 (s29.i / item
+                                                                     :mod (s29.t4 / this)
+                                                                     :same-as s2.t))
+                                           :prep-in (s29.c / case-04
+                                                           :ARG1 (s29.t3 / this)))
+                              :op2 (s29.r2 / remain-01
+                                           :ARG1 (s29.p2 / photograph-01
+                                                         :ARG0 (s29.t / they
+                                                                      :same-as s29.s))
+                                           :ARG3 (s29.t2 / thing
+                                                         :ARG0-of (s29.r3 / remind-01
+                                                                          :ARG1 (s29.e / event))
+                                                         :ARG1-of (s29.b / bias-01
+                                                                         :polarity "-")
+                                                         :mod (s29.a / accurate)
+                                                         :mod (s29.p / permanent))
+                                           :mod (s29.a3 / at-least))))
+   :snt30 (s30.a / and
+                 :op1 (s30.e / empathy
+                             :topic-of (s30.p / photograph-01))
+                 :op2 (s30.g / guarantee-01
+                             :ARG0 (s30.f / familiarize-01
+                                          :ARG1 (s30.i / item
+                                                       :mod (s30.t / this)
+                                                       :same-as s2.t))
+                             :ARG1 s30.e))
+   :snt31 (s31.a2 / and
+                  :mod (s31.c / case-04
+                              :ARG1 (s31.t / this))
+                  :op1 (s31.a / and
+                              :condition (s31.l / like-02
+                                                :ARG0 (s31.y / you))
+                              :domain (s31.i / i
+                                             :same-as s7.i)
+                              :mod (s31.m / mere)
+                              :op1 (s31.t2 / tool)
+                              :op2 (s31.f / forensic))
+                  :op2 (s31.r / result-01
+                              :ARG2 (s31.p / photograph-01
+                                           :ARG1-of (s31.h / have-degree-91
+                                                           :ARG2 (s31.c2 / close-11
+                                                                         :ARG1 s31.p
+                                                                         :ARG2 (s31.d / document
+                                                                                      :domain s31.i))
+                                                           :ARG3 (s31.e / equal)
+                                                           :ARG4 (s31.p2 / possible-01)))))
+   :snt32 (s32.r / remain-01
+                 :ARG1 (s32.a2 / and
+                               :op1 (s32.b / body
+                                           :ARG0-of (s32.d / decay-01)
+                                           :location (s32.g / grave
+                                                            :poss (s32.p / person
+                                                                         :ARG1-of (s32.m / miss-01)
+                                                                         :mod (s32.a / all)))
+                                           :mod (s32.o / only))
+                               :op2 (s32.i2 / item
+                                            :mod (s32.e / everyday)
+                                            :mod (s32.t / this)
+                                            :same-as s2.t))
+                 :time (s32.i / identify-01
+                              :ARG1 s32.p))
+   :snt33 (s33.a2 / and
+                  :op1 (s33.t / testify-01
+                              :ARG0 (s33.i2 / item
+                                            :ARG1-of (s33.s / simple-02
+                                                            :mod (s33.a / all))
+                                            :mod (s33.t2 / this
+                                                         :same-as s2.t))
+                              :ARG1 (s33.i / identity
+                                           :poss (s33.v / victim
+                                                        :same-as s20.v))
+                              :mod (s33.l / last))
+                  :op2 (s33.r / remind-01
+                              :ARG0 s33.i2
+                              :ARG1 (s33.e2 / exist-01
+                                            :ARG1 s33.v
+                                            :time (s33.e / ever))
+                              :mod (s33.p / permanent)
+                              :mod (s33.l2 / last)))
+   :snt34 (s34.t / thank-01
+                 :ARG0 (s34.i / i)
+                 :ARG1 (s34.y / you
+                              :same-as s7.i)
+                 :mod (s34.m / much
+                             :degree (s34.v / very))))
+

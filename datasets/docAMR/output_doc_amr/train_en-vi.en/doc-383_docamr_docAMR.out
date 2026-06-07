@@ -1,0 +1,130 @@
+# ::id doc-383
+# ::doc_file doc-383
+# ::tok http : / / www . ted . com / talks / ahn_trio_a_modern_take_on_piano_violin_cello< / url> <next_sent> Angella Ahn : Thank you . <next_sent> Thank you so much . <next_sent> We are so honored to be here at TEDWomen , sharing our music with you . <next_sent> What an exciting and inspiring event . <next_sent> What you just heard is " Skylife " by David Balakrishnan . <next_sent> We want to play you one more selection . <next_sent> It 's by Astor Piazzolla , an Argentine composer . <next_sent> And we talk about different ideas -- he had this idea that he thought music should be from the heart . <next_sent> This was in the middle of the 20th century when music from the heart , beautiful music , was n't the most popular thing in the classical music world . <next_sent> It was more atonal and twelve - tone . <next_sent> And he insisted on beautiful music . <next_sent> So this is " Oblivion " by Astor Piazzolla . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :value "ossobuco")
+   :snt2 (s2.s / say-01
+               :ARG1 (s2.t / thank-01
+                           :ARG1 (s2.y / you))
+               :ARG2 (s2.p / person
+                           :name (s2.n / name
+                                       :op1 "Angella"
+                                       :op2 "Ahn")))
+   :snt3 (s3.t / thank-01
+               :ARG0 (s3.i / i)
+               :ARG1 (s3.y / you
+                           :same-as s2.y)
+               :degree (s3.m / much
+                             :degree (s3.s / so)))
+   :snt4 (s4.h2 / honor-01
+                :ARG1 (s4.w / we
+                            :ARG0-of (s4.s / share-01
+                                           :ARG1 (s4.m / music
+                                                       :poss s4.w)
+                                           :ARG2 (s4.y / you
+                                                       :same-as s2.y)))
+                :ARG2 (s4.b / be-located-at-91
+                            :ARG1 s4.w
+                            :ARG2 (s4.h / here
+                                        :location (s4.p / publication
+                                                        :name (s4.n / name
+                                                                    :op1 "TEDWomen"))))
+                :degree (s4.s2 / so))
+   :snt5 (s5.e / event
+               :ARG0-of (s5.i / inspire-01)
+               :ARG0-of (s5.e2 / excite-01)
+               :degree (s5.s / so))
+   :snt6 (s6.h / hear-01
+               :ARG0 (s6.y / you
+                           :same-as s2.y)
+               :ARG1 (s6.b / broadcast-program
+                           :name (s6.n / name
+                                       :op1 "Skylife")
+                           :source (s6.p / person
+                                         :name (s6.n2 / name
+                                                      :op1 "David"
+                                                      :op2 "Balakrishnan")))
+               :time (s6.j / just))
+   :snt7 (s7.w / want-01
+               :ARG0 (s7.w2 / we
+                            :same-as s4.w)
+               :ARG1 (s7.p / play-01
+                           :ARG0 s7.w2
+                           :ARG1 (s7.y / you
+                                       :same-as s2.y)
+                           :ARG2 (s7.s / select-01
+                                       :mod (s7.m / more)
+                                       :quant "1")))
+   :snt8 (s8.b / byline-91
+               :ARG0 (s8.p / person
+                           :name (s8.n2 / name
+                                        :op1 "Astor"
+                                        :op2 "Piazzolla")
+                           :ARG0-of (s8.c / compose-02)
+                           :mod (s8.c2 / country
+                                       :name (s8.n / name
+                                                   :op1 "Argentina")))
+               :ARG1 (s8.i / it
+                           :same-as s7.s))
+   :snt9 (s9.a / and
+               :example (s9.h / have-03
+                              :ARG0 (s9.h2 / he
+                                           :same-as s8.p)
+                              :ARG1 (s9.i2 / idea
+                                           :mod (s9.t3 / this)
+                                           :topic (s9.t2 / think-01
+                                                         :ARG0 s9.h2
+                                                         :ARG1 (s9.r / recommend-01
+                                                                     :ARG1 (s9.b / be-from-91
+                                                                                 :ARG1 (s9.m / music)
+                                                                                 :ARG2 (s9.h3 / heart))))))
+               :op2 (s9.t / talk-01
+                          :ARG0 (s9.w / we)
+                          :ARG1 (s9.i / idea
+                                      :ARG1-of (s9.d / differ-02))))
+   :snt10 (s10.b / be-temporally-at-91
+                 :ARG1 (s10.t / this)
+                 :ARG2 (s10.m / middle
+                              :mod (s10.d / date-entity
+                                          :century "20")
+                              :time-of (s10.p / popular-02
+                                              :ARG1 (s10.m3 / music
+                                                            :ARG1-of (s10.b2 / beautiful-02)
+                                                            :source (s10.h2 / heart))
+                                              :ARG2-of (s10.h / have-degree-91
+                                                              :ARG1 s10.m3
+                                                              :ARG3 (s10.m2 / most)
+                                                              :polarity "-")
+                                              :location (s10.w / world
+                                                               :mod (s10.m4 / music
+                                                                            :mod (s10.c / classical))))))
+   :snt11 (s11.h / have-degree-91
+                 :ARG1 (s11.i / it
+                              :same-as s10.m3)
+                 :ARG2 (s11.a / and
+                              :op1 (s11.a2 / atonal)
+                              :op2 (s11.t / tone
+                                          :quant "12"))
+                 :ARG3 (s11.m / more))
+   :snt12 (s12.a / and
+                 :op2 (s12.i / insist-01
+                             :ARG0 (s12.h / he
+                                          :same-as s8.p)
+                             :ARG1 (s12.m / music
+                                          :ARG1-of (s12.b / beautiful-02))))
+   :snt13 (s13.i / infer-01
+                 :ARG1 (s13.b / book
+                              :name (s13.n / name
+                                           :op1 "Oblivion")
+                              :domain (s13.t / this
+                                             :same-as s7.s)
+                              :poss (s13.p / person
+                                           :name (s13.n2 / name
+                                                         :op1 "Astor"
+                                                         :op2 "Piazzolla")
+                                           :same-as s8.p)))
+   :snt14 (s14.t / thank-01
+                 :ARG1 (s14.y / you
+                              :same-as s2.y)))
+

@@ -1,0 +1,540 @@
+# ::id doc-28
+# ::doc_file doc-28
+# ::tok http : / / www . ted . com / talks / amy_lockwood_selling_condoms_in_the_congo< / url> <next_sent> I am a reformed marketer , and I now work in international development . <next_sent> In October , I spent some time in the Democratic Republic of Congo , which is the [ second ] largest country in Africa . <next_sent> In fact , it 's as large as Western Europe , but it only has 300 miles of paved roads . <next_sent> The DRC is a dangerous place . <next_sent> In the past 10 years , five million people have died due to a war in the east . <next_sent> But war is n't the only reason that life is difficult in the DRC . <next_sent> There are many health issues as well . <next_sent> In fact , the HIV prevalence rate is 1.3 percent among adults . <next_sent> This might not sound like a large number , but in a country with 76 million people , it means there are 930,000 that are infected . <next_sent> And due to the poor infrastructure , only 25 percent of those are receiving the life - saving drugs that they need . <next_sent> Which is why , in part , donor agencies provide condoms at low or no cost . <next_sent> And so while I was in the DRC , I spent a lot of time talking to people about condoms , including Damien . <next_sent> Damien runs a hotel outside of Kinshasa . <next_sent> It 's a hotel that 's only open until midnight , so it 's not a place that you stay . <next_sent> But it is a place where sex workers and their clients come . <next_sent> Now Damien knows all about condoms , but he does n't sell them . <next_sent> He said there 's just not in demand . <next_sent> It 's not surprising , because only three percent of people in the DRC use condoms . <next_sent> Joseph and Christine , who run a pharmacy where they sell a number of these condoms , said despite the fact that donor agencies provide them at low or no cost , and they have marketing campaigns that go along with them , their customers do n't buy the branded versions . <next_sent> They like the generics . <next_sent> And as a marketer , I found that curious . <next_sent> And so I started to look at what the marketing looked like . <next_sent> And it turns out that there are three main messages used by the donor agencies for these condoms : fear , financing and fidelity . <next_sent> They name the condoms things like Vive , " to live " or Trust . <next_sent> They package it with the red ribbon that reminds us of HIV , put it in boxes that remind you who paid for them , show pictures of your wife or husband and tell you to protect them or to act prudently . <next_sent> Now these are not the kinds of things that someone is thinking about just before they go get a condom . <next_sent> What is it that you think about just before you get a condom ? <next_sent> Sex ! <next_sent> And the private companies that sell condoms in these places , they understand this . <next_sent> Their marketing is slightly different . <next_sent> The name might not be much different , but the imagery sure is . <next_sent> Some brands are aspirational , and certainly the packaging is incredibly provocative . <next_sent> And this made me think that perhaps the donor agencies had just missed out on a key aspect of marketing : understanding who 's the audience . <next_sent> And for donor agencies , unfortunately , the audience tends to be people that are n't even in the country they 're working [ in ] . <next_sent> It 's people back home , people that support their work , people like these . <next_sent> But if what we 're really trying to do is stop the spread of HIV , we need to think about the customer , the people whose behavior needs to change -- the couples , the young women , the young men -- whose lives depend on it . <next_sent> And so the lesson is this : it does n't really matter what you 're selling ; you just have to think about who is your customer , and what are the messages that are going to get them to change their behavior . <next_sent> It might just save their lives . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :value "ossobuco")
+   :snt2 (s2.a / and
+               :op1 (s2.p / person
+                          :ARG0-of (s2.m / market-01)
+                          :ARG1-of (s2.r / reform-01)
+                          :domain (s2.i / i))
+               :op2 (s2.w / work-01
+                          :ARG0 s2.i
+                          :ARG1 (s2.d / develop-02
+                                      :mod (s2.i2 / international))
+                          :time (s2.n / now)))
+   :snt3 (s3.s2 / spend-02
+                :ARG0 (s3.i / i
+                            :same-as s2.i)
+                :ARG1 (s3.t / time
+                            :quant (s3.s / some))
+                :ARG2 (s3.c2 / country
+                             :name (s3.n / name
+                                         :op1 "Democratic"
+                                         :op2 "Republic"
+                                         :op3 "of"
+                                         :op4 "Congo")
+                             :ARG1-of (s3.h / have-degree-91
+                                            :ARG2 (s3.l / large)
+                                            :ARG3 (s3.m / most
+                                                        :ord (s3.o / ordinal-entity
+                                                                   :value "2"))
+                                            :ARG5 (s3.c3 / country
+                                                         :location (s3.c / continent
+                                                                         :name (s3.n2 / name
+                                                                                      :op1 "Africa")))))
+                :time (s3.d / date-entity
+                            :month "10"))
+   :snt4 (s4.c / contrast-01
+               :ARG1 (s4.h2 / have-degree-91
+                            :ARG1 (s4.i2 / it
+                                         :same-as s3.c2)
+                            :ARG2 (s4.l / large)
+                            :ARG3 (s4.e / equal)
+                            :ARG4 (s4.w / world-region
+                                        :name (s4.n / name
+                                                    :op1 "Western"
+                                                    :op2 "Europe")))
+               :ARG2 (s4.h / have-03
+                           :ARG0 s4.i2
+                           :ARG1 (s4.r / road
+                                       :quant (s4.d / distance-quantity
+                                                    :unit (s4.m / mile)
+                                                    :quant "300")
+                                       :ARG1-of (s4.p / pave-01))
+                           :mod (s4.o / only))
+               :mod (s4.i / in-fact))
+   :snt5 (s5.p / place
+               :domain (s5.o / organization
+                             :name (s5.n / name
+                                         :op1 "DRC")
+                             :same-as s3.c2)
+               :mod (s5.d / dangerous))
+   :snt6 (s6.d / die-01
+               :ARG1 (s6.p2 / person
+                            :quant "5000000")
+               :ARG1-of (s6.c / cause-01
+                              :ARG0 (s6.w / war-01
+                                          :location (s6.w2 / world-region
+                                                           :name (s6.n / name
+                                                                       :op1 "East"))))
+               :time (s6.p / past
+                           :op1 (s6.t / temporal-quantity
+                                      :unit (s6.y / year)
+                                      :quant "10")))
+   :snt7 (s7.c2 / contrast-01
+                :ARG2 (s7.r / reason
+                            :ARG0-of (s7.c / cause-01
+                                           :ARG1 (s7.d / difficult
+                                                       :domain (s7.l / live-01)
+                                                       :location (s7.c3 / country
+                                                                        :name (s7.n / name
+                                                                                    :op1 "DRC")
+                                                                        :same-as s3.c2)))
+                            :domain (s7.w / war-01)
+                            :mod (s7.o / only)
+                            :polarity "-"))
+   :snt8 (s8.i / issue-02
+               :quant (s8.m / many)
+               :ARG0 (s8.h / health)
+               :mod (s8.a / as-well))
+   :snt9 (s9.e / equal-01
+               :ARG1 (s9.p2 / prevalence
+                            :ARG1-of (s9.i2 / include-91
+                                            :ARG2 (s9.a / adult))
+                            :mod (s9.d / disease
+                                       :name (s9.n / name
+                                                   :op1 "HIV")))
+               :ARG2 (s9.p / percentage-entity
+                           :value "1.3")
+               :mod (s9.i / in-fact))
+   :snt10 (s10.c / contrast-01
+                 :ARG1 (s10.p3 / possible-01
+                               :ARG1 (s10.s / sound-01
+                                            :ARG1 (s10.t / this
+                                                         :same-as s9.d)
+                                            :ARG2 (s10.n / number
+                                                         :mod (s10.l / large))
+                                            :polarity "-"))
+                 :ARG2 (s10.m / mean-01
+                              :ARG1 (s10.i2 / it
+                                            :same-as s9.d)
+                              :ARG2 (s10.p2 / person
+                                            :ARG1-of (s10.i / infect-01)
+                                            :quant "30000")
+                              :location (s10.c2 / country
+                                                :prep-with (s10.p / person
+                                                                  :quant "78000000"))))
+   :snt11 (s11.a / and
+                 :op2 (s11.r / receive-01
+                             :ARG0 (s11.p2 / person
+                                           :ARG1-of (s11.i / include-91
+                                                           :ARG2 (s11.p3 / person
+                                                                         :mod (s11.t / that)
+                                                                         :same-as s10.p2)
+                                                           :ARG3 (s11.p / percentage-entity
+                                                                        :mod (s11.o / only)
+                                                                        :value "25")))
+                             :ARG1 (s11.d / drug
+                                          :ARG0-of (s11.s / save-02
+                                                          :ARG1 (s11.l / live-01
+                                                                       :ARG0 s11.p2))
+                                          :ARG1-of (s11.n / need-01
+                                                          :ARG0 s11.p2))
+                             :ARG1-of (s11.c / cause-01
+                                             :ARG0 (s11.i2 / infrastructure
+                                                           :mod (s11.p4 / poor)))))
+   :snt12 (s12.c / cause-01
+                 :ARG1 (s12.p2 / provide-01
+                               :ARG0 (s12.a / agency
+                                            :ARG0-of (s12.d / donate-01))
+                               :ARG1 (s12.c2 / condom)
+                               :ARG3 (s12.o / or
+                                            :ARG2-of (s12.c3 / cost-01)
+                                            :op1 (s12.l / low-04
+                                                        :ARG1 s12.m)
+                                            :op1 (s12.m / monetary-quantity)
+                                            :op2 (s12.c4 / cost-01
+                                                         :polarity "-"))
+                               :degree (s12.p / part)))
+   :snt13 (s13.a / and
+                 :op2 (s13.s / spend-02
+                             :ARG0 (s13.i / i
+                                          :same-as s2.i)
+                             :ARG1 (s13.t2 / time
+                                           :quant (s13.l / lot))
+                             :ARG2 (s13.t / talk-01
+                                          :ARG0 s13.i
+                                          :ARG1 (s13.c / condom)
+                                          :ARG2 (s13.p / person
+                                                       :ARG2-of (s13.i2 / include-01
+                                                                        :ARG1 (s13.p2 / person
+                                                                                      :name (s13.n2 / name
+                                                                                                    :op1 "Damien")))))
+                             :time (s13.b / be-located-at-91
+                                          :ARG1 s13.i
+                                          :ARG2 (s13.o / organization
+                                                       :name (s13.n / name
+                                                                    :op1 "DRC")
+                                                       :same-as s3.c2))))
+   :snt14 (s14.r / run-01
+                 :ARG0 (s14.p / person
+                              :name (s14.n / name
+                                           :op1 "Damien")
+                              :same-as s13.p2)
+                 :ARG1 (s14.h / hotel
+                              :location (s14.o / outside
+                                               :op1 (s14.c / city
+                                                           :name (s14.n2 / name
+                                                                         :op1 "Kinshasa")))))
+   :snt15 (s15.h / hotel
+                 :ARG1-of (s15.o2 / open-09
+                                  :ARG0-of (s15.c / cause-01
+                                                  :ARG1 (s15.p / place
+                                                               :ARG3-of (s15.s / stay-01
+                                                                               :ARG1 (s15.y / you))
+                                                               :domain s15.h
+                                                               :polarity "-"))
+                                  :mod (s15.o / only)
+                                  :time (s15.u / until
+                                               :op1 (s15.m / midnight))))
+   :snt16 (s16.c3 / contrast-01
+                  :ARG2 (s16.p3 / place
+                                :ARG4-of (s16.c2 / come-01
+                                                 :ARG1 (s16.a / and
+                                                              :op1 (s16.p / person
+                                                                          :ARG0-of (s16.w / work-01
+                                                                                          :ARG1 (s16.s / sex-01)))
+                                                              :op2 (s16.p2 / person
+                                                                           :ARG0-of (s16.h / have-rel-role-91
+                                                                                           :ARG1 s16.p
+                                                                                           :ARG2 (s16.c / client)))))
+                                :domain (s16.i / it
+                                               :same-as s14.h)))
+   :snt17 (s17.c2 / contrast-01
+                  :ARG1 (s17.k / know-01
+                               :ARG0 (s17.p / person
+                                            :name (s17.n / name
+                                                         :op1 "Damien")
+                                            :same-as s13.p2)
+                               :ARG1 (s17.a / all
+                                            :topic (s17.c / condom)))
+                  :ARG2 (s17.s / sell-01
+                               :ARG0 s17.p
+                               :ARG1 s17.c
+                               :polarity "-")
+                  :time (s17.n2 / now))
+   :snt18 (s18.s / say-01
+                 :ARG0 (s18.h / he
+                              :same-as s13.p2)
+                 :ARG1 (s18.d / demand-01
+                              :mod (s18.j / just)
+                              :polarity "-"))
+   :snt19 (s19.s / surprise-01
+                 :ARG0 (s19.i2 / it)
+                 :ARG1-of (s19.c / cause-01
+                                 :ARG0 (s19.u / use-01
+                                              :ARG0 (s19.p2 / person
+                                                            :ARG1-of (s19.i / include-91
+                                                                            :ARG2 (s19.p3 / person
+                                                                                          :location (s19.o2 / organization
+                                                                                                            :name (s19.n / name
+                                                                                                                         :op1 "DRC")
+                                                                                                            :same-as s3.c2))
+                                                                            :ARG3 (s19.p / percentage-entity
+                                                                                         :mod (s19.o / only)
+                                                                                         :value "3")))
+                                              :ARG1 (s19.c2 / condom)))
+                 :polarity "-")
+   :snt20 (s20.s / say-01
+                 :ARG0 (s20.a2 / and
+                               :ARG0-of (s20.r / run-01
+                                               :ARG1 (s20.p3 / pharmacy
+                                                             :location-of (s20.s2 / sell-01
+                                                                                  :ARG0 s20.a2
+                                                                                  :ARG1 (s20.c2 / condom
+                                                                                                :quant (s20.n3 / number)
+                                                                                                :mod (s20.t / this)))))
+                               :op1 (s20.p / person
+                                           :name (s20.n / name
+                                                        :op1 "Joseph"))
+                               :op2 (s20.p2 / person
+                                            :name (s20.n2 / name
+                                                          :op1 "Christine")))
+                 :ARG1 (s20.b2 / buy-01
+                               :ARG0 (s20.c5 / customer
+                                             :poss s20.a2)
+                               :ARG1 (s20.v / version
+                                            :ARG1-of (s20.b / brand-01))
+                               :concession (s20.a3 / and
+                                                   :op1 (s20.p4 / provide-01
+                                                                :ARG0 (s20.a / agency
+                                                                             :ARG0-of (s20.d / donate-01))
+                                                                :ARG1 s20.c2
+                                                                :ARG1-of (s20.c3 / cost-01
+                                                                                 :ARG2 (s20.o / or
+                                                                                              :op1 (s20.l / low-04)
+                                                                                              :op2 (s20.c4 / cost-01
+                                                                                                           :polarity "-"))))
+                                                   :op2 (s20.h / have-03
+                                                               :ARG0 s20.a
+                                                               :ARG1 (s20.c / campaign-01
+                                                                            :ARG0-of (s20.m / market-01)
+                                                                            :ARG1-of (s20.g / go-22
+                                                                                            :ARG2 s20.c2))))
+                               :polarity "-"))
+   :snt21 (s21.l / like-01
+                 :ARG0 (s21.t / they
+                              :same-as s20.c5)
+                 :ARG1 (s21.f / family
+                              :name (s21.n / name
+                                           :op1 "Muslim")))
+   :snt22 (s22.a / and
+                 :op2 (s22.f / find-02
+                             :ARG0 (s22.i / i
+                                          :mod (s22.p / person
+                                                      :ARG0-of (s22.m / market-01))
+                                          :same-as s2.i)
+                             :ARG1 (s22.c / curious-01
+                                          :ARG1 (s22.t / that
+                                                       :same-as s21.l))))
+   :snt23 (s23.a / and
+                 :op2 (s23.c / cause-01
+                             :ARG1 (s23.s / start-01
+                                          :ARG0 (s23.i / i
+                                                       :same-as s2.i)
+                                          :ARG1 (s23.l / look-01
+                                                       :ARG0 s23.i
+                                                       :ARG1 (s23.t / thing
+                                                                    :ARG1-of (s23.l2 / look-02
+                                                                                     :ARG0 (s23.m / market-01)))))))
+   :snt24 (s24.a2 / and
+                  :op2 (s24.t2 / turn-out-11
+                               :ARG1 (s24.m2 / message-01
+                                             :ARG1 (s24.a3 / and
+                                                           :op1 (s24.f / fear-01)
+                                                           :op2 (s24.f3 / finance-01)
+                                                           :op3 (s24.f2 / fidelity))
+                                             :ARG1-of (s24.u / use-01
+                                                             :ARG0 (s24.a / agency
+                                                                          :ARG0-of (s24.d / donate-01)
+                                                                          :same-as s20.a)
+                                                             :ARG2 (s24.c / condom
+                                                                          :mod (s24.t / this)
+                                                                          :same-as s20.t))
+                                             :mod (s24.m / main)
+                                             :quant "3")))
+   :snt25 (s25.n2 / name-01
+                  :ARG0 (s25.t / they
+                               :same-as s20.a)
+                  :ARG1 (s25.c2 / condom
+                                :same-as s20.t)
+                  :ARG2 (s25.o / or
+                               :op1 (s25.c / company
+                                           :name (s25.n / name
+                                                        :op1 "Vive"))
+                               :op2 (s25.l / live-01)
+                               :op3 (s25.t2 / trust-02)))
+   :snt26 (s26.a2 / and
+                  :op1 (s26.p / package-01
+                              :ARG0 (s26.t2 / they
+                                            :same-as s20.a)
+                              :ARG1 (s26.i / it
+                                           :same-as s20.t)
+                              :ARG3 (s26.r4 / ribbon
+                                            :ARG0-of (s26.r2 / remind-01
+                                                             :ARG1 (s26.d / disease
+                                                                          :name (s26.n / name
+                                                                                       :op1 "HIV")
+                                                                          :same-as s9.d)
+                                                             :ARG2 (s26.w / we))
+                                            :ARG1-of (s26.r / red-02)))
+                  :op2 (s26.p8 / put-01
+                               :ARG0 s26.t2
+                               :ARG1 s26.i
+                               :ARG2 (s26.b / box
+                                            :ARG0-of (s26.r3 / remind-01
+                                                             :ARG1 (s26.p3 / person
+                                                                           :ARG0-of (s26.p2 / pay-01
+                                                                                            :ARG3 s26.t2)))))
+                  :op3 (s26.s / show-01
+                              :ARG0 s26.t2
+                              :ARG1 (s26.p6 / picture
+                                            :topic (s26.o / or
+                                                          :op1 (s26.p4 / person
+                                                                       :ARG0-of (s26.h / have-rel-role-91
+                                                                                       :ARG1 (s26.y / you)
+                                                                                       :ARG2 (s26.w2 / wife)))
+                                                          :op2 (s26.p5 / person
+                                                                       :ARG0-of (s26.h2 / have-rel-role-91
+                                                                                        :ARG1 s26.y
+                                                                                        :ARG2 (s26.h3 / husband)))
+                                                          :op4 (s26.t / tell-01
+                                                                      :ARG0 s26.t2
+                                                                      :ARG1 (s26.o2 / or
+                                                                                    :op1 (s26.p7 / protect-01
+                                                                                                 :ARG0 s26.y
+                                                                                                 :ARG1 s26.o)
+                                                                                    :op2 (s26.a / act-02
+                                                                                                :ARG0 s26.y
+                                                                                                :mod (s26.w3 / wise)))
+                                                                      :ARG2 s26.y)))
+                              :ARG2 s26.y))
+   :snt27 (s27.t / thing
+                 :ARG1-of (s27.t2 / think-01
+                                  :ARG0 (s27.s / someone)
+                                  :time (s27.b / before
+                                               :mod (s27.j / just)
+                                               :op1 (s27.g2 / go-02
+                                                            :ARG0 s27.s
+                                                            :ARG4 (s27.g / get-01
+                                                                         :ARG0 s27.s
+                                                                         :ARG1 (s27.c / condom)))))
+                 :domain (s27.t3 / this)
+                 :mod (s27.k / kind)
+                 :mod (s27.n / now)
+                 :polarity "-")
+   :snt28 (s28.t / think-01
+                 :ARG0 (s28.y / you)
+                 :ARG1 (s28.a / amr-unknown)
+                 :time (s28.b / before
+                              :mod (s28.j / just)
+                              :op1 (s28.g / get-01
+                                          :ARG0 s28.y
+                                          :ARG1 (s28.c / condom))))
+   :snt29 (s29.s / sex-01)
+   :snt30 (s30.a / and
+                 :op2 (s30.u / understand-01
+                             :ARG0 (s30.c / company
+                                          :ARG0-of (s30.s / sell-01
+                                                          :ARG1 (s30.c2 / condom)
+                                                          :location (s30.p / place
+                                                                           :mod (s30.t / this)))
+                                          :ARG1-of (s30.p2 / private-03))
+                             :ARG1 (s30.t2 / this)))
+   :snt31 (s31.d / differ-02
+                 :ARG1 (s31.m / market-01
+                              :ARG0 (s31.t / they
+                                           :same-as s30.c))
+                 :degree (s31.s / slight))
+   :snt32 (s32.c / contrast-01
+                 :ARG1 (s32.p / possible-01
+                              :ARG1 (s32.d / differ-02
+                                           :quant (s32.m / much)
+                                           :ARG1 (s32.n / name)
+                                           :polarity "-"))
+                 :ARG2 (s32.d2 / differ-02
+                               :ARG1 (s32.i / imagery)
+                               :ARG1-of (s32.s / sure-02)))
+   :snt33 (s33.a / and
+                 :op1 (s33.i2 / insurgent
+                              :domain (s33.b / brand
+                                             :quant (s33.s / some)))
+                 :op2 (s33.p2 / provoke-01
+                              :ARG0 (s33.p / package-01)
+                              :degree (s33.i / incredible)
+                              :mod (s33.c / certain)))
+   :snt34 (s34.a2 / and
+                  :op2 (s34.t / think-01
+                              :ARG0 (s34.i / i
+                                           :same-as s2.i)
+                              :ARG0 (s34.t2 / this)
+                              :ARG1 (s34.p / possible-01
+                                           :ARG1 (s34.m2 / miss-out-03
+                                                         :ARG0 (s34.a / agency
+                                                                      :ARG0-of (s34.d / donate-01))
+                                                         :ARG1 (s34.a3 / aspect
+                                                                       :ARG1-of (s34.k / key-02)
+                                                                       :domain (s34.u / understand-01
+                                                                                      :ARG0 s34.a
+                                                                                      :ARG1 (s34.a4 / audience))
+                                                                       :part-of (s34.m / market-01))
+                                                         :mod (s34.j / just)))))
+   :snt35 (s35.a2 / and
+                  :op2 (s35.t / tend-02
+                              :ARG1 (s35.a3 / audience
+                                            :same-as s34.a4)
+                              :ARG2 (s35.p / person
+                                           :ARG1-of (s35.b / be-located-at-91
+                                                           :ARG2 (s35.c / country
+                                                                        :location-of (s35.w / work-01
+                                                                                            :ARG0 s35.p))
+                                                           :mod (s35.e / even)
+                                                           :polarity "-"))
+                              :ARG2-of (s35.f / fortunate-01
+                                              :polarity "-")
+                              :ARG3 (s35.a / agency
+                                           :ARG0-of (s35.d / donate-01))))
+   :snt36 (s36.a / and
+                 :op1 (s36.p / person
+                             :location (s36.h / home
+                                              :direction (s36.b / back)))
+                 :op2 (s36.p2 / person
+                              :ARG0-of (s36.s / support-01
+                                              :ARG1 (s36.w / work-01
+                                                           :ARG0 s36.p2)))
+                 :op3 (s36.p3 / person
+                              :ARG1-of (s36.r / resemble-01
+                                              :ARG2 (s36.t / this))))
+   :snt37 (s37.c2 / contrast-01
+                  :ARG2 (s37.h / have-condition-91
+                               :ARG1 (s37.n2 / need-01
+                                             :ARG0 (s37.w / we)
+                                             :ARG1 (s37.t2 / think-01
+                                                           :ARG0 s37.w
+                                                           :ARG1 (s37.a / and
+                                                                        :op1 (s37.c4 / customer)
+                                                                        :op2 (s37.p / person
+                                                                                    :ARG0-of (s37.c / change-01
+                                                                                                    :ARG1 (s37.b / behave-01
+                                                                                                                 :ARG0 s37.p)
+                                                                                                    :ARG1-of (s37.n3 / need-01))
+                                                                                    :example (s37.a2 / and
+                                                                                                     :op1 (s37.c3 / couple)
+                                                                                                     :op2 (s37.w2 / woman
+                                                                                                                  :mod (s37.y / young))
+                                                                                                     :op3 (s37.m / man
+                                                                                                                 :mod (s37.y2 / young)))))))
+                               :ARG2 (s37.d3 / do-02
+                                             :ARG1 (s37.t / thing)
+                                             :ARG1-of (s37.t3 / try-01
+                                                              :ARG0 s37.w
+                                                              :ARG1-of (s37.r / real-04))
+                                             :domain (s37.s2 / stop-01
+                                                             :ARG0 s37.w
+                                                             :ARG1 (s37.s / spread-01
+                                                                          :ARG1 (s37.d2 / disease
+                                                                                        :name (s37.n / name
+                                                                                                     :op1 "HIV")
+                                                                                        :same-as s9.d)))))
+                  :rel (s37.l / life
+                              :ARG1-of (s37.d / depend-01)
+                              :ARG0-of s37.d
+                              :poss s37.m))
+   :snt38 (s38.a / and
+                 :op1 (s38.l / lesson
+                             :domain (s38.c2 / contrast-01
+                                             :ARG1 (s38.m / matter-01
+                                                          :ARG1 (s38.t / thing
+                                                                       :ARG1-of (s38.s / sell-01
+                                                                                       :ARG0 (s38.y / you)))
+                                                          :ARG1-of (s38.r / real-04)
+                                                          :polarity "-")
+                                             :ARG2 (s38.o / obligate-01
+                                                          :ARG1 s38.y
+                                                          :ARG2 (s38.t3 / think-01
+                                                                        :ARG0 s38.y
+                                                                        :ARG1 (s38.a2 / and
+                                                                                      :op1 (s38.p / person
+                                                                                                  :domain (s38.c3 / customer
+                                                                                                                  :poss s38.y))
+                                                                                      :op2 (s38.t2 / thing
+                                                                                                   :ARG0-of (s38.g / get-04
+                                                                                                                   :ARG1 (s38.c / change-01
+                                                                                                                                :ARG0 s38.p
+                                                                                                                                :ARG1 (s38.b / behave-01
+                                                                                                                                             :ARG0 s38.p)))
+                                                                                                   :ARG2-of (s38.m2 / message-01))))
+                                                          :mod (s38.j / just)))))
+   :snt39 (s39.p / possible-01
+                 :ARG1 (s39.s / save-02
+                              :ARG0 (s39.i / it
+                                           :same-as s38.c)
+                              :ARG1 (s39.l / life
+                                           :poss (s39.t / they
+                                                        :same-as s38.c3))
+                              :mod (s39.j / just)))
+   :snt40 (s40.t / thank-01
+                 :ARG1 (s40.y / you)))
+

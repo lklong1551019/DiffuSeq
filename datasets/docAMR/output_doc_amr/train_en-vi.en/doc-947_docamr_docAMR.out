@@ -1,0 +1,546 @@
+# ::id doc-947
+# ::doc_file doc-947
+# ::tok http : / / www . ted . com / talks / eric_berlow_how_complexity_leads_to_simplicity< / url> <next_sent> Do you ever feel completely overwhelmed when you 're faced with a complex problem ? <next_sent> Well , I hope to change that in less than three minutes . <next_sent> So , I hope to convince you that complex does n't always equal complicated . <next_sent> So for me , a well - crafted baguette , fresh out of the oven , is complex , but a curry onion green olive poppy cheese bread is complicated . <next_sent> I 'm an ecologist , and I study complexity . <next_sent> I love complexity . <next_sent> And I study that in the natural world , the interconnectedness of species . <next_sent> So here 's a food web , or a map of feeding links between species that live in Alpine Lakes in the mountains of California . <next_sent> And this is what happens to that food web when it 's stocked with non - native fish that never lived there before . <next_sent> All the grayed - out species disappear . <next_sent> Some are actually on the brink of extinction . <next_sent> And lakes with fish have more mosquitos , even though they eat them . <next_sent> These effects were all unanticipated , and yet we 're discovering they 're predictable . <next_sent> So I want to share with you a couple key insights about complexity we 're learning from studying nature that maybe are applicable to other problems . <next_sent> First is the simple power of good visualization tools to help untangle complexity and just encourage you to ask questions you did n't think of before . <next_sent> For example , you could plot the flow of carbon through corporate supply chains in a corporate ecosystem , or the interconnections of habitat patches for endangered species in Yosemite National Park . <next_sent> The next thing is that if you want to predict the effect of one species on another , if you focus only on that link , and then you black box the rest , it 's actually less predictable than if you step back , consider the entire system -- all the species , all the links -- and from that place , hone in on the sphere of influence that matters most . <next_sent> And we 're discovering , with our research , that 's often very local to the node you care about within one or two degrees . <next_sent> So the more you step back , embrace complexity , the better chance you have of finding simple answers , and it 's often different than the simple answer that you started with . <next_sent> So let 's switch gears and look at a really complex problem courtesy of the U.S. government . <next_sent> This is a diagram of the U.S. counterinsurgency strategy in Afghanistan . <next_sent> It was front page of the New York Times a couple months ago . <next_sent> Instantly ridiculed by the media for being so crazy complicated . <next_sent> And the stated goal was to increase popular support for the Afghan government . <next_sent> Clearly a complex problem , but is it complicated ? <next_sent> I can sink my teeth into this . " <next_sent> The circled node is the one we 're trying to influence -- popular support for the government . <next_sent> And so now we can look one degrees , two degrees , three degrees away from that node and eliminate three - quarters of the diagram outside that sphere of influence . <next_sent> Within that sphere , most of those nodes are not actionable , like the harshness of the terrain , and a very small minority are actual military actions . <next_sent> Most are non - violent and they fall into two broad categories : active engagement with ethnic rivalries and religious beliefs and fair , transparent economic development and provisioning of services . <next_sent> I do n't know about this , but this is what I can decipher from this diagram in 24 seconds . <next_sent> When you see a diagram like this , I do n't want you to be afraid . <next_sent> Because simple answers may emerge . <next_sent> We 're discovering in nature that simplicity often lies on the other side of complexity . <next_sent> So for any problem , the more you can zoom out and embrace complexity , the better chance you have of zooming in on the simple details that matter most . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01
+                            :ARG0 (s1.p / person
+                                        :name (s1.n / name
+                                                    :op1 "David"))))
+   :snt2 (s2.f2 / feel-01
+                :ARG0 (s2.y / you)
+                :ARG1 (s2.o / overwhelm-01
+                            :ARG1 s2.y
+                            :ARG1-of (s2.c / complete-02)
+                            :time (s2.f / face-01
+                                        :ARG0 s2.y
+                                        :ARG1 (s2.p / problem
+                                                    :mod (s2.c2 / complex))))
+                :polarity (s2.a / amr-unknown)
+                :time (s2.e / ever))
+   :snt3 (s3.h / hope-01
+               :ARG0 (s3.i / i)
+               :ARG1 (s3.c / change-01
+                           :ARG0 s3.i
+                           :ARG1 (s3.t2 / that)
+                           :time (s3.a / after
+                                       :quant (s3.l / less-than
+                                                    :op1 (s3.t / temporal-quantity
+                                                               :unit (s3.m / minute)
+                                                               :quant "3"))
+                                       :op1 (s3.n / now)))
+               :mod (s3.w / well))
+   :snt4 (s4.c / cause-01
+               :ARG1 (s4.h / hope-01
+                           :ARG0 (s4.i / i
+                                       :same-as s3.i)
+                           :ARG1 (s4.c4 / convince-01
+                                        :ARG0 s4.i
+                                        :ARG1 (s4.y / you)
+                                        :ARG2 (s4.e / equal-01
+                                                    :ARG1 (s4.c2 / complex)
+                                                    :ARG2 (s4.c3 / complicate-01)
+                                                    :time (s4.a / always)
+                                                    :polarity "-"))))
+   :snt5 (s5.c4 / contrast-01
+                :ARG1 (s5.c2 / complex
+                             :beneficiary (s5.i / i
+                                                :same-as s3.i)
+                             :domain (s5.b / baguette
+                                           :ARG1-of (s5.c5 / craft-01
+                                                           :ARG1-of (s5.w / well-09))
+                                           :ARG1-of (s5.o3 / out-06
+                                                           :ARG1-of (s5.f / fresh-04)
+                                                           :ARG2 (s5.o4 / oven))))
+                :ARG2 (s5.c3 / complicate-01
+                             :ARG1 (s5.b2 / bread
+                                          :mod (s5.c / cheese
+                                                     :consist-of (s5.p / poppy
+                                                                       :ARG1-of (s5.g / green-02)
+                                                                       :mod (s5.o / olive)))
+                                          :mod (s5.o2 / onion
+                                                      :mod (s5.c6 / curry)))))
+   :snt6 (s6.a / and
+               :op1 (s6.e / ecologist
+                          :domain (s6.i / i
+                                        :same-as s3.i))
+               :op2 (s6.s / study-01
+                          :ARG0 s6.i
+                          :ARG1 (s6.c / complexity)))
+   :snt7 (s7.l / love-01
+               :ARG0 (s7.i / i
+                           :same-as s3.i)
+               :ARG1 (s7.c / complexity))
+   :snt8 (s8.a / and
+               :op2 (s8.s2 / study-01
+                           :ARG0 (s8.i / i
+                                       :same-as s3.i)
+                           :ARG1 (s8.i2 / interconnect-01
+                                        :ARG1 (s8.s / species)
+                                        :mod (s8.t / that
+                                                   :location (s8.w / world
+                                                                   :ARG1-of (s8.n / natural-03))))))
+   :snt9 (s9.o / or
+               :location (s9.h / here)
+               :op1 (s9.w / web
+                          :mod (s9.f2 / food))
+               :op2 (s9.m / map
+                          :topic (s9.l2 / link-01
+                                        :purpose (s9.f / feed-01)
+                                        :ARG1 (s9.s / species
+                                                    :ARG0-of (s9.l3 / live-01
+                                                                    :location (s9.l / lake
+                                                                                    :name (s9.n / name
+                                                                                                :op1 "Alpine"
+                                                                                                :op2 "Lakes")
+                                                                                    :location (s9.m2 / mountain
+                                                                                                     :name (s9.n2 / name)
+                                                                                                     :location (s9.s2 / state
+                                                                                                                      :name (s9.n3 / name
+                                                                                                                                   :op1 "California")))))))))
+   :snt10 (s10.a / and
+                 :op2 (s10.e / event
+                             :mod (s10.t / this)
+                             :time (s10.s / stock-01
+                                          :ARG1 (s10.w / web
+                                                       :mod (s10.f2 / food)
+                                                       :same-as s9.m)
+                                          :ARG2 (s10.f / fish
+                                                       :ARG0-of (s10.l / live-01
+                                                                       :location s10.w
+                                                                       :time (s10.e2 / ever)
+                                                                       :time (s10.b / before)
+                                                                       :polarity "-")
+                                                       :mod (s10.n / native
+                                                                   :polarity "-")))
+                             :topic s10.w))
+   :snt11 (s11.d / disappear-01
+                 :ARG1 (s11.s / species
+                              :ARG1-of (s11.g / gray-02)
+                              :mod (s11.a / all)))
+   :snt12 (s12.o / on-the-brink-00
+                 :ARG1 (s12.e / extinct
+                              :domain (s12.s / some))
+                 :ARG1-of (s12.a / actual-02))
+   :snt13 (s13.a / and
+                 :op2 (s13.h2 / have-concession-91
+                              :ARG1 (s13.h / have-03
+                                           :ARG0 (s13.l / lake
+                                                        :location-of (s13.f / fish))
+                                           :ARG1 (s13.m2 / mosquito
+                                                         :quant (s13.m / more)))
+                              :ARG2 (s13.e / eat-01
+                                           :ARG0 s13.m2
+                                           :ARG1 s13.m2)))
+   :snt14 (s14.a3 / and
+                  :op1 (s14.e / expect-01
+                              :ARG1 (s14.a / affect-01
+                                           :mod (s14.t / this)
+                                           :mod (s14.a2 / all))
+                              :polarity "-")
+                  :op2 (s14.d / discover-01
+                              :ARG0 (s14.w / we)
+                              :ARG1 (s14.p / possible-01
+                                           :ARG1 (s14.p2 / predict-01
+                                                         :ARG1 s14.a))
+                              :mod (s14.y / yet)))
+   :snt15 (s15.c / cause-01
+                 :ARG1 (s15.w / want-01
+                              :ARG0 (s15.i / i
+                                           :same-as s3.i)
+                              :ARG1 (s15.s / share-01
+                                           :ARG0 s15.i
+                                           :ARG1 (s15.i2 / insight
+                                                         :quant (s15.c3 / couple)
+                                                         :ARG1-of (s15.k / key-02)
+                                                         :ARG1-of (s15.a / apply-02
+                                                                         :ARG1-of (s15.p / possible-01)
+                                                                         :ARG2 (s15.p2 / problem
+                                                                                       :mod (s15.o / other)))
+                                                         :topic (s15.c2 / complexity
+                                                                        :ARG1-of (s15.l / learn-01
+                                                                                        :ARG0 (s15.w2 / we)
+                                                                                        :ARG2 (s15.s2 / study-01
+                                                                                                      :ARG0 s15.w2
+                                                                                                      :ARG1 (s15.n / nature)))))
+                                           :ARG2 (s15.y / you))))
+   :snt16 (s16.p / power-01
+                 :purpose (s16.a / and
+                                 :op1 (s16.h / help-01
+                                             :ARG1 (s16.t / tangle-01
+                                                          :ARG0 (s16.t3 / tool
+                                                                        :purpose (s16.v / visualize-01)
+                                                                        :ARG1-of (s16.g / good-02))
+                                                          :ARG1 (s16.c / complexity)))
+                                 :op2 (s16.e / encourage-01
+                                             :ARG0 s16.t3
+                                             :ARG1 (s16.y / you)
+                                             :ARG2 (s16.a2 / ask-01
+                                                           :ARG0 s16.y
+                                                           :ARG1 (s16.q / question-01
+                                                                        :ARG0 s16.y
+                                                                        :ARG1-of (s16.t2 / think-01
+                                                                                         :ARG0 s16.y
+                                                                                         :time (s16.b / before)
+                                                                                         :polarity "-")))
+                                             :mod (s16.j / just)))
+                 :ARG0 s16.t3
+                 :ARG1-of (s16.s / simple-02)
+                 :ARG0-of s16.h
+                 :li "1")
+   :snt17 (s17.e3 / exemplify-01
+                  :ARG0 (s17.p4 / possible-01
+                                :ARG1 (s17.p3 / plot-01
+                                              :ARG0 (s17.y / you)
+                                              :ARG1 (s17.o / or
+                                                           :op1 (s17.f / flow-01
+                                                                       :ARG1 (s17.c / carbon)
+                                                                       :path (s17.c2 / chain
+                                                                                     :ARG0-of (s17.s2 / supply-01)
+                                                                                     :mod (s17.c4 / corporate)
+                                                                                     :part-of (s17.e / ecosystem
+                                                                                                     :mod s17.c4)))
+                                                           :op2 (s17.c3 / connect-01
+                                                                        :ARG1 (s17.p2 / patch
+                                                                                      :beneficiary (s17.s / species
+                                                                                                          :ARG1-of (s17.e2 / endanger-01))
+                                                                                      :location (s17.p / park
+                                                                                                       :name (s17.n / name
+                                                                                                                    :op1 "Yosemite"
+                                                                                                                    :op2 "National"
+                                                                                                                    :op3 "Park"))
+                                                                                      :mod (s17.h / habitat)))))))
+   :snt18 (s18.t3 / thing
+                  :domain (s18.a5 / and
+                                  :condition (s18.w / want-01
+                                                    :ARG0 (s18.y / you)
+                                                    :ARG1 (s18.p / predict-01
+                                                                 :ARG0 s18.y
+                                                                 :ARG1 (s18.a2 / affect-01
+                                                                               :ARG0 (s18.s / species
+                                                                                            :mod (s18.o / one))
+                                                                               :ARG1 (s18.s2 / species
+                                                                                             :mod (s18.a8 / another)))))
+                                  :op1 (s18.f / focus-01
+                                              :ARG0 s18.y
+                                              :ARG1 (s18.l2 / link
+                                                            :mod (s18.t / that))
+                                              :mod (s18.o2 / only))
+                                  :op2 (s18.b3 / box-01
+                                               :ARG0 s18.y
+                                               :ARG1 (s18.r / rest)
+                                               :ARG1-of (s18.b2 / black-04)
+                                               :time (s18.t2 / then)))
+                  :mod (s18.n / next)
+                  :rel (s18.h / have-degree-91
+                              :ARG3 (s18.l / less)
+                              :ARG4 (s18.p2 / predict-01
+                                            :ARG0 s18.y
+                                            :ARG1 s18.a2
+                                            :ARG1 (s18.a7 / and
+                                                          :op1 (s18.s5 / step-01
+                                                                       :ARG0 s18.y
+                                                                       :ARG2 (s18.b / back))
+                                                          :op2 (s18.c / consider-02
+                                                                      :ARG0 s18.y
+                                                                      :ARG1 (s18.s6 / system
+                                                                                    :consist-of (s18.a6 / and
+                                                                                                        :op1 (s18.s3 / species
+                                                                                                                     :mod (s18.a3 / all))
+                                                                                                        :op2 (s18.l3 / link
+                                                                                                                     :mod (s18.a4 / all)))
+                                                                                    :mod (s18.e / entire)))
+                                                          :op3 (s18.f2 / focus-01
+                                                                       :ARG0 s18.y
+                                                                       :ARG1 (s18.s4 / sphere
+                                                                                     :ARG1-of (s18.h2 / have-degree-91
+                                                                                                      :ARG2 (s18.m / matter-01
+                                                                                                                   :ARG1 (s18.i / influence-01))
+                                                                                                      :ARG3 (s18.m2 / most))
+                                                                                     :mod s18.i)
+                                                                       :source s18.s6))
+                                            :ARG1-of (s18.a / actual-02)
+                                            :ARG1-of s18.h)))
+   :snt19 (s19.a / and
+                 :op2 (s19.d3 / discover-01
+                              :ARG0 (s19.w / we)
+                              :ARG1 (s19.l / local-02
+                                           :ARG1 (s19.t2 / that
+                                                         :same-as s18.s4)
+                                           :ARG2 (s19.n / node
+                                                        :ARG1-of (s19.c / care-01
+                                                                        :ARG0 (s19.y / you)))
+                                           :degree (s19.v / very)
+                                           :degree (s19.u / up-to
+                                                          :op1 (s19.o2 / or
+                                                                       :op1 (s19.d / degree
+                                                                                   :quant "1")
+                                                                       :op2 (s19.t / temporal-quantity
+                                                                                   :unit (s19.d2 / degree)
+                                                                                   :quant "2")))
+                                           :frequency (s19.o / often))
+                              :manner (s19.r / research-01
+                                             :ARG0 s19.w)))
+   :snt20 (s20.c3 / correlate-91
+                  :ARG1 (s20.m / more
+                               :ARG3-of (s20.h2 / have-quant-91
+                                                :ARG1 (s20.a / and
+                                                             :op1 (s20.s4 / step-01
+                                                                          :ARG0 (s20.y / you)
+                                                                          :ARG2 (s20.b / back))
+                                                             :op2 (s20.e / embrace-01
+                                                                         :ARG0 s20.y
+                                                                         :ARG1 (s20.c2 / complexity)))))
+                  :ARG2 (s20.m2 / more
+                                :ARG3-of (s20.h / have-degree-91
+                                                :ARG1 (s20.c / chance-02
+                                                             :ARG0 s20.y
+                                                             :ARG1 (s20.f / find-01
+                                                                          :ARG0 s20.y
+                                                                          :ARG1 (s20.t / thing
+                                                                                       :ARG1-of (s20.s / simple-02)
+                                                                                       :ARG1-of (s20.d / differ-02
+                                                                                                       :ARG2 (s20.a2 / answer
+                                                                                                                     :ARG1-of (s20.s2 / simple-02)
+                                                                                                                     :ARG2-of (s20.s3 / start-01
+                                                                                                                                      :ARG0 s20.y))
+                                                                                                       :frequency (s20.o / often))
+                                                                                       :ARG2-of (s20.a3 / answer-01))))
+                                                :ARG2 (s20.g / good-02
+                                                             :ARG1 s20.c))))
+   :snt21 (s21.l / let-01
+                 :ARG1 (s21.a / and
+                              :op1 (s21.s2 / switch-01
+                                           :ARG0 (s21.w / we)
+                                           :ARG2 (s21.s / shift-01))
+                              :op2 (s21.l2 / look-01
+                                           :ARG0 s21.w
+                                           :ARG1 (s21.p / problem
+                                                        :mod (s21.c / complex
+                                                                    :degree (s21.r / really)))
+                                           :ARG2-of (s21.t / thank-01
+                                                           :ARG1 (s21.g2 / government-organization
+                                                                         :ARG0-of (s21.g / govern-01
+                                                                                         :ARG1 (s21.c2 / country
+                                                                                                       :name (s21.n / name
+                                                                                                                    :op1 "U.S."))))))))
+   :snt22 (s22.d / diagram
+                 :domain (s22.t / this)
+                 :topic (s22.s / strategy
+                               :location (s22.c3 / country
+                                                 :name (s22.n2 / name
+                                                               :op1 "Afghanistan"))
+                               :mod (s22.c / counterinsurgency)
+                               :poss (s22.c2 / country
+                                             :name (s22.n / name
+                                                          :op1 "U.S."))))
+   :snt23 (s23.p / page
+                 :domain (s23.i / it
+                                :same-as s22.t)
+                 :mod (s23.f / front)
+                 :part-of (s23.n2 / newspaper
+                                  :name (s23.n / name
+                                               :op1 "New"
+                                               :op2 "York"
+                                               :op3 "Times"))
+                 :time (s23.b / before
+                              :quant (s23.c / couple
+                                            :op1 (s23.t / temporal-quantity
+                                                        :unit (s23.m / month)
+                                                        :quant "1"))
+                              :op1 (s23.n3 / now)))
+   :snt24 (s24.r / ridicule-01
+                 :ARG0 (s24.m / media)
+                 :ARG2 (s24.c / complicate-01
+                              :ARG1-of (s24.c2 / crazy-03
+                                               :degree (s24.s / so)))
+                 :time (s24.i / immediate))
+   :snt25 (s25.a / and
+                 :op2 (s25.h / have-purpose-91
+                             :ARG1-of (s25.s / state-01)
+                             :ARG2 (s25.i / increase-01
+                                          :ARG1 (s25.s2 / support-01
+                                                        :ARG1 (s25.g2 / government-organization
+                                                                      :ARG0-of (s25.g / govern-01
+                                                                                      :ARG1 (s25.c / country
+                                                                                                   :name (s25.n / name
+                                                                                                                :op1 "Afghanistan")))
+                                                                      :same-as s21.g2)
+                                                        :ARG1-of (s25.p / popular-02)))))
+   :snt26 (s26.c4 / contrast-01
+                  :ARG1 (s26.p / problem
+                               :mod (s26.c2 / complex
+                                            :ARG1-of (s26.c / clear-06)))
+                  :ARG2 (s26.c3 / complicate-01
+                                :ARG1 s26.p
+                                :polarity (s26.a / amr-unknown)))
+   :snt27 (s27.p / possible-01
+                 :ARG1 (s27.s / sink-01
+                              :ARG0 (s27.i / i
+                                           :part (s27.t2 / tooth)
+                                           :same-as s3.i)
+                              :ARG1 s27.t2
+                              :ARG2 (s27.t / this)))
+   :snt28 (s28.n / node
+                 :ARG1-of (s28.i / influence-01
+                                 :ARG0 (s28.w / we)
+                                 :ARG1-of (s28.t / try-01
+                                                 :ARG0 s28.w))
+                 :consist-of (s28.s / support-01
+                                    :ARG1 (s28.g2 / government-organization
+                                                  :ARG0-of (s28.g / govern-01)
+                                                  :same-as s21.g2)
+                                    :ARG1-of (s28.p / popular-02))
+                 :location (s28.c / circle))
+   :snt29 (s29.a / and
+                 :op2 (s29.p / possible-01
+                             :ARG1 (s29.a3 / and
+                                           :op1 (s29.l / look-01
+                                                       :ARG0 (s29.w / we)
+                                                       :ARG1 (s29.r / relative-position
+                                                                    :quant (s29.a2 / and
+                                                                                   :op1 s29.l
+                                                                                   :op2 (s29.d2 / degree
+                                                                                                :quant "2")
+                                                                                   :op3 (s29.d3 / degree
+                                                                                                :quant "3"))
+                                                                    :direction (s29.a4 / away)
+                                                                    :op1 (s29.n / node
+                                                                                :mod (s29.t / that)
+                                                                                :same-as s28.c)))
+                                           :op2 (s29.e / eliminate-01
+                                                       :ARG0 s29.w
+                                                       :ARG1 (s29.d4 / diagram
+                                                                     :ARG1-of (s29.i / include-91
+                                                                                     :ARG2 (s29.d5 / diagram
+                                                                                                   :location (s29.o / outside
+                                                                                                                    :op1 (s29.s / sphere
+                                                                                                                                :ARG1-of (s29.i2 / influence-01)
+                                                                                                                                :same-as s18.s4)))
+                                                                                     :ARG3 "3/4")
+                                                                     :same-as s22.t)))
+                             :time (s29.n2 / now))
+                 :rel (s29.d / degree)
+                 :rel "1")
+   :snt30 (s30.a4 / and
+                  :op1 (s30.p2 / possible-01
+                               :ARG1 (s30.a / act-02
+                                            :ARG1 (s30.i2 / insurgent
+                                                          :quant (s30.m3 / most)
+                                                          :ARG1-of (s30.i / include-91
+                                                                          :ARG2 (s30.p / population
+                                                                                       :quant (s30.m2 / minority
+                                                                                                      :mod (s30.s / small
+                                                                                                                  :degree (s30.v2 / very)))
+                                                                                       :mod "that"))
+                                                          :mod (s30.v / variable
+                                                                      :name (s30.n / name
+                                                                                   :mod "that"))))
+                               :ARG1-of (s30.r / resemble-01
+                                               :ARG2 (s30.h / harsh-02
+                                                            :ARG1 (s30.t / terrain)))
+                               :location (s30.s2 / sphere
+                                                 :mod (s30.t2 / that)
+                                                 :same-as s18.s4)
+                               :polarity "-")
+                  :op2 (s30.a2 / act-02
+                               :ARG1 s30.p
+                               :ARG1-of (s30.a3 / actual-02)
+                               :mod (s30.m / military)))
+   :snt31 (s31.a2 / and
+                  :op1 (s31.v / violent
+                              :domain (s31.m / most)
+                              :polarity "-")
+                  :op2 (s31.f2 / fall-04
+                               :ARG1 s31.m
+                               :ARG2 (s31.c / category
+                                            :ARG1-of (s31.b2 / broad-02)
+                                            :domain (s31.a3 / and
+                                                            :op1 (s31.e2 / engage-01
+                                                                         :ARG1-of (s31.a / activity-06)
+                                                                         :ARG2 (s31.a4 / and
+                                                                                       :op1 (s31.r2 / rival-01
+                                                                                                    :ARG1 (s31.e3 / ethnic))
+                                                                                       :op2 (s31.b / believe-01
+                                                                                                   :mod (s31.r / religion)))))
+                                            :domain (s31.a5 / and
+                                                            :op1 (s31.d / develop-02
+                                                                        :ARG1 (s31.e / economy)
+                                                                        :ARG1-of (s31.f / fair-01)
+                                                                        :manner (s31.t / transparent))
+                                                            :op2 (s31.p / provision-02
+                                                                        :ARG2 (s31.s / service)))
+                                            :quant "2")))
+   :snt32 (s32.c / contrast-01
+                 :ARG1 (s32.k / know-01
+                              :ARG0 (s32.i / i
+                                           :same-as s3.i)
+                              :ARG1 (s32.t2 / this)
+                              :polarity "-")
+                 :ARG2 (s32.p / possible-01
+                              :ARG1 (s32.d / decipher-01
+                                           :ARG0 s32.i
+                                           :ARG1 (s32.t3 / this)
+                                           :ARG2 (s32.d2 / diagram
+                                                         :mod (s32.t4 / this)
+                                                         :same-as s22.t)
+                                           :duration (s32.t / temporal-quantity
+                                                            :unit (s32.s / second)
+                                                            :quant "24"))))
+   :snt33 (s33.w / want-01
+                 :ARG0 (s33.i / i
+                              :same-as s3.i)
+                 :ARG1 (s33.f / fear-01
+                              :ARG0 (s33.y / you))
+                 :time (s33.s / see-01
+                              :ARG0 s33.y
+                              :ARG1 (s33.d / diagram
+                                           :ARG1-of (s33.r / resemble-01
+                                                           :ARG2 (s33.t / this
+                                                                        :same-as s22.t))))
+                 :polarity "-")
+   :snt34 (s34.c / cause-01
+                 :ARG0 (s34.p / possible-01
+                              :ARG1 (s34.e / emerge-02
+                                           :ARG0 (s34.t / thing
+                                                        :ARG1-of (s34.s / simple-02)
+                                                        :ARG2-of (s34.a / answer-01)))))
+   :snt35 (s35.d / discover-01
+                 :ARG0 (s35.w / we)
+                 :ARG1 (s35.l / lie-07
+                              :ARG1 (s35.s2 / simplicity)
+                              :ARG2 (s35.s / side
+                                           :mod (s35.o2 / other)
+                                           :mod (s35.c / complexity))
+                              :frequency (s35.o / often))
+                 :mod (s35.n / nature))
+   :snt36 (s36.c3 / correlate-91
+                  :ARG1 (s36.m2 / more
+                                :ARG3-of (s36.h3 / have-quant-91
+                                                 :ARG1 (s36.p / possible-01
+                                                              :ARG1 (s36.a / and
+                                                                           :op1 (s36.z2 / zoom-01
+                                                                                        :ARG0 (s36.y / you)
+                                                                                        :ARG2 (s36.o / out))
+                                                                           :op2 (s36.e / embrace-01
+                                                                                       :ARG0 s36.y
+                                                                                       :ARG1 (s36.c2 / complexity))))))
+                  :ARG3-of (s36.h / have-degree-91
+                                  :ARG1 (s36.c / chance-02
+                                               :ARG0 s36.y
+                                               :ARG1 (s36.z / zap-01
+                                                            :ARG0 s36.y
+                                                            :ARG1 (s36.d / detail
+                                                                         :ARG1-of (s36.s / simple-02)
+                                                                         :ARG1-of (s36.h2 / have-degree-91
+                                                                                          :ARG2 (s36.m / matter-01
+                                                                                                       :ARG1 s36.d)
+                                                                                          :ARG3 (s36.m4 / most)))))
+                                  :ARG2 (s36.g / good-02)
+                                  :ARG3 (s36.m3 / more))
+                  :prep-for (s36.p2 / problem
+                                    :mod (s36.a2 / any)))
+   :snt37 (s37.t / thank-01
+                 :ARG1 (s37.y / you
+                              :same-as s3.i)))
+

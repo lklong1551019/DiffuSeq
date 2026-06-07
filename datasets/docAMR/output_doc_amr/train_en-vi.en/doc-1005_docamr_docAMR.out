@@ -1,0 +1,359 @@
+# ::id doc-1005
+# ::doc_file doc-1005
+# ::tok http : / / www . ted . com / talks / ji_hae_park_the_violin_and_my_dark_night_of_the_soul< / url> <next_sent> Thank you . <next_sent> Hi , everybody . <next_sent> Ban - gap - seum - ni - da . <next_sent> I 'd like to share with you a little bit of me playing my life . <next_sent> I might look successful and happy being in front of you today , but I once suffered from severe depression and was in total despair . <next_sent> The violin , which meant everything to me , became a grave burden on me . <next_sent> Although many people tried to comfort and encourage me , their words sounded like meaningless noise . <next_sent> When I was just about to give everything up after years of suffering , I started to rediscover the true power of music . <next_sent> In the midst of hardship , it was the music that gave me -- that restored my soul . <next_sent> The comfort the music gave me was just indescribable , and it was a real eye - opening experience for me too , and it totally changed my perspective on life and set me free from the pressure of becoming a successful violinist . <next_sent> Do you feel like you are all alone ? <next_sent> I hope that this piece will touch and heal your heart , as it did for me . <next_sent> Thank you . <next_sent> Now , I use my music to reach people 's hearts and have found there are no boundaries . <next_sent> My audience is anyone who is here to listen , even those who are not familiar with classical music . <next_sent> I not only play at the prestigious classical concert halls like Carnegie Hall and Kennedy Center , but also hospitals , churches , prisons , and restricted facilities for leprosy patients , just to mention a few . <next_sent> Now , with my last piece , I 'd like to show you that classical music can be so much fun , exciting , and that it can rock you . <next_sent> Let me introduce you to my brand new project , " Baroque in Rock , " which became a golden disc most recently . <next_sent> It 's such an honor for me . <next_sent> I think , while I 'm enjoying my life as a happy musician , I 'm earning a lot more recognition than I 've ever imagined . <next_sent> But it 's now your turn . <next_sent> Changing your perspectives will not only transform you but also the whole world . <next_sent> Just play your life with all you have , and share it with the world . <next_sent> I really look forward to witnessing a transforming world by you , TEDsters . <next_sent> Play your life , and stay tuned .
+(d / document
+   :snt1 (s1.u / url-entity
+               :ARG3-of (s1.t / talk-01))
+   :snt2 (s2.t / thank-01
+               :ARG1 (s2.y / you))
+   :snt3 (s3.s / say-01
+               :ARG1 (s3.h / hi)
+               :ARG2 (s3.e / everybody))
+   :snt4 (s4.b / ban-01
+               :ARG0 (s4.y / you)
+               :ARG1 (s4.l / language
+                           :name (s4.n / name
+                                       :op1 "Gulf"))
+               :mod (s4.p / program)
+               :mode "imperative")
+   :snt5 (s5.l2 / like-02
+                :ARG0 (s5.i / i
+                            :same-as s4.b)
+                :ARG1 (s5.s / share-01
+                            :ARG0 s5.i
+                            :ARG1 (s5.b / bit
+                                        :mod (s5.l3 / little)
+                                        :part-of (s5.p / play-01
+                                                       :ARG0 s5.i
+                                                       :ARG1 (s5.l / life
+                                                                   :poss s5.i)))
+                            :ARG2 (s5.y / you)))
+   :snt6 (s6.c / contrast-01
+               :ARG1 (s6.p / possible-01
+                           :ARG1 (s6.l / look-02
+                                       :ARG0 (s6.i / i
+                                                   :same-as s4.b)
+                                       :ARG1 (s6.a / and
+                                                   :op1 (s6.s2 / succeed-01
+                                                               :ARG0 s6.i)
+                                                   :op2 (s6.h / happy-01
+                                                              :ARG1 s6.i))
+                                       :time (s6.b / be-located-at-91
+                                                   :ARG1 s6.i
+                                                   :ARG2 (s6.i2 / in-front-of
+                                                                :op1 (s6.y / you
+                                                                           :same-as s5.y))
+                                                   :time (s6.t / today))))
+               :ARG2 (s6.a2 / and
+                            :op1 (s6.s3 / suffer-01
+                                        :ARG0 s6.i
+                                        :ARG1 (s6.d / depress-01
+                                                    :ARG1 s6.i
+                                                    :degree (s6.s / severe))
+                                        :time (s6.o / once))
+                            :op2 (s6.d2 / despair-01
+                                        :ARG1 s6.i
+                                        :degree (s6.t2 / total))))
+   :snt7 (s7.b / become-01
+               :ARG1 (s7.v / violin
+                           :ARG1-of (s7.m / mean-01
+                                          :ARG2 (s7.e / everything)
+                                          :ARG3 (s7.i / i
+                                                      :same-as s4.b)))
+               :ARG2 (s7.b2 / burden-01
+                            :ARG0 s7.v
+                            :ARG1 s7.i
+                            :mod (s7.g / grave)))
+   :snt8 (s8.s / sound-01
+               :ARG1 (s8.w / word
+                           :poss (s8.p / person
+                                       :quant (s8.m / many)))
+               :ARG2 (s8.n / noise
+                           :ARG1-of (s8.m2 / mean-01
+                                           :polarity "-"))
+               :concession (s8.t / try-01
+                                 :ARG0 s8.p
+                                 :ARG1 (s8.a / and
+                                             :op1 (s8.c / comfort-01
+                                                        :ARG0 s8.p
+                                                        :ARG1 (s8.i / i
+                                                                    :same-as s4.b))
+                                             :op2 (s8.e / encourage-01
+                                                        :ARG0 s8.p
+                                                        :ARG1 s8.i))))
+   :snt9 (s9.s / start-01
+               :ARG0 (s9.i / i
+                           :same-as s4.b)
+               :ARG1 (s9.d / discover-01
+                           :ARG0 s9.i
+                           :ARG1 (s9.p / power-01
+                                       :ARG0 (s9.m2 / music)
+                                       :ARG1-of (s9.t2 / true-01)))
+               :time (s9.a / about-to
+                           :mod (s9.j / just)
+                           :op1 (s9.g / give-up-07
+                                      :ARG0 s9.i
+                                      :ARG1 (s9.e / everything)
+                                      :time (s9.a2 / after
+                                                   :op1 (s9.s2 / suffer-01
+                                                               :ARG0 s9.i
+                                                               :duration (s9.m / multiple
+                                                                               :op1 (s9.t / temporal-quantity
+                                                                                          :unit (s9.y / year)
+                                                                                          :quant "1")))))))
+   :snt10 (s10.r / restore-01
+                 :ARG0 (s10.m / music)
+                 :ARG1 (s10.s / soul
+                              :part-of (s10.i / i
+                                              :same-as s4.b))
+                 :ARG2 s10.i
+                 :time (s10.g / give-01
+                              :ARG0 s10.m
+                              :ARG2 s10.i)
+                 :time (s10.h / hardship))
+   :snt11 (s11.a / and
+                 :op1 (s11.p2 / possible-01
+                              :ARG1 (s11.d / describe-01
+                                           :ARG0 (s11.m / music
+                                                        :same-as s10.m)
+                                           :ARG1 s11.m)
+                              :mod (s11.j / just)
+                              :polarity "-")
+                 :op2 (s11.e / experience-01
+                             :ARG0 (s11.i / i
+                                          :same-as s4.b)
+                             :ARG1 (s11.o / open-01
+                                          :ARG0 s11.m
+                                          :ARG1 (s11.e2 / eye)
+                                          :ARG1-of (s11.r / real-04))
+                             :mod (s11.t / too))
+                 :op3 (s11.c / change-01
+                             :ARG0 s11.m
+                             :ARG1 (s11.p / perspective
+                                          :poss s11.i
+                                          :topic (s11.l / life))
+                             :degree (s11.t2 / total))
+                 :op4 (s11.s / set-01
+                             :ARG0 s11.i
+                             :ARG1 s11.i
+                             :ARG2 (s11.f / free-01
+                                          :ARG0 s11.m
+                                          :ARG1 s11.i
+                                          :ARG2 (s11.p3 / pressure-01
+                                                        :ARG0 (s11.b / become-01
+                                                                     :ARG1 s11.i
+                                                                     :ARG2 (s11.v / violinist
+                                                                                  :ARG0-of (s11.s2 / succeed-01))))))
+                 :rel (s11.c2 / comfort-01
+                              :ARG0 s11.m
+                              :ARG1 s11.i
+                              :ARG1-of (s11.g / give-01
+                                              :ARG0 s11.m
+                                              :ARG2 s11.i)))
+   :snt12 (s12.f / feel-01
+                 :ARG0 (s12.y / you
+                              :same-as s4.b)
+                 :ARG1 (s12.a2 / alone
+                               :degree (s12.a / all)
+                               :domain s12.y)
+                 :polarity (s12.a3 / amr-unknown))
+   :snt13 (s13.h3 / hope-01
+                  :ARG0 (s13.i / i
+                               :same-as s4.b)
+                  :ARG1 (s13.a / and
+                               :ARG1-of (s13.r / resemble-01
+                                               :ARG2 s13.i)
+                               :op1 (s13.t2 / touch-01
+                                            :ARG0 (s13.p / piece
+                                                         :mod (s13.t / this))
+                                            :ARG1 (s13.h2 / heart
+                                                          :part-of (s13.y / you
+                                                                          :same-as s5.y)))
+                               :op2 (s13.h / heal-01
+                                           :ARG0 s13.p
+                                           :ARG1 s13.h2)))
+   :snt14 (s14.t / thank-01
+                 :ARG1 (s14.y / you
+                              :same-as s4.b))
+   :snt15 (s15.a / and
+                 :op1 (s15.u / use-01
+                             :ARG0 (s15.i / i
+                                          :same-as s4.b)
+                             :ARG1 (s15.m / music
+                                          :poss s15.i)
+                             :ARG2 (s15.r / reach-02
+                                          :ARG0 s15.i
+                                          :ARG1 (s15.h / heart
+                                                       :part-of (s15.p / person))))
+                 :op2 (s15.f / find-01
+                             :ARG0 s15.i
+                             :ARG1 (s15.b / boundary
+                                          :polarity "-"))
+                 :time (s15.n / now))
+   :snt16 (s16.a / anyone
+                 :purpose (s16.l / listen-01)
+                 :ARG0-of s16.l
+                 :domain (s16.a2 / audience
+                                 :poss (s16.i / i
+                                              :same-as s4.b))
+                 :example (s16.p / person
+                                 :ARG1-of (s16.f / familiarize-01
+                                                 :ARG2 (s16.m / music
+                                                              :mod (s16.c / classical))
+                                                 :polarity "-")
+                                 :mod (s16.e / even)
+                                 :mod (s16.t / that))
+                 :location (s16.h / here))
+   :snt17 (s17.c4 / contrast-01
+                  :ARG1 (s17.p2 / play-11
+                                :ARG0 (s17.i / i
+                                             :same-as s4.b)
+                                :location (s17.h / hall
+                                                 :example (s17.a / and
+                                                                 :op1 (s17.b / building
+                                                                             :name (s17.n / name
+                                                                                          :op1 "Carnegie"
+                                                                                          :op2 "Hall")))
+                                                 :mod (s17.c3 / concert
+                                                              :mod (s17.c2 / classical))
+                                                 :mod (s17.p3 / prestigious)))
+                  :ARG2 (s17.a2 / and
+                                :op1 (s17.h2 / hospital)
+                                :op2 (s17.c / church)
+                                :op3 (s17.p4 / prison)
+                                :op4 (s17.f / facility
+                                            :ARG1-of (s17.r / restrict-01))
+                                :op5 (s17.f2 / facility
+                                             :purpose (s17.p / patient
+                                                             :mod (s17.d / disease
+                                                                         :name (s17.n2 / name
+                                                                                       :op1 "Leprosy")))
+                                             :quant (s17.f3 / few)))
+                  :ARG2-of (s17.m / mention-01
+                                  :ARG1 s17.f2
+                                  :mod (s17.j / just))
+                  :rel (s17.e2 / Kennedy)
+                  :rel (s17.e / Center))
+   :snt18 (s18.l2 / like-02
+                  :ARG0 (s18.i / i
+                               :same-as s4.b)
+                  :ARG1 (s18.s / show-01
+                               :ARG0 s18.i
+                               :ARG1 (s18.a2 / and
+                                             :op1 (s18.p2 / possible-01
+                                                          :ARG1 (s18.a / and
+                                                                       :op1 (s18.f / fun-01
+                                                                                   :quant (s18.m / much
+                                                                                                 :degree (s18.s2 / so))
+                                                                                   :ARG0 (s18.m2 / music
+                                                                                                 :mod (s18.c / classics)))
+                                                                       :op2 (s18.e / excite-01
+                                                                                   :ARG0 s18.m2)))
+                                             :op2 (s18.p3 / possible-01
+                                                          :ARG1 (s18.r / rock-01
+                                                                       :ARG0 s18.m2
+                                                                       :ARG1 (s18.y / you
+                                                                                    :same-as s5.y))))
+                               :ARG2 s18.y)
+                  :prep-with (s18.p / piece
+                                    :mod (s18.l / last)
+                                    :poss s18.i)
+                  :time (s18.n / now))
+   :snt19 (s19.l / let-01
+                 :ARG0 (s19.y / you)
+                 :ARG1 (s19.i2 / introduce-01
+                               :ARG0 (s19.i / i
+                                            :same-as s4.b)
+                               :ARG1 s19.y
+                               :ARG2 (s19.p / project
+                                            :name (s19.n / name
+                                                         :op1 "Baroque"
+                                                         :op2 "in"
+                                                         :op3 "Rock")
+                                            :ARG1-of (s19.n2 / new-01
+                                                             :mod (s19.b2 / brand))
+                                            :ARG1-of (s19.b / become-01
+                                                            :ARG2 (s19.d / disc
+                                                                         :consist-of (s19.g / gold))
+                                                            :time (s19.r / recent
+                                                                         :mod (s19.m / most)))
+                                            :poss s19.i)))
+   :snt20 (s20.h / honor-01
+                 :ARG0 (s20.i / i
+                              :same-as s4.b)
+                 :ARG1 (s20.i2 / it)
+                 :degree (s20.s / such))
+   :snt21 (s21.t / think-01
+                 :ARG0 (s21.i / i
+                              :same-as s4.b)
+                 :ARG1 (s21.c / contrast-01
+                              :ARG1 (s21.e / earn-01
+                                           :ARG0 s21.i
+                                           :ARG1 (s21.r / recognize-01
+                                                        :ARG1 s21.i
+                                                        :ARG1-of (s21.h2 / have-quant-91
+                                                                         :ARG3 (s21.m / more
+                                                                                      :quant (s21.l2 / lot))
+                                                                         :ARG4 (s21.r2 / recognize-01
+                                                                                       :ARG1 s21.i
+                                                                                       :ARG1-of (s21.i2 / imagine-01
+                                                                                                        :ARG0 s21.i
+                                                                                                        :time (s21.e3 / ever))))))
+                              :ARG2 (s21.e2 / enjoy-01
+                                            :ARG0 s21.i
+                                            :ARG1 (s21.l / life
+                                                         :manner (s21.m2 / musician
+                                                                         :ARG1-of (s21.h / happy-01))
+                                                         :poss s21.i))))
+   :snt22 (s22.c / contrast-01
+                 :ARG2 (s22.t / turn
+                              :poss (s22.y / you
+                                           :same-as s5.y)
+                              :time (s22.n / now)))
+   :snt23 (s23.t / transform-01
+                 :ARG0 (s23.c / change-01
+                              :ARG1 (s23.p / perspective
+                                           :poss (s23.y / you
+                                                        :same-as s5.y)))
+                 :ARG2 (s23.a2 / and
+                               :op1 (s23.w2 / world
+                                            :mod (s23.w / whole)
+                                            :mod (s23.a / also))))
+   :snt24 (s24.a2 / and
+                  :op1 (s24.p / play-01
+                              :ARG0 (s24.y / you)
+                              :ARG1 (s24.l / life
+                                           :poss s24.y)
+                              :instrument (s24.a / all
+                                                 :ARG1-of (s24.h / have-03
+                                                                 :ARG0 s24.y))
+                              :mod (s24.j / just)
+                              :mode "imperative")
+                  :op2 (s24.s / share-01
+                              :ARG0 s24.y
+                              :ARG1 s24.a
+                              :ARG2 (s24.w / world
+                                           :same-as s23.w)
+                              :mode "imperative"))
+   :snt25 (s25.l / look-forward-03
+                 :ARG0 (s25.i / i
+                              :same-as s4.b)
+                 :ARG1 (s25.w / witness-01
+                              :ARG0 s25.i
+                              :ARG1 (s25.w2 / world
+                                            :ARG0-of (s25.t / transform-01
+                                                            :prep-by (s25.p / person
+                                                                            :name (s25.n / name
+                                                                                         :op1 "TEDsters")
+                                                                            :same-as s5.y))))
+                 :ARG1-of (s25.r / real-04))
+   :snt26 (s26.a / and
+                 :op1 (s26.p / play-01
+                             :ARG0 (s26.y / you)
+                             :ARG1 (s26.l / life
+                                          :poss s26.y)
+                             :mode "imperative")
+                 :op2 (s26.s / stay-01
+                             :ARG1 s26.y
+                             :ARG3 (s26.t / tune-01))))
+

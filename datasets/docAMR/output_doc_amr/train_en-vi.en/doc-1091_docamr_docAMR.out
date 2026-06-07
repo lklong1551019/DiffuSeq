@@ -1,0 +1,493 @@
+# ::id doc-1091
+# ::doc_file doc-1091
+# ::tok http : / / www . ted . com / talks / eman_mohammed_the_courage_to_tell_a_hidden_story< / url> <next_sent> When I turned 19 , I started my career as the first female photojournalist in the Gaza Strip , Palestine . <next_sent> My work as a woman photographer was considered a serious insult to local traditions , and created a lasting stigma for me and my family . <next_sent> The male - dominated field made my presence unwelcome by all possible means . <next_sent> They made clear that a woman must not do a man 's job . <next_sent> Photo agencies in Gaza refused to train me because of my gender . <next_sent> The " No " sign was pretty clear . <next_sent> Three of my colleagues went as far as to drive me to an open air strike area where the explosion sounds were the only thing I could hear . <next_sent> Dust was flying in the air , and the ground was shaking like a swing beneath me . <next_sent> I only realized we were n't there to document the event when the three of them got back into the armored Jeep and drove away , waving and laughing , leaving me behind in the open air strike zone . <next_sent> For a moment , I felt terrified , humiliated , and sorry for myself . <next_sent> My colleagues ' action was not the only death threat I have received , but it was the most dangerous one . <next_sent> The perception of women 's life in Gaza is passive . <next_sent> Until a recent time , a lot of women were not allowed to work or pursue education . <next_sent> At times of such doubled war including both social restrictions on women and the Israeli - Palestinian conflict , women 's dark and bright stories were fading away . <next_sent> To men , women 's stories were seen as inconsequential . <next_sent> I started paying closer attention to women 's lives in Gaza . <next_sent> Because of my gender , I had access to worlds where my colleagues were forbidden . <next_sent> Beyond the obvious pain and struggle , there was a healthy dose of laughter and accomplishments . <next_sent> In front of a police compound in Gaza City during the first war in Gaza , an Israeli air raid managed to destroy the compound and break my nose . <next_sent> For a moment , all I saw was white , bright white , like these lights . <next_sent> I thought to myself I either got blind or I was in heaven . <next_sent> By the time I managed to open my eyes , I had documented this moment . <next_sent> Mohammed Khader , a Palestinian worker who spent two decades in Israel , as his retirement plan , he decided to build a four - floor house , only by the first field operation at his neighborhood , the house was flattened to the ground . <next_sent> Nothing was left but the pigeons he raised and a jacuzzi , a bathtub that he got from Tel Aviv . <next_sent> Mohammed got the bathtub on the top of the rubble and started giving his kids an every morning bubble bath . <next_sent> My work is not meant to hide the scars of war , but to show the full frame of unseen stories of Gazans . <next_sent> As a Palestinian female photographer , the journey of struggle , survival and everyday life has inspired me to overcome the community taboo and see a different side of war and its aftermath . <next_sent> I became a witness with a choice : to run away or stand still . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01
+                            :ARG0 (s1.p / person
+                                        :name (s1.n / name
+                                                    :op1 "David"))))
+   :snt2 (s2.s / start-01
+               :ARG0 (s2.i / i)
+               :ARG1 (s2.c / career
+                           :poss s2.i)
+               :prep-as (s2.p / photojournalist
+                              :location (s2.c3 / country-region
+                                               :name (s2.n / name
+                                                           :op1 "Gaza"
+                                                           :op2 "Strip")
+                                               :location (s2.c2 / country
+                                                                :name (s2.n2 / name
+                                                                             :op1 "Palestine")))
+                              :mod (s2.f / female)
+                              :ord (s2.o / ordinal-entity
+                                         :value "1"))
+               :time (s2.t / turn-02
+                           :ARG1 s2.i
+                           :ARG2 (s2.a / age-01
+                                       :ARG1 s2.i
+                                       :ARG2 "19")))
+   :snt3 (s3.a / and
+               :op1 (s3.c / consider-01
+                          :ARG1 (s3.i2 / insult-01
+                                       :ARG0 (s3.w2 / work-01
+                                                    :ARG0 (s3.i / i
+                                                                :same-as s2.i)
+                                                    :mod (s3.w / woman
+                                                               :ARG0-of (s3.p / photograph-01)))
+                                       :ARG1 (s3.t / tradition
+                                                   :ARG1-of (s3.l2 / local-02))
+                                       :ARG1-of (s3.s / serious-02)))
+               :op2 (s3.c2 / create-01
+                           :ARG0 s3.w2
+                           :ARG1 (s3.s2 / stigma
+                                        :ARG1-of (s3.l / last-01)
+                                        :beneficiary (s3.a2 / and
+                                                            :op1 s3.i
+                                                            :op2 (s3.f / family
+                                                                       :ARG1-of (s3.h / have-org-role-91
+                                                                                      :ARG0 s3.i
+                                                                                      :ARG2 (s3.m / member)))))))
+   :snt4 (s4.m / make-02
+               :ARG0 (s4.f / field
+                           :ARG1-of (s4.d / dominate-01
+                                          :ARG0 (s4.m2 / male)))
+               :ARG1 (s4.w / welcome-01
+                           :ARG0 s4.f
+                           :ARG1 (s4.p2 / present-02
+                                        :ARG1 (s4.i / i
+                                                    :same-as s2.i))
+                           :degree (s4.b / by-no-means
+                                         :ARG1-of (s4.p / possible-01)
+                                         :mod (s4.a / all))
+                           :polarity "-"))
+   :snt5 (s5.c / clarify-10
+               :ARG0 (s5.t / they
+                           :same-as s4.f)
+               :rel (s5.o / obligate-01
+                          :ARG2 (s5.d / do-02
+                                      :ARG0 (s5.w / woman
+                                                  :ARG1 s5.o)
+                                      :ARG1 (s5.j / job
+                                                  :poss (s5.m / man))
+                                      :polarity "-")))
+   :snt6 (s6.r / refuse-01
+               :ARG0 (s6.a / agency
+                           :ARG0-of (s6.p / photograph-01)
+                           :location (s6.c2 / city
+                                            :name (s6.n / name
+                                                        :op1 "Gaza")
+                                            :same-as s2.c3))
+               :ARG1 (s6.t / train-01
+                           :ARG0 s6.a
+                           :ARG2 (s6.i / i
+                                       :same-as s2.i))
+               :ARG1-of (s6.c / cause-01
+                              :ARG0 (s6.g / gender
+                                          :poss s6.i)))
+   :snt7 (s7.c / clear-06
+               :ARG1 (s7.s / sign
+                           :mod (s7.n / no))
+               :degree (s7.p / pretty))
+   :snt8 (s8.g / go-02
+               :ARG0 (s8.p / person
+                           :ARG1-of (s8.i2 / include-91
+                                           :ARG2 (s8.p2 / person
+                                                        :ARG0-of (s8.h2 / have-rel-role-91
+                                                                        :ARG1 (s8.i / i
+                                                                                    :same-as s2.i)
+                                                                        :ARG2 (s8.c / colleague))))
+                           :quant "3")
+               :ARG4 (s8.f / far
+                           :ARG2-of (s8.h / have-degree-91
+                                          :ARG1 s8.g
+                                          :ARG3 (s8.e / equal)
+                                          :ARG6 (s8.d / drive-02
+                                                      :ARG0 s8.p
+                                                      :ARG1 s8.i
+                                                      :ARG2 (s8.a2 / area
+                                                                   :ARG1-of (s8.o2 / open-06)
+                                                                   :location (s8.a / air)
+                                                                   :location-of (s8.s2 / strike-01)
+                                                                   :location-of (s8.h3 / hear-01
+                                                                                       :ARG0 s8.i
+                                                                                       :ARG1 (s8.s / sound-02
+                                                                                                   :ARG3 (s8.e2 / explode-01))
+                                                                                       :ARG1-of (s8.p3 / possible-01)
+                                                                                       :mod (s8.o / only)))))))
+   :snt9 (s9.a2 / and
+                :op1 (s9.f / fly-01
+                           :ARG1 (s9.b2 / bullshit)
+                           :destination (s9.a / air))
+                :op2 (s9.s / shake-01
+                           :ARG1 (s9.g / ground)
+                           :ARG1-of (s9.r / resemble-01
+                                          :ARG2 (s9.s2 / swing
+                                                       :location (s9.b / beneath
+                                                                       :op1 (s9.i / i
+                                                                                  :same-as s2.i))))))
+   :snt10 (s10.r / realize-01
+                 :ARG0 (s10.i / i
+                              :same-as s2.i)
+                 :ARG1 (s10.b2 / be-located-at-91
+                               :purpose (s10.d / document-01
+                                               :ARG0 (s10.w2 / we)
+                                               :ARG1 (s10.e / event))
+                               :ARG1 s10.w2
+                               :ARG2 (s10.t / there)
+                               :time (s10.a2 / and
+                                             :ARG0-of (s10.l2 / leave-13
+                                                              :ARG1 s10.i
+                                                              :ARG2 (s10.b3 / behind
+                                                                            :location (s10.z / zone
+                                                                                             :ARG1-of (s10.o2 / open-06)
+                                                                                             :location (s10.a / air)
+                                                                                             :location-of (s10.s / strike-01))
+                                                                            :op1 s10.i))
+                                             :op1 (s10.g / get-05
+                                                         :ARG1 (s10.p / person
+                                                                      :consist-of (s10.t2 / they)
+                                                                      :quant "3"
+                                                                      :same-as s8.p)
+                                                         :ARG2 (s10.c / car-make
+                                                                      :name (s10.n / name
+                                                                                   :op1 "Jeep")
+                                                                      :ARG1-of (s10.a4 / armor-01))
+                                                         :direction (s10.b / back))
+                                             :op2 (s10.d2 / drive-01
+                                                          :ARG0 s10.p
+                                                          :ARG1 (s10.a5 / away))
+                                             :time-of (s10.a3 / and
+                                                              :op1 (s10.w / wave-01
+                                                                          :ARG0 s10.p)
+                                                              :op2 (s10.l / laugh-01
+                                                                          :ARG0 s10.p)))
+                               :polarity "-")
+                 :mod (s10.o / only))
+   :snt11 (s11.f / feel-01
+                 :ARG0 (s11.i / i
+                              :same-as s2.i)
+                 :ARG1 (s11.a / and
+                              :op1 (s11.t / terrify-01
+                                          :ARG1 s11.i)
+                              :op2 (s11.h / humiliate-01
+                                          :ARG1 s11.i)
+                              :op3 (s11.s / sorry-01
+                                          :ARG1 s11.i
+                                          :ARG2 s11.i))
+                 :duration (s11.m / moment))
+   :snt12 (s12.c2 / contrast-01
+                  :ARG1 (s12.t / threaten-01
+                               :ARG1 (s12.d / die-01
+                                            :ARG1 (s12.i / i
+                                                         :same-as s2.i))
+                               :ARG1-of (s12.r / receive-01
+                                               :ARG0 s12.i)
+                               :ARG2 (s12.a / act-02
+                                            :ARG0 (s12.p / person
+                                                         :ARG0-of (s12.h2 / have-rel-role-91
+                                                                          :ARG1 s12.i
+                                                                          :ARG2 (s12.c / colleague))
+                                                         :same-as s8.p))
+                               :mod (s12.o / only
+                                           :polarity "-"))
+                  :ARG2 (s12.h / have-degree-91
+                               :ARG1 s12.a
+                               :ARG2 (s12.e / endanger-01
+                                            :ARG0 s12.a
+                                            :ARG1 s12.i)
+                               :ARG3 (s12.m / most)))
+   :snt13 (s13.p2 / perceive-01
+                  :ARG1 (s13.l / life
+                               :location (s13.c / country-region
+                                                :name (s13.n / name
+                                                             :op1 "Gaza")
+                                                :same-as s2.c3)
+                               :poss (s13.w / woman))
+                  :mod (s13.p / passive))
+   :snt14 (s14.a / allow-01
+                 :ARG1 (s14.o / or
+                              :op1 (s14.w2 / work-01
+                                           :ARG0 (s14.w / woman
+                                                        :quant (s14.l / lot)))
+                              :op2 (s14.p / pursue-01
+                                          :ARG0 s14.w
+                                          :ARG1 (s14.e / educate-01
+                                                       :ARG1 s14.w)))
+                 :time (s14.u / until
+                              :op1 (s14.t / time
+                                          :time (s14.r / recent)))
+                 :polarity "-")
+   :snt15 (s15.f / fade-01
+                 :ARG1 (s15.s2 / story
+                               :ARG1-of (s15.b2 / bright-02)
+                               :ARG1-of (s15.d / dark-03)
+                               :poss (s15.w2 / woman))
+                 :direction (s15.a2 / away)
+                 :time (s15.w / war-01
+                              :ARG1-of (s15.d2 / double-01)
+                              :ARG2-of (s15.i / include-91
+                                              :ARG1 (s15.a / and
+                                                           :op1 (s15.r / restrict-01
+                                                                       :ARG0 (s15.s / society)
+                                                                       :ARG1 s15.w2
+                                                                       :mod (s15.b / both))
+                                                           :op2 (s15.c / conflict-01
+                                                                       :ARG0 (s15.c2 / country
+                                                                                     :name (s15.n / name
+                                                                                                  :op1 "Israel"))
+                                                                       :ARG1 (s15.c3 / country
+                                                                                     :name (s15.n2 / name
+                                                                                                   :op1 "Palestine")))))
+                              :mod (s15.s3 / such)))
+   :snt16 (s16.s / see-01
+                 :ARG0 (s16.m / man)
+                 :ARG1 (s16.s2 / story
+                               :poss (s16.w / woman))
+                 :ARG2 (s16.c / consequential-01
+                              :ARG1 s16.s2
+                              :polarity "-"))
+   :snt17 (s17.s / start-01
+                 :ARG0 (s17.i / i
+                              :same-as s2.i)
+                 :ARG1 (s17.a / attend-02
+                              :ARG0 s17.i
+                              :ARG1 (s17.l / life
+                                           :location (s17.c2 / country-region
+                                                             :name (s17.n / name
+                                                                          :op1 "Gaza")
+                                                             :same-as s2.c3)
+                                           :poss (s17.w / woman))
+                              :ARG1-of (s17.c / close-10
+                                              :ARG2-of (s17.h / have-degree-91
+                                                              :ARG1 s17.a
+                                                              :ARG3 (s17.m / more)))))
+   :snt18 (s18.c / cause-01
+                 :ARG0 (s18.g / gender
+                              :poss (s18.i / i
+                                           :same-as s2.i))
+                 :ARG1 (s18.a / access-01
+                              :ARG0 s18.i
+                              :ARG1 (s18.w / world
+                                           :location-of (s18.f / forbid-01
+                                                               :ARG1 s18.i
+                                                               :ARG2 (s18.p / person
+                                                                            :ARG0-of (s18.h / have-rel-role-91
+                                                                                            :ARG1 s18.i
+                                                                                            :ARG2 (s18.c2 / colleague)))))))
+   :snt19 (s19.d / dose-01
+                 :ARG1 (s19.a3 / and
+                               :op1 (s19.l / laugh-01)
+                               :op2 (s19.a / accomplish-01))
+                 :ARG2 (s19.b / beyond
+                              :op1 (s19.a2 / and
+                                           :ARG1-of (s19.o / obvious-01)
+                                           :op1 (s19.p / pain-01)
+                                           :op2 (s19.s / struggle-02)))
+                 :mod (s19.h / healthy))
+   :snt20 (s20.m / manage-02
+                 :ARG0 (s20.r / raid-01
+                              :ARG0 (s20.c3 / country
+                                            :name (s20.n2 / name
+                                                          :op1 "Israel"))
+                              :mod (s20.a / air))
+                 :ARG1 (s20.a2 / and
+                               :op1 (s20.d / destroy-01
+                                           :ARG0 s20.r
+                                           :ARG1 (s20.c2 / compound
+                                                         :location (s20.c / city
+                                                                          :name (s20.n / name
+                                                                                       :op1 "Gaza"))
+                                                         :mod (s20.p / police)
+                                                         :same-as s20.p))
+                               :op2 (s20.b / break-01
+                                           :ARG0 s20.r
+                                           :ARG1 (s20.n3 / nose
+                                                         :part-of (s20.i / i
+                                                                         :same-as s2.i))))
+                 :location (s20.i2 / in-front-of
+                                   :op1 (s20.w / war
+                                               :location s20.c
+                                               :ord (s20.o / ordinal-entity
+                                                           :value "1"))
+                                   :op1 s20.c2))
+   :snt21 (s21.s / see-01
+                 :ARG0 (s21.i / i
+                              :same-as s2.i)
+                 :ARG1 (s21.w / white-03
+                              :ARG1-of (s21.b / bright-02)
+                              :ARG1-of (s21.r / resemble-01
+                                              :ARG2 (s21.l / light
+                                                           :mod (s21.t / this))))
+                 :duration (s21.m / moment)
+                 :mod (s21.a / all))
+   :snt22 (s22.t / think-01
+                 :ARG0 (s22.i / i
+                              :same-as s2.i)
+                 :ARG1 (s22.o / or
+                              :op1 (s22.g / get-03
+                                          :ARG1 s22.i
+                                          :ARG2 (s22.b2 / blind-02
+                                                        :ARG1 s22.i))
+                              :op2 (s22.b / be-located-at-91
+                                          :ARG1 s22.i
+                                          :ARG2 (s22.h / heaven)))
+                 :mod (s22.b3 / by-oneself
+                              :same-as s2.i))
+   :snt23 (s23.d / document-01
+                 :ARG0 (s23.i / i
+                              :part (s23.e / eye)
+                              :same-as s2.i)
+                 :ARG1 (s23.m2 / moment
+                               :mod (s23.t / this))
+                 :time (s23.m / manage-02
+                              :ARG0 s23.i
+                              :ARG1 (s23.o / open-01
+                                           :ARG0 s23.i
+                                           :ARG1 s23.e)))
+   :snt24 (s24.d2 / decide-01
+                  :purpose (s24.p2 / plan-01
+                                   :ARG0 (s24.p / person
+                                                :name (s24.n / name
+                                                             :op1 "Mohammed"
+                                                             :op2 "Khader")
+                                                :ARG0-of (s24.w / work-01)
+                                                :ARG0-of (s24.s / spend-02
+                                                                :ARG1 (s24.t / temporal-quantity
+                                                                             :unit (s24.d / decade)
+                                                                             :quant "2")
+                                                                :location (s24.c2 / country
+                                                                                  :name (s24.n3 / name
+                                                                                                :op1 "Israel")))
+                                                :mod (s24.c / country
+                                                            :name (s24.n2 / name
+                                                                          :op1 "Palestine"))
+                                                :same-as s2.i)
+                                   :ARG1 (s24.r / retire-01
+                                                :ARG0 s24.p))
+                  :ARG0 s24.p
+                  :ARG1 (s24.b / build-01
+                               :ARG0 s24.p
+                               :ARG1 (s24.h / house
+                                            :ARG1-of (s24.f2 / flatten-01
+                                                             :ARG0 (s24.o2 / operate-01
+                                                                           :location (s24.n4 / neighborhood
+                                                                                             :poss s24.p)
+                                                                           :mod (s24.f / field)
+                                                                           :mod (s24.o / only)
+                                                                           :ord (s24.o3 / ordinal-entity
+                                                                                        :value "1"))
+                                                             :direction (s24.g / ground))
+                                            :part (s24.f3 / floor
+                                                          :quant "4"))))
+   :snt25 (s25.l / leave-17
+                 :ARG1 (s25.n2 / nothing
+                               :ARG2-of (s25.e / except-01
+                                               :ARG1 (s25.a / and
+                                                            :op1 (s25.b2 / bird
+                                                                         :ARG1-of (s25.r / raise-03
+                                                                                         :ARG0 (s25.h / he
+                                                                                                      :same-as s2.i)))
+                                                            :op2 (s25.j / jacuzzi
+                                                                        :mod (s25.b / bathtub
+                                                                                    :ARG1-of (s25.g / get-01
+                                                                                                    :ARG0 s25.h
+                                                                                                    :ARG2 (s25.c / city
+                                                                                                                 :name (s25.n / name
+                                                                                                                              :op1 "Tel"
+                                                                                                                              :op2 "Aviv")))))))))
+   :snt26 (s26.a / and
+                 :op1 (s26.g / get-01
+                             :ARG0 (s26.p / person
+                                          :name (s26.n / name
+                                                       :op1 "Mohammed")
+                                          :same-as s2.i)
+                             :ARG1 (s26.b2 / bathtub
+                                           :same-as s25.j)
+                             :location (s26.t / top
+                                              :part-of (s26.r / rubble)))
+                 :op2 (s26.s / start-01
+                             :ARG0 s26.p
+                             :ARG1 (s26.g2 / give-01
+                                           :ARG0 s26.p
+                                           :ARG1 (s26.b / bathe-01
+                                                        :ARG0 s26.p
+                                                        :ARG2 (s26.p2 / person
+                                                                      :ARG0-of (s26.h / have-rel-role-91
+                                                                                      :ARG1 s26.p
+                                                                                      :ARG2 (s26.k / kid)))
+                                                        :mod (s26.b3 / bubble)
+                                                        :time (s26.d / date-entity
+                                                                     :dayperiod (s26.m / morning)
+                                                                     :mod (s26.e / every)))
+                                           :ARG2 s26.p2)))
+   :snt27 (s27.m / mean-02
+                 :ARG1 (s27.w2 / work-01
+                               :ARG0 (s27.i / i
+                                            :same-as s2.i))
+                 :ARG2 (s27.c / contrast-01
+                              :ARG1 (s27.h / hide-01
+                                           :ARG0 s27.w2
+                                           :ARG1 (s27.s / scar-01
+                                                        :ARG0 (s27.w / war-01))
+                                           :polarity "-")
+                              :ARG2 (s27.s3 / show-01
+                                            :ARG0 s27.w2
+                                            :ARG1 (s27.f / frame
+                                                         :ARG1-of (s27.f2 / full-09)
+                                                         :poss (s27.s4 / story
+                                                                       :ARG1-of (s27.s2 / see-01
+                                                                                        :polarity "-")
+                                                                       :topic (s27.p / person
+                                                                                     :mod (s27.c2 / country
+                                                                                                  :name (s27.n / name
+                                                                                                               :op1 "Palestine")))))))
+                 :polarity "-")
+   :snt28 (s28.i2 / inspire-01
+                  :ARG0 (s28.j / journey-01
+                               :consist-of (s28.a2 / and
+                                                   :op1 (s28.s3 / struggle-02
+                                                                :ARG0 (s28.i / i
+                                                                             :same-as s2.i))
+                                                   :op2 (s28.s4 / survive-01)
+                                                   :op3 (s28.l / life
+                                                               :mod (s28.e / everyday))))
+                  :ARG1 s28.i
+                  :ARG2 (s28.a3 / and
+                                :op1 (s28.o / overcome-01
+                                            :ARG0 s28.i
+                                            :ARG1 (s28.t / taboo-01
+                                                         :ARG0 (s28.c / community)))
+                                :op2 (s28.s / see-01
+                                            :ARG0 s28.i
+                                            :ARG1 (s28.a4 / and
+                                                          :op1 (s28.s2 / side
+                                                                       :ARG1-of (s28.d / differ-02)
+                                                                       :part-of (s28.w / war-01))
+                                                          :op2 (s28.a / aftermath-01
+                                                                      :ARG1 s28.w))))
+                  :rel (s28.p / person
+                              :ARG0-of (s28.p2 / photograph-01)
+                              :mod (s28.f / female)
+                              :mod (s28.c2 / country
+                                           :name (s28.n / name
+                                                        :op1 "Palestine"))
+                              :poss s28.i))
+   :snt29 (s29.b / become-01
+                 :ARG1 (s29.i / i
+                              :same-as s2.i)
+                 :ARG2 (s29.p / person
+                              :ARG0-of (s29.w / witness-01)
+                              :ARG0-of (s29.h / have-03
+                                              :ARG1 (s29.c / choose-01
+                                                           :ARG0 s29.i
+                                                           :ARG1 (s29.a / amr-choice
+                                                                        :op1 (s29.r / run-02
+                                                                                    :ARG0 s29.i
+                                                                                    :ARG1 (s29.a2 / away))
+                                                                        :op2 (s29.s / stand-01
+                                                                                    :ARG1 s29.i
+                                                                                    :mod (s29.s2 / still)))))))
+   :snt30 (s30.t / thank-01
+                 :ARG1 (s30.y / you)))
+

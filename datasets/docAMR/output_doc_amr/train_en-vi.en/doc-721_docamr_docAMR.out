@@ -1,0 +1,291 @@
+# ::id doc-721
+# ::doc_file doc-721
+# ::tok http : / / www . ted . com / talks / murray_gell_mann_on_the_ancestor_of_language< / url> <next_sent> Well , I 'm involved in other things , besides physics . <next_sent> In fact , mostly now in other things . <next_sent> One thing is distant relationships among human languages . <next_sent> And the professional , historical linguists in the U.S. <next_sent> and in Western Europe mostly try to stay away from any long - distance relationships , big groupings , groupings that go back a long time , longer than the familiar families . <next_sent> They do n't like that . <next_sent> They think it 's crank . <next_sent> I do n't think it 's crank . <next_sent> And there are some brilliant linguists , mostly Russians , who are working on that , at Santa Fe Institute and in Moscow , and I would love to see where that leads . <next_sent> Does it really lead to a single ancestor some 20 , 25,000 years ago ? <next_sent> And what if we go back beyond that single ancestor , when there was presumably a competition among many languages ? <next_sent> How far back does that go ? <next_sent> How far back does modern language go ? <next_sent> How many tens of thousands of years does it go back ? <next_sent> Do you have a hunch or a hope for what the answer to that is ? <next_sent> Murray Gell - Well , I would guess that modern language must be older than the cave paintings and cave engravings and cave sculptures and dance steps in the soft clay in the caves in Western Europe , in the Aurignacian Period some 35,000 years ago , or earlier . <next_sent> I ca n't believe they did all those things and did n't also have a modern language . <next_sent> So , I would guess that the actual origin goes back at least that far and maybe further . <next_sent> But that does n't mean that all , or many , or most of today 's attested languages could n't descend perhaps from one that 's much younger than that , like say 20,000 years , or something of that kind . <next_sent> It 's what we call a bottleneck . <next_sent> Well , Philip Anderson may have been right . <next_sent> You may just know more about everything than anyone . <next_sent> So , it 's been an honor . <next_sent> Thank you Murray Gell - Mann .
+(d / document
+   :snt1 (s1.u / url-entity
+               :value "talk-01")
+   :snt2 (s2.i2 / involve-01
+                :ARG1 (s2.i / i)
+                :ARG2 (s2.t / thing
+                            :ARG2-of (s2.e / except-01
+                                           :ARG1 (s2.p / physics))
+                            :mod (s2.o / other))
+                :mod (s2.w / well))
+   :snt3 (s3.t / thing
+               :mod (s3.o / other)
+               :mod (s3.m / most)
+               :rel (s3.i / in-fact)
+               :time (s3.n / now))
+   :snt4 (s4.r / relation-03
+               :ARG0 (s4.l / language
+                           :mod (s4.h / human))
+               :ARG1 (s4.d / distant-02)
+               :domain (s4.t / thing
+                             :ARG1-of (s4.i / include-91)))
+   :snt5 (s5.a / and
+               :op2 (s5.l / linguist
+                          :location (s5.c / country
+                                          :name (s5.n / name
+                                                      :op1 "U.S."))
+                          :mod (s5.h / history)
+                          :mod (s5.p / professional)))
+   :snt6 (s6.a / and
+               :op2 (s6.t2 / try-01
+                           :ARG1 (s6.s / stay-01
+                                       :ARG3 (s6.a4 / away
+                                                    :op1 (s6.a2 / and
+                                                                :op1 (s6.r / relation-03
+                                                                           :ARG1 (s6.d / distance
+                                                                                       :ARG1-of (s6.l / long-03))
+                                                                           :mod (s6.a3 / any))
+                                                                :op2 (s6.g2 / group
+                                                                            :ARG1-of (s6.g / go-back-19
+                                                                                           :ARG2 (s6.t / time
+                                                                                                       :ARG1-of (s6.h / have-degree-91
+                                                                                                                      :ARG2 (s6.l2 / long-03
+                                                                                                                                   :ARG1 s6.g)
+                                                                                                                      :ARG3 (s6.m / more)
+                                                                                                                      :ARG4 (s6.f2 / family
+                                                                                                                                   :ARG2-of (s6.f / familiarize-01)))))
+                                                                            :mod (s6.b / big)))))
+                           :location (s6.w / world-region
+                                           :name (s6.n / name
+                                                       :op1 "Western"
+                                                       :op2 "Europe"))
+                           :mod (s6.m2 / most)))
+   :snt7 (s7.d / dislike-01
+               :ARG0 (s7.t2 / they
+                            :same-as s5.l)
+               :ARG1 (s7.t / that))
+   :snt8 (s8.t2 / think-01
+                :ARG0 (s8.t / they
+                            :same-as s5.l)
+                :ARG1 (s8.c / crank
+                            :domain (s8.i / it
+                                          :same-as s7.t)))
+   :snt9 (s9.t / think-01
+               :ARG0 (s9.i / i
+                           :same-as s2.i)
+               :ARG1 (s9.c / crank
+                           :domain (s9.i2 / it
+                                          :same-as s7.t))
+               :polarity "-")
+   :snt10 (s10.a / and
+                 :op3 (s10.l3 / love-02
+                              :ARG0 (s10.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s10.s / see-01
+                                           :ARG0 s10.i
+                                           :ARG1 (s10.t2 / thing
+                                                         :ARG4-of (s10.l / lead-01
+                                                                         :ARG0 (s10.t / that)))))
+                 :rel (s10.l2 / linguist
+                              :quant (s10.s2 / some)
+                              :ARG1-of (s10.b / brilliant-01)
+                              :op2 (s10.w / work-01
+                                          :ARG0 (s10.p / person
+                                                       :mod (s10.m / most)
+                                                       :mod (s10.c2 / country
+                                                                    :name (s10.n / name
+                                                                                 :op1 "Russia")))
+                                          :ARG1 s10.t
+                                          :location (s10.a2 / and
+                                                            :op1 (s10.r / research-institute
+                                                                        :name (s10.n2 / name
+                                                                                      :op1 "Santa"
+                                                                                      :op2 "Fe"
+                                                                                      :op3 "Institute"))
+                                                            :op2 (s10.c / city
+                                                                        :name (s10.n3 / name
+                                                                                      :op1 "Moscow"))))))
+   :snt11 (s11.l / lead-03
+                 :ARG0 (s11.i / it
+                              :same-as s10.t)
+                 :ARG1-of (s11.r / real-04)
+                 :ARG2 (s11.a2 / ancestor
+                               :ARG1-of (s11.s / single-02))
+                 :polarity (s11.a / amr-unknown)
+                 :time (s11.b / before
+                              :quant (s11.s2 / some
+                                             :op1 (s11.t / temporal-quantity
+                                                         :unit (s11.y / year)
+                                                         :quant "25000"))
+                              :op1 (s11.n / now)))
+   :snt12 (s12.a3 / and
+                  :op2 (s12.h / have-condition-91
+                              :ARG1 (s12.a / amr-unknown)
+                              :ARG2 (s12.g / go-back-19
+                                           :ARG1 (s12.w / we)
+                                           :ARG2 (s12.b / beyond
+                                                        :op1 (s12.a2 / ancestor
+                                                                     :ARG1-of (s12.s / single-02)
+                                                                     :same-as s11.b))
+                                           :time (s12.p / presume-01
+                                                        :ARG1 (s12.c / compete-01
+                                                                     :ARG0 (s12.l / language
+                                                                                  :quant (s12.m / many)))))))
+   :snt13 (s13.g / go-01
+                 :ARG1 (s13.t / that)
+                 :ARG2 (s13.a / amr-unknown)
+                 :direction (s13.b / back))
+   :snt14 (s14.g / go-01
+                 :ARG1 (s14.l / language
+                              :ARG1-of (s14.m / modern-02))
+                 :ARG2 (s14.a / amr-unknown)
+                 :direction (s14.b / back))
+   :snt15 (s15.g / go-back-19
+                 :ARG1 (s15.i / it
+                              :same-as s14.l)
+                 :ARG2 (s15.t / temporal-quantity
+                              :quant (s15.a / amr-unknown)
+                              :unit (s15.y / year)
+                              :quant "10000"))
+   :snt16 (s16.h / have-03
+                 :ARG0 (s16.y / you
+                              :same-as s2.i)
+                 :ARG1 (s16.o / or
+                              :op1 (s16.h3 / hunch)
+                              :op2 (s16.h2 / hopeful-03
+                                           :ARG0 s16.y
+                                           :ARG1 (s16.t2 / thing
+                                                         :ARG2-of (s16.a2 / answer-01
+                                                                          :ARG1 (s16.t / that)))))
+                 :polarity (s16.a / amr-unknown))
+   :snt17 (s17.g / guess-01
+                 :ARG0 (s17.i / i
+                              :same-as s2.i)
+                 :ARG1 (s17.o / obligate-01
+                              :ARG2 (s17.h / have-degree-91
+                                           :ARG1 (s17.l / language
+                                                        :ARG1-of (s17.m / modern-02)
+                                                        :same-as s14.l)
+                                           :ARG2 (s17.o2 / old)
+                                           :ARG3 (s17.m2 / more)
+                                           :ARG4 (s17.a / and
+                                                        :location (s17.c2 / cave-01
+                                                                          :location (s17.w2 / world-region
+                                                                                            :name (s17.n2 / name
+                                                                                                          :op1 "Western"
+                                                                                                          :op2 "Europe")
+                                                                                            :same-as s6.w))
+                                                        :op1 (s17.p / paint-02
+                                                                    :location (s17.c / cave))
+                                                        :op2 (s17.e / et
+                                                                    :location s17.c2
+                                                                    :mod s17.c)
+                                                        :op3 (s17.s / sculptures
+                                                                    :mod s17.c)
+                                                        :op4 (s17.s4 / step-01
+                                                                     :ARG4 (s17.d / dance-01)
+                                                                     :location (s17.c3 / clay
+                                                                                       :ARG1-of (s17.s2 / soft-02))))))
+                 :ARG2 (s17.p3 / person
+                               :name (s17.n / name
+                                            :op1 "Murray"
+                                            :op2 "Gell"))
+                 :mod (s17.w / well)
+                 :rel (s17.p2 / period
+                              :name (s17.n3 / name
+                                            :op1 "Aurignacian")
+                              :time (s17.o3 / or
+                                            :op1 (s17.b / before
+                                                        :quant (s17.s3 / some
+                                                                       :op1 (s17.t / temporal-quantity
+                                                                                   :unit (s17.y / year)
+                                                                                   :quant "35000"))
+                                                        :op1 (s17.n4 / now))
+                                            :op2 (s17.b2 / before
+                                                         :op1 s17.b))))
+   :snt18 (s18.p / possible-01
+                 :ARG1 (s18.b / believe-01
+                              :ARG0 (s18.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s18.a3 / and
+                                            :op1 (s18.d / do-02
+                                                        :ARG0 (s18.t2 / they)
+                                                        :ARG1 (s18.t3 / thing
+                                                                      :mod (s18.t / that)
+                                                                      :mod (s18.a / all)))
+                                            :op2 (s18.h / have-03
+                                                        :ARG0 s18.t2
+                                                        :ARG1 (s18.l / language
+                                                                     :ARG1-of (s18.m / modern-02))
+                                                        :mod (s18.a2 / also)
+                                                        :polarity "-")))
+                 :polarity "-")
+   :snt19 (s19.g2 / guess-01
+                  :ARG0 (s19.i / i
+                               :same-as s2.i)
+                  :ARG1 (s19.g / go-01
+                               :ARG1 (s19.o / origin
+                                            :ARG1-of (s19.a / actual-02))
+                               :ARG2 (s19.a2 / and
+                                             :op1 (s19.f / far
+                                                         :mod (s19.t / that)
+                                                         :mod (s19.a3 / at-least))
+                                             :op2 (s19.f2 / further
+                                                          :ARG1-of (s19.p / possible-01)))
+                               :direction (s19.b / back)))
+   :snt20 (s20.c / contrast-01
+                 :ARG2 (s20.m2 / mean-01
+                               :ARG1 (s20.t2 / that)
+                               :ARG2 (s20.p / possible-01
+                                            :ARG1 (s20.d / descend-01
+                                                         :ARG0 (s20.o2 / or
+                                                                       :ARG1-of (s20.i / include-91)
+                                                                       :op1 (s20.a / all)
+                                                                       :op2 (s20.m / many)
+                                                                       :op2 (s20.l / language
+                                                                                   :ARG1-of (s20.a2 / attest-01
+                                                                                                    :ARG2 (s20.l2 / language
+                                                                                                                  :quant (s20.m4 / most))
+                                                                                                    :time (s20.t5 / today)))
+                                                                       :op3 s20.m4)
+                                                         :ARG1 (s20.o / one
+                                                                      :ARG1-of (s20.h / have-degree-91
+                                                                                      :ARG2 (s20.y2 / young)
+                                                                                      :ARG3 (s20.m3 / more
+                                                                                                    :quant (s20.m5 / much))
+                                                                                      :ARG4 (s20.t3 / that))
+                                                                      :example (s20.o3 / or
+                                                                                       :op1 (s20.t / temporal-quantity
+                                                                                                   :unit (s20.y / year)
+                                                                                                   :quant "20000")
+                                                                                       :op2 (s20.s / something
+                                                                                                   :mod (s20.k / kind
+                                                                                                               :mod (s20.t4 / that)))))
+                                                         :ARG1-of (s20.p2 / possible-01))
+                                            :polarity "-")
+                               :polarity "-"))
+   :snt21 (s21.c / call-01
+                 :ARG0 (s21.w / we)
+                 :ARG1 (s21.i / it)
+                 :ARG2 (s21.b / bottleneck-01))
+   :snt22 (s22.p2 / possible-01
+                  :ARG1 (s22.r / right-06
+                               :ARG1 (s22.p / person
+                                            :name (s22.n / name
+                                                         :op1 "Philip"
+                                                         :op2 "Anderson")))
+                  :mod (s22.w / well
+                              :mode "expressive"))
+   :snt23 (s23.p / possible-01
+                 :ARG1 (s23.k / know-01
+                              :ARG0 (s23.y / you
+                                           :same-as s2.i)
+                              :ARG1 (s23.e / everything)
+                              :ARG1-of (s23.h / have-quant-91
+                                              :ARG3 (s23.m / more)
+                                              :ARG4 (s23.a / anyone))
+                              :mod (s23.j / just)))
+   :snt24 (s24.i / infer-01
+                 :ARG1 (s24.h / honor-01))
+   :snt25 (s25.t / thank-01
+                 :ARG0 (s25.i / i
+                              :same-as s2.i)
+                 :ARG1 (s25.p / person
+                              :name (s25.n / name
+                                           :op1 "Murray"
+                                           :op2 "gee")
+                              :same-as s2.i)))
+

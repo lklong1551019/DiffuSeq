@@ -1,0 +1,44 @@
+# ::id doc-108
+# ::doc_file doc-108
+# ::tok http : / / www . ted . com / talks / nellie_mckay_sings_feminists_and_if_i_had_you< / url> <next_sent> Thank you . <next_sent> Thank you . <next_sent> Thank you . <next_sent> I asked my mother , you know , should I say anything in support of anyone ? <next_sent> And she said , " Oh no ! Just dis everybody , except Ralph Nader . "
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01))
+   :snt2 (s2.t / thank-01
+               :ARG1 (s2.y / you))
+   :snt3 (s3.t / thank-01
+               :ARG1 (s3.y / you))
+   :snt4 (s4.t / thank-01
+               :ARG1 (s4.y / you
+                           :same-as s3.y))
+   :snt5 (s5.a4 / ask-01
+                :ARG0 (s5.i / i)
+                :ARG1 (s5.r / recommend-01
+                            :ARG1 (s5.s / say-01
+                                        :purpose (s5.s2 / support-01
+                                                        :ARG0 s5.i
+                                                        :ARG1 (s5.a2 / anyone))
+                                        :ARG0 s5.i
+                                        :ARG1 (s5.a3 / anything))
+                            :polarity (s5.a / amr-unknown))
+                :ARG2 (s5.p / person
+                            :ARG0-of (s5.h / have-rel-role-91
+                                           :ARG1 s5.i
+                                           :ARG2 (s5.m / mother))))
+   :snt6 (s6.a / and
+               :op2 (s6.s / say-01
+                          :ARG0 (s6.s2 / she
+                                       :same-as s5.p)
+                          :ARG1 (s6.d / dislike-01
+                                      :ARG0 (s6.y / you)
+                                      :ARG1 (s6.e / everybody
+                                                  :ARG2-of (s6.e2 / except-01
+                                                                  :ARG1 (s6.p / person
+                                                                              :name (s6.n / name
+                                                                                          :op1 "Ralph"
+                                                                                          :op2 "Nader"))))
+                                      :mod (s6.j / just)
+                                      :mod (s6.o / oh-no
+                                                 :mode "expressive")
+                                      :mode "imperative"))))
+

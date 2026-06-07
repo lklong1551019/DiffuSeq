@@ -1,0 +1,515 @@
+# ::id doc-1151
+# ::doc_file doc-1151
+# ::tok http : / / www . ted . com / talks / david_sengeh_the_sore_problem_of_prosthetic_limbs< / url> <next_sent> I was born and raised in Sierra Leone , a small and very beautiful country in West Africa , a country rich both in physical resources and creative talent . <next_sent> However , Sierra Leone is infamous for a decade - long rebel war in the ' 90s when entire villages were burnt down . <next_sent> An estimated 8,000 men , women and children had their arms and legs amputated during this time . <next_sent> As my family and I ran for safety when I was about 12 from one of those attacks , I resolved that I would do everything I could to ensure that my own children would not go through the same experiences we had . <next_sent> They would , in fact , be part of a Sierra Leone where war and amputation were no longer a strategy for gaining power . <next_sent> As I watched people who I knew , loved ones , recover from this devastation , one thing that deeply troubled me was that many of the amputees in the country would not use their prostheses . <next_sent> The reason , I would come to find out , was that their prosthetic sockets were painful because they did not fit well . <next_sent> The prosthetic socket is the part in which the amputee inserts their residual limb , and which connects to the prosthetic ankle . <next_sent> Even in the developed world , it takes a period of three weeks to often years for a patient to get a comfortable socket , if ever . <next_sent> Prosthetists still use conventional processes like molding and casting to create single - material prosthetic sockets . <next_sent> Such sockets often leave intolerable amounts of pressure on the limbs of the patient , leaving them with pressure sores and blisters . <next_sent> It does not matter how powerful your prosthetic ankle is . <next_sent> If your prosthetic socket is uncomfortable , you will not use your leg , and that is just simply unacceptable in our age . <next_sent> So one day , when I met professor Hugh Herr about two and a half years ago , and he asked me if I knew how to solve this problem , I said , " No , not yet , but I would love to figure it out . " <next_sent> And so , for my Ph . D. at the MIT Media Lab , I designed custom prosthetic sockets quickly and cheaply that are more comfortable than conventional prostheses . <next_sent> I used magnetic resonance imaging to capture the actual shape of the patient 's anatomy , then use finite element modeling to better predict the internal stresses and strains on the normal forces , and then create a prosthetic socket for manufacture . <next_sent> We use a 3D printer to create a multi - material prosthetic socket which relieves pressure where needed on the anatomy of the patient . <next_sent> In short , we 're using data to make novel sockets quickly and cheaply . <next_sent> In a recent trial we just wrapped up at the Media Lab , one of our patients , a U.S. veteran who has been an amputee for about 20 years and worn dozens of legs , said of one of our printed parts , " It 's so soft , it 's like walking on pillows , and it 's effing sexy . " <next_sent> Disability in our age should not prevent anyone from living meaningful lives . <next_sent> My hope and desire is that the tools and processes we develop in our research group can be used to bring highly functional prostheses to those who need them . <next_sent> For me , a place to begin healing the souls of those affected by war and disease is by creating comfortable and affordable interfaces for their bodies . <next_sent> Whether it 's in Sierra Leone or in Boston , I hope this not only restores but indeed transforms their sense of human potential . <next_sent> Thank you very much .
+(d / document
+   :snt1 (s1.u / url-entity
+               :value "narcotic")
+   :snt2 (s2.a / and
+               :op1 (s2.b / bear-02
+                          :ARG1 (s2.i / i)
+                          :location (s2.c / country
+                                          :name (s2.n / name
+                                                      :op1 "Sierra"
+                                                      :op2 "Leone")
+                                          :ARG1-of (s2.b2 / beautiful-02
+                                                          :degree (s2.v / very))
+                                          :location (s2.w / world-region
+                                                          :name (s2.n2 / name
+                                                                       :op1 "West"
+                                                                       :op2 "Africa"))
+                                          :mod (s2.s / small)
+                                          :mod (s2.r3 / rich
+                                                      :topic (s2.a2 / and
+                                                                    :op1 (s2.r2 / resource
+                                                                                :mod (s2.p / physical))
+                                                                    :op2 (s2.t / talent
+                                                                               :mod (s2.c2 / creative))))))
+               :op2 (s2.r / raise-03
+                          :ARG1 s2.i
+                          :location s2.c))
+   :snt3 (s3.c / contrast-01
+               :ARG2 (s3.i / infamous
+                           :domain (s3.c2 / country
+                                          :name (s3.n / name
+                                                      :op1 "Sierra"
+                                                      :op2 "Leone")
+                                          :same-as s2.c)
+                           :topic (s3.w / war-01
+                                        :ARG0-of (s3.r / rebel-01)
+                                        :ARG1-of (s3.l / long-03
+                                                       :ARG2 (s3.t / temporal-quantity
+                                                                   :unit (s3.d2 / decade)
+                                                                   :quant "1"))
+                                        :time (s3.d / date-entity
+                                                    :decade "90")
+                                        :time-of (s3.b / burn-01
+                                                       :ARG1 (s3.v / village
+                                                                   :mod (s3.e / entire))))))
+   :snt4 (s4.m2 / mutilate-01
+                :ARG1 (s4.a2 / and
+                             :op1 (s4.a3 / arm)
+                             :op2 (s4.l / leg))
+                :rel (s4.a / and
+                           :ARG1-of (s4.h / have-quant-91
+                                          :ARG1-of (s4.e2 / estimate-01)
+                                          :ARG3 (s4.e / equal)
+                                          :ARG2 "8000")
+                           :op1 (s4.m / man)
+                           :op2 (s4.w / woman)
+                           :op3 (s4.c / child)
+                           :part s4.a2)
+                :time (s4.t2 / time
+                             :mod (s4.t / this)
+                             :same-as s3.w))
+   :snt5 (s5.r / resolve-01
+               :ARG0 (s5.i / i
+                           :same-as s2.i)
+               :ARG1 (s5.d / do-02
+                           :purpose (s5.e / ensure-01
+                                          :ARG0 s5.i
+                                          :ARG1 (s5.g / go-through-20
+                                                      :ARG0 (s5.p / person
+                                                                  :ARG0-of (s5.h2 / have-rel-role-91
+                                                                                  :ARG1 s5.i
+                                                                                  :ARG2 (s5.c2 / child)))
+                                                      :ARG1 (s5.e3 / experience-01
+                                                                   :ARG1-of (s5.s2 / same-01
+                                                                                   :ARG2 (s5.e4 / experience-01
+                                                                                                :ARG0 (s5.w / we
+                                                                                                            :same-as s5.a3))))
+                                                      :polarity "-"))
+                           :ARG0 s5.i
+                           :ARG1 (s5.e2 / everything
+                                        :ARG1-of (s5.d2 / do-02
+                                                        :ARG0 s5.i
+                                                        :ARG1-of (s5.p2 / possible-01))))
+               :time (s5.r2 / run-02
+                            :ARG0 (s5.a3 / and
+                                         :ARG0 s5.i
+                                         :op1 (s5.f / family
+                                                    :ARG1-of (s5.h / have-org-role-91
+                                                                   :ARG1 s5.i
+                                                                   :ARG2 (s5.m / member))))
+                            :ARG1-of (s5.c / cause-01
+                                           :ARG0 (s5.a4 / attack-01
+                                                        :ARG1-of (s5.i2 / include-91
+                                                                        :ARG2 (s5.a5 / attack-01
+                                                                                     :ARG1 s5.i
+                                                                                     :mod (s5.t2 / that)
+                                                                                     :same-as s4.m2))
+                                                        :quant "1"))
+                            :ARG2 (s5.s / safe-01)
+                            :time (s5.a2 / age-01
+                                         :ARG2 (s5.a / about
+                                                     :op1 (s5.t / temporal-quantity
+                                                                :unit (s5.y / year)
+                                                                :quant "12")))))
+   :snt6 (s6.p / possible-01
+               :ARG1 (s6.h / have-part-91
+                           :ARG1 (s6.c / country
+                                       :name (s6.n / name
+                                                   :op1 "Sierra"
+                                                   :op2 "Leone")
+                                       :location-of (s6.s / strategy
+                                                          :purpose (s6.g / gain-02
+                                                                         :ARG1 (s6.p2 / power))
+                                                          :domain (s6.a / and
+                                                                        :op1 (s6.w / war-01)
+                                                                        :op2 (s6.m / mutilate-01))
+                                                          :time (s6.n2 / no-longer)))
+                           :ARG2 (s6.t / they
+                                       :same-as s5.p))
+               :mod (s6.i / in-fact))
+   :snt7 (s7.t2 / trouble-01
+                :ARG0 (s7.u / use-01
+                            :ARG0 (s7.p2 / person
+                                         :quant (s7.m / many)
+                                         :location (s7.c / country
+                                                         :same-as s2.c)
+                                         :mod (s7.o / orthopedics))
+                            :ARG1 (s7.l / limb
+                                        :poss s7.p2)
+                            :polarity "-")
+                :ARG1 (s7.i / i
+                            :same-as s2.i)
+                :ARG1-of (s7.d / deep-02)
+                :time (s7.w / watch-01
+                            :ARG0 s7.i
+                            :ARG1 (s7.r / recover-01
+                                        :ARG1 (s7.p / person
+                                                    :ARG1-of (s7.k / know-02)
+                                                    :ARG1-of (s7.l2 / love-01
+                                                                    :ARG0 s7.i))
+                                        :ARG2 (s7.d2 / devastate-01
+                                                     :mod (s7.t / this)
+                                                     :same-as s3.w))))
+   :snt8 (s8.c3 / come-01
+                :ARG1 (s8.i / i
+                            :same-as s2.i)
+                :ARG4 (s8.f / find-out-03
+                            :ARG0 s8.i
+                            :ARG1 (s8.c / cause-01
+                                        :ARG0 (s8.p / pain-01
+                                                    :ARG0 (s8.j / joint
+                                                                :mod (s8.p2 / prosthetic)
+                                                                :poss (s8.t / they
+                                                                            :same-as s7.p2))
+                                                    :ARG1-of (s8.c2 / cause-01
+                                                                    :ARG0 (s8.f2 / fit-06
+                                                                                 :ARG1 s8.j
+                                                                                 :ARG1-of (s8.w / well-09)
+                                                                                 :polarity "-"))))))
+   :snt9 (s9.p / part
+               :ARG1-of (s9.c / connect-01
+                              :ARG2 (s9.a2 / ankle
+                                           :mod (s9.p3 / prosthetic)))
+               :ARG2-of (s9.i / insert-01
+                              :ARG0 (s9.a / amputee
+                                          :part (s9.l / limb
+                                                      :mod (s9.r / residual)
+                                                      :ARG1-of s9.i)))
+               :domain (s9.s / socket
+                             :mod (s9.p2 / prosthetic)))
+   :snt10 (s10.t / take-10
+                 :ARG0 (s10.g / get-01
+                              :ARG0 (s10.p2 / person
+                                            :ARG0-of (s10.h / have-rel-role-91
+                                                            :ARG2 (s10.p / patient)))
+                              :ARG1 (s10.s / socket
+                                           :ARG0-of (s10.c / comfortable-02))
+                              :time (s10.e2 / ever))
+                 :ARG1 (s10.b / between
+                              :op1 (s10.t2 / temporal-quantity
+                                           :unit (s10.w / week)
+                                           :quant "3")
+                              :op2 (s10.t3 / temporal-quantity
+                                           :mod (s10.o / often)
+                                           :unit (s10.y / year)
+                                           :quant "1"))
+                 :location (s10.w2 / world
+                                   :mod (s10.d / develop-02)
+                                   :mod (s10.e / even)))
+   :snt11 (s11.u / use-01
+                 :ARG0 (s11.p3 / prostitute-01)
+                 :ARG1 (s11.p / process-02
+                              :example (s11.a / and
+                                              :op1 (s11.q / quote-01)
+                                              :op2 (s11.c / cast-02))
+                              :mod (s11.c2 / conventional))
+                 :ARG2 (s11.c3 / create-01
+                               :ARG0 s11.p3
+                               :ARG1 (s11.j / joint
+                                            :consist-of (s11.m / material
+                                                               :ARG1-of (s11.s / single-02))
+                                            :mod (s11.p2 / prosthetic)))
+                 :mod (s11.s2 / still))
+   :snt12 (s12.l / leave-13
+                 :ARG0 (s12.j / joint
+                              :mod (s12.s / such))
+                 :ARG0-of (s12.l2 / leave-13
+                                  :ARG1 (s12.a2 / and
+                                                :op1 (s12.u / ulcer)
+                                                :op2 (s12.p / patient
+                                                            :part s12.l3)
+                                                :op2 (s12.b / bloat-01)))
+                 :ARG1 (s12.p3 / pressure-01
+                               :quant (s12.a / amount
+                                             :ARG1-of (s12.t / tolerate-01
+                                                             :ARG1-of (s12.p2 / possible-01
+                                                                              :polarity "-")))
+                               :ARG1 (s12.l3 / limb))
+                 :frequency (s12.o / often))
+   :snt13 (s13.m / matter-01
+                 :ARG1 (s13.t / thing
+                              :degree-of (s13.p / powerful-02
+                                                :ARG1 (s13.a / ankle
+                                                             :mod (s13.p2 / prosthetic)
+                                                             :part-of (s13.y / you))))
+                 :polarity "-")
+   :snt14 (s14.a3 / and
+                  :op1 (s14.u / use-01
+                              :ARG0 (s14.y / you
+                                           :part (s14.s2 / socket
+                                                         :mod (s14.p2 / prosthetic))
+                                           :part (s14.l / leg))
+                              :ARG1 s14.l
+                              :condition (s14.c / comfortable-02
+                                                :ARG0 s14.s2
+                                                :polarity "-")
+                              :polarity "-")
+                  :op2 (s14.p / possible-01
+                              :ARG1 (s14.a / accept-01
+                                           :ARG1 s14.u)
+                              :mod (s14.s / simple)
+                              :time (s14.a2 / age
+                                            :poss (s14.w / we))
+                              :polarity "-")
+                  :rel (s14.j / just))
+   :snt15 (s15.i2 / infer-01
+                  :ARG1 (s15.s / say-01
+                               :ARG0 (s15.i / i
+                                            :same-as s2.i)
+                               :ARG1 (s15.c / contrast-01
+                                            :ARG1 (s15.y2 / yet
+                                                          :polarity "-")
+                                            :ARG2 (s15.l / love-02
+                                                         :ARG0 s15.i
+                                                         :ARG1 (s15.f / figure-out-05
+                                                                      :ARG0 s15.i
+                                                                      :ARG1 (s15.p2 / problem
+                                                                                    :mod (s15.t3 / this)))))
+                               :time (s15.a2 / and
+                                             :op1 (s15.m / meet-03
+                                                         :ARG0 s15.i
+                                                         :ARG1 (s15.p / person
+                                                                      :name (s15.n / name
+                                                                                   :op1 "Hugh"
+                                                                                   :op2 "Herr")
+                                                                      :ARG0-of (s15.h / have-org-role-91
+                                                                                      :ARG2 (s15.p3 / professor)))
+                                                         :time (s15.b / before
+                                                                      :quant (s15.a / about
+                                                                                    :op1 (s15.t / temporal-quantity
+                                                                                                :unit (s15.y / year)
+                                                                                                :quant "2.5"))
+                                                                      :op1 (s15.n2 / now)))
+                                             :op2 (s15.a3 / ask-01
+                                                          :ARG0 s15.p
+                                                          :ARG1 (s15.t4 / truth-value
+                                                                        :polarity-of (s15.k / know-01
+                                                                                            :ARG0 s15.i
+                                                                                            :ARG1 (s15.t2 / thing
+                                                                                                          :manner-of (s15.s2 / solve-01
+                                                                                                                             :ARG0 s15.i
+                                                                                                                             :ARG1 s15.p2))))))
+                               :time (s15.d / day
+                                            :mod (s15.o / one))))
+   :snt16 (s16.a / and
+                 :op1 (s16.s / so)
+                 :op2 (s16.d / design-01
+                             :purpose (s16.d2 / doctorate
+                                              :ARG1 (s16.i / i
+                                                           :same-as s2.i)
+                                              :location (s16.r / research-institute
+                                                               :name (s16.n / name
+                                                                            :op1 "MIT"
+                                                                            :op2 "Media"
+                                                                            :op3 "Lab")))
+                             :ARG0 s16.i
+                             :ARG1 (s16.j / joint
+                                          :ARG1-of (s16.c4 / customize-01)
+                                          :ARG1-of (s16.h / have-degree-91
+                                                          :ARG2 (s16.c2 / comfortable-02
+                                                                        :ARG0 s16.j)
+                                                          :ARG3 (s16.m / more)
+                                                          :ARG4 (s16.j2 / joint
+                                                                        :ARG1-of (s16.p2 / prostitute-01)
+                                                                        :mod (s16.c3 / conventional)))
+                                          :mod (s16.p / prosthetic))
+                             :manner (s16.a2 / and
+                                             :op1 (s16.q / quick-02
+                                                         :ARG1 s16.d)
+                                             :op2 (s16.c / cheap-02
+                                                         :ARG1 s16.j))))
+   :snt17 (s17.a4 / and
+                  :op1 (s17.u / use-01
+                              :ARG0 (s17.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s17.i2 / image
+                                            :ARG1-of (s17.r / resonate-01
+                                                            :ARG2 (s17.m / magnet)))
+                              :ARG2 (s17.c / capture-01
+                                           :ARG0 s17.i
+                                           :ARG1 (s17.s / shape
+                                                        :ARG1-of (s17.a / actual-02)
+                                                        :poss (s17.a2 / anatomy
+                                                                      :part-of (s17.p / patient)))))
+                  :op2 (s17.u2 / use-01
+                               :ARG0 s17.i
+                               :ARG1 (s17.m3 / model-01
+                                             :ARG1 (s17.e / element
+                                                          :mod (s17.f / finite)))
+                               :ARG2 (s17.p2 / predict-01
+                                             :ARG0 s17.i
+                                             :ARG1 (s17.a3 / and
+                                                           :op1 (s17.s4 / stress-02
+                                                                        :ARG1 (s17.f2 / force
+                                                                                      :ARG1-of (s17.n / normal-02))
+                                                                        :ARG1-of (s17.i3 / internal-02
+                                                                                         :ARG1 (s17.s3 / strain-01
+                                                                                                       :ARG1 s17.f2
+                                                                                                       :op2-of s17.a3))))
+                                             :ARG1-of (s17.h / have-degree-91
+                                                             :ARG2 (s17.g / good-02)
+                                                             :ARG3 (s17.m4 / more)))
+                               :time (s17.t / then))
+                  :op3 (s17.c2 / create-01
+                               :ARG0 s17.i
+                               :ARG1 (s17.s2 / socket
+                                             :purpose (s17.m2 / manufacture-01)
+                                             :ARG1-of (s17.p3 / prostitute-01))
+                               :time (s17.t2 / then)))
+   :snt18 (s18.u / use-01
+                 :ARG0 (s18.w / we)
+                 :ARG1 (s18.t / thing
+                              :ARG0-of (s18.p3 / print-01)
+                              :mod (s18.d / dimension
+                                          :quant "3"))
+                 :ARG2 (s18.c / create-01
+                              :ARG0 s18.w
+                              :ARG1 (s18.s / socket
+                                           :ARG0-of (s18.r / relieve-01
+                                                           :ARG1 (s18.p2 / pressure
+                                                                         :topic (s18.a / anatomy
+                                                                                       :poss (s18.p / patient
+                                                                                                    :same-as s17.p)))
+                                                           :location (s18.n / need-01
+                                                                            :ARG1 s18.p2))
+                                           :mod (s18.p4 / prosthetic)
+                                           :mod (s18.m / material
+                                                       :quant (s18.m2 / multiple)))))
+   :snt19 (s19.u / use-01
+                 :ARG0 (s19.w / we
+                              :same-as s18.w)
+                 :ARG1 (s19.d / data)
+                 :ARG2 (s19.m / make-01
+                              :ARG0 s19.w
+                              :ARG1 (s19.b / block
+                                           :mod (s19.n / novel))
+                              :ARG1-of (s19.q / quick-02)
+                              :ARG1-of (s19.c / cheap-02))
+                 :mod (s19.i / in-short))
+   :snt20 (s20.a3 / and
+                  :op1 (s20.w4 / wrap-up-02
+                               :ARG0 (s20.w2 / we
+                                             :part (s20.p / part
+                                                          :ARG1-of (s20.i2 / include-91
+                                                                           :ARG2 (s20.p2 / part
+                                                                                         :ARG1-of (s20.p6 / print-01)
+                                                                                         :poss s20.w2))
+                                                          :quant "1")
+                                             :same-as s18.w)
+                               :ARG1 (s20.t2 / try-02
+                                             :time (s20.r / recent))
+                               :location (s20.l / lab
+                                                :mod (s20.p7 / publication
+                                                             :name (s20.n / name
+                                                                          :op1 "Media")))
+                               :time (s20.j / just))
+                  :op2 (s20.s / say-01
+                              :ARG0 (s20.p3 / patient
+                                            :ARG0-of (s20.w3 / wear-01
+                                                             :ARG1 (s20.l2 / leg
+                                                                           :quant (s20.m / multiple
+                                                                                         :op1 "12")))
+                                            :ARG1-of (s20.i / include-91
+                                                            :ARG2 (s20.p4 / patient
+                                                                          :poss s20.w2))
+                                            :mod (s20.v / veteran
+                                                        :mod (s20.c / country
+                                                                    :name (s20.n2 / name
+                                                                                  :op1 "U.S.")))
+                                            :mod (s20.a2 / amputee
+                                                         :duration (s20.a / about
+                                                                          :op1 (s20.t / temporal-quantity
+                                                                                      :unit (s20.y / year)
+                                                                                      :quant "20"))))
+                              :ARG1 s20.p
+                              :ARG1 (s20.a4 / and
+                                            :op1 (s20.s4 / soft-02
+                                                         :ARG1 s20.p
+                                                         :degree (s20.s3 / so))
+                                            :op2 (s20.r2 / resemble-01
+                                                         :ARG2 (s20.w / walk-01
+                                                                      :ARG2 (s20.p5 / pill)))
+                                            :op3 (s20.s2 / sex-01
+                                                         :ARG0 s20.p
+                                                         :mod (s20.f / fucking)))))
+   :snt21 (s21.r / recommend-01
+                 :ARG1 (s21.p / prevent-01
+                              :ARG0 (s21.d / disability
+                                           :time (s21.a / age
+                                                        :poss (s21.w / we)))
+                              :ARG1 (s21.l2 / live-01
+                                            :ARG0 (s21.a2 / anyone)
+                                            :ARG1 (s21.l / life
+                                                         :ARG0-of (s21.m / meaningful-05)))
+                              :polarity "-"))
+   :snt22 (s22.a / and
+                 :op1 (s22.h2 / hope-01
+                              :ARG0 (s22.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s22.p2 / possible-01
+                                            :ARG1 (s22.u / use-01
+                                                         :ARG1 (s22.a2 / and
+                                                                       :ARG1-of (s22.d2 / develop-02
+                                                                                        :ARG0 (s22.w / we
+                                                                                                     :same-as s18.w)
+                                                                                        :location (s22.g / group
+                                                                                                         :ARG0-of (s22.r / research-01)
+                                                                                                         :poss s22.w
+                                                                                                         :same-as s18.w))
+                                                                       :op1 (s22.t / tool)
+                                                                       :op2 (s22.p3 / process-02))
+                                                         :ARG2 (s22.b / bring-01
+                                                                      :ARG0 s22.a2
+                                                                      :ARG1 (s22.p4 / prostitute-01
+                                                                                    :ARG1-of (s22.f / function-01
+                                                                                                    :degree (s22.h / high-02)))
+                                                                      :ARG2 (s22.p / person
+                                                                                   :ARG0-of (s22.n / need-01
+                                                                                                   :ARG1 s22.p4))))))
+                 :op2 (s22.d / desire-01
+                             :ARG0 s22.i
+                             :ARG1 s22.p2))
+   :snt23 (s23.c2 / create-01
+                  :ARG1 (s23.a3 / ancestor
+                                :ARG0-of (s23.c / comfortable-02)
+                                :ARG1-of (s23.a2 / afford-01
+                                                 :ARG1-of (s23.p3 / possible-01))
+                                :beneficiary (s23.b2 / body
+                                                     :poss (s23.p / person
+                                                                  :ARG1-of (s23.a / affect-01
+                                                                                  :ARG0 (s23.a4 / and
+                                                                                                :op1 (s23.w / war)
+                                                                                                :op2 (s23.d / disease))))))
+                  :beneficiary (s23.i / i
+                                      :same-as s2.i)
+                  :domain (s23.p2 / place
+                                  :location-of (s23.b / begin-01
+                                                      :ARG1 (s23.h / heal-01
+                                                                   :ARG1 (s23.s / soul
+                                                                                :poss s23.p)))))
+   :snt24 (s24.h / hope-01
+                 :ARG0 (s24.i / i
+                              :same-as s2.i)
+                 :ARG1 (s24.a / and
+                              :op1 (s24.r2 / restore-02
+                                           :ARG0 (s24.t2 / this
+                                                         :same-as s23.c2))
+                              :op2 (s24.t3 / transform-01
+                                           :ARG0 s24.t2
+                                           :ARG1 (s24.s / sense-01
+                                                        :ARG0 (s24.t / they
+                                                                     :same-as s23.p)
+                                                        :ARG1 (s24.p / potential
+                                                                     :mod (s24.h2 / human)))
+                                           :mod (s24.i2 / indeed)))
+                 :ARG1-of (s24.r / regardless-91
+                                 :ARG2 (s24.o / or
+                                              :op1 (s24.b / be-located-at-91
+                                                          :ARG1 s24.t2
+                                                          :ARG2 (s24.c2 / country
+                                                                        :name (s24.n / name
+                                                                                     :op1 "Sierra"
+                                                                                     :op2 "Leone")
+                                                                        :same-as s2.c))
+                                              :op2 (s24.c / city
+                                                          :name (s24.n2 / name
+                                                                        :op1 "Boston")))))
+   :snt25 (s25.t / thank-01
+                 :ARG0 (s25.i / i)
+                 :ARG1 (s25.y / you)
+                 :mod (s25.m / much
+                             :degree (s25.v / very))))
+

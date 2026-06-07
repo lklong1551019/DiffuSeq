@@ -1,0 +1,271 @@
+# ::id doc-811
+# ::doc_file doc-811
+# ::tok http : / / www . ted . com / talks / marisa_fick_jordan_shares_the_wonder_of_zulu_wire_art< / url> <next_sent> The decorative use of wire in southern Africa dates back hundreds of years . <next_sent> But modernization actually brought communication and a whole new material , in the form of telephone wire . <next_sent> Rural to urban migration meant that newfound industrial materials started to replace hard - to - come - by natural grasses . <next_sent> So , here you can see the change from use -- starting to use contemporary materials . <next_sent> These pieces date back from the ' 40s to the late ' 50s . <next_sent> In the ' 90s , my interest and passion for transitional art forms led me to a new form , which came from a squatter camp outside Durban . <next_sent> And I got the opportunity to start working with this community at that point , and started developing , really , and mentoring them in terms of scale , in terms of the design . <next_sent> And the project soon grew from five to 50 weavers in about a year . <next_sent> Soon we had outgrown the scrap yards , what they could provide , so we coerced a wire manufacturer to help us , and not only to supply the materials on bobbins , but to produce to our color specifications . <next_sent> At the same time , I was thinking , well , there 's lots of possibility here to produce contemporary products , away from the ethnic , a little bit more contemporary . <next_sent> So I developed a whole range around -- mass - produced range -- that obviously fitted into a much higher - end decor market that could be exported and also service our local market . <next_sent> This is our group , our main group of weavers . <next_sent> They come on a weekly basis to Durban . <next_sent> They all have bank accounts . <next_sent> They 've all moved back to the rural area where they came from . <next_sent> It 's a weekly turnaround of production . <next_sent> This is the community that I originally showed you the slide of . <next_sent> And that 's also modernized today , and it 's supporting work for 300 weavers . <next_sent> And the rest says it all . <next_sent> Thank you very much .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01))
+   :snt2 (s2.d / date-01
+               :ARG1 (s2.u / use-01
+                           :ARG1 (s2.w / wire)
+                           :ARG2 (s2.d2 / decorative)
+                           :location (s2.s / south
+                                           :part-of (s2.c / continent
+                                                          :name (s2.n / name
+                                                                      :op1 "Africa"))))
+               :ARG2 (s2.m / multiple
+                           :op1 (s2.t / temporal-quantity
+                                      :unit (s2.y / year)
+                                      :quant "100"))
+               :direction (s2.b / back))
+   :snt3 (s3.c2 / contrast-01
+                :ARG2 (s3.b / bring-01
+                            :ARG0 (s3.m2 / modernize-01)
+                            :ARG1 (s3.a2 / and
+                                         :op1 (s3.c / communicate-01)
+                                         :op2 (s3.m / material
+                                                    :ARG1-of (s3.n / new-01)
+                                                    :mod (s3.w / whole)
+                                                    :mod (s3.f / form
+                                                               :mod (s3.w2 / wire
+                                                                           :mod (s3.t / telephone)))))
+                            :ARG1-of (s3.a / actual-02)))
+   :snt4 (s4.m2 / mean-01
+                :ARG1 (s4.m3 / migrate-01
+                             :ARG0 (s4.r2 / rural)
+                             :ARG4 (s4.c / city))
+                :ARG2 (s4.s / start-01
+                            :ARG1 (s4.r / replace-01
+                                        :ARG1 (s4.g / grass-roots
+                                                    :ARG1-of (s4.n / natural-03)
+                                                    :ARG1-of (s4.c2 / come-01
+                                                                    :ARG1-of (s4.h / hard-02)))
+                                        :ARG2 (s4.m / material
+                                                    :mod (s4.i / industry)
+                                                    :mod (s4.n2 / newfound)))))
+   :snt5 (s5.p / possible-01
+               :ARG1 (s5.s / see-01
+                           :ARG0 (s5.y / you)
+                           :ARG1 (s5.c / change-01
+                                       :ARG2 (s5.s2 / start-01
+                                                    :ARG1 (s5.u2 / use-01
+                                                                 :ARG1 (s5.m / material
+                                                                             :mod (s5.c2 / contemporary))))
+                                       :ARG3 (s5.u / use-01))))
+   :snt6 (s6.d / date-01
+               :ARG1 (s6.p / piece
+                           :mod (s6.t / this))
+               :ARG2 (s6.d4 / date-interval
+                            :op1 (s6.d2 / date-entity
+                                        :decade "40s")
+                            :op2 (s6.l / late
+                                       :op1 (s6.d3 / date-entity
+                                                   :decade "50"))))
+   :snt7 (s7.l / lead-01
+               :ARG0 (s7.a / and
+                           :op1 (s7.i2 / interest-01
+                                       :ARG1 (s7.i / i)
+                                       :ARG2 (s7.f / form
+                                                   :ARG1-of (s7.t / transition-01)
+                                                   :mod (s7.a2 / art)))
+                           :op2 (s7.p / passion
+                                      :poss s7.i
+                                      :topic s7.f))
+               :ARG1 s7.i
+               :ARG4 (s7.f2 / form
+                            :ARG1-of (s7.n2 / new-01)
+                            :ARG1-of (s7.c3 / come-01
+                                            :ARG3 (s7.c / camp-02
+                                                        :ARG0 (s7.s / squatter)
+                                                        :location (s7.o / outside
+                                                                        :op1 (s7.c2 / city
+                                                                                    :name (s7.n / name
+                                                                                                :op1 "Durban"))))))
+               :time (s7.d / date-entity
+                           :decade "90"))
+   :snt8 (s8.a / and
+               :op1 (s8.g / get-01
+                          :ARG0 (s8.i / i
+                                      :same-as s7.i)
+                          :ARG1 (s8.o / opportunity
+                                      :mod (s8.s2 / start-01
+                                                  :ARG0 s8.i
+                                                  :ARG1 (s8.w / work-01
+                                                              :ARG0 s8.i
+                                                              :ARG3 (s8.c / community
+                                                                          :mod (s8.t2 / this)))))
+                          :time (s8.p / point
+                                      :mod (s8.t / that)))
+               :op2 (s8.s3 / start-01
+                           :ARG0 s8.i
+                           :ARG1 (s8.a2 / and
+                                        :op1 (s8.d2 / develop-02
+                                                    :ARG0 s8.c)
+                                        :op2 (s8.m / mentor-01
+                                                   :ARG0 s8.i
+                                                   :ARG1 s8.c
+                                                   :ARG2 (s8.a3 / and
+                                                                :op1 (s8.s / scale)
+                                                                :op2 (s8.d / design))))
+                           :ARG1-of (s8.r / real-04)))
+   :snt9 (s9.a3 / and
+                :op2 (s9.g / grow-01
+                           :ARG1 (s9.p3 / project)
+                           :ARG3 (s9.p / person
+                                       :ARG0-of (s9.w / weave-01)
+                                       :quant "5")
+                           :ARG4 (s9.p2 / person
+                                        :ARG0-of (s9.w2 / weave-01)
+                                        :quant "50")
+                           :time (s9.s / soon)
+                           :time (s9.a2 / after
+                                        :quant (s9.a / about
+                                                     :op1 (s9.t / temporal-quantity
+                                                                :unit (s9.y / year)
+                                                                :quant "1"))
+                                        :op1 (s9.n / now))))
+   :snt10 (s10.o / outstrip-01
+                 :ARG0 (s10.w / we)
+                 :ARG0-of (s10.c / cause-01
+                                 :ARG1 (s10.c2 / coerce-01
+                                               :ARG0 s10.w
+                                               :ARG1 (s10.c4 / company
+                                                             :ARG0-of (s10.m / manufacture-01
+                                                                             :ARG1 (s10.w2 / wire)))
+                                               :ARG2 (s10.a / and
+                                                            :op1 (s10.h / help-01
+                                                                        :ARG0 s10.c4
+                                                                        :ARG2 s10.w)
+                                                            :op2 (s10.s4 / supply-01
+                                                                         :ARG0 s10.c4
+                                                                         :ARG1 (s10.m2 / material
+                                                                                       :location "B"))
+                                                            :op3 (s10.p2 / produce-01
+                                                                         :ARG0 s10.c4
+                                                                         :manner (s10.s3 / specification
+                                                                                         :mod (s10.c3 / color)
+                                                                                         :poss s10.w)))))
+                 :ARG1 (s10.y / yard
+                              :mod (s10.s / scrap-01)
+                              :time-of (s10.t2 / thing
+                                               :ARG1-of (s10.p3 / provide-01
+                                                                :ARG0 (s10.t / they
+                                                                             :same-as s10.s)
+                                                                :ARG1-of (s10.p / possible-01))))
+                 :time (s10.s2 / soon))
+   :snt11 (s11.t / think-01
+                 :ARG0 (s11.i / i
+                              :same-as s7.i)
+                 :ARG1 (s11.p / possible-01
+                              :quant (s11.l2 / lot)
+                              :ARG1 (s11.p2 / produce-01
+                                            :ARG1 (s11.p3 / product
+                                                          :ARG1-of (s11.h / have-degree-91
+                                                                          :ARG2 (s11.c2 / contemporary)
+                                                                          :ARG3 (s11.m / more
+                                                                                       :quant (s11.b / bit
+                                                                                                     :mod (s11.l / little))))
+                                                          :manner (s11.a / away
+                                                                         :op1 (s11.e / ethnic))
+                                                          :mod (s11.c / contemporary)))
+                              :location (s11.h2 / here))
+                 :time (s11.t2 / time
+                               :ARG1-of (s11.s / same-01)))
+   :snt12 (s12.c / cause-01
+                 :ARG1 (s12.d2 / develop-02
+                               :ARG0 (s12.i / i
+                                            :same-as s7.i)
+                               :ARG1 (s12.r / range
+                                            :ARG1-of (s12.m4 / mean-01
+                                                             :ARG2 (s12.r2 / range
+                                                                           :ARG1-of (s12.p2 / produce-01
+                                                                                            :manner (s12.m3 / mass))))
+                                            :ARG1-of (s12.f / fit-06
+                                                            :ARG1-of (s12.o / obvious-01)
+                                                            :ARG2 (s12.m / market
+                                                                         :ARG0-of (s12.s / serve-01
+                                                                                         :ARG2 (s12.m2 / market
+                                                                                                       :ARG1-of (s12.l / local-02)
+                                                                                                       :poss (s12.w / we
+                                                                                                                    :same-as s10.w))
+                                                                                         :mod (s12.a / also))
+                                                                         :ARG1-of (s12.e2 / export-01
+                                                                                          :ARG1-of (s12.p / possible-01))
+                                                                         :mod (s12.d / decor
+                                                                                     :mod (s12.e / end
+                                                                                                 :ARG1-of (s12.h / have-degree-91
+                                                                                                                 :ARG2 (s12.h2 / high-02)
+                                                                                                                 :ARG3 (s12.m5 / more
+                                                                                                                               :quant (s12.m6 / much)))))))
+                                            :mod (s12.w2 / whole))
+                               :location (s12.a2 / around)))
+   :snt13 (s13.g / group
+                 :consist-of (s13.p / person
+                                    :ARG0-of (s13.w2 / weave-01))
+                 :domain (s13.t / this
+                                :same-as s8.c)
+                 :mod (s13.m / main)
+                 :poss (s13.w / we))
+   :snt14 (s14.c2 / come-01
+                  :ARG1 (s14.t2 / they
+                                :same-as s8.c)
+                  :ARG4 (s14.c / city
+                               :name (s14.n / name
+                                            :op1 "Durban")
+                               :same-as s7.c2)
+                  :frequency (s14.r / rate-entity-91
+                                    :ARG3 (s14.t / temporal-quantity
+                                                 :unit (s14.w / week)
+                                                 :quant "1")))
+   :snt15 (s15.h / have-03
+                 :ARG0 (s15.t / they
+                              :mod (s15.a2 / all)
+                              :same-as s8.c)
+                 :ARG1 (s15.a / account
+                              :mod (s15.b / bank)))
+   :snt16 (s16.m / move-01
+                 :ARG1 (s16.t / they
+                              :mod (s16.a / all))
+                 :ARG2 (s16.a2 / area
+                               :ARG3-of (s16.c / come-01
+                                               :ARG1 s16.t)
+                               :mod (s16.r / rural))
+                 :direction (s16.b / back))
+   :snt17 (s17.t2 / turn-01
+                  :ARG1 (s17.p / produce-01)
+                  :direction (s17.a / around)
+                  :frequency (s17.r / rate-entity-91
+                                    :ARG3 (s17.t / temporal-quantity
+                                                 :unit (s17.w / week)
+                                                 :quant "1")))
+   :snt18 (s18.c / community
+                 :ARG1-of (s18.s / show-01
+                                 :ARG0 (s18.i / i
+                                              :same-as s7.i)
+                                 :ARG1-of (s18.s2 / slide-01)
+                                 :ARG2 (s18.y / you)
+                                 :mod (s18.o / original))
+                 :domain (s18.t / this
+                                :same-as s8.c))
+   :snt19 (s19.a2 / and
+                  :op1 (s19.m / modernize-01
+                              :ARG1 (s19.t / that
+                                           :same-as s8.c)
+                              :mod (s19.a / also)
+                              :time (s19.t2 / today))
+                  :op2 (s19.s / support-01
+                              :ARG0 s19.t
+                              :ARG1 (s19.w2 / work-01
+                                            :ARG0 (s19.p / person
+                                                         :ARG0-of (s19.w / weave-01)
+                                                         :quant "300"))))
+   :snt20 (s20.a2 / and
+                  :op2 (s20.s / say-01
+                              :ARG0 (s20.r / rest)
+                              :ARG1 (s20.i / it
+                                           :mod (s20.a / all))))
+   :snt21 (s21.t / thank-01
+                 :ARG0 (s21.i / i)
+                 :ARG1 (s21.y / you)
+                 :mod (s21.m / much
+                             :degree (s21.v / very))))
+

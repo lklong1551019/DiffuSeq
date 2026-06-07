@@ -1,0 +1,386 @@
+# ::id doc-361
+# ::doc_file doc-361
+# ::tok http : / / www . ted . com / talks / stacey_kramer_the_best_gift_i_ever_survived< / url> <next_sent> Imagine , if you will -- a gift . <next_sent> I 'd like for you to picture it in your mind . <next_sent> It 's not too big -- <next_sent> about the size of a golf ball . <next_sent> So envision what it looks like all wrapped up . <next_sent> But before I show you what 's inside , I will tell you , it 's going to do incredible things for you . <next_sent> It will bring all of your family together . <next_sent> You will feel loved and appreciated like never before and reconnect with friends and acquaintances you have n't heard from in years . <next_sent> Adoration and admiration will overwhelm you . <next_sent> It will recalibrate what 's most important in your life . <next_sent> It will redefine your sense of spirituality and faith . <next_sent> You 'll have a new understanding and trust in your body . <next_sent> You 'll have unsurpassed vitality and energy . <next_sent> You 'll expand your vocabulary , meet new people , and you 'll have a healthier lifestyle . <next_sent> And get this -- you 'll have an eight - week vacation of doing absolutely nothing . <next_sent> You 'll eat countless gourmet meals . <next_sent> Flowers will arrive by the truckload . <next_sent> People will say to you , " You look great . Have you had any work done ? " <next_sent> And you 'll have a lifetime supply of good drugs . <next_sent> You 'll be challenged , inspired , motivated and humbled . <next_sent> Your life will have new meaning . <next_sent> Peace , health , serenity , happiness , nirvana . <next_sent> The price ? <next_sent> $ 55,000 , and that 's an incredible deal . <next_sent> By now I know you 're dying to know what it is and where you can get one . <next_sent> Does Amazon carry it ? <next_sent> Does it have the Apple logo on it ? <next_sent> Is there a waiting list ? <next_sent> Not likely . <next_sent> This gift came to me about five months ago . <next_sent> It looked more like this when it was all wrapped up -- not quite so pretty . <next_sent> And this , and then this . <next_sent> It was a rare gem -- a brain tumor , hemangioblastoma -- the gift that keeps on giving . <next_sent> And while I 'm okay now , I would n't wish this gift for you . <next_sent> I 'm not sure you 'd want it . <next_sent> But I would n't change my experience . <next_sent> It profoundly altered my life in ways I did n't expect in all the ways I just shared with you . <next_sent> So the next time you 're faced with something that 's unexpected , unwanted and uncertain , consider that it just may be a gift .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01
+                            :ARG0 (s1.p / person
+                                        :name (s1.n / name
+                                                    :op1 "ossobuco"))))
+   :snt2 (s2.i / imagine-01
+               :ARG0 (s2.y / you)
+               :ARG1 (s2.g / gift-01)
+               :condition (s2.w / will-02
+                                :ARG0 s2.y
+                                :ARG1 s2.i)
+               :mode "imperative")
+   :snt3 (s3.l / like-02
+               :ARG0 (s3.i / i)
+               :ARG1 (s3.p / picture-01
+                           :ARG0 (s3.y / you
+                                       :part (s3.m / mind))
+                           :ARG1 (s3.i2 / it
+                                        :same-as s2.g)
+                           :location s3.m))
+   :snt4 (s4.h / have-degree-91
+               :ARG1 (s4.i / it
+                           :same-as s2.g)
+               :ARG2 (s4.b / big)
+               :ARG3 (s4.t / too
+                           :polarity "-"))
+   :snt5 (s5.s / size-01
+               :ARG1 (s5.b / ball
+                           :mod (s5.g / golf-01))
+               :ARG2 (s5.a / about))
+   :snt6 (s6.e / envision-01
+               :ARG0 (s6.y / you)
+               :ARG1 (s6.t / thing
+                           :ARG2-of (s6.r / resemble-01
+                                          :ARG1 (s6.i / it
+                                                      :ARG1-of (s6.w / wrap-up-02
+                                                                     :mod (s6.a / all))
+                                                      :same-as s2.g)))
+               :mode "imperative")
+   :snt7 (s7.c / contrast-01
+               :ARG2 (s7.t / tell-01
+                           :ARG0 (s7.i / i
+                                       :same-as s3.i)
+                           :ARG1 (s7.d / do-02
+                                       :ARG0 (s7.i4 / it
+                                                    :same-as s2.g)
+                                       :ARG1 (s7.t3 / thing
+                                                    :mod (s7.i2 / incredible))
+                                       :ARG2 s7.t)
+                           :ARG2 (s7.y / you
+                                       :same-as s3.y)
+                           :time (s7.b / before
+                                       :op1 (s7.s / show-01
+                                                  :ARG0 s7.i
+                                                  :ARG1 (s7.t2 / thing
+                                                               :location (s7.i3 / inside))
+                                                  :ARG1 s7.y))))
+   :snt8 (s8.b / bring-01
+               :ARG0 (s8.i / it
+                           :same-as s2.g)
+               :ARG1 (s8.f / family
+                           :mod (s8.a / all)
+                           :poss (s8.y / you
+                                       :same-as s3.y))
+               :ARG2 (s8.t / together))
+   :snt9 (s9.a3 / and
+                :op1 (s9.f / feel-01
+                           :ARG0 (s9.y2 / you
+                                        :same-as s3.y)
+                           :ARG1 (s9.a2 / and
+                                        :ARG1-of (s9.r / resemble-01
+                                                       :ARG2 (s9.b / before)
+                                                       :time (s9.e / ever)
+                                                       :polarity "-")
+                                        :op1 (s9.l / love-01
+                                                   :ARG1 s9.y2)
+                                        :op2 (s9.a5 / appreciate-02
+                                                    :ARG1 s9.y2)))
+                :op2 (s9.c / connect-01
+                           :ARG1 s9.y2
+                           :ARG2 (s9.a4 / and
+                                        :ARG2-of (s9.h3 / hear-01
+                                                        :ARG0 s9.y2
+                                                        :duration (s9.m / multiple
+                                                                        :op1 (s9.t / temporal-quantity
+                                                                                   :unit (s9.y / year)
+                                                                                   :quant "1"))
+                                                        :polarity "-")
+                                        :op1 (s9.p / person
+                                                   :ARG0-of (s9.h / have-rel-role-91
+                                                                  :ARG1 s9.y2
+                                                                  :ARG2 (s9.f2 / friend)))
+                                        :op2 (s9.p2 / person
+                                                    :ARG0-of (s9.h2 / have-rel-role-91
+                                                                    :ARG1 s9.y2)
+                                                    :ARG2-of (s9.a / acquaint-01
+                                                                   :ARG1 s9.y2)))))
+   :snt10 (s10.o / overwhelm-01
+                 :ARG0 (s10.a3 / and
+                               :op1 (s10.a / admire-01)
+                               :op2 (s10.a2 / admire-01))
+                 :ARG1 (s10.y / you
+                              :same-as s3.y))
+   :snt11 (s11.m / moderate-01
+                 :ARG0 (s11.i2 / it
+                               :same-as s2.g)
+                 :ARG1 (s11.t / thing
+                              :ARG1-of (s11.i / important-01
+                                              :ARG2-of (s11.h / have-degree-91
+                                                              :ARG1 s11.t
+                                                              :ARG3 (s11.m2 / most)))
+                              :ARG5 (s11.l / live-01
+                                           :ARG0 (s11.y / you
+                                                        :same-as s3.y))))
+   :snt12 (s12.r / redefine-01
+                 :ARG0 (s12.i / it
+                              :same-as s2.g)
+                 :ARG1 (s12.s / sense-01
+                              :ARG0 (s12.y / you
+                                           :same-as s3.y)
+                              :ARG1 (s12.a / and
+                                           :op1 (s12.s2 / spirituality)
+                                           :op2 (s12.f / faith))))
+   :snt13 (s13.h / have-03
+                 :ARG0 (s13.y / you
+                              :same-as s3.y)
+                 :ARG1 (s13.a / and
+                              :ARG1-of (s13.n / new-01)
+                              :op1 (s13.u / understand-01
+                                          :ARG0 s13.y)
+                              :op2 (s13.t / trust-02
+                                          :ARG0 s13.y
+                                          :ARG1 (s13.b / body
+                                                       :poss s13.y))))
+   :snt14 (s14.h / have-03
+                 :ARG0 (s14.y / you
+                              :same-as s3.y)
+                 :ARG1 (s14.a / and
+                              :ARG0-of (s14.s / surpass-01
+                                              :polarity "-")
+                              :op1 (s14.v / vitality)
+                              :op2 (s14.e / energy)))
+   :snt15 (s15.a / and
+                 :op1 (s15.e / expand-01
+                             :ARG0 (s15.y / you
+                                          :same-as s3.y)
+                             :ARG1 (s15.v / vocabulary
+                                          :poss s15.y))
+                 :op2 (s15.m / meet-02
+                             :ARG0 s15.y
+                             :ARG1 (s15.p / person
+                                          :ARG1-of (s15.n / new-02)))
+                 :op3 (s15.h / have-03
+                             :ARG0 s15.y
+                             :ARG1 (s15.l / lifestyle
+                                          :ARG1-of (s15.h2 / have-degree-91
+                                                           :ARG2 (s15.h3 / health)
+                                                           :ARG3 (s15.m2 / more)))))
+   :snt16 (s16.a2 / and
+                  :op2 (s16.g / get-01
+                              :ARG0 (s16.y / you
+                                           :same-as s3.y)
+                              :ARG1 (s16.t2 / this
+                                            :domain (s16.v / vacation-01
+                                                           :ARG0 s16.y
+                                                           :ARG1 (s16.d / do-02
+                                                                        :ARG0 s16.y
+                                                                        :ARG1 (s16.n / nothing
+                                                                                     :degree (s16.a / absolute)))
+                                                           :duration (s16.t / temporal-quantity
+                                                                            :unit (s16.w / week)
+                                                                            :quant "8")))
+                              :mode "imperative"))
+   :snt17 (s17.e / eat-01
+                 :ARG0 (s17.y / you
+                              :same-as s3.y)
+                 :ARG1 (s17.m / meal
+                              :quant (s17.c / count
+                                            :polarity "-")
+                              :mod (s17.g / gourmet)))
+   :snt18 (s18.a / arrive-01
+                 :ARG1 (s18.f / flower)
+                 :manner (s18.t / truckload))
+   :snt19 (s19.s / say-01
+                 :ARG0 (s19.p / person)
+                 :ARG1 (s19.a2 / and
+                               :op1 (s19.l / look-02
+                                           :ARG0 (s19.y / you
+                                                        :same-as s3.y)
+                                           :ARG1 (s19.g / great))
+                               :op2 (s19.d / do-02
+                                           :ARG0 s19.y
+                                           :ARG1 (s19.w / work-01
+                                                        :ARG0 s19.y
+                                                        :mod (s19.a3 / any))
+                                           :polarity (s19.a / amr-unknown)))
+                 :ARG2 s19.y)
+   :snt20 (s20.a / and
+                 :op2 (s20.h / have-03
+                             :ARG0 (s20.y / you
+                                          :same-as s3.y)
+                             :ARG1 (s20.s / supply-01
+                                          :ARG1 (s20.d / drug
+                                                       :ARG1-of (s20.g / good-02))
+                                          :ARG2 s20.y
+                                          :duration (s20.l / lifetime))))
+   :snt21 (s21.a / and
+                 :op1 (s21.c / challenge-01
+                             :ARG1 (s21.y / you
+                                          :same-as s3.y))
+                 :op2 (s21.i / inspire-01
+                             :ARG1 s21.y)
+                 :op3 (s21.m / motivate-01
+                             :ARG1 s21.y)
+                 :op4 (s21.h / humble-01
+                             :ARG1 s21.y))
+   :snt22 (s22.m / mean-01
+                 :ARG1 (s22.l / life
+                              :poss (s22.y / you))
+                 :ARG1-of (s22.n / new-01))
+   :snt23 (s23.a / and
+                 :op1 (s23.p / peace)
+                 :op2 (s23.h2 / healthy)
+                 :op3 (s23.s / serenity)
+                 :op4 (s23.h / happiness)
+                 :op5 (s23.n / nirvana))
+   :snt24 (s24.m / monetary-quantity
+                 :ARG2-of (s24.p / price-01)
+                 :polarity (s24.a / amr-unknown))
+   :snt25 (s25.a / and
+                 :op1 (s25.m / monetary-quantity
+                             :unit (s25.d2 / dollar)
+                             :quant "5000")
+                 :op2 (s25.d / deal
+                             :domain s25.m
+                             :mod (s25.i / incredible)))
+   :snt26 (s26.k / know-01
+                 :ARG0 (s26.i / i
+                              :same-as s3.i)
+                 :ARG1 (s26.d / desperate-02
+                              :ARG0 (s26.y / you
+                                           :same-as s3.y)
+                              :ARG1 (s26.k2 / know-01
+                                            :ARG0 s26.y
+                                            :ARG1 (s26.a / and
+                                                         :op1 (s26.t / thing
+                                                                     :domain (s26.i2 / it
+                                                                                     :same-as s2.g))
+                                                         :op2 (s26.l / location
+                                                                     :location-of (s26.p / possible-01
+                                                                                         :ARG1 (s26.g / get-01
+                                                                                                      :ARG0 s26.y
+                                                                                                      :ARG1 s26.i2))))))
+                 :time (s26.b / by
+                              :op1 (s26.n / now)))
+   :snt27 (s27.c / carry-01
+                 :ARG0 (s27.c2 / company
+                               :name (s27.n / name
+                                            :op1 "Amazon"))
+                 :ARG1 (s27.i / it
+                              :same-as s2.g)
+                 :polarity (s27.a / amr-unknown))
+   :snt28 (s28.b / be-located-at-91
+                 :ARG1 (s28.l / logo
+                              :mod (s28.c / company
+                                          :name (s28.n / name
+                                                       :op1 "Apple")))
+                 :ARG2 (s28.i / it
+                              :same-as s2.g)
+                 :polarity (s28.a / amr-unknown))
+   :snt29 (s29.t / thing
+                 :ARG2-of (s29.l / list-01
+                                 :ARG1 (s29.w / wait-01))
+                 :polarity (s29.a / amr-unknown))
+   :snt30 (s30.l / likely-01
+                 :polarity "-")
+   :snt31 (s31.c / come-01
+                 :ARG1 (s31.g / gift
+                              :mod (s31.t2 / this)
+                              :same-as s2.g)
+                 :ARG4 (s31.i / i
+                              :same-as s3.i)
+                 :time (s31.b / before
+                              :quant (s31.a / about
+                                            :op1 (s31.t / temporal-quantity
+                                                        :unit (s31.m / month)
+                                                        :quant "5"))
+                              :op1 (s31.n / now)))
+   :snt32 (s32.l / look-02
+                 :ARG0 (s32.i / it
+                              :same-as s2.g)
+                 :ARG1 (s32.h / have-degree-of-resemblance-91
+                              :ARG1 s32.i
+                              :ARG2 (s32.t / this)
+                              :ARG4 (s32.m / more))
+                 :mod (s32.p / pretty
+                             :degree (s32.s / so
+                                            :mod (s32.q / quite)
+                                            :polarity "-"))
+                 :time (s32.w / wrap-up-02
+                              :ARG1 s32.i
+                              :mod (s32.a / all)))
+   :snt33 (s33.a / and
+                 :op1 (s33.t2 / this)
+                 :op2 (s33.t3 / this
+                              :time (s33.t / then)))
+   :snt34 (s34.g / gem
+                 :ARG0-of (s34.k / keep-on-08
+                                 :ARG1 (s34.g3 / give-01))
+                 :ARG1-of (s34.r / rare-02)
+                 :ARG1-of (s34.m / mean-01
+                                 :ARG2 (s34.t / tumor
+                                              :name (s34.n / name
+                                                           :op1 "hemangioblastoma")
+                                              :mod (s34.b / brain)))
+                 :ARG1-of (s34.g2 / gift-01))
+   :snt35 (s35.a / and
+                 :op2 (s35.w / wish-01
+                             :ARG0 (s35.i / i
+                                          :same-as s3.i)
+                             :ARG1 (s35.g / gift
+                                          :mod (s35.t / this)
+                                          :same-as s2.g)
+                             :ARG2 (s35.y / you
+                                          :same-as s3.y)
+                             :concession (s35.o / okay-04
+                                                :ARG1 s35.i
+                                                :time (s35.n / now))
+                             :polarity "-"))
+   :snt36 (s36.s / sure-02
+                 :ARG0 (s36.i / i
+                              :same-as s3.i)
+                 :ARG1 (s36.w / want-01
+                              :ARG0 (s36.y / you
+                                           :same-as s3.y)
+                              :ARG1 (s36.i2 / it
+                                            :same-as s2.g))
+                 :polarity "-")
+   :snt37 (s37.c2 / contrast-01
+                  :ARG2 (s37.c / change-01
+                               :ARG0 (s37.i / i
+                                            :same-as s3.i)
+                               :ARG1 (s37.t / thing
+                                            :ARG1-of (s37.e / experience-01
+                                                            :ARG0 s37.i))
+                               :polarity "-"))
+   :snt38 (s38.a2 / alter-01
+                  :ARG0 (s38.i2 / it
+                                :same-as s37.t)
+                  :ARG1 (s38.l / life
+                               :poss (s38.i / i
+                                            :same-as s3.i))
+                  :manner (s38.p / profound)
+                  :manner (s38.w / way
+                                 :ARG1-of (s38.e / expect-01
+                                                 :ARG0 s38.i
+                                                 :polarity "-")
+                                 :ARG1-of (s38.s / share-01
+                                                 :ARG0 s38.i
+                                                 :ARG2 (s38.y / you
+                                                              :same-as s3.y)
+                                                 :mod (s38.j / just))
+                                 :mod (s38.a / all)))
+   :snt39 (s39.c / cause-01
+                 :ARG1 (s39.c2 / consider-02
+                               :ARG0 (s39.y / you
+                                            :same-as s3.y)
+                               :ARG1 (s39.p / possible-01
+                                            :ARG1 (s39.g / gift-01
+                                                         :ARG1 (s39.s / something
+                                                                      :ARG1-of (s39.e / expect-01)
+                                                                      :ARG1-of (s39.w / want-01
+                                                                                      :polarity "-")
+                                                                      :ARG1-of (s39.k / know-01
+                                                                                      :polarity "-"))
+                                                         :mod (s39.j / just)))
+                               :time (s39.f / face-01
+                                            :ARG0 s39.y
+                                            :ARG1 s39.s
+                                            :mod (s39.n / next))
+                               :mode "imperative")))
+

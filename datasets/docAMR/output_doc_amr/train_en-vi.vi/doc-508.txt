@@ -1,0 +1,119 @@
+http://www.ted.com/talks/raffaello_d_andrea_the_astounding_athletic_power_of_quadcopters</url>
+Nếu một chiếc máy có thể trở thành một vận động viên thì điều này có ý nghĩa gì?
+Chúng tôi sẽ trình bày về mô hình của một vận động viên bằng máy cũng như phương pháp nghiên cứu để tạo ra thiết bị này cùng với sự trợ giúp của các thiết bị bay được gọi là máy bay bốn cánh, hay nói ngắn gọn là quad
+Quad đã tồn tại trong một khoảng thời gian dài
+Lý do mà ngày nay quad trở nên rất phổ biến là vì nó được cấu tạo rất đơn giản
+Bằng việc điều khiển tốc độ của 4 cánh quạt, thiết bị này có thể cuộn tròn, ném bóng, đảo lái đồng thời tăng tốc theo các hướng phổ biến.
+Phía trên của nó là một cục pin, một máy vi tính, rất nhiều thiết bị cảm ứng và thiết bị phát sóng không dây.
+Quads cực kỳ nhanh lẹ, nhưng chính sự nhanh lẹ này cũng sẽ tăng giá thành của nó.
+Thiết bị này vốn đã không cân bằng, do vậy nó cần một vài bộ điều khiển hồi tiếp tự động giúp nó có thể bay lên được
+Vậy quy trình đó diễn ra thế nào?
+Máy quay trên trần nhà và một máy tính cá nhân sẽ đóng vai trò như một hệ thống định vị toàn cầu trong nhà
+Nó được dùng để xác định các vật thể trong không gian những vật thể này có được gắn thiết bị phản chiếu
+dữ liệu từ các thiết bị phản chiếu này sau đó sẽ được gửi đến một máy tính cá nhân khác máy tính này thực hiện việc tính toán và kiểm soát các thuật toán sau đó sẽ gửi các câu lệnh cho máy quad máy quad cũng tính toán và thực hiện các thuật toán
+Và đối tượng nghiên cứu của chúng tôi là các thuật toán
+Thật kì diệu khi những thiết bị như quad có thể được hiện thực hoá
+Vậy thì các thuật toán đã được thiết kế thế nào để có thể tạo ra một vận động viên bằng máy?
+Chúng tôi sử dụng khá rộng rãi một thiết kế được gọi là thiết kế mô hình
+Đầu tiên chúng tôi sử dụng mô hình toán học để hiển thị các chuyển động vật lý về cách thức thiết bị này vận hành
+Sau đó chúng tôi sử dụng một phép toán được gọi là thuyết điều khiển để phân tích các mô hình này đồng thời cũng đồng bộ hoá các thuật toán để điều khiển các mô hình
+Ví dụ, để làm cho quad bay liệng được
+Trước hết chúng tôi ghi các chuyển động bằng một loạt các phép toán khác nhau
+Sau đó chúng tôi thực hiện các phép toán này với sự trợ giúp của thuyết điều khiển nhằm tạo ra các thuật toán giữ thăng bằng cho quad.
+Bây giờ tôi sẽ mô tả sức mạnh của cách làm này
+Ví dụ chúng tôi muốn thiết bị quad này không chỉ bay liệng mà còn giữ thăng bằng được cái cọc này
+Bằng một chút thực hành thì rõ ràng con người cũng có thể thực hiện được mặc dù chúng ta có lợi thế là có thể đứng thẳng 2 chân trên mặt đất và sử dụng đôi bàn tay rất khéo léo
+Thì cũng sẽ hơi khó khăn một chút khi chúng ta chỉ đứng một chân trên sàn và khi không sử dụng đôi tay của mình
+Hãy chú ý cách chúng tôi đặt thiết bị phản chiếu trên đầu chiếc cọc này Điều đó có nghĩa là có thể định vị được chiếc cọc trong không gian
+Bạn có thể thấy rằng chiếc máy quad này điều chỉnh rất hợp lý để giữ thăng bằng chiếc cọc
+Vậy chúng tôi đã thiết kế các thuật toán để thực hiện động tác này ra sao?
+Chúng tôi đã thêm mô hình toán học của chiếc cọc vào mô hình toán học của quad
+Khi đã có được một mô hình hệ thống liên kết quad và cọc chúng tôi có thể sử dụng thuyết điều khiển để tạo ra các thuật toán điều khiển cọc
+Đây, các bạn có thể thấy chiếc cọc thăng bằng và ngay cả khi tôi huých nhẹ thì nó vẫn trở về vị trí thăng bằng rất tốt.
+Chúng tôi cũng có thể tăng khả năng của mô hình lên bao gồm việc lựa chọn điểm di chuyển trong không gian cho quad
+Sử dụng thiết bị này, cũng có gắn bộ phận phản hồi, Tôi có thể chỉ vào nơi tôi muốn máy quad đến ở cách tôi một ví trí xa
+Điểm mấu chốt của chuyển động biểu diễn này là các thuật toán được thiết kế với sự trợ giúp từ các mô hình toán học cũng như thuyết điều khiển.
+BÂy giờ tôi sẽ yêu cầu quad quay trở lại đây và thả chiếc cọc xuống và sau đó tôi sẽ diễn tả tầm quan trọng của việc hiểu rõ các mô hình vật lý đồng thời hiểu được cơ chế vận hành của thế giới vật lý
+Hãy chú ý cách quad hạ độ cao Khi tôi đặt cốc nước này lên quad
+Không giống như chiếc cọc giữ thăng bằng, tôi sẽ không tích hợp mô hình toán học của cốc nước vào hệ thống của quad.
+Mà thực tế là, hệ thống này thậm chí còn không biết là cốc nước đang ở trên quad.
+Cũng như lần trước, tôi cũng sẽ dùng thiết bị chỉ này để yêu cầu quad di chuyển đến nơi tôi muốn .
+Được rồi, bây giờ chắc bạn đang tự hỏi Tại sao nước không bị đổ ?
+Có hai sự thật: Một là, trọng lực tác động lên mọi vật theo cùng một cách.
+Hai là các cánh quạt của máy quad đều chỉ vào cùng một hướng với chiếc cốc, cùng chỉ lên trên.
+Bây giờ kết hợp hai diều này với nhau, sẽ ra kết quả là mọi lực tác động lên chiếc cốc đều nhỏ và chủ yếu chịu tác động của khí động học, khi đó tốc độ đều bị triệt tiêu
+do vậy bạn sẽ không cần phải tạo mô hình chiếc cốc.
+cho dù quad có làm gì thì nước cũng không đổ ra được
+Có một bài học ở đây là một vài nhiệm vụ khó hơn lại thường trở nên dễ dàng hơn so với những nhiệm vụ khác và khi hiểu được cơ chế vật lý của vấn đề có thể giúp bạn biết cái gì khó và cái gì dễ
+Trong trường hợp này, việc mang một cốc nước là dễ dàng
+Việc giữ thăng bằng chiếc cọc lại là việc khó khăn.
+Ai trong số chúng ta cũng đều nghe về các câu chuyện của các vận động viên có thể thực hiện các màn biểu diễn trong khi đang bị chấn thương
+Vậy liệu một chiếc máy như quad có thể thực hiện được nhiệm vụ khi bị hư hỏng nặng không?
+Theo lẽ thường thì bạn cần ít nhất là 4 cánh để có thể giúp cho quad bay lên vì có 4 khả năng mà quad có thể thực hiện như: cuộn tròn, lao xuống, bay liệng và tăng tốc.
+với những máy bay sáu và tám cánh thì có thể thiếu một số cánh cũng không sao nhưng với máy bay 4 cánh thì phổ biến bởi nó chỉ có tối thiểu 4 cánh cố định
+Vậy chúng có thể làm được điều tôi vừa nói không?
+Nếu phân tích mô hình toán học của quad với duy nhất 2 cánh có khả năng hoạt động chúng ta sẽ phát hiện ra rằng có một cách để nó bay
+Chúng tôi bỏ khả năng điều khiển việc bay liệng nhưng những khả năng còn lại như cuộn tròn, lao xuống và tăng tốc vẫn điều khiển được bằng các thuật toán sẽ giúp tìm ra cấu hình mới này
+các mô hình toán học sẽ nói cho chúng ta biết chính xác khi nào và tại sao có thể làm được như vậy.
+Trong ví dụ này, với kiến thức đó đã cho phép chúng tôi thiết kê nên những thiết kế máy mới lạ hoặc thiết kế các thuật toán thông minh giúp xử lý các hỏng hóc một cách êm xuôi giống như các vận động viên thật thay vì tạo ra các máy bay thừa cánh
+Chúng tôi không thể không nín thở khi xem một vận động viên nhào lộn trong nước, hoặc khi vận động viên nhẩy xào lộn vào trên không sau đó nhanh chóng tiếp đất.
+Liệu vận động viên lặn có thể thực hiện trọn vẹn cú lao xuống nước
+Liệu vận động viên nhẩy xào có thể tiếp đất chính xác?
+Giả dụ chúng ta muốn quad thực hiện màn bay vụt 3 lần và hoàn thành đúng điểm mà nó bắt đầu.
+Màn trình diễn này có thể xảy ra rất nhanh đến nỗi chúng ta không thể sử dụng việc phản hồi vị trí để chỉnh sửa chuyển động khi đang bay
+Vì đơn giản là không đủ thời gian.
+Thay vào đó, việc quad có thể thực hiện là trình diễn một cách mò mẫm hãy xem nó hoàn thành màn trình diễn này thế nào và sau đó chúng tôi sử dụng thông tin để chỉnh sửa hành vi của quad để lần bay tiếp theo sẽ diễn ra tốt đẹp hơn.
+Tương tự như vận động viên lặn và nhẩy xào, chỉ với việc thực hành liên tục thì màn trình diễn có thể được thực hiện và rút kinh nghiệm để đạt được hiệu quả cao nhất
+Việc đánh trúng một quả bóng đang chuyển động là một kĩ năng cần thiết đối với nhiều môn thể thao
+Làm thế nào để một chiếc máy có thể thực hiện được Liệu một vận động viên có thể biểu diễn mà không cần nỗ lực không?
+Ngay trên đầu của quad có một cái vợt với một đốm nhỏ bằng quả táo, không quá to
+Cứ sau 20 phần nghìn giây thì các phép toán sau được thực hiện tương đương 50 lần mỗi giây
+Trước hết chúng tôi xác định vị trí quả bóng sẽ bay đến
+Sau đó chúng tôi tính toán xem quad sẽ đánh bóng thế nào để nó có thể bay đến vị trí bóng được ném tới
+Thứ 3, có một quỹ đạo được tạo ra để đưa quad từ vị trí hiện tại đến vị trí tương tác với bóng
+Thứ 4, Chúng tôi chỉ thực hiện giá trị của 20 phần nghìn giây cho quy trình đó
+Hai mươi phần nghìn giây sau, toàn bộ quy trình được lặp lại cho đến khi quad có thể đánh trúng quả bóng.
+Những cỗ máy không chỉ tự thực hiện các màn biểu diễn vận động mà còn thực hiện các màn biểu diễn cùng nhiều cỗ máy khác
+Và đây là màn trình diễn phối hợp của 3 máy bay quad để nâng tấm lưới lên
+Chúng trình diễn cực kỳ xuất sắc và mang tính phối hợp cao để tung quả bóng trả lại cho tôi.
+Các bạn chú ý nhé, khi duỗi hết ra, những máy bay quad này sẽ ở vị trí thẳng đứng
+Thực tế, khi mở rộng hết cỡ nó sẽ lớn hơn gấp 5 lần so với những gì mà một vận động viên nhẩy mạo hiểm có thể cảm nhận khi kết thúc cú lăng người
+Các thuật toán để thực hiện được động tác này thì tương tự như khi một chiếc quad đánh bóng lại phía tôi.
+Các mô hình toán được sử dụng nhằm không ngừng lặp lại quy trình phối hợp 50 lần mỗi giây.
+Những gì mà chúng ta vừa chứng kiến từ đầu tới giờ về những chiếc máy bay và khả năng của chúng.
+Vậy điều gì sẽ xảy ra khi chúng ta kết hợp chiếc máy thể thao này với khả năng thể thao của một con người?
+Trước mặt tôi lúc này là một thiết bị thương mại cảm biến hành vi chủ yếu được sử dụng để chơi trò chơi.
+Thiết bị này có thể nhận dạng được các bộ phận khác nhau trên cơ thể tôi khi tôi di chuyển thực tế ở ngoài
+Cũng tương tự như thiết bị điều khiển tôi dùng để chỉ lúc trước chúng ta cũng sử dụng thiết bị cảm biến này như một thiết bị đầu vào của hệ thống
+Bây giờ chúng ta có một cách tương tác tự nhiên với thuật toán của các máy quad thông qua các cử động của tôi
+Tương tác này không cần phải ảo.
+Nó có thể thực tế.
+Ví dụ như chiếc máy bay quad này.
+Nó đang cố gắng đứng yên ở một điểm cố định trong không gian.
+Nếu tôi cố gắng di chuyển nó đi chỗ khác, nó sẽ kháng cự lại, và sau đó lại trở về vị trí mà nó muốn.
+Tuy nhiên, chúng ta có thể thay đổi hành vi này.
+Chúng ta có thể sử dụng các mô hình toán học để tính toán lực tác động lên quad.
+Khi mà chúng ta biết được lực này, chúng ta có thể thay đổi các quy luật vật lý, tất nhiên là phải phù hợp với quad
+Và đây, máy bay quad đang chuyển động như thể nó đang ở trong một dung dịch lỏng.
+Giờ đây chúng ta có một cách tối ưu để tương tác với một chiếc máy.
+Tôi sẽ sử dụng khả năng mới này để điều khiển chiếc máy bay có gắn máy quay này tới một vị trí phù hợp để có thể ghi hình phần còn lại của quá trình mô tả này.
+Và như vậy chúng ta đã có thể tương tác vật lý với những chiếc máy bay bốn cánh quad đồng thời có thể thay đổi quy luật vật lý.
+Chúng ta cùng làm một thí dụ vui nhé.
+Tiếp theo bạn sẽ được chứng kiến những chiếc máy bay bốn cánh này ban đầu sẽ di chuyển như thể chúng đang ở trên sao Diêm Vương
+Và khi trọng lực tăng dần lên cho đến khi tất cả chúng ta quay trở về Trái đất, nhưng tôi đảm bảo với các bạn là chúng ta sẽ không thể lên đó được đâu
+Được rồi, bắt đầu nhé
+Úi chà!
+Chắc hẳn lúc này các bạn đang nghĩ những chiếc máy bay này đang vui vẻ lắm có lẽ các bạn cũng đang tự hỏi Tại sao họ lại tạo ra một cách chính xác được những vận động viên máy ?
+Một vài phỏng đoán về việc đóng vai trong thế giới động vật đó là các kĩ năng mài và phát triển các năng lực của bản thân.
+Những người khác nghĩ rằng có nhiều vai trò xã hội hơn, và nó được dùng để kết nối nhóm lại.
+Tương tự chúng tôi sử dụng sự bắt chước các động tác trong thể thao và các môn điền kinh để tạo ra những thuật toán mới cho các thiết bị điện tử để thúc đẩy các thiết bị này đạt đến những giới hạn của mình.
+Tốc độ của các thiết bị điện tử này sẽ có tác động gì lên cuộc sống của chúng ta?
+Cũng giống như tất cả những sáng tạo và sự cải tiến trước đây chúng đều được dùng để cải thiện khả năng của con người hoặc cũng có thể bị lạm dụng hoặc sử dụng sai mục đích
+Đây không phải là một lựa chọn kĩ thuật; mà là lựa chọn xã hội.
+Vậy thì chúng ta hãy lựa chọn cho đúng, lựa chọn đó có thể giúp tương lai của các thiết bị điện tử này trở nên tốt hơn, giống như khả năng điền kinh trong các môn thể thao có thể mang lại sự tối ưu cho chúng ta.
+Bây giờ cho phép tôi giới thiệu với các bạn những ông phù thuỷ phía sau tấm phông xanh này
+Hiện tại họ là những thành viên của nhóm nghiên cứu Sân khấu trình diễn của các thiết bị bay này.
+Họ là Federico Augugliaro, Dario Brescianini, Markus Hehn, Sergei Lupashin, Mark Muller và Robin Ritz.
+Xin hãy nhìn họ.
+Họ sinh ra để làm nên những điều tuyệt vời.
+Xin chân thành cảm ơn các bạn.

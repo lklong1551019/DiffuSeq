@@ -1,0 +1,969 @@
+# ::id doc-601
+# ::doc_file doc-601
+# ::tok http : / / www . ted . com / talks / paul_debevec_animates_a_photo_real_digital_face< / url> <next_sent> One of the biggest challenges in computer graphics has been being able to create a photo - real , digital human face . <next_sent> And one of the reasons it is so difficult is that , unlike aliens and dinosaurs , we look at human faces every day . <next_sent> They are very important to how we communicate with each other . <next_sent> As a result , we 're tuned in to the subtlest things that could possibly be wrong with a computer rendering , in order to believe whether these things are realistic . <next_sent> And what I 'm going to do in the next five minutes is take you through a process where we tried to create a reasonably photo - realistic computer - generated face , using some computer graphics technology we 've developed , and also some collaborators at a company called Image Metrics . <next_sent> And we 're going to try to do a photo - real face of an actress named Emily O'Brien , who is right there . <next_sent> And that 's actually a completely computer - generated rendering of her face . <next_sent> By the end of the talk , we 're going to see it move . <next_sent> The way that we did this is we tried to start with Emily herself , who was gracious enough to come to our laboratory in Marina Del Rey , and sit for a session in Light Stage 5 . <next_sent> This is a face - scanning sphere , with 156 white LEDs all around that allow us to photograph her in a series of very controlled illumination conditions . <next_sent> And the lighting that we use these days looks something like this . <next_sent> We shoot all of these photographs in about three seconds . <next_sent> And we basically capture enough information with video projector patterns that drape over the contours of her face , and different principle directions of light from the light stage , to figure out both the coarse - scale and the fine - scale detail of her face . <next_sent> If we zoom in on this photograph right here , we can see it 's a really nice photograph to have of her , because she is lit from absolutely everywhere at the same time to get a nice image of her facial texture . <next_sent> And in addition , we 've actually used polarizers on all the lights -- just like polarized sunglasses can block the glare off of the road , polarizers can block the shine off of the skin , so we do n't get all those specular reflections to take this map . <next_sent> Now , if we turn the polarizers around just a little bit , we can actually bring that specular reflection of the skin back in , and you can see she looks kind of shiny and oily at this point . <next_sent> If you take the difference between these two images here , you can get an image lit from the entire sphere of light of just the shine off of Emily 's skin . <next_sent> I do n't think any photograph like this had ever been taken before we had done this . <next_sent> And this is very important light to capture , because this is the light that reflects off the first surface of the skin . <next_sent> It does n't get underneath the translucent layers of the skin and blur out . <next_sent> And , as a result , it 's a very good cue to the detailed shape of the skin - pore structure and all of the fine wrinkles that all of us have , the things that actually make us look like real humans . <next_sent> So , if we use information that comes off of this specular reflection , we can go from a traditional face scan that might have the gross contours of the face and the basic shape , and augment it with information that puts in all of that skin pore structure and fine wrinkles . <next_sent> And , even more importantly , since this is a photometric process that only takes three seconds to capture , we can shoot Emily in just part of an afternoon , in many different facial poses and facial expressions . <next_sent> So , here you can see her moving her eyes around , moving her mouth around . <next_sent> And these we 're actually going to use to create a photo - real digital character . <next_sent> If you take a look at these scans that we have of Emily , you can see that the human face does an enormous amount of amazing things as it goes into different facial expressions . <next_sent> You can see things . <next_sent> Not only the face shape changes , but all sorts of different skin buckling and skin wrinkling occurs . <next_sent> You can see that the skin pore structure changes enormously from stretched skin pores to the regular skin texture . <next_sent> You can see the furrows in the brow and how the microstructure changes there . <next_sent> You can see muscles pulling down at flesh to bring her eyebrows down . <next_sent> Her muscles bulging in her forehead when she winces like that . <next_sent> In addition to this kind of high - resolution geometry , since it 's all captured with cameras , we 've got a great texture map to use for the face . <next_sent> And by looking at how the different color channels of the illumination , the red and the green and the blue , diffuse the light differently , we can come up with a way of shading the skin on the computer . <next_sent> Then , instead of looking like a plaster mannequin , it actually looks like it 's made out of living human flesh . <next_sent> And this is what we used to give to the company Image Metrics to create a rigged , digital version of Emily . <next_sent> We 're just seeing the coarse - scale geometry here . <next_sent> But they basically created a digital puppet of her , where you can pull on these various strings , and it actually moves her face in ways that are completely consistent with the scans that we took . <next_sent> And , in addition to the coarse - scale geometry , they also used all of that detail to create a set of what are called " displacement maps " that animate as well . <next_sent> These are the displacement maps here . <next_sent> And you can see those different wrinkles actually show up as she animates . <next_sent> So the next process was then to animate her . <next_sent> We actually used one of her own performances to provide the source data . <next_sent> So , by analyzing this video with computer vision techniques , they were able to drive the facial rig with the computer - generated performance . <next_sent> So what you 're going to see now , after this , is a completely photo - real digital face . <next_sent> We can turn the volume up a little bit if that 's available . <next_sent> Emily : Image Metrics is a markerless , performance - driven animation company . <next_sent> We specialize in high - quality facial animation for video games and films . <next_sent> Image Metrics is a markerless , performance - driven animation company . <next_sent> We specialize in high quality facial animation for video games and films . <next_sent> Paul Debevec : So , if we break that down into layers , here 's that diffuse component we saw in the first slide . <next_sent> Here is the specular component animating . <next_sent> You can see all the wrinkles happening there . <next_sent> And there is the underlying wireframe mesh . <next_sent> And that is Emily herself . <next_sent> Now , where are we going with this here ? <next_sent> This is Bruce Lawmen , one of our researchers in the group , who graciously agreed to get captured running in the Light Stage . <next_sent> And let 's take a look at a computer - generated version of Bruce , running in a new environment . <next_sent> And thank you very much .
+(d / document
+   :snt1 (s1.u / url-entity
+               :polarity "-"
+               :value "YouTube")
+   :snt2 (s2.p2 / possible-01
+                :ARG1 (s2.c4 / create-01
+                             :ARG1 (s2.f / face
+                                         :ARG1-of (s2.r / real-04)
+                                         :mod (s2.h2 / human)
+                                         :mod (s2.d / digital)
+                                         :mod (s2.p / photo)))
+                :ARG2-of (s2.c / challenge-01
+                               :ARG1-of (s2.i / include-91
+                                              :ARG2 (s2.c2 / challenge-01
+                                                           :ARG1-of (s2.h / have-degree-91
+                                                                          :ARG2 (s2.b / big)
+                                                                          :ARG3 (s2.m / most))
+                                                           :topic (s2.g / graphic
+                                                                        :mod (s2.c3 / computer))))))
+   :snt3 (s3.a2 / and
+                :op2 (s3.i / include-91
+                           :ARG1 (s3.l / look-01
+                                       :ARG0 (s3.w / we)
+                                       :ARG1 (s3.f / face
+                                                   :part-of (s3.h / human))
+                                       :ARG1-of (s3.r2 / resemble-01
+                                                       :ARG2 (s3.a3 / and
+                                                                    :op1 (s3.a / alien-01)
+                                                                    :op2 (s3.d3 / dinosaur))
+                                                       :polarity "-")
+                                       :frequency (s3.d / day
+                                                        :mod (s3.e / every)))
+                           :ARG2 (s3.r / reason
+                                       :ARG0-of (s3.c / cause-01
+                                                      :ARG1 (s3.d2 / difficult
+                                                                   :degree (s3.s / so))))))
+   :snt4 (s4.i / important-01
+               :ARG1 (s4.t / they
+                           :same-as s3.f)
+               :ARG2 (s4.t2 / thing
+                            :manner-of (s4.c / communicate-01
+                                             :ARG0 (s4.w / we)
+                                             :ARG2 (s4.e / each
+                                                         :mod (s4.o / other))))
+               :degree (s4.v / very))
+   :snt5 (s5.r3 / result-01
+                :ARG2 (s5.t5 / tune-in-02
+                             :purpose (s5.b / believe-01
+                                            :ARG0 (s5.w / we)
+                                            :ARG1 (s5.t4 / truth-value
+                                                         :polarity-of (s5.r / realistic-03
+                                                                            :ARG1 (s5.t2 / thing
+                                                                                         :mod (s5.t3 / this)
+                                                                                         :same-as s5.t))))
+                             :ARG1 s5.w
+                             :ARG2 (s5.t / thing
+                                         :ARG1-of (s5.h / have-degree-91
+                                                        :ARG2 (s5.s / slight)
+                                                        :ARG3 (s5.m / most))
+                                         :ARG1-of (s5.w2 / wrong-02
+                                                         :ARG1-of (s5.p / possible-01)
+                                                         :ARG2 (s5.r2 / render-02
+                                                                      :ARG0 (s5.c / computer))))))
+   :snt6 (s6.a3 / and
+                :op2 (s6.t / take-01
+                           :ARG0 (s6.i / i)
+                           :ARG1 (s6.y / you)
+                           :path (s6.p4 / process-02
+                                        :ARG1 (s6.t4 / try-01
+                                                     :ARG0 (s6.w / we)
+                                                     :ARG1 (s6.c5 / create-01
+                                                                  :ARG0 s6.w
+                                                                  :ARG1 (s6.f / face
+                                                                              :ARG1-of (s6.g / generate-01
+                                                                                             :ARG0 (s6.c3 / computer))
+                                                                              :ARG1-of (s6.r / realistic-03
+                                                                                             :ARG1 (s6.p3 / photo)
+                                                                                             :ARG1-of (s6.r2 / reasonable-02)))
+                                                                  :ARG2-of (s6.u / use-01
+                                                                                 :ARG0 s6.w
+                                                                                 :ARG1 (s6.a4 / and
+                                                                                              :op1 (s6.t2 / technology
+                                                                                                          :quant (s6.s / some)
+                                                                                                          :ARG1-of (s6.d / develop-02
+                                                                                                                         :ARG0 s6.w)
+                                                                                                          :mod (s6.p / paint-02
+                                                                                                                     :ARG0 (s6.c4 / computer)))
+                                                                                              :op2 (s6.p2 / person
+                                                                                                          :quant (s6.s2 / some)
+                                                                                                          :ARG0-of (s6.c / collaborate-01
+                                                                                                                         :ARG1 (s6.c2 / company
+                                                                                                                                      :name (s6.n / name
+                                                                                                                                                  :op1 "Image"
+                                                                                                                                                  :op2 "Metrics")
+                                                                                                                                      :ARG1-of (s6.h / have-org-role-91)))
+                                                                                                          :mod (s6.a2 / also)))))))
+                           :time (s6.a / after
+                                       :mod (s6.n2 / next
+                                                   :op1 (s6.t3 / temporal-quantity
+                                                               :unit (s6.m / minute)
+                                                               :quant "5"))
+                                       :op1 (s6.n3 / now))))
+   :snt7 (s7.a2 / and
+                :op2 (s7.t2 / try-01
+                            :ARG0 (s7.w / we
+                                        :same-as s6.w)
+                            :ARG1 (s7.d / do-02
+                                        :ARG0 s7.w
+                                        :ARG1 (s7.f / face
+                                                    :ARG1-of (s7.r / real-04)
+                                                    :ARG1-of (s7.p2 / photograph-01)
+                                                    :part-of (s7.p / person
+                                                                   :name (s7.n / name
+                                                                               :op1 "Emily"
+                                                                               :op2 "O'Brien")
+                                                                   :ARG0-of (s7.a / act-01)
+                                                                   :location (s7.t / there
+                                                                                   :mod (s7.r2 / right)))))))
+   :snt8 (s8.a2 / and
+                :op2 (s8.r / render-02
+                           :ARG0 (s8.t / that
+                                       :same-as s7.f)
+                           :ARG1 (s8.f / face
+                                       :part-of (s8.s / she
+                                                      :same-as s7.p))
+                           :ARG1-of (s8.g / generate-01
+                                          :ARG0 (s8.c2 / computer)
+                                          :ARG1-of (s8.c / complete-02))
+                           :ARG1-of (s8.a / actual-02)))
+   :snt9 (s9.s / see-01
+               :ARG0 (s9.w / we)
+               :ARG1 (s9.m / move-01
+                           :ARG1 (s9.i / it
+                                       :same-as s7.f))
+               :time (s9.e / end-01
+                           :ARG1 (s9.t / talk-01)))
+   :snt10 (s10.t2 / try-01
+                  :ARG0 (s10.w / we
+                               :same-as s6.w)
+                  :ARG1 (s10.s4 / start-01
+                                :ARG0 s10.w
+                                :ARG2 (s10.p / person
+                                             :name (s10.n / name
+                                                          :op1 "Emily")
+                                             :ARG0-of (s10.g / gracious-02
+                                                             :ARG2-of (s10.h / have-degree-91
+                                                                             :ARG1 s10.p
+                                                                             :ARG3 (s10.e / enough)
+                                                                             :ARG6 (s10.a / and
+                                                                                          :op1 (s10.c2 / come-01
+                                                                                                       :ARG1 s10.p
+                                                                                                       :ARG4 (s10.l / laboratory
+                                                                                                                    :location (s10.c / city-district
+                                                                                                                                     :name (s10.n2 / name
+                                                                                                                                                   :op1 "Marina"
+                                                                                                                                                   :op2 "Del"
+                                                                                                                                                   :op3 "Rey"))
+                                                                                                                    :poss s10.w)
+                                                                                                       :same-as s7.p)
+                                                                                          :op2 (s10.s2 / sit-01
+                                                                                                       :purpose (s10.s / session
+                                                                                                                       :location (s10.s3 / stage
+                                                                                                                                         :name (s10.n3 / name
+                                                                                                                                                       :op1 "Light")
+                                                                                                                                         :mod "5"))
+                                                                                                       :ARG1 s10.p))))))
+                  :manner (s10.d / do-02
+                                 :ARG0 s10.w
+                                 :ARG1 (s10.t / this
+                                              :same-as s7.t2)))
+   :snt11 (s11.s4 / sphere
+                  :ARG0-of (s11.s / scan-01
+                                  :ARG1 (s11.f / face))
+                  :ARG0-of (s11.h / have-03
+                                  :ARG1 (s11.b / bulb
+                                               :ARG0-of (s11.l / light-04
+                                                               :mod (s11.f2 / fluorescent)
+                                                               :mod (s11.c / compact))
+                                               :ARG0-of (s11.a / allow-01
+                                                               :ARG1 (s11.p / photograph-01
+                                                                            :ARG0 (s11.w / we
+                                                                                         :same-as s6.w)
+                                                                            :ARG1 (s11.s3 / she
+                                                                                          :same-as s7.p)
+                                                                            :manner (s11.c2 / condition
+                                                                                            :quant (s11.s2 / series)
+                                                                                            :ARG0-of (s11.l2 / light-04)
+                                                                                            :ARG1-of (s11.c3 / control-01
+                                                                                                             :degree (s11.v / very)))))
+                                               :ARG1-of (s11.w2 / white-03)
+                                               :location (s11.a2 / around)
+                                               :quant "156"))
+                  :domain (s11.t / this
+                                 :same-as s10.s3))
+   :snt12 (s12.a / and
+                 :op2 (s12.l2 / look-02
+                              :ARG0 (s12.t / thing
+                                           :ARG0-of (s12.l / light-04)
+                                           :ARG1-of (s12.u / use-01
+                                                           :ARG0 (s12.w / we)
+                                                           :time (s12.d / day
+                                                                        :mod (s12.t2 / this))))
+                              :ARG1 (s12.s / something
+                                           :ARG1-of (s12.r / resemble-01
+                                                           :ARG2 (s12.t3 / this)))))
+   :snt13 (s13.s2 / shoot-03
+                  :ARG0 (s13.w / we
+                               :same-as s6.w)
+                  :ARG1 (s13.p / photograph-01
+                               :mod (s13.t2 / this)
+                               :mod (s13.a3 / all))
+                  :time (s13.a2 / after
+                                :quant (s13.a / about
+                                              :op1 (s13.t / temporal-quantity
+                                                          :unit (s13.s / second)
+                                                          :quant "3"))
+                                :op1 (s13.n / now)))
+   :snt14 (s14.a / and
+                 :op2 (s14.c / capture-01
+                             :ARG0 (s14.w / we
+                                          :same-as s6.w)
+                             :ARG1 (s14.i / information
+                                          :ARG1-of (s14.h / have-quant-91
+                                                          :ARG3 (s14.e / enough)
+                                                          :ARG6 (s14.f2 / figure-out-05
+                                                                        :ARG0 s14.w
+                                                                        :ARG1 (s14.a3 / and
+                                                                                      :op1 (s14.d / detail
+                                                                                                  :mod (s14.s / scale
+                                                                                                              :mod (s14.c2 / coarse)))
+                                                                                      :op2 (s14.d2 / detail
+                                                                                                   :mod (s14.s2 / scale
+                                                                                                                :mod (s14.f3 / fine)))))))
+                             :instrument (s14.a2 / and
+                                                 :op1 (s14.p / pattern
+                                                             :ARG0-of (s14.c3 / cover-02
+                                                                              :ARG2 (s14.o / over
+                                                                                           :op1 (s14.f4 / force
+                                                                                                        :ARG1-of (s14.c4 / cover-02
+                                                                                                                         :ARG2 (s14.f / face
+                                                                                                                                      :part s14.d
+                                                                                                                                      :part s14.d2
+                                                                                                                                      :part-of (s14.s3 / she
+                                                                                                                                                       :same-as s7.p)
+                                                                                                                                      :same-as s8.f)))))
+                                                             :mod (s14.p3 / projector
+                                                                          :mod (s14.v / video)))
+                                                 :op2 (s14.d4 / direction
+                                                              :ARG1-of (s14.d3 / differ-02)
+                                                              :direction (s14.l / light-04)
+                                                              :mod (s14.p2 / principle)
+                                                              :source (s14.s4 / stage
+                                                                              :mod (s14.l2 / light-04)
+                                                                              :same-as s10.s3)))
+                             :mod (s14.b / basic)))
+   :snt15 (s15.p3 / possible-01
+                  :ARG1 (s15.s2 / see-01
+                                :ARG0 (s15.w / we)
+                                :ARG1 (s15.p2 / photograph
+                                              :ARG1-of (s15.n / nice-01
+                                                              :ARG1-of (s15.c / cause-01
+                                                                              :ARG0 (s15.l / light-04
+                                                                                           :purpose (s15.g / get-01
+                                                                                                           :ARG0 s15.w
+                                                                                                           :ARG1 (s15.i / image
+                                                                                                                        :ARG1-of (s15.n2 / nice-01)
+                                                                                                                        :topic (s15.t / texture
+                                                                                                                                      :mod (s15.f / face))))
+                                                                                           :ARG1 (s15.s3 / she
+                                                                                                         :part s15.f
+                                                                                                         :same-as s7.p)
+                                                                                           :source (s15.e / everywhere
+                                                                                                          :degree (s15.a / absolute))
+                                                                                           :time (s15.t3 / time
+                                                                                                         :ARG1-of (s15.s / same-01))))
+                                                              :degree (s15.r / really))
+                                              :ARG1-of (s15.h / have-03)
+                                              :topic s15.s3))
+                  :condition (s15.z / zoom-01
+                                    :ARG0 s15.w
+                                    :ARG2 (s15.p / photograph
+                                                 :mod (s15.t2 / this))
+                                    :location (s15.h2 / here
+                                                      :mod (s15.r2 / right))))
+   :snt16 (s16.a4 / and
+                  :op2 (s16.u / use-01
+                              :ARG0 (s16.w / we
+                                           :same-as s6.w)
+                              :ARG1 (s16.p / polarize-01)
+                              :ARG1-of (s16.a / actual-02)
+                              :ARG1-of (s16.m2 / mean-01
+                                               :ARG2 (s16.c / cause-01
+                                                            :ARG0 s16.u
+                                                            :ARG1 (s16.g / get-01
+                                                                         :purpose (s16.t / take-01
+                                                                                         :ARG0 s16.w
+                                                                                         :ARG1 (s16.m / map
+                                                                                                      :mod (s16.t3 / this)))
+                                                                         :ARG0 s16.w
+                                                                         :ARG1 (s16.r2 / reflect-01
+                                                                                       :ARG2-of (s16.r / reflect-01)
+                                                                                       :mod (s16.t2 / that
+                                                                                                    :mod (s16.a3 / all)))
+                                                                         :polarity "-")))
+                              :ARG2 (s16.l / light
+                                           :mod (s16.a2 / all)))
+                  :rel (s16.r3 / resemble-01
+                               :ARG2 (s16.p3 / possible-01
+                                             :ARG1 (s16.b / block-01
+                                                          :ARG0 (s16.s4 / sunglasses
+                                                                        :ARG1-of (s16.p2 / polarize-01)))
+                                             :ARG1 (s16.b2 / block-01
+                                                           :ARG0 s16.s4
+                                                           :ARG1-of (s16.p4 / possible-01))))
+                  :rel (s16.s / shine-01
+                              :ARG1 (s16.s2 / shine-01
+                                            :source (s16.s3 / skin))
+                              :source (s16.r4 / road)))
+   :snt17 (s17.a2 / and
+                  :op1 (s17.p3 / possible-01
+                               :ARG1 (s17.b3 / bring-01
+                                             :ARG0 (s17.w / we)
+                                             :ARG1 (s17.t / thing
+                                                          :ARG1-of (s17.r / reflect-01)
+                                                          :ARG2-of (s17.r2 / reflect-01
+                                                                           :ARG1 (s17.s4 / skin)))
+                                             :ARG1-of (s17.a / actual-02)
+                                             :condition (s17.t3 / turn-01
+                                                                :ARG0 s17.w
+                                                                :ARG1 (s17.p2 / polarize-01)
+                                                                :degree (s17.b2 / bit
+                                                                                :mod (s17.l / little)
+                                                                                :mod (s17.j / just))
+                                                                :direction (s17.a4 / around))
+                                             :direction (s17.b / back)))
+                  :op2 (s17.p4 / possible-01
+                               :ARG1 (s17.s / see-01
+                                            :ARG0 (s17.y / you)
+                                            :ARG1 (s17.l2 / look-02
+                                                          :ARG0 (s17.s2 / she
+                                                                        :same-as s7.p)
+                                                          :ARG1 (s17.a3 / and
+                                                                        :op1 (s17.s3 / shine-01
+                                                                                     :ARG1 s17.s2
+                                                                                     :degree (s17.k / kind-of))
+                                                                        :op2 (s17.o / oily-03
+                                                                                    :ARG1 s17.s2))
+                                                          :time (s17.p / point
+                                                                       :mod (s17.t2 / this)))))
+                  :time (s17.n / now))
+   :snt18 (s18.p2 / possible-01
+                  :ARG1 (s18.g / get-01
+                               :ARG0 (s18.y / you)
+                               :ARG1 (s18.i2 / image
+                                             :ARG1-of (s18.l2 / light-04
+                                                              :ARG0 (s18.s / shine-01
+                                                                           :ARG1 (s18.s2 / skin
+                                                                                         :part-of (s18.p / person
+                                                                                                         :name (s18.n / name
+                                                                                                                      :op1 "Emily")
+                                                                                                         :same-as s7.p)
+                                                                                         :same-as s17.s4)
+                                                                           :mod (s18.j / just))
+                                                              :source (s18.s3 / sphere
+                                                                              :mod (s18.e / entire)
+                                                                              :mod (s18.l / light)))))
+                  :condition (s18.t / take-01
+                                    :ARG0 s18.y
+                                    :ARG1 (s18.d / differ-02
+                                                 :ARG1 (s18.i / image
+                                                              :mod (s18.t2 / this)
+                                                              :quant "2"))
+                                    :location (s18.h / here)))
+   :snt19 (s19.t2 / think-01
+                  :ARG0 (s19.i / i
+                               :same-as s6.i)
+                  :ARG1 (s19.t / take-01
+                               :ARG1 (s19.p / photograph
+                                            :ARG1-of (s19.r / resemble-01
+                                                            :ARG2 (s19.t3 / this))
+                                            :mod (s19.a / any))
+                               :time (s19.e / ever)
+                               :time (s19.b / before
+                                            :op1 (s19.d / do-02
+                                                        :ARG0 (s19.w / we
+                                                                     :same-as s6.w)
+                                                        :ARG1 (s19.t4 / this
+                                                                      :same-as s7.t2))))
+                  :polarity "-")
+   :snt20 (s20.a / and
+                 :op2 (s20.c2 / cause-01
+                              :ARG1 (s20.c / capture-01
+                                           :ARG1 (s20.l / light
+                                                        :ARG1-of (s20.r / reflect-01
+                                                                        :ARG2 (s20.o / off
+                                                                                     :op1 (s20.s2 / surface
+                                                                                                  :ord (s20.o2 / ordinal-entity
+                                                                                                               :value "1")
+                                                                                                  :part-of (s20.s / skin))))
+                                                        :mod (s20.t / this))
+                                           :ARG1-of (s20.i / important-01
+                                                           :degree (s20.v / very)))))
+   :snt21 (s21.a / and
+                 :op1 (s21.g / get-05
+                             :ARG1 (s21.i / it
+                                          :same-as s20.t)
+                             :ARG2 (s21.u / underneath
+                                          :op1 (s21.l / layer
+                                                      :mod (s21.t / translucent)
+                                                      :part-of (s21.s / skin
+                                                                      :same-as s20.s)))
+                             :polarity "-")
+                 :op2 (s21.b / blur-01
+                             :ARG1 s21.i
+                             :direction (s21.o / out)
+                             :polarity "-"))
+   :snt22 (s22.a4 / and
+                  :op2 (s22.r2 / result-01
+                               :ARG1 (s22.c / cue
+                                            :ARG1-of (s22.g / good-02
+                                                            :degree (s22.v / very))
+                                            :domain (s22.i / it
+                                                           :same-as s20.t)
+                                            :topic (s22.a5 / and
+                                                           :domain (s22.t / thing
+                                                                          :ARG0-of (s22.m / make-02
+                                                                                          :ARG1 (s22.l / look-02
+                                                                                                       :ARG0 (s22.w / we
+                                                                                                                    :mod (s22.a3 / all))
+                                                                                                       :ARG1 (s22.h2 / human
+                                                                                                                     :ARG1-of (s22.r / real-04)))
+                                                                                          :ARG1-of (s22.a / actual-02)))
+                                                           :op1 (s22.s / shape
+                                                                       :ARG1-of (s22.d / detail-01)
+                                                                       :poss (s22.s3 / structure-01
+                                                                                     :ARG1 (s22.p / pore
+                                                                                                  :part-of (s22.s2 / skin))))
+                                                           :op2 (s22.w2 / wrinkle-01
+                                                                        :ARG1-of (s22.f / fine-02)
+                                                                        :ARG1-of (s22.h / have-03
+                                                                                        :ARG0 s22.w)
+                                                                        :mod (s22.a2 / all))))))
+   :snt23 (s23.p2 / possible-01
+                  :ARG1 (s23.a3 / and
+                                :op1 (s23.g / go-06
+                                            :ARG0 (s23.w / we)
+                                            :ARG3 (s23.s / scan-01
+                                                         :ARG0-of (s23.h / have-03
+                                                                         :ARG1 (s23.a2 / and
+                                                                                       :op1 (s23.e / effect
+                                                                                                   :ARG1-of (s23.g2 / gross-06)
+                                                                                                   :part-of (s23.f2 / face))
+                                                                                       :op2 (s23.s2 / shape
+                                                                                                    :mod (s23.b / basic)))
+                                                                         :ARG1-of (s23.p3 / possible-01))
+                                                         :ARG1 (s23.f / face)
+                                                         :mod (s23.t2 / tradition)))
+                                :op2 (s23.a5 / augment-01
+                                             :ARG0 s23.w
+                                             :ARG1 s23.s
+                                             :ARG2 (s23.i2 / information
+                                                           :ARG0-of (s23.p4 / put-in-05
+                                                                            :ARG1 (s23.a4 / and
+                                                                                          :mod (s23.a / all)
+                                                                                          :op1 (s23.s5 / structure-01
+                                                                                                       :ARG1 (s23.p / pore
+                                                                                                                    :part-of (s23.s3 / skin)))
+                                                                                          :op2 (s23.w2 / wrinkle-01
+                                                                                                       :ARG1-of (s23.f3 / fine-02)))))))
+                  :condition (s23.u / use-01
+                                    :ARG0 s23.w
+                                    :ARG1 (s23.i / information
+                                                 :ARG1-of (s23.c / come-03
+                                                                 :ARG2 (s23.r / reflect-01
+                                                                              :ARG2-of (s23.s4 / speculate-01)
+                                                                              :mod (s23.t / this)
+                                                                              :same-as s17.t)))))
+   :snt24 (s24.a2 / and
+                  :op2 (s24.h / have-degree-91
+                              :ARG1 (s24.p5 / possible-01
+                                            :ARG1 (s24.s2 / shoot-02
+                                                          :ARG0 (s24.w / we
+                                                                       :same-as s6.w)
+                                                          :ARG1 (s24.p2 / person
+                                                                        :name (s24.n / name
+                                                                                     :op1 "Emily")
+                                                                        :same-as s7.p)
+                                                          :manner (s24.a3 / and
+                                                                          :quant (s24.m / many)
+                                                                          :ARG1-of (s24.d / differ-02)
+                                                                          :op1 (s24.p4 / pose-01
+                                                                                       :mod (s24.f / face))
+                                                                          :op2 (s24.e2 / express-01))
+                                                          :time (s24.p / part
+                                                                       :mod (s24.j / just)
+                                                                       :part-of (s24.a / afternoon)))
+                                            :ARG1-of (s24.c2 / cause-01
+                                                             :ARG0 (s24.p6 / process-02
+                                                                           :ARG0-of (s24.t / take-10
+                                                                                           :ARG1 (s24.t2 / temporal-quantity
+                                                                                                         :unit (s24.s / second)
+                                                                                                         :quant "3")
+                                                                                           :ARG2 (s24.c / capture-01
+                                                                                                        :ARG1 s24.p6)
+                                                                                           :mod (s24.o / only))
+                                                                           :ARG1 (s24.t3 / this
+                                                                                         :same-as s7.t2)
+                                                                           :mod (s24.p3 / photometric))))
+                              :ARG2 (s24.i / important-01
+                                           :ARG1 s24.p5)
+                              :ARG3 (s24.m2 / more
+                                            :mod (s24.e / even))))
+   :snt25 (s25.c / cause-01
+                 :ARG1 (s25.p / possible-01
+                              :ARG1 (s25.s / see-01
+                                           :ARG0 (s25.y / you)
+                                           :ARG1 (s25.a / and
+                                                        :op1 (s25.e / eye
+                                                                    :direction (s25.a2 / around))
+                                                        :op2 (s25.m2 / move-01
+                                                                     :ARG0 (s25.s2 / she
+                                                                                   :part s25.e
+                                                                                   :part (s25.m / mouth)
+                                                                                   :same-as s7.p)
+                                                                     :direction (s25.a3 / around))
+                                                        :op2 (s25.m3 / move-01
+                                                                     :ARG0 s25.s2
+                                                                     :ARG1 s25.m))
+                                           :location (s25.h / here))))
+   :snt26 (s26.a2 / and
+                  :op2 (s26.u / use-01
+                              :ARG0 (s26.w / we)
+                              :ARG1 (s26.t / this)
+                              :ARG1-of (s26.a / actual-02)
+                              :ARG2 (s26.c2 / create-01
+                                            :ARG0 s26.w
+                                            :ARG1 (s26.c / character
+                                                         :ARG1-of (s26.r / real-04
+                                                                         :mod (s26.p / photo))
+                                                         :mod (s26.d / digital)))))
+   :snt27 (s27.p2 / possible-01
+                  :ARG1 (s27.s2 / see-01
+                                :ARG0 (s27.y / you)
+                                :ARG1 (s27.d2 / do-02
+                                              :ARG0 (s27.f / face
+                                                           :part-of (s27.h2 / human))
+                                              :ARG1 (s27.t / thing
+                                                           :quant (s27.a2 / amount
+                                                                          :mod (s27.e / enormous))
+                                                           :ARG0-of (s27.a / amaze-01))
+                                              :time (s27.g / go-06
+                                                           :ARG0 s27.f
+                                                           :ARG4 (s27.e2 / express-01
+                                                                         :ARG1-of (s27.d / differ-02)
+                                                                         :location (s27.f2 / face)))))
+                  :condition (s27.l / look-01
+                                    :ARG0 s27.y
+                                    :ARG1 (s27.s / scan
+                                                 :ARG1-of (s27.h / have-03
+                                                                 :ARG0 (s27.w / we
+                                                                              :same-as s6.w))
+                                                 :mod (s27.t2 / this)
+                                                 :topic (s27.p / person
+                                                               :name (s27.n / name
+                                                                            :op1 "Emily")
+                                                               :same-as s7.p))))
+   :snt28 (s28.p / possible-01
+                 :ARG1 (s28.s / see-01
+                              :ARG0 (s28.y / you)
+                              :ARG1 (s28.t / thing)))
+   :snt29 (s29.a2 / and
+                  :op1 (s29.c / change-01
+                              :ARG1 (s29.s / shape-01
+                                           :ARG1 (s29.f / face)))
+                  :op2 (s29.a3 / and
+                               :ARG1-of (s29.d / differ-02)
+                               :mod (s29.s3 / sort
+                                            :mod (s29.a / all))
+                               :op1 (s29.h / White
+                                           :domain (s29.s2 / skin))
+                               :op2 (s29.w / wrinkle-01
+                                           :ARG1 s29.s2)))
+   :snt30 (s30.p3 / possible-01
+                  :ARG1 (s30.s / see-01
+                               :ARG0 (s30.y / you)
+                               :ARG1 (s30.c / change-01
+                                            :ARG1 (s30.s4 / structure-01
+                                                          :ARG1 (s30.p / pore
+                                                                       :part-of (s30.s2 / skin
+                                                                                        :part (s30.p2 / pore
+                                                                                                      :ARG1-of (s30.s3 / stretch-01)))))
+                                            :ARG2 (s30.t / texture
+                                                         :ARG1-of (s30.r / regular-03)
+                                                         :mod s30.s2)
+                                            :ARG3 s30.p2
+                                            :extent (s30.e / enormous))))
+   :snt31 (s31.p / possible-01
+                 :ARG1 (s31.s / see-01
+                              :ARG0 (s31.y / you)
+                              :ARG1 (s31.a / and
+                                           :op1 (s31.f / furrow-01
+                                                       :ARG1 (s31.b / brow))
+                                           :op2 (s31.t / thing
+                                                       :manner-of (s31.c / change-01
+                                                                         :ARG1 (s31.m / microstructure)
+                                                                         :location s31.b)))))
+   :snt32 (s32.p / possible-01
+                 :ARG1 (s32.s / see-01
+                              :ARG0 (s32.y / you)
+                              :ARG1 (s32.p2 / pull-01
+                                            :purpose (s32.b / bring-01
+                                                            :ARG1 (s32.e / eyebrow
+                                                                         :poss (s32.s2 / she
+                                                                                       :same-as s7.p))
+                                                            :ARG2 (s32.d2 / down))
+                                            :ARG0-of s32.b
+                                            :ARG0 (s32.m / muscle)
+                                            :ARG1 (s32.f / flesh)
+                                            :ARG2 (s32.d / down))))
+   :snt33 (s33.b / bulge-01
+                 :ARG1 (s33.m / muscle
+                              :part-of (s33.s / she
+                                              :part (s33.f / forehead)
+                                              :same-as s7.p))
+                 :location s33.f
+                 :time (s33.w / wince-01
+                              :ARG0 s33.s
+                              :ARG1-of (s33.r / resemble-01
+                                              :ARG2 (s33.t / that))))
+   :snt34 (s34.h / have-03
+                 :ARG0 (s34.w / we)
+                 :ARG1 (s34.m / map
+                              :ARG1-of (s34.u / use-01
+                                              :ARG0 s34.w
+                                              :ARG2 (s34.f / face))
+                              :mod (s34.g2 / great)
+                              :topic (s34.t / texture))
+                 :ARG1-of (s34.c3 / cause-01
+                                  :ARG0 (s34.c2 / capture-01
+                                                :ARG1 (s34.i / it
+                                                             :mod (s34.a2 / all))
+                                                :instrument (s34.c / camera)))
+                 :ARG1-of (s34.a / add-02
+                                 :ARG2 (s34.g / geometry
+                                              :ARG1-of (s34.r / resolve-01
+                                                              :ARG1-of (s34.h2 / high-02))
+                                              :mod (s34.k / kind
+                                                          :mod (s34.t2 / this)))))
+   :snt35 (s35.a / and
+                 :op2 (s35.p / possible-01
+                             :ARG1 (s35.c3 / come-up-11
+                                           :ARG0 (s35.w2 / we)
+                                           :ARG1 (s35.w / way
+                                                        :manner-of (s35.s / shade-01
+                                                                          :ARG1 (s35.s2 / skin)
+                                                                          :medium (s35.c4 / computer))))
+                             :manner (s35.l2 / look-01
+                                             :ARG0 s35.w2
+                                             :ARG1 (s35.t / thing
+                                                          :manner-of (s35.d2 / diffuse-01
+                                                                             :ARG0 (s35.c / channel
+                                                                                          :ARG0-of (s35.i / illuminate-01)
+                                                                                          :ARG1-of (s35.c2 / color-01)
+                                                                                          :ARG1-of (s35.d / differ-02)
+                                                                                          :example (s35.a2 / and
+                                                                                                           :op1 (s35.r / red-02)
+                                                                                                           :op2 (s35.g / green-02)
+                                                                                                           :op3 (s35.b / blue)))
+                                                                             :ARG1 (s35.l / light))))))
+   :snt36 (s36.l3 / look-02
+                  :ARG0 (s36.i2 / it
+                                :same-as s7.f)
+                  :ARG1 (s36.m / make-01
+                               :ARG1 s36.i2
+                               :ARG2 (s36.f / flesh
+                                            :ARG0-of (s36.l / live-01)
+                                            :mod (s36.h / human)))
+                  :ARG1-of (s36.a / actual-02)
+                  :ARG1-of (s36.i / instead-of-91
+                                  :ARG2 (s36.l2 / look-02
+                                                :ARG0 s36.i2
+                                                :ARG1 (s36.m2 / mannequin
+                                                              :mod (s36.p / plaster))))
+                  :time (s36.t / then))
+   :snt37 (s37.a / and
+                 :op2 (s37.t / thing
+                             :ARG1-of (s37.g / give-01
+                                             :purpose (s37.c2 / create-01
+                                                              :ARG0 (s37.c / company
+                                                                           :name (s37.n / name
+                                                                                        :op1 "Image"
+                                                                                        :op2 "Metrics"))
+                                                              :ARG1 (s37.v / version
+                                                                           :ARG1-of (s37.r / rig-01)
+                                                                           :mod (s37.d / digital)
+                                                                           :topic (s37.p / person
+                                                                                         :name (s37.n2 / name
+                                                                                                       :op1 "Emily")
+                                                                                         :same-as s7.p)))
+                                             :ARG0 (s37.w / we
+                                                          :same-as s6.w)
+                                             :ARG2 s37.c
+                                             :time (s37.u / use-03))
+                             :domain (s37.t2 / this)))
+   :snt38 (s38.s / see-01
+                 :ARG0 (s38.w / we)
+                 :ARG1 (s38.g / geometry
+                              :mod (s38.l / large-scale))
+                 :location (s38.h / here)
+                 :mod (s38.j / just))
+   :snt39 (s39.c3 / contrast-01
+                  :ARG2 (s39.a2 / and
+                                :op1 (s39.c4 / create-01
+                                             :ARG0 (s39.t2 / they
+                                                           :same-as s37.c)
+                                             :ARG1 (s39.p3 / puppet
+                                                           :mod (s39.d / digit)
+                                                           :topic (s39.s2 / she
+                                                                          :part (s39.f / face
+                                                                                       :same-as s8.f)
+                                                                          :same-as s7.p))
+                                             :mod (s39.b / basic))
+                                :op2 (s39.m / move-01
+                                            :ARG0 s39.p3
+                                            :ARG1 s39.f
+                                            :ARG1-of (s39.a / actual-02)
+                                            :ARG1-of (s39.c2 / consistent-01
+                                                             :ARG1-of (s39.c / complete-02)
+                                                             :ARG2 (s39.s / scan-01
+                                                                          :ARG1-of (s39.t / take-01
+                                                                                          :ARG0 (s39.w / we
+                                                                                                       :same-as s6.w))))))
+                  :rel (s39.p / possible-01
+                              :ARG1 (s39.p2 / pull-01
+                                            :ARG0 (s39.y / you)
+                                            :ARG2 (s39.s3 / string
+                                                          :mod (s39.v / various)
+                                                          :mod (s39.t3 / this)))))
+   :snt40 (s40.a4 / and
+                  :op2 (s40.u / use-01
+                              :ARG0 (s40.t2 / they
+                                            :same-as s37.c)
+                              :ARG1 (s40.d / detail
+                                           :mod (s40.t / that)
+                                           :mod (s40.a2 / all))
+                              :ARG1-of (s40.a / add-02
+                                              :ARG2 (s40.g / geometry
+                                                           :mod (s40.l / large-scale)))
+                              :ARG2 (s40.c2 / create-01
+                                            :ARG0 s40.t2
+                                            :ARG1 (s40.s / set
+                                                         :consist-of (s40.t3 / thing
+                                                                             :ARG1-of (s40.c / call-01
+                                                                                             :ARG2 (s40.m / map-01
+                                                                                                          :ARG1 (s40.d2 / displace-01)))
+                                                                             :mod (s40.a5 / animate
+                                                                                          :mod (s40.a6 / as-well)))))
+                              :mod (s40.a3 / also)))
+   :snt41 (s41.m / map-01
+                 :ARG1 (s41.d / displace-01)
+                 :domain (s41.t / this
+                                :same-as s40.s)
+                 :location (s41.h / here))
+   :snt42 (s42.a2 / and
+                  :op2 (s42.p / possible-01
+                              :ARG1 (s42.s / see-01
+                                           :ARG0 (s42.y / you)
+                                           :ARG1 (s42.s3 / show-up-02
+                                                         :ARG1 (s42.w / wrinkle-01
+                                                                      :ARG1 (s42.a4 / animal)
+                                                                      :ARG1-of (s42.d / differ-02)
+                                                                      :mod (s42.t / that))
+                                                         :ARG1-of (s42.a / actual-02)
+                                                         :time (s42.a3 / animal
+                                                                       :domain (s42.s2 / she
+                                                                                       :same-as s7.p))))))
+   :snt43 (s43.a / animate
+                 :ARG1 (s43.s / she
+                              :same-as s7.p)
+                 :ARG1-of (s43.p / process-02
+                                 :mod (s43.n / next))
+                 :mod (s43.t / then))
+   :snt44 (s44.u / use-01
+                 :ARG0 (s44.w / we
+                              :same-as s6.w)
+                 :ARG1 (s44.p / perform-01
+                              :ARG1-of (s44.i / include-91
+                                              :ARG2 (s44.p2 / perform-01
+                                                            :ARG0 (s44.s / she
+                                                                         :same-as s7.p)))
+                              :quant "1")
+                 :ARG1-of (s44.a / actual-02)
+                 :ARG2 (s44.p3 / provide-01
+                               :ARG0 s44.w
+                               :ARG1 (s44.d / data
+                                            :mod (s44.s2 / source))))
+   :snt45 (s45.i / infer-01
+                 :ARG1 (s45.p2 / possible-01
+                               :ARG1 (s45.d / drive-01
+                                            :ARG0 (s45.t2 / they
+                                                          :same-as s37.c)
+                                            :ARG1 (s45.r / rig
+                                                         :mod (s45.f / face))
+                                            :instrument (s45.p / perform-02
+                                                               :ARG1-of (s45.g / generate-01
+                                                                               :ARG0 (s45.c2 / computer))))
+                               :manner (s45.a / analyze-01
+                                              :ARG0 s45.t2
+                                              :ARG1 (s45.v / video
+                                                           :mod (s45.t3 / this))
+                                              :instrument (s45.t / technique
+                                                                 :instrument-of (s45.s / see-01
+                                                                                       :ARG0 (s45.c / computer))))))
+   :snt46 (s46.c / cause-01
+                 :ARG1 (s46.s / see-01
+                              :ARG0 (s46.y / you)
+                              :ARG1 (s46.f / face
+                                           :ARG1-of (s46.r / real-04
+                                                           :mod (s46.p / photo))
+                                           :mod (s46.d / digital))
+                              :time (s46.n / now)
+                              :time (s46.a / after
+                                           :op1 (s46.t / this)))
+                 :rel (s46.c2 / complete-02))
+   :snt47 (s47.p / possible-01
+                 :ARG1 (s47.t / turn-02
+                              :ARG0 (s47.w / we)
+                              :ARG1 (s47.v / volume)
+                              :degree (s47.b / bit
+                                             :mod (s47.l / little))
+                              :direction (s47.u / up))
+                 :condition (s47.a / available-02
+                                   :ARG2 s47.v))
+   :snt48 (s48.s / say-01
+                 :ARG1 (s48.c / company
+                              :ARG0-of (s48.m / mark-02)
+                              :ARG1-of (s48.d / drive-02
+                                              :ARG0 (s48.p / perform-01))
+                              :domain (s48.o / organization
+                                             :name (s48.n2 / name
+                                                           :op1 "Image"
+                                                           :op2 "Metrics")
+                                             :same-as s37.c)
+                              :mod (s48.a / animation))
+                 :ARG2 (s48.p2 / person
+                               :name (s48.n / name
+                                            :op1 "Emily")))
+   :snt49 (s49.s / specialize-01
+                 :ARG0 (s49.w / we
+                              :same-as s37.c)
+                 :ARG1 (s49.a2 / animation
+                               :beneficiary (s49.a / and
+                                                   :op1 (s49.g / game
+                                                               :mod (s49.v / video))
+                                                   :op2 (s49.f2 / film))
+                               :mod (s49.f / face)
+                               :mod (s49.q / quality
+                                           :ARG1-of (s49.h / high-02))))
+   :snt50 (s50.c / company
+                 :name (s50.n / name
+                              :op1 "Image"
+                              :op2 "Metrics")
+                 :ARG0-of (s50.m / mark-02
+                                 :polarity "-")
+                 :ARG1-of (s50.d / drive-02
+                                 :ARG0 (s50.p / performance))
+                 :mod (s50.a / animation))
+   :snt51 (s51.s / specialize-01
+                 :ARG0 (s51.w / we
+                              :same-as s37.c)
+                 :ARG1 (s51.a2 / animation
+                               :beneficiary (s51.a / and
+                                                   :op1 (s51.g / game
+                                                               :mod (s51.v / video))
+                                                   :op2 (s51.f2 / film))
+                               :mod (s51.f / face)
+                               :mod (s51.q / quality
+                                           :ARG1-of (s51.h / high-02))))
+   :snt52 (s52.s / say-01
+                 :ARG0 (s52.p / person
+                              :name (s52.n / name
+                                           :op1 "Paul"
+                                           :op2 "Debevec")
+                              :same-as s6.i)
+                 :ARG1 (s52.c / component
+                              :ARG1-of (s52.d / diffuse-01)
+                              :ARG1-of (s52.s2 / see-01
+                                               :ARG0 (s52.w / we)
+                                               :location (s52.s3 / slide
+                                                                 :ord (s52.o / ordinal-entity
+                                                                             :value "1")))
+                              :condition (s52.b / break-down-27
+                                                :ARG0 s52.w
+                                                :ARG1 (s52.t / that)
+                                                :ARG2 (s52.l / layer))
+                              :location (s52.h / here)
+                              :mod (s52.t2 / that)))
+   :snt53 (s53.a / animal
+                 :ARG1-of (s53.r / rotate-01)
+                 :domain (s53.c / component
+                                :ARG1-of (s53.s / speculate-01))
+                 :location (s53.h / here))
+   :snt54 (s54.p / possible-01
+                 :ARG1 (s54.s / see-01
+                              :ARG0 (s54.y / you)
+                              :ARG1 (s54.w / wrinkle-01
+                                           :location (s54.t / there)
+                                           :mod (s54.a / all))))
+   :snt55 (s55.a / and
+                 :op2 (s55.t / there
+                             :location-of (s55.m / mesh
+                                                 :ARG0-of (s55.u / underlie-01)
+                                                 :mod (s55.w / wireframe))))
+   :snt56 (s56.a / and
+                 :op2 (s56.p / person
+                             :name (s56.n / name
+                                          :op1 "Emily"
+                                          :same-as s7.p)
+                             :domain (s56.t / that)))
+   :snt57 (s57.g / go-02
+                 :ARG0 (s57.w / we)
+                 :ARG4 (s57.a / amr-unknown)
+                 :accompanier (s57.t / this)
+                 :location (s57.h / here)
+                 :time (s57.n / now))
+   :snt58 (s58.p / person
+                 :name (s58.n / name
+                              :op1 "Bruce"
+                              :op2 "Lawmen")
+                 :ARG0-of (s58.a / agree-01
+                                 :ARG1 (s58.c / capture-01
+                                              :manner (s58.r2 / run-02
+                                                              :location (s58.s / stage
+                                                                               :name (s58.n2 / name
+                                                                                             :op1 "Light"
+                                                                                             :op2 "Stage"))))
+                                 :manner (s58.g / grateful))
+                 :ARG1-of (s58.i / include-91
+                                 :ARG2 (s58.p2 / person
+                                               :ARG0-of (s58.r / research-01)
+                                               :part-of (s58.g2 / group)
+                                               :poss (s58.w / we
+                                                            :same-as s6.w)))
+                 :domain (s58.t / this)
+                 :ARG1-of s58.c
+                 :ARG0-of s58.r2)
+   :snt59 (s59.a / and
+                 :op2 (s59.l / look-01
+                             :ARG0 (s59.w / we)
+                             :ARG1 (s59.v / version
+                                          :ARG1-of (s59.g / generate-01
+                                                          :ARG0 (s59.c / computer))
+                                          :ARG1-of (s59.r / run-01
+                                                          :location (s59.e / environment
+                                                                           :ARG1-of (s59.n2 / new-01)))
+                                          :mod (s59.p / person
+                                                      :name (s59.n / name
+                                                                   :op1 "Bruce")
+                                                      :same-as s58.a))))
+   :snt60 (s60.a / and
+                 :op2 (s60.t / thank-01
+                             :ARG0 (s60.i / i)
+                             :ARG1 (s60.y / you)
+                             :mod (s60.m / much
+                                         :degree (s60.v / very)))))
+

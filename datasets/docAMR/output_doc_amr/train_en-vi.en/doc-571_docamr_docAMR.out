@@ -1,0 +1,163 @@
+# ::id doc-571
+# ::doc_file doc-571
+# ::tok http : / / www . ted . com / talks / james_nachtwey_fights_xdrtb< / url> <next_sent> I was a student in the ' 60s , a time of social upheaval and questioning , and -- on a personal level -- an awakening sense of idealism . <next_sent> The war in Vietnam was raging , the Civil Rights movement was under way and pictures had a powerful influence on me . <next_sent> Our political and military leaders were telling us one thing and photographers were telling us another . <next_sent> I believed the photographers and so did millions of other Americans . <next_sent> Their images fuelled resistance to the war and to racism . <next_sent> They not only recorded history -- they helped change the course of history . <next_sent> Their pictures became part of our collective consciousness and , as consciousness evolved into a shared sense of conscience , change became not only possible , but inevitable . <next_sent> It puts a human face on issues which , from afar , can appear abstract or ideological or monumental in their global impact . <next_sent> What happens at ground level , far from the halls of power , happens to ordinary citizens one by one . <next_sent> And I understood that documentary photography has the ability to interpret events from their point of view . <next_sent> It gives a voice to those who otherwise would not have a voice . <next_sent> Thank you very much .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01))
+   :snt2 (s2.p / person
+               :ARG0-of (s2.s3 / study-01)
+               :domain (s2.i / i)
+               :time (s2.d / date-entity
+                           :time-of (s2.a / and
+                                          :op1 (s2.u / upheaval
+                                                     :mod (s2.s2 / society))
+                                          :op2 (s2.q / question-01)
+                                          :op3 (s2.s / sense-01
+                                                     :ARG1 (s2.i2 / idealism)
+                                                     :ARG2-of (s2.a2 / awake-03)
+                                                     :mod (s2.l / level
+                                                                :ARG1-of (s2.p2 / personal-02))))
+                           :decade "1960"))
+   :snt3 (s3.a / and
+               :op1 (s3.r / rage-02
+                          :ARG0 (s3.w / war
+                                      :location (s3.c / country
+                                                      :name (s3.n / name
+                                                                  :op1 "Vietnam"))))
+               :op2 (s3.u / under
+                          :domain (s3.m / movement-07
+                                        :ARG1 (s3.r2 / right-05))
+                          :op1 (s3.w2 / way))
+               :op3 (s3.i3 / influence-01
+                           :ARG0 (s3.p / picture)
+                           :ARG1 (s3.i2 / i
+                                        :same-as s2.i)
+                           :ARG1-of (s3.p2 / powerful-02))
+               :rel (s3.i / Civil))
+   :snt4 (s4.a2 / and
+                :op1 (s4.t / tell-01
+                           :ARG0 (s4.a / and
+                                       :op1 (s4.p / person
+                                                  :ARG0-of (s4.l / lead-02)
+                                                  :mod (s4.p5 / politics))
+                                       :op2 (s4.p2 / person
+                                                   :ARG0-of (s4.l2 / lead-02)
+                                                   :mod (s4.m / military))
+                                       :poss (s4.w / we))
+                           :ARG1 (s4.t3 / thing
+                                        :mod (s4.o / one))
+                           :ARG2 s4.w)
+                :op2 (s4.t2 / tell-01
+                            :ARG0 (s4.p3 / person
+                                         :ARG0-of (s4.p4 / photograph-01))
+                            :ARG1 (s4.t4 / thing
+                                         :mod (s4.a3 / another))
+                            :ARG2 s4.w))
+   :snt5 (s5.b / believe-01
+               :ARG0 (s5.a / and
+                           :op1 (s5.p / person
+                                      :ARG0-of (s5.p3 / photograph-01))
+                           :op2 (s5.p2 / person
+                                       :quant (s5.m / multiple
+                                                    :op1 "1000000")
+                                       :mod (s5.o / other)
+                                       :mod (s5.c / country
+                                                  :name (s5.n / name
+                                                              :op1 "America"))))
+               :rel (s5.i / i
+                          :same-as s2.i))
+   :snt6 (s6.f / fuel-01
+               :ARG1 (s6.a / and
+                           :op1 (s6.r2 / resist-01
+                                       :ARG1 (s6.w / war
+                                                   :same-as s3.w))
+                           :op2 (s6.r / racism))
+               :ARG2 (s6.i / image
+                           :poss (s6.t / they
+                                       :same-as s5.p)))
+   :snt7 (s7.a / and
+               :op1 (s7.r / record-01
+                          :ARG0 (s7.t / they
+                                      :same-as s5.p)
+                          :ARG1 (s7.h2 / history))
+               :op2 (s7.h / help-01
+                          :ARG0 s7.t
+                          :ARG1 (s7.c / change-01
+                                      :ARG0 s7.t
+                                      :ARG1 s7.h2)))
+   :snt8 (s8.a / and
+               :op1 (s8.b / become-01
+                          :ARG1 (s8.p / picture
+                                      :poss (s8.t / they
+                                                  :same-as s5.p)
+                                      :same-as s6.i)
+                          :ARG2 (s8.h / have-part-91
+                                      :ARG1 (s8.c4 / consciousness
+                                                   :mod (s8.c2 / collective)
+                                                   :poss (s8.w / we))))
+               :op2 (s8.b2 / become-01
+                           :ARG1 (s8.c / change-01)
+                           :ARG2 (s8.c5 / contrast-01
+                                        :ARG1 (s8.p2 / possible-01
+                                                     :ARG1 s8.c)
+                                        :ARG2 (s8.a2 / avoid-01
+                                                     :ARG1 s8.c
+                                                     :polarity "-"))
+                           :time (s8.e / evolve-01
+                                       :ARG1 s8.c4
+                                       :ARG2 (s8.s / sense-01
+                                                   :ARG1 (s8.c3 / conscience)
+                                                   :ARG1-of (s8.s2 / share-01)))))
+   :snt9 (s9.p2 / put-01
+                :ARG0 (s9.i4 / it
+                             :same-as s8.c)
+                :ARG1 (s9.f / face
+                            :mod (s9.h / human))
+                :ARG2 (s9.i3 / issue-02
+                             :mod (s9.o / or
+                                        :ARG1-of (s9.a2 / appear-02
+                                                        :ARG1-of (s9.p / possible-01))
+                                        :op1 (s9.a / abstract)
+                                        :op2 (s9.i / ideology)
+                                        :op3 (s9.m / monumental)
+                                        :topic (s9.i2 / impact-01
+                                                      :ARG0 s9.i3
+                                                      :ARG1 (s9.g / globe)))))
+   :snt10 (s10.e / event
+                 :location (s10.l / level
+                                  :mod (s10.g / ground))
+                 :location (s10.r / relative-position
+                                  :quant (s10.f / far)
+                                  :op1 (s10.h / hall
+                                              :mod (s10.p / power)))
+                 :manner (s10.o / one-by-one)
+                 :mod (s10.c / citizen
+                             :mod (s10.o2 / ordinary)))
+   :snt11 (s11.a / and
+                 :op2 (s11.u / understand-01
+                             :ARG0 (s11.i / i
+                                          :same-as s2.i)
+                             :ARG1 (s11.p2 / possible-01
+                                           :ARG1 (s11.i2 / interpret-01
+                                                         :ARG0 (s11.p / photography
+                                                                      :mod (s11.d / documentary))
+                                                         :ARG1 (s11.e / event)
+                                                         :ARG2 (s11.h / have-point-of-view-08
+                                                                      :ARG0 s11.p
+                                                                      :ARG1 s11.e)))))
+   :snt12 (s12.g / give-01
+                 :ARG0 (s12.i / it
+                              :same-as s11.p)
+                 :ARG1 (s12.v / voice-01)
+                 :ARG2 (s12.p / person
+                              :ARG0-of (s12.h / have-03
+                                              :condition (s12.h2 / have-polarity-91
+                                                                 :ARG1 s12.g
+                                                                 :ARG2 "-"))
+                              :mod (s12.t / that)))
+   :snt13 (s13.t / thank-01
+                 :ARG0 (s13.i / i)
+                 :ARG1 (s13.y / you)
+                 :mod (s13.m / much
+                             :degree (s13.v / very))))
+

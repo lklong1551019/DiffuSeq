@@ -1,0 +1,952 @@
+# ::id doc-1057
+# ::doc_file doc-1057
+# ::tok http : / / www . ted . com / talks / sarah_bergbreiter_why_i_make_robots_the_size_of_a_grain_of_rice< / url> <next_sent> My students and I work on very tiny robots . <next_sent> Now , you can think of these as robotic versions of something that you 're all very familiar with : an ant . <next_sent> We all know that ants and other insects at this size scale can do some pretty incredible things . <next_sent> We 've all seen a group of ants , or some version of that , carting off your potato chip at a picnic , for example . <next_sent> But what are the real challenges of engineering these ants ? <next_sent> Well , first of all , how do we get the capabilities of an ant in a robot at the same size scale ? <next_sent> Well , first we need to figure out how to make them move when they 're so small . <next_sent> We need mechanisms like legs and efficient motors in order to support that locomotion , and we need the sensors , power and control in order to pull everything together in a semi - intelligent ant robot . <next_sent> And finally , to make these things really functional , we want a lot of them working together in order to do bigger things . <next_sent> So I 'll start with mobility . <next_sent> Insects move around amazingly well . <next_sent> This video is from UC Berkeley . <next_sent> It shows a cockroach moving over incredibly rough terrain without tipping over , and it 's able to do this because its legs are a combination of rigid materials , which is what we traditionally use to make robots , and soft materials . <next_sent> Jumping is another really interesting way to get around when you 're very small . <next_sent> So these insects store energy in a spring and release that really quickly to get the high power they need to jump out of water , for example . <next_sent> So one of the big contributions from my lab has been to combine rigid and soft materials in very , very small mechanisms . <next_sent> So this jumping mechanism is about four millimeters on a side , so really tiny . <next_sent> The hard material here is silicon , and the soft material is silicone rubber . <next_sent> And the basic idea is that we 're going to compress this , store energy in the springs , and then release it to jump . <next_sent> So there 's no motors on board this right now , no power . <next_sent> So this is Aaron , the graduate student in question , with the tweezers , and what you see is this four - millimeter - sized mechanism jumping almost 40 centimeters high . <next_sent> That 's almost 100 times its own length . <next_sent> And it survives , bounces on the table , it 's incredibly robust , and of course survives quite well until we lose it because it 's very tiny . <next_sent> Ultimately , though , we want to add motors to this too , and we have students in the lab working on millimeter - sized motors to eventually integrate onto small , autonomous robots . <next_sent> But in order to look at mobility and locomotion at this size scale to start , we 're cheating and using magnets . <next_sent> So this shows what would eventually be part of a micro - robot leg , and you can see the silicone rubber joints and there 's an embedded magnet that 's being moved around by an external magnetic field . <next_sent> So this leads to the robot that I showed you earlier . <next_sent> The really interesting thing that this robot can help us figure out is how insects move at this scale . <next_sent> We have a really good model for how everything from a cockroach up to an elephant moves . <next_sent> We all move in this kind of bouncy way when we run . <next_sent> But when I 'm really small , the forces between my feet and the ground are going to affect my locomotion a lot more than my mass , which is what causes that bouncy motion . <next_sent> So this guy does n't work quite yet , but we do have slightly larger versions that do run around . <next_sent> So this is about a centimeter cubed , a centimeter on a side , so very tiny , and we 've gotten this to run about 10 body lengths per second , so 10 centimeters per second . <next_sent> It 's pretty quick for a little , small guy , and that 's really only limited by our test setup . <next_sent> But this gives you some idea of how it works right now . <next_sent> We can also make 3D - printed versions of this that can climb over obstacles , a lot like the cockroach that you saw earlier . <next_sent> But ultimately we want to add everything onboard the robot . <next_sent> We want sensing , power , control , actuation all together , and not everything needs to be bio - inspired . <next_sent> So this robot 's about the size of a Tic Tac . <next_sent> And in this case , instead of magnets or muscles to move this around , we use rockets . <next_sent> So this is a micro - fabricated energetic material , and we can create tiny pixels of this , and we can put one of these pixels on the belly of this robot , and this robot , then , is going to jump when it senses an increase in light . <next_sent> So the next video is one of my favorites . <next_sent> So you have this 300 - milligram robot jumping about eight centimeters in the air . <next_sent> It 's only four by four by seven millimeters in size . <next_sent> And you 'll see a big flash at the beginning when the energetic is set off , and the robot tumbling through the air . <next_sent> So there was that big flash , and you can see the robot jumping up through the air . <next_sent> So there 's no tethers on this , no wires connecting to this . <next_sent> Everything is onboard , and it jumped in response to the student just flicking on a desk lamp next to it . <next_sent> So I think you can imagine all the cool things that we could do with robots that can run and crawl and jump and roll at this size scale . <next_sent> Imagine the rubble that you get after a natural disaster like an earthquake . <next_sent> Imagine these small robots running through that rubble to look for survivors . <next_sent> Or imagine a lot of small robots running around a bridge in order to inspect it and make sure it 's safe so you do n't get collapses like this , which happened outside of Minneapolis in 2007 . <next_sent> Or just imagine what you could do if you had robots that could swim through your blood . <next_sent> Right ? " Fantastic Voyage , " Isaac Asimov . <next_sent> Or they could operate without having to cut you open in the first place . <next_sent> Or we could radically change the way we build things if we have our tiny robots work the same way that termites do , and they build these incredible eight - meter - high mounds , effectively well ventilated apartment buildings for other termites in Africa and Australia . <next_sent> of what we can do with these small robots . <next_sent> And we 've made some advances so far , but there 's still a long way to go , and hopefully some of you can contribute to that destination . <next_sent> Thanks very much .
+(d / document
+   :snt1 (s1.u / url-entity
+               :polarity "-")
+   :snt2 (s2.w / work-01
+               :ARG0 (s2.a / and
+                           :op1 (s2.p / person
+                                      :ARG0-of (s2.s / study-01
+                                                     :ARG0 (s2.i / i)))
+                           :op2 s2.i)
+               :ARG1 (s2.r / robot
+                           :mod (s2.t / tiny
+                                      :degree (s2.v / very))))
+   :snt3 (s3.p / possible-01
+               :ARG1 (s3.t / think-01
+                           :ARG0 (s3.y / you)
+                           :ARG1 (s3.t2 / this
+                                        :same-as s2.r)
+                           :ARG2 (s3.v / version
+                                       :mod (s3.r / robot)
+                                       :mod (s3.a2 / ant
+                                                   :ARG1-of (s3.f / familiarize-01
+                                                                  :ARG2 (s3.a / all)
+                                                                  :degree (s3.v2 / very)))))
+               :time (s3.n / now))
+   :snt4 (s4.k / know-01
+               :ARG0 (s4.w / we
+                           :mod (s4.a / all))
+               :ARG1 (s4.p / possible-01
+                           :ARG1 (s4.d / do-02
+                                       :ARG0 (s4.a2 / and
+                                                    :op1 (s4.a3 / ant)
+                                                    :op2 (s4.i2 / insect
+                                                                :mod (s4.o / other))
+                                                    :scale (s4.s / scale
+                                                                 :mod (s4.s2 / size)
+                                                                 :mod (s4.t2 / this)))
+                                       :ARG1 (s4.t / thing
+                                                   :quant (s4.s3 / some)
+                                                   :mod (s4.i / incredible
+                                                              :degree (s4.p2 / pretty))))))
+   :snt5 (s5.s / see-01
+               :ARG0 (s5.w / we
+                           :mod (s5.a / all)
+                           :same-as s4.w)
+               :ARG0-of (s5.e / exemplify-01)
+               :ARG1 (s5.o / or
+                           :op1 (s5.g / group-01
+                                      :ARG0-of (s5.c / cart-off-02
+                                                     :ARG1 (s5.c2 / chip
+                                                                  :consist-of (s5.p2 / potato)
+                                                                  :poss (s5.y / you))
+                                                     :time (s5.p / picnic-01))
+                                      :ARG1 (s5.a2 / ant))
+                           :op2 (s5.v / version
+                                      :mod (s5.s2 / some)
+                                      :mod (s5.t / that
+                                                 :same-as s5.v))))
+   :snt6 (s6.c2 / contrast-01
+                :ARG2 (s6.c / challenge-01
+                            :ARG1 (s6.e / engineer-01
+                                        :ARG1 (s6.a2 / ant
+                                                     :mod (s6.t / this)
+                                                     :same-as s5.a2))
+                            :ARG1-of (s6.r / real-04)
+                            :ARG2 (s6.a / amr-unknown)))
+   :snt7 (s7.g / get-01
+               :ARG0 (s7.w / we)
+               :ARG1 (s7.c / capable-01
+                           :ARG1 (s7.a2 / ant
+                                        :location (s7.r / robot)))
+               :manner (s7.a / amr-unknown)
+               :manner (s7.s2 / scale
+                              :ARG1-of (s7.s / same-01)
+                              :mod (s7.s3 / size))
+               :mod (s7.f / first-of-all))
+   :snt8 (s8.n / need-01
+               :ARG0 (s8.w / we
+                           :same-as s2.a)
+               :ARG1 (s8.f / figure-out-05
+                           :ARG0 s8.w
+                           :ARG1 (s8.t2 / thing
+                                        :manner-of (s8.m / make-02
+                                                         :ARG0 s8.w
+                                                         :ARG1 (s8.m2 / move-01
+                                                                      :ARG1 (s8.t / they
+                                                                                  :same-as s5.a2))
+                                                         :time (s8.s / small
+                                                                     :degree (s8.s2 / so)
+                                                                     :domain s8.t))))
+               :mod (s8.w2 / well)
+               :ord (s8.o / ordinal-entity
+                          :value "1"))
+   :snt9 (s9.a2 / and
+                :op1 (s9.n / need-01
+                           :purpose (s9.s2 / support-01
+                                           :ARG0 (s9.m / mechanism
+                                                       :example (s9.a / and
+                                                                      :op1 (s9.l / leg)
+                                                                      :op2 (s9.m2 / motor
+                                                                                  :ARG1-of (s9.e / efficient-01))))
+                                           :ARG1 (s9.l2 / locomotion
+                                                        :mod (s9.t / that)
+                                                        :same-as s8.m2))
+                           :ARG0 (s9.w / we
+                                       :same-as s2.a)
+                           :ARG1 s9.m)
+                :op2 (s9.n2 / need-01
+                            :ARG0 s9.w
+                            :ARG1 (s9.a3 / and
+                                         :purpose (s9.p2 / pull-06
+                                                         :ARG0 s9.w
+                                                         :ARG1 (s9.e2 / everything)
+                                                         :ARG2 (s9.t3 / together)
+                                                         :prep-in (s9.r / robot
+                                                                        :ARG1-of (s9.i / intelligent-01
+                                                                                       :degree (s9.s / semi))
+                                                                        :mod (s9.a4 / ant)))
+                                         :op1 (s9.t2 / thing
+                                                     :ARG0-of (s9.d / detect-01))
+                                         :op2 (s9.p / power)
+                                         :op3 (s9.c / control-01))))
+   :snt10 (s10.a / and
+                 :op2 (s10.w / want-01
+                             :purpose (s10.m / make-02
+                                             :ARG0 (s10.w2 / we)
+                                             :ARG1 (s10.f2 / function-01
+                                                           :ARG0 (s10.t2 / thing
+                                                                         :mod (s10.t4 / this)
+                                                                         :same-as s2.r)
+                                                           :degree (s10.r / really)))
+                             :ARG0 s10.w2
+                             :ARG1 (s10.w3 / work-01
+                                           :purpose (s10.d / do-02
+                                                           :ARG0 (s10.t / they
+                                                                        :quant (s10.l / lot)
+                                                                        :same-as s2.r)
+                                                           :ARG1 (s10.t3 / thing
+                                                                         :ARG1-of (s10.h / have-degree-91
+                                                                                         :ARG2 (s10.b / big)
+                                                                                         :ARG3 (s10.m2 / more))))
+                                           :ARG0 s10.t
+                                           :manner (s10.t5 / together))
+                             :mod (s10.f / final)))
+   :snt11 (s11.c / cause-01
+                 :ARG1 (s11.s / start-01
+                              :ARG0 (s11.i / i
+                                           :same-as s2.i)
+                              :ARG2 (s11.m / mobility)))
+   :snt12 (s12.m / move-01
+                 :ARG0 (s12.p / parasite)
+                 :ARG1-of (s12.g / good-03
+                                 :ARG0-of (s12.a / amaze-01))
+                 :ARG2 (s12.a2 / around))
+   :snt13 (s13.v / video
+                 :mod (s13.t / this)
+                 :source (s13.u / university
+                                :name (s13.n / name
+                                             :op1 "UC"
+                                             :op2 "Berkeley")))
+   :snt14 (s14.a / and
+                 :op1 (s14.s / show-01
+                             :ARG0 (s14.i2 / it
+                                           :same-as s13.t)
+                             :ARG1 (s14.m4 / move-01
+                                           :ARG0 (s14.c2 / cockroach
+                                                         :part (s14.l / leg))
+                                           :ARG2 (s14.o / over
+                                                        :op1 (s14.t / terrain
+                                                                    :ARG1-of (s14.r3 / rough-04
+                                                                                     :degree (s14.i / incredible))))
+                                           :manner (s14.t2 / tip-over-03
+                                                           :ARG1 s14.c2
+                                                           :polarity "-")))
+                 :op2 (s14.c / cause-01
+                             :ARG0 (s14.c3 / combine-01
+                                           :ARG1 s14.l
+                                           :ARG2 (s14.m2 / material
+                                                         :ARG1-of (s14.u / use-01
+                                                                         :ARG0 (s14.w / we)
+                                                                         :ARG2 (s14.m / make-01
+                                                                                      :ARG0 s14.w
+                                                                                      :ARG1 (s14.r2 / robot))
+                                                                         :mod (s14.t3 / tradition))
+                                                         :mod (s14.r / rigid))
+                                           :ARG3 (s14.m3 / material
+                                                         :ARG1-of (s14.s2 / soft-02)))
+                             :ARG1 (s14.p / possible-01
+                                          :ARG1 s14.m4)))
+   :snt15 (s15.w / way
+                 :ARG0-of (s15.i / interest-01
+                                 :degree (s15.r / really))
+                 :domain (s15.j / jump-03)
+                 :manner-of (s15.g / get-05
+                                   :ARG1 (s15.y / you)
+                                   :ARG2 (s15.a2 / around))
+                 :mod (s15.a / another)
+                 :time (s15.s / small
+                              :degree (s15.v / very)
+                              :domain s15.y))
+   :snt16 (s16.c / cause-01
+                 :ARG1 (s16.a / and
+                              :op1 (s16.s2 / store-01
+                                           :ARG0 (s16.i / insect
+                                                        :mod (s16.t / this))
+                                           :ARG1 (s16.e / energy)
+                                           :time (s16.d / date-entity
+                                                        :season (s16.s / spring)))
+                              :op2 (s16.r2 / release-01
+                                           :purpose (s16.g / get-01
+                                                           :ARG0 s16.i
+                                                           :ARG1 (s16.p / power
+                                                                        :purpose (s16.j / jump-03
+                                                                                        :ARG0 s16.i
+                                                                                        :ARG0-of (s16.e2 / exemplify-01)
+                                                                                        :direction (s16.o / out-of
+                                                                                                          :op1 (s16.w / water)))
+                                                                        :ARG1-of (s16.h / high-02)
+                                                                        :ARG1-of (s16.n / need-01
+                                                                                        :ARG0 s16.i)))
+                                           :ARG0 s16.i
+                                           :ARG1 s16.e
+                                           :ARG1-of (s16.q / quick-02
+                                                           :degree (s16.r / really)))))
+   :snt17 (s17.i3 / infer-01
+                  :ARG1 (s17.c / combine-01
+                               :ARG0 (s17.l / lab
+                                            :poss (s17.i / i
+                                                         :same-as s2.i))
+                               :ARG1 (s17.m / material
+                                            :ARG1-of (s17.r / rigid))
+                               :ARG1-of (s17.i2 / include-91
+                                                :ARG3 "1")
+                               :ARG2 (s17.m2 / material
+                                             :ARG1-of (s17.s2 / soft-02))
+                               :ARG3 (s17.m3 / mechanism
+                                             :mod (s17.s / small
+                                                         :degree (s17.v / very))))
+                  :ARG2 (s17.c2 / contribute-01
+                                :ARG0 s17.l
+                                :ARG1-of s17.i2)
+                  :rel (s17.b / big))
+   :snt18 (s18.h / have-mod-91
+                 :ARG0-of (s18.c / cause-01
+                                 :ARG1 (s18.t2 / tiny
+                                               :degree (s18.r / really)))
+                 :ARG1 (s18.m / mechanism
+                              :purpose (s18.j / jump-03)
+                              :mod (s18.t / this))
+                 :ARG2 (s18.a / about
+                              :location (s18.s / side)
+                              :op1 (s18.d / distance-quantity
+                                          :unit (s18.m2 / millimeter)
+                                          :quant "4")))
+   :snt19 (s19.a / and
+                 :op1 (s19.m / material
+                             :ARG1-of (s19.h / hard-04)
+                             :location (s19.h2 / here)
+                             :mod (s19.s / silicon))
+                 :op2 (s19.m2 / material
+                              :ARG1-of (s19.s3 / soft-02)
+                              :domain (s19.r / rubber
+                                             :consist-of (s19.s2 / silicone))))
+   :snt20 (s20.a / and
+                 :op2 (s20.i / idea
+                             :domain (s20.a2 / and
+                                             :op1 (s20.c / compress-01
+                                                         :ARG0 (s20.w / we)
+                                                         :ARG1 (s20.t2 / this
+                                                                       :same-as s18.m))
+                                             :op2 (s20.s2 / store-01
+                                                          :ARG0 s20.w
+                                                          :ARG1 (s20.e / energy)
+                                                          :location (s20.s / spring))
+                                             :op3 (s20.r / release-01
+                                                         :purpose (s20.j / jump-03
+                                                                         :ARG0 s20.w)
+                                                         :ARG0 s20.w
+                                                         :ARG1 s20.e
+                                                         :time (s20.t / then)))
+                             :mod (s20.b / basic)))
+   :snt21 (s21.c / cause-01
+                 :ARG1 (s21.a / and
+                              :op1 (s21.m / motor
+                                          :location (s21.b / board-01
+                                                           :ARG1 (s21.t / this
+                                                                        :same-as s18.m)
+                                                           :time (s21.n / now
+                                                                        :mod (s21.r / right)))
+                                          :polarity "-")
+                              :op2 (s21.p / power-01
+                                          :polarity "-")))
+   :snt22 (s22.a2 / and
+                  :op1 (s22.p / person
+                              :name (s22.n / name
+                                           :op1 "Aaron")
+                              :ARG0-of (s22.s3 / study-01
+                                               :mod (s22.g / graduate))
+                              :ARG1-of (s22.q / question-01)
+                              :domain (s22.t / this)
+                              :part (s22.t3 / twister))
+                  :op2 (s22.s / see-01
+                              :ARG0 (s22.y / you)
+                              :ARG1 (s22.m / mechanism
+                                           :ARG0-of (s22.j / jump-03
+                                                           :ARG1-of (s22.h / high-02
+                                                                           :extent (s22.a / almost
+                                                                                          :op1 (s22.d2 / distance-quantity
+                                                                                                       :unit (s22.c / centimeter)
+                                                                                                       :quant "40"))))
+                                           :ARG1-of (s22.s2 / size-01
+                                                            :ARG2 (s22.d / distance-quantity
+                                                                         :unit (s22.m2 / millimeter)
+                                                                         :quant "4"))
+                                           :mod (s22.t2 / this
+                                                        :same-as s18.m))))
+   :snt23 (s23.l / long-03
+                 :ARG1 (s23.t / that)
+                 :ARG3 (s23.t2 / times
+                               :quant (s23.a / almost
+                                             :op1 "100")))
+   :snt24 (s24.a / and
+                 :op1 (s24.s / survive-01
+                             :ARG0 (s24.i2 / it
+                                           :same-as s18.m))
+                 :op2 (s24.b / bounce-01
+                             :ARG1 s24.i2
+                             :ARG4 (s24.t / table))
+                 :op3 (s24.r / robust
+                             :degree (s24.i / incredible)
+                             :domain s24.i2)
+                 :op4 (s24.s2 / survive-01
+                              :ARG0 s24.i2
+                              :ARG1-of (s24.c / cause-01
+                                              :ARG0 (s24.t2 / tiny
+                                                            :degree (s24.v / very)
+                                                            :domain s24.i2))
+                              :manner (s24.w2 / well
+                                              :degree (s24.q / quite))
+                              :mod (s24.o / of-course)
+                              :time (s24.u / until
+                                           :op1 (s24.l / lose-02
+                                                       :ARG0 (s24.w / we
+                                                                    :same-as s20.w)
+                                                       :ARG1 s24.i2))))
+   :snt25 (s25.a2 / and
+                  :op1 (s25.h2 / have-concession-91
+                               :ARG1 (s25.w / want-01
+                                            :ARG0 (s25.w2 / we
+                                                          :same-as s2.a)
+                                            :ARG1 (s25.a / add-02
+                                                         :ARG0 s25.w2
+                                                         :ARG1 (s25.m2 / motor)
+                                                         :ARG2 (s25.t / this
+                                                                      :same-as s18.m)
+                                                         :mod (s25.t2 / too))
+                                            :mod (s25.u / ultimate)))
+                  :op2 (s25.h / have-03
+                              :ARG0 s25.w2
+                              :ARG1 (s25.p / person
+                                           :ARG0-of (s25.s3 / study-01)
+                                           :ARG0-of (s25.w3 / work-01
+                                                            :purpose (s25.i / integrate-01
+                                                                            :ARG1 (s25.m3 / motor
+                                                                                          :ARG1-of (s25.s / size-01
+                                                                                                          :ARG2 (s25.d / distance-quantity
+                                                                                                                       :unit (s25.m / millimeter)
+                                                                                                                       :quant "1")))
+                                                                            :ARG2 (s25.r / robot
+                                                                                         :mod (s25.a3 / autonomy)
+                                                                                         :mod (s25.s2 / small))
+                                                                            :time (s25.e / eventual))
+                                                            :ARG1 s25.m3)
+                                           :location (s25.l / lab
+                                                            :same-as s17.l))))
+   :snt26 (s26.c2 / contrast-01
+                  :ARG2 (s26.a2 / and
+                                :op1 (s26.c / cheat-03
+                                            :ARG0 (s26.w / we
+                                                         :same-as s2.a))
+                                :op2 (s26.u / use-01
+                                            :ARG0 s26.w
+                                            :ARG1 (s26.t / thing)
+                                            :ARG2 (s26.m / magnet)))
+                  :rel (s26.l2 / look-01
+                               :purpose (s26.s3 / start-01
+                                                :ARG0 s26.w
+                                                :ARG1 s26.l2)
+                               :ARG1 (s26.a / and
+                                            :op1 (s26.m2 / mobility)
+                                            :op2 (s26.l / locomotion))
+                               :manner (s26.s / scale
+                                              :mod (s26.s2 / size)
+                                              :mod (s26.t2 / this))))
+   :snt27 (s27.a / and
+                 :op1 (s27.s2 / show-01
+                              :ARG0 (s27.t2 / this)
+                              :ARG1 (s27.t / thing
+                                           :part-of (s27.l / leg
+                                                           :part-of (s27.r / robot
+                                                                           :mod (s27.m3 / micro)))
+                                           :time (s27.e2 / eventual)))
+                 :op2 (s27.p / possible-01
+                             :ARG1 (s27.s / see-01
+                                          :ARG0 (s27.y / you)
+                                          :ARG1 (s27.j / joint
+                                                       :consist-of (s27.r2 / rubber
+                                                                           :consist-of (s27.s3 / silicone)))))
+                 :op3 (s27.m / magnet
+                             :ARG1-of (s27.e / embed-01)
+                             :ARG1-of (s27.m4 / move-01
+                                              :ARG0 (s27.f / field
+                                                           :mod (s27.m2 / magnet)
+                                                           :mod (s27.e3 / external))
+                                              :ARG2 (s27.a2 / around))))
+   :snt28 (s28.i2 / infer-01
+                  :ARG1 (s28.l / lead-01
+                               :ARG0 (s28.t / this)
+                               :ARG4 (s28.r / robot
+                                            :ARG1-of (s28.s / show-01
+                                                            :ARG0 (s28.i / i
+                                                                         :same-as s2.i)
+                                                            :ARG2 (s28.y / you)
+                                                            :time (s28.b / before
+                                                                         :op1 (s28.n / now))))))
+   :snt29 (s29.i2 / interest-01
+                  :ARG2 (s29.t / thing
+                               :ARG2-of (s29.h / help-01
+                                               :ARG0 (s29.r2 / robot
+                                                             :mod (s29.t3 / this)
+                                                             :same-as s28.r)
+                                               :ARG1 (s29.f / figure-out-05
+                                                            :ARG0 (s29.w / we
+                                                                         :same-as s2.a)
+                                                            :ARG1 (s29.t2 / thing
+                                                                          :manner-of (s29.m / move-01
+                                                                                            :ARG1 (s29.i / insect)
+                                                                                            :manner (s29.s / scale
+                                                                                                           :mod (s29.t4 / this)))))
+                                               :ARG1-of (s29.p / possible-01)
+                                               :ARG2 s29.w))
+                  :degree (s29.r / really))
+   :snt30 (s30.h / have-03
+                 :ARG0 (s30.w / we
+                              :same-as s2.a)
+                 :ARG1 (s30.m / model-01
+                              :ARG1 (s30.t / thing
+                                           :manner-of (s30.m2 / move-01
+                                                              :ARG0 (s30.e2 / everything
+                                                                            :ARG1-of (s30.r / range-01
+                                                                                            :ARG3 (s30.c / cockroach)
+                                                                                            :ARG4 (s30.e / elephant)))))
+                              :ARG1-of (s30.g / good-02
+                                              :degree (s30.r2 / really))))
+   :snt31 (s31.m / move-01
+                 :ARG0 (s31.w / we
+                              :mod (s31.a / all))
+                 :manner (s31.b / bounce-01
+                                :ARG1 s31.w
+                                :mod (s31.k / kind
+                                            :mod (s31.t / this)))
+                 :time (s31.r / run-02
+                              :ARG0 s31.w))
+   :snt32 (s32.c2 / contrast-01
+                  :ARG2 (s32.a / affect-01
+                               :ARG0 (s32.f2 / force
+                                             :location (s32.b / between
+                                                              :op1 (s32.f / foot)
+                                                              :op2 (s32.g / ground)))
+                               :ARG0-of (s32.c / cause-01
+                                               :ARG1 (s32.m4 / move-01
+                                                             :ARG3-of (s32.b2 / bounce-01)
+                                                             :same-as s31.b))
+                               :ARG1 (s32.m3 / motivate-01
+                                             :ARG0 (s32.i / i
+                                                          :part s32.f
+                                                          :same-as s2.i))
+                               :ARG1-of (s32.h / have-quant-91
+                                               :ARG3 (s32.m2 / more
+                                                             :quant (s32.l / lot))
+                                               :ARG4 (s32.m / mass
+                                                            :poss s32.i))
+                               :time (s32.s / small
+                                            :degree (s32.r / really)
+                                            :domain s32.i)))
+   :snt33 (s33.c / contrast-01
+                 :ARG1 (s33.w2 / work-09
+                               :ARG1 (s33.g / guy
+                                            :mod (s33.t / this)
+                                            :same-as s28.r)
+                               :time (s33.y / yet
+                                            :mod (s33.q / quite))
+                               :polarity "-")
+                 :ARG2 (s33.h / have-03
+                              :ARG0 (s33.w / we
+                                           :same-as s2.a)
+                              :ARG1 (s33.v / version
+                                           :ARG1-of (s33.h2 / have-degree-91
+                                                            :ARG2 (s33.l / large)
+                                                            :ARG3 (s33.m / more
+                                                                         :quant (s33.s / slight)))
+                                           :ARG1-of (s33.r / run-04
+                                                           :ARG2 (s33.a / around)))))
+   :snt34 (s34.a3 / and
+                  :ARG0-of (s34.i / infer-01
+                                  :ARG1 (s34.t3 / tiny
+                                                :degree (s34.v / very)
+                                                :domain (s34.r2 / relative-position
+                                                                :quant (s34.d2 / distance-quantity
+                                                                               :unit (s34.c2 / centimeter)
+                                                                               :quant "1")
+                                                                :direction (s34.s2 / side)
+                                                                :op1 (s34.u / Cuba
+                                                                            :quant (s34.a / about
+                                                                                          :op1 (s34.d / distance-quantity
+                                                                                                      :unit (s34.c / centimeter)))))))
+                  :op1 s34.u
+                  :op2 (s34.g / get-04
+                              :ARG0 (s34.w / we
+                                           :same-as s2.a)
+                              :ARG1 (s34.r3 / run-01
+                                            :ARG0 (s34.t2 / this
+                                                          :same-as s28.r)
+                                            :ARG1 (s34.a2 / about
+                                                          :op1 (s34.r / rate-entity-91
+                                                                      :ARG1 (s34.l / length
+                                                                                   :mod (s34.b / body)
+                                                                                   :quant "10")
+                                                                      :ARG2 (s34.t / temporal-quantity
+                                                                                   :unit (s34.s / second)
+                                                                                   :unit (s34.c3 / centimeter)
+                                                                                   :quant "1"
+                                                                                   :quant "10"))))))
+   :snt35 (s35.a / and
+                 :op1 (s35.q / quick-02
+                             :ARG1 (s35.i / it
+                                          :beneficiary (s35.g / guy
+                                                              :mod (s35.s2 / small)
+                                                              :mod (s35.l2 / little))
+                                          :same-as s28.r)
+                             :degree (s35.p / pretty))
+                 :op2 (s35.l / limit-01
+                             :ARG0 (s35.s / setup
+                                          :purpose (s35.t / test-01)
+                                          :poss (s35.w / we
+                                                       :same-as s2.a))
+                             :ARG1 s35.q
+                             :ARG1-of (s35.r / real-04)
+                             :mod (s35.o / only)))
+   :snt36 (s36.c / contrast-01
+                 :ARG2 (s36.g / give-01
+                              :ARG0 (s36.t2 / this)
+                              :ARG1 (s36.i / idea
+                                           :mod (s36.s / some)
+                                           :topic (s36.t / thing
+                                                         :manner-of (s36.w / work-09
+                                                                           :ARG1 (s36.i2 / it
+                                                                                         :same-as s28.r)
+                                                                           :time (s36.n / now
+                                                                                        :mod (s36.r / right)))))
+                              :ARG2 (s36.y / you
+                                           :same-as s28.y)))
+   :snt37 (s37.p / possible-01
+                 :ARG1 (s37.m / make-01
+                              :ARG0 (s37.w / we
+                                           :same-as s2.a)
+                              :ARG1 (s37.v / version
+                                           :ARG0-of (s37.c / climb-01
+                                                           :ARG1-of (s37.p2 / possible-01)
+                                                           :path (s37.o2 / over
+                                                                         :op1 (s37.o / obstacle)))
+                                           :ARG1-of (s37.p3 / print-01
+                                                            :instrument (s37.d / dimension
+                                                                               :quant "3"))
+                                           :ARG1-of (s37.r / resemble-01
+                                                           :ARG2 (s37.c2 / cockroach
+                                                                         :ARG1-of (s37.s / see-01
+                                                                                         :ARG0 (s37.y / you)
+                                                                                         :time (s37.b / before
+                                                                                                      :op1 (s37.n / now)))
+                                                                         :same-as s14.c2)
+                                                           :degree (s37.l / lot))
+                                           :mod (s37.t / this
+                                                       :same-as s28.r))
+                              :mod (s37.a / also)))
+   :snt38 (s38.c / contrast-01
+                 :ARG2 (s38.w / want-01
+                              :ARG0 (s38.w2 / we
+                                            :same-as s2.a)
+                              :ARG1 (s38.a / add-02
+                                           :ARG0 s38.w2
+                                           :ARG1 (s38.e / everything)
+                                           :ARG2 (s38.o / onboard
+                                                        :op1 (s38.r / robot
+                                                                    :same-as s28.r)))
+                              :manner (s38.u / ultimate)))
+   :snt39 (s39.a4 / and
+                  :op1 (s39.w / want-01
+                              :ARG0 (s39.w2 / we
+                                            :same-as s2.a)
+                              :ARG1 (s39.a3 / and
+                                            :mod (s39.t / together
+                                                        :mod (s39.a2 / all))
+                                            :op1 (s39.s / sense-01)
+                                            :op2 (s39.p / power)
+                                            :op3 (s39.c / control-01)
+                                            :op4 (s39.a / act-02)))
+                  :op2 (s39.n / need-01
+                              :ARG0 (s39.e / everything)
+                              :ARG1 (s39.i / inspire-01
+                                           :ARG1 s39.e
+                                           :manner (s39.b / bio))
+                              :polarity "-"))
+   :snt40 (s40.i / infer-01
+                 :ARG1 (s40.s / size-01
+                              :ARG1 (s40.r / robot
+                                           :mod (s40.t / this)
+                                           :same-as s28.r)
+                              :ARG2 (s40.p / product
+                                           :name (s40.n / name
+                                                        :op1 "Tic"
+                                                        :op2 "Tac"))
+                              :mod (s40.a / about)))
+   :snt41 (s41.a / and
+                 :op2 (s41.u / use-01
+                             :ARG0 (s41.w / we
+                                          :same-as s2.a)
+                             :ARG1 (s41.r / rocket)
+                             :ARG1-of (s41.i / instead-of-91
+                                             :ARG2 (s41.o / or
+                                                          :purpose (s41.m2 / move-01
+                                                                           :ARG0 s41.w
+                                                                           :ARG1 (s41.t2 / this
+                                                                                         :same-as s28.r)
+                                                                           :ARG2 (s41.a2 / around))
+                                                          :op1 (s41.m / magnet)
+                                                          :op2 (s41.m3 / muscle)))
+                             :prep-in (s41.c / case-04
+                                             :ARG1 (s41.t / this))))
+   :snt42 (s42.a / and
+                 :op1 (s42.m / material
+                             :ARG1-of (s42.e / energize-01)
+                             :ARG1-of (s42.f / fabricate-01
+                                             :manner (s42.m2 / micro))
+                             :domain (s42.t2 / this
+                                             :part (s42.d / dot
+                                                          :mod (s42.t3 / tiny))))
+                 :op2 (s42.p / possible-01
+                             :ARG1 (s42.c / create-01
+                                          :ARG0 (s42.w / we
+                                                       :same-as s2.a)
+                                          :ARG1 s42.d))
+                 :op3 (s42.p2 / possible-01
+                              :ARG1 (s42.p3 / put-01
+                                            :ARG0 s42.w
+                                            :ARG1 (s42.d2 / dot
+                                                          :ARG1-of (s42.i / include-91)
+                                                          :quant "1"
+                                                          :same-as s42.d)
+                                            :ARG2 (s42.b / belly)))
+                 :op4 (s42.j / jump-03
+                             :ARG0 (s42.r / robot
+                                          :part s42.b
+                                          :part s42.p3
+                                          :same-as s28.r)
+                             :mod (s42.t / then)
+                             :time (s42.s / sense-01
+                                          :ARG0 s42.r
+                                          :ARG1 (s42.i2 / increase-01
+                                                        :ARG1 (s42.l / light)))))
+   :snt43 (s43.c / cause-01
+                 :ARG1 (s43.v / video
+                              :ARG1-of (s43.i2 / include-91
+                                               :ARG2 (s43.v2 / video
+                                                             :ARG1-of (s43.f / favor-01
+                                                                             :ARG0 (s43.i / i
+                                                                                          :same-as s2.i))))
+                              :mod (s43.n / next)))
+   :snt44 (s44.h / have-03
+                 :ARG0 (s44.y / you)
+                 :ARG1 (s44.r / robot
+                              :ARG0-of (s44.j / jump-03
+                                              :quant (s44.a / about
+                                                            :op1 (s44.d / distance-quantity
+                                                                        :unit (s44.c / centimeter)
+                                                                        :quant "8"))
+                                              :destination (s44.a2 / air))
+                              :mod (s44.m / mass-quantity
+                                          :unit (s44.m2 / milligram)
+                                          :quant "300")
+                              :mod (s44.t / this)))
+   :snt45 (s45.s / size-01
+                 :ARG1 (s45.i / it
+                              :same-as s44.t)
+                 :ARG2 (s45.d2 / distance-quantity
+                               :unit (s45.m2 / millimeter)
+                               :domain "4"
+                               :quant "4")
+                 :mod (s45.o / only)
+                 :rel (s45.d / distance-quantity
+                             :unit (s45.m / millimeter)
+                             :quant "4")
+                 :rel "7")
+   :snt46 (s46.a2 / and
+                  :op2 (s46.s / see-01
+                              :ARG0 (s46.y / you)
+                              :ARG1 (s46.a3 / and
+                                            :op1 (s46.f / flash-01
+                                                        :mod (s46.b2 / big)
+                                                        :time (s46.b / begin-01
+                                                                     :ARG2 (s46.s2 / set-off-05
+                                                                                   :ARG1 (s46.t / thing
+                                                                                                :ARG1-of (s46.e / energize-01)))))
+                                            :op2 (s46.t2 / tumble-01
+                                                         :ARG1 (s46.r / robot
+                                                                      :same-as s44.t)
+                                                         :ARG4 (s46.a / air)))))
+   :snt47 (s47.a2 / and
+                  :op1 (s47.f / flash-01
+                              :mod (s47.b / big)
+                              :mod (s47.t / that)
+                              :same-as s46.b2)
+                  :op2 (s47.p / possible-01
+                              :ARG1 (s47.s / see-01
+                                           :ARG0 (s47.y / you)
+                                           :ARG1 (s47.j / jump-03
+                                                        :ARG0 (s47.r / robot
+                                                                     :same-as s44.t)
+                                                        :direction (s47.u / up)
+                                                        :path (s47.a / air)))))
+   :snt48 (s48.c / cause-01
+                 :ARG1 (s48.a / and
+                              :op1 (s48.r / restrain-01
+                                          :location (s48.t / this
+                                                           :same-as s44.t)
+                                          :polarity "-")
+                              :op2 (s48.w / wire
+                                          :ARG1-of (s48.c2 / connect-01
+                                                           :ARG2 s48.t)
+                                          :polarity "-")))
+   :snt49 (s49.a / and
+                 :op1 (s49.o / onboard
+                             :domain (s49.e / everything))
+                 :op2 (s49.j / jump-03
+                             :ARG0 (s49.i / it
+                                          :same-as s44.t)
+                             :ARG2-of (s49.r / respond-01
+                                             :ARG1 (s49.f / flick-01
+                                                          :ARG0 (s49.p / person
+                                                                       :ARG0-of (s49.s / study-01))
+                                                          :ARG1 (s49.l / lamp
+                                                                       :location (s49.n / next-to
+                                                                                        :op1 s49.i)
+                                                                       :mod (s49.d / desk))
+                                                          :mod (s49.j2 / just)))))
+   :snt50 (s50.t2 / think-01
+                  :ARG0 (s50.i / i
+                               :same-as s2.i)
+                  :ARG1 (s50.p / possible-01
+                               :ARG1 (s50.i2 / imagine-01
+                                             :ARG0 (s50.y / you)
+                                             :ARG1 (s50.t / thing
+                                                          :ARG1-of (s50.c / cool-04)
+                                                          :ARG1-of (s50.d / do-02
+                                                                          :ARG0 (s50.w / we)
+                                                                          :ARG1-of (s50.p2 / possible-01)
+                                                                          :ARG3 (s50.r / robot
+                                                                                       :ARG0-of (s50.r3 / run-01)
+                                                                                       :ARG1 s50.r3
+                                                                                       :ARG1 (s50.r2 / roll-01
+                                                                                                     :manner (s50.s / scale
+                                                                                                                    :mod (s50.s2 / size)
+                                                                                                                    :mod (s50.t3 / this)))
+                                                                                       :ARG0-of s50.r2))
+                                                          :mod (s50.a / all))))
+                  :rel (s50.p3 / possible-01
+                               :ARG1 (s50.c2 / crawl-01
+                                             :ARG0 s50.r)
+                               :ARG1 (s50.j / jump-03
+                                            :ARG0 s50.r)))
+   :snt51 (s51.i / imagine-01
+                 :ARG0 (s51.y / you)
+                 :ARG1 (s51.r / rubble
+                              :ARG1-of (s51.g / get-01
+                                              :ARG0 s51.y
+                                              :time (s51.a / after
+                                                           :op1 (s51.n / natural-disaster
+                                                                       :example (s51.e / earthquake)))))
+                 :mode "imperative")
+   :snt52 (s52.i / imagine-01
+                 :ARG0 (s52.y / you)
+                 :ARG1 (s52.r3 / run-02
+                               :purpose (s52.l / look-01
+                                               :ARG0 (s52.r / robot
+                                                            :mod (s52.s / small)
+                                                            :mod (s52.t2 / this))
+                                               :ARG1 (s52.p / person
+                                                            :ARG0-of (s52.s2 / survive-02)))
+                               :ARG0 s52.r
+                               :ARG1 (s52.t3 / through
+                                             :op1 (s52.r2 / rubble
+                                                          :mod (s52.t / that)
+                                                          :same-as s51.r)))
+                 :mode "imperative")
+   :snt53 (s53.o / or
+                 :op2 (s53.i / imagine-01
+                             :ARG0 (s53.y / you)
+                             :ARG1 (s53.r3 / run-02
+                                           :purpose (s53.a / and
+                                                           :op1 (s53.i2 / inspect-01
+                                                                        :ARG0 (s53.r2 / robot
+                                                                                      :quant (s53.l / lot)
+                                                                                      :mod (s53.s2 / small))
+                                                                        :ARG1 (s53.b / bridge))
+                                                           :op2 (s53.e / ensure-01
+                                                                       :ARG0 s53.r2
+                                                                       :ARG1 (s53.s / safe-01
+                                                                                    :ARG0 s53.b)))
+                                           :purpose (s53.g / get-01
+                                                           :ARG0 s53.y
+                                                           :ARG1 (s53.c2 / collapse-01
+                                                                         :ARG1-of (s53.r / resemble-01
+                                                                                         :ARG2 (s53.t / this))
+                                                                         :time (s53.d / date-entity
+                                                                                      :location (s53.o2 / outside
+                                                                                                        :op1 (s53.c / city
+                                                                                                                    :name (s53.n / name
+                                                                                                                                 :op1 "Minneapolis")))
+                                                                                      :year "2007"))
+                                                           :polarity "-")
+                                           :ARG0 s53.r2
+                                           :ARG1 (s53.a2 / around
+                                                         :op1 s53.b))
+                             :mode "imperative"))
+   :snt54 (s54.o / or
+                 :op2 (s54.i / imagine-01
+                             :ARG0 (s54.y / you
+                                          :part (s54.b / blood))
+                             :ARG1 (s54.t / thing
+                                          :ARG1-of (s54.d / do-02
+                                                          :ARG0 s54.y
+                                                          :ARG1-of (s54.p / possible-01)
+                                                          :condition (s54.h / have-03
+                                                                            :ARG0 s54.y
+                                                                            :ARG1 (s54.r / robot
+                                                                                         :ARG0-of (s54.s / swim-01
+                                                                                                         :ARG1-of (s54.p2 / possible-01)
+                                                                                                         :path (s54.t2 / through
+                                                                                                                       :op1 s54.b))))))
+                             :mod (s54.j / just)))
+   :snt55 (s55.r / request-confirmation-91
+                 :ARG1 (s55.p2 / publication-91
+                               :ARG0 (s55.p / person
+                                            :name (s55.n / name
+                                                         :op1 "Isaac"
+                                                         :op2 "Asimov")
+                                            :same-as s2.i)
+                               :ARG1 (s55.b / book))
+                 :rel (s55.a / Fantastic)
+                 :rel (s55.o / Voyage))
+   :snt56 (s56.o4 / or
+                  :op2 (s56.p / possible-01
+                              :ARG1 (s56.o3 / operate-01
+                                            :ARG0 (s56.t / they
+                                                         :same-as s54.r)
+                                            :manner (s56.o / obligate-01
+                                                           :ARG1 s56.t
+                                                           :ARG2 (s56.c / cut-01
+                                                                        :ARG0 s56.t
+                                                                        :ARG1 (s56.y / you)
+                                                                        :ARG1-of (s56.o2 / open-01)
+                                                                        :mod (s56.i / in-the-first-place))
+                                                           :polarity "-"))))
+   :snt57 (s57.o / or
+                 :op2 (s57.p / possible-01
+                             :ARG1 (s57.c / change-01
+                                          :ARG0 (s57.w2 / we)
+                                          :ARG1 (s57.w / way
+                                                       :manner-of (s57.b / build-01
+                                                                         :ARG0 s57.w2
+                                                                         :ARG1 (s57.t4 / thing)))
+                                          :ARG1-of (s57.r / radical-02))
+                             :condition (s57.a / and
+                                               :op1 (s57.h / have-03
+                                                           :ARG0 s57.w2
+                                                           :ARG1 (s57.w4 / work-09
+                                                                         :ARG1 (s57.r2 / robot
+                                                                                       :mod (s57.t6 / tiny)
+                                                                                       :poss s57.w2)
+                                                                         :ARG1-of (s57.s / same-01
+                                                                                         :ARG2 (s57.t / term))))
+                                               :op2 (s57.b2 / build-01
+                                                            :ARG0 (s57.t3 / they
+                                                                          :same-as s57.t)
+                                                            :ARG1 (s57.m2 / mound
+                                                                          :ARG1-of (s57.h2 / high-02
+                                                                                           :ARG2 (s57.d / distance-quantity
+                                                                                                        :unit (s57.m / meter)
+                                                                                                        :quant "8"))
+                                                                          :mod (s57.i / incredible)
+                                                                          :mod (s57.t5 / this)
+                                                                          :mod (s57.b3 / building
+                                                                                       :ARG1-of (s57.v / vent-01
+                                                                                                       :ARG1-of (s57.w3 / well-09)
+                                                                                                       :ARG1-of (s57.e / effective-04))
+                                                                                       :location (s57.a2 / and
+                                                                                                         :op1 (s57.c2 / continent
+                                                                                                                      :name (s57.n / name
+                                                                                                                                   :op1 "Africa"))
+                                                                                                         :op2 (s57.c3 / country
+                                                                                                                      :name (s57.n2 / name
+                                                                                                                                    :op1 "Australia")))
+                                                                                       :mod (s57.a3 / apartment)))
+                                                            :beneficiary (s57.t2 / term
+                                                                                 :mod (s57.o2 / other))))))
+   :snt58 (s58.t / thing
+                 :ARG1-of (s58.d / do-02
+                                 :ARG0 (s58.w / we
+                                              :same-as s57.w2)
+                                 :ARG1-of (s58.p / possible-01)
+                                 :ARG2 (s58.r / robot
+                                              :mod (s58.s / small)
+                                              :mod (s58.t2 / this)
+                                              :same-as s57.r2)))
+   :snt59 (s59.a2 / and
+                  :op1 (s59.h / have-concession-91
+                              :ARG1 (s59.g / go-06
+                                           :ARG0 (s59.w2 / we)
+                                           :ARG2 (s59.w / way
+                                                        :ARG1-of (s59.l / long-03)
+                                                        :mod (s59.s4 / still)))
+                              :ARG2 (s59.a / advance-01
+                                           :ARG1 s59.w2
+                                           :mod (s59.s2 / some)
+                                           :time (s59.s / so-far)))
+                  :op3 (s59.p2 / possible-01
+                               :ARG1 (s59.c / contribute-01
+                                            :ARG0 (s59.p / person
+                                                         :quant (s59.s3 / some)
+                                                         :ARG1-of (s59.i / include-91
+                                                                         :ARG2 (s59.y / you)))
+                                            :ARG2 (s59.d / destination
+                                                         :mod (s59.t / that)))
+                               :ARG1-of (s59.h2 / hope-01)))
+   :snt60 (s60.t / thank-01
+                 :ARG0 (s60.i / i)
+                 :ARG1 (s60.y / you)
+                 :mod (s60.m / much
+                             :degree (s60.v / very))))
+

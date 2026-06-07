@@ -1,0 +1,454 @@
+# ::id doc-394
+# ::doc_file doc-394
+# ::tok http : / / www . ted . com / talks / adam_grosser_and_his_sustainable_fridge< / url> <next_sent> This is a work in process , based on some comments that were made at TED two years ago about the need for the storage of vaccine . <next_sent> On this planet , 1.6 billion people do n't have access to electricity , refrigeration or stored fuels . <next_sent> This is a problem . <next_sent> It impacts : the spread of disease , the storage of food and medicine and the quality of life . <next_sent> So here 's the plan : inexpensive refrigeration that does n't use electricity , propane , gas , kerosene or consumables . <next_sent> Time for some thermodynamics . <next_sent> And the story of the Intermittent Absorption Refrigerator . <next_sent> Adam Grosser : So 29 years ago , I had this thermo teacher who talked about absorption and refrigeration . <next_sent> It 's one of those things that stuck in my head . <next_sent> It was a lot like the Stirling engine : it was cool , but you did n't know what to do with it . <next_sent> And it was invented in 1858 , by this guy Ferdinand Carre , but he could n't actually build anything with it because of the tools of the time . <next_sent> This crazy Canadian named Powel Crosley commercialized this thing called the IcyBall in 1928 , and it was a really neat idea , and I 'll get to why it did n't work , but here 's how it works . <next_sent> There 's two spheres and they 're separated in distance . <next_sent> One has a working fluid , water and ammonia , and the other is a condenser . <next_sent> You heat up one side , the hot side . <next_sent> The ammonia evaporates and it re - condenses in the other side . <next_sent> You let it cool to room temperature , and then , as the ammonia re - evaporates and combines with the water back on the erstwhile hot side , it creates a powerful cooling effect . <next_sent> So , it was a great idea that did n't work at all : it blew up . <next_sent> Because using ammonia you get hugely high pressures if you heated them wrong . <next_sent> But it was kind of an interesting thought . <next_sent> So , the great thing about 2006 is there 's a lot of really great computational work you can do . <next_sent> So , we got the whole thermodynamics department at Stanford involved -- a lot of computational fluid dynamics . <next_sent> We proved that most of the ammonia refrigeration tables are wrong . <next_sent> We found some non - toxic refrigerants that worked at very low vapor pressures . <next_sent> Brought in a team from the U.K. -- there 's a lot of great refrigeration people , it turned out , in the U.K. -- and built a test rig , and proved that , in fact , we could make a low pressure , non - toxic refrigerator . <next_sent> So , this is the way it works . <next_sent> You put it on a cooking fire . <next_sent> Most people have cooking fires in the world , whether it 's camel dung or wood . <next_sent> It heats up for about 30 minutes , cools for an hour . <next_sent> Put it into a container and it will refrigerate for 24 hours . <next_sent> It looks like this . <next_sent> This is the fifth prototype . <next_sent> It 's not quite done . <next_sent> Weighs about eight pounds , and this is the way it works . <next_sent> We think we can build these in high volumes for about 25 dollars , in low volumes for about 40 dollars . <next_sent> And we think we can make refrigeration something that everybody can have . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :value "ossobuco")
+   :snt2 (s2.w / work-01
+               :ARG1 (s2.t2 / this)
+               :ARG1-of (s2.p / process-01)
+               :ARG1-of (s2.b / base-02
+                              :ARG2 (s2.c / comment-01
+                                          :ARG1 (s2.n2 / need-01
+                                                       :ARG1 (s2.s2 / store-01
+                                                                    :ARG1 (s2.v / vaccine)))
+                                          :location (s2.c2 / conference
+                                                           :name (s2.n / name
+                                                                       :op1 "TED"))
+                                          :mod (s2.s / some)
+                                          :time (s2.b2 / before
+                                                       :quant (s2.t / temporal-quantity
+                                                                    :unit (s2.y / year)
+                                                                    :quant "2")
+                                                       :op1 (s2.n3 / now)))))
+   :snt3 (s3.a / access-01
+               :ARG0 (s3.p / person
+                           :quant "1300000000")
+               :ARG1 (s3.o / or
+                           :op1 (s3.e / electricity)
+                           :op2 (s3.c / cool-01)
+                           :op3 (s3.f / fuel
+                                      :ARG1-of (s3.s / store-01)))
+               :location (s3.p2 / planet
+                                :mod (s3.t / this))
+               :polarity "-")
+   :snt4 (s4.p / problem
+               :domain (s4.t / this))
+   :snt5 (s5.i / impact-01
+               :ARG0 (s5.i2 / it
+                            :same-as s4.t)
+               :ARG1 (s5.a / and
+                           :op1 (s5.s / spread-03
+                                      :ARG1 (s5.d / disease))
+                           :op2 (s5.s2 / store-01
+                                       :ARG1 (s5.a2 / and
+                                                    :op1 (s5.f / food)
+                                                    :op2 (s5.m / medicine)))
+                           :op3 (s5.q / quality
+                                      :poss (s5.l / live-01))))
+   :snt6 (s6.c / cause-01
+               :ARG1 (s6.p / plan-01
+                           :ARG1 (s6.r / refrigerator
+                                       :ARG0-of (s6.u / use-01
+                                                      :ARG1 (s6.o / or
+                                                                  :op1 (s6.e / electricity)
+                                                                  :op2 (s6.p2 / propane)
+                                                                  :op3 (s6.g / gas)
+                                                                  :op4 (s6.k / kerosene)
+                                                                  :op5 (s6.t / thing
+                                                                             :ARG1-of (s6.c3 / consume-01)))
+                                                      :polarity "-")
+                                       :ARG1-of (s6.c2 / cheap-02
+                                                       :polarity "-"))
+                           :location (s6.h / here)))
+   :snt7 (s7.t2 / time
+                :time-of (s7.t / thermodynamics
+                               :mod (s7.s / some)))
+   :snt8 (s8.a / and
+               :op1 (s8.s / story
+                          :topic (s8.e / event
+                                       :name (s8.n / name
+                                                   :op1 "Intermittent"
+                                                   :op2 "Absorption"
+                                                   :op3 "Refrigerator"))))
+   :snt9 (s9.s / say-01
+               :ARG0 (s9.p / person
+                           :name (s9.n / name
+                                       :op1 "Adam"
+                                       :op2 "Grosser"))
+               :ARG1 (s9.h / have-03
+                           :ARG0 (s9.i / i
+                                       :same-as s9.p)
+                           :ARG1 (s9.p2 / person
+                                        :ARG0-of (s9.t2 / teach-01
+                                                        :mod "thermo")
+                                        :ARG0-of (s9.t / talk-01
+                                                       :ARG1 (s9.a2 / and
+                                                                    :op1 (s9.a / absorb-01)
+                                                                    :op2 (s9.c / cool-01)))
+                                        :mod (s9.t4 / this))
+                           :time (s9.b / before
+                                       :quant (s9.t3 / temporal-quantity
+                                                     :unit (s9.y / year)
+                                                     :quant "29")
+                                       :op1 (s9.n3 / now)))
+               :rel (s9.n2 / name
+                           :op1 "thermo"))
+   :snt10 (s10.t2 / thing
+                  :ARG1-of (s10.i2 / include-91
+                                   :ARG2 (s10.t3 / thing
+                                                 :ARG1-of (s10.s / stick-01
+                                                                 :ARG2 (s10.h / head
+                                                                              :part-of (s10.i / i
+                                                                                              :same-as s9.p)))
+                                                 :mod (s10.t / that)))
+                  :domain (s10.i3 / it
+                                  :same-as s8.e)
+                  :quant "1")
+   :snt11 (s11.r / resemble-01
+                 :ARG0-of (s11.m / mean-01
+                                 :ARG1 (s11.c / contrast-01
+                                              :ARG1 (s11.c2 / cool-04
+                                                            :ARG1 (s11.i / it
+                                                                         :same-as s8.e))
+                                              :ARG2 (s11.k / know-01
+                                                           :ARG0 (s11.y / you)
+                                                           :ARG1 (s11.t / thing
+                                                                        :ARG1-of (s11.d / do-02
+                                                                                        :ARG0 s11.y
+                                                                                        :ARG2 s11.i))
+                                                           :polarity "-")))
+                 :ARG1 s11.i
+                 :ARG2 (s11.e / engine
+                              :name (s11.n / name
+                                           :op1 "Stirling"))
+                 :degree (s11.l / lot))
+   :snt12 (s12.a2 / and
+                  :op2 (s12.c2 / contrast-01
+                               :ARG1 (s12.i / invent-01
+                                            :ARG0 (s12.g / guy
+                                                         :name (s12.n / name
+                                                                      :op1 "Ferdinand"
+                                                                      :op2 "Carre")
+                                                         :mod (s12.t / this))
+                                            :ARG1 (s12.i2 / it
+                                                          :same-as s8.e)
+                                            :time (s12.d / date-entity
+                                                         :year "1858"))
+                               :ARG2 (s12.p / possible-01
+                                            :ARG1 (s12.b / build-01
+                                                         :ARG0 s12.g
+                                                         :ARG1 (s12.a3 / anything)
+                                                         :ARG1-of (s12.a / actual-02)
+                                                         :instrument s12.i2)
+                                            :ARG1-of (s12.c / cause-01
+                                                            :ARG0 (s12.t3 / tool
+                                                                          :time (s12.t2 / time)))
+                                            :polarity "-")))
+   :snt13 (s13.c3 / contrast-01
+                  :ARG1 (s13.a2 / and
+                                :op1 (s13.a / advertise-01
+                                            :ARG0 (s13.p / person
+                                                         :name (s13.n / name
+                                                                      :op1 "Powel"
+                                                                      :op2 "Crosley")
+                                                         :ARG1-of (s13.c5 / crazy-03)
+                                                         :mod (s13.t4 / this)
+                                                         :mod (s13.c4 / country
+                                                                      :name (s13.n2 / name
+                                                                                    :op1 "Canada")))
+                                            :ARG1 (s13.t / thing
+                                                         :ARG1-of (s13.c / call-01
+                                                                         :ARG2 (s13.p2 / product
+                                                                                       :name (s13.n3 / name
+                                                                                                     :op1 "IcyBall")))
+                                                         :mod s13.t4
+                                                         :same-as s8.e)
+                                            :time (s13.d / date-entity
+                                                         :year "1928"))
+                                :op2 (s13.i2 / idea
+                                             :domain s13.t
+                                             :mod (s13.n4 / neat
+                                                          :degree (s13.r / really)))
+                                :op3 (s13.g / get-05
+                                            :ARG1 (s13.i / i
+                                                         :same-as s9.p)
+                                            :ARG2 (s13.t2 / thing
+                                                          :ARG0-of (s13.c2 / cause-01
+                                                                           :ARG1 (s13.w / work-09
+                                                                                        :ARG1 s13.t
+                                                                                        :polarity "-")))))
+                  :ARG2 (s13.t3 / thing
+                                :location (s13.h / here)
+                                :manner-of (s13.w2 / work-09
+                                                   :ARG1 s13.t)))
+   :snt14 (s14.a / and
+                 :op1 (s14.s2 / sphere
+                              :quant "2")
+                 :op2 (s14.s / separate-02
+                             :ARG0 (s14.d / distant-02
+                                          :ARG2 s14.s2)
+                             :ARG1 s14.s2))
+   :snt15 (s15.a3 / and
+                  :op1 (s15.h / have-03
+                              :ARG0 (s15.o / one)
+                              :ARG1 (s15.f / fluid
+                                           :ARG1-of (s15.w2 / work-09)
+                                           :consist-of (s15.a2 / and
+                                                               :op1 (s15.w / water)
+                                                               :op2 (s15.a / ammonia))))
+                  :op2 (s15.c / condenser
+                              :domain (s15.o2 / other)))
+   :snt16 (s16.h / heat-01
+                 :ARG0 (s16.y / you)
+                 :ARG1 (s16.s / side
+                              :ARG1-of (s16.m / mean-01
+                                              :ARG2 (s16.s2 / side
+                                                            :ARG1-of (s16.h2 / hot-05)))
+                              :quant "1"))
+   :snt17 (s17.a3 / and
+                  :op1 (s17.e / evaporate-01
+                              :ARG1 (s17.a2 / ammonia))
+                  :op2 (s17.e2 / evaporate-01
+                               :ARG1 s17.a2
+                               :location (s17.s / side
+                                                :mod (s17.o / other)
+                                                :same-as s15.o2)
+                               :mod (s17.a / again)))
+   :snt18 (s18.a2 / and
+                  :op1 (s18.l / let-01
+                              :ARG0 (s18.y / you)
+                              :ARG1 (s18.c3 / cool-06
+                                            :ARG1 (s18.i / it)
+                                            :ARG4 (s18.t / temperature
+                                                         :mod (s18.r / room))))
+                  :op2 (s18.c4 / create-01
+                               :ARG0 (s18.a / ammonia
+                                            :same-as s17.a2)
+                               :ARG1 (s18.e / effect-03
+                                            :ARG0-of (s18.c2 / cool-01)
+                                            :ARG1-of (s18.p / powerful-02))
+                               :time (s18.a3 / and
+                                             :op1 (s18.e3 / evaporate-01
+                                                          :ARG1 s18.a)
+                                             :op2 (s18.c / combine-01
+                                                         :ARG1 s18.a
+                                                         :ARG2 (s18.w / water
+                                                                      :same-as s15.w)
+                                                         :location (s18.s / side
+                                                                          :ARG1-of (s18.h / hot-05)
+                                                                          :direction (s18.b / back)
+                                                                          :mod (s18.e2 / erstwhile
+                                                                                       :same-as s15.o))))
+                               :time (s18.t2 / then)))
+   :snt19 (s19.i2 / infer-01
+                  :ARG1 (s19.a / and
+                               :op1 (s19.w / work-09
+                                           :ARG1 (s19.i / idea
+                                                        :mod (s19.g / great))
+                                           :mod (s19.a2 / at-all)
+                                           :polarity "-")
+                               :op2 (s19.b / blow-up-06
+                                           :ARG1 s19.i)))
+   :snt20 (s20.c / cause-01
+                 :ARG0 (s20.u / use-01
+                              :ARG0 (s20.y / you)
+                              :ARG1 (s20.a / ammonia))
+                 :ARG1 (s20.g / get-01
+                              :ARG0 s20.y
+                              :ARG1 (s20.p / pressure-01
+                                           :ARG1-of (s20.h2 / high-02
+                                                            :degree (s20.h3 / huge)))
+                              :condition (s20.h / heat-01
+                                                :ARG0 s20.y
+                                                :ARG1 (s20.t / they
+                                                             :same-as s20.a)
+                                                :ARG2-of (s20.w / wrong-04))))
+   :snt21 (s21.c / contrast-01
+                 :ARG2 (s21.t / thing
+                              :ARG1-of (s21.t2 / think-01)
+                              :ARG2-of (s21.i / interest-01
+                                              :degree (s21.k / kind-of))
+                              :domain (s21.i2 / it)))
+   :snt22 (s22.g / great
+                 :domain (s22.w / work-01
+                                :quant (s22.l / lot)
+                                :ARG0 (s22.y / you)
+                                :ARG1-of (s22.d2 / do-02
+                                                 :ARG0 s22.y
+                                                 :ARG1-of (s22.p / possible-01))
+                                :mod (s22.c / computer)
+                                :mod (s22.g2 / great
+                                             :ARG1-of (s22.r / real-04))
+                                :time (s22.d / date-entity
+                                             :year "2006")))
+   :snt23 (s23.c / cause-01
+                 :ARG0 (s23.d2 / dynamics
+                               :quant (s23.l / lot)
+                               :mod (s23.f / fluid
+                                           :mod (s23.c2 / computer)))
+                 :ARG1 (s23.g / get-04
+                              :ARG0 (s23.w / we)
+                              :ARG1 (s23.i / involve-01
+                                           :ARG1 (s23.d / department
+                                                        :mod (s23.w2 / whole)
+                                                        :part-of (s23.u / university
+                                                                        :name (s23.n / name
+                                                                                     :op1 "Stanford"))
+                                                        :topic (s23.t / thermodynamics)))))
+   :snt24 (s24.p / prove-01
+                 :ARG0 (s24.w / we
+                              :same-as s23.w)
+                 :ARG1 (s24.w2 / wrong-04
+                               :ARG1 (s24.t / table
+                                            :quant (s24.m / most)
+                                            :ARG0-of (s24.c / cool-01
+                                                            :ARG1 (s24.a / ammonia)))))
+   :snt25 (s25.f / find-01
+                 :ARG0 (s25.w / we
+                              :same-as s23.w)
+                 :ARG1 (s25.r / refrigerator
+                              :quant (s25.s / some)
+                              :ARG1-of (s25.w2 / work-09
+                                               :manner (s25.p / pressure-01
+                                                              :ARG1-of (s25.l / low-04
+                                                                              :degree (s25.v2 / very))
+                                                              :mod (s25.v / vapor)))
+                              :mod (s25.t / toxic
+                                          :polarity "-")))
+   :snt26 (s26.a / and
+                 :op1 (s26.b / bring-01
+                             :ARG0 (s26.w / we
+                                          :same-as s23.w)
+                             :ARG1 (s26.t / team
+                                          :source (s26.c2 / country
+                                                          :name (s26.n / name
+                                                                       :op1 "U.K."))))
+                 :op2 (s26.t4 / turn-out-11
+                              :ARG1 (s26.p / person
+                                           :quant (s26.l / lot)
+                                           :ARG0-of (s26.c / cool-01)
+                                           :ARG2 s26.c2
+                                           :mod (s26.g / great)))
+                 :op3 (s26.b2 / build-01
+                              :ARG1 (s26.r2 / rig
+                                            :ARG1-of (s26.t2 / test-01)))
+                 :op4 (s26.p4 / prove-01
+                              :ARG0 s26.w
+                              :ARG1 (s26.p2 / possible-01
+                                            :ARG1 (s26.m / make-01
+                                                         :ARG0 s26.w
+                                                         :ARG1 (s26.r / refrigerator
+                                                                      :mod (s26.t3 / toxic
+                                                                                   :polarity "-")
+                                                                      :mod (s26.p3 / pressure
+                                                                                   :ARG1-of (s26.l2 / low-04)))))
+                              :mod (s26.i / in-fact)))
+   :snt27 (s27.w / way
+                 :domain (s27.t / this)
+                 :manner-of (s27.w2 / work-09
+                                    :ARG1 (s27.i / it)))
+   :snt28 (s28.p / put-01
+                 :ARG0 (s28.y / you)
+                 :ARG1 (s28.i / it)
+                 :ARG2 (s28.f / fire
+                              :mod (s28.c / cook-01)))
+   :snt29 (s29.h / have-03
+                 :ARG0 (s29.p / person
+                              :quant (s29.m / most))
+                 :ARG1 (s29.f / fire
+                              :purpose (s29.c2 / cook-01))
+                 :ARG1-of (s29.r / regardless-91
+                                 :ARG2 (s29.o / or
+                                              :op1 (s29.d / dung
+                                                          :source (s29.c / camel))
+                                              :op2 (s29.w / wood)))
+                 :location (s29.w2 / world
+                                   :same-as s3.p2))
+   :snt30 (s30.a2 / and
+                  :op1 (s30.h / heat-up-02
+                              :ARG1 (s30.i / it
+                                           :same-as s28.i)
+                              :duration (s30.a / about
+                                               :op1 (s30.t / temporal-quantity
+                                                           :unit (s30.m / minute)
+                                                           :quant "30")))
+                  :op2 (s30.c / cool-01
+                              :ARG1 s30.i
+                              :duration (s30.t2 / temporal-quantity
+                                                :unit (s30.h2 / hour)
+                                                :quant "1")))
+   :snt31 (s31.a / and
+                 :op1 (s31.p / put-01
+                             :ARG1 (s31.i / it
+                                          :same-as s28.i)
+                             :ARG2 (s31.c / container))
+                 :op2 (s31.c2 / cool-01
+                              :ARG1 s31.i
+                              :duration (s31.t / temporal-quantity
+                                               :unit (s31.h / hour)
+                                               :quant "24")))
+   :snt32 (s32.l / look-02
+                 :ARG0 (s32.i / it
+                              :same-as s28.i)
+                 :ARG1 (s32.r / resemble-01
+                              :ARG2 (s32.t / this)))
+   :snt33 (s33.p / prototype
+                 :domain (s33.t / this
+                                :same-as s28.i)
+                 :ord (s33.o / ordinal-entity
+                             :value "5"))
+   :snt34 (s34.d / do-02
+                 :ARG1 (s34.i / it
+                              :same-as s28.i)
+                 :degree (s34.q / quite)
+                 :polarity "-")
+   :snt35 (s35.a2 / and
+                  :op1 (s35.w2 / weigh-01
+                               :ARG2 (s35.a / about
+                                            :op1 (s35.m / mass-quantity
+                                                        :unit (s35.p / pound)
+                                                        :quant "8")))
+                  :op2 (s35.w / way
+                              :manner-of (s35.w3 / work-09
+                                                 :ARG1 (s35.i / it
+                                                              :same-as s28.i))
+                              :mod (s35.t / this
+                                          :same-as s27.t)))
+   :snt36 (s36.t / think-01
+                 :ARG0 (s36.w / we
+                              :same-as s23.w)
+                 :ARG1 (s36.p / possible-01
+                              :ARG1 (s36.b / build-01
+                                           :ARG0 s36.w
+                                           :ARG1 (s36.t2 / this)
+                                           :ARG3 (s36.a / about
+                                                        :op1 (s36.m / monetary-quantity
+                                                                    :unit (s36.d / dollar)
+                                                                    :quant "25"))
+                                           :manner (s36.v / volume
+                                                          :ARG1-of (s36.h / high-02)))
+                              :op2 (s36.b2 / build-01
+                                           :ARG0 s36.w
+                                           :ARG1 s36.t2
+                                           :duration (s36.a2 / about
+                                                             :op1 (s36.m2 / monetary-quantity
+                                                                          :unit (s36.d2 / dollar)
+                                                                          :quant "40"))
+                                           :manner (s36.v2 / volume
+                                                           :ARG1-of (s36.l / low-04)))))
+   :snt37 (s37.a / and
+                 :op2 (s37.t / think-01
+                             :ARG0 (s37.w / we
+                                          :same-as s23.w)
+                             :ARG1 (s37.p / possible-01
+                                          :ARG1 (s37.m / make-01
+                                                       :ARG0 s37.w
+                                                       :ARG1 (s37.c / cool-01
+                                                                    :ARG1 (s37.r / refrigerator)
+                                                                    :ARG1-of (s37.h / have-03
+                                                                                    :ARG0 (s37.e / everybody)
+                                                                                    :ARG1-of (s37.p2 / possible-01)))))))
+   :snt38 (s38.t / thank-01
+                 :ARG1 (s38.y / you)))
+

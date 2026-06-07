@@ -1,0 +1,495 @@
+# ::id doc-775
+# ::doc_file doc-775
+# ::tok http : / / www . ted . com / talks / don_levy_a_cinematic_journey_through_visual_effects< / url> <next_sent> The filmmaker Georges Méliès was first a magician . <next_sent> Now movies proved to be the ultimate medium for magic . <next_sent> With complete control of everything the audience can see , moviemakers had developed an arsenal of techniques to further their deceptions . <next_sent> Motion pictures are themselves an illusion of life , produced by the sequential projection of still frames , and they astonished the Lumière brothers ' early audiences . <next_sent> Even today 's sophisticated moviegoers still lose themselves to the screen , and filmmakers leverage this separation from reality to great effect . <next_sent> Now imaginative people have been having fun with this for over 400 years . <next_sent> Giambattista della Porta , a Neapolitan scholar in the 16th century , examined and studied the natural world and saw how it could be manipulated . <next_sent> Playing with the world , and our perception of it , really is the essence of visual effects . <next_sent> So digging deeper into this with the Science and Technology Council of the Academy of Motion Picture Arts and Sciences reveals some truth behind the trickery . <next_sent> Visual effects are based on the principles of all illusions : assumption , things are as we know them ; presumption , things will behave as we expect ; and context in reality , our knowledge of the world as we know it , such as scale . <next_sent> Now a fourth factor really becomes an obsession , which is , never betray the illusion . <next_sent> And that last point has made visual effects a constant quest for perfection . <next_sent> So from the hand - cranked jump cut early days of cinema to last Sunday 's Oscar winner , what follows are some steps and a few repeats in the evolution of visual effects . <next_sent> I hope you will enjoy . <next_sent> Isabelle : " The filmmaker Georges Méliès was one of the first to realize that films had the power to capture dreams . " <next_sent> [ " ' A Trip to the Moon ' " ] [ " 2011 Restoration of the Original Hand - Tinted Color " ] [ " ' 2001 : A Space Odyssey ' " ] [ " Academy Award Winner for Visual Effects " ] [ " ' Avatar ' " ] First doctor : How are you feeling , Jake ? <next_sent> Jake : Hey guys . <next_sent> [ " Academy Award Winner for Visual Effects " ] Second doctor : Welcome to your new body , Jake . <next_sent> First doctor : Good . <next_sent> Second doctor : And good , just take it nice and slow , Jake . <next_sent> Well , no truncal ataxia , that 's good . <next_sent> First doctor : You feeling light - headed or dizzy at all ? <next_sent> Oh , you 're wiggling your toes . <next_sent> [ " ' Alice 's Adventures in Wonderland ' " ] Alice : What 's happening to me ? <next_sent> [ " ' Alice in Wonderland ' " ] [ " Academy Award Nominee for Visual Effects " ] [ " ' The Lost World ' " ] [ " Stop Motion Animation " ] [ " ' Jurassic Park ' " ] [ Dinosaur roars ] [ " CG Animation " ] [ " Academy Award Winner for Visual Effects " ] [ " ' The Smurfs ' " ] [ " Autodesk Maya Software - Key Frame Animation " ] [ " ' Rise of the Planet of the Apes ' " ] Chimpanzee : No ! [ " Academy Award Nominee for Visual Effects " ] [ " ' Metropolis ' " ] [ " ' Blade Runner ' " ] [ " Academy Award Nominee for Visual Effects " ] [ " ' The Rains Came ' " ] Rama Safti : Well , it 's all over . <next_sent> Maharaja : Nothing to worry about , not a thing . <next_sent> [ ' Academy Award for Special Effects - " ] [ " ' 2012 ' " ] Governor : It seems to me that the worst is over .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01
+                            :ARG0 (s1.p / person
+                                        :name (s1.n / name
+                                                    :op1 "border"))))
+   :snt2 (s2.m / magician
+               :domain (s2.p / person
+                             :name (s2.n / name
+                                         :op1 "Georges"
+                                         :op2 "Méliès")
+                             :ARG0-of (s2.m2 / make-01
+                                             :ARG1 (s2.f / film)))
+               :ord (s2.o / ordinal-entity
+                          :value "1"))
+   :snt3 (s3.p / prove-01
+               :ARG1 (s3.m2 / medium
+                            :purpose (s3.m / magic)
+                            :domain (s3.m3 / movie)
+                            :mod (s3.u / ultimate)))
+   :snt4 (s4.d2 / develop-02
+                :purpose (s4.f2 / further-01
+                                :ARG0 (s4.p / person
+                                            :ARG0-of (s4.m / make-01
+                                                           :ARG1 (s4.f / film)))
+                                :ARG1 (s4.d / deceive-01
+                                            :ARG0 s4.p))
+                :ARG0 s4.p
+                :ARG1 (s4.a / arsenal
+                            :consist-of (s4.t / technique))
+                :manner (s4.c2 / control-01
+                               :ARG0 s4.p
+                               :ARG1 (s4.e / everything
+                                           :ARG1-of (s4.s / see-01
+                                                          :ARG0 (s4.a2 / audience)
+                                                          :ARG1-of (s4.p2 / possible-01)))
+                               :ARG1-of (s4.c / complete-02)))
+   :snt5 (s5.a / and
+               :op1 (s5.i / illusion
+                          :ARG1-of (s5.c / cause-01
+                                         :ARG0 (s5.p3 / produce-01
+                                                      :ARG1 (s5.p2 / picture
+                                                                   :ARG1-of (s5.m / move-01))
+                                                      :manner (s5.p4 / project-01
+                                                                     :ARG1 (s5.f / frame-06
+                                                                                 :mod (s5.s / still))
+                                                                     :ARG1-of (s5.s2 / succeed-03))))
+                          :domain s5.p2
+                          :mod (s5.l / life))
+               :op2 (s5.a2 / astonish-01
+                           :ARG0 s5.p2
+                           :ARG1 (s5.a3 / audience
+                                        :poss (s5.p / person
+                                                    :name (s5.n / name
+                                                                :op1 "Lumière")
+                                                    :mod (s5.b / brother))
+                                        :time (s5.e / early))))
+   :snt6 (s6.a2 / and
+                :op1 (s6.l2 / lose-02
+                            :ARG0 (s6.p / person
+                                        :ARG0-of (s6.g / go-02
+                                                       :ARG1 (s6.m2 / movie))
+                                        :mod (s6.s3 / sophisticated)
+                                        :time (s6.t / today
+                                                    :mod (s6.e / even)))
+                            :ARG1 s6.p
+                            :ARG2 (s6.s / screen)
+                            :mod (s6.s4 / still))
+                :op2 (s6.l / leverage-01
+                           :ARG0 (s6.p2 / person
+                                        :ARG0-of (s6.m / make-01
+                                                       :ARG1 (s6.f / film)))
+                           :ARG1 (s6.s2 / separate-01
+                                        :ARG2 (s6.r / reality))
+                           :ARG2 (s6.a / affect-01
+                                       :ARG0 s6.p2
+                                       :ARG2 (s6.g2 / great))))
+   :snt7 (s7.f / fun-01
+               :ARG0 (s7.p / person
+                           :mod (s7.i / imaginative))
+               :ARG1 (s7.t2 / this)
+               :duration (s7.o / over
+                               :op1 (s7.t / temporal-quantity
+                                          :unit (s7.y / year)
+                                          :quant "400"))
+               :time (s7.n / now))
+   :snt8 (s8.a / and
+               :op1 (s8.e / examine-01
+                          :ARG0 (s8.p / person
+                                      :name (s8.n / name
+                                                  :op1 "Giambattista"
+                                                  :op2 "della"
+                                                  :op3 "Porta")
+                                      :mod (s8.i / island
+                                                 :name (s8.n2 / name
+                                                              :op1 "Italy"))
+                                      :mod (s8.s / scholar)
+                                      :time (s8.d / date-entity
+                                                  :century "16"))
+                          :ARG1 (s8.w / world
+                                      :ARG1-of (s8.n3 / natural-03)))
+               :op2 (s8.s3 / study-01
+                           :ARG0 s8.p
+                           :ARG1 s8.w)
+               :op3 (s8.s2 / see-01
+                           :ARG0 s8.p
+                           :ARG1 (s8.t / thing
+                                       :manner-of (s8.p2 / possible-01
+                                                         :ARG1 (s8.m / manipulate-01
+                                                                     :ARG1 s8.w)))))
+   :snt9 (s9.e2 / essence
+                :ARG1-of (s9.r / real-04)
+                :domain (s9.a / and
+                              :op1 (s9.p2 / play-01
+                                          :ARG1 (s9.w2 / world
+                                                       :same-as s8.w))
+                              :op2 (s9.p / perceive-01
+                                         :ARG0 (s9.w / we)
+                                         :ARG1 s9.p2))
+                :poss (s9.e / effect
+                            :mod (s9.v / visual)))
+   :snt10 (s10.i / infer-01
+                 :ARG1 (s10.r / reveal-01
+                              :ARG0 (s10.d2 / dig-01
+                                            :ARG1-of (s10.h / have-degree-91
+                                                            :ARG2 (s10.d / deep-03
+                                                                         :ARG1 s10.d2)
+                                                            :ARG3 (s10.m / more))
+                                            :ARG2 (s10.t / this)
+                                            :ARG3 (s10.o / organization
+                                                         :name (s10.n / name
+                                                                      :op1 "Science"
+                                                                      :op2 "and"
+                                                                      :op3 "Technology"
+                                                                      :op4 "Council")
+                                                         :part-of (s10.o2 / organization
+                                                                          :name (s10.n2 / name
+                                                                                        :op1 "Academy"
+                                                                                        :op2 "of"
+                                                                                        :op3 "Motion"
+                                                                                        :op4 "Picture"
+                                                                                        :op5 "Arts"
+                                                                                        :op6 "and"
+                                                                                        :op7 "Sciences"))))
+                              :ARG1 (s10.t3 / true-01
+                                            :location (s10.b / behind
+                                                             :op1 (s10.t2 / trickery))
+                                            :mod (s10.s / some))))
+   :snt11 (s11.b / base-02
+                 :ARG1 (s11.a / affect-01
+                              :mod (s11.v / video))
+                 :ARG2 (s11.p2 / principle
+                               :consist-of (s11.a3 / and
+                                                   :op1 (s11.a4 / assume-02
+                                                                :manner (s11.k2 / know-02
+                                                                                :ARG0 (s11.w / we)
+                                                                                :ARG1 (s11.t / thing)))
+                                                   :op2 (s11.p / presume-01
+                                                               :ARG1 (s11.b2 / behave-01
+                                                                             :ARG0 (s11.t2 / thing)
+                                                                             :ARG1 (s11.t3 / thing
+                                                                                           :ARG1-of (s11.e / expect-01
+                                                                                                           :ARG0 s11.w))))
+                                                   :op3 (s11.c / context
+                                                               :example (s11.s / scale)
+                                                               :mod (s11.i2 / in-reality)
+                                                               :mod (s11.k / know-01
+                                                                           :ARG0 s11.w
+                                                                           :ARG1 (s11.w2 / world
+                                                                                         :ARG1-of (s11.k3 / know-02
+                                                                                                          :ARG0 s11.w)
+                                                                                         :same-as s8.w))))
+                               :poss (s11.i / illusion
+                                            :mod (s11.a2 / all))))
+   :snt12 (s12.b / become-01
+                 :ARG1 (s12.f / factor
+                              :ARG0-of (s12.b2 / betray-01
+                                               :ARG1 (s12.i / illusion)
+                                               :time (s12.e / ever)
+                                               :polarity "-")
+                              :ord (s12.o2 / ordinal-entity
+                                           :value "4"))
+                 :ARG1-of (s12.r / real-04)
+                 :ARG2 (s12.o / obsess-01
+                              :ARG1 s12.f)
+                 :time (s12.n / now))
+   :snt13 (s13.a / and
+                 :op2 (s13.m / make-01
+                             :ARG0 (s13.p2 / point-04
+                                           :mod (s13.l / last)
+                                           :mod (s13.t / that)
+                                           :same-as s12.o2)
+                             :ARG1 (s13.q / quest-01
+                                          :ARG0 (s13.e / effect
+                                                       :mod (s13.v / visual))
+                                          :ARG1 (s13.p / perfect-02
+                                                       :ARG1 s13.e)
+                                          :frequency (s13.c / constant))))
+   :snt14 (s14.i / infer-01
+                 :ARG1 (s14.f2 / follow-01
+                               :ARG1 (s14.a / and
+                                            :op1 (s14.s2 / step-01
+                                                         :quant (s14.s / some))
+                                            :op2 (s14.r / repeat-01
+                                                        :quant (s14.f / few)
+                                                        :ARG1 (s14.e3 / evolve-01
+                                                                      :ARG1 (s14.e2 / effect
+                                                                                    :mod (s14.v / visual))))))
+                 :rel (s14.c2 / cut-01
+                              :ARG1-of (s14.t / twist-01
+                                              :ARG0 (s14.h / hand))
+                              :ARG4 (s14.p / person
+                                           :ARG0-of (s14.w / win-01
+                                                           :ARG1 (s14.a2 / award
+                                                                         :name (s14.n / name
+                                                                                      :op1 "Oscar")))
+                                           :time (s14.d / date-entity
+                                                        :weekday (s14.s3 / sunday
+                                                                         :mod (s14.l / last))))
+                              :manner (s14.j / jump-03)
+                              :time (s14.d2 / day
+                                            :mod (s14.e / early)
+                                            :time-of (s14.c / cinema))))
+   :snt15 (s15.h / hope-01
+                 :ARG0 (s15.i / i)
+                 :ARG1 (s15.e / enjoy-01
+                              :ARG0 (s15.y / you)))
+   :snt16 (s16.s / say-01
+                 :ARG0 (s16.p / person
+                              :name (s16.n / name
+                                           :op1 "Isabelle"))
+                 :ARG1 (s16.i / include-91
+                              :ARG1 (s16.p2 / person
+                                            :name (s16.n2 / name
+                                                          :op1 "Georges"
+                                                          :op2 "Méliès")
+                                            :ARG0-of (s16.m / make-01
+                                                            :ARG1 (s16.f / film))
+                                            :same-as s2.p)
+                              :ARG2 (s16.p3 / person
+                                            :ARG0-of (s16.r / realize-01
+                                                            :ARG1 (s16.p4 / powerful-02
+                                                                          :ARG1 (s16.f2 / film)
+                                                                          :ARG2 (s16.c / capture-01
+                                                                                       :ARG0 s16.f2
+                                                                                       :ARG1 (s16.d / dream-01))))
+                                            :ord (s16.o / ordinal-entity
+                                                        :value "1"))))
+   :snt17 (s17.s / say-01
+                 :ARG0 (s17.d3 / doctor
+                               :ord (s17.o2 / ordinal-entity
+                                            :value "1"))
+                 :ARG1 (s17.f / feel-01
+                              :ARG0 (s17.p / person
+                                           :name (s17.n2 / name
+                                                         :op1 "A"
+                                                         :op2 "Space"
+                                                         :op3 "Odyssey"))
+                              :ARG0 (s17.p2 / person
+                                            :name (s17.n5 / name
+                                                          :op1 "Jake"))
+                              :ARG1 (s17.a / amr-unknown))
+                 :ARG1-of (s17.d2 / describe-01)
+                 :rel (s17.r / restore-02
+                             :ARG1 (s17.c / color-01
+                                          :ARG1-of (s17.t3 / tint-01
+                                                           :ARG2 (s17.h / hand))
+                                          :mod (s17.o3 / original))
+                             :time (s17.d / date-entity
+                                          :year "2011"))
+                 :rel (s17.n4 / name
+                              :op1 "Avatar")
+                 :rel (s17.a2 / award
+                              :name (s17.n / name
+                                           :op1 "Academy"
+                                           :op2 "Award")
+                              :ARG0-of (s17.w / win-01
+                                              :ARG1 (s17.t2 / thing
+                                                            :name (s17.n3 / name
+                                                                          :op1 "A"
+                                                                          :op2 "Trip"
+                                                                          :op3 "Odyssey")
+                                                            :ARG1-of (s17.a3 / award-01
+                                                                             :ARG0 s17.p
+                                                                             :ARG2 s17.a2))
+                                              :ARG3 (s17.e / effect
+                                                           :mod (s17.v / video))))
+                 :rel (s17.t4 / to)
+                 :rel (s17.t / the)
+                 :rel (s17.o / Moon)
+                 :rel "2001"
+                 :rel "A")
+   :snt18 (s18.s / say-01
+                 :ARG0 (s18.p / person
+                              :name (s18.n / name
+                                           :op1 "Jake"))
+                 :ARG1 (s18.s2 / say-01
+                               :ARG0 s18.p
+                               :ARG1 (s18.h / hey
+                                            :mode "expressive")
+                               :ARG2 (s18.g / guy)))
+   :snt19 (s19.s / say-01
+                 :ARG0 (s19.d / doctor
+                              :ord (s19.o / ordinal-entity
+                                          :value "2"))
+                 :ARG1 (s19.w / welcome-01
+                              :ARG1 (s19.p / person
+                                           :ARG0-of (s19.w2 / win-01
+                                                            :ARG1 (s19.a / award
+                                                                         :name (s19.n / name
+                                                                                      :op1 "Academy"
+                                                                                      :op2 "Award"))
+                                                            :ARG3 (s19.e / effect
+                                                                         :mod (s19.v / video))))
+                              :ARG2 (s19.b / body
+                                           :ARG1-of (s19.n3 / new-01))
+                              :poss (s19.p2 / person
+                                            :name (s19.n2 / name
+                                                          :op1 "Jake")
+                                            :same-as s17.p2)))
+   :snt20 (s20.s / say-01
+                 :ARG0 (s20.d / doctor
+                              :ord (s20.o / ordinal-entity
+                                          :value "1")
+                              :same-as s17.d3)
+                 :ARG1 (s20.g / good-02))
+   :snt21 (s21.a / and
+                 :op1 (s21.s / say-01
+                             :ARG0 (s21.d / doctor
+                                          :ord (s21.o / ordinal-entity
+                                                      :value "2")
+                                          :same-as s19.d)
+                             :ARG2 (s21.p / person
+                                          :name (s21.n / name
+                                                       :op1 "Jake")
+                                          :same-as s17.p2))
+                 :op2 (s21.a2 / and
+                              :op2 (s21.t / take-01
+                                          :ARG0 s21.p
+                                          :ARG1 (s21.i / it
+                                                       :ARG1-of (s21.n2 / nice-01)
+                                                       :ARG1-of (s21.s2 / slow-05))
+                                          :ARG1-of (s21.g / good-02)
+                                          :mod (s21.j / just)
+                                          :mode "imperative")))
+   :snt22 (s22.g / good-02
+                 :ARG1 (s22.a / ataxia
+                              :polarity "-")
+                 :mod (s22.w / well))
+   :snt23 (s23.s / say-01
+                 :ARG0 (s23.d2 / doctor
+                               :ord (s23.o2 / ordinal-entity
+                                            :value "1"))
+                 :ARG1 (s23.f / feel-01
+                              :ARG0 (s23.y / you
+                                           :part (s23.h / head
+                                                        :ARG1-of (s23.l / light-06)))
+                              :ARG1 (s23.o / or
+                                           :op1 s23.h
+                                           :op2 (s23.d / dizzy-02
+                                                       :ARG1 s23.y))
+                              :degree (s23.a2 / at-all)
+                              :polarity (s23.a / amr-unknown)))
+   :snt24 (s24.w / wiggle-01
+                 :ARG0 (s24.y / you
+                              :part (s24.t / toe)
+                              :same-as s17.p2)
+                 :ARG1 s24.t
+                 :mod (s24.o / oh
+                             :mode "expressive"))
+   :snt25 (s25.s / say-01
+                 :ARG0 (s25.p / person
+                              :name (s25.n / name
+                                           :op1 "Alice"
+                                           :op2 "Adventures"
+                                           :op3 "in"
+                                           :op4 "Wonderland"))
+                 :ARG1 (s25.e / event
+                              :mod (s25.a / amr-unknown)
+                              :mod s25.p)
+                 :source (s25.p2 / publication))
+   :snt26 (s26.s / say-01
+                 :ARG0 (s26.p2 / person
+                               :name (s26.n2 / name
+                                             :op1 "Alice"
+                                             :op2 "in"
+                                             :op3 "Wonderland")
+                               :ARG1-of (s26.n14 / nominate-01
+                                                 :ARG2 (s26.a4 / award
+                                                               :name (s26.n / name
+                                                                            :op1 "Academy"
+                                                                            :op2 "Award"
+                                                                            :op3 "Award"
+                                                                            :op3 "Visual"
+                                                                            :op4 "Effects"))
+                                                 :prep-for (s26.e / effect
+                                                                  :mod "Visual"))
+                               :ARG2-of (s26.n15 / nominate-01
+                                                 :ARG1 (s26.t3 / thing
+                                                               :name (s26.n6 / name
+                                                                             :op1 "The"
+                                                                             :op2 "Smurfs")))
+                               :ARG0-of s26.n15)
+                 :ARG1 (s26.n13 / no
+                                :mode "expressive")
+                 :ARG1 (s26.s2 / say-01
+                               :ARG0 (s26.p4 / person
+                                             :name (s26.n12 / name
+                                                            :op1 "Chimpanzee"
+                                                            :op2 "Rama"
+                                                            :op3 "Safti"))
+                               :ARG1 (s26.o5 / over-01
+                                             :ARG1 (s26.i3 / it)
+                                             :degree (s26.a3 / all)
+                                             :mod (s26.w / well)))
+                 :rel (s26.t5 / thing
+                              :name (s26.n7 / name
+                                            :op1 "Autodesk"
+                                            :op2 "Maya"
+                                            :op3 "Software"
+                                            :op4 "Frame"
+                                            :op5 "Animation"))
+                 :rel (s26.n3 / name
+                              :op5 "Effects")
+                 :rel (s26.p5 / product
+                              :name (s26.n4 / name
+                                            :op1 "Jurassic"
+                                            :op2 "Park")
+                              :name (s26.n8 / name
+                                            :op1 "The"
+                                            :op2 "of"
+                                            :op3 "the")
+                              :name (s26.n9 / name
+                                            :op1 "Jurassic"
+                                            :op2 "Park"))
+                 :rel (s26.p6 / product
+                              :name (s26.n5 / name)
+                              :name (s26.n10 / name
+                                             :op1 "Metropolis"))
+                 :rel (s26.n11 / name
+                               :op1 "Blade"
+                               :op2 "Runner")
+                 :rel (s26.p3 / person
+                              :ARG0-of (s26.w2 / win-01))
+                 :rel (s26.l / Planet)
+                 :rel (s26.o4 / of)
+                 :rel (s26.t2 / the)
+                 :rel (s26.p / Apes)
+                 :rel (s26.i / Dinosaur)
+                 :rel (s26.k / key-02)
+                 :rel (s26.r / rage-02)
+                 :rel (s26.o / Lost)
+                 :rel (s26.o3 / World)
+                 :rel (s26.t4 / thing)
+                 :rel (s26.t / Stop)
+                 :rel (s26.i2 / Rise)
+                 :rel (s26.o2 / Motion)
+                 :rel (s26.h / The)
+                 :rel (s26.a2 / Rains)
+                 :rel (s26.a / Came))
+   :snt27 (s27.s / say-01
+                 :ARG0 (s27.p / person
+                              :name (s27.n / name
+                                           :op1 "Maharaja"))
+                 :ARG1 (s27.c / contrast-01
+                              :ARG1 (s27.n2 / nothing
+                                            :ARG1-of (s27.w / worry-01))
+                              :ARG2 (s27.t / thing
+                                           :polarity "-")))
+   :snt28 (s28.s / say-01
+                 :ARG0 (s28.p / person
+                              :ARG0-of (s28.h2 / have-org-role-91
+                                               :ARG2 (s28.g / governor)))
+                 :ARG1 (s28.a / and
+                              :op1 (s28.a2 / award
+                                           :name (s28.n / name
+                                                        :op1 "Academy"
+                                                        :op2 "Award"
+                                                        :op3 "for"
+                                                        :op4 "Special"
+                                                        :op5 "Effects")
+                                           :ARG1-of (s28.a3 / award-01)
+                                           :op2-of s28.a))
+                 :ARG1 (s28.s2 / seem-01
+                               :ARG1 (s28.o / over-01
+                                            :ARG1 (s28.h / have-degree-91
+                                                         :ARG2 (s28.b / bad-07)
+                                                         :ARG3 (s28.m / most)))
+                               :ARG2 s28.p)
+                 :time (s28.d / date-entity
+                              :year "2012")))
+

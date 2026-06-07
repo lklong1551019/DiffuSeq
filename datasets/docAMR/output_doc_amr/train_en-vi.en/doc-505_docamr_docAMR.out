@@ -1,0 +1,335 @@
+# ::id doc-505
+# ::doc_file doc-505
+# ::tok http : / / www . ted . com / talks / damian_palin_mining_minerals_from_seawater< / url> <next_sent> I collaborate with bacteria . <next_sent> And I 'm about to show you some stop - motion footage that I made recently where you 'll see bacteria accumulating minerals from their environment over the period of an hour . <next_sent> So what you 're seeing here is the bacteria metabolizing , and as they do so they create an electrical charge . <next_sent> And this attracts metals from their local environment . <next_sent> And these metals accumulate as minerals on the surface of the bacteria . <next_sent> One of the most pervasive problems in the world today for people is inadequate access to clean drinking water . <next_sent> And the desalination process is one where we take out salts . <next_sent> We can use it for drinking and agriculture . <next_sent> Removing the salts from water -- particularly seawater -- through reverse osmosis is a critical technique for countries who do not have access to clean drinking water around the globe . <next_sent> So seawater reverse osmosis is a membrane - filtration technology . <next_sent> We take the water from the sea and we apply pressure . <next_sent> And this pressure forces the seawater through a membrane . <next_sent> This takes energy , producing clean water . <next_sent> But we 're also left with a concentrated salt solution , or brine . <next_sent> But the process is very expensive and it 's cost - prohibitive for many countries around the globe . <next_sent> And also , the brine that 's produced is oftentimes just pumped back out into the sea . <next_sent> And this is detrimental to the local ecology of the sea area that it 's pumped back out into . <next_sent> So I work in Singapore at the moment , and this is a place that 's really a leading place for desalination technology . <next_sent> And Singapore proposes by 2060 to produce [ 900 ] million liters per day of desalinated water . <next_sent> But this will produce an equally massive amount of desalination brine . <next_sent> And this is where my collaboration with bacteria comes into play . <next_sent> So what we 're doing at the moment is we 're accumulating metals like calcium , potassium and magnesium from out of desalination brine . <next_sent> And this , in terms of magnesium and the amount of water that I just mentioned , equates to a $ 4.5 billion mining industry for Singapore -- a place that does n't have any natural resources . <next_sent> So I 'd like you to image a mining industry in a way that one has n't existed before ; <next_sent> imagine a mining industry that does n't mean defiling the Earth ; <next_sent> imagine bacteria helping us do this by accumulating and precipitating and sedimenting minerals out of desalination brine . <next_sent> And what you can see here is the beginning of an industry in a test tube , a mining industry that is in harmony with nature . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :ARG3-of (s1.h / hyperlink-91
+                              :ARG4 (s1.c / city
+                                          :name (s1.n / name
+                                                      :op1 "ossobuco"))))
+   :snt2 (s2.c / collaborate-01
+               :ARG0 (s2.i / i)
+               :ARG1 (s2.b / bacterium))
+   :snt3 (s3.a3 / and
+                :op2 (s3.s2 / show-01
+                            :ARG0 (s3.i / i
+                                        :same-as s2.i)
+                            :ARG1 (s3.f / footage
+                                        :ARG1-of (s3.s4 / stop-01)
+                                        :ARG1-of (s3.m / make-01
+                                                       :ARG0 s3.i
+                                                       :time (s3.r / recent))
+                                        :location-of (s3.s / see-01
+                                                           :ARG0 (s3.y / you)
+                                                           :ARG1 (s3.a2 / accumulate-01
+                                                                        :ARG0 (s3.b / bacterium)
+                                                                        :ARG1 (s3.m2 / mineral)
+                                                                        :duration (s3.t / temporal-quantity
+                                                                                        :unit (s3.h / hour)
+                                                                                        :quant "1")
+                                                                        :source (s3.e / environment
+                                                                                      :poss s3.b)))
+                                        :mod (s3.s3 / some))
+                            :ARG2 s3.y
+                            :time (s3.a / about-to)))
+   :snt4 (s4.a / and
+               :op1 (s4.s / see-01
+                          :ARG0 (s4.y / you)
+                          :ARG1 (s4.b2 / benefit
+                                       :domain (s4.b / bacterium
+                                                     :same-as s3.b))
+                          :location (s4.h / here))
+               :op2 (s4.c2 / create-01
+                           :ARG0 s4.b
+                           :ARG1 (s4.c / charge-03
+                                       :ARG2 (s4.e / electricity))
+                           :time s4.b2))
+   :snt5 (s5.a / and
+               :op2 (s5.a2 / attract-01
+                           :ARG0 (s5.t / this
+                                       :same-as s4.c)
+                           :ARG1 (s5.m / metal
+                                       :source (s5.e / environment
+                                                     :ARG1-of (s5.l / local-02)))))
+   :snt6 (s6.a2 / and
+                :op2 (s6.a / accumulate-01
+                           :ARG1 (s6.m / metal
+                                       :mod (s6.t / this)
+                                       :same-as s5.m)
+                           :prep-as (s6.m2 / mineral
+                                           :location (s6.s / surface
+                                                           :part-of (s6.b / bacterium
+                                                                          :same-as s3.b)))))
+   :snt7 (s7.p3 / problem
+                :ARG1-of (s7.i / include-91
+                               :ARG2 (s7.p4 / problem
+                                            :ARG1-of (s7.h / have-degree-91
+                                                           :ARG3 (s7.m / most)
+                                                           :ARG2 s7.p2)
+                                            :location (s7.w2 / world)
+                                            :time (s7.t / today)))
+                :beneficiary (s7.p / person)
+                :domain (s7.a / access-01
+                              :ARG0 s7.p
+                              :ARG1 (s7.w / water
+                                          :ARG1-of (s7.d / drink-01
+                                                         :ARG0 s7.p)
+                                          :ARG1-of (s7.c / clean-01))
+                              :mod (s7.a2 / adequate
+                                          :polarity "-"))
+                :rel (s7.p2 / pervade-01)
+                :rel s7.i)
+   :snt8 (s8.a / and
+               :op2 (s8.p / process-02
+                          :ARG1 (s8.d / desalinate-01)
+                          :location-of (s8.t / take-out-11
+                                             :ARG0 (s8.w / we)
+                                             :ARG1 (s8.s / salt))))
+   :snt9 (s9.p / possible-01
+               :ARG1 (s9.u / use-01
+                           :ARG0 (s9.w / we)
+                           :ARG1 (s9.i / it
+                                       :same-as s8.d)
+                           :ARG2 (s9.a2 / and
+                                        :op1 (s9.d / drink-01)
+                                        :op2 (s9.a / agriculture))))
+   :snt10 (s10.t / technique
+                 :ARG1-of (s10.c3 / critical-02)
+                 :beneficiary (s10.c2 / country
+                                      :ARG0-of (s10.a / access-01
+                                                      :ARG1 (s10.w2 / water
+                                                                    :ARG1-of (s10.d / drink-01
+                                                                                    :ARG0 s10.c2)
+                                                                    :ARG1-of (s10.c / clean-01))
+                                                      :location (s10.a2 / around
+                                                                        :op1 (s10.g / globe))
+                                                      :polarity "-"))
+                 :domain (s10.r / remove-01
+                                :ARG1 (s10.s / salt)
+                                :ARG2 (s10.w / water
+                                             :example (s10.s2 / seawater
+                                                              :mod (s10.p / particular)))
+                                :manner (s10.o / osmosis
+                                               :ARG1-of (s10.r2 / reverse-01))))
+   :snt11 (s11.i / infer-01
+                 :ARG1 (s11.t / technology
+                              :ARG0-of (s11.f / filter-02
+                                              :ARG1 (s11.m / membrane))
+                              :domain (s11.o / osmosis
+                                             :ARG1-of (s11.r / reverse-01)
+                                             :source (s11.s / seawater))))
+   :snt12 (s12.a / and
+                 :op1 (s12.t / take-01
+                             :ARG0 (s12.w2 / we)
+                             :ARG1 (s12.w / water)
+                             :ARG2 (s12.s / sea))
+                 :op2 (s12.p / pressure-01
+                             :ARG0 s12.w2))
+   :snt13 (s13.a / and
+                 :op2 (s13.f / force-01
+                             :ARG0 (s13.p / pressure
+                                          :mod (s13.t / this)
+                                          :same-as s12.p)
+                             :ARG1 (s13.s / seawater
+                                          :same-as s12.w)
+                             :path (s13.m / membrane)))
+   :snt14 (s14.t / take-10
+                 :ARG0 (s14.t2 / this)
+                 :ARG1 (s14.e / energy)
+                 :ARG2 (s14.p / produce-01
+                              :ARG1 (s14.w / water
+                                           :ARG1-of (s14.c / clean-04))))
+   :snt15 (s15.c2 / contrast-01
+                  :ARG2 (s15.l / leave-17
+                               :ARG1 (s15.w / we)
+                               :ARG2 (s15.o / or
+                                            :op1 (s15.s2 / solve-01
+                                                         :ARG2 (s15.s / salt
+                                                                      :ARG1-of (s15.c / concentrate-02)))
+                                            :op2 (s15.b / brine))
+                               :mod (s15.a / also)))
+   :snt16 (s16.c / contrast-01
+                 :ARG2 (s16.a / and
+                              :op1 (s16.e / expensive
+                                          :degree (s16.v / very)
+                                          :domain (s16.p / process-02
+                                                         :same-as s8.d))
+                              :op2 (s16.p2 / prohibitive-02
+                                           :ARG0 (s16.c2 / cost-01
+                                                         :ARG1 s16.p)
+                                           :ARG1 (s16.c3 / country
+                                                         :quant (s16.m / many)
+                                                         :location (s16.a2 / around
+                                                                           :op1 (s16.g / globe
+                                                                                       :same-as s10.g))))))
+   :snt17 (s17.a2 / and
+                  :op2 (s17.p2 / pump-01
+                               :ARG1 (s17.s / sea
+                                            :same-as s12.s)
+                               :ARG2 (s17.b2 / brine
+                                             :ARG1-of (s17.p / produce-01)
+                                             :same-as s15.o)
+                               :direction (s17.o2 / out)
+                               :frequency (s17.o / oftentimes)
+                               :manner (s17.b / back)
+                               :mod (s17.j / just)
+                               :mod (s17.a / also)))
+   :snt18 (s18.a / and
+                 :op2 (s18.h / harm-01
+                             :ARG0 (s18.t / this
+                                          :same-as s17.p2)
+                             :ARG1 (s18.e / ecology
+                                          :ARG1-of (s18.l / local-02)
+                                          :poss (s18.a2 / area
+                                                        :location-of (s18.p / pump-01
+                                                                            :ARG2 (s18.i / it
+                                                                                         :same-as s15.o)
+                                                                            :direction (s18.o / out)
+                                                                            :manner (s18.b / back))
+                                                        :mod (s18.s / sea)))))
+   :snt19 (s19.a / and
+                 :op1 (s19.w / work-01
+                             :ARG0 (s19.i / i
+                                          :same-as s2.i)
+                             :location (s19.c / country
+                                              :name (s19.n / name
+                                                           :op1 "Singapore"))
+                             :time (s19.m / moment))
+                 :op2 (s19.p / place
+                             :mod (s19.t2 / this
+                                          :same-as s19.c)
+                             :mod (s19.p2 / place
+                                          :ARG0-of (s19.l / lead-01
+                                                          :ARG1 (s19.t / technology
+                                                                       :ARG0-of (s19.d / desalinate-01))
+                                                          :ARG1-of (s19.r / real-04)))))
+   :snt20 (s20.a / and
+                 :op2 (s20.p2 / propose-01
+                              :ARG0 (s20.c / country
+                                           :name (s20.n / name
+                                                        :op1 "Singapore")
+                                           :same-as s19.c)
+                              :ARG1 (s20.p / produce-01
+                                           :ARG0 s20.c
+                                           :ARG1 (s20.r / rate-entity-91
+                                                        :ARG1 (s20.v / volume-quantity
+                                                                     :unit (s20.l / liter)
+                                                                     :quant "900000000")
+                                                        :ARG2 (s20.t / temporal-quantity
+                                                                     :unit (s20.d2 / day)
+                                                                     :quant "1")
+                                                        :ARG2 (s20.w / water
+                                                                     :ARG1-of (s20.d3 / desalinate-01))))
+                              :time (s20.b / by
+                                           :op1 (s20.d / date-entity
+                                                       :year "2060"))))
+   :snt21 (s21.c / contrast-01
+                 :ARG2 (s21.p / produce-01
+                              :ARG0 (s21.t / this
+                                           :same-as s20.p)
+                              :ARG1 (s21.a / amount
+                                           :mod (s21.m / massive
+                                                       :ARG1-of (s21.e / equal-01))
+                                           :quant-of (s21.b / brine
+                                                            :ARG0-of (s21.d / desalinate-01)))))
+   :snt22 (s22.a / and
+                 :op2 (s22.p / play-08
+                             :ARG0 (s22.c / collaborate-01
+                                          :ARG0 (s22.i / i
+                                                       :same-as s2.i)
+                                          :ARG1 (s22.b / bacterium))
+                             :location (s22.t / this)))
+   :snt23 (s23.a / accumulate-01
+                 :ARG0 (s23.w / we)
+                 :ARG1 (s23.m2 / metal
+                               :example (s23.a2 / and
+                                                :op1 (s23.c / calcium)
+                                                :op2 (s23.p / potassium)
+                                                :op3 (s23.m / magnesium)))
+                 :source (s23.b / brine
+                                :mod (s23.d / desalinate-01))
+                 :time (s23.m3 / moment))
+   :snt24 (s24.a2 / and
+                  :op2 (s24.e / equate-01
+                              :ARG1 (s24.t / this
+                                           :topic (s24.a3 / and
+                                                          :op1 (s24.m / magnesium)
+                                                          :op2 (s24.a / amount
+                                                                      :ARG1-of (s24.m2 / mention-01
+                                                                                       :ARG0 (s24.i / i
+                                                                                                    :same-as s2.i)
+                                                                                       :mod (s24.j / just))
+                                                                      :quant-of (s24.w / water)))
+                                           :same-as s23.a)
+                              :ARG2 (s24.i2 / industry
+                                            :beneficiary (s24.c / country
+                                                                :name (s24.n / name
+                                                                             :op1 "Singapore")
+                                                                :ARG0-of (s24.h / have-03
+                                                                                :ARG1 (s24.r / resource
+                                                                                             :ARG1-of (s24.n2 / natural-03))
+                                                                                :polarity "-")
+                                                                :same-as s19.c)
+                                            :mod (s24.m3 / mine-01)
+                                            :mod (s24.m4 / monetary-quantity
+                                                         :unit (s24.d / dollar)
+                                                         :quant "5500000000"))))
+   :snt25 (s25.c / cause-01
+                 :ARG1 (s25.l / like-02
+                              :ARG0 (s25.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s25.i2 / image
+                                            :domain (s25.y / you)
+                                            :topic (s25.i3 / industry
+                                                           :ARG0-of (s25.m / mine-01)
+                                                           :manner (s25.w / way
+                                                                          :manner-of (s25.e / exist-01
+                                                                                            :ARG1 s25.i3
+                                                                                            :time (s25.b / before)
+                                                                                            :polarity "-"))))))
+   :snt26 (s26.i / imagine-01
+                 :ARG0 (s26.y / you)
+                 :ARG1 (s26.i2 / industry
+                               :ARG1-of (s26.m / mean-01
+                                               :ARG2 (s26.d / defile-01
+                                                            :ARG1 (s26.p / planet
+                                                                         :name (s26.n / name
+                                                                                      :op1 "Earth")
+                                                                         :same-as s10.g))
+                                               :polarity "-")
+                               :mod (s26.m2 / mine-01))
+                 :mode "imperative")
+   :snt27 (s27.i / imagine-01
+                 :ARG0 (s27.y / you)
+                 :ARG1 (s27.h / help-01
+                              :ARG0 (s27.b / bacterium)
+                              :ARG1 (s27.d2 / do-02
+                                            :ARG0 (s27.w / we)
+                                            :ARG1 (s27.t / this)
+                                            :manner (s27.a2 / and
+                                                            :op1 (s27.a / accumulate-01
+                                                                        :ARG1 s27.b
+                                                                        :ARG1 (s27.m / mineral))
+                                                            :op2 (s27.e / evaporate-01
+                                                                        :ARG1 s27.b)
+                                                            :op3 (s27.s / sediment
+                                                                        :domain s27.m
+                                                                        :source (s27.b2 / brine
+                                                                                        :mod (s27.d / desalinate-01)))))
+                              :ARG2 s27.w)
+                 :mode "imperative")
+   :snt28 (s28.a / and
+                 :op2 (s28.b / begin-01
+                             :ARG1 (s28.i / industry
+                                          :ARG0-of (s28.m / mine-01)
+                                          :mod (s28.h / harmony
+                                                      :accompanier (s28.n / nature)))
+                             :ARG1-of (s28.s / see-01
+                                             :ARG0 (s28.y / you)
+                                             :ARG1-of (s28.p / possible-01)
+                                             :location (s28.h2 / here))
+                             :location (s28.t2 / tube
+                                               :ARG1-of (s28.t / test-01))))
+   :snt29 (s29.t / thank-01
+                 :ARG1 (s29.y / you)))
+

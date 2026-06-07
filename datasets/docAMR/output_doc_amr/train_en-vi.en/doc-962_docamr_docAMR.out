@@ -1,0 +1,604 @@
+# ::id doc-962
+# ::doc_file doc-962
+# ::tok http : / / www . ted . com / talks / erik_hersman_on_reporting_crisis_via_texting< / url> <next_sent> So I 'm here to tell you a story of success from Africa . <next_sent> A year and a half ago , four of the five people who are full time members at Ushahidi , which means " testimony " in Swahili , were TED Fellows . <next_sent> A year ago in Kenya we had post - election violence . <next_sent> And in that time we prototyped and built , in about three days , a system that would allow anybody with a mobile phone to send in information and reports on what was happening around them . <next_sent> We took what we knew about Africa , the default device , the mobile phone , as our common denominator , and went from there . <next_sent> We got reports like this . <next_sent> This is just a couple of them from January 17th , last year . <next_sent> And our system was rudimentary . <next_sent> It was very basic . <next_sent> It was a mash - up that used data that we collected from people , and we put it on our map . <next_sent> But then we decided we needed to do something more . <next_sent> We needed to take what we had built and create a platform out of it so that it could be used elsewhere in the world . <next_sent> And so there is a team of developers from all over Africa , who are part of this team now -- from Ghana , from Malawi , from Kenya . <next_sent> There is even some from the U.S. <next_sent> We 're building for smartphones , so that it can be used in the developed world , as well as the developing world . <next_sent> We are realizing that this is true . <next_sent> If it works in Africa then it will work anywhere . <next_sent> And so we build for it in Africa first and then we move to the edges . <next_sent> It 's now been deployed in the Democratic Republic of the Congo . <next_sent> It 's being used by NGOs all over East Africa , small NGOs doing their own little projects . <next_sent> Just this last month it was deployed by Al Jazeera in Gaza . <next_sent> But that 's actually not what I 'm here to talk about . <next_sent> I 'm here to talk about the next big thing , because what we 're finding out is that we have this capacity to report eyewitness accounts of what 's going on in real time . <next_sent> We 're seeing this in events like Mumbai recently , where it 's so much easier to report now than it is to consume it . <next_sent> This is the Twitter reports for over three days just covering Mumbai . <next_sent> How do you decide what is important ? <next_sent> What is the veracity level of what you 're looking at ? <next_sent> So what we find is that there is this great deal of wasted crisis information because there is just too much information for us to actually do anything with right now . <next_sent> And what we 're actually really concerned with is this first three hours . <next_sent> What we are looking at is the first three hours . <next_sent> How do we deal with that information that is coming in ? <next_sent> You ca n't understand what is actually happening . <next_sent> On the ground and around the world people are still curious , and trying to figure out what is going on . <next_sent> But they do n't know . <next_sent> So what we built of course , Ushahidi , is crowdsourcing this information . <next_sent> You see this with Twitter , too . <next_sent> You get this information overload . <next_sent> So you 've got a lot of information . <next_sent> That 's great . <next_sent> But now what ? <next_sent> So we think that there is something interesting we can do here . <next_sent> And we have a small team who is working on this . <next_sent> We think that we can actually create a crowdsourced filter . <next_sent> Take the crowd and apply them to the information . <next_sent> And by rating it and by rating the different people who submit information , we can get refined results and weighted results . <next_sent> So that we have a better understanding of the probability of something being true or not . <next_sent> quite frankly -- it 's interesting that it 's coming from Africa . <next_sent> It 's coming from places that you would n't expect . <next_sent> From young , smart developers . <next_sent> And it 's a community around it that has decided to build this . <next_sent> So , thank you very much . <next_sent> And we are very happy to be part of the TED family .
+(d / document
+   :snt1 (s1.u / url-entity
+               :rel (s1.i / i)
+               :polarity "-"
+               :value "talk-01")
+   :snt2 (s2.c / cause-01
+               :ARG1 (s2.b / be-located-at-91
+                           :purpose (s2.t / tell-01
+                                          :ARG0 (s2.i / i)
+                                          :ARG1 (s2.s / story
+                                                      :topic (s2.s2 / succeed-01
+                                                                    :source (s2.c2 / continent
+                                                                                   :name (s2.n / name
+                                                                                               :op1 "Africa"))))
+                                          :ARG2 (s2.y / you))
+                           :ARG1 s2.i
+                           :ARG2 (s2.h / here)))
+   :snt3 (s3.a / award
+               :name (s3.n3 / name
+                            :op1 "TED"
+                            :op2 "Fellows")
+               :domain (s3.p / person
+                             :ARG1-of (s3.i / include-91
+                                            :ARG2 (s3.p2 / person
+                                                         :ARG0-of (s3.h / have-org-role-91
+                                                                        :ARG1 (s3.o / organization
+                                                                                    :name (s3.n / name
+                                                                                                :op1 "Ushahidi")
+                                                                                    :ARG1-of (s3.m / mean-01
+                                                                                                   :ARG2 (s3.t2 / testify-01)
+                                                                                                   :medium (s3.l / language
+                                                                                                                 :name (s3.n2 / name
+                                                                                                                              :op1 "Swahili"))))
+                                                                        :ARG2 (s3.m2 / member
+                                                                                     :mod (s3.f / full-time)))
+                                                         :quant "5"))
+                             :quant "4")
+               :time (s3.b / before
+                           :quant (s3.t / temporal-quantity
+                                        :unit (s3.y / year)
+                                        :quant "1.5")
+                           :op1 (s3.n4 / now)))
+   :snt4 (s4.h / have-06
+               :ARG0 (s4.w / we)
+               :ARG1 (s4.v / violence
+                           :time (s4.a / after
+                                       :op1 (s4.e / elect-01)))
+               :location (s4.c / country
+                               :name (s4.n / name
+                                           :op1 "Kenya"))
+               :time (s4.b / before
+                           :quant (s4.t / temporal-quantity
+                                        :unit (s4.y / year)
+                                        :quant "1")
+                           :op1 (s4.n2 / now)))
+   :snt5 (s5.a4 / and
+                :op2 (s5.a5 / and
+                            :op1 (s5.e / envision-01
+                                       :ARG0 (s5.w / we
+                                                   :same-as s4.w)
+                                       :ARG1 (s5.s2 / system
+                                                    :ARG0-of (s5.a3 / allow-01
+                                                                    :ARG1 (s5.s / send-01
+                                                                                :ARG0 (s5.a7 / anybody
+                                                                                             :ARG0-of (s5.h / have-03
+                                                                                                            :ARG1 (s5.p / phone
+                                                                                                                        :ARG1-of (s5.m / mobile-02))))
+                                                                                :ARG1 (s5.a6 / and
+                                                                                             :op1 (s5.i / information)
+                                                                                             :op2 (s5.r / report-01
+                                                                                                        :ARG1 (s5.e2 / event
+                                                                                                                     :location (s5.a8 / around
+                                                                                                                                      :op1 s5.a7))))))))
+                            :op2 (s5.b / build-01
+                                       :ARG0 s5.w
+                                       :ARG1 s5.s2
+                                       :time (s5.a2 / after
+                                                    :quant (s5.a / about
+                                                                 :op1 (s5.t / temporal-quantity
+                                                                            :unit (s5.d / day)
+                                                                            :quant "3"))))
+                            :time (s5.t3 / time
+                                         :mod (s5.t2 / that))))
+   :snt6 (s6.a / and
+               :op1 (s6.t / take-01
+                          :ARG0 (s6.w / we
+                                      :same-as s4.w)
+                          :ARG1 (s6.t2 / thing
+                                       :ARG1-of (s6.k / know-01
+                                                      :ARG0 s6.w
+                                                      :topic (s6.c2 / continent
+                                                                    :name (s6.n / name
+                                                                                :op1 "Africa")
+                                                                    :same-as s2.c2))
+                                       :ARG1-of (s6.m / mean-01
+                                                      :ARG2 (s6.d3 / device
+                                                                   :ARG1-of (s6.d / default-02)
+                                                                   :mod (s6.p / phone
+                                                                              :ARG1-of (s6.m2 / mobile-02)))))
+                          :ARG2 (s6.d2 / denominator
+                                       :mod (s6.c / common)
+                                       :poss s6.w))
+               :op2 (s6.g / go-02
+                          :ARG0 s6.w
+                          :ARG3 s6.c2))
+   :snt7 (s7.g / get-01
+               :ARG0 (s7.w / we
+                           :same-as s4.w)
+               :ARG1 (s7.r / report-01
+                           :ARG1-of (s7.r2 / resemble-01
+                                           :ARG2 (s7.t / this))))
+   :snt8 (s8.c / couple
+               :ARG1-of (s8.i / include-91
+                              :ARG2 (s8.t / they
+                                          :same-as s7.t))
+               :domain (s8.t2 / this
+                              :same-as s7.t)
+               :mod (s8.j / just)
+               :time (s8.d / date-entity
+                           :mod (s8.y / year
+                                      :mod (s8.l / last))
+                           :day "17"
+                           :month "1"))
+   :snt9 (s9.a / and
+               :op2 (s9.r / rudimentary
+                          :domain (s9.s / system
+                                        :poss (s9.w / we
+                                                    :same-as s4.w)
+                                        :same-as s5.s2)))
+   :snt10 (s10.b / basic
+                 :degree (s10.v / very)
+                 :domain (s10.i / it
+                                :same-as s5.s2))
+   :snt11 (s11.a / and
+                 :op1 (s11.m2 / mix-up-03
+                              :ARG0-of (s11.u / use-01
+                                              :ARG1 (s11.d / data
+                                                           :ARG1-of (s11.c / collect-01
+                                                                           :ARG0 (s11.w / we
+                                                                                        :same-as s4.w)
+                                                                           :ARG2 (s11.p / person))))
+                              :ARG1 (s11.i / it
+                                           :same-as s5.s2))
+                 :op2 (s11.p2 / put-01
+                              :ARG0 s11.w
+                              :ARG1 s11.d
+                              :ARG2 (s11.m / map
+                                           :poss s11.w)))
+   :snt12 (s12.c / contrast-01
+                 :ARG2 (s12.d / decide-01
+                              :ARG0 (s12.w / we
+                                           :same-as s4.w)
+                              :ARG1 (s12.n / need-01
+                                           :ARG0 s12.w
+                                           :ARG1 (s12.d2 / do-02
+                                                         :ARG0 s12.w
+                                                         :ARG1 (s12.s / something
+                                                                      :mod (s12.m / more))))
+                              :time (s12.t / then)))
+   :snt13 (s13.n / need-01
+                 :ARG0 (s13.w / we
+                              :same-as s4.w)
+                 :ARG1 (s13.a / and
+                              :op1 (s13.t / take-01
+                                          :ARG0 s13.w
+                                          :ARG1 (s13.t2 / thing
+                                                        :ARG1-of (s13.b / build-01
+                                                                        :ARG0 s13.w)))
+                              :op2 (s13.c / create-01
+                                          :purpose (s13.p2 / possible-01
+                                                           :ARG1 (s13.u / use-01
+                                                                        :ARG1 (s13.p / platform)
+                                                                        :location (s13.e / elsewhere
+                                                                                         :location (s13.w2 / world))))
+                                          :ARG0 s13.w
+                                          :ARG1 s13.p
+                                          :ARG2 s13.t2)))
+   :snt14 (s14.a2 / and
+                  :op2 (s14.h / have-org-role-91
+                              :ARG0 (s14.t / team
+                                           :consist-of (s14.p / person
+                                                              :ARG0-of (s14.d / develop-02)
+                                                              :source (s14.a / all-over
+                                                                             :part-of (s14.c / continent
+                                                                                             :name (s14.n / name
+                                                                                                          :op1 "Africa")
+                                                                                             :same-as s2.c2))
+                                                              :source (s14.a3 / and
+                                                                              :op1 (s14.c2 / country
+                                                                                           :name (s14.n2 / name
+                                                                                                         :op1 "Ghana"))
+                                                                              :op2 (s14.c3 / country
+                                                                                           :name (s14.n3 / name
+                                                                                                         :op1 "Malawi"))
+                                                                              :op3 (s14.c4 / country
+                                                                                           :name (s14.n4 / name
+                                                                                                         :op1 "Kenya")
+                                                                                           :same-as s4.c))))
+                              :ARG1 (s14.t2 / team
+                                            :mod (s14.t3 / this)
+                                            :same-as s4.w)
+                              :time (s14.n5 / now)))
+   :snt15 (s15.t / thing
+                 :quant (s15.s / some)
+                 :mod (s15.e / even)
+                 :source (s15.c / country
+                                :name (s15.n / name
+                                             :op1 "U.S.")))
+   :snt16 (s16.b / build-01
+                 :purpose (s16.p2 / possible-01
+                                  :ARG1 (s16.u / use-01
+                                               :ARG1 (s16.p / phone)
+                                               :location (s16.a / and
+                                                                :op1 (s16.w2 / world
+                                                                             :ARG1-of (s16.d / develop-02))
+                                                                :op2 (s16.w3 / world))))
+                 :ARG0 (s16.w / we
+                              :same-as s4.w)
+                 :ARG3 s16.p)
+   :snt17 (s17.r / realize-01
+                 :ARG0 (s17.w / we
+                              :same-as s4.w)
+                 :ARG1 (s17.t2 / true-01
+                               :ARG1 (s17.t / this)))
+   :snt18 (s18.h / have-condition-91
+                 :ARG1 (s18.w2 / work-09
+                               :ARG1 (s18.i / it)
+                               :location (s18.a / anywhere))
+                 :ARG2 (s18.w / work-09
+                              :ARG1 s18.i
+                              :location (s18.c / continent
+                                               :name (s18.n / name
+                                                            :op1 "Africa")
+                                               :same-as s2.c2)))
+   :snt19 (s19.c / cause-01
+                 :ARG1 (s19.a / and
+                              :op1 (s19.b / build-01
+                                          :purpose (s19.i / it
+                                                          :same-as s18.i)
+                                          :ARG0 (s19.w / we
+                                                       :same-as s4.w)
+                                          :location (s19.c2 / continent
+                                                            :name (s19.n / name
+                                                                         :op1 "Africa")
+                                                            :same-as s2.c2)
+                                          :time (s19.f / first))
+                              :op2 (s19.m / move-01
+                                          :ARG0 s19.w
+                                          :ARG2 (s19.e / edge)
+                                          :time (s19.t / then))))
+   :snt20 (s20.d / deploy-01
+                 :ARG1 (s20.i / it
+                              :same-as s18.i)
+                 :ARG2 (s20.c / country
+                              :name (s20.n / name
+                                           :op1 "Democratic"
+                                           :op2 "Republic"
+                                           :op3 "of"
+                                           :op4 "the"
+                                           :op5 "Congo"))
+                 :time (s20.n2 / now))
+   :snt21 (s21.u / use-01
+                 :ARG0 (s21.g2 / government-organization
+                               :ARG0-of (s21.g / govern-01
+                                               :ARG1 (s21.g3 / government-organization)
+                                               :polarity "-")
+                               :ARG0-of (s21.d / do-02
+                                               :ARG1 (s21.p / project
+                                                            :mod (s21.l / little)
+                                                            :poss s21.g3))
+                               :mod (s21.s / small))
+                 :ARG1 (s21.i / it
+                              :same-as s18.i)
+                 :location (s21.a / all-over
+                                  :op1 (s21.w / world-region
+                                              :name (s21.n / name
+                                                           :op1 "East"
+                                                           :op2 "Africa")))
+                 :rel "-")
+   :snt22 (s22.d / deploy-01
+                 :ARG0 (s22.p / publication
+                              :name (s22.n / name
+                                           :op1 "Al"
+                                           :op2 "Jazeera"))
+                 :ARG1 (s22.i / it
+                              :same-as s18.i)
+                 :ARG2 (s22.c / country-region
+                              :name (s22.n2 / name
+                                            :op1 "Gaza"))
+                 :time (s22.m / month
+                              :mod (s22.l / last)
+                              :mod (s22.t / this)
+                              :mod (s22.j / just)))
+   :snt23 (s23.c / contrast-01
+                 :ARG2 (s23.h / have-purpose-91
+                              :ARG1 (s23.b / be-located-at-91
+                                           :ARG1 (s23.i / i
+                                                        :same-as s2.i)
+                                           :ARG2 (s23.h2 / here))
+                              :ARG1-of (s23.a / actual-02)
+                              :ARG2 (s23.t / talk-01
+                                           :ARG0 s23.i
+                                           :ARG1 (s23.t2 / that))
+                              :polarity "-"))
+   :snt24 (s24.b / be-located-at-91
+                 :purpose (s24.t / talk-01
+                                 :ARG0 (s24.i / i
+                                              :same-as s2.i)
+                                 :ARG1 (s24.t2 / thing
+                                               :mod (s24.b2 / big)
+                                               :mod (s24.n / next)))
+                 :ARG1 s24.i
+                 :ARG1-of (s24.c2 / cause-01
+                                  :ARG0 (s24.f / find-out-03
+                                               :ARG0 (s24.w / we)
+                                               :ARG1 (s24.c / capable-01
+                                                            :ARG1 s24.w
+                                                            :ARG2 (s24.r2 / report-01
+                                                                          :ARG0 s24.w
+                                                                          :ARG1 (s24.a / account
+                                                                                       :mod (s24.e / eyewitness)
+                                                                                       :topic (s24.t3 / thing
+                                                                                                      :ARG1-of (s24.g / go-on-15)))
+                                                                          :manner (s24.r / real-time))
+                                                            :mod (s24.t4 / this))))
+                 :ARG2 (s24.h / here))
+   :snt25 (s25.s / see-01
+                 :ARG0 (s25.w / we)
+                 :ARG1 (s25.t / this
+                              :same-as s24.c)
+                 :location (s25.e2 / event
+                                   :ARG1-of (s25.r3 / resemble-01
+                                                    :ARG2 (s25.c / city
+                                                                 :name (s25.n / name
+                                                                              :op1 "Mumbai")))
+                                   :location-of (s25.h / have-degree-91
+                                                       :ARG1 (s25.r2 / report-01
+                                                                     :ARG1 (s25.i / it)
+                                                                     :time (s25.n2 / now))
+                                                       :ARG2 (s25.e / easy-05)
+                                                       :ARG3 (s25.m / more
+                                                                    :quant (s25.m2 / much
+                                                                                   :degree (s25.s2 / so)))
+                                                       :ARG4 (s25.c2 / consume-01
+                                                                     :ARG1 s25.i)))
+                 :time (s25.r / recent))
+   :snt26 (s26.r / report-01
+                 :ARG0 (s26.p / publication
+                              :name (s26.n / name
+                                           :op1 "Twitter"))
+                 :ARG0-of (s26.c2 / cover-01
+                                  :ARG1 (s26.c / city
+                                               :name (s26.n2 / name
+                                                             :op1 "Mumbai"))
+                                  :mod (s26.j / just))
+                 :ARG1 (s26.t2 / this)
+                 :duration (s26.o / over
+                                  :op1 (s26.t / temporal-quantity
+                                              :unit (s26.d / day)
+                                              :quant "3")))
+   :snt27 (s27.d / decide-01
+                 :ARG0 (s27.y / you)
+                 :ARG1 (s27.t / thing
+                              :ARG1-of (s27.i / important-01))
+                 :manner (s27.a / amr-unknown))
+   :snt28 (s28.l / level
+                 :domain (s28.a / amr-unknown)
+                 :mod (s28.v / veracity
+                             :poss (s28.t / thing
+                                          :ARG1-of (s28.l2 / look-01
+                                                           :ARG0 (s28.y / you)))))
+   :snt29 (s29.f / find-01
+                 :ARG0 (s29.w2 / we
+                               :same-as s4.w)
+                 :ARG1 (s29.i / information
+                              :quant (s29.d / deal
+                                            :mod (s29.g / great)
+                                            :mod (s29.t / this))
+                              :ARG1-of (s29.w / waste-01)
+                              :mod (s29.c2 / crisis))
+                 :ARG1-of (s29.c / cause-01
+                                 :ARG0 (s29.h / have-quant-91
+                                              :ARG1 (s29.i2 / information)
+                                              :ARG2 (s29.m / much)
+                                              :ARG3 (s29.t2 / too)
+                                              :ARG6 (s29.d2 / do-02
+                                                            :ARG0 s29.w2
+                                                            :ARG1 (s29.a2 / anything)
+                                                            :ARG1-of (s29.a / actual-02)
+                                                            :time (s29.n / now
+                                                                         :mod (s29.r / right)))
+                                              :mod (s29.j / just))))
+   :snt30 (s30.a2 / and
+                  :op2 (s30.c / concern-01
+                              :ARG0 (s30.t / temporal-quantity
+                                           :mod (s30.t2 / this)
+                                           :ord (s30.o / ordinal-entity
+                                                       :value "1")
+                                           :unit (s30.h / hour)
+                                           :quant "3")
+                              :ARG1 (s30.w / we
+                                           :same-as s4.w)
+                              :ARG1-of (s30.a / actual-02)
+                              :degree (s30.r / really)))
+   :snt31 (s31.l / look-01
+                 :ARG0 (s31.w / we
+                              :same-as s4.w)
+                 :ARG1 (s31.t / temporal-quantity
+                              :ord (s31.o / ordinal-entity
+                                          :value "1")
+                              :unit (s31.h / hour)
+                              :quant "3"
+                              :same-as s30.t))
+   :snt32 (s32.d / deal-01
+                 :ARG0 (s32.w / we
+                              :same-as s4.w)
+                 :ARG2 (s32.a / amr-unknown)
+                 :ARG2 (s32.i / information
+                              :ARG1-of (s32.c / come-01)
+                              :mod (s32.t / that)))
+   :snt33 (s33.p / possible-01
+                 :ARG1 (s33.u / understand-01
+                              :ARG0 (s33.y / you)
+                              :ARG1 (s33.e / event
+                                           :ARG1-of (s33.a / actual-02)))
+                 :polarity "-")
+   :snt34 (s34.a2 / and
+                  :location (s34.a / and
+                                   :op1 (s34.g2 / ground)
+                                   :op2 (s34.a3 / around
+                                                :op1 (s34.w / world
+                                                            :same-as s13.w2)))
+                  :op1 (s34.c / curious-01
+                              :ARG1 (s34.p / person)
+                              :mod (s34.s / still))
+                  :op2 (s34.t2 / try-01
+                               :ARG0 s34.p
+                               :ARG1 (s34.f / figure-out-05
+                                            :ARG0 s34.p
+                                            :ARG1 (s34.t / thing
+                                                         :ARG1-of (s34.g / go-on-15)))))
+   :snt35 (s35.c / contrast-01
+                 :ARG2 (s35.k / know-01
+                              :ARG0 (s35.t / they
+                                           :same-as s34.p)
+                              :polarity "-"))
+   :snt36 (s36.c / crowd-01
+                 :ARG1 (s36.i / information
+                              :mod (s36.t / this))
+                 :mod (s36.p / product
+                             :name (s36.n / name
+                                          :op1 "Ushahidi"
+                                          :same-as s2.i)
+                             :ARG1-of (s36.b / build-01
+                                             :ARG0 (s36.w / we
+                                                          :same-as s4.w)
+                                             :mod (s36.o / of-course))))
+   :snt37 (s37.s / see-01
+                 :ARG0 (s37.y / you)
+                 :ARG1 (s37.t / this)
+                 :medium (s37.p / publication
+                                :name (s37.n / name
+                                             :op1 "Twitter")
+                                :same-as s26.p)
+                 :mod (s37.t2 / too))
+   :snt38 (s38.g / get-30
+                 :ARG0 (s38.y / you)
+                 :ARG1 (s38.o / overload-01
+                              :ARG1 (s38.i / information)
+                              :mod (s38.t / this)))
+   :snt39 (s39.i / infer-01
+                 :ARG1 (s39.h / have-03
+                              :ARG0 (s39.y / you)
+                              :ARG1 (s39.i2 / information
+                                            :quant (s39.l / lot))))
+   :snt40 (s40.g / great
+                 :domain (s40.t / that
+                                :same-as s39.h))
+   :snt41 (s41.c / contrast-01
+                 :ARG2 (s41.a / amr-unknown
+                              :time (s41.n / now)))
+   :snt42 (s42.c / cause-01
+                 :ARG1 (s42.t / think-01
+                              :ARG0 (s42.w / we
+                                           :same-as s4.w)
+                              :ARG1 (s42.p / possible-01
+                                           :ARG1 (s42.d / do-02
+                                                        :ARG0 s42.w
+                                                        :ARG1 (s42.s / something
+                                                                     :ARG2-of (s42.i / interest-01))
+                                                        :location (s42.h / here)))))
+   :snt43 (s43.a / and
+                 :op1 (s43.h / have-03
+                             :ARG0 (s43.w / we
+                                          :same-as s4.w)
+                             :ARG1 (s43.t / team
+                                          :ARG0-of (s43.w2 / work-01
+                                                           :ARG1 (s43.t2 / this
+                                                                         :same-as s42.p))
+                                          :mod (s43.s / small))))
+   :snt44 (s44.t / think-01
+                 :ARG0 (s44.w / we
+                              :same-as s4.w)
+                 :ARG1 (s44.p / possible-01
+                              :ARG1 (s44.c / create-01
+                                           :ARG0 s44.w
+                                           :ARG1 (s44.f / filter-02
+                                                        :ARG1-of (s44.c2 / crowd-01)))
+                              :ARG1-of (s44.a / actual-02)))
+   :snt45 (s45.a / and
+                 :op1 (s45.t / take-01
+                             :ARG0 (s45.y / you)
+                             :ARG1 (s45.c / crowd)
+                             :mode "imperative")
+                 :op2 (s45.a2 / apply-02
+                              :ARG0 s45.y
+                              :ARG1 s45.c
+                              :ARG2 (s45.i / information)))
+   :snt46 (s46.a / and
+                 :rel (s46.p2 / possible-01
+                              :ARG1 (s46.g / get-01
+                                           :ARG0 (s46.w / we
+                                                        :same-as s4.w)
+                                           :ARG1 (s46.a3 / and
+                                                         :op1 (s46.t / thing
+                                                                     :ARG1-of (s46.r3 / refine-01)
+                                                                     :ARG2-of (s46.r4 / result-01))
+                                                         :op2 (s46.t2 / thing
+                                                                      :ARG1-of (s46.w2 / weigh-01)
+                                                                      :ARG2-of (s46.r5 / result-01)))
+                                           :manner (s46.a2 / and
+                                                           :op1 (s46.r / rate-01
+                                                                       :ARG1 (s46.i2 / it
+                                                                                     :same-as s45.i))
+                                                           :op2 (s46.r2 / rate-01
+                                                                        :ARG1 (s46.p / person
+                                                                                     :ARG0-of (s46.s / submit-01
+                                                                                                     :ARG1 (s46.i / information))
+                                                                                     :ARG1-of (s46.d / differ-02)))
+                                                           :op2 s46.p2))))
+   :snt47 (s47.u / understand-01
+                 :ARG0 (s47.w / we
+                              :same-as s4.w)
+                 :ARG1 (s47.p / probable
+                              :domain (s47.o / or
+                                             :op1 (s47.t / true-01
+                                                         :ARG1 (s47.s / something))
+                                             :op2 (s47.t2 / true-01
+                                                          :ARG1 s47.s
+                                                          :polarity "-")))
+                 :ARG1-of (s47.h / have-degree-91
+                                 :ARG2 (s47.g / good-02
+                                              :ARG1 s47.u)
+                                 :ARG3 (s47.m / more)))
+   :snt48 (s48.i / interest-01
+                 :ARG2 (s48.c / come-01
+                              :ARG1 (s48.i2 / it)
+                              :ARG3 (s48.c2 / continent
+                                            :name (s48.n / name
+                                                         :op1 "Africa")
+                                            :same-as s2.c2))
+                 :mod (s48.f / frank
+                             :degree (s48.q / quite)))
+   :snt49 (s49.c / come-01
+                 :ARG1 (s49.i / it
+                              :same-as s48.i2)
+                 :ARG3 (s49.p / place
+                              :ARG1-of (s49.e / expect-01
+                                              :ARG0 (s49.y / you)
+                                              :polarity "-")))
+   :snt50 (s50.b / be-from-91
+                 :ARG2 (s50.p / person
+                              :ARG0-of (s50.d / develop-02)
+                              :ARG1-of (s50.s / smart-06)
+                              :mod (s50.y / young)))
+   :snt51 (s51.a / and
+                 :op2 (s51.c / community
+                             :ARG0-of (s51.d / decide-01
+                                             :ARG1 (s51.b / build-01
+                                                          :ARG0 s51.c
+                                                          :ARG1 (s51.t / this
+                                                                       :same-as s42.p)))
+                             :location (s51.a2 / around
+                                               :op1 (s51.i / it))))
+   :snt52 (s52.t / thank-01
+                 :ARG0 (s52.i / i)
+                 :ARG1 (s52.y / you
+                              :same-as s2.i)
+                 :mod (s52.m / much
+                             :degree (s52.v / very)))
+   :snt53 (s53.a / and
+                 :op2 (s53.h / happy-01
+                             :ARG0 (s53.h2 / have-part-91
+                                           :ARG1 (s53.w / we
+                                                        :same-as s4.w)
+                                           :ARG2 (s53.f / family
+                                                        :name (s53.n / name
+                                                                     :op1 "TED")))
+                             :ARG1 s53.w
+                             :degree (s53.v / very))))
+

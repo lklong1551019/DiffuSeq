@@ -1,0 +1,571 @@
+# ::id doc-25
+# ::doc_file doc-25
+# ::tok http : / / www . ted . com / talks / juliana_machado_ferreira< / url> <next_sent> Illegal wildlife trade in Brazil is one of the major threats against our fauna , especially birds , and mainly to supply the pet market with thousands of animals taken from nature every month , and transported far from their origins , to be sold mainly in Rio de Janeiro and São Paulo . <next_sent> It is estimated that all kinds of illegal wildlife trade in Brazil withdraw from nature almost 38 million animals every year , a business worth almost two billion dollars . <next_sent> The police intercepts these huge cargos with live animals , intended to supply the pet market , or they seize the animals directly from the people 's houses , and this is how we end up , every month , with thousands of seized animals . <next_sent> And for us to understand what happens with them , we 're going to follow Brad . <next_sent> In the eyes of many people , after the animals are seized , they say , " Yay , justice has been served . <next_sent> The good guys arrived , took the cute , mistreated animals from the hands of the evil traffickers , and everyone lived happily ever after . " <next_sent> Because we have to figure out what to do with all these animals . <next_sent> In Brazil , they are usually first sent to governmental triage facilities , in which most of the cases , the conditions are as bad as with the traffickers . <next_sent> In 2002 , these centers received 45,000 animals , of which 37,000 were birds . <next_sent> And the police estimates that we seize only five percent of what 's being trafficked . <next_sent> Some lucky ones -- and among them , Brad -- go to serious rehabilitation centers after that . <next_sent> And in these places they are cared for . <next_sent> They train their flying , they learn how to recognize the food they will find in nature , and they are able to socialize with others from the same species . <next_sent> But then what ? <next_sent> The Brazil Ornithological Society -- so now we 're talking only birds -- claims that we have too little knowledge about the species in nature . <next_sent> Therefore , it would be too risky to release these animals , both for the released and for the natural populations . <next_sent> They also claim that we spend too many resources in their rehabilitation . <next_sent> Following this argument , they suggest that all the birds seized from non - threatened species should be euthanized . <next_sent> However , this would mean having killed 26,267 birds , only in the state of São Paulo , only in 2006 . <next_sent> But , some researchers , myself included -- some NGOs and some people from the Brazilian government -- believe there is an alternative . <next_sent> We think that if and when the animals meet certain criteria concerning their health , behavior , inferred origin and whatever we know about the natural populations , then technically responsible releases are possible , both for the well - being of the individual , and for the conservation of the species and their ecosystems , because we will be returning genes for these populations -- which could be important for them in facing environmental challenges -- and also we could be returning potential seed dispersers , predators , preys , etc. <next_sent> All of these were released by us . <next_sent> On the top , the turtles are just enjoying freedom . <next_sent> On the middle , this guy nested a couple of weeks after the release . <next_sent> And on the bottom , my personal favorite , the little male over there , four hours after his release he was together with a wild female . <next_sent> But it 's still a big issue in Brazil . <next_sent> We believe we have performed responsible releases . <next_sent> We 've registered released animals mating in nature and having chicks . <next_sent> So , these genes are indeed going back to the populations . <next_sent> However this is still a minority for the very lack of knowledge . <next_sent> So , I say , " Let 's study more , let 's shed light on this issue , let 's do whatever we can . " <next_sent> I 'm devoting my career to that . <next_sent> And I 'm here to urge each and every one of you to do whatever is in your reach : Talk to your neighbor , teach your children , make sure your pet is from a legal breeder . <next_sent> We need to act , and act now , before these ones are the only ones left . <next_sent> Thank you very much .
+(d / document
+   :snt1 (s1.u / url-entity
+               :value (s1.p / person
+                            :ARG0-of (s1.t / talk-01)))
+   :snt2 (s2.a / and
+               :op1 (s2.i / include-91
+                          :ARG1 (s2.t4 / trade-01
+                                       :ARG1 (s2.w2 / wildlife)
+                                       :ARG1-of (s2.l / legal-02
+                                                      :polarity "-")
+                                       :location (s2.c3 / country
+                                                        :name (s2.n / name
+                                                                    :op1 "Brazil")))
+                          :ARG2 (s2.t3 / threaten-01
+                                       :ARG1 (s2.f2 / fauna
+                                                    :ARG2-of (s2.i2 / include-91
+                                                                    :ARG1 (s2.b / bird
+                                                                                :mod (s2.e / especially)))
+                                                    :poss (s2.w / we))
+                                       :ARG1-of (s2.m3 / major-02)))
+               :op2 (s2.s2 / supply-01
+                           :purpose (s2.s / sell-01
+                                          :ARG1 (s2.a3 / animal
+                                                       :quant (s2.m6 / multiple
+                                                                     :op1 "1000")
+                                                       :ARG1-of (s2.t / take-01
+                                                                      :ARG2 (s2.n4 / nature)
+                                                                      :frequency (s2.r / rate-entity-91
+                                                                                       :ARG2 (s2.t2 / temporal-quantity
+                                                                                                    :unit (s2.m5 / month)
+                                                                                                    :quant "1")))
+                                                       :ARG1-of (s2.t5 / transport-01))
+                                          :location (s2.a2 / and
+                                                           :op1 (s2.c / city
+                                                                      :name (s2.n2 / name
+                                                                                   :op1 "Rio"
+                                                                                   :op2 "de"
+                                                                                   :op3 "Janeiro"))
+                                                           :op2 (s2.c2 / city
+                                                                       :name (s2.n3 / name
+                                                                                    :op1 "São"
+                                                                                    :op2 "Paulo")))
+                                          :mod (s2.m / main)
+                                          :mod (s2.m2 / main))
+                           :ARG1 s2.a3
+                           :ARG2 (s2.m4 / market
+                                        :mod (s2.p / pet))
+                           :mod s2.m)
+               :rel (s2.f / far
+                          :source (s2.o / originate-01
+                                        :ARG1 s2.a3)))
+   :snt3 (s3.e / estimate-01
+               :ARG1 (s3.w2 / withdraw-01
+                            :ARG1 (s3.t2 / trade-01
+                                         :ARG1 (s3.w / wildlife)
+                                         :ARG1-of (s3.l / legal-02)
+                                         :location (s3.c / country
+                                                         :name (s3.n / name
+                                                                     :op1 "Brazil")
+                                                         :same-as s2.c3)
+                                         :mod (s3.k / kind
+                                                    :mod (s3.a / all)))
+                            :ARG2 (s3.n2 / nature)
+                            :frequency (s3.r / rate-entity-91
+                                             :ARG1 (s3.a4 / animal
+                                                          :quant (s3.a2 / almost
+                                                                        :op1 "38000000000"))
+                                             :ARG2 (s3.t / temporal-quantity
+                                                         :unit (s3.y / year)
+                                                         :quant "1"))
+                            :mod (s3.b / business
+                                       :ARG1-of (s3.w3 / worth-01
+                                                       :ARG2 (s3.a3 / almost
+                                                                    :op1 (s3.m / monetary-quantity
+                                                                               :unit (s3.d / dollar)
+                                                                               :quant "2000000000"))))))
+   :snt4 (s4.a / and
+               :op1 (s4.o / or
+                          :op1 (s4.i2 / intercept-01
+                                      :ARG0 (s4.p3 / police)
+                                      :ARG1 (s4.c / cargo
+                                                  :ARG0-of (s4.i / intend-01
+                                                                 :ARG1 (s4.s3 / supply-01
+                                                                              :ARG0 s4.c
+                                                                              :ARG2 (s4.m / market
+                                                                                          :mod (s4.p2 / pet)
+                                                                                          :same-as s2.m4)))
+                                                  :consist-of (s4.a2 / animal
+                                                                     :ARG0-of (s4.l / live-01))
+                                                  :mod (s4.h2 / huge)
+                                                  :mod (s4.t2 / this)))
+                          :op2 (s4.s / seize-01
+                                     :ARG0 s4.p3
+                                     :ARG1 s4.a2
+                                     :ARG1-of (s4.d / direct-02)
+                                     :ARG2 (s4.h / house
+                                                 :poss (s4.p / person))))
+               :op2 (s4.e / end-up-03
+                          :ARG1 (s4.w / we)
+                          :ARG2 (s4.a3 / animal
+                                       :quant (s4.m3 / multiple
+                                                     :op1 "1000")
+                                       :ARG1-of (s4.s2 / seize-01))
+                          :frequency (s4.r / rate-entity-91
+                                           :ARG2 (s4.t / temporal-quantity
+                                                       :unit (s4.m2 / month)
+                                                       :quant "1"))))
+   :snt5 (s5.a / and
+               :op2 (s5.f / follow-01
+                          :purpose (s5.u / understand-01
+                                         :ARG0 (s5.w / we)
+                                         :ARG1 (s5.e / event
+                                                     :prep-with (s5.t / they
+                                                                      :same-as s4.a3)))
+                          :ARG0 s5.w
+                          :ARG1 (s5.p / person
+                                      :name (s5.n / name
+                                                  :op1 "Brad"))))
+   :snt6 (s6.s / say-01
+               :ARG0 (s6.p / person
+                           :quant (s6.m / many)
+                           :part s6.e)
+               :ARG1 (s6.s3 / serve-01
+                            :ARG1 (s6.j / justice)
+                            :mod (s6.y / yay))
+               :manner (s6.e / eye)
+               :time (s6.a / after
+                           :op1 (s6.s2 / seize-01
+                                       :ARG1 (s6.a2 / animal
+                                                    :same-as s4.a3))))
+   :snt7 (s7.a2 / and
+                :op1 (s7.a4 / arrive-01
+                            :ARG1 (s7.g2 / guy
+                                         :ARG1-of (s7.g / good-02)))
+                :op2 (s7.t / take-01
+                           :ARG0 s7.g2
+                           :ARG1 (s7.a3 / animal
+                                        :ARG1-of (s7.m / mistreat-01)
+                                        :mod (s7.c / cute)
+                                        :same-as s4.a3)
+                           :ARG2 (s7.i / in-ones-hands-04
+                                       :ARG0 (s7.p / person
+                                                   :ARG0-of (s7.t2 / traffic-01)
+                                                   :mod (s7.e3 / evil))
+                                       :ARG1 s7.a3))
+                :op3 (s7.l / live-01
+                           :ARG0 (s7.e2 / everyone)
+                           :ARG0-of (s7.h / happy-01
+                                          :ARG1 s7.e2)
+                           :time (s7.a / after
+                                       :mod (s7.e / ever))))
+   :snt8 (s8.c / cause-01
+               :ARG0 (s8.o / obligate-01
+                           :ARG1 (s8.w / we)
+                           :ARG2 (s8.f / figure-out-05
+                                       :ARG0 s8.w
+                                       :ARG1 (s8.t / thing
+                                                   :ARG1-of (s8.d / do-02
+                                                                  :ARG0 s8.w
+                                                                  :ARG2 (s8.a2 / animal
+                                                                               :mod (s8.t2 / this)
+                                                                               :mod (s8.a / all)
+                                                                               :same-as s4.a3))))))
+   :snt9 (s9.s / send-01
+               :ARG1 (s9.t / they
+                           :same-as s4.a3)
+               :ARG2 (s9.f / facility
+                           :location-of (s9.c2 / condition
+                                               :ARG1-of (s9.c / case-04
+                                                              :quant (s9.m / most))
+                                               :ARG1-of (s9.h / have-degree-91
+                                                              :ARG2 (s9.b / bad-07
+                                                                          :ARG1 s9.c2)
+                                                              :ARG3 (s9.e / equal)
+                                                              :ARG4 (s9.p / person
+                                                                          :ARG0-of (s9.t2 / traffic-01))))
+                           :mod (s9.t3 / triage)
+                           :mod (s9.g2 / government-organization
+                                       :ARG0-of (s9.g / govern-01)))
+               :location (s9.c3 / country
+                                :name (s9.n / name
+                                            :op1 "Brazil")
+                                :same-as s2.c3)
+               :mod (s9.u / usual)
+               :ord (s9.o / ordinal-entity
+                          :value "1"))
+   :snt10 (s10.r / receive-01
+                 :ARG0 (s10.c / center
+                              :mod (s10.t / this)
+                              :same-as s9.f)
+                 :ARG1 (s10.a / animal
+                              :ARG2-of (s10.i / include-91
+                                              :ARG1 (s10.a2 / animal
+                                                            :mod (s10.b / bird)
+                                                            :quant "37000"))
+                              :quant "45000")
+                 :time (s10.d / date-entity
+                              :year "2002"))
+   :snt11 (s11.a / and
+                 :op2 (s11.e / estimate-01
+                             :ARG0 (s11.p2 / police)
+                             :ARG1 (s11.s / seize-01
+                                          :ARG0 (s11.w / we)
+                                          :ARG1 (s11.p / percentage-entity
+                                                       :ARG1-of (s11.i / include-91
+                                                                       :ARG2 (s11.t / thing
+                                                                                    :ARG1-of (s11.t2 / traffic-01)))
+                                                       :mod (s11.o / only)
+                                                       :value "5"))))
+   :snt12 (s12.g / go-01
+                 :ARG1 (s12.a2 / and
+                               :op1 (s12.o / one
+                                           :quant (s12.s2 / some)
+                                           :mod (s12.l / lucky)))
+                 :ARG4 (s12.c / center
+                              :location-of (s12.r / rehabilitate-01
+                                                  :ARG1-of (s12.s / serious-02)))
+                 :rel (s12.i / include-91
+                             :ARG2 (s12.p / person
+                                          :name (s12.n / name
+                                                       :op1 "Brad")
+                                          :same-as s5.p))
+                 :time (s12.a / after
+                              :op1 (s12.t / that
+                                          :same-as s12.g)))
+   :snt13 (s13.a / and
+                 :op2 (s13.c / care-03
+                             :ARG1 (s13.t / they
+                                          :same-as s4.a3)
+                             :location (s13.p / place
+                                              :mod (s13.t2 / this)
+                                              :same-as s12.c)))
+   :snt14 (s14.a / and
+                 :op1 (s14.t3 / train-01
+                              :ARG0 (s14.t / they
+                                           :same-as s4.a3)
+                              :ARG1 (s14.f2 / fly-01
+                                            :ARG1 s14.t))
+                 :op2 (s14.l / learn-01
+                             :ARG0 s14.t
+                             :ARG1 (s14.t2 / thing
+                                           :manner-of (s14.r / recognize-02
+                                                             :ARG0 s14.t
+                                                             :ARG1 (s14.f3 / food
+                                                                           :ARG1-of (s14.f / find-01
+                                                                                           :ARG0 s14.t
+                                                                                           :location (s14.n / nature))))))
+                 :op3 (s14.p / possible-01
+                             :ARG1 (s14.s2 / socialize-01
+                                           :ARG0 s14.t
+                                           :ARG1 (s14.o / other
+                                                        :source (s14.s3 / species
+                                                                        :ARG1-of (s14.s / same-01))))))
+   :snt15 (s15.c / contrast-01
+                 :ARG2 (s15.a / amr-unknown
+                              :time (s15.t / then)))
+   :snt16 (s16.c / claim-01
+                 :ARG0 (s16.o2 / organization
+                               :name (s16.n / name
+                                            :op1 "Brazil"
+                                            :op2 "Ornithological"
+                                            :op3 "Society"))
+                 :ARG1 (s16.k / know-01
+                              :ARG0 (s16.w / we)
+                              :ARG1 (s16.s / species
+                                           :mod (s16.n2 / nature))
+                              :ARG1-of (s16.h / have-quant-91
+                                              :ARG2 (s16.l / little)
+                                              :ARG3 (s16.t2 / too)))
+                 :mod (s16.t / talk-01
+                             :ARG0 s16.w
+                             :ARG1 (s16.b / bird
+                                          :mod (s16.o / only))
+                             :time (s16.n3 / now)))
+   :snt17 (s17.c / cause-01
+                 :ARG1 (s17.h / have-degree-91
+                              :ARG1 (s17.r / release-01
+                                           :ARG1 (s17.a2 / animal
+                                                         :mod (s17.t / this)
+                                                         :same-as s4.a3)
+                                           :beneficiary (s17.a / and
+                                                               :op1 (s17.p / person
+                                                                           :ARG1-of (s17.r2 / release-01))
+                                                               :op2 (s17.p2 / population
+                                                                            :ARG1-of (s17.n / natural-03))))
+                              :ARG2 (s17.r3 / risky-02
+                                            :ARG1 s17.r)
+                              :ARG3 (s17.t2 / too)))
+   :snt18 (s18.c / claim-01
+                 :ARG0 (s18.t / they
+                              :same-as s16.t)
+                 :ARG1 (s18.s / spend-01
+                              :ARG0 (s18.w / we)
+                              :ARG1 (s18.r / rehabilitate-01
+                                           :ARG1 s18.t)
+                              :ARG3 (s18.r2 / resource
+                                            :ARG1-of (s18.h / have-quant-91
+                                                            :ARG2 (s18.m / many)
+                                                            :ARG3 (s18.t2 / too))))
+                 :mod (s18.a / also))
+   :snt19 (s19.s3 / suggest-01
+                  :ARG0 (s19.t / they
+                               :same-as s16.t)
+                  :ARG1 (s19.r / recommend-01
+                               :ARG0 s19.t
+                               :ARG1 (s19.g / good-02
+                                            :ARG1 (s19.b / bird
+                                                         :ARG1-of (s19.s / seize-01
+                                                                         :ARG2 (s19.s2 / species
+                                                                                       :ARG1-of (s19.t3 / threaten-01
+                                                                                                        :polarity "-")))
+                                                         :mod (s19.a / all))))
+                  :ARG1-of (s19.f / follow-01
+                                  :ARG2 (s19.a2 / argue-01
+                                                :mod (s19.t2 / this))))
+   :snt20 (s20.h / have-concession-91
+                 :ARG1 (s20.m / mean-01
+                              :ARG1 (s20.t / this
+                                           :same-as s19.g)
+                              :ARG2 (s20.k / kill-01
+                                           :ARG1 (s20.b / bird
+                                                        :quant "2267")
+                                           :location (s20.s / state
+                                                            :name (s20.n / name
+                                                                         :op1 "São"
+                                                                         :op2 "Paulo"
+                                                                         :same-as s2.c2)
+                                                            :mod (s20.o / only))
+                                           :time (s20.d / date-entity
+                                                        :mod s20.o
+                                                        :year "2006"))))
+   :snt21 (s21.c / contrast-01
+                 :ARG2 (s21.b / believe-01
+                              :ARG0 (s21.p / person
+                                           :quant (s21.s / some)
+                                           :ARG0-of (s21.r / research-01)
+                                           :ARG2-of (s21.i2 / include-91
+                                                            :ARG1 (s21.i / i))
+                                           :consist-of (s21.a2 / and
+                                                               :op1 (s21.g2 / government-organization
+                                                                            :quant (s21.s2 / some)
+                                                                            :polarity "-")
+                                                               :op2 (s21.p2 / person
+                                                                            :ARG0-of (s21.h / have-org-role-91
+                                                                                            :ARG1 (s21.g3 / government-organization
+                                                                                                          :ARG0-of (s21.g / govern-01
+                                                                                                                          :ARG1 (s21.c2 / country
+                                                                                                                                        :name (s21.n / name
+                                                                                                                                                     :op1 "Brazil")))))
+                                                                            :mod (s21.s3 / some))))
+                              :ARG1 (s21.a / alternative)))
+   :snt22 (s22.t2 / think-01
+                  :ARG0 (s22.w / we)
+                  :ARG1 (s22.p2 / possible-01
+                                :ARG1 (s22.r / release-01
+                                             :purpose (s22.a4 / and
+                                                              :op1 (s22.w2 / well-09
+                                                                           :ARG1 (s22.i2 / individual))
+                                                              :op2 (s22.c4 / conserve-01
+                                                                           :ARG1 (s22.a5 / and
+                                                                                         :op1 (s22.s2 / species)
+                                                                                         :op2 (s22.e / ecosystem
+                                                                                                     :poss s22.s2))))
+                                             :ARG0-of (s22.r2 / responsible-01
+                                                              :mod (s22.t / technical)))
+                                :ARG1-of (s22.c / cause-01
+                                                :ARG0 (s22.a6 / and
+                                                              :op1 (s22.r3 / return-02
+                                                                           :ARG0 s22.w
+                                                                           :ARG1 (s22.g / gene
+                                                                                        :beneficiary (s22.p / population
+                                                                                                            :ARG1-of (s22.n / natural-03)
+                                                                                                            :mod (s22.t3 / this)))
+                                                                           :ARG1-of (s22.i / important-01
+                                                                                           :ARG1-of (s22.p3 / possible-01)
+                                                                                           :ARG2 (s22.f / face-01
+                                                                                                        :ARG0 (s22.a8 / animal)
+                                                                                                        :ARG1 (s22.c3 / challenge-01
+                                                                                                                      :ARG0 (s22.e2 / environment)))))
+                                                              :op2 (s22.r4 / return-02
+                                                                           :ARG0 s22.w
+                                                                           :ARG1 (s22.a7 / and
+                                                                                         :mod (s22.p4 / potential)
+                                                                                         :op1 (s22.d / disperse-01
+                                                                                                     :ARG1 (s22.s / seed))
+                                                                                         :op2 (s22.p5 / predator)
+                                                                                         :op3 (s22.p6 / prey-01)
+                                                                                         :op4 (s22.e3 / et-cetera))
+                                                                           :mod (s22.a / also))))
+                                :condition (s22.a2 / and
+                                                   :op1 (s22.m / meet-01
+                                                               :ARG0 s22.a8
+                                                               :ARG1 (s22.c5 / criteria
+                                                                             :mod (s22.c2 / certain)
+                                                                             :topic (s22.a3 / and
+                                                                                            :op1 (s22.h / healthy
+                                                                                                        :domain s22.a8)
+                                                                                            :op2 (s22.b / behave-01
+                                                                                                        :ARG0 s22.a8)
+                                                                                            :op3 (s22.o / origin
+                                                                                                        :ARG1-of (s22.i3 / infer-01))
+                                                                                            :op4 (s22.w3 / whatever
+                                                                                                         :ARG1-of (s22.k / know-01
+                                                                                                                         :ARG0 s22.w)
+                                                                                                         :topic s22.p)))))))
+   :snt23 (s23.r / release-01
+                 :ARG0 (s23.w / we
+                              :same-as s22.w)
+                 :ARG1 (s23.t / this
+                              :mod (s23.a / all)
+                              :same-as s22.a7))
+   :snt24 (s24.e / enjoy-01
+                 :ARG0 (s24.t2 / turtle)
+                 :ARG1 (s24.f / free-04
+                              :ARG1 s24.t2)
+                 :location (s24.t / top)
+                 :mod (s24.j / just))
+   :snt25 (s25.n / nest-01
+                 :ARG0 (s25.g / guy
+                              :mod (s25.t2 / this))
+                 :time (s25.m / middle)
+                 :time (s25.a / after
+                              :quant (s25.c / couple
+                                            :op1 (s25.t / temporal-quantity
+                                                        :unit (s25.w / week)
+                                                        :quant "1"))
+                              :op1 (s25.r / release-01)))
+   :snt26 (s26.a2 / and
+                  :op2 (s26.m / male
+                              :ARG0-of (s26.g / get-together-14
+                                              :ARG1 (s26.f2 / female
+                                                            :mod (s26.w / wild))
+                                              :time (s26.a / after
+                                                           :quant (s26.t / temporal-quantity
+                                                                         :unit (s26.h / hour)
+                                                                         :quant "4")
+                                                           :op1 (s26.r / release-01
+                                                                       :ARG1 s26.m)))
+                              :ARG1-of (s26.f / favor-01
+                                              :ARG0 (s26.i / i
+                                                           :same-as s21.i)
+                                              :ARG1-of (s26.p / personal-02))
+                              :location (s26.b / bottom)
+                              :location (s26.t2 / there)
+                              :mod (s26.l / little)))
+   :snt27 (s27.c / contrast-01
+                 :ARG2 (s27.i / issue-02
+                              :ARG0 (s27.i2 / it)
+                              :location (s27.c2 / country
+                                                :name (s27.n / name
+                                                             :op1 "Brazil")
+                                                :same-as s2.c3)
+                              :mod (s27.b / big)
+                              :mod (s27.s / still)))
+   :snt28 (s28.b / believe-01
+                 :ARG0 (s28.w / we
+                              :same-as s22.w)
+                 :ARG1 (s28.p / perform-02
+                              :ARG0 s28.w
+                              :ARG1 (s28.r / release-01
+                                           :ARG1-of (s28.r2 / responsible-02))))
+   :snt29 (s29.r / register-02
+                 :ARG0 (s29.w / we
+                              :same-as s22.w)
+                 :ARG1 (s29.a / animal
+                              :ARG0-of (s29.h / have-05
+                                              :ARG1 (s29.c / chick))
+                              :ARG1-of (s29.r2 / release-01)
+                              :ARG1-of (s29.m / mate-02
+                                              :mod (s29.n / nature))))
+   :snt30 (s30.i2 / infer-01
+                  :ARG1 (s30.g2 / go-back-19
+                                :ARG1 (s30.g / gene
+                                             :mod (s30.t / this))
+                                :ARG2 (s30.p / population
+                                             :same-as s22.t3)
+                                :mod (s30.i / indeed)))
+   :snt31 (s31.c2 / contrast-01
+                  :ARG2 (s31.m / minority
+                               :ARG1-of (s31.c / cause-01
+                                               :ARG0 (s31.l / lack-01
+                                                            :ARG0 (s31.t / this)
+                                                            :ARG1 (s31.k / know-01
+                                                                         :ARG0 s31.t)
+                                                            :degree (s31.v / very)))
+                               :domain s31.t
+                               :mod (s31.s / still)))
+   :snt32 (s32.c / cause-01
+                 :ARG1 (s32.s / say-01
+                              :ARG0 (s32.i / i
+                                           :same-as s21.i)
+                              :ARG1 (s32.a / and
+                                           :op1 (s32.s3 / study-01
+                                                        :ARG0 (s32.w / we)
+                                                        :mod (s32.m / more)
+                                                        :mode "imperative")
+                                           :op2 (s32.s2 / shed-light-10
+                                                        :ARG0 s32.w
+                                                        :ARG1 (s32.i2 / issue-02
+                                                                      :mod (s32.t / this)
+                                                                      :same-as s27.i2)
+                                                        :mode "imperative")
+                                           :op3 (s32.d / do-02
+                                                       :ARG0 s32.w
+                                                       :ARG1 (s32.w2 / whatever
+                                                                     :ARG1-of (s32.p / possible-01))))))
+   :snt33 (s33.d / devote-01
+                 :ARG0 (s33.i / i
+                              :same-as s21.i)
+                 :ARG1 (s33.c / career
+                              :poss s33.i)
+                 :ARG2 (s33.t / that))
+   :snt34 (s34.a / and
+                 :op2 (s34.b2 / be-located-at-91
+                              :purpose (s34.u / urge-01
+                                              :ARG0 (s34.i / i
+                                                           :same-as s21.i)
+                                              :ARG1 (s34.o / one
+                                                           :ARG1-of (s34.i2 / include-91
+                                                                            :ARG2 (s34.y / you))
+                                                           :mod (s34.e3 / every)
+                                                           :mod (s34.e / each))
+                                              :ARG2 (s34.d / do-02
+                                                           :ARG0 s34.y
+                                                           :ARG1 (s34.w / whatever
+                                                                        :ARG1-of (s34.r / reach-01
+                                                                                        :ARG0 s34.y)
+                                                                        :example (s34.a2 / and
+                                                                                         :op1 (s34.t / talk-01
+                                                                                                     :ARG0 s34.y
+                                                                                                     :ARG2 (s34.n / neighbor
+                                                                                                                  :poss s34.y))
+                                                                                         :op2 (s34.t2 / teach-01
+                                                                                                      :ARG0 s34.y
+                                                                                                      :ARG2 (s34.p / person
+                                                                                                                   :ARG0-of (s34.h / have-rel-role-91
+                                                                                                                                   :ARG1 s34.y
+                                                                                                                                   :ARG2 (s34.c / child))))
+                                                                                         :op3 (s34.e2 / ensure-01
+                                                                                                      :ARG0 s34.y
+                                                                                                      :ARG1 (s34.b / be-from-91
+                                                                                                                   :ARG1 (s34.p3 / pet
+                                                                                                                                 :poss s34.y)
+                                                                                                                   :ARG2 (s34.p2 / person
+                                                                                                                                 :ARG0-of (s34.b3 / breed-01)
+                                                                                                                                 :ARG1-of (s34.l / legal-02))))))))
+                              :ARG1 s34.i
+                              :ARG2 (s34.h2 / here)))
+   :snt35 (s35.n / need-01
+                 :ARG0 (s35.w / we)
+                 :ARG1 (s35.a3 / and
+                               :op1 (s35.a / act-02
+                                           :ARG0 s35.w)
+                               :op2 (s35.a2 / act-02
+                                            :ARG0 s35.w
+                                            :time (s35.n2 / now)
+                                            :time (s35.b / before
+                                                         :op1 (s35.l / leave-17
+                                                                     :ARG1 (s35.o / one
+                                                                                  :mod (s35.t / this)
+                                                                                  :mod (s35.o2 / only)))))))
+   :snt36 (s36.t / thank-01
+                 :ARG0 (s36.i / i)
+                 :ARG1 (s36.y / you
+                              :same-as s21.i)
+                 :mod (s36.m / much
+                             :degree (s36.v / very))))
+

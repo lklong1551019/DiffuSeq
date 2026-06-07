@@ -1,0 +1,50 @@
+# ::id doc-1003
+# ::doc_file doc-1003
+# ::tok http : / / www . ted . com / talks / nellie_mckay_sings_the_dog_song< / url> <next_sent> I 'd like to dedicate this next song to Carmelo , who was put to sleep a couple of days ago , because he got too old . <next_sent> But apparently he was a very nice dog and he always let the cat sleep in the dog bed . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01))
+   :snt2 (s2.l / like-02
+               :ARG0 (s2.i / i)
+               :ARG1 (s2.d2 / dedicate-01
+                            :ARG0 s2.i
+                            :ARG1 (s2.s2 / song
+                                         :mod (s2.n2 / next)
+                                         :mod (s2.t2 / this))
+                            :ARG2 (s2.p / person
+                                        :name (s2.n / name
+                                                    :op1 "Carmelo")
+                                        :ARG1-of (s2.p2 / put-03
+                                                        :ARG1-of (s2.c / cause-01
+                                                                       :ARG0 (s2.g / get-03
+                                                                                   :ARG1 s2.p
+                                                                                   :ARG2 (s2.h / have-degree-91
+                                                                                               :ARG1 s2.p
+                                                                                               :ARG2 (s2.o / old)
+                                                                                               :ARG3 (s2.t3 / too))))
+                                                        :ARG2 (s2.s / sleep-01
+                                                                    :ARG0 s2.p)
+                                                        :time (s2.b / before
+                                                                    :quant (s2.c2 / couple
+                                                                                  :op1 (s2.t / temporal-quantity
+                                                                                             :unit (s2.d / day)
+                                                                                             :quant "1"))
+                                                                    :op1 (s2.n3 / now))))))
+   :snt3 (s3.c2 / contrast-01
+                :ARG2 (s3.a2 / and
+                             :manner (s3.a3 / apparent)
+                             :op1 (s3.n / nice-01
+                                        :ARG1 (s3.d / dog
+                                                    :domain (s3.h / he
+                                                                  :same-as s2.p))
+                                        :degree (s3.v / very))
+                             :op2 (s3.l / let-01
+                                        :ARG0 s3.h
+                                        :ARG1 (s3.s / sleep-01
+                                                    :ARG0 (s3.c / cat)
+                                                    :location (s3.b / bed
+                                                                    :mod s3.d))
+                                        :time (s3.a / always))))
+   :snt4 (s4.t / thank-01
+               :ARG1 (s4.y / you)))
+

@@ -1,0 +1,96 @@
+# ::id doc-1159
+# ::doc_file doc-1159
+# ::tok http : / / www . ted . com / talks / daffodil_hudson_is_this_the_cure_for_stage_fright< / url> <next_sent> Daffodil Hudson : Hello ? <next_sent> Yeah , this is she . <next_sent> What ? <next_sent> Oh , yeah , yeah , yeah , yeah , of course I accept . <next_sent> What are the dates again ? <next_sent> Pen . Pen . Pen . <next_sent> March 17 through 21 . <next_sent> Lab Partner : Who was that ? <next_sent> DH : It was TED . <next_sent> LP : Who 's TED ? <next_sent> DH : I 've got to prepare . <next_sent> Can I help you ? <next_sent> DH : Right now ? <next_sent> Stagehand : Break a leg .
+(d / document
+   :snt1 (s1.u / url-entity
+               :value "ossobuco")
+   :snt2 (s2.s / say-01
+               :ARG0 (s2.p / person
+                           :name (s2.n / name
+                                       :op1 "Daffodil"
+                                       :op2 "Hudson"))
+               :ARG1 (s2.h / hello)
+               :polarity (s2.a / amr-unknown))
+   :snt3 (s3.s / she
+               :domain (s3.t / this)
+               :mod (s3.y / yeah
+                          :mode "expressive"))
+   :snt4 (s4.a / amr-unknown)
+   :snt5 (s5.a / accept-01
+               :ARG0 (s5.i / i
+                           :same-as s3.t)
+               :mod (s5.o / of-course)
+               :mod (s5.o2 / oh
+                           :mod (s5.y / yeah)
+                           :mode "expressive"))
+   :snt6 (s6.d / date
+               :domain (s6.a2 / amr-unknown)
+               :mod (s6.a / again))
+   :snt7 (s7.n / number
+               :value "Pen")
+   :snt8 (s8.d3 / date-interval
+                :op1 (s8.d / date-entity
+                           :day "17"
+                           :month "3")
+                :op2 (s8.d2 / date-entity
+                            :day "21"
+                            :month "3"))
+   :snt9 (s9.s / say-01
+               :ARG0 (s9.p2 / person
+                            :ARG0-of (s9.p / partner-01
+                                           :ARG1 (s9.l / laboratory)))
+               :ARG1 (s9.a / amr-unknown
+                           :domain (s9.t / that)))
+   :snt10 (s10.s / say-01
+                 :ARG0 (s10.p / person
+                              :ARG0-of (s10.h / have-rel-role-91
+                                              :ARG1 (s10.i / i)
+                                              :ARG2 (s10.h2 / husband))
+                              :mod (s10.d / dear))
+                 :ARG1 (s10.e / event
+                              :name (s10.n / name
+                                           :op1 "TED")
+                              :domain (s10.i2 / it
+                                              :same-as s9.t)))
+   :snt11 (s11.s / say-01
+                 :ARG0 (s11.p / person
+                              :name (s11.n / name
+                                           :op1 "LP"))
+                 :ARG1 (s11.t / thing
+                              :name (s11.n2 / name
+                                            :op1 "TED"
+                                            :same-as s10.n)
+                              :domain (s11.a / amr-unknown)))
+   :snt12 (s12.s / say-01
+                 :ARG0 (s12.p / person
+                              :ARG0-of (s12.h / have-rel-role-91
+                                              :ARG1 (s12.i / i)
+                                              :ARG2 (s12.h2 / husband))
+                              :mod (s12.d / dear))
+                 :ARG1 (s12.o / obligate-01
+                              :ARG1 s12.i
+                              :ARG2 (s12.p2 / prepare-02
+                                            :ARG0 s12.i)))
+   :snt13 (s13.p / possible-01
+                 :ARG1 (s13.h / help-01
+                              :ARG0 (s13.i / i
+                                           :same-as s10.p)
+                              :ARG2 (s13.y / you
+                                           :same-as s10.p))
+                 :polarity (s13.a / amr-unknown))
+   :snt14 (s14.s / say-01
+                 :ARG0 (s14.p / person
+                              :ARG0-of (s14.h / have-rel-role-91
+                                              :ARG1 (s14.i / i)
+                                              :ARG2 (s14.h2 / husband))
+                              :mod (s14.d / dear))
+                 :polarity (s14.a / amr-unknown)
+                 :time (s14.n / now
+                              :mod (s14.r / right)))
+   :snt15 (s15.s / say-01
+                 :ARG0 (s15.p / person
+                              :ARG0-of (s15.h / have-org-role-91
+                                              :ARG3 (s15.s2 / stage-01)))
+                 :ARG1 (s15.b / break-01
+                              :ARG1 (s15.l / leg))))
+

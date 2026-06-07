@@ -1,0 +1,567 @@
+# ::id doc-674
+# ::doc_file doc-674
+# ::tok http : / / www . ted . com / talks / nathalie_miebach< / url> <next_sent> What you just heard are the interactions of barometric pressure , wind and temperature readings that were recorded of Hurricane Noel in 2007 . <next_sent> The musicians played off a three - dimensional graph of weather data like this . <next_sent> Every single bead , every single colored band , represents a weather element that can also be read as a musical note . <next_sent> I find weather extremely fascinating . <next_sent> Weather is an amalgam of systems that is inherently invisible to most of us . <next_sent> So I use sculpture and music to make it , not just visible , but also tactile and audible . <next_sent> All of my work begins very simple . <next_sent> I extract information from a specific environment using very low - tech data collecting devices -- generally anything I can find in the hardware store . <next_sent> I then compare my information to the things I find on the Internet -- satellite images , weather data from weather stations as well as offshore buoys . <next_sent> That 's both historical as well as real data . <next_sent> And then I compile all of these numbers on these clipboards that you see here . <next_sent> These clipboards are filled with numbers . <next_sent> And from all of these numbers , I start with only two or three variables . <next_sent> That begins my translation process . <next_sent> My translation medium is a very simple basket . <next_sent> A basket is made up of horizontal and vertical elements . <next_sent> When I assign values to the vertical and horizontal elements , I can use the changes of those data points over time to create the form . <next_sent> I use natural reed , because natural reed has a lot of tension in it that I cannot fully control . <next_sent> That means that it is the numbers that control the form , not me . <next_sent> What I come up with are forms like these . <next_sent> These forms are completely made up of weather data or science data . <next_sent> Every colored bead , every colored string , represents a weather element . <next_sent> And together , these elements , not only construct the form , but they also reveal behavioral relationships that may not come across through a two - dimensional graph . <next_sent> When you step closer , you actually see that it is indeed all made up of numbers . <next_sent> The vertical elements are assigned a specific hour of the day . <next_sent> So all the way around , you have a 24 - hour timeline . <next_sent> But it 's also used to assign a temperature range . <next_sent> On that grid , I can then weave the high tide readings , water temperature , air temperature and Moon phases . <next_sent> I also translate weather data into musical scores . <next_sent> And musical notation allows me a more nuanced way of translating information without compromising it . <next_sent> So all of these scores are made up of weather data . <next_sent> Every single color , dot , every single line , is a weather element . <next_sent> And together , these variables construct a score . <next_sent> I use these scores to collaborate with musicians . <next_sent> This is the 1913 Trio performing one of my pieces at the Milwaukee Art Museum . <next_sent> Meanwhile , I use these scores as blueprints to translate into sculptural forms like this , that function still in the sense of being a three - dimensional weather visualization , but now they 're embedding the visual matrix of the musical score , so it can actually be read as a musical score . <next_sent> What I love about this work is that it challenges our assumptions of what kind of visual vocabulary belongs in the world of art , versus science . <next_sent> This piece here is read very differently depending on where you place it . <next_sent> You place it in an art museum , it becomes a sculpture . <next_sent> You place it in a science museum , it becomes a three - dimensional visualization of data . <next_sent> You place it in a music hall , it all of a sudden becomes a musical score . <next_sent> And I really like that , because the viewer is really challenged as to what visual language is part of science versus art versus music . <next_sent> The other reason why I really like this is because it offers an alternative entry point into the complexity of science . <next_sent> And not everyone has a Ph . D. in science . <next_sent> So for me , that was my way into it . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.p / person
+                            :name (s1.n / name
+                                        :op1 "Nazi")))
+   :snt2 (s2.h / hear-01
+               :ARG0 (s2.y / you)
+               :ARG1 (s2.i / interact-01
+                           :ARG0 (s2.a / and
+                                       :ARG1-of (s2.r / read-01)
+                                       :ARG1-of (s2.r2 / record-01
+                                                       :time (s2.d / date-entity
+                                                                   :year "2007")
+                                                       :topic (s2.h2 / hurricane
+                                                                     :name (s2.n / name
+                                                                                 :op1 "Noel")))
+                                       :op1 (s2.p / pressure
+                                                  :mod (s2.b / barometric))
+                                       :op2 (s2.w / wind)
+                                       :op3 (s2.t / temperature)))
+               :time (s2.j / just))
+   :snt3 (s3.p / play-11
+               :ARG0 (s3.m / musician)
+               :ARG1 (s3.g / graph
+                           :mod (s3.d2 / dimension
+                                       :quant "3")
+                           :topic (s3.d / data
+                                        :ARG1-of (s3.r / resemble-01
+                                                       :ARG2 (s3.t / this))
+                                        :topic (s3.w / weather))))
+   :snt4 (s4.r2 / represent-01
+                :ARG0 (s4.a2 / and
+                             :mod (s4.e2 / every)
+                             :op1 (s4.b2 / bead
+                                         :ARG1-of (s4.s / single-02))
+                             :op2 (s4.b / band
+                                        :ARG1-of (s4.c / color-01)
+                                        :mod s4.e2))
+                :ARG1 (s4.e / element
+                            :ARG1-of (s4.r / read-01
+                                           :ARG1-of (s4.p / possible-01)
+                                           :ARG3 (s4.m / musical-note)
+                                           :mod (s4.a / also))
+                            :mod (s4.w / weather)))
+   :snt5 (s5.f2 / find-02
+                :ARG0 (s5.i / i
+                            :same-as s1.p)
+                :ARG1 (s5.f / fascinate-01
+                            :ARG0 (s5.w / weather)
+                            :ARG1 s5.i
+                            :degree (s5.e / extreme)))
+   :snt6 (s6.a / amalgam
+               :ARG1-of (s6.s / see-01
+                              :ARG0 (s6.w / we
+                                          :quant (s6.m / most))
+                              :ARG1-of (s6.p / possible-01
+                                             :polarity "-")
+                              :mod (s6.i / inherent))
+               :domain (s6.w2 / weather)
+               :mod (s6.s2 / system))
+   :snt7 (s7.c / cause-01
+               :ARG1 (s7.u / use-01
+                           :ARG0 (s7.i / i
+                                       :same-as s1.p)
+                           :ARG1 (s7.a2 / and
+                                        :op1 (s7.s / sculpture)
+                                        :op2 (s7.m2 / music))
+                           :ARG2 (s7.m / make-02
+                                       :ARG0 s7.i
+                                       :ARG1 (s7.a3 / and
+                                                    :op1 (s7.p / possible-01
+                                                               :ARG1 (s7.s2 / see-01
+                                                                            :ARG1 (s7.i2 / it
+                                                                                         :same-as s6.w2)))
+                                                    :op2 (s7.t / tactile
+                                                               :domain s7.i2)
+                                                    :op3 (s7.p2 / possible-01
+                                                                :ARG1 (s7.h / hear-01
+                                                                            :ARG1 s7.i2)
+                                                                :mod (s7.a / also))))))
+   :snt8 (s8.b / begin-01
+               :ARG1 (s8.w / work-01
+                           :ARG0 (s8.i / i
+                                       :same-as s1.p)
+                           :mod (s8.a / all))
+               :ARG1-of (s8.s / simple-02
+                              :degree (s8.v / very)))
+   :snt9 (s9.e2 / extract-01
+                :ARG0 (s9.i / i
+                            :same-as s1.p)
+                :ARG1 (s9.i2 / information)
+                :ARG2 (s9.e / environment
+                            :ARG1-of (s9.s / specific-02))
+                :ARG2-of (s9.u / use-01
+                               :ARG0 s9.i
+                               :ARG1 (s9.d2 / device
+                                            :ARG0-of (s9.c / collect-01
+                                                           :ARG1 (s9.d / data))
+                                            :ARG0-of (s9.m / mean-01
+                                                           :ARG1 (s9.a / anything
+                                                                       :ARG1-of (s9.g / general-02)
+                                                                       :ARG1-of (s9.f / find-01
+                                                                                      :ARG0 s9.i
+                                                                                      :ARG1-of (s9.p / possible-01)
+                                                                                      :location (s9.s2 / store
+                                                                                                       :mod (s9.h / hardware)))))
+                                            :mod (s9.t / tech
+                                                       :ARG1-of (s9.l / low-04
+                                                                      :degree (s9.v / very))))))
+   :snt10 (s10.c / compare-01
+                 :ARG0 (s10.i / i
+                              :same-as s1.p)
+                 :ARG1 (s10.i3 / information
+                               :poss s10.i
+                               :same-as s9.i2)
+                 :ARG2 (s10.t2 / thing
+                               :ARG1-of (s10.f / find-01
+                                               :ARG0 s10.i
+                                               :location (s10.i4 / internet))
+                               :consist-of (s10.a / and
+                                                  :op1 (s10.i2 / image
+                                                               :source (s10.s / satellite))
+                                                  :op2 (s10.d / data
+                                                              :mod (s10.w / weather)
+                                                              :source (s10.s2 / station
+                                                                              :mod (s10.w2 / weather)))
+                                                  :op3 (s10.b / buoy
+                                                              :location (s10.o / offshore))))
+                 :time (s10.t / then))
+   :snt11 (s11.a / and
+                 :op1 (s11.h / history
+                             :domain (s11.t / that
+                                            :same-as s10.t2))
+                 :op2 (s11.d / data
+                             :ARG1-of (s11.r / real-04)
+                             :domain s11.t))
+   :snt12 (s12.a2 / and
+                  :op2 (s12.c2 / compile-01
+                               :ARG0 (s12.i / i
+                                            :same-as s1.p)
+                               :ARG1 (s12.n / number
+                                            :mod (s12.t2 / this)
+                                            :mod (s12.a / all))
+                               :location (s12.s / see-01
+                                                :ARG0 (s12.y / you)
+                                                :ARG1 (s12.c / clip-01
+                                                             :ARG1 (s12.b / board))
+                                                :location (s12.h / here))
+                               :time (s12.t / then)))
+   :snt13 (s13.f / fill-01
+                 :ARG1 (s13.b / board
+                              :mod (s13.t / this)
+                              :same-as s12.s)
+                 :ARG2 (s13.n / number))
+   :snt14 (s14.a2 / and
+                  :op2 (s14.s / start-01
+                              :ARG0 (s14.i / i
+                                           :same-as s1.p)
+                              :ARG1 (s14.v / variable
+                                           :quant (s14.o2 / or
+                                                          :op1 "2"
+                                                          :op2 "3")
+                                           :mod (s14.o / only))
+                              :source (s14.n / number
+                                             :mod (s14.t / this)
+                                             :mod (s14.a / all)
+                                             :same-as s12.n)))
+   :snt15 (s15.b / begin-01
+                 :ARG0 (s15.t / that)
+                 :ARG1 (s15.p / process-02
+                              :ARG0 (s15.i / i
+                                           :same-as s1.p)
+                              :ARG1 (s15.t2 / translate-01
+                                            :ARG0 s15.i)))
+   :snt16 (s16.b / basket
+                 :ARG1-of (s16.s / simple-02
+                                 :degree (s16.v / very))
+                 :domain (s16.m / medium
+                                :ARG2-of (s16.t / translate-01)
+                                :poss (s16.i / i
+                                             :same-as s1.p)))
+   :snt17 (s17.m / make-up-07
+                 :ARG0 (s17.a / and
+                              :op1 (s17.e / element
+                                          :mod (s17.h / horizontal))
+                              :op2 (s17.e2 / element
+                                           :mod (s17.v / vertical)))
+                 :ARG1 (s17.b / basket))
+   :snt18 (s18.p2 / possible-01
+                  :ARG1 (s18.u / use-01
+                               :ARG0 (s18.i / i
+                                            :same-as s1.p)
+                               :ARG1 (s18.c / change-01
+                                            :ARG1 (s18.p / point
+                                                         :mod (s18.d / data)
+                                                         :mod (s18.t / that))
+                                            :mod (s18.o / over-time))
+                               :ARG2 (s18.c2 / create-01
+                                             :ARG0 s18.i
+                                             :ARG1 (s18.f / form)))
+                  :time (s18.a2 / assign-01
+                                :ARG0 s18.i
+                                :ARG1 (s18.v / value)
+                                :ARG2 (s18.a / and
+                                             :op1 (s18.e / element
+                                                         :mod (s18.v2 / vertical))
+                                             :op2 (s18.e2 / element
+                                                          :mod (s18.h / horizontal))
+                                             :same-as s17.a)))
+   :snt19 (s19.u2 / use-01
+                  :ARG0 (s19.i / i
+                               :same-as s1.p)
+                  :ARG1 (s19.u / Bush
+                               :ARG1-of (s19.n / natural-03))
+                  :ARG1-of (s19.c / cause-01
+                                  :ARG0 (s19.h / have-03
+                                               :ARG0 s19.u
+                                               :ARG1 (s19.t / tension
+                                                            :quant (s19.l / lot)
+                                                            :ARG1-of (s19.c2 / control-01
+                                                                             :ARG0 s19.i
+                                                                             :ARG1-of (s19.f / full-09)
+                                                                             :ARG1-of (s19.p / possible-01
+                                                                                             :polarity "-"))))))
+   :snt20 (s20.m / mean-01
+                 :ARG1 (s20.t / that
+                              :same-as s19.h)
+                 :ARG2 (s20.c / contrast-01
+                              :ARG1 (s20.c2 / control-01
+                                            :ARG0 (s20.n / number)
+                                            :ARG1 (s20.f / form
+                                                         :same-as s18.f))
+                              :ARG2 (s20.c3 / control-01
+                                            :ARG0 s20.n
+                                            :ARG1 s20.f
+                                            :ARG1 (s20.i / i
+                                                         :same-as s1.p)
+                                            :polarity "-")))
+   :snt21 (s21.c / come-up-11
+                 :ARG0 (s21.i / i
+                              :same-as s1.p)
+                 :ARG1 (s21.f / form
+                              :ARG1-of (s21.r / resemble-01
+                                              :ARG2 (s21.t / this))))
+   :snt22 (s22.m / make-up-10
+                 :ARG1 (s22.f / form
+                              :mod (s22.t / this)
+                              :same-as s21.f)
+                 :ARG1-of (s22.c / complete-02)
+                 :ARG2 (s22.o / or
+                              :op1 (s22.d / data
+                                          :topic (s22.w / weather))
+                              :op2 (s22.d2 / data
+                                           :mod (s22.s / science))))
+   :snt23 (s23.r / represent-01
+                 :ARG0 (s23.a / and
+                              :op1 (s23.b / bead
+                                          :ARG1-of (s23.c2 / color-01)
+                                          :mod (s23.e2 / every))
+                              :op2 (s23.s / string
+                                          :mod (s23.c / color)
+                                          :mod (s23.e3 / every)))
+                 :ARG1 (s23.e / element
+                              :mod (s23.w / weather)))
+   :snt24 (s24.a2 / and
+                  :mod (s24.t2 / together)
+                  :op2 (s24.a3 / and
+                               :op1 (s24.c2 / construct-01
+                                            :ARG0 (s24.e / element
+                                                         :mod (s24.t / this)
+                                                         :same-as s23.e)
+                                            :ARG1 (s24.f / form
+                                                         :same-as s18.f))
+                               :op2 (s24.r2 / reveal-01
+                                            :ARG0 s24.e
+                                            :ARG1 (s24.r / relation-03
+                                                         :ARG1 (s24.b / behave-01)
+                                                         :ARG1-of (s24.c / come-across-21
+                                                                         :ARG1-of (s24.p / possible-01)
+                                                                         :medium (s24.g / graph
+                                                                                        :mod (s24.d / dimension
+                                                                                                    :quant "2"))
+                                                                         :polarity "-"))
+                                            :mod (s24.a / also))))
+   :snt25 (s25.s / see-01
+                 :ARG0 (s25.y / you)
+                 :ARG1 (s25.m / make-up-10
+                              :ARG1 (s25.i2 / it
+                                            :same-as s18.f)
+                              :ARG2 (s25.n / number)
+                              :mod (s25.a2 / all)
+                              :mod (s25.i / indeed))
+                 :ARG1-of (s25.a / actual-02)
+                 :time (s25.s2 / step-01
+                               :ARG0 s25.y
+                               :ARG1 s25.y
+                               :ARG2 (s25.h / have-degree-91
+                                            :ARG2 (s25.c / close-10
+                                                         :ARG1 s25.y)
+                                            :ARG3 (s25.m2 / more))))
+   :snt26 (s26.a / assign-01
+                 :ARG1 (s26.h / hour
+                              :ARG1-of (s26.s / specific-02)
+                              :part-of (s26.d / day))
+                 :ARG2 (s26.e / element
+                              :mod (s26.v / vertical)))
+   :snt27 (s27.h / have-03
+                 :ARG0 (s27.y / you)
+                 :ARG1 (s27.t2 / timeline
+                               :duration (s27.t / temporal-quantity
+                                                :unit (s27.h2 / hour)
+                                                :quant "24"))
+                 :manner (s27.a2 / around
+                                 :extent (s27.a / all-the-way)))
+   :snt28 (s28.c / contrast-01
+                 :ARG2 (s28.u / use-01
+                              :ARG1 (s28.i / it
+                                           :same-as s27.t2)
+                              :ARG2 (s28.a2 / assign-01
+                                            :ARG1 (s28.r / range-01
+                                                         :ARG1 (s28.t / temperature))
+                                            :ARG2 s28.i)
+                              :mod (s28.a / also)))
+   :snt29 (s29.p2 / possible-01
+                  :ARG1 (s29.w2 / weave-01
+                                :ARG0 (s29.i / i
+                                             :same-as s1.p)
+                                :ARG1 (s29.a2 / and
+                                              :op1 (s29.r / read-01
+                                                          :ARG1 (s29.t5 / tide
+                                                                        :ARG1-of (s29.h / high-02)))
+                                              :op2 (s29.t / temperature
+                                                          :mod (s29.w / water))
+                                              :op3 (s29.t2 / temperature
+                                                           :mod (s29.a / air))
+                                              :op4 (s29.p / phase
+                                                          :mod (s29.m / moon)))
+                                :location (s29.g / grid
+                                                 :mod (s29.t3 / that)
+                                                 :same-as s27.t2)
+                                :time (s29.t4 / then)))
+   :snt30 (s30.t / translate-01
+                 :ARG0 (s30.i / i
+                              :same-as s1.p)
+                 :ARG1 (s30.d / data
+                              :topic (s30.w / weather))
+                 :ARG2 (s30.s / score-01
+                              :ARG1 (s30.m / music))
+                 :mod (s30.a / also))
+   :snt31 (s31.a2 / and
+                  :op2 (s31.a / allow-01
+                              :ARG0 (s31.n / note-01
+                                           :ARG1 (s31.m2 / music))
+                              :ARG1 (s31.w / way
+                                           :ARG1-of (s31.h / have-degree-91
+                                                           :ARG2 (s31.g / globe)
+                                                           :ARG3 (s31.m / more))
+                                           :manner-of (s31.t / translate-01
+                                                             :ARG0 (s31.i / i
+                                                                          :same-as s1.p)
+                                                             :ARG1 (s31.i2 / information)
+                                                             :manner (s31.c / compromise-02
+                                                                            :ARG0 s31.i
+                                                                            :ARG1 s31.i2
+                                                                            :polarity "-")))
+                              :ARG2 s31.i))
+   :snt32 (s32.m / make-up-10
+                 :ARG1 (s32.s / score-01
+                              :mod (s32.t / this)
+                              :mod (s32.a / all))
+                 :ARG2 (s32.d / data
+                              :mod (s32.w / weather)))
+   :snt33 (s33.e / element
+                 :domain (s33.a / and
+                                :mod (s33.e2 / every)
+                                :op1 (s33.c / color)
+                                :op2 (s33.d / dot)
+                                :op3 (s33.l / line
+                                            :mod s33.e2))
+                 :mod (s33.w / weather))
+   :snt34 (s34.a / and
+                 :op2 (s34.c / construct-01
+                             :ARG0 (s34.v / variable
+                                          :mod (s34.t / this))
+                             :ARG1 (s34.s / score-01)
+                             :manner (s34.t2 / together)))
+   :snt35 (s35.u / use-01
+                 :ARG0 (s35.i / i
+                              :same-as s1.p)
+                 :ARG1 (s35.s / score-entity
+                              :mod (s35.t / this)
+                              :same-as s32.s)
+                 :ARG2 (s35.c / collaborate-01
+                              :ARG0 s35.i
+                              :ARG1 (s35.m / musician)))
+   :snt36 (s36.p / perform-01
+                 :ARG0 (s36.b / band
+                              :name (s36.n / name
+                                           :op1 "1913"
+                                           :op2 "Trio"))
+                 :ARG1 (s36.p2 / piece
+                               :ARG1-of (s36.i2 / include-91
+                                                :ARG2 (s36.p3 / piece
+                                                              :poss (s36.i / i
+                                                                           :same-as s1.p)))
+                               :quant "1")
+                 :location (s36.m / museum
+                                  :name (s36.n2 / name
+                                                :op1 "Milwaukee"
+                                                :op2 "Art"
+                                                :op3 "Museum"))
+                 :mod (s36.t / this))
+   :snt37 (s37.c2 / contrast-01
+                  :ARG1 (s37.u / use-01
+                               :ARG0 (s37.i / i
+                                            :same-as s1.p)
+                               :ARG1 (s37.s2 / score-entity
+                                             :mod (s37.t2 / this)
+                                             :same-as s32.s)
+                               :ARG2 (s37.b / blueprint
+                                            :purpose (s37.t4 / translate-01
+                                                             :ARG1 s37.s2
+                                                             :ARG2 (s37.f / form
+                                                                          :ARG0-of (s37.f2 / function-01
+                                                                                           :ARG1 (s37.v2 / visualize-01
+                                                                                                         :ARG1 (s37.w / weather)
+                                                                                                         :mod (s37.d / dimension
+                                                                                                                     :quant "3"))
+                                                                                           :mod (s37.s4 / still))
+                                                                          :example (s37.t3 / this)
+                                                                          :mod (s37.s3 / sculptural))))
+                               :time (s37.m2 / meanwhile))
+                  :ARG2 (s37.e / embed-01
+                               :ARG0 (s37.t / they
+                                            :same-as s37.f)
+                               :ARG0-of (s37.c / cause-01
+                                               :ARG1 (s37.p / possible-01
+                                                            :ARG1 (s37.r / read-01
+                                                                         :ARG1 (s37.s / score-01
+                                                                                      :ARG2 (s37.m3 / music))
+                                                                         :ARG1-of (s37.a / actual-02))))
+                               :ARG1 (s37.m / matrix
+                                            :mod (s37.v / visual)
+                                            :poss s37.s)
+                               :time (s37.n / now)))
+   :snt38 (s38.l / love-01
+                 :ARG0 (s38.i / i
+                              :same-as s1.p)
+                 :ARG1 (s38.c / challenge-01
+                              :ARG0 (s38.w2 / work-01
+                                            :mod (s38.t / this)
+                                            :same-as s8.i)
+                              :ARG1 (s38.a3 / assume-02
+                                            :ARG0 (s38.w / we)
+                                            :ARG1 (s38.b / belong-01
+                                                         :ARG0 (s38.v2 / vocabulary
+                                                                       :mod (s38.v / visual)
+                                                                       :mod (s38.k / kind
+                                                                                   :mod (s38.a / amr-unknown)))
+                                                         :ARG1 (s38.w3 / world
+                                                                       :mod (s38.a2 / art
+                                                                                    :ARG1-of (s38.i2 / instead-of-91
+                                                                                                     :ARG2 (s38.s / science)))))))
+                 :topic s38.w2)
+   :snt39 (s39.r / read-01
+                 :ARG0-of (s39.d / depend-01
+                                 :ARG1 (s39.l / location
+                                              :ARG2-of (s39.p2 / place-01
+                                                               :ARG0 (s39.y / you)
+                                                               :ARG1 (s39.p / piece
+                                                                            :location (s39.h / here)
+                                                                            :mod (s39.t / this)
+                                                                            :ARG1-of s39.r
+                                                                            :same-as s8.i))))
+                 :manner (s39.d2 / differ-02
+                                 :degree (s39.v / very)))
+   :snt40 (s40.c / cause-01
+                 :ARG0 (s40.p / place-01
+                              :ARG0 (s40.y / you)
+                              :ARG1 (s40.i / it
+                                           :same-as s8.i)
+                              :ARG2 (s40.m / museum
+                                           :mod (s40.a / art)))
+                 :ARG1 (s40.b / become-01
+                              :ARG1 s40.i
+                              :ARG2 (s40.s / sculpture)))
+   :snt41 (s41.h / have-condition-91
+                 :ARG1 (s41.b / become-01
+                              :ARG1 (s41.i / it
+                                           :same-as s8.i)
+                              :ARG2 (s41.v / visualize-01
+                                           :ARG1 (s41.d / data)
+                                           :manner (s41.d2 / dimension
+                                                           :quant "3")))
+                 :ARG2 (s41.p / place-01
+                              :ARG0 (s41.y / you)
+                              :ARG1 s41.i
+                              :ARG2 (s41.m / museum
+                                           :mod (s41.s / science))))
+   :snt42 (s42.c / cause-01
+                 :ARG0 (s42.p / place-01
+                              :ARG0 (s42.y / you)
+                              :ARG1 (s42.i / it
+                                           :same-as s8.i)
+                              :ARG2 (s42.h / hall
+                                           :mod (s42.m / music)))
+                 :ARG1 (s42.b / become-01
+                              :ARG1 s42.i
+                              :ARG2 (s42.s / score-01
+                                           :ARG1 (s42.m2 / music))
+                              :manner (s42.s2 / sudden
+                                              :mod (s42.a / all))))
+   :snt43 (s43.a2 / and
+                  :op2 (s43.l2 / like-01
+                               :ARG0 (s43.i / i
+                                            :same-as s1.p)
+                               :ARG1 (s43.t / that)
+                               :ARG1-of (s43.c / cause-01
+                                               :ARG0 (s43.c2 / challenge-01
+                                                             :ARG1 (s43.p / person
+                                                                          :ARG0-of (s43.v / view-01))
+                                                             :ARG2 (s43.l / language
+                                                                          :mod (s43.v2 / visual)
+                                                                          :mod (s43.a / amr-unknown)
+                                                                          :part-of (s43.c3 / compare-01
+                                                                                           :ARG1 (s43.s / science)
+                                                                                           :ARG2 (s43.a3 / art)
+                                                                                           :op3 (s43.m / music)))
+                                                             :degree (s43.r2 / really)))
+                               :degree (s43.r / really)))
+   :snt44 (s44.r2 / reason
+                  :ARG0-of (s44.c / cause-01
+                                  :ARG1 (s44.l / like-01
+                                               :ARG0 (s44.i / i
+                                                            :same-as s1.p)
+                                               :ARG1 (s44.t / this
+                                                            :same-as s8.i)
+                                               :degree (s44.r / really)))
+                  :domain (s44.o / offer-01
+                                 :ARG0 s44.t
+                                 :ARG1 (s44.p / point
+                                              :instrument-of (s44.e / enter-01
+                                                                    :ARG1 (s44.c2 / complexity
+                                                                                  :mod (s44.s / science)))
+                                              :mod (s44.a / alternative)))
+                  :mod (s44.o2 / other))
+   :snt45 (s45.a / and
+                 :op2 (s45.h / have-03
+                             :ARG0 (s45.e / everyone
+                                          :polarity "-")
+                             :ARG1 (s45.d / doctorate
+                                          :mod (s45.p / philosophy)
+                                          :mod (s45.s / science))))
+   :snt46 (s46.w / way
+                 :direction (s46.i2 / it
+                                    :same-as s45.s)
+                 :domain (s46.t / that
+                                :beneficiary (s46.i / i
+                                                    :same-as s1.p)
+                                :same-as s8.i)
+                 :poss s46.i)
+   :snt47 (s47.t / thank-01
+                 :ARG1 (s47.y / you)))
+

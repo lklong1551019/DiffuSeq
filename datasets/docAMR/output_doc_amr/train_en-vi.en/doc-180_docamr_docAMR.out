@@ -1,0 +1,27 @@
+# ::id doc-180
+# ::doc_file doc-180
+# ::tok http : / / www . ted . com / talks / david_pogue_on_the_music_wars< / url> <next_sent> Ladies and gentlemen , the history of music and television on the Internet in three minutes . <next_sent> A TED medley -- a TEDley .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01
+                            :ARG0 (s1.p / person
+                                        :name (s1.n / name
+                                                    :op1 "David"))))
+   :snt2 (s2.h / history
+               :rel (s2.a2 / and
+                           :op1 (s2.l / lady)
+                           :op2 (s2.g / gentleman))
+               :time (s2.a / after
+                           :quant (s2.t2 / temporal-quantity
+                                         :unit (s2.m / minute)
+                                         :quant "3")
+                           :op1 (s2.n / now))
+               :topic (s2.a3 / and
+                             :medium (s2.i / internet)
+                             :op1 (s2.m2 / music)
+                             :op2 (s2.t / television)))
+   :snt3 (s3.m / medley
+               :mod (s3.t / thing
+                          :name (s3.n / name
+                                      :op1 "TED"))))
+

@@ -1,0 +1,489 @@
+# ::id doc-644
+# ::doc_file doc-644
+# ::tok http : / / www . ted . com / talks / marco_tempest_the_magic_of_truth_and_lies_on_ipods< / url> <next_sent> So the type of magic I like , and I 'm a magician , is a magic that uses technology to create illusions . <next_sent> So I would like to show you something I 've been working on . <next_sent> It 's an application that I think will be useful for artists -- multimedia artists in particular . <next_sent> It synchronizes videos across multiple screens of mobile devices . <next_sent> And I borrowed these three iPods from people here in the audience to show you what I mean . <next_sent> And I 'm going to use them to tell you a little bit about my favorite subject : deception . <next_sent> One of my favorite magicians is Karl Germain . <next_sent> He had this wonderful trick where a rosebush would bloom right in front of your eyes . <next_sent> But it was his production of a butterfly that was the most beautiful . <next_sent> Ladies and gentlemen , the creation of life . <next_sent> Marco Tempest : When asked about deception , he said this : Magic is the only honest profession . <next_sent> A magician promises to deceive you -- and he does . <next_sent> MT : I like to think of myself as an honest magician . <next_sent> I use a lot of tricks , which means that sometimes I have to lie to you . <next_sent> Now I feel bad about that . <next_sent> But people lie every day . <next_sent> Hold on . <next_sent> Girl in Phone : Hey , where are you ? <next_sent> MT : Stuck in traffic . <next_sent> I 'll be there soon . <next_sent> You 've all done it . <next_sent> Lady : I 'll be ready in just a minute , darling . <next_sent> It 's just what I 've always wanted . <next_sent> You were great . <next_sent> MT : Deception , it 's a fundamental part of life . <next_sent> Now polls show that men tell twice as many lies as women -- assuming the women they ask told the truth . <next_sent> We deceive to gain advantage and to hide our weaknesses . <next_sent> The Chinese general Sun Tzu said that all war was based on deception . <next_sent> Oscar Wilde said the same thing of romance . <next_sent> Some people deceive for money . <next_sent> Let 's play a game . <next_sent> Three cards , three chances . <next_sent> One five will get you 10 , 10 will get you 20 . <next_sent> Now where 's the lady ? <next_sent> Where is the queen ? <next_sent> MT : This one ? <next_sent> Sorry . <next_sent> You lose . <next_sent> Well , I did n't deceive you . <next_sent> You deceived yourself . <next_sent> Self - deception . <next_sent> That 's when we convince ourselves that a lie is the truth . <next_sent> Sometimes it 's hard to tell the two apart . <next_sent> Compulsive gamblers are experts at self - deception . <next_sent> They believe they can win . <next_sent> They forget the times they lose . <next_sent> The brain is very good at forgetting . <next_sent> Bad experiences are quickly forgotten . <next_sent> Bad experiences quickly disappear . <next_sent> Which is why in this vast and lonely cosmos , we are so wonderfully optimistic . <next_sent> Our self - deception becomes a positive illusion -- <next_sent> why movies are able to take us onto extraordinary adventures ; <next_sent> why we believe Romeo when he says he loves Juliet ; <next_sent> and why single notes of music , when played together , become a sonata and conjure up meaning . <next_sent> That 's " Clair de Lune . " <next_sent> Its composer called Debussy said that art was the greatest deception of all . <next_sent> Art is a deception that creates real emotions -- a lie that creates a truth . <next_sent> And when you give yourself over to that deception , it becomes magic . <next_sent> Thank you . <next_sent> Thank you very much .
+(d / document
+   :snt1 (s1.u / url-entity
+               :value "Magic")
+   :snt2 (s2.i3 / infer-01
+                :ARG2 (s2.a / and
+                            :op1 (s2.i / i)
+                            :op2 (s2.m2 / magician
+                                        :domain s2.i))
+                :rel (s2.u / use-01
+                           :ARG1 (s2.t / technology)
+                           :ARG2 (s2.c / create-01
+                                       :ARG0 (s2.m / magic
+                                                   :ARG1-of (s2.l / like-01
+                                                                  :ARG0 s2.i)
+                                                   :mod (s2.t2 / type))
+                                       :ARG1 (s2.i2 / illusion))
+                           :ARG0 s2.m))
+   :snt3 (s3.c / cause-01
+               :ARG1 (s3.l / like-02
+                           :ARG0 (s3.i / i
+                                       :same-as s2.i)
+                           :ARG1 (s3.s / show-01
+                                       :ARG0 s3.i
+                                       :ARG1 (s3.s2 / something
+                                                    :ARG1-of (s3.w / work-01
+                                                                   :ARG0 s3.i))
+                                       :ARG2 (s3.y / you))))
+   :snt4 (s4.a / application
+               :ARG1-of (s4.u / useful-05
+                              :ARG1-of (s4.t / think-01
+                                             :ARG0 (s4.i / i
+                                                         :same-as s2.i))
+                              :ARG2 (s4.a2 / artist
+                                           :example (s4.a3 / artist
+                                                           :mod (s4.m / multimedia)
+                                                           :mod (s4.p / particular))))
+               :domain (s4.i2 / it
+                              :same-as s3.s2))
+   :snt5 (s5.s2 / synchronize-01
+                :ARG0 (s5.i / it
+                            :same-as s3.s2)
+                :ARG1 (s5.v / video)
+                :ARG3 (s5.s / screen
+                            :quant (s5.m2 / multiple)
+                            :part-of (s5.d / device
+                                           :ARG1-of (s5.m / mobile-02))))
+   :snt6 (s6.a / and
+               :op2 (s6.b / borrow-01
+                          :purpose (s6.s / show-01
+                                         :ARG0 (s6.i / i
+                                                     :same-as s2.i)
+                                         :ARG1 (s6.t / thing
+                                                     :ARG2-of (s6.m / mean-01
+                                                                    :ARG0 s6.i))
+                                         :ARG2 (s6.y / you
+                                                     :same-as s3.y))
+                          :ARG0 s6.i
+                          :ARG1 (s6.p2 / product
+                                       :name (s6.n / name
+                                                   :op1 "Democrat"
+                                                   :op2 "i")
+                                       :mod (s6.t2 / this)
+                                       :quant "3")
+                          :ARG2 (s6.p / person
+                                      :location (s6.h / here
+                                                      :location-of (s6.a2 / audience)))))
+   :snt7 (s7.a / and
+               :op2 (s7.u / use-01
+                          :ARG0 (s7.i / i
+                                      :same-as s2.i)
+                          :ARG1 (s7.t2 / they
+                                       :same-as s6.p2)
+                          :ARG2 (s7.t / tell-01
+                                      :ARG0 s7.i
+                                      :ARG1 (s7.b / bit
+                                                  :mod (s7.l / little))
+                                      :ARG2 (s7.y / you
+                                                  :same-as s3.y)
+                                      :topic (s7.s / subject
+                                                   :ARG1-of (s7.f / favor-01
+                                                                  :ARG0 s7.i)
+                                                   :mod (s7.d / deceive-01)))))
+   :snt8 (s8.i2 / include-91
+                :ARG1 (s8.p / person
+                            :name (s8.n / name
+                                        :op1 "Karl"
+                                        :op2 "Germain"))
+                :ARG2 (s8.m / magician
+                            :ARG1-of (s8.f / favor-01
+                                           :ARG0 (s8.i / i
+                                                       :same-as s2.i))))
+   :snt9 (s9.h / have-03
+               :ARG0 (s9.h2 / he
+                            :same-as s8.p)
+               :ARG1 (s9.t / trick-01
+                           :ARG0-of (s9.c / cause-01
+                                          :ARG1 (s9.f / flower
+                                                      :domain (s9.r2 / rosebush)
+                                                      :location (s9.i / in-front-of
+                                                                      :mod (s9.r / right)
+                                                                      :op1 (s9.e / eye
+                                                                                 :part-of (s9.y / you)))))
+                           :ARG1-of (s9.w / wonderful-03)))
+   :snt10 (s10.c / contrast-01
+                 :ARG2 (s10.h / have-degree-91
+                              :ARG1 (s10.p / produce-01
+                                           :ARG0 (s10.h2 / he
+                                                         :same-as s8.p)
+                                           :ARG1 (s10.b2 / butterfly))
+                              :ARG2 (s10.b / beautiful-02
+                                           :ARG1 s10.p)
+                              :ARG3 (s10.m / most)))
+   :snt11 (s11.c / create-01
+                 :ARG1 (s11.l3 / life)
+                 :source (s11.a / and
+                                :op1 (s11.l / lady)
+                                :op2 (s11.l2 / lady)))
+   :snt12 (s12.s / say-01
+                 :ARG0 (s12.p / person
+                              :name (s12.n / name
+                                           :op1 "Marco"
+                                           :op2 "Tempest")
+                              :same-as s2.i)
+                 :ARG1 (s12.p2 / profession
+                               :ARG0-of (s12.h / honest-01)
+                               :domain (s12.m / magic)
+                               :mod (s12.o / only))
+                 :time (s12.a / ask-01
+                              :ARG1 (s12.d / deceive-01)
+                              :ARG2 s12.p))
+   :snt13 (s13.a / and
+                 :op1 (s13.p / promise-01
+                             :ARG0 (s13.m / magician)
+                             :ARG2 (s13.d / deceive-01
+                                          :ARG0 s13.m
+                                          :ARG1 (s13.y / you)))
+                 :op2 (s13.d2 / do-02
+                              :ARG0 s13.m
+                              :ARG1 s13.d))
+   :snt14 (s14.s / say-01
+                 :ARG0 (s14.p / person
+                              :name (s14.n / name
+                                           :op1 "MT"))
+                 :ARG1 (s14.l / like-01
+                              :ARG0 s14.p
+                              :ARG1 (s14.t / think-01
+                                           :ARG0 s14.p
+                                           :ARG1 s14.p
+                                           :ARG2 (s14.m / magician
+                                                        :ARG0-of (s14.h / honest-01)))))
+   :snt15 (s15.u / use-01
+                 :ARG0 (s15.i / i
+                              :same-as s2.i)
+                 :ARG1 (s15.t / trick-01
+                              :quant (s15.l2 / lot))
+                 :ARG1-of (s15.m / mean-01
+                                 :ARG2 (s15.o / obligate-01
+                                              :ARG1 s15.i
+                                              :ARG2 (s15.l / lie-08
+                                                           :ARG0 s15.i
+                                                           :ARG2 (s15.y / you
+                                                                        :same-as s3.y)
+                                                           :frequency (s15.s / sometimes)))))
+   :snt16 (s16.f / feel-01
+                 :ARG0 (s16.i / i
+                              :same-as s2.i)
+                 :ARG1 (s16.b / bad-07
+                              :ARG1 s16.i)
+                 :ARG2 (s16.t / that
+                              :same-as s15.o)
+                 :time (s16.n / now))
+   :snt17 (s17.c / contrast-01
+                 :ARG2 (s17.l / lie-08
+                              :ARG0 (s17.p / person)
+                              :frequency (s17.r / rate-entity-91
+                                                :ARG3 (s17.t / temporal-quantity
+                                                             :unit (s17.d / day)
+                                                             :quant "1"))))
+   :snt18 (s18.h / hold-on-05
+                 :ARG1 (s18.y / you))
+   :snt19 (s19.s / say-01
+                 :ARG0 (s19.g / girl
+                              :location (s19.p / phone))
+                 :ARG1 (s19.b / be-located-at-91
+                              :ARG1 (s19.y / you
+                                           :same-as s2.i)
+                              :ARG2 (s19.a / amr-unknown))
+                 :mod (s19.h / hey))
+   :snt20 (s20.s / stick-01
+                 :ARG1 (s20.p / person
+                              :name (s20.n / name
+                                           :op1 "MT")
+                              :same-as s2.i)
+                 :ARG2 (s20.t / traffic))
+   :snt21 (s21.b / be-located-at-91
+                 :ARG1 (s21.i / i
+                              :same-as s2.i)
+                 :ARG2 (s21.t / there)
+                 :time (s21.s / soon))
+   :snt22 (s22.d / do-02
+                 :ARG0 (s22.y / you
+                              :mod (s22.a / all)
+                              :same-as s3.y)
+                 :ARG1 (s22.i / it))
+   :snt23 (s23.s / say-01
+                 :ARG0 (s23.p / person)
+                 :ARG1 (s23.r / ready-01
+                              :ARG1 (s23.i / i
+                                           :same-as s23.p)
+                              :time (s23.a / after
+                                           :mod (s23.j / just)
+                                           :op1 (s23.n / now)))
+                 :ARG2 (s23.d / darling)
+                 :rel (s23.t / temporal-quantity
+                             :mod s23.j
+                             :unit (s23.m / minute)
+                             :quant "1"))
+   :snt24 (s24.w / want-01
+                 :ARG0 (s24.i / i
+                              :same-as s23.p)
+                 :ARG1 (s24.i2 / it)
+                 :mod (s24.j / just)
+                 :time (s24.a / always))
+   :snt25 (s25.g / great
+                 :domain (s25.y / you
+                                :same-as s3.y))
+   :snt26 (s26.s / say-01
+                 :ARG0 (s26.p / person
+                              :name (s26.n / name
+                                           :op1 "MT"))
+                 :rel (s26.d / deceive-01
+                             :mod (s26.f / fundamental)
+                             :part-of (s26.l / life)))
+   :snt27 (s27.s / show-01
+                 :ARG0 (s27.p / poll-01)
+                 :ARG1 (s27.t / tell-01
+                              :ARG0 (s27.m / man)
+                              :ARG1 (s27.l / lie-08
+                                           :ARG1-of (s27.h / have-quant-91
+                                                           :ARG3 (s27.t4 / times
+                                                                         :quant "2")
+                                                           :ARG4 (s27.l2 / lie-08
+                                                                         :ARG0 (s27.w / woman))
+                                                           :ARG4 (s27.w2 / woman
+                                                                         :ARG2-of (s27.a / ask-01
+                                                                                         :ARG0 (s27.t3 / they
+                                                                                                       :same-as s27.m))))))
+                 :condition (s27.a2 / assume-02
+                                    :ARG1 (s27.t2 / tell-01
+                                                  :ARG0 s27.w2
+                                                  :ARG1 (s27.t5 / truth)))
+                 :time (s27.n / now))
+   :snt28 (s28.d / deceive-01
+                 :purpose (s28.a2 / and
+                                  :op1 (s28.g / gain-02
+                                              :ARG0 (s28.w / we)
+                                              :ARG1 (s28.a / advantage-01
+                                                           :ARG2 s28.w))
+                                  :op2 (s28.h / hide-01
+                                              :ARG0 s28.w
+                                              :ARG1 (s28.w2 / weak-02
+                                                            :ARG1 s28.w)))
+                 :ARG0 s28.w)
+   :snt29 (s29.s / say-01
+                 :ARG0 (s29.p / person
+                              :name (s29.n2 / name
+                                            :op1 "Sun"
+                                            :op2 "Tzu")
+                              :ARG0-of (s29.h / have-org-role-91
+                                              :ARG1 (s29.c / country
+                                                           :name (s29.n / name
+                                                                        :op1 "China"))
+                                              :ARG2 (s29.g / general)))
+                 :ARG1 (s29.b / base-02
+                              :ARG1 (s29.w / war
+                                           :mod (s29.a / all))
+                              :ARG2 (s29.d / deceive-01)))
+   :snt30 (s30.s2 / say-01
+                  :ARG0 (s30.p / person
+                               :name (s30.n / name
+                                            :op1 "Oscar"
+                                            :op2 "Wilde"))
+                  :ARG1 (s30.t / thing
+                               :ARG1-of (s30.s / same-01)
+                               :topic (s30.r / romance)))
+   :snt31 (s31.d / deceive-01
+                 :purpose (s31.m / money)
+                 :ARG0 (s31.p / person
+                              :mod (s31.s / some)))
+   :snt32 (s32.p / play-01
+                 :ARG0 (s32.w / we)
+                 :ARG1 (s32.g / game)
+                 :mode "imperative")
+   :snt33 (s33.a / and
+                 :op1 (s33.c / card
+                             :quant "3")
+                 :op2 (s33.c2 / chance-02
+                              :quant "3"))
+   :snt34 (s34.a / and
+                 :op1 (s34.g / get-01
+                             :ARG0 (s34.o / one
+                                          :quant "5")
+                             :ARG1 (s34.t / thing
+                                          :poss (s34.y / you)
+                                          :quant "10")
+                             :ARG2 s34.y)
+                 :op2 (s34.g2 / get-01
+                              :ARG1 (s34.t2 / thing
+                                            :quant "20")
+                              :ARG0 "10"))
+   :snt35 (s35.b / be-located-at-91
+                 :ARG1 (s35.l / lady)
+                 :ARG2 (s35.a / amr-unknown))
+   :snt36 (s36.q / queen
+                 :location (s36.a / amr-unknown))
+   :snt37 (s37.s / say-01
+                 :ARG0 (s37.p / person
+                              :name (s37.n / name
+                                           :op1 "MT"))
+                 :ARG1 (s37.o / one
+                              :mod (s37.t / this))
+                 :polarity (s37.a / amr-unknown
+                                  :same-as s35.l))
+   :snt38 (s38.s / sorry-01)
+   :snt39 (s39.l / lose-02
+                 :ARG0 (s39.y / you
+                              :same-as s3.y))
+   :snt40 (s40.d / deceive-01
+                 :ARG0 (s40.i / i
+                              :same-as s2.i)
+                 :ARG1 (s40.y / you
+                              :same-as s3.y)
+                 :mod (s40.w / well)
+                 :polarity "-")
+   :snt41 (s41.d / deceive-01
+                 :ARG0 (s41.y / you
+                              :same-as s2.i)
+                 :ARG1 s41.y)
+   :snt42 (s42.d / deceive-01
+                 :ARG1 (s42.s / self))
+   :snt43 (s43.b / be-temporally-at-91
+                 :ARG1 (s43.c / convince-01
+                              :ARG0 (s43.w / we)
+                              :ARG1 s43.w
+                              :ARG2 (s43.t2 / true-01
+                                            :ARG1 (s43.l / lie-08)))
+                 :ARG2 (s43.t / that))
+   :snt44 (s44.h / hard-02
+                 :ARG1 (s44.t / tell-02
+                              :ARG1 (s44.t2 / two)
+                              :ARG2 (s44.a / apart))
+                 :time (s44.s / sometimes))
+   :snt45 (s45.e / expert-01
+                 :ARG1 (s45.p / person
+                              :ARG0-of (s45.g / gamble-01)
+                              :ARG1-of (s45.a / addictive-02))
+                 :ARG2 (s45.d / deceive-01
+                              :ARG0 s45.p
+                              :ARG1 s45.p))
+   :snt46 (s46.b / believe-01
+                 :ARG0 (s46.t / they
+                              :same-as s45.p)
+                 :ARG1 (s46.p / possible-01
+                              :ARG1 (s46.w / win-01
+                                           :ARG0 s46.t)))
+   :snt47 (s47.f / forget-01
+                 :ARG0 (s47.t / they
+                              :same-as s45.p)
+                 :ARG1 (s47.t2 / time
+                               :time-of (s47.l / lose-03
+                                               :ARG0 s47.t)))
+   :snt48 (s48.g / good-03
+                 :ARG1 (s48.b / brain)
+                 :ARG2 (s48.f / forget-01
+                              :ARG0 s48.b)
+                 :degree (s48.v / very))
+   :snt49 (s49.f / forget-01
+                 :ARG1 (s49.t / thing
+                              :ARG1-of (s49.b / bad-07)
+                              :ARG1-of (s49.e / experience-01))
+                 :ARG1-of (s49.q / quick-02))
+   :snt50 (s50.d / disappear-01
+                 :ARG1 (s50.t / thing
+                              :ARG1-of (s50.b / bad-07)
+                              :ARG1-of (s50.e / experience-01))
+                 :ARG1-of (s50.q / quick-02))
+   :snt51 (s51.c / cause-01
+                 :ARG1 (s51.o / optimistic
+                              :ARG1-of (s51.w2 / wonderful-03
+                                               :degree (s51.s / so))
+                              :domain (s51.w / we)
+                              :location (s51.c2 / cosmos
+                                                :mod (s51.l / lonely)
+                                                :mod (s51.v / vast)
+                                                :mod (s51.t / this))))
+   :snt52 (s52.b / become-01
+                 :ARG1 (s52.d / deceive-01
+                              :ARG0 (s52.w / we)
+                              :ARG1 s52.w)
+                 :ARG2 (s52.i / illusion
+                              :mod (s52.p / positive)))
+   :snt53 (s53.c / cause-01
+                 :ARG1 (s53.p / possible-01
+                              :ARG1 (s53.t / take-01
+                                           :ARG0 (s53.m / movie)
+                                           :ARG1 (s53.w / we)
+                                           :ARG3 (s53.a / adventure
+                                                        :mod (s53.e / extraordinary)))))
+   :snt54 (s54.c / cause-01
+                 :ARG1 (s54.b / believe-01
+                              :ARG0 (s54.w / we)
+                              :ARG1 (s54.p / person
+                                           :name (s54.n / name
+                                                        :op1 "Romeo"))
+                              :time (s54.s / say-01
+                                           :ARG0 s54.p
+                                           :ARG1 (s54.l / love-01
+                                                        :ARG0 s54.p
+                                                        :ARG1 (s54.p2 / person
+                                                                      :name (s54.n2 / name
+                                                                                    :op1 "Juliet"))))))
+   :snt55 (s55.a / and
+                 :op2 (s55.c / cause-01
+                             :ARG1 (s55.a2 / and
+                                           :op1 (s55.b / become-01
+                                                       :ARG1 (s55.n / note
+                                                                    :ARG1-of (s55.s / single-02)
+                                                                    :part-of (s55.m2 / music))
+                                                       :ARG2 (s55.s2 / sonata)
+                                                       :time (s55.p / play-11
+                                                                    :ARG1 s55.n
+                                                                    :manner (s55.t2 / together)))
+                                           :op2 (s55.i / invoke-01
+                                                       :ARG0 s55.n
+                                                       :ARG1 (s55.t / thing
+                                                                    :ARG2-of (s55.m / mean-01))))))
+   :snt56 (s56.l / location
+                 :name (s56.n / name
+                              :op1 "Clair"
+                              :op2 "de"
+                              :op3 "Lune")
+                 :domain (s56.t / that))
+   :snt57 (s57.s / say-01
+                 :ARG0 (s57.p / person
+                              :name (s57.n / name
+                                           :op1 "Debussy")
+                              :ARG0-of (s57.c / compose-02
+                                              :ARG1 (s57.i / it
+                                                           :same-as s56.n)))
+                 :ARG1 (s57.d / deceive-01
+                              :ARG0 (s57.a2 / art)
+                              :ARG1-of (s57.h / have-degree-91
+                                              :ARG2 (s57.g / great)
+                                              :ARG3 (s57.m / most)
+                                              :ARG5 (s57.a / all))))
+   :snt58 (s58.a / and
+                 :op1 (s58.d / deceive-01
+                             :ARG0-of (s58.c / create-01
+                                             :ARG1 (s58.e / emotion
+                                                          :ARG1-of (s58.r / real-04)))
+                             :ARG1 (s58.a2 / art))
+                 :op2 (s58.l / lie-08
+                             :ARG0-of (s58.c2 / create-01
+                                              :ARG1 (s58.t / thing
+                                                           :ARG1-of (s58.t2 / true-01)))
+                             :ARG1 s58.a2))
+   :snt59 (s59.a / and
+                 :op2 (s59.b / become-01
+                             :ARG1 (s59.d / deceive-01
+                                          :ARG1 (s59.y / you)
+                                          :mod (s59.t / that)
+                                          :same-as s58.l)
+                             :ARG2 (s59.m / magic)
+                             :condition (s59.g / give-in-09
+                                               :ARG0 s59.y
+                                               :ARG1 s59.y
+                                               :ARG2 s59.d)))
+   :snt60 (s60.t / thank-01
+                 :ARG1 (s60.y / you))
+   :snt61 (s61.t / thank-01
+                 :ARG0 (s61.i / i)
+                 :ARG1 (s61.y / you
+                              :same-as s60.y)
+                 :mod (s61.m / much
+                             :degree (s61.v / very))))
+

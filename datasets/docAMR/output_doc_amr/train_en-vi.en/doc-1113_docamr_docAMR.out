@@ -1,0 +1,658 @@
+# ::id doc-1113
+# ::doc_file doc-1113
+# ::tok http : / / www . ted . com / talks / janet_iwasa_how_animations_can_help_scientists_test_a_hypothesis< / url> <next_sent> Take a look at this drawing . <next_sent> Can you tell what it is ? <next_sent> I 'm a molecular biologist by training , and I 've seen a lot of these kinds of drawings . <next_sent> They 're usually referred to as a model figure , a drawing that shows how we think a cellular or molecular process occurs . <next_sent> There 's a problem with this drawing , though , and it 's mainly in what it does n't show . <next_sent> From lots of experiments , from lots of different scientists , we know a lot about what these molecules look like , how they move around in the cell , and that this is all taking place in an incredibly dynamic environment . <next_sent> So in collaboration with a clathrin expert Tomas Kirchhausen , we decided to create a new kind of model figure that showed all of that . <next_sent> So we start outside of the cell . <next_sent> Now we 're looking inside . <next_sent> Clathrin are these three - legged molecules that can self - assemble into soccer - ball - like shapes . <next_sent> Through connections with a membrane , clathrin is able to deform the membrane and form this sort of a cup that forms this sort of a bubble , or a vesicle , that 's now capturing some of the proteins that were outside of the cell . <next_sent> Proteins are coming in now that basically pinch off this vesicle , making it separate from the rest of the membrane , and now clathrin is basically done with its job , and so proteins are coming in now — we 've covered them yellow and orange — that are responsible for taking apart this clathrin cage . <next_sent> And so all of these proteins can get basically recycled and used all over again . <next_sent> These processes are too small to be seen directly , even with the best microscopes , so animations like this provide a really powerful way of visualizing a hypothesis . <next_sent> Here 's another illustration , and this is a drawing of how a researcher might think that the HIV virus gets into and out of cells . <next_sent> And again , this is a vast oversimplification and does n't begin to show what we actually know about these processes . <next_sent> You might be surprised to know that these simple drawings are the only way that most biologists visualize their molecular hypotheses . <next_sent> Why ? <next_sent> Because creating movies of processes as we think they actually occur is really hard . <next_sent> I spent months in Hollywood learning 3D animation software , and I spend months on each animation , and that 's just time that most researchers ca n't afford . <next_sent> The payoffs can be huge , though . <next_sent> Molecular animations are unparalleled in their ability to convey a great deal of information to broad audiences with extreme accuracy . <next_sent> And I 'm working on a new project now called " The Science of HIV " where I 'll be animating the entire life cycle of the HIV virus as accurately as possible and all in molecular detail . <next_sent> The animation will feature data from thousands of researchers collected over decades , data on what this virus looks like , how it 's able to infect cells in our body , and how therapeutics are helping to combat infection . <next_sent> Over the years , I found that animations are n't just useful for communicating an idea , but they 're also really useful for exploring a hypothesis . <next_sent> Biologists for the most part are still using a paper and pencil to visualize the processes they study , and with the data we have now , that 's just not good enough anymore . <next_sent> The process of creating an animation can act as a catalyst that allows researchers to crystalize and refine their own ideas . <next_sent> One researcher I worked with who works on the molecular mechanisms of neurodegenerative diseases came up with experiments that were related directly to the animation that she and I worked on together , and in this way , animation can feed back into the research process . <next_sent> I believe that animation can change biology . <next_sent> It can change the way that we communicate with one another , how we explore our data and how we teach our students . <next_sent> But for that change to happen , we need more researchers creating animations , and toward that end , I brought together a team of biologists , animators and programmers to create a new , free , open - source software — we call it Molecular Flipbook — that 's created just for biologists just to create molecular animations . <next_sent> From our testing , we 've found that it only takes 15 minutes for a biologist who has never touched animation software before to create her first molecular animation of her own hypothesis . <next_sent> We 're also building an online database where anyone can view , download and contribute their own animations . <next_sent> We 're really excited to announce that the beta version of the molecular animation software toolkit will be available for download today . <next_sent> We are really excited to see what biologists will create with it and what new insights they 're able to gain their own model figures . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :rel (s1.r / rational
+                          :polarity "-"))
+   :snt2 (s2.l / look-01
+               :ARG0 (s2.y / you)
+               :ARG1 (s2.d / drawing
+                           :mod (s2.t / this))
+               :mode "imperative")
+   :snt3 (s3.p / possible-01
+               :ARG1 (s3.t / tell-02
+                           :ARG0 (s3.y / you)
+                           :ARG1 (s3.t2 / thing
+                                        :domain (s3.i / it
+                                                      :same-as s2.d)))
+               :polarity (s3.a / amr-unknown))
+   :snt4 (s4.a / and
+               :op1 (s4.b / biologist
+                          :ARG2-of (s4.t2 / train-01)
+                          :domain (s4.i / i
+                                        :same-as s3.y)
+                          :mod (s4.m / molecule))
+               :op2 (s4.s / see-01
+                          :ARG0 s4.i
+                          :ARG1 (s4.d / draw-01
+                                      :quant (s4.l / lot)
+                                      :mod (s4.k / kind
+                                                 :mod (s4.t / this)))))
+   :snt5 (s5.r / refer-01
+               :ARG1 (s5.t / they
+                           :same-as s4.k)
+               :ARG2 (s5.f / figure
+                           :ARG1-of (s5.m / model-01)
+                           :domain (s5.d / draw-01
+                                         :ARG0-of (s5.s / show-01
+                                                        :ARG1 (s5.t2 / thing
+                                                                     :manner-of (s5.t3 / think-01
+                                                                                       :ARG0 (s5.w / we)
+                                                                                       :ARG1 (s5.p / process-02
+                                                                                                   :ARG1 (s5.o / or
+                                                                                                               :op1 (s5.c / cell)
+                                                                                                               :op2 (s5.m2 / molecule))))))))
+               :mod (s5.u / usual))
+   :snt6 (s6.a / and
+               :ARG1-of (s6.h / have-concession-91)
+               :op1 (s6.p / problem
+                          :topic (s6.d / drawing
+                                       :mod (s6.t2 / this)
+                                       :same-as s2.d))
+               :op2 (s6.c / concern-02
+                          :ARG0 (s6.t / thing
+                                      :ARG1-of (s6.s / show-01
+                                                     :ARG0 s6.d
+                                                     :polarity "-"))
+                          :ARG1 s6.p
+                          :mod (s6.m / main)))
+   :snt7 (s7.k / know-01
+               :ARG0 (s7.w / we)
+               :ARG1 (s7.l3 / lot
+                            :topic (s7.a / and
+                                         :op1 (s7.l / look-02
+                                                    :ARG0 (s7.m / molecule
+                                                                :mod (s7.t2 / this)))
+                                         :op2 (s7.t / thing
+                                                    :manner-of (s7.m2 / move-01
+                                                                      :ARG1 s7.m
+                                                                      :location (s7.c / cell)
+                                                                      :path (s7.a2 / around)))
+                                         :op3 (s7.b / be-located-at-91
+                                                    :ARG2 (s7.e / environment
+                                                                :mod (s7.d2 / dynamic
+                                                                            :degree (s7.i / incredible))))
+                                         :ARG1-of s7.b))
+               :rel (s7.e2 / experiment-01
+                           :quant (s7.l2 / lot))
+               :rel (s7.s / scientist
+                          :quant s7.l2
+                          :ARG1-of (s7.d / differ-02)))
+   :snt8 (s8.c / cause-01
+               :ARG1 (s8.d / decide-01
+                           :ARG0 (s8.w / we
+                                       :same-as s7.w)
+                           :ARG1 (s8.c4 / create-01
+                                        :ARG0 s8.w
+                                        :ARG1 (s8.f / figure
+                                                    :ARG0-of (s8.s / show-01
+                                                                   :ARG1 (s8.t / that
+                                                                               :mod (s8.a / all)))
+                                                    :ARG1-of (s8.m / model-01)
+                                                    :mod (s8.k / kind
+                                                               :ARG1-of (s8.n2 / new-01))))
+                           :ARG2-of (s8.c3 / collaborate-01
+                                           :ARG0 s8.w
+                                           :ARG1 (s8.p / person
+                                                       :name (s8.n / name
+                                                                   :op1 "Tomas"
+                                                                   :op2 "Kirchhausen")
+                                                       :ARG1-of (s8.e / expert-01
+                                                                      :ARG2 (s8.c2 / cleric))))))
+   :snt9 (s9.s / start-01
+               :ARG0 (s9.w / we
+                           :same-as s7.w)
+               :location (s9.o / outside
+                               :op1 (s9.c / cell)))
+   :snt10 (s10.l / look-01
+                 :ARG0 (s10.w / we
+                              :same-as s7.w)
+                 :ARG1 (s10.i / inside)
+                 :time (s10.n / now))
+   :snt11 (s11.m / molecule
+                 :ARG0-of (s11.a / assemble-02
+                                 :ARG1-of (s11.p / possible-01)
+                                 :manner (s11.s / shape-01
+                                                :ARG1-of (s11.r / resemble-01
+                                                                :ARG2 (s11.b / ball
+                                                                             :mod (s11.s2 / soccer)))))
+                 :domain (s11.p2 / product
+                                 :name (s11.n / name
+                                              :op1 "Clathrin"))
+                 :mod (s11.t / this)
+                 :part (s11.l / leg
+                              :quant "3"))
+   :snt12 (s12.p / possible-01
+                 :ARG1 (s12.a / and
+                              :op1 (s12.d / deform-01
+                                          :ARG0 (s12.s / small-molecule
+                                                       :name (s12.n / name
+                                                                    :op1 "clathrin"))
+                                          :ARG1 (s12.m / membrane))
+                              :op2 (s12.f / form-01
+                                          :ARG0 s12.s
+                                          :ARG1 (s12.c4 / cup
+                                                        :ARG0-of (s12.f2 / form-01
+                                                                         :ARG1 (s12.o / or
+                                                                                      :ARG0-of (s12.c / capture-01
+                                                                                                      :ARG1 (s12.p2 / protein
+                                                                                                                    :quant (s12.s2 / some)
+                                                                                                                    :ARG1-of (s12.i / include-91
+                                                                                                                                    :ARG2 (s12.p3 / protein
+                                                                                                                                                  :location (s12.o2 / outside
+                                                                                                                                                                    :op1 (s12.c2 / cell
+                                                                                                                                                                                 :same-as s9.c)))))
+                                                                                                      :time (s12.n2 / now))
+                                                                                      :op1 (s12.b / bubble
+                                                                                                  :mod (s12.s3 / sort
+                                                                                                               :mod (s12.t / this)))
+                                                                                      :op2 (s12.v / vesicle)))
+                                                        :mod s12.s3)))
+                 :manner (s12.c3 / connect-01
+                                 :ARG1 s12.s
+                                 :ARG2 s12.m))
+   :snt13 (s13.a / and
+                 :op1 (s13.c4 / come-in-07
+                              :ARG1 (s13.p2 / protein
+                                            :ARG0-of (s13.p / pinch-01
+                                                            :ARG1 (s13.v / vesicle
+                                                                         :mod (s13.t2 / this)
+                                                                         :same-as s12.s3)
+                                                            :manner (s13.m / make-02
+                                                                           :ARG1 (s13.s / separate-02
+                                                                                        :ARG1 s13.v
+                                                                                        :ARG2 (s13.r2 / rest
+                                                                                                      :part-of (s13.m2 / membrane
+                                                                                                                       :same-as s12.m))))
+                                                            :mod (s13.b / basic)))
+                              :time (s13.n2 / now))
+                 :op2 (s13.c2 / cause-01
+                              :ARG0 (s13.d / do-02
+                                           :ARG1 (s13.j / job
+                                                        :poss (s13.p4 / protein
+                                                                      :name (s13.n / name
+                                                                                   :op1 "clathrin")
+                                                                      :ARG1-of s13.d))
+                                           :mod (s13.b2 / basic))
+                              :ARG1 (s13.c3 / come-01
+                                            :ARG1 (s13.p3 / protein
+                                                          :ARG2-of (s13.c5 / cover-02
+                                                                           :ARG0 (s13.w / we
+                                                                                        :same-as s7.w)
+                                                                           :ARG1 (s13.a2 / and
+                                                                                         :ARG0-of (s13.r / responsible-01
+                                                                                                         :ARG1 (s13.t / take-away-05
+                                                                                                                      :ARG0 s13.a2
+                                                                                                                      :ARG1 (s13.c / cage
+                                                                                                                                   :mod s13.p4)))
+                                                                                         :op1 (s13.y / yellow-02)
+                                                                                         :op2 (s13.o / orange))))
+                                            :time s13.n2)))
+   :snt14 (s14.a4 / and
+                  :op2 (s14.p / possible-01
+                              :ARG1 (s14.a5 / and
+                                            :op1 (s14.r / recycle-01
+                                                        :ARG1 (s14.p2 / protein
+                                                                      :mod (s14.t / this)
+                                                                      :mod (s14.a2 / all))
+                                                        :mod (s14.b / basic))
+                                            :op2 (s14.u / use-01
+                                                        :ARG1 s14.p2
+                                                        :mod (s14.a / again
+                                                                    :mod (s14.a3 / all-over))))))
+   :snt15 (s15.c2 / cause-01
+                  :ARG0 (s15.h / have-degree-91
+                               :ARG1 (s15.p2 / process-02
+                                             :mod (s15.t2 / this))
+                               :ARG2 (s15.s2 / small)
+                               :ARG3 (s15.t4 / too)
+                               :ARG6 (s15.s / see-01
+                                            :ARG1 s15.p2
+                                            :ARG1-of (s15.d / direct-02))
+                               :concession (s15.e / even
+                                                  :op1 (s15.l / lens
+                                                              :ARG1-of (s15.h2 / have-degree-91
+                                                                               :ARG2 (s15.g / good-03
+                                                                                            :ARG1 s15.l)
+                                                                               :ARG3 (s15.m / most)))))
+                  :ARG1 (s15.p3 / provide-01
+                                :ARG0 (s15.c / cartoon
+                                             :ARG1-of (s15.r2 / resemble-01
+                                                              :ARG2 (s15.t3 / this
+                                                                            :same-as s2.d)))
+                                :ARG1 (s15.w / way
+                                             :ARG1-of (s15.p / powerful-02
+                                                             :degree (s15.r / really))
+                                             :manner-of (s15.v / visualize-01
+                                                               :ARG1 (s15.t / thing
+                                                                            :ARG1-of (s15.h3 / hypothesize-01))))))
+   :snt16 (s16.a / and
+                 :op1 (s16.i / illustrate-01
+                             :location (s16.h / here)
+                             :mod (s16.a3 / another))
+                 :op2 (s16.d / draw-01
+                             :ARG1 (s16.t / thing
+                                          :manner-of (s16.p2 / possible-01
+                                                             :ARG1 (s16.t2 / think-01
+                                                                           :ARG0 (s16.p / person
+                                                                                        :ARG0-of (s16.r / research-01))
+                                                                           :ARG1 (s16.a2 / and
+                                                                                         :op1 (s16.g / get-05
+                                                                                                     :ARG1 (s16.v / virus
+                                                                                                                  :name (s16.n / name
+                                                                                                                               :op1 "HIV"))
+                                                                                                     :ARG2 (s16.c / cell))
+                                                                                         :op2 (s16.o / out-06
+                                                                                                     :ARG1 s16.v
+                                                                                                     :ARG2 s16.c)))))
+                             :mod (s16.t3 / this
+                                          :same-as s16.a3)))
+   :snt17 (s17.a3 / and
+                  :mod (s17.a2 / again)
+                  :op2 (s17.a4 / and
+                               :op1 (s17.o / oversimplify-01
+                                           :ARG1 (s17.t2 / this)
+                                           :mod (s17.v / vast))
+                               :op2 (s17.b / begin-01
+                                           :ARG0 s17.t2
+                                           :ARG1 (s17.s / show-01
+                                                        :ARG0 s17.t2
+                                                        :ARG1 (s17.t / thing
+                                                                     :ARG1-of (s17.k / know-01
+                                                                                     :ARG0 (s17.w / we)
+                                                                                     :ARG1-of (s17.a / actual-02))
+                                                                     :topic (s17.p / process-02
+                                                                                   :mod (s17.t3 / this)
+                                                                                   :same-as s15.p2)))
+                                           :polarity "-")))
+   :snt18 (s18.p / possible-01
+                 :ARG1 (s18.s2 / surprise-01
+                               :ARG0 (s18.k / know-01
+                                            :ARG0 (s18.y / you)
+                                            :ARG1 (s18.w / way
+                                                         :domain (s18.t / thing
+                                                                        :ARG1-of (s18.s / simple-02)
+                                                                        :ARG1-of (s18.d / draw-01)
+                                                                        :mod (s18.t3 / this))
+                                                         :manner-of (s18.v / visualize-01
+                                                                           :ARG0 (s18.b / biologist
+                                                                                        :quant (s18.m2 / most))
+                                                                           :ARG1 (s18.t2 / thing
+                                                                                         :ARG1-of (s18.h / hypothesize-01
+                                                                                                         :ARG0 s18.b
+                                                                                                         :mod (s18.m / molecule))))
+                                                         :mod (s18.o / only)))
+                               :ARG1 s18.y))
+   :snt19 (s19.c / cause-01
+                 :ARG0 (s19.a / amr-unknown))
+   :snt20 (s20.c / cause-01
+                 :ARG0 (s20.h / hard-02
+                              :ARG1 (s20.c2 / create-01
+                                            :ARG1 (s20.m / movie
+                                                         :topic (s20.p / process-02
+                                                                       :ARG1-of (s20.a / actual-02)))
+                                            :ARG1-of (s20.t / think-01
+                                                            :ARG0 (s20.w / we)))
+                              :degree (s20.r / really)))
+   :snt21 (s21.a2 / and
+                  :op1 (s21.s2 / spend-02
+                               :ARG0 (s21.i / i
+                                            :same-as s3.y)
+                               :ARG1 (s21.m5 / multiple
+                                             :op1 (s21.t / temporal-quantity
+                                                         :unit (s21.m2 / month)
+                                                         :quant "1"))
+                               :ARG2 (s21.b / be-located-at-91
+                                            :ARG1 s21.i
+                                            :ARG2 (s21.m / market-sector
+                                                         :name (s21.n / name
+                                                                      :op1 "Hollywood")))
+                               :ARG2 (s21.l / learn-01
+                                            :ARG0 s21.i
+                                            :ARG1 (s21.s / software
+                                                         :mod (s21.a3 / animation
+                                                                      :mod (s21.d / dimension
+                                                                                  :quant "3")))))
+                  :op2 (s21.s3 / spend-02
+                               :ARG0 s21.i
+                               :ARG1 (s21.m6 / multiple
+                                             :op1 (s21.t2 / temporal-quantity
+                                                          :unit (s21.m3 / month)
+                                                          :quant "1"))
+                               :ARG2 (s21.a4 / animation
+                                             :mod (s21.e / each)))
+                  :op3 (s21.t3 / time
+                               :ARG1-of (s21.a / afford-01
+                                               :ARG0 (s21.p / person
+                                                            :quant (s21.m4 / most)
+                                                            :ARG0-of (s21.r / research-01))
+                                               :ARG1-of (s21.p2 / possible-01
+                                                                :polarity "-"))
+                               :mod (s21.j / just)))
+   :snt22 (s22.h / have-concession-91
+                 :ARG1 (s22.p / possible-01
+                              :ARG1 (s22.h2 / huge
+                                            :domain (s22.p2 / potential))))
+   :snt23 (s23.p / precedent
+                 :domain (s23.c2 / cartoon
+                                 :mod (s23.n / United))
+                 :topic (s23.c / capable-01
+                               :ARG1 s23.c2
+                               :ARG2 (s23.c3 / convey-01
+                                             :ARG0 s23.c2
+                                             :ARG1 (s23.i / information
+                                                          :quant (s23.d / deal
+                                                                        :mod (s23.g / great)))
+                                             :ARG2 (s23.a2 / audience
+                                                           :ARG1-of (s23.b / broad-02))
+                                             :manner (s23.a / accurate
+                                                            :degree (s23.e / extreme))))
+                 :polarity "-")
+   :snt24 (s24.a2 / and
+                  :op2 (s24.w / work-01
+                              :ARG0 (s24.i / i
+                                           :same-as s3.y)
+                              :ARG1 (s24.p2 / project
+                                            :ARG1-of (s24.n3 / new-01)
+                                            :ARG1-of (s24.c / call-01
+                                                            :ARG2 (s24.n / name
+                                                                         :op1 "The"
+                                                                         :op2 "Science"
+                                                                         :op3 "of"
+                                                                         :op4 "HIV")
+                                                            :time (s24.n4 / now))
+                                            :location-of (s24.c2 / close-06
+                                                                 :ARG0 s24.i
+                                                                 :ARG1-of (s24.d / detail-01
+                                                                                 :manner (s24.m / molecule))
+                                                                 :ARG2 (s24.c3 / cycle-02
+                                                                               :ARG1 (s24.l / life
+                                                                                            :poss (s24.v / virus
+                                                                                                         :mod (s24.d2 / disease
+                                                                                                                      :name (s24.n2 / name
+                                                                                                                                    :op1 "HIV"))
+                                                                                                         :same-as s16.v))
+                                                                               :mod (s24.e / entire))
+                                                                 :manner (s24.a / accurate
+                                                                                :ARG2-of (s24.h / have-degree-91
+                                                                                                :ARG1 s24.c2
+                                                                                                :ARG3 (s24.e2 / equal)
+                                                                                                :ARG4 (s24.p / possible-01
+                                                                                                             :ARG1 s24.c2)))))))
+   :snt25 (s25.f / feature-01
+                 :ARG0 (s25.a2 / animation)
+                 :ARG1 (s25.a / and
+                              :op1 (s25.d / data
+                                          :ARG1-of (s25.c2 / collect-01
+                                                           :duration (s25.o / over
+                                                                            :op1 (s25.m2 / multiple
+                                                                                         :op1 (s25.t / temporal-quantity
+                                                                                                     :unit (s25.d3 / decade)
+                                                                                                     :quant "1"))))
+                                          :source (s25.p / person
+                                                         :quant (s25.m / multiple
+                                                                       :op1 "1000")
+                                                         :ARG0-of (s25.r / research-01)))
+                              :op2 (s25.d2 / data)
+                              :op3 (s25.t3 / thing
+                                           :manner-of (s25.p2 / possible-01
+                                                              :ARG1 (s25.i / infect-01
+                                                                           :ARG0 (s25.v / virus
+                                                                                        :mod (s25.t5 / this)
+                                                                                        :same-as s16.v)
+                                                                           :ARG1 (s25.c / cell
+                                                                                        :location (s25.b / body
+                                                                                                         :poss (s25.w / we))))))
+                              :op4 (s25.t4 / thing
+                                           :manner-of (s25.h / help-01
+                                                             :ARG0 (s25.t2 / therapy)
+                                                             :ARG1 (s25.c3 / combat-01
+                                                                           :ARG0 s25.t2
+                                                                           :ARG1 s25.i))))
+                 :rel (s25.l / look-02
+                             :ARG0 s25.v))
+   :snt26 (s26.f / find-01
+                 :ARG0 (s26.i / i
+                              :same-as s3.y)
+                 :ARG1 (s26.a2 / and
+                               :op1 (s26.u / useful-05
+                                           :ARG1 (s26.c / cartoon)
+                                           :ARG2 (s26.c2 / communicate-01
+                                                         :ARG1 (s26.i2 / idea)))
+                               :op2 (s26.u2 / useful-05
+                                            :ARG1 s26.c
+                                            :ARG2 (s26.e / explore-01
+                                                         :ARG1 (s26.t2 / thing
+                                                                       :ARG1-of (s26.h / hypothesize-01)))
+                                            :degree (s26.r / really)
+                                            :mod (s26.a / also)))
+                 :time (s26.o / over
+                              :op1 (s26.m / multiple
+                                          :op1 (s26.t / temporal-quantity
+                                                      :unit (s26.y / year)
+                                                      :quant "1"))))
+   :snt27 (s27.a2 / and
+                  :op1 (s27.u / use-01
+                              :ARG0 (s27.b / biologist
+                                           :mod (s27.m / most))
+                              :ARG1 (s27.a / and
+                                           :op1 (s27.p / paper)
+                                           :op2 (s27.p2 / pencil))
+                              :ARG2 (s27.v / visualize-01
+                                           :ARG0 s27.b
+                                           :ARG1 (s27.p3 / process-02
+                                                         :ARG1-of (s27.s2 / study-01
+                                                                          :ARG0 s27.b)))
+                              :mod (s27.s / still))
+                  :op2 (s27.h2 / have-degree-91
+                               :ARG1 (s27.j / just)
+                               :ARG2 (s27.g / good-02
+                                            :ARG1 s27.v
+                                            :mod s27.j
+                                            :time (s27.a3 / anymore)
+                                            :polarity "-")
+                               :ARG3 (s27.e / enough))
+                  :rel (s27.d / data
+                              :ARG1-of (s27.h / have-03
+                                              :ARG0 (s27.w / we)
+                                              :time (s27.n / now))))
+   :snt28 (s28.p2 / possible-01
+                  :ARG1 (s28.a / act-01
+                               :ARG0 (s28.p3 / process-02
+                                             :ARG1 (s28.c2 / create-01
+                                                           :ARG1 (s28.a4 / animation)))
+                               :ARG1 (s28.c / catalyze-01
+                                            :ARG0 s28.p3
+                                            :ARG0-of (s28.a2 / allow-01
+                                                             :ARG1 (s28.a3 / and
+                                                                           :op1 (s28.c3 / crystallize-01
+                                                                                        :ARG0 (s28.p / person
+                                                                                                     :ARG0-of (s28.r2 / research-01))
+                                                                                        :ARG1 (s28.i / idea
+                                                                                                     :poss s28.p))
+                                                                           :op2 (s28.r / refine-01
+                                                                                       :ARG0 s28.p
+                                                                                       :ARG1 s28.i))))))
+   :snt29 (s29.a2 / and
+                  :op1 (s29.c2 / come-up-11
+                               :ARG0 (s29.p / person
+                                            :ARG0-of (s29.r2 / research-01
+                                                             :ARG1 (s29.m / mechanism
+                                                                          :mod (s29.m2 / molecule)
+                                                                          :poss (s29.d2 / disease
+                                                                                        :mod (s29.c / cerebrum))))
+                                            :ARG3-of (s29.w2 / work-01
+                                                             :ARG0 (s29.i / i
+                                                                          :same-as s3.y))
+                                            :quant "1")
+                               :ARG1 (s29.e / experiment-01
+                                            :ARG1-of (s29.r / relate-01
+                                                            :ARG1-of (s29.d / direct-02)
+                                                            :ARG2 (s29.a3 / animation
+                                                                          :ARG1-of (s29.w3 / work-01
+                                                                                           :ARG0 (s29.a / and
+                                                                                                        :op1 s29.p
+                                                                                                        :op2 s29.i)
+                                                                                           :manner (s29.t2 / together))))))
+                  :op2 (s29.p2 / possible-01
+                               :ARG1 (s29.f / feed-02
+                                            :ARG0 s29.a3
+                                            :ARG1 (s29.p3 / process-02
+                                                          :ARG1 (s29.r3 / research-01))
+                                            :direction (s29.b / back))
+                               :mod (s29.w / way
+                                           :mod (s29.t / this))))
+   :snt30 (s30.b / believe-01
+                 :ARG0 (s30.i / i
+                              :same-as s3.y)
+                 :ARG1 (s30.p / possible-01
+                              :ARG1 (s30.c / change-01
+                                           :ARG0 (s30.a / animation)
+                                           :ARG1 (s30.b2 / biology))))
+   :snt31 (s31.p2 / possible-01
+                  :ARG1 (s31.c / change-01
+                               :ARG0 (s31.i / it
+                                            :same-as s30.a)
+                               :ARG1 (s31.a / and
+                                            :op1 (s31.w / way
+                                                        :manner-of (s31.c2 / communicate-01
+                                                                           :ARG0 (s31.w2 / we)
+                                                                           :ARG2 (s31.a2 / another)))
+                                            :op2 (s31.e / explore-01
+                                                        :ARG0 s31.w2
+                                                        :ARG1 (s31.d / data
+                                                                     :poss s31.w2))
+                                            :op3 (s31.t / teach-01
+                                                        :ARG0 s31.w2
+                                                        :ARG2 (s31.p / person
+                                                                     :ARG0-of (s31.s / study-01))))))
+   :snt32 (s32.c3 / contrast-01
+                  :ARG2 (s32.a / and
+                               :op1 (s32.n2 / need-01
+                                            :purpose (s32.c2 / change-01
+                                                             :mod (s32.t2 / that)
+                                                             :same-as s31.c)
+                                            :ARG0 (s32.w / we)
+                                            :ARG1 (s32.p2 / person
+                                                          :quant (s32.m2 / more)
+                                                          :ARG0-of (s32.r / research-01)
+                                                          :ARG0-of (s32.c4 / create-01
+                                                                           :ARG1 (s32.s3 / state))))
+                               :op2 (s32.b3 / bring-01
+                                            :purpose (s32.e / end)
+                                            :purpose (s32.c5 / create-01
+                                                             :ARG0 (s32.t / team
+                                                                          :consist-of (s32.a2 / and
+                                                                                              :op1 (s32.b / biologist)
+                                                                                              :op2 (s32.p3 / person
+                                                                                                           :ARG0-of (s32.p / paint-02))
+                                                                                              :op3 (s32.p4 / person
+                                                                                                           :ARG0-of (s32.p5 / program-01))))
+                                                             :ARG1 (s32.s / software
+                                                                          :ARG1-of (s32.f / free-03)
+                                                                          :ARG1-of (s32.n3 / new-01)
+                                                                          :ARG1-of (s32.c / call-01
+                                                                                          :ARG0 s32.w
+                                                                                          :ARG2 (s32.n / name
+                                                                                                       :op1 "Molecular"
+                                                                                                       :op2 "Flipbook"))
+                                                                          :ARG1-of (s32.c6 / create-01
+                                                                                           :purpose (s32.c7 / create-01
+                                                                                                            :ARG0 (s32.b2 / biologist)
+                                                                                                            :ARG1 (s32.i2 / image
+                                                                                                                          :mod (s32.m / molecule))
+                                                                                                            :mod (s32.j / just))
+                                                                                           :beneficiary s32.b2
+                                                                                           :mod s32.j)
+                                                                          :mod (s32.s2 / source
+                                                                                       :ARG1-of (s32.o / open-01))))
+                                            :ARG0 (s32.i / i
+                                                         :same-as s3.y)
+                                            :ARG1 s32.t
+                                            :ARG3 (s32.t3 / together))))
+   :snt33 (s33.f / find-01
+                 :ARG0 (s33.w / we
+                              :same-as s7.w)
+                 :ARG1 (s33.t / take-10
+                              :ARG0 (s33.c / create-01
+                                           :ARG0 (s33.b2 / biologist
+                                                         :ARG0-of (s33.t5 / touch-01
+                                                                          :ARG1 (s33.s / software
+                                                                                       :mod (s33.a / animation))
+                                                                          :time (s33.e / ever)
+                                                                          :time (s33.b / before)
+                                                                          :polarity "-"))
+                                           :ARG1 (s33.a2 / animation
+                                                         :mod (s33.m2 / molecule)
+                                                         :ord (s33.o2 / ordinal-entity
+                                                                      :value "1")
+                                                         :poss s33.b2
+                                                         :topic (s33.t4 / thing
+                                                                        :ARG1-of (s33.h / hypothesize-01
+                                                                                        :ARG0 s33.b2))))
+                              :ARG1 (s33.t2 / temporal-quantity
+                                            :unit (s33.m / minute)
+                                            :quant "15")
+                              :ARG2 s33.b2
+                              :mod (s33.o / only))
+                 :source (s33.t3 / test-01
+                                 :ARG0 s33.w))
+   :snt34 (s34.b / build-01
+                 :ARG0 (s34.w / we
+                              :same-as s7.w)
+                 :ARG1 (s34.d / database
+                              :location-of (s34.a2 / and
+                                                   :ARG1-of (s34.p / possible-01)
+                                                   :op1 (s34.v / view-01
+                                                               :ARG0 (s34.a3 / anyone))
+                                                   :op2 (s34.d2 / download-01
+                                                                :ARG0 s34.a3
+                                                                :ARG1 (s34.a4 / avatar
+                                                                              :poss s34.a3))
+                                                   :op3 (s34.c / contribute-01
+                                                               :ARG0 s34.a3
+                                                               :ARG1 s34.a4))
+                              :mod (s34.o / online))
+                 :mod (s34.a / also))
+   :snt35 (s35.e / excite-01
+                 :ARG0 (s35.a2 / announce-01
+                               :ARG0 (s35.w / we
+                                            :same-as s7.w)
+                               :ARG1 (s35.a3 / available-02
+                                             :ARG1 (s35.d / download-01
+                                                          :ARG1 (s35.v / version
+                                                                       :mod (s35.b / beta)
+                                                                       :mod (s35.t2 / toolkit
+                                                                                    :mod (s35.s / software
+                                                                                                :mod (s35.a / animation
+                                                                                                            :mod (s35.m / molecule)))
+                                                                                    :same-as s32.n)))
+                                             :ARG2 s35.v
+                                             :time (s35.t / today)))
+                 :ARG1 s35.w
+                 :degree (s35.r / really))
+   :snt36 (s36.e / excite-01
+                 :ARG0 (s36.s / see-01
+                              :ARG0 (s36.w / we
+                                           :same-as s7.w)
+                              :ARG1 (s36.a / and
+                                           :op1 (s36.t / thing
+                                                       :ARG1-of (s36.c / create-01
+                                                                       :ARG0 (s36.b / biologist)
+                                                                       :ARG3 (s36.i2 / it
+                                                                                     :same-as s32.n)))
+                                           :op2 (s36.i / insight
+                                                       :ARG1-of (s36.n / new-01)
+                                                       :ARG1-of (s36.g / gain-02
+                                                                       :ARG0 s36.b
+                                                                       :ARG1-of (s36.p / possible-01)
+                                                                       :ARG2 (s36.f / figure
+                                                                                    :ARG1-of (s36.m / model-01)
+                                                                                    :poss s36.b)))))
+                 :ARG1 s36.w
+                 :degree (s36.r / really))
+   :snt37 (s37.t / thank-01
+                 :ARG1 (s37.y / you
+                              :same-as s3.y)))
+

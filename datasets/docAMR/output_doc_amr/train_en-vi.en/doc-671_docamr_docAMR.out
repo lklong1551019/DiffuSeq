@@ -1,0 +1,565 @@
+# ::id doc-671
+# ::doc_file doc-671
+# ::tok http : / / www . ted . com / talks / jack_choi_on_the_virtual_dissection_table< / url> <next_sent> You know , cadaver dissection is the traditional way of learning human anatomy . <next_sent> For students , it 's quite an experience , but for a school , it could be very difficult or expensive to maintain . <next_sent> So we learned the majority of anatomic classes taught , they do not have a cadaver dissection lab . <next_sent> Maybe those reasons , or depending on where you are , cadavers may not be easily available . <next_sent> So to address this , we developed with a Dr . Brown in Stanford : virtual dissection table . <next_sent> So we call this Anatomage Table . <next_sent> So with this Anatomage Table , students can experience the dissection without a human cadaver . <next_sent> And the table form is important , and since it 's touch - interactive , just like the way they do dissections in the lab , or furthermore just the way a surgeon operates on a patient you can literally interact with your table . <next_sent> Our digital body is one - to - one life size , so this is exactly the way students will see the real anatomy . <next_sent> I 'm going to do some demonstrations . <next_sent> As you can see , I use my finger to interact with my digital body . <next_sent> I 'm going to do some cuts . <next_sent> I can cut any way I want to , so I cut right here . <next_sent> Then it 's going to show inside . <next_sent> And I can change my cut to see different parts . <next_sent> Maybe I can cut there , see the brain , and I can change my cut . <next_sent> You can see some internal organs . <next_sent> So we call this the slicer mode . <next_sent> Right there . <next_sent> This shows a lot of internal structures . <next_sent> So if I want to see the back side , I can flip and see from behind . <next_sent> Like this . <next_sent> So if these images are uncomfortable to you or disturbing to you , that means we did the right job . <next_sent> So our doctors said these are eye candies . <next_sent> So instead of just butchering the body , I 'd like to do more clinically meaningful dissections . <next_sent> What I 'm going to do is I 'm going to peel off all the skin , muscles and bones , just to see a few internal organs . <next_sent> Right here . <next_sent> the liver right here . <next_sent> OK . <next_sent> Let 's say I 'm interested in looking at the heart . <next_sent> I 'm going to do some surgery here . <next_sent> I 'm going to cut some veins , arteries . <next_sent> Oops ! ... <next_sent> You do n't want to hear " oops " in real surgery . <next_sent> But fortunately , our digital man has " undo . " <next_sent> Okay . <next_sent> All right then . <next_sent> Let me zoom in . <next_sent> I 'm going to make a cut right there . <next_sent> And then you can see the inside of the heart . <next_sent> You can see the atrium and the ventricles , how blood flows to our arteries and veins . <next_sent> Just like this , students can isolate anybody and dissect any way you want to . <next_sent> It does n't have to be always dissection . <next_sent> Since it 's digital , we can do reverse dissection . <next_sent> So let me show you , I 'm going to start with the skeletal structure , and I can add a few internal organs . <next_sent> Yep . <next_sent> Maybe I can add quickly this way . <next_sent> And I can build muscles gradually , just like that . <next_sent> We can see tendons and muscles . <next_sent> Wish I could build my muscle this fast . <next_sent> And this is another way to learn anatomy . <next_sent> Another thing I can show you is , more often than not , doctors get to meet patients in X - ray form . <next_sent> So , Anatomage Table shows exactly how the anatomy will appear in X - ray . <next_sent> You can also interact with your X - ray , and also if you want , you can compare with how anatomy would appear in X - ray , too . <next_sent> So when you are done , just bring back the body and then it 's ready for another session . <next_sent> It looks like our table also can transform gender , too . <next_sent> It 's a female now . <next_sent> So this is Anatomage Table . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :value (s1.n / number
+                            :value "narcotic"))
+   :snt2 (s2.k / know-01
+               :ARG0 (s2.y / you)
+               :ARG1 (s2.w / way
+                           :domain (s2.d / disfigure-01
+                                         :ARG0 (s2.c / cadaver))
+                           :manner-of (s2.l / learn-01
+                                            :ARG1 (s2.a / anatomy
+                                                        :part-of (s2.h / human)))
+                           :mod (s2.t / tradition)))
+   :snt3 (s3.c / contrast-01
+               :ARG1 (s3.e2 / experience-01
+                            :ARG0 (s3.p / person
+                                        :ARG0-of (s3.s2 / study-01))
+                            :ARG1 (s3.i / it
+                                        :same-as s2.d)
+                            :degree (s3.q / quite))
+               :ARG2 (s3.p2 / possible-01
+                            :ARG1 (s3.o / or
+                                        :op1 (s3.d / difficult
+                                                   :degree (s3.v / very)
+                                                   :domain (s3.m / maintain-01
+                                                                 :ARG1 (s3.s / school)))
+                                        :op2 (s3.e / expensive
+                                                   :degree s3.v
+                                                   :domain s3.m))))
+   :snt4 (s4.l2 / learn-01
+                :ARG0 (s4.w / we)
+                :ARG1 (s4.h / have-03
+                            :ARG0 (s4.t2 / they
+                                         :same-as s3.s)
+                            :ARG1 (s4.l / lab
+                                        :purpose (s4.p / point
+                                                       :topic (s4.c2 / class
+                                                                     :quant (s4.m / majority)
+                                                                     :ARG1-of (s4.t / teach-01)
+                                                                     :topic (s4.a / anatomic))))
+                            :polarity "-")
+                :rel (s4.c / cadaver))
+   :snt5 (s5.p / possible-01
+               :ARG1 (s5.o / or
+                           :op1 (s5.c2 / cause-01
+                                       :ARG0 (s5.r / reason
+                                                   :mod (s5.t / that)))
+                           :op2 (s5.d / depend-01
+                                      :ARG0 (s5.p2 / possible-01
+                                                   :ARG1 (s5.a / available-02
+                                                               :ARG1-of (s5.e / easy-05
+                                                                              :polarity "-")
+                                                               :ARG2 (s5.c / casket)))
+                                      :ARG1 (s5.l / location
+                                                  :location-of (s5.y / you)))))
+   :snt6 (s6.d / develop-02
+               :purpose (s6.a / address-02
+                              :ARG0 (s6.w / we
+                                          :same-as s4.w)
+                              :ARG1 (s6.t2 / this))
+               :ARG0 s6.w
+               :ARG1 (s6.t / table
+                           :purpose (s6.d2 / dissect-01)
+                           :mod (s6.v / virtual))
+               :accompanier (s6.p / person
+                                  :name (s6.n / name
+                                              :op1 "Dr."
+                                              :op2 "Brown")
+                                  :location (s6.u / university
+                                                  :name (s6.n2 / name
+                                                               :op1 "Stanford"))))
+   :snt7 (s7.c / call-01
+               :ARG0 (s7.w / we
+                           :same-as s4.w)
+               :ARG1 (s7.t2 / this)
+               :ARG2 (s7.t / table
+                           :name (s7.n / name
+                                       :op1 "Anatomage"
+                                       :op2 "Table")))
+   :snt8 (s8.i / infer-01
+               :ARG1 (s8.p2 / possible-01
+                            :ARG1 (s8.e / experience-01
+                                        :ARG0 (s8.p / person
+                                                    :ARG0-of (s8.s / study-01))
+                                        :ARG1 (s8.d / disfigure-01)
+                                        :manner (s8.c / cadaver
+                                                      :mod (s8.h / human)
+                                                      :polarity "-"))
+                            :instrument (s8.t / thing
+                                              :name (s8.n / name
+                                                          :op1 "Anatomage"
+                                                          :op2 "Table")
+                                              :mod (s8.t2 / this)
+                                              :same-as s7.t2)))
+   :snt9 (s9.a / and
+               :op1 (s9.i / important-01
+                          :ARG1 (s9.f / form-01
+                                      :ARG1 (s9.t / table)))
+               :op2 (s9.p4 / possible-01
+                           :ARG1 (s9.i3 / interact-01
+                                        :ARG0 (s9.y / you)
+                                        :ARG1 (s9.t2 / table
+                                                     :poss s9.y)
+                                        :manner (s9.l2 / literal))
+                           :ARG1-of (s9.c / cause-01
+                                          :ARG0 (s9.i2 / interact-01
+                                                       :ARG0 (s9.i4 / it
+                                                                    :same-as s7.t2)
+                                                       :ARG1-of (s9.r / resemble-01
+                                                                      :ARG2 (s9.o2 / or
+                                                                                   :op1 (s9.w / way
+                                                                                              :manner-of (s9.d2 / do-02
+                                                                                                                :ARG0 (s9.t3 / they)
+                                                                                                                :ARG1 (s9.d / dissect-01
+                                                                                                                            :ARG0 s9.t3)
+                                                                                                                :location (s9.l / lab)))
+                                                                                   :op2 (s9.w2 / way
+                                                                                               :manner-of (s9.o / operate-02
+                                                                                                                :ARG0 (s9.p2 / person
+                                                                                                                             :ARG0-of (s9.s / surgery-01))
+                                                                                                                :ARG1 (s9.p3 / person
+                                                                                                                             :ARG0-of (s9.h / have-rel-role-91
+                                                                                                                                            :ARG2 (s9.p / patient))))
+                                                                                               :mod (s9.j / just)))
+                                                                      :mod s9.j)
+                                                       :degree (s9.t4 / touch)))))
+   :snt10 (s10.c / cause-01
+                 :ARG0 (s10.s2 / size
+                               :domain (s10.b / body
+                                              :mod (s10.d / digit)
+                                              :poss (s10.w2 / we
+                                                            :same-as s4.w))
+                               :mod (s10.l / life)
+                               :mod (s10.o / one-on-one))
+                 :ARG1 (s10.w / way
+                              :domain (s10.t / this
+                                             :same-as s7.t2)
+                              :manner-of (s10.s / see-01
+                                                :ARG0 (s10.p / person
+                                                             :ARG0-of (s10.s3 / study-01))
+                                                :ARG1 (s10.a / anatomy
+                                                             :ARG1-of (s10.r / real-04)))
+                              :mod (s10.e / exact)))
+   :snt11 (s11.d / demonstrate-01
+                 :quant (s11.s / some)
+                 :ARG0 (s11.i / i))
+   :snt12 (s12.p / possible-01
+                 :ARG1 (s12.s / see-01
+                              :ARG0 (s12.y / you)
+                              :ARG1 (s12.u / use-01
+                                           :ARG0 (s12.i / i
+                                                        :part (s12.f / finger)
+                                                        :same-as s11.i)
+                                           :ARG1 s12.f
+                                           :ARG2 (s12.i2 / interact-01
+                                                         :ARG0 s12.i
+                                                         :ARG1 (s12.b / body
+                                                                      :mod (s12.d / digital)
+                                                                      :poss s12.i
+                                                                      :same-as s10.b)))))
+   :snt13 (s13.d / do-02
+                 :ARG0 (s13.i / i
+                              :same-as s11.i)
+                 :ARG1 (s13.c / cut-02
+                              :quant (s13.s / some)
+                              :ARG0 s13.i))
+   :snt14 (s14.c / cause-01
+                 :ARG0 (s14.p / possible-01
+                              :ARG1 (s14.c3 / cut-02
+                                            :ARG0 (s14.i / i
+                                                         :same-as s11.i)
+                                            :manner (s14.w2 / way
+                                                            :ARG1-of (s14.w / want-01
+                                                                            :ARG0 s14.i)
+                                                            :mod (s14.a / any))))
+                 :ARG1 (s14.c2 / cut-01
+                               :ARG0 s14.i
+                               :location (s14.h / here
+                                                :mod (s14.r / right))))
+   :snt15 (s15.s / show-01
+                 :ARG0 (s15.i2 / it)
+                 :location (s15.i / inside)
+                 :time (s15.t / then))
+   :snt16 (s16.a / and
+                 :op2 (s16.p2 / possible-01
+                              :ARG1 (s16.c / change-01
+                                           :ARG0 (s16.i / i
+                                                        :same-as s11.i)
+                                           :ARG1 (s16.c2 / cut-01
+                                                         :ARG1 s16.i)
+                                           :ARG2 (s16.s / see-01
+                                                        :ARG0 s16.i
+                                                        :ARG1 (s16.p / part
+                                                                     :ARG1-of (s16.d / differ-02))))))
+   :snt17 (s17.p / possible-01
+                 :ARG1 (s17.a / and
+                              :op1 (s17.p2 / possible-01
+                                           :ARG1 (s17.c2 / cut-02
+                                                         :ARG0 (s17.i / i
+                                                                      :same-as s11.i)
+                                                         :location (s17.t / there)))
+                              :op2 (s17.s / see-01
+                                          :ARG0 s17.i
+                                          :ARG1 (s17.b / brain))
+                              :op3 (s17.p3 / possible-01
+                                           :ARG1 (s17.c / change-01
+                                                        :ARG0 s17.i
+                                                        :ARG1 (s17.c3 / cut-02
+                                                                      :ARG0 s17.i
+                                                                      :same-as s16.c2)))))
+   :snt18 (s18.p / possible-01
+                 :ARG1 (s18.s / see-01
+                              :ARG0 (s18.y / you)
+                              :ARG1 (s18.o / organ
+                                           :quant (s18.s2 / some)
+                                           :mod (s18.i / internal))))
+   :snt19 (s19.c / call-01
+                 :ARG0 (s19.w / we
+                              :same-as s4.w)
+                 :ARG1 (s19.t / this)
+                 :ARG2 (s19.m / mode
+                              :mod (s19.s / string-entity
+                                          :value "slicer")))
+   :snt20 (s20.t / there
+                 :mod (s20.r / right))
+   :snt21 (s21.s / show-01
+                 :ARG0 (s21.t / this)
+                 :ARG1 (s21.s2 / structure
+                               :quant (s21.l / lot)
+                               :ARG1-of (s21.i / internal-02)))
+   :snt22 (s22.c / cause-01
+                 :ARG1 (s22.p / possible-01
+                              :ARG1 (s22.a / and
+                                           :op1 (s22.f / flip-01
+                                                       :ARG0 (s22.i / i
+                                                                    :same-as s11.i))
+                                           :op2 (s22.s2 / see-01
+                                                        :ARG0 s22.i
+                                                        :source (s22.b2 / behind)))
+                              :condition (s22.w / want-01
+                                                :ARG0 s22.i
+                                                :ARG1 (s22.s / see-01
+                                                             :ARG0 s22.i
+                                                             :ARG1 (s22.s3 / side
+                                                                           :mod (s22.b / back))))))
+   :snt23 (s23.r / resemble-01
+                 :ARG2 (s23.t / this))
+   :snt24 (s24.c / cause-01
+                 :ARG1 (s24.m / mean-01
+                              :ARG1 (s24.o / or
+                                           :op1 (s24.c2 / comfortable-02
+                                                        :ARG0 (s24.i / image
+                                                                     :mod (s24.t / this))
+                                                        :ARG1 (s24.y / you)
+                                                        :polarity "-")
+                                           :op2 (s24.d / disturb-01
+                                                       :ARG0 s24.i
+                                                       :ARG1 s24.y))
+                              :ARG2 (s24.d2 / do-02
+                                            :ARG0 (s24.w / we
+                                                         :same-as s4.w)
+                                            :ARG1 (s24.j / job
+                                                         :ARG1-of (s24.r / right-03)))))
+   :snt25 (s25.s / say-01
+                 :ARG0 (s25.p / person
+                              :ARG0-of (s25.h / have-rel-role-91
+                                              :ARG1 (s25.w / we
+                                                           :same-as s4.w)
+                                              :ARG2 (s25.d / doctor)))
+                 :ARG1 (s25.c / cookie
+                              :domain (s25.t / this
+                                             :same-as s24.i)
+                              :mod (s25.e / eye)))
+   :snt26 (s26.c / cause-01
+                 :ARG1 (s26.l / like-02
+                              :ARG0 (s26.i / i
+                                           :same-as s11.i)
+                              :ARG1 (s26.a / autopsy-01
+                                           :ARG0 s26.i
+                                           :ARG1-of (s26.m / meaningful-05
+                                                           :ARG0 (s26.c2 / clinic))
+                                           :mod (s26.m2 / more))
+                              :ARG1-of (s26.i2 / instead-of-91
+                                               :ARG2 (s26.s / slaughter-01
+                                                            :ARG0 s26.i
+                                                            :ARG1 (s26.b / body)
+                                                            :mod (s26.j / just)))))
+   :snt27 (s27.d / do-02
+                 :ARG0 (s27.i / i
+                              :same-as s11.i)
+                 :ARG1 (s27.p / peel-off-02
+                              :purpose (s27.s / see-01
+                                              :ARG0 s27.i
+                                              :ARG1 (s27.o / organ
+                                                           :quant (s27.f / few)
+                                                           :mod (s27.i2 / internal))
+                                              :mod (s27.j / just))
+                              :ARG0 s27.i
+                              :ARG1 (s27.a2 / and
+                                            :mod (s27.a / all)
+                                            :op1 (s27.s2 / skin)
+                                            :op2 (s27.m / muscle)
+                                            :op3 (s27.b / bone))))
+   :snt28 (s28.h / here
+                 :mod (s28.r / right))
+   :snt29 (s29.l / liver
+                 :location (s29.h / here
+                                  :mod (s29.r / right)))
+   :snt30 (s30.o / okay-04)
+   :snt31 (s31.s / say-01
+                 :ARG0 (s31.w / we)
+                 :ARG1 (s31.i2 / interest-01
+                               :ARG1 (s31.i / i
+                                            :same-as s11.i)
+                               :ARG2 (s31.l / look-01
+                                            :ARG0 s31.i
+                                            :ARG1 (s31.h / heart)))
+                 :mode "imperative")
+   :snt32 (s32.s2 / surgery-01
+                  :ARG1 (s32.i / i
+                               :same-as s11.i)
+                  :ARG2 (s32.s / some)
+                  :location (s32.h / here))
+   :snt33 (s33.c / cut-01
+                 :ARG0 (s33.i / i
+                              :same-as s11.i)
+                 :ARG1 (s33.a / and
+                              :quant (s33.s / some)
+                              :op1 (s33.v / vein)
+                              :op2 (s33.v2 / vessel
+                                           :name (s33.n / name
+                                                        :op1 "Coronary"))))
+   :snt34 (s34.o / oops
+                 :mode "expressive")
+   :snt35 (s35.w / want-01
+                 :ARG0 (s35.y / you)
+                 :ARG1 (s35.h / hear-01
+                              :ARG0 s35.y
+                              :ARG1 (s35.o / oops
+                                           :mode "expressive")
+                              :location (s35.s / surgery-01
+                                               :ARG1-of (s35.r / real-04)))
+                 :polarity s35.y
+                 :rel "-")
+   :snt36 (s36.c / contrast-01
+                 :ARG2 (s36.u / undo-01
+                              :ARG0 (s36.m / man
+                                           :mod (s36.d / digital)
+                                           :poss (s36.w / we))
+                              :ARG2-of (s36.f / fortunate-01)))
+   :snt37 (s37.o / okay-01)
+   :snt38 (s38.t / then
+                 :ARG2-of (s38.r / right-06)
+                 :mod (s38.a / all))
+   :snt39 (s39.l / let-01
+                 :ARG0 (s39.y / you)
+                 :ARG1 (s39.z / zoom-01
+                              :ARG0 (s39.i / i
+                                           :same-as s11.i))
+                 :mode "imperative")
+   :snt40 (s40.m / make-01
+                 :ARG0 (s40.i / i
+                              :same-as s11.i)
+                 :ARG1 (s40.c / cut-01
+                              :location (s40.t / there
+                                               :mod (s40.r / right))))
+   :snt41 (s41.a / and
+                 :op2 (s41.p / possible-01
+                             :ARG1 (s41.s / see-01
+                                          :ARG0 (s41.y / you)
+                                          :ARG1 (s41.i / inside
+                                                       :part-of (s41.h / heart
+                                                                       :same-as s31.h)))
+                             :time (s41.t / then)))
+   :snt42 (s42.p / possible-01
+                 :ARG1 (s42.s / see-01
+                              :ARG0 (s42.y / you)
+                              :ARG1 (s42.a / and
+                                           :op1 (s42.a3 / atrium)
+                                           :op2 (s42.v2 / vent-01)
+                                           :op3 (s42.t / thing
+                                                       :manner-of (s42.f / flow-01
+                                                                         :ARG1 (s42.b / blood)
+                                                                         :ARG3 (s42.a2 / and
+                                                                                       :op1 (s42.v3 / vessel
+                                                                                                    :part-of (s42.w / we
+                                                                                                                    :part (s42.v / vein))
+                                                                                                    :part-of (s42.r / river))
+                                                                                       :op2 s42.v))))))
+   :snt43 (s43.p2 / possible-01
+                  :ARG1 (s43.a / and
+                               :op1 (s43.i / isolate-01
+                                           :ARG0 (s43.p / person
+                                                        :ARG0-of (s43.s / study-01))
+                                           :ARG1 (s43.a3 / anybody))
+                               :op2 (s43.d / dissect-01
+                                           :ARG0 s43.p
+                                           :manner (s43.w2 / way
+                                                           :ARG1-of (s43.w / want-01
+                                                                           :ARG0 (s43.y / you
+                                                                                        :same-as s43.p))
+                                                           :mod (s43.a2 / any))))
+                  :ARG1-of (s43.r / resemble-01
+                                  :ARG2 (s43.t / this)
+                                  :mod (s43.j / just)))
+   :snt44 (s44.o / obligate-01
+                 :ARG2 (s44.d / disfigure-01
+                              :time (s44.a / always))
+                 :polarity "-")
+   :snt45 (s45.p / possible-01
+                 :ARG1 (s45.d2 / dissect-01
+                               :ARG0 (s45.w / we)
+                               :ARG1-of (s45.r / reverse-01))
+                 :ARG1-of (s45.c / cause-01
+                                 :ARG0 (s45.d / digital
+                                              :domain (s45.i / it))))
+   :snt46 (s46.l / let-01
+                 :ARG0 (s46.y / you)
+                 :ARG1 (s46.s / show-01
+                              :ARG0 (s46.i / i
+                                           :same-as s11.i)
+                              :ARG1 (s46.a2 / and
+                                            :op1 (s46.s2 / start-01
+                                                         :ARG0 s46.i
+                                                         :ARG1 (s46.s3 / structure-01
+                                                                       :ARG1 (s46.b / bone)))
+                                            :op2 (s46.p / possible-01
+                                                        :ARG1 (s46.a / add-02
+                                                                     :ARG0 s46.i
+                                                                     :ARG1 (s46.o / organ
+                                                                                  :quant (s46.f / few)
+                                                                                  :mod (s46.i2 / internal)))))
+                              :ARG2 s46.y))
+   :snt47 (s47.y / yep)
+   :snt48 (s48.p / possible-01
+                 :ARG1 (s48.p2 / possible-01
+                               :ARG1 (s48.a / add-01
+                                            :ARG0 (s48.i / i
+                                                         :same-as s11.i)
+                                            :ARG1-of (s48.q / quick-02)
+                                            :manner (s48.w / way
+                                                           :mod (s48.t / this)))))
+   :snt49 (s49.a / and
+                 :op2 (s49.p / possible-01
+                             :ARG1 (s49.b / build-01
+                                          :ARG0 (s49.i / i
+                                                       :same-as s11.i)
+                                          :ARG1 (s49.m / muscle)
+                                          :ARG1-of (s49.r / resemble-01
+                                                          :ARG2 (s49.t / that)
+                                                          :mod (s49.j / just))
+                                          :manner (s49.g / gradual))))
+   :snt50 (s50.p / possible-01
+                 :ARG1 (s50.s / see-01
+                              :ARG0 (s50.w / we)
+                              :ARG1 (s50.a / and
+                                           :op1 (s50.t / tend-01)
+                                           :op2 (s50.m / muscle))))
+   :snt51 (s51.w / wish-01
+                 :ARG0 (s51.i / i
+                              :part (s51.m / muscle)
+                              :same-as s11.i)
+                 :ARG1 (s51.p / possible-01
+                              :ARG1 (s51.b / build-01
+                                           :ARG0 s51.i
+                                           :ARG1 s51.m
+                                           :ARG1-of (s51.f / fast-02
+                                                           :degree (s51.t / this)))))
+   :snt52 (s52.a2 / and
+                  :op2 (s52.w / way
+                              :domain (s52.t / this)
+                              :manner-of (s52.l / learn-01
+                                                :ARG1 (s52.a / anatomy))
+                              :mod (s52.a3 / another)))
+   :snt53 (s53.p3 / possible-01
+                  :ARG1 (s53.s / show-01
+                               :ARG0 (s53.i / i
+                                            :same-as s11.i)
+                               :ARG1 (s53.t / thing
+                                            :domain (s53.g / get-22
+                                                           :ARG0 (s53.d / doctor)
+                                                           :ARG1 (s53.m / meet-03
+                                                                        :ARG0 s53.d
+                                                                        :ARG1 (s53.p2 / person
+                                                                                      :ARG0-of (s53.h2 / have-rel-role-91
+                                                                                                       :ARG1 s53.d
+                                                                                                       :ARG2 (s53.p / patient)))
+                                                                        :manner (s53.f / form
+                                                                                       :mod (s53.x / xray-01)))
+                                                           :ARG1-of (s53.i2 / instead-of-91
+                                                                            :ARG2 (s53.o / often
+                                                                                         :ARG2-of (s53.h / have-degree-91
+                                                                                                         :ARG1 s53.g
+                                                                                                         :ARG3 (s53.m2 / more)))))
+                                            :mod (s53.a / another))
+                               :ARG2 (s53.y / you
+                                            :same-as s12.y))
+                  :rel "-")
+   :snt54 (s54.c / cause-01
+                 :ARG1 (s54.s / show-01
+                              :ARG0 (s54.t / table)
+                              :ARG1 (s54.t2 / thing
+                                            :manner-of (s54.a2 / appear-02
+                                                               :ARG1 (s54.a / anatomy
+                                                                            :part s54.t)
+                                                               :manner (s54.x / xray-01
+                                                                              :ARG1 s54.a))
+                                            :mod (s54.e / exact))))
+   :snt55 (s55.a4 / and
+                  :op1 (s55.p / possible-01
+                              :ARG1 (s55.i / interact-01
+                                           :ARG0 (s55.y / you)
+                                           :ARG1 (s55.x / xray-01
+                                                        :ARG1 s55.y)
+                                           :mod (s55.a / also)))
+                  :op2 (s55.p2 / possible-01
+                               :ARG1 (s55.c / compare-01
+                                            :ARG0 s55.y
+                                            :ARG1 (s55.t / thing
+                                                         :ARG2-of (s55.a5 / appear-02
+                                                                          :ARG1 (s55.a3 / anatomy)
+                                                                          :mod (s55.t2 / too))))
+                               :condition (s55.w / want-01
+                                                 :ARG0 s55.y)
+                               :mod (s55.a2 / also)))
+   :snt56 (s56.c / cause-01
+                 :ARG1 (s56.a / and
+                              :op1 (s56.b4 / bring-01
+                                           :ARG0 (s56.y / you)
+                                           :ARG1 (s56.b3 / body)
+                                           :direction (s56.b / back)
+                                           :mod (s56.j / just))
+                              :op2 (s56.r / ready-02
+                                          :ARG1 s56.b3
+                                          :ARG2 (s56.s / session
+                                                       :mod (s56.a2 / another)))
+                              :time (s56.b2 / be-done-08
+                                            :ARG0 s56.y)))
+   :snt57 (s57.l / look-02
+                 :ARG1 (s57.p / possible-01
+                              :ARG1 (s57.t3 / transform-01
+                                            :ARG0 (s57.t / table
+                                                         :poss (s57.w / we)
+                                                         :same-as s54.t)
+                                            :ARG1 (s57.g / gender)
+                                            :mod (s57.a / also)
+                                            :mod (s57.t2 / too))))
+   :snt58 (s58.f / female
+                 :domain (s58.i / it
+                                :same-as s54.t)
+                 :time (s58.n / now))
+   :snt59 (s59.i / infer-01
+                 :ARG1 (s59.t / table
+                              :name (s59.n / name
+                                           :op1 "Anatomage"
+                                           :op2 "Table")
+                              :domain (s59.t2 / this
+                                              :same-as s54.t)))
+   :snt60 (s60.t / thank-01
+                 :ARG1 (s60.y / you
+                              :same-as s11.i)))
+

@@ -1,0 +1,658 @@
+# ::id doc-210
+# ::doc_file doc-210
+# ::tok http : / / www . ted . com / talks / moshe_safdie_how_to_reinvent_the_apartment_building< / url> <next_sent> When , in 1960 , still a student , I got a traveling fellowship to study housing in North America . <next_sent> We traveled the country . <next_sent> We saw public housing high - rise buildings in all major cities : New York , Philadelphia . <next_sent> Those who have no choice lived there . <next_sent> And then we traveled from suburb to suburb , and I came back thinking , we 've got to reinvent the apartment building . <next_sent> There has to be another way of doing this . <next_sent> We ca n't sustain suburbs , so let 's design a building which gives the qualities of a house to each unit . <next_sent> Habitat would be all about gardens , contact with nature , streets instead of corridors . <next_sent> We prefabricated it so we would achieve economy , and there it is almost 50 years later . <next_sent> It 's a very desirable place to live in . <next_sent> It 's now a heritage building , but it did not proliferate . <next_sent> In 1973 , I made my first trip to China . <next_sent> It was the Cultural Revolution . <next_sent> We traveled the country , met with architects and planners . <next_sent> This is Beijing then , not a single high rise building in Beijing or Shanghai . <next_sent> Shenzhen did n't even exist as a city . <next_sent> There were hardly any cars . <next_sent> Thirty years later , this is Beijing today . <next_sent> This is Hong Kong . <next_sent> If you 're wealthy , you live there , if you 're poor , you live there , but high density it is , and it 's not just Asia . <next_sent> São Paulo , you can travel in a helicopter 45 minutes seeing those high - rise buildings consume the 19th - century low - rise environment . <next_sent> And with it , comes congestion , and we lose mobility , and so on and so forth . <next_sent> So a few years ago , we decided to go back and rethink Habitat . <next_sent> Could we make it more affordable ? <next_sent> Could we actually achieve this quality of life in the densities that are prevailing today ? <next_sent> And we realized , it 's basically about light , it 's about sun , it 's about nature , it 's about fractalization . <next_sent> Can we open up the surface of the building so that it has more contact with the exterior ? <next_sent> We came up with a number of models : economy models , cheaper to build and more compact ; membranes of housing where people could design their own house and create their own gardens . <next_sent> And then we decided to take New York as a test case , and we looked at Lower Manhattan . <next_sent> And we mapped all the building area in Manhattan . <next_sent> On the left is Manhattan today : blue for housing , red for office buildings , retail . <next_sent> On the right , we reconfigured it : the office buildings form the base , and then rising 75 stories above , are apartments . <next_sent> There 's a street in the air on the 25th level , a community street . <next_sent> It 's permeable . <next_sent> There are gardens and open spaces for the community , almost every unit with its own private garden , and community space all around . <next_sent> And most important , permeable , open . <next_sent> It does not form a wall or an obstruction in the city , and light permeates everywhere . <next_sent> And in the last two or three years , we 've actually been , for the first time , realizing the quality of life of Habitat in re al-life projects across Asia . <next_sent> This in Qinhuangdao in China : middle - income housing , where there is a bylaw that every apartment must receive three hours of sunlight . <next_sent> That 's measured in the winter solstice . <next_sent> And under construction in Singapore , again middle - income housing , gardens , community streets and parks and so on and so forth . <next_sent> And Colombo . <next_sent> And I want to touch on one more issue , which is the design of the public realm . <next_sent> A hundred years after we 've begun building with tall buildings , we are yet to understand how the tall high - rise building becomes a building block in making a city , in creating the public realm . <next_sent> In Singapore , we had an opportunity : 10 million square feet , extremely high density . <next_sent> Taking the concept of outdoor and indoor , promenades and parks integrated with intense urban life . <next_sent> So they are outdoor spaces and indoor spaces , and you move from one to the other , and there is contact with nature , and most relevantly , at every level of the structure , public gardens and open space : on the roof of the podium , climbing up the towers , and finally on the roof , the sky park , two and a half acres , jogging paths , restaurants , and the world 's longest swimming pool . <next_sent> And that 's all I can tell you in five minutes . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01))
+   :snt2 (s2.g / get-01
+               :ARG0 (s2.i / i
+                           :ARG0-of (s2.s2 / study-01
+                                           :mod (s2.s / still)))
+               :ARG1 (s2.f / fellowship
+                           :purpose (s2.s3 / study-01
+                                           :ARG0 s2.i
+                                           :ARG1 (s2.h / house-01
+                                                       :location (s2.c / continent
+                                                                       :name (s2.n / name
+                                                                                   :op1 "North"
+                                                                                   :op2 "America"))))
+                           :mod (s2.t / travel-01))
+               :time (s2.d / date-entity
+                           :year "1960"))
+   :snt3 (s3.t / travel-01
+               :ARG0 (s3.w / we)
+               :ARG1 (s3.c / country
+                           :same-as s2.c))
+   :snt4 (s4.s / see-01
+               :ARG0 (s4.w / we
+                           :same-as s3.w)
+               :ARG1 (s4.b / building
+                           :ARG1-of (s4.r / rise-01
+                                          :ARG2 (s4.h / high))
+                           :ARG2-of (s4.h2 / house-01
+                                           :ARG1-of (s4.p / public-02)))
+               :location (s4.c / city
+                               :ARG1-of (s4.m / major-02)
+                               :example (s4.a2 / and
+                                               :op1 (s4.c2 / city
+                                                           :name (s4.n / name
+                                                                       :op1 "New"
+                                                                       :op2 "York"))
+                                               :op2 (s4.c3 / city
+                                                           :name (s4.n2 / name
+                                                                        :op1 "Philadelphia")))
+                               :mod (s4.a / all)))
+   :snt5 (s5.l / live-01
+               :ARG0 (s5.p / person
+                           :ARG0-of (s5.c / choose-01
+                                          :polarity "-")
+                           :mod (s5.t / that))
+               :location (s5.t2 / there))
+   :snt6 (s6.a / and
+               :op1 (s6.t3 / travel-01
+                           :ARG0 (s6.w / we
+                                       :same-as s3.w)
+                           :ARG2 (s6.s / suburb)
+                           :ARG3 (s6.s2 / suburb)
+                           :time (s6.t / then))
+               :op2 (s6.c / come-01
+                          :ARG1 (s6.i / i
+                                      :same-as s2.i)
+                          :direction (s6.b / back)
+                          :manner (s6.t2 / think-01
+                                         :ARG0 s6.i
+                                         :ARG1 (s6.o / obligate-01
+                                                     :ARG0 s6.w
+                                                     :ARG2 (s6.r / reinvent-01
+                                                                 :ARG0 s6.w
+                                                                 :ARG1 (s6.b2 / building
+                                                                              :mod (s6.a2 / apartment)))))))
+   :snt7 (s7.o / obligate-01
+               :ARG2 (s7.w / way
+                           :manner-of (s7.d / do-02
+                                            :ARG1 (s7.t / this
+                                                        :same-as s6.r))
+                           :mod (s7.a / another)))
+   :snt8 (s8.c / cause-01
+               :ARG0 (s8.p / possible-01
+                           :ARG1 (s8.s2 / sustain-01
+                                        :ARG0 (s8.w / we)
+                                        :ARG1 (s8.s / suburb))
+                           :polarity "-")
+               :ARG1 (s8.d / design-01
+                           :ARG0 s8.w
+                           :ARG1 (s8.b / building
+                                       :ARG0-of (s8.g / give-01
+                                                      :ARG1 (s8.q / quality
+                                                                  :poss (s8.h / house))
+                                                      :ARG2 (s8.u / unit
+                                                                  :mod (s8.e / each))))
+                           :mode "imperative"))
+   :snt9 (s9.c / concern-02
+               :ARG0 (s9.h2 / house-01)
+               :ARG1 (s9.a2 / and
+                            :op1 (s9.g / garden)
+                            :op2 (s9.c2 / contact-01
+                                        :ARG1 (s9.n / nature))
+                            :op3 (s9.s / street
+                                       :ARG1-of (s9.i / instead-of-91
+                                                      :ARG2 (s9.h / hallway))))
+               :degree (s9.a / all))
+   :snt10 (s10.a4 / and
+                  :op1 (s10.b2 / build-01
+                               :purpose (s10.a / achieve-01
+                                               :ARG0 (s10.w / we)
+                                               :ARG1 (s10.e / economy))
+                               :ARG0 s10.w
+                               :ARG1 (s10.i / it
+                                            :same-as s8.b))
+                  :op2 (s10.b / be-temporally-at-91
+                              :ARG1 s10.i
+                              :ARG2 (s10.a2 / after
+                                            :quant (s10.a3 / almost
+                                                           :op1 (s10.t / temporal-quantity
+                                                                       :unit (s10.y / year)
+                                                                       :quant "50")))))
+   :snt11 (s11.p / place
+                 :ARG1-of (s11.d / desirable-02
+                                 :degree (s11.v / very))
+                 :location-of (s11.l / live-01))
+   :snt12 (s12.c / contrast-01
+                 :ARG1 (s12.b / building
+                              :domain (s12.i / it
+                                             :same-as s8.b)
+                              :mod (s12.h / heritage)
+                              :time (s12.n / now))
+                 :ARG2 (s12.p / proliferate-01
+                              :ARG0 s12.i
+                              :polarity "-"))
+   :snt13 (s13.t / trip-03
+                 :ARG0 (s13.i / i
+                              :same-as s2.i)
+                 :ARG1 (s13.c / country
+                              :name (s13.n / name
+                                           :op1 "China"))
+                 :ord (s13.o / ordinal-entity
+                             :value "1")
+                 :time (s13.d / date-entity
+                              :year "1973"))
+   :snt14 (s14.e / event
+                 :name (s14.n / name
+                              :op1 "Cultural"
+                              :op2 "Revolution")
+                 :domain (s14.i / it))
+   :snt15 (s15.a / and
+                 :op1 (s15.t / travel-01
+                             :ARG0 (s15.w / we)
+                             :ARG1 (s15.c / country
+                                          :same-as s13.c))
+                 :op2 (s15.m / meet-03
+                             :ARG0 s15.w
+                             :ARG1 (s15.a2 / and
+                                           :op1 (s15.p / person
+                                                       :ARG0-of (s15.a3 / architect-00))
+                                           :op2 (s15.p2 / person
+                                                        :ARG0-of (s15.p3 / plan-01)))))
+   :snt16 (s16.c3 / contrast-01
+                  :ARG1 (s16.c / city
+                               :name (s16.n / name
+                                            :op1 "Beijing")
+                               :domain (s16.t2 / this)
+                               :mod (s16.t / then))
+                  :ARG2 (s16.b / building
+                               :ARG1-of (s16.r / rise-01
+                                               :ARG2 (s16.h / high))
+                               :location (s16.o / or
+                                                :op1 s16.c
+                                                :op2 (s16.c2 / city
+                                                             :name (s16.n2 / name
+                                                                           :op1 "Shanghai")))
+                               :polarity "-"))
+   :snt17 (s17.e2 / exist-01
+                  :ARG1 (s17.c / city
+                               :name (s17.n / name
+                                            :op1 "Shenzhen"))
+                  :ARG2 (s17.c2 / city)
+                  :mod (s17.e / even)
+                  :polarity "-")
+   :snt18 (s18.c / car
+                 :quant (s18.a / any
+                               :degree (s18.h / hardly)))
+   :snt19 (s19.c / city
+                 :name (s19.n / name
+                              :op1 "Beijing"
+                              :same-as s16.n)
+                 :domain (s19.t2 / this
+                                 :same-as s16.n)
+                 :time (s19.a / after
+                              :quant (s19.t / temporal-quantity
+                                            :unit (s19.y / year)
+                                            :quant "30"))
+                 :time (s19.t3 / today))
+   :snt20 (s20.c / city
+                 :name (s20.n / name
+                              :op1 "Hong"
+                              :op2 "Kong")
+                 :mod (s20.t / this))
+   :snt21 (s21.c2 / contrast-01
+                  :ARG1 (s21.a / and
+                               :op1 (s21.h / have-condition-91
+                                           :ARG1 (s21.l / live-01
+                                                        :ARG0 (s21.y / you)
+                                                        :location (s21.t / there))
+                                           :ARG2 (s21.w / wealth
+                                                        :domain s21.y))
+                               :op2 (s21.h2 / have-condition-91
+                                            :ARG1 (s21.l2 / live-01
+                                                          :ARG0 s21.y
+                                                          :location s21.t)
+                                            :ARG2 (s21.p / poor
+                                                         :domain s21.y)))
+                  :ARG2 (s21.a2 / and
+                                :op1 (s21.d / density
+                                            :ARG1-of (s21.h3 / high-02)
+                                            :domain s21.t)
+                                :op2 (s21.c / continent
+                                            :name (s21.n / name
+                                                         :op1 "Asia")
+                                            :mod (s21.j / just
+                                                        :polarity "-"))))
+   :snt22 (s22.p / possible-01
+                 :ARG1 (s22.t3 / travel-01
+                               :ARG0 (s22.y / you)
+                               :duration (s22.t / temporal-quantity
+                                                :unit (s22.m / minute)
+                                                :quant "45")
+                               :instrument (s22.h / helicopter)
+                               :time (s22.s / see-01
+                                            :ARG0 s22.y
+                                            :ARG1 (s22.c2 / consume-01
+                                                          :ARG0 (s22.b / building
+                                                                       :ARG1-of (s22.r / rise-01
+                                                                                       :ARG2 (s22.h2 / high))
+                                                                       :mod (s22.t2 / that))
+                                                          :ARG1 (s22.e / environment
+                                                                       :ARG1-of (s22.r2 / rise-01
+                                                                                        :ARG2 (s22.l / low-04))
+                                                                       :time (s22.d / date-entity
+                                                                                    :century "19")))))
+                 :location (s22.c / city
+                                  :name (s22.n / name
+                                               :op1 "São"
+                                               :op2 "Paulo")))
+   :snt23 (s23.a / and
+                 :accompanier (s23.i / it)
+                 :op1 (s23.c / come-01
+                             :ARG1 (s23.c2 / congest-01))
+                 :op2 (s23.l / lose-02
+                             :ARG0 (s23.w / we)
+                             :ARG1 (s23.m / mobility))
+                 :op3 (s23.e / et-cetera)
+                 :op4 (s23.e2 / et-cetera))
+   :snt24 (s24.c / cause-01
+                 :ARG1 (s24.d / decide-01
+                              :ARG0 (s24.w / we
+                                           :same-as s10.w)
+                              :ARG1 (s24.a / and
+                                           :op1 (s24.g / go-back-19
+                                                       :ARG1 s24.w)
+                                           :op2 (s24.r / rethink-01
+                                                       :ARG0 s24.w
+                                                       :ARG1 (s24.p / program
+                                                                    :name (s24.n / name
+                                                                                 :op1 "Habitat"))))
+                              :time (s24.b / before
+                                           :quant (s24.f / few
+                                                         :op1 (s24.t / temporal-quantity
+                                                                     :unit (s24.y / year)
+                                                                     :quant "1"))
+                                           :op1 (s24.n2 / now))))
+   :snt25 (s25.p / possible-01
+                 :ARG1 (s25.m / make-02
+                              :ARG0 (s25.w / we)
+                              :ARG1 (s25.h / have-degree-91
+                                           :ARG1 (s25.i / it
+                                                        :same-as s24.p)
+                                           :ARG2 (s25.p2 / possible-01
+                                                         :ARG1 (s25.a / afford-01
+                                                                      :ARG1 s25.i))
+                                           :ARG3 (s25.m2 / more)))
+                 :polarity (s25.a2 / amr-unknown))
+   :snt26 (s26.p / possible-01
+                 :ARG1 (s26.a / achieve-01
+                              :ARG0 (s26.w / we)
+                              :ARG1 (s26.q / quality
+                                           :mod (s26.t / this)
+                                           :poss (s26.l / live-01))
+                              :ARG1-of (s26.a2 / actual-02)
+                              :condition (s26.d / dense
+                                                :ARG1-of (s26.p2 / prevail-02
+                                                                 :time (s26.t2 / today))))
+                 :polarity (s26.a3 / amr-unknown))
+   :snt27 (s27.a / and
+                 :op2 (s27.r / realize-01
+                             :ARG0 (s27.w / we
+                                          :same-as s10.w)
+                             :ARG1 (s27.c / concern-02
+                                          :ARG0 (s27.i / it
+                                                       :same-as s24.p)
+                                          :ARG1 (s27.a2 / and
+                                                        :op1 (s27.l / light)
+                                                        :op2 (s27.s / sun)
+                                                        :op3 (s27.n / nature)
+                                                        :op4 (s27.f / fractalization))
+                                          :mod (s27.b / basic))))
+   :snt28 (s28.p / possible-01
+                 :ARG1 (s28.o / open-up-03
+                              :purpose (s28.c / contact-01
+                                              :ARG0 (s28.b / building
+                                                           :part s28.s)
+                                              :ARG1 (s28.e / exterior)
+                                              :ARG1-of (s28.h / have-quant-91
+                                                              :ARG3 (s28.m / more)))
+                              :ARG0 (s28.w / we)
+                              :ARG1 (s28.s / surface))
+                 :polarity (s28.a / amr-unknown))
+   :snt29 (s29.c2 / come-up-11
+                  :ARG0 (s29.w / we
+                               :same-as s10.w)
+                  :ARG1 (s29.m / model
+                               :quant (s29.n / number)
+                               :example (s29.a / and
+                                               :op1 (s29.b / build-01
+                                                           :ARG1 (s29.m2 / model
+                                                                         :mod (s29.e / economy))
+                                                           :ARG1-of (s29.h / have-degree-91
+                                                                           :ARG2 (s29.c / cheap-02
+                                                                                        :ARG1 s29.b)
+                                                                           :ARG3 (s29.m3 / more)))
+                                               :op2 (s29.h2 / have-degree-91
+                                                            :ARG1 s29.b
+                                                            :ARG2 (s29.c3 / compact-01
+                                                                          :ARG1 s29.m2)
+                                                            :ARG3 (s29.m4 / more))
+                                               :op3 (s29.g2 / gulf
+                                                            :location-of (s29.p2 / possible-01
+                                                                                 :ARG1 (s29.a2 / and
+                                                                                               :op1 (s29.d / design-01
+                                                                                                           :ARG0 (s29.p / person)
+                                                                                                           :ARG1 (s29.h3 / house
+                                                                                                                         :poss s29.p))
+                                                                                               :op2 (s29.c4 / create-01
+                                                                                                            :ARG0 s29.p
+                                                                                                            :ARG1 (s29.g / garden
+                                                                                                                         :poss s29.p))))
+                                                            :mod (s29.h4 / house-01)))))
+   :snt30 (s30.a / and
+                 :op2 (s30.a2 / and
+                              :op1 (s30.d / decide-01
+                                          :ARG0 (s30.w / we
+                                                       :same-as s10.w)
+                                          :ARG1 (s30.t / take-01
+                                                       :ARG0 s30.w
+                                                       :ARG1 (s30.c2 / city
+                                                                     :name (s30.n / name
+                                                                                  :op1 "New"
+                                                                                  :op2 "York")
+                                                                     :same-as s4.c2)
+                                                       :ARG2 (s30.c / case-04
+                                                                    :ARG1-of (s30.t2 / test-01)))
+                                          :time (s30.t3 / then))
+                              :op2 (s30.l / look-01
+                                          :ARG0 s30.w
+                                          :ARG1 (s30.c3 / city-district
+                                                        :name (s30.n2 / name
+                                                                      :op1 "Lower"
+                                                                      :op2 "Manhattan")))))
+   :snt31 (s31.a2 / and
+                  :op2 (s31.m / map-01
+                              :ARG0 (s31.w / we
+                                           :same-as s10.w)
+                              :ARG1 (s31.a3 / area
+                                            :location (s31.c / city-district
+                                                             :name (s31.n / name
+                                                                          :op1 "Manhattan"))
+                                            :location-of (s31.b / build-01)
+                                            :mod (s31.a / all))))
+   :snt32 (s32.c2 / city-district
+                  :name (s32.n / name
+                               :op1 "Manhattan")
+                  :ARG0-of (s32.c / cause-01
+                                  :ARG0 (s32.a / and
+                                               :op1 (s32.b / blue
+                                                           :purpose (s32.h / house-01))
+                                               :op2 (s32.r / red-02)
+                                               :op3 (s32.r2 / retail-01)))
+                  :ARG1-of (s32.l / left-19)
+                  :rel (s32.b2 / building
+                               :mod (s32.o / office))
+                  :time (s32.t / today))
+   :snt33 (s33.d / disfigure-01
+                 :ARG0 (s33.w / we
+                              :same-as s10.w)
+                 :ARG1 (s33.i / it
+                              :same-as s31.c)
+                 :ARG1-of (s33.r / right-04)
+                 :ARG1-of (s33.m / mean-01
+                                 :ARG2 (s33.a2 / and
+                                               :op1 (s33.f / form-01
+                                                           :ARG0 (s33.b2 / building
+                                                                         :mod (s33.o / office))
+                                                           :ARG1 (s33.b / base))
+                                               :op2 (s33.r2 / rise-01
+                                                            :ARG2 (s33.a / above
+                                                                         :op1 (s33.s / story
+                                                                                     :quant "75"))
+                                                            :op3 (s33.a3 / apartment)
+                                                            :time (s33.t / then)))))
+   :snt34 (s34.s / street
+                 :location (s34.a / air)
+                 :location (s34.l / level
+                                  :ord (s34.o / ordinal-entity
+                                              :value "25"))
+                 :mod (s34.c / community))
+   :snt35 (s35.p / possible-01
+                 :ARG1 (s35.p2 / proliferate-01
+                               :ARG0 (s35.i / it
+                                            :same-as s34.s)))
+   :snt36 (s36.a3 / and
+                  :beneficiary (s36.c / community)
+                  :example (s36.u / unit
+                                  :ARG0-of (s36.h / have-03
+                                                  :ARG1 (s36.g2 / garden
+                                                                :ARG1-of (s36.p / private-02
+                                                                                :ARG2 s36.u)))
+                                  :mod (s36.e / every
+                                              :mod (s36.a2 / almost)))
+                  :op1 (s36.g / garden)
+                  :op2 (s36.s / space
+                              :ARG1-of (s36.o / open-06))
+                  :op3 (s36.s2 / space
+                               :degree (s36.a / all-around)
+                               :mod s36.c))
+   :snt37 (s37.a / and
+                 :op2 (s37.a2 / and
+                              :op1 (s37.h / have-degree-91
+                                          :ARG2 (s37.i / important-01)
+                                          :ARG3 (s37.m / most))
+                              :op2 (s37.o / open-01
+                                          :ARG1-of (s37.p / possible-01
+                                                          :polarity "-"))))
+   :snt38 (s38.a / and
+                 :op1 (s38.f / form-01
+                             :ARG0 (s38.i / it)
+                             :ARG1 (s38.o2 / or
+                                           :op1 (s38.w / wall)
+                                           :op2 (s38.o / obstruction))
+                             :location (s38.c / city
+                                              :same-as s4.c2)
+                             :polarity "-")
+                 :op2 (s38.p / permeate-01
+                             :ARG0 (s38.l / light)
+                             :ARG1 (s38.e / everywhere)))
+   :snt39 (s39.a3 / and
+                  :op2 (s39.r / realize-02
+                              :ARG0 (s39.w / we)
+                              :ARG1 (s39.q / quality
+                                           :poss (s39.l / life
+                                                        :poss (s39.o3 / organization
+                                                                      :name (s39.n / name
+                                                                                   :op1 "Habitat"))))
+                              :ARG1-of (s39.a2 / actual-02)
+                              :ARG2 (s39.p / project
+                                           :purpose (s39.l2 / live-01)
+                                           :location (s39.a / across
+                                                            :op1 (s39.c / continent
+                                                                        :name (s39.n2 / name
+                                                                                      :op1 "Asia"))))
+                              :ord (s39.o2 / ordinal-entity
+                                           :value "1")
+                              :time (s39.b / before
+                                           :duration (s39.o / or
+                                                            :op1 (s39.t / temporal-quantity
+                                                                        :unit (s39.y / year)
+                                                                        :quant "2")
+                                                            :op2 (s39.t2 / temporal-quantity
+                                                                         :unit (s39.y2 / year)
+                                                                         :quant "3"))
+                                           :op1 (s39.n3 / now))))
+   :snt40 (s40.t2 / this
+                  :domain (s40.h2 / house-01
+                                  :location-of (s40.b / bylaw
+                                                      :topic (s40.o / obligate-01
+                                                                    :ARG1 (s40.a / apartment
+                                                                                 :mod (s40.e / every))
+                                                                    :ARG2 (s40.r / receive-01
+                                                                                 :ARG0 s40.a
+                                                                                 :ARG1 (s40.s / sunlight
+                                                                                              :duration (s40.t / temporal-quantity
+                                                                                                               :unit (s40.h / hour)
+                                                                                                               :quant "3")))))
+                                  :mod (s40.i / income
+                                              :mod (s40.m / middle)))
+                  :location (s40.c / city
+                                   :name (s40.n / name
+                                                :op1 "Qinhuangdao")
+                                   :location (s40.c2 / country
+                                                     :name (s40.n2 / name
+                                                                   :op1 "China")
+                                                     :same-as s13.c)))
+   :snt41 (s41.m / measure-01
+                 :ARG1 (s41.t / that)
+                 :time (s41.s / solstice
+                              :mod (s41.d / date-entity
+                                          :season (s41.w / winter))))
+   :snt42 (s42.a2 / and
+                  :op2 (s42.c2 / construct-01
+                               :ARG1 (s42.a3 / and
+                                             :mod (s42.a / again)
+                                             :op1 (s42.h / house-01
+                                                         :mod (s42.i / income
+                                                                     :mod (s42.m / middle)))
+                                             :op2 (s42.g / garden)
+                                             :op3 (s42.s / street
+                                                         :mod (s42.c / community))
+                                             :op4 (s42.p / park)
+                                             :op5 (s42.e / et-cetera)
+                                             :op6 (s42.e2 / et-cetera))
+                               :location (s42.c3 / country
+                                                 :name (s42.n / name
+                                                              :op1 "Singapore"))))
+   :snt43 (s43.a / and
+                 :op2 (s43.c / city
+                             :name (s43.n / name
+                                          :op1 "Colombo")))
+   :snt44 (s44.a / and
+                 :op2 (s44.w / want-01
+                             :ARG0 (s44.i / i
+                                          :same-as s2.i)
+                             :ARG1 (s44.t / touch-on-04
+                                          :ARG0 s44.i
+                                          :ARG1 (s44.i2 / issue-02
+                                                        :ARG0 (s44.d / design-01
+                                                                     :ARG1 (s44.r / realm
+                                                                                  :ARG1-of (s44.p / public-02)))
+                                                        :mod (s44.m / more)
+                                                        :quant "1"))))
+   :snt45 (s45.h / have-03
+                 :ARG0 (s45.w / we)
+                 :ARG1 (s45.y2 / yet)
+                 :ARG2 (s45.u / understand-01
+                              :ARG0 s45.w
+                              :ARG1 (s45.a2 / amr-unknown
+                                            :manner-of (s45.b / become-01
+                                                              :purpose (s45.a3 / and
+                                                                               :op1 (s45.m / make-01
+                                                                                           :ARG1 (s45.c / city))
+                                                                               :op2 (s45.c2 / create-01
+                                                                                            :ARG1 (s45.r / realm
+                                                                                                         :ARG1-of (s45.p / public-02))))
+                                                              :ARG1 (s45.b6 / building
+                                                                            :ARG1-of (s45.r2 / rise-01
+                                                                                             :ARG2 (s45.h2 / high))
+                                                                            :mod (s45.t2 / tall))
+                                                              :ARG2 (s45.b3 / block
+                                                                            :mod (s45.b7 / building)))))
+                 :time (s45.a / after
+                              :quant (s45.t3 / temporal-quantity
+                                             :unit (s45.y / year)
+                                             :quant "100")
+                              :op1 (s45.b2 / begin-01
+                                           :ARG0 s45.w
+                                           :ARG1 (s45.b4 / build-01
+                                                         :ARG0 s45.w
+                                                         :ARG2 (s45.b5 / building
+                                                                       :mod (s45.t / tall))))))
+   :snt46 (s46.h / have-03
+                 :ARG0 (s46.w / we)
+                 :ARG1 (s46.o / opportunity
+                              :mod (s46.d / density
+                                          :ARG1-of (s46.h2 / high-02
+                                                           :degree (s46.e / extreme))
+                                          :op1 (s46.a / area-quantity
+                                                      :unit (s46.s / square-meter)
+                                                      :quant "10000000")))
+                 :location (s46.c / country
+                                  :name (s46.n / name
+                                               :op1 "Singapore")
+                                  :same-as s42.c3))
+   :snt47 (s47.t / take-01
+                 :ARG1 (s47.c2 / concept
+                               :topic (s47.a / and
+                                             :op1 (s47.a2 / and
+                                                          :ARG1-of (s47.i2 / integrate-01
+                                                                           :ARG2 (s47.l / life
+                                                                                        :ARG1-of (s47.i3 / intense-02)
+                                                                                        :mod (s47.c / city)))
+                                                          :op1 (s47.o / outdoor)
+                                                          :op2 (s47.n / nightclub)
+                                                          :op3 (s47.p / park))))
+                 :rel (s47.i / indoor))
+   :snt48 (s48.i2 / infer-01
+                  :ARG1 (s48.a3 / and
+                                :op1 (s48.a2 / and
+                                             :domain (s48.t / they
+                                                            :same-as s47.p)
+                                             :op1 (s48.s2 / space
+                                                          :location (s48.o4 / outdoor))
+                                             :op2 (s48.s3 / space
+                                                          :location (s48.i / indoor)))
+                                :op2 (s48.m3 / move-01
+                                             :ARG0 (s48.y / you)
+                                             :ARG2 (s48.o / one)
+                                             :ARG3 (s48.o3 / other))
+                                :op3 (s48.c2 / contact-01
+                                             :ARG1 (s48.n / nature)))
+                  :rel (s48.h / have-degree-91
+                              :ARG2 (s48.r / relevant-01)
+                              :ARG3 (s48.m / most))
+                  :rel (s48.l / level
+                              :example (s48.a5 / and
+                                               :op1 (s48.r3 / roof
+                                                            :part-of (s48.p2 / podium))
+                                               :op2 (s48.c / climb-01
+                                                           :ARG1 (s48.t2 / tower)
+                                                           :direction (s48.u / up))
+                                               :op4 (s48.b / be-located-at-91
+                                                           :ARG1 s48.r3
+                                                           :mod (s48.f / final))
+                                               :op6 (s48.r2 / restaurant)
+                                               :op7 (s48.p3 / pool
+                                                            :ARG1-of (s48.h2 / have-degree-91
+                                                                             :ARG2 (s48.l2 / long-03
+                                                                                           :ARG1 s48.p3)
+                                                                             :ARG3 (s48.m2 / most))
+                                                            :location-of (s48.s6 / swim-01)))
+                              :location (s48.a4 / and
+                                                :ARG2 (s48.p / park
+                                                             :domain (s48.a6 / area-quantity
+                                                                             :unit (s48.a / acre)
+                                                                             :quant "2.5")
+                                                             :mod (s48.s / sky))
+                                                :op1 s48.l
+                                                :op2 (s48.g / garden
+                                                            :ARG1-of (s48.p4 / public-02))
+                                                :op3 (s48.s4 / space
+                                                             :ARG1-of (s48.o2 / open-06))
+                                                :op5 (s48.r4 / route
+                                                             :purpose (s48.j / jog-01)))
+                              :mod (s48.e / every)
+                              :part-of (s48.s5 / structure))
+                  :rel (s48.w / world))
+   :snt49 (s49.a2 / and
+                  :op2 (s49.p / possible-01
+                              :ARG1 (s49.t / tell-01
+                                           :ARG0 (s49.i / i
+                                                        :same-as s2.i)
+                                           :ARG1 (s49.t3 / that
+                                                         :ARG1-of (s49.b / be-it-08))
+                                           :ARG2 (s49.y / you)
+                                           :time (s49.a / after
+                                                        :quant (s49.t2 / temporal-quantity
+                                                                       :unit (s49.m / minute)
+                                                                       :quant "5")
+                                                        :op1 (s49.n / now)))))
+   :snt50 (s50.t / thank-01
+                 :ARG1 (s50.y / you
+                              :same-as s2.i)))
+

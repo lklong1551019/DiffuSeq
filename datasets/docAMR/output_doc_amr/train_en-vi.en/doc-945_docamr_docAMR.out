@@ -1,0 +1,496 @@
+# ::id doc-945
+# ::doc_file doc-945
+# ::tok http : / / www . ted . com / talks / john_la_grou_plugs_smart_power_outlets_1< / url> <next_sent> This is a world - changing invention . <next_sent> The smoke alarm has saved perhaps hundreds of thousands of lives , worldwide . <next_sent> But smoke alarms do n't prevent fires . <next_sent> Every year in the USA , over 20,000 are killed or injured with 350,000 home fires . <next_sent> And one of the main causes of all these fires is electricity . <next_sent> What if we could prevent electrical fires before they start ? <next_sent> Well , a couple of friends and I figured out how to do this . <next_sent> So how does electricity ignite residential fires ? <next_sent> Well it turns out that the main causes are faulty and misused appliances and electrical wiring . <next_sent> Our invention had to address all of these issues . <next_sent> So what about circuit breakers ? <next_sent> Well , Thomas Edison invented the circuit breaker in 1879 . <next_sent> This is 130 - year - old technology , and this is a problem , because over 80 percent of all home electrical fires start below the safety threshold of circuit breakers . <next_sent> Hmmm ... <next_sent> So we considered all of this . <next_sent> And we realized that electrical appliances must be able to communicate directly with the power receptacle itself . <next_sent> And the power outlet needs to be smart enough to do it . <next_sent> So here is what we did . <next_sent> We put a 10 - cent digital transponder , a data tag , in the appliance plug . <next_sent> And we put an inexpensive , wireless data reader inside the receptacle so they could communicate . <next_sent> Now , every home electrical system becomes an intelligent network . <next_sent> The appliance 's safe operating parameters are embedded into its plug . <next_sent> If too much current is flowing , the intelligent receptacle turns itself off , and prevents another fire from starting . <next_sent> We call this technology EFCI , Electrical Fault Circuit Interrupter . <next_sent> Okay , two more points . <next_sent> Every year in the USA , roughly 2,500 children are admitted to emergency rooms for shock and burn injuries related to electrical receptacles . <next_sent> And this is crazy . <next_sent> An intelligent receptacle prevents injuries because the power is always off , until an intelligent plug is detected . <next_sent> Simple . <next_sent> Now , besides saving lives , perhaps the greatest benefit of intelligent power is in its energy savings . <next_sent> This invention will reduce global energy consumption by allowing remote control and automation of every outlet in every home and business . <next_sent> Now you can choose to reduce your home energy bill by automatically cycling heavy loads like air conditioners and heaters . <next_sent> Hotels and businesses can shut down unused rooms from a central location , or even a cell phone . <next_sent> There are 10 billion electrical outlets in North America alone . <next_sent> The potential energy savings is very , very significant . <next_sent> So far we 've applied for 414 patent claims . <next_sent> Of those , 186 have been granted : 228 are in process . <next_sent> And I 'm pleased to announce that just three weeks ago we received our first international recognition , the 2009 CES Innovation Award . <next_sent> So , to conclude , intelligent power can , globally , save thousands of lives , prevent tens of thousands of injuries , and eliminate tens of billions of dollars in property damage every single year , while significantly reducing global energy consumption . <next_sent> In the spirit of this year 's TED Conference , we think this is a powerful , world - changing invention . <next_sent> And I 'd like to thank Chris for this opportunity to unveil our technology with you , and soon the world . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :value "+")
+   :snt2 (s2.i / invent-01
+               :ARG0-of (s2.c / change-01
+                              :ARG1 (s2.w / world))
+               :ARG1 (s2.t / this))
+   :snt3 (s3.s / save-01
+               :ARG0 (s3.a / alarm-01
+                           :topic (s3.s2 / smoke))
+               :ARG1 (s3.l / life
+                           :quant (s3.m / multiple
+                                        :ARG1-of (s3.p / possible-01)
+                                        :op1 "100000"))
+               :location (s3.w / worldwide))
+   :snt4 (s4.c / contrast-01
+               :ARG2 (s4.p / prevent-01
+                           :ARG0 (s4.a / alarm-01
+                                       :purpose (s4.s / smoke))
+                           :ARG1 (s4.f / fire)
+                           :polarity "-"))
+   :snt5 (s5.o / or
+               :ARG1-of (s5.c / cause-01
+                              :ARG0 (s5.f / fire-03
+                                          :ARG1 (s5.h / home)
+                                          :quant "350000"))
+               :frequency (s5.r / rate-entity-91
+                                :ARG2 (s5.t / temporal-quantity
+                                            :unit (s5.y / year)
+                                            :quant "1"))
+               :location (s5.c2 / country
+                                :name (s5.n / name
+                                            :op1 "USA"))
+               :op1 (s5.k / kill-01
+                          :ARG0 s5.f
+                          :ARG1 (s5.p / person
+                                      :quant (s5.o2 / over
+                                                    :op1 "20000")))
+               :op2 (s5.i / injure-01
+                          :ARG1 s5.p))
+   :snt6 (s6.a2 / and
+                :op2 (s6.e / electricity
+                           :ARG1-of (s6.i / include-91
+                                          :ARG2 (s6.c / cause-01
+                                                      :ARG1 (s6.f / fire
+                                                                  :mod (s6.t / this)
+                                                                  :mod (s6.a / all)
+                                                                  :same-as s5.f)
+                                                      :mod (s6.m / main)))))
+   :snt7 (s7.h / have-condition-91
+               :ARG1 (s7.a / amr-unknown)
+               :ARG2 (s7.p / possible-01
+                           :ARG1 (s7.p2 / prevent-01
+                                        :ARG0 (s7.w / we)
+                                        :ARG1 (s7.f / fire
+                                                    :mod (s7.e / electricity))
+                                        :time (s7.b / before
+                                                    :op1 (s7.s / start-01
+                                                               :ARG1 s7.f)))))
+   :snt8 (s8.f / figure-out-05
+               :ARG0 (s8.a / and
+                           :op1 (s8.p / person
+                                      :quant (s8.c / couple)
+                                      :ARG0-of (s8.h / have-rel-role-91
+                                                     :ARG1 (s8.i / i)
+                                                     :ARG2 (s8.f2 / friend)))
+                           :op2 s8.i)
+               :ARG1 (s8.t / thing
+                           :manner-of (s8.d / do-02
+                                            :ARG0 s8.a
+                                            :ARG1 (s8.t2 / this
+                                                         :same-as s7.p2))))
+   :snt9 (s9.i / ignite-01
+               :ARG0 (s9.e / electricity)
+               :ARG1 (s9.f / fire
+                           :mod (s9.r / residence))
+               :manner (s9.a / amr-unknown))
+   :snt10 (s10.t2 / turn-out-11
+                  :ARG1 (s10.t / thing
+                               :ARG0-of (s10.c / cause-01)
+                               :domain (s10.a / and
+                                              :op1 (s10.a2 / appliance
+                                                           :ARG1-of (s10.m2 / misuse-01)
+                                                           :ARG1-of (s10.f / fault-02))
+                                              :op2 (s10.w / wire-02
+                                                          :ARG3 (s10.e / electricity)))
+                               :mod (s10.m / main)))
+   :snt11 (s11.o / obligate-01
+                 :ARG2 (s11.a / address-02
+                              :ARG0 (s11.i / invent-01
+                                           :ARG0 (s11.w / we
+                                                        :same-as s7.w)
+                                           :same-as s2.t)
+                              :ARG1 (s11.i2 / issue-02
+                                            :mod (s11.t / this)
+                                            :mod (s11.a2 / all))))
+   :snt12 (s12.i / infer-01
+                 :ARG1 (s12.a / amr-unknown
+                              :topic (s12.b / breaker
+                                            :mod (s12.c / circuit))))
+   :snt13 (s13.i / invent-01
+                 :ARG0 (s13.p / person
+                              :name (s13.n / name
+                                           :op1 "Thomas"
+                                           :op2 "Edison"))
+                 :ARG1 (s13.t / thing
+                              :ARG0-of (s13.b / break-01
+                                              :mod (s13.c / circuit)))
+                 :mod (s13.w / well)
+                 :time (s13.d / date-entity
+                              :year "1879"))
+   :snt14 (s14.a2 / and
+                  :op1 (s14.t / technology
+                              :age (s14.t2 / temporal-quantity
+                                           :unit (s14.y / year)
+                                           :quant "130")
+                              :domain (s14.t3 / this
+                                              :same-as s13.t))
+                  :op2 (s14.p2 / problem
+                               :ARG1-of (s14.c / cause-01
+                                               :ARG0 (s14.s2 / start-01
+                                                             :ARG1 (s14.f / fire
+                                                                          :ARG1-of (s14.i / include-91
+                                                                                          :ARG2 (s14.f2 / fire
+                                                                                                        :mod (s14.e / electricity)
+                                                                                                        :mod (s14.h / home)
+                                                                                                        :mod (s14.a / all))
+                                                                                          :ARG3 (s14.o / over
+                                                                                                       :op1 (s14.p / percentage-entity
+                                                                                                                   :value "80"))))
+                                                             :ARG2 (s14.b / below
+                                                                          :op1 (s14.t4 / threshold
+                                                                                       :mod (s14.s / safe-01)
+                                                                                       :poss (s14.b2 / breaker
+                                                                                                     :mod (s14.c2 / circuit))))))
+                               :domain s14.t))
+   :snt15 (s15.h / hmm)
+   :snt16 (s16.c / consider-02
+                 :ARG0 (s16.w / we
+                              :same-as s7.w)
+                 :ARG1 (s16.t / this
+                              :mod (s16.a / all)))
+   :snt17 (s17.a / and
+                 :op2 (s17.r / realize-01
+                             :ARG0 (s17.w / we
+                                          :same-as s7.w)
+                             :ARG1 (s17.o / obligate-01
+                                          :ARG2 (s17.p / possible-01
+                                                       :ARG1 (s17.c / communicate-01
+                                                                    :ARG0 (s17.a2 / appliance
+                                                                                  :mod (s17.e / electricity))
+                                                                    :ARG1-of (s17.d / direct-02)
+                                                                    :ARG2 (s17.t / thing
+                                                                                 :ARG0-of (s17.r2 / receive-01
+                                                                                                  :ARG1 (s17.p2 / power-01))))))))
+   :snt18 (s18.a / and
+                 :op2 (s18.n / need-01
+                             :ARG0 (s18.o / outlet
+                                          :ARG0-of (s18.p / power-01))
+                             :ARG1 (s18.h / have-degree-91
+                                          :ARG1 s18.o
+                                          :ARG2 (s18.s / smart-06
+                                                       :ARG1 s18.o)
+                                          :ARG3 (s18.e / enough)
+                                          :ARG6 (s18.d / do-02
+                                                       :ARG0 s18.o
+                                                       :ARG1 (s18.i / it
+                                                                    :same-as s17.c)))))
+   :snt19 (s19.t / thing
+                 :ARG1-of (s19.d / do-02
+                                 :ARG0 (s19.w / we
+                                              :same-as s7.w))
+                 :location (s19.h / here))
+   :snt20 (s20.p2 / put-01
+                  :ARG0 (s20.w / we
+                               :same-as s7.w)
+                  :ARG1 (s20.t2 / transponder
+                                :ARG1-of (s20.m / mean-01
+                                                :ARG2 (s20.t / tag
+                                                             :mod (s20.d / data)))
+                                :mod (s20.d2 / digit)
+                                :mod (s20.m2 / monetary-quantity
+                                             :unit (s20.c / cent)
+                                             :quant "10"))
+                  :ARG2 (s20.p / plug
+                               :mod (s20.a / appliance)))
+   :snt21 (s21.a / and
+                 :op2 (s21.p2 / put-01
+                              :ARG0 (s21.w / we
+                                           :same-as s7.w)
+                              :ARG0-of (s21.c / cause-01
+                                              :ARG1 (s21.p / possible-01
+                                                           :ARG1 (s21.c3 / communicate-01
+                                                                         :ARG0 (s21.t / they))))
+                              :ARG1 (s21.t2 / thing
+                                            :ARG0-of (s21.r / read-01
+                                                            :ARG1 (s21.d / data))
+                                            :ARG1-of (s21.c2 / cheap-02
+                                                             :polarity "-")
+                                            :mod (s21.w2 / wire))
+                              :ARG2 (s21.i / inside
+                                           :op1 (s21.t3 / thing
+                                                        :ARG0-of (s21.r2 / receive-01)
+                                                        :same-as s17.t))))
+   :snt22 (s22.b / become-01
+                 :ARG1 (s22.s / system
+                              :mod (s22.e / electricity)
+                              :mod (s22.h / home)
+                              :mod (s22.e2 / every))
+                 :ARG2 (s22.n / network
+                              :ARG1-of (s22.i / intelligent-01))
+                 :time (s22.n2 / now))
+   :snt23 (s23.e / embed-01
+                 :ARG1 (s23.t / thing
+                              :ARG0-of (s23.o2 / operate-01
+                                               :ARG3-of (s23.o / operate-01
+                                                               :ARG0-of (s23.s / safe-01)
+                                                               :ARG1 (s23.a / appliance
+                                                                            :part (s23.p / plug
+                                                                                         :same-as s20.p)))))
+                 :ARG2 s23.p)
+   :snt24 (s24.h / have-condition-91
+                 :ARG1 (s24.a / and
+                              :op1 (s24.t3 / turn-off-07
+                                           :ARG0 (s24.t / thing
+                                                        :ARG0-of (s24.r / receive-01)
+                                                        :ARG1-of (s24.i / intelligent-01)
+                                                        :ARG1-of s24.t3))
+                              :op2 (s24.p / prevent-01
+                                          :ARG1 (s24.s / start-01
+                                                       :ARG1 (s24.f / fire
+                                                                    :mod (s24.a2 / another)))))
+                 :ARG2 (s24.f2 / flow-01
+                               :ARG1 (s24.c / current
+                                            :ARG1-of (s24.h2 / have-quant-91
+                                                             :ARG2 (s24.m / much)
+                                                             :ARG3 (s24.t2 / too)))))
+   :snt25 (s25.c / call-01
+                 :ARG0 (s25.w / we
+                              :same-as s7.w)
+                 :ARG1 (s25.t / technology
+                              :mod (s25.t3 / this))
+                 :ARG2 (s25.t2 / thing
+                               :name (s25.n / name
+                                            :op1 "Electrical"
+                                            :op2 "Fault"
+                                            :op3 "Circuit"
+                                            :op4 "Interrupter")))
+   :snt26 (s26.p / point
+                 :ARG1-of (s26.o / okay-04)
+                 :mod (s26.m / more)
+                 :quant "2")
+   :snt27 (s27.a / admit-02
+                 :ARG1 (s27.c / child
+                              :quant (s27.r5 / roughly
+                                             :op1 "2500"))
+                 :ARG2 (s27.r4 / room
+                               :mod (s27.e2 / emergency))
+                 :ARG3 (s27.a2 / and
+                               :ARG1-of (s27.r3 / relate-01
+                                                :ARG2 (s27.t2 / thing
+                                                              :ARG0-of (s27.r2 / receive-01
+                                                                               :ARG1 (s27.e / electricity))))
+                               :op1 (s27.s / shock-01
+                                           :ARG1 s27.c)
+                               :op2 (s27.i / injure-01
+                                           :ARG1 s27.c
+                                           :mod (s27.b / burn-01)))
+                 :frequency (s27.r / rate-entity-91
+                                   :ARG2 (s27.t / temporal-quantity
+                                                :unit (s27.y / year)
+                                                :quant "1"))
+                 :location (s27.c2 / country
+                                   :name (s27.n / name
+                                                :op1 "USA")
+                                   :same-as s5.c2))
+   :snt28 (s28.a / and
+                 :op2 (s28.c / crazy-03
+                             :ARG1 (s28.t / this)))
+   :snt29 (s29.p3 / prevent-01
+                  :ARG0 (s29.t / thing
+                               :ARG0-of (s29.r / receive-01)
+                               :ARG1-of (s29.i2 / intelligent-01
+                                                :ARG1 (s29.p / plug)))
+                  :ARG1 (s29.i / injure-01)
+                  :ARG1-of (s29.c / cause-01
+                                  :ARG0 (s29.t2 / turn-off-07
+                                                :ARG1 (s29.p2 / power)
+                                                :time (s29.a / always)
+                                                :time (s29.u / until
+                                                             :op1 (s29.d / detect-01
+                                                                         :ARG1 s29.p)))))
+   :snt30 (s30.s / simple-02)
+   :snt31 (s31.p / possible-01
+                 :ARG1 (s31.h / have-degree-91
+                              :ARG1 (s31.b / benefit-01
+                                           :ARG0 (s31.p2 / power
+                                                         :ARG1-of (s31.i / intelligent-01))
+                                           :ARG0 (s31.s / save-01
+                                                        :ARG0 s31.p2
+                                                        :ARG1 (s31.e / energy))
+                                           :ARG2-of (s31.e2 / except-01
+                                                            :ARG1 (s31.s2 / save-02
+                                                                          :ARG1 (s31.l / life)))
+                                           :time (s31.n / now))
+                              :ARG2 (s31.g / great)
+                              :ARG3 (s31.m / most)))
+   :snt32 (s32.r / reduce-01
+                 :ARG0 (s32.t / thing
+                              :ARG1-of (s32.i / invent-01)
+                              :mod (s32.t2 / this)
+                              :same-as s31.p2)
+                 :ARG1 (s32.c / consume-01
+                              :ARG1 (s32.e / energy
+                                           :mod (s32.g / globe)))
+                 :manner (s32.a / allow-01
+                                :ARG0 s32.t
+                                :ARG1 (s32.a2 / and
+                                              :op1 (s32.c2 / control-01
+                                                           :ARG1 (s32.o / outlet
+                                                                        :location (s32.a3 / and
+                                                                                          :mod (s32.e3 / every)
+                                                                                          :op1 (s32.h / home)
+                                                                                          :op2 (s32.b / business))
+                                                                        :mod (s32.e2 / every))
+                                                           :mod (s32.r2 / remote))
+                                              :op2 (s32.a4 / automate-01
+                                                           :ARG1 s32.o))))
+   :snt33 (s33.p / possible-01
+                 :ARG1 (s33.c / choose-01
+                              :ARG0 (s33.y / you)
+                              :ARG1 (s33.r / reduce-01
+                                           :ARG0 s33.y
+                                           :ARG1 (s33.b / bill-01
+                                                        :ARG2 s33.y
+                                                        :ARG3 (s33.e / energy
+                                                                     :mod (s33.h3 / home)))
+                                           :manner (s33.c2 / cycle-01
+                                                           :ARG0 s33.y
+                                                           :ARG1 (s33.l / load
+                                                                        :example (s33.a2 / and
+                                                                                         :op1 (s33.a / air-conditioning)
+                                                                                         :op2 (s33.t / thing
+                                                                                                     :ARG0-of (s33.h / heat-01)))
+                                                                        :mod (s33.h2 / heavy))
+                                                           :manner (s33.a3 / automatic))))
+                 :time (s33.n / now))
+   :snt34 (s34.p2 / possible-01
+                  :ARG1 (s34.s / shut-down-05
+                               :ARG0 (s34.a / and
+                                            :op1 (s34.h / hotel)
+                                            :op2 (s34.b / business))
+                               :ARG1 (s34.o / or
+                                            :op1 (s34.r / room
+                                                        :ARG1-of (s34.u / use-01))
+                                            :op2 (s34.p / phone
+                                                        :mod (s34.c / cell)
+                                                        :mod (s34.e / even)))
+                               :source (s34.l / location
+                                              :mod (s34.c2 / center))))
+   :snt35 (s35.o / outlet
+                 :location (s35.c / continent
+                                  :name (s35.n / name
+                                               :op1 "North"
+                                               :op2 "America")
+                                  :mod (s35.a / alone))
+                 :mod (s35.e / electricity)
+                 :quant "10000000000")
+   :snt36 (s36.s2 / significant-02
+                  :ARG1 (s36.s / save-01
+                               :ARG1 (s36.e / energy)
+                               :mod (s36.p / potential))
+                  :degree (s36.v / very))
+   :snt37 (s37.a / apply-01
+                 :ARG0 (s37.w / we
+                              :same-as s7.w)
+                 :ARG1 (s37.c / claim-01
+                              :ARG1 (s37.p / patent-01)
+                              :quant "414")
+                 :time (s37.s / so-far))
+   :snt38 (s38.i / include-91
+                 :ARG1 (s38.g / grant-01
+                              :ARG1-of (s38.i2 / include-91
+                                               :ARG2 (s38.g2 / grant-01
+                                                             :ARG1-of (s38.p / process-01)
+                                                             :ARG1 "228"))
+                              :ARG1 "186")
+                 :ARG2 (s38.t / that
+                              :same-as s37.c))
+   :snt39 (s39.a / and
+                 :op2 (s39.p / please-01
+                             :ARG0 (s39.a2 / announce-01
+                                           :ARG0 (s39.i / i
+                                                        :same-as s8.i)
+                                           :ARG1 (s39.r / receive-01
+                                                        :ARG0 (s39.w / we
+                                                                     :same-as s7.w)
+                                                        :ARG1 (s39.r2 / recognize-01
+                                                                      :ARG0 (s39.a3 / award
+                                                                                    :name (s39.n / name
+                                                                                                 :op1 "CES"
+                                                                                                 :op2 "Innovation"
+                                                                                                 :op3 "Award")
+                                                                                    :time (s39.d / date-entity
+                                                                                                 :year "2009"))
+                                                                      :ARG1 s39.w
+                                                                      :mod (s39.i2 / international)
+                                                                      :ord (s39.o / ordinal-entity
+                                                                                  :value "1"))
+                                                        :time (s39.b / before
+                                                                     :quant (s39.t / temporal-quantity
+                                                                                   :unit (s39.w2 / week)
+                                                                                   :quant "3")
+                                                                     :mod (s39.j / just)
+                                                                     :op1 (s39.n2 / now))))
+                             :ARG1 s39.i))
+   :snt40 (s40.c / conclude-01
+                 :ARG1 (s40.p / possible-01
+                              :ARG1 (s40.a / and
+                                           :frequency (s40.t / temporal-quantity
+                                                             :ARG1-of (s40.s3 / single-02)
+                                                             :mod (s40.e3 / every)
+                                                             :unit (s40.y / year)
+                                                             :quant "1")
+                                           :manner (s40.g / globe)
+                                           :op1 (s40.s / save-02
+                                                       :ARG0 (s40.p2 / power
+                                                                     :ARG1-of (s40.i2 / intelligent-01)
+                                                                     :same-as s31.p2)
+                                                       :ARG1 (s40.l / life
+                                                                    :quant (s40.m2 / multiple
+                                                                                   :op1 "1000")))
+                                           :op2 (s40.p3 / prevent-01
+                                                        :ARG0 s40.p2
+                                                        :ARG1 (s40.i / injure-01
+                                                                     :quant (s40.m3 / multiple
+                                                                                    :op1 "10000")))
+                                           :op3 (s40.e / eliminate-01
+                                                       :ARG0 s40.p2
+                                                       :ARG1 (s40.d / damage-01
+                                                                    :ARG1 (s40.p4 / property)
+                                                                    :ARG3 (s40.m4 / multiple
+                                                                                  :op1 (s40.m / monetary-quantity
+                                                                                              :unit (s40.d2 / dollar)
+                                                                                              :quant "10000000"))))
+                                           :time (s40.r / reduce-01
+                                                        :ARG0 s40.p2
+                                                        :ARG1 (s40.c2 / consume-01
+                                                                      :ARG1 (s40.e2 / energy)
+                                                                      :mod s40.g)
+                                                        :ARG1-of (s40.s2 / significant-02)))))
+   :snt41 (s41.t / think-01
+                 :ARG0 (s41.w / we
+                              :same-as s7.w)
+                 :ARG1 (s41.i / invent-01
+                              :ARG0-of (s41.c / change-01
+                                              :ARG1 (s41.w2 / world))
+                              :ARG1-of (s41.p / powerful-02)
+                              :domain (s41.t3 / this
+                                              :same-as s31.p2))
+                 :prep-in (s41.s / spirit
+                                 :poss (s41.c2 / conference
+                                               :name (s41.n / name
+                                                            :op1 "TED"
+                                                            :op2 "Conference")
+                                               :time (s41.y / year
+                                                            :mod (s41.t2 / this)))))
+   :snt42 (s42.a / and
+                 :op2 (s42.l / like-02
+                             :ARG0 (s42.i / i
+                                          :same-as s8.i)
+                             :ARG1 (s42.t2 / thank-01
+                                           :ARG0 s42.i
+                                           :ARG1 (s42.p / person
+                                                        :name (s42.n / name
+                                                                     :op1 "Chris"))
+                                           :ARG2 (s42.o / opportunity
+                                                        :mod (s42.t3 / this)
+                                                        :topic (s42.u / unveil-01
+                                                                      :ARG0 s42.p
+                                                                      :accompanier (s42.a2 / and
+                                                                                           :op1 (s42.y / you)
+                                                                                           :op2 (s42.w2 / world))))))
+                 :rel (s42.u2 / unveil-01
+                              :ARG1 (s42.t / technology
+                                           :poss (s42.w / we
+                                                        :same-as s7.w)
+                                           :same-as s25.t)
+                              :time (s42.s / soon)))
+   :snt43 (s43.t / thank-01
+                 :ARG1 (s43.y / you
+                              :same-as s8.i)))
+

@@ -1,0 +1,430 @@
+# ::id doc-320
+# ::doc_file doc-320
+# ::tok http : / / www . ted . com / talks / kirk_citron_and_now_the_real_news< / url> <next_sent> We are drowning in news . <next_sent> Reuters alone puts out three and a half million news stories a year . <next_sent> That 's just one source . <next_sent> My question is : How many of those stories are actually going to matter in the long run ? <next_sent> That 's the idea behind The Long News . <next_sent> It 's a project by The Long Now Foundation , which was founded by TEDsters including Kevin Kelly and Stewart Brand . <next_sent> And what we 're looking for is news stories that might still matter 50 or 100 or 10,000 years from now . <next_sent> And when you look at the news through that filter , a lot falls by the wayside . <next_sent> To take the top stories from the A.P. this last year , is this going to matter in a decade ? <next_sent> Or this ? <next_sent> Or this ? <next_sent> Really ? <next_sent> Is this going to matter in 50 or 100 years ? <next_sent> Okay , that was kind of cool . <next_sent> But the top story of this past year was the economy , and I 'm just betting that , sooner or later , this particular recession is going to be old news . <next_sent> So , what kind of stories might make a difference for the future ? <next_sent> Well , let 's take science . <next_sent> Someday , little robots will go through our bloodstreams fixing things . <next_sent> That someday is already here if you 're a mouse . <next_sent> Some recent stories : nanobees zap tumors with real bee venom ; they 're sending genes into the brain ; a robot they built that can crawl through the human body . <next_sent> What about resources ? <next_sent> How are we going to feed nine billion people ? <next_sent> We 're having trouble feeding six billion today . <next_sent> As we heard yesterday , there 's over a billion people hungry . <next_sent> Britain will starve without genetically modified crops . <next_sent> Bill Gates , fortunately , has bet a billion on [ agricultural ] research . <next_sent> What about global politics ? <next_sent> The world 's going to be very different when and if China sets the agenda , and they may . <next_sent> They 've overtaken the U.S. as the world 's biggest car market , they 've overtaken Germany as the largest exporter , and they 've started doing DNA tests on kids to choose their careers . <next_sent> We 're finding all kinds of ways to push back the limits of what we know . <next_sent> Some recent discoveries : There 's an ant colony from Argentina that has now spread to every continent but Antarctica ; there 's a self - directed robot scientist that 's made a discovery -- soon , science may no longer need us , and life may no longer need us either ; a microbe wakes up after 120,000 years . <next_sent> It seems that with or without us , life will go on . <next_sent> But my pick for the top Long News story of this past year was this one : water found on the moon . <next_sent> Makes it a lot easier to put a colony up there . <next_sent> And if NASA does n't do it , China might , or somebody in this room might write a big check . <next_sent> My point is this : In the long run , some news stories are more important than others .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01
+                            :ARG0 (s1.p / person
+                                        :name (s1.n / name
+                                                    :op1 "America"))))
+   :snt2 (s2.d / drown-01
+               :ARG0 (s2.n / news)
+               :ARG1 (s2.w / we))
+   :snt3 (s3.p2 / put-out-10
+                :ARG0 (s3.p / publication
+                            :name (s3.n / name
+                                        :op1 "Reuters")
+                            :mod (s3.a / alone))
+                :ARG1 (s3.r / rate-entity-91
+                            :ARG1 (s3.s / story
+                                        :mod (s3.n2 / news)
+                                        :quant "3.5")
+                            :ARG2 (s3.t / temporal-quantity
+                                        :unit (s3.y / year)
+                                        :quant "1")))
+   :snt4 (s4.s / source
+               :domain (s4.t / that
+                             :same-as s3.p)
+               :mod (s4.j / just)
+               :quant "1")
+   :snt5 (s5.q / question-01
+               :ARG0 (s5.i / i)
+               :ARG1 (s5.m / matter-01
+                           :ARG1 (s5.s / story
+                                       :quant (s5.a2 / amr-unknown)
+                                       :ARG1-of (s5.i2 / include-91
+                                                       :ARG2 (s5.s2 / story
+                                                                    :mod (s5.t / that)
+                                                                    :same-as s3.s)))
+                           :ARG1-of (s5.a / actual-02)
+                           :time (s5.r / run-13
+                                       :ARG1-of (s5.l / long-03))))
+   :snt6 (s6.i / idea
+               :domain (s6.t / that)
+               :location (s6.b / broadcast-program
+                               :name (s6.n / name
+                                           :op1 "The"
+                                           :op2 "Long"
+                                           :op3 "News")))
+   :snt7 (s7.p4 / project
+                :domain (s7.i2 / it
+                               :same-as s6.b)
+                :prep-by (s7.o / organization
+                               :name (s7.n / name
+                                           :op1 "The"
+                                           :op2 "Long"
+                                           :op3 "Now"
+                                           :op4 "Foundation")
+                               :ARG1-of (s7.f / found-01
+                                              :ARG0 (s7.p / person
+                                                          :name (s7.n2 / name
+                                                                       :op1 "TEDsters")
+                                                          :ARG2-of (s7.i / include-01
+                                                                         :ARG1 (s7.a / and
+                                                                                     :op1 (s7.p2 / person
+                                                                                                 :name (s7.n3 / name
+                                                                                                              :op1 "Kevin"
+                                                                                                              :op2 "Kelly"))
+                                                                                     :op2 (s7.p3 / person
+                                                                                                 :name (s7.n4 / name
+                                                                                                              :op1 "Stewart"
+                                                                                                              :op2 "Brand"))))))))
+   :snt8 (s8.a2 / and
+                :op2 (s8.l / look-01
+                           :ARG0 (s8.w / we)
+                           :ARG1 (s8.s2 / story
+                                        :ARG1-of (s8.m / matter-01
+                                                       :ARG1-of (s8.p / possible-01)
+                                                       :mod (s8.s / still)
+                                                       :time (s8.a / after
+                                                                   :quant (s8.o / or
+                                                                                :op1 (s8.t / temporal-quantity
+                                                                                           :unit (s8.y / year)
+                                                                                           :quant "50")
+                                                                                :op2 (s8.t2 / temporal-quantity
+                                                                                            :unit (s8.y2 / year)
+                                                                                            :quant "10000"))
+                                                                   :op1 (s8.n2 / now)))
+                                        :mod (s8.n / news)))
+                :rel "100")
+   :snt9 (s9.a / and
+               :op2 (s9.f / fall-01
+                          :ARG1 (s9.l2 / lot)
+                          :ARG4 (s9.w / wayside)
+                          :condition (s9.l / look-01
+                                           :ARG0 (s9.y / you)
+                                           :ARG1 (s9.n / news)
+                                           :manner (s9.t3 / through
+                                                          :op1 (s9.t2 / thing
+                                                                      :ARG0-of (s9.f2 / filter-02)
+                                                                      :mod (s9.t / that))))))
+   :snt10 (s10.m / matter-01
+                 :ARG1 (s10.t4 / this)
+                 :condition (s10.t / take-01
+                                   :ARG1 (s10.s / story
+                                                :mod (s10.t5 / top))
+                                   :ARG2 (s10.g / government-organization
+                                                :name (s10.n / name
+                                                             :op1 "A.P."))
+                                   :time (s10.y / year
+                                                :mod (s10.l / last)
+                                                :mod (s10.t3 / this)))
+                 :polarity (s10.a2 / amr-unknown)
+                 :rel (s10.f / foot)
+                 :time (s10.a / after
+                              :quant (s10.t2 / temporal-quantity
+                                             :unit (s10.d / decade)
+                                             :quant "1")
+                              :op1 (s10.n2 / now)))
+   :snt11 (s11.o / or
+                 :op2 (s11.t / this
+                             :polarity (s11.a / amr-unknown)))
+   :snt12 (s12.o / or
+                 :op2 (s12.t / this
+                             :polarity (s12.a / amr-unknown)))
+   :snt13 (s13.r / real-04
+                 :polarity (s13.a / amr-unknown))
+   :snt14 (s14.m / matter-01
+                 :ARG1 (s14.t3 / this)
+                 :polarity (s14.a2 / amr-unknown)
+                 :time (s14.a / after
+                              :quant (s14.o / or
+                                            :op1 (s14.t / temporal-quantity
+                                                        :unit (s14.y / year)
+                                                        :quant "50")
+                                            :op2 (s14.t2 / temporal-quantity
+                                                         :unit (s14.y2 / year)
+                                                         :quant "100"))
+                              :op1 (s14.n / now)))
+   :snt15 (s15.c / cool-04
+                 :ARG1 (s15.t / that)
+                 :ARG1-of (s15.o / okay-04)
+                 :degree (s15.k / kind-of))
+   :snt16 (s16.c / contrast-01
+                 :ARG2 (s16.a / and
+                              :op1 (s16.s / story
+                                          :domain (s16.e / economy)
+                                          :mod (s16.t3 / top)
+                                          :time (s16.y / year
+                                                       :mod (s16.p2 / past)
+                                                       :mod (s16.t / this)))
+                              :op2 (s16.b / bet-01
+                                          :ARG0 (s16.i / i
+                                                       :same-as s5.i)
+                                          :ARG2 (s16.n / news
+                                                       :domain (s16.r / recession-02
+                                                                      :mod (s16.p / particular)
+                                                                      :mod (s16.t2 / this))
+                                                       :mod (s16.o / old)
+                                                       :time (s16.e2 / eventual))
+                                          :mod (s16.j / just))))
+   :snt17 (s17.i / infer-01
+                 :ARG1 (s17.p / possible-01
+                              :ARG1 (s17.m / make-01
+                                           :ARG0 (s17.s / story
+                                                        :mod (s17.k / kind
+                                                                    :mod (s17.a / amr-unknown)))
+                                           :ARG1 (s17.d / differ-02)
+                                           :beneficiary (s17.f / future))))
+   :snt18 (s18.l / let-01
+                 :ARG1 (s18.t / take-01
+                              :ARG0 (s18.w / we)
+                              :ARG1 (s18.s / science)))
+   :snt19 (s19.g / go-01
+                 :purpose (s19.f / fix-02
+                                 :ARG0 (s19.r / robot
+                                              :mod (s19.l / little))
+                                 :ARG1 (s19.t / thing))
+                 :ARG1 s19.r
+                 :ARG4 (s19.t2 / through
+                               :op1 (s19.h / heart
+                                           :part-of (s19.w / we)))
+                 :time (s19.s / someday))
+   :snt20 (s20.b / be-located-at-91
+                 :ARG1 (s20.t / that
+                              :same-as s19.s)
+                 :ARG2 (s20.h / here)
+                 :condition (s20.m / mouse
+                                   :domain (s20.y / you))
+                 :rel (s20.a / already)
+                 :time (s20.s / someday))
+   :snt21 (s21.s3 / story
+                  :mod (s21.s2 / some)
+                  :time (s21.r2 / recent)
+                  :topic (s21.a / and
+                                :op1 (s21.z / zap-01
+                                            :ARG0 (s21.n / nanometer)
+                                            :ARG1 (s21.t3 / tumor)
+                                            :ARG2 (s21.v / venom
+                                                         :ARG1-of (s21.r / real-04)
+                                                         :source (s21.b / bee)))
+                                :op2 (s21.s / send-03
+                                            :ARG0 s21.n
+                                            :ARG1 (s21.g / gene)
+                                            :ARG2 (s21.b3 / brain))
+                                :op3 (s21.r3 / robot
+                                             :ARG0-of (s21.c / crawl-01
+                                                             :ARG1 (s21.t2 / through
+                                                                           :op1 (s21.b2 / body
+                                                                                        :mod (s21.h / human)))
+                                                             :ARG1-of (s21.p / possible-01))
+                                             :ARG1-of (s21.b4 / build-01
+                                                              :ARG0 (s21.t / they)))))
+   :snt22 (s22.a / amr-unknown
+                 :topic (s22.r / resource))
+   :snt23 (s23.f / feed-01
+                 :ARG0 (s23.w / we)
+                 :ARG1 (s23.p / person
+                              :quant "9000000000")
+                 :ARG2 (s23.a / amr-unknown))
+   :snt24 (s24.h / have-trouble-04
+                 :ARG0 (s24.w / we)
+                 :ARG1 (s24.f / feed-01
+                              :ARG0 s24.w
+                              :ARG1 (s24.m / monetary-quantity
+                                           :unit (s24.d / dollar)
+                                           :quant "6000000000"))
+                 :time (s24.t / today))
+   :snt25 (s25.h / hear-01
+                 :ARG0 (s25.w / we)
+                 :ARG1 (s25.h2 / hunger-01
+                               :ARG0 (s25.p / person
+                                            :quant (s25.o / over
+                                                          :op1 "1000000000")))
+                 :time (s25.y / yesterday))
+   :snt26 (s26.s / starve-01
+                 :ARG1 (s26.c / country
+                              :name (s26.n / name
+                                           :op1 "Britain"))
+                 :manner (s26.c2 / crop
+                                 :mod (s26.g / genetics
+                                             :ARG1-of (s26.m / modify-01))
+                                 :polarity "-"))
+   :snt27 (s27.b / bet-01
+                 :ARG0 (s27.p / person
+                              :name (s27.n / name
+                                           :op1 "Bill"
+                                           :op2 "Gates"))
+                 :ARG1 (s27.m / monetary-quantity
+                              :unit (s27.d / dollar)
+                              :quant "1000000000")
+                 :ARG2 (s27.r / research-01
+                              :ARG1 (s27.a / agriculture))
+                 :ARG2-of (s27.f / fortunate-01))
+   :snt28 (s28.a / amr-unknown
+                 :topic (s28.p / politics
+                               :mod (s28.g / globe)))
+   :snt29 (s29.a2 / and
+                  :op1 (s29.d / differ-02
+                              :ARG1 (s29.w / world)
+                              :degree (s29.v / very)
+                              :time (s29.s / set-02
+                                           :ARG0 (s29.c / country
+                                                        :name (s29.n / name
+                                                                     :op1 "China"))
+                                           :ARG1 (s29.a / agenda)))
+                  :op2 (s29.p / possible-01
+                              :ARG1 s29.s))
+   :snt30 (s30.a / and
+                 :op1 (s30.o / overtake-01
+                             :ARG0 (s30.t2 / they
+                                           :same-as s29.c)
+                             :ARG1 (s30.c4 / country
+                                           :name (s30.n / name
+                                                        :op1 "U.S."))
+                             :prep-as (s30.m / market
+                                             :ARG1-of (s30.h / have-degree-91
+                                                             :ARG2 (s30.b / big)
+                                                             :ARG3 (s30.m3 / most)
+                                                             :ARG5 s30.c4
+                                                             :ARG5 (s30.m2 / market
+                                                                           :location (s30.w / world
+                                                                                            :same-as s29.w)))
+                                             :mod (s30.c / car)))
+                 :op2 (s30.o2 / overtake-01
+                              :ARG0 s30.t2
+                              :ARG1 (s30.c5 / country
+                                            :name (s30.n2 / name
+                                                          :op1 "Germany")
+                                            :prep-as (s30.e / export-01
+                                                            :ARG0 s30.t2
+                                                            :ARG1-of (s30.h2 / have-degree-91
+                                                                             :ARG2 (s30.l / large)
+                                                                             :ARG3 (s30.m4 / most)))))
+                 :op3 (s30.s / start-01
+                             :ARG0 s30.t2
+                             :ARG1 (s30.d / do-02
+                                          :purpose (s30.c3 / choose-01
+                                                           :ARG0 (s30.k / kid)
+                                                           :ARG1 (s30.c2 / career
+                                                                         :poss s30.k))
+                                          :ARG0 s30.t2
+                                          :ARG1 (s30.t / test-01
+                                                       :ARG0 s30.t2
+                                                       :ARG1 (s30.n4 / nucleic-acid
+                                                                     :name (s30.n3 / name
+                                                                                   :op1 "DNA"))
+                                                       :ARG2 s30.k))))
+   :snt31 (s31.f / find-01
+                 :ARG0 (s31.w2 / we)
+                 :ARG1 (s31.w / way
+                              :purpose (s31.p / push-01
+                                              :ARG0 s31.w2
+                                              :ARG1 (s31.l / limit-01
+                                                           :ARG1 (s31.t / thing
+                                                                        :ARG1-of (s31.k2 / know-01
+                                                                                         :ARG0 s31.w2)))
+                                              :ARG2 (s31.b / back))
+                              :mod (s31.k / kind
+                                          :mod (s31.a / all))))
+   :snt32 (s32.d2 / discover-01
+                  :ARG1 (s32.a2 / and
+                                :op1 (s32.s6 / spread-02
+                                             :ARG1 (s32.c / colony
+                                                          :consist-of (s32.a3 / ant)
+                                                          :source (s32.c5 / country
+                                                                          :name (s32.n / name
+                                                                                       :op1 "Argentina")))
+                                             :destination (s32.c2 / continent
+                                                                  :ARG1-of (s32.c4 / contrast-01
+                                                                                   :ARG2 (s32.c3 / continent
+                                                                                                 :name (s32.n2 / name
+                                                                                                               :op1 "Antarctica")))
+                                                                  :mod (s32.e2 / every))
+                                             :time (s32.n7 / now))
+                                :op2 (s32.d3 / discover-01
+                                             :ARG0 (s32.s2 / scientist
+                                                           :ARG0-of (s32.d / direct-01
+                                                                           :ARG1 (s32.s3 / self))
+                                                           :mod (s32.r2 / robot)))
+                                :op3 (s32.p / possible-01
+                                            :ARG1 (s32.n3 / need-01
+                                                          :ARG0 (s32.s / science)
+                                                          :ARG1 (s32.w2 / we)
+                                                          :time (s32.n5 / no-longer))
+                                            :time (s32.s5 / soon))
+                                :op4 (s32.p2 / possible-01
+                                             :ARG1 (s32.n4 / need-01
+                                                           :ARG0 (s32.l / life)
+                                                           :ARG1 s32.w2
+                                                           :mod (s32.e / either)
+                                                           :time (s32.n6 / no-longer)))
+                                :op5 (s32.w / wake-up-02
+                                            :ARG1 (s32.m / microbe)
+                                            :time (s32.a / after
+                                                         :quant (s32.t / temporal-quantity
+                                                                       :unit (s32.y / year)
+                                                                       :quant "120000"))))
+                  :mod (s32.s4 / some)
+                  :time (s32.r / recent))
+   :snt33 (s33.s / seem-01
+                 :ARG1 (s33.g / go-on-15
+                              :ARG1 (s33.l / life)
+                              :manner (s33.o / or
+                                             :op1 (s33.w / we
+                                                         :same-as s32.w2))))
+   :snt34 (s34.c / contrast-01
+                 :ARG2 (s34.p2 / pick-01
+                               :ARG0 (s34.i / i
+                                            :same-as s5.i)
+                               :ARG2 (s34.s / story
+                                            :mod (s34.p3 / publication
+                                                         :name (s34.n / name
+                                                                      :op1 "Long"
+                                                                      :op2 "News"))
+                                            :mod (s34.t2 / top)
+                                            :mod (s34.t / this)
+                                            :time (s34.y / year
+                                                         :mod (s34.p / past))
+                                            :topic (s34.w / water
+                                                          :ARG1-of (s34.f / find-01
+                                                                          :location (s34.m / moon))))))
+   :snt35 (s35.m / make-02
+                 :ARG1 (s35.h / have-degree-91
+                              :ARG1 (s35.p / put-01
+                                           :ARG1 (s35.c / colony)
+                                           :ARG2 (s35.t / there
+                                                        :location (s35.u / up)))
+                              :ARG2 (s35.e / easy-05
+                                           :ARG1 s35.p)
+                              :ARG3 (s35.m2 / more
+                                            :quant (s35.l / lot))))
+   :snt36 (s36.a / and
+                 :op2 (s36.o / or
+                             :op1 (s36.p / possible-01
+                                         :ARG1 (s36.d / do-02
+                                                      :ARG0 (s36.r / research-institute
+                                                                   :name (s36.n / name
+                                                                                :op1 "NASA"))
+                                                      :ARG1 (s36.i / it
+                                                                   :same-as s35.p)
+                                                      :condition-of s36.p
+                                                      :polarity "-"))
+                             :op2 (s36.p2 / possible-01
+                                          :ARG1 (s36.w / write-01
+                                                       :ARG0 (s36.s / somebody
+                                                                    :location (s36.r2 / room
+                                                                                      :mod (s36.t / this)))
+                                                       :ARG1 (s36.c / check
+                                                                    :mod (s36.b / big)))))
+                 :rel (s36.d2 / do-02
+                              :ARG0 (s36.c2 / country
+                                            :name (s36.n2 / name
+                                                          :op1 "China")
+                                            :same-as s29.c)
+                              :ARG1 s36.i))
+   :snt37 (s37.p / point-04
+                 :ARG0 (s37.i / i
+                              :same-as s5.i)
+                 :ARG1 (s37.h / have-degree-91
+                              :ARG1 (s37.s2 / story
+                                            :quant (s37.s / some)
+                                            :mod (s37.n / news))
+                              :ARG2 (s37.i2 / important-01
+                                            :ARG1 s37.s2)
+                              :ARG3 (s37.m / more)
+                              :ARG4 (s37.s3 / story
+                                            :mod (s37.o / other))
+                              :time (s37.r / run-13
+                                           :ARG1-of (s37.l / long-03)))))
+

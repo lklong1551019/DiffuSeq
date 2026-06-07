@@ -1,0 +1,322 @@
+# ::id doc-83
+# ::doc_file doc-83
+# ::tok http : / / www . ted . com / talks / gever_tulley_s_tinkering_school_in_action< / url> <next_sent> This is the exact moment that I started creating something called Tinkering School . <next_sent> Tinkering School is a place where kids can pick up sticks and hammers and other dangerous objects , and be trusted . <next_sent> Trusted not to hurt themselves , and trusted not to hurt others . <next_sent> Tinkering School does n't follow a set curriculum , and there are no tests . <next_sent> We 're not trying to teach anybody any specific thing . <next_sent> When the kids arrive they 're confronted with lots of stuff : wood and nails and rope and wheels , and lots of tools , real tools . <next_sent> It 's a six - day immersive experience for the kids . <next_sent> And within that context , we can offer the kids time -- something that seems in short supply in their over - scheduled lives . <next_sent> Our goal is to ensure that they leave with a better sense of how to make things than when they arrived , and the deep internal realization that you can figure things out by fooling around . <next_sent> Nothing ever turns out as planned ... ever . <next_sent> And the kids soon learn that all projects go awry -- and become at ease with the idea that every step in a project is a step closer to sweet success , or gleeful calamity . <next_sent> We start from doodles and sketches . <next_sent> And sometimes we make real plans . <next_sent> And sometimes we just start building . <next_sent> Building is at the heart of the experience : hands on , deeply immersed and fully committed to the problem at hand . <next_sent> Robin and I , acting as collaborators , keep the landscape of the projects tilted towards completion . <next_sent> Success is in the doing , and failures are celebrated and analyzed . <next_sent> Problems become puzzles and obstacles disappear . <next_sent> When faced with particularly difficult setbacks or complexities , a really interesting behavior emerges : decoration . <next_sent> Decoration of the unfinished project is a kind of conceptual incubation . <next_sent> From these interludes come deep insights and amazing new approaches to solving the problems that had them frustrated just moments before . <next_sent> All materials are available for use . <next_sent> Even those mundane , hateful , plastic grocery bags can become a bridge stronger than anyone imagined . <next_sent> And the things that they build amaze even themselves . <next_sent> Three , two , one , go ! <next_sent> Gever Tulley : A rollercoaster built by seven - year - olds . <next_sent> Yay ! <next_sent> GT : Thank you . <next_sent> It 's been a great pleasure .
+(d / document
+   :snt1 (s1.u / url-entity
+               :value "talk-01")
+   :snt2 (s2.m / moment
+               :domain (s2.t / this)
+               :mod (s2.e / exact)
+               :time-of (s2.s3 / start-01
+                               :ARG0 (s2.i / i)
+                               :ARG1 (s2.c2 / create-01
+                                            :ARG0 s2.i
+                                            :ARG1 (s2.s2 / something
+                                                         :ARG1-of (s2.c / call-01
+                                                                        :ARG2 (s2.s / school
+                                                                                    :name (s2.n / name
+                                                                                                :op1 "Tinkering"
+                                                                                                :op2 "School")))))))
+   :snt3 (s3.p2 / place
+                :domain (s3.s / school
+                              :ARG0-of (s3.t / tinker-01)
+                              :same-as s2.s2)
+                :location-of (s3.p3 / possible-01
+                                    :ARG1 (s3.a2 / and
+                                                 :op1 (s3.p / pick-up-04
+                                                            :ARG0 (s3.k / kid)
+                                                            :ARG1 (s3.a / and
+                                                                        :op1 (s3.s2 / stick)
+                                                                        :op2 (s3.h / hammer)
+                                                                        :op3 (s3.o / object
+                                                                                   :ARG0-of (s3.e / endanger-01)
+                                                                                   :mod (s3.o2 / other))))
+                                                 :op2 (s3.t2 / trust-01
+                                                             :ARG2 s3.k))))
+   :snt4 (s4.a / and
+               :op1 (s4.t2 / trust-01
+                           :ARG2 (s4.h / hurt-01
+                                       :ARG0 (s4.t / they
+                                                   :same-as s3.k)
+                                       :ARG1 s4.t
+                                       :polarity "-"))
+               :op2 (s4.t3 / trust-01
+                           :ARG1 (s4.h2 / hurt-01
+                                        :ARG0 s4.t
+                                        :ARG1 (s4.p / person
+                                                    :mod (s4.o / other))
+                                        :polarity "-")
+                           :ARG2 s4.t))
+   :snt5 (s5.a / and
+               :op1 (s5.f / follow-02
+                          :ARG0 (s5.s / school
+                                      :ARG0-of (s5.t2 / tinker-01)
+                                      :same-as s2.s2)
+                          :ARG1 (s5.c / curriculum
+                                      :ARG1-of (s5.s2 / set-02))
+                          :polarity "-")
+               :op2 (s5.t / test-01
+                          :location s5.s
+                          :polarity "-"))
+   :snt6 (s6.t3 / try-01
+                :ARG0 (s6.w / we)
+                :ARG1 (s6.t / teach-01
+                            :ARG0 s6.w
+                            :ARG1 (s6.t2 / thing
+                                         :ARG1-of (s6.s / specific-02)
+                                         :mod (s6.a / any))
+                            :ARG2 (s6.a2 / anybody))
+                :polarity "-")
+   :snt7 (s7.c / confront-01
+               :ARG1 (s7.k / kid)
+               :ARG2 (s7.s / stuff
+                           :quant (s7.l / lot)
+                           :example (s7.a / and
+                                          :op1 (s7.w2 / wood)
+                                          :op2 (s7.n / nail)
+                                          :op3 (s7.r2 / rope)
+                                          :op4 (s7.w / wheel)
+                                          :op5 (s7.t / tool
+                                                     :ARG1-of (s7.r / real-04))))
+               :time (s7.a2 / arrive-01
+                            :ARG1 s7.k))
+   :snt8 (s8.e / experience-01
+               :ARG0 (s8.k / kid
+                           :same-as s7.k)
+               :ARG1 (s8.s / spaceship
+                           :mod (s8.i / it
+                                      :same-as s2.s2))
+               :domain s8.i
+               :rel (s8.t / temporal-quantity
+                          :unit (s8.d / day)
+                          :quant "6"))
+   :snt9 (s9.a / and
+               :op2 (s9.p / possible-01
+                          :ARG1 (s9.o / offer-01
+                                      :ARG0 (s9.w / we
+                                                  :same-as s6.w)
+                                      :ARG1 (s9.t2 / time
+                                                   :ARG1-of (s9.s4 / supply-01
+                                                                   :ARG0 (s9.l / life
+                                                                               :ARG1-of (s9.s / schedule-01
+                                                                                              :extent (s9.o2 / over))
+                                                                               :poss (s9.k / kid
+                                                                                           :same-as s7.k))
+                                                                   :ARG1-of (s9.s3 / short-06)
+                                                                   :ARG1-of (s9.s2 / seem-01)))
+                                      :ARG3 s9.k)
+                          :location (s9.c / context
+                                          :mod (s9.t / that))))
+   :snt10 (s10.e / ensure-01
+                 :ARG0 (s10.g / goal
+                              :poss (s10.w / we
+                                           :same-as s6.w))
+                 :ARG1 (s10.l / leave-11
+                              :ARG0 (s10.t / they
+                                           :same-as s7.k)
+                              :manner (s10.a / and
+                                             :op1 (s10.s / sense-01
+                                                         :ARG0 s10.t
+                                                         :ARG1 (s10.t2 / thing
+                                                                       :manner-of (s10.m / make-01
+                                                                                         :ARG0 s10.t
+                                                                                         :ARG1 (s10.t3 / thing)))
+                                                         :ARG1-of (s10.h / have-degree-91
+                                                                         :ARG2 (s10.g2 / good-02)
+                                                                         :ARG3 (s10.m2 / more)
+                                                                         :ARG4 (s10.a2 / arrive-01
+                                                                                       :ARG1 s10.t)))
+                                             :op2 (s10.r / realize-01
+                                                         :ARG0 s10.t
+                                                         :ARG1 (s10.p / possible-01
+                                                                      :ARG1 (s10.f / figure-out-05
+                                                                                   :ARG0 (s10.y / you)
+                                                                                   :ARG1 (s10.t4 / thing)
+                                                                                   :manner (s10.f2 / fool-around-02
+                                                                                                   :ARG0 s10.y)))
+                                                         :ARG1-of (s10.i / internal-02)
+                                                         :ARG1-of (s10.d / deep-02)))))
+   :snt11 (s11.t / turn-out-11
+                 :ARG1 (s11.n / nothing)
+                 :ARG2 (s11.p / plan-01)
+                 :time (s11.e / ever))
+   :snt12 (s12.a2 / and
+                  :op1 (s12.l / learn-01
+                              :ARG0 (s12.k / kid
+                                           :same-as s7.k)
+                              :ARG1 (s12.g2 / go-08
+                                            :ARG1 (s12.p / project
+                                                         :mod (s12.a / all))
+                                            :ARG2 (s12.a3 / awry))
+                              :time (s12.s / soon))
+                  :op2 (s12.b / become-01
+                              :ARG1 s12.k
+                              :ARG2 (s12.e / easy-05
+                                           :ARG1 s12.k
+                                           :topic (s12.i / idea
+                                                         :domain (s12.s3 / step-01
+                                                                         :ARG1-of (s12.h / have-degree-91
+                                                                                         :ARG2 (s12.c2 / close-10
+                                                                                                       :ARG1 (s12.t / thing
+                                                                                                                    :ARG4-of (s12.s2 / step-01))
+                                                                                                       :ARG2 (s12.o / or
+                                                                                                                    :op1 (s12.s4 / succeed-01
+                                                                                                                                 :ARG1-of (s12.s5 / sweet-03))
+                                                                                                                    :op2 (s12.c / calamity
+                                                                                                                                :ARG1-of (s12.g / glad-02))))
+                                                                                         :ARG3 (s12.m / more))
+                                                                         :ARG4 s12.t
+                                                                         :mod (s12.e2 / every)))))
+                  :rel (s12.p2 / project))
+   :snt13 (s13.s2 / start-01
+                  :ARG0 (s13.w / we)
+                  :ARG2 (s13.a / and
+                               :op1 (s13.d / doodle)
+                               :op2 (s13.s / sketch-out-02)))
+   :snt14 (s14.a / and
+                 :op2 (s14.p / plan-01
+                             :ARG0 (s14.w / we)
+                             :ARG1-of (s14.r / real-04)
+                             :time (s14.s / sometimes)))
+   :snt15 (s15.a / and
+                 :op2 (s15.s2 / start-01
+                              :ARG0 (s15.w / we)
+                              :ARG1 (s15.b / build-01
+                                           :ARG0 s15.w)
+                              :mod (s15.j / just)
+                              :time (s15.s / sometimes)))
+   :snt16 (s16.b / be-located-at-91
+                 :ARG1 (s16.b2 / build-01
+                               :ARG1-of (s16.m / mean-01
+                                               :ARG2 (s16.a / and
+                                                            :op1 (s16.h / hand)
+                                                            :op2 (s16.i / immerse-01
+                                                                        :ARG1-of (s16.d / deep-02)
+                                                                        :ARG2 s16.h)
+                                                            :op3 (s16.c / commit-01
+                                                                        :ARG1-of (s16.f / full-09)
+                                                                        :ARG2 (s16.p / problem
+                                                                                     :ARG1-of (s16.a2 / at-hand-14))))))
+                 :ARG2 (s16.h2 / heart
+                               :part-of (s16.e / experience-01)))
+   :snt17 (s17.k / keep-02
+                 :ARG0 (s17.a2 / and
+                               :op1 (s17.p / person
+                                           :name (s17.n / name
+                                                        :op1 "Robin"))
+                               :op2 (s17.i / i
+                                           :same-as s2.i))
+                 :ARG1 (s17.t / tilt-01
+                              :ARG1 (s17.l / landscape
+                                           :poss (s17.p2 / project))
+                              :ARG2 (s17.c2 / complete-01
+                                            :ARG1 s17.l))
+                 :manner (s17.a / act-01
+                                :ARG0 s17.a2
+                                :ARG1 (s17.c / collaborate-01
+                                             :ARG0 s17.a2)))
+   :snt18 (s18.a2 / and
+                  :op1 (s18.s / succeed-01
+                              :location (s18.d / do-02))
+                  :op2 (s18.a3 / and
+                               :op1 (s18.c / celebrate-01
+                                           :ARG1 (s18.f / fail-01))
+                               :op2 (s18.a / analyze-01
+                                           :ARG1 s18.f)))
+   :snt19 (s19.a / and
+                 :op1 (s19.b / become-01
+                             :ARG1 (s19.p / problem)
+                             :ARG2 (s19.p2 / puzzle-01))
+                 :op2 (s19.d / disappear-01
+                             :ARG1 (s19.o / obstacle)))
+   :snt20 (s20.e / emerge-02
+                 :ARG0 (s20.b / behave-01
+                              :ARG1 (s20.d / decorate-01)
+                              :ARG2-of (s20.i / interest-01
+                                              :degree (s20.r / really)))
+                 :time (s20.f / face-01
+                              :ARG1 (s20.o / or
+                                           :op1 (s20.s / setback
+                                                       :mod (s20.d2 / difficult
+                                                                    :mod (s20.p / particular)))
+                                           :op2 (s20.c / complexity
+                                                       :mod s20.d2))))
+   :snt21 (s21.i / incubator
+                 :domain (s21.d / decorate-01
+                                :ARG1 (s21.p / project
+                                             :ARG1-of (s21.e / exist-01
+                                                             :polarity "-")))
+                 :mod (s21.c / conceptual)
+                 :mod (s21.k / kind))
+   :snt22 (s22.c / come-02
+                 :ARG1 (s22.a2 / and
+                               :op1 (s22.i / insight
+                                           :ARG1-of (s22.d / deep-02))
+                               :op2 (s22.a3 / approach-02
+                                            :ARG0-of (s22.a / amaze-01)
+                                            :ARG1 (s22.s / solve-01
+                                                         :ARG1 (s22.p / problem
+                                                                      :ARG0-of (s22.f / frustrate-01
+                                                                                      :ARG1 (s22.t / they)
+                                                                                      :time (s22.b / before
+                                                                                                   :quant (s22.m2 / moment
+                                                                                                                  :mod (s22.j / just))))))
+                                            :ARG1-of (s22.n / new-01)))
+                 :source (s22.m / moment
+                                :mod (s22.t2 / this)))
+   :snt23 (s23.a2 / available-02
+                  :purpose (s23.u / use-01
+                                  :ARG1 (s23.m / material
+                                               :mod (s23.a / all)
+                                               :ARG2-of s23.a2)))
+   :snt24 (s24.p2 / possible-01
+                  :ARG1 (s24.b2 / become-01
+                                :ARG1 (s24.b / bag
+                                             :consist-of (s24.p / plastic)
+                                             :mod (s24.g / grocery)
+                                             :mod (s24.m2 / mundane)
+                                             :mod (s24.t / that))
+                                :ARG2 (s24.b3 / bridge
+                                              :ARG1-of (s24.h2 / have-degree-91
+                                                               :ARG2 (s24.s / strong-02
+                                                                            :ARG1 s24.b3)
+                                                               :ARG3 (s24.m / more)
+                                                               :ARG4 (s24.i / imagine-01
+                                                                            :ARG0 (s24.a / anyone)))))
+                  :rel (s24.e / even)
+                  :rel (s24.h / hate-01))
+   :snt25 (s25.a2 / and
+                  :op1 (s25.a / amaze-01
+                              :ARG0 (s25.t / they
+                                           :same-as s22.t)
+                              :mod (s25.e / even))
+                  :rel (s25.t2 / thing
+                               :ARG1-of (s25.b / build-01
+                                               :ARG0 s25.t)))
+   :snt26 (s26.g / go-02
+                 :ARG0 (s26.a / and
+                              :op1 (s26.o / one
+                                          :quant "2"))
+                 :mode "imperative"
+                 :rel "3")
+   :snt27 (s27.r / roller-coaster
+                 :name (s27.n / name
+                              :op1 "Gever"
+                              :op2 "Tulley")
+                 :ARG1-of (s27.b / build-01
+                                 :ARG0 (s27.p / person
+                                              :age (s27.t / temporal-quantity
+                                                          :unit (s27.y / year)
+                                                          :quant "7"))))
+   :snt28 (s28.y / yay)
+   :snt29 (s29.s / say-01
+                 :ARG0 (s29.p / person
+                              :name (s29.n / name
+                                           :op1 "GT"))
+                 :ARG1 (s29.t / thank-01
+                              :ARG0 (s29.i / i)
+                              :ARG1 (s29.y / you)))
+   :snt30 (s30.p / pleasure
+                 :domain (s30.i / it)
+                 :mod (s30.g / great)))
+

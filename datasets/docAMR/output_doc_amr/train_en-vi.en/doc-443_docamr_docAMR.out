@@ -1,0 +1,373 @@
+# ::id doc-443
+# ::doc_file doc-443
+# ::tok http : / / www . ted . com / talks / black_my_journey_to_yo_yo_mastery< / url> <next_sent> When I was 14 years old , I had low self - esteem . <next_sent> I felt I was not talented at anything . <next_sent> One day , I bought a yo - yo . <next_sent> When I tried my first trick , it looked like this . <next_sent> I could n't even do the simplest trick , but it was very natural for me , because I was not dextrous , and hated all sports . <next_sent> But after one week of practicing , my throws became more like this . <next_sent> A bit better . <next_sent> I thought , the yo - yo is something for me to be good at , for the first time in my life . <next_sent> I found my passion . <next_sent> I was spending all my time practicing . <next_sent> It took me hours and hours a day to build my skills up to the next level . <next_sent> And then , four years later , when I was 18 years old , I was standing onstage at the World Yo - Yo Contest . <next_sent> And I won . <next_sent> I may get many sponsors , a lot of money , tons of interviews , and be on TV ! " I thought . <next_sent> But after coming back to Japan , totally nothing changed in my life . <next_sent> I realized society did n't value my passion . <next_sent> So I went back to my college and became a typical Japanese worker as a systems engineer . <next_sent> I felt my passion , heart and soul , had left my body . <next_sent> I felt I was not alive anymore . <next_sent> So I started to consider what I should do , and I thought , I wanted to make my performance better , and to show onstage how spectacular the yo - yo could be to change the public 's image of the yo - yo . <next_sent> So I quit my company and started a career as a professional performer . <next_sent> I started to learn classic ballet , jazz dance , acrobatics and other things to make my performance better . <next_sent> As a result of these efforts , and the help of many others , it happened . <next_sent> I won the World Yo - Yo Contest again in the artistic performance division . <next_sent> I passed an audition for Cirque du Soleil . <next_sent> Today , I am standing on the TED stage with the yo - yo in front of you . <next_sent> What I learned from the yo - yo is , if I make enough effort with huge passion , there is no impossible . <next_sent> Could you let me share my passion with you through my performance ?
+(d / document
+   :snt1 (s1.u / url-entity
+               :value "Magic")
+   :snt2 (s2.l / low-04
+               :ARG1 (s2.i / i)
+               :ARG2 (s2.e / esteem-01
+                           :ARG0 s2.i
+                           :ARG1 s2.i)
+               :time (s2.a / age-01
+                           :ARG1 s2.i
+                           :ARG2 (s2.t / temporal-quantity
+                                       :unit (s2.y / year)
+                                       :quant "14")))
+   :snt3 (s3.f / feel-01
+               :ARG0 (s3.i / i
+                           :same-as s2.i)
+               :ARG1 (s3.t / talent
+                           :domain s3.i
+                           :topic (s3.a / anything)
+                           :polarity "-"))
+   :snt4 (s4.b / buy-01
+               :ARG0 (s4.i / i
+                           :same-as s2.i)
+               :ARG1 (s4.y / yo-yo)
+               :time (s4.d / day
+                           :mod (s4.o / one)))
+   :snt5 (s5.r / resemble-01
+               :ARG1 (s5.i / i
+                           :same-as s2.i)
+               :ARG2 (s5.t / this)
+               :time (s5.t3 / try-01
+                            :ARG0 s5.i
+                            :ARG1 (s5.t2 / trick-01
+                                         :ARG0 s5.i
+                                         :ord (s5.o / ordinal-entity
+                                                    :value "1"))))
+   :snt6 (s6.c2 / contrast-01
+                :ARG1 (s6.p / possible-01
+                            :ARG1 (s6.d2 / do-02
+                                         :ARG0 (s6.i / i
+                                                     :same-as s2.i)
+                                         :ARG1 (s6.t / trick-01
+                                                     :ARG0 s6.i
+                                                     :ARG1-of (s6.h2 / have-degree-91
+                                                                     :ARG2 (s6.s / simple-02
+                                                                                 :ARG1 s6.t)
+                                                                     :ARG3 (s6.m / most))))
+                            :mod (s6.e / even)
+                            :polarity "-")
+                :ARG2 (s6.n / natural-02
+                            :ARG1 s6.t
+                            :ARG1-of (s6.c / cause-01
+                                           :ARG0 (s6.a2 / and
+                                                        :op1 (s6.d / dextrous
+                                                                   :domain s6.i
+                                                                   :polarity "-")
+                                                        :op2 (s6.h / hate-01
+                                                                   :ARG0 s6.i
+                                                                   :ARG1 (s6.s2 / sport
+                                                                                :mod (s6.a / all)))))
+                            :ARG2 s6.i
+                            :degree (s6.v / very)))
+   :snt7 (s7.c / contrast-01
+               :ARG2 (s7.b / become-01
+                           :ARG1 (s7.t3 / throw-01
+                                        :ARG0 (s7.i / i
+                                                    :same-as s2.i))
+                           :ARG2 (s7.r / resemble-01
+                                       :ARG1 s7.t3
+                                       :ARG2 (s7.t2 / this)
+                                       :mod (s7.m / more))
+                           :time (s7.a / after
+                                       :op1 (s7.p / practice-01
+                                                  :ARG0 s7.i
+                                                  :duration (s7.t / temporal-quantity
+                                                                  :unit (s7.w / week)
+                                                                  :quant "1")))))
+   :snt8 (s8.h / have-degree-91
+               :ARG2 (s8.g / good-02)
+               :ARG3 (s8.m / more
+                           :quant (s8.b / bit)))
+   :snt9 (s9.t / think-01
+               :ARG0 (s9.i / i
+                           :same-as s2.i)
+               :ARG1 (s9.s / something
+                           :ARG2-of (s9.g / good-03
+                                          :ARG1 s9.i)
+                           :domain (s9.y / yo))
+               :ord (s9.o / ordinal-entity
+                          :range (s9.l / life
+                                       :poss s9.i)
+                          :value "1"))
+   :snt10 (s10.f / find-01
+                 :ARG0 (s10.i / i
+                              :same-as s2.i)
+                 :ARG1 (s10.p / passion
+                              :poss s10.i))
+   :snt11 (s11.s / spend-02
+                 :ARG0 (s11.i / i
+                              :same-as s2.i)
+                 :ARG1 (s11.t / time
+                              :mod (s11.a / all)
+                              :poss s11.i)
+                 :ARG2 (s11.p / practice-01
+                              :ARG0 s11.i))
+   :snt12 (s12.t / take-10
+                 :ARG0 (s12.b / build-up-05
+                              :ARG0 (s12.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s12.s / skill
+                                           :poss s12.i)
+                              :ARG4 (s12.l / level
+                                           :mod (s12.n / next)))
+                 :ARG1 (s12.r / rate-entity-91
+                              :ARG1 (s12.h / hour)
+                              :ARG2 (s12.t2 / temporal-quantity
+                                            :unit (s12.d / day)
+                                            :quant "1"))
+                 :ARG2 s12.i)
+   :snt13 (s13.a3 / and
+                  :op2 (s13.s / stand-01
+                              :ARG1 (s13.i / i
+                                           :same-as s2.i)
+                              :ARG2 (s13.o / onstage
+                                           :subevent-of (s13.e / event
+                                                               :name (s13.n / name
+                                                                            :op1 "World"
+                                                                            :op2 "yo"
+                                                                            :op3 "Contest")))
+                              :time (s13.a / after
+                                           :quant (s13.t / temporal-quantity
+                                                         :unit (s13.y / year)
+                                                         :quant "4")
+                                           :ARG1 s13.i
+                                           :time-of (s13.a2 / age-01
+                                                            :ARG1 s13.i
+                                                            :ARG2 (s13.t2 / temporal-quantity
+                                                                          :unit (s13.y2 / year)
+                                                                          :quant "18")))
+                              :time (s13.t3 / then)))
+   :snt14 (s14.a / and
+                 :op2 (s14.w / win-01
+                             :ARG0 (s14.i / i
+                                          :same-as s2.i)))
+   :snt15 (s15.t2 / think-01
+                  :ARG0 (s15.i / i
+                               :same-as s2.i)
+                  :ARG1 (s15.p / possible-01
+                               :ARG1 (s15.a / and
+                                            :op1 (s15.g / get-01
+                                                        :ARG0 s15.i)
+                                            :op2 (s15.i2 / interview-01
+                                                         :quant (s15.m4 / multiple
+                                                                        :op1 (s15.m2 / mass-quantity
+                                                                                     :unit (s15.t3 / ton)
+                                                                                     :quant "1"))
+                                                         :ARG1 s15.i)
+                                            :op3 (s15.b / be-located-at-91
+                                                        :ARG1 s15.i
+                                                        :ARG2 (s15.t / television))))
+                  :rel (s15.c / company
+                              :quant (s15.m / many)
+                              :ARG0-of (s15.s / sponsor-01
+                                              :ARG1 s15.i))
+                  :rel (s15.m3 / money
+                               :quant (s15.l / lot)))
+   :snt16 (s16.h / have-concession-91
+                 :ARG1 (s16.c / change-01
+                              :ARG1 (s16.n2 / nothing)
+                              :ARG2 (s16.l / live-01
+                                           :ARG0 (s16.i / i
+                                                        :same-as s2.i)
+                                           :same-as s9.l)
+                              :mod (s16.t / total)
+                              :time (s16.a / after
+                                           :op1 (s16.c2 / come-01
+                                                        :ARG1 s16.i
+                                                        :ARG4 (s16.c3 / country
+                                                                      :name (s16.n / name
+                                                                                   :op1 "Japan"))
+                                                        :direction (s16.b / back)))))
+   :snt17 (s17.r / realize-01
+                 :ARG0 (s17.i / i
+                              :same-as s2.i)
+                 :ARG1 (s17.v / value-02
+                              :ARG0 (s17.s / society)
+                              :ARG1 (s17.p / passion
+                                           :poss s17.i
+                                           :same-as s10.p)
+                              :polarity "-"))
+   :snt18 (s18.c / cause-01
+                 :ARG1 (s18.a / and
+                              :op1 (s18.g / go-02
+                                          :ARG0 (s18.i / i
+                                                       :same-as s2.i)
+                                          :ARG4 (s18.c2 / college
+                                                        :poss s18.i)
+                                          :direction (s18.b / back))
+                              :op2 (s18.b2 / become-01
+                                           :ARG1 s18.i
+                                           :ARG2 (s18.p / person
+                                                        :ARG0-of (s18.w / work-01)
+                                                        :ARG0-of (s18.e / engineer-01
+                                                                        :ARG1 (s18.s / system))
+                                                        :ARG1-of (s18.t / typical-02
+                                                                        :ARG2 (s18.c3 / country
+                                                                                      :name (s18.n / name
+                                                                                                   :op1 "Japan")))))))
+   :snt19 (s19.f / feel-01
+                 :ARG0 (s19.i / i
+                              :same-as s2.i)
+                 :ARG1 (s19.l / leave-11
+                              :ARG0 (s19.a / and
+                                           :op1 (s19.p / passion)
+                                           :op2 (s19.h / heart)
+                                           :op3 (s19.s / soul)
+                                           :poss s19.i)
+                              :ARG1 (s19.b / body
+                                           :poss s19.i)))
+   :snt20 (s20.f / feel-01
+                 :ARG0 (s20.i / i
+                              :same-as s2.i)
+                 :ARG1 (s20.l / live-01
+                              :ARG0 s20.i
+                              :time (s20.a / anymore)
+                              :polarity "-"))
+   :snt21 (s21.c / cause-01
+                 :ARG1 (s21.a / and
+                              :op1 (s21.s3 / start-01
+                                           :ARG0 (s21.i / i
+                                                        :same-as s2.i)
+                                           :ARG1 (s21.c3 / consider-01
+                                                         :ARG0 s21.i
+                                                         :ARG1 (s21.t / thing
+                                                                      :ARG1-of (s21.d / do-02
+                                                                                      :ARG0 s21.i
+                                                                                      :ARG1-of (s21.r / recommend-01)))))
+                              :op2 (s21.t3 / think-01
+                                           :ARG0 s21.i
+                                           :ARG1 (s21.w / want-01
+                                                        :ARG0 s21.i
+                                                        :ARG1 (s21.a2 / and
+                                                                      :op1 (s21.m / make-02
+                                                                                  :ARG0 s21.i
+                                                                                  :ARG1 (s21.p / perform-01
+                                                                                               :ARG0 s21.i
+                                                                                               :ARG1-of (s21.h / have-degree-91
+                                                                                                               :ARG2 (s21.g / good-02
+                                                                                                                            :ARG1 s21.p)
+                                                                                                               :ARG3 (s21.m2 / more))))
+                                                                      :op2 (s21.s / show-01
+                                                                                  :ARG0 s21.i
+                                                                                  :ARG1 (s21.t2 / thing
+                                                                                                :degree-of (s21.s2 / spectacle
+                                                                                                                   :purpose (s21.c2 / change-01
+                                                                                                                                    :ARG1 (s21.i2 / image
+                                                                                                                                                  :poss (s21.p3 / public)
+                                                                                                                                                  :poss (s21.y / yo
+                                                                                                                                                               :same-as s9.y)))
+                                                                                                                   :ARG1-of (s21.p2 / possible-01)
+                                                                                                                   :domain s21.y))
+                                                                                  :location (s21.o / onstage)))))))
+   :snt22 (s22.c2 / cause-01
+                  :ARG1 (s22.a / and
+                               :op1 (s22.q / quit-01
+                                           :ARG0 (s22.i / i
+                                                        :same-as s2.i)
+                                           :ARG1 (s22.c3 / company
+                                                         :poss s22.i))
+                               :op2 (s22.s / start-01
+                                           :ARG0 s22.i
+                                           :ARG1 (s22.c / career
+                                                        :prep-as (s22.p2 / person
+                                                                         :ARG0-of (s22.p / perform-01)
+                                                                         :mod s22.c))))
+                  :rel (s22.p3 / professional))
+   :snt23 (s23.s / start-01
+                 :ARG0 (s23.i / i
+                              :same-as s2.i)
+                 :ARG1 (s23.l / learn-01
+                              :purpose (s23.m / make-02
+                                              :ARG0 s23.i
+                                              :ARG1 (s23.h / have-degree-91
+                                                           :ARG1 (s23.p / perform-01
+                                                                        :ARG0 s23.i
+                                                                        :same-as s21.p)
+                                                           :ARG2 (s23.g / good-02
+                                                                        :ARG1 s23.p)
+                                                           :ARG3 (s23.m2 / more)))
+                              :ARG0 s23.i
+                              :ARG1 (s23.a / and
+                                           :op1 (s23.b / ballet
+                                                       :mod (s23.c / classic))
+                                           :op2 (s23.d / dance-01
+                                                       :mod (s23.j / jazz))
+                                           :op3 (s23.g2 / gymnastics)
+                                           :op4 (s23.t / thing
+                                                       :mod (s23.o / other)))))
+   :snt24 (s24.r / result-01
+                 :ARG1 (s24.i / it)
+                 :ARG2 (s24.a / and
+                              :op1 (s24.e / effort-01
+                                          :mod (s24.t / this))
+                              :op2 (s24.h / help-01
+                                          :ARG0 (s24.o / other
+                                                       :quant (s24.m / many)))))
+   :snt25 (s25.w / win-01
+                 :ARG0 (s25.i / i
+                              :same-as s2.i)
+                 :ARG1 (s25.c / contest-02
+                              :name (s25.n / name
+                                           :op1 "World"
+                                           :op2 "yo"
+                                           :op3 "Contest")
+                              :same-as s13.e)
+                 :ARG2 (s25.d / division
+                              :mod (s25.p / perform-01
+                                          :mod (s25.a2 / artistic)))
+                 :mod (s25.a / again))
+   :snt26 (s26.p / pass-07
+                 :ARG1 (s26.i / i
+                              :same-as s2.i)
+                 :ARG2 (s26.p2 / perform-01
+                               :ARG1 s26.i
+                               :ARG2 (s26.o / organization
+                                            :name (s26.n / name
+                                                         :op1 "Cirque"
+                                                         :op2 "du"
+                                                         :op3 "Soleil"))))
+   :snt27 (s27.s2 / stand-01
+                  :ARG1 (s27.i / i
+                               :same-as s2.i)
+                  :ARG2 (s27.s / stage
+                               :mod (s27.c / conference
+                                           :name (s27.n / name
+                                                        :op1 "TED")))
+                  :accompanier (s27.y / yo-yo
+                                      :same-as s4.y)
+                  :location (s27.i2 / in-front-of
+                                    :op1 (s27.y2 / you))
+                  :time (s27.t / today))
+   :snt28 (s28.l / learn-01
+                 :ARG0 (s28.i / i
+                              :same-as s2.i)
+                 :ARG1 (s28.p2 / possible-01
+                               :condition (s28.m / make-01
+                                                 :ARG0 s28.i
+                                                 :ARG1 (s28.e / effort-01
+                                                              :ARG0 s28.i
+                                                              :ARG1-of (s28.h / have-quant-91
+                                                                              :ARG3 (s28.e2 / enough))
+                                                              :manner (s28.p / passion
+                                                                             :mod (s28.h2 / huge))))
+                               :polarity "-")
+                 :ARG2 (s28.y / yo-yo
+                              :same-as s9.y))
+   :snt29 (s29.p3 / possible-01
+                  :ARG1 (s29.l / let-01
+                               :ARG0 (s29.y / you
+                                            :same-as s27.y2)
+                               :ARG1 (s29.s / share-01
+                                            :ARG0 (s29.i / i
+                                                         :same-as s2.i)
+                                            :ARG1 (s29.p / passion
+                                                         :poss s29.i)
+                                            :ARG2 s29.y
+                                            :time (s29.p2 / perform-01
+                                                          :ARG0 s29.i)))
+                  :polarity (s29.a / amr-unknown)))
+

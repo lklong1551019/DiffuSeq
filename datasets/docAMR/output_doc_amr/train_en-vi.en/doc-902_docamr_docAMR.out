@@ -1,0 +1,706 @@
+# ::id doc-902
+# ::doc_file doc-902
+# ::tok http : / / www . ted . com / talks / christina_warinner_tracking_ancient_diseases_using_plaque< / url> <next_sent> Have you ever wondered what is inside your dental plaque ? <next_sent> Probably not , but people like me do . <next_sent> I 'm an archeological geneticist at the Center for Evolutionary Medicine at the University of Zurich , and I study the origins and evolution of human health and disease by conducting genetic research on the skeletal and mummified remains of ancient humans . <next_sent> And through this work , I hope to better understand the evolutionary vulnerabilities of our bodies , so that we can improve and better manage our health in the future . <next_sent> There are different ways to approach evolutionary medicine , and one way is to extract human DNA from ancient bones . <next_sent> And from these extracts , we can reconstruct the human genome at different points in time and look for changes that might be related to adaptations , risk factors and inherited diseases . <next_sent> But this is only one half of the story . <next_sent> The most important health challenges today are not caused by simple mutations in our genome , but rather result from a complex and dynamic interplay between genetic variation , diet , microbes and parasites and our immune response . <next_sent> All of these diseases have a strong evolutionary component that directly relates to the fact that we live today in a very different environment than the ones in which our bodies evolved . <next_sent> And in order to understand these diseases , we need to move past studies of the human genome alone and towards a more holistic approach to human health in the past . <next_sent> But there are a lot of challenges for this . <next_sent> And first of all , what do we even study ? <next_sent> Skeletons are ubiquitous ; they 're found all over the place . <next_sent> But of course , all of the soft tissue has decomposed , and the skeleton itself has limited health information . <next_sent> Mummies are a great source of information , except that they 're really geographically limited and limited in time as well . <next_sent> Coprolites are fossilized human feces , and they 're actually extremely interesting . <next_sent> You can learn a lot about ancient diet and intestinal disease , but they are very rare . <next_sent> So to address this problem , I put together a team of international researchers in Switzerland , Denmark and the U.K. <next_sent> to study a very poorly studied , little known material that 's found on people everywhere . <next_sent> It 's a type of fossilized dental plaque that is called officially dental calculus . <next_sent> Many of you may know it by the term tartar . <next_sent> It 's what the dentist cleans off your teeth every time that you go in for a visit . <next_sent> And in a typical dentistry visit , you may have about 15 to 30 milligrams removed . <next_sent> But in ancient times before tooth brushing , up to 600 milligrams might have built up on the teeth over a lifetime . <next_sent> And what 's really important about dental calculus is that it fossilizes just like the rest of the skeleton , it 's abundant in quantity before the present day and it 's ubiquitous worldwide . <next_sent> We find it in every population around the world at all time periods going back tens of thousands of years . <next_sent> And we even find it in neanderthals and animals . <next_sent> And so previous studies had only focused on microscopy . <next_sent> They 'd looked at dental calculus under a microscope , and what they had found was things like pollen and plant starches , and they 'd found muscle cells from animal meats and bacteria . <next_sent> And so what my team of researchers , what we wanted to do , is say , can we apply genetic and proteomic technology to go after DNA and proteins , and from this can we get better taxonomic resolution to really understand what 's going on ? <next_sent> And what we found is that we can find many commensal and pathogenic bacteria that inhabited the nasal passages and mouth . <next_sent> We also have found immune proteins related to infection and inflammation and proteins and DNA related to diet . <next_sent> But what was surprising to us , and also quite exciting , is we also found bacteria that normally inhabit upper respiratory systems . <next_sent> So it gives us virtual access to the lungs , which is where many important diseases reside . <next_sent> And we also found bacteria that normally inhabit the gut . <next_sent> And so we can also now virtually gain access to this even more distant organ system that , from the skeleton alone , has long decomposed . <next_sent> And so by applying ancient DNA sequencing and protein mass spectrometry technologies to ancient dental calculus , we can generate immense quantities of data that then we can use to begin to reconstruct a detailed picture of the dynamic interplay between diet , infection and immunity thousands of years ago . <next_sent> So what started out as an idea , is now being implemented to churn out millions of sequences that we can use to investigate the long - term evolutionary history of human health and disease , right down to the genetic code of individual pathogens . <next_sent> And from this information we can learn about how pathogens evolve and also why they continue to make us sick . <next_sent> And I hope I have convinced you of the value of dental calculus . <next_sent> And as a final parting thought , on behalf of future archeologists , I would like to ask you to please think twice before you go home and brush your teeth . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :value "narcotic")
+   :snt2 (s2.w / wonder-01
+               :ARG0 (s2.y / you
+                           :part (s2.t2 / tooth))
+               :ARG1 (s2.t / thing
+                           :location (s2.i / inside
+                                           :op1 (s2.p / plaque
+                                                      :mod s2.t2)))
+               :polarity (s2.a / amr-unknown)
+               :time (s2.e / ever))
+   :snt3 (s3.c / contrast-01
+               :ARG1 (s3.p2 / probable
+                            :polarity "-")
+               :ARG2 (s3.d / do-02
+                           :ARG0 (s3.p / person
+                                       :ARG1-of (s3.r / resemble-01
+                                                      :ARG2 (s3.i / i)))))
+   :snt4 (s4.a2 / and
+                :op1 (s4.g2 / geneticist
+                            :domain (s4.i / i
+                                          :same-as s3.i)
+                            :location (s4.u / university
+                                            :name (s4.n / name
+                                                        :op1 "Center"
+                                                        :op2 "for"
+                                                        :op3 "Evolutionary"
+                                                        :op4 "Medicine")
+                                            :part-of (s4.u2 / university
+                                                            :name (s4.n2 / name
+                                                                         :op1 "University"
+                                                                         :op2 "of"
+                                                                         :op3 "Zurich")))
+                            :mod (s4.a6 / archeology))
+                :op2 (s4.s / study-01
+                           :ARG0 s4.i
+                           :ARG1 (s4.a3 / and
+                                        :op1 (s4.o / originate-01
+                                                   :ARG1 (s4.a4 / and
+                                                                :op1 (s4.h / healthy
+                                                                           :domain (s4.h2 / human))
+                                                                :op2 (s4.d / disease
+                                                                           :poss s4.h2)))
+                                        :op2 (s4.e / evolve-01
+                                                   :ARG1 s4.a4))
+                           :manner (s4.r2 / research-01
+                                          :ARG0 s4.i
+                                          :ARG1 (s4.r / remain-01
+                                                      :ARG1 (s4.h3 / human
+                                                                   :mod (s4.a / ancient))
+                                                      :ARG3 (s4.a5 / and
+                                                                   :op1 (s4.b / bone)
+                                                                   :op2 (s4.m / maim-01)))
+                                          :mod (s4.g / gene))))
+   :snt5 (s5.a / and
+               :op2 (s5.h4 / hope-01
+                           :ARG0 (s5.i / i
+                                       :same-as s3.i)
+                           :ARG1 (s5.u / understand-01
+                                       :purpose (s5.p / possible-01
+                                                      :ARG1 (s5.a2 / and
+                                                                   :op1 (s5.i2 / improve-01
+                                                                               :ARG0 (s5.w / we)
+                                                                               :ARG1 (s5.h3 / health
+                                                                                            :poss s5.w))
+                                                                   :op2 (s5.m / manage-01
+                                                                              :ARG0 s5.w
+                                                                              :ARG1 s5.h3
+                                                                              :ARG1-of (s5.h2 / have-degree-91
+                                                                                              :ARG2 (s5.g2 / good-02
+                                                                                                           :ARG1 s5.m)
+                                                                                              :ARG3 (s5.m3 / more)))
+                                                                   :time (s5.f / future)))
+                                       :ARG0 s5.i
+                                       :ARG1 (s5.v / vulnerable-01
+                                                   :ARG1 (s5.b / body
+                                                               :poss s5.w)
+                                                   :mod (s5.e / evolution))
+                                       :ARG1-of (s5.h / have-degree-91
+                                                      :ARG2 (s5.g / good-02)
+                                                      :ARG3 (s5.m2 / more)))
+                           :manner (s5.w2 / work-01
+                                          :mod (s5.t / this)
+                                          :same-as s4.s)))
+   :snt6 (s6.a2 / and
+                :op1 (s6.w / way
+                           :ARG1-of (s6.d / differ-02)
+                           :manner-of (s6.a3 / approach-02
+                                             :ARG1 (s6.m3 / medicine
+                                                          :mod (s6.e / evolution))))
+                :op2 (s6.m / manner
+                           :ARG1-of (s6.i / include-91
+                                          :ARG2 (s6.m2 / manner
+                                                       :domain (s6.e2 / extract-01
+                                                                      :ARG1 (s6.n2 / nucleic-acid
+                                                                                   :name (s6.n / name
+                                                                                               :op1 "DNA")
+                                                                                   :part-of (s6.h / human))
+                                                                      :ARG2 (s6.b / bone
+                                                                                  :mod (s6.a / ancient)))))))
+   :snt7 (s7.a2 / and
+                :op2 (s7.p2 / possible-01
+                            :ARG1 (s7.a3 / and
+                                         :op1 (s7.r / reconstruct-01
+                                                    :ARG0 (s7.w / we)
+                                                    :ARG1 (s7.g / genome
+                                                                :mod (s7.h / human))
+                                                    :time (s7.p / point
+                                                                :ARG1-of (s7.d / differ-02)
+                                                                :mod (s7.t2 / time)))
+                                         :op2 (s7.l / look-01
+                                                    :ARG0 s7.w
+                                                    :ARG1 (s7.c / change-01
+                                                                :ARG1-of (s7.r2 / relate-01
+                                                                                :ARG1-of (s7.p3 / possible-01)
+                                                                                :ARG2 (s7.a4 / and
+                                                                                             :op1 (s7.a / adapt-01)
+                                                                                             :op2 (s7.f / factor
+                                                                                                        :mod (s7.r3 / risk-01))
+                                                                                             :op3 (s7.d2 / disease
+                                                                                                         :ARG1-of (s7.i / inherit-01)))))))
+                            :source (s7.e / extract-01
+                                          :mod (s7.t / this)
+                                          :same-as s6.n2)))
+   :snt8 (s8.c / contrast-01
+               :ARG2 (s8.h / half
+                           :domain (s8.t / this)
+                           :mod (s8.o / only)
+                           :part-of (s8.s / story)
+                           :quant "1"))
+   :snt9 (s9.i3 / instead-of-91
+                :ARG1 (s9.r2 / result-01
+                             :ARG1 (s9.c2 / challenge-01
+                                          :ARG1-of (s9.h / have-degree-91
+                                                         :ARG2 (s9.i2 / important-01
+                                                                      :ARG1 s9.c2
+                                                                      :time (s9.t / today))
+                                                         :ARG3 (s9.m / most))
+                                          :ARG2 (s9.h2 / health))
+                             :ARG2 (s9.i4 / interact-01
+                                          :ARG0 (s9.a / and
+                                                      :op1 (s9.v / vary-01
+                                                                 :ARG1 (s9.g / genetics))
+                                                      :op2 (s9.d / diet)
+                                                      :op3 (s9.b / bacterium)
+                                                      :op4 (s9.p / parasite))
+                                          :ARG2 (s9.r / respond-01
+                                                      :ARG0 (s9.w / we
+                                                                  :part s9.g2)
+                                                      :ARG1-of (s9.i / immune-02))
+                                          :mod (s9.d2 / dynamic)
+                                          :mod (s9.c3 / complex)))
+                :ARG2 (s9.c / cause-01
+                            :ARG0 (s9.m2 / mutate-01
+                                         :ARG1 (s9.g2 / genome
+                                                      :same-as s7.g)
+                                         :ARG1-of (s9.s / simple-02))
+                            :ARG1 s9.c2
+                            :polarity "-"))
+   :snt10 (s10.h / have-03
+                 :ARG0 (s10.d3 / disease
+                               :mod (s10.t / this)
+                               :mod (s10.a / all)
+                               :same-as s9.c2)
+                 :ARG1 (s10.c / component
+                              :ARG1-of (s10.s / strong-02)
+                              :ARG1-of (s10.r / relate-01
+                                              :ARG1-of (s10.d2 / direct-02)
+                                              :ARG2 (s10.l / live-01
+                                                           :ARG0 (s10.w / we)
+                                                           :location (s10.e / environment
+                                                                            :ARG1-of (s10.d / differ-02
+                                                                                            :ARG2 (s10.e2 / environment
+                                                                                                          :ARG2-of (s10.e4 / evolve-01
+                                                                                                                           :ARG1 (s10.b / body
+                                                                                                                                        :poss s10.w)))
+                                                                                            :degree (s10.v / very)))
+                                                           :time (s10.t2 / today)))
+                              :mod (s10.e3 / evolution)))
+   :snt11 (s11.a2 / and
+                  :op2 (s11.n / need-01
+                              :purpose (s11.u / understand-01
+                                              :ARG0 (s11.w / we)
+                                              :ARG1 (s11.d / disease
+                                                           :mod (s11.t / this)
+                                                           :same-as s9.c2))
+                              :ARG0 s11.w
+                              :ARG1 (s11.m2 / move-01
+                                            :ARG0 s11.w
+                                            :ARG2 (s11.p / past
+                                                         :op1 (s11.s / study-01
+                                                                     :ARG1 (s11.g / genome
+                                                                                  :mod (s11.a / alone)
+                                                                                  :part-of (s11.h4 / human))))
+                                            :ARG2 (s11.a3 / approach-02
+                                                          :ARG1 (s11.h2 / health
+                                                                        :mod (s11.h5 / human))
+                                                          :ARG1-of (s11.h / have-degree-91
+                                                                          :ARG2 (s11.h3 / holistic)
+                                                                          :ARG3 (s11.m / more))
+                                                          :time (s11.p2 / past)))))
+   :snt12 (s12.c2 / contrast-01
+                  :ARG2 (s12.c / challenge-01
+                               :quant (s12.l / lot)
+                               :ARG2 (s12.t / this
+                                            :same-as s11.m2)))
+   :snt13 (s13.a2 / and
+                  :op2 (s13.s / study-01
+                              :ARG0 (s13.w / we)
+                              :ARG1 (s13.a / amr-unknown)
+                              :mod (s13.e / even)
+                              :mod (s13.f / first-of-all)))
+   :snt14 (s14.a2 / and
+                  :op1 (s14.u / ubiquitous
+                              :domain (s14.l / less))
+                  :op2 (s14.f / find-01
+                              :ARG1 s14.l
+                              :location (s14.a / all-over
+                                               :op1 (s14.p / place))))
+   :snt15 (s15.c / contrast-01
+                 :ARG2 (s15.a2 / and
+                               :op1 (s15.d / decommission-01
+                                           :ARG1 (s15.t / tissue
+                                                        :ARG1-of (s15.s2 / soft-02)
+                                                        :mod (s15.a / all)))
+                               :op2 (s15.h / have-03
+                                           :ARG0 (s15.s / skeleton)
+                                           :ARG1 (s15.i / information
+                                                        :ARG1-of (s15.l / limit-01)
+                                                        :topic (s15.h2 / health))))
+                 :mod (s15.o / of-course))
+   :snt16 (s16.s / source-02
+                 :ARG0 (s16.m / mum)
+                 :ARG1 (s16.i / information)
+                 :ARG2-of (s16.e / except-01
+                                 :ARG1 (s16.a / and
+                                              :op1 (s16.l / limit-01
+                                                          :ARG1 s16.m
+                                                          :ARG1-of (s16.r / real-04)
+                                                          :mod (s16.g / geography))
+                                              :op2 (s16.l2 / limit-01
+                                                           :ARG1 (s16.t / time
+                                                                        :poss s16.m)
+                                                           :mod (s16.a2 / as-well))))
+                 :mod (s16.g2 / great))
+   :snt17 (s17.a2 / and
+                  :op1 (s17.f / feces
+                              :ARG1-of (s17.f2 / fossilize-01)
+                              :domain (s17.o / Copt)
+                              :poss (s17.h / human))
+                  :op2 (s17.i / interest-01
+                              :ARG1-of (s17.a / actual-02)
+                              :ARG2 s17.o
+                              :degree (s17.e / extreme)))
+   :snt18 (s18.c / contrast-01
+                 :ARG1 (s18.p / possible-01
+                              :ARG1 (s18.l / learn-01
+                                           :ARG0 (s18.y / you)
+                                           :ARG1 (s18.l2 / lot
+                                                         :topic (s18.a2 / and
+                                                                        :op1 (s18.d / diet
+                                                                                    :mod (s18.a / ancient))
+                                                                        :op2 (s18.d2 / disease
+                                                                                     :mod (s18.i / intestine))))))
+                 :ARG2 (s18.r / rare-02
+                              :ARG1 (s18.t / they
+                                           :same-as s17.o)
+                              :degree (s18.v / very)))
+   :snt19 (s19.c / cause-01
+                 :ARG0 (s19.a / address-02
+                              :ARG0 (s19.i / i
+                                           :same-as s3.i)
+                              :ARG1 (s19.p2 / problem
+                                            :mod (s19.t2 / this))
+                              :ARG1 (s19.p3 / put-01
+                                            :ARG0 s19.i
+                                            :ARG1 (s19.t / team
+                                                         :consist-of (s19.p / person
+                                                                            :ARG0-of (s19.r / research-01)
+                                                                            :location (s19.a2 / and
+                                                                                              :op1 (s19.c2 / country
+                                                                                                           :name (s19.n / name
+                                                                                                                        :op1 "Switzerland"))
+                                                                                              :op2 (s19.c3 / country
+                                                                                                           :name (s19.n2 / name
+                                                                                                                         :op1 "Denmark"))
+                                                                                              :op3 (s19.c4 / country
+                                                                                                           :name (s19.n3 / name
+                                                                                                                         :op1 "U.K.")))
+                                                                            :mod (s19.i2 / international)))
+                                            :ARG2 (s19.t3 / together))))
+   :snt20 (s20.h / have-purpose-91
+                 :ARG2 (s20.s / study-01
+                              :ARG1 (s20.m / material
+                                           :quant (s20.l / little)
+                                           :ARG1-of (s20.k / know-01)
+                                           :ARG1-of (s20.s2 / study-01
+                                                            :manner (s20.p2 / poor
+                                                                            :degree (s20.v / very)))
+                                           :ARG1-of (s20.f / find-01
+                                                           :topic (s20.p / person
+                                                                         :location (s20.e / everywhere))))))
+   :snt21 (s21.p / plaque
+                 :ARG1-of (s21.f / fossilize-01)
+                 :ARG1-of (s21.c2 / call-01
+                                  :ARG2 (s21.c / calculus
+                                               :mod (s21.o / official)
+                                               :mod (s21.t / tooth)))
+                 :mod s21.t
+                 :mod (s21.t2 / type))
+   :snt22 (s22.p / possible-01
+                 :ARG1 (s22.k / know-02
+                              :ARG0 (s22.y / you
+                                           :quant (s22.m / many))
+                              :ARG1 (s22.i / it
+                                           :same-as s20.m)
+                              :ARG2 (s22.t2 / term-01
+                                            :ARG3 (s22.t / tartar))))
+   :snt23 (s23.i / it
+                 :ARG1-of (s23.c / clean-01
+                                 :ARG0 (s23.d / dentist)
+                                 :ARG2 (s23.t / tooth
+                                              :part-of (s23.y / you))
+                                 :frequency (s23.r / rate-entity-91
+                                                   :ARG4 (s23.g / go-02
+                                                                :purpose (s23.v / visit-01
+                                                                                :ARG0 s23.d
+                                                                                :ARG1 s23.y)
+                                                                :ARG0 s23.y)))
+                 :same-as s20.m)
+   :snt24 (s24.a2 / and
+                  :op2 (s24.p / possible-01
+                              :ARG1 (s24.r / remove-01
+                                           :ARG0 (s24.y / you)
+                                           :ARG1 (s24.a / about
+                                                        :op1 (s24.b / between
+                                                                    :op1 (s24.m / mass-quantity
+                                                                                :unit (s24.m3 / milligram)
+                                                                                :quant "15")
+                                                                    :op2 (s24.m2 / mass-quantity
+                                                                                 :unit (s24.m4 / milligram)
+                                                                                 :quant "30"))))
+                              :time (s24.v / visit-01
+                                           :ARG0 s24.y
+                                           :ARG1 (s24.d / dentistry)
+                                           :ARG1-of (s24.t / typical-02))))
+   :snt25 (s25.c / contrast-01
+                 :ARG2 (s25.p / possible-01
+                              :ARG1 (s25.b3 / build-up-05
+                                            :ARG1 (s25.u / up-to
+                                                         :op1 (s25.m / mass-quantity
+                                                                     :unit (s25.m2 / milligram)
+                                                                     :quant "600"))
+                                            :ARG1 (s25.t2 / tooth)
+                                            :duration (s25.l / lifetime)
+                                            :location (s25.t / tooth))
+                              :time (s25.b / before
+                                           :mod (s25.a / ancient)
+                                           :op1 (s25.b2 / brush-01))))
+   :snt26 (s26.a2 / and
+                  :op2 (s26.i / important-01
+                              :ARG1 (s26.f / fossilize-01
+                                           :ARG1 (s26.c / calculus
+                                                        :mod (s26.t / tooth))
+                                           :ARG1-of (s26.r2 / resemble-01
+                                                            :ARG2 (s26.r3 / rest
+                                                                          :part-of (s26.s / skeleton))))
+                              :degree (s26.r / really)
+                              :topic s26.c)
+                  :op3 (s26.a3 / and
+                               :op1 (s26.a / abundant
+                                           :domain s26.c
+                                           :time (s26.b / before
+                                                        :op1 (s26.d / day
+                                                                    :mod (s26.p / present))))
+                               :op2 (s26.u / ubiquitous
+                                           :domain s26.c
+                                           :location (s26.w / worldwide))))
+   :snt27 (s27.f / find-01
+                 :ARG0 (s27.w / we)
+                 :ARG1 (s27.i / it
+                              :same-as s26.c)
+                 :direction (s27.b / back
+                                   :op1 (s27.t / temporal-quantity
+                                               :unit (s27.y / year)
+                                               :quant "10000"))
+                 :location (s27.p2 / population
+                                   :location (s27.a2 / around
+                                                     :op1 (s27.w2 / world))
+                                   :mod (s27.e / every))
+                 :time (s27.p / period
+                              :mod (s27.t2 / time
+                                           :mod (s27.a / all))))
+   :snt28 (s28.a / and
+                 :op2 (s28.f / find-01
+                             :ARG0 (s28.w / we
+                                          :same-as s27.w)
+                             :ARG1 (s28.i / it
+                                          :same-as s26.c)
+                             :location (s28.a2 / and
+                                               :mod (s28.e / ethical)
+                                               :op2 (s28.a3 / animal))
+                             :mod (s28.e2 / even)))
+   :snt29 (s29.a / and
+                 :op2 (s29.f / focus-01
+                             :ARG0 (s29.s / study-01
+                                          :time (s29.p / previous))
+                             :ARG1-of (s29.c / cause-01)
+                             :ARG2 (s29.m / microscopy)
+                             :mod (s29.o / only)))
+   :snt30 (s30.a / and
+                 :op1 (s30.l / look-01
+                             :ARG0 (s30.t / they)
+                             :ARG1 (s30.c / calculus
+                                          :mod (s30.t3 / tooth))
+                             :location (s30.u / under
+                                              :op1 (s30.m2 / microscope)))
+                 :op2 (s30.a2 / and
+                              :domain (s30.t2 / thing)
+                              :op1 (s30.p2 / pollen)
+                              :op2 (s30.s / star
+                                          :mod (s30.p / plant))
+                              :op3 (s30.f / find-01
+                                          :ARG0 s30.t
+                                          :ARG1 (s30.c2 / cell
+                                                        :mod (s30.m3 / muscle)
+                                                        :part-of (s30.a3 / and
+                                                                         :op1 (s30.m / meat
+                                                                                     :source (s30.a4 / animal))
+                                                                         :op2 (s30.b / bacterium))))))
+   :snt31 (s31.a2 / and
+                  :op2 (s31.w / want-01
+                              :ARG0 (s31.t2 / team
+                                            :consist-of (s31.p / person
+                                                               :ARG0-of (s31.r2 / research-01))
+                                            :poss (s31.i / i
+                                                         :same-as s3.i))
+                              :ARG1 (s31.s / say-01
+                                           :ARG0 s31.t2
+                                           :ARG1 (s31.a5 / and
+                                                         :op1 (s31.p2 / possible-01
+                                                                      :ARG1 (s31.a6 / apply-02
+                                                                                    :ARG0 (s31.w2 / we
+                                                                                                  :same-as s31.t2)
+                                                                                    :ARG1 (s31.t3 / technology
+                                                                                                  :mod (s31.a3 / and
+                                                                                                               :op1 (s31.g2 / genetics)
+                                                                                                               :op2 (s31.g / gene)))
+                                                                                    :ARG2 (s31.g4 / go-03
+                                                                                                  :ARG0 s31.w2
+                                                                                                  :ARG1 (s31.a4 / and
+                                                                                                                :op1 (s31.n2 / nucleic-acid
+                                                                                                                             :name (s31.n / name
+                                                                                                                                          :op1 "DNA"))
+                                                                                                                :op2 (s31.p4 / protein))))
+                                                                      :polarity (s31.a / amr-unknown))
+                                                         :op2 (s31.p3 / possible-01
+                                                                      :ARG1 (s31.g3 / get-01
+                                                                                    :ARG0 s31.w2
+                                                                                    :ARG1 (s31.r3 / resolve-02
+                                                                                                  :purpose (s31.u / understand-01
+                                                                                                                  :ARG0 s31.w2
+                                                                                                                  :ARG1 (s31.t4 / thing
+                                                                                                                                :ARG1-of (s31.g5 / go-on-15))
+                                                                                                                  :ARG1-of (s31.r / real-04))
+                                                                                                  :ARG1-of (s31.h / have-degree-91
+                                                                                                                  :ARG2 (s31.g6 / good-02
+                                                                                                                                :ARG1 s31.r3)
+                                                                                                                  :ARG3 (s31.m / more))
+                                                                                                  :mod (s31.t / tax-01))
+                                                                                    :ARG2 s31.a6))))))
+   :snt32 (s32.a / and
+                 :op2 (s32.f / find-01
+                             :ARG0 (s32.w / we
+                                          :same-as s31.t2)
+                             :ARG1 (s32.p3 / possible-01
+                                           :ARG1 (s32.f2 / find-01
+                                                         :ARG0 s32.w
+                                                         :ARG1 (s32.b / bacterium
+                                                                      :quant (s32.m / many)
+                                                                      :ARG0-of (s32.i / inhabit-01
+                                                                                      :ARG1 (s32.a2 / and
+                                                                                                    :op1 (s32.p / passage
+                                                                                                                :location (s32.n / nose))
+                                                                                                    :op2 (s32.m2 / mouth)))
+                                                                      :mod (s32.p2 / pathogenic)
+                                                                      :mod (s32.c / commensal))))))
+   :snt33 (s33.f / find-01
+                 :ARG0 (s33.w / we
+                              :same-as s31.t2)
+                 :ARG1 (s33.a3 / and
+                               :op1 (s33.p2 / protein)
+                               :op2 (s33.n2 / nucleic-acid
+                                            :name (s33.n / name
+                                                         :op1 "DNA")
+                                            :ARG1-of (s33.r2 / relate-01
+                                                             :ARG2 (s33.d / diet))))
+                 :mod (s33.a / also)
+                 :rel (s33.p / protein
+                             :ARG1-of (s33.i / immune-02)
+                             :ARG1-of (s33.r / relate-01
+                                             :ARG2 (s33.a2 / and
+                                                           :op1 (s33.i2 / infect-01)
+                                                           :op2 (s33.i3 / inflame-01)))))
+   :snt34 (s34.c / contrast-01
+                 :ARG2 (s34.a3 / and
+                               :op1 (s34.s / surprise-01
+                                           :ARG0 (s34.f / find-01
+                                                        :ARG0 (s34.w / we
+                                                                     :same-as s31.t2)
+                                                        :ARG1 (s34.b / bacterium
+                                                                     :ARG0-of (s34.i / inhabit-01
+                                                                                     :ARG1 (s34.s2 / system
+                                                                                                   :mod (s34.r / respire-01
+                                                                                                               :mod (s34.u / upper)))
+                                                                                     :ARG1-of (s34.n / normal-02)))
+                                                        :mod (s34.a2 / also))
+                                           :ARG1 s34.w)
+                               :op2 (s34.e / excite-01
+                                           :ARG0 s34.f
+                                           :degree (s34.q / quite)
+                                           :mod (s34.a / also))))
+   :snt35 (s35.c / cause-01
+                 :ARG1 (s35.g / give-01
+                              :ARG0 (s35.i2 / it
+                                            :same-as s34.f)
+                              :ARG1 (s35.a / access-01
+                                           :ARG0 (s35.w / we
+                                                        :same-as s31.t2)
+                                           :ARG1 (s35.l / lung)
+                                           :mod (s35.v / virtual))
+                              :ARG2 s35.w)
+                 :rel (s35.d / disease
+                             :quant (s35.m / many)
+                             :ARG1-of (s35.i / important-01)
+                             :ARG1-of (s35.r / reside-01)
+                             :ARG0-of s35.r))
+   :snt36 (s36.a2 / and
+                  :op2 (s36.f / find-01
+                              :ARG0 (s36.w / we
+                                           :same-as s31.t2)
+                              :ARG1 (s36.b / bacterium
+                                           :ARG0-of (s36.i / inhabit-01
+                                                           :ARG1 (s36.g / gut)
+                                                           :ARG1-of (s36.n / normal-02)))
+                              :mod (s36.a / also)))
+   :snt37 (s37.a4 / and
+                  :op2 (s37.p / possible-01
+                              :ARG1 (s37.g / gain-02
+                                           :ARG0 (s37.w / we
+                                                        :same-as s31.t2)
+                                           :ARG1 (s37.a / access-01
+                                                        :ARG0 s37.w
+                                                        :ARG1 (s37.s2 / system
+                                                                      :ARG0-of (s37.d / decommission-01
+                                                                                      :ARG1 (s37.s / skeleton
+                                                                                                   :mod (s37.a2 / alone))
+                                                                                      :ARG1-of (s37.l / long-03))
+                                                                      :ARG1-of (s37.h / have-degree-91
+                                                                                      :ARG2 (s37.d2 / distant-02
+                                                                                                    :ARG1 s37.s2)
+                                                                                      :ARG3 (s37.m / more
+                                                                                                   :mod (s37.e / even)))
+                                                                      :mod (s37.o / organ)
+                                                                      :mod (s37.t / this)))
+                                           :manner (s37.v / virtual)
+                                           :mod (s37.a3 / also)
+                                           :time (s37.n / now))))
+   :snt38 (s38.a3 / and
+                  :mod (s38.s / so)
+                  :op2 (s38.p2 / possible-01
+                               :ARG1 (s38.g / generate-01
+                                            :ARG0 (s38.w / we)
+                                            :ARG1 (s38.q / quantity
+                                                         :ARG1-of (s38.u / use-01
+                                                                         :ARG0 s38.w
+                                                                         :ARG1-of (s38.p3 / possible-01
+                                                                                          :time (s38.t3 / then))
+                                                                         :ARG2 (s38.b2 / begin-01
+                                                                                       :ARG0 s38.w
+                                                                                       :ARG1 (s38.r / reconstruct-01
+                                                                                                    :ARG0 s38.w
+                                                                                                    :ARG1 (s38.p / picture
+                                                                                                                 :ARG1-of (s38.d2 / detail-01)
+                                                                                                                 :topic (s38.i5 / interact-01
+                                                                                                                                :ARG0 (s38.d3 / diet)
+                                                                                                                                :ARG1 (s38.i4 / infect-01)
+                                                                                                                                :ARG1-of (s38.i3 / include-91)
+                                                                                                                                :ARG3 (s38.i2 / immune-02)
+                                                                                                                                :mod (s38.d4 / dynamic)
+                                                                                                                                :time (s38.b / before
+                                                                                                                                             :quant (s38.m2 / multiple
+                                                                                                                                                            :op1 (s38.t2 / temporal-quantity
+                                                                                                                                                                         :unit (s38.y / year)
+                                                                                                                                                                         :quant "1000"))
+                                                                                                                                             :op1 (s38.n2 / now)))))))
+                                                         :mod (s38.i / immense)
+                                                         :quant-of (s38.d / data)))
+                               :manner (s38.a5 / apply-02
+                                               :ARG0 s38.w
+                                               :ARG1 (s38.a4 / and
+                                                             :op1 (s38.e / engineer-01
+                                                                         :ARG1 (s38.n3 / nucleic-acid
+                                                                                       :name (s38.n / name
+                                                                                                    :op1 "DNA"))
+                                                                         :mod (s38.a / ancient))
+                                                             :op2 (s38.t / technology
+                                                                         :mod (s38.s2 / spectrometry
+                                                                                      :instrument (s38.p4 / protein)
+                                                                                      :mod (s38.m / mass))
+                                                                         :mod s38.a))
+                                               :ARG2 (s38.c / calculus
+                                                            :mod (s38.t4 / tooth)
+                                                            :mod (s38.a2 / ancient)))))
+   :snt39 (s39.i2 / implement-01
+                  :purpose (s39.c / churn-01
+                                  :ARG0 (s39.t / thing
+                                               :ARG0-of (s39.s2 / start-out-05
+                                                                :ARG2 (s39.i / idea)))
+                                  :ARG1 (s39.s / sequence-01
+                                               :quant (s39.m / multiple
+                                                             :op1 "1000000")
+                                               :ARG1-of (s39.u / use-01
+                                                               :ARG0 (s39.w / we)
+                                                               :ARG1-of (s39.p / possible-01)
+                                                               :ARG2 (s39.i4 / investigate-01
+                                                                             :ARG0 s39.w
+                                                                             :ARG1 (s39.h2 / history
+                                                                                           :ARG1-of (s39.l / long-03)
+                                                                                           :extent (s39.d2 / down-03
+                                                                                                           :ARG1 (s39.c2 / code
+                                                                                                                         :mod (s39.g / gene)
+                                                                                                                         :part-of (s39.v / virus
+                                                                                                                                         :mod (s39.i3 / individual))))
+                                                                                           :mod (s39.e / evolution)
+                                                                                           :topic (s39.a / and
+                                                                                                         :op1 (s39.h / healthy
+                                                                                                                     :domain (s39.h3 / human))
+                                                                                                         :op2 (s39.d / disease
+                                                                                                                     :poss s39.h3)))))))
+                  :ARG1 s39.t
+                  :time (s39.n / now))
+   :snt40 (s40.a2 / and
+                  :op2 (s40.p / possible-01
+                              :ARG1 (s40.l / learn-01
+                                           :ARG0 (s40.w / we)
+                                           :ARG1 (s40.a3 / and
+                                                         :op1 (s40.h / have-manner-91
+                                                                     :ARG1 (s40.e / evolve-01
+                                                                                  :ARG1 (s40.v / virus)))
+                                                         :op2 (s40.t / thing
+                                                                     :ARG0-of (s40.c / cause-01
+                                                                                     :ARG1 (s40.c2 / continue-01
+                                                                                                   :ARG0 s40.v
+                                                                                                   :ARG1 (s40.m / make-02
+                                                                                                                :ARG0 s40.v
+                                                                                                                :ARG1 (s40.s / sick-05
+                                                                                                                             :ARG1 s40.w))))
+                                                                     :mod (s40.a / also)))
+                                           :ARG2 (s40.i / information
+                                                        :mod (s40.t2 / this)))))
+   :snt41 (s41.a / and
+                 :op2 (s41.h / hope-01
+                             :ARG0 (s41.i / i
+                                          :same-as s3.i)
+                             :ARG1 (s41.c2 / convince-01
+                                           :ARG0 s41.i
+                                           :ARG1 (s41.y / you)
+                                           :ARG2 (s41.v / value-01
+                                                        :ARG1 (s41.c / calculus
+                                                                     :mod (s41.t / tooth))))))
+   :snt42 (s42.a / and
+                 :op2 (s42.l / like-02
+                             :ARG0 (s42.i / i
+                                          :same-as s3.i)
+                             :ARG1 (s42.a4 / ask-02
+                                           :ARG0 s42.i
+                                           :ARG1 (s42.t2 / think-01
+                                                         :ARG0 (s42.y / you
+                                                                      :part (s42.t3 / tooth)
+                                                                      :same-as s41.y)
+                                                         :time (s42.b / before
+                                                                      :op1 (s42.a2 / and
+                                                                                   :op1 (s42.g / go-02
+                                                                                               :ARG0 s42.y
+                                                                                               :ARG4 (s42.h / home))
+                                                                                   :op2 (s42.b2 / brush-01
+                                                                                                :ARG0 s42.y
+                                                                                                :ARG1 s42.t3)))
+                                                         :frequency "2"
+                                                         :polite "+")
+                                           :ARG2 s42.y)
+                             :ARG1-of (s42.t / think-01
+                                             :ARG0 s42.i
+                                             :ARG1-of (s42.p / part-01)
+                                             :ARG2 (s42.a3 / archaeologist
+                                                           :time (s42.f2 / future))
+                                             :mod (s42.f / final))))
+   :snt43 (s43.t / thank-01
+                 :ARG1 (s43.y / you
+                              :same-as s3.i)))
+

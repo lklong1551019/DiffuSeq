@@ -1,0 +1,497 @@
+# ::id doc-43
+# ::doc_file doc-43
+# ::tok http : / / www . ted . com / talks / david_hoffman_shares_his_sputnik_mania< / url> <next_sent> Fifty years ago in the old Soviet Union , a team of engineers was secretly moving a large object through a desolate countryside . <next_sent> With it , they were hoping to capture the minds of people everywhere by being the first to conquer outer space . <next_sent> The rocket was huge . <next_sent> And packed in its nose was a silver ball with two radios inside . <next_sent> On October 4 , 1957 , they launched their rocket . <next_sent> One of the Russian scientists wrote at the time : " We are about to create a new planet that we will call Sputnik . <next_sent> In the olden days , explorers like Vasco da Gama and Columbus had the good fortune to open up the terrestrial globe . <next_sent> Now we have the good fortune to open up space . <next_sent> And it is for those in the future to envy us our joy . " <next_sent> You 're watching snippets from " Sputnik , " my fifth documentary feature , which is just about completed . <next_sent> It tells the story of Sputnik , and the story of what happened to America as a result . <next_sent> For days after the launch , Sputnik was a wonderful curiosity . <next_sent> A man - made moon visible by ordinary citizens , it inspired awe and pride that humans had finally launched an object into space . <next_sent> But just three days later , on a day they called Red Monday , the media and the politicians told us , and we believed , that Sputnik was proof that our enemy had beaten us in science and technology , and that they could now attack us with hydrogen bombs , using their Sputnik rocket as an IBM missile . <next_sent> All hell broke loose . <next_sent> Sputnik quickly became one of the three great shocks to hit America -- historians say the equal of Pearl Harbor or 9/11 . <next_sent> It provoked the missile gap . <next_sent> It exploded an arms race . <next_sent> It began the space race . <next_sent> Within a year , Congress funded huge weapons increases , and we went from 1,200 nuclear weapons to 20,000 . <next_sent> And the reactions to Sputnik went far beyond weapons increases . <next_sent> For example , some here will remember this day , June 1958 , the National Civil Defense Drill , where tens of millions of people in 78 cities went underground . <next_sent> Or the Gallup Poll that showed that seven in 10 Americans believed that a nuclear war would happen , and that at least 50 percent of our population was going to be killed . <next_sent> But Sputnik provoked wonderful changes as well . <next_sent> For example , some in this room went to school on scholarship because of Sputnik . <next_sent> Support for engineering , math and science -- education in general -- boomed . <next_sent> And Vint Cerf points out that Sputnik led directly to ARPA , and the Internet , and , of course , NASA . <next_sent> My feature documentary shows how a free society can be stampeded by those who know how to use media . <next_sent> But it also shows how we can turn what appears at first to be a bad situation , into something that was overall very good for America . <next_sent> " Sputnik " will soon be released . <next_sent> In closing , I would like to take a moment to thank one of my investors : longtime TEDster , Jay Walker . <next_sent> And I 'd like to thank you all . <next_sent> Thank you , Chris .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01
+                            :ARG0 (s1.p / person
+                                        :name (s1.n / name
+                                                    :op1 "David"))))
+   :snt2 (s2.m / move-01
+               :ARG0 (s2.t / team
+                           :consist-of (s2.p / person
+                                             :ARG0-of (s2.e / engineer-01)))
+               :ARG1 (s2.o / object
+                           :mod (s2.l / large))
+               :ARG2 (s2.c2 / countryside
+                            :mod (s2.d / desolate))
+               :location (s2.c / country
+                               :name (s2.n / name
+                                           :op1 "Soviet"
+                                           :op2 "Union")
+                               :mod (s2.o2 / old))
+               :manner (s2.s / secret)
+               :time (s2.b / before
+                           :quant (s2.t2 / temporal-quantity
+                                         :unit (s2.y / year)
+                                         :quant "50")
+                           :op1 (s2.n2 / now)))
+   :snt3 (s3.h / hope-01
+               :ARG0 (s3.t / they
+                           :same-as s2.t)
+               :ARG1 (s3.c / capture-01
+                           :ARG0 s3.t
+                           :ARG1 (s3.m / mind
+                                       :poss (s3.p / person
+                                                   :location (s3.e / everywhere)))
+                           :manner (s3.p2 / person
+                                          :ARG0-of (s3.c2 / conquer-01
+                                                          :ARG1 (s3.s / space
+                                                                      :mod (s3.o2 / outer)))
+                                          :domain s3.t
+                                          :ord (s3.o / ordinal-entity
+                                                     :value "1")))
+               :accompanier (s3.i / it
+                                  :same-as s2.o))
+   :snt4 (s4.h / huge
+               :domain (s4.r / rocket
+                             :same-as s2.o))
+   :snt5 (s5.a / and
+               :op2 (s5.b / ball
+                          :ARG1-of (s5.p / pack-01
+                                         :ARG1 (s5.t / thing
+                                                     :ARG0-of (s5.r / radio-01
+                                                                    :quant "2"))
+                                         :ARG2 (s5.n / nose
+                                                     :part-of (s5.i / it
+                                                                    :same-as s2.o)))
+                          :consist-of (s5.s / silver)
+                          :part s5.t))
+   :snt6 (s6.l / launch-01
+               :ARG0 (s6.t / they
+                           :same-as s2.t)
+               :ARG1 (s6.r / rocket
+                           :poss s6.t
+                           :same-as s2.o)
+               :time (s6.d / date-entity
+                           :day "4"
+                           :month "10"
+                           :year "1957"))
+   :snt7 (s7.w2 / write-01
+                :ARG0 (s7.s / scientist
+                            :ARG1-of (s7.i / include-91
+                                           :ARG2 (s7.s2 / scientist
+                                                        :mod (s7.c2 / country
+                                                                    :name (s7.n / name
+                                                                                :op1 "Russia"))
+                                                        :same-as s2.t))
+                            :quant "1")
+                :ARG1 (s7.c3 / create-01
+                             :ARG0 (s7.w / we)
+                             :ARG1 (s7.p / planet
+                                         :ARG1-of (s7.n3 / new-01)
+                                         :ARG1-of (s7.c / call-01
+                                                        :ARG0 s7.w
+                                                        :ARG2 (s7.s3 / spaceship
+                                                                     :name (s7.n2 / name
+                                                                                  :op1 "Sputnik"))))
+                             :time (s7.a / about-to))
+                :time (s7.t / time))
+   :snt8 (s8.h / have-03
+               :ARG0 (s8.p / person
+                           :ARG0-of (s8.e / explore-01)
+                           :example (s8.a / and
+                                          :op1 (s8.p2 / person
+                                                      :name (s8.n / name
+                                                                  :op1 "Vasco"
+                                                                  :op2 "da"
+                                                                  :op3 "Gama"))
+                                          :op2 (s8.p3 / person
+                                                      :name (s8.n2 / name
+                                                                   :op1 "Columbus"))))
+               :ARG1 (s8.f / fortune
+                           :purpose (s8.o2 / open-up-03
+                                           :ARG0 s8.p
+                                           :ARG1 (s8.g / globe
+                                                       :mod (s8.p4 / planet)))
+                           :ARG1-of (s8.g2 / good-02))
+               :time (s8.d / day
+                           :mod (s8.o / olden)))
+   :snt9 (s9.h / have-03
+               :ARG0 (s9.w / we
+                           :same-as s7.w)
+               :ARG1 (s9.f / fortune
+                           :purpose (s9.o / open-up-03
+                                          :ARG0 s9.w
+                                          :ARG1 (s9.s / space
+                                                      :same-as s3.s))
+                           :ARG1-of (s9.g / good-02))
+               :time (s9.n / now))
+   :snt10 (s10.a / and
+                 :op2 (s10.h / have-purpose-91
+                             :ARG2 (s10.e / envy-01
+                                          :ARG0 (s10.p / person
+                                                       :mod (s10.t / that)
+                                                       :time (s10.f / future))
+                                          :ARG1 (s10.w / we
+                                                       :same-as s7.w)
+                                          :ARG2 (s10.j / joy
+                                                       :poss s10.w))))
+   :snt11 (s11.w / watch-01
+                 :ARG0 (s11.y / you)
+                 :ARG1 (s11.b / bit
+                              :source (s11.p / publication
+                                             :name (s11.n / name
+                                                          :op1 "Sputnik")
+                                             :mod (s11.f / feature
+                                                         :ARG1-of (s11.c / complete-01
+                                                                         :degree (s11.a / about
+                                                                                        :mod (s11.j / just)))
+                                                         :mod (s11.d / documentary)
+                                                         :ord (s11.o / ordinal-entity
+                                                                     :value "5")
+                                                         :poss (s11.i / i)))))
+   :snt12 (s12.t / tell-01
+                 :ARG0 (s12.i / it
+                              :same-as s11.p)
+                 :ARG1 (s12.a / and
+                              :op1 (s12.s / story
+                                          :topic (s12.p / publication
+                                                        :name (s12.n / name
+                                                                     :op1 "Sputnik")))
+                              :op2 (s12.s2 / story
+                                           :topic (s12.e / event
+                                                         :ARG2-of (s12.r / result-01
+                                                                         :ARG1 s12.p)
+                                                         :beneficiary (s12.c / country
+                                                                             :name (s12.n2 / name
+                                                                                           :op1 "America"))))))
+   :snt13 (s13.c / curiosity
+                 :ARG1-of (s13.w / wonderful-03)
+                 :domain (s13.s / spaceship
+                                :name (s13.n / name
+                                             :op1 "Sputnik")
+                                :same-as s12.p)
+                 :time (s13.a / after
+                              :duration (s13.m / multiple
+                                               :op1 (s13.t / temporal-quantity
+                                                           :unit (s13.d / day)
+                                                           :quant "1"))
+                              :op1 (s13.l / launch-01
+                                          :same-as s6.l)))
+   :snt14 (s14.i / inspire-01
+                 :ARG0 (s14.m3 / moon
+                               :ARG1-of (s14.m / make-01
+                                               :ARG0 (s14.m2 / man))
+                               :ARG1-of (s14.s / see-01
+                                               :ARG0 (s14.c / citizen
+                                                            :mod (s14.o2 / ordinary))))
+                 :ARG1 (s14.a / and
+                              :op1 (s14.a2 / awe-01
+                                           :ARG0 (s14.l / launch-01
+                                                        :ARG0 (s14.h / human)
+                                                        :ARG1 (s14.o / object)
+                                                        :destination (s14.s2 / space
+                                                                             :same-as s3.s)
+                                                        :mod (s14.f / final)))
+                              :op2 (s14.p / pride-01
+                                          :ARG0 s14.l)))
+   :snt15 (s15.c3 / contrast-01
+                  :ARG2 (s15.t2 / tell-01
+                                :ARG0 (s15.a2 / and
+                                              :op1 (s15.m / media)
+                                              :op2 (s15.p2 / politician))
+                                :ARG1 (s15.a4 / and
+                                              :op1 (s15.p4 / prove-01
+                                                           :ARG1 (s15.b / beat-03
+                                                                        :ARG0 (s15.p / person
+                                                                                     :ARG0-of (s15.h / have-rel-role-91
+                                                                                                     :ARG1 (s15.w / we)
+                                                                                                     :ARG2 (s15.e / enemy)))
+                                                                        :ARG1 s15.w
+                                                                        :ARG2 (s15.a3 / and
+                                                                                      :op1 (s15.s / science)
+                                                                                      :op2 (s15.t / technology)))
+                                                           :ARG1 (s15.r / rocket
+                                                                        :name (s15.n2 / name
+                                                                                      :op1 "Sputnik")
+                                                                        :poss (s15.t4 / they)
+                                                                        :same-as s2.o))
+                                              :op2 (s15.p3 / possible-01
+                                                           :ARG1 (s15.a5 / attack-01
+                                                                         :ARG0 s15.t4
+                                                                         :ARG1 s15.w
+                                                                         :ARG2 (s15.b3 / bomb
+                                                                                       :mod (s15.h2 / hydrogen))
+                                                                         :manner (s15.u / use-01
+                                                                                        :ARG0 s15.t4
+                                                                                        :ARG1 s15.r
+                                                                                        :ARG2 (s15.m2 / missile
+                                                                                                      :mod (s15.c2 / company
+                                                                                                                   :name (s15.n3 / name
+                                                                                                                                 :op1 "IBM"))))
+                                                                         :time (s15.n4 / now))))
+                                :ARG1-of (s15.b2 / believe-01
+                                                 :ARG0 s15.w)
+                                :ARG2 s15.w
+                                :time (s15.a / after
+                                             :quant (s15.t3 / temporal-quantity
+                                                            :mod (s15.j / just)
+                                                            :unit (s15.d2 / day)
+                                                            :quant "3")))
+                  :rel (s15.d / date-entity
+                              :name (s15.n / name
+                                           :mod "day"
+                                           :op1 "Red"
+                                           :op2 "Monday")
+                              :ARG1-of (s15.c / call-01
+                                              :ARG0 s15.t4)))
+   :snt16 (s16.l / loose-03
+                 :ARG1 (s16.h / hell
+                              :mod (s16.a / all)))
+   :snt17 (s17.b / become-01
+                 :ARG1 (s17.e2 / event
+                               :name (s17.n / name
+                                            :op1 "Sputnik")
+                               :same-as s12.p)
+                 :ARG1-of (s17.q / quick-02)
+                 :ARG2 (s17.t / thing
+                              :ARG1-of (s17.i2 / include-91
+                                               :ARG2 (s17.s2 / shock-01
+                                                             :ARG0-of (s17.h3 / hit-01
+                                                                              :ARG1 (s17.c / country
+                                                                                           :name (s17.n3 / name
+                                                                                                         :op1 "America")
+                                                                                           :same-as s12.c))
+                                                             :mod (s17.g / great)
+                                                             :quant "3")
+                                               :quant "1")
+                              :ARG1-of (s17.e / equal-01
+                                              :ARG1-of (s17.s / say-01
+                                                              :ARG0 (s17.h2 / historian))
+                                              :ARG2 (s17.o / or
+                                                           :op1 (s17.h / harbor
+                                                                       :name (s17.n2 / name
+                                                                                     :op1 "Pearl"
+                                                                                     :op2 "Harbor"))
+                                                           :op2 (s17.i / incident
+                                                                       :name (s17.n4 / name
+                                                                                     :op1 "9/11"))))))
+   :snt18 (s18.p / provoke-01
+                 :ARG0 (s18.i / it
+                              :same-as s12.p)
+                 :ARG1 (s18.g / gap
+                              :mod (s18.m / missile)))
+   :snt19 (s19.e / explode-01
+                 :ARG0 (s19.i / it
+                              :same-as s12.p)
+                 :ARG1 (s19.r / race-02
+                              :ARG3 (s19.a / arm)))
+   :snt20 (s20.b / begin-01
+                 :ARG0 (s20.i / it
+                              :same-as s12.p)
+                 :ARG1 (s20.r / race-02
+                              :ARG3 (s20.s / space)))
+   :snt21 (s21.a2 / and
+                  :op1 (s21.f / fund-01
+                              :ARG0 (s21.g2 / government-organization
+                                            :name (s21.n / name
+                                                         :op1 "Congress"))
+                              :ARG1 (s21.i / increase-01
+                                           :ARG1 (s21.w2 / weapon)
+                                           :mod (s21.h / huge)))
+                  :op2 (s21.g / go-01
+                              :ARG1 (s21.w / we
+                                           :same-as s12.c)
+                              :ARG3 (s21.w3 / weapon
+                                            :mod (s21.n3 / nucleus)
+                                            :quant "1200")
+                              :ARG4 (s21.w4 / weapon
+                                            :quant "20000"))
+                  :time (s21.a / after
+                               :quant (s21.u / up-to
+                                             :op1 (s21.t / temporal-quantity
+                                                         :unit (s21.y / year)
+                                                         :quant "1"))
+                               :op1 (s21.n2 / now)))
+   :snt22 (s22.a / and
+                 :op2 (s22.g / go-01
+                             :ARG1 (s22.r / react-01
+                                          :ARG1 (s22.p / publication
+                                                       :name (s22.n / name
+                                                                    :op1 "Sputnik")
+                                                       :same-as s12.p))
+                             :ARG2 (s22.f / far
+                                          :op1 (s22.b / beyond
+                                                      :op1 (s22.i / increase-01
+                                                                  :ARG1 (s22.w / weapon))))))
+   :snt23 (s23.e2 / exemplify-01
+                  :ARG0 (s23.r / remember-01
+                               :ARG0 (s23.s / some
+                                            :location (s23.h / here))
+                               :ARG1 (s23.d2 / day
+                                             :ARG1-of (s23.m / mean-01
+                                                             :ARG2 (s23.d / date-entity
+                                                                          :month "6"
+                                                                          :year "1958"))
+                                             :mod (s23.t / this)
+                                             :time-of (s23.e / event
+                                                             :name (s23.n / name
+                                                                          :op1 "National"
+                                                                          :op2 "Civil"
+                                                                          :op3 "Defense"
+                                                                          :op4 "Drill")
+                                                             :location-of (s23.g / go-02
+                                                                                 :ARG0 (s23.p / person
+                                                                                              :quant (s23.m2 / multiple
+                                                                                                             :op1 "10000000")
+                                                                                              :location (s23.c / city
+                                                                                                               :quant "78"))
+                                                                                 :ARG4 (s23.u / underground))))))
+   :snt24 (s24.o / or
+                 :op2 (s24.s / show-01
+                             :ARG0 (s24.c / company
+                                          :name (s24.n / name
+                                                       :op1 "Gallup"
+                                                       :op2 "Poll"))
+                             :ARG1 (s24.b / believe-01
+                                          :ARG0 (s24.p2 / person
+                                                        :ARG1-of (s24.i / include-91
+                                                                        :ARG1 (s24.p3 / person
+                                                                                      :mod (s24.c2 / country
+                                                                                                   :name (s24.n2 / name
+                                                                                                                 :op1 "America")))
+                                                                        :ARG2 "10"
+                                                                        :ARG3 "7"))
+                                          :ARG1 (s24.a / and
+                                                       :op1 (s24.w / war-01
+                                                                   :mod (s24.n3 / nucleus))
+                                                       :op2 (s24.k / kill-01
+                                                                   :ARG1 (s24.p4 / population
+                                                                                 :quant (s24.a2 / at-least
+                                                                                                :op1 (s24.p / percentage-entity
+                                                                                                            :value "50"))
+                                                                                 :poss (s24.w2 / we
+                                                                                               :same-as s12.c)))))))
+   :snt25 (s25.c2 / contrast-01
+                  :ARG2 (s25.p / provoke-01
+                               :ARG0 (s25.p2 / publication
+                                             :name (s25.n / name
+                                                          :op1 "Sputnik")
+                                             :same-as s12.p)
+                               :ARG1 (s25.c / change-01
+                                            :ARG1-of (s25.w / wonderful-03))
+                               :mod (s25.a / as-well)))
+   :snt26 (s26.e / exemplify-01
+                 :ARG0 (s26.g / go-02
+                              :ARG0 (s26.p / person
+                                           :quant (s26.s3 / some)
+                                           :location (s26.r / room
+                                                            :mod (s26.t / this)))
+                              :ARG1-of (s26.c / cause-01
+                                              :ARG0 (s26.p2 / publication
+                                                            :name (s26.n / name
+                                                                         :op1 "Sputnik")
+                                                            :same-as s12.p))
+                              :ARG4 (s26.s2 / school)
+                              :manner (s26.s / scholarship)))
+   :snt27 (s27.b / boom-02
+                 :ARG0 (s27.s2 / support-01
+                               :ARG1 (s27.a / and
+                                            :op1 (s27.e2 / engineer-01)
+                                            :op2 (s27.m / mathematics)
+                                            :op3 (s27.s / science
+                                                        :ARG1-of (s27.m2 / mean-01
+                                                                         :ARG2 (s27.e / educate-01
+                                                                                      :ARG1-of (s27.g / general-02)))))))
+   :snt28 (s28.a / and
+                 :op2 (s28.p2 / point-out-02
+                              :ARG0 (s28.p / person
+                                           :name (s28.n / name
+                                                        :op1 "Vint"
+                                                        :op2 "Cerf"))
+                              :ARG1 (s28.l / lead-01
+                                           :ARG0 (s28.c / country
+                                                        :name (s28.n2 / name
+                                                                      :op1 "Sputnik")
+                                                        :same-as s12.p)
+                                           :ARG1-of (s28.d / direct-02)
+                                           :ARG4 (s28.a2 / and
+                                                         :op1 (s28.g / government-organization
+                                                                     :name (s28.n3 / name
+                                                                                   :op1 "ARPA"))
+                                                         :op2 (s28.i / internet)
+                                                         :op3 (s28.r / research-institute
+                                                                     :name (s28.n4 / name
+                                                                                   :op1 "NASA")
+                                                                     :mod (s28.o / of-course))))))
+   :snt29 (s29.s / show-01
+                 :ARG0 (s29.d / documentary
+                              :mod (s29.f / feature)
+                              :poss (s29.i / i
+                                           :same-as s11.i)
+                              :same-as s11.p)
+                 :ARG1 (s29.p2 / possible-01
+                               :ARG1 (s29.s3 / stamp-04
+                                             :ARG0 (s29.p / person
+                                                          :ARG0-of (s29.k / know-01
+                                                                          :ARG1 (s29.u / use-01
+                                                                                       :ARG0 s29.p
+                                                                                       :ARG1 (s29.m / media)))
+                                                          :mod (s29.t / that))
+                                             :ARG1 (s29.s2 / society
+                                                           :ARG1-of (s29.f2 / free-04)))))
+   :snt30 (s30.c / contrast-01
+                 :ARG2 (s30.s / show-01
+                              :ARG0 (s30.i / it
+                                           :same-as s11.p)
+                              :ARG1 (s30.t / thing
+                                           :manner-of (s30.p / possible-01
+                                                             :ARG1 (s30.t2 / turn-02
+                                                                           :ARG0 (s30.w / we)
+                                                                           :ARG1 (s30.s2 / situation
+                                                                                         :ARG1-of (s30.b / bad-07)
+                                                                                         :ARG1-of (s30.a2 / appear-02
+                                                                                                          :time (s30.a3 / at-first)))
+                                                                           :ARG2 (s30.s3 / something
+                                                                                         :ARG1-of (s30.g / good-04
+                                                                                                         :ARG2 (s30.c2 / country
+                                                                                                                       :name (s30.n / name
+                                                                                                                                    :op1 "America")
+                                                                                                                       :same-as s12.c)
+                                                                                                         :degree (s30.v / very)
+                                                                                                         :mod (s30.o / overall))))))
+                              :mod (s30.a / also)))
+   :snt31 (s31.r / release-01
+                 :ARG1 (s31.p / publication
+                              :name (s31.n / name
+                                           :op1 "Sputnik"))
+                 :time (s31.s / soon))
+   :snt32 (s32.l / like-02
+                 :ARG0 (s32.i / i
+                              :same-as s11.i)
+                 :ARG1 (s32.t / take-01
+                              :purpose (s32.t2 / thank-01
+                                               :ARG0 s32.i
+                                               :ARG1 (s32.p / person
+                                                            :ARG1-of (s32.i2 / include-91
+                                                                             :ARG2 (s32.p2 / person
+                                                                                           :ARG0-of (s32.i3 / invest-01
+                                                                                                            :ARG1 s32.i)))
+                                                            :mod (s32.p3 / person
+                                                                         :name (s32.n / name
+                                                                                      :op1 "Jay"
+                                                                                      :op1 "TEDster"
+                                                                                      :op2 "Walker")
+                                                                         :duration (s32.l2 / longtime))))
+                              :ARG0 s32.i
+                              :ARG1 (s32.m / moment))
+                 :ARG1-of (s32.c / close-02))
+   :snt33 (s33.a2 / and
+                  :op2 (s33.l / like-02
+                              :ARG0 (s33.i / i
+                                           :same-as s11.i)
+                              :ARG1 (s33.t / thank-01
+                                           :ARG0 s33.i
+                                           :ARG1 (s33.y / you
+                                                        :mod (s33.a / all)))))
+   :snt34 (s34.s / say-01
+                 :ARG0 (s34.i / i)
+                 :ARG1 (s34.t / thank-01
+                              :ARG0 s34.i
+                              :ARG1 (s34.p / person
+                                           :name (s34.n / name
+                                                        :op1 "Chris")
+                                           :ARG2-of s34.s
+                                           :same-as s11.i))))
+

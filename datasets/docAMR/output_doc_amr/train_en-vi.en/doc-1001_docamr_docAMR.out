@@ -1,0 +1,958 @@
+# ::id doc-1001
+# ::doc_file doc-1001
+# ::tok http : / / www . ted . com / talks / peter_norvig_the_ 100 _ 000 _student_classroom< / url> <next_sent> Everyone is both a learner and a teacher . <next_sent> This is me being inspired by my first tutor , my mom , and this is me teaching Introduction to Artificial Intelligence to 200 students at Stanford University . <next_sent> Now the students and I enjoyed the class , but it occurred to me that while the subject matter of the class is advanced and modern , the teaching technology is n't . <next_sent> In fact , I use basically the same technology as this 14th - century classroom . <next_sent> Note the textbook , the sage on the stage , and the sleeping guy in the back . <next_sent> Just like today . <next_sent> So my co - teacher , Sebastian Thrun , and I thought , there must be a better way . <next_sent> We challenged ourselves to create an online class that would be equal or better in quality to our Stanford class , but to bring it to anyone in the world for free . <next_sent> We announced the class on July 29th , and within two weeks , 50,000 people had signed up for it . <next_sent> And that grew to 160,000 students from 209 countries . <next_sent> We were thrilled to have that kind of audience , and just a bit terrified that we had n't finished preparing the class yet . <next_sent> So we got to work . <next_sent> We studied what others had done , what we could copy and what we could change . <next_sent> Benjamin Bloom had showed that one - on - one tutoring works best , so that 's what we tried to emulate , like with me and my mom , even though we knew it would be one - on - thousands . <next_sent> Here , an overhead video camera is recording me as I 'm talking and drawing on a piece of paper . <next_sent> A student said , " This class felt like sitting in a bar with a really smart friend who 's explaining something you have n't grasped , but are about to . " <next_sent> And that 's exactly what we were aiming for . <next_sent> Now , from Khan Academy , we saw that short 10 - minute videos worked much better than trying to record an hour - long lecture and put it on the small - format screen . <next_sent> We decided to go even shorter and more interactive . <next_sent> Our typical video is two minutes , sometimes shorter , never more than six , and then we pause for a quiz question , to make it feel like one - on - one tutoring . <next_sent> Here , I 'm explaining how a computer uses the grammar of English to parse sentences , and here , there 's a pause and the student has to reflect , understand what 's going on and check the right boxes before they can continue . <next_sent> Students learn best when they 're actively practicing . <next_sent> We wanted to engage them , to have them grapple with ambiguity and guide them to synthesize the key ideas themselves . <next_sent> We mostly avoid questions like , " Here 's a formula , now tell me the value of Y when X is equal to two . " <next_sent> We preferred open - ended questions . <next_sent> One student wrote , " Now I 'm seeing Bayes networks and examples of game theory everywhere I look . " <next_sent> And I like that kind of response . <next_sent> That 's just what we were going for . <next_sent> We did n't want students to memorize the formulas ; we wanted to change the way they looked at the world . <next_sent> And we succeeded . <next_sent> Or , I should say , the students succeeded . <next_sent> And it 's a little bit ironic that we set about to disrupt traditional education , and in doing so , we ended up making our online class much more like a traditional college class than other online classes . <next_sent> Most online classes , the videos are always available . <next_sent> You can watch them any time you want . <next_sent> But if you can do it any time , that means you can do it tomorrow , and if you can do it tomorrow , well , you may not ever get around to it . <next_sent> So we brought back the innovation of having due dates . <next_sent> You could watch the videos any time you wanted during the week , but at the end of the week , you had to get the homework done . <next_sent> This motivated the students to keep going , and it also meant that everybody was working on the same thing at the same time , so if you went into a discussion forum , you could get an answer from a peer within minutes . <next_sent> Now , I 'll show you some of the forums , most of which were self - organized by the students themselves . <next_sent> From Daphne Koller and Andrew Ng , we learned the concept of " flipping " the classroom . <next_sent> Students watched the videos on their own , and then they come together to discuss them . <next_sent> From Eric Mazur , I learned about peer instruction , that peers can be the best teachers , because they 're the ones that remember what it 's like to not understand . <next_sent> Sebastian and I have forgotten some of that . <next_sent> Of course , we could n't have a classroom discussion with tens of thousands of students , so we encouraged and nurtured these online forums . <next_sent> And finally , from Teach For America , I learned that a class is not primarily about information . <next_sent> More important is motivation and determination . <next_sent> It was crucial that the students see that we 're working hard for them and they 're all supporting each other . <next_sent> Now , the class ran 10 weeks , and in the end , about half of the 160,000 students watched at least one video each week , and over 20,000 finished all the homework , putting in 50 to 100 hours . <next_sent> They got this statement of accomplishment . <next_sent> So what have we learned ? <next_sent> Well , we tried some old ideas and some new and put them together , but there are more ideas to try . <next_sent> Sebastian 's teaching another class now . <next_sent> I 'll do one in the fall . <next_sent> Stanford Coursera , Udacity , MITx and others have more classes coming . <next_sent> It 's a really exciting time . <next_sent> But to me , the most exciting part of it is the data that we 're gathering . <next_sent> We 're gathering thousands of interactions per student per class , billions of interactions altogether , and now we can start analyzing that , and when we learn from that , do experimentations , that 's when the real revolution will come . <next_sent> And you 'll be able to see the results from a new generation of amazing students .
+(d / document
+   :snt1 (s1.u2 / url-entity
+                :topic (s1.p / person
+                             :mod (s1.u / university
+                                        :name (s1.n / name
+                                                    :op1 "Europe"))))
+   :snt2 (s2.a / and
+               :domain (s2.e / everyone)
+               :op1 (s2.p / person
+                          :ARG0-of (s2.l / learn-01))
+               :op2 (s2.p2 / person
+                           :ARG0-of (s2.t / teach-01)))
+   :snt3 (s3.a / and
+               :op1 (s3.i2 / inspire-01
+                           :ARG0 (s3.p / person
+                                       :ARG0-of (s3.t3 / tutor-01
+                                                       :ARG1 (s3.i / i))
+                                       :ARG2 (s3.p2 / person
+                                                    :ARG0-of (s3.h / have-rel-role-91
+                                                                   :ARG1 s3.i
+                                                                   :ARG2 (s3.m / mom)))
+                                       :ord (s3.o / ordinal-entity
+                                                  :value "1"))
+                           :ARG1 s3.i
+                           :domain (s3.t2 / this))
+               :op2 (s3.t / teach-01
+                          :ARG0 s3.i
+                          :ARG1 (s3.i4 / introduce-02
+                                       :ARG2 (s3.i3 / intelligent-01
+                                                    :mod (s3.a2 / artificial)))
+                          :ARG2 (s3.p3 / person
+                                       :ARG0-of (s3.s / study-01)
+                                       :location (s3.u / university
+                                                       :name (s3.n / name
+                                                                   :op1 "Stanford"
+                                                                   :op2 "University"))
+                                       :quant "200")))
+   :snt4 (s4.c3 / contrast-01
+                :ARG1 (s4.e / enjoy-01
+                            :ARG0 (s4.a2 / and
+                                         :op1 (s4.p / person
+                                                    :ARG0-of (s4.s / study-01)
+                                                    :same-as s3.p3)
+                                         :op2 (s4.i / i
+                                                    :same-as s3.i))
+                            :ARG1 (s4.c / class
+                                        :part (s4.m / matter
+                                                    :mod (s4.s2 / subject))))
+                :ARG2 (s4.c2 / come-to-mind-09
+                             :ARG1 s4.i
+                             :ARG2 (s4.h / have-concession-91
+                                         :ARG1 (s4.a3 / and
+                                                      :op1 (s4.a / advanced-02
+                                                                 :ARG1 s4.m
+                                                                 :ARG2 (s4.t2 / technology
+                                                                              :mod (s4.t / teach-01)))
+                                                      :op2 (s4.m2 / modern-02
+                                                                  :ARG1 s4.m
+                                                                  :ARG1 s4.t2)
+                                                      :polarity "-")
+                                         :ARG2 s4.e))
+                :time (s4.n / now))
+   :snt5 (s5.u / use-01
+               :ARG0 (s5.i / i
+                           :same-as s3.i)
+               :ARG1 (s5.t / technology
+                           :ARG1-of (s5.s / same-01
+                                          :ARG2 (s5.t2 / technology
+                                                       :location (s5.c / classroom
+                                                                       :mod (s5.t3 / this)
+                                                                       :time (s5.d / date-entity
+                                                                                   :century "14")))
+                                          :mod (s5.b / basic)))
+               :mod (s5.i2 / in-fact))
+   :snt6 (s6.n / note-01
+               :ARG0 (s6.y / you)
+               :ARG1 (s6.a / and
+                           :op1 (s6.t / textbook)
+                           :op2 (s6.s / sage
+                                      :location (s6.s3 / stage))
+                           :op3 (s6.g / guy
+                                      :ARG0-of (s6.s2 / sleep-01)
+                                      :location (s6.b / back)))
+               :mode "imperative")
+   :snt7 (s7.r / resemble-01
+               :ARG2 (s7.t / today)
+               :mod (s7.j / just))
+   :snt8 (s8.c / cause-01
+               :ARG1 (s8.t2 / think-01
+                            :ARG0 (s8.a / and
+                                        :op1 (s8.p / person
+                                                   :name (s8.n / name
+                                                               :op1 "Sebastian"
+                                                               :op2 "Thrun")
+                                                   :ARG0-of (s8.t / teach-01
+                                                                  :ARG2 (s8.i / i
+                                                                              :same-as s3.i)))
+                                        :op2 s8.i)
+                            :ARG1 (s8.i2 / infer-01
+                                         :ARG1 (s8.w / way
+                                                     :ARG1-of (s8.h / have-degree-91
+                                                                    :ARG2 (s8.g / good-02
+                                                                                :ARG1 s8.w)
+                                                                    :ARG3 (s8.m / more))))))
+   :snt9 (s9.c / challenge-01
+               :ARG0 (s9.w / we
+                           :same-as s8.a)
+               :ARG1 s9.w
+               :ARG2 (s9.c4 / contrast-01
+                            :ARG1 (s9.c5 / create-01
+                                         :ARG0 s9.w
+                                         :ARG1 (s9.c2 / class
+                                                      :ARG1-of (s9.e / equal-01
+                                                                     :ARG2 (s9.c3 / class
+                                                                                  :location (s9.u / university
+                                                                                                  :name (s9.n / name
+                                                                                                              :op1 "Stanford")
+                                                                                                  :same-as s3.u)
+                                                                                  :poss s9.w
+                                                                                  :same-as s4.c)
+                                                                     :ARG3 (s9.q / quality))
+                                                      :ARG1-of (s9.h / have-degree-91
+                                                                     :ARG2 (s9.g / good-02
+                                                                                 :ARG1 s9.c2
+                                                                                 :topic s9.q)
+                                                                     :ARG2 s9.c3
+                                                                     :ARG3 (s9.m / more))
+                                                      :medium (s9.o / online)))
+                            :ARG2 (s9.b / bring-01
+                                        :ARG0 s9.w
+                                        :ARG1 s9.c2
+                                        :ARG1-of (s9.f / free-03)
+                                        :ARG2 (s9.a / anyone
+                                                    :location (s9.w2 / world)))))
+   :snt10 (s10.a / and
+                 :op1 (s10.a2 / announce-01
+                              :ARG0 (s10.w / we
+                                           :same-as s8.a)
+                              :ARG1 (s10.c / class
+                                           :same-as s4.c)
+                              :time (s10.d / date-entity
+                                           :day "29"
+                                           :month "7"))
+                 :op2 (s10.s / sign-up-03
+                             :ARG1 (s10.p / person
+                                          :quant "50000")
+                             :ARG3 s10.c
+                             :time (s10.w3 / within
+                                           :op1 (s10.t / temporal-quantity
+                                                       :unit (s10.w2 / week)
+                                                       :quant "2"))))
+   :snt11 (s11.a / and
+                 :op2 (s11.g / grow-01
+                             :ARG1 (s11.t / that)
+                             :ARG4 (s11.p / person
+                                          :ARG0-of (s11.s / study-01)
+                                          :source (s11.c / country
+                                                         :quant "209")
+                                          :quant "150000")))
+   :snt12 (s12.a / and
+                 :op1 (s12.t3 / thrill-01
+                              :ARG0 (s12.h / have-03
+                                           :ARG0 (s12.w / we
+                                                        :same-as s8.a)
+                                           :ARG1 (s12.a2 / audience
+                                                         :mod (s12.k / kind
+                                                                     :mod (s12.t2 / that))))
+                              :ARG1 s12.w)
+                 :op2 (s12.t / terrify-01
+                             :ARG0 (s12.f / finish-01
+                                          :ARG0 s12.w
+                                          :ARG1 (s12.p / prepare-01
+                                                       :ARG0 s12.w
+                                                       :ARG1 (s12.c / class
+                                                                    :same-as s4.c))
+                                          :time (s12.y / yet)
+                                          :polarity "-")
+                             :ARG1 s12.w
+                             :degree (s12.b / bit
+                                            :mod (s12.j / just))))
+   :snt13 (s13.c / cause-01
+                 :ARG1 (s13.g / get-05
+                              :ARG1 (s13.w / we
+                                           :same-as s8.a)
+                              :ARG2 (s13.w2 / work-01
+                                            :ARG0 s13.w)))
+   :snt14 (s14.s / study-01
+                 :ARG0 (s14.w / we
+                              :same-as s8.a)
+                 :ARG1 (s14.a / and
+                              :op1 (s14.t / thing
+                                          :ARG1-of (s14.d / do-02
+                                                          :ARG0 (s14.p / person
+                                                                       :mod (s14.o / other))))
+                              :op2 (s14.t2 / thing
+                                           :ARG1-of (s14.c2 / copy-01
+                                                            :ARG0 s14.w
+                                                            :ARG1-of (s14.p2 / possible-01)))
+                              :op3 (s14.t3 / thing
+                                           :ARG1-of (s14.c / change-01
+                                                           :ARG0 s14.w
+                                                           :ARG1-of (s14.p3 / possible-01)))))
+   :snt15 (s15.c / cause-01
+                 :ARG0 (s15.s / show-01
+                              :ARG0 (s15.p / person
+                                           :name (s15.n / name
+                                                        :op1 "Benjamin"
+                                                        :op2 "Bloom"))
+                              :ARG1 (s15.w2 / work-09
+                                            :ARG1 (s15.t2 / tutor-01
+                                                          :mod (s15.o / one-on-one))
+                                            :ARG1-of (s15.h / have-degree-91
+                                                            :ARG2 (s15.g / good-02
+                                                                         :ARG1 s15.w2)
+                                                            :ARG3 (s15.m2 / most))))
+                 :ARG1 (s15.t / try-01
+                              :ARG0 (s15.w / we
+                                           :same-as s8.a)
+                              :ARG1 (s15.e / emulate-01
+                                           :ARG0 s15.w
+                                           :ARG1 s15.w2
+                                           :example (s15.a / and
+                                                           :op1 (s15.i / i
+                                                                       :same-as s3.i)
+                                                           :op2 (s15.p2 / person
+                                                                        :ARG0-of (s15.h2 / have-rel-role-91
+                                                                                         :ARG1 s15.i
+                                                                                         :ARG2 (s15.m / mom))
+                                                                        :same-as s3.p)
+                                                           :same-as s3.p))
+                              :concession (s15.k / know-01
+                                                 :ARG0 s15.w))
+                 :rel (s15.o2 / one-on-one
+                              :quant (s15.m3 / multiple
+                                             :op1 "1000")))
+   :snt16 (s16.r / record-01
+                 :ARG0 (s16.c / camera
+                              :location (s16.o / overhead)
+                              :mod (s16.v / video))
+                 :ARG1 (s16.i / i
+                              :same-as s3.i)
+                 :location (s16.h / here)
+                 :time (s16.a / and
+                              :op1 (s16.t / talk-01
+                                          :ARG0 s16.i)
+                              :op2 (s16.d / draw-01
+                                          :ARG0 s16.i
+                                          :location (s16.p2 / piece
+                                                            :mod (s16.p / paper)))))
+   :snt17 (s17.s / say-01
+                 :ARG0 (s17.p / person
+                              :ARG0-of (s17.s5 / study-01))
+                 :ARG1 (s17.f / feel-05
+                              :ARG1 (s17.c / class
+                                           :mod (s17.t / this)
+                                           :same-as s4.c)
+                              :ARG2 (s17.r2 / resemble-01
+                                            :ARG1 s17.c
+                                            :ARG2 (s17.s2 / sit-01
+                                                          :ARG2 (s17.b / bar)
+                                                          :accompanier (s17.p2 / person
+                                                                               :ARG0-of (s17.h / have-rel-role-91
+                                                                                               :ARG2 (s17.f2 / friend))
+                                                                               :ARG0-of (s17.e / explain-01
+                                                                                               :ARG1 (s17.s4 / something
+                                                                                                             :ARG1-of (s17.g / grasp-01
+                                                                                                                             :ARG0 (s17.y / you)
+                                                                                                                             :ARG1-of (s17.c2 / contrast-01
+                                                                                                                                              :ARG2 (s17.g2 / grasp-01
+                                                                                                                                                            :ARG0 s17.y
+                                                                                                                                                            :ARG1 s17.s4
+                                                                                                                                                            :time (s17.a / about-to)))
+                                                                                                                             :polarity "-")))
+                                                                               :ARG1-of (s17.s3 / smart-06
+                                                                                                :degree (s17.r / really)))))))
+   :snt18 (s18.a2 / and
+                  :op2 (s18.a / aim-01
+                              :ARG0 (s18.w / we
+                                           :same-as s8.a)
+                              :ARG1 (s18.t / that)
+                              :mod (s18.e / exact)))
+   :snt19 (s19.s2 / see-01
+                  :ARG0 (s19.w / we
+                               :same-as s8.a)
+                  :ARG1 (s19.w2 / work-09
+                                :ARG1 (s19.v / video
+                                             :ARG1-of (s19.s3 / short-07)
+                                             :duration (s19.t / temporal-quantity
+                                                              :unit (s19.m / minute)
+                                                              :quant "10"))
+                                :ARG1-of (s19.h / have-degree-91
+                                                :ARG2 (s19.g / good-02
+                                                             :ARG1 s19.w2)
+                                                :ARG3 (s19.m2 / more
+                                                              :quant (s19.m3 / much))
+                                                :ARG4 (s19.t3 / try-01
+                                                              :ARG0 s19.w
+                                                              :ARG1 (s19.a / and
+                                                                           :op1 (s19.r / record-01
+                                                                                       :ARG0 s19.w
+                                                                                       :ARG1 (s19.l / lecture-01
+                                                                                                    :ARG1-of (s19.l2 / long-03
+                                                                                                                     :ARG2 (s19.t2 / temporal-quantity
+                                                                                                                                   :unit (s19.h2 / hour)
+                                                                                                                                   :quant "1"))))
+                                                                           :op2 (s19.p / put-01
+                                                                                       :ARG0 s19.w
+                                                                                       :ARG1 s19.v
+                                                                                       :ARG2 (s19.s / screen
+                                                                                                    :mod (s19.f / format
+                                                                                                                :mod (s19.s4 / small))))))))
+                  :source (s19.c / company
+                                 :name (s19.n / name
+                                              :op1 "Khan"
+                                              :op2 "Academy"))
+                  :time (s19.n2 / now))
+   :snt20 (s20.d / decide-01
+                 :ARG0 (s20.w / we
+                              :same-as s8.a)
+                 :ARG1 (s20.g / go-02
+                              :ARG0 s20.w
+                              :ARG1-of (s20.h / have-degree-91
+                                              :ARG2 (s20.s / short-07
+                                                           :ARG1 s20.w)
+                                              :ARG3 (s20.m / more
+                                                           :mod (s20.e / even)))
+                              :ARG1-of (s20.h2 / have-degree-91
+                                               :ARG2 (s20.i / interactive)
+                                               :ARG3 (s20.m2 / more))))
+   :snt21 (s21.a2 / and
+                  :op1 (s21.l / last-01
+                              :ARG1 (s21.v / video
+                                           :ARG1-of (s21.t5 / typical-02
+                                                            :ARG2 (s21.a / and
+                                                                         :op1 s21.l
+                                                                         :op2 (s21.h / have-degree-91
+                                                                                     :ARG1 (s21.t2 / temporal-quantity
+                                                                                                   :unit (s21.m3 / minute)
+                                                                                                   :quant "6")
+                                                                                     :ARG2 (s21.s / short-07
+                                                                                                  :ARG1 s21.t2
+                                                                                                  :frequency (s21.s2 / sometimes))
+                                                                                     :ARG3 (s21.m4 / more))
+                                                                         :op3 (s21.m5 / more-than
+                                                                                      :op1 s21.t2
+                                                                                      :time (s21.e / ever)
+                                                                                      :polarity "-")))
+                                           :poss (s21.w / we
+                                                        :same-as s8.a))
+                              :ARG2 (s21.t / temporal-quantity
+                                           :unit (s21.m2 / minute)
+                                           :quant "2"))
+                  :op2 (s21.p / pause-01
+                              :purpose (s21.m / make-02
+                                              :ARG0 s21.w
+                                              :ARG1 (s21.f / feel-01
+                                                           :ARG0 s21.v
+                                                           :ARG1 (s21.t4 / tutor-01
+                                                                         :ARG2 s21.v
+                                                                         :manner (s21.o / one-on-one))))
+                              :ARG0 s21.w
+                              :ARG1 s21.v
+                              :ARG2 (s21.q / question-01
+                                           :ARG1 (s21.q2 / quiz))
+                              :time (s21.t3 / then)))
+   :snt22 (s22.a / and
+                 :op1 (s22.e / explain-01
+                             :ARG0 (s22.i / i
+                                          :same-as s3.i)
+                             :ARG1 (s22.t / thing
+                                          :manner-of (s22.u2 / use-01
+                                                             :ARG0 (s22.c2 / computer)
+                                                             :ARG1 (s22.g2 / grammar
+                                                                           :mod (s22.l / language
+                                                                                       :name (s22.n / name
+                                                                                                    :op1 "English")))
+                                                             :ARG2 (s22.p / parse-01
+                                                                          :ARG0 s22.c2
+                                                                          :ARG1 (s22.s / sentence))))
+                             :location (s22.h / here))
+                 :op2 (s22.p2 / pause-01
+                              :location s22.h)
+                 :op3 (s22.o / obligate-01
+                             :ARG1 (s22.p3 / person
+                                           :ARG0-of (s22.s2 / study-01))
+                             :ARG2 (s22.a2 / and
+                                           :op1 (s22.r / reflect-02
+                                                       :ARG0 s22.p3)
+                                           :op2 (s22.u / understand-01
+                                                       :ARG0 s22.p3
+                                                       :ARG1 (s22.t2 / thing
+                                                                     :ARG1-of (s22.g / go-on-15)))
+                                           :op3 (s22.c / check-01
+                                                       :ARG0 s22.p3
+                                                       :ARG1 (s22.b2 / box
+                                                                     :ARG1-of (s22.r2 / right-06))))
+                             :time (s22.b / before
+                                          :op1 (s22.p4 / possible-01
+                                                       :ARG1 (s22.c3 / continue-01
+                                                                     :ARG0 s22.p3)))))
+   :snt23 (s23.l / learn-01
+                 :ARG0 (s23.p / person
+                              :ARG0-of (s23.s / study-01))
+                 :ARG1-of (s23.h / have-degree-91
+                                 :ARG2 (s23.g / good-02
+                                              :ARG1 s23.l)
+                                 :ARG3 (s23.m / most))
+                 :time (s23.p2 / practice-01
+                               :ARG0 s23.p
+                               :ARG1-of (s23.a / activity-06
+                                               :ARG0 s23.p)))
+   :snt24 (s24.w / want-01
+                 :ARG0 (s24.w2 / we
+                               :same-as s8.a)
+                 :ARG1 (s24.a2 / and
+                               :op1 (s24.e / engage-01
+                                           :ARG0 s24.w2
+                                           :ARG1 (s24.t / they
+                                                        :same-as s23.p))
+                               :op2 (s24.g2 / guide-01
+                                            :purpose (s24.s / synthesize-01
+                                                            :ARG0 s24.t
+                                                            :ARG2 (s24.i / idea
+                                                                         :ARG1-of (s24.k / key-02)))
+                                            :ARG0 s24.w2
+                                            :ARG1 s24.t))
+                 :rel (s24.g / grapple-01
+                             :ARG0 s24.t
+                             :ARG1 (s24.a / ambiguity)))
+   :snt25 (s25.a2 / avoid-01
+                  :ARG0 (s25.w / we
+                               :same-as s8.a)
+                  :ARG1 (s25.q / question-01
+                               :example (s25.a / and
+                                               :op1 (s25.f / formula
+                                                           :location (s25.h / here))
+                                               :op2 (s25.t / tell-01
+                                                           :ARG0 (s25.y / you)
+                                                           :ARG1 (s25.v / value
+                                                                        :mod (s25.v2 / variable
+                                                                                     :name (s25.n / name
+                                                                                                  :op1 "Y")))
+                                                           :ARG2 (s25.i / i)
+                                                           :condition (s25.e / equal-01
+                                                                             :ARG1 (s25.v3 / variable
+                                                                                           :name (s25.n2 / name
+                                                                                                         :op1 "X"))
+                                                                             :ARG2 (s25.t2 / thing
+                                                                                           :quant "2"))
+                                                           :time (s25.n3 / now)
+                                                           :mode "imperative")))
+                  :mod (s25.m / most))
+   :snt26 (s26.p / prefer-01
+                 :ARG0 (s26.w / we
+                              :same-as s8.a)
+                 :ARG1 (s26.q / question-01
+                              :mod (s26.e / end
+                                          :ARG1-of (s26.o / open-01))))
+   :snt27 (s27.w / write-01
+                 :ARG0 (s27.p / person
+                              :ARG0-of (s27.s2 / study-01)
+                              :quant "1")
+                 :ARG1 (s27.s / see-01
+                              :ARG0 s27.p
+                              :ARG1 (s27.a / and
+                                           :op1 (s27.n2 / network
+                                                        :name (s27.n / name
+                                                                     :op1 "Bayes"))
+                                           :op2 (s27.t2 / thing
+                                                        :ARG0-of (s27.e2 / exemplify-01
+                                                                         :ARG1 (s27.t / theory
+                                                                                      :mod (s27.g / game)))))
+                              :location (s27.e / everywhere
+                                               :location-of (s27.l / look-01
+                                                                   :ARG0 s27.p))
+                              :time (s27.n3 / now)))
+   :snt28 (s28.a / and
+                 :op2 (s28.l / like-01
+                             :ARG0 (s28.i / i
+                                          :same-as s3.i)
+                             :ARG1 (s28.r / respond-01
+                                          :mod (s28.k / kind
+                                                      :mod (s28.t / that)))))
+   :snt29 (s29.g / go-03
+                 :ARG0 (s29.w / we
+                              :same-as s8.a)
+                 :ARG1 (s29.t2 / thing
+                               :domain (s29.t / that
+                                              :same-as s28.r)
+                               :mod (s29.j / just)))
+   :snt30 (s30.a / and
+                 :op1 (s30.w / want-01
+                             :ARG0 (s30.w4 / we
+                                           :same-as s8.a)
+                             :ARG1 (s30.r / recite-01
+                                          :ARG0 (s30.p / person
+                                                       :ARG0-of (s30.s / study-01))
+                                          :ARG1 (s30.f / formula))
+                             :polarity "-")
+                 :op2 (s30.w2 / want-01
+                              :ARG0 s30.w4
+                              :ARG1 (s30.c / change-01
+                                           :ARG0 s30.w4
+                                           :ARG1 (s30.w3 / way
+                                                         :manner-of (s30.l / look-01
+                                                                           :ARG0 s30.p
+                                                                           :ARG1 (s30.w5 / world))))))
+   :snt31 (s31.a / and
+                 :op2 (s31.s / succeed-01
+                             :ARG0 (s31.w / we
+                                          :same-as s8.a)))
+   :snt32 (s32.o / or
+                 :op2 (s32.r / recommend-01
+                             :ARG1 (s32.s / say-01
+                                          :ARG0 (s32.i / i
+                                                       :same-as s3.i)
+                                          :ARG1 (s32.s3 / succeed-01
+                                                        :ARG0 (s32.p / person
+                                                                     :ARG0-of (s32.s2 / study-01))))))
+   :snt33 (s33.a / and
+                 :op2 (s33.i / ironic
+                             :ARG0-of (s33.c / cause-01
+                                             :ARG1 (s33.e2 / end-up-03
+                                                           :ARG1 (s33.w / we
+                                                                        :same-as s8.a)
+                                                           :ARG2 (s33.m / make-02
+                                                                        :ARG0 s33.w
+                                                                        :ARG1 (s33.h / have-degree-91
+                                                                                     :ARG1 (s33.c2 / class
+                                                                                                   :mod (s33.o / online)
+                                                                                                   :poss s33.w
+                                                                                                   :same-as s4.c)
+                                                                                     :ARG2 (s33.r / resemble-01
+                                                                                                  :ARG1 s33.c2
+                                                                                                  :ARG2 (s33.c3 / class
+                                                                                                                :mod (s33.c5 / college)
+                                                                                                                :mod (s33.t2 / tradition)))
+                                                                                     :ARG3 (s33.m2 / more
+                                                                                                   :quant (s33.m3 / much))
+                                                                                     :ARG4 (s33.c4 / class
+                                                                                                   :mod (s33.o2 / online)
+                                                                                                   :mod (s33.o3 / other))))))
+                             :degree (s33.b / bit
+                                            :mod (s33.l / little))
+                             :domain (s33.s / set-out-07
+                                            :ARG0 s33.w
+                                            :ARG1 (s33.d / disrupt-01
+                                                         :ARG0 s33.w
+                                                         :ARG1 (s33.e / educate-01
+                                                                      :mod (s33.t / tradition))))))
+   :snt34 (s34.a2 / available-02
+                  :ARG2 (s34.v / video)
+                  :time (s34.a / always)
+                  :time (s34.c / class
+                               :quant (s34.m / most)
+                               :mod (s34.o / online)))
+   :snt35 (s35.p / possible-01
+                 :ARG1 (s35.w2 / watch-01
+                               :ARG0 (s35.y / you)
+                               :ARG1 (s35.t / they
+                                            :same-as s34.v)
+                               :time (s35.t2 / time
+                                             :mod (s35.a / any)
+                                             :time-of (s35.w / want-01
+                                                             :ARG0 s35.y))))
+   :snt36 (s36.c2 / contrast-01
+                  :ARG2 (s36.a / and
+                               :op1 (s36.m / mean-01
+                                           :ARG2 (s36.p / possible-01
+                                                        :ARG1 (s36.d / do-02
+                                                                     :ARG0 (s36.y / you)
+                                                                     :ARG1 (s36.i / it)
+                                                                     :time (s36.t2 / tomorrow)))
+                                           :condition (s36.c / capable-01
+                                                             :ARG1 s36.y
+                                                             :ARG2 s36.i
+                                                             :time (s36.t / time
+                                                                          :mod (s36.a2 / any))))
+                               :op2 (s36.p3 / possible-01
+                                            :ARG1 (s36.g / get-04
+                                                         :ARG0 s36.y
+                                                         :ARG1 s36.i
+                                                         :time (s36.e / ever)
+                                                         :polarity "-")
+                                            :condition (s36.p2 / possible-01
+                                                               :ARG1 s36.c)
+                                            :mod (s36.w / well))))
+   :snt37 (s37.c / cause-01
+                 :ARG1 (s37.b2 / bring-01
+                               :ARG0 (s37.w / we
+                                            :same-as s8.a)
+                               :ARG1 (s37.i / innovate-01
+                                            :ARG1 (s37.h / have-03
+                                                         :ARG1 (s37.d / date)))
+                               :direction (s37.b / back)))
+   :snt38 (s38.c / contrast-01
+                 :ARG1 (s38.p / possible-01
+                              :ARG1 (s38.w2 / watch-01
+                                            :ARG0 (s38.y / you)
+                                            :ARG1 (s38.v / video
+                                                         :same-as s34.v)
+                                            :frequency (s38.t / time
+                                                              :ARG1-of (s38.w / want-01
+                                                                              :ARG0 s38.y)
+                                                              :mod (s38.a / any))
+                                            :time (s38.w3 / week)))
+                 :ARG2 (s38.o / obligate-01
+                              :ARG1 s38.y
+                              :ARG2 (s38.g / get-04
+                                           :ARG0 s38.y
+                                           :ARG1 (s38.d / do-02
+                                                        :ARG0 s38.y
+                                                        :ARG1 (s38.h / homework)))
+                              :time (s38.e / end-01
+                                           :ARG1 (s38.w4 / week
+                                                         :same-as s38.w3))))
+   :snt39 (s39.a3 / and
+                  :op1 (s39.m3 / motivate-01
+                               :ARG0 (s39.t4 / this
+                                             :same-as s37.i)
+                               :ARG1 (s39.p2 / person
+                                             :ARG0-of (s39.s2 / study-01))
+                               :ARG2 (s39.k / keep-02
+                                            :ARG0 s39.p2
+                                            :ARG1 (s39.g2 / go-02
+                                                          :ARG0 s39.p2)))
+                  :op2 (s39.m / mean-01
+                              :ARG0-of (s39.c / cause-01
+                                              :ARG1 (s39.p3 / possible-01
+                                                            :ARG1 (s39.g / get-01
+                                                                         :ARG0 (s39.y / you)
+                                                                         :ARG0 (s39.p / peer)
+                                                                         :ARG1 (s39.t3 / thing
+                                                                                       :ARG2-of (s39.a4 / answer-01))
+                                                                         :time (s39.a / after
+                                                                                      :quant (s39.u / up-to
+                                                                                                    :op1 (s39.m4 / multiple
+                                                                                                                 :op1 (s39.t / temporal-quantity
+                                                                                                                             :unit (s39.m2 / minute)
+                                                                                                                             :quant "1")))
+                                                                                      :op1 s39.m))
+                                                            :condition (s39.g3 / go-02
+                                                                               :ARG0 s39.y
+                                                                               :ARG4 (s39.f / forum
+                                                                                            :mod (s39.d / discuss-01)))))
+                              :ARG1 s39.t4
+                              :ARG2 (s39.w / work-01
+                                           :ARG0 (s39.e / everybody)
+                                           :ARG1 (s39.t2 / thing
+                                                         :ARG1-of (s39.s / same-01
+                                                                         :time (s39.t5 / time))))
+                              :mod (s39.a2 / also)))
+   :snt40 (s40.s / show-01
+                 :ARG0 (s40.i / i
+                              :same-as s3.i)
+                 :ARG1 (s40.f / forum
+                              :quant (s40.s2 / some)
+                              :ARG1-of (s40.i2 / include-91
+                                               :ARG2 (s40.f2 / forum
+                                                             :ARG1-of (s40.i3 / include-91
+                                                                              :ARG3 (s40.m / most))
+                                                             :ARG1-of (s40.o / organize-01
+                                                                             :ARG0 (s40.p / person
+                                                                                          :ARG0-of (s40.s3 / study-01))))))
+                 :ARG2 (s40.y / you)
+                 :time (s40.n / now))
+   :snt41 (s41.l / learn-01
+                 :ARG0 (s41.w / we
+                              :same-as s8.a)
+                 :ARG1 (s41.c2 / concept
+                               :topic (s41.f / flip-01
+                                             :ARG1 (s41.c / classroom)))
+                 :ARG2 (s41.a / and
+                              :op1 (s41.p / person
+                                          :name (s41.n / name
+                                                       :op1 "Daphne"
+                                                       :op2 "Koller"))
+                              :op2 (s41.p2 / person
+                                           :name (s41.n2 / name
+                                                         :op1 "Andrew"
+                                                         :op2 "Ng"))))
+   :snt42 (s42.a / and
+                 :op1 (s42.w / watch-01
+                             :ARG0 (s42.p / person
+                                          :ARG0-of (s42.s / study-01))
+                             :ARG1 (s42.v / video)
+                             :mod (s42.b / by-oneself))
+                 :op2 (s42.c / come-01
+                             :purpose (s42.d / discuss-01
+                                             :ARG0 s42.p
+                                             :ARG1 s42.v)
+                             :ARG1 s42.p
+                             :ARG4 (s42.t2 / together)
+                             :time (s42.t / then)))
+   :snt43 (s43.l / learn-01
+                 :ARG0 (s43.i / i
+                              :same-as s3.i)
+                 :ARG1 (s43.i2 / instruct-01
+                               :ARG1 (s43.p / peer
+                                            :ARG0-of (s43.t / teach-01)))
+                 :ARG2 (s43.p2 / person
+                               :name (s43.n / name
+                                            :op1 "Eric"
+                                            :op2 "Mazur"))
+                 :ARG3 (s43.a / and
+                              :op1 (s43.p3 / possible-01
+                                           :ARG1 (s43.h / have-degree-91
+                                                        :ARG1 s43.p
+                                                        :ARG2 (s43.g / good-03
+                                                                     :ARG1 s43.p)
+                                                        :ARG3 (s43.m / most)))
+                              :op2 (s43.c / cause-01
+                                          :ARG0 (s43.r / remember-01
+                                                       :ARG0 s43.p
+                                                       :ARG1 (s43.t2 / thing
+                                                                     :ARG1-of (s43.r2 / resemble-01
+                                                                                      :ARG2 (s43.u / understand-01
+                                                                                                   :polarity "-"))))
+                                          :ARG1 s43.p3)))
+   :snt44 (s44.f / forget-01
+                 :ARG0 (s44.a / and
+                              :op1 (s44.p / person
+                                          :name (s44.n / name
+                                                       :op1 "Sebastian"))
+                              :op2 (s44.i / i
+                                          :same-as s3.i)
+                              :same-as s4.i)
+                 :ARG1 (s44.s / some
+                              :ARG1-of (s44.i2 / include-91
+                                               :ARG2 (s44.t / that))))
+   :snt45 (s45.c / cause-01
+                 :ARG0 (s45.p2 / possible-01
+                               :ARG1 (s45.d / discuss-01
+                                            :ARG0 (s45.w / we
+                                                         :same-as s4.i)
+                                            :ARG2 (s45.p / person
+                                                         :quant (s45.m / multiple
+                                                                       :op1 "10000")
+                                                         :ARG0-of (s45.s / study-01))
+                                            :mod (s45.c2 / classroom))
+                               :polarity "-")
+                 :ARG1 (s45.a / and
+                              :op1 (s45.e / encourage-01
+                                          :ARG0 s45.w
+                                          :ARG1 (s45.f / forum
+                                                       :medium (s45.o2 / online)
+                                                       :mod (s45.t / this)))
+                              :op2 (s45.n / nurture-01
+                                          :ARG0 s45.w
+                                          :ARG1 s45.f))
+                 :mod (s45.o / of-course))
+   :snt46 (s46.a / and
+                 :op2 (s46.l / learn-01
+                             :ARG0 (s46.i / i
+                                          :same-as s3.i)
+                             :ARG1 (s46.c2 / concern-02
+                                           :ARG0 (s46.c / class)
+                                           :ARG1 (s46.i2 / information)
+                                           :mod (s46.p / primary)
+                                           :polarity "-")
+                             :ARG2 (s46.t / teach-01
+                                          :ARG0 s46.i)
+                             :mod (s46.f / final))
+                 :rel (s46.o / For)
+                 :rel (s46.m / America))
+   :snt47 (s47.h / have-degree-91
+                 :ARG1 (s47.a / and
+                              :op1 (s47.m2 / motivate-01)
+                              :op2 (s47.d / determine-01))
+                 :ARG2 (s47.i / important-01
+                              :ARG1 s47.a)
+                 :ARG3 (s47.m / more))
+   :snt48 (s48.c / crucial
+                 :domain (s48.s / see-01
+                                :ARG0 (s48.p / person
+                                             :ARG0-of (s48.s2 / study-01))
+                                :ARG1 (s48.a2 / and
+                                              :op1 (s48.w2 / work-01
+                                                           :ARG0 (s48.w / we
+                                                                        :same-as s8.a)
+                                                           :ARG1-of (s48.h / hard-02)
+                                                           :ARG2 s48.p)
+                                              :op2 (s48.s3 / support-01
+                                                           :ARG0 s48.p
+                                                           :ARG1 (s48.o / other
+                                                                        :ARG1-of (s48.i / include-91
+                                                                                        :ARG2 s48.p
+                                                                                        :ARG3 (s48.a / all))
+                                                                        :mod (s48.e / each))))))
+   :snt49 (s49.a3 / and
+                  :op1 (s49.r2 / run-01
+                               :ARG0 (s49.c / class
+                                            :same-as s4.c)
+                               :ARG1 (s49.t / temporal-quantity
+                                            :unit (s49.w2 / week)
+                                            :quant "10"))
+                  :op2 (s49.a4 / and
+                               :op1 (s49.w / watch-01
+                                           :ARG0 (s49.p / person
+                                                        :ARG1-of (s49.i / include-91
+                                                                        :ARG2 (s49.p2 / person
+                                                                                      :ARG0-of (s49.s / study-01)
+                                                                                      :quant "150000")
+                                                                        :ARG3 (s49.a / about
+                                                                                     :op1 "1/2")))
+                                           :ARG1 (s49.v / video
+                                                        :quant (s49.a5 / at-least
+                                                                       :frequency (s49.r / rate-entity-91
+                                                                                         :ARG2 (s49.t2 / temporal-quantity
+                                                                                                       :unit (s49.w3 / week)
+                                                                                                       :quant "1"))
+                                                                       :op1 "1")))
+                               :op2 (s49.f / finish-01
+                                           :ARG0 (s49.p3 / person
+                                                         :quant (s49.o / over
+                                                                       :op1 "20000")
+                                                         :ARG0-of (s49.s2 / study-01
+                                                                          :same-as s48.p))
+                                           :ARG0-of (s49.p4 / put-in-05
+                                                            :ARG1 (s49.b / between
+                                                                         :op1 (s49.t3 / temporal-quantity
+                                                                                      :unit (s49.h2 / hour)
+                                                                                      :quant "50")
+                                                                         :op2 (s49.t4 / temporal-quantity
+                                                                                      :unit (s49.h3 / hour)
+                                                                                      :quant "100")))
+                                           :ARG1 (s49.h / homework
+                                                        :mod (s49.a2 / all)))
+                               :time (s49.e / end-01))
+                  :time (s49.n / now))
+   :snt50 (s50.g / get-01
+                 :ARG0 (s50.t / they
+                              :same-as s49.o)
+                 :ARG1 (s50.s / state-01
+                              :ARG1 (s50.a / accomplish-01
+                                           :ARG0 s50.t)
+                              :mod (s50.t2 / this)))
+   :snt51 (s51.l / learn-01
+                 :ARG0 (s51.w / we
+                              :same-as s8.a)
+                 :ARG1 (s51.a / amr-unknown))
+   :snt52 (s52.c / contrast-01
+                 :ARG1 (s52.a2 / and
+                               :op1 (s52.t2 / try-01
+                                            :ARG0 (s52.w / we
+                                                         :same-as s8.a)
+                                            :ARG1 (s52.a / and
+                                                         :op1 (s52.i / idea
+                                                                     :quant (s52.s / some)
+                                                                     :mod (s52.o / old))
+                                                         :op2 (s52.i2 / idea
+                                                                      :quant (s52.s2 / some)
+                                                                      :ARG1-of (s52.n / new-01))))
+                               :op2 (s52.p / put-03
+                                           :ARG0 s52.w
+                                           :ARG1 s52.a
+                                           :ARG2 (s52.t / together)))
+                 :ARG2 (s52.i3 / idea
+                               :quant (s52.m / more)
+                               :ARG1-of (s52.t3 / try-01
+                                                :ARG0 s52.w))
+                 :mod (s52.w2 / well
+                              :mode "expressive"))
+   :snt53 (s53.t / teach-01
+                 :ARG0 (s53.p / person
+                              :name (s53.n / name
+                                           :op1 "Sebastian")
+                              :same-as s44.p)
+                 :ARG1 (s53.c / class
+                              :mod (s53.a / another))
+                 :time (s53.n2 / now))
+   :snt54 (s54.d2 / do-02
+                  :ARG0 (s54.i / i
+                               :same-as s3.i)
+                  :ARG1 (s54.o / one)
+                  :time (s54.d / date-entity
+                               :season (s54.f / fall)))
+   :snt55 (s55.h / have-03
+                 :ARG0 (s55.a / and
+                              :op1 (s55.u / university
+                                          :name (s55.n / name
+                                                       :op1 "Stanford"
+                                                       :op2 "Coursera"))
+                              :op2 (s55.u2 / university
+                                           :name (s55.n2 / name
+                                                         :op1 "Udacity"))
+                              :op3 (s55.u3 / university
+                                           :name (s55.n3 / name
+                                                         :op1 "MITx"))
+                              :op4 (s55.o / other))
+                 :ARG1 (s55.c / class
+                              :quant (s55.m / more)
+                              :ARG1-of (s55.c2 / come-01)))
+   :snt56 (s56.t / time
+                 :ARG0-of (s56.e / excite-01
+                                 :degree (s56.r / really)))
+   :snt57 (s57.c / contrast-01
+                 :ARG2 (s57.o / opine-01
+                              :ARG0 (s57.i / i
+                                           :same-as s3.i)
+                              :ARG1 (s57.p / part
+                                           :ARG0-of (s57.e / excite-01
+                                                           :ARG2-of (s57.h / have-degree-91
+                                                                           :ARG1 s57.p
+                                                                           :ARG3 (s57.m / most)))
+                                           :domain (s57.d / data
+                                                          :ARG1-of (s57.g / gather-01
+                                                                          :ARG0 (s57.w / we
+                                                                                       :same-as s8.a)))
+                                           :part-of (s57.i2 / it))))
+   :snt58 (s58.a4 / and
+                  :op1 (s58.g / gather-01
+                              :ARG0 (s58.w / we)
+                              :ARG1 (s58.a3 / and
+                                            :op1 (s58.r / rate-entity-91
+                                                        :ARG1 (s58.i / interact-01
+                                                                     :quant (s58.m / multiple
+                                                                                   :op1 "1000"))
+                                                        :ARG2 (s58.p / person
+                                                                     :ARG0-of (s58.s2 / study-01))
+                                                        :ARG2 (s58.c / class
+                                                                     :quant "1"))
+                                            :op2 (s58.i2 / interact-01
+                                                         :quant (s58.m2 / multiple
+                                                                        :op1 "1000000000")
+                                                         :mod (s58.a / altogether))))
+                  :op2 (s58.p2 / possible-01
+                               :ARG1 (s58.s / start-01
+                                            :ARG0 s58.w
+                                            :ARG1 (s58.a2 / analyze-01
+                                                          :ARG0 s58.w
+                                                          :ARG1 s58.i))
+                               :time (s58.n / now))
+                  :op3 (s58.c2 / come-01
+                               :ARG1 (s58.r3 / revolution-03
+                                             :ARG1-of (s58.r2 / real-04))
+                               :time (s58.a5 / and
+                                             :op1 (s58.l / learn-01
+                                                         :ARG0 s58.w
+                                                         :ARG2 s58.i2)
+                                             :op2 (s58.d / do-02
+                                                         :ARG0 s58.w
+                                                         :ARG1 (s58.e / experiment-01)))))
+   :snt59 (s59.a2 / and
+                  :op2 (s59.p2 / possible-01
+                               :ARG1 (s59.s / see-01
+                                            :ARG0 (s59.y / you)
+                                            :ARG1 (s59.t / thing
+                                                         :ARG2-of (s59.r / result-01
+                                                                         :ARG1 (s59.g / generation
+                                                                                      :ARG1-of (s59.n / new-01)
+                                                                                      :consist-of (s59.p / person
+                                                                                                         :ARG0-of (s59.a / amaze-01)
+                                                                                                         :ARG0-of (s59.s2 / study-01)))))))))
+

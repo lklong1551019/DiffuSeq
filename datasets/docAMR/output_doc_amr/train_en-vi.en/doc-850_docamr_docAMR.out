@@ -1,0 +1,1886 @@
+# ::id doc-850
+# ::doc_file doc-850
+# ::tok http : / / www . ted . com / talks / roger_stein_a_bold_new_way_to_fund_drug_research< / url> <next_sent> So this is a picture of my dad and me at the beach in Far Rockaway , or actually Rockaway Park . <next_sent> I 'm the one with the blond hair . <next_sent> My dad 's the guy with the cigarette . <next_sent> It was the ' 60s . <next_sent> A lot of people smoked back then . <next_sent> In the summer of 2009 , my dad was diagnosed with lung cancer . <next_sent> Cancer is one of those things that actually touches everybody . <next_sent> If you 're a man in the United States of the America , you 've got about a one in two chance of being diagnosed with cancer during your lifetime . <next_sent> of being diagnosed with cancer . <next_sent> Everybody knows somebody who 's been diagnosed with cancer . <next_sent> Now , my dad 's doing better today , and part of the reason for that is that he was able to participate in the trial of an experimental new drug that happened to be specially formulated and very good for his particular kind of cancer . <next_sent> There are over 200 kinds of cancer . <next_sent> And what I want to talk about today is how we can help more people like my dad , because we have to change the way we think about raising money to fund cancer research . <next_sent> So a while after my dad was diagnosed , I was having coffee with my friend Andrew Lo . <next_sent> He 's the head of the Laboratory for Financial Engineering at MIT , where I also have a position , and we were talking about cancer . <next_sent> And Andrew had been doing his own bits of research , and one of the things that he had been told and that he 'd learned from studying the literature was that there 's actually a big bottleneck . <next_sent> It 's very difficult to develop new drugs , and the reason it 's difficult to develop new drugs is because in the early stages of drug development , the drugs are very risky , and they 're very expensive . <next_sent> So Andrew asked me if I 'd want to maybe work with him a bit , work on some of the math and the analytics and see if we could figure out something we could do . <next_sent> Now I 'm not a scientist . <next_sent> You know , I do n't know how to build a drug . <next_sent> And none of my coauthors , Andrew Lo or Jose Maria Fernandez or David Fagnan -- none of those guys -- are scientists either . <next_sent> We do n't know the first thing about how to make a cancer drug . <next_sent> But we know a little bit about risk mitigation and a little bit about financial engineering , and so we started thinking , what could we do ? <next_sent> What I 'm going to tell you about is some work we 've been doing over the last couple years that we think could fundamentally change the way research for cancer and lots of other things gets done . <next_sent> We want to let the research drive the funding , not the other way around . <next_sent> So in order to get started , let me tell you how you get a drug financed . <next_sent> Imagine that you 're in your lab -- you 're a scientist , you 're not like me -- you 're a scientist , and you 've developed a new compound that you think might be therapeutic for somebody with cancer . <next_sent> Well , what you do is , you test in animals , you test in test tubes , but there 's this notion of going from the bench to the bedside , and in order to get from the bench , the lab , to the bedside , to the patients , you 've got to get the drug tested . <next_sent> And the way the drug gets tested is through a series of , basically , experiments , through these large , they 're called trials , that they do to determine whether the drug is safe and whether it works and all these things . <next_sent> So the FDA has a very specific protocol . <next_sent> In the first phase of this testing , which is called testing for toxicity , it 's called Phase I. <next_sent> In the first phase , you give the drug to healthy people and you see if it actually makes them sick . <next_sent> In other words , are the side effects just so severe that no matter how much good it does , it 's not going to be worth it ? <next_sent> Does it cause heart attacks , kill people , liver failure , this kind of thing ? <next_sent> And it turns out , that 's a pretty high hurdle . <next_sent> About a third of all drugs drop out at that point . <next_sent> In the next phase , you test to see if the drug 's effective , and what you do there is you give it to people with cancer and you see if it actually makes them better . <next_sent> And in the third phase , you actually test it on a very large sample , and what you 're trying to determine is what the right dose is , and also , is it better than what 's available today ? <next_sent> If not , then why build it ? <next_sent> When you 're done with all that , what you have is a very small percentage of drugs that start the process actually come out the other side . <next_sent> So those blue bottles , those blue bottles save lives , and they 're also worth billions , sometimes billions a year . <next_sent> So now here 's a question : if I were to ask you , for example , to make a one - time investment of , say , 200 million dollars to buy one of those bottles , so 200 million dollars up front , one time , to buy one of those bottles , I wo n't tell you which one it is , and in 10 years , I 'll tell you whether you have one of the blue ones . <next_sent> Does that sound like a good deal for anybody ? <next_sent> No. No , right ? <next_sent> And of course , it 's a very , very risky trial position , and that 's why it 's very hard to get funding , but to a first approximation , that 's actually the proposal . <next_sent> So Andrew said to me , he said , " What if we stop thinking about these as drugs ? <next_sent> What if we start thinking about them as financial assets ? " <next_sent> They 've got really weird payoff structures and all that , but let 's throw everything we know about financial engineering at them . <next_sent> Let 's see if we can use all the tricks of the trade to figure out how to make these drugs work as financial assets ? <next_sent> Let 's create a giant fund . <next_sent> In finance , we know what to do with assets that are risky . <next_sent> You put them in a portfolio and you try to smooth out the returns . <next_sent> So we did some math , and it turned out you could make this work , but in order to make it work , you need about 80 to 150 drugs . <next_sent> Now the good news is , there 's plenty of drugs that are waiting to be tested . <next_sent> We 've been told that there 's a backlog of about 20 years of drugs that are waiting to be tested but ca n't be funded . <next_sent> In fact , that early stage of the funding process , that Phase I and pre - clinical stuff , that 's actually , in the industry , called the Valley of Death because it 's where drugs go to die . <next_sent> It 's very hard to for them to get through there , and of course , if you ca n't get through there , you ca n't get to the later stages . <next_sent> So we did this math , and we figured out , okay , well , you know , you need about 80 to , say , 150 , or something like that , drugs . <next_sent> And then we did a little more math , and we said , okay , well that 's a fund of about three to 15 billion dollars . <next_sent> So we kind of created a new problem by solving the old one . <next_sent> We were able to get rid of the risk , but now we need a lot of capital , and there 's only one place to get that kind of capital , the capital markets . <next_sent> But we have to figure out how we can get people in the capital markets , who traditionally do n't invest in this stuff , to want to invest in this stuff . <next_sent> So again , financial engineering was helpful here . <next_sent> Imagine the megafund actually starts empty , and what it does is it issues some debt and some equity , and that generates cash flow . <next_sent> That cash flow is used , then , to buy that big portfolio of drugs that you need , and those drugs start working their way through that approval process , and each time they go through a next phase of approval , they gain value . <next_sent> And most of them do n't make it , but a few of them do , and with the ones that gain value , you can sell some , and when you sell them , you have money to pay the interest on those bonds , but you also have money to fund the next round of trials . <next_sent> It 's almost self - funding . <next_sent> You do that for the course of the transaction , and when you 're done , you liquidate the portfolio , pay back the bonds , and you can give the equity holders a nice return . <next_sent> So that was the theory , and we talked about it for a bit , we did a bunch of experiments , and then we said , let 's really try to test it . <next_sent> We spent the next two years doing research . <next_sent> We talked to hundreds of experts in drug financing and venture capital . <next_sent> We talked to people who have developed drugs . <next_sent> We talked to pharmaceutical companies . <next_sent> We actually looked at the data for drugs , over 2,000 drugs that had been approved or denied or withdrawn , and we also ran millions of simulations . <next_sent> And all that actually took a lot of time . <next_sent> But when we were done , what we found was something that was sort of surprising . <next_sent> It was actually feasible to structure that fund such that when you were done structuring it , you could actually produce low - risk bonds that would be attractive to bond holders , that would give you yields of about five to eight percent , and you could produce equity that would give equity holders about a 12 - percent return . <next_sent> Now those returns are n't going to be attractive to a venture capitalist . <next_sent> Venture capitalists are those guys who want to make those big bets and get those billion dollar payoffs . <next_sent> But it turns out , there are lots of other folks that would be interested in that . <next_sent> That 's right in the investment sweet spot of pension funds and 401 plans and all this other stuff . <next_sent> So we published some articles in the academic press . <next_sent> We published articles in medical journals . <next_sent> We published articles in finance journals . <next_sent> But it was n't until we actually got the popular press interested in this that we began to get some traction . <next_sent> We wanted to do something more than just make people aware of it , though . <next_sent> We wanted people to get involved . <next_sent> So what we did was , we actually took all of our computer code and made that available online under an open - source license to anybody that wanted it . <next_sent> And you guys can download it today if you want to run your own experiments to see if this would work . <next_sent> And that was really effective , because people that did n't believe our assumptions could try their own assumptions and see how it would work . <next_sent> Now there 's an obvious problem , which is , is there enough money in the world to fund this stuff ? <next_sent> I 've told you there 's enough drugs , but is there enough money ? <next_sent> There 's 100 trillion dollars of capital currently invested in fixed - income securities . <next_sent> That 's a hundred thousand billion . <next_sent> There 's plenty of money . <next_sent> But what we realized was that it 's more than just money that 's required . <next_sent> We had to get people motivated , people to get involved , and people had to understand this . <next_sent> And so we started thinking about all the different things that could go wrong . <next_sent> What are all the challenges to doing this that might get in the way ? <next_sent> And we had a long list , and so what we did was we assigned a bunch of people , including ourselves , different pieces of this problem , and we said , could you start a work stream on credit risk ? <next_sent> Could you start a work stream on the regulatory aspects ? <next_sent> Could you start a work stream on how you would actually manage so many projects ? <next_sent> And we had all these experts get together and do these different work streams , and then we held a conference . <next_sent> The conference was held over the summer , this past summer . <next_sent> It was an invitation - only conference . <next_sent> It was sponsored by the American Cancer Society and done in collaboration with the National Cancer Institute . <next_sent> And we had experts from every field that we thought would be important , including the government , including people that run research centers and so on , and for two days they sat around and heard the reports from those five work streams , and they talked about it . <next_sent> It was the first time that the people who could actually make this happen sat across the table from each other and had these conversations . <next_sent> Now these conferences , it 's typical to have a dinner , and at that dinner , you kind of get to know each other , sort of like what we 're doing here . <next_sent> I happened to look out the window , and hand on my heart , I looked out the window on the night of this conference -- it was the summertime -- and that 's what I saw , it was a double rainbow . <next_sent> So I 'd like to think it was a good sign . <next_sent> Since the conference , we 've got people working between Paris and San Francisco , lots of different folks working on this to try to see if we can really make it happen . <next_sent> We 're not looking to start a fund , but we want somebody else to do this . <next_sent> Because , again , I 'm not a scientist . <next_sent> I ca n't build a drug . <next_sent> I 'm never going to have enough money to fund even one of those trials . <next_sent> But all of us together , with our 401 's , with our 529 plans , with our pension plans , all of us together can actually fund hundreds of trials and get paid well for doing it and save millions of lives like my dad . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01
+                            :ARG0 (s1.p / person
+                                        :name (s1.n / name
+                                                    :op1 "narcotic"))))
+   :snt2 (s2.c / cause-01
+               :ARG1 (s2.p3 / picture
+                            :domain (s2.t / this)
+                            :topic (s2.a2 / and
+                                          :location (s2.b / beach
+                                                          :location (s2.o / or
+                                                                          :op1 (s2.l / local-region
+                                                                                     :name (s2.n / name
+                                                                                                 :op1 "Far"
+                                                                                                 :op2 "Rockaway"))
+                                                                          :op2 (s2.p / park
+                                                                                     :name (s2.n2 / name
+                                                                                                  :op1 "Rockaway"
+                                                                                                  :op2 "Park")
+                                                                                     :ARG1-of (s2.a / actual-02))))
+                                          :op1 (s2.p2 / person
+                                                      :ARG0-of (s2.h / have-rel-role-91
+                                                                     :ARG1 (s2.i / i)
+                                                                     :ARG2 (s2.d / dad)))
+                                          :op2 s2.i)))
+   :snt3 (s3.o / one
+               :domain (s3.i / i
+                             :same-as s2.i)
+               :poss-of (s3.h / hair
+                              :mod (s3.b / blonde)))
+   :snt4 (s4.g / guy
+               :domain (s4.p / person
+                             :ARG0-of (s4.h / have-rel-role-91
+                                            :ARG1 (s4.i / i
+                                                        :same-as s2.i)
+                                            :ARG2 (s4.d / dad))
+                             :same-as s2.i)
+               :poss-of (s4.c / cigarette))
+   :snt5 (s5.d / date-entity
+               :decade "1960")
+   :snt6 (s6.s / smoke-02
+               :ARG0 (s6.p / person
+                           :quant (s6.l / lot))
+               :time (s6.t / then
+                           :mod (s6.b / back)))
+   :snt7 (s7.d3 / diagnose-01
+                :ARG1 (s7.p / person
+                            :ARG0-of (s7.h / have-rel-role-91
+                                           :ARG1 (s7.i / i
+                                                       :same-as s2.i)
+                                           :ARG2 (s7.d / dad))
+                            :same-as s2.i)
+                :ARG2 (s7.d4 / disease
+                             :name (s7.n / name
+                                         :op1 "lung"
+                                         :op2 "cancer"))
+                :time (s7.d2 / date-entity
+                             :season (s7.s / summer)
+                             :year "2009"))
+   :snt8 (s8.i / include-91
+               :ARG1 (s8.d / disease
+                           :name (s8.n / name
+                                       :op1 "Cancer"))
+               :ARG2 (s8.t / thing
+                           :ARG0-of (s8.t2 / touch-01
+                                           :ARG1 (s8.e / everybody)
+                                           :ARG1-of (s8.a / actual-02))))
+   :snt9 (s9.c / chance-02
+               :ARG0 (s9.m / man
+                           :domain (s9.y / you)
+                           :location (s9.c2 / country
+                                            :name (s9.n / name
+                                                        :op1 "United"
+                                                        :op2 "States"
+                                                        :op3 "of"
+                                                        :op4 "the"
+                                                        :op5 "America")))
+               :ARG1 (s9.d / diagnose-01
+                           :ARG1 s9.y
+                           :ARG2 (s9.d2 / disease
+                                        :name (s9.n2 / name
+                                                     :op1 "cancer")))
+               :ARG2 (s9.p / product-of
+                           :op1 "1"
+                           :op2 "2")
+               :condition s9.m
+               :time (s9.l / live-01
+                           :ARG0 s9.y))
+   :snt10 (s10.d / diagnose-01
+                 :ARG2 (s10.d2 / disease
+                               :name (s10.n / name
+                                            :op1 "cancer")))
+   :snt11 (s11.k / know-01
+                 :ARG0 (s11.e / everybody)
+                 :ARG1 (s11.s / somebody
+                              :ARG1-of (s11.d / diagnose-01
+                                              :ARG2 (s11.d2 / disease
+                                                            :name (s11.n / name
+                                                                         :op1 "cancer")))))
+   :snt12 (s12.a / and
+                 :op1 (s12.h2 / have-degree-91
+                              :ARG1 (s12.p3 / person
+                                            :ARG0-of (s12.h3 / have-rel-role-91
+                                                             :ARG1 (s12.i / i
+                                                                          :same-as s2.i)
+                                                             :ARG2 (s12.d / dad))
+                                            :same-as s2.i)
+                              :ARG2 (s12.w / well-05
+                                           :ARG1 s12.p3)
+                              :ARG3 (s12.m / more)
+                              :time (s12.t / today))
+                 :op2 (s12.c / cause-01
+                             :ARG0 (s12.p4 / possible-01
+                                           :ARG1 (s12.p / participate-01
+                                                        :ARG0 s12.p3
+                                                        :ARG1 (s12.t2 / try-01
+                                                                      :ARG1 (s12.d3 / drug
+                                                                                    :ARG1-of (s12.n2 / new-01)
+                                                                                    :ARG1-of (s12.e / experiment-01)
+                                                                                    :ARG1-of (s12.f / formulate-01
+                                                                                                    :ARG1-of (s12.s / special-02)
+                                                                                                    :ARG1-of (s12.h / happen-02))
+                                                                                    :ARG1-of (s12.g / good-04
+                                                                                                    :ARG2 (s12.d2 / disease
+                                                                                                                  :name (s12.n / name
+                                                                                                                               :op1 "cancer")
+                                                                                                                  :mod (s12.k / kind
+                                                                                                                              :mod (s12.p2 / particular))
+                                                                                                                  :poss s12.p3)
+                                                                                                    :degree (s12.v / very))))))
+                             :ARG1 s12.w)
+                 :time (s12.n3 / now))
+   :snt13 (s13.d / disease
+                 :name (s13.n / name
+                              :op1 "cancer")
+                 :mod (s13.k / kind
+                             :quant (s13.o / over
+                                           :op1 "200")))
+   :snt14 (s14.a / and
+                 :op2 (s14.w / want-01
+                             :ARG0 (s14.i / i
+                                          :same-as s2.i)
+                             :ARG1 (s14.t / talk-01
+                                          :ARG0 s14.i
+                                          :ARG1 (s14.p3 / possible-01
+                                                        :ARG1 (s14.h2 / help-01
+                                                                      :ARG0 (s14.w3 / we)
+                                                                      :ARG1 (s14.p / person
+                                                                                   :quant (s14.m2 / more)
+                                                                                   :ARG1-of (s14.r3 / resemble-01
+                                                                                                    :ARG2 (s14.p2 / person
+                                                                                                                  :ARG0-of (s14.h / have-rel-role-91
+                                                                                                                                  :ARG1 s14.i
+                                                                                                                                  :ARG2 (s14.d / dad))
+                                                                                                                  :same-as s2.i)))))
+                                          :time (s14.t3 / today
+                                                        :same-as s12.t))
+                             :ARG1-of (s14.c / cause-01
+                                             :ARG0 (s14.o / obligate-01
+                                                          :ARG1 s14.w3
+                                                          :ARG2 (s14.c2 / change-01
+                                                                        :ARG0 s14.w3
+                                                                        :ARG1 (s14.w2 / way
+                                                                                      :manner-of (s14.t2 / think-01
+                                                                                                         :ARG0 s14.w3
+                                                                                                         :ARG1 (s14.r / raise-02
+                                                                                                                      :purpose (s14.f / fund-01
+                                                                                                                                      :ARG0 s14.w3
+                                                                                                                                      :ARG1 (s14.r2 / research-01
+                                                                                                                                                    :ARG1 (s14.d2 / disease
+                                                                                                                                                                  :name (s14.n / name
+                                                                                                                                                                               :op1 "cancer"))))
+                                                                                                                      :ARG0 s14.w3
+                                                                                                                      :ARG1 (s14.m / money)))))))))
+   :snt15 (s15.c / cause-01
+                 :ARG1 (s15.b / blog-01
+                              :ARG0 (s15.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s15.c2 / coffee)
+                              :accompanier (s15.p2 / person
+                                                   :name (s15.n / name
+                                                                :op1 "Andrew"
+                                                                :op2 "Lo")
+                                                   :ARG0-of (s15.h2 / have-rel-role-91
+                                                                    :ARG1 s15.i
+                                                                    :ARG2 (s15.f / friend)))
+                              :time (s15.a / after
+                                           :duration (s15.w / while)
+                                           :op1 (s15.d2 / diagnose-01
+                                                        :ARG1 (s15.p / person
+                                                                     :ARG0-of (s15.h / have-rel-role-91
+                                                                                     :ARG1 s15.i
+                                                                                     :ARG2 (s15.d / dad))
+                                                                     :same-as s2.i)))))
+   :snt16 (s16.a2 / and
+                  :op1 (s16.h3 / head-01
+                               :ARG0 (s16.h2 / he
+                                             :same-as s15.p2)
+                               :ARG1 (s16.l / laboratory
+                                            :name (s16.n / name
+                                                         :op1 "MIT"
+                                                         :op2 "for"
+                                                         :op3 "Financial"
+                                                         :op4 "Engineering")
+                                            :part-of (s16.r / research-institute
+                                                            :name s16.n
+                                                            :ARG2-of (s16.h / have-org-role-91
+                                                                            :ARG0 (s16.i / i
+                                                                                         :same-as s2.i)
+                                                                            :mod (s16.a / also)))))
+                  :op2 (s16.t / talk-01
+                              :ARG0 (s16.w / we)
+                              :ARG1 (s16.c / cancer)))
+   :snt17 (s17.a2 / and
+                  :op1 (s17.d / do-02
+                              :ARG0 (s17.p / person
+                                           :name (s17.n / name
+                                                        :op1 "Andrew")
+                                           :same-as s15.p2)
+                              :ARG1 (s17.b2 / bit
+                                            :part-of (s17.r / research-01
+                                                            :ARG0 s17.p)
+                                            :poss s17.p))
+                  :op2 (s17.t2 / thing
+                               :ARG1 (s17.b3 / bottleneck-01
+                                             :ARG1-of (s17.a / actual-02)
+                                             :mod (s17.b / big))
+                               :ARG1-of (s17.i / include-91)
+                               :ARG1-of (s17.t / tell-01
+                                               :ARG2 s17.p)
+                               :ARG1-of (s17.l / learn-01
+                                               :ARG0 s17.p
+                                               :ARG2 (s17.s / study-01
+                                                            :ARG0 s17.p
+                                                            :ARG1 (s17.l2 / literature)))))
+   :snt18 (s18.a / and
+                 :op1 (s18.h / hard-02
+                             :ARG1 (s18.d / develop-02
+                                          :ARG1 (s18.d4 / drug
+                                                        :ARG1-of (s18.n / new-01)))
+                             :degree (s18.v / very))
+                 :op2 (s18.c / cause-01
+                             :ARG0 (s18.a2 / and
+                                           :op1 (s18.r / risky-02
+                                                       :ARG1 s18.d4
+                                                       :degree (s18.v2 / very))
+                                           :op2 (s18.e2 / expensive
+                                                        :degree (s18.v3 / very)
+                                                        :domain s18.d4)
+                                           :time (s18.s / stage
+                                                        :mod (s18.e / early)
+                                                        :subevent-of (s18.d2 / develop-02
+                                                                             :ARG1 s18.d4)))
+                             :ARG1 (s18.d3 / difficult
+                                           :domain s18.d)))
+   :snt19 (s19.c / cause-01
+                 :ARG1 (s19.a4 / ask-01
+                               :ARG0 (s19.p / person
+                                            :name (s19.n / name
+                                                         :op1 "Andrew")
+                                            :same-as s15.p2)
+                               :ARG1 (s19.w / want-01
+                                            :ARG0 (s19.i / i
+                                                         :same-as s2.i)
+                                            :ARG1 (s19.p2 / possible-01
+                                                          :ARG1 (s19.a2 / and
+                                                                        :op1 (s19.w3 / work-01
+                                                                                     :ARG0 s19.i
+                                                                                     :ARG3 s19.p
+                                                                                     :degree (s19.b / bit))
+                                                                        :op2 (s19.w4 / work-01
+                                                                                     :ARG0 s19.i
+                                                                                     :ARG1 (s19.a3 / and
+                                                                                                   :op1 (s19.m / mathematics
+                                                                                                               :quant (s19.s2 / some))
+                                                                                                   :op2 (s19.a / analyze-01
+                                                                                                               :quant (s19.s3 / some))))
+                                                                        :op3 (s19.s / see-01
+                                                                                    :ARG0 s19.i
+                                                                                    :ARG1 (s19.t / truth-value
+                                                                                                 :polarity-of (s19.p3 / possible-01
+                                                                                                                      :ARG1 (s19.f / figure-out-05
+                                                                                                                                   :ARG0 (s19.w2 / we)
+                                                                                                                                   :ARG1 (s19.s4 / something
+                                                                                                                                                 :ARG1-of (s19.d / do-02
+                                                                                                                                                                 :ARG0 s19.w2)))))))))
+                               :ARG2 s19.i))
+   :snt20 (s20.s / scientist
+                 :domain (s20.i / i
+                                :same-as s2.i)
+                 :time (s20.n / now)
+                 :polarity "-")
+   :snt21 (s21.k2 / know-01
+                  :ARG0 (s21.i / i
+                               :same-as s2.i)
+                  :ARG1 (s21.t / thing
+                               :manner-of (s21.b / build-01
+                                                 :ARG0 s21.i
+                                                 :ARG1 (s21.d / drug)))
+                  :ARG1-of (s21.k / know-01
+                                  :ARG0 (s21.y / you))
+                  :polarity "-")
+   :snt22 (s22.a / and
+                 :op2 (s22.s / scientist
+                             :domain (s22.p / person
+                                            :quant (s22.n4 / none
+                                                           :ARG1-of (s22.i2 / include-91
+                                                                            :ARG2 s22.p))
+                                            :ARG0-of (s22.a2 / author-01
+                                                             :ARG1 (s22.i / i
+                                                                          :same-as s2.i))
+                                            :domain (s22.o / or
+                                                           :op1 (s22.p2 / person
+                                                                        :name (s22.n / name
+                                                                                     :op1 "Andrew"
+                                                                                     :op2 "Lo")
+                                                                        :same-as s15.p2)
+                                                           :op2 (s22.p3 / person
+                                                                        :name (s22.n2 / name
+                                                                                      :op1 "Jose"
+                                                                                      :op2 "Maria"
+                                                                                      :op3 "Fernandez"))
+                                                           :op3 (s22.p4 / person
+                                                                        :name (s22.n3 / name
+                                                                                      :op1 "David"
+                                                                                      :op2 "Fagnan")))
+                                            :polarity "-")
+                             :mod (s22.e / either)))
+   :snt23 (s23.k / know-01
+                 :ARG0 (s23.w / we)
+                 :ARG1 (s23.t / thing
+                              :ord (s23.o / ordinal-entity
+                                          :value "1"))
+                 :topic (s23.t2 / thing
+                                :manner-of (s23.m / make-01
+                                                  :ARG1 (s23.d2 / drug
+                                                                :purpose (s23.d / disease
+                                                                                :name (s23.n / name
+                                                                                             :op1 "cancer")))))
+                 :polarity "-")
+   :snt24 (s24.c2 / contrast-01
+                  :ARG2 (s24.k / know-01
+                               :ARG0 (s24.w / we
+                                            :same-as s23.w)
+                               :ARG0-of (s24.c / cause-01
+                                               :ARG1 (s24.s / start-01
+                                                            :ARG0 s24.w
+                                                            :ARG1 (s24.t / think-01
+                                                                         :ARG0 s24.w
+                                                                         :ARG1 (s24.p / possible-01
+                                                                                      :ARG1 (s24.d / do-02
+                                                                                                   :ARG0 s24.w
+                                                                                                   :ARG1 (s24.a / amr-unknown))))))
+                               :ARG1 (s24.a2 / and
+                                             :quant (s24.b / bit
+                                                           :mod (s24.l / little))
+                                             :op1 (s24.m / mitigate-01
+                                                         :ARG1 (s24.r / risk-01))
+                                             :op2 (s24.b2 / bit
+                                                          :mod (s24.l2 / little)
+                                                          :topic (s24.e / engineer-01
+                                                                        :ARG1 (s24.f / finance))))))
+   :snt25 (s25.t / tell-01
+                 :ARG0 (s25.i / i)
+                 :ARG1 (s25.w3 / work-01
+                               :quant (s25.s / some)
+                               :ARG0 (s25.w2 / we
+                                             :same-as s23.w)
+                               :ARG0-of (s25.c / change-01
+                                               :ARG1 (s25.w / way
+                                                            :manner-of (s25.a / and
+                                                                              :op1 (s25.r / research-01
+                                                                                          :ARG1 (s25.d / disease
+                                                                                                       :name (s25.n / name
+                                                                                                                    :op1 "cancer")))
+                                                                              :op2 (s25.d2 / do-02
+                                                                                           :ARG1 (s25.t3 / thing
+                                                                                                         :quant (s25.l / lot)
+                                                                                                         :mod (s25.o / other)))))
+                                               :ARG1-of (s25.p / possible-01)
+                                               :ARG1-of (s25.t4 / think-01
+                                                                :ARG0 s25.w2)
+                                               :mod (s25.f / fundamental))
+                               :time (s25.b / before
+                                            :duration (s25.t2 / temporal-quantity
+                                                              :unit (s25.y / year)
+                                                              :quant "2")
+                                            :op1 (s25.n2 / now)))
+                 :ARG2 (s25.y2 / you))
+   :snt26 (s26.c / contrast-01
+                 :ARG1 (s26.w / want-01
+                              :ARG0 (s26.w2 / we
+                                            :same-as s23.w)
+                              :ARG1 (s26.l / let-01
+                                           :ARG0 s26.w2
+                                           :ARG1 (s26.d / drive-02
+                                                        :ARG0 (s26.r / research-01)
+                                                        :ARG1 (s26.f / fund-01))))
+                 :ARG2 (s26.f2 / fund-01
+                               :ARG0 s26.w2
+                               :ARG1 s26.f))
+   :snt27 (s27.l / let-01
+                 :purpose (s27.s / start-01
+                                 :ARG1 (s27.y / you))
+                 :ARG0 s27.y
+                 :ARG1 (s27.t / tell-01
+                              :ARG0 (s27.i / i
+                                           :same-as s25.i)
+                              :ARG1 (s27.t2 / thing
+                                            :manner-of (s27.f / finance-01
+                                                              :ARG0 s27.y
+                                                              :ARG1 (s27.d / drug)))
+                              :ARG2 s27.y))
+   :snt28 (s28.i2 / imagine-01
+                  :ARG0 (s28.y / you)
+                  :ARG1 (s28.l / lab
+                               :poss s28.y)
+                  :example (s28.a / and
+                                  :op1 (s28.s / scientist
+                                              :domain s28.y)
+                                  :op2 (s28.r / resemble-01
+                                              :ARG1 s28.y
+                                              :ARG2 (s28.i / i
+                                                           :same-as s25.i)
+                                              :polarity "-")
+                                  :op3 (s28.d / develop-02
+                                              :ARG0 s28.y
+                                              :ARG1 (s28.c / compound
+                                                           :ARG1-of (s28.n2 / new-01)
+                                                           :mod (s28.t / therapy
+                                                                       :ARG1-of (s28.p / possible-01)
+                                                                       :ARG1-of (s28.t2 / think-01
+                                                                                        :ARG0 s28.y)
+                                                                       :beneficiary (s28.s2 / somebody
+                                                                                            :ARG0-of (s28.h / have-03
+                                                                                                            :ARG1 (s28.d2 / disease
+                                                                                                                          :name (s28.n / name
+                                                                                                                                       :op1 "cancer"))))))))
+                  :mode "imperative")
+   :snt29 (s29.c / contrast-01
+                 :ARG1 (s29.a / and
+                              :mod (s29.w / well)
+                              :op1 (s29.d / do-02
+                                          :ARG0 (s29.y / you)
+                                          :ARG1 (s29.t / test-01
+                                                       :ARG0 s29.y
+                                                       :ARG1 (s29.a4 / animal)))
+                              :op2 (s29.t2 / test-01
+                                           :ARG0 s29.y
+                                           :location (s29.t6 / tube
+                                                             :location-of (s29.t3 / test-01))))
+                 :ARG2 (s29.a2 / and
+                               :op1 (s29.n / notion
+                                           :mod (s29.t5 / this)
+                                           :topic (s29.g2 / go-02
+                                                          :ARG3 (s29.b2 / bench)
+                                                          :ARG4 (s29.b / bedside)))
+                               :op2 (s29.o / obligate-01
+                                           :purpose (s29.g / get-05
+                                                           :ARG4 (s29.p / patient)
+                                                           :source (s29.a3 / and
+                                                                           :op2 s29.b2
+                                                                           :op2 (s29.l / lab
+                                                                                       :same-as s28.l))
+                                                           :op1-of s29.a3)
+                                           :ARG2 (s29.t4 / test-01
+                                                         :ARG1 (s29.d2 / drug
+                                                                       :same-as s28.c)))))
+   :snt30 (s30.a2 / and
+                  :rel (s30.c / call-01
+                              :ARG2 (s30.t7 / try-01))
+                  :rel (s30.t / test-01
+                              :ARG1 (s30.d2 / drug
+                                            :same-as s28.c)
+                              :manner (s30.e / experiment-01
+                                             :purpose (s30.d / determine-01
+                                                             :ARG0 (s30.t2 / they)
+                                                             :ARG1 (s30.t5 / truth-value
+                                                                           :polarity-of (s30.s / safe-01
+                                                                                               :ARG0 s30.d2))
+                                                             :ARG1 (s30.a3 / and
+                                                                           :op1 s30.s
+                                                                           :op2 (s30.t6 / truth-value
+                                                                                        :polarity-of (s30.w / work-09
+                                                                                                            :ARG1 s30.d2))
+                                                                           :op3 (s30.t3 / thing
+                                                                                        :mod (s30.t4 / this)
+                                                                                        :mod (s30.a / all))))
+                                             :quant (s30.s2 / series)
+                                             :mod (s30.b / basic)))
+                  :rel (s30.l / large))
+   :snt31 (s31.h / have-03
+                 :ARG0 (s31.g / government-organization
+                              :name (s31.n / name
+                                           :op1 "FDA")
+                              :same-as s23.w)
+                 :ARG1 (s31.p / protocol
+                              :ARG1-of (s31.s / specific-02
+                                              :degree (s31.v / very))))
+   :snt32 (s32.p2 / phase
+                  :name (s32.n / name
+                               :op1 "I.")
+                  :ARG1-of (s32.c / call-01
+                                  :ARG2 (s32.t2 / test-01
+                                                :ARG2 (s32.t4 / toxicity)
+                                                :domain-of s32.p2))
+                  :ord (s32.p / phase
+                              :ord (s32.o / ordinal-entity
+                                          :value "1"))
+                  :rel (s32.t / test-01
+                              :mod (s32.t3 / this)
+                              :same-as s30.t
+                              :same-as-of s33.p2))
+   :snt33 (s33.a2 / and
+                  :op1 (s33.g / give-01
+                              :ARG0 (s33.y / you)
+                              :ARG1 (s33.d / drug
+                                           :same-as s28.c)
+                              :ARG2 (s33.p / person
+                                           :mod (s33.h / healthy)))
+                  :op2 (s33.s / see-01
+                              :ARG0 s33.y
+                              :ARG1 (s33.t / truth-value
+                                           :polarity-of (s33.m / make-02
+                                                               :ARG0 s33.d
+                                                               :ARG1 (s33.s2 / sick-05
+                                                                             :ARG1 s33.p)
+                                                               :ARG1-of (s33.a / actual-02))))
+                  :time (s33.p2 / phase
+                                :ord (s33.o / ordinal-entity
+                                            :value "1")))
+   :snt34 (s34.h / have-degree-91
+                 :ARG1 (s34.e / effect-03
+                              :mod (s34.s2 / side))
+                 :ARG2 (s34.s / severe)
+                 :ARG3 (s34.s3 / so)
+                 :ARG6 (s34.w2 / worth-02
+                               :ARG1 s34.e
+                               :ARG1-of (s34.r / regardless-91
+                                               :ARG2 (s34.t / thing
+                                                            :ARG1-of (s34.d / do-02)
+                                                            :degree-of (s34.g / good-02)))
+                               :polarity "-")
+                 :mod (s34.j / just)
+                 :polarity (s34.a / amr-unknown)
+                 :prep-in (s34.w / word
+                                 :mod (s34.o / other)))
+   :snt35 (s35.c / cause-01
+                 :ARG0 (s35.i / it
+                              :same-as s28.c)
+                 :ARG1 (s35.a2 / and
+                               :op1 (s35.h / heart-attack)
+                               :op2 (s35.k / kill-01
+                                           :ARG0 s35.i
+                                           :ARG1 (s35.p / person))
+                               :op3 (s35.f / fail-01
+                                           :ARG1 (s35.l / liver))
+                               :op4 (s35.t / thing
+                                           :mod (s35.k2 / kind
+                                                        :mod (s35.t2 / this))))
+                 :polarity (s35.a / amr-unknown))
+   :snt36 (s36.a / and
+                 :op2 (s36.t2 / turn-out-11
+                              :ARG1 (s36.h2 / hurdle
+                                            :ARG1-of (s36.h / high-02
+                                                            :degree (s36.p / pretty))
+                                            :domain (s36.t / that))))
+   :snt37 (s37.d / drop-out-04
+                 :ARG0 (s37.d2 / drug
+                               :ARG1-of (s37.i / include-91
+                                               :ARG2 (s37.d3 / drug
+                                                             :mod (s37.a2 / all))
+                                               :ARG3 (s37.a / about
+                                                            :op1 "1/3")))
+                 :time (s37.p / point
+                              :mod (s37.t / that)
+                              :same-as s36.t))
+   :snt38 (s38.a2 / and
+                  :op1 (s38.t / test-01
+                              :purpose (s38.s / see-01
+                                              :ARG0 (s38.y / you)
+                                              :ARG1 (s38.t3 / truth-value
+                                                            :polarity-of (s38.e / effective-04
+                                                                                :ARG0 (s38.d2 / drug
+                                                                                              :same-as s28.c))))
+                              :ARG0 s38.y)
+                  :op2 (s38.a3 / and
+                               :location (s38.t2 / there)
+                               :op1 (s38.g / give-01
+                                           :ARG0 s38.y
+                                           :ARG1 s38.d2
+                                           :ARG2 (s38.p / person
+                                                        :ARG0-of (s38.h / have-03
+                                                                        :ARG1 (s38.d / disease
+                                                                                     :name (s38.n / name
+                                                                                                  :op1 "cancer")))))
+                               :op2 (s38.s2 / see-01
+                                            :ARG0 s38.y
+                                            :ARG1 (s38.t4 / truth-value
+                                                          :polarity-of (s38.m / make-02
+                                                                              :ARG0 s38.d2
+                                                                              :ARG1 (s38.h2 / have-degree-91
+                                                                                            :ARG1 s38.p
+                                                                                            :ARG2 (s38.g2 / good-02)
+                                                                                            :ARG3 (s38.m2 / more))
+                                                                              :ARG1-of (s38.a / actual-02)))))
+                  :time (s38.p2 / phase
+                                :mod (s38.n2 / next)))
+   :snt39 (s39.a4 / and
+                  :op2 (s39.a5 / and
+                               :op1 (s39.t / test-01
+                                           :ARG0 (s39.y / you)
+                                           :ARG1 (s39.i / it
+                                                        :same-as s28.c)
+                                           :ARG1-of (s39.a / actual-02)
+                                           :location (s39.s / sample
+                                                            :mod (s39.l / large
+                                                                        :degree (s39.v / very)))
+                                           :time (s39.p / phase
+                                                        :ord (s39.o / ordinal-entity
+                                                                    :value "3")))
+                               :op2 (s39.t4 / try-01
+                                            :ARG0 s39.y
+                                            :ARG1 (s39.d / determine-01
+                                                         :ARG0 s39.y
+                                                         :ARG1 (s39.d2 / dose-01
+                                                                       :ARG1-of (s39.r / right-03))))
+                               :op3 (s39.h / have-degree-91
+                                           :ARG1 s39.i
+                                           :ARG2 (s39.g / good-02
+                                                        :ARG1 s39.i)
+                                           :ARG3 (s39.m / more)
+                                           :ARG4 (s39.t2 / thing
+                                                         :ARG2-of (s39.a6 / available-02
+                                                                          :time (s39.t3 / today)))
+                                           :mod (s39.a2 / also)
+                                           :polarity (s39.a3 / amr-unknown))))
+   :snt40 (s40.b / build-01
+                 :ARG0 (s40.a / amr-unknown)
+                 :ARG1 (s40.i / it
+                              :same-as s28.c)
+                 :condition (s40.h / have-polarity-91
+                                   :ARG2 "-"))
+   :snt41 (s41.h / have-03
+                 :ARG0 (s41.y / you)
+                 :ARG1 (s41.p / percentage
+                              :mod (s41.s2 / small
+                                           :degree (s41.v / very))
+                              :quant-of (s41.d / drug
+                                               :ARG0-of (s41.s3 / start-01
+                                                                :ARG1 (s41.p2 / process-02))
+                                               :ARG1-of (s41.c / come-out-09
+                                                               :ARG1-of (s41.a / actual-02)
+                                                               :source (s41.s / side
+                                                                              :mod (s41.o / other)))))
+                 :time (s41.b / be-done-08
+                              :ARG0 s41.y
+                              :ARG1 (s41.t / that
+                                           :mod (s41.a2 / all))))
+   :snt42 (s42.a2 / and
+                  :op1 (s42.s / save-01
+                              :ARG0 (s42.b2 / bottle
+                                            :mod (s42.b / blue)
+                                            :mod (s42.t2 / that))
+                              :ARG1 (s42.l / live-01))
+                  :op2 (s42.w / worth-01
+                              :ARG1 s42.b2
+                              :ARG2 (s42.m3 / multiple
+                                            :ARG1-of (s42.r / rate-entity-91
+                                                            :ARG2 (s42.m4 / multiple
+                                                                          :op1 (s42.m2 / monetary-quantity
+                                                                                       :unit (s42.d / dollar)
+                                                                                       :quant "1000000000"))
+                                                            :ARG2 (s42.t / temporal-quantity
+                                                                         :unit (s42.y / year)
+                                                                         :quant "1")
+                                                            :frequency (s42.s2 / sometimes))
+                                            :op1 (s42.m / monetary-quantity
+                                                        :quant "1000000000"))
+                              :mod (s42.a / also)))
+   :snt43 (s43.c / cause-01
+                 :ARG1 (s43.q / question-01
+                              :ARG1 (s43.a2 / and
+                                            :op1 (s43.t / tell-01
+                                                        :ARG0 (s43.i / i
+                                                                     :same-as s25.i)
+                                                        :ARG2 (s43.y2 / you
+                                                                      :same-as s25.y2)
+                                                        :condition (s43.a3 / ask-01
+                                                                           :ARG0 s43.i
+                                                                           :ARG0 s43.y2
+                                                                           :ARG1 (s43.i5 / invest-01
+                                                                                         :ARG1 (s43.m / monetary-quantity
+                                                                                                      :unit (s43.d / dollar)
+                                                                                                      :quant "200000000")
+                                                                                         :ARG2 (s43.b4 / buy-01
+                                                                                                       :ARG0 s43.y2
+                                                                                                       :ARG1 (s43.b2 / bottle
+                                                                                                                     :ARG1-of (s43.i3 / include-91
+                                                                                                                                      :ARG2 (s43.b3 / bottle
+                                                                                                                                                    :mod (s43.t4 / that
+                                                                                                                                                                 :same-as s42.b2)))))
+                                                                                         :frequency "1")
+                                                                           :ARG2 s43.y2)
+                                                        :polarity "-")
+                                            :op2 (s43.t2 / tell-01
+                                                         :ARG0 s43.i
+                                                         :ARG1 (s43.t5 / truth-value
+                                                                       :polarity-of (s43.h / have-03
+                                                                                           :ARG0 s43.y2
+                                                                                           :ARG1 (s43.o / one
+                                                                                                        :ARG1-of (s43.i4 / include-91
+                                                                                                                         :ARG2 (s43.o2 / one
+                                                                                                                                       :mod (s43.b / blue)
+                                                                                                                                       :same-as s42.b2)))))
+                                                         :ARG2 s43.y2
+                                                         :time (s43.a / after
+                                                                      :quant (s43.t3 / temporal-quantity
+                                                                                     :unit (s43.y / year)
+                                                                                     :quant "10")
+                                                                      :op1 (s43.n2 / now))))
+                              :location (s43.h2 / here)
+                              :time (s43.n / now))
+                 :rel (s43.c2 / cause-01
+                              :ARG0 (s43.b5 / buy-01
+                                            :ARG3 (s43.m2 / monetary-quantity
+                                                          :mod (s43.i2 / in-front-of)
+                                                          :unit (s43.d2 / dollar
+                                                                        :mod s43.t4)
+                                                          :quant "200000000")))
+                 :rel (s43.e / exemplify-01)
+                 :rel "1")
+   :snt44 (s44.s / sound-01
+                 :ARG1 (s44.t / that)
+                 :ARG2 (s44.d / deal
+                              :ARG1-of (s44.g / good-02))
+                 :ARG3 (s44.a2 / anybody)
+                 :polarity (s44.a / amr-unknown))
+   :snt45 (s45.r / right-06
+                 :ARG1 (s45.n / no)
+                 :ARG2 (s45.n2 / no)
+                 :polarity (s45.a / amr-unknown))
+   :snt46 (s46.a2 / and
+                  :concession-of (s46.t2 / thing
+                                         :ARG1-of (s46.a / actual-02)
+                                         :ARG1-of (s46.a3 / approximate-01
+                                                          :ord (s46.o2 / ordinal-entity
+                                                                       :value "1"))
+                                         :ARG1-of (s46.p2 / propose-01)
+                                         :domain (s46.t / that
+                                                        :same-as s44.t))
+                  :mod (s46.o / of-course)
+                  :op1 (s46.p / position-02
+                              :ARG0-of (s46.c / cause-01
+                                              :ARG1 (s46.h / hard-02
+                                                           :ARG1 (s46.g / get-01
+                                                                        :ARG1 (s46.f / fund-01))
+                                                           :degree (s46.v3 / very)))
+                              :ARG1-of (s46.r / risky-02
+                                              :degree (s46.v / very)
+                                              :degree (s46.v2 / very))
+                              :ARG2 (s46.t3 / try-02)))
+   :snt47 (s47.s / say-01
+                 :ARG0 (s47.p / person
+                              :name (s47.n / name
+                                           :op1 "Andrew")
+                              :same-as s15.p2)
+                 :ARG1 (s47.a / amr-unknown
+                              :condition (s47.s2 / stop-01
+                                                 :ARG0 (s47.w / we)
+                                                 :ARG1 (s47.t / think-01
+                                                              :ARG0 s47.w
+                                                              :ARG1 (s47.t2 / this)
+                                                              :ARG2 (s47.d / drug))))
+                 :ARG2 (s47.i / i
+                              :same-as s2.i))
+   :snt48 (s48.h / have-condition-91
+                 :ARG1 (s48.a / amr-unknown)
+                 :ARG2 (s48.s / start-01
+                              :ARG0 (s48.w / we
+                                           :same-as s47.w)
+                              :ARG1 (s48.t2 / think-01
+                                            :ARG0 s48.w
+                                            :ARG1 (s48.t / they
+                                                         :same-as s47.t2)
+                                            :ARG2 (s48.a2 / asset
+                                                          :mod (s48.f / finance)))))
+   :snt49 (s49.c / contrast-01
+                 :ARG1 (s49.h / have-03
+                              :ARG0 (s49.t2 / they
+                                            :same-as s47.t2)
+                              :ARG1 (s49.a2 / and
+                                            :op1 (s49.s / structure-01
+                                                        :ARG1 (s49.p / pay-off-02)
+                                                        :mod (s49.w2 / weird
+                                                                     :degree (s49.r / really)))
+                                            :op2 (s49.t / that
+                                                        :mod (s49.a / all))))
+                 :ARG2 (s49.l / let-01
+                              :ARG0 (s49.w / we)
+                              :ARG1 (s49.t3 / throw-01
+                                            :ARG0 s49.w
+                                            :ARG1 (s49.e2 / everything
+                                                          :ARG1-of (s49.k / know-01
+                                                                          :ARG0 s49.w)
+                                                          :topic (s49.e / engineer-01
+                                                                        :ARG1 (s49.f / finance)))
+                                            :ARG2 s49.t2)))
+   :snt50 (s50.s / see-01
+                 :ARG0 (s50.w / we)
+                 :ARG1 (s50.t5 / truth-value
+                               :polarity-of (s50.p / possible-01
+                                                   :ARG1 (s50.u / use-01
+                                                                :ARG0 s50.w
+                                                                :ARG1 (s50.t4 / trick-01
+                                                                              :mod (s50.a / all)
+                                                                              :mod (s50.t3 / trade-01))
+                                                                :ARG2 (s50.f / figure-out-05
+                                                                             :ARG0 s50.w
+                                                                             :ARG1 (s50.t / thing
+                                                                                          :manner-of (s50.m / make-02
+                                                                                                            :ARG0 s50.w
+                                                                                                            :ARG1 (s50.w2 / work-09
+                                                                                                                          :ARG1 (s50.d / drug
+                                                                                                                                       :mod (s50.t2 / this)
+                                                                                                                                       :same-as s47.t2)
+                                                                                                                          :ARG2 (s50.a2 / asset
+                                                                                                                                        :mod (s50.f2 / finance)))))))))
+                 :mode "imperative")
+   :snt51 (s51.c / create-01
+                 :ARG0 (s51.w / we)
+                 :ARG1 (s51.f / fund
+                              :mod (s51.g / giant))
+                 :mode "imperative")
+   :snt52 (s52.k / know-01
+                 :ARG0 (s52.w / we)
+                 :ARG1 (s52.t / thing
+                              :ARG1-of (s52.d / do-02
+                                              :ARG0 s52.w
+                                              :ARG2 (s52.a / asset
+                                                           :ARG1-of (s52.r / risky-02))))
+                 :topic (s52.f / finance))
+   :snt53 (s53.a / and
+                 :op1 (s53.p2 / put-01
+                              :ARG0 (s53.y / you)
+                              :ARG1 (s53.t / they
+                                           :same-as s52.a)
+                              :ARG2 (s53.p / portfolio))
+                 :op2 (s53.t2 / try-01
+                              :ARG0 s53.y
+                              :ARG1 (s53.s / smooth-01
+                                           :ARG0 s53.y
+                                           :ARG1 (s53.r / return-06))))
+   :snt54 (s54.c / contrast-01
+                 :ARG1 (s54.a2 / and
+                               :op1 (s54.d / do-02
+                                           :ARG0 (s54.w / we
+                                                        :same-as s47.w)
+                                           :ARG1 (s54.m2 / mathematics
+                                                         :quant (s54.s / some)))
+                               :op2 (s54.t2 / turn-out-11
+                                            :ARG1 (s54.p / possible-01
+                                                         :ARG1 (s54.m / make-02
+                                                                      :ARG0 (s54.y / you)
+                                                                      :ARG1 (s54.w2 / work-09
+                                                                                    :ARG1 (s54.t / this))))))
+                 :ARG2 (s54.n / need-01
+                              :purpose s54.w2
+                              :ARG0 s54.y
+                              :ARG1 (s54.d2 / drug
+                                            :quant (s54.a / about
+                                                          :op1 (s54.b / between
+                                                                      :op1 "80"
+                                                                      :op2 "150")))))
+   :snt55 (s55.n / news
+                 :ARG1-of (s55.g / good-02)
+                 :domain (s55.w / wait-01
+                                :ARG1 (s55.d / drug
+                                             :quant (s55.p / plenty))
+                                :ARG2 (s55.t / test-01
+                                             :ARG1 s55.d))
+                 :time (s55.n2 / now))
+   :snt56 (s56.t / tell-01
+                 :ARG1 (s56.b / backlog
+                              :consist-of (s56.d / drug
+                                                 :quant (s56.a / about
+                                                               :op1 (s56.t2 / temporal-quantity
+                                                                            :unit (s56.y / year)
+                                                                            :quant "20"))
+                                                 :ARG1-of (s56.w / wait-01
+                                                                 :ARG1-of (s56.c / contrast-01
+                                                                                 :ARG2 (s56.p / possible-01
+                                                                                              :ARG1 (s56.f / fund-01
+                                                                                                           :ARG1 s56.d)
+                                                                                              :polarity "-"))
+                                                                 :ARG2 (s56.t3 / test-01
+                                                                               :ARG1 s56.d))))
+                 :ARG2 (s56.w2 / we
+                               :same-as s47.w))
+   :snt57 (s57.c / call-01
+                 :ARG1 (s57.a2 / and
+                               :op1 (s57.p / phase
+                                           :mod "I")
+                               :op2 (s57.s2 / stuff
+                                            :time (s57.b / before
+                                                         :op1 (s57.c3 / clinic))))
+                 :ARG1-of (s57.a / actual-02)
+                 :ARG2 (s57.v / valley
+                              :name (s57.n / name
+                                           :op1 "Valley"
+                                           :op2 "of"
+                                           :op3 "Death")
+                              :ARG1-of (s57.c2 / cause-01
+                                               :ARG0 (s57.g / go-01
+                                                            :ARG4 (s57.d / die-01
+                                                                         :ARG1 (s57.d2 / drug)))
+                                               :ARG1-of s57.g))
+                 :location (s57.i2 / industry)
+                 :mod (s57.i / in-fact)
+                 :rel (s57.s / stage
+                             :mod (s57.e / early)
+                             :part-of (s57.p2 / process-02
+                                              :ARG1 (s57.f / fund-01))))
+   :snt58 (s58.a / and
+                 :op1 (s58.h / hard-02
+                             :ARG1 (s58.g2 / get-through-13
+                                           :ARG0 (s58.t2 / they
+                                                         :same-as s57.d2)
+                                           :ARG1 (s58.t / there))
+                             :degree (s58.v / very))
+                 :op2 (s58.p2 / possible-01
+                              :ARG1 (s58.g / get-05
+                                           :ARG0 (s58.y / you)
+                                           :ARG2 (s58.s2 / stage
+                                                         :time (s58.l / late
+                                                                      :degree (s58.s / somewhat))))
+                              :condition (s58.p / possible-01
+                                                :ARG1 (s58.g3 / get-through-13
+                                                              :ARG0 s58.y
+                                                              :ARG1 s58.t)
+                                                :polarity "-")
+                              :mod (s58.o / of-course)
+                              :polarity "-"))
+   :snt59 (s59.a2 / and
+                  :op1 (s59.d / do-02
+                              :ARG0 (s59.w / we
+                                           :same-as s47.w)
+                              :ARG1 (s59.m / mathematics
+                                           :mod (s59.t / this)))
+                  :op2 (s59.f / figure-out-05
+                              :ARG0 s59.w
+                              :ARG1 (s59.n / need-01
+                                           :ARG0 (s59.y / you)
+                                           :ARG1 (s59.o / or
+                                                        :op1 (s59.a / about
+                                                                    :op1 (s59.m2 / monetary-quantity
+                                                                                 :unit (s59.d2 / dollar)
+                                                                                 :quant "80"))
+                                                        :op2 (s59.m3 / monetary-quantity
+                                                                     :ARG1-of (s59.s / say-01)
+                                                                     :unit (s59.d3 / dollar)
+                                                                     :quant "150")
+                                                        :op3 (s59.s2 / something
+                                                                     :ARG1-of (s59.r / resemble-01
+                                                                                     :ARG2 s59.m3)))
+                                           :mod (s59.d4 / drug))))
+   :snt60 (s60.a2 / and
+                  :op1 (s60.d / do-02
+                              :ARG0 (s60.w / we
+                                           :same-as s47.w)
+                              :ARG1 (s60.m / mathematics
+                                           :quant (s60.m4 / more
+                                                          :quant (s60.l / little)))
+                              :time (s60.t2 / then))
+                  :op2 (s60.s / say-01
+                              :ARG0 s60.w
+                              :ARG1 (s60.f / fund
+                                           :quant (s60.a / about
+                                                         :op1 (s60.b / between
+                                                                     :op1 (s60.m2 / monetary-quantity
+                                                                                  :unit (s60.d2 / dollar)
+                                                                                  :quant "15000000000")
+                                                                     :op2 (s60.m3 / monetary-quantity
+                                                                                  :unit (s60.d3 / dollar)
+                                                                                  :quant "15000000000")))
+                                           :domain (s60.t / that))))
+   :snt61 (s61.c / create-01
+                 :ARG0 (s61.w / we
+                              :same-as s47.w)
+                 :ARG1 (s61.p / problem
+                              :ARG1-of (s61.n / new-01))
+                 :degree (s61.k / kind-of)
+                 :manner (s61.s / solve-01
+                                :ARG0 s61.w
+                                :ARG1 (s61.p2 / problem
+                                              :mod (s61.o / old))))
+   :snt62 (s62.a / and
+                 :op1 (s62.c4 / contrast-01
+                              :ARG1 (s62.p2 / possible-01
+                                            :ARG1 (s62.r / rid-01
+                                                         :ARG0 (s62.w / we
+                                                                      :same-as s47.w)
+                                                         :ARG1 (s62.r2 / risk-01)))
+                              :ARG2 (s62.n / need-01
+                                           :ARG0 s62.w
+                                           :ARG1 (s62.c / capital
+                                                        :quant (s62.l / lot))
+                                           :time (s62.n2 / now)))
+                 :op2 (s62.p / place
+                             :domain (s62.m / market
+                                            :mod (s62.c3 / capital))
+                             :location-of (s62.g / get-01
+                                                 :ARG0 s62.w
+                                                 :ARG1 (s62.c2 / capital
+                                                               :mod (s62.k / kind
+                                                                           :mod (s62.t / that))))
+                             :mod (s62.o / only)
+                             :quant "1"))
+   :snt63 (s63.c2 / contrast-01
+                  :ARG2 (s63.o / obligate-01
+                               :ARG1 (s63.w2 / we
+                                             :same-as s47.w)
+                               :ARG2 (s63.f / figure-out-05
+                                            :ARG0 s63.w2
+                                            :ARG1 (s63.t / thing
+                                                         :manner-of (s63.p2 / possible-01
+                                                                            :ARG1 (s63.g / get-04
+                                                                                         :ARG0 s63.w2
+                                                                                         :ARG1 (s63.p / person
+                                                                                                      :ARG0-of (s63.i / invest-01
+                                                                                                                      :ARG2 (s63.s / stuff
+                                                                                                                                   :mod (s63.t2 / this))
+                                                                                                                      :mod (s63.t3 / tradition)
+                                                                                                                      :polarity "-")
+                                                                                                      :location (s63.m / market
+                                                                                                                       :mod (s63.c / capital)))
+                                                                                         :ARG2 (s63.w / want-01
+                                                                                                      :ARG0 s63.p
+                                                                                                      :ARG1 (s63.i2 / invest-01
+                                                                                                                    :ARG0 s63.p
+                                                                                                                    :ARG2 s63.s))))))))
+   :snt64 (s64.h / helpful-04
+                 :ARG0 (s64.e / engineer-01
+                              :ARG1 (s64.f / finance))
+                 :location (s64.h2 / here)
+                 :mod (s64.a / again)
+                 :mod (s64.s / so))
+   :snt65 (s65.i / imagine-01
+                 :ARG0 (s65.y / you)
+                 :ARG1 (s65.a2 / and
+                               :op1 (s65.s3 / start-01
+                                            :ARG1 (s65.e / empty-02
+                                                         :ARG1 (s65.m / megafund
+                                                                      :same-as s23.w))
+                                            :ARG1-of (s65.a / actual-02))
+                               :op2 (s65.i2 / issue-01
+                                            :ARG0 s65.m
+                                            :ARG0-of (s65.g / generate-01
+                                                            :ARG1 (s65.f / flow-01
+                                                                         :ARG1 (s65.c / cash)))
+                                            :ARG1 (s65.a3 / and
+                                                          :op1 (s65.d / debt
+                                                                      :mod (s65.s / some))
+                                                          :op2 (s65.e2 / equity
+                                                                       :mod (s65.s2 / some)))))
+                 :mode "imperative")
+   :snt66 (s66.i / infer-01
+                 :ARG1 (s66.u / use-01
+                              :ARG1 (s66.f / flow-01
+                                           :ARG1 (s66.c / cash)
+                                           :mod (s66.t / that)
+                                           :same-as s65.f)
+                              :ARG2 (s66.b2 / buy-01
+                                            :ARG1 (s66.p2 / portfolio
+                                                          :consist-of (s66.d / drug
+                                                                             :ARG1-of (s66.n / need-01
+                                                                                             :ARG0 (s66.y / you))
+                                                                             :op3 (s66.s / start-01
+                                                                                         :ARG1 (s66.w2 / work-06
+                                                                                                       :ARG0 s66.d
+                                                                                                       :ARG1 (s66.w / way
+                                                                                                                    :poss s66.d)
+                                                                                                       :path (s66.p3 / process-02
+                                                                                                                     :ARG1 (s66.a / approve-01))))
+                                                                             :op4 (s66.g / gain-02
+                                                                                         :ARG1 (s66.v / value)
+                                                                                         :frequency (s66.r / rate-entity-91
+                                                                                                           :ARG4 (s66.g2 / go-12
+                                                                                                                         :ARG1 s66.a
+                                                                                                                         :ARG2 (s66.p / phase
+                                                                                                                                      :mod (s66.n2 / next)
+                                                                                                                                      :mod s66.a))
+                                                                                                           :mod (s66.e / each)))
+                                                                             :ARG0-of s66.g)
+                                                          :mod (s66.b / big)))))
+   :snt67 (s67.a2 / and
+                  :op2 (s67.c / contrast-01
+                              :ARG1 (s67.m / make-it-14
+                                           :ARG0 (s67.p2 / person
+                                                         :quant (s67.m5 / most)
+                                                         :ARG1-of (s67.i / include-91
+                                                                         :ARG2 (s67.t2 / they
+                                                                                       :same-as s66.b)))
+                                           :ARG1 (s67.i4 / it)
+                                           :ARG2-of s67.c
+                                           :polarity "-"))
+                  :rel (s67.m2 / make-it-14
+                               :ARG0 (s67.p3 / person
+                                             :quant (s67.f / few)
+                                             :ARG1-of (s67.i2 / include-91
+                                                              :ARG2 s67.t2))
+                               :ARG1 (s67.i5 / it)
+                               :op2 (s67.a3 / and
+                                            :op1 (s67.p4 / possible-01
+                                                         :ARG1 (s67.s / sell-01
+                                                                      :ARG0 (s67.y / you)
+                                                                      :ARG1 (s67.o / one
+                                                                                   :quant (s67.s3 / some)
+                                                                                   :ARG0-of (s67.g / gain-02
+                                                                                                   :ARG1 (s67.v / value)
+                                                                                                   :same-as s67.f))))
+                                            :op3 (s67.c2 / contrast-01
+                                                         :ARG1 (s67.m3 / money
+                                                                       :purpose (s67.p / pay-01
+                                                                                       :ARG0 s67.y
+                                                                                       :ARG1 (s67.i3 / interest
+                                                                                                     :mod (s67.b / bond
+                                                                                                                 :mod (s67.t / that)))))
+                                                         :ARG2 (s67.h / have-03
+                                                                      :ARG0 s67.y
+                                                                      :ARG1 (s67.m4 / money
+                                                                                    :ARG2-of (s67.f2 / fund-01
+                                                                                                     :ARG0 s67.y
+                                                                                                     :ARG1 (s67.r / round-05
+                                                                                                                  :ARG1 (s67.t3 / try-01)
+                                                                                                                  :mod (s67.n / next))))
+                                                                      :mod (s67.a / also)))))
+                  :rel (s67.s2 / sell-01
+                               :ARG0 s67.y
+                               :ARG1 s67.o))
+   :snt68 (s68.f / fund-01
+                 :ARG0 (s68.i / it)
+                 :ARG1 s68.i
+                 :mod (s68.a / almost))
+   :snt69 (s69.a / and
+                 :op1 (s69.d / do-02
+                             :ARG0 (s69.y / you)
+                             :ARG1 (s69.t / that
+                                          :same-as s67.f2)
+                             :duration (s69.t2 / transact-01
+                                               :ARG0 s69.y))
+                 :op2 (s69.a2 / and
+                              :op1 (s69.l / liquidate-01
+                                          :ARG0 s69.y
+                                          :ARG1 (s69.p3 / portfolio
+                                                        :same-as s66.b))
+                              :op2 (s69.p / pay-01
+                                          :ARG0 s69.y
+                                          :ARG1 (s69.b3 / bond
+                                                        :same-as s67.b)
+                                          :mod (s69.b / back))
+                              :op3 (s69.p4 / possible-01
+                                           :ARG1 (s69.g / give-01
+                                                        :ARG0 s69.y
+                                                        :ARG1 (s69.r / return-06
+                                                                     :ARG1-of (s69.n / nice-01))
+                                                        :ARG2 (s69.p2 / person
+                                                                      :ARG0-of (s69.h / hold-01
+                                                                                      :ARG1 (s69.e / equity)))))
+                              :time (s69.b2 / be-done-08
+                                            :ARG0 s69.y)))
+   :snt70 (s70.a / and
+                 :op1 (s70.t5 / theory
+                              :domain (s70.t3 / that))
+                 :op2 (s70.t / talk-01
+                             :ARG0 (s70.w / we
+                                          :same-as s47.w)
+                             :ARG1 s70.t5
+                             :duration (s70.b / bit))
+                 :op3 (s70.e / experiment-01
+                             :quant (s70.b2 / bunch)
+                             :ARG0 s70.w)
+                 :op4 (s70.s / say-01
+                             :ARG0 s70.w
+                             :ARG1 (s70.t6 / try-01
+                                           :ARG0 s70.w
+                                           :ARG1 (s70.t2 / test-01
+                                                         :ARG0 s70.w
+                                                         :ARG1 s70.t5)
+                                           :ARG1-of (s70.r / real-04))
+                             :time (s70.t4 / then)))
+   :snt71 (s71.s / spend-02
+                 :ARG0 (s71.w / we
+                              :same-as s47.w)
+                 :ARG1 (s71.t / temporal-quantity
+                              :mod (s71.n / next)
+                              :unit (s71.y / year)
+                              :quant "2")
+                 :ARG2 (s71.r / research-01
+                              :ARG0 s71.w))
+   :snt72 (s72.t / talk-01
+                 :ARG0 (s72.w / we
+                              :same-as s47.w)
+                 :ARG2 (s72.p / person
+                              :quant (s72.m / multiple
+                                            :op1 "100")
+                              :ARG1-of (s72.e / expert-01
+                                              :ARG2 (s72.a / and
+                                                           :op1 (s72.f / finance-01
+                                                                       :ARG1 (s72.d / drug))
+                                                           :op2 (s72.c / capital
+                                                                       :mod (s72.v / venture))))))
+   :snt73 (s73.t / talk-01
+                 :ARG0 (s73.w / we
+                              :same-as s47.w)
+                 :ARG2 (s73.p / person
+                              :ARG0-of (s73.d / develop-02
+                                              :ARG1 (s73.d2 / drug))))
+   :snt74 (s74.t / talk-01
+                 :ARG0 (s74.w / we
+                              :same-as s47.w)
+                 :ARG2 (s74.c / company
+                              :mod (s74.p / pharmaceutical)))
+   :snt75 (s75.a3 / and
+                  :op1 (s75.l / look-01
+                              :ARG0 (s75.w / we
+                                           :same-as s47.w)
+                              :ARG1 (s75.d / data
+                                           :topic (s75.d3 / drug))
+                              :ARG1-of (s75.a / actual-02))
+                  :op2 (s75.d4 / drug
+                               :quant (s75.o / over
+                                             :op1 "2000")
+                               :ARG1-of (s75.a4 / approve-01)
+                               :ARG1-of (s75.d2 / deny-01)
+                               :ARG1-of (s75.w2 / withdraw-01))
+                  :op3 (s75.r / run-01
+                              :ARG0 s75.w
+                              :ARG1 (s75.s / simulate-01
+                                           :quant (s75.m / multiple
+                                                         :op1 "1000000"))
+                              :mod (s75.a2 / also)))
+   :snt76 (s76.a3 / and
+                  :op2 (s76.t / take-10
+                              :ARG0 (s76.t2 / that
+                                            :mod (s76.a2 / all))
+                              :ARG1 (s76.t3 / time
+                                            :quant (s76.l / lot))
+                              :ARG1-of (s76.a / actual-02)))
+   :snt77 (s77.c / contrast-01
+                 :ARG2 (s77.f / find-01
+                              :ARG0 (s77.w / we
+                                           :same-as s47.w)
+                              :ARG1 (s77.s / something
+                                           :ARG0-of (s77.s3 / surprise-01
+                                                            :degree (s77.s2 / sort-of)))
+                              :time (s77.b / be-done-08
+                                           :ARG0 s77.w)))
+   :snt78 (s78.f / feasible
+                 :ARG1-of (s78.a3 / actual-02)
+                 :domain (s78.s / structure-01
+                                :purpose (s78.a4 / and
+                                                 :op1 (s78.p6 / possible-01
+                                                              :ARG1 (s78.p8 / produce-01
+                                                                            :ARG0 (s78.y2 / you))
+                                                              :time (s78.b / be-done-08
+                                                                           :ARG0 s78.s
+                                                                           :ARG1 (s78.s2 / structure-01
+                                                                                         :ARG0 s78.y2
+                                                                                         :ARG1 (s78.f2 / fund
+                                                                                                       :mod (s78.t / that)
+                                                                                                       :same-as s60.t))))
+                                                 :op2 (s78.p7 / possible-01
+                                                              :ARG1 (s78.p9 / produce-01
+                                                                            :ARG0 s78.y2
+                                                                            :ARG1 (s78.e / equity
+                                                                                         :ARG0-of (s78.g2 / give-01
+                                                                                                          :ARG1 (s78.r / return-06
+                                                                                                                       :quant (s78.a2 / about
+                                                                                                                                      :op1 (s78.p3 / percentage-entity
+                                                                                                                                                   :value "12"))
+                                                                                                                       :ARG0 (s78.p5 / person
+                                                                                                                                     :ARG0-of (s78.h2 / hold-01
+                                                                                                                                                      :ARG1 s78.e)))
+                                                                                                          :ARG2 s78.p5)))))
+                                :ARG1 s78.f2)
+                 :rel (s78.b3 / bond
+                              :ARG0-of (s78.a5 / attract-01
+                                               :ARG1 (s78.p4 / person
+                                                             :ARG0-of (s78.h / hold-01
+                                                                             :ARG1 (s78.b4 / bond))))
+                              :ARG0-of (s78.g / give-01
+                                              :ARG1 (s78.y / yield-01
+                                                           :ARG1 (s78.a / about
+                                                                        :op1 (s78.b2 / between
+                                                                                     :op1 (s78.p / percentage-entity
+                                                                                                 :value "5")
+                                                                                     :op2 (s78.p2 / percentage-entity
+                                                                                                  :value "8"))))
+                                              :ARG2 s78.y2)
+                              :ARG1-of (s78.r2 / risk-01
+                                               :ARG1-of (s78.l / low-04))))
+   :snt79 (s79.a / attract-01
+                 :ARG0 (s79.r / return-06
+                              :mod (s79.t / that))
+                 :ARG1 (s79.c / capitalist
+                              :mod (s79.v / venture))
+                 :time (s79.n / now)
+                 :polarity "-")
+   :snt80 (s80.g2 / guy
+                  :ARG0-of (s80.w / want-01
+                                  :ARG1 (s80.a / and
+                                               :op1 (s80.b / bet-01
+                                                           :ARG0 (s80.c / capitalist
+                                                                        :mod (s80.v / venture))
+                                                           :mod (s80.b2 / big))
+                                               :op2 (s80.g / get-01
+                                                           :ARG0 s80.c
+                                                           :ARG1 (s80.p / pay-off-02
+                                                                        :ARG1 (s80.m / monetary-quantity
+                                                                                     :unit (s80.d / dollar)
+                                                                                     :quant "1000000000")
+                                                                        :ARG2 (s80.t / that)))))
+                  :domain s80.c
+                  :mod s80.t)
+   :snt81 (s81.c / contrast-01
+                 :ARG2 (s81.t2 / turn-out-11
+                               :ARG1 (s81.i / interest-01
+                                            :ARG1 (s81.f / folk
+                                                         :quant (s81.l / lot)
+                                                         :mod (s81.o / other))
+                                            :ARG2 (s81.t / that))))
+   :snt82 (s82.b / be-located-at-91
+                 :ARG1 (s82.t / that)
+                 :ARG2 (s82.s / spot
+                              :ARG1-of (s82.s3 / sweet-04)
+                              :consist-of (s82.a2 / and
+                                                  :op1 (s82.f / fund-01
+                                                              :ARG2 (s82.p / pension))
+                                                  :op2 (s82.p2 / plan
+                                                               :mod (s82.m / monetary-quantity
+                                                                           :quant "401"))
+                                                  :op3 (s82.s2 / stuff
+                                                               :mod (s82.o / other)
+                                                               :mod (s82.t2 / this)
+                                                               :mod (s82.a / all)))
+                              :mod (s82.i / invest-01))
+                 :mod (s82.r / right))
+   :snt83 (s83.c / cause-01
+                 :ARG1 (s83.p2 / publish-01
+                               :ARG0 (s83.w / we
+                                            :same-as s47.w)
+                               :ARG1 (s83.a2 / article
+                                             :quant (s83.s / some))
+                               :medium (s83.p / press
+                                              :mod (s83.a / academia))))
+   :snt84 (s84.p / publish-01
+                 :ARG0 (s84.w / we
+                              :same-as s47.w)
+                 :ARG1 (s84.a / article)
+                 :medium (s84.j / journal
+                                :mod (s84.m / medicine)))
+   :snt85 (s85.p / publish-01
+                 :ARG0 (s85.w / we
+                              :same-as s47.w)
+                 :ARG1 (s85.a / article)
+                 :location (s85.j / journal
+                                  :mod (s85.f / finance)))
+   :snt86 (s86.c / contrast-01
+                 :ARG2 (s86.b2 / begin-01
+                               :ARG0 (s86.w / we
+                                            :same-as s47.w)
+                               :ARG1 (s86.g / get-01
+                                            :ARG0 s86.w
+                                            :ARG1 (s86.t2 / traction
+                                                          :quant (s86.s / some)))
+                               :time (s86.b / before
+                                            :op1 (s86.g2 / get-04
+                                                         :ARG0 s86.w
+                                                         :ARG1 (s86.i / interest-01
+                                                                      :ARG1 (s86.p2 / press
+                                                                                    :ARG1-of (s86.p / popular-02))
+                                                                      :ARG2 (s86.t / this))
+                                                         :ARG1-of (s86.a / actual-02)))))
+   :snt87 (s87.h / have-concession-91
+                 :ARG1 (s87.w / want-01
+                              :ARG0 (s87.w2 / we
+                                            :same-as s47.w)
+                              :ARG1 (s87.d / do-02
+                                           :ARG0 s87.w2
+                                           :ARG1 (s87.s / something
+                                                        :ARG1-of (s87.h2 / have-quant-91
+                                                                         :ARG3 (s87.m2 / more)
+                                                                         :ARG4 (s87.m / make-02
+                                                                                      :ARG0 s87.w2
+                                                                                      :ARG1 (s87.r / realize-01
+                                                                                                   :ARG0 (s87.p / person)
+                                                                                                   :ARG1 (s87.i / it
+                                                                                                                :same-as s86.t))
+                                                                                      :mod (s87.j / just)))))))
+   :snt88 (s88.w / want-01
+                 :ARG0 (s88.w2 / we
+                               :same-as s47.w)
+                 :ARG1 (s88.i / involve-01
+                              :ARG1 (s88.p / person)))
+   :snt89 (s89.a3 / and
+                  :op1 (s89.t / take-01
+                              :ARG0 (s89.w2 / we
+                                            :same-as s47.w)
+                              :ARG1 (s89.c / code
+                                           :mod (s89.c2 / computer)
+                                           :mod (s89.a2 / all)
+                                           :poss s89.w2)
+                              :ARG1-of (s89.a / actual-02))
+                  :op2 (s89.m / make-02
+                              :ARG0 s89.w2
+                              :ARG1 (s89.a5 / available-02
+                                            :ARG1-of (s89.l / license-01
+                                                            :mod (s89.s / source
+                                                                        :ARG1-of (s89.o2 / open-01)))
+                                            :ARG2 s89.c
+                                            :ARG3 (s89.a4 / anybody
+                                                          :ARG0-of (s89.w / want-01
+                                                                          :ARG1 s89.c))
+                                            :location (s89.o / online))))
+   :snt90 (s90.a / and
+                 :op2 (s90.p / possible-01
+                             :ARG1 (s90.d / download-01
+                                          :ARG0 (s90.y / you
+                                                       :mod (s90.g / guy))
+                                          :ARG1 (s90.i / it
+                                                       :same-as s89.c)
+                                          :condition (s90.w / want-01
+                                                            :ARG0 s90.y
+                                                            :ARG1 (s90.r / run-01
+                                                                         :purpose (s90.s / see-01
+                                                                                         :ARG0 s90.y
+                                                                                         :ARG1 (s90.t3 / truth-value
+                                                                                                       :polarity-of (s90.w2 / work-09
+                                                                                                                            :ARG1 (s90.t / this
+                                                                                                                                         :same-as s86.t))))
+                                                                         :ARG0 s90.y
+                                                                         :ARG1 (s90.e / experiment-01
+                                                                                      :ARG0 s90.y)))
+                                          :time (s90.t2 / today))))
+   :snt91 (s91.a / and
+                 :op2 (s91.e / effective-04
+                             :ARG0 (s91.t / that)
+                             :ARG1-of (s91.c / cause-01
+                                             :ARG0 (s91.p2 / possible-01
+                                                           :ARG1 (s91.a2 / and
+                                                                         :op1 (s91.t4 / try-01
+                                                                                      :ARG0 (s91.p / person
+                                                                                                   :ARG0-of (s91.b / believe-01
+                                                                                                                   :ARG1 (s91.t2 / thing
+                                                                                                                                 :ARG1-of (s91.a3 / assume-02
+                                                                                                                                                  :ARG0 (s91.w / we
+                                                                                                                                                               :same-as s47.w)))
+                                                                                                                   :polarity "-"))
+                                                                                      :ARG1 s91.t2)
+                                                                         :op2 (s91.s / see-01
+                                                                                     :ARG0 s91.p
+                                                                                     :ARG1 (s91.t3 / thing
+                                                                                                   :manner-of (s91.w2 / work-09
+                                                                                                                      :ARG1 s91.t2))))))
+                             :degree (s91.r / really)))
+   :snt92 (s92.p / problem
+                 :ARG1-of (s92.o / obvious-01)
+                 :domain (s92.h / have-quant-91
+                                :ARG1 (s92.m / money
+                                             :location (s92.w / world))
+                                :ARG3 (s92.e / enough)
+                                :ARG6 (s92.f / fund-01
+                                             :ARG1 (s92.s / stuff
+                                                          :mod (s92.t / this)
+                                                          :same-as s86.t))
+                                :polarity (s92.a / amr-unknown))
+                 :time (s92.n / now))
+   :snt93 (s93.c / contrast-01
+                 :ARG1 (s93.t / tell-01
+                              :ARG0 (s93.i / i
+                                           :same-as s25.i)
+                              :ARG1 (s93.d / drug
+                                           :ARG1-of (s93.h / have-quant-91
+                                                           :ARG3 (s93.e / enough)))
+                              :ARG2 (s93.y / you))
+                 :ARG2 (s93.m / money
+                              :ARG1-of (s93.h2 / have-quant-91
+                                               :ARG3 (s93.e2 / enough)
+                                               :polarity (s93.a / amr-unknown))))
+   :snt94 (s94.i2 / invest-01
+                  :ARG1 (s94.c / capital
+                               :quant (s94.m / monetary-quantity
+                                             :unit (s94.d / dollar)
+                                             :quant "100000000000"))
+                  :ARG2 (s94.s / secure-02
+                               :ARG1 (s94.i / income
+                                            :ARG1-of (s94.f / fix-03)))
+                  :time (s94.c2 / current))
+   :snt95 (s95.m / monetary-quantity
+                 :domain (s95.t / that
+                                :same-as s94.i2)
+                 :quant "100000")
+   :snt96 (s96.m / money
+                 :quant (s96.p / plenty))
+   :snt97 (s97.c / contrast-01
+                 :ARG2 (s97.r / realize-01
+                              :ARG0 (s97.w / we
+                                           :same-as s47.w)
+                              :ARG1 (s97.m2 / more-than
+                                            :domain (s97.i / it)
+                                            :op1 (s97.m / money
+                                                        :ARG1-of (s97.r2 / require-01)
+                                                        :mod (s97.j / just)))))
+   :snt98 (s98.o / obligate-01
+                 :ARG1 (s98.w / we
+                              :same-as s47.w)
+                 :ARG2 (s98.a / and
+                              :op1 (s98.g2 / get-04
+                                           :ARG0 s98.w
+                                           :ARG1 (s98.m / motivate-01
+                                                        :ARG0 s98.w
+                                                        :ARG1 (s98.p / person)))
+                              :op2 (s98.g / get-03
+                                          :ARG1 s98.p
+                                          :ARG2 (s98.i / involve-01
+                                                       :ARG1 s98.p))
+                              :op3 (s98.o2 / obligate-01
+                                           :ARG2 (s98.u / understand-01
+                                                        :ARG0 s98.p
+                                                        :ARG1 (s98.t / this)))))
+   :snt99 (s99.a2 / and
+                  :op2 (s99.c / cause-01
+                              :ARG1 (s99.s / start-01
+                                           :ARG0 (s99.w / we
+                                                        :same-as s47.w)
+                                           :ARG1 (s99.t2 / think-01
+                                                         :ARG0 s99.w
+                                                         :ARG1 (s99.t / thing
+                                                                      :ARG1-of (s99.d / differ-02)
+                                                                      :ARG1-of (s99.g / go-08
+                                                                                      :ARG1-of (s99.p / possible-01)
+                                                                                      :ARG2 (s99.w2 / wrong-02))
+                                                                      :mod (s99.a / all))))))
+   :snt100 (s100.c / challenge-01
+                   :ARG0-of (s100.h / hinder-01
+                                    :ARG1-of (s100.p / possible-01))
+                   :ARG1 (s100.d / do-02
+                                 :ARG1 (s100.t / this
+                                               :same-as s86.t))
+                   :ARG2 (s100.a2 / amr-unknown)
+                   :mod (s100.a / all))
+   :snt101 (s101.a2 / and
+                    :op1 (s101.h / have-03
+                                 :ARG0 (s101.w / we
+                                               :same-as s47.w)
+                                 :ARG1 (s101.l / list
+                                               :ARG1-of (s101.l2 / long-03)))
+                    :op2 (s101.a3 / and
+                                  :op1 (s101.a4 / assign-01
+                                                :ARG0 s101.w
+                                                :ARG1 (s101.p2 / piece
+                                                               :ARG1-of (s101.d / differ-02)
+                                                               :part-of (s101.p4 / problem
+                                                                                 :mod (s101.t / this)))
+                                                :ARG2 (s101.p / person
+                                                              :quant (s101.b / bunch)
+                                                              :ARG2-of (s101.i / include-01
+                                                                               :ARG1 s101.w)))
+                                  :op2 (s101.s / say-01
+                                               :ARG0 s101.w
+                                               :ARG1 (s101.p3 / possible-01
+                                                              :ARG1 (s101.s2 / start-01
+                                                                             :ARG0 (s101.y / you
+                                                                                           :same-as s101.p)
+                                                                             :ARG1 (s101.s3 / stream-01
+                                                                                            :ARG1 (s101.w2 / work-01)
+                                                                                            :ARG1 (s101.r / risk-01
+                                                                                                          :ARG2 (s101.c / credit-02))))
+                                                              :polarity (s101.a / amr-unknown)))))
+   :snt102 (s102.p / possible-01
+                   :ARG1 (s102.s / start-01
+                                 :ARG0 (s102.y / you
+                                               :same-as s101.p)
+                                 :ARG1 (s102.s2 / stream-03
+                                                :ARG1 (s102.a2 / aspect
+                                                               :topic (s102.r / regulate-01))
+                                                :mod (s102.w / work-01)))
+                   :polarity (s102.a / amr-unknown))
+   :snt103 (s103.p / possible-01
+                   :ARG1 (s103.s2 / start-01
+                                  :ARG0 (s103.y / you
+                                                :same-as s101.p)
+                                  :ARG1 (s103.s3 / stream-03
+                                                 :ARG1 (s103.t / thing
+                                                               :manner-of (s103.m / manage-01
+                                                                                  :ARG0 s103.y
+                                                                                  :ARG1 (s103.p2 / project
+                                                                                                 :ARG1-of (s103.h / have-quant-91
+                                                                                                                  :ARG2 (s103.m2 / many)
+                                                                                                                  :ARG3 (s103.s / so)))
+                                                                                  :ARG1-of (s103.a / actual-02)))
+                                                 :mod (s103.w / work-01)))
+                   :polarity (s103.a2 / amr-unknown))
+   :snt104 (s104.a2 / and
+                    :op1 (s104.h / have-04
+                                 :ARG0 (s104.w / we
+                                               :same-as s47.w)
+                                 :ARG1 (s104.a3 / and
+                                                :op1 (s104.g / get-together-14
+                                                             :ARG0 (s104.p / person
+                                                                           :ARG1-of (s104.e / expert-01)
+                                                                           :mod (s104.t2 / this)
+                                                                           :mod (s104.a / all)
+                                                                           :same-as s101.p))
+                                                :op2 (s104.d2 / do-02
+                                                              :ARG0 s104.p
+                                                              :ARG1 (s104.s / stream-01
+                                                                            :ARG1 (s104.w2 / work-01)
+                                                                            :ARG1-of (s104.d / differ-02)))))
+                    :op2 (s104.h2 / hold-04
+                                  :ARG0 s104.w
+                                  :ARG1 (s104.c / conference)
+                                  :time (s104.t / then)))
+   :snt105 (s105.h / hold-04
+                   :ARG1 (s105.c / conference
+                                 :same-as s104.c)
+                   :time (s105.d / date-entity
+                                 :mod (s105.t / this)
+                                 :mod (s105.p / past)
+                                 :season (s105.s / summer)))
+   :snt106 (s106.c / conference
+                   :ARG2-of (s106.i / invite-01
+                                    :mod (s106.o / only))
+                   :domain (s106.i2 / it
+                                    :same-as s104.c))
+   :snt107 (s107.a / and
+                   :op1 (s107.s / sponsor-01
+                                :ARG0 (s107.o / organization
+                                              :name (s107.n / name
+                                                            :op1 "American"
+                                                            :op2 "Cancer"
+                                                            :op3 "Society"))
+                                :ARG1 (s107.i / it
+                                              :same-as s104.c))
+                   :op2 (s107.d / do-02
+                                :ARG1 s107.i
+                                :manner (s107.c / collaborate-01
+                                                :ARG0 s107.i
+                                                :ARG1 (s107.g / government-organization
+                                                              :name (s107.n2 / name
+                                                                             :op1 "National"
+                                                                             :op2 "Cancer"
+                                                                             :op3 "Institute")))))
+   :snt108 (s108.a / and
+                   :op1 (s108.h / have-03
+                                :ARG0 (s108.w / we
+                                              :same-as s47.w)
+                                :ARG1 (s108.p / person
+                                              :ARG1-of (s108.e3 / expert-01
+                                                                :ARG2 (s108.f / field
+                                                                              :ARG1-of (s108.i / important-01
+                                                                                               :ARG1-of (s108.t4 / think-01
+                                                                                                                 :ARG0 s108.w))
+                                                                              :ARG2-of (s108.i3 / include-91
+                                                                                                :ARG1 (s108.g2 / government-organization
+                                                                                                               :ARG0-of (s108.g / govern-01)
+                                                                                                               :ARG2-of (s108.i2 / include-01)))
+                                                                              :mod (s108.e2 / every)))))
+                   :op2 (s108.a2 / and
+                                 :duration (s108.t2 / temporal-quantity
+                                                    :unit (s108.d / day)
+                                                    :quant "2")
+                                 :op1 (s108.s / sit-01
+                                              :ARG1 s108.p
+                                              :ARG2 (s108.a3 / around))
+                                 :op2 (s108.h2 / hear-01
+                                               :ARG0 s108.p
+                                               :ARG1 (s108.r / report-01
+                                                             :ARG0 (s108.s2 / stream-01
+                                                                            :ARG1 (s108.w2 / work-01)
+                                                                            :mod (s108.t3 / that)
+                                                                            :quant "5")))
+                                 :op3 (s108.t / talk-01
+                                              :ARG0 s108.p
+                                              :ARG1 (s108.i4 / it
+                                                             :same-as s86.t)))
+                   :rel (s108.p2 / person
+                                 :ARG0-of (s108.r3 / run-01
+                                                   :ARG1 (s108.c / center
+                                                                 :mod (s108.r2 / research-01))))
+                   :rel (s108.e / et-cetera))
+   :snt109 (s109.a3 / and
+                    :op1 (s109.s / sit-01
+                                 :ARG1 (s109.p / person
+                                               :ARG0-of (s109.m / make-02
+                                                                :ARG1 (s109.t2 / this
+                                                                               :same-as s86.t)
+                                                                :ARG1-of (s109.a2 / actual-02)
+                                                                :ARG1-of (s109.p2 / possible-01)))
+                                 :ARG2 (s109.a / across
+                                               :op1 (s109.t / table)))
+                    :op2 (s109.c / converse-01
+                                 :ARG0 s109.p
+                                 :mod (s109.t3 / this))
+                    :ord (s109.o / ordinal-entity
+                                 :value "1"))
+   :snt110 (s110.a / and
+                   :op1 (s110.t3 / typical-02
+                                 :ARG1 (s110.c / conference
+                                               :mod (s110.t2 / this))
+                                 :ARG2 (s110.h / have-06
+                                               :ARG0 s110.c
+                                               :ARG1 (s110.d / dinner
+                                                             :ARG1-of (s110.r / resemble-01
+                                                                              :ARG2 (s110.t / thing
+                                                                                            :ARG1-of (s110.d2 / do-02
+                                                                                                              :ARG0 (s110.w / we
+                                                                                                                            :same-as s47.w)
+                                                                                                              :location (s110.h2 / here)))
+                                                                              :degree (s110.s / sort))))
+                                 :time (s110.n / now))
+                   :op2 (s110.g / get-03
+                                :ARG1 (s110.y / you)
+                                :ARG2 (s110.k2 / know-02
+                                               :ARG0 s110.y
+                                               :ARG1 s110.y)
+                                :degree (s110.k / kind-of)
+                                :location s110.d))
+   :snt111 (s111.a / and
+                   :op1 (s111.l / look-01
+                                :ARG0 (s111.i / i
+                                              :part (s111.h2 / heart)
+                                              :same-as s2.i)
+                                :ARG1 (s111.w / window))
+                   :op2 (s111.l2 / look-01
+                                 :ARG0 s111.i
+                                 :ARG1 s111.w
+                                 :manner (s111.h / hand
+                                                 :location s111.h2)
+                                 :time (s111.d / date-entity
+                                               :dayperiod (s111.n / night)
+                                               :mod (s111.c / conference
+                                                            :mod (s111.t2 / this)
+                                                            :same-as s104.c)
+                                               :time (s111.d2 / date-entity
+                                                              :season (s111.s2 / summer))))
+                   :op3 (s111.s / see-01
+                                :ARG0 s111.i
+                                :ARG1 (s111.t / that))
+                   :op4 (s111.r / rainbow
+                                :quant "2"))
+   :snt112 (s112.c / cause-01
+                   :ARG1 (s112.l / like-02
+                                 :ARG0 (s112.i / i
+                                               :same-as s2.i)
+                                 :ARG1 (s112.t / think-01
+                                               :ARG0 s112.i
+                                               :ARG1 (s112.s / signal-07
+                                                             :ARG0 (s112.i2 / it
+                                                                            :same-as s111.r)
+                                                             :ARG1-of (s112.g / good-04)))))
+   :snt113 (s113.g / get-02
+                   :ARG0 (s113.w / we
+                                 :same-as s47.w)
+                   :ARG1 (s113.a / and
+                                 :op1 (s113.p / person
+                                              :ARG0-of (s113.w2 / work-01
+                                                                :location (s113.b / between
+                                                                                  :op1 (s113.c / city
+                                                                                               :name (s113.n / name
+                                                                                                             :op1 "Paris"))
+                                                                                  :op2 (s113.c2 / city
+                                                                                                :name (s113.n2 / name
+                                                                                                               :op1 "San"
+                                                                                                               :op2 "Francisco")))))
+                                 :op2 (s113.w3 / work-01
+                                               :purpose (s113.t3 / try-01
+                                                                 :ARG0 (s113.f / folk
+                                                                               :quant (s113.l / lot)
+                                                                               :ARG1-of (s113.d / differ-02))
+                                                                 :ARG1 (s113.s / see-01
+                                                                               :ARG0 s113.f
+                                                                               :ARG1 (s113.t2 / truth-value
+                                                                                              :polarity-of (s113.p2 / possible-01
+                                                                                                                    :ARG1 (s113.m / make-02
+                                                                                                                                  :ARG0 s113.w
+                                                                                                                                  :ARG1 (s113.t / this
+                                                                                                                                                :same-as s86.t)
+                                                                                                                                  :ARG1-of (s113.r / real-04))))))
+                                               :ARG0 s113.f
+                                               :ARG1 s113.t))
+                   :time (s113.s2 / since
+                                  :op1 (s113.c3 / conference
+                                                :same-as s104.c)))
+   :snt114 (s114.c / contrast-01
+                   :ARG1 (s114.l / look-04
+                                 :ARG0 (s114.w2 / we
+                                                :same-as s47.w)
+                                 :ARG1 (s114.s2 / start-01
+                                                :ARG0 s114.w2
+                                                :ARG1 (s114.f / fund))
+                                 :polarity "-")
+                   :ARG2 (s114.w / want-01
+                                 :ARG0 s114.w2
+                                 :ARG1 (s114.d / do-02
+                                               :ARG0 (s114.s / somebody
+                                                             :mod (s114.e / else))
+                                               :ARG1 (s114.t / this
+                                                             :same-as s86.t))))
+   :snt115 (s115.c / cause-01
+                   :ARG0 (s115.s / scientist
+                                 :domain (s115.i / i
+                                                 :same-as s2.i)
+                                 :polarity "-")
+                   :mod (s115.a / again))
+   :snt116 (s116.p / possible-01
+                   :ARG1 (s116.b / build-01
+                                 :ARG0 (s116.i / i
+                                               :same-as s2.i)
+                                 :ARG1 (s116.d / drug))
+                   :polarity "-")
+   :snt117 (s117.h / have-03
+                   :ARG0 (s117.i / i
+                                 :same-as s2.i)
+                   :ARG1 (s117.m / money
+                                 :ARG1-of (s117.h2 / have-quant-91
+                                                   :ARG3 (s117.e / enough)
+                                                   :ARG6 (s117.f / fund-01
+                                                                 :ARG0 s117.i
+                                                                 :ARG1 (s117.t2 / try-01
+                                                                                :ARG1-of (s117.i2 / include-91
+                                                                                                  :ARG2 (s117.t3 / try-01
+                                                                                                                 :mod (s117.t / that)))
+                                                                                :mod (s117.e2 / even)
+                                                                                :quant "1"))))
+                   :time (s117.e3 / ever)
+                   :polarity "-")
+   :snt118 (s118.c / contrast-01
+                   :ARG2 (s118.p7 / possible-01
+                                  :ARG1 (s118.a4 / and
+                                                 :op1 (s118.f / fund-01
+                                                              :ARG0 (s118.w / we
+                                                                            :mod (s118.a2 / all))
+                                                              :ARG1 (s118.t / try-01
+                                                                            :quant (s118.m3 / multiple
+                                                                                            :op1 "100")))
+                                                 :op2 (s118.p / pay-01
+                                                              :ARG1-of (s118.w2 / well-09)
+                                                              :ARG2 s118.w
+                                                              :ARG3 (s118.d2 / do-02
+                                                                             :ARG1 s118.t))
+                                                 :op3 (s118.s / save-01
+                                                              :ARG0 s118.w
+                                                              :ARG1 (s118.l / life
+                                                                            :quant (s118.m4 / multiple
+                                                                                            :op1 "1000000"))
+                                                              :ARG1-of (s118.r / resemble-01
+                                                                               :ARG2 (s118.p3 / person
+                                                                                              :ARG0-of (s118.h / have-rel-role-91
+                                                                                                               :ARG1 (s118.i / i
+                                                                                                                             :same-as s25.i)
+                                                                                                               :ARG2 (s118.d / dad))
+                                                                                              :same-as s2.i))))
+                                  :ARG1-of (s118.a / actual-02))
+                   :rel (s118.a3 / and
+                                 :op1 (s118.m / monetary-quantity
+                                              :unit (s118.d3 / dollar)
+                                              :year "2004")
+                                 :op2 (s118.p5 / plan-01
+                                               :ARG0 s118.w
+                                               :ARG1 (s118.m2 / monetary-quantity
+                                                              :quant "529"))
+                                 :op3 (s118.p4 / plan
+                                               :mod s118.m2)
+                                 :op4 (s118.p6 / plan-01
+                                               :ARG1 (s118.p2 / pension))
+                                 :poss s118.w))
+   :snt119 (s119.t / thank-01
+                   :ARG1 (s119.y / you
+                                 :same-as s25.i)))
+

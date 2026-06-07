@@ -1,0 +1,800 @@
+# ::id doc-492
+# ::doc_file doc-492
+# ::tok http : / / www . ted . com / talks / david_bismark_e_voting_without_fraud< / url> <next_sent> So there are a few things that bring us humans together in the way that an election does . <next_sent> We stand in elections ; we vote in elections ; we observe elections . <next_sent> Our democracies rely on elections . <next_sent> We all understand why we have elections , and we all leave the house on the same day to go and vote . <next_sent> We cherish the opportunity to have our say , to help decide the future of the country . <next_sent> The fundamental idea is that politicians are given mandate to speak for us , to make decisions on our behalf that affect us all . <next_sent> Without that mandate , they would be corrupt . <next_sent> Well unfortunately , power corrupts , and so people will do lots of things to get power and to stay in power , including doing bad things to elections . <next_sent> You see , even if the idea of the election is perfect , running a countrywide election is a big project , and big projects are messy . <next_sent> Whenever there is an election , it seems like something always goes wrong , someone tries to cheat , or something goes accidentally awry -- a ballot box goes missing here , chads are left hanging over here . <next_sent> To make sure as few things as possible go wrong , we have all these procedures around the election . <next_sent> So for example , you come to the polling station , and a poll station worker asks for your ID before giving you a ballot form and asking you to go into a voting booth to fill out your vote . <next_sent> When you come back out , you get to drop your vote into the ballot box where it mixes with all the other votes , so that no one knows how you voted . <next_sent> Well , what I want us to think about for a moment is what happens after that , after you drop your vote into the ballot box . <next_sent> And most people would go home and feel sure that their vote has been counted , because they trust that the election system works . <next_sent> They trust that election workers and election observers do their jobs and do their jobs correctly . <next_sent> The ballot boxes go to counting places . <next_sent> They 're unsealed and the votes are poured out and laboriously counted . <next_sent> Most of us have to trust that that happens correctly for our own vote , and we all have to trust that that happens correctly for all the votes in the election . <next_sent> So we have to trust a lot of people . <next_sent> We have to trust a lot of procedures . <next_sent> And sometimes we even have to trust computers . <next_sent> So imagine hundreds of millions of voters casting hundreds of millions of votes , all to be counted correctly and all the things that can possibly go wrong causing all these bad headlines , and you cannot help but feel exhausted at the idea of trying to make elections better . <next_sent> Well in the face of all these bad headlines , researchers have taken a step back and thought about how we can do elections differently . <next_sent> They 've zoomed out and looked at the big picture . <next_sent> And the big picture is this : elections should be verifiable . <next_sent> Voters should be able to check that their votes are counted correctly , without breaking election secrecy , which is so very important . <next_sent> And that 's the tough part . <next_sent> How do we make an election system completely verifiable while keeping the votes absolutely secret ? <next_sent> Well , the way we 've come up with uses computers but does n't depend on them . <next_sent> And the secret is the ballot form . <next_sent> And if you look closely at these ballot forms , you 'll notice that the candidate list is in a different order on each one . <next_sent> And that means , if you mark your choices on one of them and then remove the candidate list , I wo n't be able to tell from the bit remaining what your vote is for . <next_sent> And on each ballot form there is this encrypted value in the form of this 2D barcode on the right . <next_sent> And there 's some complicated cryptography going on in there , but what 's not complicated is voting with one of these forms . <next_sent> So we can let computers do all the complicated cryptography for us , and then we 'll use the paper for verification . <next_sent> So this is how you vote . <next_sent> You get one of these ballot forms at random , and then you go into the voting booth , and you mark your choices , and you tear along a perforation . <next_sent> And you shred the candidate list . <next_sent> And the bit that remains , the one with your marks -- this is your encrypted vote . <next_sent> So you let a poll station worker scan your encrypted vote . <next_sent> And because it 's encrypted , it can be submitted , stored and counted centrally and displayed on a website for anyone to see , including you . <next_sent> So you take this encrypted vote home as your receipt . <next_sent> And after the close of the election , you can check that your vote was counted by comparing your receipt to the vote on the website . <next_sent> And remember , the vote is encrypted from the moment you leave the voting booth , so if an election official wants to find out how you voted , they will not be able to . <next_sent> If the government wants to find out how you voted , they wo n't be able to . <next_sent> No hacker can break in and find out how you voted . <next_sent> No hacker can break in and change your vote , because then it wo n't match your receipt . <next_sent> Votes ca n't go missing because then you wo n't find yours when you look for it . <next_sent> But the election magic does n't stop there . <next_sent> Instead , we want to make the whole process so transparent that news media and international observers and anyone who wants to can download all the election data and do the count themselves . <next_sent> They can check that all the votes were counted correctly . <next_sent> They can check that the announced result of the election is the correct one . <next_sent> And these are elections by the people , for the people . <next_sent> So the next step for our democracies are transparent and verifiable elections . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.d / defraud-01
+                            :ARG0 (s1.p / person
+                                        :name (s1.n / name
+                                                    :op1 "David"))))
+   :snt2 (s2.b / bring-01
+               :ARG0 (s2.t / thing
+                           :quant (s2.f / few))
+               :ARG3 (s2.t2 / together)
+               :manner (s2.w / way
+                             :manner-of (s2.b2 / bring-01
+                                               :ARG0 (s2.e / elect-01)
+                                               :ARG1 (s2.h / human
+                                                           :domain (s2.w2 / we)))))
+   :snt3 (s3.a / and
+               :op1 (s3.s / stand-01
+                          :ARG0 (s3.w / we)
+                          :ARG2 (s3.e / elect-01))
+               :op2 (s3.v / vote-01
+                          :ARG0 s3.w
+                          :ARG2 s3.e)
+               :op3 (s3.o / observe-01
+                          :ARG0 s3.w
+                          :ARG1 s3.e))
+   :snt4 (s4.r / rely-01
+               :ARG0 (s4.d / democracy
+                           :poss (s4.w / we))
+               :ARG1 (s4.e / elect-01))
+   :snt5 (s5.a2 / and
+                :op1 (s5.u / understand-01
+                           :ARG0 (s5.w / we
+                                       :mod (s5.a / all))
+                           :ARG1 (s5.t / thing
+                                       :ARG0-of (s5.c / cause-01
+                                                      :ARG1 (s5.h / have-06
+                                                                  :ARG0 s5.w
+                                                                  :ARG1 (s5.e / elect-01)))))
+                :op2 (s5.l / leave-11
+                           :purpose (s5.a3 / and
+                                           :op1 (s5.g / go-02
+                                                      :ARG0 s5.w)
+                                           :op2 (s5.v / vote-01
+                                                      :ARG0 s5.w))
+                           :ARG0 s5.w
+                           :ARG1 (s5.h2 / house)
+                           :time (s5.d / day
+                                       :ARG1-of (s5.s / same-01))))
+   :snt6 (s6.c / cherish-01
+               :ARG0 (s6.w / we
+                           :same-as s5.w)
+               :ARG1 (s6.o / opportunity
+                           :instrument-of (s6.a / and
+                                                :op1 (s6.h / have-03
+                                                           :ARG0 s6.w
+                                                           :ARG1 (s6.s / say-01
+                                                                       :ARG0 s6.w))
+                                                :op2 (s6.h2 / help-01
+                                                            :ARG0 s6.w
+                                                            :ARG1 (s6.d / decide-01
+                                                                        :ARG1 (s6.f / future
+                                                                                    :poss (s6.c2 / country)))))))
+   :snt7 (s7.g / give-01
+               :ARG1 (s7.m / mandate-01
+                           :ARG1 (s7.a3 / and
+                                        :op1 (s7.s / speak-01
+                                                   :ARG0 (s7.p / politician)
+                                                   :beneficiary (s7.w / we))
+                                        :op2 (s7.d / decide-01
+                                                   :ARG0 s7.p
+                                                   :ARG0-of (s7.a / affect-01
+                                                                  :mod (s7.a2 / all
+                                                                              :same-as s7.w))
+                                                   :ARG3 s7.w)))
+               :ARG2 s7.p
+               :domain (s7.i / idea
+                             :mod (s7.f / fundamental)))
+   :snt8 (s8.c / corrupt-01
+               :ARG1 (s8.t2 / they
+                            :same-as s7.p)
+               :condition (s8.m / mandate-01
+                                :mod (s8.t / that
+                                           :same-as s7.m)
+                                :polarity "-"))
+   :snt9 (s9.c / cause-01
+               :ARG0 (s9.c2 / corrupt-01
+                            :ARG0 (s9.p2 / power)
+                            :ARG2-of (s9.f / fortunate-01))
+               :ARG1 (s9.d / do-02
+                           :purpose (s9.a / and
+                                          :op1 (s9.g / get-01
+                                                     :ARG0 (s9.p / person)
+                                                     :ARG1 (s9.p3 / power))
+                                          :op2 (s9.s / stay-01
+                                                     :ARG1 s9.p3
+                                                     :ARG3 s9.p))
+                           :ARG0 s9.p
+                           :ARG1 (s9.t / thing
+                                       :quant (s9.l / lot)
+                                       :ARG2-of (s9.i / include-01
+                                                      :ARG1 (s9.d2 / do-02
+                                                                   :ARG0 s9.p
+                                                                   :ARG1 (s9.t2 / thing
+                                                                                :ARG1-of (s9.b / bad-04))
+                                                                   :ARG2 (s9.e / elect-01))))))
+   :snt10 (s10.h / have-concession-91
+                 :ARG1 (s10.a / and
+                              :op1 (s10.p2 / project
+                                           :domain (s10.r / run-01
+                                                          :ARG1 (s10.e2 / elect-01
+                                                                        :location (s10.c / country)))
+                                           :mod (s10.b / big))
+                              :op2 (s10.m / messy
+                                          :domain s10.p2))
+                 :ARG2 (s10.e3 / even-if
+                               :op1 (s10.p / perfect-02
+                                           :ARG1 (s10.i / idea
+                                                        :topic (s10.e / elect-01))))
+                 :mod (s10.s / see-03
+                             :ARG0 (s10.y / you)))
+   :snt11 (s11.s / seem-01
+                 :ARG1 (s11.o / or
+                              :ARG1-of (s11.m / mean-01
+                                              :ARG2 (s11.a3 / and
+                                                            :op1 (s11.g3 / go-08
+                                                                         :ARG1 (s11.b2 / box
+                                                                                       :mod (s11.b / ballot))
+                                                                         :ARG2 (s11.m2 / miss-01
+                                                                                       :ARG1 s11.b2))
+                                                            :op2 (s11.l / leave-12
+                                                                        :ARG1 (s11.c / chav)
+                                                                        :ARG2 (s11.h / hang-01
+                                                                                     :ARG1 s11.c
+                                                                                     :location (s11.o2 / over
+                                                                                                       :op1 (s11.h2 / here))))))
+                              :op1 (s11.g / go-08
+                                          :ARG1 (s11.s3 / something)
+                                          :ARG2 (s11.w / wrong-02)
+                                          :time (s11.a2 / always))
+                              :op2 (s11.t / try-01
+                                          :ARG0 (s11.s2 / someone)
+                                          :ARG1 (s11.c2 / cheat-02
+                                                        :ARG0 s11.s2))
+                              :op3 (s11.g2 / go-08
+                                           :ARG1 (s11.s4 / something)
+                                           :ARG2 (s11.a5 / awry
+                                                         :manner (s11.a / accidental))))
+                 :time (s11.e / elect-01
+                              :mod (s11.a4 / any)))
+   :snt12 (s12.h / have-03
+                 :purpose (s12.e2 / ensure-01
+                                  :ARG0 (s12.w / we)
+                                  :ARG1 (s12.g / go-08
+                                               :ARG1 (s12.t / thing
+                                                            :ARG1-of (s12.h2 / have-quant-91
+                                                                             :ARG2 (s12.f / few)
+                                                                             :ARG3 (s12.e3 / equal)
+                                                                             :ARG4 (s12.p / possible-01)))
+                                               :ARG2 (s12.w2 / wrong-02)))
+                 :ARG0 s12.w
+                 :ARG1 (s12.p2 / procedure
+                               :mod (s12.t2 / this)
+                               :mod (s12.a / all)
+                               :time (s12.a2 / around
+                                             :op1 (s12.e / elect-01))))
+   :snt13 (s13.e / exemplify-01
+                 :ARG0 (s13.a / and
+                              :op1 (s13.c / come-01
+                                          :ARG1 (s13.y / you)
+                                          :ARG4 (s13.s / station
+                                                       :ARG0-of (s13.p2 / poll-01)))
+                              :op2 (s13.a3 / ask-02
+                                           :ARG0 (s13.p / person
+                                                        :ARG0-of (s13.w / work-01
+                                                                        :ARG1 s13.s))
+                                           :ARG1 (s13.d / document-01
+                                                        :ARG1 (s13.i / identity
+                                                                     :poss s13.y))
+                                           :ARG2 s13.y
+                                           :time (s13.b2 / before
+                                                         :op1 (s13.a2 / and
+                                                                      :op1 (s13.g / give-01
+                                                                                  :ARG0 s13.p
+                                                                                  :ARG1 (s13.f2 / form
+                                                                                                :mod (s13.b / ballot))
+                                                                                  :ARG2 s13.y)
+                                                                      :op2 (s13.a4 / ask-02
+                                                                                   :ARG0 s13.p
+                                                                                   :ARG1 (s13.g2 / go-02
+                                                                                                 :purpose (s13.f / fill-out-03
+                                                                                                                 :ARG0 s13.y
+                                                                                                                 :ARG1 (s13.v2 / vote-01
+                                                                                                                               :ARG0 s13.y))
+                                                                                                 :ARG0 s13.y
+                                                                                                 :ARG4 (s13.b3 / booth
+                                                                                                               :mod (s13.v / vote-01)))
+                                                                                   :ARG2 s13.y))))))
+   :snt14 (s14.g / get-22
+                 :ARG0 (s14.y / you)
+                 :ARG1 (s14.d / drop-01
+                              :ARG0 s14.y
+                              :ARG1 (s14.v / vote-01
+                                           :ARG0 s14.y)
+                              :ARG4 (s14.b3 / box
+                                            :location-of (s14.m / mix-01
+                                                                :ARG0-of (s14.c / cause-01
+                                                                                :ARG1 (s14.k / know-01
+                                                                                             :ARG0 (s14.n / no-one)
+                                                                                             :ARG1 (s14.t / thing
+                                                                                                          :manner-of (s14.v3 / vote-01
+                                                                                                                             :ARG0 s14.y))))
+                                                                :ARG1 s14.v
+                                                                :ARG2 (s14.v2 / vote-01
+                                                                              :mod (s14.o / other)
+                                                                              :mod (s14.a / all)))
+                                            :mod (s14.b2 / ballot)))
+                 :time (s14.c2 / come-01
+                               :ARG1 s14.y
+                               :direction (s14.b / back)
+                               :direction (s14.o2 / out)))
+   :snt15 (s15.w / want-01
+                 :ARG0 (s15.i / i)
+                 :ARG1 (s15.t3 / think-01
+                               :ARG0 (s15.w2 / we)
+                               :ARG1 (s15.t2 / thing
+                                             :time (s15.a / after
+                                                          :op1 (s15.t / that))
+                                             :time (s15.a2 / after
+                                                           :op1 (s15.d / drop-01
+                                                                       :ARG0 (s15.y / you)
+                                                                       :ARG1 (s15.v / vote-01
+                                                                                    :ARG0 s15.y
+                                                                                    :same-as s14.v)
+                                                                       :ARG4 (s15.b2 / box
+                                                                                     :purpose (s15.b / ballot)))))
+                               :duration (s15.m / moment))
+                 :mod (s15.w3 / well))
+   :snt16 (s16.a / and
+                 :op2 (s16.a2 / and
+                              :ARG1-of (s16.c / cause-01
+                                              :ARG0 (s16.t / trust-02
+                                                           :ARG0 (s16.p / person
+                                                                        :quant (s16.m / most))
+                                                           :ARG1 (s16.w / work-09
+                                                                        :ARG1 (s16.s2 / system
+                                                                                      :mod (s16.e / elect-01)))))
+                              :op1 (s16.g / go-01
+                                          :ARG1 s16.p
+                                          :ARG4 (s16.h / home))
+                              :op2 (s16.f / feel-01
+                                          :ARG0 s16.p
+                                          :ARG1 (s16.s / sure-02
+                                                       :ARG0 s16.p
+                                                       :ARG1 (s16.c2 / count-01
+                                                                     :ARG1 (s16.v / vote-01
+                                                                                  :ARG0 s16.p))))))
+   :snt17 (s17.t2 / trust-01
+                  :ARG0 (s17.t / they
+                               :same-as s16.p)
+                  :ARG1 (s17.a2 / and
+                                :op1 (s17.d / do-02
+                                            :ARG0 (s17.a / and
+                                                         :op1 (s17.p / person
+                                                                     :ARG0-of (s17.w / work-01
+                                                                                     :ARG1 (s17.e / elect-01)))
+                                                         :op2 (s17.p2 / person
+                                                                      :ARG0-of (s17.o / observe-01
+                                                                                      :ARG1 s17.e)))
+                                            :ARG1 (s17.j / job
+                                                         :poss s17.a))
+                                :op2 (s17.d2 / do-02
+                                             :ARG0 s17.a
+                                             :ARG1 s17.j
+                                             :ARG1-of (s17.c / correct-02))))
+   :snt18 (s18.g / go-01
+                 :ARG1 (s18.b2 / box
+                               :mod (s18.b / ballot))
+                 :ARG4 (s18.p / place
+                              :location-of (s18.c / count-01)))
+   :snt19 (s19.a / and
+                 :op1 (s19.u / unseal-01
+                             :ARG1 (s19.t / they
+                                          :same-as s18.b2))
+                 :op2 (s19.a2 / and
+                              :op1 (s19.p / pour-01
+                                          :ARG1 (s19.t2 / thing
+                                                        :ARG2-of (s19.v / vote-01))
+                                          :direction (s19.o / out))
+                              :op2 (s19.c / count-01
+                                          :ARG1 s19.t2
+                                          :manner (s19.l / labor-01))))
+   :snt20 (s20.a3 / and
+                  :op1 (s20.o / obligate-01
+                              :ARG1 (s20.w / we
+                                           :quant (s20.m / most)
+                                           :same-as s3.w)
+                              :ARG2 (s20.t2 / trust-01
+                                            :ARG0 s20.w
+                                            :ARG1 (s20.e2 / event
+                                                          :purpose (s20.v / vote-01
+                                                                          :ARG0 s20.w)
+                                                          :ARG1-of (s20.c / correct-02)
+                                                          :mod (s20.t / that))))
+                  :op2 (s20.o2 / obligate-01
+                               :ARG1 (s20.w2 / we
+                                             :mod (s20.a / all))
+                               :ARG2 (s20.t3 / trust-02
+                                             :ARG0 s20.w2
+                                             :ARG1 (s20.e3 / event
+                                                           :ARG1-of (s20.c2 / correct-02)
+                                                           :beneficiary (s20.v2 / vote-01
+                                                                                :mod (s20.a2 / all)
+                                                                                :subevent-of (s20.e / elect-01
+                                                                                                    :same-as s12.e))))))
+   :snt21 (s21.c / cause-01
+                 :ARG1 (s21.o / obligate-01
+                              :ARG1 (s21.w / we
+                                           :same-as s3.w)
+                              :ARG2 (s21.t / trust-02
+                                           :ARG0 s21.w
+                                           :ARG1 (s21.p / person
+                                                        :quant (s21.l / lot)))))
+   :snt22 (s22.o / obligate-01
+                 :ARG1 (s22.w / we
+                              :same-as s3.w)
+                 :ARG2 (s22.t / trust-02
+                              :ARG0 s22.w
+                              :ARG1 (s22.p / procedure
+                                           :quant (s22.l / lot))))
+   :snt23 (s23.a / and
+                 :op2 (s23.o / obligate-01
+                             :ARG1 (s23.w / we
+                                          :same-as s3.w)
+                             :ARG2 (s23.t / trust-02
+                                          :ARG0 s23.w
+                                          :ARG1 (s23.c / computer))
+                             :mod (s23.e / even)
+                             :time (s23.s / sometimes)))
+   :snt24 (s24.a3 / and
+                  :op1 (s24.i2 / imagine-01
+                               :ARG0 (s24.y / you)
+                               :op2-of s24.a3)
+                  :op3 (s24.p3 / possible-01
+                               :ARG1 (s24.h3 / help-02
+                                             :ARG0 s24.y
+                                             :ARG1 (s24.f / feel-01
+                                                          :ARG0 s24.y
+                                                          :ARG1 (s24.e2 / exhaust-01
+                                                                        :ARG0 (s24.i / idea
+                                                                                     :topic (s24.t3 / try-01
+                                                                                                    :ARG1 (s24.m / make-02
+                                                                                                                 :ARG1 (s24.h / have-degree-91
+                                                                                                                              :ARG1 (s24.e / elect-01)
+                                                                                                                              :ARG2 (s24.g2 / good-02
+                                                                                                                                            :ARG1 s24.e)
+                                                                                                                              :ARG3 (s24.m2 / more)))))
+                                                                        :ARG1 s24.y)))
+                               :polarity "-")
+                  :rel (s24.c / cast-01
+                              :purpose (s24.c4 / count-01
+                                               :ARG1 (s24.v2 / vote-01
+                                                             :ARG0 (s24.m3 / multiple
+                                                                           :op1 "100000000"))
+                                               :ARG1-of (s24.c3 / correct-02))
+                              :ARG0 (s24.p / person
+                                           :quant s24.m3
+                                           :ARG0-of (s24.v / vote-01))
+                              :ARG1 s24.v2)
+                  :rel (s24.c2 / cause-01
+                               :ARG0 (s24.t / thing
+                                            :ARG1-of (s24.g / go-08
+                                                            :ARG1-of (s24.p2 / possible-01)
+                                                            :ARG2 (s24.w / wrong-02))
+                                            :mod (s24.a / all))
+                               :ARG1 (s24.h2 / headline-01
+                                             :ARG1-of (s24.b / bad-07)
+                                             :mod (s24.t2 / this)
+                                             :mod (s24.a2 / all))))
+   :snt25 (s25.a2 / and
+                  :mod (s25.w2 / well)
+                  :op1 (s25.s / step-01
+                              :ARG1 (s25.p / person
+                                           :ARG0-of (s25.r / research-01))
+                              :direction (s25.b / back))
+                  :op2 (s25.t2 / think-01
+                               :ARG0 s25.p
+                               :ARG1 (s25.t / thing
+                                            :manner-of (s25.p2 / possible-01
+                                                               :ARG1 (s25.d2 / do-02
+                                                                             :ARG0 (s25.w / we)
+                                                                             :ARG1 (s25.e / elect-01)
+                                                                             :ARG1-of (s25.d / differ-02)))))
+                  :time (s25.f / face-01
+                               :ARG1 (s25.h / headline
+                                            :ARG1-of (s25.b2 / bad-07)
+                                            :mod (s25.t3 / this)
+                                            :mod (s25.a / all))))
+   :snt26 (s26.a / and
+                 :op1 (s26.z / zoom-01
+                             :ARG1 (s26.t / they
+                                          :same-as s25.p)
+                             :direction (s26.o / out))
+                 :op2 (s26.l / look-01
+                             :ARG0 s26.t
+                             :ARG1 (s26.p / picture
+                                          :mod (s26.b / big))))
+   :snt27 (s27.a / and
+                 :op2 (s27.p / picture
+                             :domain (s27.r / recommend-01
+                                            :ARG1 (s27.v / verify-01
+                                                         :ARG1 (s27.e / elect-01)))
+                             :mod (s27.b / big
+                                         :same-as s26.p)))
+   :snt28 (s28.r / recommend-01
+                 :ARG1 (s28.p2 / possible-01
+                               :ARG1 (s28.c / check-01
+                                            :ARG0 (s28.p / person
+                                                         :ARG0-of (s28.v2 / vote-01))
+                                            :ARG1 (s28.c3 / count-01
+                                                          :ARG1 (s28.v3 / vote-01
+                                                                        :ARG0 s28.p)
+                                                          :ARG1-of (s28.c2 / correct-02))
+                                            :manner (s28.b / break-18
+                                                           :ARG0 s28.p
+                                                           :ARG1 (s28.s / secrecy
+                                                                        :mod (s28.e / elect-01))
+                                                           :polarity "-")))
+                 :ARG1-of (s28.i / important-01
+                                 :degree (s28.v / very)))
+   :snt29 (s29.a / and
+                 :op2 (s29.p / part
+                             :ARG1-of (s29.t2 / tough-02)
+                             :domain (s29.t / that
+                                            :same-as s28.c)))
+   :snt30 (s30.m / make-02
+                 :ARG0 (s30.w / we)
+                 :ARG1 (s30.p / possible-01
+                              :ARG1 (s30.v / verify-01
+                                           :ARG1 (s30.s2 / system
+                                                         :mod (s30.e / elect-01))
+                                           :ARG1-of (s30.c / complete-02)))
+                 :manner (s30.a2 / amr-unknown)
+                 :time (s30.k / keep-01
+                              :ARG1 (s30.s / secret
+                                           :degree (s30.a / absolute)
+                                           :domain (s30.v2 / vote-01))))
+   :snt31 (s31.c3 / contrast-01
+                  :ARG1 (s31.u / use-01
+                               :ARG0 (s31.w / way
+                                            :ARG1-of (s31.c / come-up-11
+                                                            :ARG0 (s31.w2 / we)))
+                               :ARG1 (s31.c2 / computer))
+                  :ARG2 (s31.d / depend-01
+                               :ARG0 s31.w
+                               :ARG1 s31.c2
+                               :polarity "-")
+                  :mod (s31.w3 / well))
+   :snt32 (s32.a / and
+                 :op2 (s32.s / secret
+                             :domain (s32.f / form
+                                            :purpose (s32.b / ballot))))
+   :snt33 (s33.a / and
+                 :op2 (s33.n / notice-01
+                             :ARG0 (s33.y / you)
+                             :ARG1 (s33.r / resemble-01
+                                          :ARG1 (s33.o2 / order-03
+                                                        :ARG1 (s33.l / list-01
+                                                                     :ARG1 (s33.c / candidate))
+                                                        :location (s33.o / one
+                                                                         :mod (s33.e / each))))
+                             :condition (s33.l2 / look-01
+                                                :ARG0 s33.y
+                                                :ARG1 (s33.f / form
+                                                             :purpose (s33.b / ballot)
+                                                             :mod (s33.t / this))
+                                                :manner (s33.c2 / close-10))))
+   :snt34 (s34.a / and
+                 :op2 (s34.m2 / mean-01
+                              :ARG1 (s34.t2 / that)
+                              :ARG2 (s34.p / possible-01
+                                           :ARG1 (s34.t / tell-02
+                                                        :ARG0 (s34.i / i
+                                                                     :same-as s15.i)
+                                                        :ARG1 (s34.t5 / thing
+                                                                      :ARG1-of (s34.v / vote-01
+                                                                                      :ARG0 (s34.y / you)))
+                                                        :source (s34.b / bit
+                                                                       :ARG1-of (s34.r / remain-01)))
+                                           :condition (s34.a2 / and
+                                                              :op1 (s34.m / mark-02
+                                                                          :ARG0 s34.y
+                                                                          :ARG1 (s34.c2 / choose-01
+                                                                                        :ARG0 s34.y
+                                                                                        :location (s34.o / one
+                                                                                                         :ARG1-of (s34.i2 / include-91
+                                                                                                                          :ARG2 (s34.t4 / they
+                                                                                                                                        :same-as s33.f)))))
+                                                              :op2 (s34.r2 / remove-01
+                                                                           :ARG1 (s34.l / list-01
+                                                                                        :ARG1 (s34.c / candidate)
+                                                                                        :same-as s33.l)
+                                                                           :time (s34.t3 / then)))
+                                           :polarity "-")))
+   :snt35 (s35.a / and
+                 :op2 (s35.b3 / be-located-at-91
+                              :ARG1 (s35.v / value
+                                           :ARG1-of (s35.e2 / encrypt-01)
+                                           :mod (s35.f2 / form
+                                                        :ARG1-of (s35.r / resemble-01))
+                                           :mod (s35.t / this
+                                                       :ARG2 (s35.b2 / barcode
+                                                                     :ARG1-of (s35.r2 / right-04)
+                                                                     :mod (s35.d / dimension
+                                                                                 :quant "2"))))
+                              :ARG2 (s35.f / form
+                                           :mod (s35.b / ballot)
+                                           :mod (s35.e / each))))
+   :snt36 (s36.a / and
+                 :concession-of (s36.c2 / complicate-01
+                                        :ARG1 (s36.v / vote-01
+                                                     :ARG1 (s36.f / form
+                                                                  :ARG1-of (s36.i / include-91
+                                                                                  :ARG2 (s36.f2 / form
+                                                                                                :mod (s36.t2 / this)
+                                                                                                :same-as s33.f))))
+                                        :polarity "-")
+                 :op2 (s36.g / go-on-15
+                             :ARG1 (s36.c3 / cryptography
+                                           :ARG1-of (s36.c / complicate-01)
+                                           :mod (s36.s / some))
+                             :location (s36.t / there)))
+   :snt37 (s37.c / cause-01
+                 :ARG1 (s37.a2 / and
+                               :op1 (s37.p2 / possible-01
+                                            :ARG1 (s37.l / let-01
+                                                         :ARG0 (s37.w / we)
+                                                         :ARG1 (s37.d / do-02
+                                                                      :ARG0 (s37.c3 / computer)
+                                                                      :ARG1 (s37.c4 / cryptography
+                                                                                    :ARG1-of (s37.c2 / complicate-01)
+                                                                                    :mod (s37.a / all))
+                                                                      :ARG2 s37.w)))
+                               :op2 (s37.u / use-01
+                                           :ARG0 s37.w
+                                           :ARG1 (s37.p / paper)
+                                           :ARG2 (s37.v / verify-01
+                                                        :ARG0 s37.w)
+                                           :time (s37.t / then))))
+   :snt38 (s38.i / infer-01
+                 :ARG1 (s38.t / thing
+                              :domain (s38.t2 / this)
+                              :manner-of (s38.v / vote-01
+                                                :ARG0 (s38.y / you))))
+   :snt39 (s39.a2 / and
+                  :op1 (s39.g / get-01
+                              :ARG0 (s39.y / you)
+                              :ARG1 (s39.f / form
+                                           :ARG1-of (s39.i / include-91
+                                                           :ARG2 (s39.f2 / form
+                                                                         :mod (s39.b / ballot)
+                                                                         :mod (s39.t3 / this)
+                                                                         :same-as s33.f))
+                                           :mod s39.b)
+                              :manner (s39.r / random))
+                  :op2 (s39.g2 / go-01
+                               :ARG1 s39.y
+                               :ARG4 (s39.b2 / booth
+                                             :location-of (s39.v / vote-01))
+                               :time (s39.t2 / then))
+                  :op3 (s39.m / mark-02
+                              :ARG0 s39.y
+                              :ARG1 (s39.c / choose-01
+                                           :ARG0 s39.y))
+                  :op4 (s39.t / tear-01
+                              :ARG0 s39.y
+                              :ARG1 (s39.p / perform-02)
+                              :mod (s39.a / along)))
+   :snt40 (s40.a / and
+                 :op2 (s40.s / shred-01
+                             :ARG0 (s40.y / you)
+                             :ARG1 (s40.t / thing
+                                          :ARG2-of (s40.l / list-01
+                                                          :ARG1 (s40.c / candidate))
+                                          :same-as s33.l)))
+   :snt41 (s41.a / and
+                 :op2 (s41.r / remain-01
+                             :ARG1 (s41.b / bit
+                                          :ARG1-of (s41.m / mark-02
+                                                          :ARG0 (s41.y / you))))
+                 :op3 (s41.v / vote-01
+                             :ARG0 s41.y
+                             :ARG1 (s41.t / this
+                                          :same-as s41.r)
+                             :ARG1-of (s41.e / encrypt-01)))
+   :snt42 (s42.c / cause-01
+                 :ARG1 (s42.l / let-01
+                              :ARG0 (s42.y / you)
+                              :ARG1 (s42.s / scan-01
+                                           :ARG0 (s42.p / person
+                                                        :ARG0-of (s42.w / work-01
+                                                                        :ARG1 (s42.s2 / station
+                                                                                      :mod (s42.p2 / poll-01))))
+                                           :ARG1 (s42.v / vote-01
+                                                        :ARG0 s42.y
+                                                        :ARG1-of (s42.e / encrypt-01)
+                                                        :same-as s41.y))))
+   :snt43 (s43.a / and
+                 :op2 (s43.c / cause-01
+                             :ARG0 (s43.e2 / encrypt-01
+                                           :ARG1 (s43.i2 / it
+                                                         :same-as s41.y))
+                             :ARG1 (s43.p / possible-01
+                                          :ARG1 (s43.a2 / and
+                                                        :op1 (s43.s3 / submit-01
+                                                                     :ARG1 s43.i2)
+                                                        :op2 (s43.s2 / store-01
+                                                                     :ARG1 s43.i2)
+                                                        :op3 (s43.c2 / count-01
+                                                                     :ARG1 s43.i2
+                                                                     :manner (s43.e / Central))
+                                                        :op4 (s43.d / display-01
+                                                                    :ARG1 s43.i2
+                                                                    :ARG1-of (s43.s / see-01
+                                                                                    :ARG0 (s43.a3 / anyone
+                                                                                                  :ARG2-of (s43.i / include-91
+                                                                                                                  :ARG1 (s43.y / you))))
+                                                                    :ARG2 (s43.w / website))))))
+   :snt44 (s44.c / cause-01
+                 :ARG1 (s44.t / take-01
+                              :ARG0 (s44.y / you)
+                              :ARG1 (s44.v / vote-01
+                                           :ARG1-of (s44.e / encrypt-01)
+                                           :mod (s44.t2 / this)
+                                           :same-as s41.y)
+                              :ARG3 (s44.h / home)
+                              :prep-as (s44.r / receipt
+                                              :poss s44.y)))
+   :snt45 (s45.a2 / and
+                  :op2 (s45.p / possible-01
+                              :ARG1 (s45.c / check-01
+                                           :ARG0 (s45.y / you)
+                                           :ARG1 (s45.c4 / count-01
+                                                         :ARG1 (s45.v / vote-01
+                                                                      :ARG0 s45.y))
+                                           :manner (s45.c3 / compare-01
+                                                           :ARG1 (s45.r / receipt
+                                                                        :poss s45.y
+                                                                        :same-as s44.r)
+                                                           :ARG2 (s45.v2 / vote-01
+                                                                         :medium (s45.w / website
+                                                                                        :same-as s43.w))))
+                              :time (s45.a / after
+                                           :op1 (s45.c2 / close-01
+                                                        :ARG1 (s45.e / elect-01)))))
+   :snt46 (s46.a / and
+                 :op2 (s46.r / remember-01
+                             :ARG0 (s46.y / you)
+                             :ARG1 (s46.e2 / encrypt-01
+                                           :ARG0-of (s46.c / cause-01
+                                                           :ARG1 (s46.p / possible-01
+                                                                        :ARG1 (s46.f / find-out-03
+                                                                                     :ARG0 (s46.o / official
+                                                                                                  :mod (s46.e / elect-01))
+                                                                                     :ARG1 (s46.t / thing
+                                                                                                  :manner-of (s46.v3 / vote-01
+                                                                                                                     :ARG0 s46.y)))
+                                                                        :polarity "-"))
+                                           :ARG1 (s46.v / vote-01)
+                                           :time (s46.f2 / from
+                                                         :op1 (s46.l / leave-11
+                                                                     :ARG0 s46.y
+                                                                     :ARG1 (s46.b / booth
+                                                                                  :mod (s46.v2 / vote-01)
+                                                                                  :same-as s39.b2))))
+                             :mode "imperative")
+                 :rel (s46.w / want-01
+                             :ARG0 s46.o
+                             :ARG1 s46.f))
+   :snt47 (s47.p / possible-01
+                 :ARG1 (s47.w / want-01
+                              :ARG0 (s47.g2 / government-organization
+                                            :ARG0-of (s47.g / govern-01))
+                              :ARG1 (s47.f / find-out-03
+                                           :ARG0 s47.g2
+                                           :ARG1 (s47.t / thing
+                                                        :manner-of (s47.v / vote-01
+                                                                          :ARG0 (s47.y / you)))))
+                 :condition s47.w
+                 :polarity "-")
+   :snt48 (s48.p / possible-01
+                 :ARG1 (s48.a / and
+                              :op1 (s48.b / break-02
+                                          :ARG0 (s48.h / hacker))
+                              :op2 (s48.f / find-out-03
+                                          :ARG0 s48.h
+                                          :ARG1 (s48.t / thing
+                                                       :ARG1-of (s48.v / vote-01
+                                                                       :ARG0 (s48.y / you)))))
+                 :polarity "-")
+   :snt49 (s49.p2 / possible-01
+                  :ARG1 (s49.a / and
+                               :op1 (s49.b / break-02
+                                           :ARG0 (s49.p / person
+                                                        :ARG0-of (s49.h / hack-04)))
+                               :op2 (s49.c2 / change-01
+                                            :ARG0 s49.p
+                                            :ARG1 (s49.v / vote-01
+                                                         :ARG0 (s49.y / you))))
+                  :ARG1-of (s49.c / cause-01
+                                  :ARG0 (s49.m / match-01
+                                               :ARG1 s49.v
+                                               :ARG2 (s49.r / receipt
+                                                            :poss s49.y)
+                                               :time (s49.t / then)
+                                               :polarity "-"))
+                  :polarity "-")
+   :snt50 (s50.p / possible-01
+                 :ARG1 (s50.m / miss-01
+                              :ARG1 (s50.v / vote-01))
+                 :ARG1-of (s50.c / cause-01
+                                 :ARG0 (s50.f / find-01
+                                              :ARG0 (s50.y / you)
+                                              :ARG1 (s50.v2 / vote-01)
+                                              :time (s50.t / then)
+                                              :time (s50.l / look-01
+                                                           :ARG0 s50.y
+                                                           :ARG1 s50.v2)
+                                              :polarity "-"))
+                 :polarity "-")
+   :snt51 (s51.c / contrast-01
+                 :ARG2 (s51.s / stop-01
+                              :ARG1 (s51.m / magic
+                                           :mod (s51.e / elect-01))
+                              :time (s51.t / there)
+                              :polarity "-"))
+   :snt52 (s52.i / instead-of-91
+                 :ARG1 (s52.w / want-01
+                              :ARG0 (s52.w3 / we)
+                              :ARG1 (s52.m / make-02
+                                           :ARG0 s52.w3
+                                           :ARG1 (s52.h / have-degree-91
+                                                        :ARG1 (s52.p3 / process-02
+                                                                      :mod (s52.w4 / whole))
+                                                        :ARG2 (s52.t / transparent)
+                                                        :ARG3 (s52.s / so)
+                                                        :ARG6 (s52.p2 / possible-01
+                                                                      :ARG1 (s52.a3 / and
+                                                                                    :op1 (s52.d2 / download-01
+                                                                                                 :ARG0 (s52.a4 / anyone
+                                                                                                               :ARG0-of (s52.w2 / want-01))
+                                                                                                 :ARG1 (s52.d / data
+                                                                                                              :mod (s52.e / elect-01)
+                                                                                                              :mod (s52.a / all)))
+                                                                                    :op2 s52.a4
+                                                                                    :op2 (s52.c / count-01
+                                                                                                :ARG0 s52.a4))))))
+                 :rel (s52.a2 / and
+                              :op1 (s52.m2 / media
+                                           :mod (s52.n / news))
+                              :op2 (s52.p / person
+                                          :ARG0-of (s52.o / observe-01)
+                                          :mod (s52.i2 / international))))
+   :snt53 (s53.p / possible-01
+                 :ARG1 (s53.c / check-01
+                              :ARG0 (s53.t / they
+                                           :same-as s52.a2)
+                              :ARG1 (s53.c3 / count-01
+                                            :ARG1 (s53.v / vote-01
+                                                         :mod (s53.a / all))
+                                            :ARG1-of (s53.c2 / correct-02))))
+   :snt54 (s54.p / possible-01
+                 :ARG1 (s54.c / check-01
+                              :ARG0 (s54.t / they
+                                           :same-as s52.a2)
+                              :ARG1 (s54.c2 / correct-02
+                                            :ARG1 (s54.t2 / thing
+                                                          :ARG1-of (s54.a / announce-01)
+                                                          :ARG2-of (s54.r / result-01
+                                                                          :ARG1 (s54.e / elect-01
+                                                                                       :same-as s45.e))))))
+   :snt55 (s55.a / and
+                 :op2 (s55.e / elect-01
+                             :ARG0 (s55.p / person)
+                             :domain (s55.t / this)))
+   :snt56 (s56.c / cause-01
+                 :ARG1 (s56.s / step-01
+                              :ARG2 (s56.e / elect-01
+                                           :ARG1-of (s56.v / verify-01
+                                                           :ARG1-of (s56.p / possible-01))
+                                           :mod (s56.t / transparent))
+                              :ARG3 (s56.d / democracy
+                                           :poss (s56.w / we))
+                              :mod (s56.n / next)))
+   :snt57 (s57.t / thank-01
+                 :ARG1 (s57.y / you
+                              :same-as s15.i)))
+

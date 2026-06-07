@@ -1,0 +1,431 @@
+# ::id doc-1026
+# ::doc_file doc-1026
+# ::tok http : / / www . ted . com / talks / sanjay_dastoor_a_skateboard_with_a_boost< / url> <next_sent> Today I 'm going to show you an electric vehicle that weighs less than a bicycle , that you can carry with you anywhere , that you can charge off a normal wall outlet in 15 minutes , and you can run it for 1,000 kilometers on about a dollar of electricity . <next_sent> But when I say the word electric vehicle , people think about vehicles . <next_sent> They think about cars and motorcycles and bicycles , and the vehicles that you use every day . <next_sent> But if you come about it from a different perspective , you can create some more interesting , more novel concepts . <next_sent> So we built something . <next_sent> I 've got some of the pieces in my pocket here . <next_sent> So this is the motor . <next_sent> This motor has enough power to take you up the hills of San Francisco at about 20 miles per hour , about 30 kilometers an hour , and this battery , this battery right here has about six miles of range , or 10 kilometers , which is enough to cover about half of the car trips in the U.S. alone . <next_sent> But the best part about these components is that we bought them at a toy store . <next_sent> These are from remote control airplanes . <next_sent> And the performance of these things has gotten so good that if you think about vehicles a little bit differently , you can really change things . <next_sent> So today we 're going to show you one example of how you can use this . <next_sent> Pay attention to not only how fun this thing is , but also how the portability that comes with this can totally change the way you interact with a city like San Francisco . <next_sent> [ 6 Mile Range ] [ Top Speed Near 20mph ] [ Uphill Climbing ] [ Regenerative Braking ] So we 're going to show you what this thing can do . <next_sent> It 's really maneuverable . <next_sent> You have a hand - held remote , so you can pretty easily control acceleration , braking , go in reverse if you like , also have braking . <next_sent> It 's incredible just how light this thing is . <next_sent> I mean , this is something you can pick up and carry with you anywhere you go . <next_sent> So I 'll leave you with one of the most compelling facts about this technology and these kinds of vehicles . <next_sent> This uses 20 times less energy for every mile or kilometer that you travel than a car , which means not only is this thing fast to charge and really cheap to build , but it also reduces the footprint of your energy use in terms of your transportation . <next_sent> So instead of looking at large amounts of energy needed for each person in this room to get around in a city , now you can look at much smaller amounts and more sustainable transportation . <next_sent> So next time you think about a vehicle , I hope , like us , you 're thinking about something new . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :ARG3-of (s1.h / hyperlink-91
+                              :ARG4 (s1.c / city
+                                          :name (s1.n / name
+                                                      :op1 "ossobuco"))))
+   :snt2 (s2.s / show-01
+               :ARG0 (s2.i / i)
+               :ARG1 (s2.v / vehicle
+                           :ARG1-of (s2.w2 / weigh-01
+                                           :ARG3 (s2.l / less-than
+                                                       :op1 (s2.b / bicycle)))
+                           :ARG1-of (s2.c / carry-01
+                                          :ARG0 (s2.y / you)
+                                          :ARG1-of (s2.p / possible-01)
+                                          :location (s2.a4 / anywhere))
+                           :mod (s2.e / electricity))
+               :ARG2 s2.y
+               :rel (s2.a3 / and
+                           :op1 s2.w2
+                           :op2 (s2.c2 / charge-03
+                                       :ARG0 s2.y
+                                       :ARG1 (s2.o / outlet
+                                                   :ARG1-of (s2.n / normal-02)
+                                                   :location (s2.w / wall))
+                                       :time (s2.a2 / after
+                                                    :quant (s2.t / temporal-quantity
+                                                                 :unit (s2.m / minute)
+                                                                 :quant "15")
+                                                    :op1 (s2.n2 / now)))
+                           :op3 (s2.p2 / possible-01
+                                       :ARG1 (s2.r / run-01
+                                                   :ARG0 s2.y
+                                                   :ARG1 s2.v
+                                                   :duration (s2.d / distance-quantity
+                                                                   :unit (s2.k / kilometer)
+                                                                   :quant "1000")
+                                                   :manner (s2.e2 / electricity
+                                                                  :quant (s2.a / about
+                                                                               :op1 (s2.m2 / monetary-quantity
+                                                                                           :unit (s2.d2 / dollar)
+                                                                                           :quant "1"))))))
+               :time (s2.t2 / today)
+               :rel "1")
+   :snt3 (s3.c / contrast-01
+               :ARG2 (s3.t / think-01
+                           :ARG0 (s3.p / person)
+                           :ARG1 (s3.v2 / vehicle)
+                           :condition (s3.s / say-01
+                                            :ARG0 (s3.i / i
+                                                        :same-as s2.i)
+                                            :ARG1 (s3.w / word-01
+                                                        :ARG1 (s3.v / vehicle
+                                                                    :mod (s3.e / electric))))))
+   :snt4 (s4.t2 / think-01
+                :ARG0 (s4.t / they
+                            :same-as s3.p)
+                :ARG1 (s4.a / and
+                            :op1 (s4.c / car)
+                            :op2 (s4.m / motorcycle)
+                            :op3 (s4.b / bicycle)
+                            :op4 (s4.v / vehicle
+                                       :ARG1-of (s4.u / use-01
+                                                      :ARG0 (s4.y / you)
+                                                      :frequency (s4.d / day
+                                                                       :mod (s4.e / every))))))
+   :snt5 (s5.c3 / contrast-01
+                :ARG2 (s5.p2 / possible-01
+                             :ARG1 (s5.c4 / create-01
+                                          :ARG0 (s5.y / you)
+                                          :ARG1 (s5.c2 / concept
+                                                       :quant (s5.s / some)
+                                                       :ARG1-of (s5.h2 / have-degree-91
+                                                                       :ARG2 (s5.n / novel)
+                                                                       :ARG3 (s5.m / more))
+                                                       :ARG1-of (s5.i / interest-01)))
+                             :condition (s5.c / come-about-06
+                                              :ARG0 s5.y
+                                              :ARG1 (s5.i2 / it)
+                                              :manner (s5.p / perspective
+                                                            :ARG1-of (s5.d / differ-02))))
+                :rel (s5.h / have-degree-91
+                           :ARG2 s5.i
+                           :ARG3 s5.m
+                           :ARG3 (s5.m2 / more)))
+   :snt6 (s6.i / infer-01
+               :ARG1 (s6.b / build-01
+                           :ARG0 (s6.w / we)
+                           :ARG1 (s6.s / something)))
+   :snt7 (s7.i2 / in-pocket-03
+                :ARG0 (s7.i / i
+                            :same-as s2.i)
+                :ARG1 (s7.p / piece
+                            :quant (s7.s / some)
+                            :ARG1-of (s7.i3 / include-91
+                                            :ARG2 (s7.p2 / piece)))
+                :location (s7.h / here))
+   :snt8 (s8.i / infer-01
+               :ARG1 (s8.m / motor
+                           :domain (s8.t / this)))
+   :snt9 (s9.a7 / and
+                :op1 (s9.h / have-03
+                           :ARG0 (s9.m3 / motor
+                                        :mod (s9.t3 / this)
+                                        :same-as s8.m)
+                           :ARG1 (s9.p / power-01
+                                       :ARG1-of (s9.h3 / have-quant-91
+                                                       :ARG3 (s9.e / enough)
+                                                       :ARG6 (s9.t / take-01
+                                                                   :ARG0 s9.m3
+                                                                   :ARG1 (s9.y / you)
+                                                                   :direction (s9.u / up)
+                                                                   :manner (s9.a6 / and
+                                                                                  :op1 (s9.a / about
+                                                                                             :op1 (s9.d / distance-quantity
+                                                                                                        :unit (s9.m / mile)
+                                                                                                        :quant "20")
+                                                                                             :op1 (s9.t2 / temporal-quantity
+                                                                                                         :unit (s9.h7 / hour)
+                                                                                                         :quant "1"))
+                                                                                  :op2 (s9.a2 / about
+                                                                                              :op1 (s9.d2 / distance-quantity
+                                                                                                          :unit (s9.k / kilometer)
+                                                                                                          :quant "30")))
+                                                                   :path (s9.h6 / hill
+                                                                                :mod (s9.c2 / city
+                                                                                            :name (s9.n / name
+                                                                                                        :op1 "San"
+                                                                                                        :op2 "Francisco")))))))
+                :op2 (s9.h2 / have-03
+                            :ARG0 (s9.b / battery
+                                        :location (s9.h5 / here
+                                                         :mod (s9.r2 / right))
+                                        :mod (s9.t4 / this))
+                            :ARG1 (s9.r / range-01
+                                        :quant (s9.o / or
+                                                     :op1 (s9.a3 / about
+                                                                 :op1 (s9.d3 / distance-quantity
+                                                                             :unit (s9.m2 / mile)
+                                                                             :quant "6"))
+                                                     :op2 (s9.d4 / distance-quantity
+                                                                 :unit (s9.k2 / kilometer)
+                                                                 :quant "10"))
+                                        :ARG1 s9.b
+                                        :ARG1-of (s9.h4 / have-quant-91
+                                                        :ARG3 (s9.e2 / enough)
+                                                        :ARG6 (s9.c4 / cover-01
+                                                                     :ARG0 s9.b
+                                                                     :ARG1 (s9.t5 / trip-03
+                                                                                  :ARG1-of (s9.i / include-91
+                                                                                                 :ARG2 (s9.t6 / trip-03
+                                                                                                              :location (s9.c3 / country
+                                                                                                                               :name (s9.n2 / name
+                                                                                                                                            :op1 "U.S.")
+                                                                                                                               :mod (s9.a5 / alone))
+                                                                                                              :mod (s9.c / car))
+                                                                                                 :ARG3 (s9.a4 / about
+                                                                                                              :op1 "1/2")))))
+                                        :ARG2 s9.a3)))
+   :snt10 (s10.c2 / contrast-01
+                  :ARG2 (s10.p / part
+                               :ARG1-of (s10.h / have-degree-91
+                                               :ARG2 (s10.g / good-02
+                                                            :ARG1 s10.p)
+                                               :ARG3 (s10.m / most))
+                               :domain (s10.b / buy-01
+                                              :ARG0 (s10.w / we
+                                                           :same-as s6.w)
+                                              :ARG1 (s10.c / component
+                                                           :mod (s10.t / this))
+                                              :location (s10.s / store
+                                                               :mod (s10.t2 / toy)))
+                               :topic s10.c))
+   :snt11 (s11.t / this
+                 :source (s11.a / airplane
+                                :ARG0-of (s11.c / control-01
+                                                :mod (s11.r / remote)))
+                 :same-as s10.c)
+   :snt12 (s12.a / and
+                 :op2 (s12.g / get-03
+                             :ARG1 (s12.p / perform-02
+                                          :ARG0 (s12.t / thing
+                                                       :mod (s12.t4 / this)
+                                                       :same-as s11.a))
+                             :ARG2 (s12.h / have-degree-91
+                                          :ARG1 s12.p
+                                          :ARG2 (s12.g2 / good-02
+                                                        :ARG1 s12.p)
+                                          :ARG3 (s12.s / so)
+                                          :ARG6 (s12.p2 / possible-01
+                                                        :ARG1 (s12.c / change-01
+                                                                     :ARG0 (s12.y / you)
+                                                                     :ARG1 (s12.t2 / thing)
+                                                                     :ARG1-of (s12.r / real-04))
+                                                        :condition (s12.t3 / think-01
+                                                                           :ARG0 s12.y
+                                                                           :ARG1 (s12.v / vehicle)
+                                                                           :manner (s12.d / differ-02
+                                                                                          :ARG1 s12.v
+                                                                                          :degree (s12.b / bit
+                                                                                                         :mod (s12.l / little))))))))
+   :snt13 (s13.c / cause-01
+                 :ARG1 (s13.s / show-01
+                              :ARG0 (s13.w / we
+                                           :same-as s6.w)
+                              :ARG1 (s13.t / thing
+                                           :ARG0-of (s13.e / exemplify-01
+                                                           :ARG1 (s13.m / manner
+                                                                        :manner-of (s13.u / use-01
+                                                                                          :ARG0 (s13.y / you)
+                                                                                          :ARG1 (s13.t2 / this)
+                                                                                          :ARG1-of (s13.p / possible-01)))
+                                                           :quant "1"))
+                              :ARG2 s13.y
+                              :time (s13.t3 / today
+                                            :same-as s2.t2)))
+   :snt14 (s14.a3 / attend-02
+                  :ARG0 (s14.y / you)
+                  :ARG1 (s14.a2 / and
+                                :op1 (s14.f / fun-01
+                                            :ARG1 (s14.t / thing
+                                                         :mod (s14.t2 / this)
+                                                         :same-as s13.t2))
+                                :op2 (s14.p2 / possible-01
+                                             :ARG0-of (s14.c / change-01
+                                                             :ARG1 (s14.w / way
+                                                                          :manner-of (s14.i / interact-01
+                                                                                            :ARG0 s14.y
+                                                                                            :ARG1 (s14.c2 / city
+                                                                                                          :example (s14.c3 / city
+                                                                                                                           :name (s14.n / name
+                                                                                                                                        :op1 "San"
+                                                                                                                                        :op2 "Francisco")
+                                                                                                                           :same-as s9.c2))))
+                                                             :ARG1-of (s14.p3 / possible-01)
+                                                             :degree (s14.t3 / total))
+                                             :ARG1 (s14.p / port
+                                                          :ARG1-of (s14.c4 / come-03
+                                                                           :ARG2 s14.t))
+                                             :mod (s14.a / also)))
+                  :mode "imperative")
+   :snt15 (s15.a / and
+                 :ARG0-of (s15.c / cause-01
+                                 :ARG1 (s15.s / show-01
+                                              :ARG0 (s15.w / we
+                                                           :same-as s6.w)
+                                              :ARG1 (s15.t / thing
+                                                           :ARG1-of (s15.d3 / do-02
+                                                                            :ARG0 (s15.t2 / thing
+                                                                                          :mod (s15.t3 / this)
+                                                                                          :same-as s13.t2)
+                                                                            :ARG1-of (s15.p / possible-01)))
+                                              :ARG2 (s15.y / you)))
+                 :op1 (s15.s2 / speed-01
+                              :ARG1-of (s15.n / near-02
+                                              :ARG2 (s15.d2 / distance-quantity
+                                                            :unit (s15.m2 / mile-per-hour)
+                                                            :quant "20"))
+                              :mod (s15.t4 / top)
+                              :op2-of s15.a)
+                 :op3 (s15.b / brake-01
+                             :ARG0-of (s15.r2 / regenerate-01))
+                 :rel (s15.r / range-01
+                             :ARG2 (s15.d / distance-quantity
+                                          :unit (s15.m / mile)
+                                          :quant "6"))
+                 :rel (s15.c2 / climb-01
+                              :mod (s15.u / upper)))
+   :snt16 (s16.p / possible-01
+                 :ARG1 (s16.m / maneuver-01
+                              :ARG1 (s16.i / it
+                                           :same-as s13.t2)
+                              :degree (s16.r / really)))
+   :snt17 (s17.h2 / have-03
+                  :ARG0 (s17.y / you)
+                  :ARG0-of (s17.c / cause-01
+                                  :ARG1 (s17.p / possible-01))
+                  :ARG1 (s17.r / remote
+                               :ARG1-of (s17.h4 / hold-01
+                                                :ARG0 (s17.h / hand)))
+                  :rel (s17.c2 / control-01
+                               :ARG0 s17.y
+                               :ARG1 (s17.a3 / and
+                                             :op1 (s17.a / accelerate-01)
+                                             :op2 (s17.b / brake-01)
+                                             :op3 (s17.g / go-01
+                                                         :ARG1 s17.y
+                                                         :condition (s17.l / like-02
+                                                                           :ARG0 s17.y
+                                                                           :ARG1 s17.g)
+                                                         :direction (s17.r2 / reverse-01))
+                                             :op4 (s17.h3 / have-03
+                                                          :ARG0 s17.y
+                                                          :ARG1 (s17.b2 / brake-01)
+                                                          :mod (s17.a2 / also)))
+                               :ARG1-of (s17.e / easy-05
+                                               :degree (s17.p2 / pretty))))
+   :snt18 (s18.i / incredible
+                 :domain (s18.t / thing
+                                :degree-of (s18.l / light-06
+                                                  :ARG1 (s18.t2 / thing
+                                                                :mod (s18.t3 / this)
+                                                                :same-as s13.t2)
+                                                  :mod (s18.j / just))))
+   :snt19 (s19.m / mean-01
+                 :ARG0 (s19.i / i
+                              :same-as s2.i)
+                 :ARG2 (s19.s / something
+                              :ARG1-of (s19.p / pick-up-04
+                                              :ARG0 (s19.y / you)
+                                              :ARG1-of (s19.p2 / possible-01
+                                                               :ARG1 (s19.c / carry-01
+                                                                            :ARG0 s19.y
+                                                                            :ARG1 s19.s
+                                                                            :destination (s19.a / anywhere
+                                                                                                :ARG4-of (s19.g / go-02
+                                                                                                                :ARG0 s19.y)))))
+                              :domain (s19.t / this
+                                             :same-as s13.t2)))
+   :snt20 (s20.c / cause-01
+                 :ARG1 (s20.l / leave-02
+                              :ARG0 (s20.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s20.f / fact
+                                           :ARG1-of (s20.i2 / include-91
+                                                            :ARG2 (s20.f2 / fact
+                                                                          :ARG1-of (s20.h / have-degree-91
+                                                                                          :ARG2 (s20.c2 / compel-01
+                                                                                                        :ARG0 s20.f2)
+                                                                                          :ARG3 (s20.m / most))))
+                                           :topic (s20.a / and
+                                                         :op1 (s20.t / technology
+                                                                     :mod (s20.t2 / this))
+                                                         :op2 (s20.v / vehicle
+                                                                     :mod (s20.k / kind
+                                                                                 :mod (s20.t3 / this)))))
+                              :ARG2 (s20.y / you)))
+   :snt21 (s21.m / mean-01
+                 :ARG1 (s21.u / use-01
+                              :ARG0 (s21.t2 / this
+                                            :same-as s13.t2)
+                              :ARG1 (s21.e / energy
+                                           :ARG1-of (s21.h / have-quant-91
+                                                           :ARG3 (s21.t3 / times
+                                                                         :quant "20")
+                                                           :ARG4 (s21.e2 / energy)
+                                                           :ARG4 (s21.c / car)))
+                              :frequency (s21.r / rate-entity-91
+                                                :ARG2 (s21.o / or
+                                                             :extent-of (s21.t5 / travel-01
+                                                                                :ARG0 (s21.y / you))
+                                                             :op1 (s21.d / distance-quantity
+                                                                         :unit (s21.m2 / mile)
+                                                                         :quant "1")
+                                                             :op2 (s21.d2 / distance-quantity
+                                                                          :unit (s21.k / kilometer)
+                                                                          :quant "1"))))
+                 :ARG2 (s21.a2 / and
+                               :op1 (s21.f / fast-02
+                                           :purpose (s21.c2 / charge-01
+                                                            :ARG0 (s21.t / thing
+                                                                         :mod s21.t2
+                                                                         :ARG1-of s21.f
+                                                                         :same-as s13.t2)))
+                               :op2 (s21.c3 / cheap-02
+                                            :ARG1 (s21.b / build-01
+                                                         :ARG1 s21.t)
+                                            :degree (s21.r2 / really))
+                               :op3 (s21.r3 / reduce-01
+                                            :ARG0 s21.t
+                                            :ARG1 (s21.f2 / footprint
+                                                          :poss (s21.u2 / use-01
+                                                                        :ARG0 s21.y
+                                                                        :ARG1 (s21.e3 / energy)))
+                                            :mod (s21.a / also)
+                                            :topic (s21.t4 / transport-01
+                                                           :ARG0 s21.y))))
+   :snt22 (s22.c / cause-01
+                 :ARG1 (s22.p2 / possible-01
+                               :ARG1 (s22.l3 / look-01
+                                             :ARG0 (s22.y / you)
+                                             :ARG1 (s22.e3 / energy
+                                                           :ARG1 (s22.a2 / and
+                                                                         :op2 (s22.t2 / transport-01
+                                                                                      :ARG1-of (s22.h2 / have-degree-91
+                                                                                                       :ARG2 (s22.s2 / sustain-01
+                                                                                                                     :ARG1 s22.t2
+                                                                                                                     :ARG1-of (s22.p3 / possible-01))
+                                                                                                       :ARG3 (s22.m2 / more))))
+                                                           :op1-of s22.a2
+                                                           :ARG1-of (s22.h / have-degree-91
+                                                                           :ARG2 (s22.s / small)
+                                                                           :ARG3 (s22.m / more
+                                                                                        :quant (s22.m3 / much)))))
+                               :ARG1-of (s22.i / instead-of-91
+                                               :ARG2 (s22.l2 / look-01
+                                                             :ARG0 s22.y
+                                                             :ARG1 (s22.e2 / energy
+                                                                           :quant (s22.a / amount
+                                                                                         :ARG1-of (s22.n / need-01
+                                                                                                         :purpose (s22.g / get-05
+                                                                                                                         :ARG1 (s22.p / person
+                                                                                                                                      :location (s22.r / room
+                                                                                                                                                       :mod (s22.t / this))
+                                                                                                                                      :mod (s22.e / each))
+                                                                                                                         :ARG2 (s22.a3 / around
+                                                                                                                                       :location (s22.c2 / city))))
+                                                                                         :mod (s22.l / large)))))
+                               :time (s22.n2 / now)))
+   :snt23 (s23.i2 / infer-01
+                  :ARG1 (s23.h / hope-01
+                               :ARG0 (s23.i / i
+                                            :same-as s2.i)
+                               :ARG1 (s23.t2 / think-01
+                                             :ARG0 (s23.y / you)
+                                             :ARG1 (s23.s / something
+                                                          :ARG1-of (s23.n / new-01))
+                                             :ARG1-of (s23.r / resemble-01
+                                                             :ARG2 (s23.w / we
+                                                                          :same-as s6.w))
+                                             :time (s23.t / think-01
+                                                          :ARG0 s23.y
+                                                          :ARG1 (s23.v / vehicle)
+                                                          :mod (s23.n2 / next)))))
+   :snt24 (s24.t / thank-01
+                 :ARG1 (s24.y / you
+                              :same-as s2.i)))
+

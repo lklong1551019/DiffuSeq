@@ -1,0 +1,451 @@
+# ::id doc-446
+# ::doc_file doc-446
+# ::tok http : / / www . ted . com / talks / taylor_wilson_yup_i_built_a_nuclear_fusion_reactor< / url> <next_sent> So my name is Taylor Wilson . <next_sent> I am 17 years old and I am a nuclear physicist , which may be a little hard to believe , but I am . <next_sent> And I would like to make the case that nuclear fusion will be that point , that the bridge that T. Boone Pickens talked about will get us to . <next_sent> So nuclear fusion is our energy future . <next_sent> And the second point , making the case that kids can really change the world . <next_sent> So you may ask -- You may ask me , well how do you know what our energy future is ? <next_sent> Well I built a fusion reactor when I was 14 years old . <next_sent> That is the inside of my nuclear fusion reactor . <next_sent> I started building this project when I was about 12 or 13 years old . <next_sent> I decided I wanted to make a star . <next_sent> Now most of you are probably saying , well there 's no such thing as nuclear fusion . <next_sent> I do n't see any nuclear power plants with fusion energy . <next_sent> Well it does n't break even . <next_sent> It does n't produce more energy out than I put in , but it still does some pretty cool stuff . <next_sent> And I assembled this in my garage , and it now lives in the physics department of the University of Nevada , Reno . <next_sent> And it slams together deuterium , which is just hydrogen with an extra neutron in it . <next_sent> So this is similar to the reaction of the proton chain that 's going on inside the Sun . <next_sent> And I 'm slamming it together so hard that that hydrogen fuses together , and in the process it has some byproducts , and I utilize those byproducts . <next_sent> So this previous year , I won the Intel International Science and Engineering Fair . <next_sent> I developed a detector that replaces the current detectors that Homeland Security has . <next_sent> For hundreds of dollars , I 've developed a system that exceeds the sensitivity of detectors that are hundreds of thousands of dollars . <next_sent> I built this in my garage . <next_sent> And I 've developed a system to produce medical isotopes . <next_sent> Instead of requiring multi - million - dollar facilities I 've developed a device that , on a very small scale , can produce these isotopes . <next_sent> So that 's my fusion reactor in the background there . <next_sent> That is me at the control panel of my fusion reactor . <next_sent> Oh , by the way , I make yellowcake in my garage , so my nuclear program is as advanced as the Iranians . <next_sent> So maybe I do n't want to admit to that . <next_sent> This is me at CERN in Geneva , Switzerland , which is the preeminent particle physics laboratory in the world . <next_sent> And this is me with President Obama , showing him my Homeland Security research . <next_sent> So in about seven years of doing nuclear research , I started out with a dream to make a " star in a jar , " a star in my garage , and I ended up meeting the president and developing things that I think can change the world , and I think other kids can too . <next_sent> So thank you very much .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01))
+   :snt2 (s2.n2 / name-01
+                :ARG1 (s2.i / i)
+                :ARG2 (s2.p / person
+                            :name (s2.n / name
+                                        :op1 "Taylor"
+                                        :op2 "Wilson")))
+   :snt3 (s3.c / contrast-01
+               :ARG1 (s3.a2 / and
+                            :ARG1-of (s3.b / believe-01
+                                           :ARG1-of (s3.h / hard-02
+                                                          :ARG1-of (s3.p2 / possible-01)
+                                                          :concession (s3.b2 / believe-01
+                                                                             :ARG1 (s3.p / physicist
+                                                                                         :domain (s3.i / i
+                                                                                                       :same-as s2.i)
+                                                                                         :mod (s3.n / nucleus)))
+                                                          :degree (s3.l / little)))
+                            :op1 (s3.a / age-01
+                                       :ARG1 s3.i
+                                       :ARG2 (s3.t / temporal-quantity
+                                                   :unit (s3.y / year)
+                                                   :quant "17"))
+                            :op2 s3.p)
+               :ARG2 s3.h)
+   :snt4 (s4.a / and
+               :op2 (s4.l / like-02
+                          :ARG0 (s4.i / i
+                                      :same-as s2.i)
+                          :ARG1 (s4.c / case-03
+                                      :ARG0 s4.i
+                                      :ARG1 (s4.a2 / and
+                                                   :op1 (s4.p2 / point-04
+                                                               :domain (s4.f / fusion
+                                                                             :mod (s4.n2 / nucleus))
+                                                               :mod (s4.t2 / that))
+                                                   :op2 (s4.g / get-05
+                                                              :ARG0 (s4.b / bridge
+                                                                          :ARG1-of (s4.t / talk-01
+                                                                                         :ARG0 (s4.p / person
+                                                                                                     :name (s4.n / name
+                                                                                                                 :op1 "T."
+                                                                                                                 :op2 "Boone"
+                                                                                                                 :op3 "Pickens"))))
+                                                              :ARG1 (s4.w / we))))))
+   :snt5 (s5.i / infer-01
+               :ARG1 (s5.f2 / future
+                            :domain (s5.f / fusion
+                                          :mod (s5.n / nucleus))
+                            :mod (s5.e / energy)
+                            :poss (s5.w / we)))
+   :snt6 (s6.a / and
+               :op2 (s6.p / point-04
+                          :ARG1 (s6.c / case-03
+                                      :ARG1 (s6.p2 / possible-01
+                                                   :ARG1 (s6.c2 / change-01
+                                                                :ARG0 (s6.k / kid)
+                                                                :ARG1 (s6.w / world)
+                                                                :ARG1-of (s6.r / real-04))))
+                          :ord (s6.o / ordinal-entity
+                                     :value "2")))
+   :snt7 (s7.c / cause-01
+               :ARG1 (s7.p / possible-01
+                           :ARG1 (s7.a2 / ask-01
+                                        :ARG0 (s7.y / you)
+                                        :ARG1-of (s7.m / mean-01
+                                                       :ARG2 (s7.a3 / ask-01
+                                                                    :ARG0 s7.y
+                                                                    :ARG1 (s7.t / thing
+                                                                                :manner-of (s7.k / know-01
+                                                                                                 :ARG0 s7.y
+                                                                                                 :ARG1 (s7.f / future
+                                                                                                             :mod (s7.e / energy)
+                                                                                                             :poss (s7.w / we)
+                                                                                                             :same-as s5.w)
+                                                                                                 :manner (s7.a / amr-unknown)))
+                                                                    :ARG2 (s7.i / i
+                                                                                :same-as s2.i))))))
+   :snt8 (s8.b / build-01
+               :ARG0 (s8.i / i
+                           :same-as s2.i)
+               :ARG1 (s8.r / reactor
+                           :mod (s8.f / fusion))
+               :mod (s8.w / well)
+               :time (s8.a / age-01
+                           :ARG1 s8.i
+                           :ARG2 (s8.t / temporal-quantity
+                                       :unit (s8.y / year)
+                                       :quant "14")))
+   :snt9 (s9.i2 / inside
+                :domain (s9.t / that)
+                :part-of (s9.r / reactor
+                               :mod (s9.f / fusion
+                                          :mod (s9.n / nucleus))
+                               :poss (s9.i / i
+                                           :same-as s2.i)
+                               :same-as s8.r))
+   :snt10 (s10.s / start-01
+                 :ARG0 (s10.i / i
+                              :same-as s2.i)
+                 :ARG1 (s10.b / build-01
+                              :ARG0 s10.i
+                              :ARG1 (s10.p / project
+                                           :mod (s10.t3 / this)))
+                 :time (s10.a2 / age-01
+                               :ARG1 s10.i
+                               :ARG2 (s10.a / about
+                                            :op1 (s10.t / temporal-quantity
+                                                        :unit (s10.y / year)
+                                                        :quant "12")
+                                            :op1 (s10.o / or
+                                                        :op1 s10.t
+                                                        :op2 (s10.t2 / temporal-quantity
+                                                                     :unit (s10.y2 / year)
+                                                                     :quant "13")))))
+   :snt11 (s11.d / decide-01
+                 :ARG0 (s11.i / i
+                              :same-as s2.i)
+                 :ARG1 (s11.w / want-01
+                              :ARG0 s11.i
+                              :ARG1 (s11.m / make-01
+                                           :ARG0 s11.i
+                                           :ARG1 (s11.s / star))))
+   :snt12 (s12.p2 / probable
+                  :domain (s12.s / say-01
+                                 :ARG0 (s12.p / person
+                                              :quant (s12.m / most)
+                                              :ARG1-of (s12.i / include-91
+                                                              :ARG2 (s12.y / you)))
+                                 :ARG1 (s12.f / fusion
+                                              :mod (s12.n2 / nucleus)
+                                              :mod (s12.w / well)
+                                              :polarity "-"))
+                  :time (s12.n / now))
+   :snt13 (s13.s / see-01
+                 :ARG0 (s13.i / i)
+                 :ARG1 (s13.p / plant
+                              :ARG0-of (s13.p2 / power-01
+                                               :mod (s13.n / nucleus))
+                              :ARG0-of (s13.h / have-03
+                                              :ARG1 (s13.e / energy
+                                                           :mod (s13.f / fusion)))
+                              :mod (s13.a / any))
+                 :polarity "-")
+   :snt14 (s14.b / break-even-09
+                 :ARG1 (s14.i / it
+                              :same-as s8.r)
+                 :polarity "-")
+   :snt15 (s15.h / have-concession-91
+                 :ARG1 (s15.d / do-02
+                              :ARG0 (s15.i3 / it
+                                            :same-as s8.r)
+                              :ARG1 (s15.s3 / stuff
+                                            :quant (s15.s / some)
+                                            :ARG1-of (s15.c / cool-04
+                                                            :degree (s15.p / pretty)))
+                              :mod (s15.s2 / still))
+                 :ARG2 (s15.p2 / produce-01
+                               :ARG0 s15.i3
+                               :ARG1 (s15.e / energy
+                                            :ARG1-of (s15.h2 / have-quant-91
+                                                             :ARG3 (s15.m / more)
+                                                             :ARG4 (s15.e2 / energy
+                                                                           :ARG1-of (s15.p3 / put-01
+                                                                                            :ARG0 (s15.i / i
+                                                                                                         :same-as s2.i)
+                                                                                            :ARG2 (s15.i2 / in)))))
+                               :direction (s15.o / out)
+                               :polarity "-"))
+   :snt16 (s16.a / and
+                 :op2 (s16.a2 / and
+                              :op1 (s16.a3 / assemble-01
+                                           :ARG0 (s16.i / i
+                                                        :same-as s2.i)
+                                           :ARG1 (s16.t / this
+                                                        :same-as s8.r)
+                                           :location (s16.g / garage
+                                                            :poss s16.i))
+                              :op2 (s16.l / live-01
+                                          :ARG0 s16.t
+                                          :location (s16.d / department
+                                                           :part-of (s16.u / university
+                                                                           :name (s16.n / name
+                                                                                        :op1 "University"
+                                                                                        :op2 "of"
+                                                                                        :op3 "Nevada")
+                                                                           :location (s16.c / city
+                                                                                            :name (s16.n2 / name
+                                                                                                          :op1 "Reno")))
+                                                           :topic (s16.p / physics))
+                                          :time (s16.n3 / now))))
+   :snt17 (s17.a / and
+                 :op2 (s17.s / slam-02
+                             :ARG0 (s17.i / it
+                                          :same-as s8.r)
+                             :ARG1 (s17.d / deuterium
+                                          :mod (s17.h2 / hydrogen
+                                                       :ARG0-of (s17.h / have-03
+                                                                       :ARG1 (s17.n / neutron
+                                                                                    :mod (s17.e / extra)))
+                                                       :mod (s17.j / just)))
+                             :mod (s17.t / together)))
+   :snt18 (s18.r2 / resemble-01
+                  :ARG1 (s18.t / this
+                               :same-as s17.s)
+                  :ARG2 (s18.r / react-01
+                               :ARG0 (s18.c / chain
+                                            :ARG1-of (s18.g / go-on-15
+                                                            :location (s18.i / inside
+                                                                             :op1 (s18.s / sun)))
+                                            :consist-of (s18.p / proton))))
+   :snt19 (s19.a / and
+                 :op2 (s19.s / slam-02
+                             :ARG0 (s19.i / i
+                                          :same-as s2.i)
+                             :ARG1 (s19.i2 / it
+                                           :same-as s17.d)
+                             :ARG1-of (s19.h3 / have-degree-91
+                                              :ARG2 (s19.h / hard-02
+                                                           :ARG1 s19.s)
+                                              :ARG3 (s19.s2 / so)
+                                              :ARG6 (s19.t2 / together
+                                                            :domain (s19.f / fume
+                                                                           :mod (s19.h4 / hydrogen
+                                                                                        :same-as s17.d))))
+                             :ARG2 (s19.t / together))
+                 :op3 (s19.h2 / have-03
+                              :ARG0 s19.i2
+                              :ARG1 (s19.b / byproduct
+                                           :mod (s19.s3 / some))
+                              :time (s19.p / process-02))
+                 :op4 (s19.u / utilize-01
+                             :ARG0 s19.i
+                             :ARG1 s19.b))
+   :snt20 (s20.w / win-01
+                 :ARG0 (s20.i / i
+                              :same-as s2.i)
+                 :ARG1 (s20.e / event
+                              :name (s20.n / name
+                                           :op1 "Intel"
+                                           :op2 "International"
+                                           :op3 "Science"
+                                           :op4 "and"
+                                           :op5 "Engineering"
+                                           :op6 "Fair"))
+                 :time (s20.y / year
+                              :mod (s20.p / previous)
+                              :mod (s20.t / this)))
+   :snt21 (s21.d3 / develop-02
+                  :ARG0 (s21.i / i
+                               :same-as s2.i)
+                  :ARG1 (s21.t / thing
+                               :ARG0-of (s21.d / detect-01)
+                               :ARG1-of (s21.r / replace-01
+                                               :ARG2 (s21.t2 / thing
+                                                             :ARG0-of (s21.d2 / detect-01)
+                                                             :ARG1-of (s21.h / have-03
+                                                                             :ARG0 (s21.g / government-organization
+                                                                                          :name (s21.n / name
+                                                                                                       :op1 "Homeland"
+                                                                                                       :op2 "Security")))
+                                                             :mod (s21.c / current)))))
+   :snt22 (s22.d2 / develop-02
+                  :ARG0 (s22.i / i
+                               :same-as s2.i)
+                  :ARG1 (s22.s2 / system
+                                :quant (s22.m4 / multiple
+                                               :op1 (s22.m2 / monetary-quantity
+                                                            :unit (s22.d4 / dollar)
+                                                            :quant "100000"))
+                                :ARG0-of (s22.e / exceed-01
+                                                :ARG1 (s22.s / sensitive-03
+                                                             :ARG0 (s22.t / thing
+                                                                          :ARG0-of (s22.d / detect-01)))))
+                  :ARG3 (s22.m3 / multiple
+                                :op1 (s22.m / monetary-quantity
+                                            :unit (s22.d3 / dollar)
+                                            :quant "100")))
+   :snt23 (s23.b / build-01
+                 :ARG0 (s23.i / i
+                              :same-as s2.i)
+                 :ARG1 (s23.t / this
+                              :same-as s22.s2)
+                 :location (s23.g / garage
+                                  :poss s23.i
+                                  :same-as s16.g))
+   :snt24 (s24.a / and
+                 :op2 (s24.d / develop-02
+                             :ARG0 (s24.i / i
+                                          :same-as s2.i)
+                             :ARG1 (s24.s / system
+                                          :purpose (s24.p / produce-01
+                                                          :ARG1 (s24.i2 / isotope
+                                                                        :mod (s24.m / medicine))))))
+   :snt25 (s25.d / develop-02
+                 :ARG0 (s25.i / i
+                              :same-as s2.i)
+                 :ARG1 (s25.d2 / device
+                               :ARG0-of (s25.p2 / produce-01
+                                                :ARG1 (s25.i3 / isotope
+                                                              :mod (s25.t / this)
+                                                              :same-as s24.i2)
+                                                :ARG1-of (s25.p / possible-01)
+                                                :manner (s25.s / scale
+                                                               :mod (s25.s2 / small
+                                                                            :degree (s25.v / very)))))
+                 :ARG1-of (s25.i2 / instead-of-91
+                                  :ARG2 (s25.r / require-01
+                                               :ARG0 s25.i
+                                               :ARG1 (s25.f / facility
+                                                            :mod (s25.m2 / multiple
+                                                                         :op1 (s25.m / monetary-quantity
+                                                                                     :unit (s25.d3 / dollar)
+                                                                                     :quant "1000000"))))))
+   :snt26 (s26.r / reactor
+                 :domain (s26.t / that)
+                 :location (s26.b / background
+                                  :location (s26.t2 / there))
+                 :mod (s26.f / fusion)
+                 :poss (s26.i / i
+                              :same-as s2.i))
+   :snt27 (s27.i / i
+                 :domain (s27.t / that)
+                 :location (s27.p / panel
+                                  :ARG1 (s27.r / reactor
+                                               :mod (s27.f / fusion)
+                                               :poss s27.i
+                                               :same-as s8.r)
+                                  :instrument-of (s27.c / control-01)
+                                  :same-as s26.t))
+   :snt28 (s28.m / make-01
+                 :ARG0 (s28.i / i
+                              :same-as s2.i)
+                 :ARG0-of (s28.c / cause-01
+                                 :ARG1 (s28.h / have-degree-91
+                                              :ARG1 (s28.p2 / program
+                                                            :mod (s28.n2 / nucleus)
+                                                            :poss s28.i)
+                                              :ARG2 (s28.a / advanced-02)
+                                              :ARG3 (s28.e / equal)
+                                              :ARG4 (s28.p / person
+                                                           :mod (s28.c2 / country
+                                                                        :name (s28.n / name
+                                                                                     :op1 "Iran")))))
+                 :ARG1 (s28.y / yellowcake)
+                 :location (s28.g / garage
+                                  :poss s28.i
+                                  :same-as s16.g)
+                 :mod (s28.b / by-the-way)
+                 :mod (s28.o / oh
+                             :mode "expressive"))
+   :snt29 (s29.c / cause-01
+                 :ARG1 (s29.p / possible-01
+                              :ARG1 (s29.w / want-01
+                                           :ARG0 (s29.i / i
+                                                        :same-as s2.i)
+                                           :ARG1 (s29.a / admit-01
+                                                        :ARG0 s29.i
+                                                        :ARG1 (s29.t / that))
+                                           :polarity "-")))
+   :snt30 (s30.i / i
+                 :domain (s30.t / this)
+                 :location (s30.r / research-institute
+                                  :name (s30.n / name
+                                               :op1 "CERN")
+                                  :location (s30.c / city
+                                                   :name (s30.n2 / name
+                                                                 :op1 "Geneva")
+                                                   :location (s30.c2 / country
+                                                                     :name (s30.n3 / name
+                                                                                   :op1 "Switzerland")))
+                                  :mod (s30.l / laboratory
+                                              :location (s30.w / world
+                                                               :same-as s6.w)
+                                              :mod (s30.p2 / physics
+                                                           :mod (s30.p / particle))
+                                              :mod (s30.p3 / preeminent))))
+   :snt31 (s31.a / and
+                 :op2 (s31.s / show-01
+                             :ARG0 (s31.i / i
+                                          :same-as s2.i)
+                             :ARG1 (s31.r / research-01
+                                          :ARG0 s31.i
+                                          :ARG1 (s31.g / government-organization
+                                                       :name (s31.n2 / name
+                                                                     :op1 "Homeland"
+                                                                     :op2 "Security")))
+                             :ARG2 (s31.p / person
+                                          :name (s31.n / name
+                                                       :op1 "Obama")
+                                          :ARG0-of (s31.h / have-org-role-91
+                                                          :ARG2 (s31.p2 / president))))
+                 :rel (s31.t / this
+                             :accompanier s31.p))
+   :snt32 (s32.a2 / and
+                  :op1 (s32.s3 / start-out-05
+                               :ARG0 (s32.i / i
+                                            :same-as s2.i)
+                               :ARG2 (s32.d2 / dream-01
+                                             :ARG0 s32.i
+                                             :ARG1 (s32.m / make-01
+                                                          :ARG0 s32.i
+                                                          :ARG1 (s32.s / star
+                                                                       :location (s32.j / jar)
+                                                                       :mod (s32.s2 / star
+                                                                                    :location (s32.g / garage
+                                                                                                     :poss s32.i
+                                                                                                     :same-as s16.g)))))
+                               :time (s32.r / research-01
+                                            :ARG0 s32.i
+                                            :ARG1 (s32.n / nucleus)
+                                            :duration (s32.a / about
+                                                             :op1 (s32.t / temporal-quantity
+                                                                         :unit (s32.y / year)
+                                                                         :quant "7"))))
+                  :op2 (s32.e / end-up-03
+                              :ARG1 s32.i
+                              :ARG2 (s32.a3 / and
+                                            :op1 (s32.m2 / meet-03
+                                                         :ARG0 s32.i
+                                                         :ARG1 (s32.p3 / president
+                                                                       :same-as s31.p))
+                                            :op2 (s32.d / develop-02
+                                                        :ARG0 s32.i
+                                                        :ARG1 (s32.t2 / thing
+                                                                      :ARG0-of (s32.c / change-01
+                                                                                      :ARG1 (s32.w / world
+                                                                                                   :same-as s6.w)
+                                                                                      :ARG1-of (s32.p / possible-01)
+                                                                                      :ARG1-of (s32.t3 / think-01
+                                                                                                       :ARG0 s32.i))))))
+                  :op3 (s32.t4 / think-01
+                               :ARG0 s32.i
+                               :ARG1 (s32.p2 / possible-01
+                                             :ARG1 (s32.c2 / change-01
+                                                           :ARG0 s32.t2
+                                                           :ARG1 s32.w
+                                                           :mod (s32.t5 / too))))
+                  :rel (s32.k / kid
+                              :mod (s32.o / other)))
+   :snt33 (s33.t / thank-01
+                 :ARG0 (s33.i / i)
+                 :ARG1 (s33.y / you)
+                 :mod (s33.m / much
+                             :degree (s33.v / very))))
+

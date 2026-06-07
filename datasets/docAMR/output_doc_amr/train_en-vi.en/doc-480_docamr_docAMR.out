@@ -1,0 +1,804 @@
+# ::id doc-480
+# ::doc_file doc-480
+# ::tok http : / / www . ted . com / talks / stephen_lawler_tours_microsoft_virtual_earth< / url> <next_sent> What I want to talk to you about today is virtual worlds , digital globes , the 3 - D Web , the Metaverse . <next_sent> What does this all mean for us ? <next_sent> What it means is the Web is going to become an exciting place again . <next_sent> It 's going to become super exciting as we transform to this highly immersive and interactive world . <next_sent> With graphics , computing power , low latencies , these types of applications and possibilities are going to stream rich data into your lives . <next_sent> So the Virtual Earth initiative , and other types of these initiatives , are all about extending our current search metaphor . <next_sent> When you think about it , we 're so constrained by browsing the Web , remembering URLs , saving favorites . <next_sent> As we move to search , we rely on the relevance rankings , the Web matching , the index crawling . <next_sent> But we want to use our brain ! <next_sent> We want to navigate , explore , discover information . <next_sent> In order to do that , we have to put you as a user back in the driver 's seat . <next_sent> We need cooperation between you and the computing network and the computer . <next_sent> So what better way to put you back in the driver 's seat than to put you in the real world that you interact in every day ? <next_sent> Why not leverage the learnings that you 've been learning your entire life ? <next_sent> So Virtual Earth is about starting off creating the first digital representation , comprehensive , of the entire world . <next_sent> What we want to do is mix in all types of data . <next_sent> Tag it . <next_sent> Attribute it . <next_sent> Metadata . <next_sent> Get the community to add local depth , global perspective , local knowledge . <next_sent> So when you think about this problem , what an enormous undertaking . <next_sent> Where do you begin ? <next_sent> Well , we collect data from satellites , from airplanes , from ground vehicles , from people . <next_sent> This process is an engineering problem , a mechanical problem , a logistical problem , an operational problem . <next_sent> Here is an example of our aerial camera . <next_sent> This is panchromatic . <next_sent> It 's actually four color cones . <next_sent> In addition , it 's multi - spectral . <next_sent> We collect four gigabits per second of data , if you can imagine that kind of data stream coming down . <next_sent> That 's equivalent to a constellation of 12 satellites at highest res capacity . <next_sent> We fly these airplanes at 5,000 feet in the air . <next_sent> We sit here -- <next_sent> you know , think about the ground vehicles , the human scale -- <next_sent> what do you see in person ? <next_sent> We need to capture that up close to establish that what it 's like - type experience . <next_sent> I bet many of you have seen the Apple commercials , kind of poking at the PC for their brilliance and simplicity . <next_sent> So a little unknown secret is -- did you see the one with the guy , he 's got the Web cam ? <next_sent> Well , a little unknown secret is his brother actually works on the Virtual Earth team . <next_sent> . So they 've got a little bit of a sibling rivalry thing going on here . <next_sent> But let me tell you -- it does n't affect his day job . <next_sent> We think a lot of good can come from this technology . <next_sent> This was after Katrina . <next_sent> We were the first commercial fleet of airplanes to be cleared into the disaster impact zone . <next_sent> Often the first time anyone saw what happened to their house was on Virtual Earth . <next_sent> We made it all freely available on the Web , just to -- it was obviously our chance of helping out with the cause . <next_sent> When we think about how all this comes together , it 's all about software , algorithms and math . <next_sent> You know , we capture this imagery but to build the 3 - D models we need to do geo - positioning . <next_sent> We need to do geo - registering of the images . <next_sent> We have to bundle adjust them . <next_sent> Find tie points . <next_sent> Extract geometry from the images . <next_sent> This process is a very calculated process . <next_sent> In fact , it was always done manual . <next_sent> Hollywood would spend millions of dollars to do a small urban corridor for a movie because they 'd have to do it manually . <next_sent> They 'd drive the streets with lasers called LIDAR . <next_sent> We do this all through software , algorithms and math -- a highly automated pipeline creating these cities . <next_sent> We took a decimal point off what it cost to build these cities , and that 's how we 're going to be able to scale this out and make this reality a dream . <next_sent> We think about the user interface . <next_sent> What does it mean to look at it from multiple perspectives ? <next_sent> An ortho - view , a nadir - view . <next_sent> How do you keep the precision of the fidelity of the imagery while maintaining the fluidity of the model ? <next_sent> I 'll wrap up by showing you the -- this is a brand - new peek I have n't really shown into the lab area of Virtual Earth . <next_sent> But what we 've found is they like the fluidity of the 3 - D model . <next_sent> A child can navigate with an Xbox controller or a game controller . <next_sent> So here what we 're trying to do is we bring the picture and project it into the 3 - D model space . <next_sent> You can see all types of resolution . <next_sent> From here , I can slowly pan the image over . <next_sent> I can get the next image . <next_sent> I can blend and transition . <next_sent> By doing this I do n't lose the original detail . <next_sent> In fact , I might be recording history . <next_sent> The freshness , the capacity . <next_sent> I can turn this image . <next_sent> I can look at it from multiple viewpoints and angles . <next_sent> What we 're trying to do is build a virtual world . <next_sent> We hope that we can make computing a user model you 're familiar with , and really derive insights from you , from all different directions . <next_sent> I thank you very much for your time .
+(d / document
+   :snt1 (s1.u / url-entity
+               :value "ossobuco")
+   :snt2 (s2.w / want-01
+               :ARG0 (s2.i / i)
+               :ARG1 (s2.t / talk-01
+                           :ARG0 s2.i
+                           :ARG1 (s2.a / and
+                                       :op1 (s2.w3 / world
+                                                   :mod (s2.v / virtual))
+                                       :op2 (s2.g / globe
+                                                  :mod (s2.d / digital))
+                                       :op3 (s2.w2 / web
+                                                   :mod (s2.d2 / dimension
+                                                               :quant "3")
+                                                   :op4 (s2.v2 / virtual)))
+                           :ARG2 (s2.y / you)
+                           :time (s2.t2 / today)))
+   :snt3 (s3.m / mean-01
+               :ARG1 (s3.t / this
+                           :mod (s3.a / all)
+                           :same-as s2.a)
+               :ARG2 (s3.a2 / amr-unknown)
+               :ARG3 (s3.w / we))
+   :snt4 (s4.m / mean-01
+               :ARG1 (s4.i / it
+                           :same-as s2.a)
+               :ARG2 (s4.b / become-01
+                           :ARG1 (s4.w / web
+                                       :same-as s2.d2)
+                           :ARG2 (s4.p / place
+                                       :ARG0-of (s4.e / excite-01))
+                           :mod (s4.a / again)))
+   :snt5 (s5.b / become-01
+               :ARG1 (s5.i2 / it
+                            :same-as s2.d2)
+               :ARG2 (s5.e / excite-01
+                           :ARG0 s5.i2
+                           :degree (s5.s / super))
+               :time (s5.t2 / transform-01
+                            :ARG1 (s5.w / we)
+                            :ARG2 (s5.w2 / world
+                                         :ARG0-of (s5.e2 / experience-01
+                                                         :degree (s5.h / high-02))
+                                         :mod (s5.i / interactive)
+                                         :mod (s5.t / this))))
+   :snt6 (s6.s / stream-03
+               :ARG0 (s6.a / and
+                           :op1 (s6.g / graphics)
+                           :op2 (s6.p2 / power
+                                       :mod (s6.c / compute-01))
+                           :op3 (s6.p3 / probable
+                                       :ARG1-of (s6.l2 / low-04))
+                           :op4 (s6.p / possible-01
+                                      :mod (s6.t / this)))
+               :ARG1 (s6.d / data
+                           :mod (s6.r / rich))
+               :ARG2 (s6.l / life
+                           :poss (s6.y / you))
+               :rel (s6.a2 / application
+                           :mod (s6.t2 / type
+                                       :mod s6.t)))
+   :snt7 (s7.i2 / infer-01
+                :ARG1 (s7.c / concern-02
+                            :ARG0 (s7.a3 / and
+                                         :op1 (s7.i3 / initiative)
+                                         :op2 (s7.i4 / initiative
+                                                     :mod (s7.t / this)
+                                                     :mod (s7.t2 / type
+                                                                 :mod (s7.o / other))))
+                            :ARG1 (s7.e / extend-01
+                                        :ARG1 (s7.m / metaphor
+                                                    :mod (s7.s / search-01)
+                                                    :poss (s7.w / we)
+                                                    :time (s7.c2 / current)))
+                            :mod (s7.a2 / all))
+                :rel (s7.i / Virtual)
+                :rel (s7.a / Earth))
+   :snt8 (s8.h / have-degree-91
+               :ARG1 (s8.w / we)
+               :ARG2 (s8.c / constrain-01
+                           :ARG0 (s8.a / and
+                                       :op1 (s8.b / browse-01
+                                                  :ARG0 s8.w
+                                                  :ARG1 (s8.w2 / web
+                                                               :same-as s2.d2))
+                                       :op2 (s8.r / remember-01
+                                                  :ARG0 s8.w
+                                                  :ARG1 (s8.u / url))
+                                       :op3 (s8.s / save-03
+                                                  :ARG0 s8.w
+                                                  :ARG1 (s8.t / thing
+                                                              :ARG1-of (s8.f / favor-01))))
+                           :ARG1 s8.w
+                           :condition (s8.t2 / think-01
+                                             :ARG0 (s8.y / you)
+                                             :ARG1 (s8.i / it)))
+               :ARG3 (s8.s2 / so))
+   :snt9 (s9.r3 / rely-01
+                :ARG0 (s9.w / we)
+                :ARG1 (s9.a / and
+                            :op1 (s9.r / rank-01
+                                       :ARG3 (s9.r2 / relevant-01))
+                            :op2 (s9.m / match-01
+                                       :ARG1 (s9.w2 / web))
+                            :op3 (s9.c / crawl-01
+                                       :ARG1 (s9.i / index)))
+                :time (s9.m2 / move-01
+                             :ARG0 s9.w
+                             :ARG2 (s9.s / search-01
+                                         :ARG0 s9.w)))
+   :snt10 (s10.c / contrast-01
+                 :ARG2 (s10.w / want-01
+                              :ARG0 (s10.w2 / we
+                                            :part (s10.b / brain))
+                              :ARG1 (s10.u / use-01
+                                           :ARG0 s10.w2
+                                           :ARG1 s10.b)))
+   :snt11 (s11.w / want-01
+                 :ARG0 (s11.w2 / we)
+                 :ARG1 (s11.a / and
+                              :op1 (s11.n / navigate-01
+                                          :ARG0 s11.w2
+                                          :ARG1 (s11.i / information))
+                              :op2 (s11.e / explore-01
+                                          :ARG0 s11.w2
+                                          :ARG1 s11.i)
+                              :op3 (s11.d / discover-01
+                                          :ARG0 s11.w2
+                                          :ARG1 s11.i)))
+   :snt12 (s12.o / obligate-01
+                 :purpose (s12.w / we)
+                 :ARG2 (s12.p2 / put-01
+                               :ARG0 s12.w
+                               :ARG1 (s12.y / you
+                                            :mod (s12.p / person
+                                                        :ARG0-of (s12.u / use-01)))
+                               :ARG2 (s12.s / seat
+                                            :location-of (s12.d2 / drive-01))
+                               :direction (s12.b / back))
+                 :rel (s12.d / do-02
+                             :ARG0 s12.w
+                             :ARG1 (s12.t / that
+                                          :same-as s11.n)))
+   :snt13 (s13.n / need-01
+                 :ARG0 (s13.w / we)
+                 :ARG1 (s13.c3 / cooperate-01
+                               :ARG0 (s13.y / you)
+                               :ARG1 (s13.a / and
+                                            :op1 (s13.n2 / network
+                                                         :mod (s13.c / compute-01))
+                                            :op2 (s13.c2 / computer))))
+   :snt14 (s14.w / way
+                 :ARG1-of (s14.h / have-degree-91
+                                 :ARG2 (s14.g / good-02
+                                              :ARG1 s14.w)
+                                 :ARG3 (s14.m / more)
+                                 :ARG4 (s14.p2 / put-01
+                                               :ARG1 (s14.y / you)
+                                               :ARG2 (s14.w2 / world
+                                                             :ARG1-of (s14.r2 / real-04)
+                                                             :ARG2-of (s14.i / interact-01
+                                                                             :ARG0 s14.y
+                                                                             :frequency (s14.r / rate-entity-91
+                                                                                               :ARG3 (s14.t / temporal-quantity
+                                                                                                            :unit (s14.d / day)
+                                                                                                            :quant "1"))))))
+                 :mod (s14.a / amr-unknown)
+                 :mod (s14.p / put-01
+                             :ARG1 s14.y
+                             :ARG2 (s14.s / seat
+                                          :location (s14.d2 / drive-01))
+                             :mod (s14.b / back)))
+   :snt15 (s15.l3 / leverage-01
+                  :ARG1 (s15.t / thing
+                               :ARG1-of (s15.l / learn-01
+                                               :ARG0 (s15.y / you))
+                               :ARG1-of (s15.l2 / learn-01
+                                                :ARG0 s15.y
+                                                :duration (s15.l4 / life
+                                                                  :mod (s15.e / entire)
+                                                                  :poss s15.y)))
+                  :ARG1-of (s15.c / cause-01
+                                  :ARG0 (s15.a / amr-unknown))
+                  :polarity "-")
+   :snt16 (s16.i / infer-01
+                 :ARG1 (s16.c2 / concern-02
+                               :ARG1 (s16.s / start-off-02
+                                            :ARG0 (s16.p / planet
+                                                         :name (s16.n / name
+                                                                      :op1 "Earth")
+                                                         :mod (s16.v / virtual)
+                                                         :same-as s7.a)
+                                            :ARG1 (s16.c3 / create-01
+                                                          :ARG0 s16.p
+                                                          :ARG1 (s16.r / represent-01
+                                                                       :ARG1 (s16.w / world
+                                                                                    :mod (s16.e / entire))
+                                                                       :mod (s16.d / digit)
+                                                                       :mod (s16.c / comprehensive)
+                                                                       :ord (s16.o / ordinal-entity
+                                                                                   :value "1"))))))
+   :snt17 (s17.w / want-01
+                 :ARG0 (s17.w2 / we)
+                 :ARG1 (s17.m / mix-01
+                              :ARG0 s17.w2
+                              :ARG1 (s17.t / type
+                                           :mod (s17.a / all)
+                                           :mod (s17.d / data))))
+   :snt18 (s18.t / tag-01
+                 :ARG0 (s18.y / you)
+                 :ARG1 (s18.i / it)
+                 :mode "imperative")
+   :snt19 (s19.a / attribute-01
+                 :ARG0 (s19.y / you)
+                 :ARG1 (s19.i / it
+                              :same-as s18.i)
+                 :mode "imperative")
+   :snt20 (s20.d / data)
+   :snt21 (s21.g / get-04
+                 :ARG0 (s21.y / you)
+                 :ARG1 (s21.a / add-02
+                              :ARG0 (s21.c / community)
+                              :ARG1 (s21.a2 / and
+                                            :op1 (s21.d / deep-03
+                                                        :ARG1-of (s21.l / local-02
+                                                                        :ARG1 (s21.p / perspective
+                                                                                     :mod (s21.g2 / globe))
+                                                                        :ARG1 (s21.k / know-01)))
+                                            :op2 s21.p
+                                            :op3 s21.k))
+                 :mode "imperative")
+   :snt22 (s22.u / undertake-01
+                 :condition (s22.t / think-01
+                                   :ARG0 (s22.y / you)
+                                   :ARG1 (s22.p / problem
+                                                :mod (s22.t2 / this)))
+                 :mod (s22.e / enormous
+                             :degree (s22.s / so)))
+   :snt23 (s23.b / begin-01
+                 :ARG0 (s23.y / you)
+                 :location (s23.a / amr-unknown))
+   :snt24 (s24.c / collect-01
+                 :ARG0 (s24.w / we)
+                 :ARG1 (s24.d / data)
+                 :ARG2 (s24.a2 / and
+                               :op1 (s24.s / satellite)
+                               :op2 (s24.a / airplane)
+                               :op3 (s24.v / vehicle
+                                           :mod (s24.g / ground))
+                               :op4 (s24.p / person))
+                 :mod (s24.w2 / well))
+   :snt25 (s25.a / and
+                 :op1 (s25.p / problem
+                             :domain (s25.p4 / process-02
+                                             :mod (s25.t / this))
+                             :topic (s25.e / engineer-01))
+                 :op2 (s25.p2 / problem
+                              :domain s25.p4
+                              :mod (s25.m / mechanics))
+                 :op3 (s25.p3 / problem
+                              :domain s25.p4
+                              :mod (s25.l / logistics))
+                 :op4 (s25.o / operate-01
+                             :ARG0 s25.p4))
+   :snt26 (s26.t / thing
+                 :example-of (s26.c / camera
+                                    :mod (s26.a / aerial)
+                                    :poss (s26.w / we))
+                 :location (s26.h / here))
+   :snt27 (s27.p / panchromatic
+                 :domain (s27.t / this
+                                :same-as s26.c))
+   :snt28 (s28.c2 / cone
+                  :ARG1-of (s28.a / actual-02)
+                  :domain (s28.i / it
+                                 :same-as s26.c)
+                  :mod (s28.c / color
+                              :quant "4"))
+   :snt29 (s29.a / and
+                 :op2 (s29.l / law
+                             :name (s29.n / name
+                                          :op1 "theater")
+                             :domain (s29.i / it
+                                            :same-as s26.c)
+                             :mod (s29.m / multiple)))
+   :snt30 (s30.c / collect-01
+                 :ARG0 (s30.w / we
+                              :same-as s24.w)
+                 :ARG1 (s30.r / rate-entity-91
+                              :ARG1 (s30.t / temporal-quantity
+                                           :unit (s30.g / gigabyte)
+                                           :quant "4")
+                              :ARG1 (s30.d / data)
+                              :ARG2 (s30.t2 / temporal-quantity
+                                            :unit (s30.s / second)
+                                            :quant "1"))
+                 :condition (s30.p / possible-01
+                                   :ARG1 (s30.i / imagine-01
+                                                :ARG0 (s30.y / you)
+                                                :ARG1 (s30.c2 / come-01
+                                                              :ARG1 (s30.s2 / stream-03
+                                                                            :ARG1 (s30.d2 / data)
+                                                                            :mod (s30.k / kind
+                                                                                        :mod (s30.t3 / that)))
+                                                              :direction (s30.d3 / down)))))
+   :snt31 (s31.e / equal-01
+                 :ARG1 (s31.t / that
+                              :same-as s30.r)
+                 :ARG2 (s31.c2 / constellation
+                               :consist-of (s31.s / satellite
+                                                  :quant "12")
+                               :mod (s31.c / capacity
+                                           :mod (s31.s2 / seismic-quantity
+                                                        :ARG1-of (s31.h / have-degree-91
+                                                                        :ARG2 (s31.h2 / high-02
+                                                                                      :ARG1 s31.s2)
+                                                                        :ARG3 (s31.m / most))
+                                                        :ARG1-of (s31.h3 / high-02)))))
+   :snt32 (s32.f / fly-01
+                 :ARG0 (s32.w / we
+                              :same-as s24.w)
+                 :ARG2 (s32.a2 / airplane
+                               :mod (s32.t / this))
+                 :manner (s32.b / be-located-at-91
+                                :ARG1 (s32.a / air)
+                                :ARG2 (s32.d / distance-quantity
+                                             :unit (s32.f2 / foot)
+                                             :quant "5000")))
+   :snt33 (s33.s / sit-01
+                 :ARG1 (s33.w / we
+                              :same-as s24.w)
+                 :ARG2 (s33.h / here))
+   :snt34 (s34.t / think-01
+                 :ARG0 (s34.y / you)
+                 :ARG1 (s34.a / and
+                              :op1 (s34.v / vehicle
+                                          :mod (s34.g / ground))
+                              :op2 (s34.s / scale
+                                          :mod (s34.h / human)))
+                 :mod (s34.k / know-06
+                             :ARG0 s34.y)
+                 :mode "imperative")
+   :snt35 (s35.s / see-01
+                 :ARG0 (s35.y / you)
+                 :ARG1 (s35.a / amr-unknown)
+                 :mod (s35.p / person))
+   :snt36 (s36.n / need-01
+                 :ARG0 (s36.w / we
+                              :same-as s24.w)
+                 :ARG1 (s36.c / capture-01
+                              :purpose (s36.e / establish-01
+                                              :ARG0 s36.w
+                                              :ARG1 (s36.r / resemble-01
+                                                           :ARG1 (s36.i / it)
+                                                           :ARG2 (s36.t2 / thing
+                                                                         :ARG1-of (s36.e2 / experience-01)
+                                                                         :mod (s36.t3 / type))))
+                              :ARG0 s36.w
+                              :ARG1 (s36.t / that)
+                              :manner (s36.c2 / close-10
+                                              :ARG1 s36.t
+                                              :ARG2 s36.w)))
+   :snt37 (s37.b / bet-01
+                 :ARG0 (s37.i / i
+                              :same-as s2.i)
+                 :ARG1 (s37.s / see-01
+                              :ARG0 s37.i
+                              :ARG1 (s37.c / commercial
+                                           :ARG2-of (s37.p2 / poke-01
+                                                            :purpose (s37.a / and
+                                                                            :op1 (s37.b2 / brilliant-01
+                                                                                         :ARG1 s37.c)
+                                                                            :op2 (s37.s2 / simple-02
+                                                                                         :ARG1 s37.c))
+                                                            :ARG1 (s37.c3 / computer
+                                                                          :ARG1-of (s37.p / personal-02))
+                                                            :degree (s37.k / kind-of))
+                                           :mod (s37.c2 / company
+                                                        :name (s37.n / name
+                                                                     :op1 "Apple"))))
+                 :ARG3 (s37.m / many
+                              :quant-of (s37.y / you)))
+   :snt38 (s38.s / secret
+                 :ARG1-of (s38.k / know-01)
+                 :domain (s38.s2 / see-01
+                                 :ARG0 (s38.y / you
+                                              :same-as s2.y)
+                                 :ARG1 (s38.o / one
+                                              :ARG0-of (s38.h / have-03
+                                                              :ARG1 (s38.c / camera
+                                                                           :mod (s38.w / web)))
+                                              :accompanier (s38.g / guy))
+                                 :polarity (s38.a / amr-unknown))
+                 :mod (s38.l / little))
+   :snt39 (s39.s / secret
+                 :ARG1-of (s39.k / know-01
+                                 :polarity "-")
+                 :domain (s39.w / work-01
+                                :ARG0 (s39.p / person
+                                             :ARG0-of (s39.h / have-rel-role-91
+                                                             :ARG1 (s39.h2 / he
+                                                                           :same-as s38.g)
+                                                             :ARG2 (s39.b / brother)))
+                                :ARG1-of (s39.a / actual-02)
+                                :ARG2 (s39.t / team
+                                             :name (s39.n / name
+                                                          :op1 "Virtual"
+                                                          :op2 "Earth")))
+                 :mod (s39.l / little
+                             :same-as s38.l))
+   :snt40 (s40.i / infer-01
+                 :ARG1 (s40.g / get-02
+                              :ARG0 (s40.t / they)
+                              :ARG1 (s40.t2 / thing
+                                            :quant (s40.b / bit
+                                                          :mod (s40.l / little))
+                                            :ARG1-of (s40.g2 / go-on-15
+                                                             :location (s40.h / here))
+                                            :mod (s40.r / rivalry
+                                                        :mod (s40.s / sibling)))))
+   :snt41 (s41.c / contrast-01
+                 :ARG2 (s41.l / let-01
+                              :ARG0 (s41.y / you)
+                              :ARG1 (s41.t / tell-01
+                                           :ARG0 (s41.i / i
+                                                        :same-as s2.y)
+                                           :ARG1 (s41.a / affect-01
+                                                        :ARG0 (s41.i2 / it
+                                                                      :same-as s40.t2)
+                                                        :ARG1 (s41.j / job
+                                                                     :mod (s41.d / day)
+                                                                     :poss (s41.h / he
+                                                                                  :same-as s38.g))
+                                                        :polarity "-")
+                                           :ARG2 s41.y)))
+   :snt42 (s42.t2 / think-01
+                  :ARG0 (s42.w / we)
+                  :ARG1 (s42.p / possible-01
+                               :ARG1 (s42.c / come-03
+                                            :ARG1 (s42.g / good-02
+                                                         :quant (s42.l / lot))
+                                            :ARG2 (s42.t / technology
+                                                         :mod (s42.t3 / this)))))
+   :snt43 (s43.a / after
+                 :domain (s43.t / this)
+                 :op1 (s43.n2 / natural-disaster
+                              :name (s43.n / name
+                                           :op1 "Katrina")))
+   :snt44 (s44.f / fleet
+                 :ARG1-of (s44.c / clear-01
+                                 :location (s44.z / zone
+                                                  :ARG2-of (s44.i / impact-02
+                                                                  :ARG1 (s44.d / disaster))))
+                 :consist-of (s44.a / airplane)
+                 :domain (s44.w / we)
+                 :mod (s44.c2 / commerce)
+                 :ord (s44.o / ordinal-entity
+                             :value "1"))
+   :snt45 (s45.s / see-01
+                 :ARG0 (s45.a / anyone)
+                 :ARG1 (s45.e / event
+                              :topic (s45.h / house
+                                            :poss s45.a))
+                 :frequency (s45.o / often)
+                 :location (s45.p / planet
+                                  :name (s45.n / name
+                                               :op1 "Earth")
+                                  :mod (s45.v / virtual)
+                                  :same-as s7.a)
+                 :ord (s45.o2 / ordinal-entity
+                              :value "1"))
+   :snt46 (s46.m / make-02
+                 :ARG0 (s46.w / we
+                              :same-as s44.w)
+                 :ARG1 (s46.a2 / available-02
+                               :ARG1-of (s46.f / free-03)
+                               :ARG2 (s46.i / it
+                                            :mod (s46.a / all))
+                               :location (s46.w2 / web))
+                 :domain (s46.c2 / chance-02
+                                 :ARG0 s46.w
+                                 :ARG1 (s46.h / help-out-03
+                                              :ARG0 s46.w
+                                              :ARG1 (s46.c / cause))
+                                 :ARG1-of (s46.o / obvious-01))
+                 :rel (s46.j / just))
+   :snt47 (s47.c2 / concern-02
+                  :ARG0 (s47.t3 / this
+                                :mod (s47.a / all))
+                  :ARG1 (s47.a2 / and
+                                :op1 (s47.s / software)
+                                :op2 (s47.s2 / software)
+                                :op3 (s47.m / mathematics))
+                  :time (s47.t2 / think-01
+                                :ARG0 (s47.w / we
+                                             :same-as s44.w)
+                                :ARG1 (s47.t / thing
+                                             :manner-of (s47.c / come-04
+                                                               :ARG1 s47.t3
+                                                               :ARG2 (s47.t4 / together)))))
+   :snt48 (s48.c2 / contrast-01
+                  :ARG1 (s48.c / capture-01
+                               :ARG0 (s48.w / we
+                                            :same-as s44.w)
+                               :ARG1 (s48.i / imagery
+                                            :mod (s48.t / this)))
+                  :ARG1-of (s48.k / know-01
+                                  :ARG0 (s48.y / you))
+                  :ARG2 (s48.n / need-01
+                               :ARG0 (s48.b / build-01
+                                            :ARG0 s48.w
+                                            :ARG1 (s48.m / model
+                                                         :mod (s48.d / dimension
+                                                                     :quant "3")))
+                               :ARG1 (s48.p / position-01
+                                            :purpose s48.b
+                                            :ARG0 s48.w
+                                            :manner (s48.g / geography))))
+   :snt49 (s49.o / obligate-01
+                 :ARG2 (s49.r / register-02
+                              :ARG0 (s49.w / we
+                                           :same-as s44.w)
+                              :ARG1 (s49.i / image)
+                              :instrument (s49.s / satellite)))
+   :snt50 (s50.o / obligate-01
+                 :ARG1 (s50.w / we
+                              :same-as s44.w)
+                 :ARG2 (s50.a2 / and
+                               :op1 (s50.b / bundle-01
+                                           :ARG1 (s50.t / they
+                                                        :same-as s49.i))
+                               :op2 (s50.a / adjust-01
+                                           :ARG1 s50.t)))
+   :snt51 (s51.f / find-01
+                 :ARG1 (s51.p / point
+                              :ARG1-of (s51.t / tie-01)))
+   :snt52 (s52.e / extract-01
+                 :ARG1 (s52.g / geometry)
+                 :ARG2 (s52.i / image
+                              :same-as s49.i))
+   :snt53 (s53.c / calculate-01
+                 :ARG1 (s53.p / process-02
+                              :mod (s53.t / this))
+                 :degree (s53.v / very))
+   :snt54 (s54.d / do-02
+                 :ARG1 (s54.i2 / it
+                               :same-as s53.p)
+                 :manner (s54.m / manual)
+                 :mod (s54.i / in-fact)
+                 :time (s54.a / always))
+   :snt55 (s55.s2 / spend-01
+                  :ARG0 (s55.m2 / market-sector
+                                :name (s55.n / name
+                                             :op1 "Hollywood"))
+                  :ARG1 (s55.d / do-02
+                               :purpose (s55.m4 / movie)
+                               :ARG0 s55.m2
+                               :ARG1 (s55.c2 / corridor
+                                             :mod (s55.u / urban)
+                                             :mod (s55.s / small)))
+                  :ARG1-of (s55.c / cause-01
+                                  :ARG0 (s55.o / obligate-01
+                                               :ARG2 (s55.d2 / do-02
+                                                             :ARG0 s55.m2
+                                                             :ARG1 s55.d
+                                                             :manner (s55.m / manual))))
+                  :ARG3 (s55.m5 / multiple
+                                :op1 (s55.m3 / monetary-quantity
+                                             :unit (s55.d3 / dollar)
+                                             :quant "1000000")))
+   :snt56 (s56.d / drive-01
+                 :ARG0 (s56.t / they
+                              :same-as s55.m2)
+                 :ARG1 (s56.s / street)
+                 :instrument (s56.l / laser
+                                    :name (s56.n / name
+                                                 :op1 "LIDAR")))
+   :snt57 (s57.d / do-02
+                 :ARG0 (s57.w / we
+                              :same-as s44.w)
+                 :ARG1 (s57.t / this)
+                 :instrument (s57.a2 / and
+                                     :ARG1-of (s57.m2 / mean-01
+                                                      :ARG2 (s57.p / pipeline
+                                                                   :ARG0-of (s57.c3 / create-01
+                                                                                    :ARG1 (s57.c / city
+                                                                                                 :mod (s57.t2 / this)))
+                                                                   :ARG1-of (s57.a3 / automate-01
+                                                                                    :degree (s57.h / high-02))))
+                                     :op1 (s57.s / software)
+                                     :op2 (s57.c2 / code)
+                                     :op3 (s57.m / mathematics))
+                 :mod (s57.a / all
+                             :same-as s53.p))
+   :snt58 (s58.a / and
+                 :op1 (s58.t / take-off-07
+                             :ARG0 (s58.w / we
+                                          :same-as s44.w)
+                             :ARG1 (s58.p / point
+                                          :mod (s58.d / decimal))
+                             :ARG2-of (s58.c2 / cost-01
+                                              :ARG1 (s58.b / build-01
+                                                           :ARG1 (s58.c / city
+                                                                        :mod (s58.t2 / this)
+                                                                        :same-as s57.c))))
+                 :op2 (s58.p2 / possible-01
+                              :ARG1 (s58.a2 / and
+                                            :op1 (s58.s / scale-01
+                                                        :ARG0 s58.w
+                                                        :ARG1 (s58.t3 / this)
+                                                        :direction (s58.o / out))
+                                            :op2 (s58.m / make-01
+                                                        :ARG0 s58.w
+                                                        :ARG1 (s58.d2 / dream-01
+                                                                      :ARG1 (s58.r / reality
+                                                                                   :mod (s58.t4 / this)))))))
+   :snt59 (s59.t / think-01
+                 :ARG0 (s59.w / we)
+                 :ARG1 (s59.i / interface
+                              :mod (s59.p / person
+                                          :ARG0-of (s59.u / use-01))))
+   :snt60 (s60.m / mean-01
+                 :ARG1 (s60.a / amr-unknown)
+                 :ARG2 (s60.l / look-01
+                              :ARG1 (s60.i / it
+                                           :same-as s59.i)
+                              :manner (s60.p / perspective
+                                             :quant (s60.m2 / multiple))))
+   :snt61 (s61.c / contrast-01
+                 :ARG1 (s61.v / view-01
+                              :ARG0 (s61.o / ortho))
+                 :ARG2 (s61.v2 / view-01
+                               :mod (s61.n / nadir)))
+   :snt62 (s62.k / keep-01
+                 :ARG0 (s62.y / you)
+                 :ARG1 (s62.p / precise
+                              :domain (s62.f / fidelity
+                                             :poss (s62.i / imagery)))
+                 :manner (s62.a / amr-unknown)
+                 :time (s62.m / maintain-01
+                              :ARG0 s62.y
+                              :ARG1 (s62.f2 / fluidity
+                                            :poss (s62.m2 / model))))
+   :snt63 (s63.w / wrap-up-02
+                 :ARG0 (s63.i / i
+                              :same-as s2.i)
+                 :ARG2 (s63.s / show-01
+                              :ARG0 s63.i
+                              :ARG1 (s63.p / peak-01
+                                           :ARG1-of (s63.n2 / new-01
+                                                            :mod (s63.b / brand))
+                                           :ARG1-of (s63.s2 / show-01
+                                                            :ARG0 s63.i
+                                                            :ARG1-of (s63.r / real-04)
+                                                            :ARG2 (s63.a / area
+                                                                         :mod (s63.l / lab)
+                                                                         :poss (s63.p2 / planet
+                                                                                       :name (s63.n / name
+                                                                                                    :op1 "Virtual"
+                                                                                                    :op2 "Earth")
+                                                                                       :same-as s7.a))
+                                                            :polarity "-")
+                                           :mod (s63.t / this))
+                              :ARG2 (s63.y / you)))
+   :snt64 (s64.c / contrast-01
+                 :ARG2 (s64.f / find-01
+                              :ARG0 (s64.w / we
+                                           :same-as s44.w)
+                              :ARG1 (s64.l / like-01
+                                           :ARG0 (s64.t / they)
+                                           :ARG1 (s64.f2 / fluidity
+                                                         :poss (s64.m / model
+                                                                      :mod (s64.d / dimension
+                                                                                  :quant "3"))))))
+   :snt65 (s65.p / possible-01
+                 :ARG1 (s65.n2 / navigate-01
+                               :ARG0 (s65.c / child)
+                               :instrument (s65.o / or
+                                                  :op1 (s65.c2 / controller
+                                                               :mod (s65.p2 / product
+                                                                            :name (s65.n / name
+                                                                                         :op1 "Xbox")))
+                                                  :op2 (s65.c3 / controller
+                                                               :mod (s65.g / game)))))
+   :snt66 (s66.t / try-01
+                 :ARG0 (s66.w / we
+                              :same-as s44.w)
+                 :ARG1 (s66.a / and
+                              :op1 (s66.b / bring-01
+                                          :ARG0 s66.w
+                                          :ARG1 (s66.p / picture))
+                              :op2 (s66.p2 / project-01
+                                           :ARG0 s66.w
+                                           :ARG1 s66.p
+                                           :ARG2 (s66.s / space
+                                                        :mod (s66.m / model-01)
+                                                        :mod (s66.d / dimension
+                                                                    :quant "3"))))
+                 :location (s66.h / here))
+   :snt67 (s67.p / possible-01
+                 :ARG1 (s67.s / see-01
+                              :ARG0 (s67.y / you)
+                              :ARG1 (s67.t / type
+                                           :mod (s67.a / all)
+                                           :mod (s67.r / resolve-02))))
+   :snt68 (s68.p2 / possible-01
+                  :ARG1 (s68.p / pan-03
+                               :ARG0 (s68.i / i
+                                            :same-as s2.i)
+                               :ARG1 (s68.i2 / image
+                                             :same-as s66.p)
+                               :ARG1-of (s68.s / slow-01)
+                               :direction (s68.o / over))
+                  :source (s68.h / here))
+   :snt69 (s69.p / possible-01
+                 :ARG1 (s69.g / get-01
+                              :ARG0 (s69.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s69.i2 / image
+                                            :mod (s69.n / next))))
+   :snt70 (s70.p / possible-01
+                 :ARG1 (s70.a / and
+                              :op1 (s70.b / blend-01
+                                          :ARG0 (s70.i / i
+                                                       :same-as s2.i))
+                              :op2 (s70.t / transition-01
+                                          :ARG0 s70.i)))
+   :snt71 (s71.l / lose-02
+                 :ARG0 (s71.i / i
+                              :same-as s2.i)
+                 :ARG1 (s71.d / detail
+                              :mod (s71.o / original))
+                 :manner (s71.d2 / do-02
+                                 :ARG0 s71.i
+                                 :ARG1 (s71.t / this))
+                 :polarity "-")
+   :snt72 (s72.p / possible-01
+                 :ARG1 (s72.r / record-01
+                              :ARG0 (s72.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s72.h / history))
+                 :mod (s72.i2 / in-fact))
+   :snt73 (s73.a / and
+                 :op1 (s73.f / fresh-04)
+                 :op2 (s73.c / capacity))
+   :snt74 (s74.p / possible-01
+                 :ARG1 (s74.t2 / turn-01
+                               :ARG0 (s74.i / i
+                                            :same-as s2.i)
+                               :ARG1 (s74.i2 / image
+                                             :mod (s74.t / this)
+                                             :same-as s66.p)))
+   :snt75 (s75.p / possible-01
+                 :ARG1 (s75.l / look-01
+                              :ARG0 (s75.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s75.i2 / it
+                                            :same-as s66.p)
+                              :manner (s75.a / and
+                                             :quant (s75.m / multiple)
+                                             :op1 (s75.v / viewpoint)
+                                             :op2 (s75.a2 / angle))))
+   :snt76 (s76.t / try-01
+                 :ARG0 (s76.w / we
+                              :same-as s44.w)
+                 :ARG1 (s76.b / build-01
+                              :ARG0 s76.w
+                              :ARG1 (s76.w2 / world
+                                            :mod (s76.v / virtual))))
+   :snt77 (s77.h / hope-01
+                 :ARG0 (s77.w / we
+                              :same-as s44.w)
+                 :ARG1 (s77.p2 / possible-01
+                               :ARG1 (s77.a2 / and
+                                             :op1 (s77.m / make-02
+                                                         :ARG0 s77.w
+                                                         :ARG1 (s77.c / compute-01
+                                                                      :ARG1 (s77.m2 / model
+                                                                                    :ARG2-of (s77.f / familiarize-01
+                                                                                                    :ARG1 (s77.y / you))
+                                                                                    :mod (s77.p / person
+                                                                                                :ARG0-of (s77.u / use-01)))))
+                                             :op2 (s77.d / derive-01
+                                                         :ARG0 s77.w
+                                                         :ARG1 (s77.i / insight)
+                                                         :ARG1-of (s77.r / real-04)
+                                                         :ARG2 s77.y
+                                                         :source (s77.d3 / direction
+                                                                         :ARG1-of (s77.d2 / differ-02)
+                                                                         :mod (s77.a / all))))))
+   :snt78 (s78.t / thank-01
+                 :ARG0 (s78.i / i
+                              :same-as s2.i)
+                 :ARG1 (s78.y / you
+                              :same-as s2.y)
+                 :ARG2 (s78.t2 / time
+                               :poss s78.y)
+                 :mod (s78.m / much
+                             :degree (s78.v / very))))
+

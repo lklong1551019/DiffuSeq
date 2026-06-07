@@ -1,0 +1,504 @@
+# ::id doc-433
+# ::doc_file doc-433
+# ::tok http : / / www . ted . com / talks / sebastian_thrun_google_s_driverless_car< / url> <next_sent> As a boy , I loved cars . <next_sent> When I turned 18 , I lost my best friend to a car accident . <next_sent> Like this . <next_sent> And then I decided I 'd dedicate my life to saving one million people every year . <next_sent> Now I have n't succeeded , so this is just a progress report , but I 'm here to tell you a little bit about self - driving cars . <next_sent> I saw the concept first in the DARPA Grand Challenges where the U.S. government issued a prize to build a self - driving car that could navigate a desert . <next_sent> And even though a hundred teams were there , these cars went nowhere . <next_sent> So we decided at Stanford to build a different self - driving car . <next_sent> We built the hardware and the software . <next_sent> We made it learn from us , and we set it free in the desert . <next_sent> And the unimaginable happened : it became the first car to ever return from a DARPA Grand Challenge , winning Stanford 2 million dollars . <next_sent> Yet I still had n't saved a single life . <next_sent> Since , our work has focused on building driving cars that can drive anywhere by themselves -- any street in California . <next_sent> We 've driven 140,000 miles . <next_sent> Our cars have sensors by which they magically can see everything around them and make decisions about every aspect of driving . <next_sent> It 's the perfect driving mechanism . <next_sent> We 've driven in cities , like in San Francisco here . <next_sent> We 've driven from San Francisco to Los Angeles on Highway 1 . <next_sent> We 've encountered joggers , busy highways , toll booths , and this is without a person in the loop ; <next_sent> the car just drives itself . <next_sent> In fact , while we drove 140,000 miles , people did n't even notice . <next_sent> Mountain roads , day and night , and even crooked Lombard Street in San Francisco . <next_sent> Sometimes our cars get so crazy , they even do little stunts . <next_sent> Oh , my God . <next_sent> What ? <next_sent> Second It 's driving itself . <next_sent> Sebastian Thrun : Now I ca n't get my friend Harold back to life , but I can do something for all the people who died . <next_sent> Do you know that driving accidents are the number one cause of death for young people ? <next_sent> And do you realize that almost all of those are due to human error and not machine error , and can therefore be prevented by machines ? <next_sent> Do you realize that we could change the capacity of highways by a factor of two or three if we did n't rely on human precision on staying in the lane -- improve body position and therefore drive a little bit closer together on a little bit narrower lanes , and do away with all traffic jams on highways ? <next_sent> Do you realize that you , TED users , spend an average of 52 minutes per day in traffic , wasting your time on your daily commute ? <next_sent> You could regain this time . <next_sent> This is four billion hours wasted in this country alone . <next_sent> And it 's 2.4 billion gallons of gasoline wasted . <next_sent> Now I think there 's a vision here , a new technology , and I 'm really looking forward to a time when generations after us look back at us and say how ridiculous it was that humans were driving cars . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :polarity "-"
+               :value "i")
+   :snt2 (s2.l / love-01
+               :ARG0 (s2.i / i)
+               :ARG1 (s2.c / car)
+               :time (s2.b / boy))
+   :snt3 (s3.l / lose-02
+               :ARG0 (s3.i / i
+                           :same-as s2.i)
+               :ARG1 (s3.p / person
+                           :ARG0-of (s3.h2 / have-rel-role-91
+                                           :ARG1 s3.i
+                                           :ARG2 (s3.f / friend
+                                                       :ARG1-of (s3.h / have-degree-91
+                                                                      :ARG2 (s3.g / good-02
+                                                                                  :ARG1 s3.f)
+                                                                      :ARG3 (s3.m / most)))))
+               :ARG1-of (s3.c2 / cause-01
+                               :ARG0 (s3.a / accident
+                                           :mod (s3.c / car)))
+               :time (s3.t / turn-02
+                           :ARG1 s3.i
+                           :ARG2 (s3.a2 / age-01
+                                        :ARG1 s3.i
+                                        :ARG2 "18")))
+   :snt4 (s4.r / resemble-01
+               :ARG2 (s4.t / this))
+   :snt5 (s5.a / and
+               :op2 (s5.d / decide-01
+                          :ARG0 (s5.i / i
+                                      :same-as s2.i)
+                          :ARG1 (s5.d2 / dedicate-01
+                                       :ARG0 s5.i
+                                       :ARG1 (s5.l / life
+                                                   :poss s5.i)
+                                       :ARG2 (s5.s / save-02
+                                                   :ARG0 s5.i
+                                                   :ARG1 (s5.p / person
+                                                               :quant "1000000")
+                                                   :frequency (s5.r / rate-entity-91
+                                                                    :ARG2 (s5.t / temporal-quantity
+                                                                                :unit (s5.y / year)
+                                                                                :quant "1"))))
+                          :time (s5.t2 / then)))
+   :snt6 (s6.c3 / contrast-01
+                :ARG1 (s6.c2 / cause-01
+                             :ARG0 (s6.s2 / succeed-01
+                                          :ARG0 (s6.i / i
+                                                      :same-as s2.i)
+                                          :mod (s6.n / now)
+                                          :polarity "-")
+                             :ARG1 (s6.r / report-01
+                                         :ARG1 (s6.p / progress-01)
+                                         :domain (s6.t2 / this)
+                                         :mod (s6.j / just)))
+                :ARG2 (s6.b / be-located-at-91
+                            :purpose (s6.t / tell-01
+                                           :ARG0 s6.i
+                                           :ARG1 (s6.b2 / bit
+                                                        :mod (s6.l / little)
+                                                        :topic (s6.c / car
+                                                                     :manner (s6.d / drive-01
+                                                                                   :ARG0 (s6.s / self))))
+                                           :ARG2 (s6.y / you))
+                            :ARG1 s6.i
+                            :ARG2 (s6.h / here)))
+   :snt7 (s7.s / see-01
+               :ARG0 (s7.i / i
+                           :same-as s2.i)
+               :ARG1 (s7.c2 / concept)
+               :location (s7.e / event
+                               :name (s7.n / name
+                                           :op1 "DARPA"
+                                           :op2 "Grand"
+                                           :op3 "Challenges")
+                               :location-of (s7.i2 / issue-01
+                                                   :ARG0 (s7.g2 / government-organization
+                                                                :ARG0-of (s7.g / govern-01
+                                                                               :ARG1 (s7.c3 / country
+                                                                                            :name (s7.n2 / name
+                                                                                                         :op1 "U.S."))))
+                                                   :ARG1 (s7.p2 / prize-01
+                                                                :ARG2 (s7.b / build-01
+                                                                            :ARG1 (s7.c / car
+                                                                                        :ARG0-of (s7.d2 / drive-01
+                                                                                                        :ARG1 (s7.s2 / self))
+                                                                                        :ARG0-of (s7.n3 / navigate-01
+                                                                                                        :ARG1 (s7.d / desert)
+                                                                                                        :ARG1-of (s7.p / possible-01)))))))
+               :ord (s7.o / ordinal-entity
+                          :value "1"))
+   :snt8 (s8.a / and
+               :op2 (s8.g / go-01
+                          :ARG1 (s8.c / car
+                                      :mod (s8.t3 / this)
+                                      :same-as s8.t)
+                          :ARG4 (s8.n / nowhere)
+                          :concession (s8.b / be-located-at-91
+                                            :ARG1 (s8.t / team
+                                                        :quant "100")
+                                            :ARG2 (s8.t2 / there))))
+   :snt9 (s9.c2 / cause-01
+                :ARG1 (s9.d / decide-01
+                            :ARG0 (s9.w / we)
+                            :ARG1 (s9.b / build-01
+                                        :ARG0 s9.w
+                                        :ARG1 (s9.c / car
+                                                    :ARG0-of (s9.d3 / drive-01
+                                                                    :ARG1 (s9.s / self))
+                                                    :ARG1-of (s9.d2 / differ-02)))
+                            :location (s9.u / university
+                                            :name (s9.n / name
+                                                        :op1 "Stanford"))))
+   :snt10 (s10.b / build-01
+                 :ARG0 (s10.w / we
+                              :same-as s9.w)
+                 :ARG1 (s10.a / and
+                              :op1 (s10.h / hardware)
+                              :op2 (s10.s / software)))
+   :snt11 (s11.a / and
+                 :op1 (s11.m / make-02
+                             :ARG0 (s11.w / we
+                                          :same-as s9.w)
+                             :ARG1 (s11.l / learn-01
+                                          :ARG0 (s11.i / it
+                                                       :same-as s9.c)
+                                          :ARG2 s11.w))
+                 :op2 (s11.s / set-01
+                             :ARG0 s11.w
+                             :ARG1 s11.i
+                             :ARG2 (s11.f / free-01
+                                          :ARG1 s11.i)
+                             :location (s11.d / desert)))
+   :snt12 (s12.a / and
+                 :op2 (s12.b / become-01
+                             :ARG1 (s12.i2 / it
+                                           :same-as s9.c)
+                             :ARG1-of (s12.i / imagine-01
+                                             :ARG1-of (s12.p / possible-01
+                                                             :polarity "-"))
+                             :ARG2 (s12.c / car
+                                          :ARG0-of (s12.w / win-01
+                                                          :ARG1 (s12.m / monetary-quantity
+                                                                       :unit (s12.d / dollar)
+                                                                       :quant "2000000")
+                                                          :ARG2 (s12.u / university
+                                                                       :name (s12.n2 / name
+                                                                                     :op1 "Stanford")
+                                                                       :same-as s9.u))
+                                          :ARG1-of (s12.r / return-01
+                                                          :ARG3 (s12.e / event
+                                                                       :name (s12.n / name
+                                                                                    :op1 "DARPA"
+                                                                                    :op2 "Grand"
+                                                                                    :op3 "Challenge"))
+                                                          :time (s12.e2 / ever))
+                                          :ord (s12.o / ordinal-entity
+                                                      :value "1"))))
+   :snt13 (s13.s / save-02
+                 :ARG0 (s13.i / i
+                              :same-as s2.i)
+                 :ARG1 (s13.l / life
+                              :ARG1-of (s13.s2 / single-02))
+                 :mod (s13.s3 / still)
+                 :mod (s13.y / yet)
+                 :polarity "-")
+   :snt14 (s14.f / focus-01
+                 :ARG0 (s14.w2 / work-01
+                               :ARG0 (s14.w / we
+                                            :same-as s9.w))
+                 :ARG1 (s14.b / build-01
+                              :ARG0 s14.w
+                              :ARG1 (s14.c / car
+                                           :ARG0-of (s14.d / drive-01)
+                                           :ARG0-of (s14.d2 / drive-01
+                                                            :ARG1 (s14.a2 / anywhere
+                                                                          :example (s14.s3 / street
+                                                                                           :location (s14.s2 / state
+                                                                                                             :name (s14.n / name
+                                                                                                                          :op1 "California"))
+                                                                                           :mod (s14.a / any)))
+                                                            :ARG1-of (s14.p / possible-01)
+                                                            :mod (s14.b2 / by-oneself))))
+                 :time (s14.s / since))
+   :snt15 (s15.d2 / drive-01
+                  :ARG0 (s15.w / we
+                               :same-as s9.w)
+                  :ARG1 (s15.d / distance-quantity
+                               :unit (s15.m / mile)
+                               :quant "140000"))
+   :snt16 (s16.h / have-03
+                 :ARG0 (s16.c / car
+                              :poss (s16.w / we
+                                           :same-as s9.w)
+                              :same-as s14.c)
+                 :ARG1 (s16.s2 / sensor
+                               :ARG0-of (s16.s / see-01
+                                               :ARG1 (s16.e2 / everything
+                                                             :location (s16.a / around
+                                                                              :op1 s16.c))
+                                               :ARG1-of (s16.p / possible-01
+                                                               :ARG1 (s16.d / decide-01
+                                                                            :ARG0 s16.s2
+                                                                            :ARG3 (s16.a2 / aspect
+                                                                                          :mod (s16.e / every)
+                                                                                          :topic (s16.d2 / drive-01))))
+                                               :manner (s16.m / magic))))
+   :snt17 (s17.m / mechanism
+                 :ARG0-of (s17.d / drive-01)
+                 :ARG1-of (s17.p / perfect-02)
+                 :domain (s17.i / it))
+   :snt18 (s18.d / drive-01
+                 :ARG0 (s18.w / we
+                              :same-as s9.w)
+                 :location (s18.c / city
+                                  :example (s18.c2 / city
+                                                   :name (s18.n / name
+                                                                :op1 "San"
+                                                                :op2 "Francisco")
+                                                   :location (s18.h / here))))
+   :snt19 (s19.d / drive-01
+                 :ARG0 (s19.w / we
+                              :same-as s9.w)
+                 :destination (s19.c2 / city
+                                      :name (s19.n / name
+                                                   :op1 "Los"
+                                                   :op2 "Angeles"))
+                 :location (s19.r / road
+                                  :name (s19.n3 / name
+                                                :op1 "Highway"
+                                                :op2 "1"))
+                 :source (s19.c / city
+                                :name (s19.n2 / name
+                                              :op1 "San"
+                                              :op2 "Francisco")
+                                :same-as s18.c2))
+   :snt20 (s20.a2 / and
+                  :op1 (s20.e / encounter-01
+                              :ARG0 (s20.w / we
+                                           :same-as s9.w)
+                              :ARG1 (s20.a3 / and
+                                            :op1 (s20.p / person
+                                                        :ARG0-of (s20.j / jog-01))
+                                            :op2 (s20.h / highway
+                                                        :ARG1-of (s20.b2 / busy-01))
+                                            :op3 (s20.b / booth
+                                                        :mod (s20.t2 / toll)
+                                                        :op2-of s20.a2)))
+                  :rel (s20.t / this
+                              :manner (s20.a / accompany-01
+                                             :ARG0 s20.w
+                                             :ARG1 (s20.p2 / person
+                                                           :location (s20.l / loop))
+                                             :polarity "-")))
+   :snt21 (s21.d / drive-01
+                 :ARG0 (s21.c / car)
+                 :ARG1 s21.c
+                 :mod (s21.j / just))
+   :snt22 (s22.n / notice-01
+                 :ARG0 (s22.p / person)
+                 :mod (s22.e / even)
+                 :mod (s22.i / in-fact)
+                 :time (s22.d2 / drive-01
+                               :ARG0 (s22.w / we
+                                            :same-as s9.w)
+                               :ARG1 (s22.d / distance-quantity
+                                            :unit (s22.m / mile)
+                                            :quant "140000"))
+                 :polarity "-")
+   :snt23 (s23.a2 / and
+                  :op1 (s23.a / and
+                              :op1 (s23.r / road
+                                          :mod (s23.m / mountain))
+                              :op2 (s23.r2 / road
+                                           :name (s23.n / name
+                                                        :op1 "Lombard"
+                                                        :op2 "Street"))
+                              :op3 (s23.d2 / date-entity
+                                           :dayperiod (s23.n3 / night)))
+                  :op2 s23.r2
+                  :rel (s23.r3 / road
+                               :location (s23.c / city
+                                                :name (s23.n2 / name
+                                                              :op1 "San"
+                                                              :op2 "Francisco")
+                                                :same-as s18.c2)
+                               :mod (s23.e / even)
+                               :mod (s23.c2 / crooked))
+                  :rel (s23.d / date-entity
+                              :dayperiod (s23.d3 / day)))
+   :snt24 (s24.c2 / crazy-03
+                  :ARG1 (s24.c / car
+                               :poss (s24.w / we
+                                            :same-as s9.w)
+                               :same-as s14.c)
+                  :ARG2-of (s24.h / have-degree-91
+                                  :ARG1 s24.c
+                                  :ARG3 (s24.s / so)
+                                  :ARG6 (s24.d / do-02
+                                               :ARG0 s24.c
+                                               :ARG1 (s24.a / antic
+                                                            :mod (s24.l / little))
+                                               :mod (s24.e / even)))
+                  :frequency (s24.s2 / sometimes))
+   :snt25 (s25.p / person
+                 :name (s25.n / name
+                              :op1 "God")
+                 :mod (s25.o / oh
+                             :mode "expressive"))
+   :snt26 (s26.a / amr-unknown)
+   :snt27 (s27.d / drive-01
+                 :ARG0 (s27.i / it)
+                 :ARG1 s27.i
+                 :li "2")
+   :snt28 (s28.s / say-01
+                 :ARG0 (s28.p / person
+                              :name (s28.n / name
+                                           :op1 "Sebastian"
+                                           :op2 "Thrun")
+                              :same-as s2.i)
+                 :ARG1 (s28.c / contrast-01
+                              :ARG1 (s28.p4 / possible-01
+                                            :ARG1 (s28.g / get-back-10
+                                                         :ARG0 s28.p
+                                                         :ARG1 (s28.p2 / person
+                                                                       :name (s28.n2 / name
+                                                                                     :op1 "Harold")
+                                                                       :ARG0-of (s28.h / have-rel-role-91
+                                                                                       :ARG1 s28.p
+                                                                                       :ARG2 (s28.f / friend))
+                                                                       :same-as s3.p)
+                                                         :ARG2 (s28.l / life))
+                                            :polarity "-")
+                              :ARG2 (s28.p5 / possible-01
+                                            :ARG1 (s28.d2 / do-02
+                                                          :ARG0 s28.p
+                                                          :ARG1 (s28.s2 / something)
+                                                          :ARG2 (s28.p3 / person
+                                                                        :ARG1-of (s28.d / die-01)
+                                                                        :mod (s28.a / all))))
+                              :time (s28.n3 / now)))
+   :snt29 (s29.k / know-01
+                 :ARG0 (s29.y / you
+                              :same-as s2.i)
+                 :ARG1 (s29.c / cause-01
+                              :ARG0 (s29.a / accident
+                                           :mod (s29.d2 / drive-01))
+                              :ARG1 (s29.d / die-01
+                                           :ARG1 (s29.p / person
+                                                        :mod (s29.y2 / young)))
+                              :ord (s29.o / ordinal-entity
+                                          :value "1"))
+                 :polarity (s29.a2 / amr-unknown))
+   :snt30 (s30.a4 / and
+                  :op2 (s30.r / realize-01
+                              :ARG0 (s30.y / you
+                                           :same-as s2.i)
+                              :ARG1 (s30.c / cause-01
+                                           :ARG0 (s30.e / err-01
+                                                        :ARG0 (s30.h / human))
+                                           :ARG1 (s30.t / that
+                                                        :mod (s30.a / all
+                                                                    :mod (s30.a2 / almost))
+                                                        :same-as s29.a)
+                                           :ARG1-of (s30.c3 / contrast-01
+                                                            :ARG2 (s30.c2 / cause-01
+                                                                          :ARG1 (s30.e2 / err-01
+                                                                                        :ARG0 (s30.m / machine
+                                                                                                     :ARG1-of (s30.p2 / prevent-01
+                                                                                                                      :ARG0 (s30.m2 / machine)
+                                                                                                                      :ARG1-of (s30.p / possible-01))))
+                                                                          :polarity "-")))
+                              :polarity (s30.a3 / amr-unknown)))
+   :snt31 (s31.r / realize-01
+                 :ARG0 (s31.y / you)
+                 :ARG1 (s31.p2 / possible-01
+                               :ARG1 (s31.c3 / change-01
+                                             :ARG0 (s31.w / we)
+                                             :ARG1 (s31.c / capacity
+                                                          :poss (s31.h3 / highway))
+                                             :ARG2 (s31.f / factor
+                                                          :quant (s31.o / or
+                                                                        :op1 "2"
+                                                                        :op2 "3"))
+                                             :condition (s31.r2 / rely-01
+                                                                :ARG0 s31.w
+                                                                :ARG1 (s31.p3 / precise
+                                                                              :domain (s31.h4 / human))
+                                                                :ARG2 (s31.s / stay-01
+                                                                             :ARG1 s31.h4
+                                                                             :location (s31.l / lane))
+                                                                :polarity "-")
+                                             :example (s31.a3 / and
+                                                              :op1 s31.r2
+                                                              :op2 (s31.i / improve-01
+                                                                          :ARG0 s31.w
+                                                                          :ARG0-of (s31.c2 / cause-01)
+                                                                          :ARG1 (s31.p / position-01
+                                                                                       :ARG1 (s31.b3 / body)))
+                                                              :op3 (s31.e / eliminate-01
+                                                                          :ARG0 s31.w
+                                                                          :ARG1 (s31.j / jam-01
+                                                                                       :ARG1 (s31.t2 / traffic)
+                                                                                       :location s31.h3
+                                                                                       :mod (s31.a / all))))))
+                 :polarity (s31.a2 / amr-unknown)
+                 :rel (s31.d / drive-01
+                             :ARG0 s31.w
+                             :ARG1 (s31.t / together
+                                          :ARG1-of (s31.h / have-degree-91
+                                                          :ARG2 (s31.c4 / close-10
+                                                                        :ARG1 s31.t)
+                                                          :ARG3 (s31.m / more))
+                                          :location (s31.l2 / lane
+                                                            :ARG1-of (s31.h2 / have-degree-91
+                                                                             :ARG2 (s31.n / narrow-02
+                                                                                          :ARG1 s31.l2)
+                                                                             :ARG3 (s31.m2 / more
+                                                                                           :quant (s31.b2 / bit
+                                                                                                          :mod (s31.l4 / little)))))))
+                 :rel (s31.b / bit
+                             :mod (s31.l3 / little)))
+   :snt32 (s32.r2 / realize-01
+                  :ARG0 (s32.y / you
+                               :same-as s31.y)
+                  :ARG1 (s32.s / spend-02
+                               :ARG0 (s32.p / person
+                                            :ARG0-of (s32.u / use-01
+                                                            :ARG1 (s32.p2 / publication
+                                                                          :name (s32.n / name
+                                                                                       :op1 "TED"))))
+                               :ARG1 (s32.r / rate-entity-91
+                                            :ARG1 (s32.t / temporal-quantity
+                                                         :ARG2-of (s32.a2 / average-01)
+                                                         :unit (s32.m / minute)
+                                                         :quant "52")
+                                            :ARG2 (s32.t2 / temporal-quantity
+                                                          :unit (s32.d / day)
+                                                          :quant "1"))
+                               :ARG2 (s32.t4 / traffic)
+                               :ARG2-of (s32.w / waste-01
+                                               :ARG0 s32.p
+                                               :ARG1 (s32.t3 / time
+                                                             :poss s32.y)
+                                               :ARG2 (s32.c / commute-01
+                                                            :ARG0 s32.y
+                                                            :frequency s32.r)))
+                  :polarity (s32.a / amr-unknown))
+   :snt33 (s33.p / possible-01
+                 :ARG1 (s33.r / regain-01
+                              :ARG0 (s33.y / you)
+                              :time (s33.t2 / time
+                                            :mod (s33.t / this)
+                                            :same-as s32.t3)))
+   :snt34 (s34.w / waste-01
+                 :ARG1 (s34.t / temporal-quantity
+                              :domain (s34.t2 / this
+                                              :same-as s32.r)
+                              :unit (s34.h / hour)
+                              :quant "4000000")
+                 :location (s34.c / country
+                                  :mod (s34.t3 / this)
+                                  :mod (s34.a / alone)))
+   :snt35 (s35.a / and
+                 :op2 (s35.w / waste-01
+                             :ARG1 (s35.g2 / gasoline
+                                           :quant (s35.v / volume-quantity
+                                                         :unit (s35.g / gallon)
+                                                         :quant "2400000000"))))
+   :snt36 (s36.a2 / and
+                  :op1 (s36.t2 / think-01
+                               :ARG0 (s36.i / i
+                                            :same-as s2.i)
+                               :ARG1 (s36.e / envision-01
+                                            :ARG1 (s36.t / technology
+                                                         :ARG1-of (s36.n / new-01))
+                                            :location (s36.h / here))
+                               :time (s36.n2 / now))
+                  :op2 (s36.l2 / look-forward-03
+                               :ARG0 s36.i
+                               :ARG1 (s36.t3 / time
+                                             :time-of (s36.a3 / and
+                                                              :op1 (s36.l / look-01
+                                                                          :ARG0 (s36.g / generation
+                                                                                       :time (s36.a / after
+                                                                                                    :op1 (s36.w / we)))
+                                                                          :ARG1 s36.w
+                                                                          :direction (s36.b / back))
+                                                              :op2 (s36.s / say-01
+                                                                          :ARG0 s36.g
+                                                                          :ARG1 (s36.r2 / ridiculous-02
+                                                                                        :ARG1 (s36.d / drive-01
+                                                                                                     :ARG0 (s36.h2 / human)
+                                                                                                     :ARG1 (s36.c / car))
+                                                                                        :degree (s36.s2 / so)))))
+                               :degree (s36.r / really)))
+   :snt37 (s37.t / thank-01
+                 :ARG1 (s37.y / you)))
+

@@ -1,0 +1,724 @@
+# ::id doc-243
+# ::doc_file doc-243
+# ::tok http : / / www . ted . com / talks / daniel_kraft_invents_a_better_way_to_harvest_bone_marrow< / url> <next_sent> So I am a pediatric cancer doctor and stem - cell researcher at Stanford University where my clinical focus has been bone marrow transplantation . <next_sent> Now , inspired by Jill Bolte Taylor last year , I did n't bring a human brain , but I did bring a liter of bone marrow . <next_sent> And bone marrow is actually what we use to save the lives of tens of thousands of patients , most of whom have advanced malignancies like leukemia and lymphoma and some other diseases . <next_sent> So , a few years ago , I 'm doing my transplant fellowship at Stanford . <next_sent> I 'm in the operating room . <next_sent> We have Bob here , who is a volunteer donor . <next_sent> We 're sending his marrow across the country to save the life of a child with leukemia . <next_sent> So actually how do we harvest this bone marrow ? <next_sent> Well we have a whole O.R. team , general anesthesia , nurses , and another doctor across from me . <next_sent> Bob 's on the table , and we take this sort of small needle , you know , not too big . <next_sent> And the way we do this is we basically place this through the soft tissue , and kind of punch it into the hard bone , into the tuchus -- that 's a technical term -- and aspirate about 10 mls of bone marrow out , each time , with a syringe . <next_sent> And hand it off to the nurse . <next_sent> She squirts it into a tin . <next_sent> Hands it back to me . <next_sent> And we do that again and again . <next_sent> About 200 times usually . <next_sent> And by the end of this my arm is sore , I 've got a callus on my hand , let alone Bob , whose rear end looks something more like this , like Swiss cheese . <next_sent> So I 'm thinking , you know , this procedure has n't changed in about 40 years . <next_sent> And there is probably a better way to do this . <next_sent> So I thought of a minimally invasive approach , and a new device that we call the Marrow Miner . <next_sent> This is it . <next_sent> And the Marrow Miner , the way it works is shown here . <next_sent> Our standard see - through patient . <next_sent> Instead of entering the bone dozens of times , we enter just once , into the front of the hip or the back of the hip . <next_sent> And we have a flexible , powered catheter with a special wire loop tip that stays inside the crunchy part of the marrow and follows the contours of the hip , as it moves around . <next_sent> So it enables you to very rapidly aspirate , or suck out , rich bone marrow very quickly through one hole . <next_sent> We can do multiple passes through that same entry . <next_sent> No robots required . <next_sent> And , so , very quickly , Bob can just get one puncture , local anesthesia , and do this harvest as an outpatient . <next_sent> And played around with this a little bit . <next_sent> And our team members developed this technology . <next_sent> And eventually we got two large animals , and pig studies . <next_sent> And we found , to our surprise , that we not only got bone marrow out , but we got 10 times the stem cell activity in the marrow from the Marrow Miner , compared to the normal device . <next_sent> This device was just FDA approved in the last year . <next_sent> Here is a live patient . <next_sent> You can see it following the flexible curves around . <next_sent> There will be two passes here , in the same patient , from the same hole . <next_sent> This was done under local anesthesia , as an outpatient . <next_sent> And we got , again , about three to six times more stem cells than the standard approach done on the same patient . <next_sent> So why should you care ? <next_sent> Bone marrow is a very rich source of adult stem cells . <next_sent> You all know about embryonic stem cells . <next_sent> They 've got great potential but have n't yet entered clinical trials . <next_sent> Adult stem cells are throughout our body , including the blood - forming stem cells in our bone marrow , which we 've been using as a form of stem - cell therapy for over 40 years . <next_sent> In the last decade there 's been an explosion of use of bone marrow stem cells to treat the patient 's other diseases such as heart disease , vascular disease , orthopedics , tissue engineering , even in neurology to treat Parkinson 's and diabetes . <next_sent> We 've just come out , we 're commercializing , this year , generation 2.0 of the Marrow Miner . <next_sent> The hope is that this gets more stem cells out , which translates to better outcomes . <next_sent> It may encourage more people to sign up to be potential live - saving bone marrow donors . <next_sent> It may even enable you to bank your own marrow stem cells , when you 're younger and healthier , to use in the future should you need it . <next_sent> And ultimately -- and here 's a picture of our bone marrow transplant survivors , who come together for a reunion each year at Stanford . <next_sent> Hopefully this technology will let us have more of these survivors in the future . <next_sent> Thanks .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01
+                            :ARG0 (s1.p / person
+                                        :name (s1.n / name
+                                                    :op1 "narcotic"))))
+   :snt2 (s2.i2 / infer-01
+                :ARG1 (s2.a / and
+                            :domain (s2.i / i)
+                            :location (s2.u / university
+                                            :name (s2.n2 / name
+                                                         :op1 "Stanford"
+                                                         :op2 "University")
+                                            :location-of (s2.f / focus-01
+                                                               :ARG0 s2.i
+                                                               :ARG2 (s2.t / transplant-01
+                                                                           :ARG1 (s2.m / marrow
+                                                                                       :mod (s2.b / bone)))
+                                                               :mod (s2.c2 / clinic)))
+                            :op1 (s2.d2 / doctor
+                                        :mod (s2.d / disease
+                                                   :name (s2.n / name
+                                                               :op1 "cancer")
+                                                   :mod (s2.p / pediatric)))
+                            :op2 (s2.p2 / person
+                                        :ARG0-of (s2.r / research-01
+                                                       :ARG1 (s2.c / cell
+                                                                   :mod (s2.s / stem))))))
+   :snt3 (s3.c / contrast-01
+               :ARG1 (s3.b3 / bring-01
+                            :ARG0 (s3.i / i
+                                        :same-as s2.i)
+                            :ARG1 (s3.b2 / brain
+                                         :mod (s3.h / human))
+                            :polarity "-")
+               :ARG2 (s3.b4 / bring-01
+                            :ARG0 s3.i
+                            :ARG1 (s3.m / marrow
+                                        :quant (s3.v / volume-quantity
+                                                     :unit (s3.l2 / liter)
+                                                     :quant "1")
+                                        :mod (s3.b / bone)))
+               :rel (s3.n2 / now)
+               :time (s3.i2 / inspire-01
+                            :ARG0 (s3.p / person
+                                        :name (s3.n / name
+                                                    :op1 "Jill"
+                                                    :op2 "Bolte"
+                                                    :op3 "Taylor"))
+                            :ARG1 s3.i
+                            :time (s3.y / year
+                                        :mod (s3.l / last))))
+   :snt4 (s4.a3 / and
+                :op2 (s4.t / thing
+                           :ARG1-of (s4.a / actual-02)
+                           :ARG1-of (s4.u / use-01
+                                          :ARG0 (s4.w / we)
+                                          :ARG2 (s4.s / save-02
+                                                      :ARG0 s4.w
+                                                      :ARG1 (s4.l / live-01
+                                                                  :ARG0 (s4.p / patient
+                                                                              :quant (s4.m3 / multiple
+                                                                                            :op1 "10000")
+                                                                              :ARG2-of (s4.i / include-91
+                                                                                             :ARG1 (s4.m2 / most
+                                                                                                          :ARG0-of (s4.h / have-03
+                                                                                                                         :ARG1 (s4.a4 / and
+                                                                                                                                      :ARG1-of (s4.a2 / advanced-02)
+                                                                                                                                      :op1 (s4.d / disease
+                                                                                                                                                 :name (s4.n / name
+                                                                                                                                                             :op1 "leukemia"))
+                                                                                                                                      :op2 (s4.d2 / disease
+                                                                                                                                                  :name (s4.n2 / name
+                                                                                                                                                               :op1 "lymphoma"))
+                                                                                                                                      :op3 (s4.d3 / disease
+                                                                                                                                                  :quant (s4.s2 / some)
+                                                                                                                                                  :mod (s4.o / other))))))))))
+                           :domain (s4.m / marrow
+                                         :mod (s4.b / bone))
+                           :mode "expressive"))
+   :snt5 (s5.c / cause-01
+               :ARG1 (s5.d / do-02
+                           :ARG0 (s5.i / i
+                                       :same-as s2.i)
+                           :ARG1 (s5.f / fellowship
+                                       :location (s5.u / university
+                                                       :name (s5.n / name
+                                                                   :op1 "Stanford")
+                                                       :same-as s2.u)
+                                       :mod (s5.t2 / transplant-01)
+                                       :poss s5.i)
+                           :time (s5.b / before
+                                       :quant (s5.f2 / few
+                                                     :op1 (s5.t / temporal-quantity
+                                                                :unit (s5.y / year)
+                                                                :quant "1"))
+                                       :op1 (s5.n2 / now))))
+   :snt6 (s6.b / be-located-at-91
+               :ARG1 (s6.i / i
+                           :same-as s2.i)
+               :ARG2 (s6.r / room
+                           :location-of (s6.o / operate-02)))
+   :snt7 (s7.h / have-03
+               :ARG0 (s7.w / we)
+               :ARG1 (s7.p / person
+                           :name (s7.n / name
+                                       :op1 "Bob")
+                           :ARG0-of (s7.d / donate-01
+                                          :ARG1-of (s7.v / volunteer-01
+                                                         :ARG0 s7.p)))
+               :location (s7.h2 / here))
+   :snt8 (s8.s2 / send-01
+                :purpose (s8.s / save-02
+                               :ARG0 (s8.w / we
+                                           :same-as s7.w)
+                               :ARG1 (s8.l / live-01
+                                           :ARG0 (s8.c / child
+                                                       :ARG0-of (s8.h / have-03
+                                                                      :ARG1 (s8.d / disease
+                                                                                  :name (s8.n / name
+                                                                                              :op1 "leukemia"))))))
+                :ARG0 s8.w
+                :ARG1 (s8.m / marrow
+                            :part-of (s8.h2 / he
+                                            :same-as s7.p))
+                :ARG2 (s8.a / across
+                            :op1 (s8.c2 / country)))
+   :snt9 (s9.h / harvest-01
+               :ARG0 (s9.w / we
+                           :same-as s7.w)
+               :ARG1 (s9.m / marrow
+                           :mod (s9.b / bone)
+                           :mod (s9.t / this)
+                           :same-as s8.m)
+               :ARG1-of (s9.a / actual-02)
+               :manner (s9.a2 / amr-unknown))
+   :snt10 (s10.h / have-03
+                 :ARG0 (s10.w / we
+                              :same-as s7.w)
+                 :ARG1 (s10.a2 / and
+                               :op1 (s10.t / team
+                                           :mod (s10.o / organization
+                                                       :name (s10.n / name
+                                                                    :op1 "O.R."))
+                                           :mod (s10.w3 / whole))
+                               :op2 (s10.a3 / anesthesia
+                                            :ARG1-of (s10.g / general-02))
+                               :op3 (s10.n2 / nurse)
+                               :op4 (s10.d / doctor
+                                           :location (s10.a / across
+                                                            :op1 (s10.i / i
+                                                                        :same-as s2.i))
+                                           :mod (s10.a4 / another)))
+                 :mod (s10.w2 / well))
+   :snt11 (s11.a / and
+                 :op1 (s11.b / be-located-at-91
+                             :ARG1 (s11.p / person
+                                          :name (s11.n / name
+                                                       :op1 "Bob")
+                                          :same-as s7.p)
+                             :ARG2 (s11.t / table))
+                 :op2 (s11.t2 / take-01
+                              :ARG0 (s11.w / we
+                                           :same-as s7.w)
+                              :ARG1 (s11.n2 / needle
+                                            :ARG1-of (s11.h / have-degree-91
+                                                            :ARG2 (s11.b2 / big)
+                                                            :ARG3 (s11.t4 / too)
+                                                            :polarity s11.n2)
+                                            :mod (s11.s / small)
+                                            :mod (s11.s2 / sort
+                                                         :mod (s11.t3 / this))))
+                 :rel "-")
+   :snt12 (s12.a2 / and
+                  :op2 (s12.d2 / do-02
+                               :ARG0 (s12.w / we
+                                            :same-as s7.w)
+                               :ARG1 (s12.t3 / this
+                                             :same-as s9.h)
+                               :manner (s12.a3 / and
+                                               :op1 (s12.p / place-01
+                                                           :ARG0 s12.w
+                                                           :ARG1 s12.t3
+                                                           :ARG2 (s12.t4 / through
+                                                                         :op1 (s12.t6 / tissue
+                                                                                      :ARG1-of (s12.s / soft-02)))
+                                                           :mod (s12.b / basic))
+                                               :op2 (s12.p2 / punch-01
+                                                            :ARG0 s12.w
+                                                            :ARG1 s12.t6
+                                                            :ARG2 (s12.a4 / and
+                                                                          :ARG3-of (s12.t2 / term-01
+                                                                                           :mod (s12.t / technical))
+                                                                          :op1 (s12.b2 / bone
+                                                                                       :ARG1-of (s12.h / hard-04))
+                                                                          :op2 (s12.t7 / tuchus))
+                                                            :degree (s12.k / kind-of)
+                                                            :frequency (s12.t5 / time
+                                                                               :mod (s12.e / each)))
+                                               :op3 (s12.o / out-06
+                                                           :ARG1 (s12.m / marrow
+                                                                        :quant (s12.a / about
+                                                                                      :op1 (s12.d / distance-quantity
+                                                                                                  :unit (s12.l / liter)
+                                                                                                  :quant "10"))
+                                                                        :mod (s12.b3 / bone))
+                                                           :instrument (s12.s2 / syringe))))
+                  :rel (s12.e2 / equal))
+   :snt13 (s13.a / and
+                 :op2 (s13.h / hand-01
+                             :ARG0 (s13.y / you)
+                             :ARG1 (s13.i / it
+                                          :same-as s11.n2)
+                             :ARG2 (s13.n / nurse)))
+   :snt14 (s14.s2 / squirt-01
+                  :ARG0 (s14.s / she
+                               :same-as s13.n)
+                  :ARG1 (s14.i / it
+                               :same-as s11.n2)
+                  :ARG2 (s14.t / tin))
+   :snt15 (s15.h / hand-01
+                 :ARG1 (s15.i2 / it
+                               :same-as s11.n2)
+                 :ARG2 (s15.i / i
+                              :same-as s2.i)
+                 :direction (s15.b / back))
+   :snt16 (s16.a / and
+                 :op2 (s16.d / do-02
+                             :ARG0 (s16.w / we
+                                          :same-as s7.w)
+                             :ARG1 (s16.t / that
+                                          :same-as s9.h)
+                             :frequency (s16.t2 / time-and-again)))
+   :snt17 (s17.u / usual
+                 :quant (s17.t / times
+                               :quant (s17.a / about
+                                             :op1 "200")))
+   :snt18 (s18.a / and
+                 :op2 (s18.s2 / sore
+                              :domain (s18.a2 / arm
+                                              :part-of (s18.i / i
+                                                              :part (s18.h / hand)
+                                                              :same-as s2.i))
+                              :time (s18.b / by
+                                           :op1 (s18.e2 / end-01
+                                                        :ARG1 (s18.t / this))))
+                 :op3 (s18.h2 / have-03
+                              :ARG0 s18.i
+                              :ARG1 (s18.c / callus
+                                           :location s18.h))
+                 :op4 (s18.p / person
+                             :name (s18.n / name
+                                          :op1 "Bob")
+                             :mod (s18.l / let-alone)
+                             :part (s18.e / end
+                                          :ARG0-of (s18.l2 / look-02
+                                                           :ARG1 (s18.s / something
+                                                                        :ARG1-of (s18.r2 / resemble-01
+                                                                                         :ARG2 (s18.c2 / cheese
+                                                                                                       :mod (s18.c3 / country
+                                                                                                                    :name (s18.n2 / name
+                                                                                                                                  :op1 "Switzerland"))))
+                                                                        :example (s18.t2 / this)
+                                                                        :mod (s18.m / more)))
+                                          :mod (s18.r / rear)
+                                          :same-as s7.p)))
+   :snt19 (s19.t2 / think-01
+                  :ARG0 (s19.i / i
+                               :same-as s2.i)
+                  :ARG1 (s19.c / change-01
+                               :ARG1 (s19.p / procedure
+                                            :mod (s19.t3 / this)
+                                            :same-as s9.h)
+                               :ARG1-of (s19.k / know-01
+                                               :ARG0 (s19.y2 / you))
+                               :time (s19.b / before
+                                            :quant (s19.a / about
+                                                          :op1 (s19.t / temporal-quantity
+                                                                      :unit (s19.y / year)
+                                                                      :quant "40"))
+                                            :op1 (s19.n / now))
+                               :polarity "-"))
+   :snt20 (s20.a / and
+                 :op2 (s20.w / way
+                             :ARG1-of (s20.h / have-degree-91
+                                             :ARG2 (s20.g / good-02
+                                                          :ARG1 s20.w)
+                                             :ARG3 (s20.m / more))
+                             :manner-of (s20.d / do-02
+                                               :ARG1 (s20.t / this
+                                                            :same-as s9.h))
+                             :mod (s20.p / probable)))
+   :snt21 (s21.t / think-01
+                 :ARG0 (s21.i / i
+                              :same-as s2.i)
+                 :ARG1 (s21.a / and
+                              :op1 (s21.a2 / approach-02
+                                           :ARG0-of (s21.i2 / invade-01
+                                                            :ARG1-of (s21.m / minimal-02)))
+                              :op2 (s21.d / device
+                                          :ARG1-of (s21.n2 / new-01)
+                                          :ARG1-of (s21.c / call-01
+                                                          :ARG0 (s21.w / we
+                                                                       :same-as s7.w)
+                                                          :ARG2 (s21.n / name
+                                                                       :op1 "Marrow"
+                                                                       :op2 "Miner")))))
+   :snt22 (s22.b / be-it-07
+                 :ARG1 (s22.t / this
+                              :same-as s21.d))
+   :snt23 (s23.a2 / and
+                  :op2 (s23.s / show-01
+                              :ARG1 (s23.w / way
+                                           :manner-of (s23.w2 / work-09
+                                                              :ARG1 (s23.t / thing
+                                                                           :same-as s21.d)))
+                              :location (s23.h / here)
+                              :topic s23.w)
+                  :rel (s23.a / Marrow)
+                  :rel (s23.i / Miner
+                              :same-as s21.d))
+   :snt24 (s24.p / patient
+                 :ARG0-of (s24.s / see-01
+                                 :path (s24.t / through))
+                 :ARG1-of (s24.s2 / standard-02)
+                 :poss (s24.w / we))
+   :snt25 (s25.e2 / enter-01
+                  :ARG0 (s25.w / we
+                               :same-as s7.w)
+                  :ARG1-of (s25.i / instead-of-91
+                                  :ARG2 (s25.e / enter-01
+                                               :ARG0 s25.w
+                                               :ARG1 (s25.b2 / bone)
+                                               :frequency (s25.m / multiple
+                                                                 :op1 "12")))
+                  :ARG1-of (s25.h / have-frequency-91
+                                  :mod (s25.j / just)
+                                  :ARG2 "1")
+                  :ARG4 (s25.o / or
+                               :op1 (s25.f / front
+                                           :part-of (s25.h2 / hip
+                                                            :part (s25.b / back)))
+                               :op2 s25.b))
+   :snt26 (s26.a / and
+                 :op2 (s26.h / have-03
+                             :ARG0 (s26.w / we
+                                          :same-as s7.w)
+                             :ARG1 (s26.c / catheter
+                                          :ARG1-of (s26.p2 / power-01)
+                                          :ARG1-of (s26.f / flexible-03)
+                                          :ARG1-of (s26.s2 / stay-01
+                                                           :ARG3 (s26.i / inside
+                                                                        :op1 (s26.p / part
+                                                                                    :ARG1-of (s26.c2 / crunch-01)
+                                                                                    :part-of (s26.m / marrow))))
+                                          :ARG1-of (s26.f2 / follow-01
+                                                           :ARG2 (s26.u / Support
+                                                                        :ARG1 (s26.h2 / hip))
+                                                           :time (s26.m2 / move-01
+                                                                         :ARG0 s26.c
+                                                                         :ARG2 (s26.a2 / around)))
+                                          :part (s26.t / tip
+                                                       :ARG1-of (s26.s / special-02)
+                                                       :mod (s26.l / loop
+                                                                   :mod (s26.w2 / wire))))))
+   :snt27 (s27.i / infer-01
+                 :ARG1 (s27.e / enable-01
+                              :ARG0 (s27.i2 / it
+                                            :same-as s21.d)
+                              :ARG1 (s27.o / or
+                                           :ARG1-of (s27.q / quick-02
+                                                           :degree (s27.v2 / very))
+                                           :degree (s27.r / rapid
+                                                          :degree (s27.v / very))
+                                           :op1 (s27.a / aspire-01
+                                                       :ARG0 (s27.y / you)
+                                                       :ARG1 (s27.m / marrow
+                                                                    :ARG1-of (s27.e2 / enrich-01)
+                                                                    :mod (s27.b / bone)))
+                                           :op2 (s27.s / suck-01
+                                                       :ARG0 s27.y
+                                                       :ARG1 s27.m
+                                                       :direction (s27.o2 / out)
+                                                       :path (s27.h / hole
+                                                                    :quant "1")))
+                              :ARG2 s27.y))
+   :snt28 (s28.p2 / possible-01
+                  :ARG1 (s28.p / pass-03
+                               :quant (s28.m / multiple)
+                               :ARG1 (s28.w / we
+                                            :same-as s7.w)
+                               :path (s28.e / entry
+                                            :ARG1-of (s28.s / same-01)
+                                            :mod (s28.t / that)
+                                            :same-as s27.h)))
+   :snt29 (s29.r / require-01
+                 :ARG1 (s29.r2 / robot)
+                 :polarity "-")
+   :snt30 (s30.a / and
+                 :op2 (s30.c / cause-01
+                             :ARG1 (s30.p2 / possible-01
+                                           :ARG1 (s30.a2 / and
+                                                         :op1 (s30.g / get-01
+                                                                     :ARG0 (s30.p / person
+                                                                                  :name (s30.n / name
+                                                                                               :op1 "Bob")
+                                                                                  :same-as s7.p)
+                                                                     :ARG1 (s30.p3 / puncture-01
+                                                                                   :quant "1")
+                                                                     :mod (s30.j / just))
+                                                         :op2 (s30.a3 / anesthesia
+                                                                      :ARG1-of (s30.l / local-02))
+                                                         :op3 (s30.d / do-02
+                                                                     :ARG0 s30.p
+                                                                     :ARG1 (s30.h / harvest-01
+                                                                                  :mod (s30.t / this)
+                                                                                  :same-as s9.h)
+                                                                     :manner (s30.o / outpatient)))
+                                           :ARG1-of (s30.q / quick-02
+                                                           :degree (s30.v / very)))))
+   :snt31 (s31.a / and
+                 :op2 (s31.p / play-01
+                             :ARG2 (s31.t / this)
+                             :degree (s31.b / bit
+                                            :mod (s31.l / little))
+                             :mod (s31.a2 / around)))
+   :snt32 (s32.a / and
+                 :op2 (s32.d / develop-02
+                             :ARG0 (s32.p / person
+                                          :ARG0-of (s32.h / have-org-role-91
+                                                          :ARG1 (s32.t / team
+                                                                       :poss (s32.w / we
+                                                                                    :same-as s7.w))
+                                                          :ARG2 (s32.m / member)))
+                             :ARG1 (s32.t2 / technology
+                                           :mod (s32.t3 / this))))
+   :snt33 (s33.a / and
+                 :op2 (s33.g / get-01
+                             :ARG0 (s33.w / we
+                                          :same-as s7.w)
+                             :ARG1 (s33.a2 / and
+                                           :op1 (s33.a3 / animal
+                                                        :mod (s33.l / large)
+                                                        :quant "2")
+                                           :op2 (s33.s / study-01
+                                                       :ARG1 (s33.p / pig)))
+                             :time (s33.e / eventual)))
+   :snt34 (s34.a2 / and
+                  :op2 (s34.f / find-01
+                              :ARG0 (s34.w / we
+                                           :same-as s7.w)
+                              :ARG1 (s34.a3 / and
+                                            :ARG0-of (s34.s2 / surprise-01
+                                                             :ARG1 s34.w)
+                                            :op1 (s34.g / get-01
+                                                        :ARG0 s34.w
+                                                        :ARG1 (s34.m / marrow
+                                                                     :mod (s34.b / bone))
+                                                        :direction (s34.o / out))
+                                            :op2 (s34.g2 / get-01
+                                                         :ARG0 s34.w
+                                                         :ARG1 (s34.a / activity-06
+                                                                      :ARG0 (s34.c / cell
+                                                                                   :mod (s34.s / stem))
+                                                                      :ARG1-of (s34.h / have-quant-91
+                                                                                      :ARG3 (s34.t / times
+                                                                                                   :quant "10"))
+                                                                      :ARG1-of (s34.c2 / compare-01
+                                                                                       :ARG2 (s34.d / device
+                                                                                                    :ARG1-of (s34.n / normal-02)))
+                                                                      :location s34.m)
+                                                         :ARG2 (s34.m2 / mineral
+                                                                       :mod (s34.b2 / bone)
+                                                                       :same-as s21.d)))))
+   :snt35 (s35.a / approve-01
+                 :ARG0 (s35.g / government-organization
+                              :name (s35.n / name
+                                           :op1 "FDA"))
+                 :ARG1 (s35.d / device
+                              :mod (s35.t / this)
+                              :same-as s21.d)
+                 :mod (s35.j / just)
+                 :time (s35.y / year
+                              :mod (s35.l / last)))
+   :snt36 (s36.p / patient
+                 :ARG0-of (s36.l / live-01)
+                 :location (s36.h / here))
+   :snt37 (s37.p / possible-01
+                 :ARG1 (s37.s / see-01
+                              :ARG0 (s37.y / you)
+                              :ARG1 (s37.f2 / follow-02
+                                            :ARG0 (s37.i / it
+                                                         :same-as s36.l)
+                                            :ARG1 (s37.u / Curve
+                                                         :ARG1-of (s37.f / flexible-03))
+                                            :direction (s37.a / around))))
+   :snt38 (s38.p / pass-03
+                 :location (s38.h / here)
+                 :location (s38.p2 / patient
+                                   :ARG1-of (s38.s / same-01
+                                                   :ARG1 (s38.h2 / hole
+                                                                 :same-as s27.h))
+                                   :same-as s36.l)
+                 :quant "2")
+   :snt39 (s39.d / do-02
+                 :ARG1 (s39.t / this)
+                 :manner (s39.u / under
+                                :op1 (s39.a / anesthesia
+                                            :ARG1-of (s39.l / local-02)))
+                 :mod (s39.o / outpatient))
+   :snt40 (s40.a3 / and
+                  :op2 (s40.g / get-01
+                              :ARG0 (s40.w / we
+                                           :same-as s7.w)
+                              :ARG1 (s40.c / cell
+                                           :ARG1-of (s40.h / have-quant-91
+                                                           :ARG3 (s40.t / times
+                                                                        :quant (s40.a / about
+                                                                                      :op1 (s40.b / between
+                                                                                                  :op1 "3"
+                                                                                                  :op2 "6")))
+                                                           :ARG4 (s40.a4 / approach-02
+                                                                         :ARG1-of (s40.s2 / standard-02)
+                                                                         :ARG1-of (s40.d / do-02
+                                                                                         :ARG2 (s40.p / patient
+                                                                                                      :ARG1-of (s40.s / same-01)))))
+                                           :mod (s40.s3 / stem))
+                              :mod (s40.a2 / again)))
+   :snt41 (s41.c2 / cause-01
+                  :ARG0 (s41.a / amr-unknown)
+                  :ARG1 (s41.r / recommend-01
+                               :ARG1 (s41.c / care-01
+                                            :ARG0 (s41.y / you))))
+   :snt42 (s42.s / source-02
+                 :ARG0 (s42.m / marrow
+                              :mod (s42.b / bone))
+                 :ARG1 (s42.c / cell
+                              :mod (s42.s2 / stem)
+                              :mod (s42.a / adult))
+                 :mod (s42.r / rich
+                             :degree (s42.v / very)))
+   :snt43 (s43.k / know-01
+                 :ARG0 (s43.y / you
+                              :mod (s43.a / all))
+                 :ARG1 (s43.c / cell
+                              :mod (s43.s / stem)
+                              :mod (s43.e / embryo)))
+   :snt44 (s44.h / have-concession-91
+                 :ARG1 (s44.e / enter-01
+                              :ARG0 (s44.t / they
+                                           :same-as s43.c)
+                              :ARG1 (s44.t2 / try-01
+                                            :mod (s44.c / clinical))
+                              :time (s44.y / yet)
+                              :polarity "-")
+                 :ARG2 (s44.g / get-02
+                              :ARG0 s44.t
+                              :ARG1 (s44.p / potential
+                                           :mod (s44.g2 / great))))
+   :snt45 (s45.b / be-located-at-91
+                 :ARG1 (s45.c / cell
+                              :ARG2-of (s45.i / include-01
+                                              :ARG1 (s45.c2 / cell
+                                                            :ARG0-of (s45.f2 / form-01
+                                                                             :ARG1 (s45.b2 / blood))
+                                                            :ARG1-of (s45.u / use-01
+                                                                            :ARG0 (s45.w / we)
+                                                                            :ARG2 (s45.f / form
+                                                                                         :mod (s45.t2 / therapy
+                                                                                                      :mod (s45.s / stem)))
+                                                                            :duration (s45.o / over
+                                                                                             :op1 (s45.t / temporal-quantity
+                                                                                                         :unit (s45.y / year)
+                                                                                                         :quant "40")))
+                                                            :location (s45.m / marrow
+                                                                             :mod (s45.b4 / bone)
+                                                                             :part-of s45.w)
+                                                            :mod (s45.s2 / stem)))
+                              :mod s45.s
+                              :mod (s45.a / adult))
+                 :ARG2 (s45.t3 / throughout
+                               :op1 (s45.b3 / body
+                                            :poss s45.w)))
+   :snt46 (s46.e3 / explode-02
+                  :ARG1 (s46.u / use-01
+                               :ARG1 (s46.c / cell
+                                            :mod (s46.s / stem)
+                                            :mod (s46.m / marrow
+                                                        :mod (s46.b / bone)))
+                               :ARG2 (s46.t2 / treat-03
+                                             :ARG2 (s46.d2 / disease
+                                                           :example (s46.a / and
+                                                                           :op1 (s46.d3 / disease
+                                                                                        :mod (s46.h / heart))
+                                                                           :op2 (s46.d4 / disease
+                                                                                        :mod (s46.v / vascular))
+                                                                           :op3 (s46.o / orthopedics)
+                                                                           :op4 (s46.e / engineer-01
+                                                                                       :purpose (s46.t3 / treat-03
+                                                                                                        :ARG2 (s46.a2 / and
+                                                                                                                      :op1 (s46.d5 / disease
+                                                                                                                                   :name (s46.n / name
+                                                                                                                                                :op1 "Alzheimer's"))
+                                                                                                                      :op2 (s46.d6 / disease
+                                                                                                                                   :name (s46.n2 / name
+                                                                                                                                                 :op1 "diabetes"))))
+                                                                                       :ARG1 (s46.t / tissue))
+                                                                           :op5 (s46.n3 / neurology
+                                                                                        :mod (s46.e2 / even)))
+                                                           :mod (s46.o2 / other)
+                                                           :poss (s46.p / patient))))
+                  :time (s46.d / decade
+                               :mod (s46.l / last)))
+   :snt47 (s47.a / and
+                 :op1 (s47.c / come-out-09
+                             :ARG1 (s47.w / we
+                                          :same-as s7.w)
+                             :mod (s47.j / just))
+                 :op2 (s47.c2 / commercialize-01
+                              :ARG0 s47.w
+                              :ARG1 (s47.g / generation
+                                           :mod (s47.t / thing
+                                                       :name (s47.n / name
+                                                                    :op1 "Marrow"
+                                                                    :op2 "Miner")
+                                                       :same-as s21.d)
+                                           :mod "2.0")
+                              :time (s47.y / year
+                                           :mod (s47.t2 / this))))
+   :snt48 (s48.h2 / hope-01
+                  :ARG1 (s48.g / get-05
+                               :ARG0 (s48.t / this
+                                            :same-as s47.g)
+                               :ARG1 (s48.c / cell
+                                            :quant (s48.m / more)
+                                            :mod (s48.s / stem))
+                               :ARG1-of (s48.t2 / translate-01
+                                                :ARG2 (s48.o2 / outcome
+                                                              :ARG1-of (s48.h / have-degree-91
+                                                                              :ARG2 (s48.g2 / good-02
+                                                                                            :ARG1 s48.o2)
+                                                                              :ARG3 (s48.m2 / more))))
+                               :direction (s48.o / out)))
+   :snt49 (s49.p3 / possible-01
+                  :ARG1 (s49.e / encourage-02
+                               :ARG0 (s49.i / it
+                                            :same-as s47.g)
+                               :ARG1 (s49.s2 / sign-up-03
+                                             :ARG1 (s49.p / person
+                                                          :quant (s49.m2 / more))
+                                             :ARG3 (s49.p2 / person
+                                                           :ARG0-of (s49.s / save-02
+                                                                           :ARG1 (s49.l / live-01))
+                                                           :ARG0-of (s49.d / donate-01
+                                                                           :ARG2 (s49.m / marrow
+                                                                                        :mod (s49.b / bone)))
+                                                           :mod (s49.p4 / potential)))))
+   :snt50 (s50.p / possible-01
+                 :ARG1 (s50.e / enable-01
+                              :ARG0 (s50.i / it
+                                           :same-as s47.g)
+                              :ARG1 (s50.b / bank-01
+                                           :ARG0 (s50.y / you)
+                                           :ARG1 (s50.c / cell
+                                                        :mod (s50.s / stem)
+                                                        :mod (s50.m / marrow)
+                                                        :poss s50.y)
+                                           :ARG1-of (s50.u / use-01
+                                                           :condition (s50.n / need-01
+                                                                             :ARG0 s50.y
+                                                                             :ARG1 s50.b)
+                                                           :time (s50.f / future))
+                                           :time (s50.a / and
+                                                        :op1 (s50.h / have-degree-91
+                                                                    :ARG1 s50.y
+                                                                    :ARG2 (s50.y2 / young)
+                                                                    :ARG3 (s50.m2 / more))
+                                                        :op2 (s50.h2 / have-degree-91
+                                                                     :ARG1 s50.y
+                                                                     :ARG2 (s50.h3 / healthy)
+                                                                     :ARG3 (s50.m3 / more))))
+                              :ARG2 s50.y
+                              :mod (s50.e2 / even)))
+   :snt51 (s51.a / and
+                 :mod (s51.u / ultimate)
+                 :op2 (s51.p2 / picture-01
+                              :ARG1 (s51.p / person
+                                           :ARG0-of (s51.s / survive-01
+                                                           :ARG1 (s51.t3 / transplant-01
+                                                                         :ARG1 (s51.w / we)
+                                                                         :ARG2 (s51.m / marrow
+                                                                                      :mod (s51.b / bone))))
+                                           :ARG1-of (s51.c / come-01
+                                                           :purpose (s51.r2 / reunite-01
+                                                                            :ARG1 s51.p
+                                                                            :location (s51.u2 / university
+                                                                                              :name (s51.n / name
+                                                                                                           :op1 "Stanford")
+                                                                                              :same-as s2.u))
+                                                           :ARG3 (s51.t2 / together)
+                                                           :frequency (s51.r / rate-entity-91
+                                                                             :ARG3 (s51.t / temporal-quantity
+                                                                                          :unit (s51.y / year)
+                                                                                          :quant "1"))))
+                              :location (s51.h / here)))
+   :snt52 (s52.h2 / hope-01
+                  :ARG1 (s52.l / let-01
+                               :ARG0 (s52.t / technology
+                                            :mod (s52.t2 / this)
+                                            :same-as s32.t2)
+                               :ARG1 (s52.h / have-03
+                                            :ARG0 (s52.w / we
+                                                         :same-as s51.w)
+                                            :ARG1 (s52.p / person
+                                                         :quant (s52.m / more)
+                                                         :ARG0-of (s52.s / survive-01
+                                                                         :same-as s51.p)
+                                                         :mod (s52.t3 / this))
+                                            :time (s52.f / future))))
+   :snt53 (s53.t / thank-01))
+

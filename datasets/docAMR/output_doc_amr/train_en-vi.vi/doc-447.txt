@@ -1,0 +1,227 @@
+http://www.ted.com/talks/luis_von_ahn_massive_scale_online_collaboration</url>
+Bao nhiêu trong các bạn phải điền một vài mẫu trang web nào đó mà bạn được yêu cầu là đọc một chuỗi ký tự bị làm nhiễu như thế này?
+Bao nhiêu trong các bạn thấy là nó thật sự là rất phiền?
+Tuyệt.
+Vì tôi đã sáng chế ra nó đó.
+Hay là tôi là một trong những người đã tạo ra nó.
+Cái đó được gọi là CAPTCHA.
+Và lý do nó ở đó là để chắc chắn rằng bạn, thực thể đang điền cái biểu mẫu, thực sự là con người mà không phải là một loại chương trình máy tính nào đó được viết để điền biểu mẫu hàng triệu triệu lần.
+Và lý do nó hoạt động được vì con người, ít nhất là những người không bị khiếm thị, không có vấn đề gì khi đọc những ký tự bị làm nhiễu, trong khi các chương trình máy tính đơn giản là không thể làm điều đó tốt được.
+Ví dụ như là trang Ticketmaster , lý do bạn phải gõ những từ bị nhiễu kia là để chống lại những kẻ đầu cơ vé viết các chương trình máy tính có thể mua hàng triệu vé, 2 vé một lần.
+CAPTCHA được dùng khắp Internet.
+Và vì chúng được dùng quá thường xuyên, nhiều lần các chuỗi ký tự ngẫu nhiên được đưa ra cho người dùng gõ không hay chút nào.
+Ví dụ này là từ trang đăng ký của Yahoo.
+Chuỗi ký tự ngẫu nhiên xuất hiện là W, A, I, T , mà đánh vần được một từ.
+Nhưng phần hay nhất là tin nhắn mà ban trợ giúp của Yahoo nhận được 20 phút sau.
+Tin nhắn: "Giúp tôi với!
+Tôi đã đợi hơn 20 phút, và không có gì xảy ra."
+Người đó nghĩ là anh ta phải đợi.
+Điều đó tất nhiên là không tệ bằng người tội nghiệp này.
+Dự án CAPTCHA là dự án mà chúng tôi đã làm ở Carnegie Mellon hơn 10 năm trước, và nó được dùng khắp mọi nơi.
+Để tôi kể cho các bạn về dự án mà chúng tôi làm vài năm sau đó, nó giống như là bước tiến hoá của CAPTCHA.
+Dự án này mà chúng tôi gọi là reCAPTCHA, là dự án mà chúng tôi đã bắt đầu ở Carnegie Mellon, rồi chúng tôi biến nó thành một công ty.
+Và rồi khoảng một năm rưỡi sau, Google thực sự mua lại công ty này.
+Vì vậy để kể các bạn nghe cái mà dự án này bắt đầu.
+Dự án này đã bắt đầu từ những nhận xét sau: Thống kê là khoảng 200 triệu CAPTCHA được con người gõ mỗi ngày khắp thế giới.
+Khi tôi mới nghe điều này, tôi khá là tự hào về bản thân.
+Tôi đã nghĩ là: nhìn xem sự ảnh hưởng của nghiên cứu của tôi như thế nào.
+Nhưng rồi tôi bắt đầu cảm thấy buồn.
+Và đây là lý do: mỗi lần bạn gõ một CAPTCHA cơ bản là bạn phí phạm 10 giây thời gian của bạn.
+Và nếu bạn nhân thời gian đó lên 200 triệu, và bạn sẽ thấy là nhân loại, gộp lại, phí phạm khoảng 500.000 giờ mỗi ngày gõ những cái CAPTCHA phiền phức đó.
+Vì vậy tôi cảm thấy tồi tệ.
+Và rồi tôi nghĩ: tất nhiên là chúng ta không thể bỏ CAPTCHA, vì bảo mật trên Web dựa vào chúng.
+Nhưng rồi tôi bắt đầu nghĩ, có cách nào mà chúng ta có thể dùng những lần gõ CAPTCHA đó cho cái gì đó tốt cho nhân loại?
+Trong khi các bạn gõ CAPTCHA, trong 10 giây đó, não của các bạn đang làm điều gì đó phi thường.
+Não của các bạn đang làm điều mà máy tính chưa thể làm được.
+Vì vậy chúng tôi có thể làm cho bạn làm một việc có ích trong 10 giây đó không?
+nói cách khác, có một vấn đề lớn mà chúng ta không thể làm cho máy tính giải được, nhưng chúng ta có thể chia nhỏ ra thành các phần 10 giây là thời gian mà một người nào đó gõ một cái CAPTCHA họ giải một phần nhỏ của vấn đề?
+Và câu trả lời là "có", và đây chính là cái mà chúng tôi đang làm.
+Vì vậy cái mà các bạn không biết là hiện tại, trong khi các bạn đang gõ CAPTCHA, không chỉ bạn đang chứng thực bạn là con người, mà hơn nữa bạn đang thực sự giúp đỡ chúng tôi điện tử hoá sách.
+Để tôi giải thích nó hoạt động như thế nào.
+Có nhiều dự án đang cố gắng số hoá sách.
+Google có một cái.
+The Internet Archive có một cái.
+Amazon, hiện tại với Kindle, đang cố gắng số hoá sách.
+Cơ bản cách nó hoạt động là bạn bắt đầu với một cuốn sách cũ.
+Bạn đã từng thấy rồi phải không?
+Một quyển sách ấy mà?
+Và các bạn bắt đầu với một cuốn sách, và rồi các bạn scan nó.
+Bây giờ scan một cuốn sách giống như là chụp mỗi trang sách.
+Nó tạo ra một tấm hình cho mỗi trang sách.
+Đây là hình ảnh với chữ cho mỗi trang sách.
+Bước kế tiếp là máy tính cần phải có thể giải mã tất cả các từ trong bức ảnh.
+Bằng cách sử dụng một công nghệ gọi là OCR, viết tắt của nhận dạng ký tự quang học , nó nhận một bức ảnh có văn bản và cố gắng nhận dạng văn bản trong đó.
+Hiện tại vấn đề là OCR không hoàn hảo.
+Đặc biệt là với các sách cũ mà mực đã phai màu và giấy đã ngã vàng, OCR không thể nhận diện được nhiều từ.
+Ví dụ, với những cuốn sách được viết cách đây trên 50 năm, Máy tính không thể nhận diện được 30 phần trăm.
+Vì vậy cái mà chúng tôi đang làm hiện tại là chúng tôi đang đem tất cả những từ mà máy tính không thể nhận diện và chúng tôi để con người đọc chúng cho chúng tôi trong khi họ đang gõ CAPTCHA trên Internet.
+Vì vậy lần tới khi bạn gõ CAPTCHA, những từ các bạn gõ là những từ thật sự được lấy ra từ những cuốn sách đang được số hoá mà máy tính không thể nhận diện
+Và lý do hiện tại bạn thấy hai từ thay vì một từ là vì, bạn thấy, một trong hai từ là từ mà hệ thống lấy ra từ một cuốn sách, hệ thống không biết nó là cái gì, và nó đưa cho bạn.
+Nhưng vì nó không biết câu trả lời, nó không thể kiểm tra bạn.
+Vì vậy cái mà chúng tôi làm là đưa bạn một từ khác, từ mà hệ thống biết câu trả lời.
+Chúng tôi không nói cho bạn biết cái nào là cái nào, xin hãy gõ cả hai.
+Và nếu bạn gõ một từ chính xác cho từ mà hệ thống biết câu trả lời, nó cho rằng bạn là con người, và nó cũng tin tưởng rằng bạn gõ từ còn lại đúng.
+Và nếu chúng ta lặp lại quá trình này cho 10 người khác nhau và tất cả họ đồng ý với từ mới, thì chúng ta có một từ được điện tử hoá đúng.
+Và đó là cách mà hệ thống làm việc.
+Và cơ bản, từ khi chúng tôi đưa nó vào hoạt động 3 hay 4 năm trước, rất nhiều trang web đã bắt đầu chuyển từ CAPTCHA cũ, cái mà người ta phí phạm thời gian, sang dùng CAPTCHA mới, cái mà người ta giúp số hoá sách.
+Ví dụ, Ticketmaster.
+Và mỗi lần bạn mua vé trên Ticketmaster, bạn đã giúp số hoá sách.
+Facebook: Mỗi lần bạn thêm bạn mới hay chọc ai đó, bạn giúp số hoá sách.
+Twitter và khoảng 350.000 trang web khác tất cả đang sử dụng reCAPTCHA.
+Và thực sự, số lượng trang web đang sử dụng reCAPTCHA là rất cao đến nỗi số lượng từ mà chúng tôi số hoá mỗi ngày thực sự rất lớn.
+Khoảng 100 triệu từ một ngày, tương đương khoảng 2 triệu rưỡi quyển sách mỗi năm.
+Và tất cả đều được làm từng từ một bằng những người gõ CAPTCHA trên Internet.
+Tất nhiên, vì chúng tôi làm quá nhiều từ mỗi ngày, những điều buồn cười có thể xảy ra.
+Và đây là điều có thật vì bây giờ chúng tôi đang đưa cho người ta 2 từ tiếng Anh ngẫu nhiên cạnh nhau.
+để những điều buồn cười có thể xảy ra.
+Ví dụ, chúng tôi đã đưa ra từ này.
+Nó là từ "Christians" ;
+không có gì sai ở đây.
+Nhưng nếu bạn để nó cạnh một từ ngẫu nhiên, điều tồi tệ có thể xảy ra.
+Và chúng tôi có từ này. Trên màn hình: bad christians
+Nó thậm chí tồi tệ hơn, bởi vì trang web đưa ra từ này tình cờ lại là trang The Embassy of the Kingdom of God .
+Oops.
+Đây là một ví dụ rất tệ khác.
+JohnEdwards.com Màn hình: Damn liberal Và chúng tôi tiếp tục lăng mạ người ta mỗi ngày.
+Và, tất nhiên, chúng tôi không chỉ lăng mạ người khác.
+Đây là vấn đề, vì chúng tôi đưa ra 2 từ ngẫu nhiên, điều thú vị có thể xảy ra.
+Và điều này thực sự tạo nên của một trào lưu trên Internet mà hàng vạn người tham gia, được gọi là nghệ thuật CAPTCHA.
+Tôi chắc rằng vài người trong số các bạn đã nghe tới nó.
+Và cách nó hoạt động như sau.
+Tưởng tượng bạn đang dùng Internet và bạn thấy một cái CAPTCHA mà bạn nghĩ là nó thú vị, giống như cái CAPTCHA này. Màn hình: máy nướng tàng hình
+Rồi cái mà bạn làm là bạn chụp màn hình đó lại.
+Và dĩ nhiên, bạn điền cái CAPTCHA vì bạn giúp chúng tôi số hoá sách.
+Nhưng đầu tiên là bạn chụp màn hình, và rồi bạn vẽ vời cái gì đó liên quan tới cụm từ đó.
+Nó như vậy đó.
+Có hàng vạn tác phẩm như vậy.
+Vài tác phẩm rất dễ thương. Màn hình: Clenched it
+Vài tác phẩm buồn cười hơn.
+Văn bản: stoned founders Và cái, như là "paleontological shvisle", chúng có "Snoop Dogg".
+Và đây là còn số yêu thích của tôi về reCAPTCHA.
+Và đây là điều yêu thích của tôi về dự án này.
+Đây là số lượng người khác nhau đã giúp chúng tôi số hoá ít nhất một từ trong sách thông qua reCAPTCH 750 triệu, hơn 10% dân số thế giới một chút, đã giúp chúng tôi số hoá kiến thức nhân loại.
+Và những con số như vậy đã là động lực thúc đẩy công tác nghiên cứu của tôi.
+Vì vậy câu hỏi thúc đẩy nghiên cứu của tôi là: Nếu bạn nhìn vào các thành tựu lớn của nhân loại, những cái thực sự lớn mà nhân loại đã tập hợp lại và cùng làm nên lịch sử -- ví dụ như là xây các kim tự tháp ở Ai Cập hay là kênh đào Panama hay là đưa người lên mặt trăng -- có một sự thật đáng tò mò về họ, và đó chính là các điều đó được làm với số lượng người gần giống nhau.
+Nó thật lạ; tất cả điều đó được làm với khoảng 100.000 người.
+Và lý do là vì, trước khi có Internet, điều hành hơn 100.000 người, đừng nói đến là cả trả lương họ, dường như là không tưởng rồi.
+Nhưng với Internet, chúng tôi chỉ mới cho các bạn xem một dự án mà chúng tôi có 750 triệu người giúp chúng tôi số hoá kiến thức nhân loại.
+Vì vậy câu hỏi thúc đẩy nghiên cứu của tôi là, nếu chúng ta có thể đưa người lên mặt trăng với 100.000 người, chúng ta sẽ có thể làm gì với 100 triệu?
+Và dựa trên câu hỏi này, chúng tôi đã có nhiều dự án khác nhau mà chúng tôi đang làm.
+Để tôi kể các bạn về một cái mà tôi hứng thú nhất.
+Đây là cái mà chúng tôi đã làm một cách bán-lặng lẽ trong khoảng một năm rưỡi.
+Nó vẫn chưa ra mắt.
+Nó được gọi là Duolingo.
+Vì nó chưa ra mắt nên, suỵt!
+Vâng, tôi có thể tin tưởng các bạn.
+Nó bắt đầu bằng việc tôi đưa ra một câu hỏi cho sinh viên sau đại học của tôi, Severin Hacker.
+Vâng, đó là Severin Hacker.
+Và tôi đă ra một câu hỏi cho sinh viên sau đại học của tôi.
+Các bạn nghe rõ chứ, họ của anh ta là Hacker.
+Và tôi đưa ra câu hỏi này cho anh ta: Làm cách nào chúng ta có thể làm cho 100 triệu người dịch trang web sang tất cả các ngôn ngữ chính miễn phí?
+Vâng, có nhiều thứ để nói về câu hỏi này.
+Đầu tiên, dịch trang web.
+Hiện tại web được phân vùng thành nhiều ngôn ngữ.
+Phần lớn là Tiếng Anh.
+Nếu bạn không biết Tiếng Anh, bạn không thể sử dụng chúng được.
+Nhưng có một phần lớn khác là các ngôn ngữ khác, và nếu bạn không biết những ngôn ngữ đó, bạn không thể sử dụng được.
+Vì vậy tôi muốn dịch tất cả trên Web, hay là ít nhất là phần lớn Web, sang tất cả ngôn ngữ chính.
+Và đó là cái mà tôi muốn làm.
+Vài người trong các bạn có thể nói, tại sao chúng ta không thể sử dụng máy tính để dịch?
+Tại sao không dịch bằng máy?
+Dịch bằng máy hiện tại bắt đầu dịch vài câu lẻ tẻ.
+Tại sao chúng ta không dùng nó để dịch các trang web?
+Thực ra vấn đề là dịch máy chưa đủ tốt và nó có thể sẽ không đủ tốt trong 15 hay 20 năm tới.
+Nó có nhiều sai lầm.
+Thậm chí khi nó không mắc sai lầm, vì nó mắc nhiều sai lầm, bạn không biết khi nào nên tin nó hay là không.
+Để tôi lấy một ví dụ cho các bạn về vài thứ đã được dịch bằng máy.
+Thực ra nó là một bài đăng trên forum.
+Có ai đó muốn hỏi một câu hỏi về JavaScript.
+Nó được dịch từ tiếng Nhật sang tiếng Anh.
+Và tôi sẽ để các bạn tự đọc.
+Người này bắt đầu bằng việc xin lỗi về việc bài đăng này được dịch với một máy tính.
+Và câu kế là phần mào đầu của câu hỏi.
+Và anh ta chỉ giải thích gì đó.
+Nên nhớ, nó là một câu hỏi về JavaScript.
+Chữ: Thường xuyên, thời gian dê cài đặt một lỗi là nôn Và rồi tới phần đầu của câu hỏi.
+Chữ: Làm thế nào nhiều lần như gió, trụ, và con rồng? Và rồi tới phần yêu thích nhất của tôi trong câu hỏi này.
+Chữ: Điều này xúc phạm đến đá của cha? Và rồi đến phần cuối, phần yêu thích nhất của tôi trong toàn bộ.
+Chữ: Xin vui lòng xin lỗi cho sự ngu dốt của bạn. Có một rất nhiều cảm ơn bạn. Đó là tại sao dịch bằng máy chưa đủ tốt.
+Và quay lại câu hỏi.
+Chúng tôi cần người để dịch toàn bộ Web.
+Và câu hỏi tiếp theo bạn có thể có là, tại sao bạn không trả công cho người ta để dịch?
+Chúng tôi có thể trả cho chuyên gia dịch thuật để dịch toàn bộ Web.
+Chúng tôi có thể làm điều đó.
+Nhưng không may là nó sẽ cực kỳ mắc.
+Ví dụ, dịch một phần nhỏ, rất nhỏ của toàn bộ Web, trang Wikipedia, sang một ngôn ngữ khác, tiếng Tây Ban Nha chẳng hạn.
+Wikipedia có phiên bản tiếng Tây Ban Nha, nhưng nó rất nhỏ so với phiên bản tiếng Anh.
+Nó khoảng 20 phần trăm kích thước của bản tiếng Anh.
+Nếu chúng ta muốn dịch 80 phần trăm kia sang tiếng Tây Ban Nha, nó sẽ tốn tối thiểu 50 triệu đô la Mỹ -- và thậm chí đây là một quốc gia nhận dịch thuật rẻ nhất
+Nó sẽ rất mắc.
+Vì vậy cái mà chúng tôi muốn làm là có 100 triệu người dịch Web sang mọi ngôn ngữ chính miễn phí.
+Hiện tại nếu đây là cái mà bạn muốn làm, bạn sẽ sớm nhận ra bạn sẽ gặp phải 2 trở ngại khá lớn, 2 trở ngại lớn.
+Đầu tiên là thiếu người biết 2 thứ tiếng.
+Và tôi thậm chí không biết nếu mà tồn tại 100 triệu người đang sử dụng Web mà biết hai thử tiếng đủ để giúp chúng tôi dịch.
+Đó là một vấn đề lớn.
+Vấn đề khác bạn sẽ gặp phải là thiếu động lực.
+Làm cách nào bạn thúc đẩy người ta dịch trang web miễn phí?
+Bình thường bạn phải trả công cho người ta để làm điều này.
+Vì vậy làm cách nào bạn thúc đẩy họ làm điều này miễn phí?
+Khi mà chúng tôi bắt đầu nghĩ về điều này, chúng tôi đã bị vướng 2 điều trên.
+Nhưng rồi chúng tôi nhận ra, thực sự có một cách để giải quyết cả 2 vấn đề này với cùng một lời giải.
+Cố một cách mà một mũi tên bắn trúng 2 con nhạn.
+Đó là biến đổi dịch thuật thành một thứ mà hàng triệu người muốn làm, và điều đó cũng giải quyết vấn đề thiếu người biết song ngữ, và đó là dạy tiếng.
+có hang 1,2 tỉ người học tiếng nước ngoài.
+Người ta rất, rất muốn học một ngoại ngữ.
+Và nó không chỉ vì họ bị bắt buộc phải học.
+Ví dụ, chỉ ở đơn cử ở Mỹ, có hơn 5 triệu người đã trả hơn 500 đô la Mỹ để mua phần mềm học ngoại ngữ.
+Vì người ta rất, rất muốn học ngoại ngữ.
+Vì vậy cái mà chúng tôi đang làm trong một năm rưỡi nay là một trang web mới -- nó được gọi là Duolingo -- với ý tưởng cơ bản là mọi nguwofi học một ngôn ngữ mới miễn phí trong khi dịch Web.
+Và cơ bản là học học bằng cách làm.
+Và cách nó hoạt động là khi bạn là một người mới học, chúng tôi cho các bạn những câu rất, rất đơn giản.
+Và tất nhiên là có rất nhiều câu rất đơn giản trên Web.
+Chúng tôi cho các bạn những câu rất, rất đơn giản cùng với nghĩa của mỗi từ.
+Và trong khi các bạn dịch chúng, và thấy cách người khác dịch chúng, bạn bắt đầu học ngoại ngữ đó.
+Và càng ngày bạn càng tiến bộ, chúng tôi cho các bạn các câu phức tạp hơn để dịch.
+Nhưng toàn bộ thời gian, các bạn học bằng cách làm.
+Và điều điên rồi về phương pháp này là nó thực sự khả thi.
+Đầu tiên, người ta rất, rất muốn học ngoại ngữ.
+Chúng tôi hầu như xây dựng xong nó, và chúng tôi đang thử nghiệm nó.
+Người ta có thể thực sự học ngoại ngữ với nó.
+Và họ học nó tốt như là với các phần mềm ngôn ngữ hàng đầu.
+Vì vậy người ta thực sự học ngoại ngữ.
+Và không chỉ học nó, mà còn học một cách thú vị.
+Vì bạn thấy với Duolingo, người ta thực sự học với nội dung thực.
+Ngược lại với học bằng những câu nghĩ ra, người ta học với nội dung thật, những câu thực sự thú vị.
+Vì vậy họ thực sự học một ngôn ngữ.
+Nhưng thậm chí bất ngờ hơn, bản dịch mà chúng tôi lấy từ người dùng trang web, thậm chí họ chỉ là người mới học, bản dịch từ học chính xác như là những người dịch chuyên nghiệp, điều đó rất bất ngờ.
+Để tôi lấy một ví dụ cho bạn xem.
+Đây là một câu được dịch từ tiếng Đức sang tiếng Anh.
+Trên cùng là tiếng Đức.
+Ở giữa là bản dịch tiếng Anh được dịch bởi một người dịch chuyên nghiệp được trả 20 xu cho mỗi từ mà anh ta dịch.
+Và dưới cùng là câu được dịch bởi những người dùng Duoling, không ai trong số họ từng biết tiếng Đức trước khi họ dùng trang web.
+Các bạn có thể thấy là nó khác là hoàn hảo.
+Hiện tại, tất nhiên là chúng tôi dùng mẹo ở đây để làm cho những bản dịch đó tốt như là người dịch chuyên nghiệp.
+Chúng tôi kết hợp bản dịch của nhiều người mới học lại để tạo nên một bản dịch chất lượng cao.
+Và thậm chí khi chúng tôi kết hợp các bản dịch, trang web vẫn thực sự dịch khá nhanh.
+Để tôi cho các bạn xem, đây là ước lượng của chúng tôi về việc dịch Wikipedia nhanh như thế nào từ tiếng Anh sang tiếng Tây Ban Nha.
+Nên nhớ, đây là một dự án đáng giá 50 triệu đô la Mỹ.
+Và nếu chúng tôi muốn Wikipedia sang tiếng Tây Ban Nha, chúng tôi có thể làm trong vòng 5 tuần với 100.000 người dùng.
+Và chúng tôi có thể làm trong vòng 80 giờ với một triệu người dùng.
+Vì tất cả các dự án nhóm chúng tôi từng làm tới hiện tại đều có hàng triệu người dùng, chúng tôi hy vọng rằng chúng tôi sẽ có thể dịch cực nhanh bằng dự án này.
+Và điều mà tôi hứng thú nhất về Duolingo là tôi nghĩ điều này cung cấp một hình mẫu kinh tế công bằng cho giáo dục ngoại ngữ.
+Đó chính là: Hình mẫu kinh tế hiện tại của giáo dục ngoại ngữ là học sinh trả tiền, và cụ thể là, học sinh trả cho Rosetta Stone 500 đô la Mỹ.
+Đó là hình mẫu kinh tế hiện tại.
+Vấn đề với hình mẫu kinh tế này là 95 phần trăm dân số thế giới không có 500 đô la Mỹ.
+Vì vậy nó cực kỳ bất công với người nghèo.
+Điều này hoàn toàn nghiên về người giàu.
+Và bây giờ, với Duolingo, vì trong khi bạn học bạn thực sự đang tạo ra giá trị, bạn đang dịch web -- và công việc đó, bạn có thể tính tiền ai đó cho việc dịch của bạn.
+Và đây chính là cách mà chúng tôi có thể lưu hành nó.
+Nhưng điều kỳ diệu ở đây là họ trả với thời gian của họ, mà thời gian đó dù sao cũng phải dùng để học ngoại ngữ.
+Vì vậy điều tuyệt diệu ở đây về Duolingo là tôi nghĩ nó cung cấp một hình mẫu kinh tế công bằng -- người ta không phân biệt đối xử với người nghèo.
+Và đây là trang web.
+Xin cảm ơn.
+Và đây là trang web.
+Chúng tôi chưa ra mắt, nhưng nếu bạn vào, bạn đăng ký sử dụng bản thử nghiệm, sẽ bắt đầu khoảng 3 hay 4 tuần nữa.
+Chúng tôi vẫn chưa ra mắt Duolingo.
+Tiện thể, tôi là người đang nói ở đây, nhưng thực sự Duolingo là sản phẩm của một đội ngũ tuyệt vời, vài người trong số họ có mặt tại đây.
+Xin cảm ơn.

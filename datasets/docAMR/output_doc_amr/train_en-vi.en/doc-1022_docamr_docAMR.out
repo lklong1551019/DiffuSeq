@@ -1,0 +1,838 @@
+# ::id doc-1022
+# ::doc_file doc-1022
+# ::tok http : / / www . ted . com / talks / tania_luna_how_a_penny_made_me_feel_like_a_millionaire< / url> <next_sent> I 'm five years old , and I am very proud . <next_sent> My father has just built the best outhouse in our little village in Ukraine . <next_sent> Inside , it 's a smelly , gaping hole in the ground , but outside , it 's pearly white formica and it literally gleams in the sun . <next_sent> This makes me feel so proud , so important , that I appoint myself the leader of my little group of friends and I devise missions for us . <next_sent> So we prowl from house to house looking for flies captured in spider webs and we set them free . <next_sent> Four years earlier , when I was one , after the Chernobyl accident , the rain came down black , and my sister 's hair fell out in clumps , and I spent nine months in the hospital . <next_sent> There were no visitors allowed , so my mother bribed a hospital worker . <next_sent> She acquired a nurse 's uniform , and she snuck in every night to sit by my side . <next_sent> Five years later , an unexpected silver lining . <next_sent> Thanks to Chernobyl , we get asylum in the U.S. <next_sent> I am six years old , and I do n't cry when we leave home and we come to America , because I expect it to be a place filled with rare and wonderful things like bananas and chocolate and Bazooka bubble gum , Bazooka bubble gum with the little cartoon wrappers inside , Bazooka that we 'd get once a year in Ukraine and we 'd have to chew one piece for an entire week . <next_sent> So the first day we get to New York , my grandmother and I find a penny in the floor of the homeless shelter that my family 's staying in . <next_sent> Only , we do n't know that it 's a homeless shelter . <next_sent> We think that it 's a hotel , a hotel with lots of rats . <next_sent> So we find this penny kind of fossilized in the floor , and we think that a very wealthy man must have left it there because regular people do n't just lose money . <next_sent> And I hold this penny in the palm of my hand , and it 's sticky and rusty , but it feels like I 'm holding a fortune . <next_sent> I decide that I 'm going to get my very own piece of Bazooka bubble gum . <next_sent> And in that moment , I feel like a millionaire . <next_sent> About a year later , I get to feel that way again when we find a bag full of stuffed animals in the trash , and suddenly I have more toys than I 've ever had in my whole life . <next_sent> And again , I get that feeling when we get a knock on the door of our apartment in Brooklyn , and my sister and I find a deliveryman with a box of pizza that we did n't order . <next_sent> So we take the pizza , our very first pizza , and we devour slice after slice as the deliveryman stands there and stares at us from the doorway . <next_sent> And he tells us to pay , but we do n't speak English . <next_sent> My mother comes out , and he asks her for money , but she does n't have enough . <next_sent> She walks 50 blocks to and from work every day just to avoid spending money on bus fare . <next_sent> Then our neighbor pops her head in , and she turns red with rage when she realizes that those immigrants from downstairs have somehow gotten their hands on her pizza . <next_sent> Everyone 's upset . <next_sent> But the pizza is delicious . <next_sent> It does n't hit me until years later just how little we had . <next_sent> On our 10 year anniversary of being in the U.S. , we decided to celebrate by reserving a room at the hotel that we first stayed in when we got to the U.S. <next_sent> The man at the front desk laughs , and he says , " You ca n't reserve a room here . <next_sent> This is a homeless shelter . " <next_sent> And we were shocked . <next_sent> My husband Brian was also homeless as a kid . <next_sent> His family lost everything , and at age 11 , he had to live in motels with his dad , motels that would round up all of their food and keep it hostage until they were able to pay the bill . <next_sent> And one time , when he finally got his box of Frosted Flakes back , it was crawling with roaches . <next_sent> But he did have one thing . <next_sent> This was his own assembly of heroes that kept him from drugs and gangs and from giving up on his dreams . <next_sent> I 'm going to tell you about one more formerly homeless member of our family . <next_sent> This is Scarlett . <next_sent> Once upon a time , Scarlet was used as bait in dog fights . <next_sent> She was tied up and thrown into the ring for other dogs to attack so they 'd get more aggressive before the fight . <next_sent> And now , these days , she eats organic food and she sleeps on an orthopedic bed with her name on it , but when we pour water for her in her bowl , she still looks up and she wags her tail in gratitude . <next_sent> Sometimes Brian and I walk through the park with Scarlett , and she rolls through the grass , and we just look at her and then we look at each other and we feel gratitude . <next_sent> We forget about all of our new middle - class frustrations and disappointments , and we feel like millionaires . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01
+                            :ARG0 (s1.p / person
+                                        :name (s1.n / name
+                                                    :op1 "America"))))
+   :snt2 (s2.a2 / and
+                :op1 (s2.a / age-01
+                           :ARG1 (s2.i / i)
+                           :ARG2 (s2.t / temporal-quantity
+                                       :unit (s2.y / year)
+                                       :quant "5"))
+                :op2 (s2.p / pride-01
+                           :ARG0 s2.i
+                           :degree (s2.v / very)))
+   :snt3 (s3.b / build-01
+               :ARG0 (s3.p / person
+                           :ARG0-of (s3.h2 / have-rel-role-91
+                                           :ARG1 (s3.i / i
+                                                       :same-as s2.i)
+                                           :ARG2 (s3.f / father)))
+               :ARG1 (s3.o / outhouse
+                           :ARG1-of (s3.h / have-degree-91
+                                          :ARG2 (s3.g / good-02
+                                                      :ARG1 s3.o)
+                                          :ARG3 (s3.m / most)))
+               :location (s3.v / village
+                               :location (s3.c / country
+                                               :name (s3.n / name
+                                                           :op1 "Ukraine"))
+                               :mod (s3.l / little)
+                               :poss (s3.w / we))
+               :mod (s3.j / just))
+   :snt4 (s4.c / contrast-01
+               :ARG1 (s4.h / hole
+                           :ARG0-of (s4.g / gap-00)
+                           :domain (s4.i2 / it
+                                          :location (s4.i / inside)
+                                          :same-as s3.o)
+                           :location (s4.g3 / ground)
+                           :mod (s4.s / smelly))
+               :ARG2 (s4.a / and
+                           :op1 (s4.f / formica
+                                      :ARG1-of (s4.w / white-03
+                                                     :mod (s4.p / pearly))
+                                      :domain s4.i2
+                                      :location (s4.o / outside))
+                           :op2 (s4.g2 / glow-01
+                                       :ARG0 s4.i2
+                                       :ARG1 (s4.s2 / sun)
+                                       :mod (s4.l / literal))))
+   :snt5 (s5.m / make-02
+               :ARG0 (s5.t / this)
+               :ARG1 (s5.f / feel-01
+                           :ARG0 (s5.i / i
+                                       :same-as s2.i)
+                           :ARG1 (s5.a / and
+                                       :op1 (s5.p3 / pride-01
+                                                   :ARG0 s5.i
+                                                   :degree (s5.s / so))
+                                       :op2 (s5.i2 / important-01
+                                                   :ARG1 s5.i
+                                                   :degree (s5.s2 / so))))
+               :ARG6 (s5.a2 / and
+                            :op1 (s5.a3 / appoint-01
+                                        :ARG0 s5.i
+                                        :ARG1 s5.i
+                                        :ARG2 (s5.p / person
+                                                    :ARG0-of (s5.l / lead-02
+                                                                   :ARG1 (s5.g / group
+                                                                               :consist-of (s5.p2 / person
+                                                                                                  :ARG0-of (s5.h / have-rel-role-91
+                                                                                                                 :ARG1 s5.i
+                                                                                                                 :ARG2 (s5.f2 / friend)))
+                                                                               :mod (s5.l2 / little)
+                                                                               :poss s5.i))))
+                            :op2 (s5.d / devise-01
+                                       :ARG0 s5.i
+                                       :ARG1 (s5.m2 / mission-01
+                                                    :beneficiary (s5.w / we
+                                                                       :same-as s5.g)))))
+   :snt6 (s6.c2 / cause-01
+                :ARG1 (s6.a / and
+                            :op1 (s6.r / roam-01
+                                       :purpose (s6.l / look-01
+                                                      :ARG0 (s6.w / we
+                                                                  :same-as s5.g)
+                                                      :ARG1 (s6.c / capture-01
+                                                                  :ARG1 (s6.f / fly-01)
+                                                                  :location (s6.w2 / web
+                                                                                   :mod (s6.s2 / spider))))
+                                       :ARG0 s6.w
+                                       :ARG1 (s6.h / house)
+                                       :destination (s6.h2 / house))
+                            :op2 (s6.s / set-01
+                                       :ARG0 s6.w
+                                       :ARG1 s6.f
+                                       :ARG2 (s6.f2 / free-01
+                                                    :ARG1 s6.f))))
+   :snt7 (s7.a4 / and
+                :op1 (s7.c2 / come-01
+                            :ARG1 (s7.r / rain-01)
+                            :ARG1-of (s7.b3 / black-04)
+                            :direction (s7.d / down))
+                :op2 (s7.f / fall-01
+                           :ARG1 (s7.h / hair
+                                       :part-of (s7.p / person
+                                                      :ARG0-of (s7.h2 / have-rel-role-91
+                                                                      :ARG1 (s7.i / i
+                                                                                  :same-as s2.i)
+                                                                      :ARG2 (s7.s / sister))))
+                           :ARG2 (s7.c / clot)
+                           :direction (s7.o2 / out))
+                :op3 (s7.s2 / spend-02
+                            :ARG0 s7.i
+                            :ARG1 (s7.t2 / temporal-quantity
+                                         :unit (s7.m / month)
+                                         :quant "9")
+                            :ARG2 (s7.b / be-located-at-91
+                                        :ARG1 s7.i
+                                        :ARG2 (s7.h3 / hospital)))
+                :rel (s7.a3 / age-01
+                            :ARG1 s7.i
+                            :ARG2 (s7.o / one))
+                :time (s7.a2 / after
+                             :op1 (s7.a / accident
+                                        :name (s7.n / name
+                                                    :op1 "Chernobyl")))
+                :time (s7.b2 / before
+                             :quant (s7.t / temporal-quantity
+                                          :unit (s7.y / year)
+                                          :quant "4")))
+   :snt8 (s8.c / cause-01
+               :ARG0 (s8.a / allow-01
+                           :ARG1 (s8.p / person
+                                       :ARG0-of (s8.v / visit-01))
+                           :polarity "-")
+               :ARG1 (s8.b / bribe-01
+                           :ARG0 (s8.p2 / person
+                                        :ARG0-of (s8.h / have-rel-role-91
+                                                       :ARG1 (s8.i / i
+                                                                   :same-as s2.i)
+                                                       :ARG2 (s8.m / mother)))
+                           :ARG1 (s8.p3 / person
+                                        :ARG0-of (s8.w / work-01
+                                                       :ARG2 (s8.h2 / hospital)))))
+   :snt9 (s9.a2 / and
+                :op1 (s9.a / acquire-01
+                           :ARG0 (s9.s / she
+                                       :same-as s8.p2)
+                           :ARG1 (s9.u / uniform
+                                       :mod (s9.n2 / nurse)))
+                :op2 (s9.s4 / sneak-01
+                            :purpose (s9.s3 / sit-01
+                                            :ARG1 s9.s
+                                            :ARG2 (s9.b / by
+                                                        :op1 (s9.s2 / side
+                                                                    :part-of (s9.i / i
+                                                                                   :same-as s2.i))))
+                            :ARG0 s9.s
+                            :frequency (s9.r / rate-entity-91
+                                             :ARG4 (s9.d / date-entity
+                                                         :dayperiod (s9.n / night)))))
+   :snt10 (s10.l / line-01
+                 :ARG1-of (s10.e / expect-01
+                                 :polarity "-")
+                 :mod (s10.s / silver)
+                 :time (s10.a / after
+                              :quant (s10.t / temporal-quantity
+                                            :unit (s10.y / year)
+                                            :quant "5")))
+   :snt11 (s11.g / get-01
+                 :ARG0 (s11.w / we)
+                 :ARG1 (s11.a / asylum)
+                 :ARG2-of (s11.t / thank-01
+                                 :ARG1 (s11.n3 / natural-disaster
+                                               :name (s11.n / name
+                                                            :op1 "Chernobyl")
+                                               :same-as s7.a))
+                 :location (s11.c / country
+                                  :name (s11.n2 / name
+                                                :op1 "U.S.")))
+   :snt12 (s12.a / and
+                 :op1 (s12.i / i
+                             :age (s12.t / temporal-quantity
+                                         :unit (s12.y / year)
+                                         :quant "6")
+                             :same-as s2.i)
+                 :op2 (s12.c8 / cry-02
+                              :ARG0 s12.i
+                              :ARG1-of (s12.c2 / cause-01
+                                               :ARG0 (s12.e2 / expect-01
+                                                             :ARG0 s12.i
+                                                             :ARG1 (s12.p2 / place
+                                                                           :ARG1-of (s12.f / fill-01
+                                                                                           :ARG2 (s12.t4 / thing
+                                                                                                         :ARG1-of (s12.w3 / wonderful-03)
+                                                                                                         :ARG1-of (s12.r / rare-02)
+                                                                                                         :example (s12.a3 / and
+                                                                                                                          :op2 (s12.c4 / chocolate)
+                                                                                                                          :op3 (s12.g2 / gum
+                                                                                                                                       :name (s12.n2 / name
+                                                                                                                                                     :op1 "Bazooka")
+                                                                                                                                       :mod (s12.b3 / bubble))
+                                                                                                                          :op3 (s12.o / obligate-01
+                                                                                                                                      :ARG1 (s12.w / we
+                                                                                                                                                   :same-as s11.w)
+                                                                                                                                      :ARG2 (s12.c3 / chew-01
+                                                                                                                                                    :ARG0 s12.w
+                                                                                                                                                    :ARG1 (s12.p / piece
+                                                                                                                                                                 :quant "1")
+                                                                                                                                                    :duration (s12.t3 / temporal-quantity
+                                                                                                                                                                      :mod (s12.e / entire)
+                                                                                                                                                                      :unit (s12.w2 / week)
+                                                                                                                                                                      :quant "1")))
+                                                                                                                          :op4 (s12.g3 / gum
+                                                                                                                                       :ARG0-of (s12.h / have-03
+                                                                                                                                                       :ARG1 (s12.b2 / box
+                                                                                                                                                                     :location (s12.i2 / inside
+                                                                                                                                                                                       :op1 s12.g2)
+                                                                                                                                                                     :mod (s12.c / cartoon)
+                                                                                                                                                                     :mod (s12.l2 / little)))
+                                                                                                                                       :ARG1-of (s12.g / get-01
+                                                                                                                                                       :ARG0 s12.w
+                                                                                                                                                       :frequency (s12.r2 / rate-entity-91
+                                                                                                                                                                          :ARG2 (s12.t2 / temporal-quantity
+                                                                                                                                                                                        :unit (s12.y2 / year)
+                                                                                                                                                                                        :quant "1"))
+                                                                                                                                                       :location (s12.c7 / country
+                                                                                                                                                                         :name (s12.n3 / name
+                                                                                                                                                                                       :op1 "Ukraine")
+                                                                                                                                                                         :same-as s3.c))))
+                                                                                                         :op1-of s12.a3)))))
+                              :time (s12.a2 / and
+                                            :op1 (s12.l / leave-11
+                                                        :ARG0 s12.w
+                                                        :ARG1 (s12.h2 / home))
+                                            :op2 (s12.c5 / come-01
+                                                         :ARG1 s12.w
+                                                         :ARG4 (s12.c6 / country
+                                                                       :name (s12.n / name
+                                                                                    :op1 "America")
+                                                                       :same-as s11.c)))
+                              :polarity "-")
+                 :rel (s12.b / banana))
+   :snt13 (s13.f2 / find-01
+                  :ARG0 (s13.a / and
+                               :op1 (s13.p2 / person
+                                            :ARG0-of (s13.h3 / have-rel-role-91
+                                                             :ARG1 (s13.i / i
+                                                                          :same-as s2.i)
+                                                             :ARG2 (s13.g2 / grandmother)))
+                               :op2 s13.i)
+                  :ARG1 (s13.p / penny)
+                  :location (s13.f3 / floor
+                                    :part-of (s13.s / shelter
+                                                    :ARG2-of (s13.s2 / stay-01
+                                                                     :ARG1 (s13.f / family
+                                                                                  :ARG1-of (s13.h2 / have-org-role-91
+                                                                                                   :ARG0 s13.i
+                                                                                                   :ARG2 (s13.m / member))))
+                                                    :mod (s13.p3 / person
+                                                                 :ARG0-of (s13.h / have-03
+                                                                                 :ARG1 (s13.h4 / home)
+                                                                                 :polarity "-"))))
+                  :time (s13.d / day
+                               :ord (s13.o / ordinal-entity
+                                           :value "1")
+                               :time-of (s13.g / get-05
+                                               :ARG1 (s13.w / we
+                                                            :same-as s11.w)
+                                               :ARG2 (s13.c / city
+                                                            :name (s13.n / name
+                                                                         :op1 "New"
+                                                                         :op2 "York")))))
+   :snt14 (s14.k / know-01
+                 :ARG0 (s14.w / we
+                              :same-as s13.a)
+                 :ARG1 (s14.s / shelter
+                              :purpose (s14.h / homeless)
+                              :domain (s14.i / it
+                                             :same-as s13.s))
+                 :mod (s14.o / only)
+                 :polarity "-")
+   :snt15 (s15.t / think-01
+                 :ARG0 (s15.w / we
+                              :same-as s13.a)
+                 :ARG1 (s15.h2 / hotel
+                               :ARG0-of (s15.h / have-03
+                                               :ARG1 (s15.r / rat
+                                                            :quant (s15.l / lot)))
+                               :domain (s15.i / it
+                                              :same-as s13.s)))
+   :snt16 (s16.a / and
+                 :op1 (s16.f / find-01
+                             :ARG0 (s16.w / we
+                                          :same-as s13.a)
+                             :ARG1 (s16.p / penny
+                                          :ARG1-of (s16.f3 / fossilize-01
+                                                           :degree (s16.k / kind-of)
+                                                           :location (s16.f2 / floor
+                                                                             :same-as s13.f3))
+                                          :mod (s16.t2 / this
+                                                       :same-as s13.p)))
+                 :op2 (s16.t / think-01
+                             :ARG0 s16.w
+                             :ARG1 (s16.o / obligate-01
+                                          :ARG1-of (s16.c / cause-01
+                                                          :ARG0 (s16.l2 / lose-02
+                                                                        :ARG0 (s16.p2 / person
+                                                                                      :ARG1-of (s16.r / regular-03))
+                                                                        :ARG1 (s16.m2 / money)
+                                                                        :mod (s16.j / just)
+                                                                        :polarity "-"))
+                                          :ARG2 (s16.l / leave-12
+                                                       :ARG0 (s16.m / man
+                                                                    :mod (s16.w2 / wealth
+                                                                                 :degree (s16.v / very)))
+                                                       :ARG1 s16.p))))
+   :snt17 (s17.a / and
+                 :concession-of (s17.f / feel-01
+                                       :ARG0 (s17.a2 / and
+                                                     :op1 (s17.h2 / hold-01
+                                                                  :ARG0 (s17.i / i
+                                                                               :part (s17.h / hand
+                                                                                            :part (s17.p / palm))
+                                                                               :same-as s2.i)
+                                                                  :ARG1 (s17.p2 / penny
+                                                                                :mod (s17.t / this)
+                                                                                :same-as s13.p)
+                                                                  :location s17.p)
+                                                     :op2 (s17.a3 / and
+                                                                  :domain s17.p2
+                                                                  :op1 (s17.s / sticky)
+                                                                  :op2 (s17.r / rust-01
+                                                                              :ARG1 s17.p2)))
+                                       :ARG1 (s17.h3 / hold-01
+                                                     :ARG0 s17.i
+                                                     :ARG1 (s17.f2 / fortune)))
+                 :op2 s17.a2)
+   :snt18 (s18.d / decide-01
+                 :ARG0 (s18.i / i
+                              :same-as s2.i)
+                 :ARG1 (s18.g / get-01
+                              :ARG0 s18.i
+                              :ARG1 (s18.p / piece
+                                           :consist-of (s18.g2 / gum
+                                                               :mod (s18.b / bubble)
+                                                               :mod (s18.p2 / product
+                                                                            :name (s18.n / name
+                                                                                         :op1 "Bazooka"))))))
+   :snt19 (s19.a / and
+                 :op2 (s19.f / feel-01
+                             :ARG0 (s19.i / i
+                                          :same-as s2.i)
+                             :ARG1 (s19.r / resemble-01
+                                          :ARG1 s19.i
+                                          :ARG2 (s19.m / millionaire))
+                             :time (s19.m2 / moment
+                                           :mod (s19.t / that))))
+   :snt20 (s20.g / get-22
+                 :ARG0 (s20.i / i
+                              :same-as s2.i)
+                 :ARG1 (s20.f / feel-01
+                              :ARG0 s20.i
+                              :ARG1 (s20.w / way
+                                           :mod (s20.t2 / that))
+                              :mod (s20.a3 / again))
+                 :time (s20.a2 / after
+                               :quant (s20.a / about
+                                             :op1 (s20.t / temporal-quantity
+                                                         :unit (s20.y / year)
+                                                         :quant "1")))
+                 :time (s20.a4 / and
+                               :op1 (s20.f3 / find-01
+                                            :ARG0 (s20.w2 / we
+                                                          :same-as s11.w)
+                                            :ARG1 (s20.b / bag
+                                                         :ARG1-of (s20.f2 / fill-01
+                                                                          :ARG2 (s20.a5 / animal
+                                                                                        :ARG1-of (s20.s / stuff-01))))
+                                            :ARG2 (s20.t5 / trash))
+                               :op2 (s20.h / have-03
+                                           :ARG0 s20.i
+                                           :ARG1 (s20.t3 / toy
+                                                         :ARG1-of (s20.h4 / have-quant-91
+                                                                          :ARG3 (s20.m / more)
+                                                                          :ARG4 (s20.t4 / toy
+                                                                                        :ARG1-of (s20.h2 / have-03
+                                                                                                         :ARG0 s20.i)
+                                                                                        :ARG1-of (s20.h3 / have-03
+                                                                                                         :ARG0 s20.i
+                                                                                                         :time (s20.e / ever)
+                                                                                                         :time (s20.l / life
+                                                                                                                      :mod (s20.w3 / whole)
+                                                                                                                      :poss s20.i)))))
+                                           :manner (s20.s2 / sudden))))
+   :snt21 (s21.a2 / and
+                  :op2 (s21.g / get-01
+                              :ARG0 (s21.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s21.f / feel-01
+                                           :ARG0 s21.i
+                                           :ARG1 (s21.t / that)
+                                           :same-as s20.w)
+                              :mod (s21.a / again)
+                              :time (s21.a3 / and
+                                            :op1 (s21.k / knock-01
+                                                        :ARG1 (s21.d2 / door
+                                                                      :poss (s21.a5 / apartment
+                                                                                    :location (s21.c / city-district
+                                                                                                     :name (s21.n / name
+                                                                                                                  :op1 "Brooklyn"))
+                                                                                    :poss (s21.w / we
+                                                                                                 :same-as s11.w))))
+                                            :op2 (s21.f2 / find-01
+                                                         :ARG0 (s21.a4 / and
+                                                                       :op1 (s21.p / person
+                                                                                   :ARG0-of (s21.h / have-rel-role-91
+                                                                                                   :ARG1 s21.i
+                                                                                                   :ARG2 (s21.s / sister))
+                                                                                   :same-as s7.i)
+                                                                       :op2 s21.i
+                                                                       :same-as s13.a)
+                                                         :ARG1 (s21.p2 / person
+                                                                       :ARG0-of (s21.d / deliver-01
+                                                                                       :ARG1 (s21.b / box
+                                                                                                    :ARG0-of (s21.c2 / contain-01
+                                                                                                                     :ARG1 (s21.p3 / pizza
+                                                                                                                                   :ARG1-of (s21.o / order-02
+                                                                                                                                                   :ARG0 s21.w
+                                                                                                                                                   :polarity "-"))))))))))
+   :snt22 (s22.c / cause-01
+                 :ARG1 (s22.a2 / and
+                               :op1 (s22.t / take-01
+                                           :ARG0 (s22.w / we
+                                                        :same-as s11.w)
+                                           :ARG1 (s22.p2 / pizza
+                                                         :mod (s22.o / ordinal-entity
+                                                                     :degree (s22.v / very)
+                                                                     :value "1")
+                                                         :same-as s21.b))
+                               :op2 (s22.d2 / devour-01
+                                            :ARG0 s22.w
+                                            :ARG1 (s22.s / slice
+                                                         :time (s22.a / after
+                                                                      :op1 (s22.s2 / slice)))
+                                            :time (s22.a3 / and
+                                                          :op1 (s22.s3 / stand-01
+                                                                       :ARG0 (s22.p / person
+                                                                                    :ARG0-of (s22.d / deliver-01)
+                                                                                    :same-as s21.p2)
+                                                                       :ARG2 (s22.t2 / there))
+                                                          :op2 (s22.s4 / stare-01
+                                                                       :ARG0 s22.p
+                                                                       :ARG1 s22.w
+                                                                       :location (s22.d3 / doorway))))))
+   :snt23 (s23.a / and
+                 :op2 (s23.c / contrast-01
+                             :ARG1 (s23.t / tell-01
+                                          :ARG0 (s23.h / he
+                                                       :same-as s21.p2)
+                                          :ARG1 (s23.p / pay-01
+                                                       :ARG0 (s23.w / we
+                                                                    :same-as s11.w))
+                                          :ARG2 s23.w)
+                             :ARG2 (s23.s / speak-01
+                                          :ARG0 s23.w
+                                          :ARG3 (s23.l / language
+                                                       :name (s23.n / name
+                                                                    :op1 "English"))
+                                          :polarity "-")))
+   :snt24 (s24.c2 / contrast-01
+                  :ARG1 (s24.a / and
+                               :op1 (s24.c / come-out-09
+                                           :ARG1 (s24.p / person
+                                                        :ARG0-of (s24.h3 / have-rel-role-91
+                                                                         :ARG1 (s24.i / i
+                                                                                      :same-as s2.i)
+                                                                         :ARG2 (s24.m2 / mother))
+                                                        :same-as s8.p2))
+                               :op2 (s24.a2 / ask-02
+                                            :ARG0 (s24.h4 / he
+                                                          :same-as s21.p2)
+                                            :ARG1 (s24.m / money)
+                                            :ARG2 s24.p))
+                  :ARG2 (s24.h / have-03
+                               :ARG0 s24.p
+                               :ARG1-of (s24.h2 / have-quant-91
+                                                :ARG3 (s24.e / enough))
+                               :polarity "-"))
+   :snt25 (s25.w / walk-01
+                 :purpose (s25.a / avoid-01
+                                 :ARG0 (s25.s / she
+                                              :same-as s8.p2)
+                                 :ARG1 (s25.s2 / spend-01
+                                               :ARG0 s25.s
+                                               :ARG1 (s25.f / fare
+                                                            :mod (s25.b2 / bus))
+                                               :ARG3 (s25.m / money))
+                                 :mod (s25.j / just))
+                 :ARG0 s25.s
+                 :ARG2 (s25.d2 / distance-quantity
+                               :unit (s25.b / block)
+                               :quant "50")
+                 :destination (s25.w2 / work-01)
+                 :frequency (s25.r / rate-entity-91
+                                   :ARG3 (s25.t / temporal-quantity
+                                                :unit (s25.d / day)
+                                                :quant "1"))
+                 :source (s25.w3 / work-01
+                                 :ARG0 s25.s))
+   :snt26 (s26.a / and
+                 :op1 (s26.p4 / pop-04
+                              :ARG0 (s26.p / person
+                                           :ARG1-of (s26.n / neighbor-01
+                                                           :ARG2 (s26.w / we
+                                                                        :same-as s11.w))
+                                           :part (s26.h / head))
+                              :ARG1 s26.h)
+                 :op2 (s26.t3 / turn-02
+                              :ARG0 (s26.r / rage-02
+                                           :ARG0 s26.p)
+                              :ARG1 s26.p
+                              :ARG2 (s26.r3 / red-02
+                                            :ARG1 s26.p)
+                              :time (s26.r2 / realize-01
+                                            :ARG0 s26.p
+                                            :ARG1 (s26.g / get-04
+                                                         :ARG0 (s26.p2 / person
+                                                                       :ARG0-of (s26.i / immigrate-01)
+                                                                       :mod (s26.t / that)
+                                                                       :source (s26.d / downstairs))
+                                                         :ARG1 (s26.i2 / in-ones-hands-04
+                                                                       :ARG0 s26.p2
+                                                                       :ARG1 (s26.p3 / pizza
+                                                                                     :poss s26.p
+                                                                                     :same-as s21.b))
+                                                         :manner (s26.s / somehow))))
+                 :time (s26.t2 / then))
+   :snt27 (s27.u / upset-01
+                 :ARG1 (s27.e / everyone))
+   :snt28 (s28.c / contrast-01
+                 :ARG2 (s28.d / delicious
+                              :domain (s28.p / pizza
+                                             :same-as s21.b)))
+   :snt29 (s29.h2 / hit-01
+                  :ARG0 (s29.t2 / thing
+                                :degree-of (s29.l / little
+                                                  :ARG1-of (s29.h / have-03
+                                                                  :ARG0 (s29.w / we
+                                                                               :same-as s11.w))
+                                                  :mod (s29.j / just)))
+                  :ARG1 (s29.i / i
+                               :same-as s2.i)
+                  :time (s29.u / until
+                               :op1 (s29.a / after
+                                           :quant (s29.m / multiple
+                                                         :op1 (s29.t / temporal-quantity
+                                                                     :unit (s29.y / year)
+                                                                     :quant "1"))))
+                  :polarity "-")
+   :snt30 (s30.d / decide-01
+                 :ARG0 (s30.w / we
+                              :same-as s11.w)
+                 :ARG1 (s30.c / celebrate-02
+                              :ARG0 s30.w
+                              :manner (s30.r / reserve-01
+                                             :ARG0 s30.w
+                                             :ARG1 (s30.r2 / room
+                                                           :location (s30.h / hotel
+                                                                            :location-of (s30.s / stay-01
+                                                                                                :ARG1 s30.w
+                                                                                                :ord (s30.o / ordinal-entity
+                                                                                                            :value "1")
+                                                                                                :time (s30.g / get-05
+                                                                                                             :ARG1 s30.w
+                                                                                                             :ARG4 (s30.c2 / country
+                                                                                                                           :name (s30.n / name
+                                                                                                                                        :op1 "U.S.")
+                                                                                                                           :same-as s11.c)))))))
+                 :time (s30.a / anniversary
+                              :quant (s30.t / temporal-quantity
+                                            :unit (s30.y / year)
+                                            :quant "10")
+                              :poss s30.w
+                              :topic (s30.b / be-located-at-91
+                                            :ARG1 s30.w
+                                            :ARG2 s30.c2)))
+   :snt31 (s31.a / and
+                 :op1 (s31.l / laugh-01
+                             :ARG0 (s31.m / man
+                                          :location (s31.d / desk
+                                                           :mod (s31.f / front))))
+                 :op2 (s31.s / say-01
+                             :ARG0 s31.m
+                             :ARG1 (s31.p / possible-01
+                                          :ARG1 (s31.r / reserve-01
+                                                       :ARG0 (s31.y / you
+                                                                    :same-as s11.w)
+                                                       :ARG1 (s31.r2 / room)
+                                                       :location (s31.h / here))
+                                          :polarity "-")))
+   :snt32 (s32.s / shelter
+                 :domain (s32.t / this
+                                :same-as s30.h)
+                 :mod (s32.p / person
+                             :ARG0-of (s32.h / have-03
+                                             :ARG1 (s32.h2 / home)
+                                             :polarity "-")))
+   :snt33 (s33.a / and
+                 :op2 (s33.s / shock-01
+                             :ARG1 (s33.w / we
+                                          :same-as s11.w)))
+   :snt34 (s34.h2 / homeless
+                  :domain (s34.p / person
+                                 :name (s34.n / name
+                                              :op1 "Brian")
+                                 :ARG0-of (s34.h / have-rel-role-91
+                                                 :ARG1 (s34.i / i
+                                                              :same-as s2.i)
+                                                 :ARG2 (s34.h3 / husband)))
+                  :mod (s34.a / also)
+                  :time (s34.k / kid
+                               :domain s34.p))
+   :snt35 (s35.a3 / and
+                  :op1 (s35.l2 / lose-02
+                               :ARG0 (s35.f / family
+                                            :ARG1-of (s35.h / have-org-role-91
+                                                            :ARG0 (s35.h3 / he
+                                                                          :same-as s34.p)
+                                                            :ARG2 (s35.m / member)))
+                               :ARG1 (s35.e / everything))
+                  :op2 (s35.o / obligate-01
+                              :ARG1 s35.h3
+                              :ARG2 (s35.l / live-01
+                                           :ARG0 s35.h3
+                                           :accompanier (s35.p2 / person
+                                                                :ARG0-of (s35.h2 / have-rel-role-91
+                                                                                 :ARG1 s35.h3
+                                                                                 :ARG2 (s35.d / dad)))
+                                           :location (s35.m2 / motel
+                                                             :ARG0-of (s35.r / round-up-02
+                                                                             :ARG1 (s35.f2 / food
+                                                                                           :mod (s35.a2 / all)
+                                                                                           :poss s35.f))
+                                                             :ARG0-of (s35.k / keep-01
+                                                                             :ARG1 s35.f2
+                                                                             :ARG3 (s35.h4 / hostage)
+                                                                             :time (s35.u / until
+                                                                                          :op1 (s35.p3 / possible-01
+                                                                                                       :ARG1 (s35.p / pay-01
+                                                                                                                    :ARG0 s35.f
+                                                                                                                    :ARG3 (s35.b / bill-01)))))))
+                              :time (s35.a / age-01
+                                           :ARG1 s35.h3
+                                           :ARG2 (s35.t / temporal-quantity
+                                                        :unit (s35.y / year)
+                                                        :quant "11"))))
+   :snt36 (s36.a / and
+                 :op2 (s36.c2 / crawl-01
+                              :ARG0 (s36.b2 / box
+                                            :mod (s36.p / product
+                                                        :name (s36.n / name
+                                                                     :op1 "Frosted"
+                                                                     :op2 "Flakes"))
+                                            :poss (s36.h / he
+                                                         :same-as s34.p))
+                              :ARG1 (s36.c / cockroach)
+                              :time (s36.g / get-01
+                                           :ARG0 s36.h
+                                           :ARG1 s36.b2
+                                           :mod (s36.f / final)
+                                           :mod (s36.b / back))
+                              :time (s36.t / time
+                                           :mod (s36.o / one))))
+   :snt37 (s37.c / contrast-01
+                 :ARG2 (s37.h / have-03
+                              :ARG0 (s37.h2 / he
+                                            :same-as s34.p)
+                              :ARG1 (s37.t / thing
+                                           :quant "1")))
+   :snt38 (s38.a2 / assemble-02
+                  :ARG0 (s38.h / he
+                               :same-as s34.p)
+                  :ARG0-of (s38.k / keep-04
+                                  :ARG1 s38.h
+                                  :ARG2 (s38.a / and
+                                               :op1 (s38.d2 / drug)
+                                               :op2 (s38.g / gang)
+                                               :op3 (s38.g2 / give-up-07
+                                                            :ARG0 s38.h
+                                                            :ARG1 (s38.d / dream-01
+                                                                         :ARG0 s38.h))))
+                  :ARG1 (s38.t / this)
+                  :ARG2 (s38.h2 / hero))
+   :snt39 (s39.t / tell-01
+                 :ARG0 (s39.i / i
+                              :same-as s2.i)
+                 :ARG1 (s39.m / member
+                              :ARG1-of (s39.i2 / include-91
+                                               :ARG2 (s39.f / family
+                                                            :poss (s39.w / we)
+                                                            :same-as s13.f))
+                              :mod (s39.h / homeless
+                                          :time (s39.f2 / former)
+                                          :polarity "-")
+                              :mod (s39.m2 / more)
+                              :quant "1")
+                 :ARG2 (s39.y / you))
+   :snt40 (s40.p / person
+                 :name (s40.n / name
+                              :op1 "Scarlett")
+                 :domain (s40.t / this
+                                :same-as s39.m))
+   :snt41 (s41.u / use-01
+                 :ARG1 (s41.a / animal
+                              :name (s41.n / name
+                                           :op1 "Scarlet")
+                              :same-as s39.m)
+                 :ARG2 (s41.b / bait-03
+                              :ARG2 s41.a
+                              :subevent-of (s41.f / fight-01
+                                                  :ARG2 (s41.d / dog)))
+                 :time (s41.o / once-upon-a-time))
+   :snt42 (s42.a2 / and
+                  :purpose (s42.g / get-03
+                                  :ARG1 (s42.d / dog
+                                               :mod (s42.o / other))
+                                  :ARG2 (s42.a / aggressive
+                                               :ARG2-of (s42.h / have-degree-91
+                                                               :ARG1 s42.d
+                                                               :ARG3 (s42.m / more)))
+                                  :time (s42.b / before
+                                               :op1 (s42.f / fight-01
+                                                           :ARG0 s42.d)))
+                  :op1 (s42.t2 / tie-up-04
+                               :ARG1 (s42.s / she
+                                            :same-as s39.m))
+                  :op2 (s42.t / throw-01
+                              :purpose (s42.a3 / attack-01
+                                               :ARG0 s42.d)
+                              :ARG1 s42.s
+                              :ARG2 (s42.r / ring)))
+   :snt43 (s43.a / and
+                 :op2 (s43.c / contrast-01
+                             :ARG1 (s43.a2 / and
+                                           :op1 (s43.e / eat-01
+                                                       :ARG0 (s43.s / she
+                                                                    :part (s43.t / tail)
+                                                                    :same-as s39.m)
+                                                       :ARG1 (s43.f / food
+                                                                    :mod (s43.o / organic)))
+                                           :op2 (s43.s2 / sleep-01
+                                                        :ARG0 s43.s
+                                                        :location (s43.b / bed
+                                                                         :location-of (s43.h / have-03
+                                                                                             :ARG0 s43.s
+                                                                                             :ARG1 (s43.n / name
+                                                                                                          :poss s43.s))
+                                                                         :mod (s43.o2 / orthopedics)))
+                                           :time (s43.d / day
+                                                        :mod (s43.t2 / this))
+                                           :time (s43.n2 / now))
+                             :ARG2 (s43.a3 / and
+                                           :op1 (s43.l / look-01
+                                                       :ARG0 s43.s
+                                                       :ARG1 (s43.u / up)
+                                                       :mod (s43.s3 / still)
+                                                       :time (s43.p / pour-01
+                                                                    :ARG0 (s43.w3 / we
+                                                                                  :same-as s11.w)
+                                                                    :ARG1 (s43.w2 / water)
+                                                                    :ARG2 s43.s
+                                                                    :location (s43.b2 / bowl
+                                                                                      :poss s43.s)))
+                                           :op2 (s43.w / wag-01
+                                                       :ARG0 s43.s
+                                                       :ARG1 s43.t
+                                                       :manner (s43.g / gratitude)))))
+   :snt44 (s44.a2 / and
+                  :op1 (s44.w / walk-01
+                              :ARG0 (s44.a / and
+                                           :op1 (s44.p2 / person
+                                                        :name (s44.n / name
+                                                                     :op1 "Brian")
+                                                        :same-as s34.p)
+                                           :op2 (s44.i / i
+                                                       :same-as s2.i)
+                                           :same-as s13.a)
+                              :ARG2 (s44.t2 / through
+                                            :op1 (s44.p / park))
+                              :accompanier (s44.p3 / person
+                                                   :name (s44.n2 / name
+                                                                 :op1 "Scarlett")
+                                                   :same-as s39.m)
+                              :frequency (s44.s / sometimes))
+                  :op2 (s44.r / roll-01
+                              :ARG1 s44.p3
+                              :path (s44.t3 / through
+                                            :op1 (s44.g / grass)))
+                  :op3 (s44.l / look-01
+                              :ARG0 s44.a
+                              :ARG1 s44.p3
+                              :mod (s44.j / just))
+                  :op4 (s44.l2 / look-01
+                               :ARG0 s44.a
+                               :ARG1 (s44.o / other
+                                            :mod (s44.e / each))
+                               :time (s44.t / then))
+                  :op5 (s44.f / feel-01
+                              :ARG0 s44.a
+                              :ARG1 (s44.g2 / gratitude)))
+   :snt45 (s45.a3 / and
+                  :op1 (s45.f2 / forget-01
+                               :ARG0 (s45.w / we
+                                            :same-as s13.a)
+                               :ARG1 (s45.a2 / and
+                                             :ARG1-of (s45.n / new-01)
+                                             :mod (s45.a / all)
+                                             :op1 (s45.f3 / frustrate-01
+                                                          :ARG1 s45.w
+                                                          :mod (s45.c / class
+                                                                      :mod (s45.m / middle)))
+                                             :op2 (s45.d / disappoint-01
+                                                         :ARG1 s45.w)))
+                  :op2 (s45.f / feel-01
+                              :ARG0 s45.w
+                              :ARG1 (s45.r / resemble-01
+                                           :ARG1 s45.w
+                                           :ARG2 (s45.m2 / millionaire))))
+   :snt46 (s46.t / thank-01
+                 :ARG1 (s46.y / you
+                              :same-as s2.i)))
+

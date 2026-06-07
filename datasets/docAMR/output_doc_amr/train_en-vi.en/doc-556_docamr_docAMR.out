@@ -1,0 +1,602 @@
+# ::id doc-556
+# ::doc_file doc-556
+# ::tok http : / / www . ted . com / talks / marco_tempest_the_electric_rise_and_fall_of_nikola_tesla< / url> <next_sent> As a magician , I 'm always interested in performances that incorporate elements of illusion . <next_sent> And one of the most remarkable was the tanagra theater , which was popular in the early part of the 20th century . <next_sent> It used mirrors to create the illusion of tiny people performing on a miniature stage . <next_sent> Now , I wo n't use mirrors , but this is my digital tribute to the tanagra theater . <next_sent> So let the story begin . <next_sent> On a dark and stormy night -- really ! -- it was the 10th of July , 1856 . <next_sent> Lightning lit the sky , and a baby was born . <next_sent> His name was Nikola , Nikola Tesla . <next_sent> Now the baby grew into a very smart guy . <next_sent> Let me show you . <next_sent> Tesla , what is 236 multiplied by 501 ? <next_sent> Nikola Tesla : The result is 118,236 . <next_sent> Marco Tempest : Now Tesla 's brain worked in the most extraordinary way . <next_sent> When a word was mentioned , an image of it instantly appeared in his mind . <next_sent> Tree . Chair . Girl . <next_sent> They were hallucinations , which vanished the moment he touched them . <next_sent> Probably a form of synesthesia . <next_sent> But it was something he later turned to his advantage . <next_sent> Where other scientists would play in their laboratory , Tesla created his inventions in his mind . <next_sent> NT : To my delight , I discovered I could visualize my inventions with the greatest facility . <next_sent> MT : And when they worked in the vivid playground of his imagination , he would build them in his workshop . <next_sent> NT : I needed no models , drawings or experiments . <next_sent> I could picture them as real in my mind , and there I run it , test it and improve it . <next_sent> Only then do I construct it . <next_sent> MT : His great idea was alternating current . <next_sent> But how could he convince the public that the millions of volts required to make it work were safe ? <next_sent> To sell his idea , he became a showman . <next_sent> NT : We are at the dawn of a new age , the age of electricity . <next_sent> I have been able , through careful invention , to transmit , with the mere flick of a switch , electricity across the ether . <next_sent> It is the magic of science . <next_sent> Tesla has over 700 patents to his name : radio , wireless telegraphy , remote control , robotics . <next_sent> He even photographed the bones of the human body . <next_sent> But the high point was the realization of a childhood dream : harnessing the raging powers of Niagara Falls , and bringing light to the city . <next_sent> But Tesla 's success did n't last . <next_sent> NT : I had bigger ideas . <next_sent> Illuminating the city was only the beginning . <next_sent> A world telegraphy center -- <next_sent> imagine news , messages , sounds , images delivered to any point in the world instantly and wirelessly . <next_sent> NT : They would n't give me the money . <next_sent> MT : Well , maybe you should n't have told them it could be used to contact other planets . <next_sent> NT : Yes , that was a big mistake . <next_sent> MT : Tesla 's career as an inventor never recovered . <next_sent> He became a recluse . <next_sent> Dodged by death , he spent much of his time in his suite at the Waldorf - Astoria . <next_sent> NT : Everything I did , I did for mankind , for a world where there would be no humiliation of the poor by the violence of the rich , where products of intellect , science and art will serve society for the betterment and beautification of life . <next_sent> MT : Nikola Tesla died on the 7th of January , 1943 . <next_sent> His final resting place is a golden globe that contains his ashes at the Nikola Tesla Museum in Belgrade . <next_sent> His legacy is with us still . <next_sent> Tesla became the man who lit the world , but this was only the beginning . <next_sent> Tesla 's insight was profound . <next_sent> NT : Tell me , what will man do when the forests disappear , and the coal deposits are exhausted ? <next_sent> MT : Tesla thought he had the answer . <next_sent> We are still asking the question . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.p / person
+                            :name (s1.n / name
+                                        :op1 "Europe")))
+   :snt2 (s2.i4 / interest-01
+                :ARG1 (s2.i / i)
+                :ARG2 (s2.p / perform-01
+                            :ARG0-of (s2.i3 / incorporate-02
+                                            :ARG1 (s2.e / element
+                                                        :mod (s2.i2 / illusion))))
+                :manner (s2.m / magician
+                              :domain s2.i)
+                :time (s2.a / always))
+   :snt3 (s3.a / and
+               :op2 (s3.i / include-91
+                          :ARG1 (s3.t2 / theater
+                                       :ARG1-of (s3.p / popular-02
+                                                      :time (s3.e / early
+                                                                  :op1 (s3.d / date-entity
+                                                                             :century "20")))
+                                       :mod (s3.t / tanagra))
+                          :ARG2 (s3.r / remarkable-02
+                                      :ARG1 s3.t2
+                                      :ARG2-of (s3.h / have-degree-91
+                                                     :ARG3 (s3.m / most)))))
+   :snt4 (s4.u / use-01
+               :ARG0 (s4.i2 / it
+                            :same-as s3.t2)
+               :ARG1 (s4.m2 / mirror)
+               :ARG2 (s4.c / create-01
+                           :ARG0 s4.i2
+                           :ARG1 (s4.i / illusion
+                                       :mod (s4.p2 / person
+                                                   :ARG0-of (s4.p / perform-01
+                                                                  :location (s4.s / stage
+                                                                                  :mod (s4.m / miniature)))
+                                                   :mod (s4.t / tiny)))))
+   :snt5 (s5.c / contrast-01
+               :ARG1 (s5.u / use-01
+                           :ARG0 (s5.i / i
+                                       :same-as s2.i)
+                           :ARG1 (s5.m / mirror)
+                           :time (s5.n2 / now)
+                           :polarity "-")
+               :ARG2 (s5.t4 / tribute
+                            :beneficiary (s5.t2 / theater
+                                                :mod (s5.p / product
+                                                           :name (s5.n / name
+                                                                       :op1 "tanagra")
+                                                           :ARG1-of (s5.t / tan-01))
+                                                :same-as s3.t2)
+                            :domain (s5.t3 / this)
+                            :mod (s5.d / digital)
+                            :poss s5.i))
+   :snt6 (s6.l / let-01
+               :ARG0 (s6.y / you)
+               :ARG1 (s6.b / begin-01
+                           :ARG1 (s6.s / story))
+               :mode "imperative")
+   :snt7 (s7.d2 / date-entity
+                :ARG1-of (s7.r / real-04)
+                :dayperiod (s7.n / night
+                                 :ARG1-of (s7.d / dark-03)
+                                 :mod (s7.s / storm))
+                :day "10"
+                :month "7"
+                :year "1856")
+   :snt8 (s8.a / and
+               :op1 (s8.l2 / light-04
+                           :ARG0 (s8.l / light)
+                           :ARG1 (s8.s / sky))
+               :op2 (s8.b2 / bear-02
+                           :ARG1 (s8.b / baby)))
+   :snt9 (s9.n2 / name-01
+                :ARG1 (s9.h / he
+                            :same-as s8.b)
+                :ARG2 (s9.p / person
+                            :name (s9.n / name
+                                        :op1 "Nikola"
+                                        :op2 "Tesla")))
+   :snt10 (s10.g / grow-02
+                 :ARG1 (s10.b / baby
+                              :same-as s8.b)
+                 :ARG2 (s10.g2 / guy
+                               :ARG1-of (s10.s / smart-06
+                                               :degree (s10.v / very)))
+                 :time (s10.n / now))
+   :snt11 (s11.l / let-01
+                 :ARG0 (s11.y / you)
+                 :ARG1 (s11.s / show-01
+                              :ARG0 (s11.i / i
+                                           :same-as s2.i)
+                              :ARG2 s11.y)
+                 :mode "imperative")
+   :snt12 (s12.e / equal-01
+                 :ARG2 (s12.m / multiply-01
+                              :ARG1 "236"
+                              :ARG2 "501")
+                 :ARG2 (s12.c / company
+                              :name (s12.n / name
+                                           :op1 "Tesla")
+                              :same-as s8.b)
+                 :rel (s12.a / amr-unknown)
+                 :ARG1 "236")
+   :snt13 (s13.s / say-01
+                 :ARG1 (s13.r / result-01
+                              :ARG2 "46224722")
+                 :ARG2 (s13.p / person
+                              :name (s13.n / name
+                                           :op1 "Nikola"
+                                           :op2 "Tesla")
+                              :same-as s8.b))
+   :snt14 (s14.s / say-01
+                 :ARG1 (s14.w2 / work-09
+                               :ARG1 (s14.b / brain
+                                            :part-of (s14.p2 / person
+                                                             :name (s14.n2 / name
+                                                                           :op1 "Tesla")
+                                                             :same-as s8.b))
+                               :manner (s14.w / way
+                                              :ARG1-of (s14.h / have-degree-91
+                                                              :ARG2 (s14.e / extraordinary)
+                                                              :ARG3 (s14.m / most)))
+                               :time (s14.n3 / now))
+                 :ARG2 (s14.p / person
+                              :name (s14.n / name
+                                           :op1 "Marco"
+                                           :op2 "Tempest")
+                              :same-as s2.i))
+   :snt15 (s15.a / appear-01
+                 :ARG1 (s15.i / image
+                              :poss (s15.i3 / it
+                                            :same-as s15.w))
+                 :location (s15.m2 / mind
+                                   :part-of (s15.h / he
+                                                   :same-as s8.b))
+                 :manner (s15.i2 / instant)
+                 :time (s15.m / mention-01
+                              :ARG1 (s15.w / word)))
+   :snt16 (s16.a / and
+                 :op1 (s16.t / tree)
+                 :op2 (s16.c / chair)
+                 :op3 (s16.g / girl))
+   :snt17 (s17.t2 / thing
+                  :ARG1-of (s17.h / hallucinate-01)
+                  :ARG1-of (s17.v / vanish-01
+                                  :time (s17.t3 / touch-01
+                                                :ARG0 (s17.h2 / he
+                                                              :same-as s8.b)
+                                                :ARG1 (s17.t / they)))
+                  :domain s17.t)
+   :snt18 (s18.p / probable
+                 :domain (s18.f / form
+                                :mod (s18.s / synesthesia)))
+   :snt19 (s19.c / contrast-01
+                 :ARG2 (s19.s / something
+                              :ARG1-of (s19.t / turn-02
+                                              :ARG0 (s19.h / he
+                                                           :same-as s8.b)
+                                              :ARG2 (s19.a / advantage-01
+                                                           :ARG2 s19.h)
+                                              :time (s19.a2 / after
+                                                            :op1 (s19.i / it)))
+                              :domain s19.i))
+   :snt20 (s20.c / create-01
+                 :ARG0 (s20.p / person
+                              :name (s20.n / name
+                                           :op1 "Tesla")
+                              :part (s20.m / mind)
+                              :same-as s8.b)
+                 :ARG1 (s20.t2 / thing
+                               :ARG1-of (s20.i / invent-01
+                                               :ARG0 s20.p))
+                 :location (s20.p2 / play-01
+                                   :ARG0 (s20.s / scientist
+                                                :mod (s20.o / other))
+                                   :location (s20.l / laboratory
+                                                    :poss (s20.t / they
+                                                                 :same-as s20.s)))
+                 :location s20.m)
+   :snt21 (s21.s / say-01
+                 :ARG0 (s21.p / person
+                              :name (s21.n / name
+                                           :op1 "NT"))
+                 :ARG1 (s21.d2 / discover-01
+                               :ARG0 (s21.i / i
+                                            :same-as s8.b)
+                               :ARG0-of (s21.d / delight-01
+                                               :ARG1 s21.i)
+                               :ARG1 (s21.p2 / possible-01
+                                             :ARG1 (s21.v / visualize-01
+                                                          :ARG0 s21.i
+                                                          :ARG1 (s21.t / thing
+                                                                       :ARG1-of (s21.i2 / invent-01
+                                                                                        :ARG0 s21.i)
+                                                                       :same-as s20.t2)
+                                                          :manner (s21.f / facility
+                                                                         :ARG1-of (s21.h / have-degree-91
+                                                                                         :ARG2 (s21.g / great)
+                                                                                         :ARG3 (s21.m / most)))))))
+   :snt22 (s22.s / say-01
+                 :ARG0 (s22.p / person
+                              :name (s22.n / name
+                                           :op1 "MT"))
+                 :ARG1 (s22.a / and
+                              :op2 (s22.b / build-01
+                                          :ARG0 (s22.h / he
+                                                       :same-as s8.b)
+                                          :ARG1 (s22.t / they
+                                                       :same-as s20.t2)
+                                          :location (s22.w2 / workshop
+                                                            :poss s22.h)
+                                          :time (s22.w / work-01
+                                                       :ARG0 s22.t
+                                                       :location (s22.p2 / playground
+                                                                         :mod (s22.v / vivid)
+                                                                         :poss (s22.i / imagine-01
+                                                                                      :ARG0 s22.h))))))
+   :snt23 (s23.s / say-01
+                 :ARG0 (s23.p / person
+                              :name (s23.n / name
+                                           :op1 "NT"))
+                 :ARG1 (s23.n2 / need-01
+                               :ARG0 (s23.i / i
+                                            :same-as s8.b)
+                               :ARG1 (s23.o / or
+                                            :op1 (s23.m / model)
+                                            :op2 (s23.d / draw-01)
+                                            :op3 (s23.e / experiment-01))
+                               :polarity "-"))
+   :snt24 (s24.p2 / possible-01
+                  :purpose (s24.a / and
+                                  :op1 (s24.r2 / run-01
+                                               :ARG0 (s24.i / i
+                                                            :part (s24.m / mind)
+                                                            :same-as s8.b)
+                                               :ARG1 (s24.i3 / it))
+                                  :op2 (s24.t / test-01
+                                              :ARG0 s24.i
+                                              :ARG1 s24.i3)
+                                  :op3 (s24.i2 / improve-01
+                                               :ARG0 s24.i
+                                               :ARG1 s24.i3))
+                  :ARG1 (s24.p / picture-01
+                               :ARG0 s24.i
+                               :ARG1 (s24.t2 / they
+                                             :same-as s20.t2)
+                               :ARG2 (s24.r / real-04
+                                            :ARG1 s24.t2
+                                            :location s24.m)))
+   :snt25 (s25.c / construct-01
+                 :ARG0 (s25.i / i
+                              :same-as s8.b)
+                 :ARG1 (s25.i2 / it
+                               :same-as s24.i3)
+                 :mod (s25.o / only)
+                 :time (s25.t / then))
+   :snt26 (s26.s / say-01
+                 :ARG0 (s26.p / person
+                              :name (s26.n / name
+                                           :op1 "MT"))
+                 :ARG1 (s26.i / idea
+                              :domain (s26.a / alternate-01
+                                             :ARG1 (s26.c / current))
+                              :mod (s26.g / great)
+                              :poss (s26.h / he
+                                           :same-as s8.b)))
+   :snt27 (s27.c / contrast-01
+                 :ARG2 (s27.p / possible-01
+                              :ARG1 (s27.c2 / convince-01
+                                            :ARG0 (s27.h / he
+                                                         :same-as s8.b)
+                                            :ARG1 (s27.p3 / public)
+                                            :ARG2 (s27.s / safe-01
+                                                         :ARG0 (s27.m2 / multiple
+                                                                       :ARG1-of (s27.r / require-01
+                                                                                       :purpose (s27.m / make-02
+                                                                                                       :ARG1 (s27.w / work-09
+                                                                                                                    :ARG1 (s27.i / it
+                                                                                                                                 :same-as s26.h))))
+                                                                       :op1 (s27.p2 / potential-quantity
+                                                                                    :unit (s27.v / volt)
+                                                                                    :quant "1000000")))
+                                            :manner (s27.a / amr-unknown))))
+   :snt28 (s28.b / become-01
+                 :purpose (s28.s / sell-01
+                                 :ARG0 (s28.h / he
+                                              :same-as s8.b)
+                                 :ARG1 (s28.i / idea
+                                              :poss s28.h
+                                              :same-as s26.h))
+                 :ARG1 s28.h
+                 :ARG2 (s28.s2 / showman))
+   :snt29 (s29.s / say-01
+                 :ARG0 (s29.p / person
+                              :name (s29.n / name
+                                           :op1 "NT"))
+                 :ARG1 (s29.d / dawn-01
+                              :ARG1 (s29.w / we)
+                              :ARG2 (s29.a / age
+                                           :ARG1-of (s29.n2 / new-01)
+                                           :mod (s29.e / electricity))))
+   :snt30 (s30.p / possible-01
+                 :ARG1 (s30.t / transmit-01
+                              :ARG0 (s30.i / i
+                                           :same-as s8.b)
+                              :ARG1 (s30.e / electricity)
+                              :manner (s30.i2 / invent-01
+                                              :ARG0 s30.i
+                                              :ARG1-of (s30.c / care-04))
+                              :manner (s30.f / flick-01
+                                             :ARG0 s30.i
+                                             :ARG1 (s30.s / switch)
+                                             :mod (s30.m / mere))
+                              :path (s30.a / across
+                                           :op1 (s30.e2 / ether))))
+   :snt31 (s31.m / magic
+                 :domain (s31.i / it)
+                 :poss (s31.s / science))
+   :snt32 (s32.p / patent-01
+                 :quant (s32.o / over
+                               :op1 "700")
+                 :ARG0 (s32.c / company
+                              :name (s32.n / name
+                                           :op1 "Tesla")
+                              :same-as s8.b)
+                 :ARG1 (s32.a / and
+                              :op1 (s32.r / radio)
+                              :op2 (s32.t / telegraph-01
+                                          :mod (s32.w / wire))
+                              :op3 (s32.c2 / control-01
+                                           :mod (s32.r2 / remote))
+                              :op4 (s32.r3 / robot))
+                 :beneficiary (s32.n2 / name
+                                      :poss (s32.h / he
+                                                   :same-as s8.b)))
+   :snt33 (s33.p / photograph-01
+                 :ARG0 (s33.h / he
+                              :same-as s8.b)
+                 :ARG1 (s33.b2 / bone
+                               :part-of (s33.b / body
+                                               :mod (s33.h2 / human)))
+                 :mod (s33.e / even))
+   :snt34 (s34.c3 / contrast-01
+                  :ARG2 (s34.r2 / realize-02
+                                :ARG1 (s34.d / dream-01
+                                             :ARG0 (s34.c / childhood)
+                                             :ARG1 (s34.a / and
+                                                          :op1 (s34.u / unleash-01
+                                                                      :ARG1 (s34.p2 / power
+                                                                                    :ARG0-of (s34.r / rage-02)
+                                                                                    :poss (s34.c2 / city
+                                                                                                  :name (s34.n / name
+                                                                                                               :op1 "Niagara"
+                                                                                                               :op2 "Falls"))))
+                                                          :op2 (s34.s / shed-light-10
+                                                                      :ARG1 s34.c2)))
+                                :mod (s34.p / point
+                                            :ARG1-of (s34.h / high-02))))
+   :snt35 (s35.c2 / contrast-01
+                  :ARG2 (s35.l / last-04
+                               :ARG1 (s35.s / succeed-01
+                                            :ARG0 (s35.c / company
+                                                         :name (s35.n / name
+                                                                      :op1 "Tesla")
+                                                         :same-as s8.b))
+                               :polarity "-"))
+   :snt36 (s36.s / say-01
+                 :ARG0 (s36.p / person
+                              :name (s36.n / name
+                                           :op1 "NT"))
+                 :ARG1 (s36.h / have-03
+                              :ARG0 (s36.i / i
+                                           :same-as s8.b)
+                              :ARG1 (s36.i2 / idea
+                                            :ARG1-of (s36.h2 / have-degree-91
+                                                             :ARG2 (s36.b / big)
+                                                             :ARG3 (s36.m / more)))))
+   :snt37 (s37.b / begin-01
+                 :ARG2 (s37.i / illuminate-01
+                              :ARG1 (s37.c / city))
+                 :mod (s37.o / only))
+   :snt38 (s38.c / center
+                 :purpose (s38.t / telegraph-01
+                                 :ARG1 (s38.w / world)))
+   :snt39 (s39.i2 / imagine-01
+                  :ARG0 (s39.y / you)
+                  :ARG1 (s39.a / and
+                               :ARG1-of (s39.d / deliver-01
+                                               :ARG2 (s39.p / point
+                                                            :location (s39.w2 / world)
+                                                            :mod (s39.a2 / any))
+                                               :manner (s39.i3 / instant)
+                                               :manner (s39.w / wire
+                                                              :polarity "-"))
+                               :op1 (s39.n / news)
+                               :op2 (s39.m / message-01)
+                               :op3 (s39.s / sound-01)
+                               :op4 (s39.i / image))
+                  :mode "imperative")
+   :snt40 (s40.s / say-01
+                 :ARG0 (s40.p / person
+                              :name (s40.n / name
+                                           :op1 "NT"))
+                 :ARG1 (s40.g / give-01
+                              :ARG0 (s40.t / they)
+                              :ARG1 (s40.m / money)
+                              :ARG2 (s40.i / i
+                                           :same-as s8.b)
+                              :polarity "-"))
+   :snt41 (s41.s / say-01
+                 :ARG0 (s41.p / person
+                              :name (s41.n / name
+                                           :op1 "MT"))
+                 :ARG1 (s41.p3 / possible-01
+                               :ARG1 (s41.r / recommend-01
+                                            :ARG1 (s41.t / tell-01
+                                                         :ARG0 (s41.y / you
+                                                                      :same-as s8.b)
+                                                         :ARG1 (s41.p4 / possible-01
+                                                                       :ARG1 (s41.u / use-01
+                                                                                    :ARG1 (s41.i / it)
+                                                                                    :ARG2 (s41.c / contact-01
+                                                                                                 :ARG1 (s41.p2 / planet
+                                                                                                               :mod (s41.o / other)))))
+                                                         :ARG2 (s41.t2 / they
+                                                                       :same-as s40.t))
+                                            :ARG2 s41.y
+                                            :polarity "-"))
+                 :mod (s41.w / well))
+   :snt42 (s42.s / say-01
+                 :ARG0 (s42.p / person
+                              :name (s42.n / name
+                                           :op1 "NT"))
+                 :ARG1 (s42.m / mistake-02
+                              :ARG1 (s42.t / that
+                                           :same-as s41.t)
+                              :mod (s42.b / big)))
+   :snt43 (s43.s / say-01
+                 :ARG0 (s43.p / person
+                              :name (s43.n / name
+                                           :op1 "MT"))
+                 :ARG1 (s43.r / recover-01
+                              :ARG1 (s43.c / career
+                                           :poss (s43.p2 / person
+                                                         :name (s43.n2 / name
+                                                                       :op1 "Tesla"
+                                                                       :same-as s8.b)
+                                                         :ARG0-of (s43.i / invent-01)))
+                              :time (s43.e / ever)
+                              :polarity "-"))
+   :snt44 (s44.b / become-01
+                 :ARG1 (s44.h / he
+                              :same-as s8.b)
+                 :ARG2 (s44.r / recluse))
+   :snt45 (s45.c / cause-01
+                 :ARG0 (s45.d2 / dodge-01
+                               :ARG0 (s45.d / die-01
+                                            :ARG1 (s45.h / he
+                                                         :same-as s8.b))
+                               :ARG0 s45.h)
+                 :ARG1 (s45.s / spend-02
+                              :ARG0 s45.h
+                              :ARG1 (s45.t / time
+                                           :quant (s45.m / much)
+                                           :poss s45.h)
+                              :location (s45.s2 / suite
+                                                :location (s45.h2 / hotel
+                                                                  :name (s45.n / name)
+                                                                  :mod (s45.o / ocean
+                                                                              :name (s45.n2 / name
+                                                                                            :op1 "Astoria")))
+                                                :poss s45.h)))
+   :snt46 (s46.s / say-01
+                 :ARG0 (s46.p / person
+                              :name (s46.n / name
+                                           :op1 "NT"))
+                 :ARG1 (s46.d2 / do-02
+                               :ARG0 (s46.i / i
+                                            :same-as s8.b)
+                               :ARG1 (s46.e / everything
+                                            :ARG1-of (s46.d / do-02
+                                                            :ARG0 s46.i))
+                               :ARG2 (s46.m / mankind)
+                               :ARG3 (s46.w / world
+                                            :location-of (s46.h / humiliate-01
+                                                                :ARG0 (s46.v / violence
+                                                                             :poss (s46.p3 / person
+                                                                                           :mod (s46.r / rich)))
+                                                                :ARG1 (s46.p2 / person
+                                                                              :mod (s46.p4 / poor))
+                                                                :polarity "-")
+                                            :location-of (s46.s3 / serve-01
+                                                                 :ARG0 (s46.p5 / produce-01
+                                                                               :ARG1 (s46.a / and
+                                                                                            :op1 (s46.i2 / intellect)
+                                                                                            :op2 (s46.s2 / science)
+                                                                                            :op3 (s46.a3 / art)))
+                                                                 :ARG1 (s46.a2 / and
+                                                                               :op1 (s46.b2 / better-01
+                                                                                            :ARG1 (s46.l / life))
+                                                                               :op2 (s46.b / beautiful-02
+                                                                                           :ARG1 s46.l))
+                                                                 :ARG2 (s46.s4 / society)))))
+   :snt47 (s47.d2 / die-01
+                  :ARG1 (s47.p / person
+                               :name (s47.n2 / name
+                                             :op1 "Nikola"
+                                             :op2 "Tesla")
+                               :same-as s8.b)
+                  :source (s47.m / mountain
+                                 :name (s47.n / name
+                                              :op1 "MT"))
+                  :time (s47.d / date-entity
+                               :day "7"
+                               :month "1"
+                               :year "1943"))
+   :snt48 (s48.g / globe
+                 :ARG0-of (s48.c2 / contain-01
+                                  :ARG1 (s48.a / ash
+                                               :poss (s48.h / he
+                                                            :same-as s8.b)))
+                 :consist-of (s48.g2 / gold)
+                 :domain (s48.p / place
+                                :location (s48.m / museum
+                                                 :name (s48.n / name
+                                                              :op1 "Nikola"
+                                                              :op2 "Tesla"
+                                                              :op3 "Museum")
+                                                 :location (s48.c / city
+                                                                  :name (s48.n2 / name
+                                                                                :op1 "Belgrade")))
+                                :location-of (s48.r / rest-01
+                                                    :ARG1 s48.h
+                                                    :mod (s48.f / final))))
+   :snt49 (s49.l / legacy
+                 :accompanier (s49.w / we)
+                 :mod (s49.s / still)
+                 :poss (s49.h / he
+                              :same-as s8.b))
+   :snt50 (s50.c / contrast-01
+                 :ARG1 (s50.b / become-01
+                              :ARG1 (s50.p / person
+                                           :name (s50.n / name
+                                                        :op1 "Tesla")
+                                           :same-as s8.b)
+                              :ARG2 (s50.m / man
+                                           :ARG0-of (s50.l / light-04
+                                                           :ARG1 (s50.w / world
+                                                                        :same-as s39.w2))))
+                 :ARG2 (s50.b2 / begin-01
+                               :ARG2 s50.b
+                               :mod (s50.o / only)))
+   :snt51 (s51.p / profound
+                 :domain (s51.i / insight
+                                :poss (s51.c / company
+                                             :name (s51.n / name
+                                                          :op1 "Tesla")
+                                             :same-as s8.b)))
+   :snt52 (s52.s / say-01
+                 :ARG0 (s52.p / person
+                              :name (s52.n / name
+                                           :op1 "NT"))
+                 :ARG1 (s52.t / tell-01
+                              :ARG0 (s52.y / you)
+                              :ARG1 (s52.d3 / do-02
+                                            :ARG0 (s52.m / man)
+                                            :ARG1 (s52.a / amr-unknown)
+                                            :time (s52.a2 / and
+                                                          :op1 (s52.d2 / disappear-01
+                                                                       :ARG1 (s52.f / forest))
+                                                          :op2 (s52.e / exhaust-01
+                                                                      :ARG1 (s52.d / deposit-01
+                                                                                   :ARG1 (s52.c / coal)))))
+                              :ARG2 (s52.i / i
+                                           :same-as s8.b)
+                              :mode "imperative"))
+   :snt53 (s53.s / say-01
+                 :ARG0 (s53.p / person
+                              :name (s53.n / name
+                                           :op1 "MT"))
+                 :ARG1 (s53.t2 / think-01
+                               :ARG0 (s53.p2 / person
+                                             :name (s53.n2 / name
+                                                           :op1 "Tesla")
+                                             :same-as s8.b)
+                               :ARG1 (s53.h / have-03
+                                            :ARG0 s53.p2
+                                            :ARG1 (s53.t / thing
+                                                         :ARG2-of (s53.a / answer-01)))))
+   :snt54 (s54.a / ask-01
+                 :ARG0 (s54.w / we)
+                 :ARG1 (s54.t / thing
+                              :ARG1-of (s54.q / question-01))
+                 :mod (s54.s / still))
+   :snt55 (s55.t / thank-01
+                 :ARG1 (s55.y / you)))
+

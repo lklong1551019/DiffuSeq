@@ -1,0 +1,792 @@
+# ::id doc-144
+# ::doc_file doc-144
+# ::tok http : / / www . ted . com / talks / gabe_barcia_colombo_my_dna_vending_machine< / url> <next_sent> This is a vending machine in Los Angeles . <next_sent> It 's in a shopping mall , and it sells fish eggs . <next_sent> It 's a caviar vending machine . <next_sent> This is the Art - o - mat , an art vending machine that sells small artistic creations by different artists , usually on small wood blocks or matchboxes , in limited edition . <next_sent> This is Oliver Medvedik . <next_sent> He 's not a vending machine , but he is one of the founders of Genspace , a community biolab in Brooklyn , New York , where anybody can go and take classes and learn how to do things like grow E. coli that glows in the dark or learn how to take strawberry DNA . <next_sent> In fact , I saw Oliver do one of these strawberry DNA extractions about a year ago , and this is what led me onto this bizarre path that I 'm going to talk to you right now . <next_sent> Because strawberry DNA is really fascinating , because it 's so beautiful . <next_sent> I 'd never thought about DNA being a beautiful thing before , before I saw it in this form . <next_sent> And a lot of people , especially in the art community , do n't necessarily engage in science in this way . <next_sent> I instantly joined Genspace after this , and I asked Oliver , " Well , if we can do this strawberries , can we do this with people as well ? " <next_sent> And about 10 minutes later , we were both spinning it in vials together and coming up with a protocol for human DNA extraction . <next_sent> And I started doing this on my own , and this is what my DNA actually looks like . <next_sent> And I was at a dinner party with some friends , some artist friends , and I was telling them about this project , and they could n't believe that you could actually see DNA . <next_sent> So I said , all right , let 's get out some supplies right now . <next_sent> And I started having these bizarre dinner parties at my house on Friday nights where people would come over and we would do DNA extractions , and I would actually capture them on video , because it created this kind of funny portrait as well . <next_sent> These are people who do n't necessarily regularly engage with science whatsoever . <next_sent> You can kind of tell from their reactions . <next_sent> But they became fascinated by it , and it was really exciting for me to see them get excited about science . <next_sent> And so I started doing this regularly . <next_sent> It 's kind of an odd thing to do with your Friday nights , but this is what I started doing , and I started collecting a whole group of my friends ' DNA in small vials and categorizing them . <next_sent> This is what that looked like . <next_sent> And it started to make me think about a couple of things . <next_sent> First of all , this looked a lot like my Facebook wall . <next_sent> So in a way , I 've created sort of a genetic network , a genetic social network , really . <next_sent> And the second thing was , one time a friend came over and looked at this on my table and was like , " Oh . <next_sent> And I had n't even thought about that . <next_sent> They were just numbered because that was the order that I extracted the DNA in . <next_sent> But that made me think about collecting toys , and this thing that 's going on right now in the toy world with blind box toys , and being able to collect these rare toys . <next_sent> But then , when you open them up , you have different rarities of the toys . <next_sent> And so I thought that was interesting . <next_sent> I started thinking about this and the caviar vending machine and the Art - o - mat all together , and some reason , I was one night drawing a vending machine , thinking about doing paintings of a vending machine , and the little vial of my DNA was sitting there , and I saw this kind of beautiful collaboration between the strands of DNA and the coils of a vending machine . <next_sent> And so , of course , I decided to create an art installation called the DNA Vending Machine . <next_sent> Here it is . <next_sent> [ " DNA Vending Machine is an art installation about our increasing access to biotechnology . " ] [ " For a reasonable cost , you can purchase a sample of human DNA from a traditional vending machine . " ] [ " Each sample comes packaged with a collectible limited edition portrait of the human specimen . " ] [ " DNA Vending Machine treats DNA as a collectible material and brings to light legal issues over the ownership of DNA . " ] Gabriel Garcia - Colombo : So the DNA Vending Machine is currently in a couple galleries in New York , and it 's selling out pretty well , actually . <next_sent> We 're in the first edition of 100 pieces , hoping to do another edition pretty soon . <next_sent> I 'd actually like to get it into more of a metro hub , like Grand Central or Penn Station , right next to some of the other , actual vending machines in that location . <next_sent> But really with this project and a lot of my art projects I want to ask the audience a question , and that is , when biotechnology and DNA sequencing becomes as cheap as , say , laser cutting or 3D printing or buying caviar from a vending machine , will you still submit your sample of DNA to be part of the vending machine ? <next_sent> And how much will these samples be worth ? <next_sent> And will you buy someone else 's sample ? <next_sent> And what will you be able to do with that sample ? <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :value (s1.t / talk-01
+                            :mod (s1.n / narcotic)))
+   :snt2 (s2.m / machine
+               :ARG0-of (s2.v / vend-01)
+               :location (s2.c / city
+                               :name (s2.n / name
+                                           :op1 "Los"
+                                           :op2 "Angeles"))
+               :mod (s2.t / this))
+   :snt3 (s3.a / and
+               :op1 (s3.i / it
+                          :location (s3.m / mall
+                                          :ARG2-of (s3.s2 / shop-01))
+                          :same-as s2.t)
+               :op2 (s3.s / sell-01
+                          :ARG0 s3.i
+                          :ARG1 (s3.e / egg
+                                      :mod (s3.f / fish))))
+   :snt4 (s4.m / machine
+               :ARG0-of (s4.v / vend-01
+                              :ARG1 (s4.c / caviar))
+               :domain (s4.i / it
+                             :same-as s2.t))
+   :snt5 (s5.m / machine
+               :name (s5.n / name
+                           :op1 "Bill-O")
+               :ARG0-of (s5.v / vend-01
+                              :ARG1 (s5.a / art))
+               :ARG0-of (s5.s / sell-01
+                              :ARG1 (s5.t / thing
+                                          :ARG1-of (s5.c / create-01
+                                                         :ARG0 (s5.a2 / artist
+                                                                      :ARG1-of (s5.d / differ-02))
+                                                         :instrument (s5.o / or
+                                                                           :mod (s5.u / usual)
+                                                                           :op1 (s5.b / block
+                                                                                      :consist-of (s5.w / wood)
+                                                                                      :mod (s5.s3 / small))
+                                                                           :op2 (s5.b2 / box))
+                                                         :mod s5.a)
+                                          :mod (s5.s2 / small)
+                                          :mod (s5.e / edition
+                                                     :ARG1-of (s5.l / limit-01))))
+               :domain (s5.t2 / this))
+   :snt6 (s6.p / person
+               :name (s6.n / name
+                           :op1 "Oliver"
+                           :op2 "Medvedik")
+               :domain (s6.t / this))
+   :snt7 (s7.c5 / contrast-01
+                :ARG1 (s7.m / machine
+                            :domain (s7.h / he
+                                          :same-as s6.t)
+                            :instrument-of (s7.v / vend-01)
+                            :polarity "-")
+                :ARG2 (s7.i / include-91
+                            :ARG1 s7.h
+                            :ARG2 (s7.p / person
+                                        :ARG0-of (s7.f / found-01
+                                                       :ARG1 (s7.b / biolab
+                                                                   :name (s7.n / name
+                                                                               :op1 "Genspace")
+                                                                   :location (s7.c2 / city-district
+                                                                                    :name (s7.n2 / name
+                                                                                                 :op1 "Brooklyn")
+                                                                                    :part-of (s7.c / city
+                                                                                                   :name (s7.n3 / name
+                                                                                                                :op1 "New"
+                                                                                                                :op2 "York")))
+                                                                   :location-of (s7.p2 / possible-01
+                                                                                       :ARG1 (s7.a / and
+                                                                                                   :op1 (s7.g2 / go-02
+                                                                                                               :ARG0 (s7.a2 / anybody
+                                                                                                                            :example (s7.g3 / grow-03
+                                                                                                                                            :ARG1 (s7.d2 / disease
+                                                                                                                                                         :name (s7.n4 / name
+                                                                                                                                                                      :op1 "E."
+                                                                                                                                                                      :op2 "coli")
+                                                                                                                                                         :ARG0-of (s7.g / glow-01))
+                                                                                                                                            :location (s7.d / dark))
+                                                                                                                            :ARG0-of s7.g3))
+                                                                                                   :op2 (s7.t / take-01
+                                                                                                              :ARG0 s7.a2
+                                                                                                              :ARG1 (s7.c3 / class))
+                                                                                                   :op3 (s7.l / learn-01
+                                                                                                              :ARG0 s7.a2
+                                                                                                              :ARG1 (s7.d3 / do-02
+                                                                                                                           :ARG0 s7.a2
+                                                                                                                           :ARG1 (s7.t3 / thing
+                                                                                                                                        :example (s7.l2 / learn-01
+                                                                                                                                                        :ARG0 s7.a2
+                                                                                                                                                        :ARG1 (s7.t2 / take-01
+                                                                                                                                                                     :ARG0 s7.a2
+                                                                                                                                                                     :ARG1 (s7.n6 / nucleic-acid
+                                                                                                                                                                                  :name (s7.n5 / name
+                                                                                                                                                                                               :op1 "DNA")
+                                                                                                                                                                                  :mod (s7.s / strawberry)))))))))
+                                                                   :mod (s7.c4 / community))))))
+   :snt8 (s8.a2 / and
+                :op1 (s8.s / see-01
+                           :ARG0 (s8.i / i)
+                           :ARG1 (s8.d / do-02
+                                       :ARG0 (s8.p2 / person
+                                                    :name (s8.n / name
+                                                                :op1 "Oliver")
+                                                    :same-as s6.t)
+                                       :ARG1 (s8.e / extract-01
+                                                   :ARG1 (s8.n5 / nucleic-acid
+                                                                :name (s8.n2 / name
+                                                                             :op1 "DNA")
+                                                                :part-of (s8.s2 / strawberry))
+                                                   :ARG1-of (s8.i3 / include-91
+                                                                   :ARG2 (s8.e2 / extract-01
+                                                                                :ARG1 s8.n5
+                                                                                :mod (s8.t3 / this)))
+                                                   :quant "1"))
+                           :mod (s8.i2 / in-fact)
+                           :time (s8.b / before
+                                       :quant (s8.a / about
+                                                    :op1 (s8.t2 / temporal-quantity
+                                                                :unit (s8.y / year)
+                                                                :quant "1"))
+                                       :op1 (s8.n3 / now)))
+                :op2 (s8.l / lead-01
+                           :ARG0 s8.e
+                           :ARG1 s8.i
+                           :ARG4 (s8.p / path
+                                       :ARG1-of (s8.t / talk-01
+                                                      :ARG0 s8.i
+                                                      :ARG2 (s8.y2 / you)
+                                                      :time (s8.n4 / now
+                                                                   :mod (s8.r / right)))
+                                       :mod (s8.b2 / bizarre)
+                                       :mod (s8.t4 / this))))
+   :snt9 (s9.c / cause-01
+               :ARG0 (s9.c2 / cause-01
+                            :ARG0 (s9.b / beautiful-02
+                                        :ARG1 (s9.n2 / nucleic-acid
+                                                     :name (s9.n / name
+                                                                 :op1 "DNA")
+                                                     :mod (s9.s2 / strawberry))
+                                        :degree (s9.s / so))
+                            :ARG1 (s9.f / fascinate-01
+                                        :ARG0 s9.n2
+                                        :degree (s9.r / really))))
+   :snt10 (s10.t / think-01
+                 :ARG0 (s10.i / i
+                              :same-as s8.i)
+                 :ARG1 (s10.b / beautiful-02
+                              :ARG1 (s10.n2 / nucleic-acid
+                                            :name (s10.n / name
+                                                         :op1 "DNA")))
+                 :time (s10.e / ever)
+                 :time (s10.b2 / before
+                               :op1 (s10.s / see-01
+                                           :ARG0 s10.i
+                                           :ARG1 s10.n2
+                                           :manner (s10.f / form
+                                                          :mod (s10.t2 / this))))
+                 :polarity "-")
+   :snt11 (s11.a / and
+                 :op2 (s11.e / engage-01
+                             :ARG1 (s11.p / person
+                                          :quant (s11.l / lot)
+                                          :ARG2-of (s11.i / include-91
+                                                          :ARG1 (s11.c / community
+                                                                       :mod (s11.a2 / art)
+                                                                       :mod (s11.e2 / especially))))
+                             :ARG1-of (s11.n / need-01)
+                             :ARG2 (s11.s / science)
+                             :manner (s11.w / way
+                                            :mod (s11.t / this))
+                             :polarity "-"))
+   :snt12 (s12.a3 / and
+                  :op1 (s12.j / join-04
+                              :ARG0 (s12.i / i
+                                           :same-as s8.i)
+                              :ARG1 (s12.p5 / product
+                                            :name (s12.n / name
+                                                         :op1 "Genspace"))
+                              :manner (s12.i2 / instant)
+                              :time (s12.a / after
+                                           :op1 (s12.t / this
+                                                       :same-as s8.e)))
+                  :op2 (s12.a5 / ask-01
+                               :ARG0 s12.i
+                               :ARG1 (s12.h / have-condition-91
+                                            :ARG1 (s12.p4 / possible-01
+                                                          :ARG1 (s12.d2 / do-02
+                                                                        :ARG0 (s12.w / we)
+                                                                        :ARG1 (s12.t2 / this
+                                                                                      :same-as s8.e2)
+                                                                        :ARG4 (s12.p2 / person
+                                                                                      :mod (s12.a4 / as-well)))
+                                                          :polarity (s12.a2 / amr-unknown))
+                                            :ARG2 (s12.p3 / possible-01
+                                                          :ARG1 (s12.d / do-02
+                                                                       :ARG0 s12.w
+                                                                       :ARG1 (s12.r / rocket)
+                                                                       :ARG1 s12.t2)))
+                               :ARG2 (s12.p / person
+                                            :name (s12.n2 / name
+                                                          :op1 "Oliver")
+                                            :same-as s6.t)))
+   :snt13 (s13.a3 / and
+                  :op2 (s13.a4 / and
+                               :op1 (s13.s / spin-01
+                                           :ARG0 (s13.w / we
+                                                        :mod (s13.b / both)
+                                                        :same-as s12.w)
+                                           :ARG1 (s13.i / it
+                                                        :same-as s7.n6)
+                                           :manner (s13.v / vial)
+                                           :mod (s13.t2 / together))
+                               :op2 (s13.c / come-up-11
+                                           :ARG0 s13.w
+                                           :ARG1 (s13.p / protocol
+                                                        :purpose (s13.e / extract-01
+                                                                        :ARG0 (s13.h / human)
+                                                                        :ARG1 (s13.n2 / nucleic-acid
+                                                                                      :name (s13.n / name
+                                                                                                   :op1 "DNA")))))
+                               :time (s13.a2 / after
+                                             :quant (s13.a / about
+                                                           :op1 (s13.t / temporal-quantity
+                                                                       :unit (s13.m / minute)
+                                                                       :quant "10")))))
+   :snt14 (s14.a2 / and
+                  :op1 (s14.s / start-01
+                              :ARG0 (s14.i / i
+                                           :same-as s8.i)
+                              :ARG1 (s14.d / do-02
+                                           :ARG0 s14.i
+                                           :ARG1 (s14.t2 / this
+                                                         :same-as s8.e2)
+                                           :mod (s14.b / by-oneself)))
+                  :op2 (s14.t / thing
+                              :ARG1-of (s14.l / look-02
+                                              :ARG0 (s14.n2 / nucleic-acid
+                                                            :name (s14.n / name
+                                                                         :op1 "DNA")
+                                                            :poss s14.i)
+                                              :ARG1-of (s14.a / actual-02))
+                              :domain s14.t2))
+   :snt15 (s15.a2 / and
+                  :op2 (s15.a3 / and
+                               :op1 (s15.b / be-located-at-91
+                                           :ARG1 (s15.i / i
+                                                        :same-as s8.i)
+                                           :ARG2 (s15.p / party
+                                                        :mod (s15.d / dinner))
+                                           :accompanier (s15.p2 / person
+                                                                :quant (s15.s2 / some)
+                                                                :ARG0-of (s15.h / have-rel-role-91
+                                                                                :ARG1 s15.i
+                                                                                :ARG2 (s15.f / friend))
+                                                                :mod (s15.a4 / artist)))
+                               :op2 (s15.t / tell-01
+                                           :ARG0 s15.i
+                                           :ARG1 (s15.p5 / project
+                                                         :mod (s15.t2 / this))
+                                           :ARG2 s15.p2)
+                               :op3 (s15.p3 / possible-01
+                                            :ARG1 (s15.b2 / believe-01
+                                                          :ARG0 s15.p2
+                                                          :ARG1 (s15.p4 / possible-01
+                                                                        :ARG1 (s15.s / see-01
+                                                                                     :ARG0 (s15.y / you)
+                                                                                     :ARG1 (s15.n2 / nucleic-acid
+                                                                                                   :name (s15.n / name
+                                                                                                                :op1 "DNA"))
+                                                                                     :ARG1-of (s15.a / actual-02))))
+                                            :polarity "-")))
+   :snt16 (s16.c / cause-01
+                 :ARG1 (s16.s / say-01
+                              :ARG0 (s16.i / i
+                                           :same-as s8.i)
+                              :ARG1 (s16.g / get-05
+                                           :ARG0 (s16.w / we)
+                                           :ARG1 (s16.t / thing
+                                                        :quant (s16.s2 / some)
+                                                        :ARG1-of (s16.s3 / supply-01))
+                                           :ARG2 (s16.o / out)
+                                           :ARG2-of (s16.r2 / right-06
+                                                            :mod (s16.a / all))
+                                           :time (s16.n / now
+                                                        :mod (s16.r / right))
+                                           :mode "imperative")))
+   :snt17 (s17.a2 / and
+                  :op2 (s17.s / start-01
+                              :ARG0 (s17.i / i
+                                           :same-as s8.i)
+                              :ARG1 (s17.h / have-04
+                                           :ARG0 s17.i
+                                           :ARG1 (s17.p / party
+                                                        :frequency (s17.d / date-entity
+                                                                          :dayperiod (s17.n2 / night)
+                                                                          :weekday (s17.f / friday))
+                                                        :location (s17.h2 / house
+                                                                          :poss s17.i)
+                                                        :mod (s17.d2 / dinner)
+                                                        :mod (s17.b / bizarre)
+                                                        :time-of (s17.a3 / and
+                                                                         :op1 (s17.c3 / come-01
+                                                                                      :ARG1 (s17.p2 / person)
+                                                                                      :ARG4 (s17.o / over))
+                                                                         :op2 (s17.d3 / do-02
+                                                                                      :ARG0 (s17.w / we)
+                                                                                      :ARG1 (s17.e / extract-01
+                                                                                                   :ARG0 s17.w
+                                                                                                   :ARG1 (s17.n3 / nucleic-acid
+                                                                                                                 :name (s17.n / name
+                                                                                                                              :op1 "DNA"))))
+                                                                         :op3 (s17.c / capture-01
+                                                                                     :ARG0 s17.i
+                                                                                     :ARG1 s17.p2
+                                                                                     :ARG1-of (s17.a / actual-02)
+                                                                                     :ARG1-of (s17.c2 / cause-01
+                                                                                                      :ARG0 (s17.c4 / create-01
+                                                                                                                    :ARG0 s17.p
+                                                                                                                    :ARG1 (s17.p3 / portrait
+                                                                                                                                  :mod (s17.f2 / funny)
+                                                                                                                                  :mod (s17.k / kind
+                                                                                                                                              :mod (s17.t / this)))
+                                                                                                                    :mod (s17.a4 / as-well)))
+                                                                                     :medium (s17.v / video)))))))
+   :snt18 (s18.p / person
+                 :ARG0-of (s18.e / engage-01
+                                 :ARG1-of (s18.r / regular-02)
+                                 :ARG1-of (s18.n / need-01)
+                                 :ARG2 (s18.s / science)
+                                 :mod (s18.w / whatsoever)
+                                 :polarity "-")
+                 :mod (s18.t / this))
+   :snt19 (s19.p / possible-01
+                 :ARG1 (s19.t / tell-02
+                              :ARG0 (s19.y / you)
+                              :ARG2 (s19.r / react-01
+                                           :ARG0 (s19.t2 / they
+                                                         :same-as s18.t))
+                              :degree (s19.k / kind-of)))
+   :snt20 (s20.c / contrast-01
+                 :ARG2 (s20.a / and
+                              :op1 (s20.b / become-01
+                                          :ARG1 (s20.t / they
+                                                       :same-as s18.t)
+                                          :ARG2 (s20.f / fascinate-01
+                                                       :ARG0 (s20.i2 / it
+                                                                     :same-as s17.c)
+                                                       :ARG1 s20.t))
+                              :op2 (s20.e / excite-01
+                                          :ARG0 (s20.i / i
+                                                       :same-as s8.i)
+                                          :ARG0 (s20.s2 / see-01
+                                                        :ARG0 s20.i
+                                                        :ARG1 (s20.g / get-03
+                                                                     :ARG1 s20.t
+                                                                     :ARG2 (s20.e2 / excite-01
+                                                                                   :ARG0 (s20.s / science)
+                                                                                   :ARG1 s20.t)))
+                                          :degree (s20.r / really))))
+   :snt21 (s21.a / and
+                 :op2 (s21.c / cause-01
+                             :ARG1 (s21.s / start-01
+                                          :ARG0 (s21.i / i
+                                                       :same-as s8.i)
+                                          :ARG1 (s21.d / do-02
+                                                       :ARG0 s21.i
+                                                       :ARG1 (s21.t / this
+                                                                    :same-as s8.e2)
+                                                       :ARG1-of (s21.r / regular-02)))))
+   :snt22 (s22.c3 / contrast-01
+                  :ARG1 (s22.o / odd
+                               :degree (s22.k / kind-of)
+                               :domain (s22.d2 / do-02
+                                               :ARG1 (s22.i2 / it
+                                                             :same-as s8.e2)
+                                               :ARG2-of (s22.h2 / have-to-do-with-04
+                                                                :ARG1 (s22.n2 / night
+                                                                              :mod (s22.d / date-entity
+                                                                                          :weekday (s22.f / friday))
+                                                                              :poss (s22.y / you)))))
+                  :ARG2 (s22.a / and
+                               :op1 (s22.s2 / start-01
+                                            :ARG0 (s22.i / i
+                                                         :same-as s8.i)
+                                            :ARG1 (s22.d3 / do-02
+                                                          :ARG0 s22.i
+                                                          :ARG1 (s22.t / this
+                                                                       :same-as s8.e2)))
+                               :op2 (s22.s3 / start-01
+                                            :ARG0 s22.i
+                                            :ARG1 (s22.a2 / and
+                                                          :op1 (s22.c2 / collect-01
+                                                                       :ARG0 s22.i
+                                                                       :ARG1 (s22.g / group
+                                                                                    :mod (s22.w / whole))
+                                                                       :location (s22.v / vial
+                                                                                        :mod (s22.s / small)))
+                                                          :op2 (s22.c / categorize-01
+                                                                      :ARG0 s22.i
+                                                                      :ARG1 (s22.n3 / nucleic-acid
+                                                                                    :name (s22.n / name
+                                                                                                 :op1 "DNA")
+                                                                                    :poss (s22.p / person
+                                                                                                 :ARG0-of (s22.h / have-rel-role-91
+                                                                                                                 :ARG1 s22.i
+                                                                                                                 :ARG2 (s22.f2 / friend)))))))))
+   :snt23 (s23.l / look-02
+                 :ARG0 (s23.t / that)
+                 :ARG1 (s23.t2 / this))
+   :snt24 (s24.a / and
+                 :op2 (s24.s / start-01
+                             :ARG0 (s24.i2 / it
+                                           :same-as s23.t2)
+                             :ARG1 (s24.m / make-02
+                                          :ARG0 s24.i2
+                                          :ARG1 (s24.t2 / think-01
+                                                        :ARG0 (s24.i / i
+                                                                     :same-as s8.i)
+                                                        :ARG1 (s24.t / thing
+                                                                     :quant (s24.c / couple))))))
+   :snt25 (s25.l / look-02
+                 :ARG0 (s25.t / this
+                              :same-as s23.t2)
+                 :ARG1 (s25.w / wall
+                              :mod (s25.p / publication
+                                          :name (s25.n / name
+                                                       :op1 "Facebook"))
+                              :poss (s25.i / i
+                                           :same-as s8.i))
+                 :degree (s25.l2 / lot)
+                 :mod (s25.f / first-of-all))
+   :snt26 (s26.c / create-01
+                 :ARG0 (s26.i / i
+                              :same-as s8.i)
+                 :ARG1 (s26.n / network
+                              :ARG1-of (s26.r / real-04)
+                              :degree (s26.s2 / sort-of)
+                              :mod (s26.g / genetics)
+                              :mod (s26.s / society))
+                 :manner (s26.w / way))
+   :snt27 (s27.a / and
+                 :op2 (s27.t2 / thing
+                              :domain (s27.a2 / and
+                                              :op1 (s27.c / come-01
+                                                          :ARG1 (s27.p / person
+                                                                       :ARG0-of (s27.h / have-rel-role-91
+                                                                                       :ARG2 (s27.f / friend)))
+                                                          :ARG4 (s27.o4 / over)
+                                                          :frequency (s27.o2 / one))
+                                              :op2 (s27.l / look-01
+                                                          :ARG0 s27.p
+                                                          :ARG1 (s27.t3 / this
+                                                                        :location (s27.t / table
+                                                                                         :poss (s27.i / i
+                                                                                                      :same-as s8.i)))))
+                              :ord (s27.o3 / ordinal-entity
+                                           :value "2"))
+                 :rel (s27.o / oh
+                             :mode "expressive"))
+   :snt28 (s28.a / and
+                 :op2 (s28.t2 / think-01
+                              :ARG0 (s28.i / i
+                                           :same-as s8.i)
+                              :ARG1 (s28.t / that)
+                              :mod (s28.e / even)
+                              :polarity "-"))
+   :snt29 (s29.c / cause-01
+                 :ARG0 (s29.o / order-03
+                              :ARG2-of (s29.e / extract-01
+                                              :ARG0 (s29.i / i
+                                                           :same-as s8.i)
+                                              :ARG1 (s29.n2 / nucleic-acid
+                                                            :name (s29.n / name
+                                                                         :op1 "DNA")))
+                              :mod (s29.t / that))
+                 :ARG1 (s29.n3 / number-01
+                               :ARG1 (s29.t2 / they
+                                             :same-as s22.n3)
+                               :mod (s29.j / just)))
+   :snt30 (s30.c3 / contrast-01
+                  :ARG2 (s30.m / make-02
+                               :ARG0 (s30.t / that)
+                               :ARG1 (s30.t3 / think-01
+                                             :ARG0 (s30.i / i
+                                                          :same-as s8.i)
+                                             :ARG1 (s30.a / and
+                                                          :op1 (s30.c / collect-01
+                                                                      :ARG0 s30.i
+                                                                      :ARG1 (s30.t6 / toy))
+                                                          :op2 (s30.t2 / thing
+                                                                       :ARG1-of (s30.g / go-on-15
+                                                                                       :location (s30.w / world
+                                                                                                        :mod (s30.t7 / toy))
+                                                                                       :time (s30.n / now
+                                                                                                    :mod (s30.r2 / right)))
+                                                                       :accompanier (s30.t8 / toy
+                                                                                            :mod (s30.b2 / box
+                                                                                                         :ARG1-of (s30.b / blind-02)))
+                                                                       :mod (s30.t4 / this))
+                                                          :op3 (s30.p / possible-01
+                                                                      :ARG1 (s30.c2 / collect-01
+                                                                                    :ARG0 s30.i
+                                                                                    :ARG1 (s30.t9 / toy
+                                                                                                  :ARG1-of (s30.r / rare-02)
+                                                                                                  :mod (s30.t5 / this))))))))
+   :snt31 (s31.c / contrast-01
+                 :ARG2 (s31.h / have-03
+                              :ARG0 (s31.y / you)
+                              :ARG1 (s31.t2 / thing
+                                            :ARG1-of (s31.d / differ-02)
+                                            :ARG2-of (s31.e / except-01
+                                                            :ARG1 (s31.t3 / toy
+                                                                          :same-as s30.t9)))
+                              :mod (s31.t / then)
+                              :time (s31.o / open-up-03
+                                           :ARG0 s31.y
+                                           :ARG1 s31.t3)))
+   :snt32 (s32.a / and
+                 :op2 (s32.t2 / think-01
+                              :ARG0 (s32.i / i
+                                           :same-as s8.i)
+                              :ARG1 (s32.i2 / interest-01
+                                            :ARG2 (s32.t / that))
+                              :ARG1-of (s32.c / cause-01)))
+   :snt33 (s33.a3 / and
+                  :ARG1-of (s33.c / cause-01
+                                  :mod (s33.s3 / some))
+                  :op1 (s33.d / draw-02
+                              :ARG0 (s33.i / i
+                                           :same-as s8.i)
+                              :ARG1 (s33.m2 / machine
+                                            :ARG0-of (s33.v2 / vend-01)
+                                            :part (s33.s6 / strand))
+                              :time (s33.n3 / night
+                                            :mod (s33.o / one)))
+                  :op2 (s33.t3 / think-01
+                               :ARG0 s33.i
+                               :ARG1 (s33.p / paint-02
+                                            :ARG0 s33.i
+                                            :ARG1 s33.m2))
+                  :op3 (s33.s2 / sit-01
+                               :ARG1 (s33.v3 / vial
+                                             :mod (s33.l / little))
+                               :ARG2 (s33.t / there))
+                  :op4 (s33.s / see-01
+                              :ARG0 s33.i
+                              :ARG1 (s33.c3 / collaborate-01
+                                            :ARG0 (s33.s5 / strand
+                                                          :part-of (s33.n4 / nucleic-acid
+                                                                           :name (s33.n2 / name
+                                                                                         :op1 "DNA")))
+                                            :ARG1 s33.s6
+                                            :ARG1-of (s33.b / beautiful-02)
+                                            :mod (s33.k / kind
+                                                        :mod (s33.t5 / this))))
+                  :rel (s33.s4 / start-01
+                               :ARG0 s33.i
+                               :ARG1 (s33.t2 / think-01
+                                             :ARG0 s33.i
+                                             :ARG1 (s33.a2 / and
+                                                           :mod (s33.t6 / together
+                                                                        :mod (s33.a / all))
+                                                           :op1 (s33.t4 / this)
+                                                           :op2 (s33.m / machine
+                                                                       :ARG0-of (s33.v / vend-01
+                                                                                       :ARG1 (s33.c2 / caviar)))
+                                                           :op3 (s33.p2 / product
+                                                                        :name (s33.n / name
+                                                                                     :op1 "Bill-O"))))))
+   :snt34 (s34.a / and
+                 :op2 (s34.c2 / cause-01
+                              :ARG1 (s34.d / decide-01
+                                           :ARG0 (s34.i / i
+                                                        :same-as s8.i)
+                                           :ARG1 (s34.c3 / create-01
+                                                         :ARG0 s34.i
+                                                         :ARG1 (s34.i2 / installation
+                                                                       :ARG1-of (s34.c / call-01)
+                                                                       :mod (s34.a2 / art)))
+                                           :mod (s34.o / of-course)))
+                 :rel (s34.n2 / nucleic-acid
+                              :name (s34.n / name
+                                           :op1 "DNA"
+                                           :op2 "Vending"
+                                           :op3 "Machine")))
+   :snt35 (s35.i / it
+                 :location (s35.h / here)
+                 :same-as s34.n2)
+   :snt36 (s36.s3 / say-01
+                  :ARG0 (s36.p2 / person
+                                :name (s36.n4 / name
+                                              :op1 "Gabriel"
+                                              :op2 "Garcia"
+                                              :op3 "Colombo"))
+                  :ARG1 (s36.a3 / and
+                                :op1 (s36.i2 / installation
+                                             :domain (s36.t / thing
+                                                            :name (s36.n / name
+                                                                         :op1 "DNA"
+                                                                         :op2 "Vending"
+                                                                         :op3 "Machine")
+                                                            :same-as s34.n2)
+                                             :mod (s36.a5 / art)
+                                             :topic (s36.a / access-01
+                                                           :ARG0 (s36.w / we)
+                                                           :ARG1 (s36.b2 / biotechnology)
+                                                           :ARG1-of (s36.i / increase-01)))
+                                :op2 (s36.t3 / treat-01
+                                             :ARG1 (s36.n6 / nucleic-acid
+                                                           :name (s36.n2 / name
+                                                                         :op1 "DNA")
+                                                           :mod (s36.h / human))
+                                             :ARG2 (s36.m2 / material))
+                                :op3 (s36.s6 / shed-light-10
+                                             :ARG0 s36.t
+                                             :ARG1 (s36.i3 / issue-02
+                                                           :ARG0 (s36.o / own-01
+                                                                        :ARG1 s36.n6)
+                                                           :ARG1-of (s36.l / legal-02))))
+                  :mod (s36.s4 / say-01
+                               :ARG1 (s36.a4 / and
+                                             :op1 (s36.b / be-located-at-91
+                                                         :ARG1 s36.t
+                                                         :ARG2 (s36.m4 / museum
+                                                                       :quant (s36.c5 / couple)
+                                                                       :ARG0-of (s36.e3 / exhibit-01)
+                                                                       :location (s36.c / city
+                                                                                        :name (s36.n5 / name
+                                                                                                      :op1 "New"
+                                                                                                      :op2 "York")
+                                                                                        :same-as s7.c))
+                                                         :time (s36.c6 / current))
+                                             :op2 (s36.s5 / sell-01
+                                                          :ARG1 s36.t
+                                                          :ARG1-of (s36.w2 / well-09
+                                                                           :degree (s36.p6 / pretty))
+                                                          :ARG1-of (s36.a2 / actual-02))))
+                  :rel (s36.m3 / monetary-quantity
+                               :ARG1-of (s36.r / reasonable-02)
+                               :ARG2-of (s36.c4 / cost-01))
+                  :rel (s36.p4 / possible-01
+                               :ARG1 (s36.p7 / purchase-01
+                                             :ARG0 (s36.y / you)
+                                             :ARG1 (s36.s2 / sample-01
+                                                           :ARG1 s36.n6)
+                                             :ARG2 (s36.m / machine
+                                                          :ARG0-of (s36.v / vend-01)
+                                                          :mod (s36.t2 / tradition))))
+                  :rel (s36.c3 / come-01
+                               :ARG1 (s36.s / sample
+                                            :mod (s36.e / each))
+                               :ARG4 (s36.p / package-01
+                                            :ARG1 s36.s
+                                            :accompanier (s36.p3 / portrait
+                                                                 :ARG1-of (s36.c2 / collect-01
+                                                                                  :ARG1 s36.m2
+                                                                                  :ARG1-of (s36.p5 / possible-01))
+                                                                 :mod (s36.e2 / edition
+                                                                              :ARG1-of (s36.l2 / limit-01))
+                                                                 :topic (s36.s7 / specimen
+                                                                                :mod s36.h))))
+                  :rel (s36.n3 / name))
+   :snt37 (s37.a / and
+                 :op1 (s37.b / be-located-at-91
+                             :ARG1 (s37.w / we)
+                             :ARG2 (s37.e / edition
+                                          :consist-of (s37.p / piece
+                                                             :quant "100")
+                                          :ord (s37.o / ordinal-entity
+                                                      :value "1")))
+                 :op2 (s37.h / hope-01
+                             :ARG0 s37.w
+                             :ARG1 (s37.d / do-02
+                                          :ARG0 s37.w
+                                          :ARG1 (s37.e2 / edition
+                                                        :mod (s37.a2 / another))
+                                          :time (s37.s / soon
+                                                       :mod (s37.p2 / pretty)))))
+   :snt38 (s38.l / like-02
+                 :ARG0 (s38.i / i
+                              :same-as s8.i)
+                 :ARG1 (s38.g / get-05
+                              :ARG0 s38.i
+                              :ARG1 (s38.i3 / it
+                                            :location (s38.n3 / next-to
+                                                              :mod (s38.r / right)
+                                                              :op1 (s38.m / machine
+                                                                          :quant (s38.s / some)
+                                                                          :ARG1-of (s38.i2 / include-91
+                                                                                           :ARG2 (s38.m2 / machine
+                                                                                                         :ARG0-of (s38.v / vend-01
+                                                                                                                         :instrument s38.m)
+                                                                                                         :ARG1-of (s38.a2 / actual-02)
+                                                                                                         :location (s38.l2 / location
+                                                                                                                           :location (s38.o / or
+                                                                                                                                            :op1 (s38.s2 / station
+                                                                                                                                                         :name (s38.n / name
+                                                                                                                                                                      :op1 "Grand"
+                                                                                                                                                                      :op2 "Central"))
+                                                                                                                                            :op2 (s38.s3 / station
+                                                                                                                                                         :name (s38.n2 / name
+                                                                                                                                                                       :op1 "Penn"
+                                                                                                                                                                       :op2 "Station"))))
+                                                                                                         :mod (s38.o2 / other)))))
+                                            :same-as s34.n2)
+                              :ARG2 (s38.h2 / hub
+                                            :ARG2-of (s38.h / have-degree-91
+                                                            :ARG3 (s38.m4 / more))
+                                            :example s38.o
+                                            :mod (s38.m3 / metro)))
+                 :ARG1-of (s38.a / actual-02))
+   :snt39 (s39.c3 / contrast-01
+                  :ARG2 (s39.w / want-01
+                               :ARG0 (s39.i / i
+                                            :same-as s8.i)
+                               :ARG1 (s39.a5 / ask-01
+                                             :ARG0 s39.i
+                                             :ARG1 (s39.q / question-01
+                                                          :ARG1 (s39.s3 / submit-01
+                                                                        :ARG0 (s39.y / you)
+                                                                        :ARG1 (s39.s / sample-01
+                                                                                     :ARG0 s39.y
+                                                                                     :ARG1 (s39.n2 / nucleic-acid
+                                                                                                   :name (s39.n / name
+                                                                                                                :op1 "DNA")))
+                                                                        :ARG3 (s39.h2 / have-part-91
+                                                                                      :ARG2 (s39.m / machine
+                                                                                                   :ARG0-of (s39.v / vend-01)))
+                                                                        :mod (s39.s2 / still)
+                                                                        :polarity (s39.a / amr-unknown)
+                                                                        :time (s39.b / become-01
+                                                                                     :ARG1 (s39.a3 / and
+                                                                                                   :op1 (s39.b2 / biotechnology)
+                                                                                                   :op2 (s39.e / engineer-01
+                                                                                                               :ARG1 s39.n2))
+                                                                                     :ARG2 (s39.c2 / cheap-02
+                                                                                                   :ARG2-of (s39.h / have-degree-91
+                                                                                                                   :ARG1 s39.b
+                                                                                                                   :ARG3 (s39.e2 / equal)
+                                                                                                                   :ARG4 (s39.o / or
+                                                                                                                                :op1 (s39.c4 / cut-01
+                                                                                                                                             :instrument (s39.l / laser))
+                                                                                                                                :op2 (s39.p / print-01
+                                                                                                                                            :instrument (s39.d / dimension
+                                                                                                                                                               :quant "3"))
+                                                                                                                                :op3 (s39.b3 / buy-01
+                                                                                                                                             :ARG1 (s39.c / caviar)
+                                                                                                                                             :ARG2 s39.m)))))))
+                                             :ARG2 (s39.a6 / audience))
+                               :ARG1-of (s39.r / real-04))
+                  :rel (s39.a2 / and
+                               :op1 (s39.p2 / project
+                                            :mod (s39.t / this)
+                                            :same-as s15.p5)
+                               :op2 (s39.p3 / project
+                                            :ARG1-of (s39.i2 / include-91
+                                                             :ARG2 (s39.p4 / project
+                                                                           :mod (s39.a4 / art)
+                                                                           :poss s39.i)
+                                                             :ARG3 (s39.l2 / lot)))))
+   :snt40 (s40.a2 / and
+                  :op2 (s40.w / worth-01
+                              :ARG1 (s40.t / thing
+                                           :ARG1-of (s40.s / sample-01)
+                                           :mod (s40.t2 / this))
+                              :ARG2 (s40.a / amr-unknown)))
+   :snt41 (s41.a2 / and
+                  :op2 (s41.b / buy-01
+                              :ARG0 (s41.y / you)
+                              :ARG1 (s41.s / sample
+                                           :source (s41.s2 / someone
+                                                           :mod (s41.e / else)))
+                              :polarity (s41.a / amr-unknown)))
+   :snt42 (s42.a2 / and
+                  :op2 (s42.p / possible-01
+                              :ARG1 (s42.d / do-02
+                                           :ARG0 (s42.y / you)
+                                           :ARG1 (s42.a / amr-unknown)
+                                           :ARG2 (s42.s / sample-01
+                                                        :mod (s42.t / that)
+                                                        :same-as s41.s))))
+   :snt43 (s43.t / thank-01
+                 :ARG1 (s43.y / you
+                              :same-as s8.i)))
+

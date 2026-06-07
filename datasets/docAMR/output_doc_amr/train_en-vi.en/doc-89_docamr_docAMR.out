@@ -1,0 +1,382 @@
+# ::id doc-89
+# ::doc_file doc-89
+# ::tok http : / / www . ted . com / talks / joe_sabia_the_technology_of_storytelling< / url> <next_sent> Ladies and gentlemen , gather around . <next_sent> I would love to share with you a story . <next_sent> Once upon a time in 19th century Germany , there was the book . <next_sent> Now during this time , the book was the king of storytelling . <next_sent> It was venerable . <next_sent> It was ubiquitous . <next_sent> But it was a little bit boring . <next_sent> Because in its 400 years of existence , storytellers never evolved the book as a storytelling device . <next_sent> But then one author arrived , and he changed the game forever . <next_sent> His name was Lothar , Lothar Meggendorfer . <next_sent> Lothar Meggendorfer put his foot down , and he said , " Genug ist genug ! " <next_sent> He grabbed his pen , he snatched his scissors . <next_sent> This man refused to fold to the conventions of normalcy and just decided to fold . <next_sent> History would know Lothar Meggendorfer as -- who else ? -- the world 's first true inventor of the children 's pop - up book . <next_sent> For this delight and for this wonder , people rejoiced . <next_sent> They were happy because the story survived , and that the world would keep on spinning . <next_sent> Lothar Meggendorfer was n't the first to evolve the way a story was told , and he certainly was n't the last . <next_sent> Whether storytellers realized it or not , they were channeling Meggendorfer 's spirit when they moved opera to vaudville , radio news to radio theater , film to film in motion to film in sound , color , 3D , on VHS and on DVD . <next_sent> There seemed to be no cure for this Meggendorferitis . <next_sent> And things got a lot more fun when the Internet came around . <next_sent> Because , not only could people broadcast their stories throughout the world , but they could do so using what seemed to be an infinite amount of devices . <next_sent> For example , one company would tell a story of love through its very own search engine . <next_sent> One Taiwanese production studio would interpret American politics in 3D . <next_sent> And one man would tell the stories of his father by using a platform called Twitter to communicate the excrement his father would gesticulate . <next_sent> And after all this , everyone paused ; they took a step back . <next_sent> They realized that , in 6,000 years of storytelling , they 've gone from depicting hunting on cave walls to depicting Shakespeare on Facebook walls . <next_sent> And this was a cause for celebration . <next_sent> The art of storytelling has remained unchanged . <next_sent> And for the most part , the stories are recycled . <next_sent> But the way that humans tell the stories has always evolved with pure , consistent novelty . <next_sent> And they remembered a man , one amazing German , every time a new storytelling device popped up next . <next_sent> And for that , the audience -- the lovely , beautiful audience -- would live happily ever after .
+(d / document
+   :snt1 (s1.u / url-entity
+               :rel (s1.p / person
+                          :name (s1.n / name
+                                      :op1 "Joe")))
+   :snt2 (s2.g / gather-03
+               :ARG0 (s2.a / and
+                           :op1 (s2.l / lady)
+                           :op2 (s2.l2 / lady))
+               :location (s2.a2 / around)
+               :mode "imperative")
+   :snt3 (s3.l / love-02
+               :ARG0 (s3.i / i)
+               :ARG1 (s3.s / share-01
+                           :ARG0 s3.i
+                           :ARG1 (s3.s2 / story)
+                           :ARG2 (s3.y / you
+                                       :same-as s2.a)))
+   :snt4 (s4.b / book
+               :time (s4.c / country
+                           :name (s4.n / name
+                                       :op1 "Germany")
+                           :mod (s4.o / once-upon-a-time)
+                           :time (s4.d / date-entity
+                                       :century "19")))
+   :snt5 (s5.k / king
+               :domain (s5.b / book
+                             :same-as s4.b)
+               :mod (s5.t / tell-01
+                          :ARG1 (s5.s / story))
+               :time (s5.t3 / time
+                            :mod (s5.t2 / this)
+                            :same-as s4.n))
+   :snt6 (s6.v / venerate-01
+               :ARG1 (s6.i / it
+                           :same-as s4.b))
+   :snt7 (s7.u / ubiquitous
+               :domain (s7.i / it
+                             :same-as s4.b))
+   :snt8 (s8.c / contrast-01
+               :ARG2 (s8.b2 / bore-02
+                            :ARG0 (s8.i / it
+                                        :same-as s4.b)
+                            :degree (s8.b / bit
+                                          :mod (s8.l / little))))
+   :snt9 (s9.c / cause-01
+               :ARG0 (s9.e2 / evolve-01
+                            :ARG0 (s9.p / person
+                                        :ARG0-of (s9.t / tell-01
+                                                       :ARG1 (s9.s / story)))
+                            :ARG1 (s9.b / book
+                                        :same-as s4.b)
+                            :ARG2 (s9.d / device
+                                        :domain s9.b
+                                        :mod s9.s)
+                            :time (s9.e / ever)
+                            :time (s9.e3 / exist-01
+                                         :ARG1 s9.b
+                                         :duration (s9.t2 / temporal-quantity
+                                                          :unit (s9.y / year)
+                                                          :quant "400"))
+                            :polarity "-"))
+   :snt10 (s10.c2 / contrast-01
+                  :ARG2 (s10.a / and
+                               :op1 (s10.a2 / arrive-01
+                                            :ARG1 (s10.p / person
+                                                         :ARG0-of (s10.a3 / author-01)
+                                                         :quant "1")
+                                            :time (s10.t / then))
+                               :op2 (s10.c / change-01
+                                           :ARG0 s10.p
+                                           :ARG1 (s10.g / game)
+                                           :time (s10.f / forever))))
+   :snt11 (s11.n / name
+                 :poss (s11.h / he
+                              :same-as s10.p)
+                 :rel (s11.n2 / name
+                              :op1 "Lothar"
+                              :op2 "Lothar"
+                              :op3 "Meggendorfer"))
+   :snt12 (s12.a / and
+                 :op1 (s12.p3 / put-01
+                              :ARG0 (s12.p / person
+                                           :name (s12.n / name
+                                                        :op1 "Lothar"
+                                                        :op2 "Meggendorfer")
+                                           :part (s12.f / foot)
+                                           :same-as s10.p)
+                              :ARG1 s12.f
+                              :ARG2 (s12.d / down))
+                 :op2 (s12.s / say-01
+                             :ARG0 s12.p
+                             :ARG1 (s12.p2 / person
+                                           :mod (s12.g / genug))))
+   :snt13 (s13.a / and
+                 :op1 (s13.g / grab-01
+                             :ARG0 (s13.h / he
+                                          :same-as s10.p)
+                             :ARG1 (s13.p / pen
+                                          :poss s13.h))
+                 :op2 (s13.g2 / grab-01
+                              :ARG0 s13.h
+                              :ARG1 (s13.s / scissors
+                                           :poss s13.h)))
+   :snt14 (s14.a / and
+                 :op1 (s14.r / refuse-01
+                             :ARG0 (s14.m / man
+                                          :mod (s14.t / this)
+                                          :same-as s10.p)
+                             :ARG1 (s14.f / fold-06
+                                          :ARG0 s14.m
+                                          :prep-to (s14.c / convention
+                                                          :domain (s14.n / normal-02))))
+                 :op2 (s14.d / decide-01
+                             :ARG0 s14.m
+                             :ARG1 (s14.f2 / fold-06
+                                           :ARG0 s14.m)
+                             :mod (s14.j / just)))
+   :snt15 (s15.k / know-02
+                 :ARG0 (s15.h / history)
+                 :ARG1 (s15.p / person
+                              :name (s15.n / name
+                                           :op1 "Lothar"
+                                           :op2 "Meggendorfer")
+                              :same-as s10.p)
+                 :ARG1-of (s15.r / request-confirmation-91
+                                 :ARG2 (s15.a / amr-unknown
+                                              :mod (s15.e / else)))
+                 :ARG2 (s15.p2 / person
+                               :ARG0-of (s15.i / invent-01
+                                               :ARG1 (s15.b / book
+                                                            :ARG1-of (s15.p3 / pop-up-03)
+                                                            :poss (s15.c / child)))
+                               :ARG1-of (s15.t / true-01)
+                               :ord (s15.o / ordinal-entity
+                                           :value "1")
+                               :poss (s15.w / world)))
+   :snt16 (s16.r / rejoice-01
+                 :ARG0 (s16.a / and
+                              :op1 (s16.d / delight-01
+                                          :mod (s16.t / this))
+                              :op2 (s16.w / wonder-02
+                                          :mod (s16.t2 / this)))
+                 :ARG1 (s16.p / person))
+   :snt17 (s17.h / happy-01
+                 :ARG1 (s17.t / they
+                              :same-as s16.p)
+                 :ARG1-of (s17.c / cause-01
+                                 :ARG0 (s17.a / and
+                                              :op1 (s17.s3 / survive-01
+                                                           :ARG0 (s17.s2 / story))
+                                              :op2 (s17.k / keep-02
+                                                          :ARG1 (s17.s / spin-01
+                                                                       :ARG1 (s17.w / world))))))
+   :snt18 (s18.a / and
+                 :op1 (s18.e / evolve-01
+                             :ARG1 (s18.p / person
+                                          :name (s18.n / name
+                                                       :op1 "Lothar"
+                                                       :op2 "Meggendorfer")
+                                          :same-as s10.p)
+                             :ARG2 (s18.w / way
+                                          :manner-of (s18.t / tell-01
+                                                            :ARG1 (s18.s / story)))
+                             :ord (s18.o / ordinal-entity
+                                         :polarity "-"
+                                         :value "1"))
+                 :op2 (s18.e2 / evolve-01
+                              :ARG1 s18.p
+                              :ARG2 s18.w
+                              :mod (s18.c / certain)
+                              :ord (s18.o2 / ordinal-entity
+                                           :value "-1")
+                              :polarity "-"))
+   :snt19 (s19.c / channel-01
+                 :ARG0 (s19.p / person
+                              :ARG0-of (s19.t / tell-01
+                                              :ARG1 (s19.s3 / story)))
+                 :ARG1 (s19.s2 / spirit
+                               :poss (s19.p2 / person
+                                             :name (s19.n / name
+                                                          :op1 "Meggendorfer")
+                                             :same-as s10.p))
+                 :ARG1-of (s19.r4 / regardless-91
+                                  :ARG2 (s19.r3 / realize-01
+                                                :ARG0 s19.p))
+                 :time (s19.a2 / and
+                               :medium (s19.d4 / disc
+                                               :mod (s19.v / versatile)
+                                               :mod (s19.d2 / digital))
+                               :op1 (s19.m2 / move-01
+                                            :ARG0 s19.p
+                                            :ARG1 (s19.o / opera)
+                                            :ARG2 (s19.f / festival
+                                                         :name (s19.n2 / name
+                                                                       :op1 "vaudville")
+                                                         :mod (s19.a / adult))
+                                            :medium (s19.s4 / system
+                                                            :mod (s19.f2 / film
+                                                                         :manner (s19.m / motion)
+                                                                         :manner (s19.s / sound-02)
+                                                                         :medium (s19.d3 / dimension
+                                                                                         :quant "3"))
+                                                            :mod (s19.d / digital)
+                                                            :mod s19.v))
+                               :op2 (s19.m3 / move-01
+                                            :ARG0 s19.p
+                                            :ARG1 (s19.n3 / news
+                                                          :medium (s19.r / radio))
+                                            :ARG2 (s19.t2 / theater
+                                                          :mod (s19.r2 / radio)))
+                               :op3 s19.m3
+                               :op4 (s19.f3 / film
+                                            :manner (s19.c2 / color)
+                                            :prep-to (s19.f4 / film))))
+   :snt20 (s20.s / seem-01
+                 :ARG1 (s20.c / cure-01
+                              :ARG2 (s20.d / disease
+                                           :name (s20.n / name
+                                                        :op1 "Meggendorferitis")
+                                           :mod (s20.t / this))
+                              :polarity "-"))
+   :snt21 (s21.a / and
+                 :op2 (s21.g / get-03
+                             :ARG1 (s21.t / thing)
+                             :ARG2 (s21.f / fun-01
+                                          :quant (s21.m / more
+                                                        :quant (s21.l / lot)))
+                             :time (s21.c / come-about-06
+                                          :ARG1 (s21.i / internet))))
+   :snt22 (s22.c / cause-01
+                 :ARG0 (s22.b2 / but
+                               :op1 (s22.p2 / possible-01
+                                            :ARG1 (s22.b / broadcast-01
+                                                         :ARG0 (s22.p / person)
+                                                         :ARG1 (s22.s2 / story
+                                                                       :poss s22.p)
+                                                         :ARG2 (s22.t / throughout
+                                                                      :op1 (s22.w / world))))
+                               :op2 (s22.p3 / possible-01
+                                            :ARG1 s22.b
+                                            :manner (s22.u / use-01
+                                                           :ARG0 s22.p
+                                                           :ARG1 (s22.d / device
+                                                                        :quant (s22.a / amount
+                                                                                      :ARG1-of (s22.s / seem-01)
+                                                                                      :mod (s22.i / infinite)))))))
+   :snt23 (s23.e / exemplify-01
+                 :ARG0 (s23.t / tell-01
+                              :ARG0 (s23.c / company
+                                           :mod (s23.o / one))
+                              :ARG1 (s23.s2 / story
+                                            :topic (s23.l / love-01))
+                              :medium (s23.s / search-engine
+                                             :poss s23.c)))
+   :snt24 (s24.i / interpret-01
+                 :ARG0 (s24.s / studio
+                              :ARG0-of (s24.p2 / produce-01)
+                              :mod (s24.c / country
+                                          :name (s24.n / name
+                                                       :op1 "Taiwan"))
+                              :quant "1")
+                 :ARG1 (s24.p / politics
+                              :mod (s24.c2 / country
+                                           :name (s24.n2 / name
+                                                         :op1 "America")))
+                 :manner (s24.d / dimension
+                                :quant "3"))
+   :snt25 (s25.a / and
+                 :op2 (s25.t / tell-01
+                             :ARG0 (s25.m / man
+                                          :quant "1")
+                             :ARG1 (s25.s / story
+                                          :topic (s25.p / person
+                                                        :ARG0-of (s25.h / have-rel-role-91
+                                                                        :ARG1 s25.m
+                                                                        :ARG2 (s25.f / father))))
+                             :manner (s25.u / use-01
+                                            :ARG0 s25.m
+                                            :ARG1 (s25.p2 / platform
+                                                          :name (s25.n / name
+                                                                       :op1 "Twitter"))
+                                            :ARG2 (s25.c2 / communicate-01
+                                                          :ARG0 s25.m
+                                                          :ARG1 (s25.e / excrement
+                                                                       :ARG1-of (s25.c / cite-01
+                                                                                       :ARG2 s25.p)
+                                                                       :unit (s25.p3 / pound))))))
+   :snt26 (s26.a3 / and
+                  :op2 (s26.p / pause-01
+                              :ARG0 (s26.e / everyone))
+                  :op3 (s26.s / step-01
+                              :ARG0 s26.e
+                              :direction (s26.b / back))
+                  :time (s26.a / after
+                               :op1 (s26.t / this
+                                           :mod (s26.a2 / all))))
+   :snt27 (s27.r / realize-01
+                 :ARG0 (s27.t3 / they
+                               :same-as s26.e)
+                 :ARG1 (s27.g / go-01
+                              :ARG1 s27.t3
+                              :ARG3 (s27.t / tell-01
+                                           :ARG0 s27.t3
+                                           :ARG1 (s27.s / story)
+                                           :duration (s27.t2 / temporal-quantity
+                                                             :unit (s27.y / year)
+                                                             :quant "6000"))
+                              :ARG3 (s27.d / depict-01
+                                           :ARG0 s27.t3
+                                           :ARG1 (s27.h / hunt-01
+                                                        :location (s27.w / wall
+                                                                         :location (s27.c / cave))))
+                              :ARG4 (s27.d2 / depict-01
+                                            :ARG0 s27.t3
+                                            :ARG1 (s27.p / person
+                                                         :name (s27.n / name
+                                                                      :op1 "Shakespeare"))
+                                            :location (s27.w2 / wall
+                                                              :mod (s27.p2 / publication
+                                                                           :name (s27.n2 / name
+                                                                                         :op1 "Facebook"))))))
+   :snt28 (s28.a / and
+                 :op1 (s28.c / cause-01
+                             :ARG0 (s28.t / this
+                                          :same-as s27.g)
+                             :ARG1 (s28.c2 / celebrate-02)))
+   :snt29 (s29.r / remain-01
+                 :ARG1 (s29.a / art
+                              :mod (s29.t / tell-01
+                                          :ARG1 (s29.s / story)))
+                 :ARG3 (s29.c / change-01
+                              :ARG1 s29.a
+                              :polarity "-"))
+   :snt30 (s30.a / and
+                 :op2 (s30.r / recycle-01
+                             :ARG1 (s30.s / story)
+                             :mod (s30.m / most)))
+   :snt31 (s31.c2 / contrast-01
+                  :ARG2 (s31.e / evolve-01
+                               :ARG1 (s31.w / way
+                                            :manner-of (s31.t / tell-01
+                                                              :ARG0 (s31.h / human)
+                                                              :ARG1 (s31.s / story
+                                                                           :same-as s30.s)))
+                               :manner (s31.n / novelty
+                                              :ARG1-of (s31.c / consistent-02)
+                                              :ARG1-of (s31.p / pure-02))
+                               :time (s31.a / always)))
+   :snt32 (s32.a2 / and
+                  :op2 (s32.r / remember-01
+                              :ARG0 (s32.t2 / they
+                                            :same-as s31.h)
+                              :ARG1 (s32.m / man
+                                           :ARG0-of (s32.a / amaze-01)
+                                           :mod (s32.c / country
+                                                       :name (s32.n / name
+                                                                    :op1 "Germany"))
+                                           :quant "1")
+                              :ARG3 (s32.p / pop-up-03
+                                           :ARG1 (s32.d / device
+                                                        :ARG0-of (s32.t / tell-01
+                                                                        :ARG1 (s32.s / story))
+                                                        :ARG1-of (s32.n2 / new-01))
+                                           :frequency (s32.e / every)
+                                           :mod (s32.n3 / next))))
+   :snt33 (s33.a2 / and
+                  :op2 (s33.l / live-01
+                              :ARG0 (s33.a3 / audience
+                                            :ARG1-of (s33.b / beautiful-02)
+                                            :mod (s33.l2 / lovely))
+                              :ARG1-of (s33.c / cause-01
+                                              :ARG0 (s33.t / that
+                                                           :same-as s32.r))
+                              :manner (s33.h / happy-01
+                                             :ARG1 s33.a3)
+                              :time (s33.a / after
+                                           :mod (s33.e / ever)))))
+

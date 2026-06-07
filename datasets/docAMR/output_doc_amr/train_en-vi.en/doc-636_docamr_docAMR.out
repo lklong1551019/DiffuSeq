@@ -1,0 +1,412 @@
+# ::id doc-636
+# ::doc_file doc-636
+# ::tok http : / / www . ted . com / talks / pete_alcorn_s_vision_of_a_better_world< / url> <next_sent> I used to be a Malthusian . <next_sent> This was my mental model of the world : exploding population , small planet ; <next_sent> it 's going to lead to ugly things . <next_sent> But I 'm moving past Malthus , because I think that we just might be about 150 years from a kind of new enlightenment . <next_sent> Here 's why . <next_sent> This is the U.N. 's population data , you may have seen , for the world . <next_sent> And the world 's population expected to top out at something hopefully a bit less than 10 billion , late this century . <next_sent> And after that , most likely it 's going to begin to decline . <next_sent> So what then ? <next_sent> Most of the economic models are built around scarcity and growth . <next_sent> So a lot of economists look at declining population and expect to see stagnation , maybe depression . <next_sent> But a declining population is going to have at least two very beneficial economic effects . <next_sent> One : fewer people on a fixed amount of land make investing in property a bad bet . <next_sent> In the cities , a lot of the cost of property is actually wrapped up in its speculative value . <next_sent> Take away land speculation , price of land drops . <next_sent> And that begins to lift a heavy burden off the world 's poor . <next_sent> Number two : a declining population means scarce labor . <next_sent> Scarce labor drives wages . <next_sent> As wages increase that also lifts the burden on the poor and the working class . <next_sent> Now I 'm not talking about a radical drop in population like we saw in the Black Death . <next_sent> But look what happened in Europe after the plague : rising wages , land reform , technological innovation , birth of the middle class ; and after that , forward - looking social movements like the Renaissance , and later the Enlightenment . <next_sent> Most of our cultural heritage has tended to look backward , romanticizing the past . <next_sent> All of the Western religions begin with the notion of Eden , and descend through a kind of profligate present to a very ugly future . <next_sent> So human history is viewed as sort of this downhill slide from the good old days . <next_sent> But I think we 're in for another change , about two generations after the top of that curve , once the effects of a declining population start to settle in . <next_sent> At that point , we 'll start romanticizing the future again , instead of the nasty , brutish past . <next_sent> So why does this matter ? <next_sent> Why talk about soci al-economic movements that may be more than a century away ? <next_sent> Because transitions are dangerous times . <next_sent> When land owners start to lose money , and labor demands more pay , there are some powerful interests that are going to fear for the future . <next_sent> Fear for the future leads to some rash decisions . <next_sent> If we have a positive view about the future then we may be able to accelerate through that turn , instead of careening off a cliff . <next_sent> If we can make it through the next 150 years , I think that your great great grandchildren will forget all about Malthus . <next_sent> And instead , they 'll be planning for the future and starting to build the 22nd Century Enlightenment . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :polarity "-"
+               :value "border")
+   :snt2 (s2.p / person
+               :domain (s2.i / i)
+               :mod (s2.a / Malthusian)
+               :rel (s2.u / use-03))
+   :snt3 (s3.m3 / model-01
+                :ARG0 (s3.i / i
+                            :same-as s2.i)
+                :ARG1 (s3.w / world)
+                :ARG2 (s3.t / this
+                            :ARG1-of (s3.m / mean-01
+                                           :ARG2 (s3.a / and
+                                                       :op1 (s3.p2 / population
+                                                                   :ARG1-of (s3.e / explode-01))
+                                                       :op2 (s3.p / planet
+                                                                  :mod (s3.s / small)))))
+                :mod (s3.m2 / mental))
+   :snt4 (s4.l / lead-03
+               :ARG0 (s4.i / it
+                           :same-as s3.t)
+               :ARG2 (s4.t / thing
+                           :mod (s4.u / ugly)))
+   :snt5 (s5.c2 / contrast-01
+                :ARG2 (s5.m / move-01
+                            :ARG1 (s5.i / i
+                                        :same-as s2.i)
+                            :ARG1-of (s5.c / cause-01
+                                           :ARG0 (s5.t2 / think-01
+                                                        :ARG0 s5.i
+                                                        :ARG1 (s5.p3 / possible-01
+                                                                     :ARG1 (s5.b / be-temporally-at-91
+                                                                                 :ARG1 (s5.w / we)
+                                                                                 :ARG2 (s5.a2 / after
+                                                                                              :quant (s5.a / about
+                                                                                                           :op1 (s5.t / temporal-quantity
+                                                                                                                      :unit (s5.y / year)
+                                                                                                                      :quant "150"))
+                                                                                              :op1 (s5.e / enlighten-01
+                                                                                                         :ARG1 s5.w
+                                                                                                         :ARG1-of (s5.n2 / new-01)
+                                                                                                         :mod (s5.k / kind))))
+                                                                     :mod (s5.j / just))))
+                            :ARG2 (s5.p / past
+                                        :op1 (s5.p2 / person
+                                                    :name (s5.n / name
+                                                                :op1 "Malthus")))))
+   :snt6 (s6.a / amr-unknown
+               :ARG0-of (s6.c / cause-01)
+               :location (s6.h / here))
+   :snt7 (s7.p2 / possible-01
+                :ARG1 (s7.s / see-01
+                            :ARG0 (s7.y / you)
+                            :ARG1 (s7.d / data
+                                        :beneficiary (s7.w / world
+                                                           :same-as s3.w)
+                                        :domain (s7.t / this)
+                                        :poss (s7.o / organization
+                                                    :name (s7.n / name
+                                                                :op1 "U.N."))
+                                        :topic (s7.p / population))))
+   :snt8 (s8.a / and
+               :op2 (s8.e / expect-01
+                          :ARG1 (s8.t2 / top-02
+                                       :ARG0 (s8.p / population
+                                                   :poss (s8.w / world
+                                                               :same-as s3.w))
+                                       :ARG1 (s8.l2 / less-than
+                                                    :ARG1-of (s8.h / hope-01)
+                                                    :degree (s8.b / bit)
+                                                    :op1 "10000000000")
+                                       :time (s8.l / late
+                                                   :op1 (s8.c / century
+                                                              :mod (s8.t / this))))))
+   :snt9 (s9.a2 / and
+                :op2 (s9.b / begin-01
+                           :ARG0 (s9.i / it
+                                       :same-as s8.p)
+                           :ARG1 (s9.d / decline-01
+                                       :ARG1 s9.i)
+                           :ARG1-of (s9.l / likely-01
+                                          :ARG2-of (s9.h / have-degree-91
+                                                         :ARG1 s9.b
+                                                         :ARG3 (s9.m / most))
+                                          :time (s9.a / after
+                                                      :op1 (s9.t / that
+                                                                 :same-as s8.t2)))))
+   :snt10 (s10.i / infer-01
+                 :ARG1 (s10.a / amr-unknown
+                              :time (s10.t / then)))
+   :snt11 (s11.b / build-01
+                 :ARG1 (s11.m / model-01
+                              :quant (s11.m2 / most)
+                              :ARG1 (s11.e / economy))
+                 :ARG2 (s11.a2 / around
+                               :op1 (s11.a / and
+                                           :op1 (s11.s / scarcity)
+                                           :op2 (s11.g / grow-01))))
+   :snt12 (s12.a / and
+                 :op1 (s12.l / look-01
+                             :ARG0 (s12.e / economist
+                                          :quant (s12.l2 / lot))
+                             :ARG1 (s12.p / population
+                                          :ARG1-of (s12.d / decline-01)))
+                 :op2 (s12.e2 / expect-01
+                              :ARG0 s12.e
+                              :ARG1 (s12.s / see-01
+                                           :ARG0 s12.e
+                                           :ARG1 (s12.a2 / and
+                                                         :op1 (s12.s2 / stagnate-01)
+                                                         :op2 (s12.d2 / depress-01
+                                                                      :ARG1-of (s12.p2 / possible-01))))))
+   :snt13 (s13.c / contrast-01
+                 :ARG2 (s13.a / affect-01
+                              :quant (s13.a2 / at-least
+                                             :op1 "2")
+                              :ARG0 (s13.p / population
+                                           :ARG1-of (s13.d / decline-01))
+                              :ARG0-of (s13.b / benefit-01
+                                              :degree (s13.v / very))
+                              :ARG1 (s13.e / economy)))
+   :snt14 (s14.m / make-02
+                 :ARG0 (s14.p / person
+                              :ARG1-of (s14.h / have-quant-91
+                                              :ARG3 (s14.l2 / less))
+                              :location (s14.l / land
+                                               :quant (s14.a / amount
+                                                             :ARG1-of (s14.f / fix-03))))
+                 :ARG1 (s14.b2 / bet-01
+                               :ARG1-of (s14.b / bad-07)
+                               :ARG2 (s14.i / invest-01
+                                            :ARG2 (s14.p2 / property)))
+                 :li "1")
+   :snt15 (s15.w / wrap-up-02
+                 :ARG1 (s15.m / monetary-quantity
+                              :quant (s15.l / lot)
+                              :ARG2-of (s15.c2 / cost-01
+                                               :ARG1 (s15.p / property)))
+                 :ARG1-of (s15.a / actual-02)
+                 :ARG2 (s15.v / value-01
+                              :ARG1 s15.p
+                              :ARG1-of (s15.s / speculate-01))
+                 :location (s15.c / city))
+   :snt16 (s16.d / drop-01
+                 :ARG1 (s16.m / monetary-quantity
+                              :ARG2-of (s16.p / price-01
+                                              :ARG1 (s16.l / land)))
+                 :condition (s16.t / take-away-05
+                                   :ARG0 (s16.y / you)
+                                   :ARG1 (s16.s / speculate-01
+                                                :ARG1 s16.l)
+                                   :mode "imperative"))
+   :snt17 (s17.a / and
+                 :op2 (s17.b / begin-01
+                             :ARG0 (s17.t / that
+                                          :same-as s16.d)
+                             :ARG1 (s17.l / lift-01
+                                          :ARG0 s17.t
+                                          :ARG1 (s17.b2 / burden-01
+                                                        :mod (s17.h / heavy))
+                                          :ARG2 (s17.p / person
+                                                       :mod (s17.p2 / poor)
+                                                       :source (s17.w / world)))))
+   :snt18 (s18.m / mean-01
+                 :li (s18.n / number
+                            :value "2")
+                 :ARG1 (s18.p / population
+                              :ARG1-of (s18.d / decline-01))
+                 :ARG2 (s18.l / labor-01
+                              :mod (s18.s / scarce)))
+   :snt19 (s19.d / drive-02
+                 :ARG0 (s19.l / labor-01
+                              :mod (s19.p / poor))
+                 :ARG1 (s19.w / wage))
+   :snt20 (s20.l / lift-01
+                 :ARG0 (s20.i / increase-01
+                              :ARG1 (s20.w / wage))
+                 :ARG1 (s20.b / burden-01
+                              :ARG2 (s20.a2 / and
+                                            :op1 (s20.p / person
+                                                        :mod (s20.p2 / poor))
+                                            :op2 (s20.c / class
+                                                        :ARG0-of (s20.w2 / work-01))))
+                 :mod (s20.a / also))
+   :snt21 (s21.t / talk-01
+                 :ARG0 (s21.i / i
+                              :same-as s2.i)
+                 :ARG1 (s21.d / drop-01
+                              :ARG1 (s21.p / population)
+                              :ARG1-of (s21.r / radical-02)
+                              :ARG1-of (s21.r2 / resemble-01
+                                               :ARG2 (s21.s / see-01
+                                                            :ARG0 (s21.w / we)
+                                                            :time (s21.e / event
+                                                                         :name (s21.n / name
+                                                                                      :op1 "Black"
+                                                                                      :op2 "Death")))))
+                 :time (s21.n2 / now)
+                 :polarity "-")
+   :snt22 (s22.c3 / contrast-01
+                  :ARG2 (s22.l2 / look-01
+                                :ARG0 (s22.y / you)
+                                :ARG1 (s22.e / event
+                                             :consist-of (s22.a4 / and
+                                                                 :op1 (s22.r2 / rise-01
+                                                                              :ARG1 (s22.w / wage))
+                                                                 :op2 (s22.r / reform-01
+                                                                             :ARG1 (s22.l / land))
+                                                                 :op3 (s22.i / innovate-01
+                                                                             :ARG1 (s22.t / technology))
+                                                                 :op4 (s22.b / bear-02
+                                                                             :ARG1 (s22.c / class
+                                                                                          :mod (s22.m / middle)))
+                                                                 :op5 (s22.m2 / movement-07
+                                                                              :ARG0-of (s22.l3 / look-01
+                                                                                               :ARG1 (s22.f / forward))
+                                                                              :ARG1 (s22.s / society)
+                                                                              :example (s22.a5 / and
+                                                                                               :op1 (s22.e2 / event
+                                                                                                            :name (s22.n3 / name
+                                                                                                                          :op1 "Renaissance"))
+                                                                                               :op2 (s22.e3 / event
+                                                                                                            :name (s22.n4 / name
+                                                                                                                          :op1 "Enlightenment")
+                                                                                                            :time (s22.a3 / after
+                                                                                                                          :op1 s22.e2)))
+                                                                              :time (s22.a2 / after
+                                                                                            :op1 (s22.d / disease
+                                                                                                        :name (s22.n2 / name
+                                                                                                                      :op1 "Plague")
+                                                                                                        :same-as s21.e))))
+                                             :location (s22.c2 / continent
+                                                               :name (s22.n / name
+                                                                            :op1 "Europe"))
+                                             :time (s22.a / after
+                                                          :op1 s22.d))
+                                :mode "imperative"))
+   :snt23 (s23.t / tend-02
+                 :ARG1 (s23.h / heritage
+                              :quant (s23.m / most)
+                              :mod (s23.c / culture)
+                              :poss (s23.w / we))
+                 :ARG2 (s23.l / look-01
+                              :ARG0 s23.h
+                              :ARG1 (s23.b / backward))
+                 :manner (s23.r / romantic-03
+                                :ARG0 s23.h
+                                :ARG1 (s23.p / past)))
+   :snt24 (s24.a2 / and
+                  :op1 (s24.b / begin-01
+                              :ARG0 (s24.r / religion
+                                           :mod (s24.w / world-region
+                                                       :name (s24.n / name
+                                                                    :op1 "West"))
+                                           :mod (s24.a / all))
+                              :ARG2 (s24.n2 / notion))
+                  :op2 (s24.d2 / descend-01
+                               :ARG0 s24.r
+                               :ARG1 (s24.f / future
+                                            :mod (s24.u / ugly
+                                                        :degree (s24.v / very)))
+                               :manner (s24.p / present
+                                              :mod (s24.p2 / profligate)
+                                              :mod (s24.k / kind)))
+                  :rel (s24.d / Eden))
+   :snt25 (s25.i / infer-01
+                 :ARG1 (s25.v / view-02
+                              :ARG1 (s25.h / history
+                                           :poss (s25.h2 / human))
+                              :ARG2 (s25.s / slide-01
+                                           :direction (s25.d2 / downhill)
+                                           :mod (s25.t / this)
+                                           :mod (s25.s2 / sort)
+                                           :source (s25.d / day
+                                                          :ARG1-of (s25.g / good-02)
+                                                          :mod (s25.o / old)))))
+   :snt26 (s26.c2 / contrast-01
+                  :ARG2 (s26.t2 / think-01
+                                :ARG0 (s26.i / i
+                                             :same-as s2.i)
+                                :ARG1 (s26.b / be-destined-for-91
+                                             :ARG1 (s26.w / we)
+                                             :ARG2 (s26.c / change-01
+                                                          :mod (s26.a4 / another)
+                                                          :time (s26.a3 / after
+                                                                        :quant (s26.a / about
+                                                                                      :op1 (s26.g / generation
+                                                                                                  :quant "2"))
+                                                                        :op1 (s26.t3 / top-01
+                                                                                     :ARG1 (s26.c3 / curve
+                                                                                                   :mod (s26.t / that)))))
+                                             :time (s26.s2 / start-01
+                                                           :ARG1 (s26.s / settle-03
+                                                                        :ARG1 (s26.a2 / affect-01
+                                                                                      :ARG0 (s26.p / population
+                                                                                                   :ARG1-of (s26.d / decline-01))))))))
+   :snt27 (s27.s / start-01
+                 :ARG0 (s27.w / we)
+                 :ARG1 (s27.r / romanticize-04
+                              :ARG0 s27.w
+                              :ARG1 (s27.f / future
+                                           :ARG1-of (s27.i / instead-of-91
+                                                           :ARG2 (s27.p / past
+                                                                        :ARG1-of (s27.b / brutal-02)
+                                                                        :mod (s27.n / nasty))))
+                              :mod (s27.a / again))
+                 :time (s27.p2 / point
+                               :mod (s27.t / that)))
+   :snt28 (s28.m / matter-01
+                 :ARG1 (s28.t / this)
+                 :ARG1-of (s28.c / cause-01
+                                 :ARG0 (s28.a / amr-unknown)))
+   :snt29 (s29.t / talk-01
+                 :ARG1 (s29.m2 / movement-07
+                               :mod (s29.e / economy)
+                               :mod (s29.s / social)
+                               :time (s29.a / after
+                                            :quant (s29.m / more-than
+                                                          :op1 (s29.t2 / temporal-quantity
+                                                                       :unit (s29.c2 / century)
+                                                                       :quant "1"))
+                                            :ARG1-of (s29.p / possible-01)
+                                            :op1 (s29.n / now)))
+                 :ARG1-of (s29.c / cause-01
+                                 :ARG0 (s29.a2 / amr-unknown)))
+   :snt30 (s30.c / cause-01
+                 :ARG0 (s30.t / time
+                              :domain (s30.t2 / transition-01)
+                              :mod (s30.d / dangerous)))
+   :snt31 (s31.i / interest
+                 :quant (s31.s / some)
+                 :ARG0-of (s31.f / fear-01
+                                 :ARG1 (s31.f2 / future))
+                 :ARG1-of (s31.p3 / powerful-02)
+                 :time (s31.a / and
+                              :op1 (s31.s2 / start-01
+                                           :ARG0 (s31.p2 / person
+                                                         :ARG0-of (s31.o / own-01
+                                                                         :ARG1 (s31.l2 / land)))
+                                           :ARG1 (s31.l3 / lose-02
+                                                         :ARG0 s31.p2
+                                                         :ARG1 (s31.m / money)))
+                              :op2 (s31.d / demand-01
+                                          :ARG0 (s31.l / labor-01)
+                                          :ARG1 (s31.p / pay-01
+                                                       :mod (s31.m2 / more)))))
+   :snt32 (s32.l / lead-03
+                 :ARG0 (s32.f / fear-01
+                              :ARG1 (s32.f2 / future))
+                 :ARG2 (s32.d / decide-01
+                              :manner (s32.r / rash)
+                              :mod (s32.s / some)))
+   :snt33 (s33.p2 / possible-01
+                  :ARG1 (s33.a / accelerate-01
+                               :ARG0 (s33.w / we)
+                               :ARG1-of (s33.i / instead-of-91
+                                               :ARG2 (s33.c / care-01
+                                                            :ARG0 s33.w
+                                                            :ARG1 (s33.c2 / cliff)
+                                                            :direction (s33.o / off)))
+                               :path (s33.t2 / turn-01
+                                             :mod (s33.t / that)))
+                  :condition (s33.h / have-03
+                                    :ARG0 s33.w
+                                    :ARG1 (s33.v / view-01
+                                                 :ARG0 s33.w
+                                                 :ARG1 (s33.f / future)
+                                                 :mod (s33.p / positive))))
+   :snt34 (s34.t2 / think-01
+                  :ARG0 (s34.i / i)
+                  :ARG1 (s34.f / forget-01
+                               :ARG0 (s34.p / person
+                                            :ARG0-of (s34.h / have-rel-role-91
+                                                            :ARG1 (s34.y2 / you)
+                                                            :ARG2 (s34.g2 / great-grandchild)))
+                               :ARG1 (s34.a / all
+                                            :topic (s34.p2 / person
+                                                           :name (s34.n / name
+                                                                        :op1 "Malthus")))
+                               :condition (s34.p3 / possible-01
+                                                  :ARG1 (s34.m / make-18
+                                                               :ARG0 (s34.w / we)
+                                                               :ARG1 (s34.g / go-through-20
+                                                                            :ARG0 s34.w
+                                                                            :ARG1 (s34.t / temporal-quantity
+                                                                                         :unit (s34.y / year)
+                                                                                         :quant "150"))))))
+   :snt35 (s35.a / and
+                 :ARG1-of (s35.i / instead-of-91)
+                 :op2 (s35.a2 / and
+                              :op1 (s35.p / plan-01
+                                          :ARG0 (s35.t / they
+                                                       :same-as s34.p)
+                                          :ARG2 (s35.f / future))
+                              :op2 (s35.s / start-01
+                                          :ARG0 s35.t
+                                          :ARG1 (s35.b / build-01
+                                                       :ARG0 s35.t
+                                                       :ARG1 (s35.t2 / thing
+                                                                     :name (s35.n / name
+                                                                                  :op1 "Enlightenment")
+                                                                     :time (s35.d / date-entity
+                                                                                  :century "22"))))))
+   :snt36 (s36.t / thank-01
+                 :ARG1 (s36.y / you
+                              :same-as s34.i)))
+

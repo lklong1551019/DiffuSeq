@@ -1,0 +1,1115 @@
+# ::id doc-1160
+# ::doc_file doc-1160
+# ::tok http : / / www . ted . com / talks / del_harvey_the_strangeness_of_scale_at_twitter< / url> <next_sent> My job at Twitter is to ensure user trust , protect user rights and keep users safe , both from each other and , at times , from themselves . <next_sent> Let 's talk about what scale looks like at Twitter . <next_sent> Back in January 2009 , we saw more than two million new tweets each day January 2014 , more than 500 million . <next_sent> We were seeing two million tweets in less than six minutes . <next_sent> That 's a 24,900 - percent increase . <next_sent> Now , the vast majority of activity on Twitter puts no one in harm 's way . <next_sent> There 's no risk involved . <next_sent> My job is to root out and prevent activity that might . <next_sent> Sounds straightforward , right ? <next_sent> You might even think it 'd be easy , given that I just said the vast majority of activity on Twitter puts no one in harm 's way . <next_sent> Why spend so much time searching for potential calamities in innocuous activities ? <next_sent> Given the scale that Twitter is at , a one - in - a - million chance happens 500 times a day . <next_sent> It 's the same for other companies dealing at this sort of scale . <next_sent> For us , edge cases , those rare situations that are unlikely to occur , are more like norms . <next_sent> Say 99.999 percent of tweets pose no risk to anyone . <next_sent> There 's no threat involved . <next_sent> Maybe people are documenting travel landmarks like Australia 's Heart Reef , or tweeting about a concert they 're attending , or sharing pictures of cute baby animals . <next_sent> After you take out that 99.999 percent , that tiny percentage of tweets remaining 150,000 per month . <next_sent> The sheer scale of what we 're dealing with makes for a challenge . <next_sent> You know what else makes my role particularly challenging ? <next_sent> People do weird things . <next_sent> And I have to figure out what they 're doing , why , and whether or not there 's risk involved , often without much in terms of context or background . <next_sent> I 'm going to show you some examples that I 've run into during my time at Twitter -- these are all real examples — of situations that at first seemed cut and dried , but the truth of the matter was something altogether different . <next_sent> The details have been changed to protect the innocent and sometimes the guilty . <next_sent> We 'll start off easy . <next_sent> [ " Yo bitch " ] If you saw a Tweet that only said this , you might think to yourself , " That looks like abuse . " <next_sent> After all , why would you want to receive the message , " Yo , bitch . " <next_sent> Now , I try to stay relatively hip to the latest trends and memes , so I knew that " yo , bitch " was also often a common greeting between friends , as well as being a popular " Breaking Bad " reference . <next_sent> I will admit that I did not expect to encounter a fourth use case . <next_sent> It turns out it is also used on Twitter when people are role - playing as dogs . <next_sent> And in fact , in that case , it 's not only not abusive , it 's technically just an accurate greeting . <next_sent> So okay , determining whether or not something is abusive without context , definitely hard . <next_sent> Let 's look at spam . <next_sent> Here 's an example of an account engaged in classic spammer behavior , sending the exact same message to thousands of people . <next_sent> While this is a mockup I put together using my account , we see accounts doing this all the time . <next_sent> Seems pretty straightforward . <next_sent> We should just automatically suspend accounts engaging in this kind of behavior . <next_sent> Turns out there 's some exceptions to that rule . <next_sent> Turns out that that message could also be a notification you signed up for that the International Space Station is passing overhead because you wanted to go outside and see if you could see it . <next_sent> You 're not going to get that chance if we mistakenly suspend the account thinking it 's spam . <next_sent> Okay . <next_sent> Let 's make the stakes higher . <next_sent> Back to my account , again exhibiting classic behavior . <next_sent> This time it 's sending the same message and link . <next_sent> This is often indicative of something called phishing , somebody trying to steal another person 's account information by directing them to another website . <next_sent> That 's pretty clearly not a good thing . <next_sent> We want to , and do , suspend accounts engaging in that kind of behavior . <next_sent> So why are the stakes higher for this ? <next_sent> Well , this could also be a bystander at a rally who managed to record a video of a police officer beating a non - violent protester who 's trying to let the world know what 's happening . <next_sent> We do n't want to gamble on potentially silencing that crucial speech by classifying it as spam and suspending it . <next_sent> That means we evaluate hundreds of parameters when looking at account behaviors , and even then , we can still get it wrong and have to reevaluate . <next_sent> Now , given the sorts of challenges I 'm up against , it 's crucial that I not only predict but also design protections for the unexpected . <next_sent> And that 's not just an issue for me , or for Twitter , it 's an issue for you . <next_sent> It 's an issue for anybody who 's building or creating something that you think is going to be amazing and will let people do awesome things . <next_sent> So what do I do ? <next_sent> I pause and I think , how could all of this go horribly wrong ? <next_sent> I visualize catastrophe . <next_sent> And that 's hard . <next_sent> There 's a sort of inherent cognitive dissonance in doing that , like when you 're writing your wedding vows at the same time as your prenuptial agreement . <next_sent> But you still have to do it , particularly if you 're marrying 500 million tweets per day . <next_sent> What do I mean by " visualize catastrophe ? " <next_sent> I try to think of how something as benign and innocuous as a picture of a cat could lead to death , and what to do to prevent that . <next_sent> Which happens to be my next example . <next_sent> This is my cat , Eli . <next_sent> We wanted to give users the ability to add photos to their tweets . <next_sent> You only get 140 characters . <next_sent> You add a photo to your tweet , look at how much more content you 've got now . <next_sent> There 's all sorts of great things you can do by adding a photo to a tweet . <next_sent> My job is n't to think of those . <next_sent> It 's to think of what could go wrong . <next_sent> How could this picture lead to my death ? <next_sent> Well , here 's one possibility . <next_sent> There 's more in that picture than just a cat . <next_sent> There 's geodata . <next_sent> When you take a picture with your smartphone or digital camera , there 's a lot of additional information saved along in that image . <next_sent> In fact , this image also contains the equivalent of this , more specifically , this . <next_sent> Sure , it 's not likely that someone 's going to try to track me down and do me harm based upon image data associated with a picture I took of my cat , but I start by assuming the worst will happen . <next_sent> That 's why , when we launched photos on Twitter , we made the decision to strip that geodata out . <next_sent> If I start by assuming the worst and work backwards , I can make sure that the protections we build work for both expected and unexpected use cases . <next_sent> Given that I spend my days and nights imagining the worst that could happen , it would n't be surprising if my worldview was gloomy . <next_sent> It 's not . <next_sent> The vast majority of interactions I see -- and I see a lot , believe me -- are positive , people reaching out to help or to connect or share information with each other . <next_sent> It 's just that for those of us dealing with scale , for those of us tasked with keeping people safe , we have to assume the worst will happen , because for us , a one - in - a - million chance is pretty good odds . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :polarity "-"
+               :value "talk-01")
+   :snt2 (s2.j / job
+               :domain (s2.a / and
+                             :op1 (s2.e2 / ensure-01
+                                         :ARG0 (s2.i / i)
+                                         :ARG1 (s2.t / trust-02
+                                                     :ARG0 (s2.p / person
+                                                                 :ARG0-of (s2.u / use-01))))
+                             :op2 (s2.p2 / protect-01
+                                         :ARG0 s2.i
+                                         :ARG1 (s2.r / right-05
+                                                     :ARG1 s2.p))
+                             :op3 (s2.k / keep-04
+                                        :ARG0 s2.i
+                                        :ARG1 (s2.s / safe-01
+                                                    :ARG1 s2.p
+                                                    :ARG2 (s2.a2 / and
+                                                                 :op2 (s2.o / other
+                                                                            :mod (s2.e / each)))
+                                                    :op1-of s2.a2)))
+               :location (s2.p3 / publication
+                                :name (s2.n / name
+                                            :op1 "Twitter"))
+               :poss s2.i
+               :rel (s2.s2 / safe-01
+                           :frequency (s2.a3 / at-times)
+                           :mod (s2.b / by-oneself)))
+   :snt3 (s3.l / let-01
+               :ARG1 (s3.t / talk-01
+                           :ARG0 (s3.w / we)
+                           :ARG1 (s3.t2 / thing
+                                        :ARG1-of (s3.l2 / look-02
+                                                        :ARG0 (s3.s / scale)
+                                                        :location (s3.p / publication
+                                                                        :name (s3.n / name
+                                                                                    :op1 "Twitter")
+                                                                        :same-as s2.p3)))))
+   :snt4 (s4.s / see-01
+               :ARG0 (s4.w / we)
+               :ARG1 (s4.t2 / tweet-02
+                            :quant (s4.m / more-than
+                                         :frequency (s4.r / rate-entity-91
+                                                          :ARG2 (s4.t / temporal-quantity
+                                                                      :unit (s4.d3 / day)
+                                                                      :quant "1"))
+                                         :op1 "2000000")
+                            :ARG1-of (s4.n / new-01))
+               :rel (s4.t3 / tweet-02
+                           :quant (s4.m2 / more-than
+                                         :op1 "500000"))
+               :time (s4.d / date-entity
+                           :month "1"
+                           :year "2009")
+               :time (s4.b / before)
+               :time (s4.d2 / date-entity
+                            :month "1"
+                            :year "2014"))
+   :snt5 (s5.s / see-01
+               :ARG0 (s5.w / we
+                           :same-as s4.w)
+               :ARG1 (s5.t2 / tweet-02
+                            :quant "2000000")
+               :time (s5.a / after
+                           :quant (s5.l / less-than
+                                        :op1 (s5.t / temporal-quantity
+                                                   :unit (s5.m / minute)
+                                                   :quant "6"))
+                           :op1 (s5.n / now)))
+   :snt6 (s6.i / increase-01
+               :ARG2 (s6.p / percentage-entity
+                           :value "24")
+               :ARG3 (s6.t / that
+                           :same-as s5.s)
+               :rel (s6.m / monetary-quantity
+                          :quant "24"))
+   :snt7 (s7.p2 / put-01
+                :ARG0 (s7.a / activity-06
+                            :quant (s7.m / majority
+                                         :mod (s7.v / vast))
+                            :ARG0 (s7.p / publication
+                                        :name (s7.n / name
+                                                    :op1 "Twitter")
+                                        :same-as s2.p3))
+                :ARG1 (s7.n2 / no-one)
+                :ARG2 (s7.w / way
+                            :poss (s7.h / harm-01))
+                :time (s7.n3 / now))
+   :snt8 (s8.r / risk-01
+               :polarity "-")
+   :snt9 (s9.j / job
+               :domain (s9.a2 / and
+                              :op1 (s9.r / root-out-01
+                                         :ARG1 (s9.a / activity-06
+                                                     :ARG1-of (s9.p / possible-01)))
+                              :op2 (s9.p2 / prevent-01
+                                          :ARG1 s9.a))
+               :poss (s9.i / i
+                           :same-as s2.i))
+   :snt10 (s10.s / sound-01
+                 :ARG1-of (s10.r / request-confirmation-91)
+                 :ARG2 (s10.s2 / straightforward))
+   :snt11 (s11.p / possible-01
+                 :ARG1 (s11.t / think-01
+                              :ARG0 (s11.y / you)
+                              :ARG1 (s11.e / easy-05
+                                           :ARG1 (s11.i2 / it
+                                                         :same-as s2.i))
+                              :mod (s11.e2 / even))
+                 :ARG1-of (s11.c / cause-01
+                                 :ARG0 (s11.s / say-01
+                                              :ARG0 (s11.i / i
+                                                           :same-as s2.i)
+                                              :ARG1 (s11.p3 / put-01
+                                                            :ARG0 (s11.a / activity-06
+                                                                         :quant (s11.m / majority
+                                                                                       :mod (s11.v / vast))
+                                                                         :medium (s11.p2 / publication
+                                                                                         :name (s11.n / name
+                                                                                                      :op1 "Twitter")
+                                                                                         :same-as s2.p3)
+                                                                         :same-as s7.a)
+                                                            :ARG1 (s11.n2 / no-one)
+                                                            :ARG2 (s11.w / way
+                                                                         :poss (s11.h / harm-01)))
+                                              :mod (s11.j / just))))
+   :snt12 (s12.s3 / spend-02
+                  :ARG1 (s12.t / time
+                               :ARG1-of (s12.h / have-quant-91
+                                               :ARG2 (s12.m / much)
+                                               :ARG3 (s12.s2 / so)))
+                  :ARG1-of (s12.c2 / cause-01
+                                   :ARG0 (s12.a2 / amr-unknown))
+                  :ARG2 (s12.s / search-01
+                               :ARG2 (s12.c / catastrophe
+                                            :mod (s12.p / potential))
+                               :time (s12.a / activity-06
+                                            :mod (s12.i / innocuous))))
+   :snt13 (s13.i / infer-01
+                 :ARG1 (s13.r / rate-entity-91
+                              :ARG1 (s13.c / chance-02
+                                           :ARG2 "1000000")
+                              :ARG2 (s13.t / temporal-quantity
+                                           :unit (s13.d / day)
+                                           :quant "1")
+                              :ARG1 "500")
+                 :ARG2 (s13.s / scale
+                              :poss (s13.p / publication
+                                           :name (s13.n / name
+                                                        :op1 "Twitter")
+                                           :same-as s2.p3)))
+   :snt14 (s14.s / same-01
+                 :ARG1 (s14.i / it)
+                 :ARG2 (s14.c / company
+                              :ARG0-of (s14.d / deal-01
+                                              :degree (s14.s2 / scale
+                                                              :mod (s14.s3 / sort
+                                                                           :mod (s14.t / this))))
+                              :mod (s14.o / other)))
+   :snt15 (s15.h / have-degree-of-resemblance-91
+                 :ARG1 (s15.c / case-04
+                              :ARG1-of (s15.m / mean-01
+                                              :ARG2 (s15.s / situation
+                                                           :ARG1-of (s15.r / rare-02)
+                                                           :ARG1-of (s15.l / likely-01
+                                                                           :polarity "-")
+                                                           :mod (s15.t / that)))
+                              :mod (s15.e / edge))
+                 :ARG2 (s15.w / we)
+                 :ARG2 (s15.n / norm)
+                 :ARG4 (s15.m2 / more))
+   :snt16 (s16.r / risk-01
+                 :ARG1 (s16.t / tweet-02
+                              :ARG1-of (s16.i / include-91
+                                              :ARG2 (s16.t2 / tweet-02)
+                                              :ARG3 (s16.p / percentage-entity
+                                                           :value "99.999")))
+                 :ARG2 (s16.a / anyone)
+                 :polarity "-")
+   :snt17 (s17.i / involve-01
+                 :ARG1 (s17.t / threaten-01)
+                 :polarity "-")
+   :snt18 (s18.p3 / possible-01
+                  :ARG1 (s18.o / or
+                               :op1 (s18.d / document-01
+                                           :ARG0 (s18.p / person)
+                                           :ARG1 (s18.t2 / treasure
+                                                         :example (s18.i / island
+                                                                         :name (s18.n2 / name
+                                                                                       :op1 "Heart"
+                                                                                       :op2 "Reef")
+                                                                         :location (s18.c2 / country
+                                                                                           :name (s18.n / name
+                                                                                                        :op1 "Australia")))
+                                                         :mod (s18.t / travel-01)))
+                               :op2 (s18.t3 / tweet-02
+                                            :ARG0 s18.p
+                                            :topic (s18.c / concert
+                                                          :ARG1-of (s18.a2 / attend-01
+                                                                           :ARG0 s18.p)))
+                               :op3 (s18.s / share-01
+                                           :ARG0 s18.p
+                                           :ARG1 (s18.p2 / picture
+                                                         :topic (s18.a / animal
+                                                                       :mod (s18.b / baby)
+                                                                       :mod (s18.c3 / cute))))))
+   :snt19 (s19.r2 / remain-01
+                  :ARG1 (s19.p / percentage
+                               :mod (s19.t4 / tiny)
+                               :mod (s19.t3 / that)
+                               :quant-of (s19.t5 / tweet-02)
+                               :quant s19.p2
+                               :same-as s16.t)
+                  :ARG3 (s19.r / rate-entity-91
+                               :ARG2 (s19.t2 / temporal-quantity
+                                             :unit (s19.m / month)
+                                             :quant "1")
+                               :ARG1 "150000")
+                  :time (s19.a / after
+                               :op1 (s19.t / take-out-11
+                                           :ARG0 (s19.y / you)
+                                           :ARG1 (s19.p2 / percentage-entity
+                                                         :value "99.999"
+                                                         :same-as s16.t))))
+   :snt20 (s20.m / make-02
+                 :ARG0 (s20.s / scale-01
+                              :ARG1 (s20.t / thing
+                                           :ARG2-of (s20.d / deal-01
+                                                           :ARG0 (s20.w / we)))
+                              :mod (s20.s2 / sheer))
+                 :ARG1 (s20.c / challenge-01))
+   :snt21 (s21.k / know-01
+                 :ARG0 (s21.y / you)
+                 :ARG1 (s21.t / thing
+                              :ARG0-of (s21.m / make-02
+                                              :ARG1 (s21.c / challenge-01
+                                                           :ARG0 (s21.r / role
+                                                                        :poss (s21.i / i
+                                                                                     :same-as s2.i)
+                                                                        :same-as s2.i)
+                                                           :mod (s21.p / particular)))
+                              :mod (s21.e / else))
+                 :polarity (s21.a / amr-unknown))
+   :snt22 (s22.d / do-02
+                 :ARG0 (s22.p / person)
+                 :ARG1 (s22.t / thing
+                              :mod (s22.w / weird)))
+   :snt23 (s23.a2 / and
+                  :op2 (s23.o / obligate-01
+                              :ARG1 (s23.i / i
+                                           :same-as s2.i)
+                              :ARG2 (s23.f / figure-out-05
+                                           :ARG0 s23.i
+                                           :ARG1 (s23.a3 / and
+                                                         :op1 (s23.t2 / thing
+                                                                      :ARG1-of (s23.d / do-02
+                                                                                      :ARG0 (s23.t / they
+                                                                                                   :same-as s22.p)))
+                                                         :op2 (s23.c / cause-01
+                                                                     :ARG0 (s23.a / amr-unknown)
+                                                                     :ARG1 s23.d)
+                                                         :op3 (s23.o3 / or
+                                                                      :op1 (s23.i2 / involve-01
+                                                                                   :ARG1 (s23.r / risk-01))
+                                                                      :op2 (s23.i3 / involve-01
+                                                                                   :ARG1 s23.r
+                                                                                   :polarity "-")))
+                                           :manner (s23.m / much
+                                                          :polarity (s23.o2 / often)
+                                                          :topic (s23.o4 / or
+                                                                         :op1 (s23.c2 / context)
+                                                                         :op2 (s23.b / background))))))
+   :snt24 (s24.s2 / show-01
+                  :ARG0 (s24.i / i
+                               :same-as s2.i)
+                  :ARG1 (s24.t / thing
+                               :quant (s24.s4 / some)
+                               :ARG0-of (s24.e / exemplify-01
+                                               :ARG1 (s24.s3 / situation
+                                                             :example-of (s24.c / contrast-01
+                                                                                :ARG1 (s24.s / seem-01
+                                                                                             :ARG2 (s24.c2 / cut-and-dried)
+                                                                                             :time (s24.a3 / at-first))
+                                                                                :ARG2 (s24.s5 / something
+                                                                                              :ARG1-of (s24.t3 / true-01
+                                                                                                               :ARG2 (s24.m / matter))
+                                                                                              :ARG1-of (s24.d / differ-02
+                                                                                                              :degree (s24.a2 / altogether)))))
+                                               :ARG1-of (s24.r / real-04))
+                               :ARG1-of (s24.r2 / run-07
+                                                :ARG0 s24.i
+                                                :time (s24.h / have-org-role-91
+                                                             :ARG0 s24.i
+                                                             :ARG1 (s24.p / publication
+                                                                          :name (s24.n / name
+                                                                                       :op1 "Twitter")
+                                                                          :same-as s2.p3)))
+                               :mod (s24.t2 / this
+                                            :mod (s24.a / all)
+                                            :same-as s24.r2))
+                  :ARG2 (s24.y / you))
+   :snt25 (s25.c / change-01
+                 :purpose (s25.a / and
+                                 :op1 (s25.p3 / protect-01
+                                              :ARG0 s25.c
+                                              :ARG1 (s25.p / person
+                                                           :ARG1-of (s25.i / innocent-01)))
+                                 :op2 (s25.p4 / protect-01
+                                              :ARG0 (s25.d / detail)
+                                              :ARG1 (s25.p2 / person
+                                                            :ARG1-of (s25.g / guilty-01))
+                                              :frequency (s25.s / sometimes)))
+                 :ARG1 s25.d)
+   :snt26 (s26.s / start-off-02
+                 :ARG0 (s26.w / we)
+                 :ARG1-of (s26.e / easy-05))
+   :snt27 (s27.p / possible-01
+                 :ARG1 (s27.t2 / think-01
+                               :ARG0 (s27.y / you)
+                               :ARG1 (s27.l / look-02
+                                            :ARG0 (s27.t / thing
+                                                         :ARG0-of (s27.s / say-01
+                                                                         :ARG1 (s27.t3 / this)
+                                                                         :mod (s27.o / only))
+                                                         :ARG1-of (s27.t4 / tweet-02))
+                                            :ARG1 (s27.a / abuse-01))
+                               :ARG2 s27.y)
+                 :condition (s27.s2 / see-01
+                                    :ARG0 s27.y
+                                    :ARG1 s27.t)
+                 :mod (s27.b / bitch
+                             :mode "expressive"))
+   :snt28 (s28.w / want-01
+                 :ARG0 (s28.y / you)
+                 :ARG1 (s28.r / receive-01
+                              :ARG0 s28.y
+                              :ARG1 (s28.m / message-01
+                                           :ARG1 (s28.s / say-01
+                                                        :ARG1 (s28.b / bitch))
+                                           :same-as s27.t3))
+                 :ARG1-of (s28.c / cause-01
+                                 :ARG0 (s28.a2 / amr-unknown))
+                 :mod (s28.a / after-all))
+   :snt29 (s29.c / cause-01
+                 :ARG0 (s29.t2 / try-01
+                               :ARG0 (s29.i / i
+                                            :same-as s2.i)
+                               :ARG1 (s29.s / stay-01
+                                            :ARG1 s29.i
+                                            :ARG3 (s29.h / hip
+                                                         :ARG2-of (s29.r2 / relative-05)
+                                                         :topic (s29.a2 / and
+                                                                        :mod (s29.l / last)
+                                                                        :op1 (s29.t / trend)
+                                                                        :op2 (s29.m / meme))))
+                               :time (s29.n2 / now))
+                 :ARG1 (s29.k / know-01
+                              :ARG0 s29.i
+                              :ARG1 (s29.a3 / and
+                                            :op1 (s29.s2 / string-entity
+                                                         :mod (s29.y / yo)
+                                                         :value "bitch"
+                                                         :same-as s27.t3)
+                                            :op2 (s29.g / greet-01
+                                                        :ARG0 (s29.f / friend)
+                                                        :ARG1 s29.s2
+                                                        :frequency (s29.o / often)
+                                                        :mod (s29.c2 / common)
+                                                        :mod (s29.a / also))
+                                            :op3 (s29.r / reference-04
+                                                        :ARG0 s29.i
+                                                        :ARG1 (s29.b / broadcast-program
+                                                                     :name (s29.n / name
+                                                                                  :op1 "Breaking"
+                                                                                  :op2 "Bad"))
+                                                        :ARG1-of (s29.p / popular-02)))))
+   :snt30 (s30.a / admit-01
+                 :ARG0 (s30.i / i
+                              :same-as s2.i)
+                 :ARG1 (s30.e2 / expect-01
+                               :ARG0 s30.i
+                               :ARG1 (s30.e / encounter-01
+                                            :ARG0 s30.i
+                                            :ARG1 (s30.c / case-04
+                                                         :ARG1 (s30.u / use-01
+                                                                      :ord (s30.o / ordinal-entity
+                                                                                  :value "4"))))
+                               :polarity "-"))
+   :snt31 (s31.t / turn-out-11
+                 :ARG1 (s31.u / use-01
+                              :ARG1 (s31.i / it
+                                           :same-as s27.t3)
+                              :location (s31.p3 / publication
+                                                :name (s31.n / name
+                                                             :op1 "Twitter")
+                                                :same-as s2.p3)
+                              :mod (s31.a / also)
+                              :time (s31.p2 / play-02
+                                            :ARG0 (s31.p / person)
+                                            :ARG1 (s31.d / dog))))
+   :snt32 (s32.a3 / and
+                  :mod (s32.i / in-fact)
+                  :op2 (s32.a4 / and
+                               :op1 (s32.a / abuse-01
+                                           :ARG0 (s32.i2 / it
+                                                         :same-as s27.t3)
+                                           :polarity "-")
+                               :op2 (s32.g / greet-01
+                                           :domain s32.i2
+                                           :mod (s32.a2 / accurate)
+                                           :mod (s32.j / just)
+                                           :mod (s32.t / technical))
+                               :prep-in (s32.c / case-04
+                                               :ARG1 (s32.t2 / that))))
+   :snt33 (s33.h / hard-02
+                 :ARG1 (s33.d2 / determine-01
+                               :ARG1 (s33.o2 / or
+                                             :op1 (s33.a / abuse-01
+                                                         :ARG0 (s33.s / something))
+                                             :op2 (s33.a2 / abuse-01
+                                                          :ARG0 s33.s
+                                                          :polarity "-"))
+                               :manner (s33.c / context))
+                 :ARG1-of (s33.o / okay-04)
+                 :mod (s33.d / definite))
+   :snt34 (s34.l / look-01
+                 :ARG0 (s34.w / we)
+                 :ARG1 (s34.s / spam))
+   :snt35 (s35.e3 / exemplify-01
+                  :ARG1 (s35.a / account
+                               :ARG0-of (s35.s2 / send-01
+                                                :ARG1 (s35.m / message-01
+                                                             :ARG1-of (s35.s / same-01
+                                                                             :degree (s35.e2 / exact)))
+                                                :ARG2 (s35.p / person
+                                                             :quant (s35.m2 / multiple
+                                                                            :op1 "1000")))
+                               :ARG1-of (s35.e / engage-01
+                                               :ARG2 (s35.b / behave-01
+                                                            :ARG0 s35.a
+                                                            :ARG1 (s35.s3 / spammer)
+                                                            :mod (s35.c / classic))))
+                  :location (s35.h / here))
+   :snt36 (s36.c / contrast-01
+                 :ARG1 (s36.t / thing
+                              :ARG1-of (s36.m / mock-01)
+                              :ARG1-of (s36.p / put-03
+                                              :ARG0 (s36.i / i
+                                                           :same-as s2.i)
+                                              :ARG2 (s36.t5 / together)
+                                              :manner (s36.u / use-01
+                                                             :ARG0 s36.i
+                                                             :ARG1 (s36.a / account
+                                                                          :poss s36.i
+                                                                          :same-as s35.a)))
+                              :domain (s36.t2 / this
+                                              :same-as s35.a))
+                 :ARG2 (s36.s / see-01
+                              :ARG0 (s36.w / we)
+                              :ARG1 (s36.d / do-02
+                                           :ARG0 (s36.a2 / account)
+                                           :ARG1 (s36.t3 / this
+                                                         :same-as s35.s2))
+                              :frequency (s36.t4 / time
+                                                 :mod (s36.a3 / all))))
+   :snt37 (s37.s / seem-01
+                 :ARG1 (s37.s2 / straightforward
+                               :degree (s37.p / pretty)))
+   :snt38 (s38.r / recommend-01
+                 :ARG1 (s38.s / suspend-01
+                              :ARG0 (s38.w / we)
+                              :ARG1 (s38.a / account
+                                           :ARG1-of (s38.e / engage-01
+                                                           :ARG2 (s38.b / behave-01
+                                                                        :ARG0 s38.a
+                                                                        :mod (s38.k / kind
+                                                                                    :mod (s38.t / this)))))
+                              :manner (s38.a2 / automatic)
+                              :mod (s38.j / just)))
+   :snt39 (s39.t3 / turn-out-11
+                  :ARG1 (s39.e / except-01
+                               :quant (s39.s / some)
+                               :ARG1 (s39.t2 / thing
+                                             :ARG3-of (s39.r / rule-01)
+                                             :mod (s39.t / that)
+                                             :same-as s38.s)))
+   :snt40 (s40.t4 / turn-out-11
+                  :ARG1 (s40.p2 / possible-01
+                                :ARG1 (s40.n2 / notify-01
+                                              :ARG0 (s40.t2 / thing
+                                                            :ARG1-of (s40.m / message-01)
+                                                            :mod (s40.t / that)
+                                                            :same-as s35.m)
+                                              :ARG1 (s40.p / pass-03
+                                                           :ARG1 (s40.s4 / spaceship
+                                                                         :name (s40.n / name
+                                                                                      :op1 "International"
+                                                                                      :op2 "Space"
+                                                                                      :op3 "Station"))
+                                                           :path (s40.o2 / overhead))
+                                              :ARG1-of (s40.s3 / sign-up-03
+                                                               :ARG0 (s40.y / you))
+                                              :mod (s40.a / also))
+                                :ARG1-of (s40.c / cause-01
+                                                :ARG0 (s40.w / want-01
+                                                             :ARG0 s40.y
+                                                             :ARG1 (s40.a2 / and
+                                                                           :op1 (s40.g / go-02
+                                                                                       :ARG0 s40.y
+                                                                                       :ARG4 (s40.o / outside))
+                                                                           :op2 (s40.s / see-01
+                                                                                       :ARG0 s40.y
+                                                                                       :ARG1 (s40.t3 / truth-value
+                                                                                                     :polarity-of (s40.p3 / possible-01
+                                                                                                                          :ARG1 (s40.s2 / see-01
+                                                                                                                                        :ARG0 s40.y
+                                                                                                                                        :ARG1 s40.s4)))))))))
+   :snt41 (s41.g / get-01
+                 :ARG0 (s41.y / you)
+                 :ARG1 (s41.c / chance-02
+                              :ARG0 s41.y
+                              :mod (s41.t / that))
+                 :condition (s41.s2 / suspend-01
+                                    :ARG0 (s41.w / we)
+                                    :ARG1 (s41.a / account
+                                                 :same-as s35.a)
+                                    :ARG1-of (s41.m / mistake-02
+                                                    :ARG0 s41.w)
+                                    :manner (s41.t2 / think-01
+                                                    :ARG0 s41.w
+                                                    :ARG1 (s41.s / spam
+                                                                 :domain s41.a)))
+                 :polarity "-")
+   :snt42 (s42.o / okay-01)
+   :snt43 (s43.m / make-02
+                 :ARG0 (s43.w / we)
+                 :ARG1 (s43.h2 / high-02
+                               :ARG1 (s43.s / stake)
+                               :ARG2-of (s43.h / have-degree-91
+                                               :ARG1 s43.s
+                                               :ARG3 (s43.m2 / more)))
+                 :mode "imperative")
+   :snt44 (s44.e / exhibit-01
+                 :ARG1 (s44.b2 / behave-01
+                               :mod (s44.c / classic))
+                 :manner (s44.b / back
+                                :direction (s44.a / account
+                                                  :poss (s44.i / i
+                                                               :same-as s2.i)))
+                 :mod (s44.a2 / again))
+   :snt45 (s45.s2 / send-01
+                  :ARG0 (s45.i / it
+                               :same-as s35.a)
+                  :ARG1 (s45.a / and
+                               :ARG1-of (s45.s / same-01)
+                               :op1 (s45.m / message)
+                               :op2 (s45.l / link)
+                               :same-as s35.m)
+                  :time (s45.t2 / time
+                                :mod (s45.t / this)))
+   :snt46 (s46.i / indicate-01
+                 :ARG0 (s46.t / this
+                              :same-as s45.s2)
+                 :ARG1 (s46.s2 / something
+                               :ARG1-of (s46.c / call-01
+                                               :ARG2 (s46.p2 / phone-01))
+                               :ARG1-of (s46.m / mean-01
+                                               :ARG2 (s46.t2 / try-01
+                                                             :ARG0 (s46.s / somebody)
+                                                             :ARG1 (s46.s3 / steal-01
+                                                                           :ARG0 s46.s
+                                                                           :ARG1 (s46.i2 / information
+                                                                                         :topic (s46.a / account
+                                                                                                       :poss (s46.p / person
+                                                                                                                    :mod (s46.a2 / another)
+                                                                                                                    :ARG2-of s46.s3)))
+                                                                           :manner (s46.d / direct-01
+                                                                                          :ARG0 s46.s
+                                                                                          :ARG1 s46.p
+                                                                                          :ARG2 (s46.w / website
+                                                                                                       :mod (s46.a3 / another)))))))
+                 :frequency (s46.o / often))
+   :snt47 (s47.t / thing
+                 :ARG1-of (s47.g / good-02
+                                 :ARG1-of (s47.c / clear-06
+                                                 :mod (s47.p / pretty))
+                                 :polarity "-"))
+   :snt48 (s48.a2 / and
+                  :op1 (s48.w / want-01
+                              :ARG0 (s48.w2 / we)
+                              :ARG1 (s48.s / suspend-01
+                                           :ARG0 s48.w2
+                                           :ARG1 (s48.a / account
+                                                        :ARG1-of (s48.e / engage-01
+                                                                        :ARG2 (s48.b / behave-01
+                                                                                     :mod (s48.k / kind
+                                                                                                 :mod (s48.t / that))))))))
+   :snt49 (s49.i / infer-01
+                 :ARG1 (s49.c / cause-01
+                              :ARG0 (s49.a / amr-unknown)
+                              :ARG1 (s49.h2 / high-02
+                                            :ARG1 (s49.s / stake)
+                                            :ARG2-of (s49.h / have-degree-91
+                                                            :ARG1 s49.s
+                                                            :ARG3 (s49.m / more))
+                                            :topic (s49.t / this))))
+   :snt50 (s50.p3 / possible-01
+                  :ARG1 (s50.b2 / bystander
+                                :ARG0-of (s50.m / manage-02
+                                                :ARG1 (s50.r2 / record-01
+                                                              :ARG0 s50.b2
+                                                              :ARG1 (s50.v / video
+                                                                           :topic (s50.b / beat-01
+                                                                                         :ARG0 (s50.o / officer
+                                                                                                      :mod (s50.p2 / police))
+                                                                                         :ARG1 (s50.p / person
+                                                                                                      :ARG0-of (s50.p4 / protest-01)
+                                                                                                      :ARG0-of (s50.t2 / try-01
+                                                                                                                       :ARG1 (s50.l / let-know-07
+                                                                                                                                    :ARG0 s50.p
+                                                                                                                                    :ARG1 (s50.w2 / world)
+                                                                                                                                    :ARG2 (s50.e / event)))
+                                                                                                      :mod (s50.v2 / violent
+                                                                                                                   :polarity "-"))))))
+                                :domain (s50.t / this
+                                               :same-as s35.a)
+                                :location (s50.r / rally-01)
+                                :mod (s50.a / also))
+                  :mod (s50.w / well))
+   :snt51 (s51.w / want-01
+                 :ARG0 (s51.w2 / we)
+                 :ARG1 (s51.g / gamble-01
+                              :ARG0 s51.w2
+                              :ARG1 (s51.s / silence-01
+                                           :ARG0 s51.w2
+                                           :ARG1 (s51.s3 / speak-01
+                                                         :mod (s51.c2 / crucial)
+                                                         :mod (s51.t / that))
+                                           :manner (s51.a / and
+                                                          :op1 (s51.c / classify-01
+                                                                      :ARG0 s51.w2
+                                                                      :ARG1 s51.s3
+                                                                      :ARG2 (s51.s2 / spam))
+                                                          :op2 (s51.s4 / suspend-01
+                                                                       :ARG0 s51.w2
+                                                                       :ARG1 s51.s3))
+                                           :mod (s51.p / potential)))
+                 :polarity "-")
+   :snt52 (s52.m / mean-01
+                 :ARG1 (s52.t / that)
+                 :ARG2 (s52.a2 / and
+                               :op1 (s52.e / evaluate-01
+                                           :ARG0 (s52.w / we)
+                                           :ARG1 (s52.p / parameter
+                                                        :quant (s52.m2 / multiple
+                                                                       :op1 "100"))
+                                           :time (s52.l / look-01
+                                                        :ARG0 s52.w
+                                                        :ARG1 (s52.b / behave-01
+                                                                     :ARG0 (s52.a / account))))
+                               :op2 (s52.p2 / possible-01
+                                            :ARG1 (s52.a3 / and
+                                                          :op1 (s52.g / get-30
+                                                                      :ARG0 s52.w
+                                                                      :ARG1 (s52.i / it
+                                                                                   :ARG2-of (s52.w2 / wrong-04)
+                                                                                   :same-as s51.s3)
+                                                                      :mod (s52.s / still))
+                                                          :op2 (s52.o / obligate-01
+                                                                      :ARG1 s52.w
+                                                                      :ARG2 (s52.r / reevaluate-01
+                                                                                   :ARG0 s52.w)))
+                                            :time (s52.t2 / then
+                                                          :mod (s52.e2 / even)))))
+   :snt53 (s53.c3 / crucial
+                  :ARG1-of (s53.c / cause-01
+                                  :ARG0 (s53.c2 / challenge-01
+                                                :ARG1 (s53.i / i
+                                                             :same-as s2.i)
+                                                :ARG1-of (s53.o / oppose-01
+                                                                :ARG0 s53.i)
+                                                :mod (s53.s / sort)))
+                  :domain (s53.a / and
+                                 :op1 (s53.p / predict-01
+                                             :ARG0 s53.i
+                                             :ARG1 (s53.p2 / protect-01
+                                                           :ARG2 (s53.t / thing
+                                                                        :ARG1-of (s53.e / expect-01
+                                                                                        :polarity "-"))))
+                                 :op2 (s53.d / design-01
+                                             :ARG0 s53.i
+                                             :ARG1 s53.p2))
+                  :time (s53.n / now))
+   :snt54 (s54.a / and
+                 :op2 (s54.c / contrast-01
+                             :ARG1 (s54.i2 / issue-02
+                                           :ARG0 (s54.t / that
+                                                        :same-as s53.d)
+                                           :ARG1 (s54.o / or
+                                                        :op1 (s54.i / i
+                                                                    :same-as s2.i)
+                                                        :op2 (s54.p / publication
+                                                                    :name (s54.n / name
+                                                                                 :op1 "Twitter")
+                                                                    :same-as s2.p3))
+                                           :mod (s54.j / just
+                                                       :polarity "-"))
+                             :ARG2 (s54.i3 / issue-02
+                                           :ARG0 s54.t
+                                           :ARG1 (s54.y / you
+                                                        :same-as s2.i))))
+   :snt55 (s55.i / issue-02
+                 :ARG0 (s55.i2 / it
+                               :same-as s53.d)
+                 :ARG1 (s55.a2 / anybody
+                               :ARG0-of (s55.b / build-01
+                                               :ARG1 (s55.s / something
+                                                            :ARG0-of (s55.a / amaze-01
+                                                                            :ARG1-of (s55.t2 / think-01
+                                                                                             :ARG0 (s55.y / you)))
+                                                            :ARG0-of (s55.l / let-01
+                                                                            :ARG1 (s55.d / do-02
+                                                                                         :ARG0 (s55.p / person)
+                                                                                         :ARG1 (s55.t / thing
+                                                                                                      :ARG0-of (s55.a3 / awe-01))))))
+                               :ARG0-of (s55.c / create-01
+                                               :ARG1 s55.s)))
+   :snt56 (s56.i2 / infer-01
+                  :ARG1 (s56.d / do-02
+                               :ARG0 (s56.i / i
+                                            :same-as s2.i)
+                               :ARG1 (s56.a / amr-unknown)))
+   :snt57 (s57.a3 / and
+                  :op1 (s57.p / pause-01
+                              :ARG0 (s57.i / i
+                                           :same-as s2.i))
+                  :op2 (s57.t / think-01
+                              :ARG0 s57.i
+                              :ARG1 (s57.p2 / possible-01
+                                            :ARG1 (s57.g / go-08
+                                                         :ARG1 (s57.t2 / this
+                                                                       :mod (s57.a / all))
+                                                         :ARG2 (s57.w / wrong-02
+                                                                      :ARG1 s57.t2
+                                                                      :degree (s57.h / horrible)))
+                                            :manner (s57.a2 / amr-unknown))))
+   :snt58 (s58.v / visualize-01
+                 :ARG0 (s58.i / i
+                              :same-as s2.i)
+                 :ARG1 (s58.c / catastrophe))
+   :snt59 (s59.a / and
+                 :op2 (s59.h / hard-02
+                             :ARG1 (s59.t / that
+                                          :same-as s58.v)))
+   :snt60 (s60.d / dissonance
+                 :domain (s60.d2 / do-02
+                                 :ARG1 (s60.t / that
+                                              :same-as s58.v))
+                 :example (s60.w2 / write-01
+                                  :ARG0 (s60.y / you)
+                                  :ARG1 (s60.v / vow-01
+                                               :ARG0 s60.y
+                                               :mod (s60.w / wed-01
+                                                           :ARG1 s60.y))
+                                  :time (s60.t2 / time
+                                                :ARG1-of (s60.s / same-01
+                                                                :ARG2 (s60.a / agree-01
+                                                                             :ARG0 s60.y
+                                                                             :ARG1-of (s60.p / precede-01
+                                                                                             :ARG2 s60.y)))))
+                 :mod (s60.c / cognition)
+                 :mod (s60.i / inherent)
+                 :mod (s60.s2 / sort))
+   :snt61 (s61.h / have-concession-91
+                 :ARG2 (s61.o / obligate-01
+                              :ARG1 (s61.y / you)
+                              :ARG1-of (s61.h2 / have-condition-91
+                                               :ARG2 (s61.m / marry-01
+                                                            :ARG1 s61.y
+                                                            :ARG2 (s61.r / rate-entity-91
+                                                                         :ARG1 (s61.t / temporal-quantity
+                                                                                      :ARG1-of (s61.t3 / tweet-02)
+                                                                                      :quant "500000000")
+                                                                         :ARG2 (s61.t2 / temporal-quantity
+                                                                                       :unit (s61.d / day)
+                                                                                       :quant "1")))
+                                               :mod (s61.p / particular))
+                              :ARG2 (s61.d2 / do-02
+                                            :ARG0 s61.y
+                                            :ARG1 (s61.i / it
+                                                         :same-as s58.v))
+                              :mod (s61.s / still)))
+   :snt62 (s62.m / mean-01
+                 :ARG0 (s62.i / i
+                              :same-as s2.i)
+                 :ARG1 (s62.v / visualize-01
+                              :ARG1 (s62.c / catastrophe))
+                 :ARG2 (s62.a / amr-unknown))
+   :snt63 (s63.t4 / try-01
+                  :ARG0 (s63.i / i
+                               :same-as s2.i)
+                  :ARG1 (s63.t3 / think-01
+                                :ARG0 s63.i
+                                :ARG1 (s63.a2 / and
+                                              :op1 (s63.t / thing
+                                                          :manner-of (s63.p2 / possible-01
+                                                                             :ARG1 (s63.l / lead-03
+                                                                                          :ARG0 (s63.s / something
+                                                                                                       :ARG1-of (s63.h / have-degree-91
+                                                                                                                       :ARG2 (s63.a / and
+                                                                                                                                    :op1 (s63.b / benign)
+                                                                                                                                    :op2 (s63.i2 / innocuous))
+                                                                                                                       :ARG3 (s63.e / equal)
+                                                                                                                       :ARG4 (s63.p / picture
+                                                                                                                                    :mod (s63.c / cat))))
+                                                                                          :ARG2 (s63.d / die-01))))
+                                              :op2 (s63.t2 / thing
+                                                           :ARG1-of (s63.d2 / do-02
+                                                                            :purpose (s63.p3 / prevent-01
+                                                                                             :ARG1 s63.l))))))
+   :snt64 (s64.e / exemplify-01
+                 :ARG0 (s64.i / i
+                              :same-as s2.i)
+                 :ARG1 (s64.t / thing)
+                 :mod (s64.n / next))
+   :snt65 (s65.c / cat
+                 :name (s65.n / name
+                              :op1 "Eli")
+                 :domain (s65.t / this)
+                 :poss (s65.i / i
+                              :same-as s2.i))
+   :snt66 (s66.w / want-01
+                 :ARG0 (s66.w2 / we
+                               :same-as s2.p3)
+                 :ARG1 (s66.g / give-01
+                              :ARG0 s66.w2
+                              :ARG1 (s66.c / capable-01
+                                           :ARG1 (s66.p / person
+                                                        :ARG0-of (s66.u / use-01))
+                                           :ARG2 (s66.a / add-02
+                                                        :ARG0 s66.p
+                                                        :ARG1 (s66.p2 / photo)
+                                                        :ARG2 (s66.t / tweet-02
+                                                                     :ARG0 s66.p)))
+                              :ARG2 s66.p))
+   :snt67 (s67.g / get-01
+                 :ARG0 (s67.y / you)
+                 :ARG1 (s67.c / character
+                              :quant "140")
+                 :mod (s67.o / only))
+   :snt68 (s68.a2 / and
+                  :op1 (s68.a / add-02
+                              :ARG0 (s68.y / you)
+                              :ARG1 (s68.p / photo)
+                              :ARG2 (s68.t / thing
+                                           :ARG1-of (s68.t2 / tweet-02
+                                                            :ARG0 s68.y)))
+                  :op2 (s68.l / look-01
+                              :ARG0 s68.y
+                              :ARG1 (s68.c / content
+                                           :quant (s68.m / more)
+                                           :ARG1-of (s68.h / have-03
+                                                           :ARG0 s68.y
+                                                           :time (s68.n / now)))))
+   :snt69 (s69.p2 / possible-01
+                  :ARG1 (s69.d / do-02
+                               :ARG0 (s69.y / you)
+                               :ARG1 (s69.t / thing
+                                            :mod (s69.g / great)
+                                            :mod (s69.s / sort
+                                                        :mod (s69.a2 / all)))
+                               :ARG2 (s69.a / add-02
+                                            :ARG0 s69.y
+                                            :ARG1 (s69.p / photo)
+                                            :ARG2 (s69.t2 / tweet))))
+   :snt70 (s70.t2 / think-01
+                  :ARG0 (s70.i / i
+                               :same-as s2.i)
+                  :ARG1 (s70.t / that
+                               :same-as s69.p2)
+                  :domain (s70.j / job
+                                 :poss s70.i)
+                  :polarity "-")
+   :snt71 (s71.t2 / think-01
+                  :ARG0 (s71.y / you)
+                  :ARG1 (s71.t / thing
+                               :ARG1-of (s71.g / go-08
+                                               :ARG1-of (s71.p / possible-01)
+                                               :ARG2 (s71.w / wrong-02))))
+   :snt72 (s72.p2 / possible-01
+                  :ARG1 (s72.l / lead-03
+                               :ARG0 (s72.p / picture
+                                            :mod (s72.t / this)
+                                            :same-as s35.a)
+                               :ARG2 (s72.d / die-01
+                                            :ARG1 (s72.i / i
+                                                         :same-as s2.i)))
+                  :manner (s72.a / amr-unknown))
+   :snt73 (s73.t / thing
+                 :ARG1-of (s73.p / possible-01)
+                 :location (s73.h / here)
+                 :mod (s73.w / well)
+                 :quant "1")
+   :snt74 (s74.h / have-quant-91
+                 :ARG3 (s74.m / more)
+                 :ARG4 (s74.c / cat
+                              :mod (s74.j / just))
+                 :location (s74.p / picture
+                                  :mod (s74.t / that)
+                                  :same-as s35.a))
+   :snt75 (s75.g / geodata)
+   :snt76 (s76.s / save-01
+                 :ARG1 (s76.i2 / information
+                               :quant (s76.l / lot)
+                               :mod (s76.a / additional))
+                 :ARG2 (s76.i / image
+                              :mod (s76.t2 / that)
+                              :same-as s76.p)
+                 :time (s76.t / take-01
+                              :ARG0 (s76.y / you)
+                              :ARG1 (s76.p / picture)
+                              :instrument (s76.o / or
+                                                 :op1 (s76.s2 / smartphone
+                                                              :poss s76.y)
+                                                 :op2 (s76.c / camera
+                                                             :mod (s76.d / digital)
+                                                             :poss s76.y))))
+   :snt77 (s77.c / contain-01
+                 :ARG0 (s77.i / image
+                              :mod (s77.t2 / this)
+                              :same-as s76.p)
+                 :ARG1 (s77.e / equal-01
+                              :ARG1 (s77.t3 / this
+                                            :ARG1-of (s77.s / specific-02
+                                                            :ARG2-of (s77.h / have-degree-91
+                                                                            :ARG3 (s77.m / more))))
+                              :ARG2 (s77.t / thing))
+                 :mod (s77.a / also)
+                 :mod (s77.i2 / in-fact))
+   :snt78 (s78.h2 / have-concession-91
+                  :ARG1 (s78.s2 / start-01
+                                :ARG0 (s78.i / i
+                                             :same-as s2.i)
+                                :ARG2 (s78.a3 / assume-02
+                                              :ARG0 s78.i
+                                              :ARG1 (s78.h3 / have-degree-91
+                                                            :ARG1 (s78.e / event)
+                                                            :ARG2 (s78.b / bad-07
+                                                                         :ARG1 s78.e)
+                                                            :ARG3 (s78.m / most))))
+                  :ARG2 (s78.l / likely-01
+                               :ARG1 (s78.t3 / try-01
+                                             :ARG0 (s78.s / someone)
+                                             :ARG1 (s78.a / and
+                                                          :ARG1-of (s78.b2 / base-02
+                                                                           :ARG2 (s78.d / data
+                                                                                        :ARG1-of (s78.a2 / associate-01
+                                                                                                         :ARG2 (s78.p / picture
+                                                                                                                      :ARG1-of (s78.t / take-01
+                                                                                                                                      :ARG2 (s78.c / cat
+                                                                                                                                                   :poss s78.i
+                                                                                                                                                   :same-as s65.t))))
+                                                                                        :mod (s78.i2 / image)))
+                                                          :op1 (s78.t2 / track-down-02
+                                                                       :ARG0 s78.s
+                                                                       :ARG1 s78.i)
+                                                          :op2 (s78.h / harm-01
+                                                                      :ARG0 s78.s
+                                                                      :ARG1 s78.i)))
+                               :ARG1-of (s78.s3 / sure-02)
+                               :polarity "-"))
+   :snt79 (s79.c / cause-01
+                 :ARG0 (s79.t / that)
+                 :ARG1 (s79.d / decide-01
+                              :ARG0 (s79.w / we
+                                           :same-as s2.p3)
+                              :ARG1 (s79.s / strip-01
+                                           :ARG0 s79.w
+                                           :ARG1 (s79.e / George
+                                                        :mod (s79.t2 / that)
+                                                        :same-as s78.d)
+                                           :manner (s79.o / out))
+                              :time (s79.l / launch-01
+                                           :ARG0 s79.w
+                                           :ARG1 (s79.p / photo)
+                                           :medium (s79.p2 / publication
+                                                           :name (s79.n / name
+                                                                        :op1 "Twitter")
+                                                           :same-as s2.p3))))
+   :snt80 (s80.p / possible-01
+                 :ARG1 (s80.e / ensure-01
+                              :ARG0 (s80.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s80.w3 / work-01
+                                            :ARG0 (s80.t2 / thing
+                                                          :ARG0-of (s80.p2 / protect-01)
+                                                          :ARG1-of (s80.b4 / build-01
+                                                                           :ARG0 (s80.w / we
+                                                                                        :same-as s2.p3)))
+                                            :ARG4 (s80.a2 / and
+                                                          :mod (s80.b3 / both)
+                                                          :op1 (s80.c / case-04
+                                                                      :ARG1 (s80.u / use-01)
+                                                                      :ARG1-of (s80.e2 / expect-01))
+                                                          :op2 (s80.c2 / case-04
+                                                                       :ARG1 s80.u
+                                                                       :ARG1-of (s80.e3 / expect-01)))))
+                 :condition (s80.a / and
+                                   :op1 (s80.s / start-01
+                                               :ARG2 (s80.a3 / assume-02
+                                                             :ARG0 s80.i
+                                                             :ARG1 (s80.t / thing
+                                                                          :ARG1-of (s80.h / have-degree-91
+                                                                                          :ARG2 (s80.b2 / bad-07
+                                                                                                        :ARG1 s80.t)
+                                                                                          :ARG3 (s80.m / most)))))
+                                   :op2 (s80.w2 / work-01
+                                                :ARG0 s80.i
+                                                :direction (s80.b / backwards))))
+   :snt81 (s81.s2 / surprise-01
+                  :ARG0 (s81.g / gloomy
+                               :domain (s81.w / worldview
+                                              :poss (s81.i / i
+                                                           :same-as s2.i)))
+                  :ARG1-of (s81.c / cause-01
+                                  :ARG0 (s81.s / spend-02
+                                               :ARG1 (s81.a / and
+                                                            :op1 (s81.d / day)
+                                                            :op2 (s81.n / night)
+                                                            :poss s81.i)
+                                               :ARG2 (s81.i2 / imagine-01
+                                                             :ARG0 s81.i
+                                                             :ARG1 (s81.h / have-degree-91
+                                                                          :ARG1 (s81.e / event
+                                                                                       :ARG1-of (s81.p / possible-01))
+                                                                          :ARG2 (s81.b / bad-07
+                                                                                       :ARG1 s81.e)
+                                                                          :ARG3 (s81.m / most)))))
+                  :polarity "-")
+   :snt82 (s82.h / have-polarity-91
+                 :ARG2 "-")
+   :snt83 (s83.a / and
+                 :op1 (s83.a2 / and
+                              :op1 (s83.i3 / interact-01
+                                           :quant (s83.m / majority
+                                                         :degree (s83.v / vast))
+                                           :ARG1-of (s83.s / see-01
+                                                           :ARG0 (s83.i / i
+                                                                        :same-as s2.i)))
+                              :op2 (s83.s2 / see-01
+                                           :quant (s83.l / lot)
+                                           :ARG0 s83.i
+                                           :topic-of (s83.b / believe-01
+                                                            :ARG0 (s83.y / you)
+                                                            :ARG1 s83.i))
+                              :op2 (s83.p2 / positive
+                                           :domain s83.i3))
+                 :op2 (s83.r / reach-03
+                             :ARG0 (s83.p / person)
+                             :ARG2 (s83.o / or
+                                          :op1 (s83.h / help-01
+                                                      :ARG0 s83.p
+                                                      :ARG2 (s83.o3 / other
+                                                                    :mod (s83.e / each)))
+                                          :op2 (s83.o2 / or
+                                                       :op1 (s83.c / connect-01
+                                                                   :ARG0 s83.p
+                                                                   :ARG1 s83.o3)
+                                                       :op2 (s83.s3 / share-01
+                                                                    :ARG0 s83.p
+                                                                    :ARG1 (s83.i2 / information)
+                                                                    :ARG2 s83.o3)))))
+   :snt84 (s84.o / obligate-01
+                 :ARG1 (s84.w / we)
+                 :ARG1-of (s84.c / cause-01
+                                 :ARG0 s84.w
+                                 :ARG0 (s84.o2 / odds
+                                               :ARG1-of (s84.g / good-02
+                                                               :degree (s84.p4 / pretty))
+                                               :beneficiary s84.w
+                                               :domain (s84.c2 / chance-02
+                                                               :ARG0 s84.w
+                                                               :ARG1 (s84.r / rate-entity-91
+                                                                            :ARG1 "1000000"
+                                                                            :ARG2 "1000000"))))
+                 :ARG2 (s84.a / assume-02
+                              :ARG0 s84.w
+                              :ARG1 (s84.h / have-degree-91
+                                           :ARG1 (s84.e / event)
+                                           :ARG2 (s84.b / bad-04
+                                                        :ARG1 s84.e)
+                                           :ARG3 (s84.m / most)))
+                 :mod (s84.j / just)
+                 :rel (s84.p / person
+                             :ARG0-of (s84.d / deal-01
+                                             :ARG2 (s84.s2 / scale)
+                                             :ARG2 s84.w)
+                             :ARG0-of (s84.t / task-01
+                                             :ARG1 (s84.k / keep-02
+                                                          :ARG0 (s84.p2 / person
+                                                                        :ARG1-of (s84.i2 / include-91
+                                                                                         :ARG2 s84.w)
+                                                                        :mod (s84.t2 / that))
+                                                          :ARG1 (s84.s / safe-01
+                                                                       :ARG1 (s84.p3 / person)))
+                                             :ARG2 s84.p2)
+                             :ARG1-of (s84.i / include-91)))
+   :snt85 (s85.t / thank-01
+                 :ARG1 (s85.y / you)))
+

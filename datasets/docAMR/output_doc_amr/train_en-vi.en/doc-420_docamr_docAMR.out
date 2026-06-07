@@ -1,0 +1,399 @@
+# ::id doc-420
+# ::doc_file doc-420
+# ::tok http : / / www . ted . com / talks / mitchell_joachim_don_t_build_your_home_grow_it< / url> <next_sent> Why grow homes ? <next_sent> Because we can . <next_sent> Right now , America is in an unremitting state of trauma . <next_sent> And there 's a cause for that , all right . <next_sent> We 've got McPeople , McCars , McHouses . <next_sent> As an architect , I have to confront something like this . <next_sent> So what 's a technology that will allow us to make ginormous houses ? <next_sent> Well , it 's been around for 2,500 years . <next_sent> It 's called pleaching , or grafting trees together , or grafting inosculate matter into one contiguous , vascular system . <next_sent> We use CNC to make scaffolding to train semi - epithetic matter , plants , into a specific geometry that makes a home that we call a Fab Tree Hab . <next_sent> It fits into the environment . <next_sent> It is the environment . <next_sent> It is the landscape , right ? <next_sent> And you can have a hundred million of these homes , and it 's great because they suck carbon . <next_sent> They 're perfect . <next_sent> You can have 100 million families , or take things out of the suburbs , because these are homes that are a part of the environment . <next_sent> Imagine pre - growing a village -- it takes about seven to 10 years -- and everything is green . <next_sent> So not only do we do the veggie house , we also do the in - vitro meat habitat , or homes that we 're doing research on now in Brooklyn , where , as an architecture office , we 're for the first of its kind to put in a molecular cell biology lab and start experimenting with regenerative medicine and tissue engineering and start thinking about what the future would be if architecture and biology became one . <next_sent> So we 've been doing this for a couple of years , and that 's our lab . <next_sent> And what we do is we grow extracellular matrix from pigs . <next_sent> We use a modified inkjet printer , and we print geometry . <next_sent> We print geometry where we can make industrial design objects like , you know , shoes , leather belts , handbags , etc. , where no sentient creature is harmed . <next_sent> It 's victimless . <next_sent> It 's meat from a test tube . <next_sent> So our theory is that eventually we should be doing this with homes . <next_sent> So here is a typical stud wall , an architectural construction , and this is a section of our proposal for a meat house , where you can see we use fatty cells as insulation , cilia for dealing with wind loads and sphincter muscles for the doors and windows . <next_sent> And we know it 's incredibly ugly . <next_sent> It could have been an English Tudor or Spanish Colonial , but we kind of chose this shape . <next_sent> And there it is kind of grown , at least one particular section of it . <next_sent> We had a big show in Prague , and we decided to put it in front of the cathedral so religion can confront the house of meat . <next_sent> That 's why we grow homes . <next_sent> Thanks very much .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01
+                            :ARG0 (s1.p / person
+                                        :name (s1.n / name
+                                                    :ARG0 "i"
+                                                    :op1 "narcotic"))))
+   :snt2 (s2.g / grow-03
+               :ARG0 (s2.a / amr-unknown)
+               :ARG1 (s2.h / home))
+   :snt3 (s3.c / cause-01
+               :ARG0 (s3.p / possible-01
+                           :ARG1 (s3.d / do-02
+                                       :ARG0 (s3.w / we))))
+   :snt4 (s4.s / state
+               :ARG1-of (s4.c / cease-01
+                              :polarity "-")
+               :domain (s4.c2 / country
+                              :name (s4.n / name
+                                          :op1 "America"))
+               :mod (s4.t / trauma)
+               :time (s4.n2 / now
+                            :mod (s4.r / right)))
+   :snt5 (s5.a2 / and
+                :op2 (s5.c / cause-01
+                           :ARG1 (s5.t / that
+                                       :same-as s4.t)
+                           :ARG2-of (s5.r / right-06
+                                          :mod (s5.a / all))))
+   :snt6 (s6.g / get-02
+               :ARG0 (s6.w / we)
+               :ARG1 (s6.a / and
+                           :op1 (s6.p / person
+                                      :name (s6.n / name
+                                                  :op1 "Democrat"))
+                           :op2 (s6.w2 / woman
+                                       :name (s6.n3 / name
+                                                    :op1 "McHouses")))
+               :rel (s6.p2 / person
+                           :name (s6.n2 / name
+                                        :op1 "McCars")))
+   :snt7 (s7.o / obligate-01
+               :ARG1 (s7.i / i)
+               :ARG2 (s7.c / confront-01
+                           :ARG0 s7.i
+                           :ARG1 (s7.s / something
+                                       :ARG1-of (s7.r / resemble-01
+                                                      :ARG2 (s7.t / this))))
+               :rel (s7.a / architect
+                          :domain s7.i))
+   :snt8 (s8.t / technology
+               :ARG0-of (s8.a / allow-01
+                              :ARG1 (s8.m / make-01
+                                          :ARG0 (s8.w / we)
+                                          :ARG1 (s8.h / house
+                                                      :mod (s8.g / ginormous))))
+               :domain (s8.a2 / amr-unknown))
+   :snt9 (s9.b / be-located-at-91
+               :ARG1 (s9.i / it
+                           :same-as s8.a)
+               :ARG2 (s9.a / around)
+               :duration (s9.t / temporal-quantity
+                               :unit (s9.y / year)
+                               :quant "2500")
+               :mod (s9.w / well))
+   :snt10 (s10.c / call-01
+                 :ARG1 (s10.i2 / it
+                               :same-as s8.a)
+                 :ARG2 (s10.o / or
+                              :op1 (s10.p / please-01
+                                          :ARG1 (s10.t2 / tree))
+                              :op2 (s10.g / graft-01
+                                          :ARG1 s10.t2
+                                          :manner (s10.t / together))
+                              :op3 (s10.g2 / graft-01
+                                           :ARG1 (s10.m / matter
+                                                        :mod (s10.i / inosculate))
+                                           :ARG4 (s10.s / system
+                                                        :ARG1-of (s10.c2 / control-01
+                                                                         :ARG1-of (s10.p2 / possible-01))
+                                                        :mod (s10.v / vascular)
+                                                        :quant "1"))))
+   :snt11 (s11.u / use-01
+                 :ARG0 (s11.w / we)
+                 :ARG1 (s11.p2 / product
+                               :name (s11.n / name
+                                            :op1 "CNC"))
+                 :ARG2 (s11.m / make-01
+                              :purpose (s11.t / train-01
+                                              :ARG0 s11.w
+                                              :ARG2 (s11.a / and
+                                                           :op1 (s11.m3 / matter
+                                                                        :ARG1-of (s11.r / resemble-01
+                                                                                        :degree (s11.s2 / semi)))
+                                                           :op2 (s11.p / plant))
+                                              :ARG2 (s11.g / geometry
+                                                           :ARG0-of (s11.m2 / make-01
+                                                                            :ARG1 (s11.h2 / home
+                                                                                          :ARG1-of (s11.c / call-01
+                                                                                                          :ARG0 s11.w
+                                                                                                          :ARG2 (s11.h / habit
+                                                                                                                       :name (s11.n2 / name
+                                                                                                                                     :op1 "Fab"
+                                                                                                                                     :op2 "Tree")))))
+                                                           :ARG1-of (s11.s3 / specific-02)))
+                              :ARG0 s11.w
+                              :ARG1 (s11.s / scaffolding)))
+   :snt12 (s12.f / fit-01
+                 :ARG1 (s12.i / it
+                              :same-as s11.h2)
+                 :ARG2 (s12.e / environment))
+   :snt13 (s13.e / environment
+                 :same-as s12.e)
+   :snt14 (s14.l / landscape
+                 :ARG1-of (s14.r / request-confirmation-91)
+                 :domain (s14.i / it
+                                :same-as s11.h2))
+   :snt15 (s15.a / and
+                 :op2 (s15.p / possible-01
+                             :ARG1 (s15.h / have-03
+                                          :ARG0 (s15.y / you)
+                                          :ARG1 (s15.h2 / home
+                                                        :mod (s15.t / this)
+                                                        :quant "100000000")))
+                 :op3 (s15.g / great
+                             :ARG1-of (s15.c2 / cause-01
+                                              :ARG0 (s15.s / suck-01
+                                                           :ARG0 s15.h2
+                                                           :ARG1 (s15.c / carbon)))
+                             :domain s15.h))
+   :snt16 (s16.p / perfect-02
+                 :ARG1 (s16.t / they
+                              :same-as s15.t))
+   :snt17 (s17.c / cause-01
+                 :ARG0 (s17.h2 / home
+                               :domain (s17.t3 / this
+                                               :same-as s15.t)
+                               :part-of (s17.e / environment))
+                 :ARG1 (s17.p / possible-01
+                              :ARG1 (s17.o / or
+                                           :op1 (s17.h / have-03
+                                                       :ARG0 (s17.y / you)
+                                                       :ARG1 (s17.f / family
+                                                                    :quant "100000000"))
+                                           :op2 (s17.t / take-out-11
+                                                       :ARG0 s17.y
+                                                       :ARG1 (s17.t2 / thing)
+                                                       :source (s17.s / suburb)))))
+   :snt18 (s18.i / imagine-01
+                 :ARG0 (s18.y3 / you)
+                 :ARG1 (s18.g2 / grow-03
+                               :ARG0-of (s18.t / take-10
+                                               :ARG1 (s18.a / about
+                                                            :op1 (s18.b2 / between
+                                                                         :op1 (s18.t2 / temporal-quantity
+                                                                                      :unit (s18.y / year)
+                                                                                      :quant "7")
+                                                                         :op2 (s18.t3 / temporal-quantity
+                                                                                      :unit (s18.y2 / year)
+                                                                                      :quant "10"))))
+                               :ARG1 (s18.v / village)
+                               :time (s18.b / before))
+                 :time-of (s18.g / green-02
+                                 :ARG1 (s18.e / everything))
+                 :mode "imperative")
+   :snt19 (s19.a2 / and
+                  :op1 (s19.d / do-02
+                              :ARG0 (s19.w / we
+                                           :same-as s11.w)
+                              :ARG1 (s19.h3 / house
+                                            :mod (s19.v / vegetable))
+                              :mod (s19.o3 / only
+                                           :polarity "-"))
+                  :op2 (s19.d2 / do-02
+                               :ARG0 s19.w
+                               :ARG1 (s19.o4 / or
+                                             :op1 (s19.h / habitat
+                                                         :manner (s19.i / in-vitro)
+                                                         :mod (s19.m / meat))
+                                             :op2 (s19.h2 / home
+                                                          :ARG1-of (s19.r2 / research-01
+                                                                           :ARG0 s19.w
+                                                                           :location (s19.c2 / city-district
+                                                                                             :name (s19.n / name
+                                                                                                          :op1 "Brooklyn")
+                                                                                             :location-of (s19.p / person
+                                                                                                                 :prep-as (s19.o / office
+                                                                                                                                 :mod (s19.a6 / architecture))))
+                                                                           :time (s19.n2 / now))))
+                               :mod (s19.a / also))
+                  :rel (s19.o5 / ordinal-entity
+                               :ARG5 (s19.k / kind
+                                            :purpose (s19.a3 / and
+                                                             :op1 (s19.p2 / put-01
+                                                                          :ARG0 s19.p
+                                                                          :ARG2 (s19.l / lab
+                                                                                       :mod (s19.b2 / biology
+                                                                                                    :mod (s19.c / cell
+                                                                                                                :mod (s19.m3 / molecule)))))
+                                                             :op2 (s19.s / start-01
+                                                                         :ARG0 s19.w
+                                                                         :ARG1 (s19.e2 / experiment-01
+                                                                                       :ARG0 s19.p
+                                                                                       :ARG1 (s19.a4 / and
+                                                                                                     :op1 (s19.m2 / medicine
+                                                                                                                  :ARG1-of (s19.r / regenerate-01))
+                                                                                                     :op2 (s19.e / engineer-01
+                                                                                                                 :ARG1 (s19.t3 / tissue)))))
+                                                             :op3 (s19.s2 / start-01
+                                                                          :ARG0 s19.w
+                                                                          :ARG1 (s19.t2 / think-01
+                                                                                        :ARG0 s19.w
+                                                                                        :ARG1 (s19.t / thing
+                                                                                                     :condition (s19.b / become-01
+                                                                                                                       :ARG1 (s19.a5 / and
+                                                                                                                                     :op1 (s19.a7 / architecture)
+                                                                                                                                     :op2 (s19.b3 / biology))
+                                                                                                                       :ARG2 (s19.o2 / one))
+                                                                                                     :domain (s19.f / future)))))
+                                            :poss s19.w)
+                               :value "1"))
+   :snt20 (s20.a / and
+                 :op1 (s20.d / do-02
+                             :ARG0 (s20.w / we
+                                          :same-as s11.w)
+                             :ARG1 (s20.t3 / this)
+                             :duration (s20.c / couple
+                                              :op1 (s20.t / temporal-quantity
+                                                          :unit (s20.y / year)
+                                                          :quant "1")))
+                 :op2 (s20.l / lab
+                             :domain (s20.t2 / that
+                                             :same-as s19.l)
+                             :poss s20.w))
+   :snt21 (s21.a / and
+                 :op2 (s21.g / grow-03
+                             :ARG0 (s21.w / we
+                                          :same-as s11.w)
+                             :ARG1 (s21.m / matrix
+                                          :ARG1-of (s21.i / ionize-01
+                                                          :ARG1-of (s21.p2 / possible-01)))
+                             :ARG2 (s21.p / pig)))
+   :snt22 (s22.a / and
+                 :op1 (s22.u / use-01
+                             :ARG0 (s22.w / we
+                                          :same-as s11.w)
+                             :ARG1 (s22.t / thing
+                                          :ARG0-of (s22.p / print-01
+                                                          :instrument (s22.i / inkjet))
+                                          :ARG1-of (s22.m / modify-01)))
+                 :op2 (s22.p2 / print-01
+                              :ARG0 s22.w
+                              :ARG1 (s22.g / geometry)))
+   :snt23 (s23.p2 / print-01
+                  :purpose (s23.p / possible-01
+                                  :ARG1 (s23.m / make-01
+                                               :ARG0 (s23.w / we
+                                                            :same-as s11.w)
+                                               :ARG1 (s23.o / object
+                                                            :ARG1-of (s23.d / design-01
+                                                                            :mod (s23.i / industry))
+                                                            :example (s23.a / and
+                                                                            :op1 (s23.s / shoe)
+                                                                            :op2 (s23.b2 / belt
+                                                                                         :mod (s23.l / leather))
+                                                                            :op3 (s23.b / bag)
+                                                                            :op4 (s23.e / et-cetera))
+                                                            :location-of (s23.h / harm-01
+                                                                                :ARG1 (s23.c2 / creature
+                                                                                              :mod (s23.c / conscious))
+                                                                                :polarity "-"))))
+                  :ARG0 s23.w
+                  :ARG1 (s23.g / geometry))
+   :snt24 (s24.v / victim
+                 :domain (s24.i / it))
+   :snt25 (s25.m / meat
+                 :domain (s25.i / it)
+                 :source (s25.t2 / tube
+                                 :mod (s25.t / test)))
+   :snt26 (s26.t / theory
+                 :domain (s26.r / recommend-01
+                                :ARG1 (s26.d / do-02
+                                             :ARG0 (s26.w / we
+                                                          :same-as s11.w)
+                                             :ARG1 (s26.t2 / this
+                                                           :same-as s20.t3)
+                                             :ARG3 (s26.h / home)
+                                             :time (s26.e / eventual)))
+                 :poss s26.w)
+   :snt27 (s27.i / infer-01
+                 :ARG1 (s27.a / and
+                              :op1 (s27.w / wall
+                                          :ARG1-of (s27.t3 / typical-02)
+                                          :ARG1-of (s27.c3 / construct-01)
+                                          :location (s27.h / here)
+                                          :mod (s27.s4 / stud)
+                                          :mod (s27.t / technology)
+                                          :mod (s27.t2 / trichlorethylene))
+                              :op2 (s27.s / section
+                                          :location s27.h
+                                          :location-of (s27.p / possible-01
+                                                              :ARG1 (s27.s2 / see-01
+                                                                            :ARG0 (s27.y / you)
+                                                                            :ARG1 (s27.u / use-01
+                                                                                         :ARG0 (s27.w2 / we
+                                                                                                       :same-as s11.w)
+                                                                                         :ARG1 (s27.a2 / and
+                                                                                                       :op1 (s27.c / cell
+                                                                                                                   :ARG1-of (s27.f / fat-03))
+                                                                                                       :op2 (s27.c2 / cilia
+                                                                                                                    :purpose (s27.d / deal-01
+                                                                                                                                    :ARG0 s27.c
+                                                                                                                                    :ARG1 (s27.l / load
+                                                                                                                                                 :mod (s27.w3 / wind))))
+                                                                                                       :op3 (s27.m2 / muscle
+                                                                                                                    :purpose (s27.a3 / and
+                                                                                                                                     :op1 (s27.d2 / door)
+                                                                                                                                     :op2 (s27.w4 / window))
+                                                                                                                    :mod (s27.s3 / sphincter)))
+                                                                                         :ARG2 (s27.i2 / insulation))))
+                                          :part-of (s27.p2 / propose-01
+                                                           :ARG0 s27.w2
+                                                           :ARG1 (s27.h2 / house
+                                                                         :mod (s27.m / meat))))))
+   :snt28 (s28.a / and
+                 :op2 (s28.k / know-01
+                             :ARG0 (s28.w / we
+                                          :same-as s11.w)
+                             :ARG1 (s28.u / ugly
+                                          :degree (s28.i / incredible)
+                                          :domain (s28.i2 / it))))
+   :snt29 (s29.p3 / possible-01
+                  :ARG1 (s29.o / or
+                               :op1 (s29.p / person
+                                           :name (s29.n / name
+                                                        :op1 "Tudor")
+                                           :mod (s29.c3 / country
+                                                        :name (s29.n2 / name
+                                                                      :op1 "England")))
+                               :op2 (s29.p2 / person
+                                            :mod (s29.c4 / country
+                                                         :name (s29.n3 / name
+                                                                       :op1 "Spain"))
+                                            :mod (s29.c2 / colony)))
+                  :concession-of (s29.c / choose-01
+                                        :ARG0 (s29.w / we
+                                                     :same-as s11.w)
+                                        :ARG1 (s29.s / shape
+                                                     :mod (s29.t / this))
+                                        :degree (s29.k / kind-of)))
+   :snt30 (s30.a / and
+                 :op2 (s30.g / grow-01
+                             :ARG1 (s30.i / it
+                                          :part (s30.s / section
+                                                       :quant (s30.a2 / at-least
+                                                                      :op1 "1")
+                                                       :mod (s30.p / particular)
+                                                       :same-as s28.i2)
+                                          :same-as s28.i2)
+                             :degree (s30.k / kind-of)
+                             :location (s30.t / there)))
+   :snt31 (s31.a / and
+                 :op1 (s31.h / have-03
+                             :ARG0 (s31.w / we
+                                          :same-as s11.w)
+                             :ARG1 (s31.s / show-04
+                                          :mod (s31.b / big))
+                             :location (s31.c2 / city
+                                               :name (s31.n / name
+                                                            :op1 "Prague")))
+                 :op2 (s31.d / decide-01
+                             :ARG0 s31.w
+                             :ARG1 (s31.p2 / put-01
+                                           :purpose (s31.p / possible-01
+                                                           :ARG1 (s31.c3 / confront-01
+                                                                         :ARG0 (s31.r / religion)
+                                                                         :ARG1 (s31.h2 / house
+                                                                                       :consist-of (s31.m / meat)
+                                                                                       :same-as s19.h3)))
+                                           :ARG0 s31.w
+                                           :ARG1 s31.s
+                                           :ARG2 (s31.i / in-front-of
+                                                        :op1 (s31.c / cathedral)))))
+   :snt32 (s32.c / cause-01
+                 :ARG0 (s32.t / that
+                              :same-as s31.c3)
+                 :ARG1 (s32.g / grow-03
+                              :ARG0 (s32.w / we
+                                           :same-as s11.w)
+                              :ARG1 (s32.h / home)))
+   :snt33 (s33.t / thank-01
+                 :ARG0 (s33.i / i)
+                 :ARG1 (s33.y / you)
+                 :mod (s33.m / much
+                             :degree (s33.v / very))))
+

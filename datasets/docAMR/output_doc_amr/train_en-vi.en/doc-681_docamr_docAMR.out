@@ -1,0 +1,471 @@
+# ::id doc-681
+# ::doc_file doc-681
+# ::tok http : / / www . ted . com / talks / matt_cutts_try_something_new_for_30_days< / url> <next_sent> A few years ago , I felt like I was stuck in a rut , so I decided to follow in the footsteps of the great American philosopher , Morgan Spurlock , and try something new for 30 days . <next_sent> The idea is actually pretty simple . <next_sent> Think about something you 've always wanted to add to your life and try it for the next 30 days . <next_sent> It turns out , 30 days is just about the right amount of time to add a new habit or subtract a habit -- like watching the news -- from your life . <next_sent> There 's a few things I learned while doing these 30 - day challenges . <next_sent> The first was , instead of the months flying by , forgotten , the time was much more memorable . <next_sent> This was part of a challenge I did to take a picture every day for a month . <next_sent> And I remember exactly where I was and what I was doing that day . <next_sent> I also noticed that as I started to do more and harder 30 - day challenges , my self - confidence grew . <next_sent> I went from desk - dwelling computer nerd to the kind of guy who bikes to work -- for fun . <next_sent> Even last year , I ended up hiking up Mt . Kilimanjaro , the highest mountain in Africa . <next_sent> I would never have been that adventurous before I started my 30 - day challenges . <next_sent> I also figured out that if you really want something badly enough , you can do anything for 30 days . <next_sent> Have you ever wanted to write a novel ? <next_sent> Every November , tens of thousands of people try to write their own 50,000 - word novel from scratch in 30 days . <next_sent> It turns out , all you have to do is write 1,667 words a day for a month . <next_sent> So I did . <next_sent> By the way , the secret is not to go to sleep until you 've written your words for the day . <next_sent> You might be sleep - deprived , but you 'll finish your novel . <next_sent> Now is my book the next great American novel ? <next_sent> No. <next_sent> I wrote it in a month . <next_sent> It 's awful . <next_sent> But for the rest of my life , if I meet John Hodgman at a TED party , I do n't have to say , " I 'm a computer scientist . " <next_sent> No , no , if I want to , I can say , " I 'm a novelist . " <next_sent> So here 's one last thing I 'd like to mention . <next_sent> I learned that when I made small , sustainable changes , things I could keep doing , they were more likely to stick . <next_sent> There 's nothing wrong with big , crazy challenges . <next_sent> In fact , they 're a ton of fun . <next_sent> But they 're less likely to stick . <next_sent> When I gave up sugar for 30 days , day 31 looked like this . <next_sent> So here 's my question to you : What are you waiting for ? <next_sent> I guarantee you the next 30 days are going to pass whether you like it or not , so why not think about something you have always wanted to try and give it a shot for the next 30 days . <next_sent> Thanks .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01))
+   :snt2 (s2.c / cause-01
+               :ARG0 (s2.f / feel-01
+                           :ARG0 (s2.i / i)
+                           :ARG1 (s2.t3 / thing
+                                        :ARG1-of (s2.r / resemble-01
+                                                       :ARG2 (s2.s3 / stick-01
+                                                                    :ARG1 s2.i
+                                                                    :ARG2 (s2.r2 / rut)))))
+               :ARG1 (s2.d2 / decide-01
+                            :ARG0 s2.i
+                            :ARG1 (s2.a / and
+                                        :op1 (s2.f3 / follow-02
+                                                    :ARG0 s2.i
+                                                    :ARG1 (s2.s2 / step-01
+                                                                 :ARG1 (s2.p / philosopher
+                                                                             :name (s2.n2 / name
+                                                                                          :op1 "Morgan"
+                                                                                          :op2 "Spurlock")
+                                                                             :mod (s2.c2 / country
+                                                                                         :name (s2.n / name
+                                                                                                     :op1 "America"))
+                                                                             :mod (s2.g / great))))
+                                        :op2 (s2.t4 / try-01
+                                                    :ARG0 s2.i
+                                                    :ARG1 (s2.s / something
+                                                                :ARG1-of (s2.n3 / new-01))
+                                                    :duration (s2.t2 / temporal-quantity
+                                                                     :unit (s2.d / day)
+                                                                     :quant "30"))))
+               :time (s2.b / before
+                           :quant (s2.f2 / few
+                                         :op1 (s2.t / temporal-quantity
+                                                    :unit (s2.y / year)
+                                                    :quant "1"))
+                           :op1 (s2.n4 / now)))
+   :snt3 (s3.s / simple-02
+               :ARG1 (s3.i / idea)
+               :ARG1-of (s3.a / actual-02)
+               :degree (s3.p / pretty))
+   :snt4 (s4.a4 / and
+                :op1 (s4.t2 / think-01
+                            :ARG0 (s4.y / you)
+                            :ARG1 (s4.s / something
+                                        :ARG1-of (s4.a / add-02
+                                                       :ARG0 s4.y
+                                                       :ARG1-of (s4.w / want-01
+                                                                      :ARG0 s4.y
+                                                                      :time (s4.a3 / always))
+                                                       :ARG2 (s4.l / life
+                                                                   :poss s4.y)))
+                            :mode "imperative")
+                :op2 (s4.t3 / try-01
+                            :ARG0 s4.y
+                            :ARG1 s4.s
+                            :time (s4.a2 / after
+                                         :duration (s4.t / temporal-quantity
+                                                         :unit (s4.d / day)
+                                                         :quant "30")
+                                         :op1 (s4.n / now))))
+   :snt5 (s5.t2 / turn-out-11
+                :ARG1 (s5.a4 / amount
+                             :ARG1-of (s5.r / right-03
+                                            :purpose (s5.o / or
+                                                           :op1 (s5.a2 / add-02
+                                                                       :ARG1 (s5.h / habit
+                                                                                   :ARG1-of (s5.n / new-01)))
+                                                           :op2 (s5.a3 / add-02
+                                                                       :ARG0 (s5.y / you)
+                                                                       :ARG1 (s5.h2 / habit
+                                                                                    :example (s5.w / watch-01
+                                                                                                   :ARG1 (s5.n2 / news)))
+                                                                       :ARG2 (s5.l / life
+                                                                                   :poss s5.y)))
+                                            :mod (s5.a / about
+                                                       :mod (s5.j / just)))
+                             :domain (s5.t / temporal-quantity
+                                           :unit (s5.d / day)
+                                           :quant "30")))
+   :snt6 (s6.t2 / thing
+                :quant (s6.f / few)
+                :ARG1-of (s6.l / learn-01
+                               :ARG0 (s6.i / i
+                                           :same-as s2.i)
+                               :time (s6.d2 / do-02
+                                            :ARG0 s6.i
+                                            :ARG1 (s6.c / challenge-01
+                                                        :duration (s6.t / temporal-quantity
+                                                                        :unit (s6.d / day)
+                                                                        :quant "30")
+                                                        :mod (s6.t3 / this)))))
+   :snt7 (s7.i / instead-of-91
+               :ARG1 (s7.h / have-degree-91
+                           :ARG1 (s7.t2 / time)
+                           :ARG2 (s7.l / likely-01
+                                       :ARG1 (s7.r / remember-01
+                                                   :ARG1 s7.t2))
+                           :ARG3 (s7.m2 / more
+                                        :quant (s7.m3 / much)))
+               :ARG2 (s7.f / fly-01
+                           :ARG1 (s7.m4 / multiple
+                                        :ARG1-of (s7.f2 / forget-01)
+                                        :op1 (s7.t / temporal-quantity
+                                                   :unit (s7.m / month)
+                                                   :quant "1"))
+                           :path (s7.b / by))
+               :ord (s7.o / ordinal-entity
+                          :value "1"))
+   :snt8 (s8.h / have-part-91
+               :ARG1 (s8.c / challenge-01
+                           :ARG1 (s8.i / i
+                                       :same-as s2.i)
+                           :ARG2 (s8.t / take-01
+                                       :ARG0 s8.i
+                                       :ARG1 (s8.p / picture)
+                                       :duration (s8.t2 / temporal-quantity
+                                                        :unit (s8.m / month)
+                                                        :quant "1")
+                                       :frequency (s8.d / day
+                                                        :mod (s8.e / every))))
+               :ARG2 (s8.t3 / this))
+   :snt9 (s9.a / and
+               :op2 (s9.r / remember-01
+                          :ARG0 (s9.i / i
+                                      :same-as s2.i)
+                          :ARG1 (s9.a2 / and
+                                       :mod (s9.e / exact)
+                                       :op1 (s9.l / location
+                                                  :ARG2-of (s9.b / be-located-at-91
+                                                                 :ARG1 s9.i
+                                                                 :time (s9.d / day
+                                                                             :mod (s9.t / that))))
+                                       :op2 (s9.t2 / thing
+                                                   :ARG1-of (s9.d2 / do-02
+                                                                   :ARG0 s9.i
+                                                                   :time s9.d)))))
+   :snt10 (s10.n / notice-01
+                 :ARG0 (s10.i / i
+                              :same-as s2.i)
+                 :ARG1 (s10.g / grow-01
+                              :ARG1 (s10.c2 / confident-01
+                                            :ARG0 s10.i
+                                            :ARG1 s10.i)
+                              :time (s10.s / start-01
+                                           :ARG0 s10.i
+                                           :ARG1 (s10.d2 / do-02
+                                                         :ARG0 s10.i
+                                                         :ARG1 (s10.c / challenge-01
+                                                                      :ARG1-of (s10.h2 / have-degree-91
+                                                                                       :ARG2 (s10.h / hard-02
+                                                                                                    :ARG1 s10.c)
+                                                                                       :ARG3 (s10.m / more))
+                                                                      :ARG1-of (s10.i2 / increase-01)
+                                                                      :duration (s10.t / temporal-quantity
+                                                                                       :unit (s10.d / day)
+                                                                                       :quant "30")))))
+                 :mod (s10.a / also))
+   :snt11 (s11.g / go-01
+                 :ARG1 (s11.i / i
+                              :same-as s2.i)
+                 :ARG3 (s11.n / nerd
+                              :ARG1-of (s11.d2 / dwell-01
+                                               :ARG2 (s11.d / desk))
+                              :mod (s11.c / computer))
+                 :ARG4 (s11.n2 / nerd
+                               :mod (s11.k / kind
+                                           :mod (s11.g2 / guy
+                                                        :ARG0-of (s11.b / bike-01
+                                                                        :purpose (s11.f / fun-01
+                                                                                        :ARG0 s11.g2)
+                                                                        :destination (s11.w / work-01
+                                                                                            :ARG0 s11.g2))))))
+   :snt12 (s12.e / end-up-03
+                 :ARG1 (s12.i / i
+                              :same-as s2.i)
+                 :ARG2 (s12.h3 / hike-02
+                               :ARG0 s12.i
+                               :ARG2 (s12.m2 / mountain
+                                             :name (s12.n / name
+                                                          :op1 "Mt."
+                                                          :op2 "Kilimanjaro")
+                                             :ARG1-of (s12.h / have-degree-91
+                                                             :ARG2 (s12.h2 / high-02)
+                                                             :ARG3 (s12.m / most)
+                                                             :ARG5 (s12.m3 / mountain
+                                                                           :location (s12.c / continent
+                                                                                            :name (s12.n2 / name
+                                                                                                          :op1 "Africa")))))
+                               :direction (s12.u / up))
+                 :time (s12.y / year
+                              :mod (s12.l / last)
+                              :mod (s12.e2 / even)))
+   :snt13 (s13.a / adventurous
+                 :degree (s13.t2 / that)
+                 :domain (s13.i / i
+                                :same-as s2.i)
+                 :time (s13.e / ever)
+                 :time (s13.b / before
+                              :op1 (s13.s / start-01
+                                          :ARG0 s13.i
+                                          :ARG1 (s13.c / challenge-01
+                                                       :ARG0 s13.i
+                                                       :duration (s13.t / temporal-quantity
+                                                                        :unit (s13.d / day)
+                                                                        :quant "30")
+                                                       :same-as s6.c)))
+                 :polarity "-")
+   :snt14 (s14.f / figure-out-05
+                 :ARG0 (s14.i / i
+                              :same-as s2.i)
+                 :ARG1 (s14.p / possible-01
+                              :ARG1 (s14.d2 / do-02
+                                            :ARG0 (s14.y / you)
+                                            :ARG1 (s14.a2 / anything)
+                                            :duration (s14.t / temporal-quantity
+                                                             :unit (s14.d / day)
+                                                             :quant "30"))
+                              :condition (s14.w / want-01
+                                                :ARG0 s14.y
+                                                :ARG1 (s14.s / something
+                                                             :ARG1-of (s14.h / have-degree-91
+                                                                             :ARG2 (s14.b / bad-05
+                                                                                          :ARG1 s14.s)
+                                                                             :ARG3 (s14.e / enough)))
+                                                :ARG1-of (s14.r / real-04)))
+                 :mod (s14.a / also))
+   :snt15 (s15.w / want-01
+                 :ARG0 (s15.y / you
+                              :same-as s2.i)
+                 :ARG1 (s15.w2 / write-01
+                               :ARG0 s15.y
+                               :ARG1 (s15.n / novel))
+                 :polarity (s15.a / amr-unknown)
+                 :time (s15.e / ever))
+   :snt16 (s16.t2 / try-01
+                  :ARG0 (s16.p / person
+                               :quant (s16.m / multiple
+                                             :op1 "10000"))
+                  :ARG1 (s16.w2 / write-01
+                                :ARG0 s16.p
+                                :ARG1 (s16.n / novel
+                                             :consist-of (s16.w / word
+                                                                :quant "50000")
+                                             :poss s16.p)
+                                :manner (s16.f / from
+                                               :op1 (s16.s / scratch))
+                                :time (s16.a / after
+                                             :quant (s16.t / temporal-quantity
+                                                           :unit (s16.d2 / day)
+                                                           :quant "30")
+                                             :op1 (s16.n2 / now)))
+                  :frequency (s16.r / rate-entity-91
+                                    :ARG4 (s16.d / date-entity
+                                                 :month "11")))
+   :snt17 (s17.t3 / turn-out-11
+                  :ARG1 (s17.o / obligate-01
+                               :ARG1 (s17.y / you)
+                               :ARG2 (s17.d2 / do-02
+                                             :ARG0 s17.y
+                                             :ARG1 (s17.w2 / write-01
+                                                           :ARG0 s17.y
+                                                           :ARG1 (s17.r / rate-entity-91
+                                                                        :ARG1 (s17.w / word
+                                                                                     :quant "17")
+                                                                        :ARG2 (s17.t / temporal-quantity
+                                                                                     :unit (s17.d / day)
+                                                                                     :quant "1"))
+                                                           :duration (s17.t2 / temporal-quantity
+                                                                             :unit (s17.m / month)
+                                                                             :quant "1"))
+                                             :mod (s17.a / all))))
+   :snt18 (s18.c / cause-01
+                 :ARG1 (s18.d / do-02
+                              :ARG0 (s18.i / i
+                                           :same-as s2.i)))
+   :snt19 (s19.s / secret
+                 :domain (s19.g / go-05
+                                :ARG0 (s19.y / you)
+                                :ARG1 (s19.s2 / sleep-01
+                                              :ARG0 s19.y
+                                              :time (s19.u / until
+                                                           :op1 (s19.w2 / write-01
+                                                                        :ARG0 s19.y
+                                                                        :ARG1 (s19.w / word
+                                                                                     :poss s19.y
+                                                                                     :topic (s19.d / day)))))
+                                :polarity "-")
+                 :mod (s19.b / by-the-way))
+   :snt20 (s20.c / contrast-01
+                 :ARG1 (s20.p / possible-01
+                              :ARG1 (s20.d / deprive-01
+                                           :ARG1 (s20.y / you)
+                                           :ARG2 (s20.s / sleep-01
+                                                        :ARG0 s20.y)))
+                 :ARG2 (s20.f / finish-01
+                              :ARG0 s20.y
+                              :ARG1 (s20.n / novel
+                                           :poss s20.y)))
+   :snt21 (s21.n3 / novel
+                  :domain (s21.b / book
+                                 :poss (s21.i / i
+                                              :same-as s2.i))
+                  :mod (s21.c / country
+                              :name (s21.n / name
+                                           :op1 "America"))
+                  :mod (s21.g / great)
+                  :mod (s21.n2 / next)
+                  :polarity (s21.a / amr-unknown)
+                  :time (s21.n4 / now))
+   :snt22 (s22.n / no)
+   :snt23 (s23.w / write-01
+                 :ARG0 (s23.i / i
+                              :same-as s2.i)
+                 :ARG1 (s23.i2 / it
+                               :same-as s21.b)
+                 :duration (s23.t / temporal-quantity
+                                  :unit (s23.m / month)
+                                  :quant "1"))
+   :snt24 (s24.a / awful
+                 :domain (s24.i / it
+                                :same-as s23.w))
+   :snt25 (s25.c2 / contrast-01
+                  :ARG2 (s25.o / obligate-01
+                               :ARG1 (s25.i / i
+                                            :same-as s2.i)
+                               :ARG2 (s25.s / say-01
+                                            :ARG0 s25.i
+                                            :ARG1 (s25.s2 / scientist
+                                                          :domain s25.i
+                                                          :mod (s25.c / computer)))
+                               :condition (s25.m / meet-03
+                                                 :ARG0 s25.i
+                                                 :ARG1 (s25.p2 / person
+                                                               :name (s25.n / name
+                                                                            :op1 "John"
+                                                                            :op2 "Hodgman"))
+                                                 :location (s25.p / party
+                                                                  :name (s25.n2 / name
+                                                                                :op1 "TED")))
+                               :duration (s25.r / rest
+                                                :part-of (s25.l / life
+                                                                :poss s25.i))
+                               :polarity "-"))
+   :snt26 (s26.a / and
+                 :op1 (s26.h / have-polarity-91
+                             :ARG2 "-")
+                 :op2 (s26.p / possible-01
+                             :ARG1 (s26.s / say-01
+                                          :ARG0 (s26.i / i
+                                                       :same-as s2.i)
+                                          :ARG1 (s26.n / novelist
+                                                       :domain s26.i))
+                             :condition (s26.w / want-01
+                                               :ARG0 s26.i
+                                               :ARG1 s26.s)))
+   :snt27 (s27.t / thing
+                 :ARG1-of (s27.m / mention-01
+                                 :ARG0 (s27.i / i
+                                              :same-as s2.i)
+                                 :ARG1-of (s27.l / like-02
+                                                 :ARG0 s27.i))
+                 :location (s27.h / here)
+                 :ord (s27.o / ordinal-entity
+                             :value "-1")
+                 :quant "1")
+   :snt28 (s28.l / learn-01
+                 :ARG0 (s28.i / i
+                              :same-as s2.i)
+                 :ARG1 (s28.h / have-degree-91
+                              :ARG2 (s28.l2 / likely-01
+                                            :ARG1 (s28.s2 / stick-01
+                                                          :ARG1 s28.h))
+                              :ARG3 (s28.m / more)
+                              :time (s28.c / change-01
+                                           :ARG0 s28.i
+                                           :ARG1 (s28.t / thing
+                                                        :ARG1-of (s28.d / do-02
+                                                                        :ARG0 s28.i
+                                                                        :ARG1-of (s28.k / keep-02
+                                                                                        :ARG0 s28.i
+                                                                                        :ARG1-of (s28.p2 / possible-01))))
+                                           :ARG1-of (s28.s3 / sustain-01
+                                                            :ARG1-of (s28.p / possible-01))
+                                           :mod (s28.s / small))))
+   :snt29 (s29.w / wrong-02
+                 :ARG1 (s29.n / nothing)
+                 :ARG2 (s29.c / challenge-01
+                              :ARG1-of (s29.c2 / crazy-03)
+                              :mod (s29.b / big)))
+   :snt30 (s30.f / fun-01
+                 :quant (s30.m / mass-quantity
+                               :unit (s30.t2 / ton)
+                               :quant "1")
+                 :ARG1 (s30.t / they
+                              :same-as s29.c)
+                 :mod (s30.i / in-fact))
+   :snt31 (s31.c / contrast-01
+                 :ARG2 (s31.l2 / likely-01
+                               :ARG1 (s31.s / stick-01
+                                            :ARG1 (s31.t / they
+                                                         :same-as s29.c))
+                               :ARG2-of (s31.h / have-degree-91
+                                               :ARG1 s31.s
+                                               :ARG3 (s31.l / less))))
+   :snt32 (s32.l / look-02
+                 :ARG0 (s32.d2 / day
+                               :quant "31")
+                 :ARG1 (s32.r / resemble-01
+                              :ARG1 s32.d2
+                              :ARG2 (s32.t2 / this))
+                 :time (s32.g / give-up-07
+                              :ARG0 (s32.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s32.s / sugar)
+                              :duration (s32.t / temporal-quantity
+                                               :unit (s32.d / day)
+                                               :quant "30")))
+   :snt33 (s33.c / cause-01
+                 :ARG1 (s33.q / question-01
+                              :ARG0 (s33.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s33.a / amr-unknown
+                                           :ARG2-of (s33.w / wait-01
+                                                           :ARG1 (s33.y / you)))
+                              :ARG2 s33.y
+                              :location (s33.h / here)))
+   :snt34 (s34.g2 / guarantee-01
+                  :ARG0 (s34.i / i
+                               :same-as s2.i)
+                  :ARG0-of (s34.c / cause-01
+                                  :ARG1 (s34.t3 / think-01
+                                                :ARG0 (s34.y / you
+                                                             :same-as s33.y)
+                                                :ARG1 (s34.s2 / something
+                                                              :ARG1-of (s34.t4 / try-01
+                                                                               :ARG0 s34.y
+                                                                               :ARG1-of (s34.w / want-01
+                                                                                               :ARG0 s34.y
+                                                                                               :time (s34.a2 / always)))
+                                                              :mod (s34.g / give-01
+                                                                          :ARG0 s34.y
+                                                                          :ARG1 s34.s2
+                                                                          :ARG1 (s34.s / shoot-01
+                                                                                       :ARG0 s34.y
+                                                                                       :ARG1 s34.s2)
+                                                                          :time (s34.a / after
+                                                                                       :duration (s34.t / temporal-quantity
+                                                                                                        :unit (s34.d / day)
+                                                                                                        :quant "30")
+                                                                                       :duration (s34.t2 / temporal-quantity
+                                                                                                         :unit (s34.d2 / day)
+                                                                                                         :quant "30")
+                                                                                       :op1 (s34.n / now)
+                                                                                       :same-as s34.t)))
+                                                :ARG1-of (s34.c2 / cause-01
+                                                                 :ARG0 (s34.a3 / amr-unknown))
+                                                :polarity "-"))
+                  :ARG1 (s34.p / pass-03
+                               :ARG1 s34.t
+                               :ARG1-of (s34.r / regardless-91
+                                               :ARG2 (s34.l / like-01
+                                                            :ARG0 s34.y
+                                                            :ARG1 s34.p)))
+                  :ARG2 s34.y)
+   :snt35 (s35.t / thank-01))
+

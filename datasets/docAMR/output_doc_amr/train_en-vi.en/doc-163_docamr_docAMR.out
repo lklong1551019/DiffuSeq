@@ -1,0 +1,411 @@
+# ::id doc-163
+# ::doc_file doc-163
+# ::tok http : / / www . ted . com / talks / lee_cronin_print_your_own_medicine< / url> <next_sent> Organic chemists make molecules , very complicated molecules , by chopping up a big molecule into small molecules and reverse engineering . <next_sent> And as a chemist , one of the things I wanted to ask my research group a couple of years ago is , could we make a really cool universal chemistry set ? <next_sent> In essence , could we " app " chemistry ? <next_sent> Now what would this mean , and how would we do it ? <next_sent> Well to start to do this , we took a 3D printer and we started to print our beakers and our test tubes on one side and then print the molecule at the same time on the other side and combine them together in what we call reactionware . <next_sent> And so by printing the vessel and doing the chemistry at the same time , we may start to access this universal toolkit of chemistry . <next_sent> Now what could this mean ? <next_sent> Well if we can embed biological and chemical networks like a search engine , so if you have a cell that 's ill that you need to cure or bacteria that you want to kill , if you have this embedded in your device at the same time , and you do the chemistry , you may be able to make drugs in a new way . <next_sent> So how are we doing this in the lab ? <next_sent> Well it requires software , it requires hardware and it requires chemical inks . <next_sent> And so the really cool bit is , the idea is that we want to have a universal set of inks that we put out with the printer , and you download the blueprint , the organic chemistry for that molecule and you make it in the device . <next_sent> And so you can make your molecule in the printer using this software . <next_sent> So what could this mean ? <next_sent> Well , ultimately , it could mean that you could print your own medicine . <next_sent> And this is what we 're doing in the lab at the moment . <next_sent> But to take baby steps to get there , first of all we want to look at drug design and production , or drug discovery and manufacturing . <next_sent> Because if we can manufacture it after we 've discovered it , we could deploy it anywhere . <next_sent> You do n't need to go to the chemist anymore . <next_sent> We can print drugs at point of need . <next_sent> We can download new diagnostics . <next_sent> Say a new super bug has emerged . <next_sent> You put it in your search engine , and you create the drug to treat the threat . <next_sent> So this allows you on - the - fly molecular assembly . <next_sent> But perhaps for me the core bit going into the future is this idea of taking your own stem cells , with your genes and your environment , and you print your own personal medicine . <next_sent> And if that does n't seem fanciful enough , where do you think we 're going to go ? <next_sent> Well , you 're going to have your own personal matter fabricator . <next_sent> Beam me up , Scotty .
+(d / document
+   :snt1 (s1.u / url-entity
+               :ARG1-of (s1.b / bear-02)
+               :topic (s1.t / talk-01
+                            :ARG0 (s1.p / person
+                                        :name (s1.n / name
+                                                    :op1 "Republican"))))
+   :snt2 (s2.m / make-01
+               :ARG0 (s2.c / chemist
+                           :ARG1-of (s2.o / organize-01))
+               :ARG1 (s2.s2 / small-molecule
+                            :ARG1-of (s2.c2 / complicate-01
+                                            :degree (s2.v / very)))
+               :manner (s2.a / and
+                             :op2 (s2.e / engineer-01
+                                        :ARG1-of (s2.r / reverse-01)))
+               :op1-of s2.a
+               :rel (s2.g / general
+                          :manner (s2.a2 / and
+                                         :op1 (s2.m2 / molecule
+                                                     :mod (s2.b / big))
+                                         :op2 (s2.s3 / small-molecule
+                                                     :mod (s2.s / small))))
+               :rel (s2.g2 / general))
+   :snt3 (s3.a2 / and
+                :op2 (s3.i2 / include-91
+                            :ARG1 (s3.p / possible-01
+                                        :ARG1 (s3.m / make-01
+                                                    :ARG0 (s3.w2 / we
+                                                                 :same-as s3.g)
+                                                    :ARG1 (s3.s / set
+                                                                :ARG1-of (s3.c3 / cool-04
+                                                                                :degree (s3.r / really))
+                                                                :mod (s3.c2 / chemistry)
+                                                                :mod (s3.u / universal)))
+                                        :polarity (s3.a / amr-unknown))
+                            :ARG2 (s3.t2 / thing
+                                         :ARG1-of (s3.a3 / ask-01
+                                                         :ARG0 (s3.i / i)
+                                                         :ARG1-of (s3.w / want-01
+                                                                        :ARG0 s3.i
+                                                                        :time (s3.b / before
+                                                                                    :quant (s3.c4 / couple
+                                                                                                  :op1 (s3.t / temporal-quantity
+                                                                                                             :unit (s3.y / year)
+                                                                                                             :quant "1"))
+                                                                                    :op1 (s3.n / now)))
+                                                         :ARG2 (s3.g / group
+                                                                     :ARG0-of (s3.r2 / research-01)
+                                                                     :poss s3.i))))
+                :rel (s3.c / chemist
+                           :domain s3.i))
+   :snt4 (s4.p / possible-01
+               :ARG1 (s4.a2 / apply-02
+                            :ARG0 (s4.w / we
+                                        :same-as s3.g)
+                            :ARG1 (s4.c / chemistry))
+               :manner (s4.e / essence)
+               :polarity (s4.a / amr-unknown))
+   :snt5 (s5.a3 / and
+                :op1 (s5.m / mean-01
+                           :ARG1 (s5.t / this
+                                       :same-as s4.a2)
+                           :ARG2 (s5.a / amr-unknown))
+                :op2 (s5.d / do-02
+                           :ARG0 (s5.w / we
+                                       :same-as s3.g)
+                           :ARG1 s5.m
+                           :manner (s5.a2 / amr-unknown))
+                :time (s5.n / now))
+   :snt6 (s6.a / and
+               :purpose (s6.s5 / start-01
+                               :ARG0 (s6.w / we
+                                           :same-as s3.g)
+                               :ARG1 (s6.d2 / do-02
+                                            :ARG0 s6.w
+                                            :ARG1 (s6.t5 / this
+                                                         :same-as s3.m)))
+               :op1 (s6.t / take-01
+                          :ARG0 s6.w
+                          :ARG1 (s6.p3 / printer
+                                       :mod (s6.d / dimension
+                                                  :quant "3")))
+               :op2 (s6.s6 / start-01
+                           :ARG0 s6.w
+                           :ARG1 (s6.a3 / and
+                                        :op1 (s6.p / print-01
+                                                   :ARG0 s6.w
+                                                   :ARG1 (s6.a2 / and
+                                                                :op1 (s6.b / be-located-at-91
+                                                                           :ARG1 (s6.s4 / small-molecule)
+                                                                           :ARG2 s6.w)
+                                                                :op2 (s6.t8 / tube
+                                                                            :purpose (s6.t2 / test-01)
+                                                                            :poss s6.w)
+                                                                :op3 (s6.p2 / print-01
+                                                                            :ARG0 s6.w
+                                                                            :ARG1 (s6.m / molecule)
+                                                                            :time (s6.t3 / then)
+                                                                            :time (s6.t6 / time
+                                                                                         :ARG1-of (s6.s / same-01))))
+                                                   :location (s6.s2 / side
+                                                                    :mod (s6.o / one)))
+                                        :op2 s6.p2
+                                        :op3 (s6.c2 / combine-01
+                                                    :ARG0 s6.w
+                                                    :ARG1 s6.w
+                                                    :ARG2 s6.m
+                                                    :manner (s6.t4 / thing
+                                                                   :ARG1-of (s6.c / call-01
+                                                                                  :ARG0 s6.w
+                                                                                  :ARG2 (s6.r / reactionware)))
+                                                    :mod (s6.t7 / together))))
+               :rel (s6.s3 / side
+                           :mod (s6.o2 / other)))
+   :snt7 (s7.a2 / and
+                :op2 (s7.p / possible-01
+                           :ARG1 (s7.s2 / start-01
+                                        :ARG0 (s7.w / we
+                                                    :same-as s3.g)
+                                        :ARG1 (s7.a / access-01
+                                                    :ARG0 s7.w
+                                                    :ARG1 (s7.t3 / toolkit
+                                                                 :mod (s7.u / universal)
+                                                                 :mod (s7.t / this)
+                                                                 :mod (s7.c2 / chemistry))))
+                           :manner (s7.a3 / and
+                                          :op1 (s7.p2 / print-01
+                                                      :ARG0 s7.w
+                                                      :ARG1 (s7.v / vessel))
+                                          :op2 (s7.d / do-02
+                                                     :ARG0 s7.w
+                                                     :ARG1 (s7.c / chemistry)
+                                                     :time (s7.t2 / time
+                                                                  :ARG1-of (s7.s / same-01))))))
+   :snt8 (s8.c / cause-01
+               :ARG0 (s8.p / possible-01
+                           :ARG1 (s8.m / mean-01
+                                       :ARG1 (s8.t / this)
+                                       :ARG2 (s8.a / amr-unknown))
+                           :time (s8.n / now)))
+   :snt9 (s9.p2 / possible-01
+                :ARG1 (s9.m / make-01
+                            :ARG0 (s9.y / you)
+                            :ARG1 (s9.d3 / drug)
+                            :manner (s9.w2 / way
+                                           :ARG1-of (s9.n4 / new-01)))
+                :condition (s9.a2 / and
+                                  :op1 (s9.e2 / embed-01
+                                              :ARG1 (s9.t / this)
+                                              :ARG2 (s9.d / device)
+                                              :time (s9.t2 / time
+                                                           :ARG1-of (s9.s / same-01)))
+                                  :op2 (s9.d2 / do-02
+                                              :ARG0 s9.y
+                                              :ARG1 (s9.c3 / chemistry)))
+                :condition (s9.p / possible-01
+                                 :ARG1 (s9.e / embed-01
+                                             :ARG0 (s9.w3 / we)
+                                             :ARG1 (s9.a / and
+                                                         :ARG1-of (s9.r / resemble-01
+                                                                        :ARG2 (s9.s2 / search-engine))
+                                                         :op1 (s9.n3 / network-01
+                                                                     :mod (s9.b2 / biology))
+                                                         :op2 (s9.n2 / network
+                                                                     :mod (s9.c2 / chemical)))))
+                :mod (s9.w4 / well)
+                :rel (s9.h / have-03
+                           :ARG0 s9.y
+                           :ARG1 (s9.o / or
+                                       :op1 (s9.c / cell
+                                                  :ARG1-of (s9.i / ill-01)
+                                                  :ARG2-of (s9.c4 / cure-01
+                                                                  :ARG1-of (s9.n / need-01
+                                                                                 :ARG0 s9.y)))
+                                       :op2 (s9.b / bacterium
+                                                  :ARG1-of (s9.k / kill-01
+                                                                 :ARG1-of (s9.w / want-01))))))
+   :snt10 (s10.d / do-02
+                 :ARG0 (s10.w / we
+                              :same-as s3.g)
+                 :ARG1 (s10.t / this
+                              :same-as s3.m)
+                 :location (s10.l / lab)
+                 :manner (s10.a / amr-unknown))
+   :snt11 (s11.a / and
+                 :op1 (s11.r / require-01
+                             :ARG0 (s11.i / it
+                                          :same-as s3.m)
+                             :ARG1 (s11.s / software))
+                 :op2 (s11.h / hardware)
+                 :op3 (s11.r2 / require-01
+                              :ARG0 s11.i
+                              :ARG1 (s11.a2 / and
+                                            :op1 s11.i
+                                            :op2 s11.h))
+                 :rel (s11.c / chemical
+                             :quant "3"))
+   :snt12 (s12.b / bit
+                 :ARG1-of (s12.c2 / cool-04
+                                  :degree (s12.r / really))
+                 :domain (s12.a / and
+                                :op1 (s12.i / idea
+                                            :domain (s12.w / want-01
+                                                           :ARG0 (s12.w2 / we
+                                                                         :same-as s3.g)
+                                                           :ARG1 (s12.h / have-03
+                                                                        :ARG0 s12.w2
+                                                                        :ARG1 (s12.s / set
+                                                                                     :ARG1-of (s12.p2 / put-out-10
+                                                                                                      :ARG0 s12.w2
+                                                                                                      :instrument (s12.t2 / thing
+                                                                                                                          :ARG0-of (s12.p / print-01)))
+                                                                                     :ARG2-of (s12.l / lead-02)
+                                                                                     :mod (s12.u / universal)))))
+                                :op2 (s12.d2 / download-01
+                                             :ARG0 (s12.y / you)
+                                             :ARG1 (s12.a2 / and
+                                                           :op1 (s12.b2 / blueprint)
+                                                           :op2 (s12.c / chemistry
+                                                                       :mod (s12.o / organic)
+                                                                       :topic (s12.m2 / molecule
+                                                                                      :mod (s12.t / that)))))
+                                :op3 (s12.m / make-01
+                                            :ARG0 s12.y
+                                            :ARG1 (s12.i2 / it
+                                                          :same-as s12.m2)
+                                            :location (s12.d / device))))
+   :snt13 (s13.a / and
+                 :op2 (s13.p / possible-01
+                             :ARG1 (s13.m / make-01
+                                          :ARG0 (s13.y / you)
+                                          :ARG1 (s13.m2 / molecule
+                                                        :poss s13.y)
+                                          :ARG2-of (s13.u / use-01
+                                                          :ARG1 (s13.s / software
+                                                                       :mod (s13.t2 / this)
+                                                                       :same-as s11.s))
+                                          :location (s13.t / thing
+                                                           :ARG0-of (s13.p2 / print-01)
+                                                           :same-as s12.t2))))
+   :snt14 (s14.p / possible-01
+                 :ARG1 (s14.m / mean-01
+                              :ARG1 (s14.t / this)
+                              :ARG2 (s14.a / amr-unknown)))
+   :snt15 (s15.p / possible-01
+                 :ARG1 (s15.m / mean-01
+                              :ARG1 (s15.i / it
+                                           :same-as s14.t)
+                              :ARG2 (s15.p2 / print-01
+                                            :ARG0 (s15.y / you)
+                                            :ARG1 (s15.m2 / medicine
+                                                          :poss s15.y)))
+                 :mod (s15.u / ultimate)
+                 :mod (s15.w / well
+                             :mode "expressive"))
+   :snt16 (s16.a / and
+                 :op2 (s16.d / do-02
+                             :ARG0 (s16.w / we
+                                          :same-as s3.g)
+                             :ARG1 (s16.t / thing
+                                          :domain (s16.t2 / this
+                                                          :same-as s15.p2))
+                             :location (s16.l / lab)
+                             :time (s16.m / moment)))
+   :snt17 (s17.c / contrast-01
+                 :ARG2 (s17.w / want-01
+                              :purpose (s17.s / step-01
+                                              :purpose (s17.g / get-05
+                                                              :ARG1 (s17.w2 / we
+                                                                            :same-as s3.g)
+                                                              :ARG2 (s17.t / there))
+                                              :ARG0 s17.w2
+                                              :mod (s17.b / baby))
+                              :ARG0 s17.w2
+                              :ARG1 (s17.l / look-01
+                                           :ARG0 s17.w2
+                                           :ARG1 (s17.o / or
+                                                        :op1 (s17.a / and
+                                                                    :op1 (s17.d / design-01
+                                                                                :ARG1 (s17.d3 / drug))
+                                                                    :op2 (s17.p / produce-01
+                                                                                :ARG1 s17.d3))
+                                                        :op2 (s17.a2 / and
+                                                                     :op1 (s17.d2 / discover-01
+                                                                                  :ARG1 s17.d3)
+                                                                     :op2 (s17.m / manufacture-01
+                                                                                 :ARG1 s17.d3))))
+                              :mod (s17.f / first-of-all)))
+   :snt18 (s18.c / cause-01
+                 :ARG0 (s18.p2 / possible-01
+                               :ARG1 (s18.d / deploy-01
+                                            :ARG0 (s18.w / we
+                                                         :same-as s3.g)
+                                            :ARG1 (s18.i / it)
+                                            :ARG2 (s18.a2 / anywhere))
+                               :condition (s18.p / possible-01
+                                                 :ARG1 (s18.m / manufacture-01
+                                                              :ARG1 s18.i
+                                                              :time (s18.a / after
+                                                                           :op1 (s18.d2 / discover-01
+                                                                                        :ARG0 s18.w
+                                                                                        :ARG1 s18.i))))))
+   :snt19 (s19.n / need-01
+                 :ARG0 (s19.y / you)
+                 :ARG1 (s19.g / go-02
+                              :ARG0 s19.y
+                              :ARG4 (s19.c / chemist))
+                 :time (s19.a / anymore)
+                 :polarity "-")
+   :snt20 (s20.p2 / possible-01
+                  :ARG1 (s20.p3 / print-01
+                                :ARG0 (s20.w / we)
+                                :ARG1 (s20.d / drug)
+                                :time (s20.p / point
+                                             :mod (s20.n / need-01))))
+   :snt21 (s21.p / possible-01
+                 :ARG1 (s21.d2 / download-01
+                               :ARG0 (s21.w / we
+                                            :same-as s20.w)
+                               :ARG1 (s21.t / thing
+                                            :ARG1-of (s21.n / new-01)
+                                            :ARG2-of (s21.d / diagnose-01))))
+   :snt22 (s22.e / emerge-02
+                 :ARG0 (s22.b / bug
+                              :ARG1-of (s22.n / new-01)
+                              :mod (s22.s / super)))
+   :snt23 (s23.a / and
+                 :op1 (s23.p / put-01
+                             :ARG0 (s23.y / you)
+                             :ARG1 (s23.i / it
+                                          :same-as s22.b)
+                             :ARG2 (s23.s / search-engine
+                                          :poss s23.y))
+                 :op2 (s23.c / create-01
+                             :ARG0 s23.y
+                             :ARG1 (s23.d / drug
+                                          :purpose (s23.t2 / treat-03
+                                                           :ARG2 (s23.t / threaten-01
+                                                                        :same-as s22.b)))))
+   :snt24 (s24.i / infer-01
+                 :ARG1 (s24.a / allow-01
+                              :ARG0 (s24.t / this)
+                              :ARG1 (s24.a2 / assemble-02
+                                            :ARG0 (s24.y / you)
+                                            :ARG1 (s24.m / molecule)
+                                            :manner (s24.o / on-the-fly))))
+   :snt25 (s25.c2 / contrast-01
+                  :ARG2 (s25.p2 / possible-01
+                                :ARG1 (s25.b / bit
+                                             :ARG1-of (s25.g2 / go-01
+                                                              :ARG4 (s25.f / future))
+                                             :beneficiary (s25.i / i
+                                                                 :same-as s3.i)
+                                             :domain (s25.i2 / idea
+                                                             :mod (s25.t2 / this)
+                                                             :topic (s25.a2 / and
+                                                                            :op1 (s25.t / take-01
+                                                                                        :ARG0 (s25.y / you
+                                                                                                     :part (s25.g / gene))
+                                                                                        :ARG1 (s25.c / cell
+                                                                                                     :mod (s25.s / stem)
+                                                                                                     :poss s25.y)
+                                                                                        :accompanier (s25.a / and
+                                                                                                            :op1 s25.g
+                                                                                                            :op2 (s25.e / environment
+                                                                                                                        :poss s25.y)))
+                                                                            :op2 (s25.p3 / print-01
+                                                                                         :ARG0 s25.y
+                                                                                         :ARG1 (s25.m / medicine
+                                                                                                      :ARG1-of (s25.p / personal-02
+                                                                                                                      :ARG2 s25.y)))))
+                                             :mod (s25.c3 / core))))
+   :snt26 (s26.a2 / and
+                  :op2 (s26.t2 / think-01
+                               :ARG0 (s26.y / you
+                                            :same-as s3.i)
+                               :ARG1 (s26.g / go-02
+                                            :ARG0 (s26.w / we)
+                                            :ARG4 (s26.a / amr-unknown)
+                                            :condition (s26.s / seem-01
+                                                              :ARG1 (s26.f / fanciful
+                                                                           :ARG2-of (s26.h / have-degree-91
+                                                                                           :ARG1 (s26.t / that
+                                                                                                        :same-as s25.i2)
+                                                                                           :ARG3 (s26.e / enough))
+                                                                           :domain s26.t)
+                                                              :polarity "-"))))
+   :snt27 (s27.h / have-03
+                 :ARG0 (s27.y / you
+                              :same-as s3.i)
+                 :ARG1 (s27.p / person
+                              :ARG0-of (s27.m / manufacture-01
+                                              :ARG1 (s27.m2 / matter
+                                                            :ARG1-of (s27.p2 / personal-02
+                                                                             :ARG2 s27.y))))
+                 :mod (s27.w / well))
+   :snt28 (s28.s / say-01
+                 :ARG0 (s28.i / i)
+                 :ARG1 (s28.r / riddle-00
+                              :ARG0 (s28.p / person
+                                           :name (s28.n / name
+                                                        :op1 "Scotty")
+                                           :same-as s3.i)
+                              :ARG1 s28.i
+                              :mode "imperative")
+                 :ARG2 s28.p))
+

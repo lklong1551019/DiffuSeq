@@ -1,0 +1,61 @@
+# ::id doc-554
+# ::doc_file doc-554
+# ::tok http : / / www . ted . com / talks / raul_midon_plays_everybody_and_peace_on_earth< / url> <next_sent> This is a song that came about because I think it 's difficult to be in the world and not be aware of what 's going on , and the wars and so forth . <next_sent> This song kind of came out of all of that . <next_sent> And I wrote a lot of happy songs on my first record , which I still stand by , but this has got something else in it . <next_sent> It 's called " Peace on Earth . "
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01
+                            :ARG0 (s1.p / person
+                                        :name (s1.n / name
+                                                    :op1 "Democratic"
+                                                    :op2 "Party"))))
+   :snt2 (s2.c2 / come-about-06
+                :ARG1 (s2.s / song
+                            :mod (s2.t3 / this))
+                :ARG1-of (s2.c / cause-01
+                               :ARG0 (s2.t2 / think-01
+                                            :ARG0 (s2.i / i)
+                                            :ARG1 (s2.d / difficult
+                                                        :domain (s2.a / and
+                                                                      :op1 (s2.b / be-located-at-91
+                                                                                 :ARG2 (s2.w2 / world))
+                                                                      :op2 (s2.r / realize-01
+                                                                                 :ARG1 (s2.g / go-on-15
+                                                                                             :ARG1 (s2.t / thing))
+                                                                                 :polarity "-")
+                                                                      :op3 (s2.w / war-01)
+                                                                      :op4 (s2.e / et-cetera))))))
+   :snt3 (s3.c / come-03
+               :ARG1 (s3.s / song
+                           :mod (s3.t2 / this)
+                           :same-as s2.t3)
+               :ARG2 (s3.t / that
+                           :mod (s3.a / all))
+               :mod (s3.k / kind))
+   :snt4 (s4.a / and
+               :op2 (s4.c / contrast-01
+                          :ARG1 (s4.w / write-01
+                                      :ARG0 (s4.i / i
+                                                  :same-as s2.i)
+                                      :ARG1 (s4.s2 / song
+                                                   :quant (s4.l / lot)
+                                                   :ARG1-of (s4.h / happy-01))
+                                      :ARG1-of (s4.s3 / stand-11
+                                                      :ARG0 s4.i
+                                                      :mod (s4.s4 / still))
+                                      :location (s4.r / record
+                                                      :ord (s4.o / ordinal-entity
+                                                                 :value "1")
+                                                      :poss s4.i))
+                          :ARG2 (s4.g / get-02
+                                      :ARG0 (s4.t / this
+                                                  :same-as s2.t3)
+                                      :ARG1 (s4.s / something
+                                                  :mod (s4.e / else)))))
+   :snt5 (s5.c / call-01
+               :ARG1 (s5.i / it
+                           :same-as s2.t3)
+               :ARG2 (s5.p / peace
+                           :location (s5.p2 / planet
+                                            :name (s5.n / name
+                                                        :op1 "Earth")))))
+

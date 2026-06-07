@@ -1,0 +1,464 @@
+# ::id doc-1088
+# ::doc_file doc-1088
+# ::tok http : / / www . ted . com / talks / daria_van_den_bercken_why_i_take_the_piano_on_the_road_and_in_the_air< / url> <next_sent> Recently , I flew over a crowd of thousands of people in Brazil playing music by George Frideric Handel . <next_sent> I also drove along the streets of Amsterdam , again playing music by this same composer . <next_sent> Let 's take a look . <next_sent> Daria van den Bercken : I live there on the third floor . <next_sent> I live there on the corner . <next_sent> I actually live there , around the corner . and you 'd be really welcome . <next_sent> Does that sound like fun ? <next_sent> Yes ! <next_sent> [ " Handel house concert " ] Daria van den Bercken : All this was a real magical experience for hundreds of reasons . <next_sent> Now you may ask , why have I done these things ? <next_sent> They 're not really typical for a musician 's day - to - day life . <next_sent> Well , I did it because I fell in love with the music and I wanted to share it with as many people as possible . <next_sent> It started a couple of years ago . <next_sent> So I downloaded the sheet music and started playing . <next_sent> And what happened next was that I entered this state of pure , unprejudiced amazement . <next_sent> It was an experience of being totally in awe of the music , and I had not felt that in a long time . <next_sent> It might be easier to relate to this when you hear it . <next_sent> The first piece that I played through started like this . <next_sent> Well this sounds very melancholic , does n't it ? <next_sent> And I turned the page and what came next was this . <next_sent> Well , this sounds very energetic , does n't it ? <next_sent> So within a couple of minutes , and the piece is n't even finished yet , I experienced two very contrasting characters : beautiful melancholy and sheer energy . <next_sent> And I consider these two elements to be vital human expressions . <next_sent> And the purity of the music makes you hear it very effectively . <next_sent> I 've given a lot of children 's concerts for children of seven and eight years old , and whatever I play , whether it 's Bach , Beethoven , even Stockhausen , or some jazzy music , they are open to hear it , really willing to listen , and they are comfortable doing so . <next_sent> And when classes come in with children who are just a few years older , 11 , 12 , I felt that I sometimes already had trouble in reaching them like that . <next_sent> The complexity of the music does become an issue , and actually the opinions of others — parents , friends , media — they start to count . <next_sent> But the young ones , they do n't question their own opinion . <next_sent> They are in this constant state of wonder , and I do firmly believe that we can keep listening like these seven - year - old children , even when growing up . <next_sent> And that is why I have played not only in the concert hall but also on the street , online , in the air : to feel that state of wonder , to truly listen , and to listen without prejudice . <next_sent> And I would like to invite you to do so now . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :poss (s1.i / i)
+               :polarity "-")
+   :snt2 (s2.f / fly-01
+               :ARG1 (s2.i / i)
+               :location (s2.c / country
+                               :name (s2.n / name
+                                           :op1 "Brazil"))
+               :path (s2.o / over
+                           :op1 (s2.c2 / crowd
+                                       :consist-of (s2.p / person
+                                                         :quant (s2.m / multiple
+                                                                      :op1 "1000")
+                                                         :ARG0-of (s2.p3 / play-11
+                                                                         :ARG1 (s2.m2 / music
+                                                                                      :ARG1-of (s2.p4 / produce-01
+                                                                                                      :ARG0 (s2.p2 / person
+                                                                                                                   :name (s2.n2 / name
+                                                                                                                                :op1 "George"
+                                                                                                                                :op2 "Frideric"
+                                                                                                                                :op3 "Handel"))))))))
+               :time (s2.r / recent))
+   :snt3 (s3.d / drive-01
+               :ARG0 (s3.i / i
+                           :same-as s2.i)
+               :ARG1 (s3.a2 / along
+                            :op1 (s3.s2 / street
+                                        :location (s3.c / city
+                                                        :name (s3.n / name
+                                                                    :op1 "Amsterdam"))))
+               :mod (s3.a3 / also)
+               :time-of (s3.p2 / play-11
+                               :ARG0 s3.i
+                               :ARG1 (s3.m / music
+                                           :source (s3.p / person
+                                                         :ARG0-of (s3.c2 / compose-02)
+                                                         :ARG1-of (s3.s / same-01)
+                                                         :mod (s3.t / this)
+                                                         :same-as s2.p2))
+                               :mod (s3.a / again)))
+   :snt4 (s4.l / look-01
+               :ARG0 (s4.w / we)
+               :mode "imperative")
+   :snt5 (s5.s / say-01
+               :ARG0 (s5.p / person
+                           :name (s5.n / name
+                                       :op1 "Daria"
+                                       :op2 "van"
+                                       :op3 "den"
+                                       :op4 "Bercken")
+                           :same-as s2.i)
+               :ARG1 (s5.l / live-01
+                           :ARG0 (s5.i / i
+                                       :same-as s2.i)
+                           :location (s5.t / there
+                                           :location (s5.f / floor
+                                                           :ord (s5.o / ordinal-entity
+                                                                      :value "3")))))
+   :snt6 (s6.l / live-01
+               :ARG0 (s6.i / i
+                           :same-as s2.i)
+               :location (s6.c / corner))
+   :snt7 (s7.a2 / and
+                :op1 (s7.l / live-01
+                           :ARG0 (s7.i / i
+                                       :same-as s2.i)
+                           :ARG1-of (s7.a / actual-02)
+                           :location (s7.t / there
+                                           :location (s7.a3 / around
+                                                            :op1 (s7.c / corner))))
+                :op2 (s7.w / welcome-01
+                           :ARG1 (s7.y / you)
+                           :degree (s7.r / really)))
+   :snt8 (s8.s / sound-01
+               :ARG1 (s8.t / that)
+               :ARG2 (s8.f / fun-01)
+               :polarity (s8.a / amr-unknown))
+   :snt9 (s9.y / yes
+               :mode "expressive")
+   :snt10 (s10.s / say-01
+                 :ARG0 (s10.p2 / person
+                               :name (s10.n2 / name
+                                             :op1 "Daria"
+                                             :op2 "van"
+                                             :op3 "van"
+                                             :op4 "den"
+                                             :op5 "Bercken")
+                               :same-as s2.i)
+                 :ARG1 (s10.c2 / concert
+                               :mod (s10.h / house
+                                           :mod (s10.p / person
+                                                       :name (s10.n / name
+                                                                    :op1 "Handel")
+                                                       :same-as s2.p2)))
+                 :ARG2 (s10.e / experience-01
+                              :ARG1 (s10.t / this
+                                           :mod (s10.a / all))
+                              :ARG1-of (s10.r / real-04)
+                              :ARG1-of (s10.c / cause-01
+                                              :ARG0 (s10.r2 / reason
+                                                            :quant (s10.m2 / multiple
+                                                                           :op1 "100")))
+                              :mod (s10.m / magic)))
+   :snt11 (s11.p / possible-01
+                 :ARG1 (s11.a2 / ask-01
+                               :ARG0 (s11.y / you)
+                               :ARG1 (s11.d / do-02
+                                            :ARG0 (s11.i / i
+                                                         :same-as s2.i)
+                                            :ARG1 (s11.t / thing
+                                                         :mod (s11.t2 / this))
+                                            :ARG1-of (s11.c / cause-01
+                                                            :ARG0 (s11.a / amr-unknown))))
+                 :time (s11.n / now))
+   :snt12 (s12.t2 / typical-02
+                  :ARG1 (s12.t / they
+                               :same-as s11.t)
+                  :ARG1-of (s12.r / real-04)
+                  :ARG2 (s12.l / life
+                               :mod (s12.d / day
+                                           :prep-to (s12.d2 / day))
+                               :poss (s12.m / musician))
+                  :polarity "-")
+   :snt13 (s13.c / cause-01
+                 :ARG0 (s13.a / and
+                              :op1 (s13.f / fall-07
+                                          :ARG1 (s13.i / i
+                                                       :same-as s2.i)
+                                          :ARG2 (s13.l / love-01
+                                                       :ARG0 s13.i
+                                                       :ARG1 (s13.m2 / music)))
+                              :op2 (s13.w / want-01
+                                          :ARG0 s13.i
+                                          :ARG1 (s13.s / share-01
+                                                       :ARG0 s13.i
+                                                       :ARG1 s13.m2
+                                                       :ARG2 (s13.p / person
+                                                                    :ARG1-of (s13.h / have-quant-91
+                                                                                    :ARG2 (s13.m / many)
+                                                                                    :ARG3 (s13.e / equal)
+                                                                                    :ARG4 (s13.p2 / possible-01
+                                                                                                  :ARG1 s13.s))))))
+                 :ARG1 (s13.d / do-02
+                              :ARG0 s13.i
+                              :ARG1 (s13.i2 / it
+                                            :same-as s10.t))
+                 :mod (s13.w2 / well))
+   :snt14 (s14.s / start-01
+                 :ARG1 (s14.i / it)
+                 :time (s14.b / before
+                              :quant (s14.c / couple
+                                            :op1 (s14.t / temporal-quantity
+                                                        :unit (s14.y / year)
+                                                        :quant "1"))
+                              :op1 (s14.n / now)))
+   :snt15 (s15.a / and
+                 :op1 (s15.d / download-01
+                             :ARG0 (s15.i / i
+                                          :same-as s2.i)
+                             :ARG1 (s15.m / music
+                                          :mod (s15.s / sheet)))
+                 :op2 (s15.s2 / start-01
+                              :ARG0 s15.i
+                              :ARG1 (s15.p / play-11
+                                           :ARG0 s15.i
+                                           :ARG1 s15.m)))
+   :snt16 (s16.a2 / and
+                  :op2 (s16.e / enter-01
+                              :ARG0 (s16.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s16.s / state
+                                           :mod (s16.t / this)
+                                           :mod (s16.a / amaze-01
+                                                       :ARG1 s16.i
+                                                       :ARG1-of (s16.j / judge-01
+                                                                       :polarity "-")
+                                                       :ARG1-of (s16.p / pure-02)))
+                              :time (s16.n / next)))
+   :snt17 (s17.a / and
+                 :op1 (s17.e / experience-01
+                             :ARG0 (s17.i / i
+                                          :same-as s2.i)
+                             :ARG1 (s17.a2 / awe-01
+                                           :ARG0 (s17.m / music)
+                                           :ARG1 s17.i
+                                           :degree (s17.t2 / total))
+                             :domain (s17.i2 / it
+                                             :same-as s16.s))
+                 :op2 (s17.f / feel-01
+                             :ARG0 s17.i
+                             :ARG1 s17.a2
+                             :duration (s17.t / time
+                                              :ARG1-of (s17.l / long-03))
+                             :polarity "-"))
+   :snt18 (s18.p / possible-01
+                 :ARG1 (s18.h / have-degree-91
+                              :ARG1 (s18.r / relate-01
+                                           :ARG0 (s18.y / you)
+                                           :ARG2 (s18.t / this)
+                                           :time (s18.h2 / hear-01
+                                                         :ARG0 s18.y
+                                                         :ARG1 s18.t))
+                              :ARG2 (s18.e / easy-05
+                                           :ARG1 s18.r)
+                              :ARG3 (s18.m / more)))
+   :snt19 (s19.s / start-01
+                 :ARG1 (s19.p / piece
+                              :ARG1-of (s19.p2 / play-11
+                                               :ARG0 (s19.i / i
+                                                            :same-as s2.i))
+                              :ord (s19.o / ordinal-entity
+                                          :value "1"))
+                 :manner (s19.r / resemble-01
+                                :ARG2 (s19.t / this)))
+   :snt20 (s20.s / sound-01
+                 :ARG1 (s20.t / this
+                              :same-as s19.p)
+                 :ARG1-of (s20.r / request-confirmation-91)
+                 :ARG2 (s20.m / melancholic
+                              :degree (s20.v / very))
+                 :mod (s20.w / well))
+   :snt21 (s21.a / and
+                 :op1 (s21.t2 / turn-01
+                              :ARG0 (s21.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s21.p / page))
+                 :op2 (s21.c / come-01
+                             :ARG1 (s21.t / this)
+                             :time (s21.n / next)))
+   :snt22 (s22.s / sound-01
+                 :ARG1 (s22.t / this
+                              :same-as s18.t)
+                 :ARG1-of (s22.r / request-confirmation-91)
+                 :ARG2 (s22.e / energize-01
+                              :degree (s22.v / very))
+                 :mod (s22.w / well))
+   :snt23 (s23.e3 / experience-01
+                  :ARG0 (s23.i / i
+                               :same-as s2.i)
+                  :ARG1 (s23.c / character
+                               :ARG1-of (s23.c2 / contrast-01
+                                                :degree (s23.v / very))
+                               :consist-of (s23.a2 / and
+                                                   :op1 (s23.m / melancholy
+                                                               :ARG1-of (s23.b / beautiful-02))
+                                                   :op2 (s23.e / energy
+                                                               :mod (s23.s / sheer)))
+                               :quant "2")
+                  :time (s23.a / and
+                               :op1 (s23.u / up-to
+                                           :op1 (s23.c3 / couple
+                                                        :op1 (s23.t / temporal-quantity
+                                                                    :unit (s23.m2 / minute)
+                                                                    :quant "1")))
+                               :op2 (s23.f / finish-01
+                                           :ARG1 (s23.p / piece
+                                                        :same-as s19.p)
+                                           :mod (s23.e2 / even)
+                                           :time (s23.y / yet)
+                                           :polarity "-")))
+   :snt24 (s24.a / and
+                 :op2 (s24.c / consider-01
+                             :ARG0 (s24.i / i
+                                          :same-as s2.i)
+                             :ARG1 (s24.e2 / express-01
+                                           :ARG0 (s24.h / human)
+                                           :ARG1 (s24.e / element
+                                                        :mod (s24.t / this)
+                                                        :quant "2"
+                                                        :same-as s23.c)
+                                           :mod (s24.v / vital))))
+   :snt25 (s25.a / and
+                 :op2 (s25.m / make-02
+                             :ARG0 (s25.p / pure-02
+                                          :ARG1 (s25.m2 / music))
+                             :ARG1 (s25.h / hear-01
+                                          :ARG0 (s25.y / you)
+                                          :ARG1 s25.m2
+                                          :ARG1-of (s25.e / effective-04
+                                                          :degree (s25.v / very)))))
+   :snt26 (s26.a2 / and
+                  :op1 (s26.g / give-01
+                              :ARG0 (s26.i / i
+                                           :same-as s2.i)
+                              :ARG2 (s26.b / benefit-01
+                                           :ARG0 (s26.c2 / child
+                                                         :age (s26.a / and
+                                                                     :op1 (s26.t / temporal-quantity
+                                                                                 :unit (s26.y / year)
+                                                                                 :quant "7")
+                                                                     :op2 (s26.t2 / temporal-quantity
+                                                                                  :unit (s26.y2 / year)
+                                                                                  :quant "8")))
+                                           :ARG1 (s26.c4 / concert
+                                                         :quant (s26.l2 / lot)
+                                                         :beneficiary (s26.c / child))
+                                           :example (s26.o2 / or
+                                                            :op1 (s26.p / person
+                                                                        :name (s26.n / name
+                                                                                     :op1 "Bach"))
+                                                            :op2 (s26.p2 / person
+                                                                         :name (s26.n2 / name
+                                                                                       :op1 "Beethoven"))
+                                                            :op3 (s26.p3 / person
+                                                                         :name (s26.n3 / name
+                                                                                       :op1 "Stockhausen")
+                                                                         :mod (s26.e / even)
+                                                                         :op4 (s26.o3 / or
+                                                                                      :op2 (s26.m / music
+                                                                                                  :quant (s26.s / some)
+                                                                                                  :mod (s26.j / jazzy)))))))
+                  :op2 (s26.a3 / and
+                               :op1 (s26.o / open-05
+                                           :ARG1 s26.c2
+                                           :ARG2 (s26.h / hear-01
+                                                        :ARG0 s26.c2
+                                                        :ARG1 (s26.w / whatever
+                                                                     :ARG1-of (s26.p4 / play-11
+                                                                                      :ARG0 s26.i))))
+                               :op2 (s26.w2 / will-02
+                                            :ARG0 s26.c2
+                                            :ARG1 (s26.l / listen-01
+                                                         :ARG0 s26.c2
+                                                         :ARG1 s26.c2)
+                                            :degree (s26.r / really))
+                               :op3 (s26.c3 / comfortable-02
+                                            :ARG0 s26.p4
+                                            :ARG1 s26.l)))
+   :snt27 (s27.a2 / and
+                  :op2 (s27.f / feel-01
+                              :ARG0 (s27.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s27.h2 / have-trouble-04
+                                            :ARG0 s27.i
+                                            :ARG1 (s27.r / reach-01
+                                                         :ARG0 s27.i
+                                                         :ARG1 (s27.t5 / they
+                                                                       :same-as s27.c)
+                                                         :ARG1-of (s27.r2 / resemble-01
+                                                                          :ARG2 (s27.t4 / that)))
+                                            :frequency (s27.s / sometimes)
+                                            :time (s27.a / already))
+                              :time (s27.c3 / come-01
+                                            :ARG1 (s27.c2 / class)
+                                            :accompanier (s27.c / child
+                                                                :ARG1-of (s27.h / have-degree-91
+                                                                                :ARG2 (s27.o / old)
+                                                                                :ARG3 (s27.m / more
+                                                                                             :quant (s27.f2 / few
+                                                                                                            :mod (s27.j / just)
+                                                                                                            :op1 (s27.t / temporal-quantity
+                                                                                                                        :unit (s27.y / year)
+                                                                                                                        :quant "1"))))
+                                                                :age (s27.b / between
+                                                                            :op1 (s27.t2 / temporal-quantity
+                                                                                         :unit (s27.y2 / year)
+                                                                                         :quant "11")
+                                                                            :op2 (s27.t3 / temporal-quantity
+                                                                                         :unit (s27.y3 / year)
+                                                                                         :quant "12"))))))
+   :snt28 (s28.a2 / and
+                  :op1 (s28.b / become-01
+                              :ARG1 (s28.c / complexity
+                                           :domain (s28.m2 / music))
+                              :ARG2 (s28.i / issue-02
+                                           :ARG0 s28.c))
+                  :op2 (s28.s / start-01
+                              :ARG1 (s28.c2 / count-04
+                                            :ARG1 (s28.t / thing
+                                                         :ARG1-of (s28.o / opine-01
+                                                                         :ARG0 (s28.o2 / other
+                                                                                       :example (s28.a3 / and
+                                                                                                        :op1 (s28.p2 / person
+                                                                                                                     :ARG0-of (s28.h / have-rel-role-91
+                                                                                                                                     :ARG2 (s28.p / parent)))
+                                                                                                        :op2 (s28.p3 / person
+                                                                                                                     :ARG0-of (s28.h2 / have-rel-role-91
+                                                                                                                                      :ARG2 (s28.f / friend)))
+                                                                                                        :op3 (s28.m / media))))))
+                              :ARG1-of (s28.a / actual-02)))
+   :snt29 (s29.c / contrast-01
+                 :ARG2 (s29.q / question-03
+                              :ARG0 (s29.o / one
+                                           :mod (s29.y / young))
+                              :ARG1 (s29.t / thing
+                                           :ARG1-of (s29.o2 / opine-01
+                                                            :ARG0 s29.o))
+                              :polarity "-"))
+   :snt30 (s30.a / and
+                 :op1 (s30.s / state
+                             :mod (s30.c2 / constant)
+                             :mod (s30.t3 / this)
+                             :mod (s30.w2 / wonder-02
+                                          :ARG0 (s30.t2 / they
+                                                        :location s30.s
+                                                        :same-as s29.o)))
+                 :op2 (s30.b / believe-01
+                             :ARG0 (s30.i / i
+                                          :same-as s2.i)
+                             :ARG1 (s30.p / possible-01
+                                          :ARG1 (s30.k / keep-02
+                                                       :ARG0 (s30.w / we)
+                                                       :ARG1 (s30.l / listen-01
+                                                                    :ARG0 s30.w
+                                                                    :ARG1-of (s30.r / resemble-01
+                                                                                    :ARG2 (s30.l2 / listen-01
+                                                                                                  :ARG0 (s30.c / child
+                                                                                                               :age (s30.t / temporal-quantity
+                                                                                                                           :unit (s30.y / year)
+                                                                                                                           :quant "7"
+                                                                                                                           :same-as s29.o)
+                                                                                                               :mod (s30.t4 / this)
+                                                                                                               :time (s30.g / grow-up-04
+                                                                                                                            :mod (s30.e / even))
+                                                                                                               :ARG1-of s30.g))))))
+                             :ARG1-of (s30.f / firm-03)))
+   :snt31 (s31.a3 / and
+                  :op2 (s31.c / cause-01
+                              :ARG0 (s31.t / that)
+                              :ARG1 (s31.p / play-11
+                                           :purpose (s31.a4 / and
+                                                            :op1 (s31.f / feel-01
+                                                                        :ARG0 (s31.i / i
+                                                                                     :same-as s2.i)
+                                                                        :ARG1 (s31.s / state
+                                                                                     :mod (s31.t2 / that)
+                                                                                     :mod (s31.w / wonder-02)
+                                                                                     :same-as s30.c2))
+                                                            :op2 (s31.l / listen-01
+                                                                        :ARG0 s31.i
+                                                                        :ARG1-of (s31.t3 / true-01))
+                                                            :op3 (s31.l2 / listen-01
+                                                                         :ARG0 s31.i
+                                                                         :manner (s31.p2 / prejudice-01
+                                                                                         :ARG1 s31.i
+                                                                                         :polarity "-")))
+                                           :ARG0 s31.i
+                                           :location (s31.h / hall
+                                                            :mod (s31.c2 / concert))
+                                           :location (s31.o2 / or
+                                                             :mod (s31.a2 / also)
+                                                             :op1 (s31.s2 / street)
+                                                             :op2 (s31.o / online)
+                                                             :op3 (s31.a / air)))))
+   :snt32 (s32.a / and
+                 :op2 (s32.l / like-02
+                             :ARG0 (s32.i / i
+                                          :same-as s2.i)
+                             :ARG1 (s32.i2 / invite-01
+                                           :ARG0 s32.i
+                                           :ARG1 (s32.y / you
+                                                        :same-as s7.y)
+                                           :ARG2 (s32.d / do-02
+                                                        :ARG0 s32.y
+                                                        :ARG1 (s32.s / so)
+                                                        :time (s32.n / now)))))
+   :snt33 (s33.t / thank-01
+                 :ARG1 (s33.y / you
+                              :same-as s2.i)))
+

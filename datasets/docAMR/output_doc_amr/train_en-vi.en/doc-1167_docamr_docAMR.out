@@ -1,0 +1,1967 @@
+# ::id doc-1167
+# ::doc_file doc-1167
+# ::tok http : / / www . ted . com / talks / ajit_narayanan_a_word_game_to_communicate_in_any_language< / url> <next_sent> I work with children with autism . <next_sent> Specifically , I make technologies to help them communicate . <next_sent> Now , many of the problems that children with autism face , they have a common source , and that source is that they find it difficult to understand abstraction , symbolism . <next_sent> And because of this , they have a lot of difficulty with language . <next_sent> Let me tell you a little bit about why this is . <next_sent> You see that this is a picture of a bowl of soup . <next_sent> These are two other pictures of soup , but you can see that these are more abstract And when you get to language , you see that it becomes a word whose look , the way it looks and the way it sounds , has absolutely nothing to do with what it started with , or what it represents , which is the bowl of soup . <next_sent> So it 's essentially a completely abstract , a completely arbitrary representation of something which is in the real world , and this is something that children with autism have an incredible amount of difficulty with . <next_sent> Now that 's why most of the people that work with children with autism -- speech therapists , educators -- what they do is , they try to help children with autism communicate not with words , but with pictures . <next_sent> So if a child with autism wanted to say , " I want soup , " that child would pick three different pictures , " I , " " want , " and " soup , " and they would put these together , and then the therapist or the parent would understand that this is what the kid wants to say . <next_sent> And this has been incredibly effective ; for the last 30 , 40 years people have been doing this . <next_sent> These pictures are sequenced together to form sentences , and these sentences are spoken out . <next_sent> So Avaz is essentially converting pictures , it 's a translator , it converts pictures into speech . <next_sent> Now , this was very effective . <next_sent> There are thousands of children using this , you know , all over the world , and I started thinking about what it does and what it does n't do . <next_sent> And I realized something interesting : Avaz helps children with autism learn words . <next_sent> What it does n't help them do is to learn word patterns . <next_sent> Let me explain this in a little more detail . <next_sent> Take this sentence : " I want soup tonight . " <next_sent> Now it 's not just the words here that convey the meaning . <next_sent> It 's also the way in which these words are arranged , the way these words are modified and arranged . <next_sent> And that 's why a sentence like " I want soup tonight " is different from a sentence like " Soup want I tonight , " which is completely meaningless . <next_sent> So there is another hidden abstraction here which children with autism find a lot of difficulty coping with , and that 's the fact that you can modify words and you can arrange them to have different meanings , to convey different ideas . <next_sent> Now , this is what we call grammar . <next_sent> And grammar is incredibly powerful , because grammar is this one component of language which takes this finite vocabulary that all of us have and allows us to convey an infinite amount of information , an infinite amount of ideas . <next_sent> in order to convey anything you want to . <next_sent> And so after I developed Avaz , I worried for a very long time about how I could give grammar to children with autism . <next_sent> The solution came to me from a very interesting perspective . <next_sent> I happened to chance upon a child with autism conversing with her mom , Completely out of the blue , very spontaneously , the child got up and said , " Eat . " <next_sent> Now what was interesting was the way in which the mom was trying to tease out the meaning of what the child wanted to say by talking to her in questions . <next_sent> So she asked , " Eat what ? <next_sent> Do you want to eat ice cream ? <next_sent> You want to eat ? <next_sent> Somebody else wants to eat ? <next_sent> You want to eat cream now ? <next_sent> You want to eat ice cream in the evening ? " <next_sent> And then it struck me that what the mother had done was something incredible . <next_sent> She had been able to get that child to communicate an idea to her without grammar . <next_sent> And it struck me that maybe this is what I was looking for . <next_sent> Instead of arranging words in an order , in sequence , as a sentence , you arrange them in this map , where they 're all linked together not by placing them one after the other but in questions , in question - answer pairs . <next_sent> And so if you do this , then what you 're conveying is not a sentence in English , but what you 're conveying is really a meaning , Now , meaning is really the underbelly , in some sense , of language . <next_sent> It 's what comes after thought but before language . <next_sent> And the idea was that this particular representation might convey meaning in its raw form . <next_sent> So I was very excited by this , you know , hopping around all over the place , trying to figure out if I can convert all possible sentences that I hear into this . <next_sent> And I found that this is not enough . <next_sent> Why is this not enough ? <next_sent> something like negation , you want to say , " I do n't want soup , " then you ca n't do that by asking a question . <next_sent> You do that by changing the word " want . " <next_sent> Again , if you wanted to say , " I wanted soup yesterday , " you do that by converting the word " want " into " wanted . " <next_sent> It 's a past tense . <next_sent> So this is a flourish which I added to make the system complete . <next_sent> This is a map of words joined together as questions and answers , and with these filters applied on top of them in order to modify them to represent certain nuances . <next_sent> Let me show you this with a different example . <next_sent> Let 's take this sentence : " I told the carpenter I could not pay him . " <next_sent> It 's a fairly complicated sentence . <next_sent> The way that this particular system works , you can start with any part of this sentence . <next_sent> I 'm going to start with the word " tell . " <next_sent> So this is the word " tell . " <next_sent> Now this happened in the past , so I 'm going to make that " told . " <next_sent> I 'm going to ask questions . <next_sent> So , who told ? <next_sent> I told . <next_sent> I told whom ? <next_sent> I told the carpenter . <next_sent> Then we make it " ca n't pay , " <next_sent> and we can make it " could n't pay " <next_sent> So who could n't pay ? <next_sent> I could n't pay . <next_sent> Could n't pay whom ? <next_sent> I could n't pay the carpenter . <next_sent> And then you join these two together by asking this question : What did I tell the carpenter ? <next_sent> I told the carpenter I could not pay him . <next_sent> And there are two or three interesting things about this . <next_sent> First of all , I could have started anywhere . <next_sent> I did n't have to start with the word " tell . " <next_sent> So long as the questions are standardized , So I call this FreeSpeech , and I was playing with this for many , many months . <next_sent> I was trying out so many different combinations of this . <next_sent> And then I noticed something very interesting about FreeSpeech . <next_sent> I was trying to convert language , convert sentences in English into sentences in FreeSpeech , and vice versa , and back and forth . <next_sent> And I realized that this particular configuration , this particular way of representing language , it allowed me to actually create very concise rules that go between FreeSpeech on one side and English on the other . <next_sent> So I could actually write this set of rules that translates from this particular representation into English . <next_sent> I developed this thing called the FreeSpeech Engine which takes any FreeSpeech sentence as the input and gives out perfectly grammatical English text . <next_sent> And by putting these two pieces together , the representation and the engine , I was able to create an app , a technology for children with autism , that not only gives them words but also gives them grammar . <next_sent> So I tried this out with kids with autism , and I found that there was an incredible amount of identification . <next_sent> They were able to create sentences in FreeSpeech which were much more complicated but much more effective than equivalent sentences in English , and I started thinking about why that might be the case . <next_sent> And I had an idea , and I want to talk to you about this idea next . <next_sent> In about 1997 , about 15 years back , there were a group of scientists that were trying to understand how the brain processes language , and they found something very interesting . <next_sent> They found that when you learn a language as a child , as a two - year - old , you learn it with a certain part of your brain , and when you learn a language as an adult -- for example , if I wanted to learn Japanese right now — a completely different part of my brain is used . <next_sent> Now I do n't know why that 's the case , but my guess is that that 's because when you learn a language as an adult , you almost invariably learn it through your native language , or through your first language . <next_sent> And so this gave me this idea . <next_sent> Is it possible to use FreeSpeech not for children with autism but to teach language to people without disabilities ? <next_sent> And so I tried a number of experiments . <next_sent> The first thing I did was I built a jigsaw puzzle in which these questions and answers are coded in the form of shapes , in the form of colors , and you have people putting these together and trying to understand how this works . <next_sent> And I built an app out of it , a game out of it , in which children can play with words and with a reinforcement , a sound reinforcement of visual structures , they 're able to learn language . <next_sent> All right , let 's talk about something else . <next_sent> Let 's talk about speech . <next_sent> So speech is the primary mode of communication delivered between all of us . <next_sent> Now what 's interesting about speech is that speech is one - dimensional . <next_sent> It 's also one - dimensional because our mouths are built that way . <next_sent> Our mouths are built to create one - dimensional sound . <next_sent> But if you think about the brain , the thoughts that we have in our heads are not one - dimensional . <next_sent> I mean , we have these rich , complicated , multi - dimensional ideas . <next_sent> Now , it seems to me that language is really the brain 's invention to convert this rich , multi - dimensional thought on one hand into speech on the other hand . <next_sent> Now what 's interesting is that we do a lot of work in information nowadays , and almost all of that is done in the language domain . <next_sent> Take Google , for example . <next_sent> Google trawls all these countless billions of websites , all of which are in English , and when you want to use Google , you go into Google search , and you type in English , and it matches the English with the English . <next_sent> What if we could do this in FreeSpeech instead ? <next_sent> I have a suspicion that if we did this , we 'd find that algorithms like searching , like retrieval , all of these things , are much simpler and also more effective , because they do n't process the data structure of speech . <next_sent> Instead they 're processing the data structure of thought . <next_sent> The data structure of thought . <next_sent> That 's a provocative idea . <next_sent> But let 's look at this in a little more detail . <next_sent> So this is the FreeSpeech ecosystem . <next_sent> We have the Free Speech representation on one side , and we have the FreeSpeech Engine , which generates English . <next_sent> FreeSpeech , I told you , is completely language - independent . <next_sent> It does n't have any specific information in it which is about English . <next_sent> So everything that this system knows about English is actually encoded into the engine . <next_sent> That 's a pretty interesting concept in itself . <next_sent> You 've encoded an entire human language into a software program . <next_sent> it 's actually not very complicated . <next_sent> And what 's more interesting is the fact that the vast majority of the code in that engine is not really English - specific . <next_sent> And that gives this interesting idea . <next_sent> It might be very easy for us to actually create these engines in many , many different languages , in Hindi , in French , in German , in Swahili . <next_sent> And that gives another interesting idea . <next_sent> For example , supposing I was a writer , say , for a newspaper or for a magazine . <next_sent> I could create content in one language , FreeSpeech , and the person who 's consuming that content , the person who 's reading that particular information could choose any engine , and they could read it in their own mother tongue , in their native language . <next_sent> I mean , this is an incredibly attractive idea , especially for India . <next_sent> We have so many different languages . <next_sent> There 's a song about India , and there 's a description of the country as , it says , . <next_sent> That means " ever - smiling speaker of beautiful languages . " <next_sent> Language is beautiful . <next_sent> I think it 's the most beautiful of human creations . <next_sent> I think it 's the loveliest thing that our brains have invented . <next_sent> This is a photograph of my collaborators , my earliest collaborators when I started working on language and autism and various other things . <next_sent> The girl 's name is Pavna , and that 's her mother , Kalpana . <next_sent> And Pavna 's an entrepreneur , but her story is much more remarkable than mine , because Pavna is about 23 . <next_sent> She has quadriplegic cerebral palsy , so ever since she was born , she could neither move nor talk . <next_sent> And everything that she 's accomplished so far , finishing school , going to college , starting a company , collaborating with me to develop Avaz , all of these things she 's done with nothing more than moving her eyes . <next_sent> Daniel Webster said this : He said , " If all of my possessions were taken from me with one exception , I would choose to keep the power of communication , for with it , I would regain all the rest . " <next_sent> And that 's why , of all of these incredible applications of FreeSpeech , the one that 's closest to my heart still remains the ability for this to empower children with disabilities to be able to communicate , the power of communication , to get back all the rest . <next_sent> Thank you . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :quant-of (s1.t / talk-01
+                               :ARG0 (s1.p / person
+                                           :name (s1.n / name
+                                                       :op1 "narcotic"))))
+   :snt2 (s2.w / work-01
+               :ARG0 (s2.i / i)
+               :ARG3 (s2.c / child
+                           :ARG0-of (s2.h / have-03
+                                          :ARG1 (s2.a / autism))))
+   :snt3 (s3.m / make-01
+               :ARG0 (s3.i / i
+                           :same-as s2.i)
+               :ARG1 (s3.t / technology
+                           :ARG0-of (s3.h / help-01
+                                          :ARG1 (s3.c / communicate-01
+                                                      :ARG0 (s3.t2 / they
+                                                                   :same-as s2.c))
+                                          :ARG2 s3.t2))
+               :ARG1-of (s3.s / specific-02))
+   :snt4 (s4.a / and
+               :op1 (s4.h2 / have-03
+                           :ARG0 (s4.p / problem
+                                       :ARG1-of (s4.i / include-91
+                                                      :ARG2 (s4.p2 / problem
+                                                                   :ARG1-of (s4.f / face-01
+                                                                                  :ARG0 (s4.c / child
+                                                                                              :ARG0-of (s4.h / have-03
+                                                                                                             :ARG1 (s4.a4 / autism)))))
+                                                      :ARG3 (s4.m / many)))
+                           :ARG1 (s4.s2 / source
+                                        :ARG1-of (s4.s / share-01)))
+               :op2 (s4.f2 / find-01
+                           :ARG0 s4.c
+                           :ARG1 (s4.d / difficult
+                                       :domain (s4.u / understand-01
+                                                     :ARG0 s4.c
+                                                     :ARG1 (s4.a2 / and
+                                                                  :op1 (s4.a3 / aspire-01)
+                                                                  :op2 (s4.s3 / symbolize-01)))))
+               :time (s4.n / now))
+   :snt5 (s5.a / and
+               :op2 (s5.d / difficult
+                          :quant (s5.l2 / lot)
+                          :ARG1-of (s5.c / cause-01
+                                         :ARG0 (s5.t2 / this
+                                                      :same-as s4.f2))
+                          :domain (s5.t / they
+                                        :same-as s4.c)
+                          :topic (s5.l / language)))
+   :snt6 (s6.l / let-01
+               :ARG0 (s6.y / you)
+               :ARG1 (s6.t / tell-01
+                           :ARG0 (s6.i / i
+                                       :same-as s2.i)
+                           :ARG1 (s6.b / bit
+                                       :mod (s6.l2 / little))
+                           :ARG2 s6.y
+                           :topic (s6.t2 / thing
+                                         :ARG0-of (s6.c / cause-01
+                                                        :ARG1 (s6.t3 / this)))))
+   :snt7 (s7.s / see-01
+               :ARG0 (s7.y / you)
+               :ARG1 (s7.p / picture
+                           :domain (s7.t / this)
+                           :mod (s7.s2 / soup
+                                       :quant (s7.b / bowl))))
+   :snt8 (s8.a3 / and
+                :op1 (s8.c / contrast-01
+                           :ARG1 (s8.p / picture
+                                       :domain (s8.t3 / this)
+                                       :mod (s8.o2 / other)
+                                       :topic (s8.s4 / soup)
+                                       :quant "2")
+                           :ARG2 (s8.p2 / possible-01
+                                        :ARG1 (s8.s / see-01
+                                                    :ARG0 (s8.y / you)
+                                                    :ARG1 (s8.h / have-degree-91
+                                                                :ARG1 s8.p
+                                                                :ARG2 (s8.a2 / abstract)
+                                                                :ARG3 (s8.m / more)))))
+                :op2 (s8.s2 / see-01
+                            :ARG0 s8.y
+                            :ARG1 (s8.b / become-01
+                                        :ARG1 (s8.i / it)
+                                        :ARG2 (s8.w3 / word
+                                                     :ARG0-of (s8.l2 / look-02)))
+                            :ARG2 (s8.h2 / have-to-do-with-04
+                                         :ARG0 (s8.a4 / and
+                                                      :op1 s8.l2
+                                                      :op2 (s8.w / way
+                                                                 :manner-of (s8.l3 / look-02
+                                                                                   :ARG0 s8.w3))
+                                                      :op3 (s8.w2 / way
+                                                                  :manner-of (s8.s3 / sound-01
+                                                                                    :ARG1 s8.w3)))
+                                         :ARG1 (s8.o / or
+                                                     :domain (s8.b2 / bowl
+                                                                    :consist-of (s8.s5 / soup)
+                                                                    :same-as s7.s2)
+                                                     :op1 (s8.t / thing
+                                                                :ARG2-of (s8.s6 / start-01
+                                                                                :ARG1 s8.i))
+                                                     :op2 (s8.t2 / thing
+                                                                 :ARG1-of (s8.r / represent-01
+                                                                                :ARG0 s8.i)))
+                                         :ARG2 (s8.n / nothing
+                                                     :mod (s8.a / absolute)))
+                            :time (s8.g / get-05
+                                        :ARG1 s8.y
+                                        :ARG2 (s8.l / language))))
+   :snt9 (s9.a3 / and
+                :op1 (s9.a / abstract
+                           :ARG1-of (s9.c2 / complete-02)
+                           :domain (s9.e / essential))
+                :op2 (s9.r2 / represent-01
+                            :ARG1 (s9.s / something
+                                        :location (s9.w / world
+                                                        :ARG1-of (s9.r / real-04)))
+                            :ARG1-of (s9.a4 / arbitrary-02
+                                            :ARG1-of (s9.c3 / complete-02))
+                            :domain (s9.i2 / it
+                                           :same-as s8.i))
+                :op3 (s9.s2 / something
+                            :ARG1-of (s9.d / difficult
+                                           :degree (s9.a2 / amount
+                                                          :mod (s9.i / incredible))
+                                           :domain (s9.c / child
+                                                         :ARG0-of (s9.h / have-03
+                                                                        :ARG1 (s9.a5 / autism))))
+                            :domain s9.i2))
+   :snt10 (s10.c / cause-01
+                 :ARG0 (s10.t / that)
+                 :ARG1 (s10.t3 / try-01
+                               :ARG0 (s10.p / person
+                                            :quant (s10.m / most)
+                                            :ARG1-of (s10.i / include-91
+                                                            :ARG2 (s10.p2 / person
+                                                                          :ARG0-of (s10.w2 / work-01
+                                                                                           :ARG1 (s10.c2 / child
+                                                                                                         :ARG0-of (s10.h / have-03
+                                                                                                                         :ARG1 (s10.a / autism))))))
+                                            :example (s10.o / or
+                                                            :op1 (s10.t2 / therapist
+                                                                         :mod (s10.s / speak-01))
+                                                            :op2 (s10.p3 / person
+                                                                         :ARG0-of (s10.e / educate-01))))
+                               :ARG1 (s10.h2 / help-01
+                                             :ARG0 s10.p
+                                             :ARG1 (s10.c3 / communicate-01
+                                                           :ARG0 s10.c2
+                                                           :ARG1-of (s10.i2 / instead-of-91
+                                                                            :ARG2 (s10.c4 / communicate-01
+                                                                                          :ARG0 s10.c2
+                                                                                          :ARG2 (s10.p4 / picture)))
+                                                           :ARG2 (s10.w / word))
+                                             :ARG2 s10.c2))
+                 :time (s10.n / now))
+   :snt11 (s11.i2 / infer-01
+                  :ARG1 (s11.a2 / and
+                                :condition (s11.w / want-01
+                                                  :ARG0 (s11.c / child
+                                                               :ARG0-of (s11.h / have-03
+                                                                               :ARG1 (s11.a3 / autism)))
+                                                  :ARG1 (s11.s / say-01
+                                                               :ARG0 s11.c
+                                                               :ARG1 (s11.w2 / want-01
+                                                                             :ARG0 s11.c
+                                                                             :ARG1 (s11.s3 / soup))))
+                                :op1 (s11.p3 / pick-01
+                                             :ARG0 s11.c
+                                             :ARG1 (s11.p4 / picture
+                                                           :ARG1-of (s11.d / differ-02)
+                                                           :example (s11.a / and
+                                                                           :op1 (s11.i / i
+                                                                                       :same-as s11.c)
+                                                                           :op2 (s11.w3 / want-01
+                                                                                        :ARG0 s11.i)
+                                                                           :op3 s11.s3)
+                                                           :quant "3"))
+                                :op2 (s11.p5 / put-01
+                                             :ARG0 (s11.t3 / they)
+                                             :ARG1 s11.p4
+                                             :ARG2 (s11.t5 / together))
+                                :op3 (s11.u / understand-01
+                                            :ARG0 (s11.o / or
+                                                         :op1 (s11.t2 / therapist)
+                                                         :op2 (s11.p2 / person
+                                                                      :ARG0-of (s11.h2 / have-rel-role-91
+                                                                                       :ARG1 s11.c
+                                                                                       :ARG2 (s11.p / parent))))
+                                            :ARG1 (s11.t4 / thing
+                                                          :ARG1-of (s11.s2 / say-01
+                                                                           :ARG0 s11.c
+                                                                           :ARG1-of (s11.w4 / want-01
+                                                                                            :ARG0 s11.c))
+                                                          :domain s11.s3)
+                                            :time (s11.t / then))))
+   :snt12 (s12.a / and
+                 :op2 (s12.e / effective-04
+                             :ARG0 (s12.t3 / this)
+                             :manner (s12.i / incredible))
+                 :op3 (s12.d / do-02
+                             :ARG0 (s12.p / person)
+                             :ARG1 (s12.t4 / this
+                                           :same-as s12.t3)
+                             :duration (s12.b / between
+                                              :op1 (s12.t / temporal-quantity
+                                                          :unit (s12.y / year)
+                                                          :quant "30")
+                                              :op2 (s12.t2 / temporal-quantity
+                                                           :unit (s12.y2 / year)
+                                                           :quant "40"))))
+   :snt13 (s13.a / and
+                 :op1 (s13.s2 / sequence-01
+                              :purpose (s13.f / form-01
+                                              :ARG1 (s13.s / sentence)
+                                              :ARG2 (s13.p / picture
+                                                           :mod (s13.t / this)
+                                                           :ARG1-of s13.s2))
+                              :manner (s13.t2 / together))
+                 :op2 (s13.s3 / speak-out-03
+                              :ARG1 s13.s))
+   :snt14 (s14.a / and
+                 :op1 (s14.c / convert-01
+                             :ARG0 (s14.p2 / product
+                                           :name (s14.n / name
+                                                        :op1 "Avaz"))
+                             :ARG1 (s14.p / picture)
+                             :mod (s14.e / essential))
+                 :op2 (s14.t / translate-01
+                             :ARG0 s14.p2)
+                 :op3 (s14.c2 / convert-01
+                              :ARG0 s14.p2
+                              :ARG1 s14.p
+                              :ARG2 (s14.s / speech)))
+   :snt15 (s15.e / effective-04
+                 :ARG0 (s15.t / this)
+                 :degree (s15.v / very))
+   :snt16 (s16.a2 / and
+                  :op1 (s16.c / child
+                              :quant (s16.m / multiple
+                                            :op1 "1000")
+                              :ARG0-of (s16.u / use-01
+                                              :ARG1 (s16.t4 / this
+                                                            :same-as s14.p2)
+                                              :location (s16.a / all-over
+                                                               :op1 (s16.w / world))))
+                  :op2 (s16.s / start-01
+                              :ARG0 (s16.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s16.t3 / think-01
+                                            :ARG0 s16.i
+                                            :ARG1 (s16.a3 / and
+                                                          :op1 (s16.t / thing
+                                                                      :ARG1-of (s16.d / do-02
+                                                                                      :ARG0 s16.t4))
+                                                          :op2 (s16.t2 / thing
+                                                                       :ARG1-of (s16.d2 / do-02
+                                                                                        :ARG0 s16.t4
+                                                                                        :polarity "-"))))))
+   :snt17 (s17.a / and
+                 :op2 (s17.r / realize-01
+                             :ARG0 (s17.i / i
+                                          :same-as s2.i)
+                             :ARG1 (s17.i2 / interest-01
+                                           :ARG2 (s17.h / help-01
+                                                        :ARG0 (s17.p / product
+                                                                     :name (s17.n / name
+                                                                                  :op1 "Avaz")
+                                                                     :same-as s14.p2)
+                                                        :ARG1 (s17.l / learn-01
+                                                                     :ARG0 (s17.c / child
+                                                                                  :poss-of (s17.a2 / autism))
+                                                                     :ARG1 (s17.w / word))
+                                                        :ARG2 s17.c))))
+   :snt18 (s18.h / help-01
+                 :ARG0 (s18.i / it
+                              :same-as s14.p2)
+                 :ARG1 (s18.d / do-02
+                              :ARG0 (s18.t / they
+                                           :same-as s17.c)
+                              :ARG1 (s18.l / learn-01
+                                           :ARG0 s18.t
+                                           :ARG1 (s18.p / pattern-01
+                                                        :ARG1 (s18.w / word))))
+                 :ARG2 s18.t
+                 :polarity "-")
+   :snt19 (s19.l / let-01
+                 :ARG0 (s19.y / you)
+                 :ARG1 (s19.e / explain-01
+                              :ARG0 (s19.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s19.t / this)
+                              :ARG1-of (s19.d / detail-01
+                                              :ARG1-of (s19.h / have-quant-91
+                                                              :ARG3 (s19.m / more
+                                                                           :quant (s19.l2 / little)))))
+                 :mode "imperative")
+   :snt20 (s20.t / take-01
+                 :ARG0 (s20.y / you)
+                 :ARG1 (s20.s / sentence
+                              :mod (s20.t2 / this)
+                              :mod (s20.w / want-01
+                                          :ARG0 (s20.i / i)
+                                          :ARG1 (s20.s2 / soup)
+                                          :time (s20.d / date-entity
+                                                       :dayperiod (s20.n / night)
+                                                       :mod (s20.t3 / today))))
+                 :mode "imperative")
+   :snt21 (s21.c / convey-01
+                 :ARG0 (s21.w / word
+                              :location (s21.h / here)
+                              :mod (s21.j / just
+                                          :polarity "-"))
+                 :ARG1 (s21.m / mean-01)
+                 :time (s21.n / now))
+   :snt22 (s22.a2 / and
+                  :mod (s22.a / also)
+                  :op1 (s22.w / way
+                              :manner-of (s22.a3 / arrange-01
+                                                 :ARG1 (s22.w3 / word
+                                                               :mod (s22.t / this))))
+                  :op2 (s22.w2 / way)
+                  :op3 (s22.a4 / arrange-01
+                               :ARG1 s22.w3)
+                  :rel (s22.m / modify-01
+                              :ARG1 s22.w3))
+   :snt23 (s23.a / and
+                 :op2 (s23.c / cause-01
+                             :ARG0 (s23.t / that)
+                             :ARG1 (s23.d2 / differ-02
+                                           :ARG1 (s23.s / sentence
+                                                        :example (s23.w / want-01
+                                                                        :ARG0 (s23.i / i)
+                                                                        :ARG1 (s23.s3 / soup)
+                                                                        :time (s23.d / date-entity
+                                                                                     :dayperiod (s23.n / night)
+                                                                                     :mod (s23.t2 / today))))
+                                           :ARG2 (s23.s2 / sentence
+                                                         :ARG1-of (s23.m / mean-01
+                                                                         :ARG1-of (s23.c2 / complete-02)
+                                                                         :polarity "-")
+                                                         :example (s23.w2 / want-01
+                                                                          :ARG1 s23.s3)))))
+   :snt24 (s24.i2 / infer-01
+                  :ARG1 (s24.a / and
+                               :op1 (s24.t / thing
+                                           :ARG1-of (s24.h3 / hide-01
+                                                            :location (s24.h2 / here))
+                                           :ARG1-of (s24.b / bullshit-01)
+                                           :ARG1-of (s24.c3 / cope-01
+                                                            :ARG0 (s24.c / child
+                                                                         :ARG0-of (s24.h / have-03
+                                                                                         :ARG1 (s24.a6 / autism)))
+                                                            :ARG1-of (s24.d3 / difficult
+                                                                             :quant (s24.l / lot))
+                                                            :ARG1-of (s24.f / find-01
+                                                                            :ARG0 s24.c))
+                                           :mod (s24.a4 / another))
+                               :op2 (s24.p / possible-01
+                                           :ARG1 (s24.a2 / and
+                                                         :op1 (s24.m2 / modify-01
+                                                                      :ARG0 (s24.y / you)
+                                                                      :ARG1 (s24.w / word))
+                                                         :op2 (s24.a5 / arrange-01
+                                                                      :purpose (s24.a3 / and
+                                                                                       :op1 (s24.m / mean-01
+                                                                                                   :ARG1-of (s24.d / differ-02))
+                                                                                       :op2 (s24.c2 / convey-01
+                                                                                                    :ARG1 (s24.i / idea
+                                                                                                                 :ARG1-of (s24.d2 / differ-02))))
+                                                                      :ARG0 s24.y
+                                                                      :ARG1 s24.w)))))
+   :snt25 (s25.c / call-01
+                 :ARG0 (s25.w / we)
+                 :ARG1 (s25.t / this)
+                 :ARG2 (s25.g / grammar)
+                 :time (s25.n / now))
+   :snt26 (s26.a5 / and
+                  :op2 (s26.p / powerful-02
+                              :ARG1 (s26.g / grammar)
+                              :ARG1-of (s26.c / cause-01
+                                              :ARG0 (s26.c2 / component
+                                                            :ARG0-of (s26.t / take-01
+                                                                            :ARG1 (s26.v / vocabulary
+                                                                                         :ARG1-of (s26.h / have-03
+                                                                                                         :ARG0 (s26.w / we
+                                                                                                                      :mod (s26.a / all)))
+                                                                                         :mod (s26.f / finite)
+                                                                                         :mod (s26.t3 / this)))
+                                                            :ARG0-of (s26.a2 / allow-01
+                                                                             :ARG1 (s26.c3 / convey-01
+                                                                                           :ARG0 s26.w
+                                                                                           :ARG1 (s26.a6 / and
+                                                                                                         :op1 (s26.i5 / information
+                                                                                                                      :quant (s26.a3 / amount
+                                                                                                                                     :mod (s26.i3 / infinite)))
+                                                                                                         :op2 (s26.a4 / amount
+                                                                                                                      :mod (s26.i4 / infinite)
+                                                                                                                      :quant-of (s26.i / idea)))))
+                                                            :domain s26.g
+                                                            :mod (s26.t2 / this)
+                                                            :part-of (s26.l / language)
+                                                            :quant "1"))
+                              :degree (s26.i2 / incredible)))
+   :snt27 (s27.h / have-purpose-91
+                 :ARG2 (s27.c / convey-01
+                              :ARG0 (s27.y / you)
+                              :ARG1 (s27.a / anything
+                                           :ARG1-of (s27.w / want-01
+                                                           :ARG0 s27.y))))
+   :snt28 (s28.a2 / and
+                  :op2 (s28.w / worry-02
+                              :ARG0 (s28.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s28.t / thing
+                                           :manner-of (s28.p / possible-01
+                                                             :ARG1 (s28.g / give-01
+                                                                          :ARG0 s28.i
+                                                                          :ARG1 (s28.g2 / grammar)
+                                                                          :ARG2 (s28.c / child
+                                                                                       :ARG0-of (s28.h / have-03
+                                                                                                       :ARG1 (s28.a3 / autism))))))
+                              :duration (s28.t2 / time
+                                                :ARG1-of (s28.l / long-03
+                                                                :degree (s28.v / very)))
+                              :mod (s28.s / so)
+                              :time (s28.a / after
+                                           :op1 (s28.d / develop-02
+                                                       :ARG0 s28.i
+                                                       :ARG1 (s28.p2 / product
+                                                                     :name (s28.n / name
+                                                                                  :op1 "Avaz")
+                                                                     :same-as s14.p2)))))
+   :snt29 (s29.c / come-01
+                 :ARG1 (s29.s / solution)
+                 :ARG4 (s29.i / i
+                              :same-as s2.i)
+                 :source (s29.p / perspective
+                                :ARG0-of (s29.i2 / interest-01
+                                                 :degree (s29.v / very))))
+   :snt30 (s30.a / and
+                 :op1 (s30.c / chance-02
+                             :ARG0 (s30.i / i
+                                          :same-as s2.i)
+                             :ARG1 (s30.c2 / child
+                                           :ARG0-of (s30.h / have-03
+                                                           :ARG1 (s30.a3 / autism))
+                                           :ARG0-of (s30.c4 / converse-01
+                                                            :ARG2 (s30.p / person
+                                                                         :ARG0-of (s30.h2 / have-rel-role-91
+                                                                                          :ARG1 s30.c2
+                                                                                          :ARG2 (s30.m / mom))))))
+                 :op2 (s30.a2 / and
+                              :ARG1-of (s30.c3 / complete-02)
+                              :manner (s30.s2 / sudden
+                                              :degree (s30.v / very))
+                              :op1 (s30.g / get-05
+                                          :ARG1 s30.c2
+                                          :ARG2 (s30.u / up))
+                              :op2 (s30.s / say-01
+                                          :ARG0 s30.c2
+                                          :ARG1 (s30.e / eat-01
+                                                       :ARG0 (s30.y / you)
+                                                       :mode "imperative"))))
+   :snt31 (s31.i / interest-01
+                 :ARG2 (s31.w2 / way
+                               :manner-of (s31.t5 / try-01
+                                                  :ARG0 (s31.p / person
+                                                               :ARG0-of (s31.h / have-rel-role-91
+                                                                               :ARG2 (s31.m2 / mom))
+                                                               :same-as s30.p)
+                                                  :ARG1 (s31.t2 / tease-out-04
+                                                                :ARG1 (s31.t3 / thing
+                                                                              :ARG2-of (s31.m / mean-01
+                                                                                              :ARG1 (s31.t4 / thing
+                                                                                                            :ARG1-of (s31.s / say-01
+                                                                                                                            :ARG0 (s31.p2 / person
+                                                                                                                                          :ARG0-of (s31.h2 / have-rel-role-91
+                                                                                                                                                           :ARG1 s31.p
+                                                                                                                                                           :ARG2 (s31.c / child))
+                                                                                                                                          :same-as s30.h)
+                                                                                                                            :ARG1-of (s31.w / want-01
+                                                                                                                                            :ARG0 s31.p2)))))
+                                                                :manner (s31.t / talk-01
+                                                                               :ARG0 s31.p
+                                                                               :ARG2 s31.p2
+                                                                               :manner (s31.q / question-01
+                                                                                              :ARG0 s31.p
+                                                                                              :ARG2 s31.p2))))))
+   :snt32 (s32.c / cause-01
+                 :ARG1 (s32.a2 / ask-01
+                               :ARG0 (s32.s / she
+                                            :same-as s30.p)
+                               :ARG1 (s32.e / eat-01
+                                            :ARG1 (s32.a / amr-unknown))))
+   :snt33 (s33.w / want-01
+                 :ARG0 (s33.y / you
+                              :same-as s30.h)
+                 :ARG1 (s33.e / eat-01
+                              :ARG0 s33.y
+                              :ARG1 (s33.i / ice-cream))
+                 :polarity (s33.a / amr-unknown))
+   :snt34 (s34.w / want-01
+                 :ARG0 (s34.y / you
+                              :same-as s30.h)
+                 :ARG1 (s34.e / eat-01
+                              :ARG0 s34.y)
+                 :polarity (s34.a / amr-unknown))
+   :snt35 (s35.w / want-01
+                 :ARG0 (s35.s / somebody
+                              :mod (s35.e2 / else))
+                 :ARG1 (s35.e / eat-01
+                              :ARG0 s35.s)
+                 :polarity (s35.a / amr-unknown))
+   :snt36 (s36.w / want-01
+                 :ARG0 (s36.y / you
+                              :same-as s30.h)
+                 :ARG1 (s36.e / eat-01
+                              :ARG0 s36.y
+                              :ARG1 (s36.c / cream))
+                 :polarity (s36.a / amr-unknown)
+                 :time (s36.n / now))
+   :snt37 (s37.w / want-01
+                 :ARG0 (s37.y / you)
+                 :ARG1 (s37.e / eat-01
+                              :ARG0 s37.y
+                              :ARG1 (s37.i / ice-cream)
+                              :time (s37.d / date-entity
+                                           :dayperiod (s37.e2 / evening)))
+                 :polarity (s37.a / amr-unknown))
+   :snt38 (s38.a / and
+                 :op2 (s38.s2 / strike-04
+                              :ARG1 (s38.d / do-02
+                                           :ARG0 (s38.p / person
+                                                        :ARG0-of (s38.h / have-rel-role-91
+                                                                        :ARG2 (s38.m / mother))
+                                                        :same-as s30.p)
+                                           :ARG1 (s38.s / something
+                                                        :mod (s38.i2 / incredible)))
+                              :ARG3 (s38.i / i
+                                           :same-as s2.i)
+                              :time (s38.t / then)))
+   :snt39 (s39.p / possible-01
+                 :ARG1 (s39.g / get-04
+                              :ARG0 (s39.s / she
+                                           :same-as s30.p)
+                              :ARG1 (s39.c2 / communicate-01
+                                            :ARG0 (s39.c / child
+                                                         :mod (s39.t / that)
+                                                         :same-as s30.h)
+                                            :ARG1 (s39.i / idea)
+                                            :ARG2 s39.s
+                                            :manner (s39.g2 / grammar
+                                                            :polarity "-"))))
+   :snt40 (s40.a / and
+                 :op2 (s40.s / strike-04
+                             :ARG1 (s40.p / possible-01
+                                          :ARG1 (s40.l / look-01
+                                                       :ARG0 (s40.i / i
+                                                                    :same-as s2.i)
+                                                       :ARG1 (s40.t / this)))
+                             :ARG3 s40.i))
+   :snt41 (s41.a5 / arrange-01
+                  :ARG0 (s41.y / you)
+                  :ARG1 (s41.w / word
+                               :mod (s41.a2 / all))
+                  :ARG1-of (s41.i / instead-of-91
+                                  :ARG2 (s41.a4 / arrange-01
+                                                :ARG0 s41.y
+                                                :ARG1 s41.w
+                                                :manner (s41.o2 / order-03
+                                                                :ARG1 s41.w
+                                                                :manner (s41.s2 / sequence-01))
+                                                :manner (s41.s / sentence)))
+                  :location (s41.m / map
+                                   :location-of (s41.l / link-01
+                                                       :ARG1 s41.w
+                                                       :manner (s41.p2 / place-01
+                                                                       :ARG0 s41.y
+                                                                       :ARG1 s41.w
+                                                                       :ARG1-of (s41.c / contrast-01
+                                                                                       :ARG2 (s41.p3 / place-01
+                                                                                                     :ARG0 s41.w
+                                                                                                     :ARG2 (s41.q / question-01
+                                                                                                                  :manner (s41.p / pair-01
+                                                                                                                                 :mod (s41.a3 / answer-01)))))
+                                                                       :ARG2 (s41.a / after
+                                                                                    :op1 (s41.o / one)
+                                                                                    :op1 (s41.o3 / other))
+                                                                       :polarity "-")
+                                                       :mod (s41.t2 / together))
+                                   :mod (s41.t / this)))
+   :snt42 (s42.a / and
+                 :op2 (s42.h / have-condition-91
+                             :ARG1 (s42.c / contrast-01
+                                          :ARG1 (s42.c2 / convey-01
+                                                        :ARG0 (s42.y / you)
+                                                        :ARG1 (s42.s2 / sentence
+                                                                      :medium (s42.l / language
+                                                                                     :name (s42.n / name
+                                                                                                  :op1 "English"))
+                                                                      :polarity "-"))
+                                          :ARG2 (s42.c3 / convey-01
+                                                        :ARG0 s42.y
+                                                        :ARG1 (s42.m / mean-01
+                                                                     :ARG1-of (s42.r / real-04))))
+                             :ARG2 (s42.d / do-02
+                                          :ARG0 s42.y
+                                          :ARG1 (s42.t / this
+                                                       :same-as s41.a5)))
+                 :op3 (s42.u / underbelly
+                             :ARG1-of (s42.r2 / real-04)
+                             :domain (s42.m2 / mean-01)
+                             :manner (s42.s / sense
+                                            :mod (s42.s3 / some))
+                             :poss (s42.l2 / language)
+                             :time (s42.n2 / now)))
+   :snt43 (s43.t / thing
+                 :ARG1-of (s43.c / come-01
+                                 :time (s43.a / after
+                                              :op1 (s43.t2 / think-01)))
+                 :ARG1-of (s43.c2 / come-01
+                                  :time (s43.b / before
+                                               :op1 (s43.l / language)))
+                 :domain (s43.i / it))
+   :snt44 (s44.a / and
+                 :op2 (s44.i / idea
+                             :domain (s44.p2 / possible-01
+                                             :ARG1 (s44.c / convey-01
+                                                          :ARG0 (s44.t / thing
+                                                                       :ARG0-of (s44.r2 / represent-01)
+                                                                       :mod (s44.p / particular)
+                                                                       :mod (s44.t2 / this))
+                                                          :ARG1 (s44.m / mean-01
+                                                                       :manner (s44.f / form
+                                                                                      :mod (s44.r / raw)
+                                                                                      :poss s44.t))))))
+   :snt45 (s45.e / excite-01
+                 :ARG0 (s45.t / this)
+                 :ARG1 (s45.i / i
+                              :ARG0-of (s45.h2 / hop-01
+                                               :purpose (s45.t3 / try-01
+                                                                :ARG0 s45.i
+                                                                :ARG1 (s45.f / figure-out-05
+                                                                             :ARG0 s45.i
+                                                                             :ARG1 (s45.t2 / truth-value
+                                                                                           :polarity-of (s45.p2 / possible-01
+                                                                                                                :ARG1 (s45.c / convert-01
+                                                                                                                             :ARG0 s45.i
+                                                                                                                             :ARG1 (s45.s / sentence
+                                                                                                                                          :ARG1-of (s45.p3 / possible-01)
+                                                                                                                                          :ARG1-of (s45.h / hear-01
+                                                                                                                                                          :ARG0 s45.i)
+                                                                                                                                          :mod (s45.a / all))
+                                                                                                                             :ARG3 s45.t)))))
+                                               :ARG1 (s45.a3 / around)
+                                               :location (s45.a2 / all-over
+                                                                 :op1 (s45.p / place)))
+                              :same-as s2.i)
+                 :degree (s45.v / very))
+   :snt46 (s46.a / and
+                 :op2 (s46.f / find-01
+                             :ARG0 (s46.i / i
+                                          :same-as s2.i)
+                             :ARG1 (s46.h / have-quant-91
+                                          :ARG1 (s46.t / this
+                                                       :same-as s44.t)
+                                          :ARG3 (s46.e / enough)
+                                          :polarity "-")))
+   :snt47 (s47.c / cause-01
+                 :ARG0 (s47.a / amr-unknown)
+                 :ARG1 (s47.h / have-quant-91
+                              :ARG1 (s47.t / this
+                                           :same-as s44.t)
+                              :ARG3 (s47.e / enough)
+                              :polarity "-"))
+   :snt48 (s48.h / have-condition-91
+                 :ARG1 (s48.p / possible-01
+                              :ARG1 (s48.d / do-02
+                                           :ARG0 (s48.y / you)
+                                           :ARG1 (s48.t / that
+                                                        :same-as s48.s)
+                                           :ARG3 (s48.a / ask-01
+                                                        :ARG0 s48.y
+                                                        :ARG1 (s48.q / question-01
+                                                                     :ARG0 s48.y)))
+                              :polarity "-")
+                 :ARG2 (s48.w / want-01
+                              :ARG0 s48.y
+                              :ARG1 (s48.s / say-01
+                                           :ARG1 (s48.w2 / want-01
+                                                         :ARG0 s48.y
+                                                         :ARG1 (s48.s3 / soup)
+                                                         :polarity "-")))
+                 :rel (s48.s2 / something
+                              :ARG1-of (s48.r / resemble-01
+                                              :ARG2 (s48.n / negative-03))))
+   :snt49 (s49.d / do-02
+                 :ARG0 (s49.y / you)
+                 :ARG1 (s49.t / that
+                              :same-as s48.s)
+                 :ARG3 (s49.c / change-01
+                              :ARG0 s49.y
+                              :ARG1 (s49.s / string-entity
+                                           :value "want")))
+   :snt50 (s50.d / do-02
+                 :ARG1 (s50.w2 / want-01
+                               :ARG0 (s50.y2 / you)
+                               :ARG1 (s50.s2 / soup)
+                               :time (s50.y / yesterday))
+                 :condition (s50.w / want-01
+                                   :ARG0 s50.y2
+                                   :ARG1 (s50.s / say-01
+                                                :ARG0 s50.y2
+                                                :ARG1 s50.w2))
+                 :manner (s50.c / convert-01
+                                :ARG0 s50.y2
+                                :ARG1 (s50.w4 / word
+                                              :mod (s50.s3 / string-entity
+                                                           :ARG2 (s50.w3 / wanted)
+                                                           :value "want")))
+                 :mod (s50.a / again))
+   :snt51 (s51.t / tense
+                 :domain (s51.i / it)
+                 :mod (s51.p / past))
+   :snt52 (s52.i2 / infer-01
+                  :ARG1 (s52.f / flourish-01
+                               :ARG1-of (s52.a / add-02
+                                               :purpose (s52.m / make-02
+                                                               :ARG0 (s52.i / i
+                                                                            :same-as s2.i)
+                                                               :ARG1 (s52.c / complete-01
+                                                                            :ARG1 (s52.s / system)))
+                                               :ARG0 s52.i)
+                               :domain (s52.t / this)))
+   :snt53 (s53.a2 / and
+                  :op1 (s53.j / join-01
+                              :ARG1 (s53.m / map
+                                           :consist-of (s53.w / word)
+                                           :mod (s53.t / this
+                                                       :same-as s44.t))
+                              :manner (s53.t3 / together)
+                              :prep-as (s53.a / and
+                                              :op1 (s53.q / question)
+                                              :op2 (s53.a3 / answer-01)))
+                  :op2 (s53.a4 / apply-02
+                               :purpose (s53.m2 / modify-01
+                                                :ARG1 (s53.f / filter-02
+                                                             :mod (s53.t2 / this))
+                                                :ARG2 (s53.r / represent-01
+                                                             :ARG0 s53.m
+                                                             :ARG1 (s53.d / detail
+                                                                          :mod (s53.c / certain))))
+                               :ARG1 s53.f
+                               :location (s53.t4 / top
+                                                 :op1 s53.m)))
+   :snt54 (s54.l / let-01
+                 :ARG0 (s54.y / you)
+                 :ARG1 (s54.s / show-01
+                              :ARG0 (s54.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s54.t / this)
+                              :ARG2 s54.y
+                              :instrument (s54.e / example
+                                                 :ARG1-of (s54.d / differ-02)))
+                 :mode "imperative")
+   :snt55 (s55.l / let-01
+                 :ARG1 (s55.t / take-01
+                              :ARG0 (s55.w / we)
+                              :ARG1 (s55.s / sentence
+                                           :mod (s55.t3 / this)
+                                           :mod (s55.t2 / tell-01
+                                                        :ARG0 (s55.i / i)
+                                                        :ARG1 (s55.p3 / possible-01
+                                                                      :ARG1 (s55.p / pay-01
+                                                                                   :ARG0 s55.i
+                                                                                   :ARG2 (s55.p2 / person
+                                                                                                 :ARG0-of (s55.c / construct-01)
+                                                                                                 :ARG2-of s55.t2))
+                                                                      :polarity "-")))))
+   :snt56 (s56.s / sentence
+                 :ARG1-of (s56.c / complicate-01
+                                 :degree (s56.f / fairly))
+                 :domain (s56.i / it))
+   :snt57 (s57.p3 / possible-01
+                  :ARG1 (s57.s2 / start-01
+                                :ARG0 (s57.y / you)
+                                :ARG2 (s57.p / part
+                                             :mod (s57.a / any)
+                                             :part-of (s57.s / sentence
+                                                             :mod (s57.t2 / this)
+                                                             :same-as s56.i)))
+                  :manner (s57.w / way
+                                 :manner-of (s57.w2 / work-09
+                                                    :ARG1 (s57.s3 / system
+                                                                  :mod (s57.p2 / particular)
+                                                                  :mod (s57.t / this)))))
+   :snt58 (s58.s / start-01
+                 :ARG0 (s58.i / i
+                              :same-as s2.i)
+                 :ARG1 (s58.s2 / string-entity
+                               :value "tell"))
+   :snt59 (s59.c / cause-01
+                 :ARG1 (s59.w / word
+                              :domain (s59.s / string-entity
+                                             :value "tell")
+                              :mod (s59.t / this
+                                          :same-as s58.s2)))
+   :snt60 (s60.c / cause-01
+                 :ARG0 (s60.b / be-temporally-at-91
+                              :ARG1 (s60.t3 / this)
+                              :ARG2 (s60.p / past)
+                              :time (s60.n / now))
+                 :ARG1 (s60.m / make-02
+                              :ARG0 (s60.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s60.t / tell-01
+                                           :ARG1 (s60.t2 / that
+                                                         :same-as s58.s2))))
+   :snt61 (s61.q / question-01
+                 :ARG0 (s61.i / i
+                              :same-as s2.i))
+   :snt62 (s62.t / tell-01
+                 :ARG0 (s62.a / amr-unknown))
+   :snt63 (s63.t / tell-01
+                 :ARG0 (s63.i / i
+                              :same-as s55.i))
+   :snt64 (s64.t / tell-01
+                 :ARG0 (s64.i / i
+                              :same-as s55.i)
+                 :ARG1 (s64.a / amr-unknown))
+   :snt65 (s65.t / tell-01
+                 :ARG0 (s65.i / i
+                              :same-as s55.i)
+                 :ARG2 (s65.p / person
+                              :ARG0-of (s65.h / have-org-role-91
+                                              :ARG2 (s65.c / carpenter))
+                              :same-as s55.p2))
+   :snt66 (s66.m / make-02
+                 :ARG0 (s66.w / we)
+                 :ARG1 (s66.p2 / possible-01
+                               :ARG1 (s66.p / pay-01
+                                            :ARG0 (s66.i / it))
+                               :polarity "-")
+                 :time (s66.t / then))
+   :snt67 (s67.a / and
+                 :op2 (s67.p2 / possible-01
+                              :ARG1 (s67.m / make-02
+                                           :ARG0 (s67.w / we)
+                                           :ARG1 (s67.p3 / possible-01
+                                                         :ARG1 (s67.p / pay-01
+                                                                      :ARG0 (s67.i / it))
+                                                         :polarity "-"))))
+   :snt68 (s68.i / infer-01
+                 :ARG1 (s68.p2 / possible-01
+                               :ARG1 (s68.p / pay-01
+                                            :ARG0 (s68.a / amr-unknown))
+                               :polarity "-"))
+   :snt69 (s69.p2 / possible-01
+                  :ARG1 (s69.p / pay-01
+                               :ARG0 (s69.i / i
+                                            :same-as s55.i))
+                  :polarity "-")
+   :snt70 (s70.p2 / possible-01
+                  :ARG1 (s70.p / pay-01
+                               :ARG3 (s70.a / amr-unknown))
+                  :polarity (s70.a2 / amr-unknown)
+                  :polarity "-")
+   :snt71 (s71.p3 / possible-01
+                  :ARG1 (s71.p / pay-01
+                               :ARG0 (s71.i / i
+                                            :same-as s55.i)
+                               :ARG2 (s71.p2 / person
+                                             :ARG0-of (s71.c / construct-01)
+                                             :same-as s55.p2))
+                  :polarity "-")
+   :snt72 (s72.a2 / and
+                  :op2 (s72.j / join-01
+                              :ARG0 (s72.y / you)
+                              :ARG1 (s72.t6 / two
+                                            :mod (s72.t3 / this))
+                              :manner (s72.a3 / ask-01
+                                              :ARG0 s72.y
+                                              :ARG1 (s72.q / question-01
+                                                           :ARG0 s72.y
+                                                           :ARG1 (s72.t / tell-01
+                                                                        :ARG0 s72.y
+                                                                        :ARG1 (s72.a / amr-unknown)
+                                                                        :ARG2 (s72.p / person
+                                                                                     :mod (s72.c / car-make)
+                                                                                     :same-as s55.p2))
+                                                           :mod (s72.t4 / this)))
+                              :mod (s72.t5 / together)
+                              :time (s72.t2 / then)))
+   :snt73 (s73.t / tell-01
+                 :ARG0 (s73.i / i
+                              :same-as s55.i)
+                 :ARG1 (s73.p3 / possible-01
+                               :ARG1 (s73.p / pay-01
+                                            :ARG0 s73.i
+                                            :ARG2 (s73.p2 / person
+                                                          :ARG0-of (s73.c / construct-01)
+                                                          :ARG2-of s73.t
+                                                          :same-as s55.p2))
+                               :polarity "-"))
+   :snt74 (s74.a / and
+                 :op2 (s74.t / thing
+                             :quant (s74.o / or
+                                           :op1 "2"
+                                           :op2 "3")
+                             :ARG2-of (s74.i / interest-01)
+                             :topic (s74.t2 / this)))
+   :snt75 (s75.p / possible-01
+                 :ARG1 (s75.s / start-01
+                              :ARG0 (s75.i / i
+                                           :same-as s55.i)
+                              :ARG2 (s75.a / anywhere))
+                 :mod (s75.f / first-of-all))
+   :snt76 (s76.o / obligate-01
+                 :ARG1 (s76.i / i
+                              :same-as s55.i)
+                 :ARG2 (s76.s / start-01
+                              :ARG0 s76.i
+                              :ARG1 (s76.w / word
+                                           :op1 (s76.s2 / string-entity
+                                                        :value "tell")))
+                 :polarity "-")
+   :snt77 (s77.c2 / cause-01
+                  :ARG1 (s77.a / and
+                               :op1 (s77.c / call-01
+                                           :ARG0 (s77.i / i
+                                                        :same-as s2.i)
+                                           :ARG1 (s77.t3 / this
+                                                         :ARG3-of (s77.s / speak-01
+                                                                         :ARG1-of (s77.f / free-04))
+                                                         :same-as s57.s3))
+                               :op2 (s77.p / play-01
+                                           :ARG0 s77.i
+                                           :ARG2 s77.t3
+                                           :duration (s77.m / many
+                                                            :op1 (s77.t / temporal-quantity
+                                                                        :unit (s77.m2 / month)
+                                                                        :quant "1"))))
+                  :condition (s77.a2 / as-long-as
+                                     :op1 (s77.s2 / standardize-01
+                                                  :ARG1 (s77.t2 / thing
+                                                                :ARG1-of (s77.q / question-01)))))
+   :snt78 (s78.t2 / try-out-05
+                  :ARG0 (s78.i / i
+                               :same-as s2.i)
+                  :ARG1 (s78.c / combine-01
+                               :ARG1 (s78.t / this
+                                            :same-as s57.s3)
+                               :ARG1-of (s78.d / differ-02)
+                               :ARG1-of (s78.h / have-quant-91
+                                               :ARG2 (s78.m / many)
+                                               :ARG3 (s78.s / so))))
+   :snt79 (s79.a / and
+                 :op2 (s79.n2 / notice-01
+                              :ARG0 (s79.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s79.s / something
+                                           :ARG2-of (s79.i2 / interest-01
+                                                            :degree (s79.v / very)
+                                                            :topic (s79.p / publication
+                                                                          :name (s79.n / name
+                                                                                       :op1 "FreeSpeech")
+                                                                          :same-as s57.s3)))
+                              :time (s79.t / then)))
+   :snt80 (s80.t / try-01
+                 :ARG0 (s80.i / i
+                              :same-as s2.i)
+                 :ARG1 (s80.a / and
+                              :op1 (s80.c / convert-01
+                                          :ARG0 s80.i
+                                          :ARG1 (s80.l / language))
+                              :op2 (s80.c2 / convert-01
+                                           :ARG0 s80.i
+                                           :ARG1 (s80.s / sentence
+                                                        :mod (s80.l2 / language
+                                                                     :name (s80.n / name
+                                                                                  :op1 "English")
+                                                                     :same-as s42.l)))
+                              :op3 (s80.c3 / convert-01
+                                           :ARG0 s80.i
+                                           :ARG2 (s80.s2 / sentence
+                                                         :medium (s80.l3 / language
+                                                                         :name (s80.n2 / name
+                                                                                       :op1 "FreeSpeech")
+                                                                         :same-as s57.s3)))
+                              :op4 (s80.b / back)
+                              :op5 (s80.f / forth)))
+   :snt81 (s81.a3 / and
+                  :op2 (s81.r / realize-01
+                              :ARG0 (s81.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s81.a2 / allow-01
+                                            :ARG0 (s81.w / way
+                                                         :manner-of (s81.r2 / represent-01
+                                                                            :ARG1 (s81.l / language))
+                                                         :mod (s81.p / particular))
+                                            :ARG1 (s81.c3 / create-01
+                                                          :ARG0 s81.i
+                                                          :ARG1 (s81.r3 / rule
+                                                                        :ARG1-of (s81.g / go-01
+                                                                                        :ARG4 (s81.b / between
+                                                                                                     :op1 (s81.s3 / speak-01
+                                                                                                                  :ARG1-of (s81.f / free-04)
+                                                                                                                  :same-as s57.s3)
+                                                                                                     :op2 (s81.l2 / language
+                                                                                                                  :name (s81.n / name
+                                                                                                                               :op1 "English"
+                                                                                                                               :same-as s42.l)
+                                                                                                                  :location (s81.s2 / side
+                                                                                                                                    :mod (s81.o2 / other))))
+                                                                                        :location (s81.s / side
+                                                                                                         :mod (s81.o / one)))
+                                                                        :mod (s81.c / concise
+                                                                                    :degree (s81.v / very)))
+                                                          :ARG1-of (s81.a / actual-02))))
+                  :rel (s81.t / thing
+                              :ARG2-of (s81.c2 / condition-01)
+                              :mod s81.p
+                              :mod (s81.t2 / this)
+                              :same-as s57.s3))
+   :snt82 (s82.p2 / possible-01
+                  :ARG1 (s82.w / write-01
+                               :ARG0 (s82.i / i
+                                            :same-as s2.i)
+                               :ARG1 (s82.s / set
+                                            :ARG1-of (s82.t2 / translate-01
+                                                             :ARG2 (s82.l / language
+                                                                          :name (s82.n / name
+                                                                                       :op1 "English")
+                                                                          :same-as s42.l)
+                                                             :ARG3 (s82.r / represent-01
+                                                                          :mod (s82.p / particular)
+                                                                          :mod (s82.t / this
+                                                                                      :same-as s44.t)))
+                                            :consist-of (s82.r2 / rule)
+                                            :mod s82.t)
+                               :ARG1-of (s82.a / actual-02)))
+   :snt83 (s83.d / develop-02
+                 :ARG0 (s83.i / i
+                              :same-as s2.i)
+                 :ARG1 (s83.t3 / thing
+                               :name (s83.n / name
+                                            :op1 "FreeSpeech"
+                                            :op2 "Engine")
+                               :ARG0-of (s83.t / take-01
+                                               :ARG1 (s83.s / sentence
+                                                            :ARG1-of (s83.s2 / speak-01)
+                                                            :mod (s83.a / any))
+                                               :prep-as (s83.i2 / input))
+                               :ARG0-of (s83.g / give-out-06
+                                               :ARG1 (s83.t2 / text
+                                                             :mod (s83.l / language
+                                                                         :name (s83.n2 / name
+                                                                                       :op1 "English")
+                                                                         :same-as s42.l)
+                                                             :mod (s83.g2 / grammatical
+                                                                          :ARG1-of (s83.p / perfect-02))))
+                               :mod (s83.t4 / this)))
+   :snt84 (s84.a2 / and
+                  :op2 (s84.p2 / possible-01
+                               :ARG1 (s84.c2 / create-01
+                                             :ARG0 (s84.i / i
+                                                          :same-as s2.i)
+                                             :ARG1 (s84.a4 / app
+                                                           :mod (s84.t / technology
+                                                                       :ARG0-of (s84.g / give-01
+                                                                                       :ARG1 (s84.w / word))
+                                                                       :ARG0-of (s84.g2 / give-01
+                                                                                        :ARG1 (s84.g3 / grammar)
+                                                                                        :ARG2 (s84.c / child
+                                                                                                     :ARG0-of (s84.h / have-03
+                                                                                                                     :ARG1 (s84.a5 / autism)))
+                                                                                        :mod (s84.a / also))
+                                                                       :beneficiary s84.c)))
+                               :manner (s84.p3 / put-01
+                                               :ARG0 s84.i
+                                               :ARG1 (s84.p / piece
+                                                            :ARG1-of (s84.m / mean-01
+                                                                            :ARG2 (s84.a3 / and
+                                                                                          :op1 (s84.r / represent-01
+                                                                                                      :same-as s44.t)
+                                                                                          :op2 (s84.e / engine
+                                                                                                      :same-as s83.t3)))
+                                                            :mod (s84.t2 / this)
+                                                            :quant "2")
+                                               :ARG2 (s84.t3 / together))))
+   :snt85 (s85.a2 / and
+                  :op1 (s85.t2 / try-out-05
+                               :ARG0 (s85.i / i
+                                            :same-as s2.i)
+                               :ARG1 (s85.t / this)
+                               :accompanier (s85.k / kid
+                                                   :ARG0-of (s85.h / have-03
+                                                                   :ARG1 (s85.a3 / autism))))
+                  :op2 (s85.f / find-01
+                              :ARG0 s85.i
+                              :ARG1 (s85.i2 / identify-01
+                                            :quant (s85.a / amount
+                                                          :mod (s85.i3 / incredible)))))
+   :snt86 (s86.a / and
+                 :op1 (s86.p / possible-01
+                             :ARG1 (s86.c4 / create-01
+                                           :ARG0 (s86.t / they
+                                                        :same-as s85.k)
+                                           :ARG1 (s86.s / sentence
+                                                        :ARG1-of (s86.h / have-degree-91
+                                                                        :ARG1-of (s86.c3 / contrast-01
+                                                                                         :ARG2 (s86.e / effective-04
+                                                                                                      :ARG0 s86.s
+                                                                                                      :ARG2-of (s86.h2 / have-degree-91
+                                                                                                                       :ARG1 s86.s
+                                                                                                                       :ARG3 (s86.m2 / more
+                                                                                                                                     :quant (s86.m4 / much))
+                                                                                                                       :ARG4 (s86.s2 / sentence
+                                                                                                                                     :ARG1-of (s86.e2 / equal-01)
+                                                                                                                                     :mod (s86.l2 / language
+                                                                                                                                                  :name (s86.n2 / name
+                                                                                                                                                                :op1 "English")
+                                                                                                                                                  :same-as s42.l)))))
+                                                                        :ARG2 (s86.c2 / complicate-01
+                                                                                      :ARG1 s86.s)
+                                                                        :ARG3 (s86.m / more
+                                                                                     :quant s86.m4)))
+                                           :medium (s86.l / language
+                                                          :name (s86.n / name
+                                                                       :op1 "FreeSpeech")
+                                                          :same-as s57.s3)))
+                 :op2 (s86.s3 / start-01
+                              :ARG0 (s86.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s86.t3 / think-01
+                                            :ARG0 s86.i
+                                            :ARG1 (s86.t2 / thing
+                                                          :ARG0-of (s86.c / cause-01
+                                                                          :ARG1 (s86.p2 / possible-01
+                                                                                        :ARG1 s86.p)))))
+                 :rel (s86.m3 / much))
+   :snt87 (s87.a / and
+                 :op2 (s87.h / have-03
+                             :ARG0 (s87.i / i
+                                          :same-as s2.i)
+                             :ARG1 (s87.i2 / idea))
+                 :op3 (s87.w / want-01
+                             :ARG0 s87.i
+                             :ARG1 (s87.t / talk-01
+                                          :ARG0 s87.i
+                                          :ARG1 s87.i2
+                                          :ARG2 (s87.y / you)
+                                          :time (s87.n / next))))
+   :snt88 (s88.a3 / and
+                  :op1 (s88.t3 / try-01
+                               :ARG0 (s88.g / group
+                                            :mod (s88.s / scientist))
+                               :ARG1 (s88.u / understand-01
+                                            :ARG0 s88.g
+                                            :ARG1 (s88.t2 / thing
+                                                          :manner-of (s88.p / process-01
+                                                                            :ARG0 (s88.b2 / brain)
+                                                                            :ARG1 (s88.l / language))))
+                               :time (s88.b / before
+                                            :quant (s88.t / temporal-quantity
+                                                          :unit (s88.y / year)
+                                                          :quant "15")
+                                            :op1 (s88.n / now))
+                               :time (s88.a / about
+                                            :op1 (s88.d / date-entity
+                                                        :year "1997")))
+                  :op2 (s88.f / find-01
+                              :ARG0 s88.g
+                              :ARG1 (s88.s2 / something
+                                            :ARG2-of (s88.i / interest-01
+                                                            :ARG1 s88.g
+                                                            :degree (s88.v / very))))
+                  :rel (s88.a2 / about
+                               :op1 s88.t
+                               :op1 s88.n))
+   :snt89 (s89.f / find-01
+                 :ARG0 (s89.t2 / they
+                               :same-as s88.u)
+                 :ARG1 (s89.a2 / and
+                               :op1 (s89.l4 / learn-01
+                                            :ARG0 (s89.y2 / you
+                                                          :age (s89.t / temporal-quantity
+                                                                      :unit (s89.y / year)
+                                                                      :quant "2")
+                                                          :part (s89.b / brain))
+                                            :ARG1 (s89.l / language)
+                                            :instrument (s89.p / part
+                                                               :mod (s89.c / certain)
+                                                               :part-of s89.b)
+                                            :time (s89.l3 / learn-01
+                                                          :ARG0 s89.y2
+                                                          :ARG1 s89.l
+                                                          :time (s89.c2 / child)))
+                               :op2 (s89.u / use-01
+                                           :ARG1 (s89.p2 / part
+                                                         :ARG1-of (s89.d / differ-02
+                                                                         :ARG1-of (s89.c3 / complete-02))
+                                                         :part-of (s89.b2 / brain
+                                                                          :part-of (s89.i / i
+                                                                                          :same-as s2.i)))
+                                           :condition (s89.w / want-01
+                                                             :ARG0 s89.i
+                                                             :ARG1 (s89.l6 / learn-01
+                                                                           :ARG0 s89.i
+                                                                           :ARG1 (s89.l2 / language
+                                                                                         :name (s89.n / name
+                                                                                                      :op1 "Japanese"))
+                                                                           :time (s89.n2 / now
+                                                                                         :mod (s89.r / right))))))
+                 :rel (s89.l5 / learn-01
+                              :ARG0 s89.y2
+                              :ARG1 s89.l
+                              :time (s89.a / adult
+                                           :domain s89.y2)))
+   :snt90 (s90.c4 / contrast-01
+                  :ARG1 (s90.k / know-01
+                               :ARG0 (s90.i / i
+                                            :same-as s2.i)
+                               :ARG1 (s90.c2 / cause-01
+                                             :ARG1 (s90.c / case-04
+                                                          :ARG1 (s90.t / that)))
+                               :time (s90.n2 / now)
+                               :polarity "-")
+                  :ARG2 (s90.g / guess-01
+                               :ARG0 s90.i
+                               :ARG1 (s90.c3 / cause-01
+                                             :ARG0 (s90.l5 / learn-01
+                                                           :ARG0 (s90.y / you)
+                                                           :ARG1 (s90.l / language)
+                                                           :instrument (s90.o / or
+                                                                              :op1 (s90.l2 / language
+                                                                                           :mod (s90.n / native)
+                                                                                           :poss s90.y)
+                                                                              :op2 (s90.l3 / language
+                                                                                           :ord (s90.o2 / ordinal-entity
+                                                                                                        :value "1")
+                                                                                           :poss s90.y))
+                                                           :manner (s90.v / variable
+                                                                          :polarity "-")
+                                                           :mod (s90.a2 / almost))
+                                             :ARG1 s90.t))
+                  :rel (s90.l4 / learn-01
+                               :ARG0 s90.y
+                               :ARG1 s90.l
+                               :time (s90.a / adult
+                                            :domain s90.y)))
+   :snt91 (s91.a / and
+                 :op2 (s91.c / cause-01
+                             :ARG1 (s91.g / give-01
+                                          :ARG0 (s91.t / this)
+                                          :ARG2 (s91.i / i
+                                                       :ARG1 (s91.i2 / idea
+                                                                     :mod s91.t
+                                                                     :same-as s87.i2)
+                                                       :same-as s2.i))))
+   :snt92 (s92.p2 / possible-01
+                  :ARG1 (s92.u / use-01
+                               :ARG1 (s92.c2 / contrast-01
+                                             :ARG1 (s92.c / child
+                                                          :ARG0-of (s92.h / have-03
+                                                                          :ARG1 (s92.a2 / autism))
+                                                          :polarity "-")
+                                             :ARG2 (s92.t / teach-01
+                                                          :ARG1 (s92.l2 / language)
+                                                          :ARG2 (s92.p / person
+                                                                       :mod (s92.d / disability
+                                                                                   :polarity "-"))))
+                               :instrument (s92.s / speak-01
+                                                  :ARG3 (s92.l / language
+                                                               :name (s92.n / name
+                                                                            :op1 "FreeSpeech"))
+                                                  :same-as s57.s3))
+                  :polarity (s92.a / amr-unknown))
+   :snt93 (s93.a / and
+                 :op2 (s93.c / cause-01
+                             :ARG1 (s93.t / try-01
+                                          :ARG0 (s93.i / i
+                                                       :same-as s2.i)
+                                          :ARG1 (s93.e / experiment-01
+                                                       :quant (s93.n / number)
+                                                       :ARG0 s93.i))))
+   :snt94 (s94.b / build-01
+                 :ARG0 (s94.i / i
+                              :same-as s2.i)
+                 :ARG1 (s94.p3 / puzzle
+                               :location-of (s94.c / code-01
+                                                   :ARG1 (s94.a / and
+                                                                :mod (s94.t2 / this)
+                                                                :op1 (s94.q / question-01)
+                                                                :op2 (s94.a4 / answer-01))
+                                                   :manner (s94.a2 / and
+                                                                   :location-of (s94.a3 / and
+                                                                                        :op1 (s94.p2 / put-01
+                                                                                                     :ARG0 (s94.p / person)
+                                                                                                     :ARG1 s94.a2
+                                                                                                     :ARG2 (s94.t3 / together))
+                                                                                        :op2 (s94.t4 / try-01
+                                                                                                     :ARG0 s94.p
+                                                                                                     :ARG1 (s94.u / understand-01
+                                                                                                                  :ARG0 s94.p
+                                                                                                                  :ARG1 (s94.t / thing
+                                                                                                                               :manner-of (s94.w / work-09
+                                                                                                                                                 :ARG1 s94.a)))))
+                                                                   :op1 (s94.s / shape-01)
+                                                                   :op2 (s94.f2 / form
+                                                                                :mod (s94.c2 / color))))
+                               :mod (s94.j / jigsaw))
+                 :ord (s94.o / ordinal-entity
+                             :value "1")
+                 :rel (s94.f / form
+                             :mod s94.s)
+                 :rel (s94.y / you))
+   :snt95 (s95.a / and
+                 :op2 (s95.b / build-01
+                             :ARG0 (s95.i / i
+                                          :same-as s2.i)
+                             :ARG1 (s95.a2 / app
+                                           :op3 (s95.g / game
+                                                       :location-of (s95.p2 / possible-01
+                                                                            :ARG1 (s95.p / play-01
+                                                                                         :ARG0 (s95.c / child)
+                                                                                         :ARG2 (s95.w / word)
+                                                                                         :manner (s95.r / reinforce-01
+                                                                                                        :ARG1-of (s95.m / mean-01
+                                                                                                                        :ARG2 (s95.r2 / reinforce-01
+                                                                                                                                      :ARG1 (s95.s2 / structure
+                                                                                                                                                    :mod (s95.v / visual))
+                                                                                                                                      :mod (s95.s / sound)))))
+                                                                            :ARG1 (s95.l2 / learn-01
+                                                                                          :ARG0 s95.c
+                                                                                          :ARG1 (s95.l / language)))))
+                             :ARG2 (s95.i2 / it
+                                           :same-as s94.f)))
+   :snt96 (s96.l / let-01
+                 :ARG1 (s96.t / talk-01
+                              :ARG0 (s96.w / we)
+                              :ARG1 (s96.s / something
+                                           :mod (s96.e / else)))
+                 :ARG1-of (s96.o / okay-04))
+   :snt97 (s97.t / talk-01
+                 :ARG0 (s97.w / we)
+                 :ARG1 (s97.s / speak-01)
+                 :mode "imperative")
+   :snt98 (s98.i / infer-01
+                 :ARG1 (s98.m / mode
+                              :ARG1-of (s98.d / deliver-01
+                                              :ARG0 (s98.w / we
+                                                           :mod (s98.a / all)))
+                              :domain (s98.s / speak-01)
+                              :manner-of (s98.c / communicate-01)
+                              :mod (s98.p / primary)))
+   :snt99 (s99.i / interest-01
+                 :ARG2 (s99.d / dimension
+                              :domain (s99.s / speak-01)
+                              :quant "1")
+                 :time (s99.n / now)
+                 :topic s99.s)
+   :snt100 (s100.c / cause-01
+                   :ARG0 (s100.b / build-01
+                                 :ARG1 (s100.m / mouth
+                                               :part-of (s100.w2 / we))
+                                 :manner (s100.w / way
+                                                 :mod (s100.t / that)))
+                   :ARG1 (s100.d / dimension
+                                 :domain (s100.i / it
+                                                 :same-as s99.s)
+                                 :mod (s100.o / one)
+                                 :mod (s100.a / also)))
+   :snt101 (s101.b / build-01
+                   :purpose (s101.c / create-01
+                                    :ARG0 (s101.m / mouth
+                                                  :part-of (s101.w / we
+                                                                   :same-as s100.w2)
+                                                  :same-as s100.m)
+                                    :ARG1 (s101.s / sound
+                                                  :mod (s101.d / dimension
+                                                               :quant "1")))
+                   :ARG1 s101.m)
+   :snt102 (s102.c / contrast-01
+                   :ARG2 (s102.d / dimension
+                                 :condition (s102.t2 / think-01
+                                                     :ARG0 (s102.y / you)
+                                                     :ARG1 (s102.b / brain))
+                                 :domain (s102.t / thing
+                                                 :ARG1-of (s102.t3 / think-01
+                                                                   :ARG0 (s102.w / we
+                                                                                 :part (s102.h / head)))
+                                                 :location s102.h)
+                                 :mod (s102.o / one)
+                                 :polarity "-"))
+   :snt103 (s103.h / have-03
+                   :ARG0 (s103.w / we)
+                   :ARG1 (s103.i2 / idea
+                                  :ARG1-of (s103.c / complicate-01)
+                                  :mod (s103.d / dimension
+                                               :quant (s103.m2 / multiple))
+                                  :mod (s103.r / rich)
+                                  :mod (s103.t / this))
+                   :ARG2-of (s103.m / mean-01
+                                    :ARG0 (s103.i / i
+                                                  :same-as s2.i)))
+   :snt104 (s104.s / seem-01
+                   :ARG1 (s104.i2 / invent-01
+                                  :purpose (s104.c / convert-01
+                                                   :ARG0 (s104.b / brain)
+                                                   :ARG1 (s104.t / think-01
+                                                                 :mod (s104.d / dimension
+                                                                              :quant (s104.m / multiple))
+                                                                 :mod (s104.r2 / rich)
+                                                                 :mod (s104.t2 / this))
+                                                   :ARG2 (s104.s2 / speak-01
+                                                                  :location (s104.h / hand
+                                                                                    :mod (s104.o / one))))
+                                  :ARG0 s104.b
+                                  :ARG1 (s104.l / language)
+                                  :ARG1-of (s104.r / real-04))
+                   :ARG2 (s104.i / i
+                                 :same-as s2.i)
+                   :time (s104.n / now))
+   :snt105 (s105.i3 / interest-01
+                    :ARG2 (s105.a3 / and
+                                   :op1 (s105.w2 / work-01
+                                                 :quant (s105.l2 / lot)
+                                                 :ARG0 (s105.w / we)
+                                                 :ARG1 (s105.i2 / information)
+                                                 :time (s105.n2 / nowadays))
+                                   :op2 (s105.d / do-02
+                                                :ARG1 s105.w2
+                                                :ARG1-of (s105.i / include-91
+                                                                 :ARG2 s105.w2
+                                                                 :ARG3 (s105.a / all
+                                                                               :mod (s105.a2 / almost)))
+                                                :ARG2 (s105.d2 / domain
+                                                               :mod (s105.l / language))))
+                    :time (s105.n / now))
+   :snt106 (s106.e / exemplify-01
+                   :ARG1 (s106.t / take-01
+                                 :ARG0 (s106.y / you)
+                                 :ARG1 (s106.c / company
+                                               :name (s106.n / name
+                                                             :op1 "Google"))
+                                 :mode "imperative"))
+   :snt107 (s107.a2 / and
+                    :op1 (s107.t2 / trawl-01
+                                  :ARG0 (s107.c / company
+                                                :name (s107.n / name
+                                                              :op1 "Google")
+                                                :same-as s106.c)
+                                  :ARG1 (s107.w2 / website
+                                                 :quant (s107.c2 / countless
+                                                                 :op1 (s107.m2 / multiple
+                                                                               :op1 "1000000000"))
+                                                 :medium (s107.l / language
+                                                                 :name (s107.n2 / name
+                                                                                :op1 "English")
+                                                                 :same-as s42.l)
+                                                 :mod (s107.t / this)
+                                                 :mod (s107.a / all)))
+                    :op2 (s107.a3 / and
+                                  :op1 (s107.g / go-02
+                                               :ARG0 (s107.y / you)
+                                               :ARG1 (s107.s / search-01
+                                                             :ARG0 s107.c))
+                                  :op2 (s107.t3 / type-01
+                                                :ARG0 s107.y
+                                                :ARG1 s107.l)
+                                  :op3 (s107.m / match-01
+                                               :ARG0 s107.l
+                                               :ARG1 s107.l
+                                               :ARG2 (s107.p / person
+                                                             :mod s107.l))
+                                  :time (s107.w / want-01
+                                                :ARG0 s107.y
+                                                :ARG1 (s107.u / use-01
+                                                              :ARG0 s107.y
+                                                              :ARG1 s107.c))))
+   :snt108 (s108.h / have-condition-91
+                   :ARG1 (s108.a / amr-unknown)
+                   :ARG2 (s108.p / possible-01
+                                 :ARG1 (s108.d / do-02
+                                               :ARG0 (s108.w / we)
+                                               :ARG1 (s108.t / this)
+                                               :ARG1-of (s108.i / instead-of-91)
+                                               :medium (s108.s / speak-01
+                                                               :medium (s108.l / language
+                                                                               :name (s108.n / name
+                                                                                             :op1 "FreeSpeech"))
+                                                               :same-as s57.s3))))
+   :snt109 (s109.s5 / suspect-01
+                    :ARG0 (s109.i / i
+                                  :same-as s2.i)
+                    :ARG1 (s109.f / find-01
+                                  :ARG0 (s109.w / we
+                                                :same-as s108.w)
+                                  :ARG1 (s109.a3 / and
+                                                 :ARG1-of (s109.c / cause-01
+                                                                  :ARG0 (s109.p / process-01
+                                                                                :ARG0 (s109.r2 / robot
+                                                                                               :example (s109.s / search-01
+                                                                                                                :example (s109.t / thing
+                                                                                                                                 :mod (s109.t3 / this)
+                                                                                                                                 :mod (s109.a / all)))
+                                                                                               :example (s109.r / retrieve-01))
+                                                                                :ARG1 (s109.s4 / structure-01
+                                                                                               :ARG1 (s109.d / data)
+                                                                                               :ARG1 (s109.s3 / speak-01))
+                                                                                :polarity "-"))
+                                                 :op1 (s109.s2 / simple-02
+                                                               :ARG1 s109.r2
+                                                               :ARG2-of (s109.h / have-degree-91
+                                                                                :ARG1 s109.r2
+                                                                                :ARG3 (s109.m / more
+                                                                                              :quant (s109.m3 / much))))
+                                                 :op2 (s109.h2 / have-degree-91
+                                                               :ARG1 s109.r2
+                                                               :ARG2 (s109.e / effective-04
+                                                                             :ARG0 s109.r2)
+                                                               :ARG3 (s109.m2 / more)
+                                                               :mod (s109.a2 / also)))
+                                  :condition (s109.d2 / do-02
+                                                      :ARG0 s109.w
+                                                      :ARG1 (s109.t2 / this
+                                                                     :same-as s108.t))))
+   :snt110 (s110.i / instead-of-91
+                   :ARG1 (s110.p / process-01
+                                 :ARG0 (s110.t / they
+                                               :same-as s109.r2)
+                                 :ARG1 (s110.s / structure-01
+                                               :ARG1 (s110.d / data)
+                                               :ARG1 (s110.t2 / think-01)
+                                               :same-as s109.s4)))
+   :snt111 (s111.s / structure-01
+                   :ARG0 (s111.t / think-01)
+                   :ARG1 (s111.d / data)
+                   :same-as s109.s4)
+   :snt112 (s112.i / idea
+                   :ARG0-of (s112.p / provoke-01)
+                   :domain (s112.t / that))
+   :snt113 (s113.c / contrast-01
+                   :ARG2 (s113.l / let-01
+                                 :ARG1 (s113.l3 / look-01
+                                                :ARG0 (s113.w / we)
+                                                :ARG1 (s113.t / this)
+                                                :ARG1-of (s113.d / detail-01
+                                                                 :mod (s113.m / more
+                                                                              :quant (s113.l2 / little))))))
+   :snt114 (s114.i / infer-01
+                   :ARG1 (s114.e / ecosystem
+                                 :domain (s114.t / this)
+                                 :mod (s114.p / publication
+                                              :name (s114.n / name
+                                                            :op1 "FreeSpeech")
+                                              :same-as s57.s3)))
+   :snt115 (s115.h / have-03
+                   :ARG0 (s115.w / we)
+                   :ARG1 (s115.a / and
+                                 :op1 (s115.t / thing
+                                              :ARG0-of (s115.r / represent-01
+                                                               :ARG1 (s115.s2 / speak-01
+                                                                              :ARG3-of (s115.f / free-04))
+                                                               :same-as s44.t)
+                                              :location (s115.s / side
+                                                                :mod (s115.o / one)))
+                                 :op2 (s115.t2 / thing
+                                               :name (s115.n / name
+                                                             :op1 "FreeSpeech"
+                                                             :op2 "Engine")
+                                               :ARG0-of (s115.g / generate-01
+                                                                :ARG1 (s115.l / language
+                                                                              :name (s115.n2 / name
+                                                                                             :op1 "English")
+                                                                              :same-as s42.l))
+                                               :same-as s57.s3)))
+   :snt116 (s116.t / tell-01
+                   :ARG0 (s116.i / i
+                                 :same-as s2.i)
+                   :ARG1 (s116.d / depend-01
+                                 :ARG0 (s116.s / speak-01
+                                               :same-as s57.s3)
+                                 :ARG1 (s116.l / language)
+                                 :ARG1-of (s116.c / complete-02)
+                                 :polarity "-")
+                   :ARG2 (s116.y / you
+                                 :same-as s87.y))
+   :snt117 (s117.h / have-03
+                   :ARG0 (s117.i2 / it
+                                  :same-as s57.s3)
+                   :ARG1 (s117.i / information
+                                 :ARG1-of (s117.s / specific-02)
+                                 :topic (s117.l / language
+                                                :name (s117.n / name
+                                                              :op1 "English")
+                                                :same-as s42.l))
+                   :polarity "-")
+   :snt118 (s118.e / encode-01
+                   :ARG1 (s118.e3 / everything
+                                  :ARG1-of (s118.k / know-01
+                                                   :ARG0 (s118.s / system
+                                                                 :mod (s118.t / this)
+                                                                 :same-as s57.s3))
+                                  :topic (s118.l / language
+                                                 :name (s118.n / name
+                                                               :op1 "English")
+                                                 :same-as s42.l))
+                   :ARG1-of (s118.a / actual-02)
+                   :location (s118.e2 / engine
+                                      :same-as s57.s3))
+   :snt119 (s119.c / concept
+                   :ARG0-of (s119.i / interest-01
+                                    :degree (s119.p / pretty))
+                   :domain (s119.t / that
+                                   :same-as s118.e))
+   :snt120 (s120.e / encode-01
+                   :ARG0 (s120.y / you)
+                   :ARG1 (s120.l / language
+                                 :mod (s120.h / human)
+                                 :mod (s120.e2 / entire))
+                   :medium (s120.p / program
+                                   :mod (s120.s / software)))
+   :snt121 (s121.c / complicate-01
+                   :ARG1 (s121.i / it
+                                 :same-as s120.e)
+                   :ARG1-of (s121.a / actual-02)
+                   :degree (s121.v / very)
+                   :polarity "-")
+   :snt122 (s122.a / and
+                   :op2 (s122.h / have-degree-91
+                                :ARG1 (s122.s / specific-02
+                                              :ARG1 (s122.c / code
+                                                            :quant (s122.m / majority
+                                                                           :mod (s122.v / vast))
+                                                            :part-of (s122.e / engine
+                                                                             :mod (s122.t / that)
+                                                                             :same-as s57.s3))
+                                              :ARG1-of (s122.r / real-04)
+                                              :ARG2 (s122.c2 / country
+                                                             :name (s122.n / name
+                                                                           :op1 "English")
+                                                             :same-as s42.l)
+                                              :polarity "-")
+                                :ARG2 (s122.i / interest-01
+                                              :ARG0 s122.s)
+                                :ARG3 (s122.m2 / more)))
+   :snt123 (s123.a / and
+                   :op2 (s123.g / give-01
+                                :ARG0 (s123.t / that)
+                                :ARG1 (s123.i / idea
+                                              :ARG2-of (s123.i2 / interest-01)
+                                              :mod (s123.t2 / this))))
+   :snt124 (s124.p / possible-01
+                   :ARG1 (s124.e / easy-05
+                                 :ARG1 (s124.c / create-01
+                                               :ARG0 (s124.w / we)
+                                               :ARG1 (s124.e2 / engine
+                                                              :mod (s124.t / this))
+                                               :ARG1-of (s124.a / actual-02)
+                                               :medium (s124.l / language
+                                                               :quant (s124.m / many)
+                                                               :ARG1-of (s124.d / differ-02)
+                                                               :example (s124.a2 / and
+                                                                                 :op1 (s124.l2 / language
+                                                                                               :name (s124.n / name
+                                                                                                             :op1 "Hindi"))
+                                                                                 :op2 (s124.l3 / language
+                                                                                               :name (s124.n2 / name
+                                                                                                              :op1 "French"))
+                                                                                 :op3 (s124.l4 / language
+                                                                                               :name (s124.n3 / name
+                                                                                                              :op1 "German"))
+                                                                                 :op4 (s124.l5 / language
+                                                                                               :name (s124.n4 / name
+                                                                                                              :op1 "Swahili")))))
+                                 :degree (s124.v / very)))
+   :snt125 (s125.a / and
+                   :op2 (s125.g / give-01
+                                :ARG0 (s125.t / that)
+                                :ARG1 (s125.i / idea
+                                              :ARG2-of (s125.i2 / interest-01)
+                                              :mod (s125.a2 / another))))
+   :snt126 (s126.e / exemplify-01
+                   :ARG0 (s126.s2 / suppose-01
+                                  :ARG1 (s126.p / person
+                                                :ARG0-of (s126.w / write-01
+                                                                 :ARG2 (s126.o / or
+                                                                               :ARG1-of (s126.s / say-01)
+                                                                               :op1 (s126.n / newspaper)
+                                                                               :op2 (s126.m / magazine)))
+                                                :domain (s126.i / i
+                                                                :same-as s2.i))))
+   :snt127 (s127.a / and
+                   :op1 (s127.p4 / possible-01
+                                 :ARG1 (s127.c4 / create-01
+                                                :ARG0 (s127.i / i
+                                                              :same-as s2.i)
+                                                :ARG1 (s127.c3 / content
+                                                               :medium (s127.l / language
+                                                                               :name (s127.n / name
+                                                                                             :op1 "FreeSpeech"
+                                                                                             :same-as s57.s3)
+                                                                               :quant "1"))))
+                   :op2 (s127.p5 / possible-01
+                                 :ARG1 (s127.c / choose-01
+                                               :ARG0 (s127.p3 / person
+                                                              :ARG0-of (s127.r / read-01
+                                                                               :ARG1 (s127.i2 / information
+                                                                                              :mod (s127.p / particular)
+                                                                                              :mod (s127.t / that))))
+                                               :ARG1 (s127.e / engine
+                                                             :mod (s127.a2 / any))))
+                   :op3 (s127.p6 / possible-01
+                                 :ARG1 (s127.r2 / read-01
+                                                :ARG0 s127.p3
+                                                :ARG1 s127.c3
+                                                :medium (s127.l2 / language
+                                                                 :mod (s127.n2 / native)
+                                                                 :poss s127.p3)))
+                   :rel (s127.p2 / person
+                                 :ARG0-of (s127.c2 / consume-01
+                                                   :ARG1 s127.c3))
+                   :rel (s127.t2 / tongue
+                                 :mod (s127.m / mother)))
+   :snt128 (s128.m / mean-01
+                   :ARG0 (s128.i / i
+                                 :same-as s2.i)
+                   :ARG2 (s128.i2 / idea
+                                  :ARG0-of (s128.a / attract-01
+                                                   :ARG1 (s128.c / country
+                                                                 :name (s128.n / name
+                                                                               :op1 "India")
+                                                                 :mod (s128.e / especially))
+                                                   :degree (s128.i3 / incredible))
+                                  :domain (s128.t / this)))
+   :snt129 (s129.h / have-03
+                   :ARG0 (s129.w / we)
+                   :ARG1 (s129.l / language
+                                 :ARG1-of (s129.d / differ-02)
+                                 :ARG1-of (s129.h2 / have-quant-91
+                                                   :ARG2 (s129.m / many)
+                                                   :ARG3 (s129.s / so))))
+   :snt130 (s130.a / and
+                   :op1 (s130.s2 / song
+                                 :topic (s130.c / country
+                                                :name (s130.n / name
+                                                              :op1 "India")
+                                                :same-as s128.n))
+                   :op2 (s130.d / describe-01
+                                :ARG1 s130.c
+                                :ARG1-of (s130.s / say-01
+                                                 :ARG0 (s130.i / it
+                                                               :same-as s130.s2))))
+   :snt131 (s131.m / mean-01
+                   :ARG1 (s131.t / that)
+                   :ARG2 (s131.p / person
+                                 :ARG0-of (s131.s / smile-01
+                                                  :time (s131.e / ever))
+                                 :ARG0-of (s131.s2 / speak-01
+                                                   :ARG3 (s131.l / language
+                                                                 :ARG1-of (s131.b / beautiful-02)))))
+   :snt132 (s132.b / beautiful-02
+                   :ARG1 (s132.l / language))
+   :snt133 (s133.t / think-01
+                   :ARG0 (s133.i / i
+                                 :same-as s2.i)
+                   :ARG1 (s133.h / have-degree-91
+                                 :ARG1 (s133.i2 / it
+                                                :same-as s132.l)
+                                 :ARG2 (s133.b / beautiful-02
+                                               :ARG1 s133.i2)
+                                 :ARG3 (s133.m / most)
+                                 :ARG5 (s133.c / create-01
+                                               :ARG0 (s133.h2 / human))))
+   :snt134 (s134.t2 / think-01
+                    :ARG0 (s134.i / i
+                                  :same-as s2.i)
+                    :ARG1 (s134.h / have-degree-91
+                                  :ARG1 (s134.t / thing
+                                                :ARG1-of (s134.i2 / invent-01
+                                                                  :ARG0 (s134.b / brain
+                                                                                :part-of (s134.w / we))))
+                                  :ARG2 (s134.p / pretty)
+                                  :ARG3 (s134.m / most)))
+   :snt135 (s135.p2 / photograph-01
+                    :ARG1 (s135.t2 / this)
+                    :ARG2 (s135.p / person
+                                  :ARG0-of (s135.c / collaborate-01
+                                                   :ARG1 (s135.i / i
+                                                                 :same-as s2.i))
+                                  :ARG1-of (s135.h / have-degree-91
+                                                   :ARG2 (s135.e / early
+                                                                 :time (s135.s / start-01
+                                                                               :ARG0 s135.i
+                                                                               :ARG1 (s135.w / work-01
+                                                                                             :ARG0 s135.i
+                                                                                             :ARG1 (s135.a / and
+                                                                                                           :op1 (s135.l / language)
+                                                                                                           :op2 (s135.a2 / autism)
+                                                                                                           :op3 (s135.t / thing
+                                                                                                                        :mod (s135.o / other)
+                                                                                                                        :mod (s135.v / various))))))
+                                                   :ARG3 (s135.m / most))))
+   :snt136 (s136.a / and
+                   :op1 (s136.n3 / name-01
+                                 :ARG1 (s136.g / girl)
+                                 :ARG2 (s136.n / name
+                                               :op1 "Pavna"))
+                   :op2 (s136.p / person
+                                :name (s136.n2 / name
+                                               :op1 "Kalpana")
+                                :ARG0-of (s136.h / have-rel-role-91
+                                                 :ARG1 s136.g
+                                                 :ARG2 (s136.m / mother))))
+   :snt137 (s137.a3 / and
+                    :op2 (s137.e / entrepreneur
+                                 :concession-of (s137.r / remarkable-02
+                                                        :ARG1 (s137.s / story)
+                                                        :ARG1-of (s137.c / cause-01
+                                                                         :ARG0 (s137.a2 / age-01
+                                                                                        :ARG1 (s137.p / person
+                                                                                                      :name (s137.n / name
+                                                                                                                    :op1 "Pavna")
+                                                                                                      :same-as s136.g)
+                                                                                        :ARG2 (s137.a / about
+                                                                                                      :op1 (s137.t / temporal-quantity
+                                                                                                                   :unit (s137.y / year)
+                                                                                                                   :quant "23"))))
+                                                        :ARG2-of (s137.h / have-degree-91
+                                                                         :ARG1 s137.s
+                                                                         :ARG3 (s137.m / more
+                                                                                       :quant (s137.m2 / much))
+                                                                         :ARG4 (s137.s2 / story
+                                                                                        :poss (s137.i / i
+                                                                                                      :same-as s2.i))))
+                                 :poss s137.p))
+   :snt138 (s138.h / have-03
+                   :ARG0 (s138.s / she
+                                 :same-as s136.g)
+                   :ARG0-of (s138.c / cause-01
+                                    :ARG1 (s138.p / possible-01
+                                                  :ARG1 (s138.a / and
+                                                                :op1 (s138.m / move-01
+                                                                             :ARG0 s138.s)
+                                                                :op2 (s138.t / talk-01
+                                                                             :ARG0 s138.s))
+                                                  :time (s138.s2 / since
+                                                                 :mod (s138.e / ever)
+                                                                 :op1 (s138.b / bear-02
+                                                                              :ARG1 s138.s))
+                                                  :polarity "-"))
+                   :ARG1 (s138.d / disease
+                                 :name (s138.n / name
+                                               :op1 "palsy")
+                                 :mod (s138.c2 / cerebrum)
+                                 :mod (s138.q / quadriplegic)))
+   :snt139 (s139.a2 / and
+                    :rel (s139.e / everything
+                                 :ARG1-of (s139.a / accomplish-01
+                                                  :ARG0 (s139.s2 / she
+                                                                 :part (s139.e2 / eye)
+                                                                 :same-as s136.g)
+                                                  :time (s139.s3 / so-far))
+                                 :op2 (s139.d2 / do-02
+                                               :ARG1 (s139.a3 / and
+                                                              :op1 (s139.f / finish-01
+                                                                           :ARG0 s139.s2
+                                                                           :ARG1 (s139.s / school))
+                                                              :op2 (s139.g / go-02
+                                                                           :ARG0 s139.s2
+                                                                           :ARG4 (s139.c2 / college))
+                                                              :op3 (s139.s4 / start-01
+                                                                            :ARG0 s139.s2
+                                                                            :ARG1 (s139.c3 / company))
+                                                              :op4 (s139.c / collaborate-01
+                                                                           :ARG0 s139.s2
+                                                                           :ARG1 (s139.i / i
+                                                                                         :same-as s2.i)
+                                                                           :ARG2 (s139.d / develop-02
+                                                                                         :ARG0 s139.s2
+                                                                                         :ARG1 (s139.p / product
+                                                                                                       :name (s139.n / name
+                                                                                                                     :op1 "Avaz")
+                                                                                                       :same-as s14.p2))))
+                                               :manner (s139.m / move-01
+                                                               :ARG0 s139.s2
+                                                               :ARG1 s139.e2
+                                                               :mod (s139.j / just)))))
+   :snt140 (s140.s / say-01
+                   :ARG0 (s140.p3 / publication
+                                  :name (s140.n / name
+                                                :op1 "Daniel"
+                                                :op2 "Webster")
+                                  :same-as s2.i)
+                   :ARG1 (s140.c / choose-01
+                                 :ARG0 (s140.h / he
+                                               :same-as s2.i)
+                                 :ARG1 (s140.k / keep-01
+                                               :ARG0 s140.h
+                                               :ARG1 (s140.p2 / power-01
+                                                              :ARG1 (s140.c2 / communicate-01)
+                                                              :instrument-of (s140.r / regain-01
+                                                                                     :ARG0 (s140.t / take-01
+                                                                                                   :ARG1 (s140.t2 / thing
+                                                                                                                  :ARG1-of (s140.p / possess-01
+                                                                                                                                   :ARG0 s140.h)
+                                                                                                                  :mod (s140.a / all))
+                                                                                                   :ARG2 s140.h
+                                                                                                   :ARG2-of (s140.e / except-01
+                                                                                                                    :quant "1"))
+                                                                                     :ARG1 (s140.r2 / rest
+                                                                                                    :mod s140.a))))
+                                 :condition s140.t))
+   :snt141 (s141.a3 / and
+                    :op2 (s141.c2 / cause-01
+                                  :ARG0 (s141.t / that)
+                                  :ARG1 (s141.r / remain-01
+                                                :ARG1 (s141.h2 / have-degree-91
+                                                               :ARG1 (s141.a5 / application
+                                                                              :ARG1-of (s141.i2 / include-91
+                                                                                                :ARG2 (s141.a6 / application
+                                                                                                               :mod (s141.i3 / incredible)
+                                                                                                               :mod (s141.t2 / this)
+                                                                                                               :topic (s141.p2 / product
+                                                                                                                               :name (s141.n / name
+                                                                                                                                             :op1 "FreeSpeech")
+                                                                                                                               :same-as s57.s3)))
+                                                                              :ARG2-of s141.i2
+                                                                              :mod (s141.a / all))
+                                                               :ARG2 (s141.c4 / close-06
+                                                                              :ARG1 s141.a5
+                                                                              :ARG2 (s141.h3 / heart
+                                                                                             :part-of (s141.i / i
+                                                                                                              :same-as s2.i)))
+                                                               :ARG3 (s141.m / most))
+                                                :ARG3 (s141.c / capable-01
+                                                              :ARG2 (s141.e / empower-01
+                                                                            :ARG0 s141.p2
+                                                                            :ARG1 (s141.c3 / child
+                                                                                           :ARG0-of (s141.h / have-03
+                                                                                                            :ARG1 (s141.d / disability)))
+                                                                            :ARG2 (s141.a4 / and
+                                                                                           :op1 (s141.p / possible-01
+                                                                                                        :ARG1 (s141.c5 / communicate-01
+                                                                                                                       :ARG0 s141.c3))
+                                                                                           :op2 (s141.g / get-back-09
+                                                                                                        :ARG0 s141.c3
+                                                                                                        :ARG1 (s141.r2 / rest
+                                                                                                                       :mod (s141.a2 / all)
+                                                                                                                       :same-as s140.r2)))))
+                                                :mod (s141.s / still))))
+   :snt142 (s142.t / thank-01
+                   :ARG1 (s142.y / you
+                                 :same-as s2.i))
+   :snt143 (s143.t / thank-01
+                   :ARG1 (s143.y / you
+                                 :same-as s2.i)))
+

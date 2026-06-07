@@ -1,0 +1,691 @@
+# ::id doc-206
+# ::doc_file doc-206
+# ::tok http : / / www . ted . com / talks / carl_schoonover_how_to_look_inside_the_brain< / url> <next_sent> This is a thousand - year - old drawing of the brain . <next_sent> It 's a diagram of the visual system . <next_sent> And some things look very familiar today . <next_sent> Two eyes at the bottom , optic nerve flowing out from the back . <next_sent> There 's a very large nose that does n't seem to be connected to anything in particular . <next_sent> And if we compare this to more recent representations of the visual system , you 'll see that things have gotten substantially more complicated over the intervening thousand years . <next_sent> And that 's because today we can see what 's inside of the brain , rather than just looking at its overall shape . <next_sent> Imagine you wanted to understand how a computer works and all you could see was a keyboard , a mouse , a screen . <next_sent> You really would be kind of out of luck . <next_sent> You want to be able to open it up , crack it open , look at the wiring inside . <next_sent> And up until a little more than a century ago , nobody was able to do that with the brain . <next_sent> Nobody had had a glimpse of the brain 's wiring . <next_sent> And that 's because if you take a brain out of the skull and you cut a thin slice of it , put it under even a very powerful microscope , there 's nothing there . <next_sent> It 's gray , formless . <next_sent> There 's no structure . <next_sent> It wo n't tell you anything . <next_sent> And this all changed in the late 19th century . <next_sent> Suddenly , new chemical stains for brain tissue were developed and they gave us our first glimpses at brain wiring . <next_sent> The computer was cracked open . <next_sent> So what really launched modern neuroscience was a stain called the Golgi stain . <next_sent> And it works in a very particular way . <next_sent> Instead of staining all of the cells inside of a tissue , it somehow only stains about one percent of them . <next_sent> It clears the forest , reveals the trees inside . <next_sent> If everything had been labeled , nothing would have been visible . <next_sent> So somehow it shows what 's there . <next_sent> Spanish neuroanatomist Santiago Ramon y Cajal , who 's widely considered the father of modern neuroscience , applied this Golgi stain , which yields data which looks like this , and really gave us the modern notion of the nerve cell , the neuron . <next_sent> And if you 're thinking of the brain as a computer , this is the transistor . <next_sent> And very quickly Cajal realized that neurons do n't operate alone , but rather make connections with others that form circuits just like in a computer . <next_sent> Today , a century later , when researchers want to visualize neurons , they light them up from the inside rather than darkening them . <next_sent> And there 's several ways of doing this . <next_sent> But one of the most popular ones involves green fluorescent protein . <next_sent> Now green fluorescent protein , which oddly enough comes from a bioluminescent jellyfish , is very useful . <next_sent> Because if you can get the gene for green fluorescent protein and deliver it to a cell , that cell will glow green -- or any of the many variants now of green fluorescent protein , you get a cell to glow many different colors . <next_sent> And so coming back to the brain , this is from a genetically engineered mouse called " Brainbow . " <next_sent> And it 's so called , of course , because all of these neurons are glowing different colors . <next_sent> Now sometimes neuroscientists need to identify individual molecular components of neurons , molecules , rather than the entire cell . <next_sent> And there 's several ways of doing this , but one of the most popular ones involves using antibodies . <next_sent> And you 're familiar , of course , with antibodies as the henchmen of the immune system . <next_sent> But it turns out that they 're so useful to the immune system because they can recognize specific molecules , like , for example , the code protein of a virus that 's invading the body . <next_sent> And researchers have used this fact in order to recognize specific molecules inside of the brain , recognize specific substructures of the cell and identify them individually . <next_sent> And a lot of the images I 've been showing you here are very beautiful , but they 're also very powerful . <next_sent> They have great explanatory power . <next_sent> This , for example , is an antibody staining against serotonin transporters in a slice of mouse brain . <next_sent> And you 've heard of serotonin , of course , in the context of diseases like depression and anxiety . <next_sent> You 've heard of SSRIs , which are drugs that are used to treat these diseases . <next_sent> And in order to understand how serotonin works , it 's critical to understand where the serontonin machinery is . <next_sent> And antibody stainings like this one can be used to understand that sort of question . <next_sent> I 'd like to leave you with the following thought : Green fluorescent protein and antibodies are both totally natural products at the get - go . <next_sent> They were evolved by nature in order to get a jellyfish to glow green for whatever reason , or in order to detect the code protein of an invading virus , for example . <next_sent> And only much later did scientists come onto the scene and say , " Hey , these are tools , these are functions that we could use in our own research tool palette . " <next_sent> And instead of applying feeble human minds to designing these tools from scratch , there were these ready - made solutions right out there in nature developed and refined steadily for millions of years by the greatest engineer of all . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :polarity "-"
+               :value "YouTube")
+   :snt2 (s2.d / draw-01
+               :ARG1 (s2.b / brain)
+               :age (s2.t / temporal-quantity
+                          :unit (s2.y / year)
+                          :quant "1000")
+               :domain (s2.t2 / this))
+   :snt3 (s3.d / diagram
+               :domain (s3.i / it
+                             :same-as s2.t2)
+               :topic (s3.s / system
+                            :mod (s3.v / visual)))
+   :snt4 (s4.a / and
+               :op2 (s4.l / look-02
+                          :ARG0 (s4.t / thing
+                                      :quant (s4.s / some))
+                          :ARG1 (s4.f / familiar
+                                      :degree (s4.v / very))
+                          :time (s4.t2 / today)))
+   :snt5 (s5.f / flow-01
+               :ARG1 (s5.n / nerve
+                           :mod (s5.o / optics))
+               :direction (s5.o2 / out)
+               :location (s5.e / eye
+                               :location (s5.b2 / bottom)
+                               :quant "2")
+               :source (s5.b / back))
+   :snt6 (s6.n / nose
+               :ARG1-of (s6.c / connect-01
+                              :ARG1-of (s6.s / seem-01
+                                             :polarity "-")
+                              :ARG2 (s6.a / anything
+                                          :mod (s6.p / particular)))
+               :mod (s6.l / large
+                          :degree (s6.v / very)))
+   :snt7 (s7.a / and
+               :op2 (s7.s / see-01
+                          :ARG0 (s7.y2 / you)
+                          :ARG1 (s7.g / get-03
+                                      :ARG1 (s7.t2 / thing)
+                                      :ARG2 (s7.c2 / complicate-01
+                                                   :ARG1 s7.t2
+                                                   :ARG2-of (s7.h2 / have-degree-91
+                                                                   :ARG1 s7.t2
+                                                                   :ARG3 (s7.m2 / more
+                                                                                :mod (s7.s2 / substantial))))
+                                      :duration (s7.t / temporal-quantity
+                                                      :ARG0-of (s7.i / intervene-01)
+                                                      :unit (s7.y / year)
+                                                      :quant "1000"))
+                          :condition (s7.c / compare-01
+                                           :ARG0 (s7.w / we)
+                                           :ARG1 (s7.t3 / this
+                                                        :same-as s2.t2)
+                                           :ARG2 (s7.r2 / representation-02
+                                                        :ARG1 (s7.s3 / system
+                                                                     :mod (s7.v / visual)
+                                                                     :same-as s3.s)
+                                                        :ARG1-of (s7.h / have-degree-91
+                                                                       :ARG2 (s7.r / recent)
+                                                                       :ARG3 (s7.m / more))))))
+   :snt8 (s8.a / and
+               :op2 (s8.c / cause-01
+                          :ARG0 (s8.p / possible-01
+                                      :ARG1 (s8.s / see-01
+                                                  :ARG0 (s8.w / we)
+                                                  :ARG1 (s8.t2 / thing
+                                                               :location (s8.i / inside
+                                                                               :op1 (s8.b / brain)))
+                                                  :ARG1-of (s8.i2 / instead-of-91
+                                                                  :ARG2 (s8.l / look-01
+                                                                              :ARG0 s8.w
+                                                                              :ARG1 (s8.s2 / shape
+                                                                                           :mod (s8.o / overall)
+                                                                                           :poss s8.b)
+                                                                              :mod (s8.j / just))))
+                                      :time (s8.t3 / today))
+                          :ARG1 (s8.t / that
+                                      :same-as s7.g)))
+   :snt9 (s9.i / imagine-01
+               :ARG0 (s9.y / you)
+               :ARG1 (s9.a2 / and
+                            :op1 (s9.w / want-01
+                                       :ARG0 s9.y
+                                       :ARG1 (s9.u / understand-01
+                                                   :ARG0 s9.y
+                                                   :ARG1 (s9.t / thing
+                                                               :manner-of (s9.w2 / work-09
+                                                                                 :ARG1 (s9.c / computer)))))
+                            :op2 (s9.s2 / see-01
+                                        :ARG0 s9.y
+                                        :ARG1 (s9.a3 / and
+                                                     :op1 (s9.k / keyboard)
+                                                     :op2 (s9.m / mouse)
+                                                     :op3 (s9.s / screen))
+                                        :ARG1-of (s9.p / possible-01)
+                                        :mod (s9.a / all)))
+               :mode "imperative")
+   :snt10 (s10.o / out-05
+                 :ARG1 (s10.y / you)
+                 :ARG1-of (s10.r / real-04)
+                 :ARG2 (s10.l / luck)
+                 :degree (s10.k / kind-of))
+   :snt11 (s11.w / want-01
+                 :ARG0 (s11.y / you)
+                 :ARG1 (s11.p / possible-01
+                              :ARG1 (s11.a / and
+                                           :op1 (s11.o / open-up-03
+                                                       :ARG0 s11.y
+                                                       :ARG1 (s11.i2 / it
+                                                                     :same-as s9.c))
+                                           :op2 (s11.c / crack-02
+                                                       :ARG0 s11.y
+                                                       :ARG1 s11.i2)
+                                           :op3 (s11.l / look-01
+                                                       :ARG0 s11.y
+                                                       :ARG1 (s11.w2 / wire-02
+                                                                     :location (s11.i / inside
+                                                                                      :op1 s11.i2))))))
+   :snt12 (s12.a / and
+                 :op2 (s12.p / possible-01
+                             :ARG1 (s12.d / do-02
+                                          :ARG0 (s12.n / nobody)
+                                          :ARG1 (s12.t2 / that)
+                                          :ARG3 (s12.b2 / brain))
+                             :time (s12.u / until
+                                          :op1 (s12.b / before
+                                                      :quant (s12.m / more-than
+                                                                    :degree (s12.l / little)
+                                                                    :op1 (s12.t / temporal-quantity
+                                                                                :unit (s12.c / century)
+                                                                                :quant "1"))
+                                                      :op1 (s12.n2 / now)))))
+   :snt13 (s13.g / glimpse-01
+                 :ARG0 (s13.n / nobody)
+                 :ARG1 (s13.w / wire-02
+                              :ARG1 (s13.b / brain
+                                           :same-as s12.b2)))
+   :snt14 (s14.a / and
+                 :op2 (s14.c / cause-01
+                             :ARG0 (s14.n / nothing
+                                          :location (s14.a2 / and
+                                                            :op1 (s14.t / take-out-11
+                                                                        :ARG0 (s14.y / you)
+                                                                        :ARG1 (s14.b / brain
+                                                                                     :part (s14.s2 / slice
+                                                                                                   :ARG1-of (s14.t3 / thin-03)))
+                                                                        :source (s14.s / skull))
+                                                            :op2 (s14.c2 / cut-01
+                                                                         :ARG0 s14.y
+                                                                         :ARG1 s14.b
+                                                                         :ARG2 s14.s2)
+                                                            :op3 (s14.p2 / put-01
+                                                                         :ARG0 s14.y
+                                                                         :ARG1 s14.s2
+                                                                         :ARG2 (s14.u / under
+                                                                                      :op1 (s14.m / microscope
+                                                                                                  :ARG1-of (s14.p / powerful-02
+                                                                                                                  :degree (s14.v / very))))
+                                                                         :mod (s14.e / even))))
+                             :ARG1 (s14.t2 / that)))
+   :snt15 (s15.a / and
+                 :op1 (s15.g / gray-02
+                             :ARG1 (s15.i / it
+                                          :same-as s14.s2))
+                 :op2 (s15.f / formless
+                             :domain s15.i))
+   :snt16 (s16.s / structure
+                 :polarity "-")
+   :snt17 (s17.t / tell-01
+                 :ARG0 (s17.i / it
+                              :same-as s14.s2)
+                 :ARG1 (s17.a / anything)
+                 :ARG2 (s17.y / you)
+                 :polarity "-")
+   :snt18 (s18.a2 / and
+                  :op2 (s18.c / change-01
+                              :ARG1 (s18.t / this
+                                           :mod (s18.a / all))
+                              :time (s18.l / late
+                                           :op1 (s18.d / date-entity
+                                                       :century "19"))))
+   :snt19 (s19.a / and
+                 :manner (s19.s2 / sudden)
+                 :op1 (s19.d / develop-01
+                             :ARG1 (s19.s / stain-01
+                                          :ARG1 (s19.t / tissue
+                                                       :part-of (s19.b / brain))
+                                          :ARG1-of (s19.n / new-01)
+                                          :mod (s19.c / chemical)))
+                 :op2 (s19.g / give-01
+                             :ARG0 s19.s
+                             :ARG1 (s19.g2 / glimpse-01
+                                           :ARG0 (s19.w / we)
+                                           :ARG1 (s19.w2 / wire-02
+                                                         :ARG1 s19.b)
+                                           :ord (s19.o / ordinal-entity
+                                                       :value "1"))
+                             :ARG2 s19.w))
+   :snt20 (s20.c2 / crack-02
+                  :ARG1 (s20.c / computer
+                               :same-as s9.c)
+                  :manner (s20.o / open-09
+                                 :ARG1 s20.c))
+   :snt21 (s21.l / launch-01
+                 :ARG0 (s21.s / stain
+                              :name (s21.n / name
+                                           :op1 "Golgi"))
+                 :ARG1 (s21.n2 / neuroscience
+                               :ARG1-of (s21.m / modern-02))
+                 :ARG1-of (s21.r / real-04))
+   :snt22 (s22.a / and
+                 :op2 (s22.w2 / work-09
+                              :ARG1 (s22.i / it
+                                           :same-as s21.s)
+                              :manner (s22.w / way
+                                             :mod (s22.p / particular
+                                                         :degree (s22.v / very)))))
+   :snt23 (s23.i3 / instead-of-91
+                  :ARG1 (s23.s3 / stain-01
+                                :ARG0 (s23.i4 / it
+                                              :same-as s21.s)
+                                :ARG1 (s23.c2 / cell
+                                              :quant (s23.a / about
+                                                            :ARG3-of (s23.i / include-91
+                                                                            :ARG2 s23.c2)
+                                                            :op1 (s23.p / percentage-entity
+                                                                        :value "1")))
+                                :manner (s23.s / somehow)
+                                :mod (s23.o / only))
+                  :ARG2 (s23.s2 / stain-01
+                                :ARG0 s23.i4
+                                :ARG1 (s23.c / cell
+                                             :location (s23.i2 / inside
+                                                               :op1 (s23.t / tissue))
+                                             :mod (s23.a2 / all))))
+   :snt24 (s24.a / and
+                 :op1 (s24.c / clear-01
+                             :ARG0 (s24.i2 / it
+                                           :same-as s21.s)
+                             :ARG1 (s24.f / forest))
+                 :op2 (s24.r / reveal-01
+                             :ARG0 s24.i2
+                             :ARG1 (s24.t / tree
+                                          :location (s24.i / inside
+                                                           :op1 s24.f))))
+   :snt25 (s25.p / possible-01
+                 :ARG1 (s25.s / see-01
+                              :ARG1 (s25.n / nothing))
+                 :condition (s25.l / label-01
+                                   :ARG1 (s25.e / everything))
+                 :polarity "-")
+   :snt26 (s26.c / cause-01
+                 :ARG1 (s26.s / show-01
+                              :ARG0 (s26.i / it
+                                           :same-as s21.s)
+                              :ARG1 (s26.t2 / thing
+                                            :location (s26.t / there))
+                              :manner (s26.s2 / somehow)))
+   :snt27 (s27.a / apply-02
+                 :ARG0 (s27.n5 / neuroanatomist
+                               :name (s27.n2 / name
+                                             :op1 "Santiago"
+                                             :op2 "Ramon"
+                                             :op3 "y"
+                                             :op4 "Cajal")
+                               :ARG0-of (s27.h / have-rel-role-91
+                                               :ARG1 (s27.n7 / neuroscience
+                                                             :ARG1-of (s27.m2 / modern-02))
+                                               :ARG1-of (s27.c2 / consider-01
+                                                                :ARG1-of (s27.w2 / wide-02))
+                                               :ARG2 (s27.f / father))
+                               :mod (s27.c3 / country
+                                            :name (s27.n / name
+                                                         :op1 "Spain")))
+                 :ARG1 (s27.s / stain-01
+                              :ARG0-of (s27.y / yield-01
+                                              :ARG1 (s27.d / data
+                                                           :ARG0-of (s27.l2 / look-02
+                                                                            :ARG1 (s27.r2 / resemble-01
+                                                                                          :ARG1 (s27.t2 / this)
+                                                                                          :ARG2 s27.d)))
+                                              :same-as s21.s)
+                              :ARG0-of (s27.g / give-01
+                                              :ARG1 (s27.n8 / notion
+                                                            :ARG1-of (s27.m3 / modern-02)
+                                                            :topic (s27.c / cell
+                                                                          :ARG1-of (s27.m / mean-01
+                                                                                          :ARG2 (s27.n6 / neuron))
+                                                                          :mod (s27.n4 / nerve)))
+                                              :ARG1-of (s27.r / real-04)
+                                              :ARG2 (s27.w / we))
+                              :mod (s27.l / local-region
+                                          :name (s27.n3 / name
+                                                        :op1 "Golgi"))
+                              :mod (s27.t / this)))
+   :snt28 (s28.a / and
+                 :condition (s28.t / think-01
+                                   :ARG0 (s28.y / you)
+                                   :ARG1 (s28.b / brain)
+                                   :ARG2 (s28.c / computer))
+                 :op2 (s28.t3 / transistor
+                              :domain (s28.t2 / this)))
+   :snt29 (s29.a2 / and
+                  :op2 (s29.r / realize-01
+                              :ARG0 (s29.p / person
+                                           :name (s29.n / name
+                                                        :op1 "Cajal"))
+                              :ARG1 (s29.c4 / contrast-01
+                                            :ARG1 (s29.o / operate-01
+                                                         :ARG0 (s29.n2 / nerve)
+                                                         :manner (s29.a / alone)
+                                                         :polarity "-")
+                                            :ARG2 (s29.c3 / connect-01
+                                                          :ARG1 s29.n2
+                                                          :ARG2 (s29.o2 / other
+                                                                        :ARG0-of (s29.f / form-01
+                                                                                        :ARG1 (s29.c / circuit
+                                                                                                     :ARG1-of (s29.r2 / resemble-01
+                                                                                                                      :ARG2 (s29.c2 / computer)))))))
+                              :ARG1-of (s29.q / quick-02
+                                              :degree (s29.v / very))))
+   :snt30 (s30.l / light-up-08
+                 :ARG1 (s30.n / nerve)
+                 :ARG1-of (s30.i2 / instead-of-91
+                                  :ARG2 (s30.d / darken-01
+                                               :ARG0 (s30.p / person
+                                                            :ARG0-of (s30.r / research-01))
+                                               :ARG1 s30.n))
+                 :manner (s30.i / inside)
+                 :rel (s30.a / after
+                             :quant (s30.t / temporal-quantity
+                                           :unit (s30.c / century)
+                                           :quant "1"))
+                 :time (s30.w / want-01
+                              :ARG0 s30.p
+                              :ARG1 (s30.v / visualize-01
+                                           :ARG0 s30.p
+                                           :ARG1 s30.n))
+                 :time (s30.t2 / today))
+   :snt31 (s31.a / and
+                 :op2 (s31.w / way
+                             :quant (s31.s / several)
+                             :manner-of (s31.d / do-02
+                                               :ARG1 (s31.t / this
+                                                            :same-as s30.l))))
+   :snt32 (s32.c / contrast-01
+                 :ARG2 (s32.i2 / involve-01
+                               :ARG1 (s32.p2 / protein
+                                             :ARG1-of (s32.g / green-02)
+                                             :mod s32.i2)
+                               :ARG2 (s32.o / one
+                                            :ARG1-of (s32.h / have-degree-91
+                                                            :ARG2 (s32.p / popular-02)
+                                                            :ARG3 (s32.m / most))))
+                 :rel (s32.i / include-91
+                             :ARG2 s32.o)
+                 :rel (s32.f / fluorescent))
+   :snt33 (s33.u / useful-05
+                 :ARG1 (s33.p / protein
+                              :ARG1-of (s33.f / fluorescent)
+                              :ARG1-of (s33.c / come-01
+                                              :ARG1-of (s33.h / have-degree-91
+                                                              :ARG2 (s33.o / odd)
+                                                              :ARG3 (s33.e / enough))
+                                              :ARG3 (s33.j / jellyfish
+                                                           :mod (s33.c2 / constitution))))
+                 :degree (s33.v / very)
+                 :rel (s33.g / green-02)
+                 :time (s33.n / now))
+   :snt34 (s34.c / cause-01
+                 :ARG0 (s34.g4 / glow-01
+                               :ARG0 (s34.c2 / cell)
+                               :ARG1 (s34.o / or
+                                            :op1 (s34.g6 / green-02)
+                                            :op2 (s34.a2 / any
+                                                         :ARG1-of (s34.i / include-91
+                                                                         :ARG2 (s34.v / variant
+                                                                                      :quant (s34.m / many)
+                                                                                      :ARG1-of (s34.i2 / include-91
+                                                                                                       :ARG2 (s34.p2 / protein
+                                                                                                                     :name (s34.n / name
+                                                                                                                                  :op1 "green-02"
+                                                                                                                                  :op2 "fluorescent"))
+                                                                                                       :time (s34.n2 / now))))))
+                               :condition (s34.p / possible-01
+                                                 :ARG1 (s34.a / and
+                                                              :op1 (s34.g2 / get-01
+                                                                           :ARG0 (s34.y / you)
+                                                                           :ARG1 (s34.g / gene
+                                                                                        :mod s34.p2))
+                                                              :op2 (s34.d / deliver-01
+                                                                          :ARG0 s34.y
+                                                                          :ARG1 s34.g
+                                                                          :ARG2 s34.c2))))
+                 :ARG0 (s34.g3 / get-04
+                               :ARG0 s34.y
+                               :ARG1 (s34.g5 / glow-01
+                                             :ARG0 s34.c2
+                                             :ARG1 (s34.c3 / color
+                                                           :quant (s34.m2 / many)
+                                                           :ARG1-of (s34.d2 / differ-02)))
+                               :condition s34.p))
+   :snt35 (s35.a / and
+                 :op2 (s35.e2 / et-cetera)
+                 :rel (s35.c / come-01
+                             :ARG1 (s35.t / this
+                                          :source (s35.m / mouse
+                                                         :name (s35.n / name
+                                                                      :op1 "Brainbow")
+                                                         :ARG1-of (s35.e / engineer-01
+                                                                         :ARG2 (s35.g / gene))))
+                             :ARG4 (s35.b2 / brain)
+                             :direction (s35.b / back)))
+   :snt36 (s36.a2 / and
+                  :op2 (s36.s / so-called
+                              :ARG1-of (s36.c / cause-01
+                                              :ARG0 (s36.g / glow-01
+                                                           :ARG1 (s36.c2 / cell
+                                                                         :mod (s36.t / this)
+                                                                         :mod (s36.a / all))
+                                                           :mod (s36.c3 / color
+                                                                        :ARG1-of (s36.d / differ-02)))
+                                              :mod (s36.o / of-course))
+                              :domain (s36.i / it
+                                             :same-as s35.t)))
+   :snt37 (s37.n / need-01
+                 :ARG0 (s37.s / scientist)
+                 :ARG1 (s37.i / identify-01
+                              :ARG0 s37.s
+                              :ARG1 (s37.c3 / component
+                                            :ARG1-of (s37.i3 / instead-of-91
+                                                             :ARG2 (s37.c2 / cell
+                                                                           :mod (s37.e / entire)))
+                                            :mod (s37.m / molecule)
+                                            :mod (s37.i2 / individual)
+                                            :part-of (s37.c / cell)
+                                            :part-of (s37.m2 / molecule)))
+                 :frequency (s37.s2 / sometimes)
+                 :time (s37.n2 / now))
+   :snt38 (s38.a / and
+                 :op2 (s38.c / contrast-01
+                             :ARG1 (s38.w / way
+                                          :quant (s38.s / several)
+                                          :ARG2-of (s38.i2 / include-91
+                                                           :ARG1 (s38.w2 / way
+                                                                         :ARG1-of (s38.h / have-degree-91
+                                                                                         :ARG2 (s38.p / popular-02
+                                                                                                      :ARG1 s38.w2)
+                                                                                         :ARG3 (s38.m / most))
+                                                                         :ARG2-of (s38.i3 / involve-01
+                                                                                          :ARG1 (s38.u / use-01
+                                                                                                       :ARG1 (s38.i / immune-02)))))
+                                          :manner-of (s38.d / do-02
+                                                            :ARG1 (s38.t / this
+                                                                         :same-as s37.i)))))
+   :snt39 (s39.a / and
+                 :op2 (s39.f / familiarize-01
+                             :ARG1 (s39.y / you)
+                             :ARG2 (s39.b / brother
+                                          :ARG1-of (s39.i / immune-02)
+                                          :poss (s39.s / system
+                                                       :ARG1-of (s39.i2 / immune-02)))
+                             :mod (s39.o / of-course)))
+   :snt40 (s40.c3 / contrast-01
+                  :ARG2 (s40.t2 / turn-out-11
+                                :ARG1 (s40.u / useful-05
+                                             :ARG1 (s40.t / they
+                                                          :same-as s39.i)
+                                             :ARG1-of (s40.c / cause-01
+                                                             :ARG0 (s40.p / possible-01
+                                                                          :ARG1 (s40.r / recognize-02
+                                                                                       :ARG0 s40.t
+                                                                                       :ARG1 (s40.s / small-molecule
+                                                                                                    :ARG1-of (s40.s3 / specific-02)
+                                                                                                    :example (s40.p2 / protein
+                                                                                                                     :mod (s40.c2 / code)
+                                                                                                                     :part-of (s40.v / virus
+                                                                                                                                     :ARG0-of (s40.i2 / invade-01
+                                                                                                                                                      :ARG1 (s40.b / body))))))))
+                                             :ARG2 (s40.s4 / system
+                                                           :ARG1-of (s40.i / immune-02)
+                                                           :same-as s39.s)
+                                             :ARG2-of (s40.h / have-degree-91
+                                                             :ARG1 s40.t
+                                                             :ARG3 (s40.s2 / so)))))
+   :snt41 (s41.a / and
+                 :op2 (s41.u / use-01
+                             :ARG0 (s41.p / person
+                                          :ARG0-of (s41.r3 / research-01))
+                             :ARG1 (s41.f / fact
+                                          :mod (s41.t / this))
+                             :ARG2 (s41.a2 / and
+                                           :op1 (s41.r / recognize-01
+                                                       :ARG0 s41.p
+                                                       :ARG1 (s41.m / molecule
+                                                                    :ARG1-of (s41.s / specific-02)
+                                                                    :location (s41.i3 / inside
+                                                                                      :op1 (s41.b / brain))))
+                                           :op2 (s41.r2 / recognize-01
+                                                        :ARG0 s41.p
+                                                        :ARG1 (s41.s3 / structure-01
+                                                                      :ARG1 (s41.c / cell)
+                                                                      :ARG1-of (s41.s2 / specific-02)))
+                                           :op3 (s41.i / identify-01
+                                                       :ARG0 s41.p
+                                                       :ARG1 s41.m
+                                                       :manner (s41.i2 / individual)))))
+   :snt42 (s42.a2 / and
+                  :op2 (s42.c / contrast-01
+                              :ARG1 (s42.b / beautiful-02
+                                           :ARG1 (s42.i2 / image
+                                                         :quant (s42.l / lot)
+                                                         :ARG1-of (s42.i4 / include-91
+                                                                          :ARG2 (s42.i3 / image
+                                                                                        :ARG1-of (s42.s / show-01
+                                                                                                        :ARG0 (s42.i / i)
+                                                                                                        :ARG2 (s42.y / you)
+                                                                                                        :location (s42.h / here)))))
+                                           :degree (s42.v / very))
+                              :ARG2 (s42.p / powerful-02
+                                           :ARG1 s42.i2
+                                           :degree (s42.v2 / very)
+                                           :mod (s42.a / also))))
+   :snt43 (s43.h / have-03
+                 :ARG0 (s43.t / they
+                              :same-as s42.i2)
+                 :ARG1 (s43.p / power
+                              :ARG0-of (s43.e / explain-01)
+                              :mod (s43.g / great)))
+   :snt44 (s44.a / antibody
+                 :ARG0-of (s44.e / exemplify-01)
+                 :ARG2-of (s44.s3 / stain-01
+                                  :ARG1 (s44.t / thing
+                                               :ARG0-of (s44.t3 / transport-01
+                                                                :ARG1 (s44.s / serotonin))))
+                 :domain (s44.t2 / this
+                                 :same-as s21.s)
+                 :location (s44.s2 / slice
+                                   :part-of (s44.b / brain
+                                                   :part-of (s44.m / mouse))))
+   :snt45 (s45.a / and
+                 :op2 (s45.h / hear-01
+                             :ARG0 (s45.y / you)
+                             :ARG1 (s45.s / serotonin)
+                             :condition (s45.d2 / disease
+                                                :example (s45.a2 / and
+                                                                 :op1 (s45.d / depress-01)
+                                                                 :op2 (s45.a3 / anxiety)))
+                             :mod (s45.o / of-course)))
+   :snt46 (s46.h / hear-01
+                 :ARG0 (s46.y / you)
+                 :ARG1 (s46.d / disease
+                              :name (s46.n / name
+                                           :op1 "SSRI")
+                              :mod (s46.d3 / drug
+                                           :ARG1-of (s46.u / use-01
+                                                           :ARG2 (s46.t2 / treat-03
+                                                                         :ARG1 (s46.d2 / disease
+                                                                                       :mod (s46.t / this)
+                                                                                       :same-as s45.d2)
+                                                                         :ARG3 s46.d3)))))
+   :snt47 (s47.a / and
+                 :op2 (s47.c / critical-02
+                             :purpose (s47.u / understand-01
+                                             :ARG1 (s47.t / thing
+                                                          :manner-of (s47.w / work-09
+                                                                            :ARG1 (s47.s / serotonin
+                                                                                         :same-as s45.s))))
+                             :ARG1 (s47.u2 / understand-01
+                                           :ARG1 (s47.l / location
+                                                        :location-of (s47.m / machinery
+                                                                            :mod s47.s)))))
+   :snt48 (s48.a / and
+                 :op2 (s48.p / possible-01
+                             :ARG1 (s48.u2 / use-01
+                                           :ARG1 (s48.s2 / stain-01
+                                                         :ARG1-of (s48.r / resemble-01
+                                                                         :ARG2 (s48.s3 / stain-01
+                                                                                       :mod (s48.t2 / this
+                                                                                                    :same-as s21.s)))
+                                                         :mod (s48.a2 / antibody))
+                                           :ARG2 (s48.u / understand-01
+                                                        :ARG1 (s48.q / question-01
+                                                                     :mod (s48.s / sort
+                                                                                 :mod (s48.t / that)))
+                                                        :ARG2 s48.s2))))
+   :snt49 (s49.l2 / like-02
+                  :ARG0 (s49.i / i
+                               :same-as s42.i)
+                  :ARG1 (s49.l / leave-02
+                               :ARG0 s49.i
+                               :ARG1 (s49.t / think-01
+                                            :ARG1 (s49.p / product
+                                                         :ARG1-of (s49.n / natural-03
+                                                                         :mod (s49.t2 / total))
+                                                         :domain (s49.a / and
+                                                                        :mod (s49.b / both)
+                                                                        :op1 (s49.p2 / protein
+                                                                                     :ARG1-of (s49.g2 / green-02))
+                                                                        :op2 (s49.v / virus))
+                                                         :time (s49.g / get-go))
+                                            :ARG1-of (s49.f2 / follow-04))
+                               :ARG2 (s49.y / you))
+                  :rel (s49.f / fluorescent))
+   :snt50 (s50.e / evolve-01
+                 :purpose (s50.o / or
+                                 :op1 (s50.g / get-04
+                                             :ARG0 (s50.t / they
+                                                          :same-as s48.s2)
+                                             :ARG1 (s50.g2 / glow-01
+                                                           :ARG0 (s50.j / jellyfish)
+                                                           :ARG1 (s50.g3 / green-02)
+                                                           :ARG1-of (s50.c / cause-01
+                                                                           :ARG0 (s50.r / reason
+                                                                                        :mod (s50.w / whatever)))))
+                                 :op2 (s50.d / detect-01
+                                             :ARG0 s50.t
+                                             :ARG0-of (s50.e2 / exemplify-01)
+                                             :ARG1 (s50.p / protein
+                                                          :mod (s50.c2 / code)
+                                                          :part-of (s50.v / virus
+                                                                          :ARG0-of (s50.i / invade-01)))))
+                 :ARG0 (s50.n / nature)
+                 :ARG1 s50.t)
+   :snt51 (s51.a2 / and
+                  :op2 (s51.a3 / and
+                               :op1 (s51.c / come-01
+                                           :ARG1 (s51.s3 / scientist)
+                                           :ARG4 (s51.s2 / scene))
+                               :op2 (s51.s / say-01
+                                           :ARG0 s51.s3
+                                           :ARG1 (s51.a4 / and
+                                                         :op1 (s51.t2 / tool
+                                                                      :domain (s51.t / this
+                                                                                     :same-as s48.s2))
+                                                         :op2 (s51.f / function-01
+                                                                     :ARG1-of (s51.u / use-01
+                                                                                     :ARG0 (s51.w / we
+                                                                                                  :same-as s51.s3)
+                                                                                     :ARG1-of (s51.p2 / possible-01)
+                                                                                     :ARG2 (s51.p / palette
+                                                                                                  :mod (s51.t3 / tool
+                                                                                                               :purpose (s51.r / research-01
+                                                                                                                               :ARG0 s51.w))
+                                                                                                  :poss s51.w))
+                                                                     :domain s51.t)))
+                               :time (s51.a / after
+                                            :quant (s51.m / much)
+                                            :mod (s51.o / only))))
+   :snt52 (s52.a2 / and
+                  :op2 (s52.i / instead-of-91
+                              :ARG1 (s52.s2 / solve-01
+                                            :ARG1-of (s52.m / make-01
+                                                            :ARG1-of (s52.r / ready-01))
+                                            :ARG1-of (s52.d2 / develop-02
+                                                             :ARG0 (s52.p / person
+                                                                          :ARG0-of (s52.e / engineer-01)
+                                                                          :ARG1-of (s52.h / have-degree-91
+                                                                                          :ARG2 (s52.g / great)
+                                                                                          :ARG3 (s52.m3 / most)
+                                                                                          :ARG5 (s52.a / all))))
+                                            :ARG1-of (s52.r2 / refine-01
+                                                             :ARG0 s52.p
+                                                             :duration (s52.m4 / multiple
+                                                                               :op1 (s52.t / temporal-quantity
+                                                                                           :unit (s52.y / year)
+                                                                                           :quant "1000000"))
+                                                             :manner (s52.s3 / steady))
+                                            :location (s52.o / out-there
+                                                             :mod (s52.r3 / right)))
+                              :ARG2 (s52.a3 / apply-02
+                                            :ARG1 (s52.m2 / mind
+                                                          :mod (s52.h2 / human)
+                                                          :mod (s52.f / feeble))
+                                            :ARG2 (s52.d / design-01
+                                                         :ARG1 (s52.t3 / tool
+                                                                       :mod (s52.t2 / this))
+                                                         :manner (s52.f2 / from
+                                                                         :op1 (s52.s / scratch)))))
+                  :rel (s52.n / nature))
+   :snt53 (s53.t / thank-01
+                 :ARG1 (s53.y / you
+                              :same-as s42.i)))
+

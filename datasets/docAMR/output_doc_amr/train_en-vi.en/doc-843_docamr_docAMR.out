@@ -1,0 +1,482 @@
+# ::id doc-843
+# ::doc_file doc-843
+# ::tok http : / / www . ted . com / talks / edward_burtynsky_photographs_the_landscape_of_oil< / url> <next_sent> I started my journey 30 years ago . <next_sent> And I worked in mines . <next_sent> And I realized that this was a world unseen . <next_sent> And I wanted , through color and large format cameras and very large prints , to make a body of work that somehow became symbols of our use of the landscape , how we use the land . <next_sent> And to me this was a key component that somehow , through this medium of photography , which allows us to contemplate these landscapes , that I thought photography was perfectly suited to doing this type of work . <next_sent> And after 17 years of photographing large industrial landscapes , it occurred to me that oil is underpinning the scale and speed . <next_sent> Because that is what has changed , And so then I went out to develop a whole series on the landscape of oil . <next_sent> And what I want to do is to kind of map an arc that there is extraction , where we 're taking it from the ground , refinement . <next_sent> And that 's one chapter . <next_sent> The other chapter that I wanted to look at was how we use it -- our cities , our cars , our motorcultures , where people gather around the vehicle as a celebration . <next_sent> And then the third one is this idea of the end of oil , this entropic end , where all of our parts of cars , our tires , oil filters , helicopters , planes -- where are the landscapes where all of that stuff ends up ? <next_sent> And to me , again , photography was a way in which I could explore and research the world , and find those places . <next_sent> And another idea that I had as well , that was brought forward by an ecologist -- he basically did a calculation where he took one liter of gas and said , well , how much carbon it would take , and how much organic material ? <next_sent> It was 23 metric tons for one liter . <next_sent> So whenever I fill up my gas , I think of that liter , and how much carbon . <next_sent> And I know that oil comes from the ocean and phytoplankton , but he did the calculations for our Earth and what it had to do to produce that amount of energy . <next_sent> From the photosynthetic growth , to produce what we use , the 30 billion barrels we use per year . <next_sent> And that also brought me to the fact that this poses such a risk to our society . <next_sent> Looking at 30 billion per year , we look at our two largest suppliers , Saudi Arabia and now Canada , with its dirty oil . <next_sent> And together they only form about 15 years of supply . <next_sent> The whole world , at 1.2 trillion estimated reserves , only gives us about 45 years . <next_sent> So , it 's not a question of if , but a question of when peak oil will come upon us . <next_sent> So , to me , using photography -- and I feel that all of us need to now begin to really take the task of using our talents , our ways of thinking , to begin to deal with what I think is probably one of the most challenging issues of our time , how to deal with our energy crisis . <next_sent> 30 , 40 years from now , the children that I have , I can look at them and say , " We did everything we possibly , humanly could do , to begin to mitigate this , what I feel is one of the most important and critical moments in our time . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01
+                            :ARG0 (s1.p / person
+                                        :name (s1.n / name
+                                                    :op1 "narcotic"))))
+   :snt2 (s2.s / start-01
+               :ARG0 (s2.i / i)
+               :ARG1 (s2.j / journey-01
+                           :ARG0 s2.i)
+               :time (s2.b / before
+                           :quant (s2.t / temporal-quantity
+                                        :unit (s2.y / year)
+                                        :quant "30")
+                           :op1 (s2.n / now)))
+   :snt3 (s3.a / and
+               :op2 (s3.w / work-01
+                          :ARG0 (s3.i / i
+                                      :same-as s2.i)
+                          :location (s3.m / mine)))
+   :snt4 (s4.a / and
+               :op2 (s4.r / realize-01
+                          :ARG0 (s4.i / i
+                                      :same-as s2.i)
+                          :ARG1 (s4.w / world
+                                      :ARG1-of (s4.s / see-01
+                                                     :polarity "-")
+                                      :domain (s4.t / this))))
+   :snt5 (s5.a / and
+               :op2 (s5.w / want-01
+                          :ARG0 (s5.i / i
+                                      :same-as s2.i)
+                          :ARG1 (s5.m / make-01
+                                      :ARG0 s5.i
+                                      :ARG1 (s5.b2 / body
+                                                   :ARG1-of (s5.w3 / work-01
+                                                                   :ARG0 s5.i)
+                                                   :ARG1-of (s5.b / become-01
+                                                                  :ARG2 (s5.t / thing
+                                                                              :ARG1-of (s5.s2 / symbolize-01
+                                                                                              :ARG2 (s5.a3 / and
+                                                                                                           :op1 (s5.u / use-01
+                                                                                                                      :ARG0 (s5.w2 / we)
+                                                                                                                      :ARG1 (s5.l2 / landscape))
+                                                                                                           :op2 (s5.t2 / thing
+                                                                                                                       :manner-of (s5.u2 / use-01
+                                                                                                                                         :ARG0 s5.w2
+                                                                                                                                         :ARG1 (s5.l / land))))))
+                                                                  :manner (s5.s / somehow)))
+                                      :ARG2 (s5.a2 / and
+                                                   :op1 (s5.c / camera
+                                                              :mod (s5.f / format)
+                                                              :mod (s5.c2 / color))
+                                                   :op2 (s5.p / print
+                                                              :mod (s5.l3 / large
+                                                                          :degree (s5.v / very)))))))
+   :snt6 (s6.a2 / and
+                :op2 (s6.c / component
+                           :ARG1-of (s6.k / key-02)
+                           :ARG1-of (s6.o / opine-01
+                                          :ARG0 (s6.i / i)
+                                          :same-as s2.i)
+                           :domain (s6.t2 / this)
+                           :mod (s6.t / think-01
+                                      :ARG0 s6.i
+                                      :ARG1 (s6.s2 / suit-01
+                                                   :ARG1 (s6.p2 / photography)
+                                                   :ARG1-of (s6.p / perfect-02)
+                                                   :ARG2 (s6.d / do-02
+                                                               :ARG1 (s6.w2 / work-01
+                                                                            :mod (s6.t6 / type
+                                                                                        :mod (s6.t5 / this)))))
+                                      :manner (s6.s / somehow)))
+                :rel (s6.m / medium
+                           :ARG0-of (s6.a / allow-01
+                                          :ARG1 (s6.c2 / contemplate-01
+                                                       :ARG0 (s6.w / we)
+                                                       :ARG1 (s6.m2 / mountain
+                                                                    :mod (s6.t4 / this))))
+                           :mod (s6.t3 / this)
+                           :mod s6.p2))
+   :snt7 (s7.a2 / and
+                :op2 (s7.c / come-to-mind-09
+                           :ARG1 (s7.i / i
+                                       :same-as s2.i)
+                           :ARG2 (s7.u / underlie-01
+                                       :ARG0 (s7.o / oil)
+                                       :ARG1 (s7.a3 / and
+                                                    :op1 (s7.s / scale)
+                                                    :op2 (s7.s3 / speed)))
+                           :time (s7.a / after
+                                       :op1 (s7.p / photograph-01
+                                                  :ARG0 s7.i
+                                                  :ARG1 (s7.s2 / scene
+                                                               :mod (s7.i2 / industry)
+                                                               :mod (s7.l / large))
+                                                  :duration (s7.t / temporal-quantity
+                                                                  :unit (s7.y / year)
+                                                                  :quant "17")))))
+   :snt8 (s8.a / and
+               :op1 (s8.c / cause-01
+                          :ARG0 (s8.c3 / change-01
+                                       :ARG1 (s8.t / that)))
+               :op2 (s8.c2 / cause-01
+                           :ARG1 (s8.g / go-out-17
+                                       :purpose (s8.d / develop-02
+                                                      :ARG0 (s8.i / i
+                                                                  :same-as s2.i)
+                                                      :ARG1 (s8.s / series
+                                                                  :mod (s8.w / whole)
+                                                                  :topic (s8.l / landscape
+                                                                               :mod (s8.o / oil))))
+                                       :ARG0 s8.i
+                                       :time (s8.t2 / then))))
+   :snt9 (s9.a / and
+               :op2 (s9.w / want-01
+                          :ARG0 (s9.i / i
+                                      :same-as s2.i)
+                          :ARG1 (s9.m / map-01
+                                      :ARG0 s9.i
+                                      :ARG1 (s9.a2 / arc
+                                                   :location-of (s9.e / extract-01)
+                                                   :location-of (s9.t / take-01
+                                                                      :ARG0 (s9.w2 / we)
+                                                                      :ARG1 (s9.i2 / it
+                                                                                   :same-as s8.o)
+                                                                      :ARG2 (s9.g / ground))
+                                                   :location-of (s9.r / refine-01))
+                                      :degree (s9.k / kind-of))))
+   :snt10 (s10.a / and
+                 :op2 (s10.c / chapter
+                             :domain (s10.t / that
+                                            :same-as s9.r)
+                             :quant "1"))
+   :snt11 (s11.w / want-01
+                 :ARG0 (s11.i / i
+                              :same-as s2.i)
+                 :ARG1 (s11.l / look-01
+                              :ARG0 s11.i
+                              :ARG1 (s11.c3 / chapter
+                                            :domain (s11.t / thing
+                                                           :manner-of (s11.u / use-01
+                                                                             :ARG0 (s11.w2 / we)
+                                                                             :ARG1 (s11.i2 / it
+                                                                                           :example (s11.a / and
+                                                                                                           :op1 (s11.c4 / city
+                                                                                                                        :poss s11.w2)
+                                                                                                           :op2 (s11.c / car
+                                                                                                                       :poss s11.w2)
+                                                                                                           :op3 (s11.v / vehicle
+                                                                                                                       :location-of (s11.g / gather-03
+                                                                                                                                           :purpose (s11.c2 / celebrate-02
+                                                                                                                                                            :ARG0 (s11.p / person))
+                                                                                                                                           :ARG0 s11.p
+                                                                                                                                           :location (s11.a2 / around
+                                                                                                                                                             :op1 (s11.v2 / vehicle)))
+                                                                                                                       :poss s11.w2))
+                                                                                           :same-as s8.o)))
+                                            :mod (s11.o / other))))
+   :snt12 (s12.a3 / and
+                  :op2 (s12.t3 / thing
+                               :domain (s12.i / idea
+                                              :topic (s12.e / end-01
+                                                            :ARG1 (s12.o / oil)
+                                                            :mod (s12.o3 / organization
+                                                                         :name (s12.n / name
+                                                                                      :op1 "Republican"))))
+                               :mod (s12.t4 / this)
+                               :ord (s12.o2 / ordinal-entity
+                                            :value "3")
+                               :time (s12.t2 / then))
+                  :rel (s12.a4 / and
+                               :op1 (s12.p / part
+                                           :op3 (s12.f / filter-02
+                                                       :ARG1 s12.o)
+                                           :part-of (s12.c / car)
+                                           :poss (s12.w / we
+                                                        :part (s12.t5 / tire)))
+                               :op2 s12.t5
+                               :op4 (s12.h / helicopter)
+                               :op5 (s12.p2 / plane)
+                               :op6 (s12.m / mountain
+                                           :location (s12.a2 / amr-unknown)
+                                           :location-of (s12.e2 / end-up-03
+                                                                :ARG1 (s12.s / stuff
+                                                                             :mod (s12.t / that)
+                                                                             :mod (s12.a / all)
+                                                                             :same-as s12.p2)))))
+   :snt13 (s13.a2 / and
+                  :op2 (s13.w / way
+                              :beneficiary (s13.i / i
+                                                  :same-as s2.i)
+                              :domain (s13.p / photograph-01)
+                              :manner-of (s13.p3 / possible-01
+                                                 :ARG1 (s13.a3 / and
+                                                               :op1 (s13.e / explore-01
+                                                                           :ARG0 s13.i
+                                                                           :ARG1 (s13.w2 / world))
+                                                               :op2 (s13.r / research-01
+                                                                           :ARG0 s13.i
+                                                                           :ARG1 s13.w2)
+                                                               :op3 (s13.f / find-01
+                                                                           :ARG0 s13.i
+                                                                           :ARG1 (s13.p2 / place
+                                                                                         :mod (s13.t / that)
+                                                                                         :same-as s12.e2))))
+                              :mod (s13.a / again)))
+   :snt14 (s14.b2 / bring-01
+                  :ARG0 (s14.e / ecologist
+                               :ARG0-of (s14.c / calculate-01
+                                               :ARG1 (s14.a / and
+                                                            :op1 (s14.t / take-01
+                                                                        :ARG0 s14.e
+                                                                        :ARG1 (s14.g / gas
+                                                                                     :quant (s14.v / volume-quantity
+                                                                                                   :unit (s14.l / liter)
+                                                                                                   :quant "1")))
+                                                            :op2 (s14.s / say-01
+                                                                        :ARG0 s14.e
+                                                                        :ARG1 (s14.a2 / and
+                                                                                      :op1 (s14.m3 / monetary-quantity
+                                                                                                   :ARG1-of (s14.t2 / take-01
+                                                                                                                    :ARG0 (s14.i3 / it))
+                                                                                                   :quant-of (s14.c2 / carbon))
+                                                                                      :op2 (s14.m / mass-quantity
+                                                                                                  :quant-of (s14.m2 / material
+                                                                                                                    :mod (s14.o / organic))))))
+                                               :mod (s14.b / basic)))
+                  :ARG1 (s14.i2 / idea
+                                :ARG1-of (s14.h / have-03
+                                                :ARG0 (s14.i / i
+                                                             :same-as s2.i)
+                                                :mod (s14.a4 / as-well))
+                                :mod (s14.a3 / another))
+                  :ARG2 (s14.f / forward))
+   :snt15 (s15.m / mass-quantity
+                 :prep-for (s15.m2 / mass-quantity
+                                   :unit (s15.l / liter)
+                                   :quant "1")
+                 :unit (s15.t / ton
+                              :mod (s15.m3 / metric))
+                 :quant "23")
+   :snt16 (s16.c2 / cause-01
+                  :ARG1 (s16.t2 / think-01
+                                :ARG0 (s16.i / i
+                                             :same-as s2.i)
+                                :ARG1 (s16.a / and
+                                             :op1 (s16.l / liter
+                                                         :mod (s16.t / that)
+                                                         :same-as s14.g)
+                                             :op2 (s16.m / mass-quantity
+                                                         :quant-of (s16.c / carbon)))
+                                :time (s16.f / fill-up-02
+                                             :ARG0 s16.i
+                                             :ARG1 (s16.g / gas
+                                                          :poss s16.i)
+                                             :mod (s16.a2 / any))))
+   :snt17 (s17.c3 / contrast-01
+                  :ARG1 (s17.a2 / and
+                                :op2 (s17.k / know-01
+                                            :ARG0 (s17.i / i
+                                                         :same-as s2.i)
+                                            :ARG1 (s17.c2 / come-01
+                                                          :ARG1 (s17.o3 / oil)
+                                                          :ARG3 (s17.a3 / and
+                                                                        :op1 (s17.o2 / ocean)
+                                                                        :op2 (s17.p / phytoplankton)))))
+                  :ARG2 (s17.c / calculate-01
+                               :ARG0 (s17.h / he
+                                            :same-as s14.e)
+                               :ARG3 (s17.a4 / and
+                                             :op1 (s17.p2 / planet
+                                                          :name (s17.n / name
+                                                                       :op1 "Earth"))
+                                             :op2 (s17.t2 / thing
+                                                          :ARG1-of (s17.d / do-02
+                                                                          :purpose (s17.p3 / produce-01
+                                                                                           :ARG0 s17.p2
+                                                                                           :ARG1 (s17.e / energy
+                                                                                                        :quant (s17.a / amount
+                                                                                                                      :mod (s17.t / that))))
+                                                                          :ARG0 s17.p2
+                                                                          :ARG2-of (s17.o / obligate-01))))))
+   :snt18 (s18.c / cause-01
+                 :ARG0 (s18.p / produce-01
+                              :ARG1 (s18.t2 / thing
+                                            :ARG1-of (s18.u / use-01
+                                                            :ARG0 (s18.w / we))
+                                            :ARG1-of (s18.u2 / use-01
+                                                             :ARG0 s18.w)))
+                 :ARG1 (s18.r / rate-entity-91
+                              :ARG1 (s18.v / volume-quantity
+                                           :unit (s18.b / barrel)
+                                           :quant "30000000")
+                              :ARG2 s18.p
+                              :ARG3 (s18.t / temporal-quantity
+                                           :unit (s18.y / year)
+                                           :quant "1"))
+                 :rel (s18.g2 / grow-01
+                              :ARG1 (s18.e / enzyme
+                                           :name (s18.n / name
+                                                        :op1 "Republican"
+                                                        :op2 "photosynthetic")))
+                 :rel (s18.g / gene))
+   :snt19 (s19.a2 / and
+                  :op2 (s19.b / bring-01
+                              :ARG0 (s19.t / that)
+                              :ARG1 (s19.i / i
+                                           :same-as s2.i)
+                              :ARG2 (s19.p / pose-02
+                                           :ARG0 (s19.t2 / this)
+                                           :ARG1 (s19.r / risk-01
+                                                        :ARG1 s19.t2
+                                                        :ARG2 (s19.s / society
+                                                                     :poss (s19.w / we))
+                                                        :degree (s19.s2 / such)))
+                              :mod (s19.a / also)))
+   :snt20 (s20.l3 / look-01
+                  :ARG0 (s20.w / we)
+                  :ARG1 (s20.a / and
+                               :ARG0-of (s20.h / have-degree-91
+                                               :ARG2 (s20.l / large)
+                                               :ARG3 (s20.m2 / most))
+                               :op1 (s20.c / country
+                                           :name (s20.n / name
+                                                        :op1 "Saudi"
+                                                        :op2 "Arabia"))
+                               :op2 (s20.c2 / country
+                                            :name (s20.n2 / name
+                                                          :op1 "Canada")
+                                            :time (s20.n3 / now))
+                               :quant "2")
+                  :condition (s20.l2 / look-01
+                                     :ARG0 s20.w
+                                     :ARG1 (s20.r / rate-entity-91
+                                                  :ARG1 (s20.m / monetary-quantity
+                                                               :unit (s20.d2 / dollar)
+                                                               :quant "30000000")
+                                                  :ARG2 (s20.t / temporal-quantity
+                                                               :unit (s20.y / year)
+                                                               :quant "1")))
+                  :prep-with (s20.o / oil
+                                    :ARG1-of (s20.d / dirty-02)
+                                    :poss s20.a)
+                  :rel (s20.s / supply-01
+                              :ARG1 s20.w))
+   :snt21 (s21.a2 / and
+                  :op2 (s21.f / form-01
+                              :ARG0 (s21.t2 / they
+                                            :same-as s20.s)
+                              :ARG1 (s21.a / about
+                                           :op1 (s21.t / temporal-quantity
+                                                       :duration-of (s21.s / supply-01)
+                                                       :unit (s21.y / year)
+                                                       :quant "15"))
+                              :manner (s21.t3 / together)
+                              :mod (s21.o / only)))
+   :snt22 (s22.g / give-01
+                 :ARG0 (s22.w3 / world
+                               :ARG1-of (s22.r / reserve-01
+                                               :ARG1-of (s22.e / estimate-01)
+                                               :ARG2 (s22.m / monetary-quantity
+                                                            :unit (s22.d / dollar)
+                                                            :quant "1200000000000"))
+                               :mod (s22.w2 / whole))
+                 :ARG1 (s22.a / about
+                              :op1 (s22.t / temporal-quantity
+                                          :unit (s22.y / year)
+                                          :quant "45"))
+                 :ARG2 (s22.w / we)
+                 :mod (s22.o / only))
+   :snt23 (s23.c / cause-01
+                 :ARG1 (s23.c3 / contrast-01
+                               :ARG1 (s23.q / question-01
+                                            :ARG1 (s23.t2 / truth-value)
+                                            :polarity "-")
+                               :ARG2 (s23.q2 / question-01
+                                             :ARG1 (s23.t / time
+                                                          :time-of (s23.c2 / come-upon-26
+                                                                           :ARG0 (s23.p / peak-01
+                                                                                        :ARG1 (s23.o / oil))
+                                                                           :ARG1 (s23.w / we))))))
+   :snt24 (s24.a2 / and
+                  :op1 (s24.i3 / infer-01
+                               :ARG1 (s24.u / use-01
+                                            :ARG1 (s24.p / photography))
+                               :ARG2 (s24.i / i
+                                            :ARG1-of (s24.t7 / think-01
+                                                             :mod (s24.p2 / probable))
+                                            :ARG0-of s24.t7
+                                            :same-as s2.i))
+                  :op2 (s24.f / feel-01
+                              :ARG0 s24.i
+                              :ARG1 (s24.n / need-01
+                                           :ARG0 (s24.w2 / we
+                                                         :mod (s24.a / all))
+                                           :ARG1 (s24.b / begin-01
+                                                        :purpose (s24.b2 / begin-01
+                                                                         :ARG0 s24.w2
+                                                                         :ARG1 (s24.d / deal-01
+                                                                                      :ARG0 s24.w2
+                                                                                      :ARG2 (s24.t4 / thing
+                                                                                                    :ARG1-of (s24.i2 / include-91
+                                                                                                                     :ARG2 (s24.i4 / issue-02
+                                                                                                                                   :ARG1-of (s24.h / have-degree-91
+                                                                                                                                                   :ARG2 (s24.c / challenge-01
+                                                                                                                                                                :ARG0 s24.i4)
+                                                                                                                                                   :ARG3 (s24.m / most)
+                                                                                                                                                   :ARG5 (s24.t8 / time))))
+                                                                                                    :domain (s24.t5 / thing
+                                                                                                                    :manner-of (s24.d2 / deal-01
+                                                                                                                                       :ARG0 s24.w2
+                                                                                                                                       :ARG2 (s24.c2 / crisis
+                                                                                                                                                     :poss s24.w2
+                                                                                                                                                     :topic (s24.e / energy)))))))
+                                                        :ARG0 s24.w2
+                                                        :ARG1 (s24.t / take-01
+                                                                     :ARG0 s24.w2
+                                                                     :ARG1 (s24.t3 / task-01
+                                                                                   :ARG1 (s24.u2 / use-01
+                                                                                                 :ARG0 s24.w2
+                                                                                                 :ARG1 (s24.a3 / and
+                                                                                                               :op1 (s24.t2 / talent
+                                                                                                                            :poss s24.w2)
+                                                                                                               :op2 (s24.w / way
+                                                                                                                           :manner-of (s24.t6 / think-01
+                                                                                                                                              :ARG0 s24.w2)
+                                                                                                                           :poss s24.w2))))
+                                                                     :ARG1-of (s24.r / real-04))
+                                                        :time (s24.n2 / now)))))
+   :snt25 (s25.p2 / possible-01
+                  :ARG1 (s25.a2 / and
+                                :op1 (s25.l / look-01
+                                            :ARG0 (s25.i / i
+                                                         :same-as s2.i)
+                                            :ARG1 (s25.p / person
+                                                         :ARG0-of (s25.h2 / have-rel-role-91
+                                                                          :ARG1 s25.i
+                                                                          :ARG2 (s25.c / child))))
+                                :op2 (s25.s / say-01
+                                            :ARG0 s25.i
+                                            :ARG1 (s25.d / do-02
+                                                         :purpose (s25.b / begin-01
+                                                                         :ARG0 (s25.w / we)
+                                                                         :ARG1 (s25.m / mitigate-01
+                                                                                      :ARG0 s25.w
+                                                                                      :ARG1 (s25.t3 / this
+                                                                                                    :ARG1-of (s25.i3 / include-91
+                                                                                                                     :ARG1-of (s25.f / feel-01
+                                                                                                                                     :ARG0 s25.i)
+                                                                                                                     :ARG2 (s25.m2 / moment
+                                                                                                                                   :ARG1-of (s25.i2 / important-01))))))
+                                                         :ARG0 s25.w
+                                                         :ARG1 (s25.e / everything))))
+                  :rel (s25.p3 / possible-01
+                               :ARG1-of (s25.d2 / do-02
+                                                :ARG0 s25.w
+                                                :ARG1-of (s25.p4 / possible-01)
+                                                :mod (s25.h3 / human)))
+                  :rel (s25.h / have-degree-91
+                              :ARG2 (s25.a3 / and
+                                            :op1 s25.i2
+                                            :op2 (s25.c2 / critical-02))
+                              :ARG3 (s25.m4 / most)
+                              :ARG5 (s25.m3 / moment
+                                            :time (s25.t4 / time
+                                                          :poss s25.w)))
+                  :time (s25.a / after
+                               :quant (s25.b2 / between
+                                              :op1 (s25.t / temporal-quantity
+                                                          :unit (s25.y / year)
+                                                          :quant "30")
+                                              :op2 (s25.t2 / temporal-quantity
+                                                           :unit (s25.y2 / year)
+                                                           :quant "40"))
+                               :op1 (s25.n / now)))
+   :snt26 (s26.t / thank-01
+                 :ARG1 (s26.y / you)))
+

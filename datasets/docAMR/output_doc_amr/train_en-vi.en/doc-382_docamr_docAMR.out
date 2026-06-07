@@ -1,0 +1,426 @@
+# ::id doc-382
+# ::doc_file doc-382
+# ::tok http : / / www . ted . com / talks / arianna_huffington_how_to_succeed_get_more_sleep< / url> <next_sent> My big idea is a very , very small idea that can unlock billions of big ideas that are at the moment dormant inside us . <next_sent> And my little idea that will do that is sleep . <next_sent> This is a room of type - A women . <next_sent> This is a room of sleep - deprived women . <next_sent> And I learned the hard way , the value of sleep . <next_sent> Two - and - a - half years ago , I fainted from exhaustion . <next_sent> And I began the journey of rediscovering the value of sleep . <next_sent> And in the course of that , I studied , I met with medical doctors , scientists , and I 'm here to tell you that the way to a more productive , more inspired , more joyful life is getting enough sleep . <next_sent> And we women are going to lead the way in this new revolution , this new feminist issue . <next_sent> We are literally going to sleep our way to the top , literally . <next_sent> Because unfortunately for men , sleep deprivation has become a virility symbol . <next_sent> I was recently having dinner with a guy who bragged that he had only gotten four hours sleep the night before . <next_sent> And I felt like saying to him -- but I did n't say it -- I felt like saying , " You know what ? <next_sent> If you had gotten five , this dinner would have been a lot more interesting . " <next_sent> There is now a kind of sleep deprivation one - upmanship . <next_sent> Especially here in Washington , if you try to make a breakfast date , and you say , " How about eight o'clock ? " <next_sent> they 're likely to tell you , " Eight o'clock is too late for me , but that 's okay , I can get a game of tennis in and do a few conference calls and meet you at eight . " <next_sent> And they think that means that they are so incredibly busy and productive , but the truth is they 're not , because we , at the moment , have had brilliant leaders in business , in finance , in politics , making terrible decisions . <next_sent> So a high I.Q. <next_sent> does not mean that you 're a good leader , because the essence of leadership is being able to see the iceberg before it hits the Titanic . <next_sent> And we 've had far too many icebergs hitting our Titanics . <next_sent> In fact , I have a feeling that if Lehman Brothers was Lehman Brothers and Sisters , they might still be around . <next_sent> While all the brothers were busy just being hyper - connected 24/7 , maybe a sister would have noticed the iceberg , because she would have woken up from a seven - and - a - half - or eight - hour sleep and have been able to see the big picture . <next_sent> So as we are facing all the multiple crises in our world at the moment , what is good for us on a personal level , what 's going to bring more joy , gratitude , effectiveness in our lives and be the best for our own careers is also what is best for the world . <next_sent> So I urge you to shut your eyes and discover the great ideas that lie inside us , to shut your engines and discover the power of sleep . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01))
+   :snt2 (s2.i3 / idea
+                :ARG0-of (s2.u / unlock-01
+                               :ARG1 (s2.i4 / idea
+                                            :quant (s2.m2 / multiple
+                                                          :op1 "1000000000")
+                                            :mod (s2.b / big)
+                                            :mod (s2.d / dormant
+                                                       :location (s2.i5 / inside
+                                                                        :op1 (s2.w / we))
+                                                       :time (s2.m / moment)))
+                               :ARG1-of (s2.p / possible-01))
+                :domain (s2.i2 / idea
+                               :mod s2.b
+                               :poss (s2.i / i))
+                :mod (s2.s / small
+                           :degree (s2.v / very)))
+   :snt3 (s3.a / and
+               :op2 (s3.s / sleep-01
+                          :domain (s3.i2 / idea
+                                         :ARG0-of (s3.d / do-02
+                                                        :ARG1 (s3.t / that
+                                                                    :same-as s2.u))
+                                         :mod (s3.l / little)
+                                         :poss (s3.i / i
+                                                     :same-as s2.i)
+                                         :same-as s2.i2)))
+   :snt4 (s4.r / room
+               :consist-of (s4.w / woman
+                                 :ARG1-of (s4.t2 / type-03
+                                                 :ARG2 (s4.s / string-entity
+                                                             :value "A")))
+               :domain (s4.t / this))
+   :snt5 (s5.r / room
+               :consist-of (s5.w / woman
+                                 :ARG1-of (s5.d / deprive-01
+                                                :ARG2 (s5.s / sleep-01)))
+               :domain (s5.t / this
+                             :same-as s4.t))
+   :snt6 (s6.a / and
+               :op2 (s6.l / learn-01
+                          :ARG0 (s6.i / i
+                                      :same-as s2.i)
+                          :ARG1 (s6.v / value-01
+                                      :ARG1 (s6.s / sleep-01))
+                          :manner (s6.w / way
+                                        :ARG1-of (s6.h / hard-02))))
+   :snt7 (s7.f / faint-01
+               :ARG0 (s7.i / i
+                           :same-as s2.i)
+               :ARG1-of (s7.c / cause-01
+                              :ARG0 (s7.e / exhaust-01
+                                          :ARG1 s7.i))
+               :time (s7.b / before
+                           :quant (s7.t / temporal-quantity
+                                        :unit (s7.y / year)
+                                        :quant "2.5")
+                           :op1 (s7.n / now)))
+   :snt8 (s8.a / and
+               :op1 (s8.b / begin-01
+                          :ARG0 (s8.i / i
+                                      :same-as s2.i)
+                          :ARG1 (s8.j / journey-01
+                                      :ARG0 s8.i
+                                      :ARG1 (s8.d / discover-01
+                                                  :ARG0 s8.i
+                                                  :ARG1 (s8.v / value-01
+                                                              :ARG1 (s8.s / sleep-01))))))
+   :snt9 (s9.a / and
+               :op1 (s9.s3 / study-01
+                           :ARG0 (s9.i / i
+                                       :same-as s2.i)
+                           :duration (s9.t2 / that
+                                            :same-as s8.j))
+               :op2 (s9.m2 / meet-03
+                           :ARG0 s9.i
+                           :ARG1 (s9.a2 / and
+                                        :op1 (s9.d / doctor
+                                                   :mod (s9.m / medicine))
+                                        :op2 (s9.s / scientist
+                                                   :mod s9.m)))
+               :op3 (s9.b / be-located-at-91
+                          :purpose (s9.t / tell-01
+                                         :ARG0 s9.i
+                                         :ARG1 (s9.w / way
+                                                     :direction (s9.l / live-01
+                                                                      :ARG0-of (s9.p / productive-03
+                                                                                     :ARG1-of (s9.h / have-degree-91
+                                                                                                    :ARG2 (s9.a3 / and
+                                                                                                                 :domain s9.l
+                                                                                                                 :op1 s9.p
+                                                                                                                 :op2 (s9.i2 / inspire-01)
+                                                                                                                 :op3 (s9.j / joyful))
+                                                                                                    :ARG3 (s9.m3 / more)))
+                                                                      :ARG1-of (s9.h2 / have-degree-91
+                                                                                      :ARG3 (s9.m4 / more)
+                                                                                      :ARG3 (s9.m5 / more)))
+                                                     :domain (s9.g / get-01
+                                                                   :ARG1 (s9.s2 / sleep-01
+                                                                                :ARG1-of (s9.h3 / have-quant-91
+                                                                                                :ARG3 (s9.e / enough)))))
+                                         :ARG2 (s9.y / you))
+                          :ARG1 s9.i
+                          :ARG2 (s9.h4 / here)))
+   :snt10 (s10.a / and
+                 :op2 (s10.l / lead-02
+                             :ARG0 (s10.w2 / we
+                                           :mod (s10.w3 / woman))
+                             :ARG1 (s10.w / way)
+                             :ARG2 (s10.a2 / and
+                                           :op1 (s10.r / revolution-03
+                                                       :ARG1-of (s10.n / new-01
+                                                                       :ARG1 (s10.i / issue-02
+                                                                                    :ARG0 (s10.f / feminist)))
+                                                       :mod (s10.t / this))
+                                           :op2 s10.i)))
+   :snt11 (s11.s / sleep-01
+                 :ARG0 (s11.w2 / we
+                               :same-as s10.w2)
+                 :ARG1 (s11.w / way
+                              :direction (s11.t / top)
+                              :poss s11.w2)
+                 :mod (s11.l / literal))
+   :snt12 (s12.c / cause-01
+                 :ARG0 (s12.b / become-01
+                              :ARG1 (s12.d / deprive-01
+                                           :ARG1 (s12.s / sleep-01))
+                              :ARG2 (s12.t / thing
+                                           :ARG1-of (s12.s2 / symbolize-01
+                                                            :ARG2 (s12.v / virility)))
+                              :ARG2-of (s12.f / fortunate-01
+                                              :ARG1 (s12.m / man)
+                                              :polarity "-")))
+   :snt13 (s13.d / din-01
+                 :ARG0 (s13.i / i
+                              :same-as s2.i)
+                 :accompanier (s13.g / guy
+                                     :ARG0-of (s13.b2 / brag-01
+                                                      :ARG1 (s13.s / sleep-01
+                                                                   :ARG0 s13.g
+                                                                   :duration (s13.t / temporal-quantity
+                                                                                    :mod (s13.o / only)
+                                                                                    :unit (s13.h / hour)
+                                                                                    :quant "4")
+                                                                   :time (s13.b / before
+                                                                                :op1 (s13.n / night)))))
+                 :time (s13.r / recent))
+   :snt14 (s14.a2 / and
+                  :op2 (s14.f / feel-06
+                              :ARG0 (s14.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s14.s / say-01
+                                           :ARG0 s14.i
+                                           :ARG1 (s14.t / thing
+                                                        :ARG1-of (s14.k / know-01
+                                                                        :ARG0 (s14.h / he
+                                                                                     :same-as s13.g)
+                                                                        :polarity (s14.a / amr-unknown)))
+                                           :ARG2 s14.h)
+                              :ARG1-of (s14.c / contrast-01
+                                              :ARG2 (s14.s2 / say-01
+                                                            :ARG0 s14.i
+                                                            :ARG1 s14.h
+                                                            :polarity "-"))))
+   :snt15 (s15.h / have-degree-91
+                 :ARG1 (s15.d / dinner
+                              :mod (s15.t2 / this))
+                 :ARG2 (s15.i / interest-01
+                              :ARG0 s15.d)
+                 :ARG3 (s15.m / more
+                              :quant (s15.l / lot))
+                 :condition (s15.g / get-01
+                                   :ARG0 (s15.y / you
+                                                :same-as s13.g)
+                                   :ARG1 (s15.t / thing
+                                                :quant "5")))
+   :snt16 (s16.u / upmanship
+                 :mod (s16.d / deprive-01
+                             :ARG1 (s16.s / sleep-01))
+                 :mod (s16.k / kind)
+                 :time (s16.n / now))
+   :snt17 (s17.h / have-condition-91
+                 :ARG2 (s17.a / and
+                              :op1 (s17.t / try-01
+                                          :ARG0 (s17.y / you)
+                                          :ARG1 (s17.m / make-01
+                                                       :ARG0 s17.y
+                                                       :ARG1 (s17.d / date
+                                                                    :mod (s17.b / breakfast-01))))
+                              :op2 (s17.s / say-01
+                                          :ARG0 s17.y
+                                          :ARG1 (s17.s2 / suggest-01
+                                                        :ARG1 (s17.d2 / date-entity
+                                                                      :time "8:00"))))
+                 :location (s17.h2 / here
+                                   :location (s17.c / city
+                                                    :name (s17.n / name
+                                                                 :op1 "Washington"))
+                                   :mod (s17.e / especially)))
+   :snt18 (s18.l2 / likely-01
+                  :ARG1 (s18.t / tell-01
+                               :ARG0 (s18.t3 / they)
+                               :ARG1 (s18.h / have-concession-91
+                                            :ARG1 (s18.o / okay-04
+                                                         :ARG1 (s18.h2 / have-degree-91
+                                                                       :ARG1 (s18.d / date-entity
+                                                                                    :quant "8")
+                                                                       :ARG2 (s18.l / late)
+                                                                       :ARG3 (s18.t4 / too))
+                                                         :ARG1-of (s18.c2 / cause-01
+                                                                          :ARG0 (s18.p / possible-01
+                                                                                       :ARG1 (s18.a / and
+                                                                                                    :op1 (s18.g2 / get-01
+                                                                                                                 :ARG0 (s18.i / i
+                                                                                                                              :same-as s18.t3)
+                                                                                                                 :ARG1 (s18.g / game
+                                                                                                                              :mod (s18.t2 / tennis)))
+                                                                                                    :op2 (s18.c / call-02
+                                                                                                                :quant (s18.f / few)
+                                                                                                                :ARG0 s18.i
+                                                                                                                :mod (s18.c3 / conference))
+                                                                                                    :op3 (s18.m / meet-03
+                                                                                                                :ARG0 s18.i
+                                                                                                                :ARG1 (s18.y / you)))))
+                                                         :beneficiary s18.i)
+                                            :ARG2 s18.h2)
+                               :ARG2 s18.y))
+   :snt19 (s19.a / and
+                 :op2 (s19.c2 / contrast-01
+                              :ARG1 (s19.t3 / think-01
+                                            :ARG0 (s19.t2 / they
+                                                          :same-as s18.t3)
+                                            :ARG1 (s19.m / mean-01
+                                                         :ARG2 (s19.a2 / and
+                                                                       :op1 (s19.b3 / busy-01
+                                                                                    :ARG1 s19.t2
+                                                                                    :degree (s19.i / incredible)
+                                                                                    :degree (s19.s / so))
+                                                                       :op2 (s19.p3 / productive-03
+                                                                                    :ARG0 s19.t2)))
+                                            :ARG1-of s19.m)
+                              :ARG2 (s19.t4 / true-01
+                                            :ARG1 s19.p3
+                                            :ARG1-of (s19.c / cause-01
+                                                            :ARG0 (s19.h / have-03
+                                                                         :ARG0 (s19.w / we)
+                                                                         :ARG1 (s19.p / person
+                                                                                      :ARG0-of (s19.l / lead-02
+                                                                                                      :location (s19.a3 / and
+                                                                                                                        :op1 (s19.b2 / business)
+                                                                                                                        :op2 (s19.f / finance)
+                                                                                                                        :op3 (s19.p2 / politics)))
+                                                                                      :ARG0-of (s19.d / decide-01
+                                                                                                      :ARG1-of (s19.t / terrible-01))
+                                                                                      :ARG1-of (s19.b / brilliant-01))
+                                                                         :time (s19.m2 / moment)))
+                                            :polarity "-")))
+   :snt20 (s20.i / infer-01
+                 :ARG1 (s20.q / quotient
+                              :ARG1-of (s20.h / high-02)
+                              :quant-of (s20.i2 / intelligent-01)))
+   :snt21 (s21.c / cause-01
+                 :ARG0 (s21.e / essence
+                              :domain (s21.p / person
+                                             :ARG0-of (s21.l / lead-02)
+                                             :ARG1-of (s21.g / good-03)
+                                             :domain (s21.y / you))
+                              :domain (s21.p2 / possible-01
+                                              :ARG1 (s21.s / see-01
+                                                           :ARG0 s21.y
+                                                           :ARG1 (s21.i / iceberg)
+                                                           :time (s21.b / before
+                                                                        :op1 (s21.h / hit-01
+                                                                                    :ARG0 s21.i
+                                                                                    :ARG1 (s21.s2 / ship
+                                                                                                  :name (s21.n / name
+                                                                                                               :op1 "Titanic")))))))
+                 :ARG1 (s21.m / mean-01
+                              :ARG2 s21.p
+                              :polarity "-"))
+   :snt22 (s22.a / and
+                 :op2 (s22.h / have-03
+                             :ARG0 (s22.w / we)
+                             :ARG1 (s22.i / iceberg
+                                          :ARG0-of (s22.h3 / hit-01
+                                                           :ARG1 (s22.s / spaceship
+                                                                        :name (s22.n / name
+                                                                                     :op1 "World")
+                                                                        :poss s22.w))
+                                          :ARG1-of (s22.h2 / have-quant-91
+                                                           :ARG2 (s22.m / many)
+                                                           :ARG3 (s22.t / too
+                                                                        :mod (s22.f / far))))))
+   :snt23 (s23.f / feel-02
+                 :ARG0 (s23.i / i
+                              :same-as s2.i)
+                 :ARG1 (s23.p / possible-01
+                              :ARG1 (s23.b / be-located-at-91
+                                           :ARG1 (s23.c / company
+                                                        :name (s23.n2 / name
+                                                                      :op1 "Lehman"
+                                                                      :op2 "Brothers"
+                                                                      :op3 "and"
+                                                                      :op4 "Sisters"))
+                                           :ARG2 (s23.a / around)
+                                           :time (s23.s / still)))
+                 :mod (s23.i2 / in-fact)
+                 :rel (s23.n / name))
+   :snt24 (s24.p3 / possible-01
+                  :ARG1 (s24.n / notice-01
+                               :ARG0 (s24.p / person
+                                            :ARG0-of (s24.h / have-rel-role-91
+                                                            :ARG2 (s24.s2 / sister)))
+                               :ARG1 (s24.i / iceberg
+                                            :same-as s21.i))
+                  :ARG1-of (s24.c / cause-01
+                                  :ARG0 (s24.a2 / and
+                                                :op1 (s24.w / wake-up-02
+                                                            :ARG1 s24.p
+                                                            :ARG3 (s24.s3 / sleep-01
+                                                                          :duration (s24.o / or
+                                                                                           :op1 (s24.t5 / temporal-quantity
+                                                                                                        :unit (s24.h3 / hour)
+                                                                                                        :quant "7"))))
+                                                :op2 (s24.p4 / possible-01
+                                                             :ARG1 (s24.s / see-01
+                                                                          :ARG0 s24.p
+                                                                          :ARG1 (s24.p2 / picture
+                                                                                        :mod (s24.b / big))))))
+                  :time (s24.b3 / busy-01
+                                :ARG1 (s24.b2 / brother
+                                              :mod (s24.a / all)
+                                              :same-as s23.n)
+                                :ARG2 (s24.c2 / connect-01
+                                              :ARG1 s24.b2
+                                              :degree (s24.h5 / hyper)
+                                              :frequency (s24.r / rate-entity-91
+                                                                :ARG1 (s24.t / temporal-quantity
+                                                                             :unit (s24.h2 / hour)
+                                                                             :quant "24")
+                                                                :ARG2 (s24.t2 / temporal-quantity
+                                                                              :quant "1"))
+                                              :mod (s24.j / just))
+                                :frequency (s24.r2 / rate-entity-91
+                                                   :ARG1 (s24.t3 / temporal-quantity
+                                                                 :unit (s24.d / day)
+                                                                 :quant "7")
+                                                   :ARG2 (s24.t4 / temporal-quantity
+                                                                 :unit (s24.w2 / week)
+                                                                 :unit (s24.h4 / hour)
+                                                                 :quant "1")))
+                  :rel "8")
+   :snt25 (s25.i / infer-01
+                 :ARG1 (s25.c2 / cause-01
+                               :ARG0 (s25.f / face-01
+                                            :ARG0 (s25.w / we)
+                                            :ARG1 (s25.c3 / crisis
+                                                          :quant (s25.m5 / multiple)
+                                                          :location (s25.w2 / world
+                                                                            :poss s25.w)
+                                                          :mod (s25.a / all))
+                                            :time (s25.m / moment))
+                               :ARG1 (s25.a4 / and
+                                             :domain (s25.t2 / thing
+                                                             :ARG1-of (s25.h2 / have-degree-91
+                                                                              :ARG2 (s25.g / good-02
+                                                                                           :ARG1 s25.t2
+                                                                                           :ARG2 (s25.w3 / world
+                                                                                                         :same-as s25.w2))
+                                                                              :ARG3 (s25.m4 / most)
+                                                                              :mod (s25.a2 / also)))
+                                             :op1 (s25.t / thing
+                                                         :ARG0-of (s25.b / bring-01
+                                                                         :ARG1 (s25.a3 / and
+                                                                                       :quant (s25.m2 / more)
+                                                                                       :op1 (s25.j / joy)
+                                                                                       :op2 (s25.g4 / gratitude)
+                                                                                       :op3 (s25.e / effective-04
+                                                                                                   :ARG1 (s25.l2 / life
+                                                                                                                 :poss s25.w))))
+                                                         :ARG1-of (s25.g2 / good-04
+                                                                          :ARG2 s25.w
+                                                                          :prep-on (s25.l / level
+                                                                                          :ARG1-of (s25.p / personal-02
+                                                                                                          :ARG2 s25.w))))
+                                             :op2 (s25.h / have-degree-91
+                                                         :ARG1 s25.t
+                                                         :ARG2 (s25.g3 / good-04
+                                                                       :ARG1 s25.t
+                                                                       :ARG2 (s25.c / career
+                                                                                    :poss s25.w))
+                                                         :ARG3 (s25.m3 / most)))))
+   :snt26 (s26.c / cause-01
+                 :ARG1 (s26.u / urge-01
+                              :ARG0 (s26.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s26.y / you
+                                           :part (s26.e2 / eye))
+                              :ARG2 (s26.a / and
+                                           :op1 (s26.s / shut-01
+                                                       :ARG0 s26.y
+                                                       :ARG1 s26.e2)
+                                           :op2 (s26.d / discover-01
+                                                       :ARG0 s26.y
+                                                       :ARG1 (s26.i2 / idea
+                                                                     :ARG1-of (s26.l / lie-07
+                                                                                     :ARG2 (s26.i3 / inside
+                                                                                                   :op1 (s26.w / we)))
+                                                                     :mod (s26.g / great)))
+                                           :op3 (s26.s2 / shut-01
+                                                        :ARG0 s26.y
+                                                        :ARG1 (s26.e / engine
+                                                                     :poss s26.y))
+                                           :op4 (s26.d2 / discover-01
+                                                        :ARG0 s26.y
+                                                        :ARG1 (s26.p / power
+                                                                     :poss (s26.s3 / sleep-01))))))
+   :snt27 (s27.t / thank-01
+                 :ARG1 (s27.y / you
+                              :same-as s2.i)))
+

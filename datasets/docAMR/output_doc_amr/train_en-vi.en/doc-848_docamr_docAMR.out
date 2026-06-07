@@ -1,0 +1,687 @@
+# ::id doc-848
+# ::doc_file doc-848
+# ::tok http : / / www . ted . com / talks / hod_lipson_builds_self_aware_robots< / url> <next_sent> So , where are the robots ? <next_sent> We 've been told for 40 years already that they 're coming soon . <next_sent> Very soon they 'll be doing everything for us . <next_sent> They 'll be cooking , cleaning , buying things , shopping , building . <next_sent> But they are n't here . <next_sent> Meanwhile , we have illegal immigrants doing all the work , but we do n't have any robots . <next_sent> So I want to give a little bit of a different perspective of how we can perhaps look at these things in a little bit of a different way . <next_sent> We can make the circuitry of the right computational power , but we ca n't actually put them together to make something that will actually work and be as adaptive as these systems . <next_sent> So let 's try to look at it from a different perspective . <next_sent> Let 's summon the best designer , the mother of all designers . <next_sent> Let 's see what evolution can do for us . <next_sent> So we threw in -- we created a primordial soup with lots of pieces of robots -- with bars , with motors , with neurons . <next_sent> Put them all together , and put all this under kind of natural selection , under mutation , and rewarded things for how well they can move forward . <next_sent> A very simple task , and it 's interesting to see what kind of things came out of that . <next_sent> So if you look , you can see a lot of different machines come out of this . <next_sent> They all move around . <next_sent> They all crawl in different ways , and you can see on the right , that we actually made a couple of these things , and they work in reality . <next_sent> These are not very fantastic robots , but they evolved to do exactly what we reward them for : for moving forward . <next_sent> So that was all done in simulation , but we can also do that on a real machine . <next_sent> Here 's a physical robot that we actually have a population of brains , competing , or evolving on the machine . <next_sent> And you can see these robots are not ready to take over the world yet , but they gradually learn how to move forward , and they do this autonomously . <next_sent> So in these two examples , we had basically machines that learned how to walk in simulation , and also machines that learned how to walk in reality . <next_sent> But I want to show you a different approach , and this is this robot over here , which has four legs . <next_sent> It has eight motors , four on the knees and four on the hip . <next_sent> It has also two tilt sensors that tell the machine which way it 's tilting . <next_sent> But this machine does n't know what it looks like . <next_sent> Initially , it does some random motion , and then it tries to figure out what it might look like . <next_sent> So what you 're seeing here are a couple of machines -- a pattern of locomotion . <next_sent> We were hoping that it wass going to have a kind of evil , spidery walk , but instead it created this pretty lame way of moving forward . <next_sent> But when you look at that , you have to remember that this machine did not do any physical trials on how to move forward , nor did it have a model of itself . <next_sent> It kind of figured out what it looks like , and how to move forward , and then actually tried that out . <next_sent> So , we 'll move forward to a different idea . <next_sent> That 's what happened when the robots actually are rewarded for doing something . <next_sent> What happens if you do n't reward them for anything , you just throw them in ? <next_sent> So we have these cubes , like the diagram showed here . <next_sent> So , initially nothing happens , they 're just flipping around there . <next_sent> But after a very short while , you can see these blue things on the right there begin to take over . <next_sent> They begin to self - replicate . <next_sent> So in absence of any reward , the intrinsic reward is self - replication . <next_sent> And we 've actually built a couple of these , and this is part of a larger robot made out of these cubes . <next_sent> It 's an accelerated view , where you can see the robot actually carrying out some of its replication process . <next_sent> So you 're feeding it with more material -- cubes in this case -- and more energy , and it can make another robot . <next_sent> So of course , this is a very crude machine , but we 're working on a micro - scale version of these , and hopefully the cubes will be like a powder that you pour in . <next_sent> OK , so what can we learn ? <next_sent> These robots are of course not very useful in themselves , but they might teach us something about how we can build better robots , and perhaps how humans , animals , create self - models and learn . <next_sent> And one of the things that I think is important is that we have to get away from this idea of designing the machines manually , but actually let them evolve and learn , like children , and perhaps that 's the way we 'll get there . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :ARG3-of (s1.a / Wall)
+               :value "Street")
+   :snt2 (s2.r / robot
+               :location (s2.a / amr-unknown))
+   :snt3 (s3.t / tell-01
+               :ARG1 (s3.c / come-01
+                           :ARG1 (s3.t3 / they
+                                        :same-as s2.r)
+                           :time (s3.s / soon))
+               :ARG2 (s3.w / we)
+               :duration (s3.t2 / temporal-quantity
+                                :unit (s3.y / year)
+                                :quant "40")
+               :time (s3.a / already))
+   :snt4 (s4.d / do-02
+               :ARG0 (s4.t / they
+                           :same-as s2.r)
+               :ARG1 (s4.e / everything)
+               :ARG2 (s4.w / we
+                           :same-as s3.w)
+               :time (s4.s / soon
+                           :degree (s4.v / very)))
+   :snt5 (s5.a / and
+               :op1 (s5.c2 / cook-01
+                           :ARG0 (s5.t / they
+                                       :same-as s2.r))
+               :op2 (s5.c / clean-01
+                          :ARG0 s5.t)
+               :op3 (s5.b2 / buy-01
+                           :ARG0 s5.t
+                           :ARG1 (s5.t2 / thing))
+               :op4 (s5.s / shop-01
+                          :ARG0 s5.t)
+               :op5 (s5.b / build-01
+                          :ARG0 s5.t))
+   :snt6 (s6.c / contrast-01
+               :ARG2 (s6.b / be-located-at-91
+                           :ARG1 (s6.t / they
+                                       :same-as s2.r)
+                           :ARG2 (s6.h / here)
+                           :polarity "-"))
+   :snt7 (s7.c / contrast-01
+               :ARG1 (s7.h / have-03
+                           :ARG0 (s7.w / we)
+                           :ARG1 (s7.p / person
+                                       :ARG0-of (s7.i / immigrate-01
+                                                      :manner (s7.l / legal-02
+                                                                    :polarity "-"))
+                                       :ARG0-of (s7.w2 / work-01
+                                                       :mod (s7.a / all))))
+               :ARG2 (s7.h2 / have-03
+                            :ARG0 s7.w
+                            :ARG1 (s7.r / robot
+                                        :mod (s7.a2 / any))
+                            :polarity "-")
+               :time (s7.m / meanwhile))
+   :snt8 (s8.c / cause-01
+               :ARG1 (s8.w / want-01
+                           :ARG0 (s8.i / i)
+                           :ARG1 (s8.g / give-01
+                                       :ARG0 s8.i
+                                       :ARG1 (s8.p / perspective
+                                                   :ARG1-of (s8.d / differ-02
+                                                                  :ARG1 (s8.b / bit
+                                                                              :mod (s8.l / little))
+                                                                  :ARG1 (s8.w2 / way)
+                                                                  :mod-of s8.w2)
+                                                   :topic (s8.t / thing
+                                                                :manner-of (s8.p2 / possible-01
+                                                                                  :ARG1 (s8.l2 / look-01
+                                                                                               :ARG0 (s8.w3 / we)
+                                                                                               :ARG1 (s8.t2 / thing
+                                                                                                            :mod (s8.t3 / this))
+                                                                                               :manner s8.w2)))))))
+   :snt9 (s9.c3 / contrast-01
+                :ARG1 (s9.p / possible-01
+                            :ARG1 (s9.m / make-01
+                                        :ARG0 (s9.w / we)
+                                        :ARG1 (s9.c / circuitry
+                                                    :mod (s9.p3 / power
+                                                                :ARG1-of (s9.r / right-06)
+                                                                :mod (s9.c2 / compute-01)))))
+                :ARG2 (s9.p2 / possible-01
+                             :ARG1 (s9.p4 / put-01
+                                          :purpose (s9.m2 / make-01
+                                                          :ARG0 s9.w
+                                                          :ARG1 (s9.s / something
+                                                                      :ARG1-of (s9.w2 / work-09)
+                                                                      :ARG1-of (s9.h / have-degree-91
+                                                                                     :ARG2 (s9.a2 / adapt-01
+                                                                                                  :ARG1 s9.s)
+                                                                                     :ARG3 (s9.e / equal)
+                                                                                     :ARG4 (s9.s2 / system
+                                                                                                  :mod (s9.t / this)))))
+                                          :ARG0 s9.w
+                                          :ARG1 s9.c
+                                          :ARG1-of (s9.a / actual-02
+                                                         :ARG1 s9.w2)
+                                          :mod (s9.t2 / together))
+                             :polarity "-"))
+   :snt10 (s10.c / cause-01
+                 :ARG1 (s10.t / try-01
+                              :ARG0 (s10.w / we)
+                              :ARG1 (s10.l / look-01
+                                           :ARG0 s10.w
+                                           :ARG1 (s10.i / it)
+                                           :manner (s10.p / perspective
+                                                          :ARG1-of (s10.d / differ-02)))))
+   :snt11 (s11.s / summon-01
+                 :ARG0 (s11.w / we)
+                 :ARG1 (s11.p / person
+                              :ARG0-of (s11.d / design-01
+                                              :ARG0 (s11.p2 / person
+                                                            :mod (s11.a / all)))
+                              :ARG0-of (s11.h2 / have-rel-role-91
+                                               :ARG1 s11.p2
+                                               :ARG2 (s11.m2 / mother))
+                              :ARG1-of (s11.h / have-degree-91
+                                              :ARG2 (s11.g / good-03
+                                                           :ARG1 s11.p)
+                                              :ARG3 (s11.m / most)))
+                 :mode "imperative")
+   :snt12 (s12.s / see-01
+                 :ARG0 (s12.w / we)
+                 :ARG1 (s12.t / thing
+                              :ARG1-of (s12.d / do-02
+                                              :ARG0 (s12.e / evolve-01)
+                                              :ARG1-of (s12.p / possible-01)
+                                              :ARG2 s12.w))
+                 :mode "imperative")
+   :snt13 (s13.c / cause-01
+                 :ARG1 (s13.t / throw-in-02
+                              :ARG0 (s13.w / we))
+                 :ARG1 (s13.s / soup
+                              :ARG1-of (s13.c2 / create-01
+                                               :ARG0 s13.w
+                                               :instrument (s13.r / robot
+                                                                  :quant (s13.p / piece
+                                                                                :quant (s13.l / lot))
+                                                                  :accompanier (s13.a / and
+                                                                                      :op1 (s13.b / bar)
+                                                                                      :op2 (s13.m / motor)
+                                                                                      :op3 (s13.n / nerve))))
+                              :mod (s13.p2 / primordial)))
+   :snt14 (s14.a3 / and
+                  :op1 (s14.p2 / put-01
+                               :ARG0 (s14.y / you)
+                               :ARG1 (s14.t / they
+                                            :mod (s14.a / all)
+                                            :same-as s13.r)
+                               :ARG2 (s14.t5 / together)
+                               :mode "imperative")
+                  :op2 (s14.p3 / put-01
+                               :ARG0 s14.y
+                               :ARG1 (s14.t4 / this
+                                             :mod (s14.a2 / all))
+                               :ARG2 (s14.u / under
+                                            :op1 (s14.s / select-01
+                                                        :ARG1-of (s14.n / natural-03)
+                                                        :mod (s14.k / kind)))
+                               :manner (s14.u2 / under
+                                               :op2 (s14.m2 / mutate-01)))
+                  :op3 (s14.r / reward-01
+                              :ARG0 s14.y
+                              :ARG1 (s14.t2 / thing)
+                              :ARG2 (s14.t3 / thing
+                                            :degree-of (s14.g / good-02
+                                                              :manner-of (s14.p / possible-01
+                                                                                :ARG1 (s14.m / move-01
+                                                                                             :ARG0 s14.t
+                                                                                             :direction (s14.f / forward)))))))
+   :snt15 (s15.a / and
+                 :op1 (s15.t / task
+                             :ARG1-of (s15.s2 / simple-02
+                                              :degree (s15.v / very)))
+                 :op2 (s15.i / interest-01
+                             :ARG2 (s15.s / see-01
+                                          :ARG1 (s15.t2 / thing
+                                                        :ARG1-of (s15.c / come-03
+                                                                        :ARG2 s15.t)
+                                                        :mod (s15.k / kind)))))
+   :snt16 (s16.p / possible-01
+                 :ARG1 (s16.s / see-01
+                              :ARG0 (s16.y / you)
+                              :ARG1 (s16.c / come-out-09
+                                           :ARG1 (s16.m / machine
+                                                        :quant (s16.l2 / lot)
+                                                        :ARG1-of (s16.d / differ-02))
+                                           :ARG2 (s16.t / this
+                                                        :same-as s15.t)))
+                 :condition (s16.l / look-01
+                                   :ARG0 s16.y))
+   :snt17 (s17.m / move-01
+                 :ARG1 (s17.t / they
+                              :mod (s17.a / all)
+                              :same-as s16.m)
+                 :ARG2 (s17.a2 / around))
+   :snt18 (s18.a3 / and
+                  :op1 (s18.c2 / crawl-01
+                               :ARG0 (s18.t / they
+                                            :mod (s18.a2 / all)
+                                            :same-as s16.m)
+                               :manner (s18.w / way
+                                              :ARG1-of (s18.d / differ-02)))
+                  :op2 (s18.p / possible-01
+                              :ARG1 (s18.s / see-01
+                                           :ARG0 (s18.y / you)
+                                           :ARG1 (s18.a4 / and
+                                                         :op1 (s18.m / make-01
+                                                                     :ARG0 (s18.w2 / we
+                                                                                   :same-as s13.w)
+                                                                     :ARG1 (s18.t2 / thing
+                                                                                   :quant (s18.c / couple)
+                                                                                   :ARG1-of (s18.i2 / include-91
+                                                                                                    :ARG2 (s18.t3 / thing
+                                                                                                                  :mod (s18.t4 / this))))
+                                                                     :ARG1-of (s18.a / actual-02))
+                                                         :op2 (s18.w3 / work-09
+                                                                      :ARG1 s18.t2
+                                                                      :mod (s18.i / in-reality)))))
+                  :rel (s18.r / right-08))
+   :snt19 (s19.c / contrast-01
+                 :ARG1 (s19.r2 / robot
+                               :ARG1-of (s19.f / fantastic-02
+                                               :degree (s19.v / very)
+                                               :polarity "-")
+                               :domain (s19.t2 / this
+                                               :same-as s18.t2))
+                 :ARG2 (s19.e / evolve-01
+                              :ARG1 s19.r2
+                              :ARG2 (s19.d / do-02
+                                           :ARG0 s19.r2
+                                           :ARG1 (s19.t / thing
+                                                        :ARG1-of (s19.m / mean-01
+                                                                        :ARG2 (s19.m2 / move-01
+                                                                                      :ARG0 s19.r2
+                                                                                      :ARG2 (s19.f2 / forward)))
+                                                        :ARG2-of (s19.r / reward-01
+                                                                        :ARG0 (s19.w / we
+                                                                                     :same-as s13.w)
+                                                                        :ARG1 s19.r2)
+                                                        :mod (s19.e2 / exact)))))
+   :snt20 (s20.c / contrast-01
+                 :ARG1 (s20.t / that
+                              :ARG1-of (s20.d / do-02
+                                              :location (s20.s / simulate-01))
+                              :mod (s20.a / all))
+                 :ARG2 (s20.p / possible-01
+                              :ARG1 (s20.d2 / do-02
+                                            :ARG0 (s20.w / we)
+                                            :ARG1 s20.t
+                                            :location (s20.m / machine
+                                                             :ARG1-of (s20.r / real-04))
+                                            :mod (s20.a2 / also))))
+   :snt21 (s21.o / or
+                 :op1 (s21.r / robot
+                             :ARG0-of (s21.c / compete-01
+                                             :location (s21.m / machine
+                                                              :same-as s21.e))
+                             :consist-of (s21.p2 / population
+                                                 :ARG1-of (s21.h / have-03
+                                                                 :ARG0 (s21.w / we)
+                                                                 :ARG1-of (s21.a / actual-02))
+                                                 :consist-of (s21.b / brain))
+                             :location (s21.h2 / here)
+                             :mod (s21.p / physical))
+                 :op2 s21.h
+                 :op3 (s21.e / evolve-01
+                             :ARG1 s21.r
+                             :location s21.m))
+   :snt22 (s22.a / and
+                 :op2 (s22.h / have-concession-91
+                             :ARG1 (s22.a2 / and
+                                           :op1 (s22.l / learn-01
+                                                       :ARG0 (s22.r2 / robot
+                                                                     :mod (s22.t2 / this))
+                                                       :ARG1 (s22.m / move-01
+                                                                    :ARG1 s22.r2
+                                                                    :direction (s22.f / forward))
+                                                       :manner (s22.g / gradual))
+                                           :op2 (s22.d / do-02
+                                                       :ARG0 s22.r2
+                                                       :ARG1 (s22.t3 / this
+                                                                     :same-as s22.m)
+                                                       :manner (s22.r3 / robot)))
+                             :ARG2 (s22.p / possible-01
+                                          :ARG1 (s22.s / see-01
+                                                       :ARG0 (s22.y2 / you)
+                                                       :ARG1 (s22.r / ready-02
+                                                                    :ARG1 s22.r2
+                                                                    :ARG2 (s22.t / take-over-12
+                                                                                 :ARG0 s22.r2
+                                                                                 :ARG1 (s22.w / world))
+                                                                    :time (s22.y / yet)
+                                                                    :polarity "-")))))
+   :snt23 (s23.h / have-03
+                 :ARG0 (s23.w3 / we)
+                 :ARG1 (s23.a2 / and
+                               :mod (s23.b / basic)
+                               :op1 (s23.m / machine
+                                           :ARG0-of (s23.l / learn-01
+                                                           :ARG1 (s23.t / thing
+                                                                        :manner-of (s23.w / walk-01))
+                                                           :manner (s23.s / simulate-01)))
+                               :op2 (s23.m2 / machine
+                                            :ARG0-of (s23.l2 / learn-01
+                                                             :ARG1 (s23.t2 / thing
+                                                                           :manner-of (s23.w2 / walk-01
+                                                                                              :mod (s23.i / in-reality))))
+                                            :mod (s23.a / also)))
+                 :prep-in (s23.e / example
+                                 :mod (s23.t3 / this)
+                                 :quant "2"))
+   :snt24 (s24.c / contrast-01
+                 :ARG2 (s24.a / and
+                              :op1 (s24.w / want-01
+                                          :ARG0 (s24.i / i
+                                                       :same-as s8.i)
+                                          :ARG1 (s24.s / show-01
+                                                       :ARG0 s24.i
+                                                       :ARG1 (s24.a2 / approach-02
+                                                                     :ARG1-of (s24.d / differ-02))
+                                                       :ARG2 (s24.y / you)))
+                              :op2 (s24.r / robot
+                                          :ARG0-of (s24.h / have-03
+                                                          :ARG1 (s24.l / leg
+                                                                       :quant "4"))
+                                          :domain (s24.t / this)
+                                          :location (s24.o / over
+                                                           :op1 (s24.h2 / here))
+                                          :mod (s24.t2 / this))))
+   :snt25 (s25.h / have-03
+                 :ARG0 (s25.i / it
+                              :same-as s24.h)
+                 :ARG1 (s25.m / motor
+                              :example (s25.a / and
+                                              :op1 (s25.m2 / motor
+                                                           :location (s25.k / knee)
+                                                           :quant "4")
+                                              :op2 (s25.m3 / motor
+                                                           :location (s25.h2 / hip)
+                                                           :quant "4"))
+                              :quant "8"))
+   :snt26 (s26.h / have-03
+                 :ARG0 (s26.i / it
+                              :same-as s24.h)
+                 :ARG1 (s26.t2 / thing
+                               :ARG0-of (s26.m2 / measure-01
+                                                :ARG1 (s26.r / rotate-01))
+                               :ARG0-of (s26.t / tell-01
+                                               :ARG1 (s26.w / way
+                                                            :manner-of (s26.s / spin-01
+                                                                              :ARG1 (s26.m / machine
+                                                                                           :same-as s24.h)))
+                                               :ARG2 s26.m)
+                               :quant "2")
+                 :mod (s26.a / also))
+   :snt27 (s27.c / contrast-01
+                 :ARG2 (s27.k / know-01
+                              :ARG0 (s27.m / machine
+                                           :mod (s27.t2 / this)
+                                           :same-as s24.h)
+                              :ARG1 (s27.t / thing
+                                           :ARG1-of (s27.l / look-02
+                                                           :ARG0 (s27.i / it
+                                                                        :same-as s24.h)))
+                              :polarity "-"))
+   :snt28 (s28.a / and
+                 :op1 (s28.m / move-01
+                             :ARG0 (s28.i2 / it
+                                           :same-as s24.h)
+                             :mod (s28.r / random)
+                             :mod (s28.s / some)
+                             :time (s28.i / initial))
+                 :op2 (s28.t3 / try-01
+                              :ARG0 s28.i2
+                              :ARG1 (s28.f / figure-out-05
+                                           :ARG0 s28.i2
+                                           :ARG1 (s28.t2 / thing
+                                                         :ARG1-of (s28.l / look-02
+                                                                         :ARG0 s28.i2
+                                                                         :ARG1-of (s28.p / possible-01))))
+                              :time (s28.t / then)))
+   :snt29 (s29.s / see-01
+                 :ARG0 (s29.y / you)
+                 :ARG1 (s29.m / machine
+                              :quant (s29.c / couple)
+                              :mod (s29.p / pattern
+                                          :mod (s29.l / locomotion)))
+                 :location (s29.h / here))
+   :snt30 (s30.c / contrast-01
+                 :ARG1 (s30.h2 / hope-01
+                               :ARG0 (s30.w3 / we
+                                             :same-as s13.w)
+                               :ARG1 (s30.h / have-03
+                                            :ARG0 (s30.i2 / it
+                                                          :same-as s24.h)
+                                            :ARG1 (s30.w / walk-01
+                                                         :ARG0 s30.i2
+                                                         :ARG0-of (s30.c3 / creepy-04)
+                                                         :mod (s30.e / evil)
+                                                         :mod (s30.k / kind))))
+                 :ARG2 (s30.i / instead-of-91
+                              :ARG1 (s30.c2 / create-01
+                                            :ARG0 s30.i2
+                                            :ARG1 (s30.w2 / way
+                                                          :manner-of (s30.m / move-01
+                                                                            :direction (s30.f / forward))
+                                                          :mod (s30.l / lame
+                                                                      :degree (s30.p / pretty))
+                                                          :mod (s30.t / this)))
+                              :ARG2 s30.h))
+   :snt31 (s31.c / contrast-01
+                 :ARG2 (s31.o / obligate-01
+                              :ARG1 (s31.y / you)
+                              :ARG2 (s31.r / remember-01
+                                           :ARG0 s31.y
+                                           :ARG1 (s31.o2 / or
+                                                         :op1 (s31.t4 / try-01
+                                                                      :ARG0 (s31.m / machine
+                                                                                   :mod (s31.t3 / this)
+                                                                                   :same-as s24.h)
+                                                                      :ARG1 (s31.t2 / thing
+                                                                                    :manner-of (s31.m3 / move-01
+                                                                                                       :ARG0 s31.m
+                                                                                                       :direction (s31.f / forward)))
+                                                                      :manner (s31.p / physical)
+                                                                      :polarity "-")
+                                                         :op2 (s31.h / have-03
+                                                                     :ARG0 s31.m
+                                                                     :ARG1 (s31.m2 / model-01
+                                                                                   :ARG0 s31.m
+                                                                                   :ARG1 s31.m)
+                                                                     :polarity "-")))
+                              :condition (s31.l / look-01
+                                                :ARG0 s31.y
+                                                :ARG1 (s31.t / that)))
+                 :rel "-")
+   :snt32 (s32.a3 / and
+                  :op1 (s32.f / figure-out-05
+                              :ARG0 (s32.i / it
+                                           :same-as s24.h)
+                              :ARG1 (s32.a2 / and
+                                            :op1 (s32.t2 / thing
+                                                         :ARG1-of (s32.l / look-02
+                                                                         :ARG0 s32.i))
+                                            :op2 (s32.t3 / thing
+                                                         :manner-of (s32.m / move-01
+                                                                           :ARG0 s32.i
+                                                                           :direction (s32.f2 / forward))))
+                              :degree (s32.k / kind-of))
+                  :op2 (s32.t4 / try-out-05
+                               :ARG0 s32.i
+                               :ARG1 s32.a2
+                               :ARG1-of (s32.a / actual-02)
+                               :time (s32.t / then)))
+   :snt33 (s33.c / cause-01
+                 :ARG1 (s33.m / move-01
+                              :ARG0 (s33.w / we)
+                              :ARG2 (s33.i / idea
+                                           :ARG1-of (s33.d / differ-02))
+                              :direction (s33.f / forward)))
+   :snt34 (s34.e / event
+                 :domain (s34.t / that)
+                 :time (s34.r / reward-01
+                              :ARG1 (s34.r2 / robot)
+                              :ARG1-of (s34.a / actual-02)
+                              :ARG2 (s34.d / do-02
+                                           :ARG0 s34.r2
+                                           :ARG1 (s34.s / something))))
+   :snt35 (s35.a2 / and
+                  :condition (s35.e / event
+                                    :mod (s35.a / amr-unknown))
+                  :op1 (s35.r / reward-01
+                              :ARG0 (s35.y / you)
+                              :ARG1 (s35.t / they
+                                           :same-as s34.r2)
+                              :ARG2 (s35.a3 / anything)
+                              :polarity "-")
+                  :op2 (s35.t2 / throw-01
+                               :ARG0 s35.y
+                               :ARG1 s35.t
+                               :mod (s35.j / just)))
+   :snt36 (s36.c / cause-01
+                 :ARG1 (s36.h / have-03
+                              :ARG0 (s36.w / we
+                                           :same-as s13.w)
+                              :ARG1 (s36.b / box
+                                           :ARG1-of (s36.r / resemble-01
+                                                           :ARG2 (s36.s / show-01
+                                                                        :ARG0 (s36.d / diagram)
+                                                                        :location (s36.h2 / here)))
+                                           :mod (s36.t / this))))
+   :snt37 (s37.a / and
+                 :op1 (s37.e / event
+                             :mod (s37.n / nothing)
+                             :time (s37.i / initial))
+                 :op2 (s37.f / flip-01
+                             :ARG1 (s37.t2 / they
+                                           :same-as s36.b)
+                             :direction (s37.a2 / around
+                                                :location (s37.t / there))
+                             :mod (s37.j / just)))
+   :snt38 (s38.c / contrast-01
+                 :ARG2 (s38.p / possible-01
+                              :ARG1 (s38.s / see-01
+                                           :ARG0 (s38.y / you)
+                                           :ARG1 (s38.b / begin-01
+                                                        :ARG0 (s38.t3 / thing
+                                                                      :location (s38.t2 / there
+                                                                                        :ARG1-of (s38.r / right-04))
+                                                                      :mod (s38.b2 / blue)
+                                                                      :mod (s38.t4 / this))
+                                                        :ARG1 (s38.t / take-over-12
+                                                                     :ARG0 s38.t3)))
+                              :time (s38.a / after
+                                           :op1 (s38.w / while
+                                                       :ARG1-of (s38.s2 / short-07
+                                                                        :degree (s38.v / very))))))
+   :snt39 (s39.b / begin-01
+                 :ARG0 (s39.t / they
+                              :same-as s38.t3)
+                 :ARG1 (s39.r / replicate-01
+                              :ARG0 s39.t
+                              :ARG1 s39.t))
+   :snt40 (s40.i / infer-01
+                 :ARG1 (s40.r3 / reward-01
+                               :condition (s40.a / absent-01
+                                                 :ARG1 (s40.r2 / reward-01
+                                                               :mod (s40.a2 / any)))
+                               :domain (s40.r / replicate-01
+                                              :ARG1 (s40.s / self))
+                               :ARG0-of s40.r
+                               :mod (s40.i2 / intrinsic)))
+   :snt41 (s41.a2 / and
+                  :op1 (s41.b2 / build-01
+                               :ARG0 (s41.w / we
+                                            :same-as s13.w)
+                               :ARG1 (s41.t / this
+                                            :quant (s41.c / couple))
+                               :ARG1-of (s41.a / actual-02))
+                  :op2 (s41.h2 / have-part-91
+                               :ARG1 (s41.r / robot
+                                            :ARG1-of (s41.h / have-degree-91
+                                                            :ARG2 (s41.l / large)
+                                                            :ARG3 (s41.m2 / more))
+                                            :ARG1-of (s41.m / make-01
+                                                            :ARG2 (s41.b / box
+                                                                         :mod (s41.t3 / this)
+                                                                         :same-as s36.b)))
+                               :ARG2 (s41.t2 / this
+                                             :same-as s41.t)))
+   :snt42 (s42.v / view-01
+                 :ARG1-of (s42.a / accelerate-01)
+                 :location-of (s42.p / possible-01
+                                     :ARG1 (s42.s / see-01
+                                                  :ARG0 (s42.y / you)
+                                                  :ARG1 (s42.c / carry-out-03
+                                                               :ARG0 (s42.r2 / robot
+                                                                             :same-as s41.t)
+                                                               :ARG1 (s42.p2 / process-02
+                                                                             :quant (s42.s2 / some)
+                                                                             :ARG0 s42.r2
+                                                                             :ARG1 (s42.r / replicate-01
+                                                                                          :ARG1 s42.r2))
+                                                               :ARG1-of (s42.a2 / actual-02)))))
+   :snt43 (s43.i / infer-01
+                 :ARG1 (s43.a2 / and
+                               :op1 (s43.f / feed-01
+                                           :ARG0 (s43.y / you)
+                                           :ARG1 (s43.a / and
+                                                        :op1 (s43.m2 / material
+                                                                     :quant (s43.m3 / more)
+                                                                     :example (s43.u / Cuba
+                                                                                     :concession (s43.c / case-04
+                                                                                                        :ARG1 (s43.t / this))))
+                                                        :op2 (s43.e / energy
+                                                                    :quant (s43.m4 / more)))
+                                           :ARG2 (s43.i2 / it
+                                                         :same-as s41.t))
+                               :op2 (s43.p / possible-01
+                                           :ARG1 (s43.m / make-01
+                                                        :ARG0 s43.i2
+                                                        :ARG1 (s43.r / robot
+                                                                     :mod (s43.a3 / another))))))
+   :snt44 (s44.c / contrast-01
+                 :ARG1 (s44.m / machine
+                              :domain (s44.t / this)
+                              :mod (s44.c2 / crude
+                                           :degree (s44.v2 / very))
+                              :mod (s44.o / of-course))
+                 :ARG2 (s44.a / and
+                              :op1 (s44.w2 / work-01
+                                           :ARG0 (s44.w / we
+                                                        :same-as s13.w)
+                                           :ARG1 (s44.v / version
+                                                        :mod (s44.s / small-scale)
+                                                        :mod (s44.t2 / this
+                                                                     :same-as s41.t)))
+                              :op2 (s44.h / hope-01
+                                          :ARG1 (s44.r / resemble-01
+                                                       :ARG1 (s44.u / Cuba
+                                                                    :same-as s36.b)
+                                                       :ARG2 (s44.p2 / powder
+                                                                     :ARG1-of (s44.p / pour-01
+                                                                                     :ARG0 (s44.y / you)))))))
+   :snt45 (s45.c / cause-01
+                 :ARG1 (s45.p / possible-01
+                              :ARG1 (s45.l / learn-01
+                                           :ARG0 (s45.w / we
+                                                        :same-as s13.w)
+                                           :ARG1 (s45.a / amr-unknown)))
+                 :ARG1-of (s45.o / okay-04))
+   :snt46 (s46.c / contrast-01
+                 :ARG1 (s46.u / useful-05
+                              :ARG1 (s46.r / robot
+                                           :mod (s46.t4 / this)
+                                           :same-as s41.t)
+                              :mod (s46.v / very)
+                              :mod (s46.o / of-course)
+                              :polarity "-")
+                 :ARG2 (s46.p / possible-01
+                              :ARG1 (s46.t / teach-01
+                                           :ARG0 s46.r
+                                           :ARG1 (s46.s / something
+                                                        :topic (s46.a / and
+                                                                      :op1 (s46.t2 / thing
+                                                                                   :manner-of (s46.p2 / possible-01
+                                                                                                      :ARG1 (s46.b / build-01
+                                                                                                                   :ARG0 (s46.w / we)
+                                                                                                                   :ARG1 (s46.r2 / robot
+                                                                                                                                 :ARG1-of (s46.h / have-degree-91
+                                                                                                                                                 :ARG2 (s46.g / good-02
+                                                                                                                                                              :ARG1 s46.r2)
+                                                                                                                                                 :ARG3 (s46.m2 / more))))))
+                                                                      :op2 (s46.t3 / thing
+                                                                                   :manner-of (s46.c2 / create-01
+                                                                                                      :ARG0 (s46.a2 / and
+                                                                                                                    :op1 (s46.h2 / human)
+                                                                                                                    :op2 (s46.a3 / animal))
+                                                                                                      :ARG1 (s46.m / model-01
+                                                                                                                   :ARG1 s46.a2))
+                                                                                   :manner-of (s46.l / learn-01
+                                                                                                     :ARG0 s46.a2))))
+                                           :ARG2 s46.w))
+                 :rel (s46.p3 / possible-01))
+   :snt47 (s47.a2 / and
+                  :op2 (s47.i4 / include-91
+                               :ARG1 (s47.o / obligate-01
+                                            :ARG1 (s47.w2 / we)
+                                            :ARG2 (s47.g / get-05
+                                                         :ARG1 s47.w2
+                                                         :ARG2 (s47.i2 / idea
+                                                                       :consist-of (s47.d / design-01
+                                                                                          :ARG1 (s47.m / machine)
+                                                                                          :manner (s47.h / human))
+                                                                       :mod (s47.t4 / this))
+                                                         :concession-of (s47.l2 / let-01
+                                                                                :ARG0 s47.w2
+                                                                                :ARG1 (s47.a3 / and
+                                                                                              :ARG1-of (s47.r / resemble-01
+                                                                                                              :ARG2 (s47.c / child))
+                                                                                              :op1 (s47.e / evolve-01
+                                                                                                          :ARG1 s47.m)
+                                                                                              :op2 (s47.l / learn-01
+                                                                                                          :ARG0 s47.m))
+                                                                                :ARG1-of (s47.a / actual-02)
+                                                                                :manner-of (s47.g2 / get-05
+                                                                                                   :ARG1 s47.w2
+                                                                                                   :ARG2 (s47.t / there)
+                                                                                                   :manner (s47.w / way
+                                                                                                                  :ARG1-of (s47.p / possible-01))))
+                                                         :direction (s47.a4 / away)))
+                               :ARG2 (s47.t2 / thing
+                                             :ARG1-of (s47.i3 / important-01
+                                                              :ARG1-of (s47.t3 / think-01
+                                                                               :ARG0 (s47.i / i
+                                                                                            :same-as s8.i))))))
+   :snt48 (s48.t / thank-01
+                 :ARG1 (s48.y / you
+                              :same-as s8.i)))
+

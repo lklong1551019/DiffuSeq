@@ -1,0 +1,603 @@
+# ::id doc-278
+# ::doc_file doc-278
+# ::tok http : / / www . ted . com / talks / jay_walker_on_the_world_s_english_mania< / url> <next_sent> Let 's talk about manias . <next_sent> Let 's start with Beatle mania : hysterical teenagers , crying , screaming , pandemonium . <next_sent> Sports mania : deafening crowds , all for one idea -- get the ball in the net . <next_sent> Okay , religious mania : there 's rapture , there 's weeping , there 's visions . <next_sent> Manias can be good . <next_sent> Manias can be alarming . <next_sent> Or manias can be deadly . <next_sent> The world has a new mania . <next_sent> A mania for learning English . <next_sent> Listen as Chinese students practice their English by screaming it . <next_sent> Teacher : ... change my life ! <next_sent> Students : I will change my life . <next_sent> T : I do n't want to let my parents down . <next_sent> S : I do n't want to let my parents down . <next_sent> T : I do n't ever want to let my country down . <next_sent> S : I do n't ever want to let my country down . <next_sent> T : Most importantly ... S : Most importantly ... <next_sent> T : I do n't want to let myself down . <next_sent> S : I do n't want to let myself down . <next_sent> Jay Walker : How many people are trying to learn English worldwide ? <next_sent> Two billion of them . <next_sent> Students : A t - shirt . A dress . <next_sent> JW : In Latin America , in India , in Southeast Asia , and most of all in China . <next_sent> If you are a Chinese student you start learning English in the third grade , by law . <next_sent> That 's why this year China will become the world 's largest English - speaking country . <next_sent> Why English ? <next_sent> In a single word : Opportunity . <next_sent> Opportunity for a better life , a job , to be able to pay for school , or put better food on the table . <next_sent> Imagine a student taking a giant test for three full days . <next_sent> Her score on this one test literally determines her future . <next_sent> She studies 12 hours a day for three years to prepare . <next_sent> 25 percent of her grade is based on English . <next_sent> It 's called the Gaokao , and 80 million high school Chinese students have already taken this grueling test . <next_sent> The intensity to learn English is almost unimaginable , unless you witness it . <next_sent> Teacher : Perfect ! <next_sent> Students : Perfect ! <next_sent> T : Perfect ! <next_sent> S : Perfect ! <next_sent> T : I want to speak perfect English . <next_sent> S : I want to speak perfect English . <next_sent> T : I want to speak -- <next_sent> S : I want to speak -- <next_sent> T : perfect English . <next_sent> S : perfect English . <next_sent> T : I want to change my life ! <next_sent> S : I want to change my life ! <next_sent> JW : So is English mania good or bad ? <next_sent> Is English a tsunami , washing away other languages ? <next_sent> Not likely . <next_sent> English is the world 's second language . <next_sent> Your native language is your life . <next_sent> But with English you can become part of a wider conversation : a global conversation about global problems , like climate change or poverty , or hunger or disease . <next_sent> The world has other universal languages . <next_sent> Mathematics is the language of science . <next_sent> Music is the language of emotions . <next_sent> And now English is becoming the language of problem - solving . <next_sent> Not because America is pushing it , but because the world is pulling it . <next_sent> So English mania is a turning point . <next_sent> Like the harnessing of electricity in our cities or the fall of the Berlin Wall , English represents hope for a better future -- a future where the world has a common language to solve its common problems . <next_sent> Thank you very much .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01))
+   :snt2 (s2.l / let-01
+               :ARG1 (s2.t / talk-01
+                           :ARG0 (s2.w / we)
+                           :ARG1 (s2.m / man)))
+   :snt3 (s3.s2 / start-01
+                :ARG0 (s3.w / we)
+                :ARG2 (s3.m / mania
+                            :example (s3.a / and
+                                           :op1 (s3.t / teenager
+                                                      :mod (s3.h / hysterical))
+                                           :op2 (s3.c / cry-02
+                                                      :ARG0 s3.t)
+                                           :op3 (s3.s / scream-01
+                                                      :ARG0 s3.t)
+                                           :op4 (s3.p / pandemonium))
+                            :mod (s3.f / festival
+                                       :name (s3.n / name
+                                                   :op1 "Beatle")))
+                :mode "imperative")
+   :snt4 (s4.m / mania
+               :consist-of (s4.c / crowd
+                                 :purpose (s4.i / idea
+                                                :mod (s4.g / get-01
+                                                           :ARG1 (s4.b / ball)
+                                                           :location (s4.n / net))
+                                                :quant "1")
+                                 :ARG0-of (s4.d / deafen-01)
+                                 :mod (s4.a / all))
+               :topic (s4.s / sport))
+   :snt5 (s5.m / mania
+               :ARG1-of (s5.o / okay-04)
+               :example (s5.s / sell-01)
+               :example (s5.w / weep-01)
+               :mod (s5.r / religious)
+               :op3 (s5.e / envision-01))
+   :snt6 (s6.p / possible-01
+               :ARG1 (s6.g / good-02
+                           :ARG1 (s6.w / woman)))
+   :snt7 (s7.p / possible-01
+               :ARG1 (s7.a / alarm-01
+                           :ARG0 (s7.i / island
+                                       :name (s7.n / name
+                                                   :op1 "mushypanckaes"))))
+   :snt8 (s8.o / or
+               :op2 (s8.p / possible-01
+                          :ARG1 (s8.k / kill-01
+                                      :ARG0 (s8.m / man))))
+   :snt9 (s9.h / have-03
+               :ARG0 (s9.w / world)
+               :ARG1 (s9.m / mania
+                           :ARG1-of (s9.n / new-01)))
+   :snt10 (s10.m / mania
+                 :topic (s10.l2 / learn-01
+                                :ARG1 (s10.l / language
+                                             :name (s10.n / name
+                                                          :op1 "English")))
+                 :same-as s9.m)
+   :snt11 (s11.l2 / listen-01
+                  :ARG0 (s11.y / you)
+                  :ARG1 (s11.p2 / practice-01
+                                :ARG0 (s11.p / person
+                                             :ARG0-of (s11.s2 / study-01)
+                                             :mod (s11.c / country
+                                                         :name (s11.n / name
+                                                                      :op1 "China")))
+                                :ARG1 (s11.l / language
+                                             :name (s11.n2 / name
+                                                           :op1 "English")
+                                             :poss s11.p)
+                                :manner (s11.s / scream-01
+                                               :ARG0 s11.p
+                                               :ARG1 s11.l))
+                  :mode "imperative")
+   :snt12 (s12.s / say-01
+                 :ARG0 (s12.p / person
+                              :ARG0-of (s12.t / teach-01))
+                 :ARG1 (s12.c / change-01
+                              :ARG1 (s12.l / life
+                                           :poss s12.p)))
+   :snt13 (s13.s / say-01
+                 :ARG1 (s13.c / change-01
+                              :ARG0 (s13.i / i)
+                              :ARG1 (s13.l / life
+                                           :poss s13.i
+                                           :same-as s12.l))
+                 :ARG2 (s13.p / person
+                              :ARG0-of (s13.s2 / study-01)))
+   :snt14 (s14.s / say-01
+                 :ARG0 (s14.p2 / person
+                               :name (s14.n / name
+                                            :op1 "T"))
+                 :ARG1 (s14.w / want-01
+                              :ARG0 (s14.i / i)
+                              :ARG1 (s14.l / let-down-04
+                                           :ARG0 s14.i
+                                           :ARG1 (s14.p3 / person
+                                                         :ARG0-of (s14.h / have-rel-role-91
+                                                                         :ARG1 s14.i
+                                                                         :ARG2 (s14.p / parent))))
+                              :polarity "-"))
+   :snt15 (s15.p3 / post-scriptum
+                  :domain (s15.w / want-01
+                                 :ARG0 (s15.i / i)
+                                 :ARG1 (s15.l / let-down-04
+                                              :ARG0 s15.i
+                                              :ARG1 (s15.p2 / person
+                                                            :ARG0-of (s15.h / have-rel-role-91
+                                                                            :ARG1 s15.i
+                                                                            :ARG2 (s15.p / parent))
+                                                            :same-as s14.p3))
+                                 :polarity "-"))
+   :snt16 (s16.s / say-01
+                 :ARG0 (s16.p / person
+                              :name (s16.n / name
+                                           :op1 "T"))
+                 :ARG1 (s16.w / want-01
+                              :ARG0 (s16.i / i)
+                              :ARG1 (s16.l / let-down-04
+                                           :ARG0 s16.i
+                                           :ARG1 (s16.c / country
+                                                        :poss s16.i))
+                              :time (s16.e / ever)
+                              :polarity "-"))
+   :snt17 (s17.s / say-01
+                 :ARG1 (s17.w / want-01
+                              :ARG0 (s17.i / i
+                                           :same-as s16.i)
+                              :ARG1 (s17.l / let-down-04
+                                           :ARG0 s17.i
+                                           :ARG1 (s17.c / country
+                                                        :poss s17.i
+                                                        :same-as s16.c))
+                              :time (s17.e / ever)
+                              :polarity "-")
+                 :mod (s17.p / postscript))
+   :snt18 (s18.a / and
+                 :op1 (s18.s / say-01
+                             :ARG1 (s18.v / variable
+                                          :name (s18.n / name
+                                                       :op1 "T")))
+                 :op2 (s18.h2 / have-degree-91
+                              :ARG1 (s18.v2 / variable
+                                            :name (s18.n2 / name
+                                                          :op1 "S"))
+                              :ARG2 (s18.i2 / important-01)
+                              :ARG2 (s18.i3 / important-01)
+                              :ARG3 (s18.m2 / most))
+                 :rel (s18.h / have-degree-91
+                             :ARG2 (s18.i / important-01)
+                             :ARG3 (s18.m / most)))
+   :snt19 (s19.s / say-01
+                 :ARG0 (s19.p / person
+                              :name (s19.n / name
+                                           :op1 "T"))
+                 :ARG1 (s19.w / want-01
+                              :ARG0 (s19.i / i)
+                              :ARG1 (s19.l / let-down-04
+                                           :ARG0 s19.i
+                                           :ARG1 s19.i)
+                              :polarity s19.i)
+                 :rel "-")
+   :snt20 (s20.s / say-01
+                 :ARG1 (s20.w / want-01
+                              :ARG0 (s20.i / i
+                                           :same-as s19.i)
+                              :ARG1 (s20.l / let-down-04
+                                           :ARG0 s20.i
+                                           :ARG1 s20.i)
+                              :polarity "-")
+                 :mod (s20.p / post-scriptum))
+   :snt21 (s21.s / say-01
+                 :ARG1 (s21.t / try-01
+                              :ARG0 (s21.p2 / person
+                                            :quant (s21.a / amr-unknown))
+                              :ARG1 (s21.l2 / learn-01
+                                            :ARG0 s21.p2
+                                            :ARG1 (s21.l / language
+                                                         :name (s21.n2 / name
+                                                                       :op1 "English")
+                                                         :same-as s10.l)
+                                            :location (s21.w / worldwide)))
+                 :ARG2 (s21.p / person
+                              :name (s21.n / name
+                                           :op1 "Jay"
+                                           :op2 "Walker")))
+   :snt22 (s22.t / thing
+                 :quant "2000000000")
+   :snt23 (s23.a / and
+                 :op1 (s23.t / t-shirt
+                             :mod (s23.p / person
+                                         :ARG0-of (s23.s / study-01)))
+                 :op2 (s23.d / dress))
+   :snt24 (s24.s / say-01
+                 :ARG0 (s24.p / person
+                              :name (s24.n / name
+                                           :op1 "JW"))
+                 :ARG1 (s24.b / be-located-at-91
+                              :ARG2 (s24.a2 / and
+                                            :op1 (s24.w / world-region
+                                                        :name (s24.n2 / name
+                                                                      :op1 "Latin"
+                                                                      :op2 "America"))
+                                            :op2 (s24.c / country
+                                                        :name (s24.n3 / name
+                                                                      :op1 "India"))
+                                            :op3 (s24.w2 / world-region
+                                                         :name (s24.n4 / name
+                                                                       :op1 "Southeast"
+                                                                       :op2 "Asia"))
+                                            :op4 (s24.c2 / country
+                                                         :name (s24.n5 / name
+                                                                       :op1 "China")
+                                                         :ARG1-of (s24.h / have-quant-91
+                                                                         :ARG3 (s24.m / most)
+                                                                         :ARG5 (s24.a / all))))))
+   :snt25 (s25.s / start-01
+                 :ARG0 (s25.y / you)
+                 :ARG1 (s25.l3 / learn-01
+                               :ARG0 s25.y
+                               :ARG1 (s25.l / language
+                                            :name (s25.n2 / name
+                                                          :op1 "English")
+                                            :same-as s10.l)
+                               :ARG1-of (s25.r / require-01
+                                               :ARG0 (s25.l2 / law))
+                               :time (s25.g / grade
+                                            :ord (s25.o / ordinal-entity
+                                                        :value "3")))
+                 :condition (s25.p / person
+                                   :ARG0-of (s25.s2 / study-01)
+                                   :domain s25.y
+                                   :mod (s25.c / country
+                                               :name (s25.n / name
+                                                            :op1 "China"))))
+   :snt26 (s26.c / cause-01
+                 :ARG0 (s26.t / that)
+                 :ARG1 (s26.b / become-01
+                              :ARG1 (s26.c2 / country
+                                            :name (s26.n / name
+                                                         :op1 "China")
+                                            :same-as s24.n5)
+                              :ARG2 (s26.h / have-degree-91
+                                           :ARG1 (s26.c3 / country
+                                                         :ARG0-of (s26.s / speak-01
+                                                                         :ARG3 (s26.l / language
+                                                                                      :name (s26.n2 / name
+                                                                                                    :op1 "English"))))
+                                           :ARG2 (s26.l2 / large)
+                                           :ARG3 (s26.m / most)
+                                           :ARG5 (s26.w / world))
+                              :time (s26.y / year
+                                           :mod (s26.t2 / this))))
+   :snt27 (s27.c / cause-01
+                 :ARG0 (s27.a / amr-unknown)
+                 :ARG1 (s27.p / person
+                              :mod (s27.c2 / country
+                                           :name (s27.n / name
+                                                        :op1 "England")
+                                           :same-as s10.l)))
+   :snt28 (s28.w / word-01
+                 :ARG1 (s28.o / opportunity)
+                 :ARG1-of (s28.s / single-02))
+   :snt29 (s29.o / opportunity
+                 :purpose (s29.o2 / or
+                                  :op1 (s29.l / live-01
+                                              :ARG1-of (s29.h / have-degree-91
+                                                              :ARG2 (s29.g / good-02
+                                                                           :ARG1 s29.l)
+                                                              :ARG3 (s29.m / more)))
+                                  :op2 (s29.j / job)
+                                  :op3 (s29.p2 / possible-01
+                                               :ARG1 (s29.p / pay-01
+                                                            :ARG3 (s29.s / school)))
+                                  :op4 (s29.p3 / put-01
+                                               :ARG1 (s29.f / food
+                                                            :ARG1-of (s29.h2 / have-degree-91
+                                                                             :ARG2 (s29.g2 / good-02
+                                                                                           :ARG1 s29.f)
+                                                                             :ARG3 (s29.m2 / more)))
+                                               :ARG2 (s29.t / table))))
+   :snt30 (s30.i / imagine-01
+                 :ARG0 (s30.y / you)
+                 :ARG1 (s30.t2 / test-01
+                               :ARG1 (s30.p / person
+                                            :ARG0-of (s30.s / study-01))
+                               :duration (s30.t / temporal-quantity
+                                                :ARG1-of (s30.f / full-09)
+                                                :unit (s30.d / day)
+                                                :quant "3")
+                               :mod (s30.g / giant))
+                 :mode "imperative")
+   :snt31 (s31.d / determine-01
+                 :ARG0 (s31.s / score-01
+                              :ARG1 (s31.s2 / she
+                                            :same-as s30.p)
+                              :ARG2 (s31.t / test-01
+                                           :mod (s31.t2 / this)
+                                           :quant "1"
+                                           :same-as s30.t))
+                 :ARG1 (s31.f / future
+                              :poss s31.s2)
+                 :mod (s31.l / literal))
+   :snt32 (s32.s2 / study-01
+                  :purpose (s32.p / prepare-02
+                                  :ARG0 (s32.s / she
+                                               :same-as s30.p))
+                  :ARG0 s32.s
+                  :duration (s32.r / rate-entity-91
+                                   :ARG1 (s32.t / temporal-quantity
+                                                :unit (s32.h / hour)
+                                                :quant "12")
+                                   :ARG2 (s32.d / day))
+                  :duration (s32.t2 / temporal-quantity
+                                    :unit (s32.y / year)
+                                    :quant "3"))
+   :snt33 (s33.b / base-02
+                 :ARG1 (s33.g / grade
+                              :quant (s33.p / percentage-entity
+                                            :value "25")
+                              :poss (s33.s / she
+                                           :same-as s30.p))
+                 :ARG2 (s33.l / language
+                              :name (s33.n / name
+                                           :op1 "English")
+                              :same-as s10.l))
+   :snt34 (s34.a2 / and
+                  :op1 (s34.c / call-01
+                              :ARG1 (s34.i / it
+                                           :same-as s30.t)
+                              :ARG2 (s34.n / name
+                                           :op1 "Gaokao"))
+                  :op2 (s34.t / take-01
+                              :ARG0 (s34.p / person
+                                           :ARG0-of (s34.s / study-01)
+                                           :mod (s34.c2 / country
+                                                        :name (s34.n2 / name
+                                                                      :op1 "China"))
+                                           :mod (s34.h / high-school)
+                                           :quant "80000")
+                              :ARG1 (s34.t2 / test-01
+                                            :manner (s34.g / gradual)
+                                            :mod (s34.t3 / this)
+                                            :same-as s30.t)
+                              :time (s34.a / already)))
+   :snt35 (s35.p / possible-01
+                 :ARG1 (s35.i / imagine-01
+                              :ARG1 (s35.i2 / intense-02
+                                            :ARG2 (s35.l2 / learn-01
+                                                          :ARG1 (s35.l / language
+                                                                       :name (s35.n / name
+                                                                                    :op1 "English")
+                                                                       :same-as s10.l))))
+                 :condition (s35.w / witness-01
+                                   :ARG0 (s35.y / you)
+                                   :ARG1 s35.i2
+                                   :polarity "-")
+                 :mod (s35.a / almost)
+                 :polarity "-")
+   :snt36 (s36.s / say-01
+                 :ARG0 (s36.p2 / person
+                               :ARG0-of (s36.t / teach-01))
+                 :ARG1 (s36.p / perfect-02)
+                 :mode "expressive")
+   :snt37 (s37.s / say-01
+                 :ARG0 (s37.p2 / person
+                               :ARG0-of (s37.s2 / study-01))
+                 :ARG1 (s37.p / perfect-02)
+                 :mode "expressive")
+   :snt38 (s38.s / say-01
+                 :ARG0 (s38.p2 / person
+                               :name (s38.n / name
+                                            :op1 "T"))
+                 :ARG1 (s38.p / perfect-02)
+                 :mode "expressive")
+   :snt39 (s39.p2 / post-scriptum
+                  :domain (s39.p / perfect-02))
+   :snt40 (s40.s / say-01
+                 :ARG0 (s40.p2 / person
+                               :name (s40.n / name
+                                            :op1 "T"))
+                 :ARG1 (s40.w / want-01
+                              :ARG0 (s40.i / i)
+                              :ARG1 (s40.s2 / speak-01
+                                            :ARG0 s40.i
+                                            :ARG3 (s40.l / language
+                                                         :name (s40.n2 / name
+                                                                       :op1 "English")
+                                                         :same-as s10.l)
+                                            :manner (s40.p / perfect-02))))
+   :snt41 (s41.s / say-01
+                 :ARG1 (s41.w / want-01
+                              :ARG0 (s41.i / i)
+                              :ARG1 (s41.s2 / speak-01
+                                            :ARG0 s41.i
+                                            :ARG1-of (s41.p / perfect-02)
+                                            :ARG3 (s41.l / language
+                                                         :name (s41.n / name
+                                                                      :op1 "English"))))
+                 :ARG2 (s41.l2 / language
+                               :name (s41.n2 / name
+                                             :op1 "S")
+                               :same-as s10.l)
+                 :ARG0 "S")
+   :snt42 (s42.s / say-01
+                 :ARG0 (s42.p / person
+                              :name (s42.n / name
+                                           :op1 "T"))
+                 :ARG1 (s42.w / want-01
+                              :ARG0 (s42.i / i
+                                           :same-as s40.i)
+                              :ARG1 (s42.s2 / speak-01
+                                            :ARG0 s42.i)))
+   :snt43 (s43.s / say-01
+                 :ARG0 (s43.p / person
+                              :name (s43.n / name
+                                           :op1 "S"))
+                 :ARG1 (s43.w / want-01
+                              :ARG0 (s43.i / i
+                                           :same-as s40.i)
+                              :ARG1 (s43.s2 / speak-01
+                                            :ARG0 s43.i)))
+   :snt44 (s44.m / mean-01
+                 :ARG2 (s44.p / perfect-02
+                              :ARG1 (s44.l / language
+                                           :name (s44.n / name
+                                                        :op1 "English")))
+                 :ARG1 "T")
+   :snt45 (s45.l / language
+                 :name (s45.n / name
+                              :op1 "English")
+                 :ARG1-of (s45.p / perfect-02)
+                 :li "S")
+   :snt46 (s46.s / say-01
+                 :ARG0 (s46.p / person
+                              :name (s46.n / name
+                                           :op1 "T"))
+                 :ARG1 (s46.w / want-01
+                              :ARG0 (s46.i / i
+                                           :same-as s16.i)
+                              :ARG1 (s46.c / change-01
+                                           :ARG0 s46.i
+                                           :ARG1 (s46.l / life
+                                                        :poss s46.i))))
+   :snt47 (s47.p / post-scriptum
+                 :domain (s47.w / want-01
+                                :ARG0 (s47.i / i
+                                             :same-as s16.i)
+                                :ARG1 (s47.c / change-01
+                                             :ARG0 s47.i
+                                             :ARG1 (s47.l / life
+                                                          :poss s47.i
+                                                          :same-as s46.l))))
+   :snt48 (s48.s / say-01
+                 :ARG0 (s48.p / person
+                              :name (s48.n / name
+                                           :op1 "JW"))
+                 :ARG1 (s48.a / amr-choice
+                              :op1 (s48.g / good-02
+                                          :ARG1 (s48.m / mania
+                                                       :mod (s48.c / country
+                                                                   :name (s48.n2 / name
+                                                                                 :op1 "England"))))
+                              :op2 (s48.b / bad-07
+                                          :ARG1 s48.m)))
+   :snt49 (s49.t / tsunami
+                 :ARG0-of (s49.w / wash-01
+                                 :ARG1 (s49.l2 / language
+                                               :mod (s49.o / other))
+                                 :ARG4 (s49.a2 / away))
+                 :domain (s49.l / language
+                                :name (s49.n / name
+                                             :op1 "English")
+                                :same-as s10.l)
+                 :polarity (s49.a / amr-unknown))
+   :snt50 (s50.l / likely-01
+                 :polarity "-")
+   :snt51 (s51.l2 / language
+                  :domain (s51.l / language
+                                 :name (s51.n / name
+                                              :op1 "English")
+                                 :same-as s10.l)
+                  :ord (s51.o / ordinal-entity
+                              :value "2")
+                  :poss (s51.w / world
+                               :same-as s9.w))
+   :snt52 (s52.l2 / life
+                  :domain (s52.l / language
+                                 :mod (s52.n / native)
+                                 :poss (s52.y / you))
+                  :poss s52.y)
+   :snt53 (s53.c3 / contrast-01
+                  :ARG2 (s53.p2 / possible-01
+                                :ARG1 (s53.b / become-01
+                                             :ARG1 (s53.y / you)
+                                             :ARG2 (s53.h2 / have-part-91
+                                                           :ARG1 (s53.c4 / converse-01
+                                                                         :ARG1 (s53.c5 / converse-01
+                                                                                       :ARG1 (s53.p3 / problem
+                                                                                                     :example (s53.o / or
+                                                                                                                     :op1 (s53.c / change-01
+                                                                                                                                 :ARG1 (s53.c2 / climate))
+                                                                                                                     :op2 (s53.p / poor)
+                                                                                                                     :op3 (s53.h3 / hunger-01)
+                                                                                                                     :op4 (s53.d / disease))
+                                                                                                     :mod (s53.g / globe))
+                                                                                       :mod s53.g)
+                                                                         :ARG1-of (s53.h / have-degree-91
+                                                                                         :ARG2 (s53.w / wide-02
+                                                                                                      :ARG1 s53.c4)
+                                                                                         :ARG3 (s53.m / more)))
+                                                           :ARG2 s53.y))
+                                :condition (s53.l / language
+                                                  :name (s53.n / name
+                                                               :op1 "English")
+                                                  :same-as s10.l)))
+   :snt54 (s54.h / have-03
+                 :ARG0 (s54.w / world
+                              :same-as s9.w)
+                 :ARG1 (s54.l / language
+                              :mod (s54.u / universal)
+                              :mod (s54.o / other)))
+   :snt55 (s55.l / language
+                 :domain (s55.m / mathematics)
+                 :poss (s55.s / science))
+   :snt56 (s56.l / language
+                 :domain (s56.m / music)
+                 :poss (s56.e / emotion))
+   :snt57 (s57.a / and
+                 :op2 (s57.b / become-01
+                             :ARG1 (s57.l / language
+                                          :name (s57.n / name
+                                                       :op1 "English")
+                                          :same-as s10.l)
+                             :ARG2 (s57.l2 / language
+                                           :instrument-of (s57.s / solve-01
+                                                                 :ARG1 (s57.p / problem)))
+                             :time (s57.n2 / now)))
+   :snt58 (s58.c3 / contrast-01
+                  :ARG1 (s58.c / cause-01
+                               :ARG0 (s58.p2 / push-02
+                                             :ARG0 (s58.c4 / country
+                                                           :name (s58.n / name
+                                                                        :op1 "America"))
+                                             :ARG1 (s58.i / it
+                                                          :same-as s10.l))
+                               :polarity "-")
+                  :ARG2 (s58.c2 / cause-01
+                                :ARG0 (s58.p / pull-01
+                                             :ARG0 (s58.w / world
+                                                          :same-as s9.w)
+                                             :ARG1 s58.i)))
+   :snt59 (s59.i / infer-01
+                 :ARG1 (s59.p / point
+                              :domain (s59.m / mania
+                                             :mod (s59.c / country
+                                                         :name (s59.n / name
+                                                                      :op1 "England"))
+                                             :same-as s48.m)
+                              :time-of (s59.t / turn-02)))
+   :snt60 (s60.r / represent-01
+                 :ARG0 (s60.l / language
+                              :name (s60.n2 / name
+                                            :op1 "English")
+                              :same-as s10.l)
+                 :ARG1 (s60.h3 / hope-01
+                               :ARG1 (s60.f3 / future
+                                             :ARG1-of (s60.h2 / have-degree-91
+                                                              :ARG2 (s60.g / good-02
+                                                                           :ARG1 s60.f3)
+                                                              :ARG3 (s60.m2 / more))
+                                             :time-of (s60.h / have-03
+                                                             :ARG0 (s60.w2 / world
+                                                                           :same-as s9.w)
+                                                             :ARG1 (s60.l2 / language
+                                                                           :purpose (s60.s / solve-01
+                                                                                           :ARG0 s60.w2
+                                                                                           :ARG1 (s60.p / problem
+                                                                                                        :mod (s60.c2 / common)
+                                                                                                        :poss s60.w2))
+                                                                           :mod s60.c2))))
+                 :ARG1-of (s60.r2 / resemble-01
+                                  :ARG2 (s60.o / or
+                                               :op1 (s60.m / member
+                                                           :location (s60.c / city
+                                                                            :poss (s60.w / we)))
+                                               :op2 (s60.f2 / fall-01
+                                                            :ARG1 (s60.f / facility
+                                                                         :name (s60.n / name
+                                                                                      :op1 "Berlin"
+                                                                                      :op2 "Wall")))))
+                 :rel (s60.e / electricity))
+   :snt61 (s61.t / thank-01
+                 :ARG0 (s61.i / i)
+                 :ARG1 (s61.y / you)
+                 :mod (s61.m / much
+                             :degree (s61.v / very))))
+

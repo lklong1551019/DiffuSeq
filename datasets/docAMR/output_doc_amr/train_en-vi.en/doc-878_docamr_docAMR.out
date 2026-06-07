@@ -1,0 +1,133 @@
+# ::id doc-878
+# ::doc_file doc-878
+# ::tok http : / / www . ted . com / talks / caroline_lavelle_casts_a_spell_on_cello< / url> <next_sent> Thank you very much . <next_sent> Now , I 've got a story for you . <next_sent> When I arrived off the plane , after a very long journey from the West of England , my computer , my beloved laptop , had gone mad , and had -- oh ! -- a bit like that ! -- and the display on it -- anyway , the whole thing had burst . <next_sent> And I went to the IT guys here and a gentleman mended my computer , and then he said , " What are you doing here ? " <next_sent> and I said " I 'm playing the cello and I 'm doing a bit of singing , " and he said , " Oh , I sort of play the cello as well . " <next_sent> And I said , " Do you really ? " <next_sent> Anyway , so you 're in for a treat , because he 's fantastic , and his name 's Mark . <next_sent> I am also joined by my partner in crime , Thomas Dolby . <next_sent> This song is called " Farther than the Sun . "
+(d / document
+   :snt1 (s1.u / url-entity
+               :value "ossobuco")
+   :snt2 (s2.t / thank-01
+               :ARG0 (s2.i / i)
+               :ARG1 (s2.y / you)
+               :mod (s2.m / much
+                          :degree (s2.v / very)))
+   :snt3 (s3.h / have-03
+               :ARG0 (s3.i / i)
+               :ARG1 (s3.s / story)
+               :beneficiary (s3.y / you
+                                  :same-as s2.y)
+               :time (s3.n / now))
+   :snt4 (s4.a2 / and
+                :op1 (s4.g / go-08
+                           :ARG1 (s4.c / computer
+                                       :poss (s4.i / i
+                                                   :same-as s3.i)
+                                       :poss (s4.l / laptop
+                                                   :ARG1-of (s4.l3 / love-01
+                                                                   :ARG0 s4.i)))
+                           :ARG2 (s4.m / mad-02
+                                       :ARG1 s4.c))
+                :op2 (s4.b2 / burst-02
+                            :ARG1 (s4.t2 / thing
+                                         :quant (s4.w2 / whole))
+                            :mod (s4.a3 / anyway)
+                            :mod (s4.d / display
+                                       :location s4.l))
+                :rel (s4.r / resemble-01
+                           :ARG2 (s4.t / that)
+                           :degree (s4.b / bit)
+                           :mod (s4.o / oh
+                                      :mode "expressive"))
+                :time (s4.a4 / arrive-01
+                             :ARG1 s4.i
+                             :ARG3 (s4.p / plane)
+                             :time (s4.a / after
+                                         :op1 (s4.j / journey-01
+                                                    :ARG1-of (s4.l2 / long-03
+                                                                    :degree (s4.v / very))
+                                                    :source (s4.w / west
+                                                                  :part-of (s4.c2 / country
+                                                                                  :name (s4.n / name
+                                                                                              :op1 "England")))))))
+   :snt5 (s5.a2 / and
+                :op2 (s5.a3 / and
+                            :op1 (s5.g2 / go-02
+                                        :ARG0 (s5.i / i
+                                                    :same-as s3.i)
+                                        :ARG4 (s5.g3 / guy
+                                                     :location (s5.h / here)
+                                                     :topic (s5.t / technology
+                                                                  :mod (s5.i2 / information))))
+                            :op2 (s5.r / repair-01
+                                       :ARG0 (s5.g / gentleman)
+                                       :ARG1 (s5.c / computer
+                                                   :poss s5.i
+                                                   :same-as s4.i))
+                            :op3 (s5.s / say-01
+                                       :ARG0 s5.g
+                                       :ARG1 (s5.d / do-02
+                                                   :ARG1 (s5.a / amr-unknown)
+                                                   :location (s5.h2 / here))
+                                       :time (s5.t2 / then))))
+   :snt6 (s6.a / and
+               :op1 (s6.s / say-01
+                          :ARG0 (s6.i / i
+                                      :same-as s3.i)
+                          :ARG1 (s6.a2 / and
+                                       :op1 (s6.p / play-11
+                                                  :ARG0 s6.i
+                                                  :ARG2 (s6.c / cello))
+                                       :op2 (s6.s3 / sing-01
+                                                   :ARG0 s6.i
+                                                   :degree (s6.b / bit))))
+               :op3 (s6.s2 / say-01
+                           :ARG0 (s6.h / he
+                                       :same-as s5.g)
+                           :ARG1 (s6.p2 / play-11
+                                        :ARG0 s6.h
+                                        :ARG2 s6.c
+                                        :degree (s6.s4 / sort-of)
+                                        :mod (s6.o / oh
+                                                   :mode "expressive")
+                                        :mod (s6.a3 / as-well))))
+   :snt7 (s7.a2 / and
+                :op2 (s7.s / say-01
+                           :ARG0 (s7.i / i
+                                       :same-as s3.i)
+                           :ARG1 (s7.d / do-02
+                                       :ARG0 (s7.y / you
+                                                   :same-as s5.g)
+                                       :ARG1-of (s7.r / real-04)
+                                       :polarity (s7.a / amr-unknown))))
+   :snt8 (s8.c / cause-01
+               :ARG0 (s8.a / and
+                           :op1 (s8.f / fantastic-03
+                                      :ARG1 (s8.h / he
+                                                  :same-as s5.g))
+                           :op2 (s8.n2 / name-01
+                                       :ARG1 s8.h
+                                       :ARG2 (s8.p / person
+                                                   :name (s8.n / name
+                                                               :op1 "Mark"))))
+               :ARG1 (s8.t / treat-01
+                           :ARG1 (s8.y / you))
+               :mod (s8.a2 / anyway))
+   :snt9 (s9.j / join-01
+               :ARG0 (s9.p2 / person
+                            :name (s9.n / name
+                                        :op1 "Thomas"
+                                        :op2 "Dolby")
+                            :ARG0-of (s9.p / partner-01
+                                           :ARG1 (s9.i / i
+                                                       :same-as s3.i)
+                                           :manner (s9.c / crime-02)))
+               :ARG1 s9.i
+               :mod (s9.a / also))
+   :snt10 (s10.c / call-01
+                 :ARG1 (s10.s / song
+                              :mod (s10.t / this))
+                 :ARG2 (s10.w / work-of-art
+                              :name (s10.n / name
+                                           :op1 "Farther"
+                                           :op2 "than"
+                                           :op3 "the"
+                                           :op4 "Sun"))))
+

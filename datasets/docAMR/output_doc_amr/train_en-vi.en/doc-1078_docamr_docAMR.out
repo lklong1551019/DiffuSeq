@@ -1,0 +1,344 @@
+# ::id doc-1078
+# ::doc_file doc-1078
+# ::tok http : / / www . ted . com / talks / frans_lanting_photos_that_give_voice_to_the_animal_kingdom< / url> <next_sent> Humanity takes center stage at TED , but I would like to add a voice for the animals , whose bodies and minds and spirits shaped us . <next_sent> Some years ago , it was my good fortune to meet a tribal elder on an island not far from Vancouver . <next_sent> His name is Jimmy Smith , and he shared a story with me that is told among his people , who call themselves the Kwikwasut'inuxw . <next_sent> Once upon a time , he told me , all animals on Earth were one . <next_sent> Even though they look different on the outside , inside , they 're all the same , and from time to time they would gather at a sacred cave deep inside the forest to celebrate their unity . <next_sent> When they arrived , they would all take off their skins . <next_sent> Raven shed his feathers , bear his fur , and salmon her scales , and then , they would dance . <next_sent> But one day , a human made it to the cave and laughed at what he saw because he did not understand . <next_sent> Embarrassed , the animals fled , and that was the last time they revealed themselves this way . <next_sent> The ancient understanding that underneath their separate identities , all animals are one , has been a powerful inspiration to me . <next_sent> I like to get past the fur , the feathers and the scales . <next_sent> I want to get under the skin . <next_sent> No matter whether I 'm facing a giant elephant or a tiny tree frog , my goal is to connect us with them , eye to eye . <next_sent> You may wonder , do I ever photograph people ? <next_sent> Sure . <next_sent> People are always present in my photos , no matter whether they appear to portray tortoises or cougars or lions . <next_sent> You just have to learn how to look past their disguise . <next_sent> As a photographer , I try to reach beyond the differences in our genetic makeup to appreciate all we have in common with every other living thing . <next_sent> When I use my camera , I drop my skin like the animals at that cave so I can show who they really are . <next_sent> As animals blessed with the power of rational thought , we can marvel at the intricacies of life . <next_sent> As citizens of a planet in trouble , it is our moral responsibility to deal with the dramatic loss in diversity of life . <next_sent> But as humans with hearts , we can all rejoice in the unity of life , and perhaps we can change what once happened in that sacred cave . <next_sent> Let 's find a way to join the dance . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01))
+   :snt2 (s2.c2 / contrast-01
+                :ARG1 (s2.t / take-01
+                            :ARG0 (s2.h / humanity)
+                            :ARG1 (s2.s3 / stage-01
+                                         :mod (s2.c / center))
+                            :location (s2.r / research-institute
+                                            :name (s2.n / name
+                                                        :op1 "TED")))
+                :ARG2 (s2.l / like-02
+                            :ARG0 (s2.i / i)
+                            :ARG1 (s2.a / add-01
+                                        :ARG0 s2.i
+                                        :ARG1 (s2.v / voice-01
+                                                    :ARG0 (s2.a3 / animal
+                                                                 :poss-of (s2.a2 / and
+                                                                                 :ARG0-of (s2.s / shape-01
+                                                                                                :ARG1 (s2.w / we))
+                                                                                 :op1 (s2.b / body)
+                                                                                 :op2 (s2.m / mind)
+                                                                                 :op3 (s2.s2 / spirit)))))))
+   :snt3 (s3.f2 / fortune
+                :ARG1-of (s3.g / good-02)
+                :domain (s3.m / meet-03
+                              :ARG0 (s3.i / i
+                                          :same-as s2.i)
+                              :ARG1 (s3.e / elder
+                                          :mod (s3.t2 / tribe))
+                              :location (s3.i2 / island
+                                               :location (s3.r / relative-position
+                                                               :quant (s3.f / far
+                                                                            :polarity "-")
+                                                               :op1 (s3.c / city
+                                                                          :name (s3.n / name
+                                                                                      :op1 "Vancouver")))))
+                :poss s3.i
+                :time (s3.b / before
+                            :quant (s3.s / some
+                                         :op1 (s3.t / temporal-quantity
+                                                    :unit (s3.y / year)
+                                                    :quant "1"))
+                            :op1 (s3.n2 / now)))
+   :snt4 (s4.a2 / and
+                :op1 (s4.n / name
+                           :poss (s4.h / he
+                                       :same-as s3.e)
+                           :op1 "Jimmy"
+                           :op2 "Smith")
+                :op2 (s4.s / share-01
+                           :ARG0 s4.h
+                           :ARG1 (s4.s2 / story
+                                        :ARG1-of (s4.t / tell-01
+                                                       :location (s4.a / among
+                                                                       :op1 (s4.p / person
+                                                                                  :ARG0-of (s4.c / call-01
+                                                                                                 :ARG2 (s4.e / ethnic-group
+                                                                                                             :name (s4.n2 / name
+                                                                                                                          :op1 "Kwikwasut'inuxw")))
+                                                                                  :ARG1-of s4.c
+                                                                                  :poss s4.h))))
+                           :ARG2 (s4.i / i
+                                       :same-as s2.i)))
+   :snt5 (s5.t / tell-01
+               :ARG0 (s5.h / he
+                           :same-as s3.e)
+               :ARG1 (s5.o2 / one
+                            :domain (s5.a2 / animal
+                                           :location (s5.p / planet
+                                                           :name (s5.n / name
+                                                                       :op1 "Earth"))
+                                           :mod (s5.a / all)))
+               :ARG2 (s5.i / i
+                           :same-as s2.i)
+               :time (s5.o / once-upon-a-time))
+   :snt6 (s6.a2 / and
+                :concession (s6.l / look-02
+                                  :ARG0 (s6.t / they
+                                              :mod (s6.a / all)
+                                              :same-as s5.a2)
+                                  :ARG1 (s6.d2 / differ-02
+                                               :ARG1 s6.t)
+                                  :location (s6.o / outside)
+                                  :location (s6.i / inside))
+                :op1 (s6.s2 / same-01
+                            :ARG1 s6.t)
+                :op2 (s6.g / gather-03
+                           :purpose (s6.c2 / celebrate-01
+                                           :ARG0 s6.t
+                                           :ARG1 (s6.u / unity
+                                                       :poss s6.t))
+                           :ARG0 s6.t
+                           :frequency (s6.t2 / time-to-time)
+                           :location (s6.c / cave
+                                           :location (s6.i2 / inside
+                                                            :ARG2-of (s6.d / deep-02)
+                                                            :op1 (s6.f / forest))
+                                           :mod (s6.s / sacred))))
+   :snt7 (s7.t / take-off-07
+               :ARG0 (s7.t2 / they
+                            :mod (s7.a / all)
+                            :same-as s5.a2)
+               :ARG1 (s7.s / skin
+                           :poss s7.t2)
+               :time (s7.a2 / arrive-01
+                            :ARG1 s7.t2))
+   :snt8 (s8.a2 / and
+                :op1 (s8.a / and
+                           :op1 (s8.s2 / shed-01
+                                       :ARG0 (s8.p / person
+                                                   :name (s8.n / name
+                                                               :op1 "Raven")
+                                                   :part (s8.f / feather)
+                                                   :part (s8.f3 / fur)
+                                                   :part (s8.s / scale))
+                                       :ARG1 s8.f)
+                           :op2 (s8.b / bear-01
+                                      :ARG0 s8.p
+                                      :ARG1 s8.f3)
+                           :op3 (s8.f2 / fish-01
+                                       :ARG0 s8.p
+                                       :ARG1 s8.s))
+                :op2 (s8.d / dance-01
+                           :ARG0 (s8.t2 / they
+                                        :same-as s5.a2)
+                           :time (s8.t / then)))
+   :snt9 (s9.c3 / contrast-01
+                :ARG2 (s9.a / and
+                            :op1 (s9.m / make-it-14
+                                       :ARG0 (s9.h / human)
+                                       :ARG1 (s9.c2 / cave
+                                                    :same-as s6.c))
+                            :op2 (s9.l / laugh-01
+                                       :ARG0 s9.h
+                                       :ARG1-of (s9.c / cause-01
+                                                      :ARG0 (s9.u / understand-01
+                                                                  :ARG0 s9.h
+                                                                  :polarity "-"))
+                                       :ARG2 (s9.t / thing
+                                                   :ARG1-of (s9.s / see-01
+                                                                  :ARG0 s9.h)))
+                            :time (s9.d / day
+                                        :mod (s9.o / one))))
+   :snt10 (s10.a / and
+                 :op1 (s10.f / flee-05
+                             :ARG0 (s10.a2 / animal
+                                           :same-as s5.a2))
+                 :op2 (s10.e / embarrass-01
+                             :ARG1 s10.a2)
+                 :time-of (s10.r / reveal-01
+                                 :ARG0 s10.a2
+                                 :ARG1 s10.a2
+                                 :manner (s10.w / way
+                                                :mod (s10.t / this))
+                                 :mod (s10.l / last)))
+   :snt11 (s11.i3 / inspire-01
+                  :ARG0 (s11.u2 / understand-01
+                                :ARG1 (s11.o / one
+                                             :domain (s11.a3 / animal
+                                                             :mod (s11.a / all)
+                                                             :same-as s5.a2)
+                                             :location (s11.u / underneath
+                                                              :op1 (s11.i2 / identity
+                                                                           :ARG1-of (s11.s / separate-02)
+                                                                           :poss s11.a3)))
+                                :mod (s11.a2 / ancient))
+                  :ARG1 (s11.i / i
+                               :same-as s2.i)
+                  :ARG1-of (s11.p / powerful-02))
+   :snt12 (s12.l / like-01
+                 :ARG0 (s12.i / i
+                              :same-as s2.i)
+                 :ARG1 (s12.g / get-05
+                              :ARG1 s12.i
+                              :ARG2 (s12.p / pass-by-17
+                                           :ARG1 (s12.a / and
+                                                        :op1 (s12.f2 / fur)
+                                                        :op2 (s12.f / feather)
+                                                        :op3 (s12.s / scale)))))
+   :snt13 (s13.w / want-01
+                 :ARG0 (s13.i / i
+                              :same-as s2.i)
+                 :ARG1 (s13.g / get-05
+                              :ARG1 s13.i
+                              :ARG2 (s13.u / under
+                                           :op1 (s13.s / skin))))
+   :snt14 (s14.g2 / goal
+                  :ARG1-of (s14.r / regardless-91
+                                  :ARG2 (s14.f / face-01
+                                               :ARG0 (s14.i / i
+                                                            :same-as s2.i)
+                                               :ARG1 (s14.o / or
+                                                            :op1 (s14.e / elephant
+                                                                        :mod (s14.g / giant))
+                                                            :op2 (s14.f2 / frog
+                                                                         :mod (s14.t3 / tree)
+                                                                         :mod (s14.t2 / tiny)))))
+                  :domain (s14.c / connect-01
+                                 :ARG0 s14.i
+                                 :ARG1 (s14.w / we)
+                                 :ARG2 (s14.t / they)
+                                 :manner (s14.e2 / eye-to-eye))
+                  :poss s14.i)
+   :snt15 (s15.p3 / possible-01
+                  :ARG1 (s15.w / wonder-01
+                               :ARG0 (s15.y / you)
+                               :ARG1 (s15.p2 / photograph-01
+                                             :ARG0 (s15.i / i
+                                                          :same-as s2.i)
+                                             :ARG1 (s15.p / person)
+                                             :polarity (s15.a / amr-unknown)
+                                             :time (s15.e / ever))))
+   :snt16 (s16.s / sure-02)
+   :snt17 (s17.p4 / present-02
+                  :ARG1 (s17.p / person)
+                  :ARG1-of (s17.r / regardless-91
+                                  :ARG2 (s17.a3 / appear-02
+                                                :ARG1 (s17.p3 / portray-01
+                                                              :ARG0 s17.p
+                                                              :ARG1 (s17.o / or
+                                                                           :op1 (s17.a2 / animal
+                                                                                        :name (s17.n / name
+                                                                                                     :op1 "tortoise"))
+                                                                           :op2 (s17.c / cougar)
+                                                                           :op3 (s17.l / lion)))))
+                  :ARG2 (s17.p2 / photo
+                                :poss (s17.i / i
+                                             :same-as s2.i))
+                  :time (s17.a / always))
+   :snt18 (s18.o / obligate-01
+                 :ARG1 (s18.y / you)
+                 :ARG2 (s18.l / learn-01
+                              :ARG0 s18.y
+                              :ARG1 (s18.t2 / thing
+                                            :manner-of (s18.l2 / look-01
+                                                               :ARG0 s18.y
+                                                               :manner (s18.p / past
+                                                                              :op1 (s18.d / disguise-01
+                                                                                          :ARG1 (s18.t / they
+                                                                                                       :same-as s17.p))))))
+                 :mod (s18.j / just))
+   :snt19 (s19.t2 / try-01
+                  :ARG0 (s19.i / i
+                               :domain (s19.p / person
+                                              :ARG0-of (s19.p2 / photograph-01))
+                               :same-as s2.i)
+                  :ARG1 (s19.r / reach-03
+                               :purpose (s19.a2 / appreciate-02
+                                                :ARG0 s19.i
+                                                :ARG1 (s19.a / all
+                                                             :ARG1-of (s19.s / share-01
+                                                                             :ARG0 (s19.w / we)
+                                                                             :ARG2 (s19.t / thing
+                                                                                          :ARG0-of (s19.l / live-01)
+                                                                                          :mod (s19.o / other
+                                                                                                      :mod (s19.e / every))))))
+                               :ARG0 s19.i
+                               :ARG2 (s19.b / beyond
+                                            :op1 (s19.d / differ-02
+                                                        :ARG1 (s19.m / makeup
+                                                                     :mod (s19.g / gene)
+                                                                     :poss s19.w)))))
+   :snt20 (s20.d / drop-01
+                 :purpose (s20.p2 / possible-01
+                                  :ARG1 (s20.s / show-01
+                                               :ARG0 (s20.i / i
+                                                            :part (s20.s2 / skin)
+                                                            :same-as s2.i)
+                                               :ARG1 (s20.p / person
+                                                            :ARG1-of (s20.r / real-04)
+                                                            :domain (s20.t2 / they
+                                                                            :same-as s20.a))))
+                 :ARG0 s20.i
+                 :ARG1 s20.s2
+                 :ARG1-of (s20.r2 / resemble-01
+                                  :ARG2 (s20.d2 / drop-01
+                                                :ARG0 (s20.a / animal)
+                                                :location (s20.c2 / cave
+                                                                  :mod (s20.t / that)
+                                                                  :same-as s6.c)))
+                 :time (s20.u / use-01
+                              :ARG0 s20.i
+                              :ARG1 (s20.c / camera
+                                           :poss s20.i)))
+   :snt21 (s21.p / possible-01
+                 :ARG1 (s21.r2 / remark-01
+                               :ARG0 (s21.w / we)
+                               :ARG1 (s21.c / complexity
+                                            :poss (s21.l / life))
+                               :manner (s21.b / bless-01
+                                              :ARG2 (s21.p2 / power
+                                                            :mod (s21.t / think-01
+                                                                        :manner (s21.r / rational)))
+                                              :ARG1 s21.a))
+                 :rel (s21.a / animal))
+   :snt22 (s22.r / responsible-01
+                 :ARG0 (s22.w / we
+                              :prep-as (s22.c / citizen
+                                              :part-of (s22.p / planet
+                                                              :ARG1-of (s22.i / in-trouble-03)))
+                              :same-as s21.w)
+                 :ARG1 (s22.d / deal-01
+                              :ARG0 s22.w
+                              :ARG2 (s22.l2 / lose-02
+                                            :ARG1 (s22.d2 / diversity
+                                                          :poss (s22.l / life))
+                                            :manner (s22.d3 / dramatic)))
+                 :ARG1-of (s22.m / moral-02))
+   :snt23 (s23.c3 / contrast-01
+                  :ARG2 (s23.a2 / and
+                                :op1 (s23.p / possible-01
+                                            :ARG1 (s23.r / rejoice-01
+                                                         :ARG1 (s23.w / we
+                                                                      :mod (s23.a / all)
+                                                                      :same-as s21.w)
+                                                         :ARG2 (s23.u / unity
+                                                                      :poss (s23.l / life)))
+                                            :manner (s23.h3 / human
+                                                            :ARG0-of (s23.h / have-03
+                                                                            :ARG1 (s23.h2 / heart))))
+                                :op2 (s23.p2 / possible-01
+                                             :ARG1 (s23.c2 / change-01
+                                                           :ARG0 s23.w
+                                                           :ARG1 (s23.t2 / thing
+                                                                         :location (s23.c / cave
+                                                                                          :mod (s23.s / sacred)
+                                                                                          :mod (s23.t / that)
+                                                                                          :same-as s6.c)
+                                                                         :time (s23.o / once))))))
+   :snt24 (s24.f / find-01
+                 :ARG0 (s24.w / we)
+                 :ARG1 (s24.t / thing
+                              :manner-of (s24.j / join-in-05
+                                                :ARG0 s24.w
+                                                :ARG1 (s24.d / dance-01)))
+                 :mode "imperative")
+   :snt25 (s25.t / thank-01
+                 :ARG1 (s25.y / you
+                              :same-as s2.i)))
+

@@ -1,0 +1,395 @@
+# ::id doc-515
+# ::doc_file doc-515
+# ::tok http : / / www . ted . com / talks / caroline_phillips_hurdy_gurdy_for_beginners< / url> <next_sent> Now , since this is TEDGlobal , who can tell me what this is called in French ? <next_sent> I see you 're all up on the history of hurdy - gurdy -- " vielle à roue . " <next_sent> And in Spanish , " zanfona . " <next_sent> And in Italian , " ghironda , " okay ? <next_sent> Hurdy - gurdy , or wheel fiddle . <next_sent> So , these are the different kinds and shapes of the hurdy - gurdy . <next_sent> The hurdy - gurdy is the only musical instrument that uses a crank to turn a wheel to rub strings , like the bow of a violin , to produce music . <next_sent> It has three different kinds of strings . <next_sent> The first string is the drone string , which plays a continuous sound like the bagpipe . <next_sent> The second string is a melody string , which is played with a wooden keyboard tuned like a piano . <next_sent> And the third string is pretty innovative . <next_sent> It 's also the only instrument that uses this kind of technique . <next_sent> It activates what 's called the buzzing bridge , or the dog . <next_sent> When I turn the crank and I apply pressure , it makes a sound like a barking dog . <next_sent> So all of this is pretty innovative , if you consider that the hurdy - gurdy appeared about a thousand years ago and it took two people to play it ; one to turn the crank , and another person -- yes -- to play the melody by physically pulling up large wooden pegs . <next_sent> Luckily , all of this changed a couple of centuries later . <next_sent> So , one person could actually play and almost -- this is pretty heavy -- carry the hurdy - gurdy . <next_sent> The hurdy - gurdy has been used , historically , through the centuries in mostly dance music because of the uniqueness of the melody combined with the acoustic boombox here . <next_sent> And today , the hurdy - gurdy is used in all sorts of music -- traditional folk music , dance , contemporary and world music -- in the U.K. , in France , in Spain and in Italy . <next_sent> And this kind of hurdy - gurdy takes anywhere from three to five years [ to order and receive it ] . <next_sent> It 's made by specialized luthiers , also in Europe . <next_sent> And it 's very difficult to tune . <next_sent> So without further ado , would you like to hear it ? <next_sent> Caroline Phillips : I did n't hear you . <next_sent> Would you like to hear it ? <next_sent> CP : Okay . <next_sent> There I go . <next_sent> I 'd like to sing in Basque , which is the language spoken in the Basque Country where I live , in the region in France and Spain . <next_sent> [ Basque ] Thank you . <next_sent> This is a song that I wrote based on traditional Basque rhythms . <next_sent> And this is a song that has a kind of a Celtic feel . <next_sent> Thank you . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :mod (s1.b / border)
+               :polarity "-")
+   :snt2 (s2.c2 / cause-01
+                :ARG0 (s2.c3 / conference
+                             :name (s2.n / name
+                                         :op1 "TEDGlobal")
+                             :domain (s2.t3 / this))
+                :ARG1 (s2.p / possible-01
+                            :ARG1 (s2.t / tell-01
+                                        :ARG0 (s2.a / amr-unknown)
+                                        :ARG1 (s2.t2 / thing
+                                                     :ARG2-of (s2.c / call-01
+                                                                    :ARG1 (s2.t4 / this)
+                                                                    :medium (s2.l / language
+                                                                                  :name (s2.n2 / name
+                                                                                               :op1 "French"))))
+                                        :ARG2 (s2.i / i)))
+                :time (s2.n3 / now))
+   :snt3 (s3.s / see-01
+               :ARG0 (s3.i / i
+                           :same-as s2.i)
+               :ARG1 (s3.u / up
+                           :degree (s3.a / all)
+                           :domain (s3.y / you
+                                         :same-as s2.t3)
+                           :op1 (s3.h / history
+                                      :topic (s3.s2 / string-entity
+                                                    :mod (s3.a2 / anyway
+                                                                :op1 (s3.d / distance-quantity
+                                                                           :quant (s3.r / roue)
+                                                                           :mod s3.a2))
+                                                    :value "vielle"))))
+   :snt4 (s4.a / and
+               :op2 (s4.s / string-entity
+                          :medium (s4.l / language
+                                        :name (s4.n / name
+                                                    :op1 "Spanish"))
+                          :value "zanfona"))
+   :snt5 (s5.a2 / and
+                :op2 (s5.o / okay-04
+                           :ARG1 (s5.s / string-entity
+                                       :medium (s5.l / language
+                                                     :name (s5.n / name
+                                                                 :op1 "Italian"))
+                                       :value "ghironda")
+                           :polarity (s5.a / amr-unknown)))
+   :snt6 (s6.o / or
+               :op1 (s6.h / hmm)
+               :op2 (s6.f / fiddle
+                          :mod (s6.w / wheel))
+               :same-as s2.t4)
+   :snt7 (s7.c / cause-01
+               :ARG1 (s7.a / and
+                           :ARG1-of (s7.d / differ-02)
+                           :domain (s7.t / this)
+                           :op1 (s7.k / kind
+                                      :poss (s7.h / hurdy
+                                                  :same-as s2.t4))
+                           :op2 (s7.s / shape-01
+                                      :ARG1 s7.h)))
+   :snt8 (s8.i / instrument
+               :ARG0-of (s8.u / use-01
+                              :ARG1 (s8.c / crank)
+                              :ARG2 (s8.t / turn-01
+                                          :purpose (s8.r2 / rub-01
+                                                          :purpose (s8.p / produce-01
+                                                                         :ARG1 (s8.m2 / music))
+                                                          :ARG1 (s8.s / string
+                                                                      :ARG1-of (s8.r / resemble-01
+                                                                                     :ARG2 (s8.b / bow
+                                                                                                 :part-of (s8.v / violin)))))
+                                          :ARG1 (s8.w / wheel)))
+               :domain (s8.h / hurdy
+                             :same-as s2.t4)
+               :mod (s8.m / music)
+               :mod (s8.o / only)
+               :ARG0-of s8.p
+               :ARG0-of s8.r2
+               :ARG0-of s8.t)
+   :snt9 (s9.h / have-03
+               :ARG0 (s9.i / it
+                           :same-as s2.t4)
+               :ARG1 (s9.s / string
+                           :mod (s9.k / kind
+                                      :ARG1-of (s9.d / differ-02)
+                                      :quant "3")))
+   :snt10 (s10.s2 / string
+                  :domain (s10.s3 / string
+                                  :ARG0-of (s10.p / play-11
+                                                  :ARG1 (s10.s / sound-02
+                                                               :ARG1-of (s10.c / continue-01)
+                                                               :ARG1-of (s10.r / resemble-01
+                                                                               :ARG2 (s10.b / bagpipe))))
+                                  :mod (s10.d / drone))
+                  :ord (s10.o / ordinal-entity
+                              :value "1"))
+   :snt11 (s11.s / string
+                 :ARG1-of (s11.p2 / play-11
+                                  :instrument (s11.k / keyboard
+                                                     :ARG1-of (s11.t / tune-01
+                                                                     :ARG1-of (s11.r / resemble-01
+                                                                                     :ARG2 (s11.p / piano)))
+                                                     :consist-of (s11.w / wood)))
+                 :domain (s11.s2 / string)
+                 :mod (s11.m / melody)
+                 :ord (s11.o / ordinal-entity
+                             :value "2"))
+   :snt12 (s12.a / and
+                 :op2 (s12.i / innovate-01
+                             :ARG1 (s12.p2 / product
+                                           :name (s12.n / name
+                                                        :op1 "String")
+                                           :ord (s12.o / ordinal-entity
+                                                       :value "3"))
+                             :degree (s12.p / pretty)))
+   :snt13 (s13.i / instrument
+                 :ARG0-of (s13.u / use-01
+                                 :ARG1 (s13.t / technique
+                                              :mod (s13.k / kind
+                                                          :mod (s13.t2 / this))))
+                 :domain (s13.i2 / it
+                                 :same-as s12.p2)
+                 :mod (s13.o / only)
+                 :mod (s13.a / also))
+   :snt14 (s14.a / activate-01
+                 :ARG0 (s14.i / it
+                              :same-as s12.p2)
+                 :ARG1 (s14.t / thing
+                              :ARG1-of (s14.c / call-01
+                                              :ARG2 (s14.o / or
+                                                           :op1 (s14.b / bridge
+                                                                       :ARG0-of (s14.d2 / drone-01))
+                                                           :op2 (s14.d / dog)))))
+   :snt15 (s15.s / sound-01
+                 :ARG1 (s15.i2 / it
+                               :same-as s2.t4)
+                 :ARG2 (s15.d / dog
+                              :ARG0-of (s15.b / bark-01))
+                 :time (s15.a / and
+                              :op1 (s15.t / turn-01
+                                          :ARG0 (s15.i / i
+                                                       :same-as s2.t3)
+                                          :ARG1 (s15.c / crank
+                                                       :same-as s8.c))
+                              :op2 (s15.a2 / apply-02
+                                           :ARG0 s15.i
+                                           :ARG1 (s15.p / pressure-01))))
+   :snt16 (s16.h / have-condition-91
+                 :ARG1 (s16.i2 / innovate-01
+                               :ARG1 (s16.t3 / this
+                                             :mod (s16.a2 / all))
+                               :degree (s16.p8 / pretty))
+                 :ARG2 (s16.c / consider-02
+                              :ARG0 (s16.y2 / you)
+                              :ARG1 (s16.a3 / and
+                                            :op1 (s16.a6 / appear-01
+                                                         :ARG1 (s16.g / gurdy
+                                                                      :same-as s2.t4)
+                                                         :time (s16.b / before
+                                                                      :quant (s16.a / about
+                                                                                    :op1 (s16.t2 / temporal-quantity
+                                                                                                 :unit (s16.y / year)
+                                                                                                 :quant "1000"))
+                                                                      :op1 (s16.n / now)))
+                                            :op2 (s16.t / take-10
+                                                        :ARG0 (s16.p6 / play-11
+                                                                      :ARG2 s16.g)
+                                                        :ARG1 (s16.p2 / person
+                                                                      :quant "2")
+                                                        :ARG1 (s16.a4 / and
+                                                                      :op1 (s16.t4 / turn-01
+                                                                                   :ARG0 (s16.p3 / person
+                                                                                                 :ARG2-of (s16.i / include-91)
+                                                                                                 :quant "1")
+                                                                                   :ARG1 (s16.c2 / crank
+                                                                                                 :same-as s8.c))
+                                                                      :op2 (s16.p4 / person
+                                                                                   :mod (s16.a5 / another)))
+                                                        :op3 (s16.p7 / play-11
+                                                                     :ARG0 s16.p4
+                                                                     :ARG1 (s16.m / melody)
+                                                                     :manner (s16.p9 / pull-01
+                                                                                     :ARG0 s16.p4
+                                                                                     :ARG1 (s16.p / peg-01
+                                                                                                  :ARG2 (s16.w / wood)
+                                                                                                  :mod (s16.l / large))
+                                                                                     :ARG2 (s16.u / up)
+                                                                                     :manner (s16.p5 / physical)))))))
+   :snt17 (s17.c2 / change-01
+                  :ARG1 (s17.t2 / this
+                                :mod (s17.a2 / all))
+                  :mod (s17.l / lucky)
+                  :time (s17.a / after
+                               :quant (s17.c3 / couple
+                                              :op1 (s17.t / temporal-quantity
+                                                          :unit (s17.c / century)
+                                                          :quant "1"))))
+   :snt18 (s18.c2 / cause-01
+                  :ARG1 (s18.p3 / possible-01
+                                :ARG1 (s18.a3 / and
+                                              :op1 (s18.p2 / play-11
+                                                           :ARG0 (s18.p / person
+                                                                        :quant "1")
+                                                           :ARG1-of (s18.a / actual-02))
+                                              :op2 (s18.c / carry-01
+                                                          :ARG0 s18.p
+                                                          :ARG1 (s18.g / gurdy
+                                                                       :purpose (s18.h2 / hurdy)
+                                                                       :same-as s2.t4)
+                                                          :mod (s18.h / heavy
+                                                                      :degree (s18.p4 / pretty)
+                                                                      :domain (s18.t / this))
+                                                          :mod (s18.a2 / almost)))))
+   :snt19 (s19.u2 / use-01
+                  :ARG1 (s19.h3 / hurdy
+                                :same-as s2.t4)
+                  :ARG1-of (s19.c / cause-01
+                                  :ARG0 (s19.u / unique-01
+                                               :ARG1 (s19.m / melody
+                                                            :ARG1-of (s19.c3 / combine-01
+                                                                             :ARG2 (s19.b / boombox
+                                                                                          :mod (s19.a / acoustics))
+                                                                             :location (s19.h / here)))))
+                  :ARG2 (s19.m4 / music
+                                :mod (s19.d / dance-01)
+                                :mod (s19.m2 / most))
+                  :duration (s19.m3 / multiple
+                                    :op1 (s19.t / temporal-quantity
+                                                :unit (s19.c2 / century)
+                                                :quant "1"))
+                  :manner (s19.h2 / historical))
+   :snt20 (s20.a2 / and
+                  :op2 (s20.u / use-01
+                              :ARG1 (s20.g / gurdy
+                                           :same-as s2.t4)
+                              :ARG2 (s20.m / music
+                                           :example (s20.a3 / and
+                                                            :op1 (s20.m2 / music
+                                                                         :mod (s20.f / folk)
+                                                                         :mod (s20.t2 / tradition))
+                                                            :op2 (s20.d / dance-01)
+                                                            :op3 (s20.m3 / music
+                                                                         :mod (s20.c / contemporary))
+                                                            :op4 (s20.m4 / music
+                                                                         :mod (s20.w / world)))
+                                           :mod (s20.s / sort
+                                                       :mod (s20.a / all)))
+                              :location (s20.a4 / and
+                                                :op1 (s20.c2 / country
+                                                             :name (s20.n / name
+                                                                          :op1 "U.K."))
+                                                :op2 (s20.c3 / country
+                                                             :name (s20.n2 / name
+                                                                           :op1 "France"))
+                                                :op3 (s20.c4 / country
+                                                             :name (s20.n3 / name
+                                                                           :op1 "Spain"))
+                                                :op4 (s20.c5 / country
+                                                             :name (s20.n4 / name
+                                                                           :op1 "Italy")))
+                              :time (s20.t / today)))
+   :snt21 (s21.a / and
+                 :op2 (s21.t / take-10
+                             :ARG0 (s21.a2 / and
+                                           :op1 (s21.o / order-02
+                                                       :ARG1 (s21.u / Kurd
+                                                                    :mod (s21.k / kind
+                                                                                :mod (s21.t4 / this))))
+                                           :op2 (s21.r / receive-01
+                                                       :ARG1 s21.u))
+                             :ARG1 (s21.b / between
+                                          :op1 (s21.t2 / temporal-quantity
+                                                       :unit (s21.y / year)
+                                                       :quant "3")
+                                          :op2 (s21.t3 / temporal-quantity
+                                                       :unit (s21.y2 / year)
+                                                       :quant "5"))
+                             :ARG2 s21.u))
+   :snt22 (s22.m / make-01
+                 :ARG0 (s22.s / ship
+                              :ARG0-of (s22.s2 / specialize-01)
+                              :ARG0-of (s22.m2 / manufacture-01)
+                              :location (s22.c / continent
+                                               :name (s22.n / name
+                                                            :op1 "Europe")
+                                               :mod (s22.a / also)))
+                 :ARG1 (s22.i / it
+                              :same-as s21.u))
+   :snt23 (s23.a / and
+                 :op2 (s23.d / difficult
+                             :degree (s23.v / very)
+                             :domain (s23.t / tune-01)))
+   :snt24 (s24.l / like-02
+                 :ARG0 (s24.y / you
+                              :same-as s2.t3)
+                 :ARG1 (s24.h / hear-01
+                              :ARG0 s24.y
+                              :ARG1 (s24.i / it
+                                           :same-as s21.u))
+                 :manner (s24.a / ado
+                                :mod (s24.f / further)
+                                :polarity "-")
+                 :polarity (s24.a2 / amr-unknown))
+   :snt25 (s25.s / say-01
+                 :ARG0 (s25.p / person
+                              :name (s25.n / name
+                                           :op1 "Caroline"
+                                           :op2 "Phillips")
+                              :same-as s2.t3)
+                 :ARG1 (s25.h / hear-01
+                              :ARG0 (s25.i / i
+                                           :same-as s2.t3)
+                              :ARG1 (s25.y / you
+                                           :same-as s2.t3)
+                              :polarity "-"))
+   :snt26 (s26.l / like-02
+                 :ARG0 (s26.y / you
+                              :same-as s2.t3)
+                 :ARG1 (s26.h / hear-01
+                              :ARG0 s26.y
+                              :ARG1 (s26.i / it
+                                           :same-as s21.u))
+                 :polarity (s26.a / amr-unknown))
+   :snt27 (s27.s / say-01
+                 :ARG0 (s27.p / person
+                              :name (s27.n / name
+                                           :op1 "CP"))
+                 :ARG1 (s27.o / okay-01))
+   :snt28 (s28.g / go-24
+                 :ARG1 (s28.i / i
+                              :same-as s2.t3)
+                 :direction (s28.t / there))
+   :snt29 (s29.l2 / like-02
+                  :ARG0 (s29.i / i
+                               :same-as s2.t3)
+                  :ARG1 (s29.s / sing-01
+                               :ARG0 s29.i
+                               :ARG3 (s29.l / language
+                                            :name (s29.n / name
+                                                         :op1 "Basque"
+                                                         :op2 "Country")
+                                            :ARG3-of (s29.s2 / speak-01
+                                                             :location (s29.c / country
+                                                                              :name s29.n
+                                                                              :location (s29.r / region
+                                                                                               :location (s29.a / and
+                                                                                                                :op1 (s29.c2 / country
+                                                                                                                             :name (s29.n2 / name
+                                                                                                                                           :op1 "France")
+                                                                                                                             :same-as s20.c3)
+                                                                                                                :op2 (s29.c3 / country
+                                                                                                                             :name (s29.n3 / name
+                                                                                                                                           :op1 "Spain")
+                                                                                                                             :same-as s20.c4)))
+                                                                              :location-of (s29.l3 / live-01
+                                                                                                   :ARG0 s29.i))))))
+   :snt30 (s30.t / thank-01
+                 :ARG0 (s30.e / ethnic-group
+                              :name (s30.n / name
+                                           :op1 "Basque"))
+                 :ARG1 (s30.y / you
+                              :same-as s2.t3))
+   :snt31 (s31.s / song
+                 :ARG1-of (s31.w / write-01
+                                 :ARG0 (s31.i / i
+                                              :same-as s2.t3)
+                                 :ARG1-of (s31.b / base-02
+                                                 :ARG2 (s31.r / rhythm
+                                                              :mod (s31.e / ethnic-group
+                                                                          :name (s31.n / name
+                                                                                       :op1 "Basque"))
+                                                              :mod (s31.t2 / tradition))))
+                 :domain (s31.t / this
+                                :same-as s21.u))
+   :snt32 (s32.a / and
+                 :op2 (s32.s / song
+                             :ARG1-of (s32.f / feel-01
+                                             :ARG2 (s32.e / ethnic-group
+                                                          :name (s32.n / name
+                                                                       :op1 "Celt"))
+                                             :mod (s32.k / kind))
+                             :domain (s32.t / this
+                                            :same-as s21.u)))
+   :snt33 (s33.t / thank-01
+                 :ARG1 (s33.y / you
+                              :same-as s2.t3))
+   :snt34 (s34.t / thank-01
+                 :ARG1 (s34.y / you
+                              :same-as s2.i)))
+

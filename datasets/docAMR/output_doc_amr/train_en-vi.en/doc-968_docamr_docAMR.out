@@ -1,0 +1,485 @@
+# ::id doc-968
+# ::doc_file doc-968
+# ::tok http : / / www . ted . com / talks / gregory_petsko_on_the_coming_neurological_epidemic< / url> <next_sent> Unless we do something to prevent it , over the next 40 years we 're facing an epidemic of neurologic diseases on a global scale . <next_sent> A cheery thought . <next_sent> On this map , every country that 's colored blue has more than 20 percent of its population over the age of 65 . <next_sent> This is the world we live in . <next_sent> And this is the world your children will live in . <next_sent> For 12,000 years , the distribution of ages in the human population has looked like a pyramid , with the oldest on top . <next_sent> It 's already flattening out . <next_sent> By 2050 , it 's going to be a column and will start to invert . <next_sent> This is why it 's happening . <next_sent> The average lifespan 's more than doubled since 1840 , and it 's increasing currently at the rate of about five hours every day . <next_sent> And this is why that 's not entirely a good thing : because over the age of 65 , your risk of getting Alzheimer 's or Parkinson 's disease will increase exponentially . <next_sent> By 2050 , there 'll be about 32 million people in the United States over the age of 80 , and unless we do something about it , half of them will have Alzheimer 's disease and three million more will have Parkinson 's disease . <next_sent> Right now , those and other neurologic diseases -- for which we have no cure or prevention -- cost about a third of a trillion dollars a year . <next_sent> It will be well over a trillion dollars by 2050 . <next_sent> Alzheimer 's disease starts when a protein that should be folded up properly misfolds into a kind of demented origami . <next_sent> So one approach we 're taking is to try to design drugs that function like molecular Scotch tape , to hold the protein into its proper shape . <next_sent> That would keep it from forming the tangles that seem to kill large sections of the brain when they do . <next_sent> Interestingly enough , other neurologic diseases which affect very different parts of the brain also show tangles of misfolded protein , which suggests that the approach might be a general one , and might be used to cure many neurologic diseases , not just Alzheimer 's disease . <next_sent> There 's also a fascinating connection to cancer here , because people with neurologic diseases have a very low incidence of most cancers . <next_sent> And this is a connection that most people are n't pursuing right now , but which we 're fascinated by . <next_sent> Most of the important and all of the creative work in this area is being funded by private philanthropies . <next_sent> And there 's tremendous scope for additional private help here , because the government has dropped the ball on much of this , I 'm afraid . <next_sent> In the meantime , while we 're waiting for all these things to happen , here 's what you can do for yourself . <next_sent> And the Avian Flu is also not a good idea . <next_sent> As far as protecting yourself against Alzheimer 's disease , well , it turns out that fish oil has the effect of reducing your risk for Alzheimer 's disease . <next_sent> You should also keep your blood pressure down , because chronic high blood pressure is the biggest single risk factor for Alzheimer 's disease . <next_sent> It 's also the biggest risk factor for glaucoma , which is just Alzheimer 's disease of the eye . <next_sent> And of course , when it comes to cognitive effects , " use it or lose it " applies , so you want to stay mentally stimulated . <next_sent> But hey , you 're listening to me . <next_sent> So you 've got that covered . <next_sent> And one final thing . <next_sent> Wish people like me luck , okay ? <next_sent> Because the clock is ticking for all of us . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :rel (s1.n / narcotic))
+   :snt2 (s2.f / face-01
+               :ARG0 (s2.w / we)
+               :ARG1 (s2.e / epidemic
+                           :topic (s2.d / disease
+                                        :mod (s2.n / neurology)))
+               :condition (s2.d2 / do-02
+                                 :purpose (s2.p / prevent-01
+                                                :ARG0 s2.w
+                                                :ARG1 s2.e)
+                                 :ARG0 s2.w
+                                 :ARG1 (s2.s2 / something))
+               :manner (s2.s / scale
+                             :mod (s2.g / globe))
+               :time (s2.a / after
+                           :quant (s2.t / temporal-quantity
+                                        :unit (s2.y / year)
+                                        :quant "40")
+                           :op1 (s2.n2 / now)))
+   :snt3 (s3.t / thing
+               :ARG1-of (s3.t2 / think-01)
+               :mod (s3.c / cheery))
+   :snt4 (s4.h / have-03
+               :ARG0 (s4.c2 / country
+                            :ARG1-of (s4.c / color-01
+                                           :ARG2 (s4.b / blue))
+                            :mod (s4.e / every))
+               :ARG1 (s4.p2 / population
+                            :ARG1-of (s4.i / include-91
+                                           :ARG2 (s4.p3 / population
+                                                        :poss s4.c2)
+                                           :ARG3 (s4.m2 / more-than
+                                                        :op1 (s4.p / percentage-entity
+                                                                   :value "20")))
+                            :age (s4.o / over
+                                       :op1 (s4.t / temporal-quantity
+                                                  :unit (s4.y / year)
+                                                  :quant "65")))
+               :location (s4.m / map
+                               :mod (s4.t2 / this)))
+   :snt5 (s5.w2 / world
+                :domain (s5.t / this)
+                :location-of (s5.l / live-01
+                                   :ARG0 (s5.w / we)))
+   :snt6 (s6.a / and
+               :op2 (s6.w / world
+                          :domain (s6.t / this
+                                        :same-as s5.t)
+                          :location-of (s6.l / live-01
+                                             :ARG0 (s6.p / person
+                                                         :ARG0-of (s6.h / have-rel-role-91
+                                                                        :ARG1 (s6.y / you)
+                                                                        :ARG2 (s6.c / child))))))
+   :snt7 (s7.l / look-02
+               :ARG0 (s7.d / distribute-01
+                           :ARG1 (s7.a / age
+                                       :ARG2-of (s7.p2 / populate-01
+                                                       :ARG1 (s7.h3 / human))))
+               :ARG1 (s7.p3 / pyramid
+                            :ARG0-of (s7.h / have-03
+                                           :ARG1 (s7.b / be-located-at-91
+                                                       :ARG1 (s7.p / person
+                                                                   :ARG1-of (s7.h2 / have-degree-91
+                                                                                   :ARG2 (s7.o / old)
+                                                                                   :ARG3 (s7.m / most)))
+                                                       :ARG2 (s7.t2 / top))))
+               :duration (s7.t / temporal-quantity
+                               :unit (s7.y / year)
+                               :quant "12"))
+   :snt8 (s8.f / flatten-01
+               :ARG1 (s8.i / it
+                           :same-as s7.d)
+               :direction (s8.o / out)
+               :time (s8.a / already))
+   :snt9 (s9.a / and
+               :op1 (s9.c / column
+                          :domain (s9.i / it
+                                        :same-as s7.d))
+               :op2 (s9.s / start-01
+                          :ARG1 (s9.p / pervert-01
+                                      :ARG1 s9.i))
+               :time (s9.b / by
+                           :op1 (s9.d / date-entity
+                                      :year "2050")))
+   :snt10 (s10.c / cause-01
+                 :ARG0 (s10.t / this)
+                 :ARG1 (s10.i / it))
+   :snt11 (s11.a2 / and
+                  :op1 (s11.d3 / double-01
+                               :ARG1 (s11.s2 / span-01
+                                             :ARG1-of (s11.a3 / average-01))
+                               :mod (s11.m / more-than)
+                               :time (s11.s / since
+                                            :op1 (s11.d / date-entity
+                                                        :year "1840")))
+                  :op2 (s11.i / increase-01
+                              :ARG1 s11.s2
+                              :ARG2 (s11.a / about
+                                           :ARG1-of (s11.r / rate-entity-91
+                                                           :ARG2 (s11.t2 / temporal-quantity
+                                                                         :unit (s11.d2 / day)
+                                                                         :quant "1"))
+                                           :op1 (s11.t / temporal-quantity
+                                                       :unit (s11.h / hour)
+                                                       :quant "5"))
+                              :time (s11.c / current)))
+   :snt12 (s12.a / and
+                 :op2 (s12.c / cause-01
+                             :ARG0 (s12.t3 / this)
+                             :ARG0 (s12.i / increase-01
+                                          :ARG1 (s12.r / risk-01
+                                                       :ARG0 (s12.y2 / you)
+                                                       :ARG2 (s12.g / get-01
+                                                                    :ARG0 s12.y2
+                                                                    :ARG1 (s12.o / or
+                                                                                 :op1 (s12.d / disease
+                                                                                             :name (s12.n / name
+                                                                                                          :op1 "Alzheimer's"))
+                                                                                 :op2 (s12.d2 / disease
+                                                                                              :name (s12.n2 / name
+                                                                                                            :op1 "Parkinson"))))
+                                                       :time (s12.o2 / over
+                                                                     :op1 (s12.t / temporal-quantity
+                                                                                 :unit (s12.y / year)
+                                                                                 :quant "65")))
+                                          :ARG2 (s12.e2 / exponential))
+                             :ARG1 (s12.g2 / good-02
+                                           :ARG1 (s12.t2 / that
+                                                         :same-as s11.i)
+                                           :degree (s12.e / entire)
+                                           :polarity "-")))
+   :snt13 (s13.a2 / and
+                  :op1 (s13.b / be-located-at-91
+                              :ARG1 (s13.p / person
+                                           :quant (s13.a / about
+                                                         :op1 "32000000000")
+                                           :age (s13.t / temporal-quantity
+                                                       :unit (s13.y / year)
+                                                       :quant "80"))
+                              :ARG2 (s13.c / country
+                                           :name (s13.n / name
+                                                        :op1 "United"
+                                                        :op2 "States"))
+                              :time (s13.b2 / by
+                                            :op1 (s13.d / date-entity
+                                                        :year "2050"
+                                                        :same-as s9.d)))
+                  :op2 (s13.h3 / have-condition-91
+                               :ARG1 (s13.a3 / and
+                                             :op1 (s13.p2 / person
+                                                          :ARG0-of (s13.h / have-03
+                                                                          :ARG1 (s13.d2 / disease
+                                                                                        :name (s13.n2 / name
+                                                                                                      :op1 "Alzheimer's")
+                                                                                        :same-as s12.d))
+                                                          :ARG1-of (s13.i / include-91
+                                                                          :ARG2 s13.p
+                                                                          :ARG3 "1/2"))
+                                             :op2 (s13.h2 / have-03
+                                                          :ARG0 (s13.p3 / person
+                                                                        :mod (s13.m / more)
+                                                                        :quant "3000000")
+                                                          :ARG1 (s13.d3 / disease
+                                                                        :name (s13.n3 / name
+                                                                                      :op1 "Parkinson")
+                                                                        :same-as s12.d2)))
+                               :ARG2 (s13.d4 / do-02
+                                             :ARG0 (s13.w / we)
+                                             :ARG1 (s13.s / something)
+                                             :ARG2 (s13.i2 / it))))
+   :snt14 (s14.c / cost-01
+                 :ARG1 (s14.a2 / and
+                               :ARG2-of (s14.p / prevent-01
+                                               :ARG0 (s14.w / we)
+                                               :polarity "-")
+                               :ARG3-of (s14.c2 / cure-01
+                                                :ARG0 s14.w
+                                                :polarity "-")
+                               :op1 (s14.t2 / that)
+                               :op2 (s14.d / disease
+                                           :mod (s14.n / neurology)
+                                           :mod (s14.o / other)))
+                 :ARG2 (s14.r / rate-entity-91
+                              :ARG1 (s14.a / about
+                                           :op1 (s14.p2 / product-of
+                                                        :op1 (s14.m / monetary-quantity
+                                                                    :unit (s14.d2 / dollar)
+                                                                    :quant "1/3")))
+                              :ARG2 (s14.t / temporal-quantity
+                                           :unit (s14.y / year)
+                                           :quant "1"))
+                 :rel (s14.h / have-03
+                             :ARG0 s14.w
+                             :polarity "-")
+                 :time (s14.n2 / now
+                               :mod (s14.r2 / right)))
+   :snt15 (s15.o / over
+                 :degree (s15.w / well)
+                 :domain (s15.i / it)
+                 :op1 (s15.m / monetary-quantity
+                             :unit (s15.d2 / dollar)
+                             :quant "1000000000000")
+                 :time (s15.b / by
+                              :op1 (s15.d / date-entity
+                                          :year "2050"
+                                          :same-as s9.d)))
+   :snt16 (s16.s / start-01
+                 :ARG1 (s16.d2 / disease
+                               :name (s16.n / name
+                                            :op1 "Alzheimer's")
+                               :same-as s12.d)
+                 :time (s16.m / mismanage-01
+                              :ARG0 (s16.p2 / protein
+                                            :ARG1-of (s16.f / fold-03
+                                                            :ARG1-of (s16.r / recommend-01)
+                                                            :manner (s16.p / proper)))
+                              :ARG3 (s16.o / origami
+                                           :mod (s16.d / demented)
+                                           :mod (s16.k / kind))))
+   :snt17 (s17.a / approach-02
+                 :ARG0 (s17.w / we
+                              :same-as s13.w)
+                 :ARG1 (s17.t / try-01
+                              :ARG0 s17.w
+                              :ARG1 (s17.d / design-01
+                                           :ARG0 s17.w
+                                           :ARG1 (s17.d2 / drug
+                                                         :ARG0-of (s17.f / function-01
+                                                                         :ARG0-of (s17.h / hold-01
+                                                                                         :ARG1 (s17.p3 / protein
+                                                                                                       :same-as s16.p2)
+                                                                                         :ARG3 (s17.s / shape
+                                                                                                      :mod (s17.p2 / proper)
+                                                                                                      :poss s17.p3))))))
+                 :rel (s17.r / resemble-01
+                             :ARG2 (s17.p / product
+                                          :name (s17.n / name
+                                                       :op1 "Scotch"
+                                                       :op2 "tape")
+                                          :mod (s17.m / molecule)))
+                 :quant "1")
+   :snt18 (s18.k / keep-04
+                 :ARG0 (s18.t2 / that
+                               :same-as s17.f)
+                 :ARG1 (s18.i / it
+                              :same-as s16.p2)
+                 :ARG2 (s18.f / form-01
+                              :ARG0 s18.i
+                              :ARG1 (s18.t / tangle-01
+                                           :ARG0-of (s18.k2 / kill-01
+                                                            :ARG1 (s18.s / section
+                                                                         :mod (s18.l / large)
+                                                                         :part-of (s18.b / brain))
+                                                            :ARG1-of (s18.s2 / seem-01)))))
+   :snt19 (s19.s / show-01
+                 :ARG0 (s19.d2 / disease
+                               :ARG0-of (s19.a / affect-01
+                                               :ARG1 (s19.p / part
+                                                            :ARG1-of (s19.d / differ-02
+                                                                            :degree (s19.v / very))
+                                                            :part-of (s19.b / brain)))
+                               :mod (s19.n2 / neurology)
+                               :mod (s19.o2 / other)
+                               :mod (s19.o / organization))
+                 :ARG0-of (s19.s2 / suggest-01
+                                  :ARG1 (s19.a3 / and
+                                                :op1 (s19.p2 / possible-01
+                                                             :ARG1 (s19.g / general-02
+                                                                          :ARG1 (s19.a4 / approach)))
+                                                :op2 (s19.p3 / possible-01
+                                                             :ARG1 (s19.u / use-01
+                                                                          :ARG1 s19.a4
+                                                                          :ARG2 (s19.c / cure-01
+                                                                                       :ARG1 (s19.d3 / disease
+                                                                                                     :quant (s19.m / many)
+                                                                                                     :ARG2-of (s19.i / include-91
+                                                                                                                     :ARG1 (s19.d4 / disease
+                                                                                                                                   :name (s19.n / name
+                                                                                                                                                :op1 "Alzheimer's")
+                                                                                                                                   :mod (s19.j / just)
+                                                                                                                                   :same-as s12.d)
+                                                                                                                     :polarity "-")
+                                                                                                     :mod s19.n2)
+                                                                                       :ARG2 s19.a4)))))
+                 :ARG1 (s19.t / tangle-01
+                              :ARG1 (s19.p4 / protein
+                                            :mod (s19.m2 / misfolded)))
+                 :ARG2-of (s19.i2 / interest-01
+                                  :ARG2-of (s19.h / have-degree-91
+                                                  :ARG3 (s19.e / enough)))
+                 :mod (s19.a2 / also)
+                 :ARG1-of s19.h)
+   :snt20 (s20.c3 / connect-01
+                  :ARG0-of (s20.f / fascinate-01)
+                  :ARG1-of (s20.c2 / cause-01
+                                   :ARG0 (s20.h2 / have-03
+                                                 :ARG0 (s20.p / person
+                                                              :ARG0-of (s20.h / have-03
+                                                                              :ARG1 (s20.d / disease
+                                                                                           :mod (s20.n / neurology))))
+                                                 :ARG1 (s20.i / incidence
+                                                              :ARG1-of (s20.l / low-04
+                                                                              :degree (s20.v / very))
+                                                              :mod (s20.c / cancer
+                                                                          :mod (s20.m / most)
+                                                                          :ARG2-of s20.c3))))
+                  :location (s20.h3 / here)
+                  :mod (s20.a / also))
+   :snt21 (s21.a / and
+                 :op2 (s21.c / connect-01
+                             :ARG0-of (s21.f / fascinate-01
+                                             :ARG1 (s21.w / we))
+                             :ARG1-of (s21.p2 / pursue-01
+                                              :ARG0 (s21.p / person
+                                                           :quant (s21.m / most))
+                                              :time (s21.n / now
+                                                           :mod (s21.r / right))
+                                              :polarity "-")
+                             :mod (s21.t / this)))
+   :snt22 (s22.f / fund-01
+                 :ARG0 (s22.c / charity
+                              :ARG1-of (s22.p / private-03))
+                 :ARG1 (s22.w / work-01
+                              :ARG1-of (s22.i2 / include-91
+                                               :ARG2 (s22.w2 / work-01
+                                                             :ARG1-of (s22.i / important-01)
+                                                             :location (s22.a2 / area
+                                                                               :mod (s22.t / this))
+                                                             :mod (s22.c2 / creative)
+                                                             :mod (s22.a / all))
+                                               :ARG3 (s22.m / most))))
+   :snt23 (s23.a2 / and
+                  :op2 (s23.s / scope
+                              :ARG1-of (s23.c / cause-01
+                                              :ARG0 (s23.d / drop-01
+                                                           :ARG0 (s23.g2 / government-organization
+                                                                         :ARG0-of (s23.g / govern-01))
+                                                           :ARG1 (s23.b / ball)
+                                                           :ARG1-of (s23.f / fear-01
+                                                                           :ARG0 (s23.i / i))
+                                                           :topic (s23.t / this
+                                                                         :mod (s23.m / much))))
+                              :degree-of (s23.h / help-01
+                                                :ARG1-of (s23.p / private-03)
+                                                :location (s23.h2 / here)
+                                                :mod (s23.a / additional))
+                              :mod (s23.t2 / tremendous)))
+   :snt24 (s24.t2 / thing
+                  :ARG1-of (s24.d / do-02
+                                  :ARG0 (s24.y / you)
+                                  :ARG1-of (s24.p / possible-01)
+                                  :ARG2 s24.y)
+                  :location (s24.h / here)
+                  :time (s24.w / wait-01
+                               :ARG1 (s24.w2 / we)
+                               :ARG2 (s24.t / thing
+                                            :mod (s24.t3 / this)
+                                            :mod (s24.a / all)))
+                  :time (s24.m / meantime))
+   :snt25 (s25.a2 / and
+                  :op2 (s25.i / idea
+                              :ARG1-of (s25.g / good-02
+                                              :polarity "-")
+                              :domain (s25.d / disease
+                                             :name (s25.n / name
+                                                          :op1 "Avian"
+                                                          :op2 "Flu"))
+                              :mod (s25.a / also)))
+   :snt26 (s26.t / turn-out-11
+                 :ARG1 (s26.e / effect-03
+                              :ARG0 (s26.o / oil
+                                           :source (s26.f / fish))
+                              :ARG1 (s26.r / reduce-01
+                                           :ARG0 s26.o
+                                           :ARG1 (s26.r2 / risk-01
+                                                         :ARG0 (s26.y / you)
+                                                         :ARG2 s26.y)))
+                 :topic (s26.p / protect-01
+                               :ARG0 s26.y
+                               :ARG1 s26.y
+                               :ARG2 (s26.d / disease
+                                            :name (s26.n / name
+                                                         :op1 "Alzheimer's")
+                                            :same-as s12.d)))
+   :snt27 (s27.r / recommend-01
+                 :ARG1 (s27.k / keep-02
+                              :ARG0 (s27.y / you)
+                              :ARG1 (s27.p / pressure
+                                           :mod (s27.b2 / blood
+                                                        :poss s27.y))
+                              :ARG2 (s27.d2 / down-03
+                                            :ARG1 s27.p)
+                              :mod (s27.a / also))
+                 :ARG1-of (s27.c / cause-01
+                                 :ARG0 (s27.f / factor
+                                              :ARG1-of (s27.s / single-02)
+                                              :ARG1-of (s27.h / have-degree-91
+                                                              :ARG2 (s27.b / big)
+                                                              :ARG3 (s27.m / most))
+                                              :ARG2 (s27.d / disease
+                                                           :name (s27.n / name
+                                                                        :op1 "Alzheimer's")
+                                                           :same-as s12.d)
+                                              :domain s27.p
+                                              :mod (s27.r2 / risk-01)))
+                 :ARG2 s27.y
+                 :rel (s27.h2 / high-02
+                              :ARG1 s27.p
+                              :mod (s27.c2 / chronic)))
+   :snt28 (s28.f / factor
+                 :ARG1-of (s28.h / have-degree-91
+                                 :ARG2 (s28.b / big)
+                                 :ARG3 (s28.m / most))
+                 :domain (s28.i / it
+                                :same-as s27.h2)
+                 :mod (s28.r / risk-01
+                             :ARG2 (s28.d / disease
+                                          :name (s28.n / name
+                                                       :op1 "glaucoma")
+                                          :mod (s28.j / just)
+                                          :mod (s28.d2 / disease
+                                                       :name (s28.n2 / name
+                                                                     :op1 "Alzheimer's")
+                                                       :part (s28.e / eye))
+                                          :mod s28.e))
+                 :mod (s28.a / also))
+   :snt29 (s29.a2 / and
+                  :mod (s29.o / of-course)
+                  :op2 (s29.a3 / apply-02
+                               :ARG0-of (s29.c / cause-01
+                                               :ARG1 (s29.w / want-01
+                                                            :ARG0 (s29.y / you)
+                                                            :ARG1 (s29.s / stay-01
+                                                                         :ARG1 s29.y
+                                                                         :ARG3 (s29.s2 / stimulate-01
+                                                                                       :ARG1 s29.y
+                                                                                       :manner (s29.m / mental)))))
+                               :ARG1 (s29.o2 / or
+                                             :op1 (s29.u / use-01
+                                                         :ARG0 s29.y
+                                                         :ARG1 (s29.i / it))
+                                             :op2 (s29.l / lose-02
+                                                         :ARG0 s29.y
+                                                         :ARG1 s29.i))
+                               :time (s29.c3 / come-12
+                                             :ARG1 (s29.a / affect-01
+                                                          :ARG1 (s29.c2 / cognition)))))
+   :snt30 (s30.c / contrast-01
+                 :ARG2 (s30.l / listen-01
+                              :ARG0 (s30.y / you)
+                              :ARG1 (s30.i / i
+                                           :same-as s23.i))
+                 :mod (s30.h / hey
+                             :mode "expressive"))
+   :snt31 (s31.c / cause-01
+                 :ARG1 (s31.c2 / cover-01
+                               :ARG0 (s31.y / you)
+                               :ARG1 (s31.t / that)))
+   :snt32 (s32.a / and
+                 :op2 (s32.t / thing
+                             :mod (s32.f / final)
+                             :quant "1"))
+   :snt33 (s33.w / wish-01
+                 :ARG0 (s33.i / i
+                              :same-as s23.i)
+                 :ARG1 (s33.l / luck
+                              :domain s33.w)
+                 :ARG1-of (s33.r / request-confirmation-91)
+                 :rel (s33.p / person
+                             :ARG1-of (s33.r2 / resemble-01
+                                              :ARG2 s33.i)))
+   :snt34 (s34.c / cause-01
+                 :ARG0 (s34.t / tick-04
+                              :ARG1 (s34.c2 / clock)
+                              :beneficiary (s34.w / we
+                                                  :mod (s34.a / all))))
+   :snt35 (s35.t / thank-01
+                 :ARG1 (s35.y / you
+                              :same-as s23.i)))
+

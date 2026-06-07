@@ -1,0 +1,685 @@
+# ::id doc-154
+# ::doc_file doc-154
+# ::tok http : / / www . ted . com / talks / gary_wolf_the_quantified_self< / url> <next_sent> I got up this morning at 6:10 a.m. <next_sent> after going to sleep at 12:45 a.m. <next_sent> I was awakened once during the night . <next_sent> My heart rate was 61 beats per minute -- my blood pressure , 127 over 74 . <next_sent> I had zero minutes of exercise yesterday , so my maximum heart rate during exercise was n't calculated . <next_sent> I had about 600 milligrams of caffeine , zero of alcohol . <next_sent> And my score on the Narcissism Personality Index , or the NPI - 16 , is a reassuring 0.31 . <next_sent> We know that numbers are useful for us when we advertise , manage , govern , search . <next_sent> I 'm going to talk about how they 're useful when we reflect , learn , remember and want to improve . <next_sent> A few years ago , Kevin Kelly , my partner , and I noticed that people were subjecting themselves to regimes of quantitative measurement and self - tracking that went far beyond the ordinary , familiar habits such as stepping on a scale every day . <next_sent> People were tracking their food via Twitter , their kids ' diapers on their iPhone . <next_sent> They were making detailed journals of their spending , their mood , their symptoms , their treatments . <next_sent> Now , we know some of the technological facts that are driving this change in our lifestyle -- the uptake and diffusion of mobile devices , the exponential improvement in data storage and data processing , and the remarkable improvement in human biometric sensors . <next_sent> This little black dot there is a 3D accelerometer . <next_sent> It tracks your movement through space . <next_sent> It is , as you can see , very small and also very cheap . <next_sent> They 're now down to well under a dollar a piece , and they 're going into all kinds of devices . <next_sent> But what 's interesting is the incredible detailed information that you can get from just one sensor like this . <next_sent> This kind of sensor is in the hit biometric device -- among early adopters at the moment -- the Fitbit . <next_sent> This tracks your activity and also your sleep . <next_sent> It has just that sensor in it . <next_sent> You 're probably familiar with the Nike+ system . <next_sent> I just put it up because that little blue dot is the sensor . <next_sent> It 's really just a pressure sensor like the kind that 's in a doorbell . <next_sent> And Nike knows how to get your pace and distance from just that sensor . <next_sent> This is the strap that people use to transmit heart - rate data to their Nike+ system . <next_sent> This is a beautiful , new device that gives you detailed sleep tracking data , not just whether you 're asleep or awake , but also your phase of sleep -- deep sleep , light sleep , REM sleep . <next_sent> The sensor is just a little strip of metal in that headband there . <next_sent> The rest of it is the bedside console ; <next_sent> just for reference , this is a sleep tracking system from just a few years ago -- <next_sent> I mean , really until now . <next_sent> And this is the sleep tracking system of today . <next_sent> This just was presented at a health care conference in D.C. <next_sent> Most of what you see there is an asthma inhaler , but the top is a very small GPS transceiver , which gives you the date and location of an asthma incident , giving you a new awareness of your vulnerability in relation to time and environmental factors . <next_sent> Now , we know that new tools are changing our sense of self in the world -- these tiny sensors that gather data in nature , the ubiquitous computing that allows that data to be understood and used , and of course the social networks that allow people to collaborate and contribute . <next_sent> But we think of these tools as pointing outward , as windows and I 'd just like to invite you to think of them as also turning inward and becoming mirrors . <next_sent> So that when we think about using them to get some systematic improvement , we also think about how they can be useful for self - improvement , for self - discovery , self - awareness , self - knowledge . <next_sent> Here 's a biometric device : a pair of Apple Earbuds . <next_sent> Last year , Apple filed some patents to get blood oxygenation , heart rate and body temperature via the Earbuds . <next_sent> What is this for ? <next_sent> What should it be for ? <next_sent> Some people will say it 's for biometric security . <next_sent> Some people will say it 's for public health research . <next_sent> Some people will say it 's for avant - garde marketing research . <next_sent> I 'd like to tell you that it 's also for self - knowledge . <next_sent> And the self is n't the only thing ; it 's not even most things . <next_sent> The self is just our operation center , our consciousness , our moral compass . <next_sent> So , if we want to act more effectively in the world , we have to get to know ourselves better . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.p / person
+                            :name (s1.n / name
+                                        :op1 "wolf")))
+   :snt2 (s2.g / get-up-26
+               :ARG1 (s2.i / i)
+               :time (s2.d / date-entity
+                           :dayperiod (s2.m / morning)
+                           :mod (s2.t / today)
+                           :time "10:00"))
+   :snt3 (s3.s / sleep-01
+               :time (s3.a / after)
+               :time (s3.d / date-entity
+                           :time "12:45"))
+   :snt4 (s4.w / wake-01
+               :ARG1 (s4.i / i
+                           :same-as s2.i)
+               :time (s4.d / date-entity
+                           :dayperiod (s4.n / night))
+               :frequency "1")
+   :snt5 (s5.a / and
+               :op1 (s5.r2 / rate-entity-91
+                           :ARG1 (s5.r / rate
+                                       :mod (s5.h / heart)
+                                       :poss (s5.i / i
+                                                   :same-as s2.i))
+                           :ARG2 (s5.t / temporal-quantity
+                                       :unit (s5.m / minute)
+                                       :quant "1"))
+               :op2 (s5.p / pressure
+                          :mod (s5.b / blood
+                                     :poss s5.i))
+               :rel (s5.o / over
+                          :op1 (s5.r3 / rate-entity-91
+                                      :ARG1 "127"
+                                      :ARG2 "74")
+                          :ARG2-of s5.r3)
+               :rel "61")
+   :snt6 (s6.c2 / cause-01
+                :ARG0 (s6.e / exercise-02
+                            :ARG0 (s6.i / i
+                                        :same-as s2.i)
+                            :duration (s6.t / temporal-quantity
+                                            :unit (s6.m2 / minute)
+                                            :quant "0")
+                            :time (s6.y / yesterday))
+                :ARG1 (s6.c / calculate-01
+                            :ARG1 (s6.r / rate
+                                        :mod (s6.h / heart)
+                                        :mod (s6.m / maximum)
+                                        :poss s6.i
+                                        :time (s6.e2 / exercise-02
+                                                     :ARG0 s6.i))
+                            :polarity "-"))
+   :snt7 (s7.h / have-03
+               :ARG0 (s7.i / i
+                           :same-as s2.i)
+               :ARG1 (s7.a3 / and
+                            :op1 (s7.c / caffeine
+                                       :quant (s7.a / about
+                                                    :op1 (s7.m / mass-quantity
+                                                               :unit (s7.m2 / milligram)
+                                                               :quant "600")))
+                            :op2 (s7.a2 / alcohol
+                                        :quant (s7.z / zero))))
+   :snt8 (s8.a2 / and
+                :op2 (s8.s / score-01
+                           :ARG1 (s8.i / i
+                                       :same-as s2.i)
+                           :ARG2 (s8.i2 / index
+                                        :name (s8.n / name
+                                                    :op1 "Narcissism"
+                                                    :op2 "Personality"
+                                                    :op3 "Index")
+                                        :value "16")
+                           :ARG2 (s8.a / 0.31
+                                       :ARG0-of (s8.r / reassure-01))))
+   :snt9 (s9.k / know-01
+               :ARG0 (s9.w / we)
+               :ARG1 (s9.u / useful-05
+                           :ARG1 (s9.n / number)
+                           :ARG2 s9.w
+                           :time (s9.a2 / and
+                                        :op1 (s9.a / advertise-01
+                                                   :ARG0 s9.w)
+                                        :op2 (s9.m / manage-01
+                                                   :ARG0 s9.w)
+                                        :op3 (s9.g / govern-01
+                                                   :ARG0 s9.w)
+                                        :op4 (s9.s / search-01
+                                                   :ARG0 s9.w))))
+   :snt10 (s10.t / talk-01
+                 :ARG0 (s10.i / i
+                              :same-as s2.i)
+                 :ARG1 (s10.u / useful-05
+                              :ARG1 (s10.t2 / they
+                                            :same-as s9.n)
+                              :time (s10.a / and
+                                           :op1 (s10.r / reflect-02
+                                                       :ARG0 (s10.w2 / we))
+                                           :op2 (s10.l / learn-01
+                                                       :ARG0 s10.w2)
+                                           :op3 (s10.r2 / remember-01
+                                                        :ARG0 s10.w2)
+                                           :op4 (s10.w / want-01
+                                                       :ARG0 s10.w2
+                                                       :ARG1 (s10.i2 / improve-01
+                                                                     :ARG0 s10.w2)))))
+   :snt11 (s11.n2 / notice-01
+                  :ARG0 (s11.a / and
+                               :op1 (s11.i / i
+                                           :same-as s2.i)
+                               :op2 (s11.p2 / person
+                                            :name (s11.n / name
+                                                         :op1 "Kevin"
+                                                         :op2 "Kelly")
+                                            :ARG0-of (s11.h2 / have-rel-role-91
+                                                             :ARG1 s11.i
+                                                             :ARG2 (s11.p / partner))))
+                  :ARG1 (s11.s3 / subject-01
+                                :ARG0 (s11.p3 / person)
+                                :ARG1 s11.p3
+                                :ARG2 (s11.r / regime
+                                             :ARG1-of (s11.g / go-01
+                                                             :ARG4 (s11.b2 / beyond
+                                                                           :quant (s11.f2 / far)
+                                                                           :op1 (s11.h / habit
+                                                                                       :ARG1-of (s11.f / familiarize-01)
+                                                                                       :example (s11.s2 / step-01
+                                                                                                        :ARG0 s11.p3
+                                                                                                        :ARG2 (s11.s / scale)
+                                                                                                        :frequency (s11.d / day
+                                                                                                                          :mod (s11.e / every)))
+                                                                                       :mod (s11.o / ordinary))))
+                                             :mod (s11.a2 / and
+                                                          :op1 (s11.m2 / measure-01
+                                                                       :manner (s11.m / mathematics))
+                                                          :op2 (s11.t2 / track-01
+                                                                       :ARG0 s11.p3
+                                                                       :ARG1 s11.p3))))
+                  :time (s11.b / before
+                               :quant (s11.f3 / few
+                                              :op1 (s11.t / temporal-quantity
+                                                          :unit (s11.y / year)
+                                                          :quant "1"))
+                               :op1 (s11.n3 / now)))
+   :snt12 (s12.t / track-01
+                 :ARG0 (s12.p / person)
+                 :ARG1 (s12.a / and
+                              :op1 (s12.f / food
+                                          :poss s12.p)
+                              :op2 (s12.d / diaper
+                                          :poss (s12.p2 / person
+                                                        :ARG0-of (s12.h / have-rel-role-91
+                                                                        :ARG1 s12.p
+                                                                        :ARG2 (s12.k / kid)))))
+                 :location (s12.p3 / product
+                                   :name (s12.n2 / name
+                                                 :op1 "iPhone")
+                                   :poss s12.p)
+                 :medium (s12.p4 / publication
+                                 :name (s12.n / name
+                                              :op1 "Twitter")))
+   :snt13 (s13.m / make-01
+                 :ARG0 (s13.t / they
+                              :same-as s12.p)
+                 :ARG1 (s13.j / journal
+                              :ARG1-of (s13.d / detail-01)
+                              :topic (s13.a / and
+                                            :op1 (s13.s / spend-01
+                                                        :ARG0 s13.t)
+                                            :op2 (s13.m2 / mood
+                                                         :poss s13.t)
+                                            :op3 (s13.s2 / symptom
+                                                         :poss s13.t)
+                                            :op4 (s13.t2 / treat-03
+                                                         :ARG1 s13.t))))
+   :snt14 (s14.k / know-01
+                 :ARG0 (s14.w / we)
+                 :ARG1 (s14.f / fact
+                              :quant (s14.s2 / some)
+                              :ARG1-of (s14.i3 / include-91
+                                               :ARG2 (s14.f2 / fact
+                                                             :ARG0-of (s14.d4 / drive-02
+                                                                              :ARG1 (s14.c / change-01
+                                                                                           :ARG1 (s14.l / lifestyle
+                                                                                                        :poss s14.w)
+                                                                                           :mod (s14.t2 / this)))
+                                                             :mod (s14.t / technology))))
+                 :rel (s14.a / and
+                             :op1 (s14.k2 / know-02
+                                          :ARG1 (s14.d2 / device
+                                                        :ARG1-of (s14.m / mobile-02)))
+                             :op2 (s14.d3 / diffuse-01
+                                          :ARG1 s14.d2)
+                             :op3 (s14.i / improve-01
+                                         :ARG1 (s14.a2 / and
+                                                       :op1 (s14.s3 / store-01
+                                                                    :ARG1 (s14.d / data))
+                                                       :op2 (s14.p / process-01
+                                                                   :ARG1 s14.d))
+                                         :mod (s14.e / exponential))
+                             :op4 (s14.i2 / improve-01
+                                          :ARG1 (s14.s / sensor
+                                                       :mod (s14.b / biometric)
+                                                       :mod (s14.h / human))
+                                          :ARG1-of (s14.r / remarkable-02)))
+                 :time (s14.n / now))
+   :snt15 (s15.d2 / dot
+                  :ARG1-of (s15.b / black-04)
+                  :location-of (s15.a / accelerometer
+                                      :mod (s15.d / dimension
+                                                  :quant "3"))
+                  :mod (s15.l / little)
+                  :mod (s15.t / this))
+   :snt16 (s16.t / track-01
+                 :ARG0 (s16.i / it
+                              :same-as s15.a)
+                 :ARG1 (s16.m / move-01
+                              :ARG1 (s16.y / you)
+                              :ARG2 (s16.s / space)))
+   :snt17 (s17.p / possible-01
+                 :ARG1 (s17.s / see-01
+                              :ARG0 (s17.y / you)
+                              :ARG1 (s17.a2 / and
+                                            :op1 (s17.s2 / small
+                                                         :degree (s17.v / very)
+                                                         :domain (s17.i / it
+                                                                        :same-as s15.a))
+                                            :op2 (s17.c / cheap-02
+                                                        :ARG1 s17.i
+                                                        :degree (s17.v2 / very)
+                                                        :mod (s17.a / also)))))
+   :snt18 (s18.a2 / and
+                  :op1 (s18.d3 / down-03
+                               :ARG1 (s18.t / they)
+                               :ARG3 (s18.u / under
+                                            :degree (s18.w / well)
+                                            :op1 (s18.m / monetary-quantity
+                                                        :mod (s18.p / piece)
+                                                        :unit (s18.d2 / dollar)
+                                                        :quant "1"))
+                               :time (s18.n / now))
+                  :op2 (s18.g / go-06
+                              :ARG0 s18.t
+                              :ARG2 (s18.d / device
+                                           :mod (s18.k / kind
+                                                       :mod (s18.a / all)))))
+   :snt19 (s19.c / contrast-01
+                 :ARG2 (s19.i3 / interest-01
+                               :ARG2 (s19.i2 / information
+                                             :ARG1-of (s19.d / detail-01)
+                                             :ARG1-of (s19.g / get-01
+                                                             :ARG0 (s19.y / you)
+                                                             :ARG1-of (s19.p / possible-01)
+                                                             :ARG2 (s19.s / sensor
+                                                                          :ARG1-of (s19.r / resemble-01
+                                                                                          :ARG2 (s19.t / this
+                                                                                                       :same-as s15.t))
+                                                                          :mod (s19.j / just)
+                                                                          :quant "1"))
+                                             :mod (s19.i / incredible))))
+   :snt20 (s20.b / be-located-at-91
+                 :ARG1 (s20.s / sensor
+                              :mod (s20.k / kind
+                                          :mod (s20.t / this)))
+                 :ARG2 (s20.d / device
+                              :name (s20.n / name
+                                           :op1 "Fitbit")
+                              :ARG1-of (s20.h / hit-02)
+                              :ARG1-of (s20.i / include-91
+                                              :ARG2 (s20.p / person
+                                                           :ARG0-of (s20.a / adopt-01
+                                                                           :time (s20.e / early)
+                                                                           :time (s20.m / moment))))
+                              :mod (s20.b2 / biometric)))
+   :snt21 (s21.t2 / track-01
+                  :ARG0 (s21.t / this
+                               :same-as s20.d)
+                  :ARG1 (s21.a3 / and
+                                :op1 (s21.a / activity-06
+                                            :ARG0 (s21.y / you))
+                                :op2 (s21.s / sleep-01
+                                            :ARG0 s21.y
+                                            :mod (s21.a2 / also))))
+   :snt22 (s22.h / have-03
+                 :ARG0 (s22.i / it
+                              :same-as s20.d)
+                 :ARG1 (s22.t2 / thing
+                               :ARG0-of (s22.d / detect-01)
+                               :mod (s22.t / that)
+                               :mod (s22.j / just)))
+   :snt23 (s23.f / familiarize-01
+                 :ARG1 (s23.y / you)
+                 :ARG2 (s23.s / system
+                              :name (s23.n / name
+                                           :op1 "Nike+"))
+                 :mod (s23.p / probable))
+   :snt24 (s24.c / cause-01
+                 :ARG0 (s24.d / detect-01
+                              :ARG0 (s24.d2 / dot
+                                            :mod (s24.b / blue)
+                                            :mod (s24.l / little)
+                                            :mod (s24.t / that)))
+                 :ARG1 (s24.p / put-up-11
+                              :ARG0 (s24.i / i
+                                           :same-as s2.i)
+                              :ARG1 (s24.i2 / it
+                                            :same-as s23.s)
+                              :mod (s24.j / just)))
+   :snt25 (s25.t / thing
+                 :ARG0-of (s25.m / measure-01
+                                 :ARG1 (s25.p / pressure-01))
+                 :ARG1-of (s25.r / real-04)
+                 :ARG1-of (s25.r2 / resemble-01
+                                  :ARG2 (s25.t2 / thing
+                                                :ARG0-of (s25.m2 / measure-01)
+                                                :location (s25.d / doorbell)))
+                 :domain (s25.i / it
+                                :same-as s24.d2)
+                 :mod (s25.j / just))
+   :snt26 (s26.a / and
+                 :op2 (s26.k / know-03
+                             :ARG0 (s26.c / company
+                                          :name (s26.n / name
+                                                       :op1 "Nike")
+                                          :same-as s23.s)
+                             :ARG1 (s26.g / get-01
+                                          :ARG0 s26.c
+                                          :ARG1 (s26.a2 / and
+                                                        :op1 (s26.p / pace
+                                                                    :poss (s26.y / you))
+                                                        :op2 (s26.d / distance
+                                                                    :poss s26.y))
+                                          :source (s26.s / sensor
+                                                         :mod (s26.t / that)
+                                                         :mod (s26.j / just)
+                                                         :same-as s22.t2))))
+   :snt27 (s27.s / strap
+                 :ARG1-of (s27.u / use-01
+                                 :ARG0 (s27.p / person)
+                                 :ARG2 (s27.t2 / transmit-01
+                                               :ARG0 s27.p
+                                               :ARG1 (s27.d / data
+                                                            :mod (s27.r / rate
+                                                                        :mod (s27.h / heart)))
+                                               :ARG2 (s27.s2 / system
+                                                             :name (s27.n / name
+                                                                          :op1 "Nike+")
+                                                             :poss s27.p)))
+                 :mod (s27.t / this
+                             :same-as s22.t2))
+   :snt28 (s28.d4 / device
+                  :ARG0-of (s28.g / give-01
+                                  :ARG1 (s28.d / data
+                                               :ARG0-of (s28.t2 / track-01
+                                                                :ARG1 (s28.s / sleep-01))
+                                               :ARG1-of (s28.d3 / detail-01)
+                                               :topic (s28.a2 / and
+                                                              :op1 (s28.s2 / sleep-01
+                                                                           :ARG0 (s28.y / you))
+                                                              :op2 (s28.a4 / awake-03
+                                                                           :ARG1 s28.y)
+                                                              :op3 (s28.p / phase
+                                                                          :example (s28.a3 / and
+                                                                                           :op1 (s28.s4 / sleep-01
+                                                                                                        :ARG1-of (s28.d2 / deep-02))
+                                                                                           :op2 (s28.s5 / sleep-01
+                                                                                                        :ARG1-of (s28.l / light-06))
+                                                                                           :op3 (s28.e / event
+                                                                                                       :name (s28.n / name
+                                                                                                                    :op1 "REM")))
+                                                                          :mod (s28.a / also)
+                                                                          :part-of (s28.s3 / sleep-01)
+                                                                          :poss s28.y)))
+                                  :ARG2 s28.y)
+                  :ARG1-of (s28.n2 / new-01)
+                  :ARG1-of (s28.b / beautiful-02)
+                  :domain (s28.t / this
+                                 :same-as s23.s))
+   :snt29 (s29.s / strip
+                 :consist-of (s29.m2 / metal)
+                 :domain (s29.t2 / thing
+                                 :ARG0-of (s29.m / measure-01)
+                                 :same-as s22.t2)
+                 :location (s29.h / headband
+                                  :location (s29.t / there))
+                 :mod (s29.l / little)
+                 :mod (s29.j / just))
+   :snt30 (s30.c / console
+                 :domain (s30.r / rest
+                                :part-of (s30.i / it
+                                                :same-as s29.h))
+                 :location (s30.b / bedside))
+   :snt31 (s31.s2 / system
+                  :purpose (s31.r / reference-04)
+                  :ARG0-of (s31.t3 / track-01
+                                   :ARG1 (s31.s / sleep-01))
+                  :mod (s31.t2 / this
+                               :same-as s23.s)
+                  :time (s31.b / before
+                               :quant (s31.f / few
+                                             :op1 (s31.t / temporal-quantity
+                                                         :unit (s31.y / year)
+                                                         :quant "1"))
+                               :mod (s31.j / just)
+                               :op1 (s31.n / now)))
+   :snt32 (s32.m / mean-01
+                 :ARG0 (s32.i / i
+                              :same-as s2.i)
+                 :ARG2 (s32.u / until
+                              :ARG1-of (s32.r / real-04)
+                              :op1 (s32.n / now)))
+   :snt33 (s33.a / and
+                 :op2 (s33.s2 / system
+                              :ARG0-of (s33.t3 / track-01
+                                               :ARG1 (s33.s / sleep-01))
+                              :mod (s33.t / this
+                                          :same-as s23.s)
+                              :time (s33.t2 / today)))
+   :snt34 (s34.p / present-01
+                 :ARG1 (s34.t / this
+                              :same-as s23.s)
+                 :ARG2 (s34.c3 / conference
+                               :location (s34.c2 / city
+                                                 :name (s34.n / name
+                                                              :op1 "D.C."))
+                               :topic (s34.c / care-03
+                                             :ARG1 (s34.h / health)))
+                 :time (s34.j / just))
+   :snt35 (s35.c / contrast-01
+                 :ARG1 (s35.m / most)
+                 :ARG2 (s35.t5 / transceiver
+                               :ARG0-of (s35.g / give-01
+                                               :ARG0-of (s35.g2 / give-01
+                                                                :ARG1 (s35.r / realize-01
+                                                                             :ARG0 (s35.y / you)
+                                                                             :ARG1 (s35.v2 / vulnerable-01
+                                                                                           :ARG1 s35.y
+                                                                                           :ARG1-of (s35.r2 / relate-01
+                                                                                                            :ARG2 (s35.a2 / and
+                                                                                                                          :op1 (s35.t3 / time)
+                                                                                                                          :op2 (s35.f / factor
+                                                                                                                                      :mod (s35.e / environment)))))
+                                                                             :ARG1-of (s35.n2 / new-01))
+                                                                :ARG2 s35.y)
+                                               :ARG1 (s35.a / and
+                                                            :op1 (s35.d / date
+                                                                        :time-of (s35.i / incident
+                                                                                        :location (s35.l / location)))
+                                                            :op2 s35.l)
+                                               :ARG2 s35.y)
+                               :domain (s35.t4 / top)
+                               :mod (s35.p / product
+                                           :name (s35.n / name
+                                                        :op1 "GPS"))
+                               :mod (s35.s2 / small
+                                            :degree (s35.v / very)))
+                 :rel (s35.i2 / include-91
+                              :ARG2 (s35.t2 / thing
+                                            :ARG1-of (s35.s / see-01
+                                                            :ARG0 s35.y
+                                                            :ARG1 (s35.i3 / inhaler
+                                                                          :purpose (s35.a3 / asthma))
+                                                            :location (s35.t / there)))))
+   :snt36 (s36.k / know-01
+                 :ARG0 (s36.w / we)
+                 :ARG1 (s36.c / change-01
+                              :ARG0 (s36.t3 / tool
+                                            :ARG1-of (s36.n3 / new-01))
+                              :ARG1 (s36.s2 / sense-01
+                                            :ARG0 s36.w
+                                            :ARG1 (s36.s / self)
+                                            :location (s36.w2 / world)))
+                 :example (s36.a3 / and
+                                  :op1 (s36.s3 / sensor
+                                               :ARG0-of (s36.g / gather-01
+                                                               :ARG1 (s36.d / data)
+                                                               :mod (s36.n / nature))
+                                               :mod (s36.t2 / tiny)
+                                               :mod (s36.t / this))
+                                  :op2 (s36.c3 / compute-01
+                                               :ARG0-of (s36.a / allow-01
+                                                               :ARG1 (s36.a4 / and
+                                                                             :op1 (s36.u2 / understand-01
+                                                                                          :ARG1 s36.d)
+                                                                             :op2 (s36.u3 / use-01
+                                                                                          :ARG1 s36.d)))
+                                               :mod (s36.u / ubiquitous))
+                                  :op3 (s36.n2 / network
+                                               :ARG0-of (s36.a2 / allow-01
+                                                                :ARG1 (s36.a5 / and
+                                                                              :op1 (s36.c2 / collaborate-01
+                                                                                           :ARG0 (s36.p / person))
+                                                                              :op2 (s36.c4 / contribute-01
+                                                                                           :ARG0 s36.p)))
+                                               :mod (s36.s4 / society)
+                                               :mod (s36.o / of-course)))
+                 :time (s36.n4 / now))
+   :snt37 (s37.c / contrast-01
+                 :ARG2 (s37.a2 / and
+                               :op1 (s37.t / think-01
+                                           :ARG0 (s37.w / we)
+                                           :ARG1 (s37.t4 / tool
+                                                         :mod (s37.t3 / this)
+                                                         :same-as s36.t3)
+                                           :ARG2 (s37.p / point-01
+                                                        :ARG0 s37.t4
+                                                        :ARG2 (s37.o / outward)
+                                                        :ARG2 (s37.w2 / window)))
+                               :op2 (s37.l / like-02
+                                           :ARG0 (s37.i / i
+                                                        :same-as s2.i)
+                                           :ARG1 (s37.i2 / invite-01
+                                                         :ARG0 s37.i
+                                                         :ARG1 (s37.y / you)
+                                                         :ARG2 (s37.t2 / think-01
+                                                                       :ARG0 s37.y
+                                                                       :ARG1 s37.t4
+                                                                       :ARG2 (s37.a3 / and
+                                                                                     :op1 (s37.t5 / turn-01
+                                                                                                  :ARG1 s37.t4
+                                                                                                  :direction (s37.i3 / inward)
+                                                                                                  :mod (s37.a / also))
+                                                                                     :op2 (s37.b / become-01
+                                                                                                 :ARG1 s37.t4
+                                                                                                 :ARG2 (s37.m / mirror)))))
+                                           :mod (s37.j / just))))
+   :snt38 (s38.c / cause-01
+                 :ARG1 (s38.t4 / think-01
+                               :ARG0 (s38.w / we)
+                               :ARG1 (s38.t2 / thing
+                                             :manner-of (s38.p / possible-01
+                                                               :ARG1 (s38.u2 / useful-05
+                                                                             :ARG1 (s38.t / they
+                                                                                          :same-as s36.t3)
+                                                                             :ARG2 (s38.a2 / and
+                                                                                           :op1 (s38.i2 / improve-01
+                                                                                                        :ARG0 (s38.s / self
+                                                                                                                     :op2 (s38.d / discover-01)
+                                                                                                                     :ARG0-of s38.d
+                                                                                                                     :ARG1-of s38.d
+                                                                                                                     :ARG1-of s38.i2))
+                                                                                           :op3 (s38.r / realize-01
+                                                                                                       :ARG0 s38.s)
+                                                                                           :op4 (s38.k / know-01
+                                                                                                       :ARG0 s38.s)))))
+                               :mod (s38.a / also)
+                               :time (s38.t3 / think-01
+                                             :ARG0 s38.w
+                                             :ARG1 (s38.u / use-01
+                                                          :ARG1 s38.t
+                                                          :ARG2 (s38.g / get-01
+                                                                       :ARG0 s38.w
+                                                                       :ARG1 (s38.i / improve-01
+                                                                                    :mod (s38.s3 / systematic)
+                                                                                    :mod (s38.s2 / some)))))))
+   :snt39 (s39.d / device
+                 :domain (s39.p2 / product
+                                 :name (s39.n / name
+                                              :op1 "Apple"
+                                              :op2 "Earbuds")
+                                 :quant (s39.p / pair))
+                 :mod (s39.b / biometric))
+   :snt40 (s40.f / file-01
+                 :purpose (s40.g / get-01
+                                 :ARG0 (s40.c / company
+                                              :name (s40.n / name
+                                                           :op1 "Apple"))
+                                 :ARG1 (s40.a / and
+                                              :op1 (s40.o / oxygenate-01
+                                                          :ARG1 (s40.b / blood))
+                                              :op2 (s40.r / rate
+                                                          :mod (s40.h / heart))
+                                              :op3 (s40.t / temperature
+                                                          :poss (s40.b2 / body)))
+                                 :instrument (s40.p2 / product
+                                                     :name (s40.n2 / name
+                                                                   :op1 "Earbuds")
+                                                     :same-as s39.p2))
+                 :ARG0 s40.c
+                 :ARG1 (s40.p / patent-01
+                              :quant (s40.s / some))
+                 :time (s40.y / year
+                              :mod (s40.l / last)))
+   :snt41 (s41.t / this
+                 :purpose (s41.a / amr-unknown)
+                 :same-as s39.d)
+   :snt42 (s42.r / recommend-01
+                 :ARG1 (s42.i / it
+                              :purpose (s42.a / amr-unknown)
+                              :same-as s39.d))
+   :snt43 (s43.s / say-01
+                 :ARG0 (s43.p / person
+                              :mod (s43.s3 / some))
+                 :ARG1 (s43.h / have-purpose-91
+                              :ARG1 (s43.i / it
+                                           :same-as s39.d)
+                              :ARG2 (s43.s2 / secure-02
+                                            :manner (s43.b / biometric))))
+   :snt44 (s44.s / say-01
+                 :ARG0 (s44.p / person
+                              :mod (s44.s2 / some))
+                 :ARG1 (s44.h / have-purpose-91
+                              :ARG1 (s44.i / it
+                                           :same-as s39.d)
+                              :ARG2 (s44.r / research-01
+                                           :ARG1 (s44.h2 / healthy
+                                                         :domain (s44.p2 / public)))))
+   :snt45 (s45.s / say-01
+                 :ARG0 (s45.p / person
+                              :mod (s45.s2 / some))
+                 :ARG1 (s45.h / have-purpose-91
+                              :ARG1 (s45.i / it
+                                           :same-as s39.d)
+                              :ARG2 (s45.r / research-01
+                                           :manner (s45.m2 / market-01)
+                                           :mod (s45.m / magazine
+                                                       :name (s45.n / name
+                                                                    :op1 "i")))))
+   :snt46 (s46.l / like-02
+                 :ARG0 (s46.i / i
+                              :same-as s2.i)
+                 :ARG1 (s46.t / tell-01
+                              :ARG0 s46.i
+                              :ARG1 (s46.h / have-purpose-91
+                                           :ARG1 (s46.i2 / it
+                                                         :same-as s39.d)
+                                           :ARG2 (s46.k / know-01
+                                                        :ARG0 (s46.y / you)
+                                                        :ARG1 s46.y
+                                                        :mod (s46.a / also)))
+                              :ARG2 s46.y))
+   :snt47 (s47.a / and
+                 :op2 (s47.c / contrast-01
+                             :ARG1 (s47.s / self
+                                          :mod (s47.o / only
+                                                      :polarity "-"))
+                             :ARG2 (s47.t / thing
+                                          :quant (s47.m / most)
+                                          :mod (s47.e / even)
+                                          :polarity "-")))
+   :snt48 (s48.a / and
+                 :domain (s48.s / self
+                                :same-as s47.s)
+                 :mod (s48.j / just)
+                 :op1 (s48.c / center
+                             :mod (s48.o / operate-01
+                                         :ARG1 (s48.w / we))
+                             :poss s48.s)
+                 :op2 (s48.c3 / consciousness
+                              :poss s48.w)
+                 :op3 (s48.c2 / compass
+                              :purpose (s48.m / moral-02
+                                              :ARG1 s48.w)))
+   :snt49 (s49.c / cause-01
+                 :ARG1 (s49.o / obligate-01
+                              :ARG1 (s49.w2 / we)
+                              :ARG2 (s49.g / get-03
+                                           :ARG1 s49.w2
+                                           :ARG2 (s49.k / know-01
+                                                        :ARG0 s49.w2
+                                                        :ARG1 s49.w2
+                                                        :ARG1-of (s49.h2 / have-degree-91
+                                                                         :ARG2 (s49.g2 / good-03
+                                                                                       :ARG1 s49.w2
+                                                                                       :ARG2 s49.k)
+                                                                         :ARG3 (s49.m2 / more))))
+                              :condition (s49.w / want-01
+                                                :ARG0 s49.w2
+                                                :ARG1 (s49.a / act-02
+                                                             :ARG0 s49.w2
+                                                             :ARG1-of (s49.h / have-degree-91
+                                                                             :ARG2 (s49.e / effective-04
+                                                                                          :ARG1 s49.a)
+                                                                             :ARG3 (s49.m / more))
+                                                             :location (s49.w3 / world)))))
+   :snt50 (s50.t / thank-01
+                 :ARG1 (s50.y / you
+                              :same-as s2.i)))
+

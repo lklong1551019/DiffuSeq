@@ -1,0 +1,679 @@
+# ::id doc-1
+# ::doc_file doc-1
+# ::tok http : / / www . ted . com / talks / rachel_pike_the_science_behind_a_climate_headline< / url> <next_sent> I 'd like to talk to you today about the scale of the scientific effort that goes into making the headlines you see in the paper . <next_sent> Headlines that look like this when they have to do with climate change , and headlines that look like this when they have to do with air quality or smog . <next_sent> They are both two branches of the same field of atmospheric science . <next_sent> Recently the headlines looked like this when the Intergovernmental Panel on Climate Change , or IPCC , put out their report on the state of understanding of the atmospheric system . <next_sent> That report was written by 620 scientists from 40 countries . <next_sent> They wrote almost a thousand pages on the topic . <next_sent> And all of those pages were reviewed by another 400 - plus scientists and reviewers , from 113 countries . <next_sent> Over 15,000 scientists go to San Francisco every year for that . <next_sent> And every one of those scientists is in a research group , and every research group studies a wide variety of topics . <next_sent> For us at Cambridge , it 's as varied as the El Niño oscillation , which affects weather and climate , to the assimilation of satellite data , to emissions from crops that produce biofuels , which is what I happen to study . <next_sent> And in each one of these research areas , of which there are even more , there are PhD students , like me , and we study incredibly narrow topics , things as narrow as a few processes or a few molecules . <next_sent> The weight of a paper clip is approximately equal to 900 zeta - illion -- 10 to the 21st -- molecules of isoprene . <next_sent> But despite its very small weight , enough of it is emitted into the atmosphere every year to equal the weight of all the people on the planet . <next_sent> And because it 's so much stuff , it 's really important for the atmospheric system . <next_sent> Because it 's important to the atmospheric system , we go to all lengths to study this thing . <next_sent> We blow it up and look at the pieces . <next_sent> This is the EUPHORE Smog Chamber in Spain . <next_sent> Atmospheric explosions , or full combustion , takes about 15,000 times longer than what happens in your car . <next_sent> But still , we look at the pieces . <next_sent> We run enormous models on supercomputers ; <next_sent> this is what I happen to do . <next_sent> Our models have hundreds of thousands of grid boxes calculating hundreds of variables each , on minute timescales . <next_sent> And it takes weeks to perform our integrations . <next_sent> And we perform dozens of integrations in order to understand what 's happening . <next_sent> We also fly all over the world looking for this thing . <next_sent> I recently joined a field campaign in Malaysia . <next_sent> There are others . <next_sent> We found a global atmospheric watchtower there , in the middle of the rainforest , and hung hundreds of thousands of dollars worth of scientific equipment off this tower , to look for isoprene , and of course , other things while we were there . <next_sent> This is the tower in the middle of the rainforest , from above . <next_sent> And this is the tower from below . <next_sent> And on part of that field campaign we even brought an aircraft with us . <next_sent> And this plane , the model , BA 146 , which was run by FAAM , normally flies 120 to 130 people . <next_sent> So maybe you took a similar aircraft to get here today . <next_sent> But we did n't just fly it . <next_sent> We were flying at 100 meters above the top of the canopy to measure this molecule -- <next_sent> incredibly dangerous stuff . <next_sent> We have to fly at a special incline in order to make the measurements . <next_sent> We hire military and test pilots to do the maneuvering . <next_sent> We have to get special flight clearance . <next_sent> And as you come around the banks in these valleys , the forces can get up to two Gs . <next_sent> And the scientists have to be completely harnessed in in order to make measurements while they 're on board . <next_sent> So , as you can imagine , the inside of this aircraft does n't look like any plane you would take on vacation . <next_sent> It 's a flying laboratory that we took to make measurements in the region of this molecule . <next_sent> We do all of this to understand the chemistry of one molecule . <next_sent> And when one student like me has some sort of inclination or understanding about that molecule , they write one scientific paper on the subject . <next_sent> And out of that field campaign we 'll probably get a few dozen papers on a few dozen processes or molecules . <next_sent> And as a body of knowledge builds up , it will form one subsection , or one sub - subsection of an assessment like the IPCC , although we have others . <next_sent> And each one of the 11 chapters of the IPCC has six to ten subsections . <next_sent> So you can imagine the scale of the effort . <next_sent> In each one of those assessments that we write , we always tag on a summary , and the summary is written for a non - scientific audience . <next_sent> And we hand that summary to journalists and policy makers , in order to make headlines like these . <next_sent> Thank you very much .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01
+                            :ARG0 (s1.p / person
+                                        :name (s1.n / name
+                                                    :op1 "Europe"))))
+   :snt2 (s2.l / like-02
+               :ARG0 (s2.i / i)
+               :ARG1 (s2.t / talk-01
+                           :ARG0 s2.i
+                           :ARG1 (s2.s / scale-01
+                                       :ARG1 (s2.e / effort-01
+                                                   :ARG0 (s2.s2 / science)
+                                                   :ARG1-of (s2.g / go-10
+                                                                  :ARG2 (s2.m / make-18
+                                                                              :ARG1 (s2.h / headline
+                                                                                          :ARG1-of (s2.s3 / see-01
+                                                                                                          :ARG0 (s2.y / you)
+                                                                                                          :location (s2.p / paper)))))))
+                           :ARG2 s2.y
+                           :time (s2.t2 / today)))
+   :snt3 (s3.a2 / and
+                :op1 (s3.h3 / headline
+                            :ARG0-of (s3.l / look-02
+                                           :ARG1 (s3.t / this)
+                                           :time (s3.h / have-to-do-with-04
+                                                       :ARG0 s3.h3
+                                                       :ARG1 (s3.c / change-01
+                                                                   :ARG1 (s3.c2 / climate)))))
+                :op2 (s3.h4 / headline
+                            :ARG0-of (s3.l2 / look-02
+                                            :ARG1 (s3.t2 / this)
+                                            :time (s3.h2 / have-to-do-with-04
+                                                         :ARG0 s3.h4
+                                                         :ARG1 (s3.o / or
+                                                                     :op1 (s3.q / quality
+                                                                                :mod (s3.a / air))
+                                                                     :op2 (s3.s / smog))))))
+   :snt4 (s4.b2 / branch
+                :domain (s4.t / they
+                              :mod (s4.b / both))
+                :part-of (s4.f / field
+                               :ARG1-of (s4.s / same-01)
+                               :mod (s4.s2 / science
+                                           :mod (s4.a / atmosphere)))
+                :quant "2")
+   :snt5 (s5.r3 / resemble-01
+                :ARG1 (s5.h / headline
+                            :same-as s2.h)
+                :ARG2 (s5.t / this)
+                :time (s5.r / recent)
+                :time (s5.p / put-out-10
+                            :ARG0 (s5.o / organization
+                                        :name (s5.n / name
+                                                    :op1 "Intergovernmental"
+                                                    :op2 "Panel"
+                                                    :op3 "on"
+                                                    :op4 "Climate"
+                                                    :op5 "Change"))
+                            :ARG1 (s5.r2 / report-01
+                                         :ARG0 s5.o
+                                         :ARG1 (s5.s / state
+                                                     :mod (s5.u / understand-01
+                                                                :ARG1 (s5.s2 / system
+                                                                             :mod (s5.a / atmosphere)))))))
+   :snt6 (s6.w / write-01
+               :ARG0 (s6.s / scientist
+                           :source (s6.c / country
+                                         :quant "40")
+                           :quant "620")
+               :ARG1 (s6.t2 / thing
+                            :ARG1-of (s6.r / report-01)
+                            :mod (s6.t / that)
+                            :same-as s5.r2))
+   :snt7 (s7.w / write-01
+               :ARG0 (s7.t / they
+                           :same-as s6.s)
+               :ARG1 (s7.p / page
+                           :quant (s7.a / almost
+                                        :op1 "1000"))
+               :topic (s7.t2 / topic
+                             :same-as s5.s
+                             :same-as-of s8.p))
+   :snt8 (s8.a2 / and
+                :op2 (s8.r / review-01
+                           :ARG0 (s8.a3 / and
+                                        :quant (s8.m / more-than
+                                                     :op1 "400")
+                                        :mod (s8.a4 / another)
+                                        :op1 (s8.s / scientist)
+                                        :op2 (s8.p2 / person
+                                                    :ARG0-of (s8.r2 / review-01))
+                                        :source (s8.c / country
+                                                      :quant "113"))
+                           :ARG1 (s8.p / page
+                                       :mod (s8.t / that)
+                                       :mod (s8.a / all))))
+   :snt9 (s9.g / go-02
+               :purpose (s9.t2 / that)
+               :ARG0 (s9.s / scientist
+                           :quant (s9.o / over
+                                        :op1 "15000"))
+               :ARG4 (s9.c / city
+                           :name (s9.n / name
+                                       :op1 "San"
+                                       :op2 "Francisco"))
+               :frequency (s9.t / temporal-quantity
+                                :unit (s9.y / year)
+                                :quant "1"))
+   :snt10 (s10.a / and
+                 :op1 (s10.h / have-org-role-91
+                             :ARG0 (s10.s / scientist
+                                          :ARG1-of (s10.i / include-91
+                                                          :ARG2 (s10.s2 / scientist
+                                                                        :mod (s10.t / that)
+                                                                        :same-as s9.s))
+                                          :mod (s10.e / every))
+                             :ARG1 (s10.g / group
+                                          :ARG0-of (s10.r / research-01)))
+                 :op2 (s10.s3 / study-01
+                              :ARG0 s10.g
+                              :ARG1 (s10.t2 / topic
+                                            :mod (s10.v / various
+                                                        :ARG1-of (s10.w / wide-02)))))
+   :snt11 (s11.h2 / have-degree-91
+                  :ARG1 (s11.i3 / it)
+                  :ARG2 (s11.v / vary-01
+                               :ARG1 s11.i3
+                               :ARG4 (s11.c4 / cycle-02
+                                             :ARG0-of (s11.a / affect-01
+                                                             :ARG1 (s11.a2 / and
+                                                                           :op1 (s11.w2 / weather)
+                                                                           :op2 (s11.c2 / climate)))
+                                             :ARG1 (s11.e3 / event))
+                               :ARG4 (s11.a3 / assimilate-01
+                                             :ARG1 (s11.d / data
+                                                          :source (s11.s / satellite)))
+                               :ARG4 (s11.e / emit-01
+                                            :ARG1 (s11.c3 / crop
+                                                          :ARG0-of (s11.p / produce-01
+                                                                          :ARG1 (s11.b / biofuel)))
+                                            :ARG1-of (s11.s2 / study-01
+                                                             :ARG0 (s11.i2 / i
+                                                                           :same-as s2.y)
+                                                             :ARG1-of (s11.h / happen-02)))
+                               :beneficiary (s11.w / we
+                                                   :location (s11.c / city
+                                                                    :name (s11.n / name
+                                                                                 :op1 "Cambridge"))))
+                  :ARG3 (s11.e2 / equal)
+                  :rel (s11.l / El)
+                  :rel (s11.i / Niño))
+   :snt12 (s12.a / and
+                 :op2 (s12.a2 / and
+                              :location (s12.a3 / area
+                                                :ARG2-of (s12.i2 / include-91
+                                                                 :ARG1 (s12.m2 / more
+                                                                               :mod (s12.e3 / even)))
+                                                :mod (s12.r / research-01)
+                                                :mod (s12.t2 / this)
+                                                :mod (s12.e / each))
+                              :op1 (s12.p / person
+                                          :ARG0-of (s12.s / study-01
+                                                          :ARG1 (s12.d / doctorate
+                                                                       :mod (s12.p2 / philosophy)))
+                                          :ARG1-of (s12.r2 / resemble-01
+                                                           :ARG2 (s12.i / i
+                                                                        :same-as s2.y)))
+                              :op2 (s12.s2 / study-01
+                                           :ARG0 (s12.w / we)
+                                           :ARG1 (s12.t3 / topic
+                                                         :ARG1-of (s12.n / narrow-02
+                                                                         :degree (s12.i3 / incredible))
+                                                         :ARG1-of (s12.h / have-degree-91
+                                                                         :ARG2 (s12.n2 / narrow-02
+                                                                                       :ARG1 s12.t3)
+                                                                         :ARG3 (s12.e2 / equal)
+                                                                         :ARG4 (s12.t / thing)
+                                                                         :ARG4 (s12.o / or
+                                                                                      :op1 (s12.p3 / process-01
+                                                                                                   :quant (s12.f / few))
+                                                                                      :op2 (s12.m / molecule
+                                                                                                  :quant (s12.f2 / few))))))))
+   :snt13 (s13.e / equal-01
+                 :ARG1 (s13.w / weight
+                              :poss (s13.c / clip
+                                           :mod (s13.p / paper)))
+                 :ARG2 (s13.b / between
+                              :op2 (s13.d / date-entity
+                                          :day "21")
+                              :op1 "10")
+                 :ARG2 (s13.m / molecule
+                              :name (s13.n / name
+                                           :op1 "900"
+                                           :op2 "zirconium")
+                              :consist-of (s13.i / isoprene)
+                              :quant "900")
+                 :mod (s13.a / approximately))
+   :snt14 (s14.c / contrast-01
+                 :ARG2 (s14.e / emit-01
+                              :ARG0 (s14.i / it)
+                              :concession (s14.w / weight
+                                                 :mod (s14.s / small
+                                                             :degree (s14.v / very)))
+                              :destination (s14.a2 / atmosphere)
+                              :frequency (s14.r / rate-entity-91
+                                                :ARG2 (s14.t / temporal-quantity
+                                                             :unit (s14.y / year)
+                                                             :quant "1")))
+                 :rel (s14.h / have-quant-91
+                             :ARG1 s14.i
+                             :ARG3 (s14.e2 / enough)
+                             :ARG6 (s14.e3 / equal-01
+                                           :ARG1 (s14.w2 / weight
+                                                         :poss (s14.p / person
+                                                                      :location (s14.p2 / planet)
+                                                                      :mod (s14.a / all))))))
+   :snt15 (s15.a / and
+                 :op2 (s15.i / important-01
+                             :ARG1 (s15.i2 / it)
+                             :ARG1-of (s15.c / cause-01
+                                             :ARG0 (s15.s2 / stuff
+                                                           :ARG1-of (s15.h / have-quant-91
+                                                                           :ARG2 (s15.m / much)
+                                                                           :ARG3 (s15.s / so))
+                                                           :domain s15.i2))
+                             :ARG2 (s15.s3 / system
+                                           :mod (s15.a2 / atmosphere))
+                             :degree (s15.r / really)))
+   :snt16 (s16.c / cause-01
+                 :ARG0 (s16.i / important-01
+                              :ARG1 (s16.t / thing
+                                           :mod (s16.t2 / this))
+                              :ARG2 (s16.s2 / system
+                                            :mod (s16.a2 / atmosphere)
+                                            :same-as s15.s3))
+                 :ARG1 (s16.g / go-02
+                              :purpose (s16.s / study-01
+                                              :ARG0 (s16.w / we)
+                                              :ARG1 s16.t)
+                              :ARG0 s16.w
+                              :ARG1 (s16.l / length
+                                           :mod (s16.a / all))))
+   :snt17 (s17.a / and
+                 :op1 (s17.b / blow-up-06
+                             :ARG0 (s17.w / we
+                                          :same-as s16.w)
+                             :ARG1 (s17.i / it
+                                          :same-as s16.t))
+                 :op2 (s17.l / look-01
+                             :ARG0 s17.w
+                             :ARG1 (s17.p / piece
+                                          :domain s17.i)))
+   :snt18 (s18.c / chamber
+                 :domain (s18.t / this)
+                 :location (s18.c2 / country
+                                   :name (s18.n2 / name
+                                                 :op1 "Spain"))
+                 :mod (s18.o / organization
+                             :name (s18.n / name
+                                          :op1 "EUPHORE"
+                                          :op2 "Smog")))
+   :snt19 (s19.l / long-03
+                 :ARG1 (s19.t / take-10
+                              :ARG0 (s19.o / or
+                                           :op1 (s19.e2 / explode-01
+                                                        :mod (s19.a2 / atmosphere))
+                                           :op2 (s19.c2 / combust-01
+                                                        :mod (s19.f / full))))
+                 :ARG2-of (s19.h / have-degree-91
+                                 :ARG1 (s19.t2 / times
+                                               :quant (s19.a / about
+                                                             :op1 "15000"))
+                                 :ARG4 (s19.e / event
+                                              :quant s19.a
+                                              :location (s19.c / car
+                                                               :poss (s19.y / you)))))
+   :snt20 (s20.c / contrast-01
+                 :ARG2 (s20.l / look-01
+                              :ARG0 (s20.w / we
+                                           :same-as s16.w)
+                              :ARG1 (s20.p / piece
+                                           :same-as s17.p))
+                 :mod (s20.s / still))
+   :snt21 (s21.r / run-01
+                 :ARG0 (s21.w / we)
+                 :ARG1 (s21.m / model
+                              :mod (s21.e / enormous))
+                 :location (s21.c / computer))
+   :snt22 (s22.d / do-02
+                 :ARG0 (s22.i / i
+                              :same-as s2.y)
+                 :ARG1 (s22.t / this
+                              :same-as s21.r))
+   :snt23 (s23.h / have-03
+                 :ARG0 (s23.m2 / model
+                               :poss (s23.w / we
+                                            :same-as s21.w)
+                               :same-as s21.m)
+                 :ARG1 (s23.c / calculate-01
+                              :ARG0 (s23.b / box
+                                           :quant (s23.m3 / multiple
+                                                          :op1 "100000")
+                                           :mod (s23.g / grid))
+                              :ARG1 (s23.v / variable
+                                           :quant (s23.m4 / multiple
+                                                          :op1 "100"))
+                              :manner (s23.t / time
+                                             :mod (s23.m / minute))))
+   :snt24 (s24.a / and
+                 :op2 (s24.t / take-10
+                             :ARG0 (s24.p / perform-01
+                                          :ARG0 (s24.w / we
+                                                       :same-as s21.w)
+                                          :ARG1 (s24.i / integrate-01
+                                                       :ARG1 s24.w))
+                             :ARG1 (s24.m / multiple
+                                          :op1 (s24.t2 / temporal-quantity
+                                                       :unit (s24.w2 / week)
+                                                       :quant "1"))))
+   :snt25 (s25.a / and
+                 :op2 (s25.p / perform-02
+                             :purpose (s25.u / understand-01
+                                             :ARG0 (s25.w / we
+                                                          :same-as s21.w)
+                                             :ARG1 (s25.e / event))
+                             :ARG0 s25.w
+                             :ARG1 (s25.i / integrate-01
+                                          :quant (s25.m / multiple
+                                                        :op1 "12"))))
+   :snt26 (s26.f / fly-01
+                 :purpose (s26.l / look-01
+                                 :ARG0 (s26.w / we
+                                              :same-as s21.w)
+                                 :ARG1 (s26.t / thing
+                                              :mod (s26.t2 / this)
+                                              :same-as s16.t))
+                 :ARG1 s26.w
+                 :location (s26.a / all-over
+                                  :op1 (s26.w2 / world
+                                               :same-as s14.p2))
+                 :mod (s26.a2 / also))
+   :snt27 (s27.j / join-04
+                 :ARG0 (s27.i / i
+                              :same-as s2.y)
+                 :ARG1 (s27.c / campaign-01
+                              :location (s27.c2 / country
+                                                :name (s27.n / name
+                                                             :op1 "Malaysia"))
+                              :mod (s27.f / field))
+                 :time (s27.r / recent))
+   :snt28 (s28.o / other)
+   :snt29 (s29.a / and
+                 :op1 (s29.f / find-01
+                             :ARG0 (s29.w2 / we
+                                           :same-as s21.w)
+                             :ARG1 (s29.w / watchtower
+                                          :location (s29.t / there)
+                                          :location (s29.m / middle
+                                                           :part-of (s29.r / rainforest))
+                                          :mod (s29.a3 / atmosphere)
+                                          :mod (s29.g / globe)))
+                 :op2 (s29.h / hang-01
+                             :purpose (s29.l / look-01
+                                             :ARG0 s29.w2
+                                             :ARG1 (s29.a2 / and
+                                                           :op1 (s29.i / isoprene)
+                                                           :op2 (s29.t2 / thing
+                                                                        :mod (s29.o3 / other)
+                                                                        :mod (s29.o / of-course))))
+                             :ARG0 s29.w2
+                             :ARG1 (s29.e / equipment
+                                          :ARG1-of (s29.w3 / worth-01
+                                                           :ARG2 (s29.m3 / multiple
+                                                                         :op1 (s29.m2 / monetary-quantity
+                                                                                      :unit (s29.d / dollar)
+                                                                                      :quant "100000")))
+                                          :mod (s29.s / science))
+                             :ARG2 (s29.o2 / off
+                                           :op1 s29.w))
+                 :time (s29.b / be-located-at-91
+                              :ARG1 s29.w2
+                              :ARG2 s29.t))
+   :snt30 (s30.t2 / tower
+                  :location (s30.m / middle
+                                   :part-of (s30.r / rainforest
+                                                   :same-as s29.r)
+                                   :same-as s29.m)
+                  :mod (s30.t / this
+                              :same-as s29.t)
+                  :source (s30.a / above))
+   :snt31 (s31.a / and
+                 :op2 (s31.t2 / tower
+                              :domain (s31.t / this
+                                             :same-as s29.t)
+                              :source (s31.b / below)))
+   :snt32 (s32.a2 / and
+                  :op1 (s32.b / bring-01
+                              :ARG1 (s32.a / aircraft)
+                              :ARG2 (s32.w / we
+                                           :same-as s21.w)
+                              :mod (s32.e / even)
+                              :time (s32.c / campaign-01
+                                           :mod (s32.f / field)
+                                           :mod (s32.t / that)
+                                           :same-as s27.c)))
+   :snt33 (s33.a / and
+                 :op2 (s33.f / fly-01
+                             :ARG1 (s33.p / person
+                                          :quant (s33.b / between
+                                                        :op1 "120"
+                                                        :op2 "130"))
+                             :ARG1-of (s33.n3 / normal-02)
+                             :ARG2 (s33.p2 / plane
+                                           :name (s33.n / name
+                                                        :op1 "BA"
+                                                        :op2 "146")
+                                           :ARG1-of (s33.r / run-01
+                                                           :ARG0 (s33.c / company
+                                                                        :name (s33.n2 / name
+                                                                                      :op1 "FAAM")))
+                                           :mod (s33.t / this)
+                                           :mod (s33.m / model)
+                                           :same-as s32.a)))
+   :snt34 (s34.p / possible-01
+                 :ARG1 (s34.t / take-01
+                              :purpose (s34.g / get-05
+                                              :ARG1 (s34.y / you
+                                                           :same-as s2.y)
+                                              :ARG2 (s34.h / here)
+                                              :time (s34.t2 / today
+                                                            :same-as s2.t2))
+                              :ARG0 s34.y
+                              :ARG1 (s34.a / aircraft
+                                           :ARG1-of (s34.r / resemble-01))))
+   :snt35 (s35.c / contrast-01
+                 :ARG2 (s35.f / fly-01
+                              :ARG0 (s35.w / we
+                                           :same-as s21.w)
+                              :ARG1 (s35.i / it
+                                           :same-as s32.a)
+                              :mod (s35.j / just)
+                              :polarity "-"))
+   :snt36 (s36.f / fly-01
+                 :purpose (s36.m / measure-01
+                                 :ARG0 (s36.w / we
+                                              :same-as s21.w)
+                                 :ARG1 (s36.m3 / molecule
+                                               :mod (s36.t / this)))
+                 :ARG2 s36.w
+                 :path (s36.a / above
+                              :quant (s36.d / distance-quantity
+                                            :unit (s36.m2 / meter)
+                                            :quant "100")
+                              :op1 (s36.t2 / top
+                                           :part-of (s36.c / canopy))))
+   :snt37 (s37.s / stuff
+                 :ARG0-of (s37.e / endanger-01
+                                 :degree (s37.i / incredible)))
+   :snt38 (s38.o / obligate-01
+                 :purpose (s38.m / measure-01
+                                 :ARG0 (s38.w / we
+                                              :same-as s21.w))
+                 :ARG2 (s38.f / fly-01
+                              :ARG1 s38.w
+                              :direction (s38.i / incline-01
+                                                :ARG1-of (s38.s / special-02))))
+   :snt39 (s39.h / hire-01
+                 :ARG0 (s39.w / we
+                              :same-as s21.w)
+                 :ARG1 (s39.a / and
+                              :op1 (s39.p / person
+                                          :ARG0-of (s39.p3 / pilot-01
+                                                           :ARG1-of (s39.t / test-01
+                                                                           :ARG1 (s39.p4 / pilot-01
+                                                                                         :ARG0 s39.p2)))
+                                          :mod (s39.m2 / military))
+                              :op2 (s39.p2 / person))
+                 :ARG2 (s39.m / maneuver-01
+                              :ARG0 s39.a))
+   :snt40 (s40.o / obligate-01
+                 :ARG2 (s40.g / get-01
+                              :ARG0 (s40.w / we
+                                           :same-as s21.w)
+                              :ARG1 (s40.c / clear-02
+                                           :ARG1 (s40.f / fly-01
+                                                        :ARG1 s40.w)
+                                           :ARG1-of (s40.s / special-02))))
+   :snt41 (s41.a2 / and
+                  :op2 (s41.p / possible-01
+                              :ARG1 (s41.g / get-01
+                                           :ARG0 (s41.f / force)
+                                           :ARG1 (s41.u / up-to
+                                                        :op1 (s41.d / distance-quantity
+                                                                    :unit (s41.a / GI)
+                                                                    :quant "2")))
+                              :time (s41.c / come-01
+                                           :ARG1 (s41.y / you)
+                                           :ARG4 (s41.a3 / around
+                                                         :op1 (s41.b / bank
+                                                                     :location (s41.v / valley
+                                                                                      :mod (s41.t / this)))))))
+   :snt42 (s42.a / and
+                 :op2 (s42.o / obligate-01
+                             :ARG2 (s42.e / engage-01
+                                          :purpose (s42.m / measure-01
+                                                          :ARG0 (s42.s / scientist)
+                                                          :time (s42.b / be-located-at-91
+                                                                       :ARG1 s42.s
+                                                                       :ARG2 (s42.b2 / board)))
+                                          :ARG1 s42.s
+                                          :ARG1-of (s42.c / complete-02))))
+   :snt43 (s43.c / cause-01
+                 :ARG1 (s43.l / look-02
+                              :ARG0 (s43.i2 / inside
+                                            :part-of (s43.a / aircraft
+                                                            :mod (s43.t2 / this)
+                                                            :same-as s32.a))
+                              :ARG1 (s43.p / plane
+                                           :ARG1-of (s43.t / take-01
+                                                           :ARG0 (s43.y / you)
+                                                           :time (s43.v / vacation-01
+                                                                        :ARG0 s43.y))
+                                           :mod (s43.a2 / any))
+                              :ARG1-of (s43.i / imagine-01
+                                              :ARG0 s43.y
+                                              :ARG1-of (s43.p2 / possible-01))
+                              :polarity "-"))
+   :snt44 (s44.l / laboratory
+                 :ARG1-of (s44.t / take-01
+                                 :purpose (s44.m / measure-01
+                                                 :ARG0 (s44.w / we
+                                                              :same-as s21.w)
+                                                 :location (s44.r / region
+                                                                  :poss (s44.m2 / molecule
+                                                                                :mod (s44.t2 / this)
+                                                                                :same-as s36.m3)))
+                                 :ARG0 s44.w)
+                 :domain (s44.i / it
+                                :same-as s32.a)
+                 :instrument-of (s44.f / fly-01))
+   :snt45 (s45.d / do-02
+                 :ARG0 (s45.w / we
+                              :same-as s21.w)
+                 :ARG1 (s45.t / this
+                              :mod (s45.a / all))
+                 :ARG2 (s45.u / understand-01
+                              :ARG0 s45.w
+                              :ARG1 (s45.c / chemistry
+                                           :poss (s45.m / molecule
+                                                        :quant "1"
+                                                        :same-as s36.m3))))
+   :snt46 (s46.a / and
+                 :op2 (s46.w / write-01
+                             :ARG0 (s46.p2 / person
+                                           :ARG0-of (s46.s4 / study-01)
+                                           :ARG1-of (s46.r / resemble-01
+                                                           :ARG2 (s46.i / i
+                                                                        :same-as s2.y)))
+                             :ARG1 (s46.p / paper
+                                          :mod (s46.s / science)
+                                          :topic (s46.m / molecule
+                                                        :mod (s46.t / that)
+                                                        :same-as s36.m3)
+                                          :quant "1")
+                             :time (s46.h / have-03
+                                          :ARG0 s46.p2
+                                          :ARG1 (s46.o / or
+                                                       :mod (s46.s3 / sort
+                                                                    :mod (s46.s2 / some))
+                                                       :op1 (s46.i2 / incline-01
+                                                                    :ARG0 s46.p2
+                                                                    :ARG1 s46.m)
+                                                       :op2 (s46.u / understand-01
+                                                                   :ARG0 s46.p2
+                                                                   :ARG1 s46.m)))))
+   :snt47 (s47.a / and
+                 :op2 (s47.g / get-01
+                             :ARG0 (s47.w / we
+                                          :same-as s21.w)
+                             :ARG1 (s47.p / paper
+                                          :quant (s47.f / few
+                                                        :op1 "12")
+                                          :topic (s47.o / or
+                                                        :quant (s47.f2 / few
+                                                                       :op1 "12")
+                                                        :op1 (s47.p3 / process-01)
+                                                        :op2 (s47.m / molecule)))
+                             :mod (s47.p2 / probable)
+                             :source (s47.c / campaign-01
+                                            :mod (s47.f3 / field)
+                                            :mod (s47.t / that)
+                                            :same-as s27.c)))
+   :snt48 (s48.a / and
+                 :op2 (s48.f / form-01
+                             :ARG1 (s48.o / or
+                                          :op1 (s48.s2 / subsection
+                                                       :quant "1")
+                                          :op2 (s48.s3 / subsection
+                                                       :mod (s48.s / sub
+                                                                   :quant "1")
+                                                       :part-of (s48.a2 / assess-01
+                                                                        :example (s48.o2 / organization
+                                                                                         :name (s48.n / name
+                                                                                                      :op1 "IPCC")))))
+                             :concession (s48.h / have-03
+                                                :ARG0 (s48.w / we
+                                                             :same-as s21.w)
+                                                :ARG1 (s48.o3 / other))
+                             :time (s48.b2 / build-up-05
+                                           :ARG1 (s48.b / body
+                                                        :consist-of (s48.k / know-01))))
+                 :ARG0-of s48.f)
+   :snt49 (s49.a / and
+                 :op2 (s49.h / have-03
+                             :ARG0 (s49.c / chapter
+                                          :ARG1-of (s49.i / include-91
+                                                          :ARG2 (s49.c2 / chapter
+                                                                        :part-of (s49.o / organization
+                                                                                        :name (s49.n / name
+                                                                                                     :op1 "IPCC")
+                                                                                        :same-as s48.o2)
+                                                                        :quant "11"))
+                                          :mod (s49.e / each))
+                             :ARG1 (s49.s / section
+                                          :quant (s49.b / between
+                                                        :op1 "6"
+                                                        :op2 "10"))))
+   :snt50 (s50.c / cause-01
+                 :ARG1 (s50.p / possible-01
+                              :ARG1 (s50.i / imagine-01
+                                           :ARG0 (s50.y / you)
+                                           :ARG1 (s50.s / scale-01
+                                                        :ARG1 (s50.e / effort-01)))))
+   :snt51 (s51.a2 / and
+                  :op1 (s51.t / tag-01
+                              :ARG0 (s51.w / we
+                                           :same-as s21.w)
+                              :ARG1 (s51.t3 / thing
+                                            :ARG2-of (s51.s2 / summarize-01))
+                              :location (s51.a3 / assess-01
+                                                :ARG1-of (s51.w2 / write-01
+                                                                 :ARG0 s51.w)
+                                                :mod (s51.t2 / that)
+                                                :mod (s51.e / each))
+                              :time (s51.a / always))
+                  :op2 (s51.w3 / write-01
+                               :ARG1 s51.t3
+                               :beneficiary (s51.a4 / audience
+                                                    :mod (s51.s / science
+                                                                :polarity "-"))))
+   :snt52 (s52.a / and
+                 :op2 (s52.h / hand-01
+                             :purpose (s52.m2 / make-18
+                                              :ARG0 (s52.w / we
+                                                           :same-as s21.w)
+                                              :ARG1 (s52.h2 / headline
+                                                            :ARG1-of (s52.r / resemble-01
+                                                                            :ARG2 (s52.t2 / this
+                                                                                          :same-as s52.a2))))
+                             :ARG0 s52.w
+                             :ARG1 (s52.t / thing
+                                          :ARG2-of (s52.s / summarize-01)
+                                          :same-as s51.s2)
+                             :ARG2 (s52.a2 / and
+                                           :op1 (s52.j / journalist)
+                                           :op2 (s52.p / person
+                                                       :ARG0-of (s52.m / make-01
+                                                                       :ARG1 (s52.p2 / policy-01))))))
+   :snt53 (s53.t / thank-01
+                 :ARG0 (s53.i / i)
+                 :ARG1 (s53.y / you
+                              :same-as s2.i)
+                 :mod (s53.m / much
+                             :degree (s53.v / very))))
+

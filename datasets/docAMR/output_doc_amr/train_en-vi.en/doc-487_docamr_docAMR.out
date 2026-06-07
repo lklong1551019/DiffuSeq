@@ -1,0 +1,544 @@
+# ::id doc-487
+# ::doc_file doc-487
+# ::tok http : / / www . ted . com / talks / nina_tandon_caring_for_cells< / url> <next_sent> Good morning everybody . <next_sent> I work with really amazing , little , itty - bitty creatures called cells . <next_sent> And let me tell you what it 's like to grow these cells in the lab . <next_sent> I work in a lab where we take cells out of their native environment . <next_sent> We plate them into dishes that we sometimes call petri dishes . <next_sent> And we feed them -- sterilely of course -- with what we call cell culture media -- which is like their food -- and we grow them in incubators . <next_sent> Why do I do this ? <next_sent> We observe the cells in a plate , and they 're just on the surface . <next_sent> But what we 're really trying to do in my lab is to engineer tissues out of them . <next_sent> What does that even mean ? <next_sent> Well it means growing an actual heart , let 's say , or grow a piece of bone that can be put into the body . <next_sent> Not only that , but they can also be used for disease models . <next_sent> And for this purpose , traditional cell culture techniques just really are n't enough . <next_sent> The cells are kind of homesick ; the dish does n't feel like their home . <next_sent> And so we need to do better at copying their natural environment to get them to thrive . <next_sent> We call this the biomimetic paradigm -- copying nature in the lab . <next_sent> Well , the heart beats , rhythmically , tirelessly , faithfully . <next_sent> We copy this in the lab by outfitting cell culture systems with electrodes . <next_sent> These electrodes act like mini pacemakers to get the cells to contract in the lab . <next_sent> What else do we know about the heart ? <next_sent> Well , heart cells are pretty greedy . <next_sent> Nature feeds the heart cells in your body with a very , very dense blood supply . <next_sent> In the lab , we micro - pattern channels in the biomaterials on which we grow the cells , and this allows us to flow the cell culture media , the cells ' food , through the scaffolds where we 're growing the cells -- a lot like what you might expect from a capillary bed in the heart . <next_sent> So this brings me to lesson number one : life can do a lot with very little . <next_sent> Let 's take the example of electrical stimulation . <next_sent> Let 's see how powerful just one of these essentials can be . <next_sent> On the left , we see a tiny piece of beating heart tissue that I engineered from rat cells in the lab . <next_sent> It 's about the size of a mini marshmallow . <next_sent> And after one week , it 's beating . <next_sent> You can see it in the upper left - hand corner . <next_sent> But do n't worry if you ca n't see it so well . <next_sent> It 's amazing that these cells beat at all . <next_sent> But what 's really amazing is that the cells , when we electrically stimulate them , like with a pacemaker , that they beat so much more . <next_sent> But that brings me to lesson number two : cells do all the work . <next_sent> In a sense , tissue engineers have a bit of an identity crisis here , because structural engineers build bridges and big things , computer engineers , computers , but what we are doing is actually building enabling technologies for the cells themselves . <next_sent> What does this mean for us ? <next_sent> Let 's do something really simple . <next_sent> Let 's remind ourselves that cells are not an abstract concept . <next_sent> Let 's remember that our cells sustain our lives in a very real way . <next_sent> " We are what we eat , " could easily be described as , " We are what our cells eat . " <next_sent> And in the case of the flora in our gut , these cells may not even be human . <next_sent> But it 's also worth noting that cells also mediate our experience of life . <next_sent> Behind every sound , sight , touch , taste and smell is a corresponding set of cells that receive this information and interpret it for us . <next_sent> It begs the question : shall we expand our sense of environmental stewardship to include the ecosystem of our own bodies ? <next_sent> I invite you to talk about this with me further , and in the meantime , I wish you luck . <next_sent> May none of your non - cancer cells become endangered species . <next_sent> Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :topic (s1.t / talk-01))
+   :snt2 (s2.s / say-01
+               :ARG1 (s2.m / morning
+                           :ARG1-of (s2.g / good-02))
+               :ARG2 (s2.e / everybody))
+   :snt3 (s3.w / work-01
+               :ARG0 (s3.i / i)
+               :ARG3 (s3.c3 / creature
+                            :ARG0-of (s3.a / amaze-01
+                                           :degree (s3.r / really))
+                            :ARG1-of (s3.c / call-01
+                                           :ARG2 (s3.c2 / cell))
+                            :mod (s3.l / life
+                                       :mod (s3.i2 / it))
+                            :mod (s3.l2 / little)))
+   :snt4 (s4.a / and
+               :op2 (s4.l2 / let-01
+                           :ARG0 (s4.y / you)
+                           :ARG1 (s4.t / tell-01
+                                       :ARG0 (s4.i / i
+                                                   :same-as s3.i)
+                                       :ARG1 (s4.t2 / thing
+                                                    :ARG2-of (s4.r / resemble-01
+                                                                   :ARG1 (s4.g / grow-03
+                                                                               :ARG1 (s4.c / cell
+                                                                                           :mod (s4.t3 / this)
+                                                                                           :same-as s3.c3)
+                                                                               :location (s4.l / lab))))
+                                       :ARG2 s4.y)))
+   :snt5 (s5.w2 / work-01
+                :ARG0 (s5.i / i
+                            :same-as s3.i)
+                :ARG1 (s5.l / lab
+                            :location-of (s5.t / take-out-11
+                                               :ARG0 (s5.w / we)
+                                               :ARG1 (s5.c / cell)
+                                               :source (s5.e / environment
+                                                             :mod (s5.n / native)
+                                                             :poss s5.c))))
+   :snt6 (s6.p2 / plate
+                :ARG0 (s6.w / we
+                            :same-as s5.w)
+                :ARG1 (s6.t / they
+                            :same-as s5.c)
+                :ARG2 (s6.d / dish
+                            :ARG1-of (s6.c / call-01
+                                           :ARG0 s6.w
+                                           :ARG2 (s6.d2 / dish
+                                                        :mod (s6.p / petri))
+                                           :frequency (s6.s / sometimes))))
+   :snt7 (s7.a / and
+               :op2 (s7.a2 / and
+                           :op1 (s7.f / feed-01
+                                      :ARG0 (s7.w / we
+                                                  :same-as s5.w)
+                                      :ARG1 (s7.t2 / thing
+                                                   :ARG1-of (s7.c / call-01
+                                                                  :ARG0 s7.w
+                                                                  :ARG2 (s7.m / media
+                                                                              :mod (s7.c3 / culture
+                                                                                          :mod (s7.c2 / cell))))
+                                                   :ARG1-of (s7.r / resemble-01
+                                                                  :ARG2 (s7.f2 / food
+                                                                               :poss (s7.t / they
+                                                                                           :same-as s5.c))))
+                                      :ARG2 s7.t
+                                      :manner (s7.s / sterile-02
+                                                    :mod (s7.o / of-course)))
+                           :op2 (s7.g / grow-03
+                                      :ARG0 s7.w
+                                      :ARG1 s7.t
+                                      :location (s7.i / incubator))))
+   :snt8 (s8.d / do-02
+               :ARG0 (s8.i / i
+                           :same-as s3.i)
+               :ARG1 (s8.t / this)
+               :ARG1-of (s8.c / cause-01
+                              :ARG0 (s8.a / amr-unknown)))
+   :snt9 (s9.a / and
+               :op1 (s9.o / observe-01
+                          :ARG0 (s9.w / we
+                                      :same-as s5.w)
+                          :ARG1 (s9.c / cell
+                                      :location (s9.p / plate)
+                                      :same-as s5.c))
+               :op2 (s9.b / be-located-at-91
+                          :ARG1 s9.c
+                          :ARG2 (s9.s / surface
+                                      :mod (s9.j / just))))
+   :snt10 (s10.c / contrast-01
+                 :ARG2 (s10.t3 / try-01
+                               :ARG0 (s10.w / we
+                                            :same-as s5.w)
+                               :ARG1 (s10.e / engineer-01
+                                            :ARG0 s10.w
+                                            :ARG1 (s10.t2 / tissue)
+                                            :ARG2 (s10.t / they
+                                                         :same-as s5.c))
+                               :ARG1-of (s10.r / real-04)
+                               :location (s10.l / lab
+                                                :poss (s10.i / i
+                                                             :same-as s3.i))))
+   :snt11 (s11.m / mean-01
+                 :ARG1 (s11.t / that
+                              :same-as s10.e)
+                 :ARG2 (s11.a / amr-unknown)
+                 :mod (s11.e / even))
+   :snt12 (s12.m / mean-01
+                 :ARG1 (s12.i / it
+                              :same-as s10.e)
+                 :ARG2 (s12.o / or
+                              :op1 (s12.g / grow-01
+                                          :ARG1 (s12.h / heart
+                                                       :ARG1-of (s12.a / actual-02))
+                                          :ARG1-of (s12.s / say-01
+                                                          :ARG0 (s12.w / we)))
+                              :op2 (s12.g2 / grow-01
+                                           :ARG1 (s12.p / piece
+                                                        :ARG1-of (s12.p3 / put-01
+                                                                         :ARG1-of (s12.p2 / possible-01)
+                                                                         :ARG2 (s12.b / body))
+                                                        :part-of (s12.b2 / bone))))
+                 :mod (s12.w2 / well))
+   :snt13 (s13.c / contrast-01
+                 :ARG1 (s13.t / that
+                              :mod (s13.o / only
+                                          :polarity "-"))
+                 :ARG2 (s13.p / possible-01
+                              :ARG1 (s13.u / use-01
+                                           :ARG1 (s13.t2 / they
+                                                         :same-as s5.c)
+                                           :ARG2 (s13.m / model-01
+                                                        :ARG1 (s13.d / disease)))
+                              :mod (s13.a / also)))
+   :snt14 (s14.a / and
+                 :op2 (s14.h / have-quant-91
+                             :purpose (s14.t2 / this)
+                             :ARG1 (s14.t / technique
+                                          :mod (s14.c2 / culture
+                                                       :mod (s14.c / cell))
+                                          :mod (s14.t3 / tradition))
+                             :ARG1-of (s14.r / real-04)
+                             :ARG3 (s14.e / enough)
+                             :mod (s14.j / just)
+                             :polarity "-"))
+   :snt15 (s15.a / and
+                 :op1 (s15.h2 / homesick
+                              :degree (s15.k / kind-of)
+                              :domain (s15.c / cell
+                                             :same-as s5.c))
+                 :op2 (s15.f / feel-05
+                             :ARG1 (s15.d / dish)
+                             :ARG2 (s15.h / home
+                                          :poss s15.c)
+                             :polarity "-"))
+   :snt16 (s16.a / and
+                 :op2 (s16.c / cause-01
+                             :ARG1 (s16.n2 / need-01
+                                           :ARG0 (s16.w / we
+                                                        :same-as s5.w)
+                                           :ARG1 (s16.d / do-02
+                                                        :ARG0 s16.w
+                                                        :ARG1-of (s16.h / have-degree-91
+                                                                        :ARG2 (s16.g2 / good-03
+                                                                                      :ARG1 s16.d
+                                                                                      :ARG2 (s16.c2 / copy-01
+                                                                                                    :purpose (s16.g / get-04
+                                                                                                                    :ARG0 s16.w
+                                                                                                                    :ARG1 (s16.t2 / thrive-01
+                                                                                                                                  :ARG1 (s16.t / they
+                                                                                                                                               :same-as s5.c)))
+                                                                                                    :ARG0 s16.w
+                                                                                                    :ARG1 (s16.e / environment
+                                                                                                                 :ARG1-of (s16.n / natural-03)
+                                                                                                                 :poss s16.t)))
+                                                                        :ARG3 (s16.m / more))))))
+   :snt17 (s17.c / call-01
+                 :ARG0 (s17.w / we
+                              :same-as s5.w)
+                 :ARG1 (s17.t / this)
+                 :ARG2 (s17.p / paradigm
+                              :ARG1-of (s17.m / mean-01
+                                              :ARG2 (s17.c2 / copy-01
+                                                            :ARG1 (s17.n / nature)
+                                                            :location (s17.l / lab)))
+                              :mod (s17.b / biomimetic)))
+   :snt18 (s18.b / beat-02
+                 :ARG1 (s18.h / heart)
+                 :manner (s18.r / rhythm)
+                 :manner (s18.p / passionate
+                                :polarity "-")
+                 :manner (s18.s / sincere)
+                 :mod (s18.w / well))
+   :snt19 (s19.c2 / copy-01
+                  :ARG0 (s19.w / we
+                               :same-as s5.w)
+                  :ARG1 (s19.t / this
+                               :same-as s18.b)
+                  :location (s19.l / lab)
+                  :manner (s19.o / out-01
+                                 :ARG0 s19.w
+                                 :ARG1 (s19.s / system
+                                              :mod (s19.c3 / culture
+                                                           :mod (s19.c / cell)))
+                                 :mod (s19.a / Party)))
+   :snt20 (s20.a / act-01
+                 :purpose (s20.g / get-04
+                                 :ARG0 (s20.w / wire
+                                              :mod (s20.t / this)
+                                              :same-as s19.a)
+                                 :ARG1 (s20.c2 / contract-02
+                                               :ARG0 (s20.c / cell)
+                                               :location (s20.l / lab)))
+                 :ARG0 s20.w
+                 :ARG1 (s20.r / resemble-01
+                              :ARG1 s20.w
+                              :ARG2 (s20.p / pacify-01
+                                           :mod (s20.m / mini))))
+   :snt21 (s21.k / know-02
+                 :ARG0 (s21.w / we)
+                 :ARG1 (s21.a / amr-unknown
+                              :mod (s21.e / else)
+                              :topic (s21.h / heart
+                                            :same-as s18.h)))
+   :snt22 (s22.g / greedy
+                 :degree (s22.p / pretty)
+                 :domain (s22.c / cell
+                                :mod (s22.h / heart))
+                 :mod (s22.w / well))
+   :snt23 (s23.f / feed-01
+                 :ARG0 (s23.n / nature)
+                 :ARG1 (s23.s / supply-01
+                              :ARG1 (s23.b / blood)
+                              :mod (s23.d / dense
+                                          :degree (s23.v / very)))
+                 :ARG2 (s23.c / cell
+                              :mod (s23.h / heart)
+                              :part-of (s23.b2 / body
+                                               :poss (s23.y / you))))
+   :snt24 (s24.a2 / and
+                  :op1 (s24.c4 / channel
+                               :ARG1-of (s24.p / pattern-01
+                                               :mod (s24.m2 / micro))
+                               :location (s24.l / lab)
+                               :location (s24.m3 / molecule
+                                                 :ARG2-of (s24.g / grow-03
+                                                                 :ARG0 (s24.w / we
+                                                                              :same-as s5.w)
+                                                                 :ARG1 (s24.c2 / cell))))
+                  :op2 (s24.a / allow-01
+                              :ARG0 s24.c4
+                              :ARG1 (s24.f / flow-01
+                                           :ARG0 s24.w
+                                           :ARG1 (s24.m / media
+                                                        :mod (s24.c5 / culture
+                                                                     :mod (s24.c3 / cell))
+                                                        :op2 (s24.f2 / food
+                                                                     :poss s24.c2)
+                                                        :same-as s7.r)
+                                           :ARG1-of (s24.r / resemble-01
+                                                           :ARG2 (s24.t / thing
+                                                                        :ARG1-of (s24.e / expect-01
+                                                                                        :ARG0 (s24.y / you)
+                                                                                        :ARG1-of (s24.p2 / possible-01)
+                                                                                        :source (s24.b / bed
+                                                                                                       :location (s24.h / heart
+                                                                                                                        :same-as s18.h)
+                                                                                                       :mod (s24.c / capillary))))
+                                                           :degree (s24.l2 / lot))
+                                           :path (s24.t2 / through
+                                                         :op1 (s24.s / shield
+                                                                     :location s24.c2)))))
+   :snt25 (s25.c / cause-01
+                 :ARG1 (s25.b / bring-01
+                              :ARG0 (s25.t / this)
+                              :ARG1 (s25.i / i
+                                           :same-as s3.i)
+                              :ARG2 (s25.l / lesson
+                                           :consist-of (s25.p / possible-01
+                                                              :ARG1 (s25.d / do-02
+                                                                           :ARG0 (s25.l2 / life)
+                                                                           :ARG1 (s25.l4 / lot)
+                                                                           :instrument (s25.l3 / little
+                                                                                               :degree (s25.v / very))))
+                                           :ord (s25.o / ordinal-entity
+                                                       :value "1"))))
+   :snt26 (s26.t / take-01
+                 :ARG0 (s26.w / we)
+                 :ARG1 (s26.e2 / exemplify-01
+                               :ARG1 (s26.s / stimulate-01
+                                            :ARG0 (s26.e / electricity))))
+   :snt27 (s27.s / see-01
+                 :ARG0 (s27.w / we)
+                 :ARG1 (s27.t / thing
+                              :degree-of (s27.p2 / powerful-02
+                                                 :ARG1 (s27.o / one
+                                                              :ARG1-of (s27.i / include-91
+                                                                              :ARG2 (s27.e / essential
+                                                                                           :mod (s27.t2 / this)))
+                                                              :mod (s27.j / just))
+                                                 :ARG1-of (s27.p / possible-01)))
+                 :mode "imperative")
+   :snt28 (s28.s / see-01
+                 :ARG0 (s28.w / we)
+                 :ARG1 (s28.p / piece
+                              :ARG1-of (s28.e / engineer-01
+                                              :ARG0 (s28.i / i
+                                                           :same-as s3.i)
+                                              :ARG2 (s28.c / cell
+                                                           :mod (s28.r / rat))
+                                              :location (s28.l / lab
+                                                               :same-as s10.l))
+                              :mod (s28.t / tiny)
+                              :part-of (s28.t2 / tissue
+                                               :ARG0-of (s28.b / beat-01)
+                                               :mod (s28.h / heart)))
+                 :ARG1-of (s28.l2 / left-20))
+   :snt29 (s29.s / size-01
+                 :ARG1 (s29.i / it
+                              :same-as s28.p)
+                 :ARG2 (s29.m / marshmallow
+                              :mod (s29.m2 / mini))
+                 :mod (s29.a / about))
+   :snt30 (s30.a2 / and
+                  :op2 (s30.b / beat-01
+                              :ARG1 (s30.i / it
+                                           :same-as s28.p)
+                              :time (s30.a / after
+                                           :quant (s30.t / temporal-quantity
+                                                         :unit (s30.w / week)
+                                                         :quant "1"))))
+   :snt31 (s31.p / possible-01
+                 :ARG1 (s31.s / see-01
+                              :ARG0 (s31.y / you)
+                              :ARG1 (s31.i / it
+                                           :same-as s28.p)
+                              :location (s31.c / corner
+                                               :mod (s31.h / hand
+                                                           :ARG1-of (s31.l / left-20))
+                                               :mod (s31.u / upper))))
+   :snt32 (s32.c / contrast-01
+                 :ARG2 (s32.w2 / worry-02
+                               :ARG0 (s32.y / you)
+                               :condition (s32.p / possible-01
+                                                 :ARG1 (s32.s / see-01
+                                                              :ARG0 s32.y
+                                                              :ARG1 (s32.i / it
+                                                                           :same-as s28.p)
+                                                              :manner (s32.w / well-09
+                                                                             :degree (s32.s2 / so)))
+                                                 :polarity "-")
+                               :polarity "-"))
+   :snt33 (s33.a / amaze-01
+                 :ARG0 (s33.b / beat-01
+                              :ARG0 (s33.c / cell
+                                           :mod (s33.t / this)
+                                           :same-as s3.c3)
+                              :degree (s33.a2 / at-all)))
+   :snt34 (s34.c2 / contrast-01
+                  :ARG2 (s34.a / amaze-01
+                               :ARG0 (s34.b / beat-01
+                                            :ARG0 (s34.c / cell
+                                                         :same-as s3.c3)
+                                            :ARG1-of (s34.h / have-quant-91
+                                                            :ARG2 (s34.m2 / much
+                                                                          :degree (s34.s / so))
+                                                            :ARG3 (s34.m / more))
+                                            :time (s34.s2 / stimulate-01
+                                                          :ARG0 (s34.w / we)
+                                                          :ARG1 s34.c
+                                                          :example (s34.p / pacemaker)
+                                                          :manner (s34.e / electric)))
+                               :degree (s34.r / really)))
+   :snt35 (s35.c2 / contrast-01
+                  :ARG2 (s35.b / bring-01
+                               :ARG0 (s35.t / that)
+                               :ARG1 (s35.i / i
+                                            :same-as s3.i)
+                               :ARG2 (s35.l / lesson
+                                            :consist-of (s35.d / do-02
+                                                               :ARG0 (s35.c / cell)
+                                                               :ARG1 (s35.w / work-01
+                                                                            :mod (s35.a / all)))
+                                            :ord (s35.o / ordinal-entity
+                                                        :value "2"))))
+   :snt36 (s36.h / have-03
+                 :ARG0 (s36.p / person
+                              :ARG0-of (s36.e2 / engineer-01
+                                               :ARG1 (s36.t3 / tissue)))
+                 :ARG1 (s36.c5 / crisis
+                               :degree (s36.b2 / bit)
+                               :mod (s36.i / identity))
+                 :ARG1-of (s36.c / cause-01
+                                 :ARG0 (s36.a2 / and
+                                               :op1 (s36.b4 / build-01
+                                                            :ARG0 (s36.p2 / person
+                                                                          :ARG0-of (s36.e3 / engineer-01
+                                                                                           :ARG1 (s36.s2 / structure)))
+                                                            :ARG1 (s36.a3 / and
+                                                                          :op1 (s36.b3 / bridge)
+                                                                          :op2 (s36.t2 / thing
+                                                                                       :mod (s36.b / big))
+                                                                          :op2 (s36.p3 / person
+                                                                                       :ARG0-of (s36.e4 / engineer-01
+                                                                                                        :ARG1 (s36.c3 / computer)))))))
+                 :ARG1-of (s36.c4 / contrast-01
+                                  :ARG2 (s36.b5 / build-01
+                                                :ARG0 (s36.w / we)
+                                                :ARG1 (s36.t / technology
+                                                             :ARG0-of (s36.e / enable-01))
+                                                :ARG1-of (s36.a / actual-02)
+                                                :beneficiary (s36.c2 / cell)))
+                 :location (s36.h2 / here)
+                 :mod (s36.s / sense))
+   :snt37 (s37.m / mean-01
+                 :ARG1 (s37.t / this)
+                 :ARG2 (s37.a / amr-unknown)
+                 :ARG3 (s37.w / we))
+   :snt38 (s38.d / do-02
+                 :ARG0 (s38.w / we)
+                 :ARG1 (s38.s2 / something
+                               :ARG1-of (s38.s / simple-02
+                                               :degree (s38.r / really)))
+                 :mode "imperative")
+   :snt39 (s39.r / remind-01
+                 :ARG0 (s39.w / we)
+                 :ARG1 (s39.c2 / concept
+                               :domain (s39.c / cell)
+                               :mod (s39.a / abstract)
+                               :polarity "-")
+                 :ARG2 s39.w
+                 :mode "imperative")
+   :snt40 (s40.r2 / remember-01
+                  :ARG0 (s40.w2 / we
+                                :part (s40.c / cell))
+                  :ARG1 (s40.s / sustain-01
+                               :ARG0 s40.c
+                               :ARG1 (s40.l / life
+                                            :poss s40.w2)
+                               :manner (s40.w / way
+                                              :ARG1-of (s40.r / real-04
+                                                              :degree (s40.v / very))))
+                  :mode "imperative")
+   :snt41 (s41.p / possible-01
+                 :ARG1 (s41.d / describe-01
+                              :ARG1 (s41.t / thing
+                                           :ARG1-of (s41.e2 / eat-01
+                                                            :ARG0 (s41.w / we
+                                                                         :part (s41.c / cell)
+                                                                         :domain-of s41.t)))
+                              :ARG1-of (s41.e / easy-05)
+                              :ARG2 (s41.t2 / thing
+                                            :ARG1-of (s41.e3 / eat-01
+                                                             :ARG0 s41.c)
+                                            :domain s41.w)))
+   :snt42 (s42.a / and
+                 :op2 (s42.p / possible-01
+                             :ARG1 (s42.h / human
+                                          :domain (s42.c / cell
+                                                         :mod (s42.t / this)
+                                                         :same-as s41.c)
+                                          :mod (s42.e / even)
+                                          :polarity "-")
+                             :topic (s42.f / flora
+                                           :location (s42.g / gut
+                                                            :part-of (s42.w / we)))))
+   :snt43 (s43.c2 / contrast-01
+                  :ARG2 (s43.w2 / worth-02
+                                :ARG2 (s43.n / note-01
+                                             :ARG1 (s43.m / mediate-01
+                                                          :ARG0 (s43.c / cell)
+                                                          :ARG1 (s43.e / experience-01
+                                                                       :ARG0 (s43.w / we)
+                                                                       :ARG1 (s43.l / life))
+                                                          :mod (s43.a / also)))
+                                :mod s43.a))
+   :snt44 (s44.s2 / set
+                  :ARG1-of (s44.c2 / correspond-02)
+                  :consist-of (s44.c / cell
+                                     :ARG0-of (s44.r / receive-01
+                                                     :ARG1 (s44.i / information
+                                                                  :mod (s44.t2 / this)))
+                                     :ARG0-of (s44.i2 / interpret-01
+                                                      :ARG1 s44.i
+                                                      :beneficiary (s44.w / we)))
+                  :location (s44.b / behind
+                                   :op1 (s44.a / and
+                                               :mod (s44.e / every)
+                                               :op1 (s44.s4 / sound-01)
+                                               :op2 (s44.s / see-01)
+                                               :op3 (s44.t3 / touch-01)
+                                               :op4 (s44.t / taste-01)
+                                               :op5 (s44.s3 / smell-01))))
+   :snt45 (s45.b / beg-01
+                 :ARG0 (s45.i2 / it)
+                 :ARG1 (s45.q / question-01
+                              :ARG1 (s45.e3 / expand-01
+                                            :ARG0 (s45.w / we)
+                                            :ARG1 (s45.s / sense-01
+                                                         :ARG0 s45.w
+                                                         :ARG1 (s45.s2 / stewardship
+                                                                       :topic (s45.e2 / environment)))
+                                            :ARG4 (s45.i / include-01
+                                                         :ARG0 s45.w
+                                                         :ARG1 (s45.e / ecosystem
+                                                                      :part-of (s45.b2 / body
+                                                                                       :poss s45.w)))
+                                            :polarity (s45.a / amr-unknown))))
+   :snt46 (s46.a / and
+                 :op1 (s46.i2 / invite-01
+                              :ARG0 (s46.i / i
+                                           :same-as s3.i)
+                              :ARG1 (s46.y / you)
+                              :ARG2 (s46.t / talk-01
+                                           :ARG0 s46.y
+                                           :ARG1 (s46.t2 / this)
+                                           :ARG2 s46.i
+                                           :degree (s46.f / further)))
+                 :op2 (s46.w / wish-01
+                             :ARG0 s46.i
+                             :ARG1 (s46.l / luck)
+                             :ARG2 s46.y
+                             :time (s46.m / meantime)))
+   :snt47 (s47.w / wish-01
+                 :ARG1 (s47.b / become-01
+                              :ARG1 (s47.c / cell
+                                           :quant (s47.n2 / none)
+                                           :mod (s47.d / disease
+                                                       :name (s47.n / name
+                                                                    :op1 "cancer")
+                                                       :polarity "-")
+                                           :poss (s47.y / you
+                                                        :same-as s46.y))
+                              :ARG2 (s47.s / species
+                                           :ARG1-of (s47.e / endanger-01))))
+   :snt48 (s48.t / thank-01
+                 :ARG1 (s48.y / you
+                              :same-as s3.i)))
+

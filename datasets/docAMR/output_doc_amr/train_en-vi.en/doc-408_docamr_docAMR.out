@@ -1,0 +1,528 @@
+# ::id doc-408
+# ::doc_file doc-408
+# ::tok http : / / www . ted . com / talks / claron_mcfadden_singing_the_primal_mystery< / url> <next_sent> Folks , you 've just met Claron McFadden . <next_sent> She is a world - class soprano singer who studied in Rochester , New York . <next_sent> Her celebrated operatic roles are numerous and varied . <next_sent> In August 2007 , Claron was awarded the Amsterdam Prize for the Arts , winning praise for her brilliance , her amazing and extensively wide repertoire and her vivid stage personality . <next_sent> Please welcome Claron McFadden . <next_sent> Claron McFadden : The human voice : mysterious , spontaneous , primal . <next_sent> For me , the human voice is the vessel on which all emotions travel -- except perhaps jealousy . <next_sent> And the breath , the breath is the captain of that vessel . <next_sent> A child is born , takes its first breath -- and we behold the wondrous beauty of vocal expression -- mysterious , spontaneous and primal . <next_sent> A few years ago , I did a meditation retreat in Thailand . <next_sent> I wanted a place that I would have total silence and total solitude . <next_sent> I spent two weeks at this retreat in my own little hut -- no music , no nothing , sounds of nature -- trying to find the essence of concentration , being in the moment . <next_sent> On my last day , the woman who looked after the place , she came and we spoke for a minute , and then she said to me , " Would you sing something for me ? " <next_sent> And I thought , but this is a place of total quiet and silence . <next_sent> I ca n't make noise . <next_sent> She said , " Please , sing for me . " <next_sent> So I closed my eyes , I took breath and the first thing that came up and out was " Summertime , " Porgy and Bess . <next_sent> And after a moment , she opened her eyes and she looked at me and she said , " It 's like meditation . " <next_sent> And in that moment I understood that everything I had gone to Thailand to look for , to search for , I had it already in my singing -- the calm , but alertness , the focus , but awareness , and being totally in the moment . <next_sent> When you 're totally in the moment , when I 'm totally in the moment , the vessel of expression is open . <next_sent> The emotions can flow from me to you and back . <next_sent> Extremely profound experience . <next_sent> There 's a piece by a composer , an American composer called John Cage . <next_sent> It 's called " Aria . " <next_sent> It was written for an amazing singer called Cathy Berberian . <next_sent> And the thing about this piece that 's so special -- if you see it behind me -- it 's not notated in any way . <next_sent> No notes , no flats , no sharps . <next_sent> But it 's a kind of structure , and the singer within this structure has total freedom to be creative , spontaneous . <next_sent> For example , there are different colors and each color gets a different type of singing -- pop , country and western , opera , jazz -- and you just have to be consistent with that color . <next_sent> You see there are different lines : you choose in your own tempo in your own way to follow the line , but you must respect it , more or less . <next_sent> And these little dots , these represent a sort of sound that 's not a vocal , not a lyrical way of expressing the voice . <next_sent> Using the body -- it could be sneezing , it could be coughing , it could be animals -- exactly -- clapping , whatever . <next_sent> And there 's different text . <next_sent> There 's Armenian , Russian , French , English , Italian . <next_sent> So within this structure one is free . <next_sent> To me , this piece is an ode to the voice because it 's mysterious -- as we can see -- it 's quite spontaneous , and it 's primal . <next_sent> So I would like to share this piece with you . <next_sent> It 's " Aria " of John Cage .
+(d / document
+   :snt1 (s1.u / url-entity
+               :value "talk-01")
+   :snt2 (s2.s / say-01
+               :ARG1 (s2.m / meet-02
+                           :ARG0 (s2.f / folk)
+                           :ARG1 (s2.p / person
+                                       :name (s2.n / name
+                                                   :op1 "Claron"
+                                                   :op2 "McFadden"))
+                           :time (s2.j / just))
+               :ARG2 s2.f)
+   :snt3 (s3.p / person
+               :ARG0-of (s3.s2 / sing-01
+                               :ARG1 (s3.s3 / soprano))
+               :ARG0-of (s3.s5 / study-01
+                               :location (s3.c / city
+                                               :name (s3.n / name
+                                                           :op1 "Rochester")
+                                               :location (s3.s4 / state
+                                                                :name (s3.n2 / name
+                                                                             :op1 "New"
+                                                                             :op2 "York"))))
+               :domain (s3.s / she
+                             :same-as s2.p)
+               :mod (s3.c2 / class
+                           :mod (s3.w / world)))
+   :snt4 (s4.a / and
+               :op1 (s4.r / role
+                          :quant (s4.n / numerous)
+                          :ARG1-of (s4.c / celebrate-01)
+                          :mod (s4.o / operatic)
+                          :poss (s4.s / she
+                                      :same-as s2.p))
+               :op2 (s4.v / vary-01
+                          :ARG1 s4.r)
+               :rel (s4.s2 / symphony))
+   :snt5 (s5.a4 / award-01
+                :ARG0 (s5.p / person
+                            :name (s5.n / name
+                                        :op1 "Claron")
+                            :same-as s2.p)
+                :ARG1 (s5.a3 / award
+                             :name (s5.n2 / name
+                                          :op1 "Amsterdam"
+                                          :op2 "Prize"
+                                          :op3 "for"
+                                          :op4 "the"
+                                          :op5 "Arts"))
+                :ARG1-of (s5.c / cause-01
+                               :ARG0 (s5.w2 / win-01
+                                            :ARG0 s5.p
+                                            :ARG1 (s5.p3 / praise-01
+                                                         :ARG1 s5.p
+                                                         :ARG2 (s5.a2 / and
+                                                                      :op1 (s5.b / brilliant-01
+                                                                                 :ARG1 s5.p)
+                                                                      :op2 (s5.r / repertoire
+                                                                                 :ARG0-of (s5.a / amaze-01)
+                                                                                 :ARG1-of (s5.w / wide-02
+                                                                                                :ARG1-of (s5.e / extensive-03))
+                                                                                 :poss s5.p)
+                                                                      :op3 (s5.p2 / personality
+                                                                                  :mod (s5.s / stage)
+                                                                                  :mod (s5.v / vivid)
+                                                                                  :poss s5.p)))))
+                :time (s5.d / date-entity
+                            :month "8"
+                            :year "2007"))
+   :snt6 (s6.w / welcome-01
+               :ARG0 (s6.y / you)
+               :ARG1 (s6.p / person
+                           :name (s6.n / name
+                                       :op1 "Claron"
+                                       :op2 "McFadden")
+                           :same-as s2.p)
+               :mode "imperative"
+               :polite "+")
+   :snt7 (s7.a / and
+               :op1 (s7.m / mystery
+                          :domain (s7.v / voice
+                                        :mod (s7.h / human)))
+               :op2 (s7.s / spontaneous
+                          :domain s7.v)
+               :op3 (s7.p2 / primal
+                           :domain s7.v)
+               :topic (s7.p / person
+                            :name (s7.n / name
+                                        :op1 "Claron"
+                                        :op2 "McFadden")
+                            :same-as s2.p))
+   :snt8 (s8.v / vessel
+               :ARG2-of (s8.e2 / except-01
+                               :ARG1 (s8.j / jealousy
+                                           :ARG1-of (s8.p / possible-01)))
+               :ARG4-of (s8.t / travel-01
+                              :ARG0 (s8.e / emotion
+                                          :mod (s8.a / all)))
+               :beneficiary (s8.i / i
+                                  :same-as s2.p)
+               :domain (s8.v2 / voice
+                              :mod (s8.h / human)))
+   :snt9 (s9.a / and
+               :op2 (s9.b / breathe-01
+                          :domain (s9.c / captain
+                                        :poss (s9.v / vessel
+                                                    :mod (s9.t / that)
+                                                    :same-as s8.e2))))
+   :snt10 (s10.a / and
+                 :op1 (s10.b / bear-02
+                             :ARG1 (s10.c / child))
+                 :op2 (s10.t / take-01
+                             :ARG0 s10.c
+                             :ARG1 (s10.b4 / breathe-01
+                                           :ARG0 s10.c
+                                           :ord (s10.o / ordinal-entity
+                                                       :value "1")))
+                 :op3 (s10.b3 / behold-01
+                              :ARG0 (s10.w / we)
+                              :ARG1 (s10.b2 / beautiful-02
+                                            :ARG1 (s10.e / express-01
+                                                         :ARG1 (s10.v / voice-01))
+                                            :ARG1-of (s10.w2 / wonderful-03)
+                                            :mod (s10.m / mystery)
+                                            :mod (s10.s / spontaneous)
+                                            :mod (s10.p / primal))))
+   :snt11 (s11.r / retreat-01
+                 :ARG1 (s11.i / i
+                              :same-as s2.p)
+                 :ARG2 (s11.m / meditate-01)
+                 :location (s11.c / country
+                                  :name (s11.n / name
+                                               :op1 "Thailand"))
+                 :time (s11.b / before
+                              :quant (s11.f / few
+                                            :op1 (s11.t / temporal-quantity
+                                                        :unit (s11.y / year)
+                                                        :quant "1"))
+                              :op1 (s11.n2 / now)))
+   :snt12 (s12.w / want-01
+                 :ARG0 (s12.i / i
+                              :same-as s2.p)
+                 :ARG1 (s12.p / place
+                              :location-of (s12.h / have-03
+                                                  :ARG0 s12.i
+                                                  :ARG1 (s12.a / and
+                                                               :op1 (s12.s / silence-01
+                                                                           :degree (s12.t / total))
+                                                               :op2 (s12.s2 / solitude
+                                                                            :degree (s12.t2 / total))))))
+   :snt13 (s13.s2 / spend-02
+                  :purpose (s13.t3 / try-01
+                                   :ARG0 (s13.i / i
+                                                :same-as s2.p)
+                                   :ARG1 (s13.f / find-01
+                                                :ARG0 s13.i
+                                                :ARG1 (s13.e / essence
+                                                             :poss (s13.c / concentrate-02))))
+                  :ARG0 s13.i
+                  :ARG1 (s13.t / temporal-quantity
+                               :unit (s13.w / week)
+                               :quant "2")
+                  :ARG2 (s13.r / retreat-01
+                               :consist-of (s13.a / and
+                                                  :manner (s13.b / be-located-at-91
+                                                                 :ARG1 s13.i
+                                                                 :ARG2 (s13.m / moment))
+                                                  :op1 (s13.m2 / music
+                                                               :polarity "-")
+                                                  :op2 (s13.n2 / nothing
+                                                               :polarity "-")
+                                                  :op3 (s13.s / sound-02
+                                                              :ARG1 (s13.n / nature)))
+                               :location (s13.h / hut
+                                                :mod (s13.l / little)
+                                                :poss s13.i)
+                               :mod (s13.t2 / this
+                                            :same-as s11.c)))
+   :snt14 (s14.a2 / and
+                  :op1 (s14.c / come-01
+                              :ARG1 (s14.w / woman
+                                           :ARG0-of (s14.l2 / look-after-07
+                                                            :ARG1 (s14.p / place)))
+                              :time (s14.d / day
+                                           :mod (s14.l / last)
+                                           :poss (s14.i / i
+                                                        :same-as s2.p)))
+                  :op2 (s14.s4 / speak-01
+                               :ARG0 s14.w
+                               :ARG2 s14.i
+                               :duration (s14.t / temporal-quantity
+                                                :unit (s14.m / minute)
+                                                :quant "1"))
+                  :op3 (s14.s / say-01
+                              :ARG0 s14.w
+                              :ARG1 (s14.s2 / sing-01
+                                            :ARG0 s14.w
+                                            :ARG1 (s14.s3 / something)
+                                            :ARG2 s14.i
+                                            :polarity (s14.a / amr-unknown))
+                              :ARG2 s14.i
+                              :time (s14.t2 / then)))
+   :snt15 (s15.a / and
+                 :op2 (s15.t / think-01
+                             :ARG0 (s15.i / i
+                                          :same-as s2.p)
+                             :ARG1 (s15.c / contrast-01
+                                          :ARG2 (s15.p / place
+                                                       :domain (s15.t2 / this
+                                                                       :same-as s14.p)
+                                                       :location-of (s15.a2 / and
+                                                                            :op1 (s15.q / quiet-04
+                                                                                        :degree (s15.t3 / total))
+                                                                            :op2 (s15.s / silence-01))))))
+   :snt16 (s16.p / possible-01
+                 :ARG1 (s16.m / make-01
+                              :ARG0 (s16.i / i
+                                           :same-as s2.p)
+                              :ARG1 (s16.n / noise))
+                 :polarity "-")
+   :snt17 (s17.s / say-01
+                 :ARG0 (s17.s2 / she
+                               :same-as s14.w)
+                 :ARG1 (s17.s3 / sing-01
+                               :ARG0 (s17.y / you)
+                               :ARG2 s17.s2
+                               :mode "imperative"
+                               :polite "+"))
+   :snt18 (s18.c / cause-01
+                 :ARG1 (s18.a / and
+                              :op1 (s18.c2 / close-01
+                                           :ARG0 (s18.i / i
+                                                        :part (s18.e / eye)
+                                                        :same-as s2.p)
+                                           :ARG1 s18.e)
+                              :op2 (s18.b / breathe-01
+                                          :ARG0 s18.i)
+                              :op3 (s18.c3 / come-01
+                                           :ARG1 (s18.w / work-of-art
+                                                        :name (s18.n / name
+                                                                     :op1 "summer"))
+                                           :ARG4 (s18.a2 / and
+                                                         :op1 (s18.u / up-03)
+                                                         :op2 (s18.o2 / out-06))
+                                           :ord (s18.o / ordinal-entity
+                                                       :value "1")))
+                 :rel (s18.a3 / and
+                              :op1 (s18.p / person
+                                          :name s18.n)
+                              :op2 (s18.p2 / person
+                                           :name (s18.n2 / name
+                                                         :op1 "Porgy"
+                                                         :op2 "Bess"))))
+   :snt19 (s19.a2 / and
+                  :op2 (s19.o / open-01
+                              :ARG0 (s19.s2 / she
+                                            :part (s19.e / eye)
+                                            :same-as s14.w)
+                              :ARG1 s19.e)
+                  :op3 (s19.l / look-01
+                              :ARG0 s19.s2
+                              :ARG1 (s19.i / i
+                                           :same-as s2.p))
+                  :op4 (s19.s / say-01
+                              :ARG0 s19.s2
+                              :ARG1 (s19.r / resemble-01
+                                           :ARG1 (s19.i2 / it)
+                                           :ARG2 (s19.m / meditate-01)))
+                  :time (s19.a / after
+                               :op1 (s19.m2 / moment)))
+   :snt20 (s20.a3 / and
+                  :op2 (s20.u / understand-01
+                              :ARG0 (s20.i / i
+                                           :same-as s2.p)
+                              :ARG1 (s20.h / have-03
+                                           :ARG0 s20.i
+                                           :ARG1 (s20.e / everything
+                                                        :ARG1-of (s20.l / look-01
+                                                                        :ARG0 s20.i
+                                                                        :ARG1-of (s20.g / go-02
+                                                                                        :purpose (s20.s / search-01
+                                                                                                        :ARG0 s20.e)
+                                                                                        :ARG0 s20.i
+                                                                                        :ARG4 (s20.c4 / country
+                                                                                                      :name (s20.n / name
+                                                                                                                   :op1 "Thailand")
+                                                                                                      :same-as s11.c)))
+                                                        :example (s20.a4 / and
+                                                                         :op1 (s20.c2 / contrast-01
+                                                                                      :ARG1 (s20.c / calm-03)
+                                                                                      :ARG2 (s20.a / alert-01))
+                                                                         :op2 (s20.c3 / contrast-01
+                                                                                      :ARG1 (s20.f / focus-01)
+                                                                                      :ARG2 (s20.r / realize-01))
+                                                                         :op3 (s20.b / be-located-at-91
+                                                                                     :ARG1 s20.i
+                                                                                     :ARG2 (s20.m2 / moment)
+                                                                                     :degree (s20.t2 / total))))
+                                           :time (s20.a2 / already)
+                                           :time (s20.s2 / sing-01
+                                                         :ARG0 s20.i))
+                              :time (s20.m / moment
+                                           :mod (s20.t / that))))
+   :snt21 (s21.o / open-01
+                 :ARG1 (s21.v / vessel
+                              :mod (s21.e / express-01))
+                 :time (s21.a / and
+                              :op1 (s21.b / be-located-at-91
+                                          :ARG1 (s21.y / you)
+                                          :ARG2 (s21.m / moment)
+                                          :degree (s21.t / total))
+                              :op2 (s21.b2 / be-located-at-91
+                                           :ARG1 (s21.i / i
+                                                        :same-as s2.p)
+                                           :ARG2 s21.t)))
+   :snt22 (s22.p / possible-01
+                 :ARG1 (s22.f / flow-01
+                              :ARG1 (s22.e / emotion)
+                              :destination (s22.y / you)
+                              :direction (s22.b / back)
+                              :source (s22.i / i
+                                             :same-as s2.p)))
+   :snt23 (s23.e / experience-01
+                 :mod (s23.p / profound
+                             :degree (s23.e2 / extreme)))
+   :snt24 (s24.p2 / piece
+                  :domain (s24.p / person
+                                 :name (s24.n2 / name
+                                               :op1 "John"
+                                               :op2 "Cage")
+                                 :ARG0-of (s24.c / compose-02)
+                                 :mod (s24.c2 / country
+                                              :name (s24.n / name
+                                                           :op1 "America"))))
+   :snt25 (s25.c / call-01
+                 :ARG1 (s25.i / it
+                              :same-as s24.p2)
+                 :ARG2 (s25.n / name
+                              :op1 "Aria"))
+   :snt26 (s26.w / write-01
+                 :ARG1 (s26.i / it
+                              :same-as s24.p2)
+                 :ARG2 (s26.p / person
+                              :name (s26.n / name
+                                           :op1 "Cathy"
+                                           :op2 "Berberian")
+                              :ARG0-of (s26.a / amaze-01)
+                              :ARG0-of (s26.s / sing-01)))
+   :snt27 (s27.a / and
+                 :op2 (s27.t / thing
+                             :condition (s27.s / see-01
+                                               :ARG0 (s27.y / you)
+                                               :ARG1 (s27.p / piece
+                                                            :ARG1-of (s27.s3 / special-02
+                                                                             :degree (s27.s2 / so))
+                                                            :ARG1-of (s27.n / notate-00
+                                                                            :manner (s27.a2 / any
+                                                                                            :op1 (s27.w / way))
+                                                                            :polarity "-")
+                                                            :mod (s27.t2 / this
+                                                                         :same-as s24.p2))
+                                               :location (s27.b / behind
+                                                                :op1 (s27.i / i
+                                                                            :same-as s2.p)))
+                             :topic s27.p))
+   :snt28 (s28.a / and
+                 :op1 (s28.n / note
+                             :polarity "-")
+                 :op2 (s28.f / flat
+                             :polarity "-")
+                 :op3 (s28.s / sharp-02
+                             :polarity "-"))
+   :snt29 (s29.c / contrast-01
+                 :ARG2 (s29.a / and
+                              :op1 (s29.s3 / structure
+                                           :domain (s29.i / it
+                                                          :same-as s24.p2)
+                                           :mod (s29.k / kind))
+                              :op2 (s29.h / have-03
+                                          :ARG0 (s29.p / person
+                                                       :ARG0-of (s29.s / sing-01))
+                                          :ARG1 (s29.f / free-04
+                                                       :ARG1 s29.p
+                                                       :ARG3 (s29.a2 / and
+                                                                     :op1 (s29.c2 / creative
+                                                                                  :domain s29.p)
+                                                                     :op2 (s29.s2 / spontaneous
+                                                                                  :domain s29.p))
+                                                       :degree (s29.t / total)))))
+   :snt30 (s30.e2 / exemplify-01
+                  :ARG0 (s30.a / and
+                               :op1 (s30.c / color
+                                           :ARG1-of (s30.d / differ-02))
+                               :op2 (s30.g / get-02
+                                           :ARG0 (s30.c2 / color
+                                                         :mod (s30.e / each))
+                                           :ARG1 (s30.t / type
+                                                        :ARG1-of (s30.d2 / differ-02)
+                                                        :example (s30.a2 / and
+                                                                         :op1 (s30.p / pop)
+                                                                         :op2 (s30.c4 / country)
+                                                                         :op3 (s30.w / world-region
+                                                                                     :name (s30.n / name
+                                                                                                  :op1 "West"))
+                                                                         :op4 (s30.o2 / opera)
+                                                                         :op5 (s30.j / jazz))
+                                                        :mod (s30.s / sing-01)))
+                               :op3 (s30.o / obligate-01
+                                           :ARG0 (s30.y / you)
+                                           :ARG2 (s30.c3 / consistent-01
+                                                         :ARG1 s30.y
+                                                         :ARG2 s30.c)
+                                           :mod (s30.j2 / just))))
+   :snt31 (s31.s / see-01
+                 :ARG0 (s31.y / you)
+                 :ARG1 (s31.l / line
+                              :ARG1-of (s31.d / differ-02))
+                 :ARG1-of (s31.m / mean-01
+                                 :ARG2 (s31.c2 / contrast-01
+                                               :ARG1 (s31.c / choose-01
+                                                            :ARG0 s31.y
+                                                            :ARG1 (s31.f / follow-02
+                                                                         :ARG0 s31.y
+                                                                         :ARG1 (s31.l2 / line))
+                                                            :manner (s31.t / tempo
+                                                                           :poss s31.y))
+                                               :ARG2 (s31.o / obligate-01
+                                                            :ARG1 s31.y
+                                                            :ARG2 (s31.r / respect-01
+                                                                         :ARG0 s31.y
+                                                                         :ARG1 s31.l2)
+                                                            :mod (s31.m2 / more-or-less)))))
+   :snt32 (s32.a / and
+                 :op2 (s32.r / represent-01
+                             :ARG0 (s32.d / dot
+                                          :mod (s32.l / little)
+                                          :mod (s32.t / this))
+                             :ARG1 (s32.s2 / sound-02
+                                           :mod (s32.s / sort)
+                                           :mod (s32.v / vocal
+                                                       :polarity "-")
+                                           :mod (s32.w / way
+                                                       :manner-of (s32.e / express-01
+                                                                         :ARG1 s32.v)
+                                                       :mod (s32.m / music)
+                                                       :polarity "-"))))
+   :snt33 (s33.a / and
+                 :domain (s33.u / use-01
+                                :ARG1 (s33.b / body))
+                 :op1 (s33.p / possible-01
+                             :ARG1 (s33.s2 / sneeze-01))
+                 :op2 (s33.c / cough-01)
+                 :op3 (s33.p2 / possible-01
+                              :ARG1 (s33.a2 / animal
+                                            :ARG0-of (s33.s / slap-01
+                                                            :mod (s33.e / exact))))
+                 :op4 (s33.w / whatever))
+   :snt34 (s34.a / and
+                 :op2 (s34.t / text
+                             :ARG1-of (s34.d / differ-02)))
+   :snt35 (s35.a / and
+                 :op1 (s35.l / language
+                             :name (s35.n / name
+                                          :op1 "Armenia"))
+                 :op2 (s35.l2 / language
+                              :name (s35.n2 / name
+                                            :op1 "Russia"))
+                 :op3 (s35.l3 / language
+                              :name (s35.n3 / name
+                                            :op1 "France"))
+                 :op4 (s35.l4 / language
+                              :name (s35.n4 / name
+                                            :op1 "England"))
+                 :op5 (s35.l5 / language
+                              :name (s35.n5 / name
+                                            :op1 "Italy")))
+   :snt36 (s36.c / cause-01
+                 :ARG1 (s36.f / free-04
+                              :ARG1 (s36.o / one)
+                              :location (s36.s / structure
+                                               :mod (s36.t / this)
+                                               :same-as s29.k)))
+   :snt37 (s37.o2 / opine-01
+                  :ARG0 (s37.i / i
+                               :same-as s2.p)
+                  :ARG1 (s37.o / ode
+                               :ARG1-of (s37.c / cause-01
+                                               :ARG0 (s37.a / and
+                                                            :op1 (s37.m / mystery
+                                                                        :domain (s37.v / voice))
+                                                            :op2 (s37.s2 / spontaneous
+                                                                         :degree (s37.q / quite)
+                                                                         :domain s37.v)))
+                               :domain (s37.p / piece
+                                              :mod (s37.t / this)
+                                              :same-as s24.p2)
+                               :topic s37.v)
+                  :rel (s37.s / see-01
+                              :ARG0 (s37.w / we)
+                              :ARG1 (s37.a2 / and
+                                            :op1 s37.s2
+                                            :op2 (s37.p3 / primal
+                                                         :domain s37.v))
+                              :ARG1-of (s37.p2 / possible-01)))
+   :snt38 (s38.c / cause-01
+                 :ARG1 (s38.l / like-02
+                              :ARG0 (s38.i / i
+                                           :same-as s2.p)
+                              :ARG1 (s38.s / share-01
+                                           :ARG0 s38.i
+                                           :ARG1 (s38.p / piece
+                                                        :mod (s38.t / this)
+                                                        :same-as s24.p2)
+                                           :ARG2 (s38.y / you))))
+   :snt39 (s39.w / work-of-art
+                 :name (s39.n / name
+                              :op1 "Aria")
+                 :domain (s39.i / it
+                                :same-as s24.p2)
+                 :poss (s39.p / person
+                              :name (s39.n2 / name
+                                            :op1 "John"
+                                            :op2 "Cage")
+                              :same-as s24.p)))
+

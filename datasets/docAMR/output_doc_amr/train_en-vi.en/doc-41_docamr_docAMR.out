@@ -1,0 +1,274 @@
+# ::id doc-41
+# ::doc_file doc-41
+# ::tok http : / / www . ted . com / talks / sleepy_man_banjo_boys_bluegrass_virtuosity_from_new_jersey< / url> <next_sent> Robbie Mizzone : Thank you . <next_sent> Tommy Mizzone : Thank you very much . <next_sent> We 're so excited to be here . <next_sent> It 's such an honor for us . <next_sent> Like he said , we 're three brothers from New Jersey -- you know , the bluegrass capital of the world . <next_sent> We discovered bluegrass a few years ago , and we fell in love with it . <next_sent> We hope you guys will too . <next_sent> This next song is an original we wrote called " Timelapse , " and it will probably live up to its name . <next_sent> TM : Thank you very much . <next_sent> RM : I 'm just going to take a second to introduce the band . <next_sent> On guitar is my 15 - year - old brother Tommy . <next_sent> On banjo is 10 - year - old Jonny . <next_sent> He 's also our brother . <next_sent> And I 'm Robbie , and I 'm 14 , and I play the fiddle . <next_sent> As you can see , we decided to make it hard on ourselves , and we chose to play three songs in three different keys . <next_sent> Yeah . <next_sent> I 'm also going to explain , a lot of people want to know where we got the name Sleepy Man Banjo Boys from . <next_sent> So it started when Jonny was little , and he first started the banjo , he would play on his back with his eyes closed , and we 'd say it looked like he was sleeping . <next_sent> So you can probably piece the rest together . <next_sent> TM : We ca n't really figure out the reason for this . <next_sent> It might have been that it weighs about a million pounds . <next_sent> TM : Thank you very much . <next_sent> RM : Thank you .
+(d / document
+   :snt1 (s1.u / url-entity
+               :rel (s1.i / Middle)
+               :rel (s1.i2 / Middle))
+   :snt2 (s2.s / say-01
+               :ARG1 (s2.t / thank-01
+                           :ARG1 (s2.p / person
+                                       :name (s2.n / name
+                                                   :op1 "Robbie"
+                                                   :op2 "Mizzone")
+                                       :ARG2-of s2.s)))
+   :snt3 (s3.s / say-01
+               :ARG1 (s3.t / thank-01
+                           :ARG1 (s3.p / person
+                                       :name (s3.n / name
+                                                   :op1 "Tommy"
+                                                   :op2 "Mizzone"))
+                           :mod (s3.m / much
+                                      :degree (s3.v / very)))
+               :ARG2 s3.p)
+   :snt4 (s4.e / excite-01
+               :ARG0 (s4.b / be-located-at-91
+                           :ARG1 (s4.w / we)
+                           :ARG2 (s4.h / here))
+               :ARG1 s4.w
+               :degree (s4.s / so))
+   :snt5 (s5.h / honor-01
+               :ARG0 (s5.w / we
+                           :same-as s4.w)
+               :ARG1 (s5.i / it)
+               :degree (s5.s / such))
+   :snt6 (s6.h2 / have-rel-role-91
+                :ARG1 (s6.w / we
+                            :same-as s4.w)
+                :ARG1-of (s6.r / resemble-01
+                               :ARG2 (s6.s / say-01
+                                           :ARG0 (s6.h3 / he
+                                                        :same-as s3.p)))
+                :ARG2 (s6.b2 / brother
+                             :quant "3")
+                :source (s6.s2 / state
+                               :name (s6.n / name
+                                           :op1 "New"
+                                           :op2 "Jersey")
+                               :ARG0-of (s6.h / have-org-role-91
+                                              :ARG1 (s6.w2 / world)
+                                              :ARG2 (s6.c / capital
+                                                          :mod (s6.b / bluegrass)))))
+   :snt7 (s7.a / and
+               :op1 (s7.d / discover-01
+                          :ARG0 (s7.w / we
+                                      :same-as s4.w)
+                          :ARG1 (s7.b2 / bluegrass)
+                          :time (s7.b / before
+                                      :quant (s7.f2 / few
+                                                    :op1 (s7.t / temporal-quantity
+                                                               :unit (s7.y / year)
+                                                               :quant "1"))
+                                      :op1 (s7.n / now)))
+               :op2 (s7.f / fall-07
+                          :ARG1 s7.w
+                          :ARG2 (s7.l / love-01
+                                      :ARG0 s7.w
+                                      :ARG1 s7.b2)))
+   :snt8 (s8.h / hope-01
+               :ARG0 (s8.w / we
+                           :same-as s4.w)
+               :ARG1 (s8.d / do-02
+                           :ARG0 (s8.y / you
+                                       :mod (s8.g / guy))
+                           :mod (s8.t / too)))
+   :snt9 (s9.a / and
+               :op1 (s9.s / song
+                          :name (s9.n / name
+                                      :op1 "Timelapse")
+                          :ARG1-of (s9.w2 / write-01
+                                          :ARG0 (s9.w / we
+                                                      :same-as s4.w))
+                          :mod (s9.n3 / next)
+                          :mod (s9.t / this)
+                          :mod (s9.o / original))
+               :op2 (s9.p / probable
+                          :domain (s9.l / live-up-04
+                                        :ARG0 s9.s
+                                        :ARG1 (s9.n2 / name
+                                                     :poss s9.s))))
+   :snt10 (s10.s / say-01
+                 :ARG0 (s10.p / person
+                              :name (s10.n / name
+                                           :op1 "TM"))
+                 :ARG1 (s10.t / thank-01
+                              :ARG0 s10.p
+                              :ARG1 (s10.y / you)
+                              :mod (s10.m / much
+                                          :degree (s10.v / very))))
+   :snt11 (s11.s / say-01
+                 :ARG0 (s11.p / person
+                              :name (s11.n / name
+                                           :op1 "RM"))
+                 :ARG1 (s11.t / take-10
+                              :ARG0 s11.p
+                              :ARG1 (s11.t2 / temporal-quantity
+                                            :unit (s11.s2 / second)
+                                            :quant "1")
+                              :ARG2 (s11.i / introduce-01
+                                           :ARG0 s11.p
+                                           :ARG1 (s11.b / band
+                                                        :same-as s4.w))
+                              :mod (s11.j / just)))
+   :snt12 (s12.p / person
+                 :name (s12.n / name
+                              :op1 "Tommy"
+                              :same-as s3.p)
+                 :ARG0-of (s12.h / have-rel-role-91
+                                 :ARG1 (s12.i / i
+                                              :same-as s2.p)
+                                 :ARG2 (s12.b / brother))
+                 :age (s12.t / temporal-quantity
+                             :unit (s12.y / year)
+                             :quant "15")
+                 :rel (s12.g / guitar))
+   :snt13 (s13.b / banjo
+                 :instrument (s13.p / person
+                                    :name (s13.n / name
+                                                 :op1 "Jonny")
+                                    :age (s13.t / temporal-quantity
+                                                :unit (s13.y / year)
+                                                :quant "10")))
+   :snt14 (s14.h / have-rel-role-91
+                 :ARG0 (s14.h2 / he
+                               :same-as s13.p)
+                 :ARG1 (s14.w / we
+                              :same-as s4.w)
+                 :ARG2 (s14.b / brother)
+                 :mod (s14.a / also))
+   :snt15 (s15.a2 / and
+                  :op2 (s15.a3 / and
+                               :op1 (s15.p / person
+                                           :name (s15.n / name
+                                                        :op1 "Robbie")
+                                           :domain (s15.i / i
+                                                          :same-as s2.p))
+                               :op2 (s15.a / age-01
+                                           :ARG1 s15.i
+                                           :ARG2 (s15.t / temporal-quantity
+                                                        :unit (s15.y / year)
+                                                        :quant "14"))
+                               :op3 (s15.p2 / play-11
+                                            :ARG0 s15.i
+                                            :ARG2 (s15.f / fiddle))))
+   :snt16 (s16.a / and
+                 :ARG1-of (s16.s / see-01
+                                 :ARG0 (s16.y / you
+                                              :same-as s8.y)
+                                 :ARG1-of (s16.p2 / possible-01))
+                 :op1 (s16.d / decide-01
+                             :ARG0 (s16.w / we
+                                          :same-as s4.w)
+                             :ARG1 (s16.m / make-02
+                                          :ARG0 s16.w
+                                          :ARG1 (s16.h / hard-02
+                                                       :ARG1 (s16.i / it)
+                                                       :ARG2 s16.w)))
+                 :op2 (s16.c / choose-01
+                             :ARG0 s16.w
+                             :ARG1 (s16.p / play-11
+                                          :ARG0 s16.w
+                                          :ARG1 (s16.s2 / song
+                                                        :manner (s16.k / key
+                                                                       :ARG1-of (s16.d2 / differ-02)
+                                                                       :quant "3")
+                                                        :quant "3"))))
+   :snt17 (s17.y / yeah)
+   :snt18 (s18.e / explain-01
+                 :ARG0 (s18.i / i
+                              :same-as s2.p)
+                 :ARG1-of (s18.c / cause-01
+                                 :ARG0 (s18.w / want-01
+                                              :ARG0 (s18.p / person
+                                                           :quant (s18.l2 / lot))
+                                              :ARG1 (s18.k / know-01
+                                                           :ARG0 s18.p
+                                                           :ARG1 (s18.l / location
+                                                                        :ARG2-of (s18.g / get-01
+                                                                                        :ARG0 (s18.w2 / we
+                                                                                                      :same-as s4.w)
+                                                                                        :ARG1 (s18.n / name
+                                                                                                     :name (s18.n2 / name
+                                                                                                                   :op1 "Sleepy"
+                                                                                                                   :op2 "Man"
+                                                                                                                   :op3 "Banjo"
+                                                                                                                   :op4 "Boys")))))))
+                 :mod (s18.a / also))
+   :snt19 (s19.a / and
+                 :op1 (s19.s3 / start-01
+                              :ARG1 (s19.i / it
+                                           :same-as s18.n)
+                              :time (s19.l / little
+                                           :domain (s19.p / person
+                                                          :name (s19.n / name
+                                                                       :op1 "Jonny"
+                                                                       :same-as s13.p)
+                                                          :part (s19.b / back)
+                                                          :part (s19.e / eye))))
+                 :op2 (s19.s4 / start-01
+                              :ARG0 s19.p
+                              :ARG1 (s19.b2 / banjo
+                                            :same-as s13.b)
+                              :ord (s19.o / ordinal-entity
+                                          :value "1"))
+                 :op3 (s19.a2 / and
+                              :op1 (s19.p2 / play-11
+                                           :ARG0 s19.p
+                                           :location s19.b
+                                           :manner (s19.c / close-01
+                                                          :ARG0 s19.p
+                                                          :ARG1 s19.e))
+                              :op2 (s19.s / say-01
+                                          :ARG0 (s19.w / we
+                                                       :same-as s4.w)
+                                          :ARG1 (s19.l2 / look-02
+                                                        :ARG0 s19.i
+                                                        :ARG1 (s19.s2 / sleep-01
+                                                                      :ARG0 s19.p)))))
+   :snt20 (s20.c / cause-01
+                 :ARG1 (s20.p2 / possible-01
+                               :ARG1 (s20.p / piece
+                                            :ARG0 (s20.y / you)
+                                            :ARG1 (s20.r / rest)
+                                            :mod (s20.t / together))
+                               :mod (s20.p3 / probable)))
+   :snt21 (s21.s / say-01
+                 :ARG0 (s21.p / person
+                              :name (s21.n / name
+                                           :op1 "TM"))
+                 :ARG1 (s21.p2 / possible-01
+                               :ARG1 (s21.f / figure-out-05
+                                            :ARG0 (s21.w / we
+                                                         :same-as s4.w)
+                                            :ARG1 (s21.r2 / reason-01
+                                                          :ARG1 (s21.t / this))
+                                            :ARG1-of (s21.r / real-04))
+                               :polarity "-"))
+   :snt22 (s22.p / possible-01
+                 :ARG1 (s22.w / weigh-01
+                              :ARG1 (s22.i / it
+                                           :same-as s13.b)
+                              :ARG3 (s22.a / about
+                                           :op1 (s22.m / mass-quantity
+                                                       :unit (s22.p2 / pound)
+                                                       :quant "1000000"))))
+   :snt23 (s23.s / say-01
+                 :ARG0 (s23.p / person
+                              :name (s23.n / name
+                                           :op1 "TM")
+                              :same-as s10.p)
+                 :ARG1 (s23.t / thank-01
+                              :ARG0 s23.p
+                              :ARG1 (s23.y / you
+                                           :same-as s2.p)
+                              :mod (s23.m / much
+                                          :degree (s23.v / very))))
+   :snt24 (s24.s / say-01
+                 :ARG0 (s24.p / person
+                              :name (s24.n / name
+                                           :op1 "RM")
+                              :same-as s2.p)
+                 :ARG1 (s24.t / thank-01
+                              :ARG1 (s24.y / you
+                                           :same-as s10.y))))
+
