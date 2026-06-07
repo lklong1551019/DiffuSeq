@@ -25,6 +25,10 @@ if __name__ == '__main__':
     parser.add_argument('--use_simple_amr', type=str2bool, default=False, help='use simple amr relations')
     parser.add_argument('--note', type=str, default='none', help='note')
 
+    parser.add_argument('--enable_gcn', type=str2bool, default=False, help='enable graph convolutional network')
+    parser.add_argument('--use_relational_gcn', type=str2bool, default=False, help='use relational graph convolutional network')
+    parser.add_argument('--filter_direction', type=str, default='AMR_TO_TEXT', choices=['AMR_TO_TEXT', 'TEXT_TO_AMR'], help='direction to filter')
+
     parser.add_argument('--bsz', type=int, default=50, help='batch size')
     parser.add_argument('--start_n', type=int, default=0, help='start batch iteration')
     parser.add_argument('--split', type=str, default='test', choices=['train', 'valid', 'test'], help='dataset split used to decode')
@@ -56,7 +60,9 @@ if __name__ == '__main__':
             f'--out_dir {out_dir} --top_p {args.top_p} ' \
             f'--rejection_rate {args.rejection_rate} --clamp_step {args.clamp_step} ' \
             f'--use_simple_amr {args.use_simple_amr} ' \
-            f'--note {args.note}'
+            f'--enable_gcn {args.enable_gcn} --use_relational_gcn {args.use_relational_gcn} ' \
+            f'--note {args.note} ' \
+            f'--filter_direction {args.filter_direction}'
             print(COMMAND)
             
             os.system(COMMAND)

@@ -33,6 +33,8 @@ if __name__ == '__main__':
     parser.add_argument('--denoise_rate', default=0.2, type=float, help='max denoise rate of [MASK]')
     parser.add_argument('--mask_docamr_rel', default=False, type=str2bool, help='mask only docAMR relation labels')
     parser.add_argument('--use_simple_amr', default=False, type=str2bool, help='use simple docamr relation labels')
+    parser.add_argument('--enable_gcn', default=False, type=str2bool, help='enable graph convolutional network')
+    parser.add_argument('--use_relational_gcn', default=False, type=str2bool, help='use relational graph convolutional network')
 
     parser.add_argument('--seq_len', type=int, default=128, help='max len of input sequence')
     parser.add_argument('--hidden_t_dim', type=int, default=128, help='hidden size of time embedding')
@@ -41,6 +43,7 @@ if __name__ == '__main__':
     parser.add_argument('--save_interval', type=int, default=10000, help='save step')
     parser.add_argument('--resume_checkpoint', type=str, default='none', help='path to resume checkpoint, like xxx/xxx.pt')
     parser.add_argument('--lr', type=float, default=1e-04, help='learning rate')
+    parser.add_argument('--gradient_clipping', type=float, default=-1.0, help='max gradient norm')
     parser.add_argument('--use_fp16', action='store_true', help='use fp16 or not')
     parser.add_argument('--bsz', type=int, default=64, help='batch size')
     parser.add_argument('--microbatch', type=int, default=64, help='microbatch size')
@@ -97,6 +100,9 @@ if __name__ == '__main__':
                   f"--denoise {args.denoise} --denoise_rate {args.denoise_rate} " \
                   f"--mask_docamr_rel {args.mask_docamr_rel} " \
                   f"--use_simple_amr {args.use_simple_amr} " \
+                  f"--enable_gcn {args.enable_gcn} " \
+                  f"--use_relational_gcn {args.use_relational_gcn} " \
+                  f"--gradient_clipping {args.gradient_clipping} " \
                   f"--reg_rate {args.reg_rate} "
 
     COMMANDLINE += " " + args.app

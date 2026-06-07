@@ -33,11 +33,12 @@ CUDA_VISIBLE_DEVICES=0 torchrun --nproc_per_node=1 --master_port=12231 run_train
 --save_interval 5000 \
 --seed 102 \
 --noise_schedule sqrt \
---hidden_dim 256 \
---bsz 128 \
---microbatch 4 \
---dataset docAMR/src_docamr_en_trg_doc_vi_chunk_5_simple \
---data_dir ./datasets/docAMR/src_docamr_en_trg_doc_vi_chunk_5_simple \
+--hidden_dim 768 \
+--hidden_t_dim 768 \
+--bsz 384 \
+--microbatch 384 \
+--dataset docAMR/plain_text_en_vi_chunk_1 \
+--data_dir ./datasets/docAMR/plain_text_en_vi_chunk_1 \
 --learned_mean_embed True \
 --denoise True \
 --vocab bert \
@@ -45,8 +46,10 @@ CUDA_VISIBLE_DEVICES=0 torchrun --nproc_per_node=1 --master_port=12231 run_train
 --use_fp16 \
 --config_name bert-base-multilingual-cased \
 --denoise_rate 0.5 \
---mask_docamr_rel False \
 --schedule_sampler lossaware \
 --notes learned_mask_fp16_denoise_0.5_reproduce \
---use_simple_amr True
+--mask_docamr_rel False \
+--use_simple_amr False \
+--enable_gcn False \
+--use_relational_gcn False
 

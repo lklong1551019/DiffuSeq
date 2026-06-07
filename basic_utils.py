@@ -27,6 +27,12 @@ from diffuseq.transformer_model import TransformerNetModel
 from transformers import AutoTokenizer, PreTrainedTokenizerFast
 import re
 
+# Bidirectional training special tokens
+AMR_TO_TEXT_LABEL = "AMR_TO_TEXT"
+TEXT_TO_AMR_LABEL = "TEXT_TO_AMR"
+AMR_TO_TEXT_TOKEN = f"[{AMR_TO_TEXT_LABEL}]"
+TEXT_TO_AMR_TOKEN = f"[{TEXT_TO_AMR_LABEL}]"
+
 class myTokenizer():
     """
     A unified tokenizer wrapper supporting two vocabulary modes:
@@ -59,19 +65,23 @@ class myTokenizer():
                     
             tokenizer = AutoTokenizer.from_pretrained(args.config_name)
             
-            # --- Load Custom AMR & DocAMR Special Tokens ---
-            # Using the pre-generated comprehensive list of relations
+            # --- Load Custom AMR & DocAMR Tokens ---
+            # Using the pre-generated comprehensive list of tokens
             if getattr(args, 'use_simple_amr', False):
-                rel_file = "datasets/docAMR/custom_relation_docamrs_simple.json"
+                rel_file = "datasets/docAMR/output_doc_amr/doc_amrs_token_simple.json"
             else:
-                rel_file = "datasets/docAMR/custom_relation_docamrs.json"
+                rel_file = "datasets/docAMR/output_doc_amr/doc_amrs_token.json"
             if os.path.exists(rel_file):
                 with open(rel_file, 'r', encoding='utf-8') as f:
                     all_to_add = json.load(f)
-                print(f"### Loaded {len(all_to_add)} custom relations from {rel_file}")
+                print(f"### Loaded {len(all_to_add)} custom AMR tokens from {rel_file}")
                 tokenizer.add_tokens(all_to_add)
             else:
-                print(f"### Warning: {rel_file} not found. No custom tokens added.")
+                raise Exception(f"Token file {rel_file} not found!")
+
+            special_amr_direction_tokens = [TEXT_TO_AMR_TOKEN, AMR_TO_TEXT_TOKEN]
+            tokenizer.add_special_tokens({'additional_special_tokens': special_amr_direction_tokens})                
+                
             # ------------------------------------------
 
             self.tokenizer = tokenizer
@@ -82,8 +92,11 @@ class myTokenizer():
         else:
             # Custom vocab path: each line is "<token> [optional_count]"; we use only the token.
             print('#' * 30, 'load vocab from', args.vocab)
-            # Reserve ids 0–3 for special tokens
-            vocab_dict = {'[START]': 0, '[END]': 1, '[UNK]': 2, '[PAD]': 3}
+            # Reserve ids 0–5 for special tokens
+            vocab_dict = {
+                '[START]': 0, '[END]': 1, '[UNK]': 2, '[PAD]': 3, 
+                TEXT_TO_AMR_TOKEN: 4, AMR_TO_TEXT_TOKEN: 5
+            }
             with open(args.vocab, 'r', encoding='utf-8') as f:
                 for row in f:
                     vocab_dict[row.strip().split(' ')[0]] = len(vocab_dict)
@@ -191,9 +204,31 @@ def load_model_emb(args, tokenizer):
             print('reload the random embeddings', model)
             model.load_state_dict(torch.load(path_save))
         else:
-            # Fresh random init: N(0,1) is a common embedding initialization
-            print('initializing the random embeddings', model)
-            torch.nn.init.normal_(model.weight)
+            if getattr(args, 'use_plm_init', 'no') == 'bert':
+                # Seed the standalone embedding from mBERT's pretrained weights so that
+                # the diffusion targets and the model's word_embedding start from the same space.
+                # Extra rows (for AMR tokens beyond mBERT's 119,547 base vocab) are randomly init.
+                print('### Seeding random_emb from pretrained mBERT embeddings (use_plm_init=bert)')
+                from transformers import BertModel
+                temp_bert = BertModel.from_pretrained(args.config_name)
+                pretrained_weight = temp_bert.embeddings.word_embeddings.weight  # [119547, 768]
+                mbert_vocab_size = pretrained_weight.shape[0]
+
+                with torch.no_grad():
+                    if tokenizer.vocab_size <= mbert_vocab_size:
+                        # Vocab fits inside mBERT: copy first vocab_size rows
+                        model.weight.copy_(pretrained_weight[:tokenizer.vocab_size, :args.hidden_dim])
+                    else:
+                        # Copy all pretrained rows then randomly init extra AMR token rows
+                        model.weight[:mbert_vocab_size].copy_(pretrained_weight[:, :args.hidden_dim])
+                        torch.nn.init.normal_(model.weight[mbert_vocab_size:])
+                        print(f'    Pretrained rows: {mbert_vocab_size}, '
+                              f'randomly init rows: {tokenizer.vocab_size - mbert_vocab_size}')
+                del temp_bert
+            else:
+                # Fresh random init: N(0,1) is a common embedding initialization
+                print('initializing the random embeddings', model)
+                torch.nn.init.normal_(model.weight)
             torch.save(model.state_dict(), path_save)
             os.sync()   # flush OS file buffers to disk before writing the sentinel
             with open(path_save_ind, "x") as _:
@@ -259,6 +294,9 @@ def create_model_and_diffusion(
     denoise=False,        # if True, enable denoising mode (partial noising of input)
     denoise_rate=0.2,     # fraction of tokens to denoise in denoise mode
     device="",            # target device (unused here; model moved later)
+    enable_gcn=False,     # if True, enable GCN before Transformer
+    use_relational_gcn=False, # if True, use RGCN instead of standard GCN
+    num_relations=400,    # total number of relation types for R-GCN
     **kwargs,             # absorb any extra config keys silently
 ):
     """
@@ -282,6 +320,25 @@ def create_model_and_diffusion(
     Returns:
         (TransformerNetModel, SpacedDiffusion)
     """
+    num_relations = 400
+    if enable_gcn:
+        # Load relation tokens to get exact count
+        use_simple_amr = kwargs.get('use_simple_amr', False)
+        if use_simple_amr:
+            rel_file = "datasets/docAMR/doc_amrs_token_simple.json"
+        else:
+            rel_file = "datasets/docAMR/doc_amrs_token.json"
+        
+        if os.path.exists(rel_file):
+            with open(rel_file, 'r', encoding='utf-8') as f:
+                tokens = json.load(f)
+                # Only count tokens starting with ':' (AMR relations)
+                relations = [t for t in tokens if t.startswith(':')]
+                num_relations = len(relations)
+            print(f"### Setting num_relations to {num_relations} from {rel_file} (filtered to relations only)")
+        else:
+            print(f"### Warning: {rel_file} not found, using default num_relations=400")
+
     model = TransformerNetModel(
         input_dims=hidden_dim,
         # If learn_sigma, model outputs 2*hidden_dim: first half = x_0 pred, second = log-var
@@ -291,7 +348,11 @@ def create_model_and_diffusion(
         config_name=config_name,
         vocab_size=vocab_size,
         init_pretrained=use_plm_init,
+        logits_mode=kwargs.get('logits_mode', 1),
         learned_mean_embed=learned_mean_embed,
+        enable_gcn=enable_gcn,
+        use_relational_gcn=use_relational_gcn,
+        num_relations=num_relations,
     )
 
     # get_named_beta_schedule: computes the β_t noise schedule curve.

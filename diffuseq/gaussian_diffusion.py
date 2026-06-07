@@ -272,11 +272,15 @@ class GaussianDiffusion:
             mask_rate = _extract_into_tensor(self.sqrt_one_minus_alphas_cumprod, t, x_start.shape[:2]) * self.denoise_rate
             random_mask = mask_rate.bernoulli()[..., None]
             
-            if self.mask_docamr_rel and rel_mask is not None:
-                # Mask ONLY relations, but only a subset based on the denoise_rate
+            if self.mask_docamr_rel and rel_mask is not None and rel_mask.any():
+                # TEXT_TO_AMR direction: rel_mask has non-zero entries marking AMR relation tokens.
+                # Apply denoising curriculum only to those structural relation tokens.
                 mask_for_denoise = (rel_mask[..., None] * random_mask).expand(x_start.shape)
             else:
-                # Standard random denoising logic (original way)
+                # AMR_TO_TEXT direction (rel_mask is all zeros — target is plain Vietnamese text)
+                # OR mask_docamr_rel is disabled.
+                # Fall back to the original DiffuSeq random masking behaviour:
+                # any target token can be replaced with mean_embed at the given denoise_rate.
                 mask_for_denoise = random_mask.expand(x_start.shape)
             
             mean_embed_expand = mean_embed[None, None].expand(x_start.shape)

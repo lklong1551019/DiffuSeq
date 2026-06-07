@@ -28,6 +28,7 @@ Weight tying:
 from transformers import AutoConfig
 from transformers.models.bert.modeling_bert import BertEncoder, BertModel
 import torch
+from .gcn import GCNModel
 
 import numpy as np
 import torch as th
@@ -80,6 +81,9 @@ class TransformerNetModel(nn.Module):
         init_pretrained='no',
         logits_mode=1,
         learned_mean_embed=False,
+        enable_gcn=False,
+        use_relational_gcn=False,
+        num_relations=400,
     ):
         super().__init__()
 
@@ -156,6 +160,20 @@ class TransformerNetModel(nn.Module):
             temp_bert = BertModel.from_pretrained(config_name, config=config)
 
             self.word_embedding = temp_bert.embeddings.word_embeddings
+
+            # Resize if vocab_size > mBERT's base vocab (e.g., after adding AMR tokens).
+            # New rows are randomly initialized; existing pretrained rows are preserved.
+            if vocab_size is not None and vocab_size != self.word_embedding.num_embeddings:
+                print(f'### Resizing word_embedding: {self.word_embedding.num_embeddings} → {vocab_size} '
+                      f'(+{vocab_size - self.word_embedding.num_embeddings} tokens, randomly init)')
+                old_emb = self.word_embedding
+                self.word_embedding = nn.Embedding(vocab_size, old_emb.embedding_dim)
+                with th.no_grad():
+                    self.word_embedding.weight[:old_emb.num_embeddings] = old_emb.weight
+                    nn.init.normal_(self.word_embedding.weight[old_emb.num_embeddings:])
+                # Update lm_head to match new vocab size
+                self.lm_head = nn.Linear(self.input_dims, vocab_size, bias=False)
+
             with th.no_grad():
                 self.lm_head.weight = self.word_embedding.weight
 
@@ -212,6 +230,15 @@ class TransformerNetModel(nn.Module):
         else:
             self.mean_embed = None
 
+        # -----------------------------------------------------------------------
+        # Optional GCN module
+        # -----------------------------------------------------------------------
+        self.enable_gcn = enable_gcn
+        if enable_gcn:
+            # The exact number of relations is now passed in from basic_utils.py
+            # which loads it directly from the token JSON file
+            self.gcn_model = GCNModel(input_dims, use_relational_gcn, num_relations)
+
     def get_embeds(self, input_ids):
         """
         Look up embedding vectors for a sequence of token IDs.
@@ -257,12 +284,14 @@ class TransformerNetModel(nn.Module):
         else:
             raise NotImplementedError
 
-    def forward(self, x, timesteps):
+    def forward(self, x, timesteps, edge_index=None, edge_type=None, **kwargs):
         """
         Denoise x_t back toward x_0 given the diffusion timestep t.
 
         Full data flow:
             x_t [B, L, input_dims]
+            → GCN Integration: If enable_gcn is True, the x_t embeddings are refined
+              using the graph structure (edge_index/type) before entering the Transformer.
             → (up-project if needed) → emb_x [B, L, hidden_size]
             → (add) pos_embed(pos) + emb_x + e_t.unsqueeze(1)
             → LayerNorm + Dropout
@@ -272,10 +301,16 @@ class TransformerNetModel(nn.Module):
         Args:
             x (Tensor):         [B, seq_len, input_dims] noisy embedding sequence x_t.
             timesteps (Tensor): [B] integer diffusion timestep indices.
+            edge_index (Tensor|list): Adjacency indices for GCN.
+            edge_type (Tensor|list): Relation types for R-GCN.
 
         Returns:
             Tensor: [B, seq_len, output_dims] predicted clean embeddings x̂_0.
         """
+        # 0. Optional GCN processing
+        if self.enable_gcn and edge_index is not None:
+            x = self.gcn_model(x, edge_index, edge_type)
+
         # 1. Build timestep conditioning vector: t → sinusoidal → MLP → e_t ∈ R^{hidden_size}
         emb_t = self.time_embed(timestep_embedding(timesteps, self.hidden_t_dim))
 

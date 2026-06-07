@@ -411,6 +411,33 @@ class TrainLoop:
                         with self.ddp_model.no_sync():
                             losses = compute_losses()
 
+                    # --- NAN TRAP ---
+                    if th.isnan(losses["loss"]).any() or th.isinf(losses["loss"]).any():
+                        try:
+                            from transformers import AutoTokenizer
+                            tokenizer = AutoTokenizer.from_pretrained('bert-base-multilingual-cased')
+                            # Fix: model_kwargs.pop() deletes 'input_ids' from micro_cond. 
+                            # We must read it from the original 'cond' dict.
+                            token_ids = cond['input_ids'][i : i + self.microbatch].tolist()
+                            text_seqs = [tokenizer.decode(seq, skip_special_tokens=False) for seq in token_ids]
+                            text_out = "\n".join(text_seqs)
+                        except Exception as e:
+                            text_out = f"Failed to decode: {e}"
+
+                        with open("NaNLossInput.txt", "a", encoding="utf-8") as f:
+                            f.write("="*50 + "\n")
+                            f.write(f"NaN Loss Detected at Timestep(s): {t.cpu().tolist()}\n")
+                            f.write(f"Decoded Sequences:\n{text_out}\n")
+                            f.write(f"Raw IDs:\n{cond['input_ids'][i : i + self.microbatch].tolist()}\n")
+                            f.write("="*50 + "\n")
+                        print("!!! NAN LOSS DETECTED !!! Skipped microbatch and logged to NaNLossInput.txt")
+                        
+                        # Memory cleanup: free the computation graph before raising error
+                        del losses
+                        th.cuda.empty_cache()
+                        raise ValueError("NaN Loss Detected! Stopping training.")
+                    # ----------------
+
                     # Update the timestep sampler's loss history for importance reweighting
                     if isinstance(self.schedule_sampler, LossAwareSampler):
                         self.schedule_sampler.update_with_local_losses(
@@ -444,6 +471,33 @@ class TrainLoop:
                     with self.ddp_model.no_sync():
                         losses = compute_losses()
 
+                # --- NAN TRAP ---
+                if th.isnan(losses["loss"]).any() or th.isinf(losses["loss"]).any():
+                    try:
+                        from transformers import AutoTokenizer
+                        tokenizer = AutoTokenizer.from_pretrained('bert-base-multilingual-cased')
+                        # Fix: model_kwargs.pop() deletes 'input_ids' from micro_cond. 
+                        # We must read it from the original 'cond' dict.
+                        token_ids = cond['input_ids'][i : i + self.microbatch].tolist()
+                        text_seqs = [tokenizer.decode(seq, skip_special_tokens=False) for seq in token_ids]
+                        text_out = "\n".join(text_seqs)
+                    except Exception as e:
+                        text_out = f"Failed to decode: {e}"
+
+                    with open("NaNLossInput.txt", "a", encoding="utf-8") as f:
+                        f.write("="*50 + "\n")
+                        f.write(f"NaN Loss Detected at Timestep(s): {t.cpu().tolist()}\n")
+                        f.write(f"Decoded Sequences:\n{text_out}\n")
+                        f.write(f"Raw IDs:\n{cond['input_ids'][i : i + self.microbatch].tolist()}\n")
+                        f.write("="*50 + "\n")
+                    print("!!! NAN LOSS DETECTED !!! Skipped microbatch and logged to NaNLossInput.txt")
+                    
+                    # Memory cleanup: free the computation graph before raising error
+                    del losses
+                    th.cuda.empty_cache()
+                    raise ValueError("NaN Loss Detected! Stopping training.")
+                # ----------------
+
                 if isinstance(self.schedule_sampler, LossAwareSampler):
                     self.schedule_sampler.update_with_local_losses(
                         t, losses["loss"].detach()
@@ -462,19 +516,24 @@ class TrainLoop:
     def optimize_fp16(self):
         """
         Optimizer step for FP16 (AMP) training:
-          1. (Optional) Clip gradients.
-          2. Anneal learning rate linearly.
-          3. scaler.step(opt): unscale gradients, check for inf/NaN, then call opt.step().
-          4. scaler.update(): adjust the scale factor for the next iteration.
-          5. Log gradient norm.
-          6. Update all EMA parameter copies.
+          1. Unscale gradients (crucial before clipping!).
+          2. (Optional) Clip gradients.
+          3. Anneal learning rate linearly.
+          4. scaler.step(opt): check for inf/NaN, then call opt.step().
+          5. scaler.update(): adjust the scale factor for the next iteration.
+          6. Log gradient norm.
+          7. Update all EMA parameter copies.
         """
+        # CRITICAL: Must unscale gradients BEFORE clipping, otherwise the scale factor
+        # (e.g., 65536) causes the clipped gradients to vanish when scaler.step() unscales them!
+        self.scaler.unscale_(self.opt)
+
         if self.gradient_clipping > 0:
             self.grad_clip()
+        
         self._anneal_lr()
         # scaler.step handles unscaling + optimizer step atomically.
-        # If gradients contain inf/NaN (scale was too large), the step is skipped
-        # and the scale is reduced automatically.
+        # Since we already unscaled, it just checks for inf/NaN and calls opt.step().
         self.scaler.step(self.opt)
         self.scaler.update()   # double or halve the scale based on whether this step worked
         self._log_grad_norm()

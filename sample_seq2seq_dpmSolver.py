@@ -45,7 +45,9 @@ from basic_utils import (
     add_dict_to_argparser,
     args_to_dict,
     load_model_emb,
-    load_tokenizer
+    load_tokenizer,
+    AMR_TO_TEXT_LABEL,
+    TEXT_TO_AMR_LABEL,
 )
 
 
@@ -70,7 +72,8 @@ def create_argparser():
         argparse.ArgumentParser
     """
     defaults = dict(model_path='', step=0, out_dir='', top_p=0, rejection_rate=0.0, note='none')
-    decode_defaults = dict(split='valid', clamp_step=0, seed2=105, clip_denoised=False, start_n=0)
+    decode_defaults = dict(split='valid', clamp_step=0, seed2=105, clip_denoised=False, start_n=0,
+                           filter_direction='AMR_TO_TEXT')  # 'AMR_TO_TEXT' or 'TEXT_TO_AMR'
     defaults.update(load_defaults_config())   # pull in all training defaults
     defaults.update(decode_defaults)          # override/add inference-specific defaults
     parser = argparse.ArgumentParser()
@@ -98,6 +101,10 @@ def main():
     # Allow overriding batch size from the CLI (useful to fit inference on less GPU memory)
     training_args['batch_size'] = args.batch_size
     args.__dict__.update(training_args)
+    
+    # Step: Disable DocAMR relation masking logic during evaluation.
+    # This ensures full-target denoising and evaluation consistency.
+    args.mask_docamr_rel = False
 
     # -------------------------------------------------------------------------
     # 2. Reconstruct Model + Diffusion
@@ -154,7 +161,8 @@ def main():
         split=args.split,
         loaded_vocab=tokenizer,
         model_emb=model_emb.cpu(),  # use CPU embedding; samples moved to GPU below
-        loop=False
+        loop=False,
+        filter_direction=args.filter_direction,  # CLI-configurable: 'AMR_TO_TEXT' or 'TEXT_TO_AMR'
     )
 
     start_t = time.time()
@@ -181,7 +189,7 @@ def main():
     if not os.path.isdir(out_path):
         os.mkdir(out_path)
     out_path = os.path.join(
-        out_path, f"seed{args.seed2}_solverstep{SOLVER_STEP}_{args.note}.json"
+        out_path, f"seed{args.seed2}_solverstep{SOLVER_STEP}_{args.filter_direction}_{args.note}.json"
     )
 
     # -------------------------------------------------------------------------
@@ -240,6 +248,9 @@ def main():
 
         input_ids_mask = cond.pop('input_mask')      # [B, seq_len] mask: 0=source, 1=target
         input_ids_mask_ori = input_ids_mask           # keep original for decoding step
+
+        model_kwargs['edge_index'] = cond.pop('edge_index').to(dist_util.dev()) if 'edge_index' in cond else None
+        model_kwargs['edge_type'] = cond.pop('edge_type').to(dist_util.dev()) if 'edge_type' in cond else None
 
         # Sample Gaussian noise for target positions
         noise = th.randn_like(x_start)
