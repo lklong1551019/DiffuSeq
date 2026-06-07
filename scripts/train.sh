@@ -36,13 +36,13 @@ CUDA_VISIBLE_DEVICES=0 torchrun --nproc_per_node=1 --master_port=12231 run_train
 --hidden_dim 768 \
 --hidden_t_dim 768 \
 --bsz 384 \
---microbatch 384 \
+--microbatch 19 \
 --dataset docAMR/plain_text_en_vi_chunk_1 \
 --data_dir ./datasets/docAMR/plain_text_en_vi_chunk_1 \
 --learned_mean_embed True \
 --denoise True \
 --vocab bert \
---seq_len 256 \
+--seq_len 192 \
 --use_fp16 \
 --config_name bert-base-multilingual-cased \
 --denoise_rate 0.5 \
