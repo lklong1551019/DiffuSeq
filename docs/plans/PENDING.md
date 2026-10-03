@@ -28,6 +28,14 @@ Newest first; one dated entry per milestone.
   same sentences; test 1,098 unfiltered).
 - Comments and docs refreshed across the repo; dataset contract in [data-format.md](../data/data-format.md).
 
+**2026-10-03 (teacher)** — KD teacher decided (option B: trained on the v2 train split, no leakage) and
+built: `teacher/` + `scripts/train_teacher.py` (Marian Transformer, iwslt preset 40.3M params, joint EN+VI
+BPE 16k), [teacher plan](teacher-model.md); CPU smoke run end to end. Multilingual Tokenizer Rule added
+(`check_vietnamese_round_trip` rejects English-only BERT for Vietnamese). 87 CPU tests pass.
+- AMR vocabulary decisions documented with measurements: [amr-vocabulary.md](../data/amr-vocabulary.md)
+  (bare concepts as tokens would change 95% of EN / 99.8% of VI sentences; predicates as tokens cut
+  EN-AMR token sharing from 53.3% to 38.6%).
+
 **2026-10-03 (late night, docs)** — diagrams and charts of every AMR input config:
 [architecture/01-amr-input-configs.md](../architecture/01-amr-input-configs.md) (7 Mermaid diagrams, 3 charts from
 `scripts/plot_amr_configs.py`).
@@ -56,7 +64,8 @@ plain path matches upstream; on-disk baselines BLEU 4.22 / 6.43; ten AMR-path bu
 
 | Item | Detail | Gate |
 |---|---|---|
-| KD translation run | `scripts/build_kd_dataset.py --device cuda` over 119,429 unique train sources (+ `--check_test`) | before G2 |
+| Teacher training run | `scripts/train_teacher.py --name iwslt-bpe16k --preset iwslt --device cuda --bf16` ([teacher plan §7](teacher-model.md#7-run-commands-gpu-steps-need-approval)) | before KD |
+| KD translation run | `scripts/build_kd_dataset.py --teacher teacher_models/iwslt-bpe16k/best --device cuda` over 119,429 unique train sources (+ `--check_test`) | before G2 |
 | Credible plain baseline on `v2_plain_en_vi_chunk_1_kd-<tag>` | effective batch ≥ 1,024, solver-step sweep, MBR | G2 |
 | Text + AMR run on `v2_text_amr_en_vi_chunk_1` | same settings as the baseline, `--seq_len 256`, `--graph_encoder none` | after G2 |
 | Text + AMR + coreference run on `v2_text_amr_coref_en_vi_chunk_1` | same settings; report also the 61% of test rows with a context | after G2 |
@@ -67,7 +76,6 @@ plain path matches upstream; on-disk baselines BLEU 4.22 / 6.43; ten AMR-path bu
 
 | Item | Detail | Source |
 |---|---|---|
-| KD teacher choice | public en→vi encoder-decoder (leakage check with `--check_test`) vs a teacher trained on the v2 train split | [plan Phase 2](pipeline-fixes-and-amr-redesign.md#phase-2--baseline-credibility-open-gpu) |
 | AMR-only trimming of over-budget test rows | trim the AMR segment (deepest subtrees first) instead of `merge_pair` popping the longer side | [plan Phase 3](pipeline-fixes-and-amr-redesign.md#phase-3--text--amr-input-data-built-2026-10-03-training-after-g2) |
 | Intra-concept subword edges | connect `##` pieces of a concept to its first subword | [plan Phase 4](pipeline-fixes-and-amr-redesign.md#phase-4--graph-module-built-2026-10-03-ablation-after-phase-3) |
 | Joint en+vi BPE vocabulary | 10k–16k entries; re-check graph positions with the new tokenizer | plan Phase 2 |
@@ -101,6 +109,6 @@ plain path matches upstream; on-disk baselines BLEU 4.22 / 6.43; ten AMR-path bu
 
 ## Suggested next order
 
-1. teacher choice → 2. KD translation run (GPU) + leakage check → 3. plain baseline (GPU, G2) →
+1. teacher training run (GPU) → 2. KD translation run (GPU) + `--check_test` → 3. plain baseline (GPU, G2) →
 4. text + AMR and text + AMR + coreference runs → 5. GATv2 ablation (edge_attr, levi) →
 6. controlled comparison.

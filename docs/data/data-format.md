@@ -106,6 +106,8 @@ A target-side graph is never stored or read (it would expose the answer's struct
 
 ### `amr_vocab.json`
 
+Why exactly these items (and not predicates or concepts): [amr-vocabulary.md](amr-vocabulary.md).
+
 Built by `scripts/build_amr_vocab.py` from the train split: `relations` (145 labels, 55 inverse `-of`
 roles; `:sntN` excluded), `frames` (33 `-9x` frames), counts, source note. `myTokenizer` adds `relations +
 frames` in this order, then `[TEXT_TO_AMR]`, `[AMR_TO_TEXT]`. Every added token passes

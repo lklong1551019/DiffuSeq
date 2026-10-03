@@ -234,6 +234,8 @@ expected to score below text only.
 
 ## Gotchas
 
+- **Which AMR items are single tokens** (relations, `-9x` frames) and why the rest are not:
+  [amr-vocabulary.md](../data/amr-vocabulary.md).
 - **Graph positions are tokenizer-bound.** Every `graph_src` position was computed with mBERT +
   `amr_vocab.json`; build and train with the same `--amr_vocab`.
 - **Text-only runs cannot see which mention a context entry belongs to** (entries follow mention order);

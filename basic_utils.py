@@ -53,6 +53,23 @@ def validate_added_tokens(tokens):
         )
 
 
+# Vietnamese probe: tones and diacritics carry meaning, so the tokenizer must reproduce them exactly.
+# English-only checkpoints fail it (bert-base-uncased lowercases and strips accents: "Tôi muốn" -> "toi muon").
+VIETNAMESE_PROBE = "Tôi muốn cho các bạn biết về sự to lớn của những nỗ lực khoa học."
+
+
+def check_vietnamese_round_trip(tokenizer):
+    """Raise ValueError if `tokenizer` cannot reproduce Vietnamese text (lowercasing, accent stripping, [UNK])."""
+    ids = tokenizer(VIETNAMESE_PROBE, add_special_tokens=False)["input_ids"]
+    decoded = tokenizer.decode(ids, clean_up_tokenization_spaces=True).replace(" .", ".")
+    if decoded != VIETNAMESE_PROBE or tokenizer.unk_token_id in ids:
+        raise ValueError(
+            f"tokenizer cannot represent Vietnamese: {VIETNAMESE_PROBE!r} -> {decoded!r}. "
+            "Use a multilingual cased checkpoint (bert-base-multilingual-cased); English-only BERT fits "
+            "only English-English tasks."
+        )
+
+
 def amr_added_tokens(mode, vocab_file=None):
     """Return the list of AMR tokens to append to the tokenizer for an `amr_vocab` mode."""
     if mode not in AMR_VOCAB_MODES:
@@ -118,6 +135,7 @@ class myTokenizer():
                 print(f'### amr_vocab={mode}: added {len(added)} AMR tokens ({len(tokenizer)} entries)')
                 if getattr(args, 'checkpoint_path', ''):
                     tokenizer.save_pretrained(args.checkpoint_path)
+            check_vietnamese_round_trip(tokenizer)
             self.tokenizer = tokenizer
             self.sep_token_id = tokenizer.sep_token_id
             self.pad_token_id = tokenizer.pad_token_id

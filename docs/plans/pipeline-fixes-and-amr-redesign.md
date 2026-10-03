@@ -14,7 +14,7 @@ from its [addendum](../reports/2026-10-03_code-and-results-review.md#12-addendum
 
 | Gate | Condition | State |
 |---|---|---|
-| G0 | `thesis_env` complete; `pytest tests/` passes on CPU | met 2026-10-03 (73 tests) |
+| G0 | `thesis_env` complete; `pytest tests/` passes on CPU | met 2026-10-03 (87 tests) |
 | G1 | B1–B15 fixed, each with a unit test (§4) | met 2026-10-03 |
 | G2 | plain baseline on `v2_plain_en_vi_chunk_1` clearly above 4.2 BLEU (en→vi) with < 5% adjacent duplicate tokens; target set after the first KD run (provisional ≥ 15) | open — needs GPU |
 | G3 | text+AMR and plain runs decoded on the same test file (identical row count and hash) | open |
@@ -28,7 +28,7 @@ GPU jobs start only after the user confirms (GPU Sharing Rule in [`.agents/AGENT
 ### Phase 0 — Environment and test harness (done 2026-10-03)
 
 - `thesis_env`: `blobfile wandb sacrebleu nltk pytest` installed; no existing package changed.
-- `tests/` (CPU only, offline HF): 73 tests over tokenizer, linearizer, layout, graph shift, collate,
+- `tests/` (CPU only, offline HF): 87 tests over tokenizer, linearizer, layout, graph shift, collate,
   microbatch slicing, denoise masking, GATv2, prep script, end-to-end loss, checkpoint loading.
 - `scripts/eval_bleu.py`: corpus sacreBLEU, chrF, repetition rate, length ratio, MBR over seed files.
 
@@ -74,9 +74,8 @@ Also: `paths.py` (single owner of data paths); decoding reloads the run folder's
      joint length filter, copies valid/test unchanged, writes `<dataset>_kd-<tag>/`. `--check_test` reports
      the teacher's BLEU and exact-match rate on tst2015. Default device CPU. Tests:
      `tests/test_build_kd_dataset.py`.
-   - **Open:** teacher choice — (a) a public en→vi model (fast; leakage risk because TED talks appear in
-     public corpora) or (b) an autoregressive Transformer trained on the v2 train split (no leakage; one
-     extra GPU training run).
+   - **Teacher (decided 2026-10-03):** option (b), an autoregressive Transformer trained on the v2 train
+     split only — design in [teacher-model.md](teacher-model.md); code done, training run pending.
 2. **Vocabulary:** joint en+vi BPE/WordPiece of 10k–16k entries vs mBERT (119,727 with the AMR tokens).
 3. **Budget:** effective batch ≥ 1,024 via microbatch accumulation.
 4. **Decoding:** solver steps {10, 20, 50}; MBR over 5–10 seeds (`scripts/eval_bleu.py`).

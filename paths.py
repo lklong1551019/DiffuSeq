@@ -34,6 +34,9 @@ LEGACY_AMR_TOKENS_SIMPLE = os.path.join(AMR_DOC_DIR, "doc_amrs_token_simple.json
 DIFFUSEQ_CONFIG = os.path.join(REPO_ROOT, "diffuseq", "config.json")
 LOGS_DIR = os.path.join(REPO_ROOT, "logs")
 
+# Autoregressive teachers for knowledge distillation (scripts/train_teacher.py); git-ignored.
+TEACHER_DIR = os.path.join(REPO_ROOT, "teacher_models")
+
 # Split name -> (EN folder, VI folder); the same folder names exist under TEXT_DOC_DIR and AMR_DOC_DIR.
 SPLIT_FOLDERS = {
     "train": ("train_en-vi.en", "train_en-vi.vi"),

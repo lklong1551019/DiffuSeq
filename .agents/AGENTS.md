@@ -97,6 +97,15 @@ The RTX 3060 Ti (8 GB) is shared with other repositories (e.g. STKGQA), whose jo
 4. **Size to the free memory**, not to the card: choose `--microbatch` so peak memory stays below
    the free amount with a margin; one GPU job from this repo at a time.
 
+## Multilingual Tokenizer Rule
+Vietnamese tones and diacritics carry meaning. Every tokenizer or pretrained checkpoint that processes
+Vietnamese text is multilingual and cased (`bert-base-multilingual-cased` for DiffuSeq; the joint EN+VI BPE
+for the teacher). English-only checkpoints (`bert-base-uncased`, `bert-base-cased`) are allowed only for
+English-English tasks: `bert-base-uncased` lowercases and strips accents (`Tôi muốn` → `toi muon`).
+`basic_utils.check_vietnamese_round_trip` enforces this in `myTokenizer`; keep the check when adding a
+tokenizer path. AMR items added to a tokenizer follow [`docs/data/amr-vocabulary.md`](../docs/data/amr-vocabulary.md):
+only `:relation` labels and `-9x` frames; never bare concept words (`validate_added_tokens`).
+
 ## Indexing / Masking / Slicing Rule
 A single off-by-one in a position, mask or edge index silently corrupts every sample. Every piece
 of code that builds, shifts, trims, pads, slices or masks positions — token ids, `input_mask`,

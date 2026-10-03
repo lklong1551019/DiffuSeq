@@ -81,3 +81,20 @@ def test_saved_run_tokenizer_is_loaded_verbatim(tmp_path):
                                            amr_vocab="relations", tokenizer_dir=str(tmp_path),
                                            checkpoint_path=str(tmp_path)))
     assert reloaded.vocab_size == src.vocab_size   # amr_vocab of the args is ignored
+
+
+def test_english_only_bert_is_rejected_for_vietnamese(base_tokenizer):
+    """bert-base-uncased strips Vietnamese diacritics; myTokenizer must refuse it."""
+    from transformers import AutoTokenizer
+    from basic_utils import check_vietnamese_round_trip
+    check_vietnamese_round_trip(base_tokenizer)                     # mBERT cased passes
+    uncased = AutoTokenizer.from_pretrained("bert-base-uncased")
+    with pytest.raises(ValueError, match="cannot represent Vietnamese"):
+        check_vietnamese_round_trip(uncased)
+
+
+def test_teacher_bpe_round_trips_vietnamese():
+    from basic_utils import VIETNAMESE_PROBE, check_vietnamese_round_trip
+    from teacher.tokenizer import train_tokenizer
+    tok = train_tokenizer([VIETNAMESE_PROBE, "I sing ."] * 5, vocab_size=200, min_frequency=1)
+    check_vietnamese_round_trip(tok)
