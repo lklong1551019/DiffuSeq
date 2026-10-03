@@ -28,6 +28,10 @@ Newest first; one dated entry per milestone.
   same sentences; test 1,098 unfiltered).
 - Comments and docs refreshed across the repo; dataset contract in [data-format.md](../data/data-format.md).
 
+**2026-10-03 (late night, docs)** — diagrams and charts of every AMR input config:
+[architecture/01-amr-input-configs.md](../architecture/01-amr-input-configs.md) (7 Mermaid diagrams, 3 charts from
+`scripts/plot_amr_configs.py`).
+
 **2026-10-03 (late night)** — cross-sentence coreference context built and committed
 ([changelog](../changelogs/2026-10-03_coref-context-variant.md))
 ([plan Phase 3b](pipeline-fixes-and-amr-redesign.md#phase-3b--cross-sentence-coreference-context-built-2026-10-03)).

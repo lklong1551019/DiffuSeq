@@ -80,7 +80,7 @@ docs/
 ├── README.md            # top-level index of the docs tree
 ├── doc-standards.md     # this file
 ├── AGENT_HANDOFF.md     # live handoff / current-state pointer
-├── architecture/        # living design docs (NN-&lt;slug&gt;.md), created on first use
+├── architecture/        # living design docs (NN-&lt;slug&gt;.md) + assets/ (generated charts)
 ├── data/                # data specs &amp; guides, created on first use
 ├── experiments/         # dated experiment write-ups (YYYY-MM-DD_&lt;slug&gt;.md)
 ├── changelogs/          # dated changelog entries + README.md index

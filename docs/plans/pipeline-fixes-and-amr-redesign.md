@@ -3,7 +3,7 @@
 - **Type**: plan
 - **Status**: current — Phases 0–1 done; Phase 3 / 3b data and Phase 4 module built; training runs pending (GPU)
 - **Last updated**: 2026-10-03
-- **Related**: [PENDING.md](PENDING.md) · [../reports/2026-10-03_code-and-results-review.md](../reports/2026-10-03_code-and-results-review.md) · [../data/data-format.md](../data/data-format.md) · [`.agents/AGENTS.md`](../../.agents/AGENTS.md)
+- **Related**: [PENDING.md](PENDING.md) · [../architecture/01-amr-input-configs.md](../architecture/01-amr-input-configs.md) (diagrams) · [../reports/2026-10-03_code-and-results-review.md](../reports/2026-10-03_code-and-results-review.md) · [../data/data-format.md](../data/data-format.md) · [`.agents/AGENTS.md`](../../.agents/AGENTS.md)
 
 ---
 

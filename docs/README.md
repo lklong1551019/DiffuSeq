@@ -19,6 +19,7 @@ Map of the `docs/` tree. Naming and content conventions live in
 | [doc-standards.md](doc-standards.md) | Documentation naming + content standard. |
 | [AGENT_HANDOFF.md](AGENT_HANDOFF.md) | Live handoff / current-state pointer. |
 | [plans/](plans/) | Implementation plans + [PENDING.md](plans/PENDING.md) roadmap. |
+| [architecture/](architecture/) | Living design docs ([01-amr-input-configs.md](architecture/01-amr-input-configs.md): diagrams of every AMR input config). |
 | [data/](data/) | Data specs ([data-format.md](data/data-format.md): dataset contract). |
 | [reports/](reports/) | Dated reports and reviews. |
 | [experiments/](experiments/) | Dated experiment write-ups (`YYYY-MM-DD_<slug>.md`). |
@@ -30,3 +31,4 @@ Map of the `docs/` tree. Naming and content conventions live in
 - **What is open:** [plans/PENDING.md](plans/PENDING.md).
 - **Fixes, index walkthroughs, test matrix:** [plans/pipeline-fixes-and-amr-redesign.md](plans/pipeline-fixes-and-amr-redesign.md).
 - **Dataset format:** [data/data-format.md](data/data-format.md).
+- **What each AMR config looks like (diagrams, charts):** [architecture/01-amr-input-configs.md](architecture/01-amr-input-configs.md).

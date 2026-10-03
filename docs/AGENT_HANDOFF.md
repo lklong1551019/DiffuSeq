@@ -17,7 +17,8 @@ for English→Vietnamese translation with English DocAMR (`transition-amr-parser
 1. [plans/PENDING.md](plans/PENDING.md) — open items and suggested order;
 2. [plans/pipeline-fixes-and-amr-redesign.md](plans/pipeline-fixes-and-amr-redesign.md) — what was fixed
    (B1–B15), index walkthroughs (§3), test matrix (§4);
-3. [data/data-format.md](data/data-format.md) — dataset contract (`graph_src`, `amr_vocab.json`);
+3. [data/data-format.md](data/data-format.md) — dataset contract (`graph_src`, `amr_vocab.json`), with diagrams in
+   [architecture/01-amr-input-configs.md](architecture/01-amr-input-configs.md);
 4. [reports/2026-10-03_code-and-results-review.md](reports/2026-10-03_code-and-results-review.md) — why.
 
 ## Running

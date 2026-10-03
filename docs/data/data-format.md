@@ -3,7 +3,7 @@
 - **Type**: data-spec
 - **Status**: current
 - **Last updated**: 2026-10-03
-- **Related**: [../plans/pipeline-fixes-and-amr-redesign.md](../plans/pipeline-fixes-and-amr-redesign.md) · [`prepare_docamr_datasets.py`](../../prepare_docamr_datasets.py) · [`diffuseq/text_datasets.py`](../../diffuseq/text_datasets.py)
+- **Related**: [../architecture/01-amr-input-configs.md](../architecture/01-amr-input-configs.md) (diagrams) · [../plans/pipeline-fixes-and-amr-redesign.md](../plans/pipeline-fixes-and-amr-redesign.md) · [`prepare_docamr_datasets.py`](../../prepare_docamr_datasets.py) · [`diffuseq/text_datasets.py`](../../diffuseq/text_datasets.py)
 
 ---
 
@@ -11,6 +11,8 @@
 
 Contract between the dataset builder (`prepare_docamr_datasets.py`) and the loader
 (`diffuseq/text_datasets.py`). Read before writing code that produces or consumes a dataset folder.
+Diagrams of each variant's layout, graph and coreference context:
+[01-amr-input-configs.md](../architecture/01-amr-input-configs.md).
 
 ## Overview
 
