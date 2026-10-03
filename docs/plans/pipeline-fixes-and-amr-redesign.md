@@ -1,7 +1,7 @@
 # Pipeline Fixes and AMR Input Redesign
 
 - **Type**: plan
-- **Status**: current — Phases 0–1 done; Phase 3 data and Phase 4 module built; training runs pending (GPU)
+- **Status**: current — Phases 0–1 done; Phase 3 / 3b data and Phase 4 module built; training runs pending (GPU)
 - **Last updated**: 2026-10-03
 - **Related**: [PENDING.md](PENDING.md) · [../reports/2026-10-03_code-and-results-review.md](../reports/2026-10-03_code-and-results-review.md) · [../data/data-format.md](../data/data-format.md) · [`.agents/AGENTS.md`](../../.agents/AGENTS.md)
 
@@ -14,7 +14,7 @@ from its [addendum](../reports/2026-10-03_code-and-results-review.md#12-addendum
 
 | Gate | Condition | State |
 |---|---|---|
-| G0 | `thesis_env` complete; `pytest tests/` passes on CPU | met 2026-10-03 (66 tests) |
+| G0 | `thesis_env` complete; `pytest tests/` passes on CPU | met 2026-10-03 (73 tests) |
 | G1 | B1–B15 fixed, each with a unit test (§4) | met 2026-10-03 |
 | G2 | plain baseline on `v2_plain_en_vi_chunk_1` clearly above 4.2 BLEU (en→vi) with < 5% adjacent duplicate tokens; target set after the first KD run (provisional ≥ 15) | open — needs GPU |
 | G3 | text+AMR and plain runs decoded on the same test file (identical row count and hash) | open |
@@ -28,7 +28,7 @@ GPU jobs start only after the user confirms (GPU Sharing Rule in [`.agents/AGENT
 ### Phase 0 — Environment and test harness (done 2026-10-03)
 
 - `thesis_env`: `blobfile wandb sacrebleu nltk pytest` installed; no existing package changed.
-- `tests/` (CPU only, offline HF): 66 tests over tokenizer, linearizer, layout, graph shift, collate,
+- `tests/` (CPU only, offline HF): 73 tests over tokenizer, linearizer, layout, graph shift, collate,
   microbatch slicing, denoise masking, GATv2, prep script, end-to-end loss, checkpoint loading.
 - `scripts/eval_bleu.py`: corpus sacreBLEU, chrF, repetition rate, length ratio, MBR over seed files.
 
@@ -85,13 +85,56 @@ Also: `paths.py` (single owner of data paths); decoding reloads the run folder's
 
 ### Phase 3 — Text + AMR input (data built 2026-10-03; training after G2)
 
-- **Datasets:** `v2_plain_en_vi_chunk_1`, `v2_amr_en_vi_chunk_1`, `v2_text_amr_en_vi_chunk_1`
-  (`--max_seq_len 256`): 122,125 train rows each (same sentences; 3,064 chunks dropped jointly), 833 valid,
-  1,098 test. Format: [data-format.md](../data/data-format.md).
+- **Datasets:** `v2_plain_en_vi_chunk_1`, `v2_amr_en_vi_chunk_1`, `v2_text_amr_en_vi_chunk_1`,
+  `v2_text_amr_coref_en_vi_chunk_1` (`--max_seq_len 256`, built together): 121,453 train rows each (same
+  sentences; 3,736 chunks dropped jointly, 3.0%), 833 valid, 1,098 test. Format:
+  [data-format.md](../data/data-format.md).
 - **Verified:** on 5,000 train + all test rows, 100% of relation positions land on the relation token and
   99.96% of node positions on concept tokens.
 - **Open:** AMR-only trimming at load time for over-budget test rows (merge_pair pops from the end of the
   longer side, which is the AMR tail for text+AMR rows but can be the target when the target is longer).
+
+<p align="center">· · ·</p>
+
+### Phase 3b — Cross-sentence coreference context (built 2026-10-03)
+
+**Problem.** DocAMR links mentions across sentences with `:same-as`. Measured on the train split
+(125,189 sentences): 113,604 cross-sentence links, 63.5% of sentences have at least one, 99.9% point to an
+earlier sentence, 59% point 6+ sentences back. Sentence-level rows drop all of them. Chunking keeps few and
+makes sequences too long for the diffusion model:
+
+| Sentences per row | Links kept inside the row | Merged length p95 | > 256 tokens |
+|---|---|---|---|
+| 1 | 0% | 215 | 2.5% |
+| 2 | 10% | 361 | 18% |
+| 3 | 17% | 494 | 49% |
+| 5 | 25% | 760 | 89% |
+
+**Design.** Keep one-sentence targets; append the antecedents to the source (variant
+`text_amr_coref_en_vi`):
+
+<pre style="font-size:1rem;line-height:1.5">
+src: We're trying to prevent an impact. [SEP] ( try :ARG0 we :ARG1 ( prevent :ARG0 we :ARG1 impact ) )
+     [SEP] :same-as ( we :mod ( planet :name ( name :op1 Earth ) ) )
+trg: Chúng ta đang cố gắng ngăn chặn cuộc va chạm.
+</pre>
+
+| Component | What it does | Why | Example |
+|---|---|---|---|
+| `find_coref_links` | finds references from the row's sentence to variables defined in earlier sentences of the document | the antecedent may be any distance back | `(s3.h / he :same-as s2.p)` → link `s3.h → s2.p` |
+| chain following | jumps along the antecedent's own `:same-as` to the earliest mention | the earliest mention usually carries the name | `s2.p → s1.p (person :name "Alan Turing")` |
+| depth-limited subtree (`--coref_depth 2`) | linearizes the antecedent node with children down to depth 2; `:name` subtrees always complete | enough for names and roles (`have-rel-role-91 :ARG2 father`), bounded length | `( person :name ( name :op1 Alan :op2 Turing ) )` |
+| dedupe + cap (`--coref_max 4`) | one entry per antecedent, at most 4 per row | bounded length | — |
+| link triple | graph entry `[mention, antecedent root, ":same-as", label position]` | GATv2 passes information from the antecedent to the mention | `he → :same-as → person` |
+| metadata exclusion | TED `<url>` sentences keep their position but are never antecedents | no URL entities in the context | — |
+
+**Measured** (v2 build): 63.0% of train rows (76,501) and 61.0% of test rows (670) carry a context;
+1.4 links per context row; +7 tokens median, +26 at p95; all 930 test link edges land on mention →
+`:same-as` token → antecedent root.
+
+**Limitation.** Without the graph module the text shows which entities are referenced but not which
+mention points to which entry (entries follow mention order). Pointer tokens (SPRING-style) are the
+text-only alternative (proposed, not built).
 
 <p align="center">· · ·</p>
 
@@ -114,9 +157,16 @@ The source is clean during diffusion, so the graph output is identical at every 
 
 ### Phase 5 — Comparison protocol (open)
 
-Same chunk size, `seq_len`, model size, batch, steps, KD data, decode settings and test file for plain vs
-text+AMR vs text+AMR+GATv2 (edge_attr / levi); 3 seeds each; corpus BLEU, chrF, repetition rate, length
-ratio.
+Same chunk size, `seq_len`, model size, batch, steps, KD data, decode settings and test file; 3 seeds
+each; corpus BLEU, chrF, repetition rate, length ratio. Arms:
+
+| Arm | Dataset | Graph |
+|---|---|---|
+| text | `v2_plain_en_vi_chunk_1` | — |
+| text + AMR | `v2_text_amr_en_vi_chunk_1` | none / GATv2 |
+| text + AMR + coreference | `v2_text_amr_coref_en_vi_chunk_1` | none / GATv2 |
+
+Report the coreference arm also on the 61% of test rows that carry a context (pronoun-heavy slice).
 
 ---
 
@@ -213,6 +263,25 @@ Each microbatch loss is multiplied by `micro_size / B` (B14), so the accumulated
 
 Example: `random_mask = [[1,1,1,0],[1,0,1,1]]`, `rel_mask = [[0,0,1,0],[0,0,0,0]]` → `[[0,0,1,0],[1,0,1,1]]`.
 
+<p align="center">· · ·</p>
+
+### 3.6 Coreference link index chain (`text_amr_coref_en_vi`)
+
+Document: `:snt1 (s1.p / person :name (s1.n / name :op1 "Alan"))`, `:snt2 (s2.s / see-01 :ARG0 (s2.h / he
+:same-as s1.p))`; row = sentence 2 (`start = 1`).
+
+| Step | Operation | Function | Result |
+|---|---|---|---|
+| 1 | index document variables: `s1.p → (0, node)`, `s2.h → (1, node)`, … | `index_document` | — |
+| 2 | branch `:same-as s1.p` of `s2.h`; `s1.p` defined in sentence 0 < `start` → link | `find_coref_links` | `(s2.h, :same-as, s1.p, 0)` |
+| 3 | main linearization; `he` is word 3 (`var_word["s2.h"] = 3`) | `linearize_sentences` | `( see :ARG0 he )` |
+| 4 | append `[SEP]` (word 5), role `:same-as` (word 6), antecedent subtree from word 7 | `append_coref_context` | `… [SEP] :same-as ( person :name ( name :op1 Alan ) )` |
+| 5 | antecedent triples shifted by 7: `(8, 9, 11, :name)`, `(11, 12, 13, :op1)`; link `(3, 6, 8, :same-as)` | `append_coref_context` | — |
+| 6 | prefix `EN [SEP] `, char offsets → token positions, as §3.3 steps 2–4 | `amr_source` | `graph_src` |
+
+Invariant (asserted in tests): mention position between the first and second `[SEP]`, label and antecedent
+positions between the second and third.
+
 ---
 
 ## 4. Test matrix (pytest, CPU only, `tests/`)
@@ -227,6 +296,7 @@ Example: `random_mask = [[1,1,1,0],[1,0,1,1]]`, `rel_mask = [[0,0,1,0],[0,0,0,0]
 | `GraphEncoder` | `test_graph_encoder.py` | zero init = identity; only graph nodes change; edge type changes the output; empty graph; out-of-range node id; heads must divide D |
 | prep script | `test_prepare_docamr.py` | alignment + mismatch skip; metadata drop; rows per variant incl. §3.2 graph; merged length = merge_pair; train-only joint filter, test/valid kept |
 | model + diffusion | `test_smoke.py` | loss + backward (plain, GATv2); B8 guard; existing checkpoint loads strictly with its saved tokenizer |
+| coreference context | `test_amr_linearize.py`, `test_prepare_docamr.py` | depth limit keeps `:name`; `var_word`; chain following, order, cap; in-chunk and metadata references ignored; §3.6 triples; two links; coref row = text_amr row without links; token positions of a real link; original sentence positions |
 | KD data builder | `test_build_kd_dataset.py` | alignment rejects mismatches; only train targets replaced, other fields and valid/test unchanged; cache resume incl. a truncated line; joint length filter + empty output; one output per input; test exact-match report |
 
 Run: `CUDA_VISIBLE_DEVICES="" conda run -n thesis_env pytest tests/ -q`.

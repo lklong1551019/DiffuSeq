@@ -48,6 +48,7 @@ class LinearizedAMR:
     """
     words: List[str] = field(default_factory=list)
     triples: List[Tuple[int, int, int, str]] = field(default_factory=list)
+    var_word: Dict[str, int] = field(default_factory=dict)   # variable -> word index of its concept
 
     @property
     def text(self) -> str:
@@ -134,12 +135,16 @@ def _looks_like_variable(value: str) -> bool:
     return bool(DOC_VAR_RE.match(str(value)))
 
 
-def linearize_sentences(trees: Sequence[penman.Tree], drop_sense: bool = True) -> LinearizedAMR:
+def linearize_sentences(trees: Sequence[penman.Tree], drop_sense: bool = True,
+                        max_depth: Optional[int] = None) -> LinearizedAMR:
     """Linearize a chunk of sentence trees into one bracketed string.
 
     Sentences of a chunk are concatenated in order. A reference to a variable defined anywhere in
     the chunk is resolved (emitted as its concept, edge to the defining occurrence); a reference to
     a variable outside the chunk is dropped together with its relation.
+    max_depth: expand children only for nodes at depth < max_depth (root = depth 0); deeper nodes are
+    emitted as bare concepts. A node reached through `:name` is always expanded (its :opN strings
+    are the entity's name). None = no limit. Used to truncate coreference antecedents.
 
     Example:
         (s / sing-01 :ARG0 (i / i) :ARG1-of (f / fast))
@@ -153,13 +158,15 @@ def linearize_sentences(trees: Sequence[penman.Tree], drop_sense: bool = True) -
     out = LinearizedAMR()
     defining_word: Dict[str, int] = {}
 
-    def walk(node, parent_word: Optional[int], label_word: Optional[int], label: Optional[str]):
+    def walk(node, parent_word: Optional[int], label_word: Optional[int], label: Optional[str], depth: int):
         var, branches = node
         concept = next((t for r, t in branches if r == "/"), var)
         # Children that will be emitted: references to variables outside the chunk are removed first,
         # so a node left without children is emitted as a bare leaf ("go", not "( go )").
         children = [(r, t) for r, t in branches
                     if r != "/" and (isinstance(t, tuple) or t in var_to_concept or not _looks_like_variable(t))]
+        if max_depth is not None and depth >= max_depth and label != ":name":
+            children = []
         if children:
             out.words.append("(")
         my_word = len(out.words)
@@ -171,7 +178,7 @@ def linearize_sentences(trees: Sequence[penman.Tree], drop_sense: bool = True) -
             if isinstance(target, tuple):
                 rel_word = len(out.words)
                 out.words.append(role)
-                walk(target, my_word, rel_word, role)
+                walk(target, my_word, rel_word, role, depth + 1)
             elif target in var_to_concept:
                 # Re-entrancy: emit the concept again, edge to the defining occurrence (or to this
                 # occurrence when the definition comes later in the chunk; fixed up below).
@@ -190,7 +197,7 @@ def linearize_sentences(trees: Sequence[penman.Tree], drop_sense: bool = True) -
             out.words.append(")")
 
     for t in trees:
-        walk(t.node, None, None, None)
+        walk(t.node, None, None, None, 0)
 
     # Resolve re-entrancy placeholders now that every defining occurrence is known.
     resolved = []
@@ -200,6 +207,139 @@ def linearize_sentences(trees: Sequence[penman.Tree], drop_sense: bool = True) -
             dep = defining_word.get(var, ref_word)
         resolved.append((head, rel_word, dep, label))
     out.triples = resolved
+    out.var_word = dict(defining_word)
+    return out
+
+
+# --------------------------------------------------------------------------------------------------
+# Step 3b: cross-sentence coreference context
+# --------------------------------------------------------------------------------------------------
+# DocAMR links a mention to an earlier sentence with ":same-as <var>" (99.9% of cross-sentence links
+# in the train split point backwards; 59% point 6+ sentences back). A chunk-level linearization drops
+# those references (the variable is undefined in the chunk). The functions below recover them as a
+# context segment appended after the chunk's AMR:
+#
+#     <chunk AMR> [SEP] :same-as ( <antecedent 1 subtree> ) :same-as ( <antecedent 2 subtree> ) ...
+#
+# plus one graph triple per link: mention concept -> ":same-as" token -> antecedent root concept.
+
+CONTEXT_SEPARATOR = "[SEP]"
+
+
+@dataclass
+class CorefLink:
+    mention_var: str          # chunk variable whose node carries the reference
+    role: str                 # relation of the reference (":same-as" for almost all links)
+    antecedent_var: str       # antecedent after following the :same-as chain
+    antecedent_sentence: int  # position of the antecedent's sentence in the document
+
+
+def index_document(doc_trees: Sequence[Optional[penman.Tree]]) -> Dict[str, Tuple[int, tuple]]:
+    """Every variable defined in the document -> (sentence position, its node).
+
+    A None entry (a dropped metadata sentence) keeps its position but contributes no variable, so it can
+    never become an antecedent.
+    """
+    index: Dict[str, Tuple[int, tuple]] = {}
+
+    def walk(node, pos):
+        var, branches = node
+        index.setdefault(var, (pos, node))
+        for role, target in branches:
+            if isinstance(target, tuple):
+                walk(target, pos)
+
+    for pos, t in enumerate(doc_trees):
+        if t is not None:
+            walk(t.node, pos)
+    return index
+
+
+def _earlier_reference(node, index, before: int):
+    """First (role, var) of `node` that references a variable defined in a sentence < before."""
+    for role, target in node[1]:
+        if role != "/" and not isinstance(target, tuple) and target in index and index[target][0] < before:
+            return role, target
+    return None
+
+
+def find_coref_links(chunk_trees: Sequence[penman.Tree], doc_trees: Sequence[penman.Tree], chunk_start: int,
+                     follow_chain: bool = True, max_links: int = 4) -> List[CorefLink]:
+    """
+    Cross-sentence references from a chunk to earlier sentences of the same document.
+
+    Steps:
+      1. index every variable of the document: var -> (sentence position, node)
+      2. walk the chunk trees in emission order; a branch whose target is a variable defined in a sentence
+         before `chunk_start` is a link (mention = the node carrying the branch)
+      3. follow_chain: from the antecedent, follow its own reference to an even earlier sentence until a
+         node has none (cycle-guarded) — the earliest mention usually carries the name (:name ...)
+      4. keep the first link per antecedent, at most max_links
+
+    Example: sentence 3 "(s3.h / he :same-as s2.p)", sentence 2 "(s2.p / person :same-as s1.p)",
+             sentence 1 "(s1.p / person :name (s1.n / name :op1 \"Alan\"))"
+             -> [CorefLink(mention_var="s3.h", role=":same-as", antecedent_var="s1.p", antecedent_sentence=0)]
+    """
+    index = index_document(doc_trees)
+    links: List[CorefLink] = []
+    seen = set()
+
+    def walk(node):
+        var, branches = node
+        for role, target in branches:
+            if isinstance(target, tuple):
+                continue
+            if role != "/" and target in index and index[target][0] < chunk_start:
+                ante, visited = target, {target}
+                while follow_chain:
+                    ref = _earlier_reference(index[ante][1], index, index[ante][0])
+                    if ref is None or ref[1] in visited:
+                        break
+                    ante = ref[1]
+                    visited.add(ante)
+                if ante not in seen:
+                    seen.add(ante)
+                    links.append(CorefLink(var, role, ante, index[ante][0]))
+        for role, target in branches:
+            if isinstance(target, tuple):
+                walk(target)
+
+    for t in chunk_trees:
+        walk(t.node)
+    return links[:max_links]
+
+
+def append_coref_context(main: LinearizedAMR, links: Sequence[CorefLink], doc_trees: Sequence[penman.Tree],
+                         drop_sense: bool = True, max_depth: int = 2) -> LinearizedAMR:
+    """
+    Append the antecedent subtrees of `links` to a chunk linearization.
+
+    Step by step (word indices):
+      1. words = main.words + ["[SEP]"]                           (only when there is at least one link)
+      2. per link: words += [role] + linearize(antecedent subtree, max_depth).words
+         the antecedent's triples are shifted by the offset of its first word
+      3. link triple: (main.var_word[mention_var], index of `role`, index of the antecedent root, role)
+    Example: main "( see :ARG0 he )" with a link he -> (s1.p / person :name (s1.n / name :op1 "Alan"))
+      words   = ( see :ARG0 he ) [SEP] :same-as ( person :name ( name :op1 Alan ) )
+      triples = main triples + (8, 9, 11, ":name"), (11, 12, 13, ":op1") + link (3, 6, 8, ":same-as")
+    """
+    if not links:
+        return main
+    index = index_document(doc_trees)
+    out = LinearizedAMR(words=list(main.words) + [CONTEXT_SEPARATOR], triples=list(main.triples),
+                        var_word=dict(main.var_word))
+    for link in links:
+        if link.mention_var not in main.var_word:
+            continue
+        label_word = len(out.words)
+        out.words.append(link.role)
+        offset = len(out.words)
+        sub = linearize_sentences([penman.Tree(index[link.antecedent_var][1])], drop_sense=drop_sense,
+                                  max_depth=max_depth)
+        out.words.extend(sub.words)
+        out.triples.extend((h + offset, l + offset, d + offset, lab) for h, l, d, lab in sub.triples)
+        out.triples.append((main.var_word[link.mention_var], label_word,
+                            offset + sub.var_word[link.antecedent_var], link.role))
     return out
 
 

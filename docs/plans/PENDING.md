@@ -28,6 +28,16 @@ Newest first; one dated entry per milestone.
   same sentences; test 1,098 unfiltered).
 - Comments and docs refreshed across the repo; dataset contract in [data-format.md](../data/data-format.md).
 
+**2026-10-03 (late night)** — cross-sentence coreference context built and committed
+([changelog](../changelogs/2026-10-03_coref-context-variant.md))
+([plan Phase 3b](pipeline-fixes-and-amr-redesign.md#phase-3b--cross-sentence-coreference-context-built-2026-10-03)).
+- 63.5% of train sentences link to an earlier sentence (`:same-as`, 59% of links 6+ sentences back);
+  chunking keeps ≤ 25% of links at ≤ 5 sentences and pushes 89% of rows past 256 tokens.
+- New variant `text_amr_coref_en_vi`: one-sentence target, antecedent subtrees appended to the source,
+  link edges mention → `:same-as` → antecedent; 63% of train rows carry a context (+7 tokens median).
+- v2 rebuilt with four variants together: 121,453 train rows each (3.0% dropped jointly), test 1,098.
+  73 CPU tests pass.
+
 **2026-10-03 (night)** — KD data builder `scripts/build_kd_dataset.py` (teacher-agnostic, resumable cache,
 joint length filter, valid/test untouched); 66 CPU tests pass. Teacher choice open.
 
@@ -45,7 +55,8 @@ plain path matches upstream; on-disk baselines BLEU 4.22 / 6.43; ten AMR-path bu
 | KD translation run | `scripts/build_kd_dataset.py --device cuda` over 119,429 unique train sources (+ `--check_test`) | before G2 |
 | Credible plain baseline on `v2_plain_en_vi_chunk_1_kd-<tag>` | effective batch ≥ 1,024, solver-step sweep, MBR | G2 |
 | Text + AMR run on `v2_text_amr_en_vi_chunk_1` | same settings as the baseline, `--seq_len 256`, `--graph_encoder none` | after G2 |
-| GATv2 ablation | `--graph_encoder gatv2 --graph_mode edge_attr` and `levi` on the text + AMR data | after the text + AMR run |
+| Text + AMR + coreference run on `v2_text_amr_coref_en_vi_chunk_1` | same settings; report also the 61% of test rows with a context | after G2 |
+| GATv2 ablation | `--graph_encoder gatv2 --graph_mode edge_attr` and `levi` on the text + AMR and coreference data | after the text + AMR runs |
 | Controlled comparison | same test file, 3 seeds per arm, `scripts/eval_bleu.py` | G3 |
 
 ## Open — CPU work
@@ -62,6 +73,10 @@ plain path matches upstream; on-disk baselines BLEU 4.22 / 6.43; ten AMR-path bu
 - `seq_len` 320 (covers ~99.1%) if the 256 run shows a long-sentence deficit.
 - Document-level chunks (2–5 sentences) only after chunk 1 shows an AMR effect.
 - Relation-aware attention bias inside the encoder as an alternative to a separate graph module.
+- Pointer tokens (SPRING-style) marking which mention each coreference context entry belongs to, for
+  text-only (no graph) runs.
+- Coreference depth / cap sweep (`--coref_depth`, `--coref_max`) and following the nearest instead of the
+  earliest mention.
 
 ## Closed by evidence
 
@@ -83,4 +98,5 @@ plain path matches upstream; on-disk baselines BLEU 4.22 / 6.43; ten AMR-path bu
 ## Suggested next order
 
 1. teacher choice → 2. KD translation run (GPU) + leakage check → 3. plain baseline (GPU, G2) →
-4. text + AMR run → 5. GATv2 ablation (edge_attr, levi) → 6. controlled comparison.
+4. text + AMR and text + AMR + coreference runs → 5. GATv2 ablation (edge_attr, levi) →
+6. controlled comparison.

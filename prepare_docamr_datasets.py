@@ -22,6 +22,11 @@ Variants (folder = <prefix>_<variant>_chunk_<N>):
     amr_en_vi        src EN AMR                  -> trg VI        (+ graph_src)
     vi_amr           src VI text                 -> trg EN AMR
     text_amr_en_vi   src "EN [SEP] EN AMR"       -> trg VI        (+ graph_src)
+    text_amr_coref_en_vi
+                     src "EN [SEP] EN AMR [SEP] :same-as ( antecedent ) ..."  -> trg VI  (+ graph_src)
+                     antecedents = earlier-sentence nodes the chunk refers to (diffuseq/amr_linearize.py,
+                     find_coref_links / append_coref_context); rows without a cross-sentence reference
+                     are identical to text_amr_en_vi
     bidirectional    vi_amr rows (TEXT_TO_AMR) + amr_en_vi rows (AMR_TO_TEXT), with "direction"
 
 Row format: {"src", "trg", ["direction"], ["graph_src"]}. graph_src entries are
@@ -47,10 +52,13 @@ from tqdm import tqdm
 
 import paths
 from basic_utils import AMR_TO_TEXT_LABEL, TEXT_TO_AMR_LABEL, load_defaults_config, myTokenizer
-from diffuseq.amr_linearize import (linearize_sentences, map_words_to_tokens, parse_document,
-                                    triples_to_token_graph, word_char_starts)
+from diffuseq.amr_linearize import (append_coref_context, find_coref_links, linearize_sentences,
+                                    map_words_to_tokens, parse_document, triples_to_token_graph,
+                                    word_char_starts)
 
-VARIANTS = ("plain_en_vi", "plain_vi_en", "amr_en_vi", "vi_amr", "text_amr_en_vi", "bidirectional")
+VARIANTS = ("plain_en_vi", "plain_vi_en", "amr_en_vi", "vi_amr", "text_amr_en_vi", "text_amr_coref_en_vi",
+            "bidirectional")
+DEFAULT_COREF = {"max_depth": 2, "max_links": 4, "follow_chain": True}
 TEXT_AMR_SEPARATOR = " [SEP] "
 METADATA_RE = re.compile(r"(^https?://\S+$)|(</?url>)", re.IGNORECASE)
 
@@ -119,17 +127,26 @@ def load_split(split, stats):
 
 
 def chunk_documents(docs, chunk_size, stats):
-    """Drop metadata sentences, then cut each document into consecutive chunks of chunk_size."""
+    """
+    Drop metadata sentences, then cut each document into consecutive chunks of chunk_size.
+
+    Each chunk also keeps the document context needed for coreference:
+      doc_trees: AMR of every sentence in original document order, None for dropped metadata sentences
+      start:     original position of the chunk's first sentence in doc_trees
+    """
     chunks = []
     for sentences in docs:
-        kept = [s for s in sentences if not is_metadata(s[0])]
+        doc_trees = [None if is_metadata(s[0]) else s[2] for s in sentences]
+        kept = [(pos, s) for pos, s in enumerate(sentences) if doc_trees[pos] is not None]
         stats["metadata_sentences_dropped"] += len(sentences) - len(kept)
         for i in range(0, len(kept), chunk_size):
             group = kept[i:i + chunk_size]
             chunks.append({
-                "en": " ".join(s[0] for s in group),
-                "vi": " ".join(s[1] for s in group),
-                "trees": [s[2] for s in group],
+                "en": " ".join(s[0] for _, s in group),
+                "vi": " ".join(s[1] for _, s in group),
+                "trees": [s[2] for _, s in group],
+                "doc_trees": doc_trees,
+                "start": group[0][0],
             })
     return chunks
 
@@ -156,8 +173,11 @@ def amr_source(lin, hf_tokenizer, prefix=""):
     return src, triples_to_token_graph(lin.triples, word_to_token)
 
 
-def build_rows(chunk, variant, hf_tokenizer, drop_sense):
-    """Rows (dicts) of one chunk for one variant; AMR is linearized lazily per call."""
+def build_rows(chunk, variant, hf_tokenizer, drop_sense, coref=None):
+    """Rows (dicts) of one chunk for one variant; AMR is linearized lazily per call.
+
+    coref: {"max_depth", "max_links", "follow_chain"} for text_amr_coref_en_vi (DEFAULT_COREF if None).
+    """
     if variant == "plain_en_vi":
         return [{"src": chunk["en"], "trg": chunk["vi"]}]
     if variant == "plain_vi_en":
@@ -169,6 +189,13 @@ def build_rows(chunk, variant, hf_tokenizer, drop_sense):
         src, graph = amr_source(lin, hf_tokenizer)
         return [{"src": src, "trg": chunk["vi"], "graph_src": graph}]
     if variant == "text_amr_en_vi":
+        src, graph = amr_source(lin, hf_tokenizer, prefix=chunk["en"] + TEXT_AMR_SEPARATOR)
+        return [{"src": src, "trg": chunk["vi"], "graph_src": graph}]
+    if variant == "text_amr_coref_en_vi":
+        c = dict(DEFAULT_COREF, **(coref or {}))
+        links = find_coref_links(chunk["trees"], chunk["doc_trees"], chunk["start"],
+                                 follow_chain=c["follow_chain"], max_links=c["max_links"])
+        lin = append_coref_context(lin, links, chunk["doc_trees"], drop_sense=drop_sense, max_depth=c["max_depth"])
         src, graph = amr_source(lin, hf_tokenizer, prefix=chunk["en"] + TEXT_AMR_SEPARATOR)
         return [{"src": src, "trg": chunk["vi"], "graph_src": graph}]
     if variant == "bidirectional":
@@ -219,7 +246,8 @@ def main(args):
         chunks = chunk_documents(load_split(split, stats), args.chunk_size, stats)
         stats["chunks"] = len(chunks)
         # rows[v][i] = rows of chunk i for variant v
-        rows = {v: [build_rows(c, v, hf_tokenizer, args.drop_sense)
+        coref = {"max_depth": args.coref_depth, "max_links": args.coref_max, "follow_chain": args.coref_follow_chain}
+        rows = {v: [build_rows(c, v, hf_tokenizer, args.drop_sense, coref)
                     for c in tqdm(chunks, desc=f"{split}/{v}", unit="chunk")] for v in variants}
         keep = [True] * len(chunks)
         if split == "train":
@@ -238,6 +266,11 @@ def main(args):
                         f.write(json.dumps(row, ensure_ascii=False) + "\n")
                         written += 1
             summary.setdefault(variant, {})[split] = {"written": written, "chunks_dropped_too_long": keep.count(False)}
+            if variant == "text_amr_coref_en_vi":
+                with_ctx = sum(1 for i, chunk_rows in enumerate(rows[variant]) if keep[i]
+                               for r in chunk_rows if r["src"].count("[SEP]") >= 2)
+                summary[variant][split]["rows_with_coref_context"] = with_ctx
+                logger.info("%s/%s: %d rows carry a coreference context", split, variant, with_ctx)
             logger.info("%s/%s: %d rows written, %d chunks dropped (> %d tokens in some variant)", split,
                         variant, written, keep.count(False), args.max_seq_len)
         summary.setdefault("_alignment", {})[split] = dict(stats)
@@ -267,6 +300,13 @@ def parse_args(argv=None):
     p.add_argument("--amr_vocab", default="relations", help="tokenizer vocabulary used for lengths/positions")
     p.add_argument("--config_name", default=defaults["config_name"])
     p.add_argument("--prefix", default="v2", help="folder prefix; never reuse a folder of a logged run")
+    p.add_argument("--coref_depth", type=int, default=DEFAULT_COREF["max_depth"],
+                   help="text_amr_coref_en_vi: depth of each antecedent subtree (2 keeps :name strings)")
+    p.add_argument("--coref_max", type=int, default=DEFAULT_COREF["max_links"],
+                   help="text_amr_coref_en_vi: at most this many antecedents per row")
+    p.add_argument("--coref_follow_chain", type=lambda x: str(x).lower() in ("1", "true", "yes"),
+                   default=DEFAULT_COREF["follow_chain"],
+                   help="text_amr_coref_en_vi: follow :same-as chains to the earliest mention")
     args = p.parse_args(argv)
     if args.chunk_size < 1:
         p.error("--chunk_size must be >= 1")

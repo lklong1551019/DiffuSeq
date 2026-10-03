@@ -17,7 +17,7 @@ AMR = """# ::id doc-1
 (d / document
    :snt1 (s1.u / url-entity :value "http://www.ted.com/talks/x")
    :snt2 (s2.s / sing-01 :ARG0 (s2.i / i))
-   :snt3 (s3.w / want-01 :ARG0 (s3.i / i) :ARG1 (s3.g / go-02 :ARG0 s3.i)))
+   :snt3 (s3.w / want-01 :ARG0 (s3.i / i :same-as s2.i) :ARG1 (s3.g / go-02 :ARG0 s3.i)))
 """
 
 
@@ -99,3 +99,23 @@ def test_main_filters_train_only(corpus, my_tokenizer):
     assert sum(1 for _ in open(plain, encoding="utf-8")) == 0
     first_test = json.loads(open(os.path.join(out, "test.jsonl"), encoding="utf-8").readline())
     assert "url" not in first_test["src"]
+
+
+def test_coref_variant(corpus, my_tokenizer):
+    from collections import Counter
+    chunks = prep.chunk_documents(prep.load_split("train", Counter()), 1, Counter())
+    assert [c["start"] for c in chunks] == [1, 2]          # original positions (metadata line at 0)
+    assert chunks[0]["doc_trees"][0] is None                # metadata sentence never an antecedent
+    hf = my_tokenizer.tokenizer
+    # first sentence: no earlier reference -> identical to text_amr_en_vi
+    assert prep.build_rows(chunks[0], "text_amr_coref_en_vi", hf, True) == \
+        prep.build_rows(chunks[0], "text_amr_en_vi", hf, True)
+    (row,) = prep.build_rows(chunks[1], "text_amr_coref_en_vi", hf, True)
+    assert row["src"] == "I want to go . [SEP] ( want :ARG0 i :ARG1 ( go :ARG0 i ) ) [SEP] :same-as i"
+    toks = hf.convert_ids_to_tokens(hf(row["src"])["input_ids"])
+    (link,) = [g for g in row["graph_src"] if g[2] == ":same-as"]
+    head, dep, _, label_pos = link
+    assert (toks[head], toks[label_pos], toks[dep]) == ("i", ":same-as", "i")
+    seps = [i for i, t in enumerate(toks) if t == "[SEP]"]   # EN|AMR, AMR|context, end of source
+    assert len(seps) == 3
+    assert seps[0] < head < seps[1] < label_pos < dep < seps[2]   # mention in the AMR, antecedent in the context

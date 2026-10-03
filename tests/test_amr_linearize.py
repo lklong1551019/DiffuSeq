@@ -107,3 +107,76 @@ def test_map_words_to_tokens_with_text_prefix_and_literal(my_tokenizer):
 def test_triples_to_token_graph_drops_unmapped():
     graph = triples_to_token_graph([(1, 2, 3, ":ARG0"), (1, 4, 5, ":mod")], [0, 2, 3, 4, None, 6])
     assert graph == [[2, 4, ":ARG0", 3]]
+
+
+# ------------------------------------------------------------------------------ coreference context
+
+from diffuseq.amr_linearize import append_coref_context, find_coref_links  # noqa: E402
+
+COREF_DOC = (
+    "(d / document"
+    " :snt1 (s1.p / person :name (s1.n / name :op1 \"Alan\" :op2 \"Turing\"))"
+    " :snt2 (s2.p / person :same-as s1.p :ARG0-of (s2.w / work-01))"
+    " :snt3 (s3.s / see-01 :ARG0 (s3.h / he :same-as s2.p) :ARG1 (s3.m / machine :same-as s2.w)))"
+)
+SMALL_DOC = (
+    "(d / document :snt1 (s1.p / person :name (s1.n / name :op1 \"Alan\"))"
+    " :snt2 (s2.s / see-01 :ARG0 (s2.h / he :same-as s1.p)))"
+)
+
+
+def test_max_depth_truncates_subtrees_but_keeps_names():
+    t = parse_document("(s1.s / see-01 :ARG0 (s1.p / person :name (s1.n / name :op1 \"Alan\")"
+                       " :ARG0-of (s1.w / work-01 :ARG1 (s1.m / machine))))")[0]
+    assert linearize_sentences([t], max_depth=0).words == ["see"]
+    assert linearize_sentences([t], max_depth=1).text == "( see :ARG0 person )"
+    # depth 2: person expands; work stays a leaf; the :name node (depth 2) is expanded anyway
+    assert linearize_sentences([t], max_depth=2).text == "( see :ARG0 ( person :name ( name :op1 Alan ) :ARG0-of work ) )"
+    assert linearize_sentences([t]).text.endswith(":ARG0-of ( work :ARG1 machine ) ) )")
+
+
+def test_var_word_points_to_concepts():
+    lin = linearize_sentences([parse_document(SMALL_DOC)[1]])
+    assert lin.words == ["(", "see", ":ARG0", "he", ")"]
+    assert lin.var_word == {"s2.s": 1, "s2.h": 3}
+
+
+def test_find_coref_links_follows_chain_and_keeps_order():
+    doc = parse_document(COREF_DOC)
+    links = find_coref_links([doc[2]], doc, chunk_start=2)
+    assert [(l.mention_var, l.role, l.antecedent_var, l.antecedent_sentence) for l in links] == [
+        ("s3.h", ":same-as", "s1.p", 0),        # s2.p -> s1.p (earliest mention, carries the name)
+        ("s3.m", ":same-as", "s2.w", 1),
+    ]
+    no_chain = find_coref_links([doc[2]], doc, chunk_start=2, follow_chain=False)
+    assert no_chain[0].antecedent_var == "s2.p"
+    assert len(find_coref_links([doc[2]], doc, chunk_start=2, max_links=1)) == 1
+
+
+def test_find_coref_links_ignores_in_chunk_and_metadata():
+    doc = parse_document(COREF_DOC)
+    # sentences 2-3 in one chunk: s3.h -> s2.p is inside the chunk; s2.p -> s1.p is the only outside link
+    links = find_coref_links(doc[1:], doc, chunk_start=1)
+    assert [(l.mention_var, l.antecedent_var) for l in links] == [("s2.p", "s1.p")]
+    small = parse_document(SMALL_DOC)
+    assert find_coref_links([small[1]], [None, small[1]], chunk_start=1) == []   # metadata sentence
+
+
+def test_append_coref_context_docstring_example():
+    doc = parse_document(SMALL_DOC)
+    main = linearize_sentences([doc[1]])
+    out = append_coref_context(main, find_coref_links([doc[1]], doc, 1), doc, max_depth=2)
+    assert out.text == "( see :ARG0 he ) [SEP] :same-as ( person :name ( name :op1 Alan ) )"
+    assert out.triples == main.triples + [(8, 9, 11, ":name"), (11, 12, 13, ":op1"), (3, 6, 8, ":same-as")]
+    assert append_coref_context(main, [], doc) is main                      # no link -> unchanged
+
+
+def test_append_coref_context_two_links():
+    doc = parse_document(COREF_DOC)
+    main = linearize_sentences([doc[2]])
+    out = append_coref_context(main, find_coref_links([doc[2]], doc, 2), doc)
+    assert out.text == ("( see :ARG0 he :ARG1 machine ) [SEP] :same-as ( person :name ( name :op1 Alan "
+                        ":op2 Turing ) ) :same-as work")
+    links = [t for t in out.triples if t[3] == ":same-as"]
+    assert links == [(3, 8, 10, ":same-as"), (5, 20, 21, ":same-as")]
+    assert [out.words[i] for i in (3, 10, 5, 21)] == ["he", "person", "machine", "work"]

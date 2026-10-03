@@ -91,7 +91,7 @@ def check_alignment(src_rows, companion_rows, src_meta, companion_metas):
         for i, (a, b) in enumerate(zip(src_rows, rows)):
             if a["trg"] != b["trg"]:
                 raise ValueError(f"{name}: row {i} target differs from the source dataset")
-            if companion_metas[name]["variant"] == "text_amr_en_vi" and \
+            if companion_metas[name]["variant"] in ("text_amr_en_vi", "text_amr_coref_en_vi") and \
                     not b["src"].startswith(a["src"] + TEXT_AMR_SEPARATOR):
                 raise ValueError(f"{name}: row {i} source does not start with the plain source")
 

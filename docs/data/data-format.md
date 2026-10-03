@@ -52,6 +52,7 @@ new prefix.
 | `amr_en_vi` | linearized EN AMR | VI text | `graph_src` |
 | `vi_amr` | VI text | linearized EN AMR | — |
 | `text_amr_en_vi` | `EN text [SEP] linearized EN AMR` | VI text | `graph_src` |
+| `text_amr_coref_en_vi` | `EN text [SEP] AMR [SEP] :same-as ( antecedent ) …` (no link: same as `text_amr_en_vi`) | VI text | `graph_src` |
 | `bidirectional` | `vi_amr` rows + `amr_en_vi` rows | | `direction`; `graph_src` on `AMR_TO_TEXT` rows |
 
 Example row (`v2_text_amr_en_vi_chunk_1`, constructed):
@@ -67,6 +68,17 @@ row's EN source (same text in every aligned variant; other fields unchanged), `v
 copied unchanged (human references), `meta.json` = base meta + a `kd` block (teacher, tag, beams, cache path,
 kept / dropped rows, optional `teacher_on_test`). Translations are cached in
 `<source dataset>/kd-<tag>_cache.jsonl` (`{"src", "hyp"}` per line).
+
+### Coreference context (`text_amr_coref_en_vi`)
+
+- **Links:** every reference from the row's sentence to a variable defined in an earlier sentence of the
+  document (DocAMR `:same-as`); TED metadata sentences are never antecedents.
+- **Antecedent:** the earliest mention reached by following `:same-as` chains (`--coref_follow_chain`),
+  linearized to depth `--coref_depth` (2) with `:name` subtrees always complete; one entry per antecedent,
+  at most `--coref_max` (4), in mention order.
+- **Graph:** one entry per link `[mention_pos, antecedent_root_pos, ":same-as", label_pos]`; mention in the
+  AMR segment (between the first and second `[SEP]`), label and antecedent in the context segment.
+- **Coverage (v2 build):** 63.0% of train rows, 61.0% of test rows; +7 tokens median, +26 at p95.
 
 ### `graph_src`
 
