@@ -28,6 +28,9 @@ Newest first; one dated entry per milestone.
   same sentences; test 1,098 unfiltered).
 - Comments and docs refreshed across the repo; dataset contract in [data-format.md](../data/data-format.md).
 
+**2026-10-03 (night)** — KD data builder `scripts/build_kd_dataset.py` (teacher-agnostic, resumable cache,
+joint length filter, valid/test untouched); 66 CPU tests pass. Teacher choice open.
+
 **2026-10-03 (later)** — `thesis_env` complete; graph module decided: GATv2, not GCN.
 
 **2026-10-03** — code and results review ([report](../reports/2026-10-03_code-and-results-review.md)):
@@ -39,7 +42,8 @@ plain path matches upstream; on-disk baselines BLEU 4.22 / 6.43; ten AMR-path bu
 
 | Item | Detail | Gate |
 |---|---|---|
-| Credible plain baseline on `v2_plain_en_vi_chunk_1` | KD targets (teacher must exclude tst2015), effective batch ≥ 1,024, solver-step sweep, MBR | G2 |
+| KD translation run | `scripts/build_kd_dataset.py --device cuda` over 119,429 unique train sources (+ `--check_test`) | before G2 |
+| Credible plain baseline on `v2_plain_en_vi_chunk_1_kd-<tag>` | effective batch ≥ 1,024, solver-step sweep, MBR | G2 |
 | Text + AMR run on `v2_text_amr_en_vi_chunk_1` | same settings as the baseline, `--seq_len 256`, `--graph_encoder none` | after G2 |
 | GATv2 ablation | `--graph_encoder gatv2 --graph_mode edge_attr` and `levi` on the text + AMR data | after the text + AMR run |
 | Controlled comparison | same test file, 3 seeds per arm, `scripts/eval_bleu.py` | G3 |
@@ -48,7 +52,7 @@ plain path matches upstream; on-disk baselines BLEU 4.22 / 6.43; ten AMR-path bu
 
 | Item | Detail | Source |
 |---|---|---|
-| KD data pipeline | script that translates train sources with a teacher and writes a `v2_kd_*` variant | [plan Phase 2](pipeline-fixes-and-amr-redesign.md#phase-2--baseline-credibility-open-gpu) |
+| KD teacher choice | public en→vi encoder-decoder (leakage check with `--check_test`) vs a teacher trained on the v2 train split | [plan Phase 2](pipeline-fixes-and-amr-redesign.md#phase-2--baseline-credibility-open-gpu) |
 | AMR-only trimming of over-budget test rows | trim the AMR segment (deepest subtrees first) instead of `merge_pair` popping the longer side | [plan Phase 3](pipeline-fixes-and-amr-redesign.md#phase-3--text--amr-input-data-built-2026-10-03-training-after-g2) |
 | Intra-concept subword edges | connect `##` pieces of a concept to its first subword | [plan Phase 4](pipeline-fixes-and-amr-redesign.md#phase-4--graph-module-built-2026-10-03-ablation-after-phase-3) |
 | Joint en+vi BPE vocabulary | 10k–16k entries; re-check graph positions with the new tokenizer | plan Phase 2 |
@@ -78,5 +82,5 @@ plain path matches upstream; on-disk baselines BLEU 4.22 / 6.43; ten AMR-path bu
 
 ## Suggested next order
 
-1. KD data script (CPU) → 2. teacher choice + leakage check → 3. plain baseline (GPU, G2) →
+1. teacher choice → 2. KD translation run (GPU) + leakage check → 3. plain baseline (GPU, G2) →
 4. text + AMR run → 5. GATv2 ablation (edge_attr, levi) → 6. controlled comparison.

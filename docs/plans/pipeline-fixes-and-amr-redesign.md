@@ -14,7 +14,7 @@ from its [addendum](../reports/2026-10-03_code-and-results-review.md#12-addendum
 
 | Gate | Condition | State |
 |---|---|---|
-| G0 | `thesis_env` complete; `pytest tests/` passes on CPU | met 2026-10-03 (60 tests) |
+| G0 | `thesis_env` complete; `pytest tests/` passes on CPU | met 2026-10-03 (66 tests) |
 | G1 | B1–B15 fixed, each with a unit test (§4) | met 2026-10-03 |
 | G2 | plain baseline on `v2_plain_en_vi_chunk_1` clearly above 4.2 BLEU (en→vi) with < 5% adjacent duplicate tokens; target set after the first KD run (provisional ≥ 15) | open — needs GPU |
 | G3 | text+AMR and plain runs decoded on the same test file (identical row count and hash) | open |
@@ -28,7 +28,7 @@ GPU jobs start only after the user confirms (GPU Sharing Rule in [`.agents/AGENT
 ### Phase 0 — Environment and test harness (done 2026-10-03)
 
 - `thesis_env`: `blobfile wandb sacrebleu nltk pytest` installed; no existing package changed.
-- `tests/` (CPU only, offline HF): 60 tests over tokenizer, linearizer, layout, graph shift, collate,
+- `tests/` (CPU only, offline HF): 66 tests over tokenizer, linearizer, layout, graph shift, collate,
   microbatch slicing, denoise masking, GATv2, prep script, end-to-end loss, checkpoint loading.
 - `scripts/eval_bleu.py`: corpus sacreBLEU, chrF, repetition rate, length ratio, MBR over seed files.
 
@@ -68,6 +68,15 @@ Also: `paths.py` (single owner of data paths); decoding reloads the run folder's
    - **example:** a free human rendering becomes a shorter, literal teacher translation; the diffusion model
      learns one consistent mapping.
    - **Check before use:** the teacher's training data must exclude IWSLT tst2015 (test leakage).
+   - **Script (2026-10-03):** `scripts/build_kd_dataset.py` — any Hugging Face encoder-decoder teacher;
+     translates the 119,429 unique train sources of `v2_plain_en_vi_chunk_1` once (length-sorted batches,
+     resumable JSONL cache), replaces `trg` in the plain and companion variants row by row, re-applies the
+     joint length filter, copies valid/test unchanged, writes `<dataset>_kd-<tag>/`. `--check_test` reports
+     the teacher's BLEU and exact-match rate on tst2015. Default device CPU. Tests:
+     `tests/test_build_kd_dataset.py`.
+   - **Open:** teacher choice — (a) a public en→vi model (fast; leakage risk because TED talks appear in
+     public corpora) or (b) an autoregressive Transformer trained on the v2 train split (no leakage; one
+     extra GPU training run).
 2. **Vocabulary:** joint en+vi BPE/WordPiece of 10k–16k entries vs mBERT (119,727 with the AMR tokens).
 3. **Budget:** effective batch ≥ 1,024 via microbatch accumulation.
 4. **Decoding:** solver steps {10, 20, 50}; MBR over 5–10 seeds (`scripts/eval_bleu.py`).
@@ -218,6 +227,7 @@ Example: `random_mask = [[1,1,1,0],[1,0,1,1]]`, `rel_mask = [[0,0,1,0],[0,0,0,0]
 | `GraphEncoder` | `test_graph_encoder.py` | zero init = identity; only graph nodes change; edge type changes the output; empty graph; out-of-range node id; heads must divide D |
 | prep script | `test_prepare_docamr.py` | alignment + mismatch skip; metadata drop; rows per variant incl. §3.2 graph; merged length = merge_pair; train-only joint filter, test/valid kept |
 | model + diffusion | `test_smoke.py` | loss + backward (plain, GATv2); B8 guard; existing checkpoint loads strictly with its saved tokenizer |
+| KD data builder | `test_build_kd_dataset.py` | alignment rejects mismatches; only train targets replaced, other fields and valid/test unchanged; cache resume incl. a truncated line; joint length filter + empty output; one output per input; test exact-match report |
 
 Run: `CUDA_VISIBLE_DEVICES="" conda run -n thesis_env pytest tests/ -q`.
 

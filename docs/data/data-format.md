@@ -60,6 +60,14 @@ Example row (`v2_text_amr_en_vi_chunk_1`, constructed):
 {"src": "I sing . [SEP] ( sing :ARG0 i )", "trg": "Tôi hát .", "graph_src": [[6, 8, ":ARG0", 7]]}
 ```
 
+### Distilled variants (`<dataset>_kd-<tag>/`)
+
+Written by `scripts/build_kd_dataset.py`: `train.jsonl` with `trg` replaced by the teacher translation of the
+row's EN source (same text in every aligned variant; other fields unchanged), `valid.jsonl` / `test.jsonl`
+copied unchanged (human references), `meta.json` = base meta + a `kd` block (teacher, tag, beams, cache path,
+kept / dropped rows, optional `teacher_on_test`). Translations are cached in
+`<source dataset>/kd-<tag>_cache.jsonl` (`{"src", "hyp"}` per line).
+
 ### `graph_src`
 
 Entries `[head_pos, dep_pos, label, label_pos]`:

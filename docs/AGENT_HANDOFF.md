@@ -28,7 +28,7 @@ and ask the user before any GPU job (GPU Sharing Rule).
 ## Environment
 
 - `thesis_env` — target env (torch 2.10, transformers 5.3, PyG 2.7, penman 1.3, sacreBLEU 2.6, pytest 9.1).
-  Tests: `CUDA_VISIBLE_DEVICES="" conda run -n thesis_env pytest tests/ -q` (60 pass).
+  Tests: `CUDA_VISIBLE_DEVICES="" conda run -n thesis_env pytest tests/ -q` (66 pass).
 - `diffuseq_env` — reproduces the 2026-05 runs (torch 1.13, transformers 4.22, no PyG / penman).
 
 ## On disk
