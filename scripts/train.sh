@@ -10,6 +10,8 @@
 # share of the batch, so the update equals the mean over the full batch for any split.
 #
 # Dataset: built by prepare_docamr_datasets.py (datasets/docAMR/<DATASET>/{train,valid,test}.jsonl).
+# The v2_* datasets were built with --max_seq_len 256, hence --seq_len 256 below. --microbatch 16 is a
+# starting point for hidden_dim 768 at seq_len 256 on the shared 8 GB GPU; check memory on the first steps.
 # --seq_len must equal the --max_seq_len used when the dataset was built (meta.json records it).
 # Graph runs (text_amr_* / amr_* datasets): add --graph_encoder gatv2 --graph_mode edge_attr|levi.
 #
@@ -28,13 +30,13 @@ CUDA_VISIBLE_DEVICES=0 torchrun --nproc_per_node=1 --master_port=12231 run_train
 --hidden_dim 768 \
 --hidden_t_dim 768 \
 --bsz 384 \
---microbatch 32 \
+--microbatch 16 \
 --dataset docAMR/${DATASET} \
 --data_dir ./datasets/docAMR/${DATASET} \
 --learned_mean_embed True \
 --denoise True \
 --vocab bert \
---seq_len 128 \
+--seq_len 256 \
 --use_fp16 \
 --config_name bert-base-multilingual-cased \
 --denoise_rate 0.5 \

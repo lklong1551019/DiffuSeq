@@ -28,6 +28,10 @@ Newest first; one dated entry per milestone.
   same sentences; test 1,098 unfiltered).
 - Comments and docs refreshed across the repo; dataset contract in [data-format.md](../data/data-format.md).
 
+**2026-10-03 (handoff)** — all work pushed (`fix/tests-and-pipeline-bugs`, over SSH); `scripts/train.sh` set to
+`--seq_len 256` / `--microbatch 16` to match the v2 datasets; handoff rewritten for a new session
+([AGENT_HANDOFF.md](../AGENT_HANDOFF.md)).
+
 **2026-10-03 (teacher)** — KD teacher decided (option B: trained on the v2 train split, no leakage) and
 built: `teacher/` + `scripts/train_teacher.py` (Marian Transformer, iwslt preset 40.3M params, joint EN+VI
 BPE 16k), [teacher plan](teacher-model.md); CPU smoke run end to end. Multilingual Tokenizer Rule added
