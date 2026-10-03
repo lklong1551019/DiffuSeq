@@ -14,3 +14,15 @@ tmp_tokenizer/*
 # datasets/*
 *.log
 *.pth
+
+# OS / editor
+.DS_Store
+
+# logs written by scripts (Script Logging Rule)
+logs/
+
+# pytest
+.pytest_cache/
+
+# generated datasets (rebuild with prepare_docamr_datasets.py / scripts/build_kd_dataset.py)
+datasets/docAMR/v2_*/

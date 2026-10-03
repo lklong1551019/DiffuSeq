@@ -1,3 +1,10 @@
+"""
+eval_seq2seq.py — upstream DiffuSeq evaluation (QQP / QG style), kept for reference.
+
+Not used for translation results: it averages smoothed sentence-level BLEU (NLTK method4, higher
+than corpus BLEU) and runs BERTScore with lang='en' / deberta-xlarge-mnli, which does not fit
+Vietnamese outputs. Use scripts/eval_bleu.py (corpus sacreBLEU, chrF, repetition, MBR).
+"""
 import os, sys, glob, json
 import numpy as np
 import argparse

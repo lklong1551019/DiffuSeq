@@ -1,0 +1,12 @@
+# Changelogs
+
+- **Type**: guide
+- **Status**: current
+- **Last updated**: 2026-10-03
+
+---
+
+Index of `docs/changelogs/`, newest first. Each bullet links to a dated record
+`YYYY-MM-DD_<slug>.md` (Changelog Maintenance Rule in [`.agents/AGENTS.md`](../../.agents/AGENTS.md)).
+
+- **2026-10-03** — test harness (60 CPU tests) and fixes B1–B15: AMR tokenizer, bracketed linearization, prep rewrite, GATv2 replaces GCN, microbatch graph slicing, per-row masking, sampler fixes, sacreBLEU evaluation → [details](2026-10-03_tests-and-pipeline-fixes.md)

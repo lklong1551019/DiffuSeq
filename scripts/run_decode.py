@@ -1,3 +1,8 @@
+"""
+run_decode.py — decode every checkpoint matching <model_dir>/<pattern>*pt with the DDPM/DDIM sampler
+(sample_seq2seq.py). --step == diffusion steps: full sampler; smaller: DDIM. Prefer run_decode_solver.py
+for speed. Run from scripts/; GPU job (GPU Sharing Rule).
+"""
 import os, sys, glob
 import argparse
 import random
@@ -13,6 +18,7 @@ if __name__ == '__main__':
     parser.add_argument('--clamp_step', type=int, default=0, help='clamp start step')
     parser.add_argument('--rejection_rate', type=float, default=0.0, help='reject tokens once it does not change')
     parser.add_argument('--note', type=str, default='none', help='note')
+    parser.add_argument('--filter_direction', type=str, default='AMR_TO_TEXT', choices=['AMR_TO_TEXT', 'TEXT_TO_AMR'], help='bidirectional datasets: rows to decode')
 
     parser.add_argument('--bsz', type=int, default=50, help='batch size')
     parser.add_argument('--start_n', type=int, default=0, help='start batch iteration')
@@ -39,12 +45,12 @@ if __name__ == '__main__':
             os.mkdir(out_dir)
 
         for checkpoint_one in checkpoints:
-            COMMAND = f'python -m torch.distributed.launch --nproc_per_node=1 --master_port=12{random.randint(0,9)}{random.randint(0,9)}{random.randint(0,9)} --use_env sample_seq2seq.py ' \
+            COMMAND = f'torchrun --nproc_per_node=1 --master_port=12{random.randint(0,9)}{random.randint(0,9)}{random.randint(0,9)} sample_seq2seq.py ' \
             f'--model_path {checkpoint_one} --step {args.step} ' \
             f'--batch_size {args.bsz} --start_n {args.start_n} --seed2 {args.seed} --split {args.split} ' \
             f'--out_dir {out_dir} --top_p {args.top_p} ' \
             f'--rejection_rate {args.rejection_rate} --clamp_step {args.clamp_step} '\
-            f'--note {args.note}'
+            f'--note {args.note} --filter_direction {args.filter_direction}'
             print(COMMAND)
             
             os.system(COMMAND)

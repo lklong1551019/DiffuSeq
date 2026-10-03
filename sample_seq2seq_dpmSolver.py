@@ -21,19 +21,21 @@ Key design:
   - "Partial noising": only target (mask=1) positions are noised; source (mask=0)
     positions stay as their clean embeddings. This conditions generation on the source.
   - DPM-Solver++: works with the model's x_0 prediction type ("x_start").
-  - Output is saved per-batch to a .json file inside a structured output directory.
+  - Output is saved per-batch to a .json file inside a structured output directory; an existing
+    file with the same name is replaced when decoding starts from batch 0.
+  - Single-GPU decoding: dist.all_gather collects samples of every rank, but source/reference
+    strings are taken from the local batch, so --nproc_per_node must be 1.
 """
 
 import argparse
 import os, json
-from tracemalloc import start
 
 import numpy as np
 import torch as th
 import torch.distributed as dist
 from transformers import set_seed
 from diffuseq.rounding import denoised_fn_round, get_weights  # nearest-neighbour rounding utilities
-from diffuseq.text_datasets import load_data_text
+from diffuseq.text_datasets import load_data_text, split_source_target
 from torch.cuda.amp import autocast
 
 import time
@@ -92,8 +94,8 @@ def main():
     # -------------------------------------------------------------------------
     # 1. Load Training Configuration
     # -------------------------------------------------------------------------
-    # The model was saved alongside training_args.json which records all hyperparameters.
-    # We reload these to reconstruct the exact same model architecture at inference.
+    # training_args.json in the run folder records every hyperparameter; reloading it rebuilds the
+    # exact architecture. Keys missing from older runs fall back to diffuseq/config.json defaults.
     config_path = os.path.join(os.path.split(args.model_path)[0], "training_args.json")
     print(config_path)
     with open(config_path, 'rb') as f:
@@ -101,7 +103,9 @@ def main():
     # Allow overriding batch size from the CLI (useful to fit inference on less GPU memory)
     training_args['batch_size'] = args.batch_size
     args.__dict__.update(training_args)
-    
+    # Load the tokenizer saved in the run folder (exact training vocabulary; never re-saved).
+    args.tokenizer_dir = os.path.split(args.model_path)[0]
+
     # Step: Disable DocAMR relation masking logic during evaluation.
     # This ensures full-target denoising and evaluation consistency.
     args.mask_docamr_rel = False
@@ -116,11 +120,7 @@ def main():
         **args_to_dict(args, load_defaults_config().keys())
     )
 
-    # Load checkpoint weights. The EMA checkpoint is loaded for inference
-    # since EMA weights typically generalize better than the raw model weights.
-    # map_location="cpu" avoids GPU OOM during loading; model is moved to GPU next.
-    # dist_util.load_state_dict(path, **kwargs) → reads the file and calls th.load(**kwargs)
-    # map_location="cpu": load weights to CPU first to avoid GPU OOM; model is moved to GPU later
+    # EMA checkpoint, loaded on CPU first and moved to the GPU below.
     model.load_state_dict(
         dist_util.load_state_dict(args.model_path, map_location="cpu")
     )
@@ -191,6 +191,10 @@ def main():
     out_path = os.path.join(
         out_path, f"seed{args.seed2}_solverstep{SOLVER_STEP}_{args.filter_direction}_{args.note}.json"
     )
+    # Results are appended batch by batch; start from an empty file so a re-run with the same
+    # settings does not duplicate rows.
+    if args.start_n == 0 and os.path.exists(out_path):
+        os.remove(out_path)
 
     # -------------------------------------------------------------------------
     # 6. Collect All Test Batches
@@ -230,7 +234,7 @@ def main():
         noise_schedule,
         model_type="x_start",     # DiffuSeq predicts clean x_0 (not noise ε)
         model_kwargs=model_kwargs,
-        guidance_type="uncond",   # unconditional generation (no classifier guidance)
+        guidance_type="uncond",   # no classifier(-free) guidance; conditioning comes from the clean source
     )
 
     # DPM-Solver++: higher-order ODE solver for diffusion models.
@@ -308,18 +312,16 @@ def main():
         cands = th.topk(logits, k=1, dim=-1)
         sample = cands.indices   # [B, seq_len, 1] predicted token IDs
 
-        # Recover generated target: skip source positions (first len_x positions)
+        # Generated target = positions len_x .. seq_len-1 (split_source_target asserts the mask shape).
         for seq, input_mask in zip(cands.indices, input_ids_mask_ori):
-            # len_x = number of source tokens; target starts at position len_x
-            len_x = args.seq_len - sum(input_mask).tolist()
-            tokens = tokenizer.decode_token(seq[len_x:])
-            word_lst_recover.append(tokens)
+            _, generated = split_source_target(seq, input_mask)
+            word_lst_recover.append(tokenizer.decode_token(generated))
 
-        # Decode source and reference target from the original input
+        # Source and reference come from the input ids with the same split.
         for seq, input_mask in zip(input_ids_x, input_ids_mask_ori):
-            len_x = args.seq_len - sum(input_mask).tolist()
-            word_lst_source.append(tokenizer.decode_token(seq[:len_x]))    # source portion
-            word_lst_ref.append(tokenizer.decode_token(seq[len_x:]))       # reference target
+            source, reference = split_source_target(seq, input_mask)
+            word_lst_source.append(tokenizer.decode_token(source))
+            word_lst_ref.append(tokenizer.decode_token(reference))
 
         # -----------------------------------------------------------------------
         # 11. Write Results to Output File

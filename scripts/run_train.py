@@ -31,10 +31,12 @@ if __name__ == '__main__':
     parser.add_argument('--denoise', default=False, type=str2bool, help='denoise combined with learned_mean_embed [MASK]')
     parser.add_argument('--reg_rate', default=0.0, type=float, help='regularization rate of learned mean embed for gaussian; default is zero')
     parser.add_argument('--denoise_rate', default=0.2, type=float, help='max denoise rate of [MASK]')
-    parser.add_argument('--mask_docamr_rel', default=False, type=str2bool, help='mask only docAMR relation labels')
-    parser.add_argument('--use_simple_amr', default=False, type=str2bool, help='use simple docamr relation labels')
-    parser.add_argument('--enable_gcn', default=False, type=str2bool, help='enable graph convolutional network')
-    parser.add_argument('--use_relational_gcn', default=False, type=str2bool, help='use relational graph convolutional network')
+    parser.add_argument('--mask_docamr_rel', default=False, type=str2bool, help='TEXT_TO_AMR rows: discrete noise only on relation tokens')
+    parser.add_argument('--amr_vocab', default='relations', choices=['relations', 'none', 'legacy_full', 'legacy_simple'], help='AMR tokens added to the tokenizer')
+    parser.add_argument('--graph_encoder', default='none', choices=['none', 'gatv2'], help='graph module over AMR source positions')
+    parser.add_argument('--graph_mode', default='edge_attr', choices=['edge_attr', 'levi'], help='relation as edge feature, or relation tokens as nodes')
+    parser.add_argument('--graph_layers', type=int, default=2, help='GATv2 layers')
+    parser.add_argument('--graph_heads', type=int, default=4, help='GATv2 heads (must divide hidden_dim)')
 
     parser.add_argument('--seq_len', type=int, default=128, help='max len of input sequence')
     parser.add_argument('--hidden_t_dim', type=int, default=128, help='hidden size of time embedding')
@@ -99,9 +101,9 @@ if __name__ == '__main__':
                   f"--learned_mean_embed {args.learned_mean_embed} " \
                   f"--denoise {args.denoise} --denoise_rate {args.denoise_rate} " \
                   f"--mask_docamr_rel {args.mask_docamr_rel} " \
-                  f"--use_simple_amr {args.use_simple_amr} " \
-                  f"--enable_gcn {args.enable_gcn} " \
-                  f"--use_relational_gcn {args.use_relational_gcn} " \
+                  f"--amr_vocab {args.amr_vocab} " \
+                  f"--graph_encoder {args.graph_encoder} --graph_mode {args.graph_mode} " \
+                  f"--graph_layers {args.graph_layers} --graph_heads {args.graph_heads} " \
                   f"--gradient_clipping {args.gradient_clipping} " \
                   f"--reg_rate {args.reg_rate} "
 

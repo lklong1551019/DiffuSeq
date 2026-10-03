@@ -1,18 +1,23 @@
 """
-Generate a large batch of image samples from a model and save them as a large
-numpy array. This can be used to produce samples for FID evaluation.
+sample_seq2seq.py — DDPM / DDIM decoding for DiffuSeq (upstream sampler).
+
+--step == diffusion_steps runs the full ancestral sampler; a smaller --step runs DDIM with
+gap diffusion_steps // step. denoised_fn_round clamps predicted x_0 to the nearest token
+embedding from --clamp_step on. For fast decoding use sample_seq2seq_dpmSolver.py.
+
+Output: one JSON line per example {"recover", "reference", "source"} under
+out_dir/<run folder>/ema<...>.samples/seed<seed2>_step<clamp_step>_<note>.json.
 """
 
 import argparse
 import os, json
-from tracemalloc import start
 
 import numpy as np
 import torch as th
 import torch.distributed as dist
 from transformers import set_seed
 from diffuseq.rounding import denoised_fn_round, get_weights
-from diffuseq.text_datasets import load_data_text
+from diffuseq.text_datasets import load_data_text, split_source_target
 from torch.cuda.amp import autocast
 # from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 
@@ -30,7 +35,8 @@ from basic_utils import (
 
 def create_argparser():
     defaults = dict(model_path='', step=0, out_dir='', top_p=0, rejection_rate=0.0, note='none')
-    decode_defaults = dict(split='valid', clamp_step=0, seed2=105, clip_denoised=False, start_n=0)
+    decode_defaults = dict(split='valid', clamp_step=0, seed2=105, clip_denoised=False, start_n=0,
+                           filter_direction='AMR_TO_TEXT')
     defaults.update(load_defaults_config())
     defaults.update(decode_defaults)
     parser = argparse.ArgumentParser()
@@ -57,6 +63,8 @@ def main():
         training_args = json.load(f)
     training_args['batch_size'] = args.batch_size
     args.__dict__.update(training_args)
+    args.tokenizer_dir = os.path.split(args.model_path)[0]   # exact training vocabulary
+    args.mask_docamr_rel = False
     args.device = f"cuda:{CUDA_VISIBLE_DEVICES}"
 
     logger.log("### Creating model and diffusion...")
@@ -65,7 +73,7 @@ def main():
     )
 
     model.load_state_dict(
-        dist_util.load_state_dict(args.model_path, False, "model", map_location="cpu")
+        dist_util.load_state_dict(args.model_path, map_location="cpu")
     )
 
     pytorch_total_params = sum(p.numel() for p in model.parameters())
@@ -98,7 +106,8 @@ def main():
         split=args.split,
         loaded_vocab=tokenizer,
         model_emb=model_emb.cpu(),  # using the same embedding wight with tranining data
-        loop=False
+        loop=False,
+        filter_direction=args.filter_direction,
     )
 
     start_t = time.time()
@@ -115,7 +124,9 @@ def main():
     if not os.path.isdir(out_path):
         os.mkdir(out_path)
     out_path = os.path.join(out_path, f"seed{args.seed2}_step{args.clamp_step}_{args.note}.json")
-    # fout = open(out_path, 'a')
+    # Rows are appended per batch; start from an empty file so a re-run does not duplicate rows.
+    if rank == 0 and args.start_n == 0 and os.path.exists(out_path):
+        os.remove(out_path)
 
     all_test_data = []
 
@@ -159,7 +170,11 @@ def main():
         input_ids_mask = th.broadcast_to(input_ids_mask.unsqueeze(dim=-1), x_start.shape).to(dist_util.dev())
         x_noised = th.where(input_ids_mask == 0, x_start, noise)
 
+        # Graph tensors (graph_encoder runs) are passed to the model at every denoising step.
         model_kwargs = {}
+        if 'edge_index' in cond:
+            model_kwargs['edge_index'] = cond.pop('edge_index').to(dist_util.dev())
+            model_kwargs['edge_type'] = cond.pop('edge_type').to(dist_util.dev())
 
         if args.step == args.diffusion_steps:
             args.use_ddim = False
@@ -208,15 +223,13 @@ def main():
         # tokenizer = load_tokenizer(args)
 
         for seq, input_mask in zip(cands.indices, input_ids_mask_ori):
-            len_x = args.seq_len - sum(input_mask).tolist()
-            tokens = tokenizer.decode_token(seq[len_x:])
-            word_lst_recover.append(tokens)
+            _, generated = split_source_target(seq, input_mask)
+            word_lst_recover.append(tokenizer.decode_token(generated))
 
         for seq, input_mask in zip(input_ids_x, input_ids_mask_ori):
-            # tokens = tokenizer.decode_token(seq)
-            len_x = args.seq_len - sum(input_mask).tolist()
-            word_lst_source.append(tokenizer.decode_token(seq[:len_x]))
-            word_lst_ref.append(tokenizer.decode_token(seq[len_x:]))
+            source, reference = split_source_target(seq, input_mask)
+            word_lst_source.append(tokenizer.decode_token(source))
+            word_lst_ref.append(tokenizer.decode_token(reference))
 
         for i in range(world_size):
             if i == rank:  # Write files sequentially

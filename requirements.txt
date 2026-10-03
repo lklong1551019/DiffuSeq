@@ -1,15 +1,16 @@
-bert_score
-blobfile
-nltk
-numpy
-packaging
-psutil
-PyYAML
-setuptools
-spacy
-torch==1.9.0+cu111
-torchmetrics
-tqdm
-transformers==4.22.2
-wandb
+# Environment used for this fork: conda env `thesis_env` (Python 3.11). Versions verified 2026-10-03.
+# Runs before 2026-10-03 were trained in `diffuseq_env` (Python 3.8, torch 1.13.1, transformers 4.22.2).
+torch>=2.6            # verified 2.10.0+cu128
+transformers>=4.22    # verified 5.3.0 (tokenization identical to 4.22.2 on this data)
+tokenizers
 datasets
+torch_geometric       # verified 2.7.0; only for --graph_encoder gatv2
+penman                # AMR parsing in prepare_docamr_datasets.py / build_amr_vocab.py
+sacrebleu             # scripts/eval_bleu.py
+pytest                # tests/
+blobfile
+numpy
+psutil
+tqdm
+wandb
+nltk                  # scripts/eval_seq2seq.py (legacy upstream evaluation)

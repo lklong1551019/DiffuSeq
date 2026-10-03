@@ -41,9 +41,8 @@ from diffuseq.step_sample import LossAwareSampler, UniformSampler
 from torch.cuda.amp import GradScaler   # dynamic loss scaling to avoid FP16 underflow
 from torch.cuda.amp import autocast     # context manager: runs ops in FP16 where safe
 
-# Initial log₂ loss scale for FP16 training.
-# The GradScaler will adjust this dynamically. Starting at 2^20 ≈ 1M is a good
-# heuristic — it typically climbs to ~2^20–2^21 within the first ~1K steps.
+# Upstream constant for the legacy fp16 path (_setup_fp16, not called). torch.cuda.amp.GradScaler
+# does not read it; GradScaler starts at its own default scale (2**16) and adapts it.
 INITIAL_LOG_LOSS_SCALE = 20.0
 
 
@@ -110,11 +109,11 @@ class TrainLoop:
         self.learning_steps = learning_steps   # total gradient steps (0 = run forever)
         self.gradient_clipping = gradient_clipping  # max gradient norm (-1 = disabled)
 
-        self.step = 0         # steps taken in this training session
+        self.step = 0         # steps taken by this process
         self.resume_step = 0  # steps already taken (loaded from checkpoint)
 
         # global_batch = effective batch size across all GPUs
-        # Used for logging: "how many samples have we processed in total?"
+        # (logged as the number of samples processed)
         self.global_batch = self.batch_size * dist.get_world_size()
 
         # master_params: the FP32 reference parameters used for optimizer updates.
@@ -134,8 +133,8 @@ class TrainLoop:
         self.opt = AdamW(self.master_params, lr=self.lr, weight_decay=self.weight_decay)
 
         if self.resume_step:
-            # When resuming, reconstruct the LR at the point we left off using
-            # linear annealing: lr * (1 - fraction_completed).
+            # Unreachable while _load_and_sync_parameters forces resume_step = 0; kept from upstream.
+            # Would restore the annealed LR: lr * (1 - fraction_completed).
             frac_done = (self.step + self.resume_step) / self.learning_steps
             lr = self.lr * (1 - frac_done)
             self.opt = AdamW(self.master_params, lr=lr, weight_decay=self.weight_decay)
@@ -189,7 +188,9 @@ class TrainLoop:
         if resume_checkpoint[-3:] == '.pt':
             # Extract the step number embedded in the filename (e.g., model000100.pt → 100)
             self.resume_step = parse_resume_step_from_filename(resume_checkpoint)
-            self.resume_step = 0  # NOTE: currently forces resume_step to 0 (fresh LR schedule)
+            # resume_step is forced to 0: a resumed run restarts the step counter and the linear LR
+            # schedule from the full learning rate (upstream behaviour).
+            self.resume_step = 0
             if dist.get_rank() == 0:
                 # Only rank 0 reads from disk; sync_params below broadcasts to others.
                 logger.log(f"loading model from checkpoint: {resume_checkpoint}...")
@@ -232,8 +233,8 @@ class TrainLoop:
 
     def _load_optimizer_state(self):
         """
-        Load optimizer state dict from checkpoint (currently unused / commented out).
-        Restoring optimizer state allows exact continuation of momentum statistics.
+        Load an optimizer state dict from a checkpoint. Not called: checkpoints store EMA weights
+        only, so resumed runs start with fresh Adam moments.
         """
         main_checkpoint = find_resume_checkpoint() or self.resume_checkpoint
         if bf.exists(main_checkpoint):
@@ -245,9 +246,8 @@ class TrainLoop:
 
     def _setup_fp16(self):
         """
-        (Currently unused) Set up legacy FP16 training by converting model weights
-        to FP16 and creating FP32 master parameter copies for the optimizer.
-        The current implementation uses torch.cuda.amp instead.
+        Legacy fp16 setup (FP16 weights + FP32 master copies). Not called: training uses
+        torch.cuda.amp autocast + GradScaler.
         """
         self.master_params = make_master_params(self.model_params)
         self.model.convert_to_fp16()
@@ -316,198 +316,78 @@ class TrainLoop:
     # Forward Passes
     # -------------------------------------------------------------------------
 
+    def _compute_losses(self, micro, t, micro_cond, last_batch):
+        """Run diffusion.training_losses, suppressing the DDP all-reduce on all but the last microbatch."""
+        compute_losses = functools.partial(
+            self.diffusion.training_losses, self.ddp_model, micro, t, model_kwargs=micro_cond,
+        )
+        if last_batch or not self.use_ddp:
+            return compute_losses()
+        with self.ddp_model.no_sync():
+            return compute_losses()
+
     def forward_only(self, batch, cond):
-        """
-        Validation pass: compute and log losses without updating any parameters.
-
-        Mirrors forward_backward but wraps everything in th.no_grad() and
-        skips the optimizer and EMA steps.
-
-        Args:
-            batch (Tensor): [B, seq_len, hidden_dim] input embeddings (x_0).
-            cond (dict):    conditioning dict with 'input_ids' and 'input_mask'.
-        """
+        """Validation pass: losses logged with an `eval_` prefix; no gradients, no optimizer step."""
         with th.no_grad():
             zero_grad(self.model_params)
             for i in range(0, batch.shape[0], self.microbatch):
-                # Slice the batch into microbatches and move to GPU
-                micro = batch[i: i + self.microbatch].to(dist_util.dev())
-                micro_cond = {
-                    k: v[i: i + self.microbatch].to(dist_util.dev())
-                    for k, v in cond.items()
-                }
+                micro, micro_cond = slice_microbatch(batch, cond, i, self.microbatch, dist_util.dev())
                 last_batch = (i + self.microbatch) >= batch.shape[0]
-
-                # Sample random diffusion timesteps for this microbatch
                 t, weights = self.schedule_sampler.sample(micro.shape[0], dist_util.dev())
-
-                # Partially apply diffusion.training_losses so it can be called later
-                compute_losses = functools.partial(
-                    self.diffusion.training_losses,
-                    self.ddp_model,
-                    micro,
-                    t,
-                    model_kwargs=micro_cond,
-                )
-
-                # For all microbatches except the last, suppress DDP gradient sync
-                # (no_sync avoids the all-reduce communication until the last chunk)
-                if last_batch or not self.use_ddp:
-                    losses = compute_losses()
-                else:
-                    with self.ddp_model.no_sync():
-                        losses = compute_losses()
-
-                # Log validation losses prefixed with "eval_"
-                log_loss_dict(
-                    self.diffusion, t, {f"eval_{k}": v * weights for k, v in losses.items()}
-                )
+                losses = self._compute_losses(micro, t, micro_cond, last_batch)
+                log_loss_dict(self.diffusion, t, {f"eval_{k}": v * weights for k, v in losses.items()})
 
     def forward_backward(self, batch, cond):
         """
-        Training pass: compute loss over all microbatches and accumulate gradients.
+        Training pass: accumulate gradients over microbatches of size `self.microbatch`.
 
-        Microbatching strategy:
-          - Split the batch into chunks of size `microbatch`.
-          - For all chunks except the last, call ddp_model.no_sync() to suppress
-            the all-reduce until the final chunk. This batches the gradient
-            communication into one round-trip per step.
-          - If use_fp16, wrap the forward pass in autocast() and use scaler.scale()
-            to backward through the scaled loss.
+        batch: [B, seq_len, hidden_dim] clean embeddings from the data loader (the loss re-embeds
+        input_ids with the model, see training_losses_seq2seq); cond: input_ids, input_mask, rel_mask
+        [, edge_index, edge_type].
 
-        Args:
-            batch (Tensor): [B, seq_len, hidden_dim] noisy embeddings.
-            cond (dict):    'input_ids' and 'input_mask' tensors.
+        Each microbatch loss is weighted by micro_size / B, so the accumulated gradient is the mean
+        over the whole batch regardless of how it is split (a shorter last microbatch counts by its
+        size; gradient clipping thresholds do not depend on the number of microbatches).
         """
-        zero_grad(self.model_params)  # clear gradients from previous step
-
-        for i in range(0, batch.shape[0], self.microbatch):
-            micro = batch[i : i + self.microbatch].to(dist_util.dev())
-            micro_cond = {
-                k: v[i : i + self.microbatch].to(dist_util.dev())
-                for k, v in cond.items()
-            }
-            last_batch = (i + self.microbatch) >= batch.shape[0]
-
-            # Sample diffusion timesteps t ∈ [0, T-1] for each sample in the microbatch.
-            # The sampler returns importance-sampling weights to correct for non-uniform sampling.
+        zero_grad(self.model_params)
+        batch_size = batch.shape[0]
+        for i in range(0, batch_size, self.microbatch):
+            micro, micro_cond = slice_microbatch(batch, cond, i, self.microbatch, dist_util.dev())
+            last_batch = (i + self.microbatch) >= batch_size
+            # t in [0, T-1] per sample; weights correct for non-uniform (loss-aware) sampling.
             t, weights = self.schedule_sampler.sample(micro.shape[0], dist_util.dev())
+            share = micro.shape[0] / batch_size
+
+            with autocast(enabled=self.use_fp16):
+                losses = self._compute_losses(micro, t, micro_cond, last_batch)
+                if not th.isfinite(losses["loss"]).all():
+                    self._dump_nonfinite_batch(cond, i, t)
+                    raise ValueError("Non-finite loss; batch written to nonfinite_loss_batches.txt")
+                if isinstance(self.schedule_sampler, LossAwareSampler):
+                    self.schedule_sampler.update_with_local_losses(t, losses["loss"].detach())
+                loss = (losses["loss"] * weights).mean() * share
+                log_loss_dict(self.diffusion, t, {k: v * weights for k, v in losses.items()})
 
             if self.use_fp16:
-                # autocast: automatically casts eligible ops to FP16 for speed,
-                # while keeping numerically sensitive ops (softmax, norms) in FP32.
-                with autocast():
-                    compute_losses = functools.partial(
-                        self.diffusion.training_losses,
-                        self.ddp_model,
-                        micro,
-                        t,
-                        model_kwargs=micro_cond,
-                    )
-
-                    if last_batch or not self.use_ddp:
-                        losses = compute_losses()
-                    else:
-                        with self.ddp_model.no_sync():
-                            losses = compute_losses()
-
-                    # --- NAN TRAP ---
-                    if th.isnan(losses["loss"]).any() or th.isinf(losses["loss"]).any():
-                        try:
-                            from transformers import AutoTokenizer
-                            tokenizer = AutoTokenizer.from_pretrained('bert-base-multilingual-cased')
-                            # Fix: model_kwargs.pop() deletes 'input_ids' from micro_cond. 
-                            # We must read it from the original 'cond' dict.
-                            token_ids = cond['input_ids'][i : i + self.microbatch].tolist()
-                            text_seqs = [tokenizer.decode(seq, skip_special_tokens=False) for seq in token_ids]
-                            text_out = "\n".join(text_seqs)
-                        except Exception as e:
-                            text_out = f"Failed to decode: {e}"
-
-                        with open("NaNLossInput.txt", "a", encoding="utf-8") as f:
-                            f.write("="*50 + "\n")
-                            f.write(f"NaN Loss Detected at Timestep(s): {t.cpu().tolist()}\n")
-                            f.write(f"Decoded Sequences:\n{text_out}\n")
-                            f.write(f"Raw IDs:\n{cond['input_ids'][i : i + self.microbatch].tolist()}\n")
-                            f.write("="*50 + "\n")
-                        print("!!! NAN LOSS DETECTED !!! Skipped microbatch and logged to NaNLossInput.txt")
-                        
-                        # Memory cleanup: free the computation graph before raising error
-                        del losses
-                        th.cuda.empty_cache()
-                        raise ValueError("NaN Loss Detected! Stopping training.")
-                    # ----------------
-
-                    # Update the timestep sampler's loss history for importance reweighting
-                    if isinstance(self.schedule_sampler, LossAwareSampler):
-                        self.schedule_sampler.update_with_local_losses(
-                            t, losses["loss"].detach()
-                        )
-
-                    # Weighted mean loss: importance weights correct for the non-uniform
-                    # timestep sampling distribution
-                    loss = (losses["loss"] * weights).mean()
-                    log_loss_dict(
-                        self.diffusion, t, {k: v * weights for k, v in losses.items()}
-                    )
-
-                # Scale the loss before backward() to prevent FP16 gradient underflow,
-                # then accumulate scaled gradients
-                self.scaler.scale(loss).backward()
-
+                self.scaler.scale(loss).backward()   # scaled to avoid fp16 gradient underflow
             else:
-                # Standard FP32 training path
-                compute_losses = functools.partial(
-                    self.diffusion.training_losses,
-                    self.ddp_model,
-                    micro,
-                    t,
-                    model_kwargs=micro_cond,
-                )
-
-                if last_batch or not self.use_ddp:
-                    losses = compute_losses()
-                else:
-                    with self.ddp_model.no_sync():
-                        losses = compute_losses()
-
-                # --- NAN TRAP ---
-                if th.isnan(losses["loss"]).any() or th.isinf(losses["loss"]).any():
-                    try:
-                        from transformers import AutoTokenizer
-                        tokenizer = AutoTokenizer.from_pretrained('bert-base-multilingual-cased')
-                        # Fix: model_kwargs.pop() deletes 'input_ids' from micro_cond. 
-                        # We must read it from the original 'cond' dict.
-                        token_ids = cond['input_ids'][i : i + self.microbatch].tolist()
-                        text_seqs = [tokenizer.decode(seq, skip_special_tokens=False) for seq in token_ids]
-                        text_out = "\n".join(text_seqs)
-                    except Exception as e:
-                        text_out = f"Failed to decode: {e}"
-
-                    with open("NaNLossInput.txt", "a", encoding="utf-8") as f:
-                        f.write("="*50 + "\n")
-                        f.write(f"NaN Loss Detected at Timestep(s): {t.cpu().tolist()}\n")
-                        f.write(f"Decoded Sequences:\n{text_out}\n")
-                        f.write(f"Raw IDs:\n{cond['input_ids'][i : i + self.microbatch].tolist()}\n")
-                        f.write("="*50 + "\n")
-                    print("!!! NAN LOSS DETECTED !!! Skipped microbatch and logged to NaNLossInput.txt")
-                    
-                    # Memory cleanup: free the computation graph before raising error
-                    del losses
-                    th.cuda.empty_cache()
-                    raise ValueError("NaN Loss Detected! Stopping training.")
-                # ----------------
-
-                if isinstance(self.schedule_sampler, LossAwareSampler):
-                    self.schedule_sampler.update_with_local_losses(
-                        t, losses["loss"].detach()
-                    )
-
-                loss = (losses["loss"] * weights).mean()
-                log_loss_dict(
-                    self.diffusion, t, {k: v * weights for k, v in losses.items()}
-                )
                 loss.backward()
+
+    def _dump_nonfinite_batch(self, cond, start, t):
+        """Append the offending microbatch (timesteps, ids, decoded text) to the run folder."""
+        ids = cond['input_ids'][start: start + self.microbatch].tolist()
+        try:
+            from transformers import AutoTokenizer
+            tok = AutoTokenizer.from_pretrained(self.checkpoint_path)
+            text = "\n".join(tok.decode(seq, skip_special_tokens=False) for seq in ids)
+        except Exception as e:  # noqa: BLE001 - diagnostics must not mask the original failure
+            text = f"decode failed: {e}"
+        path = os.path.join(self.checkpoint_path, "nonfinite_loss_batches.txt")
+        with open(path, "a", encoding="utf-8") as f:
+            f.write("=" * 50 + "\n")
+            f.write(f"step {self.step + self.resume_step}, timesteps {t.cpu().tolist()}\n")
+            f.write(f"decoded:\n{text}\nids:\n{ids}\n")
+        print(f"!!! non-finite loss at step {self.step + self.resume_step}; details in {path}")
 
     # -------------------------------------------------------------------------
     # Optimization Steps
@@ -521,7 +401,7 @@ class TrainLoop:
           3. Anneal learning rate linearly.
           4. scaler.step(opt): check for inf/NaN, then call opt.step().
           5. scaler.update(): adjust the scale factor for the next iteration.
-          6. Log gradient norm.
+          6. Log the gradient norm (after clipping, before the scale update).
           7. Update all EMA parameter copies.
         """
         # CRITICAL: Must unscale gradients BEFORE clipping, otherwise the scale factor
@@ -532,8 +412,7 @@ class TrainLoop:
             self.grad_clip()
         
         self._anneal_lr()
-        # scaler.step handles unscaling + optimizer step atomically.
-        # Since we already unscaled, it just checks for inf/NaN and calls opt.step().
+        # Gradients are already unscaled: scaler.step only skips the step on inf/NaN, else opt.step().
         self.scaler.step(self.opt)
         self.scaler.update()   # double or halve the scale based on whether this step worked
         self._log_grad_norm()
@@ -564,7 +443,7 @@ class TrainLoop:
         """
         Optimizer step for standard FP32 training:
           1. (Optional) Clip gradients.
-          2. Log gradient norm.
+          2. Log the gradient norm (after clipping).
           3. Anneal learning rate linearly.
           4. Optimizer step.
           5. Update all EMA copies.
@@ -686,6 +565,39 @@ class TrainLoop:
 # Helper Functions
 # =============================================================================
 
+GRAPH_KEYS = ("edge_index", "edge_type")
+
+
+def slice_microbatch(batch, cond, start, size, device):
+    """
+    Cut microbatch [start, start + size) out of a collated batch (review bug B4c).
+
+    Per-sample tensors ([B, ...]) are sliced on dim 0. Graph tensors are not per-sample:
+    edge_index is [2, E] with node ids b * L + pos (collate_with_adj), edge_type is [E].
+    Step by step (L = seq_len):
+      1. lo = start * L, hi = min(start + size, B) * L   node-id range of the microbatch
+      2. keep = lo <= edge_index[0] < hi                  edges whose source node is inside
+         (both endpoints of an edge belong to the same sample, so the target is inside too)
+      3. edge_index[:, keep] - lo                         re-number from 0 inside the microbatch
+      4. edge_type[keep]                                  same selection
+    Example: B 4, size 2, L 20, start 2 -> lo 40, hi 80; node 66 (sample 3, pos 6) -> 26
+             (sample 1 of the microbatch, pos 6).
+    """
+    batch_size, seq_len = batch.shape[0], batch.shape[1]
+    stop = min(start + size, batch_size)
+    micro = batch[start:stop].to(device)
+    micro_cond = {k: v[start:stop].to(device) for k, v in cond.items() if k not in GRAPH_KEYS}
+    if "edge_index" in cond:
+        edge_index, edge_type = cond["edge_index"], cond["edge_type"]
+        lo, hi = start * seq_len, stop * seq_len
+        keep = (edge_index[0] >= lo) & (edge_index[0] < hi)
+        assert bool(((edge_index[1][keep] >= lo) & (edge_index[1][keep] < hi)).all()), \
+            "an edge crosses samples"
+        micro_cond["edge_index"] = (edge_index[:, keep] - lo).to(device)
+        micro_cond["edge_type"] = edge_type[keep].to(device)
+    return micro, micro_cond
+
+
 def parse_resume_step_from_filename(filename):
     """
     Extract the step count from a checkpoint filename.
@@ -716,7 +628,7 @@ def get_blob_logdir():
 def find_resume_checkpoint():
     """
     Auto-discover the latest checkpoint on blob storage.
-    Currently returns None (no auto-discovery); checkpoint path is passed explicitly.
+    Returns None (no auto-discovery); the checkpoint path is passed explicitly.
 
     Override this on cloud infrastructure to scan a GCS/S3 bucket automatically.
     """
@@ -773,7 +685,7 @@ def log_loss_dict(diffusion, ts, losses):
 def actual_model_path(model_path):
     """
     Resolve the actual path to the model file.
-    Currently a pass-through; can be overridden on cloud setups
+    A pass-through; can be overridden on cloud setups
     where paths may need to be remapped to local cache locations.
     """
     return model_path

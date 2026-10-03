@@ -29,10 +29,9 @@ def get_named_beta_schedule(schedule_name, num_diffusion_timesteps, warmup_steps
     they are committed to maintain backwards compatibility.
     """
     if schedule_name == 'sqrt':
-        # t parameter: fractional progress through the diffusion process, eg, at step 500 out of 1000, t = 0.5
-        # Instead of defining noise steps (beta_t) directly, we define the desired curve for the cummulative signal (alpha_t) first, then
-        #   reverse engineer the beta_t require to achieve that curve.
-        # This means that at begining steps, noise will be added fast, and later steps noise will be added slowly.
+        # t is the fractional progress through the process (step 500 of 1000 -> t = 0.5).
+        # The schedule fixes the cumulative signal curve alpha_bar(t) = 1 - sqrt(t + 1e-4) and derives
+        # each beta_t from it: noise grows fast in early steps and slowly in late steps.
         return betas_for_alpha_bar(
             num_diffusion_timesteps,
             lambda t: 1-np.sqrt(t + 0.0001),
@@ -45,6 +44,28 @@ def get_named_beta_schedule(schedule_name, num_diffusion_timesteps, warmup_steps
         return np.concatenate([sqrt_steps[:-warmup_steps], warmup])
     else:
         raise NotImplementedError(f"unknown beta schedule: {schedule_name}")
+
+def build_denoise_mask(random_mask, rel_mask=None, mask_docamr_rel=False):
+    """
+    Decide, per row, which positions the discrete noise may replace.
+
+    random_mask: [B, L] 0/1 Bernoulli draws.
+    rel_mask:    [B, L] 0/1, 1 on AMR relation tokens of a TEXT_TO_AMR target (all 0 otherwise).
+    Returns:     [B, L] 0/1.
+
+    Rows that contain relation tokens (has_rel) keep only draws on those tokens; every other row
+    keeps all its draws. The decision is per row: an AMR_TO_TEXT row keeps its full random mask even
+    when a TEXT_TO_AMR row shares the batch (review bug B5 decided this per batch).
+
+    Example: random_mask = [[1,1,1,0],[1,0,1,1]], rel_mask = [[0,0,1,0],[0,0,0,0]]
+             -> [[0,0,1,0],[1,0,1,1]]
+    """
+    if not mask_docamr_rel or rel_mask is None:
+        return random_mask
+    rel_mask = rel_mask.to(random_mask.dtype)
+    has_rel = rel_mask.sum(dim=1, keepdim=True) > 0                 # [B, 1]
+    return th.where(has_rel, rel_mask * random_mask, random_mask)   # [B, L]
+
 
 def betas_for_alpha_bar_left(num_diffusion_timesteps, alpha_bar, max_beta=0.999):
     """
@@ -80,9 +101,9 @@ def betas_for_alpha_bar(num_diffusion_timesteps, alpha_bar, max_beta=0.999):
     """
     betas = []
     for i in range(num_diffusion_timesteps):
-        # continous time at current step
+        # continuous time of the current step
         t1 = i / num_diffusion_timesteps
-        # continous time at next step
+        # continuous time of the next step
         t2 = (i + 1) / num_diffusion_timesteps
         # alpha_bar_next_step =  alpha_bar_current_step * alpha_next_step
         # alpha_bar_next_step =  alpha_bar_current_step * (1 - beta_next_step)
@@ -269,28 +290,22 @@ class GaussianDiffusion:
             )
 
         if self.denoise:
+            # DiffuSeq-v2 discrete noise: each position is replaced by mean_embed with probability
+            # sqrt(1 - alpha_bar_t) * denoise_rate.
+            # Step 1: per-position probability                       [B, L]
             mask_rate = _extract_into_tensor(self.sqrt_one_minus_alphas_cumprod, t, x_start.shape[:2]) * self.denoise_rate
-            random_mask = mask_rate.bernoulli()[..., None]
-            
-            if self.mask_docamr_rel and rel_mask is not None and rel_mask.any():
-                # TEXT_TO_AMR direction: rel_mask has non-zero entries marking AMR relation tokens.
-                # Apply denoising curriculum only to those structural relation tokens.
-                mask_for_denoise = (rel_mask[..., None] * random_mask).expand(x_start.shape)
-            else:
-                # AMR_TO_TEXT direction (rel_mask is all zeros — target is plain Vietnamese text)
-                # OR mask_docamr_rel is disabled.
-                # Fall back to the original DiffuSeq random masking behaviour:
-                # any target token can be replaced with mean_embed at the given denoise_rate.
-                mask_for_denoise = random_mask.expand(x_start.shape)
-            
+            # Step 2: Bernoulli draw                                  [B, L]
+            random_mask = mask_rate.bernoulli()
+            # Step 3: restrict to relation tokens per row when enabled [B, L]
+            row_mask = build_denoise_mask(random_mask, rel_mask, self.mask_docamr_rel)
+            # Step 4: replace drawn positions by mean_embed           [B, L, D]
             mean_embed_expand = mean_embed[None, None].expand(x_start.shape)
-            x_t = th.where(mask_for_denoise==0, x_t, mean_embed_expand)
+            x_t = th.where(row_mask[..., None].expand(x_start.shape) == 0, x_t, mean_embed_expand)
 
         if mask == None:
             return x_t
-        else:
-            # mask = th.broadcast_to(mask.unsqueeze(dim=-1), x_start.shape)
-            return th.where(mask==0, x_start, x_t)
+        # Step 5: source positions (input_mask == 0) are restored to the clean x_start.
+        return th.where(mask == 0, x_start, x_t)
 
     def q_posterior_mean_variance(self, x_start, x_t, t):
         """

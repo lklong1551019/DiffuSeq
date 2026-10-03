@@ -1,3 +1,37 @@
+# DiffuSeq + DocAMR (English–Vietnamese)
+
+Fork of [Shark-NLP/DiffuSeq](https://github.com/Shark-NLP/DiffuSeq) (base commit `3b71ccc`) for a thesis on
+English→Vietnamese translation with continuous text diffusion, using English DocAMR graphs
+(`transition-amr-parser` + `docAMR`) as an additional source signal. The upstream README follows below.
+
+| Topic | Where |
+|---|---|
+| Project rules (docs voice, GPU sharing, indexing/masking, tests) | [`.agents/AGENTS.md`](.agents/AGENTS.md) |
+| State of the code and runs, bug list | [`docs/reports/2026-10-03_code-and-results-review.md`](docs/reports/2026-10-03_code-and-results-review.md) |
+| Open work | [`docs/plans/PENDING.md`](docs/plans/PENDING.md) |
+| Dataset format (`graph_src`, `amr_vocab.json`) | [`docs/data/data-format.md`](docs/data/data-format.md) |
+
+```bash
+conda activate thesis_env                                   # torch 2.10, transformers 5.3, PyG, penman, sacreBLEU
+CUDA_VISIBLE_DEVICES="" pytest tests/ -q                    # CPU-only test suite
+python scripts/build_amr_vocab.py                           # relation labels + -9x frames (train split)
+python prepare_docamr_datasets.py --chunk_size 1 --max_seq_len 256 \
+    --variants plain_en_vi,amr_en_vi,text_amr_en_vi         # -> datasets/docAMR/v2_<variant>_chunk_1/
+cd scripts && DATASET=v2_text_amr_en_vi_chunk_1 bash train.sh   # GPU: check nvidia-smi first
+MODEL_DIR=diffusion_models/<run> bash run_decode_solver.sh
+python scripts/eval_bleu.py --test_file datasets/docAMR/<variant>/test.jsonl --decode <decode files>
+```
+
+Main differences from upstream:
+- `prepare_docamr_datasets.py` + `diffuseq/amr_linearize.py`: aligned EN / VI / AMR documents, bracketed AMR
+  linearization, text + AMR source (`EN [SEP] AMR`), token-position graphs.
+- `basic_utils.myTokenizer`: mBERT + AMR relation labels and `-9x` frames (`--amr_vocab`), saved per run and
+  reloaded verbatim at decoding.
+- `diffuseq/graph_encoder.py`: optional relation-aware GATv2 over AMR source positions (`--graph_encoder gatv2`).
+- `scripts/eval_bleu.py`: corpus sacreBLEU / chrF / repetition / MBR.
+
+---
+
 # <img src="img/logo.jpg" width="8%" alt="" align=center /> DiffuSeq
 
 Official Codebase for [*__*DiffuSeq*__: Sequence to Sequence Text Generation With Diffusion Models*](https://arxiv.org/abs/2210.08933) and 
